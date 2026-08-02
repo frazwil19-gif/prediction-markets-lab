@@ -1,0 +1,29 @@
+# Opportunity grading thresholds.
+# Defaults mirror project instructions, section 10.
+#
+# grade_c_min_net_ev is not specified explicitly in the project
+# instructions (Grade C is described only as "watchlist only"). 0.00 is
+# used as a conservative default so that any opportunity with negative
+# net EV is rejected outright, and anything with non-negative net EV
+# below the Grade B floor is watchlisted rather than discarded. Revisit
+# once paper-trading history exists to see whether a different C floor
+# is more useful.
+
+grade_a_plus:
+  min_net_ev: 0.08          # 8%
+  min_probability_edge_pp: 4.0
+  min_bookmaker_count: 5
+  max_stake_gbp: 0.50
+
+grade_a:
+  min_net_ev: 0.05          # 5%
+  min_probability_edge_pp: 3.0
+  min_bookmaker_count: 4
+  max_stake_gbp: 0.25
+
+grade_b:
+  min_net_ev: 0.02          # 2%
+  max_net_ev: 0.05          # 5% (approximate upper bound before Grade A)
+
+grade_c:
+  min_net_ev: 0.00

@@ -1,0 +1,16 @@
+# Bankroll and staking configuration.
+# Defaults mirror project instructions, section 10.
+# All amounts are in GBP.
+
+starting_bankroll_gbp: 10.00
+normal_stake_gbp: 0.25
+maximum_stake_gbp: 0.50
+maximum_daily_exposure_gbp: 0.75
+maximum_open_bets: 3
+daily_loss_stop_gbp: 0.75
+weekly_loss_stop_gbp: 2.00
+
+martingale_allowed: false
+accumulators_allowed: false
+chasing_losses_allowed: false
+automatic_execution_allowed: false

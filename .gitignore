@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Data — real odds/results data should not be committed; keep only
+# samples/ and fixtures/ under version control.
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/external/*
+!data/external/.gitkeep
+
+# Generated reports (keep folder structure, not generated content)
+reports/daily/*
+!reports/daily/.gitkeep
+reports/weekly/*
+!reports/weekly/.gitkeep
+reports/monthly/*
+!reports/monthly/.gitkeep
+reports/audits/*
+!reports/audits/.gitkeep
+
+# Secrets — none should ever exist, but guard anyway
+.env
+*.key
+credentials.json

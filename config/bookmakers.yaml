@@ -1,0 +1,16 @@
+# Bookmakers used to build consensus probabilities.
+#
+# PLACEHOLDER LIST — the project instructions do not name specific
+# bookmakers. Populate this list with the bookmakers you actually check
+# (e.g. via Oddschecker) before relying on bookmaker_count thresholds in
+# grading. An empty or short list will make it hard to reach the
+# Grade A (4+) or Grade A+ (5+) bookmaker-count thresholds.
+
+reliable_bookmakers: []
+
+# Example structure once populated:
+# reliable_bookmakers:
+#   - name: "Bookmaker A"
+#     reliable: true
+#   - name: "Bookmaker B"
+#     reliable: true

@@ -1,0 +1,11 @@
+# PLACEHOLDER — deferred beyond Stage 1.
+#
+# Once scripts/generate_weekly_report.py exists (Stage 5), this
+# workflow will run it on a weekly schedule and commit the resulting
+# report to reports/weekly/. Disabled (no `on:` triggers) until then
+# so it does not fail CI.
+
+name: weekly_report
+
+on:
+  workflow_dispatch: {}

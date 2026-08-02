@@ -1,0 +1,14 @@
+# Exchange commission rates, applied to net winnings only.
+#
+# ASSUMPTION: these are commonly cited standard/default commission
+# rates for each exchange as of the project's training-data cutoff.
+# Both exchanges use tiered/discounted commission schemes in practice
+# (based on volume, account status, and market type) — verify the
+# actual current rate on your own account before relying on these for
+# a real decision, and update this file accordingly.
+
+smarkets:
+  standard_commission: 0.02   # 2% — verify current rate before live use
+
+betfair:
+  standard_commission: 0.05   # 5% — verify current rate before live use

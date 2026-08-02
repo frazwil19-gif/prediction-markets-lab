@@ -1,0 +1,20 @@
+# Weights for blending consensus and model probability into a final
+# probability: P_final = w_c * P_consensus + w_m * P_model
+#
+# ASSUMPTION: weights are not specified in the project instructions
+# beyond "conservative" defaults. 0.7/0.3 is used as a conservative
+# starting point that leans heavily on the (already margin-free)
+# bookmaker consensus, since no category model has been validated yet
+# (models/ is entirely placeholder in Stage 1). Do not change these
+# without documenting the rationale, per section 8.
+
+football:
+  weight_consensus: 0.7
+  weight_model: 0.3
+
+tennis:
+  weight_consensus: 0.7
+  weight_model: 0.3
+
+# Later weights should be estimated using historical out-of-sample
+# performance (section 8), not set by hand.

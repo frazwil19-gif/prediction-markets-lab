@@ -1,0 +1,29 @@
+# Monthly Review
+
+- Month:
+- Markets analysed:
+- Paper trades:
+- Live bets:
+- Turnover:
+- Gross profit:
+- Net profit:
+- ROI:
+- Yield:
+- Win rate:
+- Average odds:
+- Average net EV:
+- Average edge:
+- Brier score:
+- Log loss:
+- Average CLV:
+- CLV win rate:
+- Maximum drawdown:
+- Current drawdown:
+- Profit factor:
+- Longest losing streak:
+- Performance by sport:
+- Performance by competition:
+- Performance by grade:
+- Performance by odds band:
+- Model governance updates:
+- Actions for next month:

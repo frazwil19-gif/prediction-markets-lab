@@ -1,0 +1,43 @@
+# Active sports and competitions, per project instructions section 4.
+# Tier 1 (launch) markets are active; Tier 2 are listed but inactive.
+
+football:
+  active: true
+  markets:
+    - pre_match_1x2
+    - over_under_2_5_goals
+  competitions:
+    - Premier League
+    - Championship
+    - Scottish Premiership
+    - Champions League
+    # Additional competitions may be added only once bookmaker
+    # coverage is confirmed strong (section 4).
+
+tennis:
+  active: true
+  markets:
+    - pre_match_match_winner
+  avoid_markets:
+    - set_betting
+    - game_handicaps
+    - exact_scores
+    - in_play_points
+    - obscure_low_liquidity_tournaments
+
+# Tier 2 — future markets. Do not activate until the Tier 1 workflow
+# (football + tennis) is proven to work end-to-end (section 4).
+basketball:
+  active: false
+  markets:
+    - moneyline
+
+cricket:
+  active: false
+  markets:
+    - match_winner
+
+politics:
+  active: false
+  markets:
+    - major_current_affairs

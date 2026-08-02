@@ -1,0 +1,10 @@
+# PLACEHOLDER — deferred beyond Stage 1.
+#
+# Once ingestion/schema_validation.py exists (Stage 2), this workflow
+# will validate any newly committed data files under data/. Disabled
+# (no `on:` triggers) until then so it does not fail CI.
+
+name: data_validation
+
+on:
+  workflow_dispatch: {}

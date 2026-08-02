@@ -1,0 +1,56 @@
+# Data source configuration, per project instructions section 7.
+# All sources are free-tier or manual; no paid subscriptions.
+
+historical_football:
+  source: "Football-Data.co.uk"
+  format: csv
+  fields:
+    - date
+    - competition
+    - home_team
+    - away_team
+    - home_goals
+    - away_goals
+    - result
+    - bookmaker_odds
+    - opening_odds
+    - closing_odds
+
+current_bookmaker_prices:
+  sources:
+    - "The Odds API (free allowance)"
+    - "manually copied Oddschecker prices"
+    - "manually copied bookmaker prices"
+  input_format: [csv, google_sheets]
+
+exchange_prices:
+  primary: "Smarkets (manual entry)"
+  secondary: "Betfair Exchange (manual entry)"
+  automated_api: false
+
+tennis_data:
+  sources:
+    - "historical ATP/WTA match data"
+    - "ratings"
+    - "surface"
+    - "recent results"
+    - "manual bookmaker prices"
+    - "manual exchange prices"
+
+event_level_information:
+  fields:
+    - injuries
+    - suspensions
+    - confirmed_lineups
+    - withdrawals
+    - surface
+    - rest_days
+    - travel
+    - weather
+    - player_availability
+    - pitch_or_toss_information
+    - polling_information
+
+manual_entry_policy:
+  retain_source: true
+  retain_timestamp: true

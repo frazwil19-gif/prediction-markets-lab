@@ -1,0 +1,16 @@
+# Logging configuration.
+#
+# PLACEHOLDER — deferred beyond Stage 1. utils/logging.py will read
+# this file once the daily-workflow scripts (Stage 2) exist and need
+# structured logging. Stage 1 modules do not log; they raise typed
+# exceptions (ValueError) on invalid input instead.
+
+version: 1
+level: INFO
+format: "%(asctime)s %(levelname)s %(name)s: %(message)s"
+handlers:
+  console:
+    enabled: true
+  file:
+    enabled: false
+    path: "reports/audits/pipeline.log"
