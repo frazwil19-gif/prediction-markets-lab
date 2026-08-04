@@ -1,0 +1,50 @@
+# Categorical buckets for research analysis breakdowns (project
+# instructions section 12). Defined here rather than hard-coded so
+# bucket boundaries can be revisited without touching Python code —
+# but per docs/RESEARCH_ENGINE.md safeguards, do not change these
+# after seeing results without documenting why (that would itself be
+# a form of selecting subgroups after the fact).
+#
+# ASSUMPTION: initial bucket boundaries are reasonable defaults, not
+# derived from any formal analysis. Revisit once there's enough data
+# to check whether these boundaries actually separate meaningfully
+# different regimes.
+
+odds_bands:
+  - { label: "very_short", min: 1.01, max: 1.50 }
+  - { label: "short", min: 1.50, max: 2.00 }
+  - { label: "medium", min: 2.00, max: 3.50 }
+  - { label: "long", min: 3.50, max: 7.00 }
+  - { label: "very_long", min: 7.00, max: null }
+
+favourite_underdog_bands:
+  - { label: "strong_favourite", min_implied_probability: 0.65, max_implied_probability: 1.00 }
+  - { label: "moderate_favourite", min_implied_probability: 0.50, max_implied_probability: 0.65 }
+  - { label: "moderate_underdog", min_implied_probability: 0.35, max_implied_probability: 0.50 }
+  - { label: "strong_underdog", min_implied_probability: 0.00, max_implied_probability: 0.35 }
+
+bookmaker_count_bands:
+  - { label: "thin", min: 1, max: 3 }
+  - { label: "adequate", min: 4, max: 6 }
+  - { label: "strong", min: 7, max: null }
+
+bookmaker_dispersion_bands:
+  # Based on consensus interquartile range (IQR) of margin-free probability.
+  - { label: "tight", max_iqr: 0.02 }
+  - { label: "moderate", max_iqr: 0.05 }
+  - { label: "wide", max_iqr: null }
+
+time_before_event_bands:
+  - { label: "more_than_24h", min_hours: 24, max_hours: null }
+  - { label: "2h_to_24h", min_hours: 2, max_hours: 24 }
+  - { label: "under_2h", min_hours: 0, max_hours: 2 }
+
+grade_bands: ["A+", "A", "B", "C", "Reject"]
+
+confidence_bands: ["High", "Medium", "Low"]
+
+data_quality_bands: ["High", "Medium", "Low"]
+
+liquidity_bands: ["Adequate", "Thin", "Insufficient"]
+
+exchange_bands: ["Smarkets", "Betfair"]
