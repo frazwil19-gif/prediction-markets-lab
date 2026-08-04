@@ -39,8 +39,12 @@ reports/weekly/*
 !reports/weekly/.gitkeep
 reports/monthly/*
 !reports/monthly/.gitkeep
+# Audits are committed deliverables, not transient generated output --
+# only ignore the folder placeholder, not audit reports themselves.
 reports/audits/*
 !reports/audits/.gitkeep
+!reports/audits/*.md
+!reports/audits/*.csv
 
 # Secrets — none should ever exist, but guard anyway
 .env
