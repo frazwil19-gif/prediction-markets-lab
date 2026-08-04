@@ -1,0 +1,46 @@
+# Evidence-grading thresholds for the Research Engine.
+#
+# ASSUMPTION: these are initial research defaults, not derived from any
+# formal power analysis. They are deliberately conservative for a
+# near-£0, phone-operated side project with a very small sample rate.
+# Revisit once the project has enough real out-of-sample/paper history
+# to check whether these thresholds are actually well-calibrated —
+# do not change them silently after seeing results (see
+# docs/RESEARCH_ENGINE.md, Safeguards).
+
+grade_a:
+  min_out_of_sample_observations: 100
+  min_paper_observations: 30
+  require_positive_out_of_sample_result: true
+  require_non_negative_paper_result: true
+  require_positive_clv: true
+  max_calibration_error: 0.05          # e.g. max acceptable |Brier - baseline|
+  confidence_interval_excludes_zero: true
+  require_stability_across_periods: true
+  max_multiple_testing_family_size: 5  # families larger than this need extra scrutiny before Grade A
+
+grade_b:
+  min_out_of_sample_observations: 40
+  min_paper_observations: 10
+  require_promising_out_of_sample_result: true  # positive point estimate, CI may still touch zero
+  allow_limited_sample: true
+
+grade_c:
+  min_out_of_sample_observations: 1
+  note: >
+    Any result that has at least one out-of-sample observation but
+    does not meet Grade B criteria (weak, unstable, or too small a
+    sample) is Grade C — suitable for research monitoring only, never
+    for live or paper staking above watch-list level.
+
+insufficient:
+  note: >
+    No result field populated, or fewer observations than the Grade C
+    floor. This is the default for every newly seeded hypothesis.
+
+multiple_testing:
+  # Until a formal correction (e.g. Benjamini-Hochberg) is implemented
+  # (see docs/RESEARCH_ENGINE.md), families above this size trigger a
+  # documented "extra scepticism" flag in evidence_grading.py rather
+  # than a numeric p-value adjustment.
+  family_size_extra_scrutiny_threshold: 5
