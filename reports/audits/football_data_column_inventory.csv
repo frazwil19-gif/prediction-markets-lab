@@ -1,0 +1,57 @@
+league_code,league_name,season,column_name,category,verified_by
+E0,Premier League,2425,Div,identifier,direct_fetch
+E0,Premier League,2425,Date,identifier,direct_fetch
+E0,Premier League,2425,Time,identifier,direct_fetch
+E0,Premier League,2425,HomeTeam,identifier,direct_fetch
+E0,Premier League,2425,AwayTeam,identifier,direct_fetch
+E0,Premier League,2425,FTHG,result,direct_fetch
+E0,Premier League,2425,FTAG,result,direct_fetch
+E0,Premier League,2425,FTR,result,direct_fetch
+E0,Premier League,2425,HTHG,result,direct_fetch
+E0,Premier League,2425,HTAG,result,direct_fetch
+E0,Premier League,2425,HTR,result,direct_fetch
+E0,Premier League,2425,Referee,match_stats,direct_fetch
+E0,Premier League,2425,HS,match_stats,direct_fetch
+E0,Premier League,2425,AS,match_stats,direct_fetch
+E0,Premier League,2425,HST,match_stats,direct_fetch
+E0,Premier League,2425,AST,match_stats,direct_fetch
+E0,Premier League,2425,HF,match_stats,direct_fetch
+E0,Premier League,2425,AF,match_stats,direct_fetch
+E0,Premier League,2425,HC,match_stats,direct_fetch
+E0,Premier League,2425,AC,match_stats,direct_fetch
+E0,Premier League,2425,HY,match_stats,direct_fetch
+E0,Premier League,2425,AY,match_stats,direct_fetch
+E0,Premier League,2425,HR,match_stats,direct_fetch
+E0,Premier League,2425,AR,match_stats,direct_fetch
+E0,Premier League,2425,B365H/D/A,odds_1x2_opening_bookmaker,direct_fetch
+E0,Premier League,2425,BWH/D/A,odds_1x2_opening_bookmaker,direct_fetch
+E0,Premier League,2425,BFH/D/A,odds_1x2_opening_bookmaker,direct_fetch
+E0,Premier League,2425,PSH/D/A,odds_1x2_opening_bookmaker,direct_fetch
+E0,Premier League,2425,WHH/D/A,odds_1x2_opening_bookmaker,direct_fetch
+E0,Premier League,2425,1XBH/D/A,odds_1x2_opening_bookmaker,direct_fetch
+E0,Premier League,2425,MaxH/D/A,odds_1x2_opening_aggregate,direct_fetch
+E0,Premier League,2425,AvgH/D/A,odds_1x2_opening_aggregate,direct_fetch
+E0,Premier League,2425,BFEH/D/A,odds_1x2_opening_exchange_best,direct_fetch
+E0,Premier League,2425,B365CH/D/A,odds_1x2_closing_bookmaker,direct_fetch
+E0,Premier League,2425,BWCH/D/A,odds_1x2_closing_bookmaker,direct_fetch
+E0,Premier League,2425,BFCH/D/A,odds_1x2_closing_bookmaker,direct_fetch
+E0,Premier League,2425,PSCH/D/A,odds_1x2_closing_bookmaker,direct_fetch
+E0,Premier League,2425,WHCH/D/A,odds_1x2_closing_bookmaker,direct_fetch
+E0,Premier League,2425,1XBCH/D/A,odds_1x2_closing_bookmaker,direct_fetch
+E0,Premier League,2425,MaxCH/D/A,odds_1x2_closing_aggregate,direct_fetch
+E0,Premier League,2425,AvgCH/D/A,odds_1x2_closing_aggregate,direct_fetch
+E0,Premier League,2425,BFECH/D/A,odds_1x2_closing_exchange_best,direct_fetch
+E0,Premier League,2425,B365>2.5/<2.5,odds_totals_opening_bookmaker,direct_fetch
+E0,Premier League,2425,P>2.5/<2.5,odds_totals_opening_bookmaker,direct_fetch
+E0,Premier League,2425,Max>2.5/<2.5,odds_totals_opening_aggregate,direct_fetch
+E0,Premier League,2425,Avg>2.5/<2.5,odds_totals_opening_aggregate,direct_fetch
+E0,Premier League,2425,BFE>2.5/<2.5,odds_totals_opening_exchange_best,direct_fetch
+E0,Premier League,2425,AHh,odds_asian_handicap_line,direct_fetch
+E0,Premier League,2425,B365AHH/A,odds_asian_handicap_opening_bookmaker,direct_fetch
+E0,Premier League,2425,PAHH/A,odds_asian_handicap_opening_bookmaker,direct_fetch
+E0,Premier League,2425,MaxAHH/A,odds_asian_handicap_opening_aggregate,direct_fetch
+E0,Premier League,2425,AvgAHH/A,odds_asian_handicap_opening_aggregate,direct_fetch
+E0,Premier League,2425,BFEAHH/A,odds_asian_handicap_opening_exchange_best,direct_fetch
+E1,Championship,2425,(all E0 columns above),identical_schema,direct_fetch
+SC0,Scottish Premiership,2425,Div/Date/Time/HomeTeam/AwayTeam/FTHG/FTAG/FTR (result fields),result_fields_expected_present,search_cache_fragment_only
+SC0,Scottish Premiership,2425,bookmaker odds columns (full set),unverified_pending_rate_limit,not_yet_confirmed
