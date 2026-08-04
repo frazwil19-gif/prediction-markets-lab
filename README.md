@@ -23,9 +23,9 @@ predictive value. A successful day may produce one qualified trade,
 one or more paper trades, or no trade at all. See
 [`docs/PROJECT_PLAN.md`](docs/PROJECT_PLAN.md) for the full rationale.
 
-## Scope (Stage 1 — this release)
+## Scope
 
-Stage 1 delivers the calculation foundation only:
+**Stage 1 (complete)** delivered the calculation foundation:
 
 - Odds conversion (decimal odds → raw implied probability)
 - Proportional margin removal (V1 default method)
@@ -35,11 +35,29 @@ Stage 1 delivers the calculation foundation only:
 - A+/A/B/C/Reject grading against configurable thresholds
 - Unit tests and sample football/tennis fixtures for all of the above
 
-Stage 1 deliberately does **not** include: API integrations, automated
-bet placement, the daily CLI/report generator, Google Sheets sync, or
-any sport-specific probability model (Elo, Poisson, etc.). These are
-represented in the repository as documented placeholder modules and
-scheduled in [`docs/ROADMAP.md`](docs/ROADMAP.md).
+**Stage 2 (complete)** added the manual workflow and research
+governance layer:
+
+- **Corrected** per-bookmaker margin removal (see "How fair
+  probabilities are calculated" below — an earlier version of the
+  daily shortlist script had a bug here; it's fixed and tested)
+- Manual odds/exchange CSV ingestion, daily report generation, trade
+  settlement scripts
+- Google Sheets workbook (operational + research tabs)
+- Research Engine: Hypothesis Registry, Behaviour Atlas, evidence
+  grading, research prioritisation (see "Research Engine status"
+  below)
+
+**Stage 3 (not started)**: historical data acquisition, sport-specific
+probability models (Elo, Poisson), chronological backtesting,
+calibration analysis. No historical data has been acquired yet — see
+"Known limitations" below.
+
+Deliberately **not** included at any stage so far: paid API
+integrations, automated bet placement, machine learning, or a web
+dashboard. See [`docs/ROADMAP.md`](docs/ROADMAP.md) for the full plan
+and [`docs/ARCHITECTURE_FREEZE_V1.md`](docs/ARCHITECTURE_FREEZE_V1.md)
+for the current change-control policy on adding new modules.
 
 ## Cost constraints
 
@@ -148,17 +166,32 @@ will be wired up to `ingestion/manual_odds_loader.py` and
 ## How fair probabilities are calculated
 
 See [`docs/PROBABILITY_METHODOLOGY.md`](docs/PROBABILITY_METHODOLOGY.md)
-for full detail. Summary:
+for full detail. Summary of the **corrected** pipeline
+(`probability.market_pipeline.compute_market_consensus`):
 
-1. Convert each bookmaker's decimal odds to raw implied probability:
+1. Group all odds by **bookmaker**, not just by selection — margin
+   removal requires one bookmaker's full outcome set together.
+2. For each bookmaker, convert decimal odds to raw implied probability:
    `q_i = 1 / O_i`
-2. Remove each bookmaker's margin proportionally:
+3. Remove that bookmaker's margin proportionally:
    `p_i = q_i / Σ q_j`
-3. Take the cross-bookmaker **median** as the V1 consensus estimate
-   (also reports mean, weighted mean, std dev, min, max, IQR, and
-   bookmaker count)
+4. Reject any bookmaker that did not quote every expected outcome for
+   the market — an incomplete market cannot have its margin correctly
+   removed, and is excluded rather than silently treated as valid.
+5. Take the cross-bookmaker **median** of the remaining margin-free
+   probabilities as the V1 consensus estimate (also reports mean,
+   weighted mean, std dev, min, max, IQR, and bookmaker count).
+
+**Note on history:** an earlier version of
+`scripts/generate_daily_shortlist.py` computed "consensus" from raw
+implied probabilities grouped only by outcome, without ever removing
+bookmaker margin. This has been corrected (see CHANGELOG.md) and is
+covered by tests proving the fix against hand-calculated examples
+(`tests/unit/test_market_pipeline.py`).
+
 4. (Stage 3+) Blend consensus with a category-specific model using
-   configured weights to produce a final probability
+   configured weights to produce a final probability — not yet
+   implemented; no model exists yet.
 
 ## How EV is calculated
 
@@ -199,23 +232,73 @@ pytest
 All Stage 1 unit tests should pass with no network access and no API
 keys.
 
-## Known limitations (Stage 1)
+## Research Engine status
 
-- No live data ingestion — everything is calculation logic plus
-  sample fixtures.
+Stage 2 added a lightweight research-governance layer
+(see [`docs/RESEARCH_ENGINE.md`](docs/RESEARCH_ENGINE.md)) so the
+project can distinguish a genuinely repeatable edge from noise, rather
+than only looping "collect odds → calculate EV → place bets → track
+profit". Current status:
+
+- **Hypothesis Registry**
+  (`research/hypotheses/hypothesis_registry.csv`): 11 seeded
+  hypotheses (6 football, 5 tennis), all at status `IDEA` or
+  `DATA_REQUIRED`. **None have been tested. None are validated. None
+  should be treated as a trading signal.**
+- **Behaviour Atlas** (`research/behaviours/behaviour_atlas.csv`):
+  intentionally empty — no hypothesis has yet earned enough evidence
+  to graduate into a tracked behaviour. An empty atlas is the correct
+  state at this point, not a bug.
+- **Research module**
+  (`src/prediction_markets_lab/research/`): schemas, registry,
+  behaviour atlas, hypothesis validation, evidence grading, and
+  research prioritisation are implemented and tested — the machinery
+  for running a research cycle exists, but no research cycle has been
+  run yet.
+- **No historical data has been acquired or audited yet.** Stage 3
+  (data acquisition, baseline models, backtesting) has not started.
+
+**No edge has been validated. No hypothesis has been promoted. Nothing
+in this repository currently supports a real-money betting decision
+beyond the basic commission-adjusted EV arithmetic on a single quoted
+price.**
+
+## Google Sheets workbook status
+
+A workbook (`Prediction Markets Lab.xlsx`) containing all 15 tabs (10
+operational + 5 research: Hypotheses, Behaviour Atlas, Research Runs,
+Research Priorities, Model Registry) has been generated, recalculated
+with zero formula errors, and uploaded to Google Drive. Open it from
+Drive and choose "Open with Google Sheets" to edit it as a native
+Sheet on desktop or mobile.
+
+## Known limitations
+
+- No live data ingestion — everything is calculation logic, sample
+  fixtures, and (for research) seeded-but-untested hypotheses.
 - No sport-specific probability model yet (`P_model` is not
-  implemented); only the margin-free bookmaker consensus is
+  implemented); only the corrected, margin-free bookmaker consensus is
   calculated end-to-end.
 - Confidence, data-quality, and liquidity scores are boolean/manual
-  inputs in Stage 1, not automated numeric scores.
+  inputs in Stage 1–2, not automated numeric scores.
 - Bookmaker list (`config/bookmakers.yaml`) and commission rates
   (`config/commissions.yaml`) are placeholders/assumptions — verify
   before relying on them for a real decision.
-- No CLI, no report generator, no Google Sheets sync yet.
+- No CLI beyond the Stage 2 scripts (`scripts/generate_daily_shortlist.py`,
+  `scripts/import_manual_odds.py`, `scripts/settle_results.py`).
 - Grade C's exact boundary (a "watchlist" floor below Grade B) is not
   specified in the original brief; a conservative default
   (`grade_c_min_net_ev: 0.00`) has been assumed and documented in
   `config/thresholds.yaml`.
+- No historical football/tennis data has been acquired yet — Stage 3
+  (data acquisition, Elo/Poisson baselines, chronological backtesting)
+  has not started. A bounded data-feasibility audit against
+  Football-Data.co.uk is the immediate next step; see
+  `reports/audits/FOOTBALL_DATA_FEASIBILITY.md` once it exists.
+- The Research Engine's evidence-grading thresholds
+  (`config/research_thresholds.yaml`) are initial research defaults,
+  not derived from a formal power analysis — revisit once real
+  out-of-sample/paper history exists.
 
 ## Roadmap
 
