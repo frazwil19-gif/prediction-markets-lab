@@ -1,0 +1,122 @@
+name: Cycle 1 Data Acquisition
+
+# Manually triggered ONLY. Never runs on push or a schedule -- this is
+# a bounded, one-shot research job (project instructions: architecture
+# freeze permits this only because it solves a proven, named research
+# requirement -- obtaining the full historical dataset without
+# requiring a laptop -- not as general-purpose CI/CD).
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Plan the run without downloading anything"
+        type: boolean
+        default: false
+      competitions:
+        description: "Comma-separated competition codes (blank = all: E0,E1,SC0)"
+        type: string
+        default: ""
+      seasons:
+        description: "Comma-separated seasons (blank = all 5 target seasons)"
+        type: string
+        default: ""
+      request_delay_seconds:
+        description: "Seconds between requests (conservative default)"
+        type: string
+        default: "6"
+      resume_existing:
+        description: "Skip files already present with a matching hash"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install -e .
+
+      - name: Run the complete test suite first
+        run: pytest -q
+
+      - name: Build acquisition command
+        id: build_cmd
+        run: |
+          CMD="python scripts/run_cycle_001_data_acquisition.py"
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            CMD="$CMD --dry-run"
+          fi
+          if [ "${{ inputs.resume_existing }}" = "true" ]; then
+            CMD="$CMD --resume"
+          fi
+          if [ -n "${{ inputs.competitions }}" ]; then
+            IFS=',' read -ra COMPS <<< "${{ inputs.competitions }}"
+            for c in "${COMPS[@]}"; do CMD="$CMD --competition $c"; done
+          fi
+          if [ -n "${{ inputs.seasons }}" ]; then
+            IFS=',' read -ra SEASONS <<< "${{ inputs.seasons }}"
+            for s in "${SEASONS[@]}"; do CMD="$CMD --season $s"; done
+          fi
+          CMD="$CMD --request-delay-seconds ${{ inputs.request_delay_seconds }}"
+          echo "cmd=$CMD" >> "$GITHUB_OUTPUT"
+
+      - name: Run acquisition (paced, may take several minutes)
+        run: ${{ steps.build_cmd.outputs.cmd }}
+
+      - name: Validate the acquired bundle
+        if: ${{ inputs.dry_run != 'true' }}
+        run: python scripts/validate_cycle_001_data_bundle.py
+
+      - name: Upload manifest and data version (small, always uploaded)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cycle_001-manifest-and-version
+          path: |
+            reports/audits/football_data_manifest.csv
+            data/processed/football/cycle_001_data_version.json
+          if-no-files-found: warn
+
+      - name: Upload audit reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cycle_001-audit-reports
+          path: reports/audits/**
+          if-no-files-found: warn
+
+      - name: Upload processed datasets and samples
+        if: ${{ inputs.dry_run != 'true' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: cycle_001-processed-data
+          path: |
+            data/processed/football/**
+            data/samples/**
+          if-no-files-found: warn
+
+      # Raw historical CSVs are NOT committed to the repository (see
+      # research/cycles/CYCLE_001/DECISION_LOG.md) -- they are preserved
+      # only as a workflow artifact, to avoid repository bloat.
+      - name: Upload raw source files
+        if: ${{ inputs.dry_run != 'true' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: cycle_001-raw-files
+          path: data/raw/football/**
+          if-no-files-found: warn
+          retention-days: 90
