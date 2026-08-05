@@ -3,6 +3,56 @@
 All notable changes to this project are documented here. Format is
 loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.4.0] — Stage 3A: pipeline validated, full acquisition pending
+
+**Status: STAGE 3A PIPELINE VALIDATED — FULL DATASET ACQUISITION PENDING.**
+
+### Added
+
+- Feasibility audit confirming Football-Data.co.uk access for E0, E1
+  (direct fetch) and SC0 (full 2024/25 season verified live, identical
+  schema).
+- `ingestion.football_data_loader` — paced, retry/backoff-aware,
+  HTML-error-rejecting, hash-verifying, atomic-write acquisition
+  loader. 15 mocked-HTTP tests (cannot be tested against the live site
+  from this project's own CI, per project instructions).
+- `ingestion.football_bookmaker_extraction` — reconstructs
+  per-bookmaker H/D/A triplets, separates opening/closing, rejects
+  incomplete triplets, never counts Avg*/Max* as a bookmaker. Verified
+  against genuine historical rows including a real missing-bookmaker
+  case.
+- `normalisation.team_names` / `competition_names` + `config/football_team_aliases.yaml`
+  (76 real aliases seeded from observed data).
+- `ingestion.match_identity` — deterministic match IDs, 5-way duplicate
+  classification.
+- `validation.time_splits` / `leakage_checks` — chronological split
+  enforcement and reusable leakage guards for future model code.
+- Canonical schemas: `HistoricalMatchRecord`,
+  `HistoricalBookmakerMarketRecord`, `HistoricalConsensusRecord`.
+- `docs/DATA_LEAKAGE_RULES.md`, `docs/HISTORICAL_PRICE_AND_CLV_LIMITATIONS.md`
+  (defines `proxy_clv` vs `true_execution_clv` — Football-Data prices
+  are never to be reported as true exchange execution CLV).
+- **29-match excerpt validation** (E0×10, E1×10, SC0×9), verbatim from
+  live fetches, real SHA-256 hashes — proves the full pipeline
+  (loader → extraction → normalisation → consensus) end-to-end.
+  **Explicitly not the Cycle 1 dataset** — all artifacts under
+  `excerpt_validation/` paths / `EXCERPT_VALIDATION_ONLY` suffixes.
+- `research/cycles/CYCLE_001/` — CYCLE_PLAN.md, CYCLE_CONFIG.yaml,
+  DECISION_LOG.md, HYPOTHESIS_SELECTION.csv, DATA_SPLIT_PLAN.md,
+  DATA_FEASIBILITY_DECISIONS.md (all provisional pending full
+  acquisition).
+
+### Not done in this release
+
+- Full 5-season × 3-competition acquisition (~15 files).
+- Frozen `data_version`.
+- Confirmed chronological split with real row counts.
+- Any hypothesis test, model, or Behaviour Atlas entry.
+
+### Test suite
+
+179 (Stage 2) → **229 tests passing**, 0 failures.
+
 ## [0.3.0] — Stage 2 completion + Research Engine
 
 ### Fixed

@@ -32,24 +32,46 @@
   **none tested, none validated**
 - `docs/ARCHITECTURE_FREEZE_V1.md` — change-control policy for Stage 3+
 
-## Stage 3 — Historical data, baseline models, first research cycle (ACTIVE, NOT STARTED)
+## Stage 3A — Historical data acquisition and dataset freeze
 
-**Immediate next step: a bounded data-feasibility audit** against
-Football-Data.co.uk (English Premier League, Championship, Scottish
-Premiership) to determine exactly what historical data is genuinely
-accessible and consistent, before defining the final Cycle 1 dataset
-or writing any model code. See `research/cycles/CYCLE_001/` once
-created.
+**STATUS: STAGE 3A PIPELINE VALIDATED — FULL DATASET ACQUISITION PENDING**
 
-Full Stage 3 scope (only after the feasibility audit confirms
-viability):
+Completed:
+- Feasibility audit against Football-Data.co.uk (E0, E1 confirmed;
+  SC0 subsequently confirmed via full live fetch of the 2024/25
+  season — see `reports/audits/FOOTBALL_DATA_FEASIBILITY.md`).
+- Production loader (`ingestion/football_data_loader.py`): paced
+  requests, retry/backoff, HTML-error rejection, SHA-256 hashing,
+  atomic no-silent-overwrite writes. 15 mocked-HTTP tests.
+- Bookmaker H/D/A triplet extraction, team/competition normalisation,
+  deterministic match identity + duplicate classification,
+  chronological split + leakage-prevention helpers, canonical
+  processed schemas (`HistoricalMatchRecord`,
+  `HistoricalBookmakerMarketRecord`, `HistoricalConsensusRecord`).
+- Full pipeline validated end-to-end against **29 genuine historical
+  matches** (E0×10, E1×10, SC0×9) — all artifacts explicitly labelled
+  `EXCERPT_VALIDATION_ONLY` and kept under `excerpt_validation/` paths.
 
-- Football-Data.co.uk loader with full audit trail (source
-  files/timestamps retained, duplicates/incomplete markets rejected
-  not silently dropped)
-- Team-name and competition-name normalisation
-- Chronological time-split helpers + leakage-prevention checks
-  (`docs/DATA_LEAKAGE_RULES.md`)
+**Not yet done — this is the actual remaining Stage 3A work:**
+- The complete 5-season × 3-competition acquisition (~15 files,
+  ~1,700+ matches) has **not** run.
+- No `data_version` is frozen (only the excerpt-scale
+  `cycle_001_v0.1.0-partial` exists, itself explicitly marked partial).
+- The chronological split plan (`research/cycles/CYCLE_001/DATA_SPLIT_PLAN.md`)
+  is provisional, not confirmed against real full-season row counts.
+- **No hypothesis has been tested. No model exists. The Behaviour
+  Atlas remains empty — correctly so.**
+
+**Path forward:** a manually-triggered GitHub Actions workflow
+(`.github/workflows/cycle_001_data_acquisition.yml`) runs the full
+acquisition, since this project's own sandboxed environment has no
+general network egress to football-data.co.uk and the project must
+remain operable without a laptop. See
+`docs/PHONE_ONLY_DATA_ACQUISITION.md`.
+
+Full Stage 3B scope (only after the full dataset is acquired and
+validated):
+
 - Baseline 0 (margin-free market consensus — already implemented),
   Baseline 1 (Elo), Baseline 2 (Poisson), Baseline 3 (conservative
   blend) — all with model cards and explicit versioning

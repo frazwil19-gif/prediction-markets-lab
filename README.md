@@ -48,10 +48,18 @@ governance layer:
   grading, research prioritisation (see "Research Engine status"
   below)
 
-**Stage 3 (not started)**: historical data acquisition, sport-specific
-probability models (Elo, Poisson), chronological backtesting,
-calibration analysis. No historical data has been acquired yet — see
-"Known limitations" below.
+**Stage 3A status: STAGE 3A PIPELINE VALIDATED — FULL DATASET
+ACQUISITION PENDING.** Scottish Premiership feasibility confirmed;
+loader, bookmaker-extraction, normalisation, chronological-split, and
+canonical-schema pipeline validated end-to-end against 29 genuine
+historical matches (`data/samples/excerpt_validation/`). The complete
+5-season × 3-competition dataset (~15 files) has **not** been
+acquired; no data version is frozen; no model exists; no hypothesis
+has been tested; the Behaviour Atlas remains empty. See
+`research/cycles/CYCLE_001/CYCLE_PLAN.md` for full detail and
+`docs/PHONE_ONLY_DATA_ACQUISITION.md` for how the full acquisition is
+intended to run (a manually-triggered GitHub Actions workflow, since
+this project must remain operable without a laptop).
 
 Deliberately **not** included at any stage so far: paid API
 integrations, automated bet placement, machine learning, or a web
@@ -255,8 +263,10 @@ profit". Current status:
   research prioritisation are implemented and tested — the machinery
   for running a research cycle exists, but no research cycle has been
   run yet.
-- **No historical data has been acquired or audited yet.** Stage 3
-  (data acquisition, baseline models, backtesting) has not started.
+- **No historical data has been acquired at full scale yet.** Stage 3A
+  pipeline validated against a 29-match excerpt; full 5-season ×
+  3-competition acquisition pending (see
+  `research/cycles/CYCLE_001/CYCLE_PLAN.md`).
 
 **No edge has been validated. No hypothesis has been promoted. Nothing
 in this repository currently supports a real-money betting decision
@@ -290,11 +300,13 @@ Sheet on desktop or mobile.
   specified in the original brief; a conservative default
   (`grade_c_min_net_ev: 0.00`) has been assumed and documented in
   `config/thresholds.yaml`.
-- No historical football/tennis data has been acquired yet — Stage 3
-  (data acquisition, Elo/Poisson baselines, chronological backtesting)
-  has not started. A bounded data-feasibility audit against
-  Football-Data.co.uk is the immediate next step; see
-  `reports/audits/FOOTBALL_DATA_FEASIBILITY.md` once it exists.
+- Historical football data acquisition: STAGE 3A PIPELINE VALIDATED —
+  FULL DATASET ACQUISITION PENDING. Pipeline proven end-to-end against
+  a 29-match excerpt (`data/samples/excerpt_validation/`); the full
+  ~15-file, 5-season dataset has not been acquired, no data version is
+  frozen, and no model or hypothesis test has been run. See
+  `research/cycles/CYCLE_001/CYCLE_PLAN.md` and
+  `docs/PHONE_ONLY_DATA_ACQUISITION.md`.
 - The Research Engine's evidence-grading thresholds
   (`config/research_thresholds.yaml`) are initial research defaults,
   not derived from a formal power analysis — revisit once real
