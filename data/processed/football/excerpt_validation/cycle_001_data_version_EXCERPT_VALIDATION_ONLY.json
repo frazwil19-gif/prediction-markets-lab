@@ -1,0 +1,36 @@
+{
+  "data_version": "cycle_001_v0.1.0-partial",
+  "created_at": "2026-08-05T09:32:15Z",
+  "status": "PARTIAL -- excerpt-scale pipeline validation, NOT the full Cycle 1 dataset",
+  "source_manifest_path": "reports/audits/football_data_manifest.csv",
+  "raw_file_count": 3,
+  "raw_file_count_full_season_target": 15,
+  "competition_list": ["E0", "E1", "SC0"],
+  "season_list_acquired": ["2024_25"],
+  "season_list_target": ["2020_21", "2021_22", "2022_23", "2023_24", "2024_25"],
+  "row_counts": {
+    "matches": 29,
+    "bookmaker_market_rows": 348,
+    "consensus_rows": 58
+  },
+  "exclusion_counts": {
+    "outcome_ineligible": 0,
+    "consensus_ineligible": 0
+  },
+  "schema_version": "footballdata_2024_25_e0_e1_sc0_v1",
+  "code_commit_hash": "15521091942c01a380b1b2f6415fc822fdf81b2e",
+  "configuration_hash": "n/a -- no config file hash computed in this partial run",
+  "processing_parameters": {
+    "margin_removal_method": "proportional",
+    "consensus_estimator": "median",
+    "min_bookmakers_for_consensus_eligibility": 4,
+    "known_bookmaker_prefixes": ["B365", "BW", "BF", "PS", "WH", "1XB"]
+  },
+  "known_limitations": [
+    "This is a 29-match excerpt (9-10 rows per competition), not a complete season -- complete Premier League/Championship seasons have ~380 matches, Scottish Premiership ~228.",
+    "Only 2024/25 season acquired; 2020/21-2023/24 not yet downloaded.",
+    "Team alias table (config/football_team_aliases.yaml) is seeded only from teams seen in this excerpt -- will need extension for promoted/relegated clubs across the full 5-season window.",
+    "Duplicate detection, schema inventory, and bookmaker coverage have only been validated at excerpt scale, not full-season/multi-season scale.",
+    "This data_version must be treated as immutable once referenced; a full acquisition run must create a NEW data_version (e.g. cycle_001_v1.0.0), never silently overwrite this one."
+  ]
+}
