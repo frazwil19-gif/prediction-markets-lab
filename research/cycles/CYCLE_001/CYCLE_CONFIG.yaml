@@ -1,0 +1,44 @@
+# Cycle 1 research-level configuration.
+#
+# This is distinct from config/cycle_001_data.yaml, which configures
+# the data ACQUISITION process itself (URLs, pacing, retries). This
+# file configures the RESEARCH scope of Cycle 1: which hypotheses are
+# in scope, which grading thresholds apply, and where the frozen
+# dataset will live once acquisition completes.
+
+cycle_id: CYCLE_001
+status: STAGE_3A_PIPELINE_VALIDATED_FULL_ACQUISITION_PENDING
+
+market_scope:
+  sport: football
+  market_type: pre_match_1x2
+  competitions: [E0, E1, SC0]
+
+selected_hypotheses:
+  - hypothesis_id: H-FB-002
+    behaviour_name: bookmaker disagreement predicts later movement
+    data_feasibility: TESTABLE_AS_DEFINED
+  - hypothesis_id: H-FB-004
+    behaviour_name: short-rest/schedule-congestion effects
+    data_feasibility: TESTABLE_AS_DEFINED
+  - hypothesis_id: H-FB-001
+    behaviour_name: popular-favourite overpricing
+    data_feasibility: TESTABLE_WITH_PROXY
+    note: requires a pre-registered popularity proxy before backtesting
+  # H-FB-003 (exchange-price value) deliberately excluded from Cycle 1
+  # -- confirmed DATA_REQUIRED, not testable from Football-Data.co.uk.
+
+data_acquisition_config_ref: config/cycle_001_data.yaml
+data_version_path: data/processed/football/cycle_001_data_version.json
+data_version_frozen: false
+
+grading_thresholds_ref: config/research_thresholds.yaml
+metrics_buckets_ref: config/research_metrics_buckets.yaml
+
+# Explicitly forbidden in this cycle's current phase (Stage 3A):
+forbidden_activities:
+  - model_fitting
+  - hypothesis_profitability_testing
+  - paper_trading
+  - live_betting
+  - behaviour_atlas_promotion
