@@ -23,12 +23,20 @@ env/
 
 # Data — real odds/results data should not be committed; keep only
 # samples/ and fixtures/ under version control.
+# Data — real LIVE odds/results data (bookmaker/exchange scrapes for
+# daily trading) should not be committed; keep only samples/ and
+# fixtures/ for that. Historical RESEARCH datasets acquired for Cycle
+# 1 (data/raw/football/, data/processed/football/) ARE committed
+# deliverables with tracked hashes -- see reports/audits/
+# football_data_manifest.csv -- so they are explicitly allowed through.
 data/raw/*
 !data/raw/.gitkeep
+!data/raw/football/
 data/interim/*
 !data/interim/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
+!data/processed/football/
 data/external/*
 !data/external/.gitkeep
 
@@ -45,6 +53,8 @@ reports/audits/*
 !reports/audits/.gitkeep
 !reports/audits/*.md
 !reports/audits/*.csv
+!reports/audits/excerpt_validation/
+!reports/audits/excerpt_validation/**
 
 # Secrets — none should ever exist, but guard anyway
 .env

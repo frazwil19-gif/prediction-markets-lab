@@ -1,0 +1,2 @@
+raw_team_name,competition_code,season,occurrences,notes
+NONE,ALL,2024_25,0,"All 40 distinct home/away team names appearing in the 29-row excerpt sample resolved successfully via config/football_team_aliases.yaml. This alias table is seeded ONLY from teams observed in the 2024/25 excerpts -- team names from other seasons (promoted/relegated clubs, e.g. any club in the Championship/Premier League playoff picture across 2020-2024) will very likely appear unresolved once full multi-season acquisition runs; this file must be re-generated at that point, not assumed complete now."
