@@ -1,0 +1,67 @@
+# Cycle 1 data acquisition configuration.
+#
+# No values here are hard-coded in scripts/run_cycle_001_data_acquisition.py
+# -- everything the acquisition run needs is read from this file, per
+# project coding standards (no magic numbers).
+
+source:
+  base_url: "https://www.football-data.co.uk/mmz4281"
+  # A descriptive, honest user agent -- not spoofed as a browser.
+  user_agent: >-
+    PredictionMarketsLab/0.1 (personal research project; see
+    docs/DATA_LEAKAGE_RULES.md and
+    docs/HISTORICAL_PRICE_AND_CLV_LIMITATIONS.md)
+
+competitions:
+  - code: E0
+    name: Premier League
+    country: England
+  - code: E1
+    name: Championship
+    country: England
+  - code: SC0
+    name: Scottish Premiership
+    country: Scotland
+
+seasons:
+  # Human-readable season -> Football-Data's compact code, via
+  # ingestion.football_data_loader.season_to_footballdata_code.
+  - "2020_21"
+  - "2021_22"
+  - "2022_23"
+  - "2023_24"
+  - "2024_25"
+
+expected_raw_file_count: 15  # 3 competitions x 5 seasons
+
+pacing:
+  request_delay_seconds: 6.0
+  max_retries: 4
+  initial_backoff_seconds: 10.0
+  backoff_multiplier: 2.0
+  request_timeout_seconds: 30.0
+
+validation:
+  min_bookmakers_for_consensus_eligibility: 4
+  min_decimal_odds: 1.01
+  max_plausible_overround: 0.35
+  known_bookmaker_prefixes: [B365, BW, BF, PS, WH, "1XB"]
+
+schema:
+  canonical_schema_version: "footballdata_v1"
+
+output_paths:
+  raw_root: "data/raw/football/football_data_co_uk"
+  processed_root: "data/processed/football"
+  samples_root: "data/samples"
+  reports_root: "reports/audits"
+  manifest_path: "reports/audits/football_data_manifest.csv"
+  data_version_path: "data/processed/football/cycle_001_data_version.json"
+
+split_plan:
+  # Provisional -- see research/cycles/CYCLE_001/DATA_SPLIT_PLAN.md.
+  # Confirmed only once full acquisition completes and real per-season
+  # row counts are known.
+  training_seasons: ["2020_21", "2021_22", "2022_23"]
+  validation_seasons: ["2023_24"]
+  final_test_season: "2024_25"
