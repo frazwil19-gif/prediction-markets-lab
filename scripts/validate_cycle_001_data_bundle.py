@@ -77,6 +77,16 @@ def validate(config: dict, data_root: Path, reports_root: Path) -> tuple[str, li
         content = local_path.read_text(encoding="utf-8", errors="replace")
         if looks_like_html(content):
             critical.append(f"raw file looks like an HTML error page: {local_path}")
+        recorded_hash = row.get("sha256")
+        if recorded_hash:
+            from prediction_markets_lab.ingestion.football_data_loader import compute_sha256
+
+            actual_hash = compute_sha256(content)
+            if actual_hash != recorded_hash:
+                critical.append(
+                    f"hash mismatch for {local_path}: manifest records {recorded_hash}, "
+                    f"actual content hashes to {actual_hash} -- file may have been modified in place"
+                )
 
     version_path = data_root / "processed" / "football" / "cycle_001_data_version.json"
     if not version_path.exists():

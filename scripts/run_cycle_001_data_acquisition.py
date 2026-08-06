@@ -247,10 +247,15 @@ def run(argv: list[str]) -> int:
                 "processed_at": processed_at, "data_version": data_version,
             })
 
+        try:
+            local_path_str = str(dest_path.relative_to(REPO_ROOT))
+        except ValueError:
+            local_path_str = str(dest_path)
+
         manifest_rows.append({
             "source_id": f"{code}_{season}", "competition_code": code, "season": season,
             "source_url": f"{acquisition_cfg.base_url}/{footballdata_code}/{code}.csv",
-            "local_path": str(dest_path.relative_to(REPO_ROOT)) if dest_path.is_absolute() else str(dest_path),
+            "local_path": local_path_str,
             "row_count": len(rows), "column_count": len(rows[0]) if rows else 0,
             "validation_status": "OK",
         })
@@ -288,10 +293,10 @@ def run(argv: list[str]) -> int:
     print("\n=== Acquisition summary ===")
     print(json.dumps(asdict(summary), indent=2))
 
-    if summary.files_acquired + summary.files_skipped_resume < config["expected_raw_file_count"]:
+    if summary.files_acquired + summary.files_skipped_resume < len(targets):
         print(
             f"\nCRITICAL: only {summary.files_acquired + summary.files_skipped_resume} of "
-            f"{config['expected_raw_file_count']} expected files were acquired."
+            f"{len(targets)} planned target(s) for this invocation were acquired."
         )
         return 1
 

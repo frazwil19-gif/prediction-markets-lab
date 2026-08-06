@@ -96,3 +96,95 @@ def test_acquisition_config_yaml_split_plan_chronological():
     assert split["final_test_season"] == "2024_25"
     assert split["final_test_season"] not in split["training_seasons"]
     assert split["final_test_season"] not in split["validation_seasons"]
+
+
+def test_resume_skips_network_when_file_already_present(script_module, tmp_path, monkeypatch):
+    """--resume must skip re-downloading a file that already exists on
+    disk, and must not require any network call to do so."""
+    raw_dir = tmp_path / "football" / "football_data_co_uk" / "E0" / "2024_25"
+    raw_dir.mkdir(parents=True)
+    (raw_dir / "E0.csv").write_text("Div,Date,HomeTeam,AwayTeam,FTR\nE0,16/08/2024,A,B,H\n")
+
+    def _should_not_be_called(*args, **kwargs):
+        raise AssertionError("fetch_one must not be called when --resume finds an existing file")
+
+    monkeypatch.setattr(script_module, "fetch_one", _should_not_be_called)
+
+    exit_code = script_module.run([
+        "--resume", "--competition", "E0", "--season", "2024_25",
+        "--output-root", str(tmp_path), "--reports-root", str(tmp_path / "reports"),
+    ])
+    assert exit_code == 0
+
+
+def test_expected_file_count_gate_uses_planned_targets_not_global_total(script_module, tmp_path, monkeypatch):
+    """A filtered, single-file run must gate on its OWN planned target
+    count (1), not the global 15-file expectation -- otherwise every
+    filtered/partial run would spuriously fail this gate."""
+    raw_dir = tmp_path / "football" / "football_data_co_uk" / "E0" / "2024_25"
+    raw_dir.mkdir(parents=True)
+    (raw_dir / "E0.csv").write_text("Div,Date,HomeTeam,AwayTeam,FTR\nE0,16/08/2024,A,B,H\n")
+
+    exit_code = script_module.run([
+        "--resume", "--competition", "E0", "--season", "2024_25",
+        "--output-root", str(tmp_path), "--reports-root", str(tmp_path / "reports"),
+    ])
+    assert exit_code == 0  # 1 of 1 planned targets satisfied via resume
+
+
+def test_expected_file_count_gate_fails_when_targets_missing(script_module, tmp_path, monkeypatch):
+    """If a planned target has neither an existing file nor a successful
+    fetch, the run must exit non-zero. The HTTP layer is mocked so this
+    test never makes a real network call."""
+    import urllib.error
+
+    class FailingClient:
+        def __init__(self, *args, **kwargs):
+            pass
+
+        def get(self, url):
+            raise urllib.error.URLError("mocked network failure -- no live calls in tests")
+
+    monkeypatch.setattr(script_module, "HttpClient", FailingClient)
+
+    exit_code = script_module.run([
+        "--competition", "E0", "--season", "2024_25",
+        "--request-delay-seconds", "0", "--max-retries", "0",
+        "--output-root", str(tmp_path), "--reports-root", str(tmp_path / "reports"),
+    ])
+    assert exit_code == 1
+
+
+def test_workflow_is_workflow_dispatch_only():
+    """The GitHub Actions workflow must never run on push or a schedule
+    -- only a manual trigger, per the architecture-freeze justification
+    (a bounded, manually-triggered research job, not continuous CI)."""
+    workflow_path = REPO_ROOT / ".github" / "workflows" / "cycle_001_data_acquisition.yml"
+    with open(workflow_path) as f:
+        workflow = yaml.safe_load(f)
+    triggers = workflow.get(True, workflow.get("on"))
+    assert list(triggers.keys()) == ["workflow_dispatch"]
+
+
+def test_workflow_requires_no_secrets():
+    workflow_path = REPO_ROOT / ".github" / "workflows" / "cycle_001_data_acquisition.yml"
+    content = workflow_path.read_text()
+    assert "secrets." not in content
+
+
+def test_workflow_does_not_reference_any_paid_api_or_betting_execution():
+    workflow_path = REPO_ROOT / ".github" / "workflows" / "cycle_001_data_acquisition.yml"
+    content = workflow_path.read_text().lower()
+    for forbidden in ("smarkets", "betfair api", "place_bet", "execute_trade", "paid_api"):
+        assert forbidden not in content
+
+
+def test_no_model_or_betting_execution_code_exists_in_repo():
+    """Stage 3A must not have quietly introduced Elo/Poisson model code
+    or any live execution path -- these remain out of scope."""
+    models_dir = REPO_ROOT / "src" / "prediction_markets_lab" / "models"
+    elo_file = models_dir / "football_elo.py"
+    poisson_file = models_dir / "football_poisson.py"
+    for path in (elo_file, poisson_file):
+        content = path.read_text()
+        assert "PLACEHOLDER" in content, f"{path} must remain an unimplemented placeholder in Stage 3A"

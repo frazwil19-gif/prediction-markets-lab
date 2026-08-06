@@ -147,3 +147,71 @@ def test_write_report_produces_expected_file(tmp_path: Path):
     report = (tmp_path / "CYCLE_001_DATA_BUNDLE_VALIDATION.md").read_text()
     assert "**Result: VALID**" in report
     assert "_None._" in report
+
+
+def test_hash_mismatch_detected_as_invalid(tmp_path: Path):
+    """If a raw file's content no longer matches its recorded manifest
+    hash, that indicates the raw file was modified in place -- which
+    must never happen (project instructions: raw files are immutable).
+    """
+    module = load_script_module()
+    reports_root = tmp_path / "reports"
+    raw_dir = tmp_path / "raw"
+    raw_dir.mkdir(parents=True)
+    csv_path = raw_dir / "E0.csv"
+    csv_path.write_text("Div,Date\nE0,01/01/2024\n")
+
+    from prediction_markets_lab.ingestion.football_data_loader import compute_sha256
+
+    wrong_hash = compute_sha256("this is not the real content")
+    write_manifest(reports_root, [{
+        "competition_code": "E0", "season": "2024_25", "local_path": str(csv_path), "sha256": wrong_hash,
+    }])
+    result, critical, warnings = module.validate(minimal_config(), tmp_path, reports_root)
+    assert result == "INVALID"
+    assert any("hash mismatch" in c for c in critical)
+
+
+def test_hash_match_passes(tmp_path: Path):
+    module = load_script_module()
+    reports_root = tmp_path / "reports"
+    raw_dir = tmp_path / "raw"
+    raw_dir.mkdir(parents=True)
+    csv_path = raw_dir / "E0.csv"
+    content = "Div,Date\nE0,01/01/2024\n"
+    csv_path.write_text(content)
+
+    from prediction_markets_lab.ingestion.football_data_loader import compute_sha256
+
+    write_manifest(reports_root, [{
+        "competition_code": "E0", "season": "2024_25", "local_path": str(csv_path),
+        "sha256": compute_sha256(content),
+    }])
+    result, critical, warnings = module.validate(minimal_config(), tmp_path, reports_root)
+    assert not any("hash mismatch" in c for c in critical)
+
+
+def test_implausible_probability_sum_detected_as_invalid(tmp_path: Path):
+    module = load_script_module()
+    reports_root = tmp_path / "reports"
+    raw_dir = tmp_path / "raw"
+    raw_dir.mkdir(parents=True)
+    csv_path = raw_dir / "E0.csv"
+    csv_path.write_text("Div,Date\nE0,01/01/2024\n")
+    write_manifest(reports_root, [{
+        "competition_code": "E0", "season": "2024_25", "local_path": str(csv_path),
+    }])
+
+    version_dir = tmp_path / "processed" / "football"
+    version_dir.mkdir(parents=True)
+    (version_dir / "cycle_001_data_version.json").write_text(json.dumps({"total_matches": 1, "files_failed": 0}))
+    (version_dir / "cycle_001_matches_full.csv").write_text("match_id,normalisation_status\nabc123,resolved\n")
+    # A probability sum of 1.5 is implausible -- indicates a bug in
+    # margin removal or consensus aggregation, not a real edge case.
+    (version_dir / "cycle_001_consensus_full.csv").write_text(
+        "match_id,probability_sum_check\nabc123,1.5\n"
+    )
+
+    result, critical, warnings = module.validate(minimal_config(), tmp_path, reports_root)
+    assert result == "INVALID"
+    assert any("implausible probability_sum_check" in c for c in critical)
