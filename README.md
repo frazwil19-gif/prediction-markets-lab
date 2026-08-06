@@ -48,8 +48,8 @@ governance layer:
   grading, research prioritisation (see "Research Engine status"
   below)
 
-**Stage 3A status: STAGE 3A PIPELINE VALIDATED — FULL DATASET
-ACQUISITION PENDING.** Scottish Premiership feasibility confirmed;
+**Stage 3A status: STAGE 3A TOOLING COMPLETE — FULL ACQUISITION
+PENDING.** Scottish Premiership feasibility confirmed;
 loader, bookmaker-extraction, normalisation, chronological-split, and
 canonical-schema pipeline validated end-to-end against 29 genuine
 historical matches (`data/samples/excerpt_validation/`). The complete
@@ -300,8 +300,8 @@ Sheet on desktop or mobile.
   specified in the original brief; a conservative default
   (`grade_c_min_net_ev: 0.00`) has been assumed and documented in
   `config/thresholds.yaml`.
-- Historical football data acquisition: STAGE 3A PIPELINE VALIDATED —
-  FULL DATASET ACQUISITION PENDING. Pipeline proven end-to-end against
+- Historical football data acquisition: STAGE 3A TOOLING COMPLETE —
+  FULL ACQUISITION PENDING. Pipeline proven end-to-end against
   a 29-match excerpt (`data/samples/excerpt_validation/`); the full
   ~15-file, 5-season dataset has not been acquired, no data version is
   frozen, and no model or hypothesis test has been run. See

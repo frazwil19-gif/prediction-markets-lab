@@ -1,6 +1,6 @@
 # Cycle 1 — Research Plan
 
-**STATUS: STAGE 3A PIPELINE VALIDATED — FULL DATASET ACQUISITION PENDING**
+**STATUS: STAGE 3A TOOLING COMPLETE — FULL ACQUISITION PENDING**
 
 ## Purpose
 
@@ -45,12 +45,20 @@ paper trading, rejection, or deferral (see
 - ❌ Chronological split (`DATA_SPLIT_PLAN.md`, `data_splits.csv`) is
   **provisional** — season boundaries are a design proposal, not
   confirmed against real full-season row counts.
-- ❌ **No model has trained or may train on the excerpt.** The 29-match
-  sample exists solely to prove the pipeline mechanics are correct.
-- ❌ **No hypothesis has been tested.** All entries in the Hypothesis
-  Registry remain at `IDEA` or `DATA_REQUIRED`.
+- ❌ **No model has been trained.** All model modules
+  (`models/football_elo.py`, `models/football_poisson.py`, etc.)
+  remain unimplemented placeholders.
+- ❌ **No hypothesis has been tested. No edge has been validated.**
+  All entries in the Hypothesis Registry remain at `IDEA` or
+  `DATA_REQUIRED`.
 - ❌ **Behaviour Atlas remains empty** — correctly so; no hypothesis
   has earned evidence.
+- ❌ **No final split counts exist** — `data_splits.csv` contains only
+  provisional zero row counts pending real acquisition.
+- ⛔ **Stage 3B is blocked pending a validated (`VALID` or
+  `VALID_WITH_NONCRITICAL_WARNINGS`) full-data bundle.** It must not
+  begin on the strength of the excerpt-validation pipeline proof
+  alone.
 
 ## Path to full acquisition
 

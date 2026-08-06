@@ -34,7 +34,7 @@
 
 ## Stage 3A — Historical data acquisition and dataset freeze
 
-**STATUS: STAGE 3A PIPELINE VALIDATED — FULL DATASET ACQUISITION PENDING**
+**STATUS: STAGE 3A TOOLING COMPLETE — FULL ACQUISITION PENDING**
 
 Completed:
 - Feasibility audit against Football-Data.co.uk (E0, E1 confirmed;

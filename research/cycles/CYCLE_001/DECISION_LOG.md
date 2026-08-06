@@ -37,3 +37,13 @@ data acquisition. This is a governance record, not a results report.
   repository bloat and to keep this decision explicit rather than
   discovered by accident. See
   `docs/PHONE_ONLY_DATA_ACQUISITION.md` for the retrieval process.
+- **Closure status for this phase: STAGE 3A TOOLING COMPLETE — FULL
+  ACQUISITION PENDING.** All acquisition/validation tooling is built
+  and tested (255/255 tests passing); the full 15-file dataset has not
+  been acquired; no data version is frozen; no final split counts
+  exist; no model has been trained; no hypothesis has been tested; no
+  edge has been validated; the Behaviour Atlas remains empty. Stage 3B
+  (Elo/Poisson baselines) is blocked pending a validated full-data
+  bundle (`VALID` or `VALID_WITH_NONCRITICAL_WARNINGS` from
+  `scripts/validate_cycle_001_data_bundle.py`) and must not begin on
+  the strength of the excerpt-validation pipeline proof alone.

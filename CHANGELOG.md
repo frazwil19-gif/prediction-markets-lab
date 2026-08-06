@@ -5,7 +5,7 @@ loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
 ## [0.4.0] — Stage 3A: pipeline validated, full acquisition pending
 
-**Status: STAGE 3A PIPELINE VALIDATED — FULL DATASET ACQUISITION PENDING.**
+**Status: STAGE 3A TOOLING COMPLETE — FULL ACQUISITION PENDING.**
 
 ### Added
 
