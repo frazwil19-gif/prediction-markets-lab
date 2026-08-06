@@ -1,16 +1,16 @@
 # Running Cycle 1 Data Acquisition From Your Phone
 
+**Prerequisite: the repository must already be on GitHub.** If it
+isn't yet, stop here and complete
+[`docs/PHONE_ONLY_GITHUB_HANDOFF.md`](PHONE_ONLY_GITHUB_HANDOFF.md)
+first, including its verification checklist. Everything below assumes
+that checklist is already ticked off.
+
 This is the one part of the project that needs a genuine internet
 fetch of ~15 files, paced a few seconds apart, taking several minutes
 total. You do not need a laptop for this — it runs on GitHub's own
 servers, triggered by a single tap from the GitHub mobile app or
 mobile Safari.
-
-## Prerequisite (one-time only)
-
-The repository must be on GitHub first. If it isn't yet, see "GitHub
-handoff" in the latest status report — you'll need to upload it once
-(see below for the no-connector fallback method).
 
 ## Steps
 
@@ -43,16 +43,26 @@ handoff" in the latest status report — you'll need to upload it once
    Tap any artifact to download it as a zip, or just note that it
    exists — you don't need to download it yourself unless you want to
    inspect it.
-10. **Check the validation result.** Look at the run's step list for
-    "Validate the acquired bundle." If it shows a green checkmark, the
-    result was `VALID` or `VALID_WITH_NONCRITICAL_WARNINGS`. If it
-    shows a red X, the result was `INVALID` — **do not proceed to
-    modelling.** Open `reports/audits/CYCLE_001_DATA_BUNDLE_VALIDATION.md`
-    (visible directly in the repository after the run, since that
-    report itself does get committed... actually check the workflow
-    log output for the validator's printed summary, since the .md
-    file lives only in the artifact bundle unless you've configured
-    the workflow to commit it back).
+10. **Check the validation result.** The workflow uploads
+    `reports/audits/CYCLE_001_DATA_BUNDLE_VALIDATION.md` as part of the
+    `cycle_001-audit-reports` artifact — download that artifact and
+    open the file, or check the "Validate the acquired bundle" step's
+    log output directly in the Actions run for the printed summary.
+    The result will be exactly one of:
+    - **`VALID`** — no issues found. Safe to hand off for Stage 3B
+      review (Stage 3B itself — Elo/Poisson baseline models — is a
+      separate, not-yet-started task; a `VALID` bundle does not start
+      it automatically).
+    - **`VALID_WITH_NONCRITICAL_WARNINGS`** — usable, but read the
+      warnings list first and use judgement before treating the
+      dataset as ready.
+    - **`INVALID`** — **stop. Do not proceed to modelling.** Read the
+      critical issues listed, and see "If the run fails" below.
+11. **Return the results for independent review.** Whichever verdict
+    you get, copy back the validation result, the critical
+    issues/warnings list, and the acquisition summary JSON (see
+    "What to send back" below) before anyone — human or AI — treats
+    the dataset as ready for the next stage.
 
 ## If the run fails
 
