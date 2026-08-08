@@ -5,6 +5,7 @@ name: Cycle 1 Data Acquisition
 # freeze permits this only because it solves a proven, named research
 # requirement -- obtaining the full historical dataset without
 # requiring a laptop -- not as general-purpose CI/CD).
+# Re-registered after importing the repository and setting master as default.
 on:
   workflow_dispatch:
     inputs:
