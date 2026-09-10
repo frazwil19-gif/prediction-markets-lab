@@ -112,3 +112,20 @@ A second review (relayed by Fraser) correctly challenged the GO verdict above: f
 4. Only once that's confirmed: properly freeze with versioned metadata (data version ID, hashes, code commit, validator result, exclusions, freeze timestamp) and update this document's verdict to STAGE 3A COMPLETE — then proceed to Stage 3B (market baseline → Elo → Poisson → blend, log loss + Brier + calibration, paired bootstrap CIs, strict chronological validation with an untouched final holdout).
 
 **Follow-up, not blocking:** this device's Cowork VM and the cloud sandbox both currently have network paths to GitHub that work for some operations (cloning, in one case) but not others (pushing, API/artifact access) — direct programmatic push/artifact-retrieval from either sandbox cannot be relied on this session; manual push-from-Terminal and manual artifact download-and-share remain the working pattern.
+
+### Update 4 (same day): fresh acquisition run completed, freeze-integrity check passed — STAGE 3A FINAL FREEZE CHECK
+
+Fraser re-triggered the workflow (`workflow_dispatch`, defaults) after both fixes (`17db644`, `edef3f4`) were live on `master`. Run completed at `2026-09-10T23:41:39Z`, data version `cycle_001_v1.0.0-20260910T234139`. Fraser shared all 4 fresh artifacts; every check below was run directly against the real files, not assumed from the workflow's own summary.
+
+1. **Regeneration status:** confirmed regenerated from source after both fixes — `data_version.json` timestamp (`2026-09-10T23:41:39Z`) postdates commit `edef3f4`, and the matches file's single `data_version` value matches across all 5,800 rows.
+2. **Final unresolved rows:** **0 of 5,800** (`normalisation_status` == `resolved` for every row; independently recomputed from the raw CSV, not read off the validator's summary).
+3. **Raw-artifact bug:** fixed and verified in production — `cycle_001-raw-files` now contains all 15 genuine downloaded season CSVs at `data/raw/football/football_data_co_uk/{E0,E1,SC0}/{2020_21..2024_25}/{code}.csv`, alongside the 3 pre-existing `*_excerpt.csv` stubs (harmless, distinguishable by filename, unused by the processed dataset).
+4. **Final tests:** 256/256 passing against commit `09d46eb` (the exact commit the acquisition run executed under).
+5. **Final validator verdict:** `CYCLE_001_DATA_BUNDLE_VALIDATION.md` → **`VALID`** — no critical issues, no warnings (previously `VALID_WITH_NONCRITICAL_WARNINGS`).
+6. **Final data version:** `cycle_001_v1.0.0-20260910T234139`, 15/15 raw files, 5,800 matches, 0 failed, 0 rate-limit events.
+7. **Frozen artifact hashes/provenance:** SHA-256 for all 15 raw source files, the 3 processed tables, and the alias-table config recorded in `reports/audits/CYCLE_001_FREEZE_RECORD.json` (git-committed, since the data files themselves remain workflow-artifact-only by design).
+8. **Git commit:** `09d46ebabe676290ac72425d80b4f90410015b0e`.
+9. **Independent cross-checks performed** (beyond trusting the validator's own summary): manifest row-count sum (380×5 + 552×5 + 228×5 = 5,800) matches `total_matches`; zero duplicate `match_id` values; zero malformed `match_date` values; all 15 competition/season date ranges fall inside their expected season windows with no cross-season leakage; alias table loads with zero raw-name collisions (101 flattened entries); `eligible_consensus_model` is true for 5,776/5,800 rows (24 excluded for insufficient bookmaker coverage below the configured minimum — expected, not a defect); consensus `probability_sum_check` deviates from 1.0 by at most 1.18% (median 0.13%), which is expected for a per-outcome median consensus (not a jointly renormalised distribution) rather than a computation error.
+10. **Verdict: GO.**
+
+**GO — STAGE 3A COMPLETE, CYCLE 1 DATASET FROZEN** (supersedes the retraction above). Provenance: `reports/audits/CYCLE_001_FREEZE_RECORD.json`, code commit `09d46eb`, validator result `VALID`. Ready to begin Stage 3B (market baseline → Elo → Poisson → blend, per the project directive) on Fraser's go-ahead.
