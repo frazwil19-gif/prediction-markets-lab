@@ -1,0 +1,51 @@
+{
+  "data_version": "cycle_001_v1.0.0-20260910T234139",
+  "freeze_timestamp_utc": "2026-09-10T23:41:39+00:00",
+  "code_commit": "09d46ebabe676290ac72425d80b4f90410015b0e",
+  "workflow": "cycle_001_data_acquisition.yml",
+  "acquisition_run_context": "workflow_dispatch, defaults (resume_existing=true, request_delay_seconds=6), run after commits edef3f4 (raw-files path fix) and 17db644 (team-alias fix) were both live",
+  "validator_result": "VALID",
+  "validator_script": "scripts/validate_cycle_001_data_bundle.py",
+  "competitions": ["E0", "E1", "SC0"],
+  "seasons": ["2020_21", "2021_22", "2022_23", "2023_24", "2024_25"],
+  "raw_file_count": 15,
+  "expected_raw_file_count": 15,
+  "total_matches": 5800,
+  "unresolved_team_names": 0,
+  "distinct_raw_team_names_resolved": 101,
+  "duplicate_match_ids": 0,
+  "files_failed": 0,
+  "eligible_outcome_model_rows": 5800,
+  "eligible_consensus_model_rows": 5776,
+  "known_limitations": [
+    "eligible_consensus_model is false for 24/5800 rows (0.41%) due to insufficient bookmaker coverage at the configured minimum threshold -- excluded from consensus-based modelling by design, not a data defect",
+    "consensus probability_sum_check deviates from 1.0 by up to 1.18% (median 0.13%) because each outcome's fair probability is a per-outcome median across bookmakers, not a jointly renormalised distribution -- expected behaviour of the median-consensus method, not a bug",
+    "cycle_001-raw-files artifact also contains 3 pre-existing EXCERPT_VALIDATION_ONLY stub files (E0/E1/SC0 2024_25 *_excerpt.csv) alongside the 15 genuine downloads -- clearly distinguishable by filename, not used by the processed dataset"
+  ],
+  "config_hashes_sha256": {
+    "config/football_team_aliases.yaml": "b992beee609d74c81589aa89c86b3fd9d86d27d05ccef1e7b0da48d8045ca98e"
+  },
+  "processed_artifact_hashes_sha256": {
+    "cycle_001_matches_full.csv": "d8e7f519867616362ab770599407c12bb6f0881cc9139eb965b8f81303766387",
+    "cycle_001_bookmaker_markets_full.csv": "dd8332b984080a1d7e31f694035f85ccd0da0be3b21914b4a506c456763fca74",
+    "cycle_001_consensus_full.csv": "fb2b9f0c8f5c3b9d6c834d9e09e352c083d5a9ba17fec211830c00f6472d67cd"
+  },
+  "raw_source_hashes_sha256": {
+    "E0/2020_21/E0.csv": "5afe63f69401457b8354eaacee24f9a3e520b3c3af6329564a9783e20d789c62",
+    "E0/2021_22/E0.csv": "658b09d9e1630811c13971f7cddf75dc28f01bd038fa45e4aaab42a8d6b877d6",
+    "E0/2022_23/E0.csv": "8442792d3b614c94ea3cf381bd2736805889cc1713169035368fff19c3d02380",
+    "E0/2023_24/E0.csv": "b2e057b0ed959f198b0f63d2391c01239f3608e6de5db68edab3f88e04d07ff3",
+    "E0/2024_25/E0.csv": "a0fb4e281b6f0e0fce66ac4c6bca53e54686d2db6054b5eb49b90decf161c12f",
+    "E1/2020_21/E1.csv": "cf93295e310c60e5b97ae7466d772f8ec6a908ad401e38fceb7e8617369d5073",
+    "E1/2021_22/E1.csv": "a181451be4801b9f838daf5f6aaf21e9f09d36042be9e6c15388e71001e772ea",
+    "E1/2022_23/E1.csv": "cd38ab0586ea8cb4d573c363ff70749117f116da5b2741e5b0ea37da05860b1b",
+    "E1/2023_24/E1.csv": "5737f6cc95c95092b28317f41d3123e2fb09345434efc1c84bbdf15830849ab3",
+    "E1/2024_25/E1.csv": "b11ba407f59938237d1af75d90f74f9ba43b7a5d475fd2da1b2eacbd0269f4a4",
+    "SC0/2020_21/SC0.csv": "0456d91665fccef8a7b4cce781b9a56a0df451d43dc1f67f0d623ac90aa26817",
+    "SC0/2021_22/SC0.csv": "5814849157392d05df1bd8220a468649434d1e816e9385d65eca2dede98c5dd1",
+    "SC0/2022_23/SC0.csv": "d716ef774542bb04701e1ac03eedf677cfa02422a0974b030824b3002c011730",
+    "SC0/2023_24/SC0.csv": "ed2dcf1bb0bdb12e911f0b8435038a85448be27d4fa368202c85be5e8036c341",
+    "SC0/2024_25/SC0.csv": "56c9533b9304f7b6e47f82faee2b6f874e88c7d4d0df255c8edb2df0462022b6"
+  },
+  "note": "Raw and processed data files themselves remain workflow-artifact-only (not committed to git) per project design; this record is the durable, git-committed provenance anchor for the frozen 2026-09-10T23:41:39Z run. Fraser holds the actual artifact zips (retention: 90 days for raw files) from the GitHub Actions run he triggered."
+}
