@@ -43,6 +43,24 @@ This is a materially different picture from the raw-files artifact's 8KB size, w
 
 **This manifest alone is not sufficient to declare Stage 3A fully closed.** It confirms row/column counts and a self-reported "OK" status, but not the deeper Phase C checks the project's own directive requires: duplicates, missingness, team-name normalisation, bookmaker-market extraction sanity, chronological ordering, no leakage. The `cycle_001-audit-reports` artifact (the one with `football_duplicate_review.csv`, `unresolved_team_names.csv`, `football_data_quality_by_*.csv`, `football_data_schema_inventory.csv`) is what actually contains those checks — requested from Fraser, pending as of this writing.
 
+### Update 2 (same day): audit-reports reviewed, team-name gap found and fixed
+
+Fraser shared `cycle_001-audit-reports`. The real per-run output is `CYCLE_001_DATA_BUNDLE_VALIDATION.md` (the other files in that zip under `excerpt_validation/` are stale leftovers from the earlier 29-match test, swept up by the upload glob, not new output). Its verdict:
+
+- **Result: VALID_WITH_NONCRITICAL_WARNINGS**
+- Critical issues: none
+- Warning: **1,623 of 5,800 rows (28%) with unresolved team-name normalisation**
+
+Root cause (confirmed by reading the code): `config/football_team_aliases.yaml` was seeded only from teams visible in the tiny 10-row 2024/25 excerpts used during earlier pipeline testing — its own header says as much. It was missing not only every team relegated/promoted out of/into E0/E1/SC0 across 2020/21-2023/24, but even 4 teams from the *current* 2024/25 Championship season that the excerpt's first few rows happened not to include.
+
+Fraser also shared `cycle_001-raw-files` and `cycle_001-processed-data`. This surfaced a separate, useful finding: **`cycle_001-raw-files` does not actually contain the real downloaded season CSVs** — it's the same stale 3-file excerpt set as before (confirms the original 8KB-size suspicion was directionally correct, just not for the reason first guessed). The real full data survived intact elsewhere: `cycle_001-processed-data` contains `cycle_001_matches_full.csv` (5,800 rows, `home_team_raw`/`away_team_raw`/`*_normalised`/`normalisation_status` columns) — i.e. the actual acquisition succeeded and was processed correctly, but the workflow's raw-file artifact upload step isn't capturing what it should. **Follow-up recommended** (not blocking): fix the raw-files artifact path in `.github/workflows/cycle_001_data_acquisition.yml` so future runs actually preserve the downloaded source CSVs for provenance, not just the excerpts already sitting in the repo.
+
+Using `cycle_001_matches_full.csv`'s `normalisation_status` column, the exact 15 unresolved raw names (and row counts) were identified directly from the real data — no guessing: `Luton` (111), `Burnley` (103), `Birmingham` (92), `Huddersfield` (92), `Livingston` (76), `Reading` (69), `Rotherham` (69), `Sheffield Weds` (69), `Barnsley` (46), `Blackpool` (46), `Plymouth` (46), `Wycombe` (23), `Peterboro` (23), `Wigan` (23), `Hamilton` (19).
+
+**Fix applied**: added all 15 as new canonical entries to `config/football_team_aliases.yaml` (Luton Town, Burnley, Birmingham City, Huddersfield Town, Reading, Rotherham United, Sheffield Wednesday, Barnsley, Blackpool, Plymouth Argyle, Wycombe Wanderers, Peterborough United, Wigan Athletic, Livingston, Hamilton Academical). **Verified against the real data**: re-running the project's own `load_alias_table`/`normalise_team_name` against all 67 distinct raw team names actually present in `cycle_001_matches_full.csv` resolves every one — `still unresolved after fix: []`. Full test suite still 255/255 passing after the change.
+
+**This closes the only open warning.** Combined with the earlier manifest and `total_matches` cross-checks, Stage 3A now has no known outstanding issues.
+
 ### 3a. Network access note
 
 Both the GitHub Actions job-log endpoint and the artifact-zip download endpoint are blocked from this device's Cowork VM with `X-Proxy-Error: blocked-by-allowlist` — this is the device's own network egress policy blocking the redirect target (blob storage), not a GitHub permissions issue (confirmed after adding Actions:read to the token; the block persisted identically). Direct API/log/artifact access to this repo from this device is not currently possible; retrieving artifact contents requires Fraser to download them via his own browser and share them here.
@@ -74,8 +92,12 @@ Both the GitHub Actions job-log endpoint and the artifact-zip download endpoint 
 
 ## 9. Recommended next action — GO/NO-GO
 
-**Still NO-GO on Stage 3B, but close.** The manifest (§3 update) is a strong positive signal — real, correct football-league row counts and a season-by-season column-count pattern that matches known source-schema evolution, not something a broken or excerpt-only run would plausibly produce. It is not yet sufficient on its own to declare Stage 3A complete and freeze the dataset per Phase C/D of the project directive.
+**GO — STAGE 3A COMPLETE, CYCLE 1 DATASET FROZEN.** All three lines of evidence now agree: the manifest (15/15 files, correct row/column counts), the independently-computed `total_matches: 5800` cross-check, and the bundle validator's own verdict (no critical issues) with its one warning (1,623 unresolved team names) root-caused and fixed against the real data (§Update 2) with zero remaining unresolved names out of 67 distinct real raw team names, and the full test suite (255/255) still green.
 
-**Next step:** review the `cycle_001-audit-reports` artifact (duplicate review, missingness by season, team-name resolution, bookmaker coverage, schema inventory) once Fraser shares it. If those check out, declare **STAGE 3A COMPLETE — CYCLE 1 DATASET FROZEN** (with the frozen dataset's provenance being this GitHub Actions run + its artifacts, since raw/processed data is deliberately not committed to git) and only then propose the exact Stage 3B baseline-modelling task (market consensus → Elo → Poisson → blend, each benchmarked against the market, per the directive).
+Provenance for the frozen dataset: GitHub Actions run `31262827699` (2026-08-08) plus its `cycle_001-manifest-and-version` and `cycle_001-processed-data` artifacts (expire 2026-11-06) — raw/processed data is deliberately not committed to git per the project's design, so these artifacts (or a re-run) remain the source of truth. The `config/football_team_aliases.yaml` fix is committed to the repo directly.
 
-A remaining open item unrelated to data validity: this device's network policy blocks direct GitHub Actions log/artifact access (§3a), so future acquisition-run checks will need the same manual download-and-share step from Fraser, or a different access path if one becomes available.
+**Follow-ups worth doing, not blocking Stage 3B:**
+1. Fix the `cycle_001-raw-files` artifact upload path in the acquisition workflow — it's currently preserving stale excerpt files instead of the real downloaded season CSVs (§Update 2).
+2. This device's network policy blocks direct GitHub Actions log/artifact access (§3a) — future acquisition-run checks will need the same manual download-and-share step from Fraser, or a different access path if one becomes available.
+
+**Next step:** propose the exact Stage 3B baseline-modelling task (market consensus → Elo → Poisson → blend, each benchmarked against the market, per the project directive) — pending Fraser's go-ahead.
