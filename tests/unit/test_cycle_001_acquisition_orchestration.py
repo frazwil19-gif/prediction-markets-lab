@@ -101,7 +101,7 @@ def test_acquisition_config_yaml_split_plan_chronological():
 def test_resume_skips_network_when_file_already_present(script_module, tmp_path, monkeypatch):
     """--resume must skip re-downloading a file that already exists on
     disk, and must not require any network call to do so."""
-    raw_dir = tmp_path / "football" / "football_data_co_uk" / "E0" / "2024_25"
+    raw_dir = tmp_path / "raw" / "football" / "football_data_co_uk" / "E0" / "2024_25"
     raw_dir.mkdir(parents=True)
     (raw_dir / "E0.csv").write_text("Div,Date,HomeTeam,AwayTeam,FTR\nE0,16/08/2024,A,B,H\n")
 
@@ -121,7 +121,7 @@ def test_expected_file_count_gate_uses_planned_targets_not_global_total(script_m
     """A filtered, single-file run must gate on its OWN planned target
     count (1), not the global 15-file expectation -- otherwise every
     filtered/partial run would spuriously fail this gate."""
-    raw_dir = tmp_path / "football" / "football_data_co_uk" / "E0" / "2024_25"
+    raw_dir = tmp_path / "raw" / "football" / "football_data_co_uk" / "E0" / "2024_25"
     raw_dir.mkdir(parents=True)
     (raw_dir / "E0.csv").write_text("Div,Date,HomeTeam,AwayTeam,FTR\nE0,16/08/2024,A,B,H\n")
 
@@ -188,3 +188,30 @@ def test_no_model_or_betting_execution_code_exists_in_repo():
     for path in (elo_file, poisson_file):
         content = path.read_text()
         assert "PLACEHOLDER" in content, f"{path} must remain an unimplemented placeholder in Stage 3A"
+
+
+def test_default_raw_output_path_matches_workflow_upload_glob(script_module):
+    """Regression test for the Cycle 1 raw-files provenance bug: the
+    acquisition script's default raw-file destination must live under
+    the same 'data/raw/football/...' tree that the GitHub Actions
+    workflow's 'Upload raw source files' step globs, and under the
+    'data/raw/' tree that is git-ignored for genuine downloads (see
+    research/cycles/CYCLE_001/DECISION_LOG.md). Previously the script
+    wrote real downloads to data/football/football_data_co_uk/... (no
+    'raw' segment), so the workflow's data/raw/football/** glob only
+    ever picked up the pre-existing EXCERPT_VALIDATION_ONLY stub files
+    and never the genuine downloaded season files."""
+    args = script_module.parse_args(["--dry-run"])
+    raw_root = args.output_root / "raw" / "football" / "football_data_co_uk"
+    assert str(raw_root).endswith("data/raw/football/football_data_co_uk")
+
+    workflow_path = REPO_ROOT / ".github" / "workflows" / "cycle_001_data_acquisition.yml"
+    with open(workflow_path) as f:
+        workflow = yaml.safe_load(f)
+    upload_steps = [
+        step for step in workflow["jobs"]["acquire"]["steps"]
+        if step.get("name") == "Upload raw source files"
+    ]
+    assert len(upload_steps) == 1
+    glob_path = upload_steps[0]["with"]["path"]
+    assert glob_path == "data/raw/football/**"

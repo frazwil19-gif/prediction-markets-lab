@@ -144,7 +144,7 @@ def run(argv: list[str]) -> int:
         )
 
     client = HttpClient(user_agent=acquisition_cfg.user_agent, timeout_seconds=acquisition_cfg.request_timeout_seconds)
-    raw_root = Path(args.output_root) / "football" / "football_data_co_uk"
+    raw_root = Path(args.output_root) / "raw" / "football" / "football_data_co_uk"
     manifest_rows = []
     match_rows = []
     bookmaker_rows = []
