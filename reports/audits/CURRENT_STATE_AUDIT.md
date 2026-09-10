@@ -26,7 +26,24 @@ Performed by: Claude Cowork, working directly in the local repository at `~/Proj
 - I could not inspect the actual artifact contents or the job's raw logs to resolve this: GitHub's API refused both (`403 Must have admin rights to Repository`) for anonymous/unauthenticated access, even though the repo is public — artifact/log downloads require an authenticated request.
 - **The repository itself cannot resolve this either.** By explicit design (see `research/cycles/CYCLE_001/DECISION_LOG.md` and the workflow's own comments), raw and processed Cycle 1 data are *never committed to git* — only uploaded as GitHub Actions artifacts (90-day retention; this run's artifacts expire 2026-11-06, so there's time). The only football data actually committed to the repo is the original 10-row-per-file `EXCERPT_VALIDATION_ONLY` fixtures used for earlier pipeline testing.
 
-**Verdict: UNKNOWN, not VALID.** The workflow says "success," but the artifact sizes suggest the acquisition may have silently produced excerpt-scale or partial output rather than the full 15-file dataset (e.g. `--resume` matching on filename rather than genuinely comparing content, or a silent early exit). This must be resolved before Stage 3A can be declared complete or Stage 3B can start.
+**Verdict: UNKNOWN, not VALID** (as of the initial pass — see update below).
+
+### Update (later the same day, 2026-09-10): manifest reviewed, verdict improves to VALID_WITH_NONCRITICAL_WARNINGS
+
+Direct API/log access from this device remained blocked throughout (see §3a below), so Fraser downloaded the `cycle_001-manifest-and-version` artifact himself via his browser and shared `football_data_manifest.csv`. It lists all **15** expected rows (E0/E1/SC0 × 2020/21–2024/25), each `validation_status: OK`:
+
+- E0 (Premier League): 380 rows/season, all 5 seasons — correct for a 20-team league (20×19×2).
+- E1 (Championship): 552 rows/season, all 5 seasons — correct for a 24-team league.
+- SC0 (Scottish Premiership): 228 rows/season, all 5 seasons — correct for a 12-team league.
+- Column counts step up from 106 to 120–121 in the 2024/25 season across all three competitions, consistent with the previously-documented finding that football-data.co.uk added bookmaker columns in later seasons.
+
+This is a materially different picture from the raw-files artifact's 8KB size, which drove the original "UNKNOWN" verdict: 8KB is plausible after all for 15 highly repetitive CSVs (team names, dates, decimal odds) once GitHub's artifact compression is accounted for — that concern is provisionally retracted, not confirmed disproven.
+
+**This manifest alone is not sufficient to declare Stage 3A fully closed.** It confirms row/column counts and a self-reported "OK" status, but not the deeper Phase C checks the project's own directive requires: duplicates, missingness, team-name normalisation, bookmaker-market extraction sanity, chronological ordering, no leakage. The `cycle_001-audit-reports` artifact (the one with `football_duplicate_review.csv`, `unresolved_team_names.csv`, `football_data_quality_by_*.csv`, `football_data_schema_inventory.csv`) is what actually contains those checks — requested from Fraser, pending as of this writing.
+
+### 3a. Network access note
+
+Both the GitHub Actions job-log endpoint and the artifact-zip download endpoint are blocked from this device's Cowork VM with `X-Proxy-Error: blocked-by-allowlist` — this is the device's own network egress policy blocking the redirect target (blob storage), not a GitHub permissions issue (confirmed after adding Actions:read to the token; the block persisted identically). Direct API/log/artifact access to this repo from this device is not currently possible; retrieving artifact contents requires Fraser to download them via his own browser and share them here.
 
 ## 4. Bundle validation
 
@@ -55,9 +72,8 @@ Performed by: Claude Cowork, working directly in the local repository at `~/Proj
 
 ## 9. Recommended next action — GO/NO-GO
 
-**NO-GO on Stage 3B.** Do not begin modelling. The single next bottleneck is resolving whether the Aug 8 acquisition run actually captured the full 15-file dataset or silently produced excerpt/partial output. Two ways to resolve it:
+**Still NO-GO on Stage 3B, but close.** The manifest (§3 update) is a strong positive signal — real, correct football-league row counts and a season-by-season column-count pattern that matches known source-schema evolution, not something a broken or excerpt-only run would plausibly produce. It is not yet sufficient on its own to declare Stage 3A complete and freeze the dataset per Phase C/D of the project directive.
 
-1. **Fraser downloads the artifacts** from the run's GitHub page (Actions → this workflow run → Artifacts section — `cycle_001-manifest-and-version` and `cycle_001-audit-reports` are small and quick) and shares the manifest CSV / acquisition report content back.
-2. **Provide a fine-grained, read-only, repo-scoped GitHub personal access token.** This unblocks direct API access to run logs and artifact contents from here, and will keep being useful going forward (checking future acquisition runs, triggering `workflow_dispatch` runs on request) rather than hitting this same anonymous-access wall each time.
+**Next step:** review the `cycle_001-audit-reports` artifact (duplicate review, missingness by season, team-name resolution, bookmaker coverage, schema inventory) once Fraser shares it. If those check out, declare **STAGE 3A COMPLETE — CYCLE 1 DATASET FROZEN** (with the frozen dataset's provenance being this GitHub Actions run + its artifacts, since raw/processed data is deliberately not committed to git) and only then propose the exact Stage 3B baseline-modelling task (market consensus → Elo → Poisson → blend, each benchmarked against the market, per the directive).
 
-Either way, if the full dataset turns out genuinely incomplete/invalid, the fix is to re-run the acquisition workflow (or debug why it under-acquired) — not to proceed to modelling on what's there now.
+A remaining open item unrelated to data validity: this device's network policy blocks direct GitHub Actions log/artifact access (§3a), so future acquisition-run checks will need the same manual download-and-share step from Fraser, or a different access path if one becomes available.
