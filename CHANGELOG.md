@@ -3,7 +3,80 @@
 All notable changes to this project are documented here. Format is
 loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
-## [Unreleased] — Stage 3A frozen, Stage 3B Checkpoint 1
+## [Unreleased] — Stage 3A frozen, Stage 3B Checkpoints 1-4 complete
+
+### Added (Checkpoints 2-4)
+
+- `models.football_elo` -- Stage 3B Model 1: standard 2-outcome Elo rating
+  update plus a closed-form 3-way (draw_margin) prediction transform,
+  calibrated per-fold on training data only. Global ratings across
+  competitions (promotion/relegation continuity), fixed season-transition
+  mean reversion.
+- `models.football_poisson` -- Stage 3B Model 2: independent-Poisson
+  attack/defence model (Maher 1982-style), tracked per competition,
+  shrinkage-regularised team ratios, truncated/renormalised scoreline grid.
+- `models.football_blended` -- Stage 3B Model 3: convex-combination
+  probability blending with an exhaustive predeclared weight grid search
+  (never an open-ended optimiser), calibrated on training data only.
+- `probability.uncertainty.paired_bootstrap_delta` -- paired bootstrap
+  confidence intervals (match-level and block-by-date resampling, both
+  always reported) for any model-vs-market metric delta.
+- `performance.calibration` -- raw (no recalibration fit) reliability
+  diagnostics: equal-count-bin calibration reports and Expected Calibration
+  Error, per outcome, per model.
+- `scripts/run_stage_3b_checkpoint2_elo.py`, `..._checkpoint3_poisson.py`,
+  `..._checkpoint4_blends_and_uncertainty.py` -- orchestration for each
+  checkpoint, all verifying the frozen-data hash record before reading
+  anything.
+- `research/cycles/CYCLE_001/results/{ELO_MODEL_REPORT,POISSON_MODEL_REPORT,BLEND_REPORT,CALIBRATION_REPORT,MODEL_COMPARISON}.md`.
+
+### Fixed (Checkpoints 2-4)
+
+- Poisson `league_averages()` divided by zero when a competition's computed
+  average was exactly 0.0 (a degenerate small sample) -- now falls back to
+  configured defaults.
+- Poisson's default scoreline truncation (`max_goals=10`) lost up to 0.1%
+  of probability mass for realistic lambdas -- raised to 15, verified
+  >0.99998 for the measured worst case rather than assumed.
+- `probability.uncertainty.paired_bootstrap_delta` originally recomputed
+  `multiclass_log_loss`/`multiclass_brier_score` (which revalidate every
+  probability dict) from scratch on every one of `n_resamples` iterations --
+  correct but impractically slow on the real ~3,446-match pooled sample
+  (discovered when Checkpoint 4's first real run did not finish inside a
+  180-second budget). Rewritten to compute each match's per-observation
+  loss once, then resample over the resulting float arrays -- algebraically
+  identical (log loss/Brier are simple per-match means), ~7x faster in
+  practice (26s vs. non-terminating), no change to any test's expected
+  values.
+- Removed dead/duplicate `train_common_ids` computation in
+  `run_stage_3b_checkpoint4_blends_and_uncertainty.py` (the first
+  computation was immediately overwritten by a second, correct one).
+
+### Findings (Checkpoints 2-4)
+
+- Elo (pooled, N=3,446): log loss 1.0233, Brier 0.6133 -- clears the naive
+  floor, does not close the gap to market.
+- Poisson (pooled, N=3,446): log loss 1.0097, Brier 0.6037 -- clears both
+  the naive floor and Elo.
+- `elo_poisson` blend (pooled, N=3,446): log loss 1.0035, Brier 0.5995 --
+  beats both individual fundamentals models, and is the best-calibrated
+  model-based candidate on every outcome (see CALIBRATION_REPORT.md),
+  substantially correcting a specific away-outcome miscalibration bias in
+  Elo (ECE 0.0605 -> 0.0128).
+- Every market-inclusive blend (`market_elo`, `market_poisson`,
+  `market_elo_poisson`) calibrates to 100% market weight in every one of
+  the 3 development folds -- no positive weight on Elo or Poisson ever
+  reduces in-sample log loss once market is available as a component.
+- Paired bootstrap (match-level and block-by-date, 95% CI, n=2000,
+  seed=42): the market's advantage over Elo, Poisson, and `elo_poisson` is
+  statistically confirmed -- every CI lies entirely above zero for both
+  metrics and both resampling methods, which agree closely throughout.
+- No model or blend has beaten the market on the development folds. See
+  `MODEL_COMPARISON.md` for the full consolidated ranking; this is
+  provisional pending the sealed 2024/25 holdout (Checkpoints 5-6, not yet
+  started).
+
+## Stage 3A frozen, Stage 3B Checkpoint 1
 
 ### Fixed
 

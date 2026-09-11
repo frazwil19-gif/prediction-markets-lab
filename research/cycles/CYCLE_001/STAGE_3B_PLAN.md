@@ -1,9 +1,11 @@
 # Stage 3B Plan — Probability Model Validation
 
-**Status: development folds + Baseline 0 + Baseline 1 complete (Checkpoint 1).
-Elo, Poisson, blending, calibration, and the final holdout remain (Checkpoints
-2-6). This plan is predeclared before those checkpoints begin, per the Stage
-3B directive.**
+**Status: development folds, Baseline 0, Baseline 1, Elo (Model 1), Poisson
+(Model 2), blends (Model 3), paired bootstrap uncertainty, and raw
+calibration diagnostics are all complete (Checkpoints 1-4). Only the final
+holdout protocol and the sealed 2024/25 evaluation itself remain
+(Checkpoints 5-6) — see `research/cycles/CYCLE_001/results/MODEL_COMPARISON.md`
+for the consolidated Checkpoint 1-4 result.**
 
 ## 1. Research question
 
@@ -146,12 +148,17 @@ passing as of Checkpoint 1.
 - `scripts/verify_frozen_data_hashes.py`
 - `data/interim/stage_3b_checkpoint1_predictions.csv`, `data/interim/stage_3b_checkpoint1_metrics.json` (regenerable, not committed — see `.gitignore`)
 
-## 11. Not yet done (Checkpoints 2-6)
+## 11. Checkpoints 2-4 complete; not yet done (Checkpoints 5-6)
 
-Elo, Poisson, blend candidate matrix (predeclared 7-combination comparison,
-only progressed past simple components if individually justified),
-calibration (raw first, then optional simple recalibration fit only on
-development data), paired (clustered/block) bootstrap confidence intervals
-for model-vs-market deltas, `FINAL_HOLDOUT_PROTOCOL.md`, the
-`STAGE 3B PRE-HOLDOUT FREEZE` commit, and the sealed 2024/25 evaluation
-itself.
+Elo (`ELO_MODEL_REPORT.md`), Poisson (`POISSON_MODEL_REPORT.md`), the 4
+predeclared blend combinations (`BLEND_REPORT.md`), paired
+match-level/block-by-date bootstrap confidence intervals for every
+model-vs-market delta (`BLEND_REPORT.md`), and raw calibration diagnostics
+for market/Elo/Poisson/`elo_poisson` (`CALIBRATION_REPORT.md`) are all
+complete — see `MODEL_COMPARISON.md` for the consolidated result. No model
+or blend has beaten the market on the development folds; the gap is
+statistically confirmed by bootstrap CI.
+
+Remaining: `FINAL_HOLDOUT_PROTOCOL.md`, the `STAGE 3B PRE-HOLDOUT FREEZE`
+commit, and the sealed 2024/25 evaluation itself (Checkpoints 5-6) — see
+`MODEL_COMPARISON.md` §"Remaining before a final Stage 3B verdict".
