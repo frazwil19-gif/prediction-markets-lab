@@ -73,13 +73,25 @@ jobs:
       # actually say about JeffSackmann/tennis_atp right now.
       - name: Diagnose Sackmann repo/branch access from this runner
         run: |
-          echo "--- api.github.com repo metadata (unauthenticated) ---"
+          echo "--- api.github.com repo metadata (unauthenticated -- may be rate-limited on a shared runner IP, ignore if so) ---"
           curl -sS "https://api.github.com/repos/JeffSackmann/tennis_atp" > /tmp/repo_meta.json || echo "(api.github.com call failed)"
-          python3 -c "import json; d=json.load(open('/tmp/repo_meta.json')); print({k: d.get(k) for k in ('full_name','default_branch','archived','private','pushed_at')})" || echo "(could not parse repo metadata JSON)"
+          cat /tmp/repo_meta.json
+          echo ""
+          echo "--- real default branch via git's own protocol (not subject to the REST API rate limit) ---"
+          git ls-remote --symref https://github.com/JeffSackmann/tennis_atp.git HEAD || echo "(git ls-remote for tennis_atp failed)"
+          git ls-remote --symref https://github.com/JeffSackmann/tennis_wta.git HEAD || echo "(git ls-remote for tennis_wta failed)"
           echo "--- raw.githubusercontent.com status for the exact URL the acquisition will use ---"
           curl -sS -o /dev/null -w "HTTP status: %{http_code}\n" "https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_2021.csv" || echo "(raw.githubusercontent.com request failed)"
           echo "--- same file via GitHub's own /raw/ redirect shortcut (bypasses raw.githubusercontent.com's own cache) ---"
           curl -sS -L -o /dev/null -w "HTTP status: %{http_code}\n" "https://github.com/JeffSackmann/tennis_atp/raw/master/atp_matches_2021.csv" || echo "(github.com/raw/ redirect failed)"
+          echo "--- ground truth: shallow clone the real repo and list its actual root files ---"
+          rm -rf /tmp/tennis_atp_probe
+          git clone --depth 1 https://github.com/JeffSackmann/tennis_atp.git /tmp/tennis_atp_probe 2>&1 | tail -5
+          echo "Cloned onto branch: $(git -C /tmp/tennis_atp_probe branch --show-current 2>&1)"
+          echo "Root files matching atp_matches_202*.csv or atp_players.csv:"
+          ls /tmp/tennis_atp_probe | grep -E "atp_matches_202|atp_players.csv" || echo "(no matching files found in repo root -- see full listing below)"
+          echo "First 40 entries in repo root:"
+          ls /tmp/tennis_atp_probe | head -40
         continue-on-error: true
 
       - name: Set up Python
