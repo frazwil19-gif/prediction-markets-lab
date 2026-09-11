@@ -75,10 +75,22 @@ def test_verify_frozen_data_hashes_against_the_real_committed_freeze_record(scri
     committed freeze record and the real data files placed locally for
     Stage 3B development. If this fails, something about the local
     working copy has drifted from the frozen dataset -- see
-    reports/audits/CYCLE_001_FREEZE_RECORD.json."""
+    reports/audits/CYCLE_001_FREEZE_RECORD.json.
+
+    Skipped when the real frozen dataset is not present in this checkout
+    (e.g. a fresh clone or CI runner without the untracked data files) --
+    same sentinel file and convention as
+    test_stage_3b_checkpoint3_poisson.py / test_stage_3b_checkpoint4_blends.py.
+    The freeze record JSON itself IS committed (it lives under
+    reports/audits/), unlike the raw/processed football data it describes
+    (deliberately not committed, see research/cycles/CYCLE_001/DECISION_LOG.md),
+    so checking only for the freeze record's presence is not sufficient --
+    it will always exist in a fresh checkout while the data it verifies
+    will not."""
+    matches_path = REPO_ROOT / "data" / "processed" / "football" / "cycle_001_matches_full.csv"
     freeze_record_path = REPO_ROOT / "reports" / "audits" / "CYCLE_001_FREEZE_RECORD.json"
-    if not freeze_record_path.exists():
-        pytest.skip("freeze record not present in this checkout")
+    if not matches_path.exists() or not freeze_record_path.exists():
+        pytest.skip("frozen dataset/freeze record not present in this checkout")
     with open(freeze_record_path) as f:
         freeze_record = json.load(f)
     problems = script_module.verify_frozen_data_hashes(freeze_record, repo_root=REPO_ROOT)
