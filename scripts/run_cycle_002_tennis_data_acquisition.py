@@ -214,11 +214,23 @@ def run(argv: list[str]) -> int:
         if args.resume and dest_path.exists():
             print(f"[{source_key}] already present -- skipping (--resume)")
             summary.files_skipped_resume += 1
+            # A pre-existing file at --resume time could be either a real
+            # earlier automated fetch, or a file placed here by
+            # scripts/import_manual_tennis_data_co_uk_files.py (the
+            # manual-download fallback for when Tennis-data.co.uk's TLS
+            # handshake can't be made to work at all). Both are legitimate
+            # and both get a manifest row; "resumed_existing_file" is the
+            # honest label for provenance -- it does not claim this run
+            # fetched the bytes itself, only that it found and recorded
+            # them. See scripts/import_manual_tennis_data_co_uk_files.py's
+            # module docstring for the full fallback rationale.
+            acquisition_method = "resumed_existing_file"
             if target.content_mode == "text":
                 content = dest_path.read_text(encoding="utf-8")
             else:
                 content = dest_path.read_bytes()
         else:
+            acquisition_method = "automated_fetch"
             if i > 0:
                 time.sleep(acquisition_cfg.delay_between_requests_seconds)
             print(f"[{source_key}] fetching...")
@@ -257,6 +269,7 @@ def run(argv: list[str]) -> int:
             "season": target.season or "",
             "url": target.url,
             "raw_relative_path": str(target.raw_relative_path),
+            "acquisition_method": acquisition_method,
             "sha256": digest,
             "bytes": byte_size,
             "fetched_at_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
