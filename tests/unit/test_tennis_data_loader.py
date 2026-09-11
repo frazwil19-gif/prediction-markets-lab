@@ -12,6 +12,8 @@ from __future__ import annotations
 import pytest
 
 import ssl
+import urllib.error
+from unittest.mock import patch
 
 from prediction_markets_lab.ingestion.tennis_data_loader import (
     AcquisitionConfig,
@@ -143,6 +145,69 @@ def test_looks_like_html_bytes_accepts_real_xlsx_magic():
 
 def test_looks_like_html_bytes_detects_html_error_page():
     assert looks_like_html_bytes(b"<html><body>Not Found</body></html>")
+
+
+# --- HttpClient._get_raw / real urllib.error.HTTPError handling -----------
+#
+# Regression tests for a real bug found against the live Sackmann
+# acquisition run: urllib.request.urlopen() raises urllib.error.HTTPError
+# for ANY non-2xx response (it does NOT return it as a normal response
+# object the way `requests` does). HTTPError is a subclass of URLError,
+# so without explicit handling in HttpClient._get_raw, a real 404 was
+# being caught by _retry_loop's broad `except URLError`, misclassified
+# as a transient network error, retried max_retries times, and finally
+# reported as "network error: HTTP Error 404: Not Found" instead of
+# failing fast via the intended status-code branching. These tests
+# exercise the real HttpClient (not FakeClient) against a mocked
+# urlopen, since that is the only way to reach this code path.
+
+class _FakeHTTPErrorResponse:
+    """Minimal stand-in for the file-like object urllib.error.HTTPError
+    behaves as (it subclasses addinfourl), enough for our _get_raw to
+    call .headers.get(...) and .read() on it."""
+
+    def __init__(self, body: bytes, content_type: str):
+        self._body = body
+        self.headers = {"Content-Type": content_type}
+
+    def read(self):
+        return self._body
+
+
+def _make_http_error(code: int, body: bytes = b"Not Found", content_type: str = "text/plain") -> urllib.error.HTTPError:
+    exc = urllib.error.HTTPError(url="https://example.com/x", code=code, msg="error", hdrs=None, fp=None)
+    fake = _FakeHTTPErrorResponse(body, content_type)
+    exc.headers = fake.headers
+    exc.read = fake.read
+    return exc
+
+
+def test_http_client_get_text_converts_404_httperror_into_a_normal_tuple():
+    client = HttpClient(user_agent="test-agent", timeout_seconds=5.0)
+    with patch("urllib.request.urlopen", side_effect=_make_http_error(404)):
+        status, content_type, body = client.get_text("https://example.com/x.csv")
+    assert status == 404
+    assert body == "Not Found"
+
+
+def test_fetch_one_text_fails_fast_on_a_real_404_httperror_without_retrying():
+    client = HttpClient(user_agent="test-agent", timeout_seconds=5.0)
+    with patch("urllib.request.urlopen", side_effect=_make_http_error(404)):
+        result = fetch_one_text("k", "https://example.com/x.csv", CONFIG, client, sleep_fn=no_sleep)
+    assert result.success is False
+    assert result.http_status == 404
+    assert "network error" not in (result.error_message or "")
+
+
+def test_fetch_one_text_retries_a_real_503_httperror_then_gives_up():
+    # A 5xx HTTPError should still go through the retry/backoff path
+    # (just via the http_status branch now, not the network-error
+    # branch) and be exhausted after max_retries + 1 attempts.
+    client = HttpClient(user_agent="test-agent", timeout_seconds=5.0)
+    with patch("urllib.request.urlopen", side_effect=_make_http_error(503)):
+        result = fetch_one_text("k", "https://example.com/x.csv", CONFIG, client, sleep_fn=no_sleep)
+    assert result.success is False
+    assert "server error" in result.error_message
 
 
 # --- fetch_one_text ----------------------------------------------------

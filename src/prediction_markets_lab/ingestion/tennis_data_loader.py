@@ -202,11 +202,30 @@ class HttpClient:
 
     def _get_raw(self, url: str) -> tuple[int, str, bytes]:
         request = urllib.request.Request(url, headers={"User-Agent": self.user_agent})
-        with urllib.request.urlopen(request, timeout=self.timeout_seconds, context=self.ssl_context) as response:
-            status = response.status
-            content_type = response.headers.get("Content-Type", "")
-            body = response.read()
-            return status, content_type, body
+        try:
+            with urllib.request.urlopen(request, timeout=self.timeout_seconds, context=self.ssl_context) as response:
+                status = response.status
+                content_type = response.headers.get("Content-Type", "")
+                body = response.read()
+                return status, content_type, body
+        except urllib.error.HTTPError as exc:
+            # urlopen raises HTTPError for ANY non-2xx response instead of
+            # returning it as a normal response object. HTTPError is a
+            # subclass of URLError, so without this except clause it would
+            # propagate straight through to _retry_loop's
+            # `except (urllib.error.URLError, ...)` -- meaning every real
+            # HTTP error status, including a plain 404, would be
+            # misclassified as a transient "network error", retried
+            # max_retries times (wasting the full backoff schedule), and
+            # then reported as "network error: HTTP Error 404: Not Found"
+            # instead of the intended immediate, no-retry "http_error"
+            # outcome. Converting it back into the normal
+            # (status, content_type, body) tuple here restores the status-
+            # code branching in _retry_loop (429/5xx retry; anything else,
+            # 404 included, fails fast).
+            content_type = exc.headers.get("Content-Type", "") if exc.headers else ""
+            body = exc.read()
+            return exc.code, content_type, body
 
 
 def _retry_loop(source_key: str, url: str, config: AcquisitionConfig, sleep_fn, do_fetch):

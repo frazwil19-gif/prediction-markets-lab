@@ -173,6 +173,54 @@ happened before any content was received) -- the acquisition
 workflow's schema-inventory step and the validator's zip-magic-number
 check are still the real check for that, on the next run.
 
+### Diagnostic run #2 findings (2026-09-11): the real bug behind the Sackmann 404s
+
+A second real run (this time with the TLS fix applied and the full
+`max_retries=4` budget) reproduced the identical uniform 404 across
+Sackmann targets, which is what it took to stop treating "recurring
+CDN flakiness" as sufficient and find the actual bug: `HttpClient`
+uses `urllib.request.urlopen`, which -- unlike the `requests` library
+-- raises `urllib.error.HTTPError` for *any* non-2xx response rather
+than returning it as a normal response object. `HTTPError` is a
+subclass of `URLError`, so `_retry_loop`'s
+`except (urllib.error.URLError, TimeoutError, OSError)` clause was
+catching every real HTTP error status -- including a plain 404 --
+and misclassifying it as a transient network error: retried
+`max_retries` times with full exponential backoff (~2.5 minutes
+wasted per failing file) and finally reported as `"network error:
+HTTP Error 404: Not Found"`, masking the real, immediate,
+no-retry-needed `http_error` outcome the status-code branching was
+designed to produce. **This is a real, previously latent bug**, not a
+tennis-specific one -- the identical pattern exists in
+`football_data_loader.py`'s `HttpClient.get`; it simply never
+manifested there because Cycle 1's real acquisition run never hit a
+genuine 404 (worth a follow-up fix there too, tracked separately, not
+bundled into this fix).
+
+**Fixed** in `tennis_data_loader.py`: `HttpClient._get_raw` now catches
+`urllib.error.HTTPError` explicitly and converts it back into the
+normal `(status, content_type, body)` tuple shape, restoring
+`_retry_loop`'s intended branching (429/5xx retry; everything else,
+404 included, fails immediately with the correct status and message).
+Covered by three new regression tests in
+`tests/unit/test_tennis_data_loader.py` that mock `urllib.request.urlopen`
+directly (the only way to reach this code path) rather than going
+through the higher-level `FakeClient` the rest of the suite uses.
+
+This bug fix does not, by itself, prove the Sackmann URL convention is
+correct -- it only means a genuine 404 will now be reported instantly
+and honestly instead of being disguised as a 2.5-minute-per-file
+"network error". To settle the URL question directly rather than
+continuing to reason about it from outside GitHub's network, the
+workflow now runs a lightweight, non-blocking diagnostic step
+(`Diagnose Sackmann repo/branch access from this runner`) immediately
+after checkout: it queries `api.github.com`'s repo metadata for the
+real `default_branch` and does a direct status check of the exact URL
+the acquisition will use, from the same runner and network context
+that produced the 404s -- in seconds, before committing to the full
+paced 28-file run. The next run's log should be read for that step's
+output first.
+
 ## 4. Checkpoint 2 (not started) — player-identity resolution and market-consensus construction
 
 Deferred, scoped only at a high level here so it is pre-registered
