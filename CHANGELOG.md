@@ -3,7 +3,26 @@
 All notable changes to this project are documented here. Format is
 loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
-## [Unreleased] — Stage 3A frozen, Stage 3B Checkpoints 1-4 complete
+## [Unreleased] — Stage 3A frozen, Stage 3B Checkpoints 1-5 complete
+
+### Added (Checkpoint 5 — STAGE 3B PRE-HOLDOUT FREEZE)
+
+- `research/cycles/CYCLE_001/results/FINAL_HOLDOUT_PROTOCOL.md` --
+  pre-registration for Checkpoint 6: frozen code commit and data version,
+  predeclared holdout coverage (1,160 matches, all 3 competitions, full
+  coverage = common sample uniquely for this season), the exact procedure
+  (fit on all 4 development seasons as one final fold, evaluate once),
+  the exhaustive 8-candidate predeclared list, and a mechanical verdict
+  rubric (STRONG SIGNAL / WEAK-UNCERTAIN SIGNAL / MARKET DOMINATES-NULL
+  RESULT / INVALID) fixed before any result can be seen.
+- `reports/audits/STAGE_3B_PRE_HOLDOUT_FREEZE.json` +
+  `scripts/verify_pre_holdout_freeze.py` -- hash-seals the protocol
+  document itself (mirroring `verify_frozen_data_hashes.py`'s pattern for
+  the raw data), so Checkpoint 6 can mechanically refuse to proceed if the
+  protocol changed after pre-registration.
+- Checkpoint 6 (opening the sealed 2024/25 holdout) has NOT been run and
+  requires explicit go-ahead -- this commit only locks the procedure in
+  place, it does not open the holdout.
 
 ### Added (Checkpoints 2-4)
 

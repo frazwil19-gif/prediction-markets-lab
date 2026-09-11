@@ -1,11 +1,14 @@
 # Stage 3B Plan — Probability Model Validation
 
 **Status: development folds, Baseline 0, Baseline 1, Elo (Model 1), Poisson
-(Model 2), blends (Model 3), paired bootstrap uncertainty, and raw
-calibration diagnostics are all complete (Checkpoints 1-4). Only the final
-holdout protocol and the sealed 2024/25 evaluation itself remain
-(Checkpoints 5-6) — see `research/cycles/CYCLE_001/results/MODEL_COMPARISON.md`
-for the consolidated Checkpoint 1-4 result.**
+(Model 2), blends (Model 3), paired bootstrap uncertainty, raw calibration
+diagnostics, and the pre-registered final holdout protocol are all complete
+(Checkpoints 1-5) — see `research/cycles/CYCLE_001/results/MODEL_COMPARISON.md`
+for the consolidated Checkpoint 1-4 result and
+`research/cycles/CYCLE_001/results/FINAL_HOLDOUT_PROTOCOL.md` for the
+pre-registered Checkpoint 6 procedure and verdict rubric. Only the sealed
+2024/25 evaluation itself remains (Checkpoint 6), pending explicit
+go-ahead to open it.**
 
 ## 1. Research question
 
@@ -148,7 +151,7 @@ passing as of Checkpoint 1.
 - `scripts/verify_frozen_data_hashes.py`
 - `data/interim/stage_3b_checkpoint1_predictions.csv`, `data/interim/stage_3b_checkpoint1_metrics.json` (regenerable, not committed — see `.gitignore`)
 
-## 11. Checkpoints 2-4 complete; not yet done (Checkpoints 5-6)
+## 11. Checkpoints 2-5 complete; not yet done (Checkpoint 6)
 
 Elo (`ELO_MODEL_REPORT.md`), Poisson (`POISSON_MODEL_REPORT.md`), the 4
 predeclared blend combinations (`BLEND_REPORT.md`), paired
@@ -159,6 +162,13 @@ complete — see `MODEL_COMPARISON.md` for the consolidated result. No model
 or blend has beaten the market on the development folds; the gap is
 statistically confirmed by bootstrap CI.
 
-Remaining: `FINAL_HOLDOUT_PROTOCOL.md`, the `STAGE 3B PRE-HOLDOUT FREEZE`
-commit, and the sealed 2024/25 evaluation itself (Checkpoints 5-6) — see
-`MODEL_COMPARISON.md` §"Remaining before a final Stage 3B verdict".
+`FINAL_HOLDOUT_PROTOCOL.md` (Checkpoint 5) is written, committed, and hash-
+sealed via `reports/audits/STAGE_3B_PRE_HOLDOUT_FREEZE.json` +
+`scripts/verify_pre_holdout_freeze.py` — the exact procedure, predeclared
+candidate list, and verdict rubric for Checkpoint 6 are now locked and may
+not be edited after the fact.
+
+Remaining: Checkpoint 6 — open the sealed 2024/25 holdout exactly once,
+score all 8 predeclared candidates, and issue `STAGE_3B_FINAL_REPORT.md`
+per the frozen verdict rubric. Not started; requires explicit go-ahead
+before the holdout is touched (see `FINAL_HOLDOUT_PROTOCOL.md`).

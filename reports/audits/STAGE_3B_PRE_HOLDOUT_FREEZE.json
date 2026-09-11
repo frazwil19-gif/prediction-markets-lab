@@ -1,0 +1,44 @@
+{
+  "freeze_name": "STAGE_3B_PRE_HOLDOUT_FREEZE",
+  "freeze_timestamp_utc": "2026-09-11T09:45:00Z",
+  "data_version": "cycle_001_v1.0.0-20260910T234139",
+  "frozen_code_commit": "6195fbf2a11d3da6705e4e418532ea4676011123",
+  "protocol_document_path": "research/cycles/CYCLE_001/results/FINAL_HOLDOUT_PROTOCOL.md",
+  "protocol_document_sha256": "1c32d48604a725bf53441942b00368dace7f3f0a7be1a6654b8aa9eb2fd4e416",
+  "sealed_holdout_season": "2024_25",
+  "predeclared_holdout_coverage": {
+    "full_coverage_n": 1160,
+    "common_sample_n": 1160,
+    "by_competition": {
+      "E0": 380,
+      "E1": 552,
+      "SC0": 228
+    },
+    "note": "Unlike the development folds (34/3480 matches lacked usable market data), every 2024/25 match has usable closing consensus coverage -- full coverage equals common sample for the holdout."
+  },
+  "predeclared_candidates": [
+    "naive",
+    "market",
+    "elo",
+    "poisson",
+    "elo_poisson",
+    "market_elo",
+    "market_poisson",
+    "market_elo_poisson"
+  ],
+  "predeclared_bootstrap_params": {
+    "methods": ["match_level", "block_by_date"],
+    "metrics": ["log_loss", "brier"],
+    "n_resamples": 2000,
+    "seed": 42,
+    "ci_level": 0.95
+  },
+  "verdict_rubric": [
+    "STRONG SIGNAL",
+    "WEAK-UNCERTAIN SIGNAL",
+    "MARKET DOMINATES / NULL RESULT",
+    "INVALID"
+  ],
+  "verdict_rubric_defined_in": "research/cycles/CYCLE_001/results/FINAL_HOLDOUT_PROTOCOL.md#5-verdict-rubric",
+  "rule": "This record and the protocol document it hashes are immutable once committed. Checkpoint 6 must verify this record's protocol_document_sha256 against the live file before opening the holdout, and refuse to proceed on any mismatch -- exactly as verify_frozen_data_hashes.py does for the raw/processed data."
+}
