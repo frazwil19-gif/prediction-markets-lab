@@ -1,14 +1,15 @@
 # Stage 3B Plan — Probability Model Validation
 
-**Status: development folds, Baseline 0, Baseline 1, Elo (Model 1), Poisson
-(Model 2), blends (Model 3), paired bootstrap uncertainty, raw calibration
-diagnostics, and the pre-registered final holdout protocol are all complete
-(Checkpoints 1-5) — see `research/cycles/CYCLE_001/results/MODEL_COMPARISON.md`
-for the consolidated Checkpoint 1-4 result and
-`research/cycles/CYCLE_001/results/FINAL_HOLDOUT_PROTOCOL.md` for the
-pre-registered Checkpoint 6 procedure and verdict rubric. Only the sealed
-2024/25 evaluation itself remains (Checkpoint 6), pending explicit
-go-ahead to open it.**
+**STATUS: STAGE 3B COMPLETE. All 6 checkpoints done, including the sealed
+2024/25 holdout evaluation (opened exactly once, per the frozen protocol).
+Final verdict: MARKET DOMINATES / NULL RESULT (applying the frozen rubric
+to `elo_poisson`, the only predeclared candidate not numerically identical
+to market — see `research/cycles/CYCLE_001/results/STAGE_3B_FINAL_REPORT.md`
+§6 for the full verdict discussion, including a genuine ambiguity in the
+rubric's mechanical "best candidate" selection that is reported
+transparently rather than resolved after the fact). No model or blend beat
+the market on the development folds or the holdout. See
+`STAGE_3B_FINAL_REPORT.md` for the complete result.**
 
 ## 1. Research question
 
@@ -151,24 +152,29 @@ passing as of Checkpoint 1.
 - `scripts/verify_frozen_data_hashes.py`
 - `data/interim/stage_3b_checkpoint1_predictions.csv`, `data/interim/stage_3b_checkpoint1_metrics.json` (regenerable, not committed — see `.gitignore`)
 
-## 11. Checkpoints 2-5 complete; not yet done (Checkpoint 6)
+## 11. All 6 checkpoints complete — Stage 3B closed
 
 Elo (`ELO_MODEL_REPORT.md`), Poisson (`POISSON_MODEL_REPORT.md`), the 4
 predeclared blend combinations (`BLEND_REPORT.md`), paired
 match-level/block-by-date bootstrap confidence intervals for every
-model-vs-market delta (`BLEND_REPORT.md`), and raw calibration diagnostics
-for market/Elo/Poisson/`elo_poisson` (`CALIBRATION_REPORT.md`) are all
-complete — see `MODEL_COMPARISON.md` for the consolidated result. No model
-or blend has beaten the market on the development folds; the gap is
-statistically confirmed by bootstrap CI.
+model-vs-market delta (`BLEND_REPORT.md`), raw calibration diagnostics for
+market/Elo/Poisson/`elo_poisson` (`CALIBRATION_REPORT.md`), the
+pre-registered final holdout protocol (`FINAL_HOLDOUT_PROTOCOL.md`,
+hash-sealed via `reports/audits/STAGE_3B_PRE_HOLDOUT_FREEZE.json`), and the
+sealed 2024/25 holdout evaluation itself (`STAGE_3B_FINAL_REPORT.md`) are
+all complete.
 
-`FINAL_HOLDOUT_PROTOCOL.md` (Checkpoint 5) is written, committed, and hash-
-sealed via `reports/audits/STAGE_3B_PRE_HOLDOUT_FREEZE.json` +
-`scripts/verify_pre_holdout_freeze.py` — the exact procedure, predeclared
-candidate list, and verdict rubric for Checkpoint 6 are now locked and may
-not be edited after the fact.
+The holdout was opened exactly once, with explicit go-ahead obtained
+beforehand, per the frozen protocol. Final verdict: MARKET DOMINATES / NULL
+RESULT. Every development-fold finding replicated on the sealed holdout
+(same ranking, CI entirely above zero for the one genuinely distinct
+candidate, `elo_poisson`; the market-inclusive blends recalibrated to 100%
+market weight on the training data again). See `STAGE_3B_FINAL_REPORT.md`
+for the full result, including a transparently-reported ambiguity in the
+rubric's mechanical "best candidate" tie-breaking when several predeclared
+candidates are numerically identical to market.
 
-Remaining: Checkpoint 6 — open the sealed 2024/25 holdout exactly once,
-score all 8 predeclared candidates, and issue `STAGE_3B_FINAL_REPORT.md`
-per the frozen verdict rubric. Not started; requires explicit go-ahead
-before the holdout is touched (see `FINAL_HOLDOUT_PROTOCOL.md`).
+**Stage 3B is closed.** Any further model-vs-market research on this
+dataset would be a new research cycle (Cycle 2) with its own
+pre-registration. Any staking/EV/execution work remains a separate, later,
+explicitly out-of-scope decision (see §1) not implied by this result.

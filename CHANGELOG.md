@@ -3,7 +3,52 @@
 All notable changes to this project are documented here. Format is
 loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
-## [Unreleased] — Stage 3A frozen, Stage 3B Checkpoints 1-5 complete
+## [Unreleased] — Stage 3A frozen, Stage 3B COMPLETE (all 6 checkpoints)
+
+### Added (Checkpoint 6 — sealed 2024/25 holdout evaluation, FINAL)
+
+- `scripts/run_stage_3b_checkpoint6_holdout_evaluation.py` -- the one
+  Stage 3B script authorised to read the 2024/25 season. Verifies both the
+  frozen data record and the pre-holdout freeze record before reading
+  anything, verifies coverage against the pre-registered expectation,
+  fits every model on all 4 development seasons as one final fold,
+  calibrates Elo's draw_margin and all 4 blend combinations on that
+  training period only, and scores all 8 predeclared candidates exactly
+  once on the holdout.
+- `research/cycles/CYCLE_001/results/STAGE_3B_FINAL_REPORT.md` -- the
+  final Stage 3B result and verdict.
+
+### Findings (Checkpoint 6, FINAL)
+
+- Holdout coverage matched the pre-registered expectation exactly: 1,160
+  matches (E0: 380, E1: 552, SC0: 228), 100% usable market coverage
+  (unlike the development folds' 34/3,480 gap).
+- Every development-fold finding replicated: naive < Elo < Poisson <
+  `elo_poisson` < market, in that order. Market-inclusive blends
+  recalibrated to 100% market weight on the training data again --
+  confirming this is a genuine, repeatable property of this dataset, not
+  a fold-specific artifact.
+- `elo_poisson` (the one predeclared candidate not numerically identical
+  to market) had a 95% bootstrap CI on its log-loss delta vs. market of
+  [+0.0066, +0.0274] -- entirely above zero. Market's advantage is
+  smaller on the holdout than on the development folds (roughly a third
+  smaller) but still statistically confirmed.
+- A genuine methodological ambiguity was discovered and reported
+  transparently rather than resolved after the fact: 3 of the 8
+  predeclared candidates (`market_elo`, `market_poisson`,
+  `market_elo_poisson`) are numerically identical to market, so the
+  frozen rubric's literal "best non-market candidate" selection ties with
+  market (delta = 0.0000) and mechanically classifies as WEAK-UNCERTAIN
+  SIGNAL. Applying the same rubric to the one substantively distinct
+  candidate (`elo_poisson`) instead yields MARKET DOMINATES / NULL RESULT
+  -- both readings are reported in full in `STAGE_3B_FINAL_REPORT.md`
+  rather than silently picking one.
+- **FINAL STAGE 3B VERDICT: MARKET DOMINATES / NULL RESULT.** No
+  transparent statistical model built in this project added predictive
+  information beyond the market's closing consensus, on either the
+  development folds or the sealed holdout. Stage 3B is closed.
+
+## Stage 3A frozen, Stage 3B Checkpoints 1-5 complete
 
 ### Added (Checkpoint 5 — STAGE 3B PRE-HOLDOUT FREEZE)
 
