@@ -23,6 +23,27 @@ back up.
   should have a corresponding file under `tests/unit/` or
   `tests/integration/`.
 
+## Python environment
+
+The system Python on Fraser's Mac is 3.10; this project requires >=3.11
+(`pyproject.toml`). Use `uv` to manage an isolated 3.11 environment rather
+than fighting the system interpreter:
+
+```
+uv python install 3.11
+uv venv --python 3.11 .venv
+source .venv/bin/activate
+uv pip install -r requirements.txt -e .
+pytest -q
+```
+
+Notes:
+- `uv`-created venvs do not ship a `pip` module -- use `uv pip install ...`,
+  not `python -m pip install ...`, inside them.
+- `.venv/` is already gitignored (see `.gitignore`); never commit it.
+- Re-activate with `source .venv/bin/activate` in any new shell before
+  running `pytest` or any `scripts/*.py` file.
+
 ## Workflow
 
 1. Make changes on a branch or directly if working solo.
