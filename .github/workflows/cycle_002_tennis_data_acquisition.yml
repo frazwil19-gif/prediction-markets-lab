@@ -29,6 +29,10 @@ on:
         description: "Seconds between requests (conservative default)"
         type: string
         default: "6"
+      max_retries:
+        description: "Retries per failing source before giving up (lower this for a fast diagnostic pass -- each failing source costs up to ~5 min at the default of 4)"
+        type: string
+        default: "4"
       resume_existing:
         description: "Skip files already present on disk without re-fetching"
         type: boolean
@@ -36,6 +40,19 @@ on:
 
 permissions:
   contents: read
+
+env:
+  # Python fully buffers stdout when it isn't attached to a real
+  # terminal (exactly the case for a GitHub Actions log capture), so
+  # without this every print() from the acquisition script -- the
+  # per-target "fetching..."/"FAILED: ..." progress lines that matter
+  # most for watching a long, paced, retrying run live -- sits
+  # invisible in a buffer instead of streaming to the log as it
+  # happens. Discovered on the first real run (run #3): the log stayed
+  # blank past the shell env dump for 20+ minutes while the script was
+  # (as far as we could tell after the fact) actually working through
+  # its bounded retry/backoff loop.
+  PYTHONUNBUFFERED: "1"
 
 jobs:
   acquire:
@@ -77,6 +94,7 @@ jobs:
             for s in "${SEASONS[@]}"; do CMD="$CMD --season $s"; done
           fi
           CMD="$CMD --request-delay-seconds ${{ inputs.request_delay_seconds }}"
+          CMD="$CMD --max-retries ${{ inputs.max_retries }}"
           echo "cmd=$CMD" >> "$GITHUB_OUTPUT"
 
       - name: Run acquisition (paced, may take several minutes)
