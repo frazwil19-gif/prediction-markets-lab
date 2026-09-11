@@ -25,10 +25,8 @@ from prediction_markets_lab.ingestion.tennis_data_loader import (
     fetch_one_text,
     looks_like_html_bytes,
     looks_like_html_text,
-    sackmann_match_file_url,
-    sackmann_player_file_url,
-    sackmann_ranking_file_url,
     tennis_data_co_uk_url,
+    tml_database_match_file_url,
     write_raw_file_atomic_bytes,
     write_raw_file_atomic_text,
 )
@@ -107,24 +105,19 @@ def test_http_client_accepts_an_explicit_ssl_context_override():
 
 # --- URL builders ---------------------------------------------------
 
-def test_sackmann_match_file_url():
+def test_tml_database_match_file_url():
     assert (
-        sackmann_match_file_url("https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master", "atp", "2024")
-        == "https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_2024.csv"
+        tml_database_match_file_url(
+            "https://raw.githubusercontent.com/Tennismylife/TML-Database/master", "{season}.csv", "2024"
+        )
+        == "https://raw.githubusercontent.com/Tennismylife/TML-Database/master/2024.csv"
     )
 
 
-def test_sackmann_ranking_file_url_formats_tour_into_template():
+def test_tml_database_match_file_url_formats_season_into_template():
     assert (
-        sackmann_ranking_file_url("https://example.com/atp", "atp", "{tour}_rankings_current.csv")
-        == "https://example.com/atp/atp_rankings_current.csv"
-    )
-
-
-def test_sackmann_player_file_url_formats_tour_into_template():
-    assert (
-        sackmann_player_file_url("https://example.com/wta", "wta", "{tour}_players.csv")
-        == "https://example.com/wta/wta_players.csv"
+        tml_database_match_file_url("https://example.com/tml", "{season}_matches.csv", "2025")
+        == "https://example.com/tml/2025_matches.csv"
     )
 
 
@@ -158,8 +151,9 @@ def test_looks_like_html_bytes_detects_html_error_page():
 
 # --- HttpClient._get_raw / real urllib.error.HTTPError handling -----------
 #
-# Regression tests for a real bug found against the live Sackmann
-# acquisition run: urllib.request.urlopen() raises urllib.error.HTTPError
+# Regression tests for a real bug found against the live acquisition
+# run (originally against Sackmann's repos, before the TML-Database
+# pivot): urllib.request.urlopen() raises urllib.error.HTTPError
 # for ANY non-2xx response (it does NOT return it as a normal response
 # object the way `requests` does). HTTPError is a subclass of URLError,
 # so without explicit handling in HttpClient._get_raw, a real 404 was

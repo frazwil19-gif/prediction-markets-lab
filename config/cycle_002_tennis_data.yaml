@@ -1,23 +1,58 @@
 # Cycle 2 (Tennis Match Winner) data acquisition configuration.
 #
-# Written 2026-09-11, reconciled against config/cycle_001_data.yaml and
-# scripts/run_cycle_001_data_acquisition.py's conventions -- this file
-# follows the same "no magic numbers in scripts" rule as Cycle 1:
-# everything the acquisition run needs is read from here.
+# REWRITTEN 2026-09-11 (source pivot). Original plan used Jeff
+# Sackmann's tennis_atp/tennis_wta GitHub repos directly -- confirmed
+# via `git ls-remote` (direct to GitHub's git servers, no CDN, no
+# cache, no rate limit involved) and the GitHub API that BOTH repos no
+# longer exist at that path ("Repository not found", not a branch
+# issue, not flakiness). Jeff Sackmann's account and other repos
+# (tennis_MatchChartingProject) are still active, so this looks like a
+# targeted removal/rename of just these two, not an account-wide
+# issue -- reason unconfirmed from outside GitHub.
 #
-# Two independent source families, joined later by player identity, not
-# assumed identical at acquisition time:
-#   1. Jeff Sackmann's tennis_atp / tennis_wta GitHub repos -- match
-#      results, tournament metadata, serve stats, rankings, player bios.
-#      License: CC BY-NC-SA 4.0 (non-commercial only -- see licensing note
-#      below). This acquisition step downloads RAW match/ranking/player
-#      files only; it does not join them to odds.
-#   2. Tennis-data.co.uk -- per-year bookmaker/exchange odds files, same
-#      publisher and CSV/Excel convention as football-data.co.uk (already
-#      used in Cycle 1).
+# Replacement, verified against real live fetches before switching
+# (never blindly swapped a URL without checking real content first):
+# Tennismylife/TML-Database (github.com/Tennismylife/TML-Database),
+# explicitly "Based on Jeff Sackmann's work: tennis_atp" per its own
+# README -- an actively-maintained continuation using the IDENTICAL
+# column schema (tourney_id, winner_name, winner_rank, w_ace, etc.),
+# confirmed by directly fetching and inspecting 2021.csv, 2024.csv and
+# 2025.csv. Bonus: this schema embeds winner/loser rank, rank_points,
+# age, height, hand, and country directly in every match row, so a
+# separate rankings/player-bio acquisition step (Sackmann's
+# rankings_10s/20s/current.csv, players.csv) is no longer needed for
+# this project's stated requirements -- one file per season now
+# covers match date/tournament, players, winner/loser, surface, and
+# rank-at-time-of-match all at once.
 #
-# Cross-source player-name matching (Sackmann's player_id-keyed results
-# vs. tennis-data.co.uk's "Djokovic N."-style name strings) is
+# ATP only for this phase: no actively-maintained free WTA equivalent
+# was found in a reasonably bounded search (see
+# research/cycles/CYCLE_002_TENNIS/PLAN.md's diagnostic-run notes and
+# claude/cycle-2-research-pipeline.md). This is a deliberate, reasoned
+# descope, not a silent drop -- ATP alone is a complete, 58-year-deep
+# tour, sufficient for a real Match Winner research cycle. WTA is
+# queued for a follow-up phase if/when a comparable live source turns
+# up (re-adding it is a config change, not a redesign -- the loader
+# code doesn't hardcode a single tour).
+#
+# Two independent source families, joined later by player identity,
+# not assumed identical at acquisition time:
+#   1. Tennismylife/TML-Database -- ATP match results, one CSV per
+#      season, with rank/age/hand/height/country embedded per row.
+#      License: CC BY-NC-SA (non-commercial only -- see licensing note
+#      below).
+#   2. Tennis-data.co.uk -- per-year bookmaker/exchange odds files,
+#      same publisher and CSV/Excel convention as football-data.co.uk
+#      (already used in Cycle 1). Separately confirmed unreliable from
+#      three independent networks (a GitHub Actions runner, this
+#      project's own web-fetch tooling, and a plain browser-style
+#      check) with inconsistent TLS-handshake failures and 503s --
+#      treated as a best-effort source with a manual-download fallback,
+#      not assumed to always be automatable. See PLAN.md's diagnostic
+#      notes for the compatibility measures already attempted.
+#
+# Cross-source player-name matching (TML-Database's full names vs.
+# tennis-data.co.uk's "Djokovic N."-style abbreviated name strings) is
 # deliberately NOT done in this acquisition step -- it is a real,
 # nontrivial entity-resolution problem in its own right (the tennis
 # analogue of football's team-name normalisation) and deserves its own
@@ -25,31 +60,29 @@
 # research/cycles/CYCLE_002_TENNIS/PLAN.md §4 (Checkpoint 2).
 
 licensing:
-  sackmann_repos_license: "CC BY-NC-SA 4.0"
-  sackmann_repos_attribution: >-
-    Match, ranking, and player data from Jeff Sackmann's tennis_atp and
-    tennis_wta repositories (github.com/JeffSackmann), licensed CC
-    BY-NC-SA 4.0. Non-commercial research/paper-trading use only; any
+  match_data_license: "CC BY-NC-SA"
+  match_data_attribution: >-
+    ATP match data from Tennismylife/TML-Database
+    (github.com/Tennismylife/TML-Database), itself built on Jeff
+    Sackmann's tennis_atp work (github.com/JeffSackmann). Licensed CC
+    BY-NC-SA. Non-commercial research/paper-trading use only; any
     future commercial or production use requires separate licensing
     review.
 
 sources:
-  sackmann_atp:
-    base_url: "https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master"
+  tml_database_atp:
+    base_url: "https://raw.githubusercontent.com/Tennismylife/TML-Database/master"
     tour: "atp"
-  sackmann_wta:
-    base_url: "https://raw.githubusercontent.com/JeffSackmann/tennis_wta/master"
-    tour: "wta"
   tennis_data_co_uk:
-    # Documented convention (per public tennis-betting-model references;
-    # NOT yet independently verified against a live fetch in this repo --
-    # both the cloud sandbox and the Mac's own network egress are
-    # currently proxy-blocked from this host, confirmed 2026-09-11).
-    # The acquisition script's schema-inventory step must confirm this
-    # empirically against the first real download, the same way Cycle 1
-    # discovered its actual bookmaker-column prefixes empirically rather
-    # than assuming them upfront (see known_bookmaker_prefixes below and
-    # `known_bookmaker_prefixes` in config/cycle_001_data.yaml).
+    # Documented convention (per public tennis-betting-model
+    # references), confirmed reachable in principle -- the acquisition
+    # has hit TLS-handshake failures from every automated environment
+    # tried so far (see PLAN.md). The acquisition script's
+    # schema-inventory step and the validator's zip-magic-number check
+    # are both designed to surface a wrong URL pattern loudly (a
+    # 404/HTML-error-page rejection, or a missing PK zip header)
+    # rather than silently accepting bad data, on whichever attempt
+    # (automated or manual) actually gets bytes back.
     base_url: "https://www.tennis-data.co.uk"
     men_path_template: "{year}/{year}.xlsx"
     women_path_template: "{year}w/{year}.xlsx"
@@ -63,8 +96,7 @@ sources:
 tours:
   - code: ATP
     name: "ATP Tour (men's)"
-  - code: WTA
-    name: "WTA Tour (women's)"
+  # WTA deliberately omitted for this phase -- see the top-of-file note.
 
 # Calendar-year seasons (tennis seasons are Jan-Dec, unlike football's
 # Aug-May split), chosen to mirror Cycle 1's 5-season / 1-sealed-holdout
@@ -76,34 +108,17 @@ seasons:
   - "2024"
   - "2025"  # provisional sealed holdout -- see split_plan below
 
-sackmann_match_files:
-  # Per-season singles match files, both tours.
-  filename_template: "{tour}_matches_{season}.csv"
+tml_database_match_files:
+  # One self-contained per-season file per tour: match metadata,
+  # players, surface, score, and rank/age/hand/height/country at time
+  # of match all in one row. No separate rankings or player-bio files
+  # needed (see top-of-file note).
+  filename_template: "{season}.csv"
 
-sackmann_ranking_files:
-  # Sackmann publishes rankings chunked by decade, not by single year.
-  # Provisional list -- confirm actual filenames present in each repo
-  # during the audit step rather than assuming this list is exhaustive
-  # or unchanged.
-  filenames:
-    - "{tour}_rankings_10s.csv"
-    - "{tour}_rankings_20s.csv"
-    - "{tour}_rankings_current.csv"
-
-sackmann_player_files:
-  # One-time, not per-season: full player bio table.
-  filename_template: "{tour}_players.csv"
-
-expected_raw_file_count: 28
-  # 2 tours x 5 seasons match files (10)
-  # + 2 tours x 5 seasons odds files (10)
-  # + 2 tours x 1 player file (2)
-  # + 2 tours x 3 ranking-chunk files (6)
-  # This is a soft check (a printed warning, not a hard failure) --
-  # see the sackmann_ranking_files note above: the 3-chunk ranking
-  # filename list is provisional, so a real-world mismatch here is
-  # expected to happen occasionally and should prompt a look, not
-  # block the run.
+expected_raw_file_count: 10
+  # 1 tour (ATP) x 5 seasons match files (5)
+  # + 1 tour (ATP) x 5 seasons odds files (5)
+  # This is a soft check (a printed warning, not a hard failure).
 
 pacing:
   request_delay_seconds: 6.0
@@ -126,7 +141,7 @@ validation:
   # threshold is pre-registered rather than invented after seeing data.
 
 schema:
-  canonical_schema_version: "tennis_cycle_002_v0.1_acquisition_only"
+  canonical_schema_version: "tennis_cycle_002_v0.2_acquisition_only_atp_tml_database"
 
 output_paths:
   raw_root: "data/raw/tennis"
@@ -141,7 +156,7 @@ split_plan:
   # acquisition completes and real per-season row counts are known, and
   # only after the Checkpoint 2 name-matching step establishes how many
   # matches actually have usable market data (coverage will likely be
-  # lower than Sackmann's raw match count, exactly as football's
+  # lower than TML-Database's raw match count, exactly as football's
   # eligible_consensus_model flag reduced 3,480 -> 3,446).
   training_seasons: ["2021", "2022", "2023"]
   validation_seasons: ["2024"]

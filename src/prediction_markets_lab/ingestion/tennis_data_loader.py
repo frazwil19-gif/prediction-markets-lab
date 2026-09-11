@@ -2,14 +2,31 @@
 
 Two independent source families, each with its own content shape:
 
-- Jeff Sackmann's tennis_atp / tennis_wta GitHub repos (raw.githubusercontent.com):
-  plain CSV, one file per season for match results, plus a handful of
-  non-per-season files for rankings and player bios. Reconciled against
-  this project's football_data_loader.py convention as closely as
-  possible: same AcquisitionConfig/FetchResult/HttpClient/fetch_one/
+- Tennismylife/TML-Database (raw.githubusercontent.com), an
+  actively-maintained continuation of Jeff Sackmann's tennis_atp repo:
+  plain CSV, one self-contained file per ATP season (match metadata,
+  players, surface, score, and winner/loser rank/rank_points/age/
+  height/hand/country all embedded per row -- no separate rankings or
+  player-bio files needed). Reconciled against this project's
+  football_data_loader.py convention as closely as possible: same
+  AcquisitionConfig/FetchResult/HttpClient/fetch_one/
   write_raw_file_atomic shape, urllib-based (no new dependency), same
   retry/backoff/rate-limit handling, same "reject bodies that look like
   an HTML error page" safeguard.
+
+  PIVOT NOTE (2026-09-11): the original plan used Jeff Sackmann's
+  tennis_atp/tennis_wta GitHub repos directly. Confirmed via
+  `git ls-remote` (direct to GitHub's git servers -- no CDN, no cache,
+  no rate limit involved) and the GitHub API, from a real GitHub
+  Actions runner, that both repos no longer exist at that path
+  ("Repository not found", not a branch issue, not flakiness).
+  Tennismylife/TML-Database was found and independently verified
+  (fetched and inspected 2021.csv, 2024.csv, and 2025.csv directly)
+  before switching -- never blindly swapped a URL without checking
+  real content first. See config/cycle_002_tennis_data.yaml's
+  top-of-file note and research/cycles/CYCLE_002_TENNIS/PLAN.md for the
+  full diagnosis. WTA is descoped for this phase: no actively-maintained
+  free WTA equivalent was found in a reasonably bounded search.
 - Tennis-data.co.uk: per-season Excel (.xlsx) files, i.e. **binary**
   content, unlike football-data.co.uk's plain-text CSV. This module
   therefore provides a `_bytes` counterpart to every text-based
@@ -19,12 +36,12 @@ Two independent source families, each with its own content shape:
 
 This module intentionally does NOT do player-name normalisation, odds
 parsing into probabilities, or consensus construction. Cross-source
-player-name matching (Sackmann's player_id-keyed results vs.
-Tennis-data.co.uk's "Djokovic N."-style name strings) is a real,
-nontrivial entity-resolution problem -- the tennis analogue of
-football's team-name normalisation -- and is deliberately deferred to
-its own checkpoint (see config/cycle_002_tennis_data.yaml's top-of-file
-note and research/cycles/CYCLE_002_TENNIS/PLAN.md).
+player-name matching (TML-Database's full names vs. Tennis-data.co.uk's
+"Djokovic N."-style abbreviated name strings) is a real, nontrivial
+entity-resolution problem -- the tennis analogue of football's
+team-name normalisation -- and is deliberately deferred to its own
+checkpoint (see config/cycle_002_tennis_data.yaml's top-of-file note
+and research/cycles/CYCLE_002_TENNIS/PLAN.md).
 
 Network-egress note (same as football_data_loader.py): this module
 cannot be exercised against the live sources from this project's own
@@ -67,15 +84,15 @@ class AcquisitionConfig:
     """Configuration for a paced acquisition run.
 
     Unlike football_data_loader.AcquisitionConfig, this has no single
-    default base_url -- Cycle 2 has three distinct source base URLs
-    (sackmann_atp, sackmann_wta, tennis_data_co_uk), each supplied
-    per-target by the orchestrator via config/cycle_002_tennis_data.yaml
-    rather than defaulted here. All other fields are configurable per
-    project coding standards (no magic numbers) and default to the same
+    default base_url -- Cycle 2 has two distinct source base URLs
+    (tml_database_atp, tennis_data_co_uk), each supplied per-target by
+    the orchestrator via config/cycle_002_tennis_data.yaml rather than
+    defaulted here. All other fields are configurable per project
+    coding standards (no magic numbers) and default to the same
     conservative values Cycle 1 discovered during its feasibility audit
     -- treated as a reasonable starting point for new hosts, not
-    independently re-verified against Sackmann's or Tennis-data.co.uk's
-    actual rate limits yet.
+    independently re-verified against TML-Database's or
+    Tennis-data.co.uk's actual rate limits yet.
     """
 
     user_agent: str = DEFAULT_USER_AGENT
@@ -95,7 +112,7 @@ class FetchResult:
     on failure.
     """
 
-    source_key: str  # e.g. "sackmann_atp:matches:2024" or "tennis_data_co_uk:ATP:2024"
+    source_key: str  # e.g. "tml_database_match:ATP:2024" or "tennis_data_co_uk:ATP:2024"
     url: str
     success: bool
     http_status: int | None
@@ -298,8 +315,8 @@ def _retry_loop(source_key: str, url: str, config: AcquisitionConfig, sleep_fn, 
 
 
 def fetch_one_text(source_key: str, url: str, config: AcquisitionConfig, client: HttpClient, sleep_fn=time.sleep) -> FetchResult:
-    """Fetch a single CSV source (a Sackmann match/ranking/player file)
-    with retry/backoff. Mirrors football_data_loader.fetch_one's control
+    """Fetch a single CSV source (a TML-Database match file) with
+    retry/backoff. Mirrors football_data_loader.fetch_one's control
     flow exactly."""
     outcome, status, content_type, body, attempt, rate_limited_count, error = _retry_loop(
         source_key, url, config, sleep_fn, lambda: client.get_text(url)
@@ -409,16 +426,21 @@ def write_raw_file_atomic_bytes(path: Path, content: bytes) -> bool:
     return True
 
 
-def sackmann_match_file_url(base_url: str, tour_slug: str, season: str) -> str:
-    return f"{base_url}/{tour_slug}_matches_{season}.csv"
-
-
-def sackmann_ranking_file_url(base_url: str, tour_slug: str, filename_template: str) -> str:
-    return f"{base_url}/{filename_template.format(tour=tour_slug)}"
-
-
-def sackmann_player_file_url(base_url: str, tour_slug: str, filename_template: str) -> str:
-    return f"{base_url}/{filename_template.format(tour=tour_slug)}"
+def tml_database_match_file_url(base_url: str, filename_template: str, season: str) -> str:
+    """Build the URL for one season's ATP match file from
+    Tennismylife/TML-Database (github.com/Tennismylife/TML-Database),
+    the actively-maintained continuation of Jeff Sackmann's tennis_atp
+    repo -- see config/cycle_002_tennis_data.yaml's top-of-file note for
+    why this replaced sackmann_match_file_url/_ranking_file_url/
+    _player_file_url (all three removed 2026-09-11: JeffSackmann/tennis_atp
+    and /tennis_wta no longer exist at their historical path, confirmed
+    via `git ls-remote` and the GitHub API from a real GitHub Actions
+    runner, not a CDN/rate-limit artifact). TML-Database embeds
+    winner/loser rank, rank_points, age, height, hand, and country
+    directly in every match row, so the separate ranking/player-file
+    fetches this function's predecessors supported are no longer needed
+    for this project's stated data requirements."""
+    return f"{base_url}/{filename_template.format(season=season)}"
 
 
 def tennis_data_co_uk_url(

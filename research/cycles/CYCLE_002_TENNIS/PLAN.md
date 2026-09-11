@@ -262,6 +262,77 @@ API for whatever tennis-named repos it owns today, so
 data actually lives now rather than guessing again. Not yet run --
 next real trigger is the test.
 
+### Diagnostic run #5 findings (2026-09-11): replacement source validated, acquisition re-pointed
+
+Per explicit instruction: do not keep patching a source confirmed
+unavailable, and do not switch URLs without validating the replacement
+against real content first. Search for a current authoritative
+location/mirror/fork of Sackmann's ATP data turned up
+**Tennismylife/TML-Database** (github.com/Tennismylife/TML-Database),
+which states in its own README that it is "Based on Jeff Sackmann's
+work: tennis_atp" and is actively updated. Validated before switching,
+not assumed:
+
+- Fetched and inspected `2021.csv`, `2024.csv`, and `2025.csv` directly
+  from `raw.githubusercontent.com/Tennismylife/TML-Database/master/`.
+- Confirmed the column schema is identical to Sackmann's original
+  (`tourney_id, tourney_name, surface, ..., winner_rank,
+  winner_rank_points, ..., w_ace, w_df, ...`), and that every match row
+  already carries winner/loser rank, rank_points, age, height, hand,
+  and country — the fields that previously required Sackmann's
+  separate `rankings_*.csv` / `players.csv` files. That separate
+  acquisition step is dropped entirely rather than re-pointed at a new
+  URL, because there is nothing left for it to fetch.
+- No actively-maintained free WTA equivalent was found in a reasonably
+  bounded search of Tennismylife's other repos and a handful of public
+  Kaggle mirrors (the only WTA datasets found were stale, ~2019, or
+  required Kaggle auth to verify). **Decision: descope WTA from
+  Checkpoint 1**, proceed ATP-only. This is a deliberate, reasoned
+  descope, not a silent drop — ATP alone is a complete, decades-deep
+  tour, sufficient for a real Match Winner research cycle. WTA is
+  queued for a follow-up phase if/when a comparable live source turns
+  up; nothing in the loader code hardcodes a single tour, so re-adding
+  it later is a config change, not a redesign.
+
+`config/cycle_002_tennis_data.yaml` was rewritten around this:
+`sources.tml_database_atp` replaces `sackmann_atp`/`sackmann_wta`;
+`tml_database_match_files.filename_template` (`"{season}.csv"`)
+replaces the three separate Sackmann match/ranking/player file
+sections; `tours` is now ATP-only; `expected_raw_file_count` dropped
+from 28 to 10 (5 ATP match-file seasons + 5 Tennis-data.co.uk odds
+seasons). `tennis_data_loader.py`'s `sackmann_match_file_url` /
+`sackmann_ranking_file_url` / `sackmann_player_file_url` were removed
+and replaced with a single `tml_database_match_file_url`;
+`run_cycle_002_tennis_data_acquisition.py`'s `plan_targets()` was
+rewritten to match (the `sackmann_repo_key`/`sackmann_tour_slug`
+helpers and the ranking/player target loops are gone). Full test suite
+passes (422/422) and `--dry-run` against the live config produces
+exactly the expected 10 targets with correctly-built URLs for both
+source families.
+
+Tennis-data.co.uk's TLS situation is unchanged from diagnostic run #3
+above: the strengthened `build_legacy_tolerant_ssl_context()` fix
+(SECLEVEL=0 + TLS 1.2 ceiling + legacy renegotiation flag) has not yet
+been re-confirmed against the real site by an actual acquisition run.
+Per explicit instruction, this gets **one** further sensible automated
+attempt (the next real trigger of the acquisition workflow); if it
+still fails, the response is the simplest safe fallback — a one-time
+manual download of the (now only 5, ATP-only) `.xlsx` files, hashed
+and dropped into the existing raw/manifest structure so provenance is
+preserved exactly as if acquired automatically — not another round of
+SSL-context tweaking.
+
+**Status at end of this pivot**: acquisition code and config are
+believed acquisition-ready for a real GitHub Actions run against
+Tennismylife/TML-Database (ATP match data) and Tennis-data.co.uk (odds,
+TLS fix unconfirmed). No real download of either source has happened
+yet from an environment with real internet access — everything above
+is validated via direct content inspection (TML-Database) and via
+unit tests + a local `--dry-run` (target-planning logic), not via a
+completed acquisition run. The next real trigger of
+`.github/workflows/cycle_002_tennis_data_acquisition.yml` is the actual
+test of both the TML-Database source and the TLS fix.
+
 ## 4. Checkpoint 2 (not started) — player-identity resolution and market-consensus construction
 
 Deferred, scoped only at a high level here so it is pre-registered

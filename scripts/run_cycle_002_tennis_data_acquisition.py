@@ -10,15 +10,26 @@ Usage:
 Scope of this script, deliberately narrower than Cycle 1's single
 mega-orchestrator (which also built bookmaker triplets, team
 normalisation, and consensus in the same run): paced download (with
-retry/backoff) of Sackmann match/ranking/player files and
+retry/backoff) of Tennismylife/TML-Database ATP match files and
 Tennis-data.co.uk odds files -> manifest -> per-source-family schema
 inventory (empirically recording the actual CSV header columns found,
 the same "discover, don't assume" philosophy Cycle 1 used for
 bookmaker-column prefixes) -> data-version metadata -> validation.
 
+PIVOT NOTE (2026-09-11): this script originally targeted Jeff
+Sackmann's tennis_atp/tennis_wta GitHub repos directly. Confirmed via
+`git ls-remote` and the GitHub API, from a real GitHub Actions runner,
+that both repos no longer exist at that path. Replaced with
+Tennismylife/TML-Database, an actively-maintained continuation of
+Sackmann's work verified against real fetched content before
+switching -- see config/cycle_002_tennis_data.yaml's top-of-file note.
+WTA and the separate rankings/player-bio files are dropped in this
+pivot: TML-Database embeds rank/age/hand/height/country per match row,
+and no actively-maintained free WTA source was found.
+
 It deliberately does NOT do player-name normalisation, odds parsing
 into probabilities, or consensus construction -- that cross-source
-entity-resolution problem (Sackmann's player_id-keyed results vs.
+entity-resolution problem (TML-Database's full names vs.
 Tennis-data.co.uk's "Djokovic N."-style name strings) is Checkpoint 2,
 not acquisition. See config/cycle_002_tennis_data.yaml's top-of-file
 note and research/cycles/CYCLE_002_TENNIS/PLAN.md.
@@ -57,10 +68,8 @@ from prediction_markets_lab.ingestion.tennis_data_loader import (
     HttpClient,
     fetch_one_bytes,
     fetch_one_text,
-    sackmann_match_file_url,
-    sackmann_player_file_url,
-    sackmann_ranking_file_url,
     tennis_data_co_uk_url,
+    tml_database_match_file_url,
     write_raw_file_atomic_bytes,
     write_raw_file_atomic_text,
 )
@@ -77,7 +86,7 @@ class RunSummary:
 
 @dataclass
 class AcquisitionTarget:
-    source_family: str  # "sackmann_match" | "sackmann_ranking" | "sackmann_player" | "tennis_data_co_uk"
+    source_family: str  # "tml_database_match" | "tennis_data_co_uk"
     content_mode: str  # "text" | "bytes"
     tour_code: str  # "ATP" | "WTA"
     season: str | None  # None for player/ranking files (not per-season)
@@ -109,15 +118,22 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     return parser.parse_args(argv)
 
 
-def sackmann_repo_key(tour_code: str) -> str:
-    return "sackmann_atp" if tour_code == "ATP" else "sackmann_wta"
-
-
-def sackmann_tour_slug(tour_code: str) -> str:
-    return "atp" if tour_code == "ATP" else "wta"
-
-
 def plan_targets(config: dict, tour_filter, season_filter) -> list[AcquisitionTarget]:
+    """Build the flat list of files to acquire.
+
+    PIVOT NOTE (2026-09-11): previously built two extra target families
+    per tour (sackmann_ranking, sackmann_player) alongside a
+    per-tour/per-season sackmann_match target, keyed off a
+    tour-code -> repo-key mapping (sackmann_atp / sackmann_wta) that no
+    longer applies now that Jeff Sackmann's tennis_atp/tennis_wta repos
+    are gone. Tennismylife/TML-Database's schema embeds rank/age/hand/
+    height/country directly in each per-season match file, so the
+    ranking/player target families are removed entirely rather than
+    re-pointed -- there is nothing left for them to fetch. Tours now
+    comes straight from config (ATP only for this phase; see
+    config/cycle_002_tennis_data.yaml's top-of-file note on the WTA
+    descope), so no tour-code -> slug mapping helper is needed either.
+    """
     tours = [t["code"] for t in config["tours"]]
     seasons = config["seasons"]
     if tour_filter:
@@ -129,31 +145,15 @@ def plan_targets(config: dict, tour_filter, season_filter) -> list[AcquisitionTa
     targets: list[AcquisitionTarget] = []
 
     for tour_code in tours:
-        repo_base_url = sources[sackmann_repo_key(tour_code)]["base_url"]
-        tour_slug = sackmann_tour_slug(tour_code)
+        tml = sources["tml_database_atp"]
+        filename_template = config["tml_database_match_files"]["filename_template"]
 
         for season in seasons:
-            url = sackmann_match_file_url(repo_base_url, tour_slug, season)
+            url = tml_database_match_file_url(tml["base_url"], filename_template, season)
             targets.append(AcquisitionTarget(
-                source_family="sackmann_match", content_mode="text", tour_code=tour_code, season=season, url=url,
-                raw_relative_path=Path("tennis") / "sackmann" / tour_slug / f"{tour_slug}_matches_{season}.csv",
+                source_family="tml_database_match", content_mode="text", tour_code=tour_code, season=season, url=url,
+                raw_relative_path=Path("tennis") / "tml_database" / tour_code.lower() / filename_template.format(season=season),
             ))
-
-        for filename_template in config["sackmann_ranking_files"]["filenames"]:
-            url = sackmann_ranking_file_url(repo_base_url, tour_slug, filename_template)
-            filename = filename_template.format(tour=tour_slug)
-            targets.append(AcquisitionTarget(
-                source_family="sackmann_ranking", content_mode="text", tour_code=tour_code, season=None, url=url,
-                raw_relative_path=Path("tennis") / "sackmann" / tour_slug / filename,
-            ))
-
-        player_template = config["sackmann_player_files"]["filename_template"]
-        url = sackmann_player_file_url(repo_base_url, tour_slug, player_template)
-        filename = player_template.format(tour=tour_slug)
-        targets.append(AcquisitionTarget(
-            source_family="sackmann_player", content_mode="text", tour_code=tour_code, season=None, url=url,
-            raw_relative_path=Path("tennis") / "sackmann" / tour_slug / filename,
-        ))
 
         tdcu = sources["tennis_data_co_uk"]
         for season in seasons:
@@ -199,8 +199,7 @@ def run(argv: list[str]) -> int:
         print(
             f"WARNING: planned target count ({len(targets)}) does not match "
             f"expected_raw_file_count ({config['expected_raw_file_count']}) in config -- "
-            "check config/cycle_002_tennis_data.yaml (ranking-file names are provisional; "
-            "see sackmann_ranking_files note)"
+            "check config/cycle_002_tennis_data.yaml"
         )
 
     client = HttpClient(user_agent=acquisition_cfg.user_agent, timeout_seconds=acquisition_cfg.request_timeout_seconds)
@@ -302,8 +301,9 @@ def run(argv: list[str]) -> int:
             "no consensus construction (deferred to Checkpoint 2)"
         ),
         "schema_version": config["schema"]["canonical_schema_version"],
-        "sources": ["sackmann_atp", "sackmann_wta", "tennis_data_co_uk"],
-        "sackmann_repos_license": config["licensing"]["sackmann_repos_license"],
+        "sources": ["tml_database_atp", "tennis_data_co_uk"],
+        "match_data_license": config["licensing"]["match_data_license"],
+        "match_data_attribution": config["licensing"]["match_data_attribution"],
         "seasons": config["seasons"],
         "summary": asdict(summary),
     }
