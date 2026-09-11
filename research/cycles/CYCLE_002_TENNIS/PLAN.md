@@ -221,6 +221,22 @@ that produced the 404s -- in seconds, before committing to the full
 paced 28-file run. The next run's log should be read for that step's
 output first.
 
+### Diagnostic run #3 findings (2026-09-11): first TLS fix insufficient
+
+Run #3 (with both prior fixes applied) showed the retry-loop and
+diagnostic-step fixes both working correctly, but the TLS fix did
+NOT resolve Tennis-data.co.uk -- the identical
+`[SSL: TLSV1_ALERT_INTERNAL_ERROR]` recurred on every target.
+`build_legacy_tolerant_ssl_context()` now stacks two more independent,
+individually-documented compatibility relaxations on top of the
+original `@SECLEVEL=0`: capping `maximum_version` at TLS 1.2 (some old
+servers choke on a modern client's TLS 1.3 ClientHello extensions and
+answer with this same generic alert), and enabling
+`OP_LEGACY_SERVER_CONNECT` where the Python/OpenSSL build exposes it
+(this project's pinned Python 3.11 does not; guarded with `getattr`).
+Certificate verification remains untouched throughout. Not yet
+confirmed against the real site -- next run is the test.
+
 ## 4. Checkpoint 2 (not started) — player-identity resolution and market-consensus construction
 
 Deferred, scoped only at a high level here so it is pre-registered

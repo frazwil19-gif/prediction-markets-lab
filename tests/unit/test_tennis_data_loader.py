@@ -75,13 +75,22 @@ def test_build_legacy_tolerant_ssl_context_returns_an_ssl_context():
 
 
 def test_build_legacy_tolerant_ssl_context_still_verifies_certificates():
-    # The SECLEVEL=0 cipher-string workaround (see the function's
-    # docstring and https://bugs.python.org/issue43791) is scoped to
-    # signature-algorithm/cipher security level only -- it must not be
-    # a shortcut that also disables certificate verification.
+    # The legacy-compatibility relaxations (see the function's
+    # docstring and https://bugs.python.org/issue43791) are scoped to
+    # signature-algorithm/cipher security level and protocol-version
+    # ceiling only -- none of them may disable certificate verification.
     context = build_legacy_tolerant_ssl_context()
     assert context.verify_mode == ssl.CERT_REQUIRED
     assert context.check_hostname is True
+
+
+def test_build_legacy_tolerant_ssl_context_caps_the_protocol_ceiling_at_tls_1_2():
+    # A second, stronger compatibility measure added after @SECLEVEL=0
+    # alone proved insufficient against the real site: some old servers
+    # send a generic TLSV1_ALERT_INTERNAL_ERROR when a modern client
+    # offers TLS 1.3's newer ClientHello extensions at all.
+    context = build_legacy_tolerant_ssl_context()
+    assert context.maximum_version == ssl.TLSVersion.TLSv1_2
 
 
 def test_http_client_defaults_to_the_legacy_tolerant_context():

@@ -142,24 +142,40 @@ def compute_sha256_bytes(content: bytes) -> str:
 
 def build_legacy_tolerant_ssl_context() -> ssl.SSLContext:
     """Build an SSLContext that can complete a TLS handshake with an
-    old server that OpenSSL 3.x's default security level (SECLEVEL=2)
-    refuses to talk to.
+    old server that OpenSSL 3.x's modern defaults refuse to talk to.
 
     Discovered against the real acquisition run (2026-09-11):
     Tennis-data.co.uk failed every single request with
     `[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error`,
-    never reaching the HTTP layer at all. This is a well-documented
-    OpenSSL 3.0 behaviour, not a bug in this code or a wrong URL: see
-    https://bugs.python.org/issue43791 ("OpenSSL 3.0.0: TLS 1.0/1.1
-    connections fail with TLSV1_ALERT_INTERNAL_ERROR") -- OpenSSL
-    3.x's default "security level" rejects the SHA-1-based signature
-    algorithms (and other legacy parameters) that small/old servers
-    like this one still rely on, even though the connection is
-    otherwise a normal, encrypted, certificate-verified TLS session.
-    The tracked fix confirmed there is to lower the security level via
-    the cipher string (`@SECLEVEL=0`); nothing else about verification
-    is weakened -- `check_hostname` and `verify_mode` are left at their
-    secure defaults.
+    never reaching the HTTP layer at all -- this is a well-documented
+    class of OpenSSL 3.0 incompatibility with old servers (see
+    https://bugs.python.org/issue43791), not a bug in this code or a
+    wrong URL.
+
+    A first attempt at this fix used only `@SECLEVEL=0` (lowering the
+    signature-algorithm/DH-key-size security floor) and it was NOT
+    sufficient -- the identical error recurred against the real site.
+    This version combines three independent, individually-documented
+    compatibility relaxations, since an old commercial site like this
+    one plausibly has more than one legacy quirk stacked together:
+
+    1. `@SECLEVEL=0` in the cipher string -- removes the signature-
+       algorithm/key-size floor (the bpo-43791 fix).
+    2. Cap `maximum_version` at TLS 1.2 -- some old server stacks
+       mishandle the extensions a modern client's TLS 1.3 ClientHello
+       includes (key_share, supported_versions, etc.) and fail with a
+       generic "internal_error" alert rather than a clean version
+       mismatch; capping the ceiling avoids offering TLS 1.3 at all.
+    3. `OP_LEGACY_SERVER_CONNECT`, when this Python/OpenSSL build
+       exposes it (added in Python 3.12's ssl module; guarded with
+       getattr since this project's pinned Python is 3.11) -- permits
+       the old, insecure-renegotiation handshake extension some
+       ancient servers still use, a distinct legacy TLS quirk from
+       either of the above.
+
+    None of these touch certificate verification: `check_hostname` and
+    `verify_mode` are left at `create_default_context()`'s secure
+    defaults throughout.
 
     Scoped to this one loader (not football_data_loader.py) because
     football-data.co.uk's server has never shown this failure; no
@@ -167,6 +183,8 @@ def build_legacy_tolerant_ssl_context() -> ssl.SSLContext:
     """
     context = ssl.create_default_context()
     context.set_ciphers("DEFAULT@SECLEVEL=0")
+    context.maximum_version = ssl.TLSVersion.TLSv1_2
+    context.options |= getattr(ssl, "OP_LEGACY_SERVER_CONNECT", 0)
     return context
 
 
