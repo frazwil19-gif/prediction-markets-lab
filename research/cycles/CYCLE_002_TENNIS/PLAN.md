@@ -237,6 +237,31 @@ answer with this same generic alert), and enabling
 Certificate verification remains untouched throughout. Not yet
 confirmed against the real site -- next run is the test.
 
+### Diagnostic run #4 findings (2026-09-11): the Sackmann repos are genuinely gone
+
+The upgraded diagnostic (`git ls-remote --symref` plus a real
+`git clone`) settled it: both `git` (talking directly to GitHub's git
+servers, no CDN, no cache, no rate limit) and `api.github.com` report
+a clean `Repository not found` for `JeffSackmann/tennis_atp` and
+`/tennis_wta` at that exact path. This is not CDN flakiness, not a
+rate limit, and not a wrong branch name -- two full diagnostic
+attempts and this blog post's worth of hedging were wrong. The repos
+do not exist there any more (deleted, renamed, transferred, or made
+private -- indistinguishable from outside).
+
+Independent check: Jeff Sackmann's own site
+(https://www.jeffsackmann.com/) still points to `github.com/JeffSackmann`
+as the home of his tennis database, and the account is referenced
+elsewhere as still active, so this is very likely a rename/
+restructure rather than the whole project disappearing. A new
+diagnostic script, `scripts/_diagnose_sackmann_repos.py` (run via the
+workflow's "Find where JeffSackmann's tennis repos actually live now"
+step), checks whether the account still exists and searches GitHub's
+API for whatever tennis-named repos it owns today, so
+`config/cycle_002_tennis_data.yaml` can be pointed at wherever this
+data actually lives now rather than guessing again. Not yet run --
+next real trigger is the test.
+
 ## 4. Checkpoint 2 (not started) — player-identity resolution and market-consensus construction
 
 Deferred, scoped only at a high level here so it is pre-registered
