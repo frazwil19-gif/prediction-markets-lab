@@ -54,3 +54,23 @@ five target seasons acquired with acceptable row counts, populate
 `data_splits.csv` (in this directory) with real row counts per
 competition/season/split, and only then proceed to Stage 3B (Elo/
 Poisson baselines).
+
+
+## Update (Stage 3B Checkpoint 1): finalised as walk-forward, not one fixed split
+
+Full 5-season acquisition is complete and frozen
+(`reports/audits/CYCLE_001_FREEZE_RECORD.json`,
+`cycle_001_v1.0.0-20260910T234139`). Per the Stage 3B directive, the single
+fixed training/validation/test split originally proposed above is
+**superseded** by expanding-window walk-forward folds within the
+development period, with 2024/25 still the sealed final holdout:
+
+See `research/cycles/CYCLE_001/STAGE_3B_PLAN.md` §3 for the finalised fold
+table and rationale (walk-forward gives 3 independent development
+evaluation points instead of 1, without ever touching 2024/25).
+
+`config/cycle_001_data.yaml`'s `split_plan` (`training_seasons`,
+`validation_seasons`, `final_test_season`) remains accurate for
+`final_test_season` (2024/25, unchanged) but is no longer the operative
+description of how the training/validation seasons are used — the
+walk-forward folds in `STAGE_3B_PLAN.md` are authoritative for that.
