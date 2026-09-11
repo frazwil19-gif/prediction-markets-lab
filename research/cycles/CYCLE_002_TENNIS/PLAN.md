@@ -119,23 +119,59 @@ are known, exactly as Cycle 1 treated its own split plan at this stage.
   in for the real hosts) additionally exercised the full orchestrator
   run, `--resume`, a partial-failure path, and the validator.
 
-### Known open item before the acquisition is actually run for real
+### Diagnostic run #1 findings (2026-09-11) and resolution
 
-The exact Tennis-data.co.uk file-naming convention encoded in
-`config/cycle_002_tennis_data.yaml`
-(`{year}/{year}.xlsx` for ATP, `{year}w/{year}.xlsx` for WTA) is a
-well-documented public convention, not independently re-verified
-against a live fetch by this project — the site is currently
-unreachable from every environment available to this session
-(proxy-blocked cloud sandbox and development machine; `robots.txt`
-itself failed to fetch when queried through the research assistant's
-web tools, so even a read-only page fetch could not confirm it). The
-acquisition workflow's schema-inventory step, and the validator's
-zip-magic-number check, are both designed to surface a wrong URL
-pattern loudly (a 404/HTML-error-page rejection, or a missing PK zip
-header) rather than silently accepting bad data — but the very first
-real run against GitHub Actions should be treated as also validating
-this assumption, not just producing data.
+The first real run against GitHub Actions (diagnostic pass,
+`max_retries=1`) failed all 28 targets, in two distinct, unrelated
+ways:
+
+1. **All 18 Sackmann targets (both tours): uniform `HTTP Error 404`.**
+   Investigated by independently corroborating the URL convention
+   (branch `master`, `{tour}_matches_{season}.csv` etc.) against a
+   search-engine-indexed GitHub page for this exact repo/path/branch
+   combination, and by finding that `raw.githubusercontent.com`
+   returning spurious 404s for files (and sometimes entire
+   repositories) that genuinely exist is a real, recurring,
+   GitHub-side CDN bug -- see
+   [community discussion #169205](https://github.com/orgs/community/discussions/169205)
+   (open, ongoing as of Feb 2026) and
+   [#53538](https://github.com/orgs/community/discussions/53538)
+   (GitHub confirmed "errant code has been rolled back for the 404s"
+   after an August 2025 episode affecting whole repositories). This
+   matches our symptom exactly: every file in both repos failing
+   uniformly, at a single point in time, is far more consistent with a
+   repo-wide raw-serving outage than with 18 independently wrong
+   filenames across two repos. **No code or config change made** for
+   this half of the failure -- `config/cycle_002_tennis_data.yaml`'s
+   Sackmann `base_url`/filename templates are believed correct as
+   written. The next real run should simply be retried; if it 404s
+   again at the same uniform, whole-repo scale, treat that as evidence
+   against this explanation and re-open the investigation.
+2. **All 10 Tennis-data.co.uk targets: `[SSL: TLSV1_ALERT_INTERNAL_ERROR]`.**
+   A TLS-handshake-level failure, not an HTTP-level one -- the
+   connection was rejected before any HTTP request completed. Root
+   cause: OpenSSL 3.x's default security level refuses the legacy
+   signature algorithms tennis-data.co.uk's old server still uses; this
+   is a well-documented OpenSSL 3.0 behaviour, not a wrong URL --
+   see [bpo-43791](https://bugs.python.org/issue43791). **Fixed** in
+   `tennis_data_loader.py` via `build_legacy_tolerant_ssl_context()`,
+   which lowers the cipher security level (`DEFAULT@SECLEVEL=0`) while
+   leaving certificate verification (`CERT_REQUIRED`,
+   `check_hostname=True`) untouched; `HttpClient` uses this context by
+   default. Not host-scoped (also used for the Sackmann fetches) since
+   raw.githubusercontent.com has never shown this failure and a lower
+   security floor doesn't force weak ciphers there -- it only permits
+   falling back to them if a server insists. Covered by
+   `tests/unit/test_tennis_data_loader.py`'s
+   `test_build_legacy_tolerant_ssl_context_*` and
+   `test_http_client_*` tests.
+
+The Tennis-data.co.uk file-naming convention itself
+(`{year}/{year}.xlsx` for ATP, `{year}w/{year}.xlsx` for WTA) remains
+unverified against an actual successful download (the TLS failure
+happened before any content was received) -- the acquisition
+workflow's schema-inventory step and the validator's zip-magic-number
+check are still the real check for that, on the next run.
 
 ## 4. Checkpoint 2 (not started) — player-identity resolution and market-consensus construction
 

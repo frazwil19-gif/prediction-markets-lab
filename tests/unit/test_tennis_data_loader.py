@@ -11,8 +11,12 @@ from __future__ import annotations
 
 import pytest
 
+import ssl
+
 from prediction_markets_lab.ingestion.tennis_data_loader import (
     AcquisitionConfig,
+    HttpClient,
+    build_legacy_tolerant_ssl_context,
     compute_sha256_bytes,
     compute_sha256_text,
     fetch_one_bytes,
@@ -59,6 +63,35 @@ def no_sleep(_seconds):
 CONFIG = AcquisitionConfig(max_retries=2, initial_backoff_seconds=0.0, backoff_multiplier=1.0)
 
 VALID_XLSX_BYTES = b"PK\x03\x04" + b"\x00" * 16
+
+
+# --- TLS workaround for tennis-data.co.uk's OpenSSL-3-incompatible server --
+
+def test_build_legacy_tolerant_ssl_context_returns_an_ssl_context():
+    context = build_legacy_tolerant_ssl_context()
+    assert isinstance(context, ssl.SSLContext)
+
+
+def test_build_legacy_tolerant_ssl_context_still_verifies_certificates():
+    # The SECLEVEL=0 cipher-string workaround (see the function's
+    # docstring and https://bugs.python.org/issue43791) is scoped to
+    # signature-algorithm/cipher security level only -- it must not be
+    # a shortcut that also disables certificate verification.
+    context = build_legacy_tolerant_ssl_context()
+    assert context.verify_mode == ssl.CERT_REQUIRED
+    assert context.check_hostname is True
+
+
+def test_http_client_defaults_to_the_legacy_tolerant_context():
+    client = HttpClient(user_agent="test-agent", timeout_seconds=5.0)
+    assert isinstance(client.ssl_context, ssl.SSLContext)
+    assert client.ssl_context.verify_mode == ssl.CERT_REQUIRED
+
+
+def test_http_client_accepts_an_explicit_ssl_context_override():
+    custom = ssl.create_default_context()
+    client = HttpClient(user_agent="test-agent", timeout_seconds=5.0, ssl_context=custom)
+    assert client.ssl_context is custom
 
 
 # --- URL builders ---------------------------------------------------

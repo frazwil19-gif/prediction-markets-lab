@@ -40,6 +40,7 @@ with mocked HTTP responses.
 from __future__ import annotations
 
 import hashlib
+import ssl
 import time
 import urllib.error
 import urllib.request
@@ -139,6 +140,36 @@ def compute_sha256_bytes(content: bytes) -> str:
     return hashlib.sha256(content).hexdigest()
 
 
+def build_legacy_tolerant_ssl_context() -> ssl.SSLContext:
+    """Build an SSLContext that can complete a TLS handshake with an
+    old server that OpenSSL 3.x's default security level (SECLEVEL=2)
+    refuses to talk to.
+
+    Discovered against the real acquisition run (2026-09-11):
+    Tennis-data.co.uk failed every single request with
+    `[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error`,
+    never reaching the HTTP layer at all. This is a well-documented
+    OpenSSL 3.0 behaviour, not a bug in this code or a wrong URL: see
+    https://bugs.python.org/issue43791 ("OpenSSL 3.0.0: TLS 1.0/1.1
+    connections fail with TLSV1_ALERT_INTERNAL_ERROR") -- OpenSSL
+    3.x's default "security level" rejects the SHA-1-based signature
+    algorithms (and other legacy parameters) that small/old servers
+    like this one still rely on, even though the connection is
+    otherwise a normal, encrypted, certificate-verified TLS session.
+    The tracked fix confirmed there is to lower the security level via
+    the cipher string (`@SECLEVEL=0`); nothing else about verification
+    is weakened -- `check_hostname` and `verify_mode` are left at their
+    secure defaults.
+
+    Scoped to this one loader (not football_data_loader.py) because
+    football-data.co.uk's server has never shown this failure; no
+    reason to weaken TLS requirements for a host that doesn't need it.
+    """
+    context = ssl.create_default_context()
+    context.set_ciphers("DEFAULT@SECLEVEL=0")
+    return context
+
+
 class HttpClient:
     """Thin, mockable wrapper around the HTTP calls this loader needs.
 
@@ -147,9 +178,16 @@ class HttpClient:
     touching the network, mirroring football_data_loader.HttpClient.
     """
 
-    def __init__(self, user_agent: str, timeout_seconds: float):
+    def __init__(self, user_agent: str, timeout_seconds: float, ssl_context: ssl.SSLContext | None = None):
         self.user_agent = user_agent
         self.timeout_seconds = timeout_seconds
+        # Defaults to the legacy-tolerant context (see
+        # build_legacy_tolerant_ssl_context) because this client talks
+        # to both raw.githubusercontent.com (which does not need it)
+        # and tennis-data.co.uk (which does) -- using it everywhere is
+        # simpler than threading a per-host context through fetch_one_*
+        # and does not weaken certificate verification for either host.
+        self.ssl_context = ssl_context if ssl_context is not None else build_legacy_tolerant_ssl_context()
 
     def get_text(self, url: str) -> tuple[int, str, str]:
         """GET a URL expected to return text (CSV). Returns
@@ -164,7 +202,7 @@ class HttpClient:
 
     def _get_raw(self, url: str) -> tuple[int, str, bytes]:
         request = urllib.request.Request(url, headers={"User-Agent": self.user_agent})
-        with urllib.request.urlopen(request, timeout=self.timeout_seconds) as response:
+        with urllib.request.urlopen(request, timeout=self.timeout_seconds, context=self.ssl_context) as response:
             status = response.status
             content_type = response.headers.get("Content-Type", "")
             body = response.read()
