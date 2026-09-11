@@ -1,0 +1,148 @@
+# Cycle 2 (Tennis Match Winner) data acquisition configuration.
+#
+# Written 2026-09-11, reconciled against config/cycle_001_data.yaml and
+# scripts/run_cycle_001_data_acquisition.py's conventions -- this file
+# follows the same "no magic numbers in scripts" rule as Cycle 1:
+# everything the acquisition run needs is read from here.
+#
+# Two independent source families, joined later by player identity, not
+# assumed identical at acquisition time:
+#   1. Jeff Sackmann's tennis_atp / tennis_wta GitHub repos -- match
+#      results, tournament metadata, serve stats, rankings, player bios.
+#      License: CC BY-NC-SA 4.0 (non-commercial only -- see licensing note
+#      below). This acquisition step downloads RAW match/ranking/player
+#      files only; it does not join them to odds.
+#   2. Tennis-data.co.uk -- per-year bookmaker/exchange odds files, same
+#      publisher and CSV/Excel convention as football-data.co.uk (already
+#      used in Cycle 1).
+#
+# Cross-source player-name matching (Sackmann's player_id-keyed results
+# vs. tennis-data.co.uk's "Djokovic N."-style name strings) is
+# deliberately NOT done in this acquisition step -- it is a real,
+# nontrivial entity-resolution problem in its own right (the tennis
+# analogue of football's team-name normalisation) and deserves its own
+# checkpoint, not to be rushed inside the acquisition script. See
+# research/cycles/CYCLE_002_TENNIS/PLAN.md §4 (Checkpoint 2).
+
+licensing:
+  sackmann_repos_license: "CC BY-NC-SA 4.0"
+  sackmann_repos_attribution: >-
+    Match, ranking, and player data from Jeff Sackmann's tennis_atp and
+    tennis_wta repositories (github.com/JeffSackmann), licensed CC
+    BY-NC-SA 4.0. Non-commercial research/paper-trading use only; any
+    future commercial or production use requires separate licensing
+    review.
+
+sources:
+  sackmann_atp:
+    base_url: "https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master"
+    tour: "atp"
+  sackmann_wta:
+    base_url: "https://raw.githubusercontent.com/JeffSackmann/tennis_wta/master"
+    tour: "wta"
+  tennis_data_co_uk:
+    # Documented convention (per public tennis-betting-model references;
+    # NOT yet independently verified against a live fetch in this repo --
+    # both the cloud sandbox and the Mac's own network egress are
+    # currently proxy-blocked from this host, confirmed 2026-09-11).
+    # The acquisition script's schema-inventory step must confirm this
+    # empirically against the first real download, the same way Cycle 1
+    # discovered its actual bookmaker-column prefixes empirically rather
+    # than assuming them upfront (see known_bookmaker_prefixes below and
+    # `known_bookmaker_prefixes` in config/cycle_001_data.yaml).
+    base_url: "https://www.tennis-data.co.uk"
+    men_path_template: "{year}/{year}.xlsx"
+    women_path_template: "{year}w/{year}.xlsx"
+  # A descriptive, honest user agent -- not spoofed as a browser (same
+  # convention as config/cycle_001_data.yaml).
+  user_agent: >-
+    PredictionMarketsLab/0.1 (personal research project; see
+    docs/DATA_LEAKAGE_RULES.md and
+    docs/HISTORICAL_PRICE_AND_CLV_LIMITATIONS.md)
+
+tours:
+  - code: ATP
+    name: "ATP Tour (men's)"
+  - code: WTA
+    name: "WTA Tour (women's)"
+
+# Calendar-year seasons (tennis seasons are Jan-Dec, unlike football's
+# Aug-May split), chosen to mirror Cycle 1's 5-season / 1-sealed-holdout
+# structure over the same real-world period.
+seasons:
+  - "2021"
+  - "2022"
+  - "2023"
+  - "2024"
+  - "2025"  # provisional sealed holdout -- see split_plan below
+
+sackmann_match_files:
+  # Per-season singles match files, both tours.
+  filename_template: "{tour}_matches_{season}.csv"
+
+sackmann_ranking_files:
+  # Sackmann publishes rankings chunked by decade, not by single year.
+  # Provisional list -- confirm actual filenames present in each repo
+  # during the audit step rather than assuming this list is exhaustive
+  # or unchanged.
+  filenames:
+    - "{tour}_rankings_10s.csv"
+    - "{tour}_rankings_20s.csv"
+    - "{tour}_rankings_current.csv"
+
+sackmann_player_files:
+  # One-time, not per-season: full player bio table.
+  filename_template: "{tour}_players.csv"
+
+expected_raw_file_count: 28
+  # 2 tours x 5 seasons match files (10)
+  # + 2 tours x 5 seasons odds files (10)
+  # + 2 tours x 1 player file (2)
+  # + 2 tours x 3 ranking-chunk files (6)
+  # This is a soft check (a printed warning, not a hard failure) --
+  # see the sackmann_ranking_files note above: the 3-chunk ranking
+  # filename list is provisional, so a real-world mismatch here is
+  # expected to happen occasionally and should prompt a look, not
+  # block the run.
+
+pacing:
+  request_delay_seconds: 6.0
+  max_retries: 4
+  initial_backoff_seconds: 10.0
+  backoff_multiplier: 2.0
+  request_timeout_seconds: 30.0
+
+validation:
+  # Provisional defaults for tennis-data.co.uk's odds columns -- same
+  # "known prefixes, confirmed empirically" philosophy as Cycle 1's
+  # known_bookmaker_prefixes. Do not treat this list as ground truth
+  # until the schema-inventory step (scripts/run_cycle_002_tennis_data_acquisition.py)
+  # has actually run against a real download and recorded what was found.
+  min_decimal_odds: 1.01
+  max_plausible_overround: 0.35
+  provisional_known_bookmaker_prefixes: ["B365", "PS", "Max", "Avg", "EX", "LB", "SJ", "UB"]
+  min_bookmakers_for_consensus_eligibility: 2
+  # Deferred to Checkpoint 2 (name matching) -- listed here only so the
+  # threshold is pre-registered rather than invented after seeing data.
+
+schema:
+  canonical_schema_version: "tennis_cycle_002_v0.1_acquisition_only"
+
+output_paths:
+  raw_root: "data/raw/tennis"
+  processed_root: "data/processed/tennis"
+  samples_root: "data/samples"
+  reports_root: "reports/audits"
+  manifest_path: "reports/audits/tennis_data_manifest.csv"
+  data_version_path: "data/processed/tennis/cycle_002_data_version.json"
+
+split_plan:
+  # Provisional -- mirrors Cycle 1's structure. Confirmed only once full
+  # acquisition completes and real per-season row counts are known, and
+  # only after the Checkpoint 2 name-matching step establishes how many
+  # matches actually have usable market data (coverage will likely be
+  # lower than Sackmann's raw match count, exactly as football's
+  # eligible_consensus_model flag reduced 3,480 -> 3,446).
+  training_seasons: ["2021", "2022", "2023"]
+  validation_seasons: ["2024"]
+  final_test_season: "2025"

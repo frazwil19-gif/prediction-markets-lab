@@ -1,0 +1,116 @@
+name: Cycle 2 Tennis Data Acquisition
+
+# Manually triggered ONLY. Never runs on push or a schedule -- same
+# bounded, one-shot research-job rationale as
+# cycle_001_data_acquisition.yml (project instructions: architecture
+# freeze permits this only because it solves a proven, named research
+# requirement -- obtaining the full historical dataset without
+# requiring a laptop -- not as general-purpose CI/CD). Needed because
+# both the cloud research sandbox and this project's own development
+# machine are proxy-blocked from raw.githubusercontent.com and
+# tennis-data.co.uk (confirmed 2026-09-11); GitHub's own runners have
+# unrestricted internet access to both.
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Plan the run without downloading anything"
+        type: boolean
+        default: false
+      tours:
+        description: "Comma-separated tour codes (blank = all: ATP,WTA)"
+        type: string
+        default: ""
+      seasons:
+        description: "Comma-separated seasons (blank = all 5 target seasons)"
+        type: string
+        default: ""
+      request_delay_seconds:
+        description: "Seconds between requests (conservative default)"
+        type: string
+        default: "6"
+      resume_existing:
+        description: "Skip files already present on disk without re-fetching"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install -e .
+
+      - name: Run the complete test suite first
+        run: pytest -q
+
+      - name: Build acquisition command
+        id: build_cmd
+        run: |
+          CMD="python scripts/run_cycle_002_tennis_data_acquisition.py"
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            CMD="$CMD --dry-run"
+          fi
+          if [ "${{ inputs.resume_existing }}" = "true" ]; then
+            CMD="$CMD --resume"
+          fi
+          if [ -n "${{ inputs.tours }}" ]; then
+            IFS=',' read -ra TOURS <<< "${{ inputs.tours }}"
+            for t in "${TOURS[@]}"; do CMD="$CMD --tour $t"; done
+          fi
+          if [ -n "${{ inputs.seasons }}" ]; then
+            IFS=',' read -ra SEASONS <<< "${{ inputs.seasons }}"
+            for s in "${SEASONS[@]}"; do CMD="$CMD --season $s"; done
+          fi
+          CMD="$CMD --request-delay-seconds ${{ inputs.request_delay_seconds }}"
+          echo "cmd=$CMD" >> "$GITHUB_OUTPUT"
+
+      - name: Run acquisition (paced, may take several minutes)
+        run: ${{ steps.build_cmd.outputs.cmd }}
+
+      - name: Validate the acquired bundle
+        if: ${{ inputs.dry_run != 'true' }}
+        run: python scripts/validate_cycle_002_tennis_data_bundle.py
+
+      - name: Upload manifest, schema inventory, and data version (small, always uploaded)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cycle_002-tennis-manifest-and-version
+          path: |
+            reports/audits/tennis_data_manifest.csv
+            reports/audits/tennis_data_schema_inventory.json
+            data/processed/tennis/cycle_002_data_version.json
+          if-no-files-found: warn
+
+      # Raw historical files are NOT committed to the repository (same
+      # policy as Cycle 1's football data, see
+      # research/cycles/CYCLE_001/DECISION_LOG.md) -- preserved only as
+      # a workflow artifact, to avoid repository bloat and to respect
+      # the Sackmann repos' non-commercial license (redistributing the
+      # raw files via a public artifact download is a separate
+      # licensing question from using them for private research; keep
+      # this artifact's retention short and treat it as a working copy,
+      # not a redistribution channel).
+      - name: Upload raw source files
+        if: ${{ inputs.dry_run != 'true' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: cycle_002-tennis-raw-files
+          path: data/raw/tennis/**
+          if-no-files-found: warn
+          retention-days: 90
