@@ -110,3 +110,45 @@ def test_check_no_test_period_in_development_detects_violation():
     )
     assert len(violations) == 1
     assert "test period has been touched" in violations[0]
+
+
+from prediction_markets_lab.validation.time_splits import (  # noqa: E402
+    WalkForwardFold,
+    generate_expanding_walk_forward_folds,
+)
+
+
+def test_generate_expanding_walk_forward_folds_produces_n_minus_1_folds():
+    seasons = ["2020_21", "2021_22", "2022_23", "2023_24"]
+    folds = generate_expanding_walk_forward_folds(seasons)
+    assert len(folds) == 3
+
+
+def test_generate_expanding_walk_forward_folds_expands_correctly():
+    seasons = ["2020_21", "2021_22", "2022_23", "2023_24"]
+    folds = generate_expanding_walk_forward_folds(seasons)
+    assert folds[0] == WalkForwardFold(
+        fold_id="train_through_2020_21_eval_2021_22",
+        train_seasons=("2020_21",),
+        evaluate_season="2021_22",
+    )
+    assert folds[1].train_seasons == ("2020_21", "2021_22")
+    assert folds[1].evaluate_season == "2022_23"
+    assert folds[2].train_seasons == ("2020_21", "2021_22", "2022_23")
+    assert folds[2].evaluate_season == "2023_24"
+
+
+def test_generate_expanding_walk_forward_folds_never_lets_a_season_evaluate_itself():
+    seasons = ["2020_21", "2021_22", "2022_23", "2023_24"]
+    for fold in generate_expanding_walk_forward_folds(seasons):
+        assert fold.evaluate_season not in fold.train_seasons
+
+
+def test_generate_expanding_walk_forward_folds_rejects_too_few_seasons():
+    with pytest.raises(ValueError):
+        generate_expanding_walk_forward_folds(["2020_21"])
+
+
+def test_generate_expanding_walk_forward_folds_rejects_duplicate_seasons():
+    with pytest.raises(ValueError):
+        generate_expanding_walk_forward_folds(["2020_21", "2021_22", "2020_21"])

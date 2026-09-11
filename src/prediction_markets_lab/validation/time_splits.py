@@ -75,3 +75,62 @@ def validate_test_period_untouched(plan: SplitPlan, latest_date_used_in_developm
         use.
     """
     return latest_date_used_in_development < plan.test.start
+
+
+@dataclass(frozen=True)
+class WalkForwardFold:
+    """One expanding-window walk-forward development fold.
+
+    Season labels only (e.g. "2020_21"), not dates -- competitions
+    within the same nominal season run slightly different actual date
+    ranges (see research/cycles/CYCLE_001/STAGE_3B_PLAN.md), so the
+    season label is the ground-truth partition already used throughout
+    the data pipeline (config/cycle_001_data.yaml, cycle_001_matches_full.csv's
+    'season' column), not a derived date boundary.
+    """
+
+    fold_id: str
+    train_seasons: tuple[str, ...]
+    evaluate_season: str
+
+
+def generate_expanding_walk_forward_folds(seasons_in_order: list[str]) -> list[WalkForwardFold]:
+    """Build expanding-window walk-forward folds from ordered season labels.
+
+    Fold i trains on seasons[0..i] and evaluates on seasons[i+1] --
+    e.g. for ["2020_21", "2021_22", "2022_23", "2023_24"] this produces
+    3 folds: train on 2020_21 -> eval 2021_22; train on 2020_21+2021_22
+    -> eval 2022_23; train on 2020_21+2021_22+2022_23 -> eval 2023_24.
+
+    Args:
+        seasons_in_order: season labels in genuine chronological order,
+            oldest first (not verified against real dates here -- the
+            caller is responsible for passing them in true order; see
+            leakage_checks.check_chronological_order for verifying
+            individual match dates within a season).
+
+    Returns:
+        One WalkForwardFold per evaluation season (len(seasons_in_order) - 1
+        folds in total).
+
+    Raises:
+        ValueError: if fewer than 2 seasons are given, or a season
+            label is repeated.
+    """
+    if len(seasons_in_order) < 2:
+        raise ValueError("need at least 2 seasons to form a walk-forward fold")
+    if len(seasons_in_order) != len(set(seasons_in_order)):
+        raise ValueError(f"seasons_in_order must not contain duplicates: {seasons_in_order}")
+
+    folds = []
+    for i in range(len(seasons_in_order) - 1):
+        train_seasons = tuple(seasons_in_order[: i + 1])
+        evaluate_season = seasons_in_order[i + 1]
+        folds.append(
+            WalkForwardFold(
+                fold_id=f"train_through_{train_seasons[-1]}_eval_{evaluate_season}",
+                train_seasons=train_seasons,
+                evaluate_season=evaluate_season,
+            )
+        )
+    return folds
