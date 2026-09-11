@@ -3,6 +3,62 @@
 All notable changes to this project are documented here. Format is
 loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [Unreleased] — Stage 3A frozen, Stage 3B Checkpoint 1
+
+### Fixed
+
+- Cycle 1 acquisition script wrote real downloaded raw CSVs to a path the
+  GitHub Actions workflow's raw-files artifact upload never globbed
+  (missing a `raw` path segment) -- every prior run's `cycle_001-raw-files`
+  artifact silently contained only stale excerpt-validation stubs, never a
+  genuine download. Fixed, with a regression test tying the two together.
+- `.gitignore` never allowlisted `reports/audits/*.json`, so the new Stage
+  3A freeze record was silently excluded on first commit. Fixed.
+
+### Added
+
+- `reports/audits/CYCLE_001_FREEZE_RECORD.json` -- git-committed provenance
+  anchor for the frozen Cycle 1 dataset (`cycle_001_v1.0.0-20260910T234139`):
+  SHA-256 hashes for all 15 raw source files, all 3 processed tables, and
+  the alias config, plus code commit, validator result, and known
+  limitations.
+- `scripts/verify_frozen_data_hashes.py` -- verifies a local working copy
+  against a freeze record before any modelling script reads it.
+- `performance.log_loss`, `performance.brier` -- multiclass log loss and
+  (vector) Brier score, both with full input validation.
+- `validation.time_splits.generate_expanding_walk_forward_folds` --
+  expanding-window walk-forward fold generator (season-label based).
+- `models.football_naive_frequency` -- Stage 3B Baseline 0: leakage-safe,
+  per-competition, Laplace-smoothed expanding H/D/A frequency baseline.
+- `scripts/run_stage_3b_checkpoint1_baselines.py` -- computes Baseline 0
+  and Baseline 1 (market closing consensus) across the 3 development
+  walk-forward folds; generates
+  `research/cycles/CYCLE_001/results/NAIVE_BASELINE_REPORT.md` and
+  `MARKET_BASELINE_REPORT.md` from machine-readable output, never
+  hand-transcribed.
+- `research/cycles/CYCLE_001/STAGE_3B_PLAN.md` -- predeclared Stage 3B
+  protocol: research question, dataset/fold definitions, baseline order,
+  price-timing classification, common-sample rule, metric/delta
+  convention.
+- Python 3.11 / `uv` environment setup documented in `CONTRIBUTING.md`.
+
+### Changed
+
+- `research/cycles/CYCLE_001/DATA_SPLIT_PLAN.md` superseded by the
+  walk-forward fold design in `STAGE_3B_PLAN.md` (2024/25 remains the
+  sealed final holdout; the single fixed train/validation split originally
+  proposed there is replaced by 3 expanding-window development folds).
+
+### Findings
+
+- Naive frequency baseline (pooled, N=3,480): log loss 1.0692, Brier 0.6470
+  -- only marginally better than a uniform 1/3-1/3-1/3 prediction
+  (ln(3)≈1.0986 / 2/3≈0.6667).
+- Market closing consensus (pooled common sample, N=3,446): log loss
+  0.9773, Brier 0.5815 -- beats the naive baseline on every one of the 3
+  development folds individually and pooled. No significance testing yet
+  (paired bootstrap CIs are a later Stage 3B checkpoint).
+
 ## [0.4.0] — Stage 3A: pipeline validated, full acquisition pending
 
 **Status: STAGE 3A TOOLING COMPLETE — FULL ACQUISITION PENDING.**
