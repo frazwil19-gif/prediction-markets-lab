@@ -179,15 +179,28 @@ def test_workflow_does_not_reference_any_paid_api_or_betting_execution():
         assert forbidden not in content
 
 
-def test_no_model_or_betting_execution_code_exists_in_repo():
-    """Stage 3A must not have quietly introduced Elo/Poisson model code
-    or any live execution path -- these remain out of scope."""
+def test_no_betting_execution_code_exists_in_models_directory():
+    """Superseded 2026-09-11 (Stage 3B accepted -- see
+    research/cycles/CYCLE_001/STAGE_3B_PLAN.md and
+    reports/audits/CURRENT_STATE_AUDIT.md Update 4): this test used to
+    require football_elo.py/football_poisson.py to remain unimplemented
+    PLACEHOLDER files during Stage 3A. Stage 3A is now frozen (GO) and
+    Stage 3B (probability-model validation, explicitly authorised by
+    the project directive) is underway, so real Elo/Poisson model code
+    is expected and correct in this directory now.
+
+    What remains genuinely out of scope at every stage until a much
+    later, explicitly-authorised one (per project instructions and the
+    Stage 3B directive section 26/27: no staking, no EV thresholds, no
+    live execution yet) is any actual bet-placement/execution code --
+    that invariant is what this test now checks, rather than the
+    now-obsolete "no model code at all" rule."""
     models_dir = REPO_ROOT / "src" / "prediction_markets_lab" / "models"
-    elo_file = models_dir / "football_elo.py"
-    poisson_file = models_dir / "football_poisson.py"
-    for path in (elo_file, poisson_file):
-        content = path.read_text()
-        assert "PLACEHOLDER" in content, f"{path} must remain an unimplemented placeholder in Stage 3A"
+    forbidden = ("place_bet", "execute_trade", "smarkets", "betfair api", "paid_api")
+    for path in sorted(models_dir.glob("*.py")):
+        content_lower = path.read_text().lower()
+        for term in forbidden:
+            assert term not in content_lower, f"{path} must not contain live-execution code ({term!r} found)"
 
 
 def test_default_raw_output_path_matches_workflow_upload_glob(script_module):
