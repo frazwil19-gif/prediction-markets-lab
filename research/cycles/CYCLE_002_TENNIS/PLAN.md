@@ -333,6 +333,31 @@ completed acquisition run. The next real trigger of
 `.github/workflows/cycle_002_tennis_data_acquisition.yml` is the actual
 test of both the TML-Database source and the TLS fix.
 
+### Fallback tooling prepared ahead of need (2026-09-12)
+
+Per explicit instruction to design the simplest safe fallback rather
+than wait to discover mid-run that TLS still doesn't work:
+`scripts/import_manual_tennis_data_co_uk_files.py` now exists,
+committed (`82c9471`) alongside 10 new unit tests (432/432 project-wide
+passing). It validates manually-downloaded `.xlsx` files against the
+exact checks an automated fetch would apply (real xlsx ZIP magic
+number, not an HTML error page, no silent overwrite of differing
+content), places them at the precise raw path
+`run_cycle_002_tennis_data_acquisition.py`'s `plan_targets()` expects,
+and prints the follow-up `--resume` command. The orchestrator's
+manifest now also records an `acquisition_method` column
+(`automated_fetch` vs. `resumed_existing_file`) so provenance stays
+honest about which rows came from a live fetch this run versus a
+pre-existing file. Verified end-to-end in a scratch directory (not
+committed, cleaned up after): 5 synthetic `.xlsx` files imported ->
+orchestrator `--resume` picked up all 10 targets (5 TML-Database + 5
+Tennis-data.co.uk) with 0 failures -> manifest correctly recorded
+`acquisition_method=resumed_existing_file` for every row. Not yet
+needed for real — this is prepared in advance, not a sign the TLS fix
+has failed again; the real GitHub Actions trigger (TML-Database +
+current TLS fix) has not yet run.
+
+
 ## 4. Checkpoint 2 (not started) — player-identity resolution and market-consensus construction
 
 Deferred, scoped only at a high level here so it is pre-registered
