@@ -358,19 +358,48 @@ has failed again; the real GitHub Actions trigger (TML-Database +
 current TLS fix) has not yet run.
 
 
-## 4. Checkpoint 2 (not started) — player-identity resolution and market-consensus construction
+## 4. Checkpoint 2 (partially prepared) — player-identity resolution and market-consensus construction
 
-Deferred, scoped only at a high level here so it is pre-registered
-rather than invented later: match Tennis-data.co.uk's name-string
-records to Sackmann's player_id-keyed records (surname + first-initial
-matching, disambiguated by tournament/date/round where names collide);
-parse the `.xlsx` odds columns (an empirical schema inventory, not an
-assumed one, exactly as Checkpoint 1's manifest records for the CSV
-sources); build a fair-odds/consensus benchmark analogous to football's
+Scoped here so it is pre-registered rather than invented later: match
+Tennis-data.co.uk's abbreviated name-string records to TML-Database's
+full-name records (surname + first-initial matching, disambiguated by
+tournament/date/round where names collide); parse the `.xlsx` odds
+columns (an empirical schema inventory, not an assumed one, exactly as
+Checkpoint 1's manifest records for the CSV sources); build a
+fair-odds/consensus benchmark analogous to football's
 `probability.consensus` + `probability.margin_removal` pipeline. This
 checkpoint is where football's real "no assumed schema" discipline
 matters most for tennis, given the odds file format could not be
 independently verified in this environment (see §3's open item above).
+
+**Prepared ahead of real data (2026-09-12, commit `9492a90`)**: the
+name-matching piece is the one part of Checkpoint 2 that doesn't
+require having seen real acquired files first, so it's built and
+tested now rather than waiting —
+`src/prediction_markets_lab/normalisation/player_names.py` (previously
+a Stage-1 placeholder with no logic) implements
+`parse_abbreviated_name`, `full_name_matches_abbreviated`, and
+`match_abbreviated_name_to_candidates`. It matches structurally
+(surname suffix + first-initial, diacritic/case-insensitive) rather
+than via a static alias table the way `team_names.py` does for
+football's small fixed team set, because tennis has thousands of
+players across decades. Critically, it never guesses: when more than
+one candidate matches a given "Surname I." string (e.g. two different
+"Zverev A."s), the result surfaces `ambiguous_matches` rather than
+picking one, so real disambiguation-by-tournament/date/round can be
+wired in once real match-level context exists. 15 new tests, built and
+verified against synthetic data reflecting the publicly documented
+convention -- NOT yet checked against a real downloaded Tennis-data.co.uk
+file (every automated fetch attempt against that site has failed so
+far), exactly as `tennis_data_loader.py`'s own HTTP primitives were
+built and tested against mocks before ever touching a real network
+connection. **Still not started**: the `.xlsx` odds-column schema
+inventory (cannot be done responsibly without real files -- this is
+exactly the kind of "discover, don't assume" step this project's
+instructions require), and wiring the matcher + parsed odds +
+`probability.consensus`/`probability.margin_removal` (both already
+sport-agnostic and reusable as-is) into an actual per-match consensus
+benchmark. Full project suite: 447/447 passing.
 
 ## 5. Out of scope (unchanged from Stage 3B's framing, applied fresh to this sport)
 
