@@ -83,10 +83,31 @@ jobs:
         run: python3 scripts/_diagnose_sackmann_repos.py
         continue-on-error: true
 
+      # Pinned to 3.12 (not 3.11, unlike this project's other workflows)
+      # specifically for this job: tennis_data_loader.py's
+      # build_legacy_tolerant_ssl_context() applies three independent
+      # TLS-compatibility relaxations for Tennis-data.co.uk's legacy
+      # server, but the third -- ssl.OP_LEGACY_SERVER_CONNECT -- was
+      # only added to Python's ssl module in 3.12 and is looked up via
+      # getattr(ssl, "OP_LEGACY_SERVER_CONNECT", 0), so on 3.11 it
+      # silently no-ops. Real run 2026-09-13 (workflow run 34766536563)
+      # confirmed all 5 Tennis-data.co.uk fetches still fail with the
+      # identical `[SSL: TLSV1_ALERT_INTERNAL_ERROR]` on 3.11 -- i.e.
+      # only 2 of the function's 3 documented mitigations have ever
+      # actually executed on this runner. This is the one remaining
+      # untested piece of the "final sensible TLS compatibility
+      # attempt" the project's acquisition rules call for before
+      # falling back to the manual-download importer
+      # (scripts/import_manual_tennis_data_co_uk_files.py, already
+      # built and tested) -- not a new workaround, just letting the
+      # existing, already-written fix actually run. TML-Database
+      # (raw.githubusercontent.com) succeeded on 3.11 already and is
+      # unaffected either way. requires-python in pyproject.toml is
+      # ">=3.11", so this is a safe bump for this one job.
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.12"
 
       - name: Install dependencies
         run: |
@@ -117,6 +138,24 @@ jobs:
           CMD="$CMD --request-delay-seconds ${{ inputs.request_delay_seconds }}"
           CMD="$CMD --max-retries ${{ inputs.max_retries }}"
           echo "cmd=$CMD" >> "$GITHUB_OUTPUT"
+
+      # Diagnostic only, never fails the job: confirms in the log,
+      # rather than assuming, whether this runner's Python/OpenSSL
+      # build actually exposes ssl.OP_LEGACY_SERVER_CONNECT -- the
+      # mitigation this job was bumped to Python 3.12 for (see the
+      # comment on "Set up Python" above). If this ever prints False
+      # again on a runner that's supposed to be 3.12+, that's a signal
+      # the version bump didn't take effect, not that the TLS fix
+      # itself is wrong.
+      - name: Confirm the legacy-TLS mitigation is actually available on this runner
+        run: |
+          python3 -c "
+          import ssl
+          print('Python:', __import__('sys').version)
+          print('OpenSSL:', ssl.OPENSSL_VERSION)
+          print('OP_LEGACY_SERVER_CONNECT available:', hasattr(ssl, 'OP_LEGACY_SERVER_CONNECT'))
+          "
+        continue-on-error: true
 
       - name: Run acquisition (paced, may take several minutes)
         run: ${{ steps.build_cmd.outputs.cmd }}
