@@ -1,10 +1,17 @@
 # Tennis Cycle 1 -- Pre-Holdout Freeze
 
-**STATUS: APPROVED by Fraser/the operator on 2026-09-15, subject to the
-correction below, which was applied BEFORE 2025 was opened. Once the
-evaluation script (section 11) has been run exactly once, this STATUS line
-is updated to record the final PASS/PARTIAL/FAIL outcome; see
-TENNIS_CYCLE_1_2025_HOLDOUT_REPORT.md for that result.**
+**STATUS: EVALUATED, 2026-09-15. VERDICT: PARTIAL.** The one-time 2025
+evaluation (`scripts/run_cycle_002_tennis_2025_holdout.py`) has been run
+exactly once, after the section 9 correction below and a passing seal
+check. Full numbers and the mechanical verdict are in
+`TENNIS_CYCLE_1_2025_HOLDOUT_REPORT.md`. Headline: the log-loss delta
+favoured Global Elo (-0.0088) but its 95% CI, [-0.0202, 0.0016], includes
+zero -- inconclusive, not a clean PASS, and not a FAIL either (AUC 0.6925
+and calibration slope 0.8130 both comfortably clear their bands). Per
+section 11 / the operator's PARTIAL branch: the model is NOT modified in
+response to this result. This document's specification remains frozen
+exactly as approved; no further evaluation of 2025 will occur under this
+cycle's name.
 
 This document exists to be approved BEFORE the sealed 2025 holdout is ever
 evaluated, per the research operator's explicit instruction: "Before opening
