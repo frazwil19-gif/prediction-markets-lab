@@ -1,8 +1,10 @@
 # Cycle 2 Tennis -- Workstream A4 Baseline Results (A, B, C)
 
-*Generated 2026-09-15T20:27:50.916293+00:00*
+*Generated 2026-09-15T21:04:57.981733+00:00*
 
 **PREDICTIVE PERFORMANCE ONLY -- NO BETTING EDGE ESTABLISHED.** No price/odds data of any kind is used anywhere in this report; see reports/research/TENNIS_HISTORICAL_ODDS_SOURCE_AUDIT.md for the separate, still-open search for a usable historical-odds source.
+
+**RESULT STATUS: FROZEN.** Per the research operator's explicit decision after reviewing these numbers, model C (Surface Elo) is recorded as **SURFACE ELO V1 -- NEGATIVE / DOES NOT PROMOTE** and is not modified retrospectively to improve it -- doing so after seeing the result would introduce researcher degrees of freedom. The likely explanation (too few matches per player per surface diluting each surface-specific rating) is a plausible HYPOTHESIS, not an established finding. A shrinkage/hierarchical surface-rating model may be pursued later as a SEPARATE, newly pre-registered specification, never as a repair of this one. Models A and B are accepted as-is; Workstream A4 proceeds to step D using Global Elo (B) as the primary odds-independent benchmark.
 
 ## 1. Scope and split
 

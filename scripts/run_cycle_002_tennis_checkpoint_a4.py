@@ -270,6 +270,18 @@ def render_report(summary: dict) -> str:
                   "see reports/research/TENNIS_HISTORICAL_ODDS_SOURCE_AUDIT.md for the "
                   "separate, still-open search for a usable historical-odds source.")
     lines.append("")
+    lines.append("**RESULT STATUS: FROZEN.** Per the research operator's explicit decision "
+                  "after reviewing these numbers, model C (Surface Elo) is recorded as "
+                  "**SURFACE ELO V1 -- NEGATIVE / DOES NOT PROMOTE** and is not modified "
+                  "retrospectively to improve it -- doing so after seeing the result would "
+                  "introduce researcher degrees of freedom. The likely explanation (too few "
+                  "matches per player per surface diluting each surface-specific rating) is "
+                  "a plausible HYPOTHESIS, not an established finding. A shrinkage/hierarchical "
+                  "surface-rating model may be pursued later as a SEPARATE, newly "
+                  "pre-registered specification, never as a repair of this one. Models A and B "
+                  "are accepted as-is; Workstream A4 proceeds to step D using Global Elo (B) as "
+                  "the primary odds-independent benchmark.")
+    lines.append("")
     lines.append("## 1. Scope and split")
     lines.append("")
     lines.append(f"- Training/calibration seasons: {summary['training_seasons']} (n={summary['n_training']})")
