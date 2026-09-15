@@ -1,18 +1,32 @@
 # Tennis Cycle 1 -- Pre-Holdout Freeze
 
-**STATUS: AWAITING APPROVAL. 2025 HAS NOT BEEN OPENED. No script in this repo
-has read a 2025 row for modelling purposes as of this freeze.**
+**STATUS: APPROVED by Fraser/the operator on 2026-09-15, subject to the
+correction below, which was applied BEFORE 2025 was opened. Once the
+evaluation script (section 11) has been run exactly once, this STATUS line
+is updated to record the final PASS/PARTIAL/FAIL outcome; see
+TENNIS_CYCLE_1_2025_HOLDOUT_REPORT.md for that result.**
 
 This document exists to be approved BEFORE the sealed 2025 holdout is ever
 evaluated, per the research operator's explicit instruction: "Before opening
 2025 we need: final candidate model specification; final hyperparameters;
 final feature set; final calibration method; frozen evaluation metrics; tests
 passing; explicit pre-holdout protocol committed." Everything below is that
-freeze. Once Fraser/the operator approves this document, a dedicated,
-purpose-built evaluation script is written that re-runs EXACTLY this frozen
-specification against 2025 once, and the result is recorded as-is --
+freeze. A dedicated, purpose-built evaluation script re-runs EXACTLY this
+frozen specification against 2025 once, and the result is recorded as-is --
 PASS, PARTIAL, or FAIL -- with no further tuning permitted afterward under
 this cycle's name.
+
+**Correction (2026-09-15, same day, applied BEFORE 2025 was opened)**: the
+operator's review of this freeze flagged a genuine ambiguity in the original
+section 9 -- a FAIL clause ("the CI doesn't exclude zero favourably") and a
+PARTIAL clause ("a favourable point estimate but an inconclusive CI") could
+describe the exact same result, leaving the rule non-mechanical. Section 9
+below has been rewritten as a single, strictly ordered, mutually exclusive
+and exhaustive decision function -- `classify_holdout_result` in
+`src/prediction_markets_lab/research/holdout_verdict.py` -- with 19 unit
+tests (`tests/unit/test_holdout_verdict.py`) proving every boundary case maps
+to exactly one verdict. No other section of this freeze changed. This
+correction was committed before any 2025 row was read by any script.
 
 **Naming note**: "Tennis Cycle 1" here is the operator's name for this first
 frozen model/holdout-test within the tennis initiative. It is not the same
@@ -153,33 +167,52 @@ above -- no other seed exists to freeze.
 
 ## 9. Explicit 2025 PASS / PARTIAL / FAIL criteria (decided now, never after seeing 2025)
 
-**PASS** -- all three:
-1. Global Elo beats the ranking-only baseline on 2025 (paired bootstrap,
-   same-match common sample where both have a prediction): the 95% CI for
-   (Global Elo log loss - ranking baseline log loss) lies entirely below
-   zero.
-2. Global Elo's 2025 AUC >= 0.65 (meaningfully better than chance
-   discrimination; 2024's was 0.6991).
-3. Global Elo's 2025 calibration slope is in [0.7, 1.3] (no severe
-   miscalibration/drift; 2024's was 0.8749).
+**Corrected 2026-09-15** (see the correction note above) to remove an overlap
+between the original FAIL and PARTIAL clauses. The rule below is implemented
+as a single, ordered, mutually exclusive and exhaustive function --
+`classify_holdout_result` in
+`src/prediction_markets_lab/research/holdout_verdict.py` -- with unit tests
+(`tests/unit/test_holdout_verdict.py`) proving every boundary case maps to
+exactly one verdict. The evaluation script (section 11) calls this function
+directly on the computed 2025 metrics; nobody reads the 2025 numbers and
+picks a verdict by eye.
 
-**FAIL** -- any of:
-1. The 95% CI for (Global Elo - ranking baseline) log loss does NOT
-   exclude zero in Global Elo's favour (i.e. includes zero, or Global Elo
-   is worse).
-2. AUC < 0.65 (discrimination has collapsed toward chance).
-3. Calibration slope falls outside [0.4, 1.6] (severe drift) AND the log-
-   loss CI also fails to exclude zero (both signals bad together, not one
-   borderline number alone).
+Let `delta = Global Elo log loss - ranking baseline log loss` on the 2025
+holdout (same-match common sample, i.e. matches where both models have a
+prediction), with a paired-bootstrap 95% CI `[ci_lower, ci_upper]` on delta
+(method: section 7). Evaluated in this fixed order:
 
-**PARTIAL** -- everything not covered by PASS or FAIL above: e.g. the
-log-loss CI excludes zero in Global Elo's favour but AUC or calibration
-slope falls slightly outside the PASS band, or the point estimate favours
-Global Elo but the CI is inconclusive given 2025's sample size. A PARTIAL
-result means "the model generalises somewhat but not as cleanly as 2024,"
-not "the model is broken" -- it is reported honestly either way, and
-whatever the verdict, it does NOT by itself establish a betting edge (see
-§10).
+**FAIL** -- any ONE of these alone is disqualifying, never combined with
+another condition to reach a different verdict:
+1. `ci_lower > 0.0` -- the CI lies entirely above zero: Global Elo is
+   statistically significantly WORSE than the ranking baseline on 2025, not
+   merely inconclusive.
+2. 2025 AUC `< 0.65`.
+3. 2025 calibration slope `< 0.4` or `> 1.6` (catastrophic drift) -- this
+   alone fails the cycle regardless of how the log-loss CI reads.
+
+**PASS** -- only if NONE of the FAIL conditions above triggered, AND all
+three of:
+1. `ci_upper < 0.0` -- the CI lies entirely below zero: Global Elo is
+   statistically significantly better than the ranking baseline on 2025.
+2. AUC `>= 0.65` (already guaranteed by not failing condition 2 above).
+3. Calibration slope in `[0.7, 1.3]`.
+
+**PARTIAL** -- everything else (the only remaining case, by construction):
+- the CI includes zero (`ci_lower <= 0.0 <= ci_upper`) -- any favourable
+  point estimate is not statistically conclusive at 2025's sample size; or
+- the CI is favourable (`ci_upper < 0.0`) and AUC clears the floor, but the
+  calibration slope sits outside `[0.7, 1.3]` without being catastrophic
+  (i.e. still within `[0.4, 1.6]`) -- "generalises, but not as cleanly as
+  2024," not "the model is broken."
+
+A boundary value (a CI bound of exactly zero, an AUC of exactly 0.65, a
+slope of exactly 0.4 / 0.7 / 1.3 / 1.6) is resolved by the strict/non-strict
+inequalities above, never by judgement at report time -- see the unit tests
+for the exact mapping of every such boundary.
+
+Whatever the verdict, it does NOT by itself establish a betting edge (see
+section 10).
 
 ## 10. What this evaluation does NOT establish, whatever the result
 
@@ -192,16 +225,31 @@ promotion follow from this holdout result alone, whatever it is.
 
 ## 11. Process (frozen)
 
-1. This document is reviewed and approved by Fraser/the operator.
-2. Only after approval, a new, dedicated script (not yet written) loads
-   2025 for the first time, re-runs the frozen model spec above unchanged,
-   and evaluates it against the criteria in §9 -- exactly once.
-3. The result -- PASS, PARTIAL, or FAIL -- is recorded honestly in a
-   results document, with no retrying, no threshold-loosening, and no
-   silent model changes after seeing 2025.
-4. Any model change made AFTER this point (rescuing Surface Elo, revisiting
-   a null feature, adjusting k_factor, adding calibration) is explicitly a
-   NEW research cycle, not a continuation of Tennis Cycle 1.
+1. This document is reviewed and approved by Fraser/the operator. **Done,
+   2026-09-15, subject to the section 9 correction above.**
+2. Before 2025 is loaded, a seal-verification check confirms: 2025 has not
+   previously been loaded by any research/model script in this repo; no
+   2025-derived statistic informed any model-selection decision recorded in
+   this freeze; the canonical dataset's SHA-256 matches section 1; the full
+   test suite passes; and the working tree for this cycle's tracked files
+   is clean at the moment of running. If any of these fail: STOP, do not
+   evaluate the holdout.
+3. Only after that check passes, a dedicated script
+   (`scripts/run_cycle_002_tennis_2025_holdout.py`) loads 2025 for the first
+   time, re-runs the frozen model spec above unchanged, and evaluates it
+   against the criteria in §9 -- exactly once, via
+   `classify_holdout_result` (never by eye).
+4. The result -- PASS, PARTIAL, or FAIL -- is recorded honestly in
+   `TENNIS_CYCLE_1_2025_HOLDOUT_REPORT.md`, with no retrying, no
+   threshold-loosening, and no silent model changes after seeing 2025.
+   Pre-registered subgroup diagnostics (section 6) are reported as
+   diagnostics only; an interesting subgroup discovered after opening 2025
+   is recorded as a FUTURE HYPOTHESIS -- NOT VALIDATED, and does not change
+   this cycle's verdict.
+5. Any model change made AFTER this point (rescuing Surface Elo, revisiting
+   a null feature, adjusting k_factor, adding calibration, tuning anything
+   against the 2025 result) is explicitly a NEW research cycle, not a
+   continuation of Tennis Cycle 1.
 
 ## 12. Code and commit references (frozen)
 
