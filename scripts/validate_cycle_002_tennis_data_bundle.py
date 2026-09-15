@@ -11,7 +11,15 @@ Checks:
   - every file the manifest references exists on disk and its sha256
     matches the manifest;
   - no acquired CSV file is empty or looks like an HTML error page;
-  - the data-version record exists and its `summary.files_failed` is 0.
+  - the data-version record exists and its `summary.files_failed`
+    (REQUIRED-source failures only -- see
+    config/cycle_002_tennis_data.yaml's optional_source_families) is 0.
+
+A non-zero `summary.files_failed_optional` (currently only possible
+for tennis_data_co_uk, confirmed broken server-side as of 2026-09-15)
+prints a warning but does not fail validation -- the bundle is still
+trustworthy for what it does contain (real, hash-verified required-source
+files); it is just honestly missing the optional-source data too.
 
 Exits non-zero on any check failure.
 """
@@ -89,6 +97,16 @@ def main() -> int:
         for failure in failures:
             print(f"  - {failure}")
         return 1
+
+    if data_version_path.exists():
+        optional_failed = data_version.get("summary", {}).get("files_failed_optional", 0)
+        if optional_failed:
+            failed_keys = ", ".join(data_version.get("summary", {}).get("failed_optional_source_keys", []))
+            print(
+                f"WARNING: {optional_failed} optional-source file(s) missing ({failed_keys}) -- "
+                "not a validation failure, but genuinely absent, not fabricated. Downstream steps "
+                "needing this data cannot proceed until it is actually acquired."
+            )
 
     print(f"OK: {len(rows)} manifest rows validated, all hashes match, no HTML error pages found.")
     return 0

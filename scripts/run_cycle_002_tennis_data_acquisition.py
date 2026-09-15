@@ -42,8 +42,15 @@ from these hosts -- it is designed to run via
 Cycle 1 acquisition workflow's phone-triggerable pattern (see
 docs/PHONE_ONLY_DATA_ACQUISITION.md).
 
-Exits non-zero if any critical requirement fails (a source unavailable
+Exits non-zero if a REQUIRED source family fails (a source unavailable
 after retries, or a file that looks like an HTML error page).
+config/cycle_002_tennis_data.yaml's optional_source_families lists
+source families that may fail without failing the run -- currently
+just tennis_data_co_uk, confirmed broken server-side (a fatal TLS
+alert) against every real client tried as of 2026-09-15. An optional
+failure is still fully recorded (manifest, data-version summary,
+printed warning) -- "optional" means "does not block the run," never
+"silently dropped" or "faked as present."
 """
 
 from __future__ import annotations
@@ -79,9 +86,25 @@ from prediction_markets_lab.ingestion.tennis_data_loader import (
 class RunSummary:
     files_attempted: int = 0
     files_acquired: int = 0
+    # files_failed counts REQUIRED-source-family failures only -- the
+    # hard gate this script's exit code and
+    # validate_cycle_002_tennis_data_bundle.py both key off. A failure
+    # in an optional_source_families family (see
+    # config/cycle_002_tennis_data.yaml) is tracked separately in
+    # files_failed_optional and never fails the run: it is a real,
+    # honestly-recorded gap (never silently dropped, never fabricated
+    # as present), just not one that should block progress on the
+    # required sources that did succeed. failed_optional_source_keys
+    # names exactly which targets failed, for anyone auditing the run.
     files_failed: int = 0
+    files_failed_optional: int = 0
     files_skipped_resume: int = 0
     rate_limit_events: int = 0
+    failed_optional_source_keys: list[str] = None
+
+    def __post_init__(self) -> None:
+        if self.failed_optional_source_keys is None:
+            self.failed_optional_source_keys = []
 
 
 @dataclass
@@ -183,6 +206,26 @@ def run(argv: list[str]) -> int:
         backoff_multiplier=config["pacing"]["backoff_multiplier"],
         request_timeout_seconds=config["pacing"]["request_timeout_seconds"],
     )
+    # A source family already confirmed broken (see
+    # config/cycle_002_tennis_data.yaml's optional_source_failures
+    # note) gets its own, much smaller retry budget rather than the
+    # full one -- see that config's pacing.optional_source_max_retries
+    # comment for the reasoning. An explicit --max-retries CLI override
+    # still wins for both, so a diagnostic pass can force everything
+    # down uniformly if that's ever wanted.
+    optional_source_families = set(config.get("optional_source_families", []))
+    optional_acquisition_cfg = (
+        acquisition_cfg
+        if args.max_retries is not None
+        else AcquisitionConfig(
+            user_agent=acquisition_cfg.user_agent,
+            delay_between_requests_seconds=acquisition_cfg.delay_between_requests_seconds,
+            max_retries=config["pacing"].get("optional_source_max_retries", acquisition_cfg.max_retries),
+            initial_backoff_seconds=acquisition_cfg.initial_backoff_seconds,
+            backoff_multiplier=acquisition_cfg.backoff_multiplier,
+            request_timeout_seconds=acquisition_cfg.request_timeout_seconds,
+        )
+    )
 
     targets = plan_targets(config, args.tour, args.season)
     summary = RunSummary(files_attempted=len(targets))
@@ -231,17 +274,24 @@ def run(argv: list[str]) -> int:
                 content = dest_path.read_bytes()
         else:
             acquisition_method = "automated_fetch"
+            is_optional = target.source_family in optional_source_families
+            target_cfg = optional_acquisition_cfg if is_optional else acquisition_cfg
             if i > 0:
-                time.sleep(acquisition_cfg.delay_between_requests_seconds)
+                time.sleep(target_cfg.delay_between_requests_seconds)
             print(f"[{source_key}] fetching...")
             if target.content_mode == "text":
-                result = fetch_one_text(source_key, target.url, acquisition_cfg, client)
+                result = fetch_one_text(source_key, target.url, target_cfg, client)
             else:
-                result = fetch_one_bytes(source_key, target.url, acquisition_cfg, client)
+                result = fetch_one_bytes(source_key, target.url, target_cfg, client)
             summary.rate_limit_events += result.rate_limited_count
             if not result.success:
-                print(f"[{source_key}] FAILED: {result.error_message}")
-                summary.files_failed += 1
+                if is_optional:
+                    print(f"[{source_key}] FAILED (optional source, not blocking the run): {result.error_message}")
+                    summary.files_failed_optional += 1
+                    summary.failed_optional_source_keys.append(source_key)
+                else:
+                    print(f"[{source_key}] FAILED: {result.error_message}")
+                    summary.files_failed += 1
                 continue
             content = result.raw_text if target.content_mode == "text" else result.raw_bytes
             try:
@@ -251,8 +301,13 @@ def run(argv: list[str]) -> int:
                     write_raw_file_atomic_bytes(dest_path, content)
             except FileExistsError as exc:
                 if not args.force_redownload:
-                    print(f"[{source_key}] REFUSED overwrite: {exc}")
-                    summary.files_failed += 1
+                    if is_optional:
+                        print(f"[{source_key}] REFUSED overwrite (optional source, not blocking the run): {exc}")
+                        summary.files_failed_optional += 1
+                        summary.failed_optional_source_keys.append(source_key)
+                    else:
+                        print(f"[{source_key}] REFUSED overwrite: {exc}")
+                        summary.files_failed += 1
                     continue
                 if target.content_mode == "text":
                     dest_path.write_text(content, encoding="utf-8")
@@ -319,14 +374,27 @@ def run(argv: list[str]) -> int:
         "match_data_attribution": config["licensing"]["match_data_attribution"],
         "seasons": config["seasons"],
         "summary": asdict(summary),
+        "optional_source_families": sorted(optional_source_families),
     }
     with open(data_version_path, "w") as f:
         json.dump(data_version, f, indent=2, sort_keys=True)
 
     print(f"\nSummary: {summary}")
 
+    if summary.files_failed_optional > 0:
+        print(
+            f"WARNING: {summary.files_failed_optional} optional-source file(s) failed to "
+            f"acquire and are genuinely missing (not fabricated, not silently dropped): "
+            f"{', '.join(summary.failed_optional_source_keys)}. See "
+            "config/cycle_002_tennis_data.yaml's optional_source_families note -- this does "
+            "not block the run, but downstream steps that need this data (the odds/consensus "
+            "benchmark) cannot proceed until it's actually acquired, either by this source "
+            "recovering or via the manual-download fallback "
+            "(scripts/import_manual_tennis_data_co_uk_files.py)."
+        )
+
     if summary.files_failed > 0:
-        print(f"CRITICAL: {summary.files_failed} file(s) failed to acquire.")
+        print(f"CRITICAL: {summary.files_failed} required file(s) failed to acquire.")
         return 1
     return 0
 

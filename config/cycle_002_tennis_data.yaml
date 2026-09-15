@@ -120,12 +120,49 @@ expected_raw_file_count: 10
   # + 1 tour (ATP) x 5 seasons odds files (5)
   # This is a soft check (a printed warning, not a hard failure).
 
+# Real acquisition runs 2026-09-13 and 2026-09-15 confirmed
+# tennis_data_co_uk's HTTPS endpoint fails the TLS handshake for
+# EVERY client tried -- a Python/OpenSSL client on a GitHub Actions
+# runner (including after bumping to Python 3.12 specifically to pick
+# up a documented legacy-TLS mitigation), Anthropic's own separate
+# web-fetch infrastructure, and a real, unmodified Chrome browser all
+# got a fatal TLS alert during the handshake itself
+# ([SSL: TLSV1_ALERT_INTERNAL_ERROR] / Chrome's ERR_SSL_PROTOCOL_ERROR).
+# Chrome failing is the deciding signal: browsers tolerate almost any
+# legacy server quirk, so if Chrome can't complete the handshake
+# either, the server itself is currently broken -- this is not a
+# client-compatibility gap any of our tooling (or a manual browser
+# download) can work around. Listed here, not assumed forever: retry
+# automation periodically in case this is a transient outage, and
+# re-validate before ever removing this source family rather than
+# assuming the breakage is permanent.
+#
+# tml_database_match is NOT optional -- TML-Database has fetched
+# cleanly on every real run so far and is this project's only source
+# for the actual match results the models need; a failure there is a
+# real problem worth stopping the run over. tennis_data_co_uk (odds,
+# needed later for the market-consensus benchmark, not for Checkpoint
+# 1's match data) is the only source family listed here.
+optional_source_families:
+  - tennis_data_co_uk
+
 pacing:
   request_delay_seconds: 6.0
   max_retries: 4
   initial_backoff_seconds: 10.0
   backoff_multiplier: 2.0
   request_timeout_seconds: 30.0
+  # A source already confirmed broken (see optional_source_families
+  # above) doesn't deserve the full retry/backoff budget every run --
+  # at max_retries=4 each failing file costs up to
+  # initial_backoff_seconds * (backoff_multiplier**max_retries - 1) /
+  # (backoff_multiplier - 1) =~ 150s, so 5 failing odds files can burn
+  # ~12-13 minutes for a known, already-diagnosed outcome. 1 retry
+  # (~16s: the 6s inter-request delay plus one 10s backoff) still gives
+  # the source a fair, fast chance to have recovered without wasting
+  # the run's time restating what's already confirmed. Required
+  # sources keep the full max_retries above.
+  optional_source_max_retries: 1
 
 validation:
   # Provisional defaults for tennis-data.co.uk's odds columns -- same
