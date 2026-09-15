@@ -419,6 +419,43 @@ source" rule). Checkpoint 1's match-result data (`tml_database_match`)
 is unaffected and can proceed now.
 
 
+### Diagnostic run #9 (2026-09-15): optional-source retry budget silently never applied on a real run, fixed
+
+Run 35002551488 (the first real trigger after `01dabec`) confirmed the
+"don't block the run" half of that fix worked -- the log correctly showed
+`[tennis_data_co_uk:...] FAILED (optional source, not blocking the run): ...`
+for each odds-file failure, and TML-Database's 5 files kept fetching
+normally alongside it. But the run still took ~11-12 minutes instead of the
+intended ~1-2, meaning the reduced retry budget (`pacing.optional_source_max_retries`)
+was not actually taking effect. Cause: `01dabec`'s code only switched to the
+reduced budget `if args.max_retries is not None else <reduced>` -- reasoning
+that an explicit CLI override should win uniformly for both families. But
+the workflow's own "Build acquisition command" step *always* appends
+`--max-retries` with its `workflow_dispatch` input's current value (that
+input has a default of `"4"`, and unlike the boolean/list inputs this one
+has no `if` guard around the flag), so `args.max_retries` is never actually
+`None` on any real run -- the reduced-budget branch could only ever be
+exercised by a direct Python invocation, which is exactly how the original
+tests (passing, but not representative of real usage) missed it.
+
+Separately, that same run was cancelled on its last item
+(`[tennis_data_co_uk:ATP:2025] fetching...`) before finishing, so no
+manifest or data-version file was written at all -- a design fragility
+(everything is written only at the very end of `run()`) worth a future look,
+not addressed here, since it's orthogonal to the retry-budget bug itself.
+
+Fix (commit `51fbaf5`): added an independent `--optional-max-retries` CLI
+flag, fully decoupled from `--max-retries`. The optional family's budget now
+always defaults to `config.pacing.optional_source_max_retries` regardless of
+what `--max-retries` carries, and is only raised by explicitly passing
+`--optional-max-retries` too (kept as a deliberate escape hatch for a
+diagnostic pass that wants everything uniform). The now-stale test asserting
+`--max-retries` applied to both families was replaced with two tests: one
+confirming `--max-retries` affects only the required family, one confirming
+`--optional-max-retries` independently controls the optional family. Full
+suite: 454/454 passing. Not yet re-verified against a real GitHub Actions
+run as of this writing -- awaiting Fraser's push and a re-trigger.
+
 ## 4. Checkpoint 2 (partially prepared) — player-identity resolution and market-consensus construction
 
 Scoped here so it is pre-registered rather than invented later: match
