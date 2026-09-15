@@ -202,10 +202,16 @@ def test_optional_source_gets_the_reduced_retry_budget(script_module, tmp_path, 
     manifest_path.unlink(missing_ok=True)
 
 
-def test_explicit_max_retries_cli_override_applies_to_both_families(script_module, tmp_path, monkeypatch):
-    """An explicit --max-retries must still win uniformly for both
-    families (e.g. for a diagnostic pass that wants everything fast),
-    exactly the escape hatch documented in the orchestrator's comment."""
+def test_max_retries_cli_override_only_applies_to_required_family(script_module, tmp_path, monkeypatch):
+    """--max-retries is a real, always-passed workflow_dispatch input with a
+    default value (see the workflow's "Build acquisition command" step) --
+    it is NEVER actually omitted on a real run. If it were still allowed to
+    also raise the optional family's retry budget, it would silently
+    re-introduce the exact ~10+ minute stall this fix exists to prevent
+    (see PLAN.md's 2026-09-15 diagnostic notes). So --max-retries must only
+    affect the required family; the optional family's budget is controlled
+    solely by config's pacing.optional_source_max_retries, independently,
+    unless --optional-max-retries is explicitly passed too."""
     from prediction_markets_lab.ingestion.tennis_data_loader import FetchResult
 
     seen_max_retries = {}
@@ -226,8 +232,47 @@ def test_explicit_max_retries_cli_override_applies_to_both_families(script_modul
         "--output-root", str(tmp_path), "--reports-root", str(tmp_path / "reports"),
     ])
 
+    with open(REPO_ROOT / "config" / "cycle_002_tennis_data.yaml") as f:
+        config = yaml.safe_load(f)
+
     assert seen_max_retries["tml_database_match"] == 2
-    assert seen_max_retries["tennis_data_co_uk"] == 2
+    assert seen_max_retries["tennis_data_co_uk"] == config["pacing"]["optional_source_max_retries"]
+    assert seen_max_retries["tennis_data_co_uk"] != 2
+
+    data_version_path = REPO_ROOT / "data" / "processed" / "tennis" / "cycle_002_data_version.json"
+    data_version_path.unlink(missing_ok=True)
+    manifest_path = REPO_ROOT / "reports" / "audits" / "tennis_data_manifest.csv"
+    manifest_path.unlink(missing_ok=True)
+
+
+def test_explicit_optional_max_retries_cli_override_applies_only_to_optional_family(script_module, tmp_path, monkeypatch):
+    """--optional-max-retries is the deliberate escape hatch for a
+    diagnostic pass that wants to give the known-broken optional source a
+    longer, uniform retry budget -- it must apply only to the optional
+    family and leave the required family's budget (from --max-retries, or
+    config's pacing.max_retries when that's absent too) untouched."""
+    from prediction_markets_lab.ingestion.tennis_data_loader import FetchResult
+
+    seen_max_retries = {}
+
+    def fake_fetch_text(source_key, url, config, client, sleep_fn=None):
+        seen_max_retries["tml_database_match"] = config.max_retries
+        return FetchResult(**_fake_fetch_result(source_key, url, success=True, raw_text="tourney_id\nX\n"))
+
+    def fake_fetch_bytes(source_key, url, config, client, sleep_fn=None):
+        seen_max_retries["tennis_data_co_uk"] = config.max_retries
+        return FetchResult(**_fake_fetch_result(source_key, url, success=False, error_message="network error"))
+
+    monkeypatch.setattr(script_module, "fetch_one_text", fake_fetch_text)
+    monkeypatch.setattr(script_module, "fetch_one_bytes", fake_fetch_bytes)
+
+    script_module.run([
+        "--tour", "ATP", "--season", "2024", "--max-retries", "4", "--optional-max-retries", "7",
+        "--output-root", str(tmp_path), "--reports-root", str(tmp_path / "reports"),
+    ])
+
+    assert seen_max_retries["tml_database_match"] == 4
+    assert seen_max_retries["tennis_data_co_uk"] == 7
 
     data_version_path = REPO_ROOT / "data" / "processed" / "tennis" / "cycle_002_data_version.json"
     data_version_path.unlink(missing_ok=True)

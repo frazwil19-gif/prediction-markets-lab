@@ -138,6 +138,22 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument("--season", action="append", help="Restrict to specific season(s), e.g. 2024")
     parser.add_argument("--request-delay-seconds", type=float, default=None)
     parser.add_argument("--max-retries", type=int, default=None)
+    parser.add_argument(
+        "--optional-max-retries", type=int, default=None,
+        help=(
+            "Retries specifically for optional-source-family targets (see "
+            "config/cycle_002_tennis_data.yaml's optional_source_families). "
+            "Deliberately independent of --max-retries: the acquisition workflow "
+            "always passes an explicit --max-retries (its workflow_dispatch input "
+            "has a default value, so the flag is never actually omitted), which "
+            "would otherwise silently defeat pacing.optional_source_max_retries's "
+            "fast-fail behaviour on every real run -- see PLAN.md's 2026-09-15 "
+            "diagnostic notes for the run this bug was caught on. Defaults to "
+            "config's pacing.optional_source_max_retries; pass this explicitly "
+            "only to deliberately give a known-broken optional source a longer, "
+            "uniform retry budget for a specific diagnostic pass."
+        ),
+    )
     return parser.parse_args(argv)
 
 
@@ -207,24 +223,29 @@ def run(argv: list[str]) -> int:
         request_timeout_seconds=config["pacing"]["request_timeout_seconds"],
     )
     # A source family already confirmed broken (see
-    # config/cycle_002_tennis_data.yaml's optional_source_failures
+    # config/cycle_002_tennis_data.yaml's optional_source_families
     # note) gets its own, much smaller retry budget rather than the
     # full one -- see that config's pacing.optional_source_max_retries
-    # comment for the reasoning. An explicit --max-retries CLI override
-    # still wins for both, so a diagnostic pass can force everything
-    # down uniformly if that's ever wanted.
+    # comment for the reasoning. This is deliberately controlled by its
+    # OWN CLI flag (--optional-max-retries), not by --max-retries: the
+    # acquisition workflow's "Build acquisition command" step always
+    # appends --max-retries with its workflow_dispatch input's current
+    # value (that input has a default, so the flag is never actually
+    # omitted), so gating this on "--max-retries wasn't passed" silently
+    # never applied on any real run -- caught on the 2026-09-15 run that
+    # still took ~12 minutes instead of the intended ~2. See PLAN.md.
     optional_source_families = set(config.get("optional_source_families", []))
-    optional_acquisition_cfg = (
-        acquisition_cfg
-        if args.max_retries is not None
-        else AcquisitionConfig(
-            user_agent=acquisition_cfg.user_agent,
-            delay_between_requests_seconds=acquisition_cfg.delay_between_requests_seconds,
-            max_retries=config["pacing"].get("optional_source_max_retries", acquisition_cfg.max_retries),
-            initial_backoff_seconds=acquisition_cfg.initial_backoff_seconds,
-            backoff_multiplier=acquisition_cfg.backoff_multiplier,
-            request_timeout_seconds=acquisition_cfg.request_timeout_seconds,
-        )
+    optional_max_retries = (
+        args.optional_max_retries if args.optional_max_retries is not None
+        else config["pacing"].get("optional_source_max_retries", acquisition_cfg.max_retries)
+    )
+    optional_acquisition_cfg = AcquisitionConfig(
+        user_agent=acquisition_cfg.user_agent,
+        delay_between_requests_seconds=acquisition_cfg.delay_between_requests_seconds,
+        max_retries=optional_max_retries,
+        initial_backoff_seconds=acquisition_cfg.initial_backoff_seconds,
+        backoff_multiplier=acquisition_cfg.backoff_multiplier,
+        request_timeout_seconds=acquisition_cfg.request_timeout_seconds,
     )
 
     targets = plan_targets(config, args.tour, args.season)
