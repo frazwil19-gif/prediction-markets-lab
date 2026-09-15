@@ -108,29 +108,20 @@ def test_optional_source_failure_is_recorded_honestly_not_hidden(script_module, 
     ])
     assert exit_code == 0
 
-    # NOTE: manifest_path/data_version_path are computed from config as
-    # REPO_ROOT-relative paths, ignoring --output-root/--reports-root (a
-    # known, pre-existing quirk -- see
-    # research/cycles/CYCLE_002_TENNIS/PLAN.md). That's why this test reads
-    # from the real repo paths below rather than under tmp_path, and cleans
-    # up afterwards so it never leaves fake data behind in the real repo.
-    data_version_path = REPO_ROOT / "data" / "processed" / "tennis" / "cycle_002_data_version.json"
+    # manifest_path/data_version_path are derived from --output-root /
+    # --reports-root (fixed 2026-09-15 -- see the "FIX" comment in
+    # run_cycle_002_tennis_data_acquisition.py's run() for why this used to
+    # be hardcoded to REPO_ROOT-relative paths and why that was a real
+    # problem, not just a style issue), so under tmp_path exactly as passed
+    # to run() above -- nothing here touches the real repo, so there is
+    # nothing to clean up afterwards.
+    data_version_path = tmp_path / "processed" / "tennis" / "cycle_002_data_version.json"
     with open(data_version_path) as f:
         data_version = json.load(f)
-    try:
-        assert data_version["summary"]["files_failed_optional"] == 1
-        assert data_version["summary"]["files_failed"] == 0
-        assert "tennis_data_co_uk:ATP:2024" in data_version["summary"]["failed_optional_source_keys"]
-        assert data_version["optional_source_families"] == ["tennis_data_co_uk"]
-    finally:
-        # This script writes manifest/data-version to REPO_ROOT-relative
-        # paths regardless of --output-root/--reports-root (a known,
-        # documented quirk -- see research/cycles/CYCLE_002_TENNIS/PLAN.md);
-        # clean up so this test never leaves fake data behind in the real
-        # repo paths.
-        data_version_path.unlink(missing_ok=True)
-        manifest_path = REPO_ROOT / "reports" / "audits" / "tennis_data_manifest.csv"
-        manifest_path.unlink(missing_ok=True)
+    assert data_version["summary"]["files_failed_optional"] == 1
+    assert data_version["summary"]["files_failed"] == 0
+    assert "tennis_data_co_uk:ATP:2024" in data_version["summary"]["failed_optional_source_keys"]
+    assert data_version["optional_source_families"] == ["tennis_data_co_uk"]
 
 
 def test_required_source_failure_still_fails_the_run(script_module, tmp_path, monkeypatch):
@@ -158,10 +149,6 @@ def test_required_source_failure_still_fails_the_run(script_module, tmp_path, mo
 
     assert exit_code == 1
 
-    data_version_path = REPO_ROOT / "data" / "processed" / "tennis" / "cycle_002_data_version.json"
-    data_version_path.unlink(missing_ok=True)
-    manifest_path = REPO_ROOT / "reports" / "audits" / "tennis_data_manifest.csv"
-    manifest_path.unlink(missing_ok=True)
 
 
 def test_optional_source_gets_the_reduced_retry_budget(script_module, tmp_path, monkeypatch):
@@ -196,10 +183,6 @@ def test_optional_source_gets_the_reduced_retry_budget(script_module, tmp_path, 
     assert seen_max_retries["tennis_data_co_uk"] == config["pacing"]["optional_source_max_retries"]
     assert seen_max_retries["tennis_data_co_uk"] < seen_max_retries["tml_database_match"]
 
-    data_version_path = REPO_ROOT / "data" / "processed" / "tennis" / "cycle_002_data_version.json"
-    data_version_path.unlink(missing_ok=True)
-    manifest_path = REPO_ROOT / "reports" / "audits" / "tennis_data_manifest.csv"
-    manifest_path.unlink(missing_ok=True)
 
 
 def test_max_retries_cli_override_only_applies_to_required_family(script_module, tmp_path, monkeypatch):
@@ -239,10 +222,6 @@ def test_max_retries_cli_override_only_applies_to_required_family(script_module,
     assert seen_max_retries["tennis_data_co_uk"] == config["pacing"]["optional_source_max_retries"]
     assert seen_max_retries["tennis_data_co_uk"] != 2
 
-    data_version_path = REPO_ROOT / "data" / "processed" / "tennis" / "cycle_002_data_version.json"
-    data_version_path.unlink(missing_ok=True)
-    manifest_path = REPO_ROOT / "reports" / "audits" / "tennis_data_manifest.csv"
-    manifest_path.unlink(missing_ok=True)
 
 
 def test_explicit_optional_max_retries_cli_override_applies_only_to_optional_family(script_module, tmp_path, monkeypatch):
@@ -274,7 +253,3 @@ def test_explicit_optional_max_retries_cli_override_applies_only_to_optional_fam
     assert seen_max_retries["tml_database_match"] == 4
     assert seen_max_retries["tennis_data_co_uk"] == 7
 
-    data_version_path = REPO_ROOT / "data" / "processed" / "tennis" / "cycle_002_data_version.json"
-    data_version_path.unlink(missing_ok=True)
-    manifest_path = REPO_ROOT / "reports" / "audits" / "tennis_data_manifest.csv"
-    manifest_path.unlink(missing_ok=True)

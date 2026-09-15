@@ -368,7 +368,22 @@ def run(argv: list[str]) -> int:
     reports_root = args.reports_root
     reports_root.mkdir(parents=True, exist_ok=True)
 
-    manifest_path = REPO_ROOT / config["output_paths"]["manifest_path"]
+    # FIX (2026-09-15): these two paths used to be hardcoded as
+    # REPO_ROOT / config[...], ignoring --output-root / --reports-root
+    # entirely -- a "harmless in real usage" quirk previously left alone
+    # (real runs always use the defaults, which happen to equal these
+    # hardcoded paths anyway). It stopped being harmless the moment a real,
+    # already-acquired manifest/data-version pair sat at those exact real
+    # paths AND the test suite's real (non-dry-run) run() invocations wrote
+    # to -- and their cleanup code unlinked -- those same real paths instead
+    # of the test's own tmp_path, because this code never actually honoured
+    # the CLI overrides those tests passed. That silently deleted a real
+    # acquisition's real output. Fixed by deriving both paths from
+    # args.reports_root / args.output_root (which already default to the
+    # exact same real locations, so this changes nothing for a real run)
+    # instead of REPO_ROOT, so a test-provided --output-root/--reports-root
+    # is now actually honoured and test runs can never touch real repo state.
+    manifest_path = reports_root / Path(config["output_paths"]["manifest_path"]).name
     manifest_path.parent.mkdir(parents=True, exist_ok=True)
     with open(manifest_path, "w", newline="") as f:
         if manifest_rows:
@@ -380,7 +395,12 @@ def run(argv: list[str]) -> int:
     with open(schema_inventory_path, "w") as f:
         json.dump(schema_inventory, f, indent=2, sort_keys=True)
 
-    data_version_path = REPO_ROOT / config["output_paths"]["data_version_path"]
+    # config's data_version_path is "data/processed/tennis/..." -- relative
+    # to the repo root, i.e. relative to args.output_root's own default
+    # (REPO_ROOT / "data"). Strip the leading "data/" so it composes
+    # correctly with a non-default --output-root too.
+    data_version_relative = Path(*Path(config["output_paths"]["data_version_path"]).parts[1:])
+    data_version_path = args.output_root / data_version_relative
     data_version_path.parent.mkdir(parents=True, exist_ok=True)
     data_version = {
         "data_version": f"cycle_002_tennis_v0.1.0-{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S')}",
