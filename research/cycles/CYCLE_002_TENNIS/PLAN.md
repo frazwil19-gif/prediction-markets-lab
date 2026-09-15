@@ -358,6 +358,67 @@ has failed again; the real GitHub Actions trigger (TML-Database +
 current TLS fix) has not yet run.
 
 
+### Diagnostic runs #6-#8 (2026-09-13, 2026-09-15): tennis-data.co.uk confirmed server-side broken, made optional
+
+The first real GitHub Actions trigger (run 34766536563, 2026-09-13)
+gave the first genuine test of both the pivot and the TLS fix
+together: TML-Database fetched all 5 ATP season files cleanly (0
+failures) -- the pivot itself is now confirmed working against live
+internet, not just mocks. Tennis-data.co.uk failed all 5 odds files
+with the identical `[SSL: TLSV1_ALERT_INTERNAL_ERROR]` diagnostic run
+#3 first saw, meaning the "strengthened" `build_legacy_tolerant_ssl_context()`
+fix had not actually been fully exercised: its third mitigation,
+`ssl.OP_LEGACY_SERVER_CONNECT`, was only added to Python's `ssl` module
+in 3.12 and silently no-op'd under the workflow's pinned Python 3.11
+(commit `f0cb675` bumped the workflow to 3.12 to let it actually run).
+
+A second real trigger (run 34999310740, 2026-09-15, on Python 3.12)
+failed the exact same way -- `TLSV1_ALERT_INTERNAL_ERROR` on every
+Tennis-data.co.uk file, unchanged. At that point three independent,
+genuinely unblocked TLS attempts had now failed identically: this
+GitHub Actions run, Anthropic's own separate web-fetch infrastructure
+(`WebFetch` tool, hit the identical `TLSV1_ALERT_INTERNAL_ERROR`
+fetching the site's robots.txt), and an unmodified, real Chrome browser
+manually opening `https://www.tennis-data.co.uk/2021/2021.xlsx`
+(`ERR_SSL_PROTOCOL_ERROR`). Chrome failing is the decisive signal --
+browsers tolerate almost any legacy-server TLS quirk, so if Chrome
+cannot complete the handshake either, the server itself is currently
+broken, not a client-compatibility gap. This also means the
+manual-download fallback built in diagnostic run's "Fallback tooling
+prepared ahead of need" section above cannot currently be exercised
+for real either -- it depends on a browser being able to reach the
+site, and right now none can.
+
+Per the project's explicit "one final sensible TLS attempt, then
+fall back rather than keep engineering around it" instruction, and
+per Fraser's own line that a persistently broken source should not
+block all tennis progress: `tennis-data.co.uk` is now listed in
+`config/cycle_002_tennis_data.yaml`'s new `optional_source_families`.
+`run_cycle_002_tennis_data_acquisition.py` (commit `01dabec`) exits 0
+when only optional-family targets fail, as long as required-family
+targets (`tml_database_match`) succeed -- the failure is still fully
+recorded (never hidden, never fabricated as present) in the manifest
+and the data-version summary's new `files_failed_optional` /
+`failed_optional_source_keys` fields, and the optional family now gets
+a much smaller retry budget (1 vs. the required default of 4) so a
+run against a source already confirmed broken fails in seconds per
+file rather than burning the full ~2.5min/file backoff schedule. 6 new
+tests added (`tests/unit/test_cycle_002_tennis_acquisition_orchestration.py`,
+the first for this script); full suite 453/453 passing.
+
+This is not a permanent removal: `tennis-data.co.uk` stays configured
+and gets attempted (briefly) on every run, so an actual server-side
+recovery would be picked up automatically. Odds/consensus work
+(Checkpoint 2's market-consensus benchmark) stays blocked until either
+the site recovers, or a validated alternative source is wired in (two
+candidates surfaced by web search 2026-09-15 -- a Kaggle dataset and a
+GitHub mirror, both ultimately re-publishing tennis-data.co.uk's own
+data in a consolidated, not per-season, shape -- neither validated
+against real content yet, per this project's "never blindly swap a
+source" rule). Checkpoint 1's match-result data (`tml_database_match`)
+is unaffected and can proceed now.
+
+
 ## 4. Checkpoint 2 (partially prepared) — player-identity resolution and market-consensus construction
 
 Scoped here so it is pre-registered rather than invented later: match
