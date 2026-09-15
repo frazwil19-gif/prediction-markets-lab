@@ -268,6 +268,38 @@ promotion follow from this holdout result alone, whatever it is.
 - `3ee12cf` -- Surface Elo freeze + Workstream B Pass 2
 - `48c4f1b` -- A4 step D incremental features (clean null)
 - `b86a673` -- Calibration research (CALIBRATION = NONE)
+- `63544b4` -- Corrected PASS/PARTIAL/FAIL logic + seal check (before 2025 opened)
+- `6583c02` -- One-time 2025 holdout evaluation script
+- `882294a` -- 2025 holdout evaluated -- VERDICT: PARTIAL
 
 All local, unpushed as of this freeze -- Fraser pushes from his own
 Terminal.
+
+## 13. Cycle closure (2026-09-15, after operator review of the PARTIAL verdict)
+
+**TENNIS CYCLE 1 ODDS-INDEPENDENT MODEL DEVELOPMENT IS CLOSED.** Per the
+operator's explicit review and instruction after seeing the PARTIAL verdict,
+recorded here for the permanent research record:
+
+- The frozen candidate remains exactly Global Elo, k_factor=32.0, no
+  additional features, no calibration -- unchanged by the 2025 result.
+- The 2025 verdict is **PARTIAL**, not PASS. PARTIAL is not treated as
+  equivalent to PASS anywhere in this repo's record, and is not described as
+  a near-pass that justifies acting as if it were a pass.
+- No further tuning, feature-adding, calibration, or k_factor adjustment is
+  performed in response to the 2025 numbers. Doing so under this cycle's
+  name is explicitly prohibited by section 11 above; any future attempt is a
+  new, separately pre-registered cycle.
+- Nothing in this document, `A4_BASELINE_RESULTS.md`,
+  `A4_STEP_D_INCREMENTAL_FEATURES.md`, `A4_CALIBRATION_RESEARCH.md`, or
+  `TENNIS_CYCLE_1_2025_HOLDOUT_REPORT.md` establishes a betting edge, a
+  positive-EV claim, or a promoted trading rule of any kind. All of it is
+  PREDICTIVE PERFORMANCE ONLY.
+- The project's next tennis-related priority is Workstream B (Betfair
+  historical prices) -- see
+  `research/cycles/CYCLE_002_TENNIS/WORKSTREAM_B_MARKET_AWARE_RESEARCH_PROTOCOL.md`
+  for the pre-registered protocol governing that work, written before any
+  real Betfair price data has been obtained.
+- The repository is fully tested (600 tests passing as of this closure) and
+  reproducible from a clean checkout; all commits above remain local pending
+  Fraser's own push.
