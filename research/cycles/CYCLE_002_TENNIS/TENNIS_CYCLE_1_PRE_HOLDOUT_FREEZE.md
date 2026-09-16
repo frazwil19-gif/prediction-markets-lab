@@ -275,6 +275,9 @@ promotion follow from this holdout result alone, whatever it is.
 All local, unpushed as of this freeze -- Fraser pushes from his own
 Terminal.
 
+**Update 2026-09-16**: Fraser pushed all local commits (through
+`7dcdeee`) to `origin/master` from his own Terminal.
+
 ## 13. Cycle closure (2026-09-15, after operator review of the PARTIAL verdict)
 
 **TENNIS CYCLE 1 ODDS-INDEPENDENT MODEL DEVELOPMENT IS CLOSED.** Per the
@@ -301,5 +304,5 @@ recorded here for the permanent research record:
   for the pre-registered protocol governing that work, written before any
   real Betfair price data has been obtained.
 - The repository is fully tested (600 tests passing as of this closure) and
-  reproducible from a clean checkout; all commits above remain local pending
-  Fraser's own push.
+  reproducible from a clean checkout; all commits above were pushed to
+  `origin/master` by Fraser on 2026-09-16.
