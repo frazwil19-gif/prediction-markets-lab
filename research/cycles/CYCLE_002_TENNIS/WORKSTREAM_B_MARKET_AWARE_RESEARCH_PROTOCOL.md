@@ -266,18 +266,36 @@ instruction.
 
 ## 11. Status
 
-- Section 1 (Fraser's manual action): **not yet done** -- the single
-  blocking item.
-- Section 2 (small-sample audit): blocked on section 1.
-- Section 3 (bulk acquisition): blocked on section 2.
-- Section 4 (match linkage): **built and unit-tested against synthetic
-  data**; re-validation against a real sample is part of section 2's audit.
-- Section 5 (snapshot design): deliberately not frozen; awaits section 2.
+- Section 1 (Fraser's manual action): **done, 2026-09-16** -- Betfair
+  BASIC tennis sample downloaded, Jan-Sep 2026.
+- Section 2 (small-sample audit): **done, 2026-09-16** -- see
+  `WORKSTREAM_B_SAMPLE_AUDIT_REPORT.md`. Two real parser bugs found and
+  fixed; real linkage test on 137 January 2026 ATP matches scored 100%
+  MATCHED, 0% AMBIGUOUS, 0% UNMATCHED. BASIC tier judged sufficient for
+  the next research phase (section 8); not sufficient for sections 6/9's
+  net-EV/execution-cost work, which needs a paid tier -- that decision is
+  not yet needed.
+- Section 3 (bulk acquisition): Fraser's download already covers Jan-Sep
+  2026 at BASIC tier; effectively done for this window at zero cost.
+  Ground-truth coverage (TML-Database's own 2026 season file) currently
+  only extends to mid-January -- an external data-source lag, not a
+  project blocker; re-check periodically to extend validated coverage.
+- Section 4 (match linkage): **built, unit-tested, and now validated
+  against a real sample** (100% match rate on real January 2026 data,
+  after fixing the market-type-filter and date-revision bugs found during
+  that validation).
+- Section 5 (snapshot design): deliberately not frozen; real per-message
+  timestamp granularity is now known (BASIC updates whenever `ltp`
+  changes or a market definition is revised, no fixed interval) -- still
+  awaiting a deliberate decision, not yet made.
 - Section 6 (market probability pipeline): back-price math reused from
-  existing modules; lay/commission/liquidity extensions named but not built.
-- Section 7 (observation record): shape frozen here; not yet implemented.
+  existing modules; lay/commission/liquidity extensions confirmed
+  genuinely unavailable at BASIC tier, still not built, not needed for
+  the next phase.
+- Section 7 (observation record): shape frozen here; not yet implemented
+  -- proposed next concrete step.
 - Sections 8-9 (analysis discipline, promotion requirements): frozen here,
-  to be followed once real data exists.
+  ready to be followed once section 7's extraction exists.
 
 ## 12. Operator confirmation and decision tree (2026-09-16)
 

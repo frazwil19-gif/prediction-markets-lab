@@ -40,6 +40,20 @@ def test_no_convention_applies_returns_false_not_a_guess():
     assert not names_are_equivalent("Novak Djokovic", "N Djokovic garbled")
 
 
+def test_hyphenated_surname_matches_betfairs_unhyphenated_form():
+    """Regression test for a real discovery in Fraser's 2026-09-16 Betfair
+    BASIC sample: Betfair rendered "Felix Auger-Aliassime" as the
+    unhyphenated "Felix Auger Aliassime". This was the only name-format
+    miss across 137 real ATP matches tested against a real Betfair
+    sample -- a deterministic, unconditional transform (hyphen -> space),
+    not a fuzzy guess, so it belongs alongside the other three
+    conventions rather than being accepted as a permanent unmatched loss."""
+    assert names_are_equivalent("Felix Auger-Aliassime", "Felix Auger Aliassime")
+    assert names_are_equivalent("Felix Auger-Aliassime", "Felix Auger-Aliassime")
+    # Still must not silently match genuinely different players.
+    assert not names_are_equivalent("Felix Auger-Aliassime", "Felix Auger")
+
+
 # --- classify_tennis_betfair_match ---
 
 def _tml(match_id="m1", d=date(2025, 3, 10), a="Novak Djokovic", b="Rafael Nadal"):

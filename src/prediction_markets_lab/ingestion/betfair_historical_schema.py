@@ -1,32 +1,39 @@
 """Parsing for Betfair's historical Match Odds stream files (Workstream B,
 per research/cycles/CYCLE_002_TENNIS/WORKSTREAM_B_MARKET_AWARE_RESEARCH_PROTOCOL.md).
 
-**STATUS: UNVERIFIED AGAINST A REAL DOWNLOADED FILE.** Betfair's
-historical data files reuse the same JSON "market change message"
-format as the live Exchange Streaming API, which is stable and
-publicly documented (one JSON object per line, each with a top-level
-"op"/"pt" and an "mc" array of per-market updates; a market's first
-message for a session typically carries a full "marketDefinition"
-including its runners; subsequent messages carry "rc" runner-level
-price changes only). This module is built to that documented shape and
-tested against hand-built, schema-conformant fixtures -- it has NOT
-been run against a real file, because no Betfair account/download
-exists in this environment yet (that is Fraser's manual action, see
-the protocol doc). Every parsing function raises loudly (KeyError/
-ValueError) on a field that doesn't match the documented shape rather
-than silently defaulting, precisely so the FIRST real file surfaces any
-discrepancy immediately instead of parsing it wrong quietly. Re-audit
-this module's field mapping against Fraser's real sample before
-trusting its output on live data, exactly as
-normalisation/tennis_betfair_linkage.py's name-matching conventions
-must be.
+**STATUS: VERIFIED AGAINST A REAL DOWNLOADED SAMPLE (2026-09-16).**
+Fraser's real Betfair BASIC-tier ATP tennis sample (Jan-Sep 2026,
+161,025 files, 402,132,971 bytes -- full audit in
+`research/cycles/CYCLE_002_TENNIS/WORKSTREAM_B_SAMPLE_AUDIT_REPORT.md`)
+confirmed the documented shape this module was built against: one JSON
+object per line, a top-level "op"/"pt", an "mc" array of per-market
+updates, a full "marketDefinition" on a market's first message,
+"rc" runner-level price changes on subsequent ones. Zero lines failed
+to parse across a 3,000-file real sample. Real deviations found and
+handled: (1) the download is a plain nested directory tree
+(sport/year/month/day/eventId/*.bz2), not a single .tar archive as the
+docs implied -- this module doesn't care, since it only ever sees one
+already-decompressed line at a time; (2) BASIC-tier "rc" updates carry
+only "ltp", never "batb"/"batl" -- already optional here, parses fine;
+(3) a market-change file exists in two flavours per event -- one file
+per individual marketId (`1.<marketId>.bz2`, what this module expects)
+and one combined multi-market capture per event (`<eventId>.bz2`,
+containing the same data multiplexed across sibling markets) -- only
+the per-marketId files are used; (4) **a real bug**, found and fixed
+here: `to_singles_event_candidate` did not filter by market type, and
+a real event carries several non-Match-Odds two-runner markets (see
+that function's docstring for the fix and why it mattered).
 
 Only the fields needed for Workstream B's linkage and pricing steps are
 modelled -- this is deliberately not a complete Betfair stream-API
 client. Fields this project doesn't yet use (in-play trading state,
 market status transitions beyond OPEN/SUSPENDED/CLOSED, non-Match-Odds
-market types) are not modelled and are out of scope until a concrete
-need for them is pre-registered.
+market types, and the runner-level WINNER/LOSER/REMOVED outcome status
+confirmed present in real settled markets) are not modelled and are out
+of scope until a concrete need for them is pre-registered -- the
+WINNER/LOSER status in particular is a real, useful future source of
+ground-truth match outcomes directly from Betfair, noted here for when
+that need arises.
 """
 
 from __future__ import annotations
@@ -183,23 +190,82 @@ def parse_market_change_line(line: str) -> list[BetfairMarketChangeMessage]:
     return messages
 
 
+def latest_singles_event_candidates(messages):
+    """Reduce a market's full message history down to one
+    BetfairEventCandidate per market_id, using the LAST message that
+    carries a usable Match Odds definition, not the first.
+
+    **Real-data discovery (2026-09-16, Fraser's first Betfair BASIC
+    sample):** a market's scheduled date can be revised within its own
+    message history (postponement/rain delay) -- one real Nick
+    Kyrgios v Aleksandar Kovacevic market carried three different
+    marketDefinition dates (Jan 4, 5, and 6) across its stream before
+    settling on the actual played date. Building a candidate from the
+    FIRST marketDefinition message risks using a stale, pre-revision
+    date and missing the date-tolerance window against TML's played
+    date; keeping the LAST one fixed 8 of 9 real date-drift misses in
+    a 137-match real-data linkage test (137 -> 136 matched, only the
+    "Auger-Aliassime" hyphen case remained -- see
+    tennis_betfair_linkage._fold for that fix). Messages must be passed
+    in file/chronological order (Betfair's historical files already are).
+
+    Args:
+        messages: An iterable of BetfairMarketChangeMessage, in the
+            order they appear in the source file(s) -- typically every
+            message parsed from one or more of a market's
+            `1.<marketId>.bz2` files.
+
+    Returns:
+        A dict of market_id -> BetfairEventCandidate, one entry per
+        market_id that ever produced a usable singles candidate (see
+        to_singles_event_candidate). A market_id with no valid Match
+        Odds definition anywhere in its history is simply absent, not
+        an error -- callers get a coverage count for free from
+        len(result) vs. the number of distinct market files scanned.
+    """
+    latest: dict[str, object] = {}
+    for message in messages:
+        candidate = to_singles_event_candidate(message)
+        if candidate is not None:
+            latest[message.market_id] = candidate
+    return latest
+
+
 def to_singles_event_candidate(message: BetfairMarketChangeMessage):
     """Build a tennis_betfair_linkage.BetfairEventCandidate from a
-    market-change message that carries a full market definition with
-    exactly two runners (a tennis singles Match Odds market).
+    market-change message that carries a full MATCH_ODDS market
+    definition with exactly two runners (a tennis singles Match Odds
+    market).
+
+    **Real-data discovery (2026-09-16, Fraser's first Betfair BASIC
+    sample):** a single tennis event on Betfair carries many market
+    types beyond Match Odds under the same eventId -- SET_WINNER,
+    SET_BETTING, HANDICAP, COMBINED_TOTAL, PLAYER_A/B_WIN_A_SET,
+    NUMBER_OF_SETS, SET_CORRECT_SCORE, QUARTER_WINNER, TOURNAMENT_WINNER
+    were all observed. Several of these (SET_WINNER in particular) also
+    have exactly two runners, with the SAME two player names as the
+    real Match Odds market for that event. Without the market_type
+    check below, one real match produced 3 separate "singles
+    candidates" (1 Match Odds + 2 Set Winner markets, confirmed against
+    a real sample), which would make classify_tennis_betfair_match
+    report a perfectly matchable real match as AMBIGUOUS purely because
+    of this upstream duplication -- not because the match itself was
+    ambiguous. Restricting to marketType == "MATCH_ODDS" is the fix.
 
     Returns:
         A BetfairEventCandidate, or None if this message doesn't carry
-        a usable market definition (e.g. it's a runner-price-only
-        update) or doesn't have exactly two runners (not a singles
-        match -- doubles, walkovers-turned-void-markets, or a parsing
-        surprise all fall here and are deliberately skipped rather than
-        guessed at).
+        a usable Match Odds market definition (e.g. it's a runner-
+        price-only update, a non-Match-Odds market type, or it doesn't
+        have exactly two runners -- doubles, walkovers-turned-void-
+        markets, or a parsing surprise all fall here and are
+        deliberately skipped rather than guessed at).
     """
     from prediction_markets_lab.normalisation.tennis_betfair_linkage import BetfairEventCandidate
 
     md = message.market_definition
     if md is None or md.market_time is None or md.event_id is None:
+        return None
+    if md.market_type != "MATCH_ODDS":
         return None
     if len(md.runners) != 2:
         return None

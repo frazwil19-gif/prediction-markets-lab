@@ -50,10 +50,25 @@ LinkageStatus = Literal["MATCHED", "AMBIGUOUS", "UNMATCHED"]
 
 
 def _fold(text: str) -> str:
-    """Casefold and strip diacritics for tolerant comparison."""
+    """Casefold, strip diacritics, and normalise hyphens to spaces for
+    tolerant comparison.
+
+    **Real-data discovery (2026-09-16, Fraser's first Betfair BASIC
+    sample):** Betfair renders "Felix Auger-Aliassime" as the
+    unhyphenated "Felix Auger Aliassime". This was the only name-format
+    mismatch found across 137 real ATP matches tested against a real
+    Betfair sample (136/137 matched without it; this one player's
+    hyphenated surname was the sole miss) -- it is exactly the kind of
+    formatting difference the "never silently guess" discipline still
+    wants handled explicitly rather than accepted as an unmatched loss,
+    since it is a deterministic, unconditional string transform, not a
+    fuzzy guess.
+    """
     normalised = unicodedata.normalize("NFKD", text)
     without_marks = "".join(ch for ch in normalised if not unicodedata.combining(ch))
-    return without_marks.casefold().strip()
+    without_hyphens = without_marks.replace("-", " ")
+    collapsed = " ".join(without_hyphens.split())
+    return collapsed.casefold().strip()
 
 
 @dataclass(frozen=True)
