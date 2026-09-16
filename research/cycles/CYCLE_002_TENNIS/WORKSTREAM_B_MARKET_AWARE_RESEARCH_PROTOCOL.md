@@ -292,10 +292,21 @@ instruction.
   existing modules; lay/commission/liquidity extensions confirmed
   genuinely unavailable at BASIC tier, still not built, not needed for
   the next phase.
-- Section 7 (observation record): shape frozen here; not yet implemented
-  -- proposed next concrete step.
-- Sections 8-9 (analysis discipline, promotion requirements): frozen here,
-  ready to be followed once section 7's extraction exists.
+- Section 7 (observation record): **implemented and tested, 2026-09-16**
+  -- see `WORKSTREAM_B_JANUARY_2026_OBSERVATION_REPORT.md` and
+  `src/prediction_markets_lab/research/market_observation.py`. Real
+  timestamp-density audit run on January 2026 (24h coverage only 47.8%;
+  >97% from 3h before start onward). A descriptive Elo-vs-market pass at
+  the best-covered horizon (30min) found no relationship worth promoting
+  at N=136 -- recorded as an unvalidated candidate observation only, per
+  section 8's discipline.
+- Sections 8-9 (analysis discipline, promotion requirements): followed
+  exactly for the January pass above; nothing promoted. A chronological
+  validation-split proposal (2021-2025 discovery, 2026-onward holdout) is
+  on file, not yet confirmed or executed.
+- Bulk 2021-2025 acquisition: sized (~2.7GB, ~1.07M files estimated),
+  still not started -- proposal only, awaiting Fraser's repeat of the
+  BASIC download for those years.
 
 ## 12. Operator confirmation and decision tree (2026-09-16)
 
