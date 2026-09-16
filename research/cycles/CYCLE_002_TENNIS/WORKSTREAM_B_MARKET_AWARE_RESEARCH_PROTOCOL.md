@@ -278,3 +278,51 @@ instruction.
 - Section 7 (observation record): shape frozen here; not yet implemented.
 - Sections 8-9 (analysis discipline, promotion requirements): frozen here,
   to be followed once real data exists.
+
+## 12. Operator confirmation and decision tree (2026-09-16)
+
+The operator reviewed this protocol and confirmed the direction: stop
+building predictive models, treat the Betfair small sample as the single
+blocking task, and do not parallelise into Football Cycle 2, another tennis
+cycle, or cricket acquisition until one candidate (tennis) has been pushed
+all the way through the funnel (Betfair -> market matching -> EV research ->
+OOS -> paper-trading decision) and either dies at a gate or survives to
+become a genuine candidate.
+
+**Explicit test discipline added to section 2's audit**: once a real sample
+exists, the goal is to deliberately try to break `betfair_historical_schema.py`
+against it -- feed it every edge case the real file actually contains, not
+just the happy path -- before any trust is placed in it. Fixes are made
+against what the real file contains, not against the documentation alone.
+
+**Decision tree for the small-sample outcome**:
+- Sample parses cleanly and contains usable back/lay/liquidity/timestamp
+  fields -> validate the parser and match-linkage coverage against it, then
+  proceed to bulk historical ATP price acquisition (section 3).
+- Sample parses but the free BASIC tier lacks required pricing fields (e.g.
+  no lay side, no liquidity) -> assess whether what IS available is
+  sufficient before considering any paid tier or alternative source; do not
+  default to paying.
+- Betfair historical data doesn't work for this purpose at all -> return to
+  `reports/research/TENNIS_HISTORICAL_ODDS_SOURCE_AUDIT.md` and reopen the
+  Kaggle/BigDataBall/OddsWarehouse candidates already on file there.
+
+No branch of this tree authorises tennis model optimisation, paper trading,
+or live betting.
+
+**Illustrative target shape (not a specification, not built)**: the operator
+described the eventual per-match decision output this pipeline is aimed at --
+model probability, market price (back/lay), net EV after costs, historical
+OOS sample size and CLV, liquidity, calibration status, and a
+BET/WATCH/REJECT-style decision, with REJECT expected to be the overwhelming
+majority of markets. This is recorded here as the north star for section 10's
+eventual decision-engine architecture, not as anything to build now -- every
+threshold and every field in it is still contingent on data this project does
+not yet have.
+
+**Fraser's manual actions restated (unchanged from section 1, operator
+re-confirmed 2026-09-16)**: push this session's local commits to GitHub from
+his own Terminal (this session never pushes); sign into Betfair and reach the
+historical-data download screen; before selecting a paid tier or downloading
+anything beyond the small BASIC free sample, send a screenshot of that screen
+for a second look, since there is no reason to spend money at this stage.
