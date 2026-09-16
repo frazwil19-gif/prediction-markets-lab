@@ -195,20 +195,42 @@ error, not predictive accuracy), but reusing them for a market-edge
 *holdout* would blur "genuinely untouched data" in a way worth avoiding
 before any profitability claim is made.
 
-**Proposal**: once 2021-2025 Betfair data is linked and observations are
+**Original proposal (2026-09-16, superseded same day -- see correction
+below)**: once 2021-2025 Betfair data is linked and observations are
 built, use **2021-2025 entirely as the market-edge discovery/development
-period** (exploring whether/how model-market disagreement relates to
-outcomes, CLV-style reference-price movement, and calibration -- exactly
-section 6's kind of analysis, at full scale and with proper pre-registration
-of what's being tested before looking). Reserve **2026 onward as the
-market-edge holdout** -- the only period that has never been used for
-anything in this project (not predictive development, not predictive
-validation, not the sealed predictive holdout, and not market-price
-research). This mirrors the "wait for a genuinely new period" option
-already on file in the project roadmap (§11) and gives the cleanest
-available boundary given what's already been touched. **Not executed --
-this is a design proposal for the operator/Fraser to confirm before any
-2021-2025-scale profitability analysis begins.**
+period** ... Reserve **2026 onward as the market-edge holdout**.
+
+**CORRECTION (2026-09-16, same day, per the operator's review)**: this
+original proposal was wrong about January 2026's status. Section 6 above
+already linked TML outcomes to Betfair markets, computed frozen Global
+Elo probabilities, extracted market-reference probabilities, binned
+model-market disagreement, and compared those bins against outcomes for
+January 2026. **That is market-edge exposure.** January 2026 can never
+again be described as an untouched market-edge holdout -- looking at it
+once, even descriptively and without promoting anything, used it up for
+that purpose.
+
+**Corrected chronological structure, as directed by the operator:**
+
+| Period | Role |
+|---|---|
+| 2021-2023 | Market-edge DISCOVERY / hypothesis generation |
+| 2024 | Market-edge DEVELOPMENT VALIDATION |
+| 2025 | Market-edge FINAL HISTORICAL OOS CONFIRMATION |
+| January 2026 | ALREADY EXPOSED -- pipeline-validation / exploratory only, permanently ineligible as a holdout |
+| Future data after this protocol is frozen | TRUE PROSPECTIVE VALIDATION / paper-trading phase |
+
+This reuses 2021-2025 for market-edge discovery/validation exactly as this
+report originally proposed (still valid -- Global Elo is frozen and
+unmodified, and this tests a different hypothesis than predictive
+accuracy), but replaces "2026 onward" with "future data acquired after
+the new discovery protocol is frozen" as the genuine prospective holdout,
+since some of 2026 is now spent. The full discovery -> 2024 -> 2025 gate
+sequence, discovery-family list, and multiple-testing controls are
+specified in the new
+`WORKSTREAM_B_HISTORICAL_SCALEUP_AND_DISCOVERY_PROTOCOL.md`, not
+re-derived here. **Not executed -- acquisition of 2021-2025 data has not
+started; this section records the design correction only.**
 
 ## 10. Eventual edge-analysis architecture (design note only -- not built)
 

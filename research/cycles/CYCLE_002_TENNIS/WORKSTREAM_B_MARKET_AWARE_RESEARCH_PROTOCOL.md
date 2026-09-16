@@ -301,12 +301,23 @@ instruction.
   at N=136 -- recorded as an unvalidated candidate observation only, per
   section 8's discipline.
 - Sections 8-9 (analysis discipline, promotion requirements): followed
-  exactly for the January pass above; nothing promoted. A chronological
-  validation-split proposal (2021-2025 discovery, 2026-onward holdout) is
-  on file, not yet confirmed or executed.
-- Bulk 2021-2025 acquisition: sized (~2.7GB, ~1.07M files estimated),
-  still not started -- proposal only, awaiting Fraser's repeat of the
-  BASIC download for those years.
+  exactly for the January pass above; nothing promoted. **Correction
+  (2026-09-16, per operator review)**: the January pass's own descriptive
+  look at model-market disagreement means January 2026 is itself
+  market-edge EXPOSED, not an untouched holdout candidate -- the original
+  "2026-onward holdout" proposal is superseded. See
+  `WORKSTREAM_B_HISTORICAL_SCALEUP_AND_DISCOVERY_PROTOCOL.md` for the
+  corrected chronological structure (2021-2023 discovery / 2024
+  development validation / 2025 final historical OOS / January 2026
+  permanently exposed-exploratory / future post-freeze data as the
+  genuine prospective holdout) and its full discovery-family,
+  multiple-testing, and hypothesis-promotion design.
+- Bulk 2021-2025 acquisition: sized (~2.7GB, ~1.07M files estimated) and
+  now architecture-checked -- a consolidated, hash-provenanced, resumable
+  Parquet-index prototype was built and benchmarked against the real
+  Jan-Sep 2026 sample (see the new protocol doc §2). Still not started --
+  proposal only, awaiting Fraser's repeat of the BASIC download for those
+  years.
 
 ## 12. Operator confirmation and decision tree (2026-09-16)
 
