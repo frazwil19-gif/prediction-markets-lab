@@ -1,5 +1,7 @@
 import bz2
+import io
 import json
+import tarfile
 from pathlib import Path
 
 import pyarrow.parquet as pq
@@ -9,6 +11,7 @@ from prediction_markets_lab.ingestion.betfair_market_index import (
     day_output_paths,
     process_day,
     run_over_days,
+    run_over_tar,
     summarise_market_bytes,
 )
 
@@ -182,10 +185,70 @@ def test_process_day_returns_zero_files_processed_for_empty_day(tmp_path):
     assert result["skipped_already_done"] is False
 
 
-def test_day_output_paths_uses_month_and_zero_padded_day():
+def test_day_output_paths_includes_year_month_and_zero_padded_day():
     day_dir = Path("/some/root/2026/Jan/5")
     label, summary_path, manifest_path = day_output_paths(day_dir, Path("/out"))
 
-    assert label == "Jan_05"
-    assert summary_path.name == "markets_Jan_05.parquet"
-    assert manifest_path.name == "manifest_Jan_05.parquet"
+    assert label == "2026_Jan_05"
+    assert summary_path.name == "markets_2026_Jan_05.parquet"
+    assert manifest_path.name == "manifest_2026_Jan_05.parquet"
+
+
+def test_day_output_paths_does_not_collide_across_years():
+    # The real bug this guards against: two different years' Jan 15 must
+    # not produce the same output filename.
+    label_2021, _, _ = day_output_paths(Path("/root/2021/Jan/15"), Path("/out"))
+    label_2022, _, _ = day_output_paths(Path("/root/2022/Jan/15"), Path("/out"))
+    assert label_2021 != label_2022
+
+
+def _write_tar_fixture(tar_path: Path, entries: dict[str, bytes]):
+    with tarfile.open(tar_path, "w") as tf:
+        for name, data in entries.items():
+            info = tarfile.TarInfo(name=name)
+            info.size = len(data)
+            tf.addfile(info, io.BytesIO(data))
+
+
+def test_run_over_tar_reads_only_per_market_entries(tmp_path):
+    tar_path = tmp_path / "data.tar"
+    _write_tar_fixture(tar_path, {
+        "BASIC/2021/Jan/1/31234567/31234567.bz2": ONE_MARKET_FILE_BYTES,  # combined -- skipped
+        "BASIC/2021/Jan/1/31234567/1.123456789.bz2": ONE_MARKET_FILE_BYTES,
+        "BASIC/2021/Jan/1/.DS_Store": b"junk",
+    })
+    out_dir = tmp_path / "out"
+
+    results = run_over_tar(tar_path, out_dir)
+
+    assert len(results) == 1
+    assert results[0]["day"] == "2021_Jan_01"
+    assert results[0]["files_processed"] == 1
+
+
+def test_run_over_tar_separates_years_with_same_month_day(tmp_path):
+    tar_path = tmp_path / "data.tar"
+    _write_tar_fixture(tar_path, {
+        "BASIC/2021/Jan/15/31234567/1.111111111.bz2": ONE_MARKET_FILE_BYTES,
+        "BASIC/2022/Jan/15/31234568/1.222222222.bz2": ONE_MARKET_FILE_BYTES,
+    })
+    out_dir = tmp_path / "out"
+
+    results = run_over_tar(tar_path, out_dir)
+
+    days = {r["day"] for r in results}
+    assert days == {"2021_Jan_15", "2022_Jan_15"}
+
+
+def test_run_over_tar_is_resumable(tmp_path):
+    tar_path = tmp_path / "data.tar"
+    _write_tar_fixture(tar_path, {
+        "BASIC/2021/Jan/1/31234567/1.123456789.bz2": ONE_MARKET_FILE_BYTES,
+    })
+    out_dir = tmp_path / "out"
+
+    first = run_over_tar(tar_path, out_dir)
+    second = run_over_tar(tar_path, out_dir)
+
+    assert first[0]["skipped_already_done"] is False
+    assert second[0]["skipped_already_done"] is True

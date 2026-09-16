@@ -274,3 +274,33 @@ before discovery (section 3) can begin, and discovery will not begin
 until this protocol is confirmed by the operator/Fraser per the "DO NOT
 inspect 2021-2025 market-edge outcomes until this research protocol is
 written and frozen" instruction.
+
+
+## 13. Update 2026-09-16 (same day) -- Phase 1 (ACQUIRE/AUDIT/CONSOLIDATE/LINK) complete on real 2021-2025 data
+
+Full detail: `WORKSTREAM_B_2021_2025_PHASE1_AUDIT_REPORT.md`.
+
+Fraser downloaded and connected the real 2021-2025 Betfair BASIC archive
+(996,779 files, one `data.tar`, SHA-256
+`cd2c9203581d30be1e4e4a3839d7e75b2bb7ec1e4bcb982b6a4ab44cd1c7668a`). The
+ingestion architecture from section 2 was extended (not redesigned) to
+read directly from a tar archive (`run_over_tar`), since this bulk
+request arrived packaged differently than the Jan-Sep 2026 sample. Full
+consolidation completed: 792,845 real per-market files, 276.5MB Parquet
+index, 5.44x compression, fully resumable (verified).
+
+**Real linkage result: 88.96% MATCHED (12,956 usable matches), 3.43%
+AMBIGUOUS, 7.61% UNMATCHED** -- a genuine, investigated, now-explained
+regression from January's 100% (TML-Database's `tourney_date` is a
+tournament START date, not a per-match date; fixed via an empirically
+chosen 14-day linkage window plus exclusion of zero-price "ghost" duplicate
+markets). 61.4% of UNMATCHED are Davis Cup ties (a likely genuine Betfair
+coverage gap, not a bug). Pre-match price coverage at scale is thinner
+than January's sample (78.3% vs 99.3% at 30min) -- Phase 2 discovery
+should re-check coverage by subgroup rather than assume January's numbers
+carry over.
+
+**No 2021-2025 market-edge/outcome analysis has been performed.** This
+satisfies Phase 1 of the operator's directive ("do not inspect strategy
+results until these checks pass"); Phase 2 (2021-2023 discovery) awaits
+confirmation.

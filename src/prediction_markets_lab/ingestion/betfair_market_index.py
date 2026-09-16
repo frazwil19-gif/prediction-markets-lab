@@ -48,6 +48,7 @@ from __future__ import annotations
 
 import bz2
 import hashlib
+import tarfile
 import time
 from pathlib import Path
 
@@ -137,9 +138,102 @@ def summarise_market_file(event_id: str, path: Path, basic_root: Path) -> tuple[
 
 def day_output_paths(day_dir: Path, out_dir: Path) -> tuple[str, Path, Path]:
     """Deterministic (day_label, summary_path, manifest_path) for one real
-    day directory, e.g. `.../2026/Jan/15` -> "Jan_15"."""
-    day_label = f"{day_dir.parent.name}_{day_dir.name.zfill(2)}"
+    day directory, e.g. `.../2026/Jan/15` -> "2026_Jan_15".
+
+    The label includes the YEAR (not just month/day): a single-year benchmark
+    run (Jan-Sep 2026) never exposed this, but processing multiple years
+    (2021-2025) without it would silently collide -- "Jan_15" would be the
+    same output file for 2021, 2022, 2023, 2024, and 2025, each one
+    overwriting the last. Fixed here, before any multi-year run, rather
+    than discovered after data went missing.
+    """
+    year = day_dir.parent.parent.name
+    month = day_dir.parent.name
+    day = day_dir.name.zfill(2)
+    day_label = f"{year}_{month}_{day}"
     return day_label, out_dir / f"markets_{day_label}.parquet", out_dir / f"manifest_{day_label}.parquet"
+
+
+def iter_per_market_members_from_tar(tar_path: Path):
+    """Yield (day_label, event_id, member_name, member) for every
+    per-marketId `1.<marketId>.bz2` entry in a Betfair download packaged
+    as a single tar archive -- a real, second real packaging format
+    (the Jan-Sep 2026 sample arrived as a plain directory tree; the
+    2021-2025 bulk download arrived as one `data.tar`). Skips the
+    redundant combined `<eventId>.bz2` entries and any non-market file
+    (e.g. a stray `.DS_Store`), by construction, same as the
+    directory-walking path.
+
+    Reads the tar's member headers only (no data) to build this list --
+    the data for a given member is read lazily by the caller via
+    `tar.extractfile(member)`, keyed by day, so peak memory stays bounded
+    to one day's markets exactly as the directory-based path guarantees.
+    """
+    import re
+
+    pattern = re.compile(r"^BASIC/(\d{4})/([A-Za-z]+)/(\d+)/([^/]+)/1\.\d+\.bz2$")
+    with tarfile.open(tar_path, "r") as tf:
+        for member in tf.getmembers():
+            if not member.isfile():
+                continue
+            m = pattern.match(member.name)
+            if m is None:
+                continue
+            year, month, day, event_id = m.groups()
+            day_label = f"{year}_{month}_{day.zfill(2)}"
+            yield day_label, event_id, member.name, member
+
+
+def run_over_tar(tar_path: Path, out_dir: Path) -> list[dict]:
+    """Process an entire tar-packaged Betfair download into per-day
+    Parquet parts, resumable exactly like `run_over_days`. Unlike the
+    directory-walking path, this opens the tar archive ONCE (headers
+    only) to build a day->members index, then makes one pass per
+    not-yet-done day, extracting only that day's members from the
+    already-open archive -- so a `.tar`-packaged download never needs to
+    be fully extracted to disk first.
+    """
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    by_day: dict[str, list[tuple[str, str, "tarfile.TarInfo"]]] = {}
+    for day_label, event_id, member_name, member in iter_per_market_members_from_tar(tar_path):
+        by_day.setdefault(day_label, []).append((event_id, member_name, member))
+
+    results = []
+    with tarfile.open(tar_path, "r") as tf:
+        for day_label in sorted(by_day):
+            summary_path = out_dir / f"markets_{day_label}.parquet"
+            manifest_path = out_dir / f"manifest_{day_label}.parquet"
+            if summary_path.exists() and manifest_path.exists():
+                results.append({"day": day_label, "skipped_already_done": True, "files_processed": 0})
+                continue
+
+            t0 = time.time()
+            summaries, manifests = [], []
+            raw_bytes_total = 0
+            for event_id, member_name, member in by_day[day_label]:
+                raw_bytes = tf.extractfile(member).read()
+                s, m = summarise_market_bytes(event_id, raw_bytes, member_name)
+                summaries.append(s)
+                manifests.append(m)
+                raw_bytes_total += m["raw_size_bytes"]
+
+            pq.write_table(pa.Table.from_pylist(summaries), summary_path, compression="zstd")
+            pq.write_table(pa.Table.from_pylist(manifests), manifest_path, compression="zstd")
+            elapsed = time.time() - t0
+            out_bytes = summary_path.stat().st_size + manifest_path.stat().st_size
+            result = {
+                "day": day_label,
+                "skipped_already_done": False,
+                "files_processed": len(by_day[day_label]),
+                "raw_bytes_in": raw_bytes_total,
+                "parquet_bytes_out": out_bytes,
+                "elapsed_seconds": round(elapsed, 3),
+                "files_per_second": round(len(by_day[day_label]) / elapsed, 1) if elapsed > 0 else None,
+            }
+            print(result, flush=True)
+            results.append(result)
+    return results
 
 
 def process_day(day_dir: Path, out_dir: Path, basic_root: Path) -> dict:
