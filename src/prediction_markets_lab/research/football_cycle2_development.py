@@ -167,3 +167,48 @@ def signed_ah_pricing_residual(rows: list[FavouritePerspective]) -> dict:
             "(market overprices the favourite covering)"
         ),
     }
+
+
+def bootstrap_ci_mean_diff(
+    group_a: list[float], group_b: list[float], seed: int = 42, n_resamples: int = 2000
+) -> dict:
+    """Percentile bootstrap CI for mean(group_a) - mean(group_b).
+
+    Same method as the discovery-phase scripts' own
+    bootstrap_ci_mean_diff, promoted here (with tests) because
+    H-FB2-002's primary estimand is exactly this two-sample difference,
+    applied unchanged to the larger development corpus.
+    """
+    if not group_a or not group_b:
+        raise ValueError("group_a and group_b must both be non-empty")
+    rng = random.Random(seed)
+    point = (sum(group_a) / len(group_a)) - (sum(group_b) / len(group_b))
+    deltas = []
+    for _ in range(n_resamples):
+        ra = [rng.choice(group_a) for _ in group_a]
+        rb = [rng.choice(group_b) for _ in group_b]
+        deltas.append((sum(ra) / len(ra)) - (sum(rb) / len(rb)))
+    deltas.sort()
+    lo = deltas[int(0.025 * len(deltas))]
+    hi = deltas[int(0.975 * len(deltas))]
+    return {"point_estimate": point, "ci_lower": lo, "ci_upper": hi, "n_a": len(group_a), "n_b": len(group_b)}
+
+
+def pearson_correlation(xs: list[float], ys: list[float]) -> float:
+    """Simple Pearson correlation coefficient, 0.0 if either series has zero variance.
+
+    Used only as a secondary diagnostic for H-FB2-002 (item I): a more
+    continuous view of whether SOT differential tracks the market's own
+    pricing residual within the frozen price-quintile-4 group -- it does
+    not replace the frozen median-split primary estimand.
+    """
+    if len(xs) != len(ys):
+        raise ValueError("xs and ys must be the same length")
+    n = len(xs)
+    if n == 0:
+        raise ValueError("xs/ys must not be empty")
+    mx, my = sum(xs) / n, sum(ys) / n
+    cov = sum((x - mx) * (y - my) for x, y in zip(xs, ys))
+    sx = (sum((x - mx) ** 2 for x in xs)) ** 0.5
+    sy = (sum((y - my) ** 2 for y in ys)) ** 0.5
+    return cov / (sx * sy) if sx > 0 and sy > 0 else 0.0

@@ -153,3 +153,51 @@ def test_signed_ah_pricing_residual_empty_after_filtering_reports_insufficient_n
     push = FavouritePerspective(0.5, 0.5, False, None)
     result = signed_ah_pricing_residual([push])
     assert result == {"n": 0, "status": "insufficient_n"}
+
+
+def test_bootstrap_ci_mean_diff_positive_when_a_clearly_greater():
+    from prediction_markets_lab.research.football_cycle2_development import (
+        bootstrap_ci_mean_diff,
+    )
+
+    group_a = [1.0] * 150
+    group_b = [0.0] * 150
+    result = bootstrap_ci_mean_diff(group_a, group_b)
+    assert result["point_estimate"] == pytest.approx(1.0)
+    assert result["ci_lower"] > 0.0
+
+
+def test_bootstrap_ci_mean_diff_rejects_empty_group():
+    from prediction_markets_lab.research.football_cycle2_development import (
+        bootstrap_ci_mean_diff,
+    )
+
+    with pytest.raises(ValueError):
+        bootstrap_ci_mean_diff([], [1.0])
+
+
+def test_pearson_correlation_perfect_positive():
+    from prediction_markets_lab.research.football_cycle2_development import (
+        pearson_correlation,
+    )
+
+    xs = [1.0, 2.0, 3.0, 4.0, 5.0]
+    ys = [2.0, 4.0, 6.0, 8.0, 10.0]
+    assert pearson_correlation(xs, ys) == pytest.approx(1.0)
+
+
+def test_pearson_correlation_zero_variance_returns_zero():
+    from prediction_markets_lab.research.football_cycle2_development import (
+        pearson_correlation,
+    )
+
+    assert pearson_correlation([1.0, 1.0, 1.0], [1.0, 2.0, 3.0]) == 0.0
+
+
+def test_pearson_correlation_rejects_mismatched_lengths():
+    from prediction_markets_lab.research.football_cycle2_development import (
+        pearson_correlation,
+    )
+
+    with pytest.raises(ValueError):
+        pearson_correlation([1.0, 2.0], [1.0])
