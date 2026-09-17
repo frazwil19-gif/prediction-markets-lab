@@ -1,6 +1,6 @@
 # Football Cycle 2 -- Sealed 2025/26 Out-of-Sample Protocol (H-FB2-002 only)
 
-**Status: FROZEN, NOT YET AUTHORISED FOR EXECUTION.** Per the
+**Status: AUTHORISED FOR EXECUTION (operator GO, 2026-09-17), subject to the Phase 0 sequential gate in section 17 -- 2025/26 data may not be acquired until the sealed-OOS classifier and every other pre-data step below are implemented, tested, and committed.** Per the
 operator's explicit instruction ("define the future sealed OOS before
 acquisition... do not acquire or inspect 2025/26 yet... if one or more
 DEVELOPMENT-PROMOTE: STOP, do not yet inspect 2025/26, return a
@@ -185,3 +185,134 @@ been reviewed and, if necessary, revised (without ever weakening its
 PASS/PARTIAL/FAIL logic to make a specific expected result more likely
 -- any revision must be justified on methodological grounds alone,
 documented as such, and made before, never after, the data is touched).
+
+## 17. Correction (2026-09-17, pre-acquisition) -- refined PASS/PARTIAL/FAIL logic; population-completeness precondition; frozen role of the continuous-correlation diagnostic
+
+The operator's GO authorisation (2026-09-17) explicitly required resolving
+any ambiguity in sections 11-13's verdict logic NOW, before 2025/26 is
+acquired, and documenting the correction transparently -- mirroring the
+same discipline already used once for Tennis Cycle 1's freeze document
+(see roadmap update, "Correction to the freeze's PASS/PARTIAL/FAIL logic,
+applied before 2025 was opened"). This section supersedes sections 11-13
+for implementation purposes; those sections are kept unmodified above as
+the historical record of the original design.
+
+### 17.1 Restating Phase 0 -- the absolute rule
+
+No 2025/26 file may be downloaded, opened, inspected, parsed, summarised,
+counted, or otherwise accessed until ALL of the following are implemented,
+tested, documented, and committed: this section's frozen classifier logic;
+its implementation as tested code (`src/prediction_markets_lab/research/
+oos_verdict.py`); its boundary tests; and a commit that predates any
+2025/26 acquisition, whose hash is recorded in the eventual checkpoint as
+proof of precedence. This mirrors, item for item, the discipline already
+used for H-FB2-001/H-FB2-002's own pre-registration (commit `4757031`
+preceding the development test).
+
+### 17.2 Refined verdict logic (frozen, ordered, mutually exclusive, exhaustive)
+
+Evaluated in this exact order:
+
+1. **PARTIAL ("population deviation")** if any of the three frozen
+   competitions (E0, E1, SC0) is entirely absent from the acquired
+   2025/26 raw corpus. This check is evaluated FIRST, before the CI or
+   sample-size conditions, and its result does not depend on how
+   favourable the effect looks -- if the acquired population does not
+   match the pre-registered E0+E1+SC0 specification, the evaluation
+   cannot count as the genuine one-shot sealed test, regardless of
+   outcome. (This did not need a case in sections 11-13 because it was
+   implicitly assumed all three competitions' files would always be
+   available; made explicit now as its own precondition, per the
+   operator's explicit request for a "missing competition" boundary
+   case.)
+2. Otherwise **FAIL** if the primary 95% CI does not lie entirely above
+   zero -- i.e. `ci_lower <= 0.0` (this covers a CI that includes zero,
+   a CI that touches zero exactly at its lower bound, and a CI that is
+   entirely negative). Unchanged from section 11.1: there is no
+   "inconclusive but promising" category for this one-shot test.
+3. Otherwise **PASS** if the realised top-price-quintile sample size is
+   `>= 100` (the frozen floor, item J / section 12). Unchanged from
+   section 11.2, but the redundant "sign matches development" clause in
+   the original section 11.2 is dropped: given step 2 already requires
+   `ci_lower > 0.0` for a one-sided-positive pre-registered hypothesis,
+   the point estimate's sign is already positive by construction, so a
+   separate sign-match check adds nothing and is removed to avoid two
+   rules silently disagreeing at a boundary. This is a resolution of an
+   ambiguity, not a loosening: no result that would have passed under
+   the old wording now fails, and no result that would have failed now
+   passes.
+4. Otherwise **PARTIAL ("sample too small")** -- the CI is favourable
+   (step 2 passed) but the realised sample falls short of the floor
+   (step 3 failed). Unchanged from section 13.
+
+### 17.3 Competition-level effects and per-competition sample size are diagnostics only, never gating
+
+Per section 9's own instruction ("Do not reject a passing aggregate
+hypothesis merely because one small league has a noisy negative estimate
+unless the frozen classifier explicitly requires competition-level
+stability"): **this frozen classifier does NOT require competition-level
+stability of the effect itself as a gating condition.** A competition
+contributing very few matches to the top quintile, or showing a locally
+noisy or even sign-reversed estimate, does not by itself change a PASS to
+anything else, provided step 1's population-completeness precondition is
+satisfied (i.e. the competition's raw season data was acquired at all --
+it simply may not have produced many top-quintile matches this season).
+Competition-by-competition breakdowns are reported in the OOS results as
+`DIAGNOSTIC -- NOT PRIMARY EVIDENCE`, exactly as section 9 already
+requires, never folded into the mechanical verdict.
+
+### 17.4 Season-level stability does not apply to a one-shot test
+
+The development-phase verdict (`development_verdict.py`) required a
+minimum count of individual seasons sharing the pooled sign, because that
+test spanned five seasons. The sealed OOS test spans exactly one season
+(2025/26) by definition (section 3), so no season-level stability
+criterion exists or is applicable here -- this is stated explicitly so
+its absence from the classifier's inputs is a documented design decision,
+not an oversight.
+
+### 17.5 Frozen role of the continuous SOT-differential correlation diagnostic
+
+Development produced a primary quintile-4 median-split effect of +0.0999
+(95% CI [+0.0511, +0.1557]) alongside a near-zero secondary continuous
+Pearson correlation (`sot_diff` vs. the market's own pricing residual,
+r=0.0212, see item I of the H-FB2-002 pre-registration and the
+development checkpoint). This discrepancy is real and is not explained
+away. Before 2025/26 is acquired, its role in the sealed OOS report is
+frozen as follows:
+
+- The same continuous-correlation diagnostic is computed on the 2025/26
+  eligible top-quintile sample, using the identical `pearson_correlation`
+  function already implemented and tested
+  (`football_cycle2_development.py`), unchanged.
+- It is reported alongside the primary result, explicitly labelled
+  `DIAGNOSTIC -- NOT PRIMARY EVIDENCE`, exactly like the competition
+  breakdown.
+- It is discussed in terms of three pre-registered interpretive
+  possibilities, decided now rather than invented after seeing the OOS
+  number: (A) the true relationship is genuinely nonlinear or
+  threshold-like -- concentrated at the median split rather than varying
+  smoothly across the whole range of `sot_diff`, which a linear
+  correlation coefficient would under-detect even if the subgroup effect
+  is real; (B) the true relationship is a broad, roughly monotonic
+  effect that the development sample's correlation estimate simply
+  under-measured by chance; (C) the development-phase quintile-4 effect
+  is itself a sample artefact of that specific corpus, and the near-zero
+  correlation is the more representative signal.
+- **This diagnostic never overrides, upgrades, or downgrades the
+  mechanical PASS/PARTIAL/FAIL verdict from section 17.2.** Its sole
+  role is descriptive: whether the 2025/26 pattern (primary effect vs.
+  continuous correlation) resembles or diverges from the development
+  pattern is reported as commentary, not as a rule input. If the OOS
+  correlation also comes back near zero alongside a PASS primary result,
+  this is reported honestly as continued unresolved evidence for
+  interpretation (A) or (C) above -- it does not retroactively become
+  grounds to question a mechanical PASS, and it does not get "explained"
+  with a new post-hoc mechanism invented after the number is seen.
+
+### 17.6 What this correction does not authorise
+
+This section resolves ambiguity in the verdict logic and formally
+records the operator's GO decision. It does not, by itself, mean
+2025/26 may now be acquired -- that remains gated on implementing,
+testing, and committing `oos_verdict.py` first (section 17.1 / Phase 0).
