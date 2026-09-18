@@ -86,3 +86,26 @@ the infrastructure that already exists to generate evidence.
 This document can be revisited once Cycle 1 (`research/cycles/CYCLE_001/`)
 is complete and its findings identify a genuine, specific gap in the
 existing architecture — not before.
+
+## Supersession note (2026-09-18)
+
+This freeze is partially superseded. The operator's "MAJOR PROJECT DIRECTION CHANGE — DAILY
+PROBABILITY & BET-SELECTION ENGINE" instruction (2026-09-18) identified the "genuine, specific gap"
+this document's "Revisiting this freeze" section required before new infrastructure could be added:
+a live-data intake and daily-orchestration layer never existed, because the project moved from
+Stage 2 straight into pure historical hypothesis-testing (Cycles 1-2) without ever exercising the
+Stage 1/2 calculation/decision/persistence engine against real daily data.
+
+See `docs/DAILY_PROBABILITY_ENGINE_V1_DESIGN_MIGRATION_REPORT.md` for the full audit and design. Its
+headline finding is that almost none of this freeze's concern applies: the calculation engine,
+decision/risk gates, storage schemas, and manual-workflow scripts this freeze protected are exactly
+what the new objective reuses, unmodified. The freeze's change-control questions (five questions
+before any new module) remain in force and were applied in that report — only a small number of
+genuinely new, narrowly-scoped additions were identified (an events/feature-snapshot/model-prediction
+persistence layer, a staleness-expiry rule, and a small method registry), each tied to a specific
+requirement in that report rather than built speculatively.
+
+This freeze is not lifted wholesale. It still applies to anything outside the V1 scope that report
+defines (§13) — in particular, no corners/cards/shots-on-target tradable-market infrastructure, no
+odds-API integration, no automated execution, and no Cricket infrastructure should be built on the
+strength of this note alone.
