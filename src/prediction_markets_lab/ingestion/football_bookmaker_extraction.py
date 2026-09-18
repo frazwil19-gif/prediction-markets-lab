@@ -24,7 +24,39 @@ from dataclasses import dataclass
 # deliberately explicit rather than inferred by pattern-matching column
 # names, since aggregate columns (Max, Avg, BFE) use a similar H/D/A
 # suffix convention and must be excluded.
+#
+# IMPORTANT -- this panel is season-dependent, not a permanent fact of
+# the data source: it was verified against 2024/25 specifically and is
+# kept as this frozen historical default because Cycle 1's committed
+# processed files were built with it. A real drift was found on
+# 2026-09-17 while running H-FB2-002's sealed 2025/26 OOS evaluation:
+# the 2025/26 raw files DROP "BW", "BF", "WH" and "1XB" entirely and
+# ADD "BFD", "BMGM", "BV", "CL", "LB" instead (confirmed by a direct
+# header diff of the real 2024/25 vs 2025/26 E0 files -- "B365" and
+# "PS" are the only two individual-bookmaker prefixes common to both
+# seasons). Under the OLD default alone, only B365+PS (2 bookmakers)
+# are extractable from 2025/26 data, below MIN_BOOKMAKERS_FOR_CONSENSUS
+# (4), which silently produced zero consensus rows for every 2025/26
+# match on the first run. This is a genuine ingestion/schema-drift
+# defect, not a hypothesis-related finding -- it was caught and fixed
+# during the DATA-ONLY canonicalisation step, before any win-rate, SOT,
+# or subgroup figure was computed for H-FB2-002 (see
+# H_FB2_002_SEALED_OOS_2025_26_CHECKPOINT.md for the full writeup).
+#
+# Rather than mutating the historical default above (which stays tied
+# to Cycle 1's already-committed 2020/21-2024/25 processed files),
+# callers extracting a season known to use the new panel should pass
+# this constant explicitly via `bookmaker_prefixes=`.
 KNOWN_BOOKMAKER_PREFIXES: tuple[str, ...] = ("B365", "BW", "BF", "PS", "WH", "1XB")
+
+# Verified directly against the real 2025/26 E0 raw file's header
+# (2026-09-17): the individual-bookmaker panel Football-Data.co.uk
+# tracks for 1X2/O-U/AH changed between 2024/25 and 2025/26. This is
+# the 2025/26 equivalent of KNOWN_BOOKMAKER_PREFIXES above, not a
+# superset or a merge of the two -- a bookmaker dropped from the panel
+# genuinely stops being quoted, so mixing both lists would not recover
+# any additional real data and would just add dead lookups.
+BOOKMAKER_PREFIXES_2025_26: tuple[str, ...] = ("B365", "BFD", "BMGM", "BV", "BW", "CL", "LB", "PS")
 
 # Aggregate (non-bookmaker) prefixes that must never be counted as a
 # bookmaker for consensus purposes.

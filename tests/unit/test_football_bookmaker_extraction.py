@@ -6,6 +6,8 @@ import csv
 from pathlib import Path
 
 from prediction_markets_lab.ingestion.football_bookmaker_extraction import (
+    BOOKMAKER_PREFIXES_2025_26,
+    KNOWN_BOOKMAKER_PREFIXES,
     bookmaker_count_by_timing,
     extract_bookmaker_triplets,
 )
@@ -126,3 +128,49 @@ def test_real_sc0_row_with_a_genuinely_missing_bookmaker():
     assert counts["opening"] == 6
     assert counts["closing"] <= 6
     assert result.rejected_bookmakers == []  # missing, not invalid -- correctly skipped
+
+
+def test_real_2025_26_row_has_a_different_bookmaker_panel_than_2024_25():
+    """Regression test for the real 2025/26 schema-drift defect found
+    2026-09-17 while running H-FB2-002's sealed OOS evaluation: the
+    historical KNOWN_BOOKMAKER_PREFIXES panel (B365, BW, BF, PS, WH,
+    1XB) silently yields only 3 usable bookmakers (B365, BW, PS) on
+    real 2025/26 data -- BF, WH and 1XB are gone -- below
+    MIN_BOOKMAKERS_FOR_CONSENSUS (4), confirmed directly, not assumed,
+    against the real downloaded E0 file."""
+    row = load_real_row(
+        "data/raw/football/football_data_co_uk/E0/2025_26/E0_excerpt.csv", 0
+    )  # Liverpool vs Bournemouth, 15/08/2025
+
+    old_panel_result = extract_bookmaker_triplets(row, bookmaker_prefixes=KNOWN_BOOKMAKER_PREFIXES)
+    old_panel_counts = bookmaker_count_by_timing(old_panel_result)
+    old_panel_bookmakers = {t.bookmaker for t in old_panel_result.complete_triplets}
+    assert old_panel_bookmakers == {"B365", "BW", "PS"}  # BF/WH/1XB are gone from 2025/26
+    assert old_panel_counts["opening"] == 3
+    assert old_panel_counts["opening"] < 4  # below MIN_BOOKMAKERS_FOR_CONSENSUS -- this is the defect
+
+    new_panel_result = extract_bookmaker_triplets(row, bookmaker_prefixes=BOOKMAKER_PREFIXES_2025_26)
+    new_panel_counts = bookmaker_count_by_timing(new_panel_result)
+    assert new_panel_counts["opening"] == 8  # B365, BFD, BMGM, BV, BW, CL, LB, PS all quote this real match
+    assert new_panel_counts["closing"] == 8
+    assert new_panel_result.rejected_bookmakers == []
+
+
+def test_real_2025_26_row_new_panel_still_excludes_aggregate_columns():
+    """Max/Avg/BFE must still never be counted as individual bookmakers
+    under the new 2025/26 panel, exactly as under the historical one."""
+    row = load_real_row(
+        "data/raw/football/football_data_co_uk/E0/2025_26/E0_excerpt.csv", 0
+    )
+    result = extract_bookmaker_triplets(row, bookmaker_prefixes=BOOKMAKER_PREFIXES_2025_26)
+    bookmakers_seen = {t.bookmaker for t in result.complete_triplets}
+    assert "Max" not in bookmakers_seen
+    assert "Avg" not in bookmakers_seen
+    assert "BFE" not in bookmakers_seen
+
+
+def test_historical_default_panel_is_unchanged_by_the_2025_26_addition():
+    """The fix adds a NEW constant; it must not alter
+    KNOWN_BOOKMAKER_PREFIXES, which Cycle 1's already-committed
+    2020/21-2024/25 processed files were built against."""
+    assert KNOWN_BOOKMAKER_PREFIXES == ("B365", "BW", "BF", "PS", "WH", "1XB")
