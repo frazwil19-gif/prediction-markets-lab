@@ -27,3 +27,23 @@ grade_b:
 
 grade_c:
   min_net_ev: 0.00
+
+# --- Added 2026-09-18 (Daily Engine V1 build) ---
+# Mechanical data-quality check (decisions/data_quality.py). Replaces the
+# Stage-1 manual data_quality_ok judgement for the parts that can be
+# checked mechanically (bookmaker count, quote freshness). A human still
+# owns no_material_info_risk and market_rules_match separately -- see
+# decisions/grading.py.
+data_quality:
+  min_bookmakers: 3
+  max_quote_age_minutes: 240.0
+
+# Confidence heuristic (decisions/confidence.py). NOT a calibrated
+# probability-of-being-right score -- see that module's docstring. Purely
+# a mechanical flag for thin/disagreeing bookmaker input, to be
+# recalibrated once real Daily Card history exists.
+confidence:
+  high_min_bookmakers: 5
+  high_max_std_dev: 0.02
+  medium_min_bookmakers: 3
+  medium_max_std_dev: 0.05

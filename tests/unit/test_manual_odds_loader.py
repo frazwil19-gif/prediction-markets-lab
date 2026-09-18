@@ -2,7 +2,10 @@ from pathlib import Path
 
 import pytest
 
-from prediction_markets_lab.ingestion.manual_odds_loader import load_manual_odds_by_market
+from prediction_markets_lab.ingestion.manual_odds_loader import (
+    load_manual_odds_by_market,
+    load_manual_odds_market_metadata,
+)
 
 
 def write_csv(tmp_path: Path, contents: str) -> Path:
@@ -67,3 +70,40 @@ def test_load_manual_odds_skips_blank_rows(tmp_path: Path):
     path = write_csv(tmp_path, contents)
     result = load_manual_odds_by_market(path)
     assert result["M-FB-001"]["home"] == [2.10]
+
+
+def test_load_manual_odds_market_metadata_recovers_descriptive_fields(tmp_path: Path):
+    contents = (
+        "market_id,scan_timestamp,event_date,sport,competition,event,market_type,"
+        "selection,bookmaker,decimal_odds,source,source_url_or_note\n"
+        "M-FB-001,2026-09-18T09:00:00,2026-09-18,football,Premier League,"
+        "Team A v Team B,1x2,home,Bookmaker A,2.10,manual,\n"
+        "M-FB-001,2026-09-18T09:00:00,2026-09-18,football,Premier League,"
+        "Team A v Team B,1x2,draw,Bookmaker A,3.40,manual,\n"
+    )
+    path = write_csv(tmp_path, contents)
+    metadata = load_manual_odds_market_metadata(path)
+
+    assert metadata["M-FB-001"]["sport"] == "football"
+    assert metadata["M-FB-001"]["competition"] == "Premier League"
+    assert metadata["M-FB-001"]["event"] == "Team A v Team B"
+    assert metadata["M-FB-001"]["market_type"] == "1x2"
+    assert metadata["M-FB-001"]["event_date"] == "2026-09-18"
+
+
+def test_load_manual_odds_market_metadata_takes_first_row_per_market(tmp_path: Path):
+    contents = (
+        "market_id,event,market_type,selection,bookmaker,decimal_odds\n"
+        "M-FB-001,First Event Text,1x2,home,Bookmaker A,2.10\n"
+        "M-FB-001,Ignored Second Row,1x2,draw,Bookmaker A,3.40\n"
+    )
+    path = write_csv(tmp_path, contents)
+    metadata = load_manual_odds_market_metadata(path)
+    assert metadata["M-FB-001"]["event"] == "First Event Text"
+
+
+def test_load_manual_odds_market_metadata_missing_columns_are_omitted(tmp_path: Path):
+    contents = "market_id,selection,bookmaker,decimal_odds\nM-FB-001,home,Bookmaker A,2.10\n"
+    path = write_csv(tmp_path, contents)
+    metadata = load_manual_odds_market_metadata(path)
+    assert metadata["M-FB-001"] == {}

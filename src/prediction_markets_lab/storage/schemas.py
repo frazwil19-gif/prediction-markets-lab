@@ -15,7 +15,17 @@ from pydantic import BaseModel, ConfigDict, Field
 
 Grade = Literal["A+", "A", "B", "C", "Reject"]
 Sport = Literal["football", "tennis", "basketball", "cricket", "politics"]
-Exchange = Literal["Smarkets", "Betfair"]
+# Venue a bet is priced/placed at. V1 originally modelled this as strictly
+# "Smarkets" or "Betfair" (an exchange-only assumption, Stage 1). Generalised
+# 2026-09-18 (Daily Engine V1 build) to accept any bookmaker or exchange name,
+# because the V1 daily engine compares consensus against the best currently
+# obtainable price from ANY bookmaker, not only an exchange -- see
+# docs/DAILY_ENGINE_V1_LOCK_AND_IMPLEMENTATION_ROADMAP.md. Kept as a free-form
+# str (not a Literal) because the set of bookmakers used for price-shopping is
+# open-ended and configured via config/data_sources.yaml, not fixed in code.
+# The name "Exchange" is kept for backwards compatibility with every existing
+# field/import that uses it; it now means "venue," not "exchange only."
+Exchange = str
 BetResult = Literal["win", "loss", "void", "pending"]
 
 

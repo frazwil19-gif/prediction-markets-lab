@@ -1,0 +1,4 @@
+market_id,timestamp,exchange,selection,decimal_odds,available_size_gbp,commission,notes
+VALIDATION-POSITIVE-EV-1X2,2026-09-18T09:00:00,SoftBookValidation,home,4.00,1000,0.0,Synthetic soft-book price -- deliberately far above consensus fair value to validate the pipeline surfaces and grades a genuine edge correctly
+VALIDATION-POSITIVE-EV-1X2,2026-09-18T09:00:00,SoftBookValidation,draw,3.60,1000,0.0,Synthetic soft-book price -- matches consensus, expected to Reject
+VALIDATION-POSITIVE-EV-1X2,2026-09-18T09:00:00,SoftBookValidation,away,2.60,1000,0.0,Synthetic soft-book price -- matches consensus, expected to Reject

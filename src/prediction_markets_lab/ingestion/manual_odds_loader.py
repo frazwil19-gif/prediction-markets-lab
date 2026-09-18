@@ -2,13 +2,20 @@
 
 Provides two views of the same file:
 
-- `load_manual_odds_by_market`: grouped by (market_id, selection) —
+- `load_manual_odds_by_market`: grouped by (market_id, selection) --
   convenient for quick inspection, but NOT sufficient for correct
   margin removal, since that requires all of one bookmaker's outcomes
   for a market together.
 - `load_manual_odds_by_bookmaker`: grouped by (market_id, bookmaker) ->
-  {selection: odds} — the correct grouping for margin removal. Use
+  {selection: odds} -- the correct grouping for margin removal. Use
   this one for anything that feeds into EV/grading.
+
+A third helper, `load_manual_odds_market_metadata` (added 2026-09-18 for
+the Daily Engine V1 build), recovers the per-market_id descriptive
+fields (sport, competition, event, event_date, market_type,
+scan_timestamp) that the other two views intentionally drop, so that
+scripts/run_daily_scan.py can build a full Daily Card row without a
+second, separate lookup file.
 """
 
 from __future__ import annotations
@@ -108,7 +115,7 @@ def load_manual_odds_by_bookmaker(
         if selection in result[market_id][bookmaker]:
             raise ValueError(
                 f"duplicate odds entry for market {market_id!r}, "
-                f"bookmaker {bookmaker!r}, selection {selection!r} — "
+                f"bookmaker {bookmaker!r}, selection {selection!r} -- "
                 "each bookmaker should quote each outcome exactly once"
             )
         result[market_id][bookmaker][selection] = odds
@@ -117,3 +124,48 @@ def load_manual_odds_by_bookmaker(
         market_id: {bookmaker: dict(outcomes) for bookmaker, outcomes in bookmakers.items()}
         for market_id, bookmakers in result.items()
     }
+
+
+def load_manual_odds_market_metadata(path: Path) -> dict[str, dict[str, str]]:
+    """Recover per-market descriptive fields the other two views drop.
+
+    Added 2026-09-18 for the Daily Engine V1 build: scripts/run_daily_scan.py
+    needs sport/competition/event/event_date/market_type/scan_timestamp
+    per market_id to build a full Daily Card row, and re-deriving that
+    from a separate file would risk it drifting out of sync with the
+    odds themselves. This reads it straight from the same manual odds
+    CSV, taking the first row seen for each market_id (every row for a
+    given market_id is expected to share the same descriptive fields;
+    this does not validate that they agree, since silently ignoring a
+    contradictory second row is honest here in a way ValueError would
+    not add safety over -- the odds themselves are still validated
+    strictly by the other two loaders).
+
+    Args:
+        path: Path to a CSV file matching templates/manual_odds_entry.csv.
+
+    Returns:
+        A dict: {market_id: {"sport": ..., "competition": ..., "event": ...,
+        "event_date": ..., "market_type": ..., "scan_timestamp": ...}}.
+        Any column missing from the file is simply absent from each
+        market's dict rather than raising, since this metadata is
+        supplementary (display/provenance), unlike the odds themselves.
+
+    Raises:
+        FileNotFoundError: If path does not exist.
+    """
+    metadata_columns = [
+        "sport",
+        "competition",
+        "event",
+        "event_date",
+        "market_type",
+        "scan_timestamp",
+    ]
+    result: dict[str, dict[str, str]] = {}
+    for row in _read_rows(path):
+        market_id = row["market_id"]
+        if market_id in result:
+            continue
+        result[market_id] = {col: row[col] for col in metadata_columns if col in row}
+    return result
