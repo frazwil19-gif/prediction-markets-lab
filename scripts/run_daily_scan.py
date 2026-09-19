@@ -8,13 +8,42 @@ every candidate now goes through decisions.recommendation.build_recommendation,
 which itself calls the tested consensus/EV/confidence/data-quality/
 liquidity/grading/staking modules.
 
+2026-09-19 addition (operator's "MAJOR NEXT PHASE" instruction, Phases 2
+and 5): this script now supports two odds sources, selected with
+--source:
+
+    manual (default)   Reads --odds / --best-price CSVs, exactly as
+                        before this change -- unchanged behaviour, kept
+                        as the fallback / testing / emergency-override
+                        path the operator's instruction explicitly asked
+                        to preserve.
+    odds-api            Fetches live odds from The Odds API via
+                        ingestion.the_odds_api_loader.fetch_and_canonicalise
+                        (needs THE_ODDS_API_KEY in the environment -- see
+                        that module's resolve_api_key for the exact,
+                        actionable error if it is not set). The best
+                        price per selection is then taken directly from
+                        that multi-bookmaker panel (see
+                        ingestion.exchange_price_loader.best_price_from_canonical_odds)
+                        -- no separate --best-price file is needed or
+                        accepted in this mode.
+
+Whichever source is used, every candidate is still assembled by the
+exact same decisions.recommendation.build_recommendation call: the
+probability/EV/grading engine is source-agnostic, per the operator's
+instruction.
+
 Usage:
-    python scripts/run_daily_scan.py \\
+    # Manual (fallback / testing / emergency override):
+    python scripts/run_daily_scan.py --source manual \\
         --odds templates/manual_odds_entry.csv \\
         --best-price templates/exchange_price_entry.csv \\
         --quote-age-minutes 5
 
-Input files:
+    # Live (normal daily workflow once THE_ODDS_API_KEY is set):
+    python scripts/run_daily_scan.py --source odds-api
+
+Input files (manual mode only):
     --odds        A CSV matching templates/manual_odds_entry.csv: every
                   bookmaker's full outcome set for every market_id, plus
                   the market's sport/competition/event/event_date/
@@ -40,6 +69,12 @@ standards.
 
 Writes:
     - A Daily Bet Card (plain text) to --out (default reports/daily/).
+    - The frozen JSON/CSV/Markdown contract (reports.daily_bet_card's
+      build_daily_bet_card_contract / write_daily_bet_card_outputs) to
+      daily_cards/<date>/ at the repo root -- deliberately NOT under
+      data/ or reports/daily/, both gitignored, so a scheduled GitHub
+      Actions run can commit these outputs as the canonical, shared
+      artefact any downstream consumer (ChatGPT included) reads.
     - A full candidate log (every graded candidate, all grades) to
       data/processed/daily_cards/<date>_candidates.csv, for future
       calibration/performance analysis against settled results -- see
@@ -54,7 +89,7 @@ from __future__ import annotations
 
 import argparse
 import sys
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 import yaml
@@ -69,14 +104,26 @@ from prediction_markets_lab.decisions.recommendation import (
 )
 from prediction_markets_lab.ingestion.exchange_price_loader import (
     best_price_for_selection,
+    best_price_from_canonical_odds,
     load_exchange_prices,
 )
 from prediction_markets_lab.ingestion.manual_odds_loader import (
     load_manual_odds_by_bookmaker,
     load_manual_odds_market_metadata,
 )
+from prediction_markets_lab.ingestion.the_odds_api_loader import (
+    TheOddsApiConfig,
+    TheOddsApiCredentialError,
+    TheOddsApiResponseError,
+    fetch_and_canonicalise,
+)
 from prediction_markets_lab.probability.market_pipeline import compute_market_consensus
-from prediction_markets_lab.reports.daily_bet_card import DailyBetCardContext, render_daily_bet_card
+from prediction_markets_lab.reports.daily_bet_card import (
+    DailyBetCardContext,
+    build_daily_bet_card_contract,
+    render_daily_bet_card,
+    write_daily_bet_card_outputs,
+)
 from prediction_markets_lab.risk.staking import StakingConfig
 from prediction_markets_lab.storage.csv_store import append_record
 
@@ -141,21 +188,59 @@ def build_data_quality_thresholds(t: dict) -> DataQualityThresholds:
     )
 
 
+def _quote_age_minutes_from_scan_timestamp(scan_timestamp: str) -> float:
+    """Compute actual elapsed minutes since a live scan's fetch time.
+
+    Live odds carry their own real fetch timestamp (set once per
+    fetch_and_canonicalise call), so staleness can be measured directly
+    instead of asked for as a manual --quote-age-minutes estimate (which
+    stays the right approach for manual mode, where no such timestamp
+    exists independent of data entry).
+    """
+    fetched_at = datetime.fromisoformat(scan_timestamp)
+    if fetched_at.tzinfo is None:
+        fetched_at = fetched_at.replace(tzinfo=timezone.utc)
+    now = datetime.now(timezone.utc)
+    return max(0.0, (now - fetched_at).total_seconds() / 60.0)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--odds", type=Path, required=True, help="Manual bookmaker odds CSV path")
-    parser.add_argument("--best-price", type=Path, required=True, help="Best-available-price CSV path")
+    parser.add_argument(
+        "--source",
+        choices=["manual", "odds-api"],
+        default="manual",
+        help=(
+            "Odds source: 'manual' reads --odds/--best-price CSVs (fallback/testing/"
+            "emergency override); 'odds-api' fetches live odds from The Odds API "
+            "(needs THE_ODDS_API_KEY set). Default: manual."
+        ),
+    )
+    parser.add_argument("--odds", type=Path, help="Manual bookmaker odds CSV path (--source manual only)")
+    parser.add_argument(
+        "--best-price", type=Path, help="Best-available-price CSV path (--source manual only)"
+    )
     parser.add_argument(
         "--quote-age-minutes",
         type=float,
         default=5.0,
-        help="Minutes since prices were entered, applied uniformly to this scan (default 5.0)",
+        help=(
+            "Minutes since prices were entered, applied uniformly to this scan "
+            "(--source manual only; --source odds-api computes real staleness from "
+            "the fetch timestamp instead). Default 5.0."
+        ),
     )
     parser.add_argument(
         "--out",
         type=Path,
         default=REPO_ROOT / "reports" / "daily",
-        help="Directory to write the Daily Bet Card into",
+        help="Directory to write the plain-text Daily Bet Card into",
+    )
+    parser.add_argument(
+        "--cards-out",
+        type=Path,
+        default=REPO_ROOT / "daily_cards",
+        help="Parent directory to write the dated card.json/card.csv/card.md contract into",
     )
     parser.add_argument(
         "--run-label",
@@ -164,18 +249,41 @@ def main() -> int:
     )
     args = parser.parse_args()
 
+    if args.source == "manual" and (args.odds is None or args.best_price is None):
+        parser.error("--source manual requires both --odds and --best-price")
+    if args.source == "odds-api" and (args.odds is not None or args.best_price is not None):
+        parser.error("--odds/--best-price are not used with --source odds-api (odds are fetched live)")
+
     thresholds = load_yaml(REPO_ROOT / "config" / "thresholds.yaml")
     staking_config = build_staking_config()
     grading_thresholds = build_grading_thresholds(thresholds)
     confidence_thresholds = build_confidence_thresholds(thresholds)
     data_quality_thresholds = build_data_quality_thresholds(thresholds)
 
-    bookmaker_odds_by_market = load_manual_odds_by_bookmaker(args.odds)
-    market_metadata = load_manual_odds_market_metadata(args.odds)
-    best_prices = load_exchange_prices(args.best_price)
+    system_warnings: list[str] = []
+    live_scan_timestamp: str | None = None
+
+    if args.source == "manual":
+        bookmaker_odds_by_market = load_manual_odds_by_bookmaker(args.odds)
+        market_metadata = load_manual_odds_market_metadata(args.odds)
+        best_prices = load_exchange_prices(args.best_price)
+    else:
+        try:
+            bookmaker_odds_by_market, market_metadata, fetch_warnings = fetch_and_canonicalise(
+                TheOddsApiConfig()
+            )
+        except TheOddsApiCredentialError as exc:
+            print(f"Cannot run a live scan: {exc}", file=sys.stderr)
+            return 1
+        except TheOddsApiResponseError as exc:
+            print(f"The Odds API request failed: {exc}", file=sys.stderr)
+            return 1
+        system_warnings.extend(fetch_warnings)
+        best_prices = []  # unused in odds-api mode -- best price comes from the panel itself
+        if market_metadata:
+            live_scan_timestamp = next(iter(market_metadata.values()))["scan_timestamp"]
 
     recommendations: list[RecommendationResult] = []
-    system_warnings: list[str] = []
     fixtures_seen: set[str] = set()
 
     for market_id, bookmaker_odds in bookmaker_odds_by_market.items():
@@ -203,7 +311,10 @@ def main() -> int:
             )
 
         for selection, consensus in market_result.consensus_by_outcome.items():
-            best = best_price_for_selection(best_prices, market_id, selection)
+            if args.source == "manual":
+                best = best_price_for_selection(best_prices, market_id, selection)
+            else:
+                best = best_price_from_canonical_odds(bookmaker_odds_by_market, market_id, selection)
             if best is None:
                 system_warnings.append(
                     f"no best-price quote for {market_id}/{selection} -- candidate skipped"
@@ -217,6 +328,13 @@ def main() -> int:
                 available_size_gbp=best.available_size_gbp if best.available_size_gbp > 0 else None,
             )
 
+            if args.source == "manual":
+                quote_age_minutes = args.quote_age_minutes
+            else:
+                quote_age_minutes = _quote_age_minutes_from_scan_timestamp(
+                    meta.get("scan_timestamp", live_scan_timestamp or datetime.now(timezone.utc).isoformat())
+                )
+
             result = build_recommendation(
                 market_id=market_id,
                 scan_timestamp=meta.get("scan_timestamp", datetime.now().isoformat()),
@@ -229,7 +347,7 @@ def main() -> int:
                 consensus=consensus,
                 accepted_bookmaker_count=market_result.accepted_bookmaker_count,
                 best_price=price_quote,
-                quote_age_minutes=args.quote_age_minutes,
+                quote_age_minutes=quote_age_minutes,
                 staking_config=staking_config,
                 grading_thresholds=grading_thresholds,
                 confidence_thresholds=confidence_thresholds,
@@ -251,6 +369,18 @@ def main() -> int:
     card_path.write_text(card_text)
     print(card_text)
     print(f"Daily Bet Card written to {card_path}", file=sys.stderr)
+
+    contract = build_daily_bet_card_contract(
+        context,
+        recommendations,
+        system_warnings=system_warnings,
+        data_timestamp=live_scan_timestamp,
+    )
+    cards_dir = args.cards_out / f"{date.today().isoformat()}{suffix}"
+    written = write_daily_bet_card_outputs(cards_dir, contract, card_text)
+    print(f"Daily Bet Card contract (json/csv/md) written to {cards_dir}", file=sys.stderr)
+    for kind, path in written.items():
+        print(f"  {kind}: {path}", file=sys.stderr)
 
     candidates_path = (
         REPO_ROOT
