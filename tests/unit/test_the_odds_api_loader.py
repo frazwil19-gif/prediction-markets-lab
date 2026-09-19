@@ -202,3 +202,37 @@ def test_fetch_odds_raw_stops_at_credential_gate_without_any_network_call(monkey
     config = TheOddsApiConfig()
     with pytest.raises(TheOddsApiCredentialError):
         fetch_odds_raw("soccer_epl", config)
+
+
+# ---------------------------------------------------------------------------
+# 2026-09-19: real structural discovery from the first live API call (see
+# research/cycles/CYCLE_003_FOOTBALL/PHASE1_LIVE_SMOKE_TEST_FINDINGS.md).
+# Exchange-style bookmakers (Betfair, Smarkets, Matchbook) return a second
+# market keyed "h2h_lay" (their lay price) alongside "h2h" (their back
+# price) for the same outcome set. The adapter must keep using only "h2h"
+# and silently pass over "h2h_lay" -- never misreading it as a duplicate or
+# competing "h2h" quote from the same bookmaker.
+# ---------------------------------------------------------------------------
+
+
+def test_h2h_lay_market_key_is_ignored_not_treated_as_h2h():
+    event = _sample_event()
+    event["bookmakers"][0]["markets"].append(
+        {
+            "key": "h2h_lay",
+            "outcomes": [
+                {"name": "Team A", "price": 2.05},
+                {"name": "Draw", "price": 3.35},
+                {"name": "Team B", "price": 3.55},
+            ],
+        }
+    )
+    events = parse_odds_response([event], sport_key="soccer_epl")
+    odds, _, warnings = build_canonical_odds_and_metadata(events, TheOddsApiConfig())
+
+    market_id_1x2 = "soccer_epl-evt-001-1x2"
+    # The h2h (back) price from bookmakers[0] ("William Hill") is untouched
+    # by the h2h_lay market appended above -- no duplicate-quote warning,
+    # no overwrite, no second "William Hill" entry.
+    assert odds[market_id_1x2]["William Hill"] == {"home": 2.10, "draw": 3.40, "away": 3.60}
+    assert not any("duplicate" in w.lower() for w in warnings)
