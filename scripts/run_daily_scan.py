@@ -119,6 +119,7 @@ from prediction_markets_lab.ingestion.the_odds_api_loader import (
 )
 from prediction_markets_lab.probability.market_pipeline import compute_market_consensus
 from prediction_markets_lab.reports.daily_bet_card import (
+    ENGINE_VERSION,
     DailyBetCardContext,
     build_daily_bet_card_contract,
     render_daily_bet_card,
@@ -126,6 +127,7 @@ from prediction_markets_lab.reports.daily_bet_card import (
 )
 from prediction_markets_lab.risk.staking import StakingConfig
 from prediction_markets_lab.storage.csv_store import append_record
+from prediction_markets_lab.storage.paper_ledger import record_qualifying_candidates
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
@@ -246,6 +248,21 @@ def main() -> int:
         "--run-label",
         default="",
         help="Optional label appended to output filenames (e.g. 'dryrun')",
+    )
+    parser.add_argument(
+        "--paper-ledger",
+        type=Path,
+        default=REPO_ROOT / "paper_ledger" / "paper_bets.csv",
+        help="Path to the append-only Track B paper-bet ledger CSV.",
+    )
+    parser.add_argument(
+        "--no-paper-ledger",
+        action="store_true",
+        help=(
+            "Skip recording qualifying candidates into the paper-bet ledger. Use this for "
+            "test/dry-run scans (e.g. with --run-label) so they never pollute the real "
+            "forward evidence record."
+        ),
     )
     args = parser.parse_args()
 
@@ -392,6 +409,22 @@ def main() -> int:
     for rec in recommendations:
         append_record(candidates_path, rec.market_record)
     print(f"{len(recommendations)} candidate(s) logged to {candidates_path}", file=sys.stderr)
+
+    if args.no_paper_ledger:
+        print("Paper ledger: skipped (--no-paper-ledger)", file=sys.stderr)
+    else:
+        newly_recorded, skipped = record_qualifying_candidates(
+            args.paper_ledger,
+            recommendations,
+            scan_id=context.generated_at.isoformat(),
+            created_at=datetime.now(timezone.utc).isoformat(),
+            data_version=ENGINE_VERSION,
+        )
+        print(
+            f"Paper ledger: {len(newly_recorded)} new candidate(s) recorded, "
+            f"{len(skipped)} already recorded today -- {args.paper_ledger}",
+            file=sys.stderr,
+        )
 
     return 0
 
