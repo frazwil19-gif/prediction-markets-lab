@@ -1,0 +1,91 @@
+name: daily_scan
+
+# V1 scheduled Daily Bet Card (operator's "MAJOR NEXT PHASE" instruction,
+# Phase 4/8): a morning scan against live odds, producing the frozen
+# daily_cards/<date>/ contract (card.json/card.csv/card.md) as the
+# canonical, shared artefact any downstream consumer (ChatGPT included)
+# reads -- see scripts/run_daily_scan.py and
+# src/prediction_markets_lab/reports/daily_bet_card.py.
+#
+# Deliberately NOT built yet (see the operator's "don't over-engineer
+# V1" instruction and the Daily Engine V1 implementation checkpoint):
+# a pre-match price refresh, evening settlement, and a performance-
+# update job. Those are FUTURE work once this first scan is proven
+# reliable in production, not a gap in this workflow.
+#
+# Requires a repository secret THE_ODDS_API_KEY (Settings -> Secrets and
+# variables -> Actions -> New repository secret). The key is never
+# written into this file or any committed file -- it is read from the
+# environment at run time by
+# ingestion.the_odds_api_loader.TheOddsApiConfig.resolve_api_key(). If
+# the secret is not set, the scan stops cleanly at that credential gate
+# (exit 1, clear message) instead of running with fabricated data -- see
+# that module's docstring.
+
+on:
+  schedule:
+    # 07:00 UTC daily. A single morning scan is the intended V1 scope
+    # (see module docstring) -- not a high-frequency poll.
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+    inputs:
+      run_label:
+        description: "Optional label appended to output filenames (e.g. 'manual')"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install -e .
+
+      - name: Run the test suite first
+        # Fail fast on a broken engine before spending any API credits.
+        run: pytest -q
+
+      - name: Run the live Daily Engine scan
+        env:
+          THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
+        run: |
+          python scripts/run_daily_scan.py --source odds-api \
+            ${{ inputs.run_label != '' && format('--run-label {0}', inputs.run_label) || '' }}
+
+      - name: Upload full run output (always, even on later failure)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-scan-run-output
+          path: |
+            reports/daily/**
+            daily_cards/**
+            data/processed/daily_cards/**
+          if-no-files-found: warn
+
+      - name: Commit and push the Daily Bet Card contract
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add daily_cards/
+          if git diff --cached --quiet; then
+            echo "No Daily Bet Card changes to commit"
+          else
+            git commit -m "Daily Bet Card: $(date -u +%F)"
+            git push
+          fi
