@@ -1,0 +1,79 @@
+name: settlement_and_performance
+
+# Production Infrastructure Build (2026-09-20), Section 9 jobs C/D
+# combined into one workflow per "avoid unnecessary workflow
+# complexity": settle every paper bet whose event has finished, then
+# regenerate the machine-readable performance report and system-status
+# file ChatGPT reads. See scripts/run_settlement.py,
+# scripts/generate_performance_report.py, scripts/generate_system_status.py.
+#
+# Requires THE_ODDS_API_KEY (same repository secret daily_scan.yml uses)
+# for the settlement step's live-scores lookup -- never written into
+# this file. Shares a concurrency group with daily_scan.yml so the two
+# workflows' automated commits never race each other.
+
+on:
+  schedule:
+    # 21:00 UTC daily -- after the large majority of that day's kickoffs
+    # in the currently-scanned (all UK) competitions have finished. A
+    # single evening pass, not a high-frequency poll.
+    - cron: "0 21 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: prediction-markets-lab-production
+  cancel-in-progress: false
+
+jobs:
+  settle_and_report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install -e .
+
+      - name: Run the test suite first
+        run: pytest -q
+
+      - name: Settle completed paper bets
+        id: settlement
+        continue-on-error: true
+        env:
+          THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
+        run: python scripts/run_settlement.py
+
+      - name: Regenerate performance report
+        run: python scripts/generate_performance_report.py
+
+      - name: Update system status
+        if: always()
+        run: |
+          python scripts/generate_system_status.py \
+            --settlement-status ${{ steps.settlement.outcome == 'success' && 'success' || 'failure' }} \
+            --performance-updated
+
+      - name: Commit and push ledger/performance/status updates
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add paper_ledger/ reports/latest_performance.json status/
+          if git diff --cached --quiet; then
+            echo "No settlement/performance/status changes to commit"
+          else
+            git commit -m "Settlement + performance update: $(date -u +%F)"
+            git push
+          fi

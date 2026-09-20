@@ -47,3 +47,15 @@ confidence:
   high_max_std_dev: 0.02
   medium_min_bookmakers: 3
   medium_max_std_dev: 0.05
+
+# --- Added 2026-09-20 (Production Infrastructure Build) ---
+# Payout / minimum-odds policy: "high probability + credible high
+# confidence + statistical support + meaningful payout + acceptable
+# risk," not maximum probability alone. These starting values are the
+# operator's own initial experimental configuration -- explicitly NOT
+# assumed optimal; performance/odds_bands.py exists so paper-trading and
+# the historical backtest can challenge them with real evidence.
+payout_policy:
+  normal_min_decimal_odds: 1.33
+  preferred_min_decimal_odds: 1.40
+  preferred_max_decimal_odds: 2.50

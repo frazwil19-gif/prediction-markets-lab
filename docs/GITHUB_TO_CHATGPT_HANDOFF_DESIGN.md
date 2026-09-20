@@ -53,3 +53,39 @@ If the scheduled task does not reliably fetch the URL, the same retrieval works 
 - It does not have ChatGPT recompute probability, EV, or grading — those numbers come only from `card.md`/`card.json`, produced by the engine.
 - It does not attempt a webhook, GitHub Actions-to-ChatGPT push, or any bespoke integration requiring credentials on either side (Option B/C from the operator's Phase 6) — the public-repo raw-URL approach needs none of that, so it is the simplest reliable option available without new infrastructure.
 - It does not touch real-money execution in any way — Fraser still places every bet manually, exactly as before.
+
+
+## 7. Additional outputs (added 2026-09-20, Production Infrastructure Build)
+
+Two more machine-readable files now exist alongside `card.json`, both at
+the repo root so the same public raw-URL pattern from Section 3 works
+for them too:
+
+- `reports/latest_performance.json` -- paper-trading (Track B) performance:
+  overall win rate, expected win rate, ROI/yield, Brier score, log loss,
+  calibration, drawdown, longest losing streak, and breakdowns by grade,
+  sport, competition, market, and odds band. ChatGPT should read this
+  directly for any "how is the system doing" question rather than trying
+  to recompute it from the raw ledger -- see
+  `src/prediction_markets_lab/performance/paper_performance.py`'s module
+  docstring.
+- `status/latest.json` -- system health: last scan status (success/
+  failure, not just "did a card exist"), last settlement status, last
+  performance update time, and the count of still-unsettled paper bets.
+  **This is the file that lets ChatGPT distinguish "no bets qualified
+  today" (a valid outcome) from "the scanner failed" (an operational
+  problem)** -- see `src/prediction_markets_lab/reports/system_status.py`'s
+  module docstring. A future refinement of the morning ChatGPT prompt in
+  Section 3 should fetch this file too and surface a scanner failure
+  explicitly, rather than only relaying an empty card silently.
+
+Both are produced by scheduled GitHub Actions jobs
+(`.github/workflows/daily_scan.yml` for the morning scan's own status;
+`.github/workflows/settlement_and_performance.yml`, new this build, for
+the evening settlement + performance + status refresh), so ChatGPT never
+needs to trigger anything -- it only ever reads.
+
+Real-money (Track A) performance is deliberately NOT in
+`latest_performance.json` -- see `real_bets/README.md` on why paper and
+real performance are kept separate. A real-performance report is not yet
+built.

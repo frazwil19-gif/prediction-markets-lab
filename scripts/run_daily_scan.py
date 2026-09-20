@@ -97,6 +97,7 @@ import yaml
 from prediction_markets_lab.decisions.confidence import ConfidenceThresholds
 from prediction_markets_lab.decisions.data_quality import DataQualityThresholds
 from prediction_markets_lab.decisions.grading import GradingThresholds
+from prediction_markets_lab.decisions.payout_policy import PayoutPolicyThresholds
 from prediction_markets_lab.decisions.recommendation import (
     PriceQuote,
     RecommendationResult,
@@ -169,6 +170,15 @@ def build_grading_thresholds(t: dict) -> GradingThresholds:
         a_min_bookmakers=t["grade_a"]["min_bookmaker_count"],
         b_min_net_ev=t["grade_b"]["min_net_ev"],
         c_min_net_ev=t["grade_c"]["min_net_ev"],
+    )
+
+
+def build_payout_policy_thresholds(t: dict) -> PayoutPolicyThresholds:
+    p = t.get("payout_policy", {})
+    return PayoutPolicyThresholds(
+        normal_min_decimal_odds=p.get("normal_min_decimal_odds", 1.33),
+        preferred_min_decimal_odds=p.get("preferred_min_decimal_odds", 1.40),
+        preferred_max_decimal_odds=p.get("preferred_max_decimal_odds", 2.50),
     )
 
 
@@ -276,6 +286,7 @@ def main() -> int:
     grading_thresholds = build_grading_thresholds(thresholds)
     confidence_thresholds = build_confidence_thresholds(thresholds)
     data_quality_thresholds = build_data_quality_thresholds(thresholds)
+    payout_policy_thresholds = build_payout_policy_thresholds(thresholds)
 
     system_warnings: list[str] = []
     live_scan_timestamp: str | None = None
@@ -369,6 +380,7 @@ def main() -> int:
                 grading_thresholds=grading_thresholds,
                 confidence_thresholds=confidence_thresholds,
                 data_quality_thresholds=data_quality_thresholds,
+                payout_policy_thresholds=payout_policy_thresholds,
             )
             recommendations.append(result)
 

@@ -7,11 +7,13 @@ name: daily_scan
 # reads -- see scripts/run_daily_scan.py and
 # src/prediction_markets_lab/reports/daily_bet_card.py.
 #
-# Deliberately NOT built yet (see the operator's "don't over-engineer
-# V1" instruction and the Daily Engine V1 implementation checkpoint):
-# a pre-match price refresh, evening settlement, and a performance-
-# update job. Those are FUTURE work once this first scan is proven
-# reliable in production, not a gap in this workflow.
+# 2026-09-20 update (Production Infrastructure Build, Section 9/12): adds
+# a final "always run" step that writes status/latest.json so ChatGPT can
+# tell "nothing qualified" apart from "the scanner failed" -- see
+# scripts/generate_system_status.py and reports.system_status's module
+# docstring. Also adds a concurrency group shared with
+# settlement_and_performance.yml so the two workflows' automated commits
+# never race each other.
 #
 # Requires a repository secret THE_ODDS_API_KEY (Settings -> Secrets and
 # variables -> Actions -> New repository secret). The key is never
@@ -37,6 +39,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: prediction-markets-lab-production
+  cancel-in-progress: false
+
 jobs:
   scan:
     runs-on: ubuntu-latest
@@ -60,6 +66,7 @@ jobs:
         run: pytest -q
 
       - name: Run the live Daily Engine scan
+        id: scan
         env:
           THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
         run: |
@@ -77,14 +84,20 @@ jobs:
             data/processed/daily_cards/**
           if-no-files-found: warn
 
-      - name: Commit and push the Daily Bet Card contract
+      - name: Update system status (always -- distinguishes "no bets qualified" from "scanner failed")
+        if: always()
+        run: |
+          python scripts/generate_system_status.py \
+            --scan-status ${{ steps.scan.outcome == 'success' && 'success' || 'failure' }}
+
+      - name: Commit and push the Daily Bet Card contract and system status
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add daily_cards/
+          git add daily_cards/ paper_ledger/ status/
           if git diff --cached --quiet; then
-            echo "No Daily Bet Card changes to commit"
+            echo "No Daily Bet Card / paper-ledger / status changes to commit"
           else
             git commit -m "Daily Bet Card: $(date -u +%F)"
             git push

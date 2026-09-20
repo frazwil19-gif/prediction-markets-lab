@@ -22,9 +22,11 @@ from prediction_markets_lab.decisions.data_quality import (
 )
 from prediction_markets_lab.decisions.grading import (
     GradingInput,
+    GradingResult,
     GradingThresholds,
     grade_opportunity,
 )
+from prediction_markets_lab.decisions.payout_policy import PayoutPolicyThresholds, apply_payout_floor
 from prediction_markets_lab.decisions.liquidity import assess_liquidity
 from prediction_markets_lab.ev.expected_value import evaluate
 from prediction_markets_lab.probability.consensus import ConsensusResult
@@ -79,6 +81,7 @@ def build_recommendation(
     data_quality_thresholds: DataQualityThresholds,
     no_material_info_risk: bool = True,
     market_rules_match: bool = True,
+    payout_policy_thresholds: PayoutPolicyThresholds = PayoutPolicyThresholds(),
 ) -> RecommendationResult:
     """Assemble one candidate's full Daily Card row and recommended stake.
 
@@ -117,6 +120,11 @@ def build_recommendation(
             for the consensus exactly matches the one best_price is
             quoted for (e.g. the same Asian Handicap line). Also a
             human-owned check for V1; default True.
+        payout_policy_thresholds: The active decisions.payout_policy.
+            PayoutPolicyThresholds -- demotes an otherwise A+/A/B grade to
+            C (watch-only) if the price is below the configured payout
+            floor. Callers should normally load config/thresholds.yaml's
+            payout_policy section rather than relying on this default.
 
     Returns:
         A RecommendationResult with the fully populated MarketRecord
@@ -155,6 +163,14 @@ def build_recommendation(
         liquidity_adequate=liquidity_adequate,
     )
     grading_result = grade_opportunity(evidence, grading_thresholds)
+    demoted_grade, demoted_reason = apply_payout_floor(
+        grading_result.grade,
+        grading_result.reason,
+        best_price.decimal_odds,
+        payout_policy_thresholds,
+    )
+    if demoted_grade != grading_result.grade:
+        grading_result = GradingResult(demoted_grade, demoted_reason)
     stake_gbp = recommended_stake_gbp(grading_result.grade, staking_config)
 
     record = MarketRecord(

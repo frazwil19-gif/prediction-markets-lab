@@ -1,0 +1,26 @@
+{
+  "starting_bankroll_gbp": 10.0,
+  "current_paper_bankroll_gbp": 10.0,
+  "pending_bet_count": 9,
+  "overall": {
+    "bet_count": 0,
+    "decided_count": 0,
+    "win_rate": null,
+    "expected_win_rate": null,
+    "average_odds": null,
+    "total_staked_gbp": 0,
+    "total_pnl_gbp": 0,
+    "roi_yield": null,
+    "brier_score": null,
+    "log_loss": null,
+    "calibration_bins": null,
+    "max_drawdown_gbp": 0.0,
+    "longest_losing_streak": 0,
+    "clv_note": "not yet populated -- closing_odds_if_available is currently blank on live rows; see docs/HISTORICAL_PRICE_AND_CLV_LIMITATIONS.md"
+  },
+  "by_grade": {},
+  "by_sport": {},
+  "by_competition": {},
+  "by_market": {},
+  "by_odds_band": {}
+}
