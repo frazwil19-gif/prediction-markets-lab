@@ -594,3 +594,42 @@ with open(out_path, "w", encoding="utf-8") as fh:
     json.dump(output, fh, indent=2)
 print(f"Wrote {out_path}")
 
+# =====================================================================
+# 8. Optional Phase 2 diagnostic extension (added 2026-09-22, additive,
+#    off by default -- a normal Gate 1 rerun is byte-for-byte
+#    unaffected unless PMLAB_DUMP_PER_MATCH_PREDICTIONS is set).
+#
+# Dumps the per-match, per-model out-of-sample predictions this script
+# already computes in memory (per_match_predictions) to a CSV, so a
+# separate, later analysis (research/probability_model_v2/, per the
+# "PHASE 2 -- INDEPENDENT FOOTBALL PROBABILITY MODEL RESEARCH"
+# instruction's Sections 13 and 15) can compute high-probability-region
+# and disagreement-band diagnostics WITHOUT re-fitting or re-specifying
+# any model here -- avoiding any risk of the diagnostic reproduction
+# silently drifting from this frozen, already-published comparison.
+# =====================================================================
+import os as _os
+
+_dump_path = _os.environ.get("PMLAB_DUMP_PER_MATCH_PREDICTIONS")
+if _dump_path:
+    import csv as _csv
+
+    _fieldnames = ["match_id", "competition_code", "season", "outcome"] + [
+        f"{_key}_{_outcome}" for _key in MODEL_KEYS.values() for _outcome in OUTCOMES
+    ]
+    with open(_dump_path, "w", newline="", encoding="utf-8") as _fh:
+        _writer = _csv.DictWriter(_fh, fieldnames=_fieldnames)
+        _writer.writeheader()
+        for _row in per_match_predictions:
+            _out_row = {
+                "match_id": _row["match_id"],
+                "competition_code": _row["competition_code"],
+                "season": _row["season"],
+                "outcome": _row["outcome"],
+            }
+            for _key in MODEL_KEYS.values():
+                for _outcome in OUTCOMES:
+                    _out_row[f"{_key}_{_outcome}"] = _row[_key][_outcome]
+            _writer.writerow(_out_row)
+    print(f"Wrote per-match predictions to {_dump_path}")
+
