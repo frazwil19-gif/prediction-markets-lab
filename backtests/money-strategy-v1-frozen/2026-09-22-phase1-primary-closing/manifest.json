@@ -1,0 +1,72 @@
+{
+  "apply_risk_gates": true,
+  "bankroll_exhausted": false,
+  "coverage": {
+    "excluded_ineligible_consensus_model": 24,
+    "excluded_kickoff_join_failed": 0,
+    "excluded_missing_complete_bookmaker_panel": 0,
+    "matches_included": 5776,
+    "total_rows_in_source_matches_file": 5800
+  },
+  "dataset": "Cycle 1 1X2 (E0/E1/SC0, 2020/21-2025/26), closing snapshot -- data/processed/football/cycle_001_{matches,bookmaker_markets}_full.csv",
+  "ending_bankroll_gbp": 10.0,
+  "excluded_matches": [],
+  "price_timing": "closing",
+  "run_id": "2026-09-22-phase1-primary-closing",
+  "starting_bankroll_gbp": 10.0,
+  "strategy": {
+    "bankroll": {
+      "daily_loss_stop_gbp": 0.75,
+      "maximum_daily_exposure_gbp": 0.75,
+      "maximum_open_bets": 3,
+      "maximum_stake_gbp": 0.5,
+      "normal_stake_gbp": 0.25,
+      "starting_bankroll_gbp": 10.0,
+      "weekly_loss_stop_gbp": 2.0
+    },
+    "config_hash": "fca6f23522c449880791e9195c8e5f4eabe77beb5d12494c24e1c1fb2beb4544",
+    "frozen_at_engine_version": "daily-engine-v1",
+    "strategy_name": "money-strategy-v1-frozen",
+    "thresholds": {
+      "confidence": {
+        "high_max_std_dev": 0.02,
+        "high_min_bookmakers": 5,
+        "medium_max_std_dev": 0.05,
+        "medium_min_bookmakers": 3
+      },
+      "data_quality": {
+        "max_quote_age_minutes": 240.0,
+        "min_bookmakers": 3
+      },
+      "grading": {
+        "a_min_bookmakers": 4,
+        "a_min_edge_pp": 3.0,
+        "a_min_net_ev": 0.05,
+        "a_plus_min_bookmakers": 5,
+        "a_plus_min_edge_pp": 4.0,
+        "a_plus_min_net_ev": 0.08,
+        "b_min_net_ev": 0.02,
+        "c_min_net_ev": 0.0
+      },
+      "money_qualification": {
+        "conditional_confidence_labels": [
+          "Medium"
+        ],
+        "eligible_confidence_labels": [
+          "High"
+        ],
+        "event_horizon_hours": 24.0,
+        "min_net_ev": 0.02,
+        "min_net_ev_medium_confidence": 0.05,
+        "min_probability": 0.5,
+        "min_probability_medium_confidence": 0.6,
+        "require_preferred_odds_band_for_conditional_confidence": true
+      },
+      "payout_policy": {
+        "normal_min_decimal_odds": 1.33,
+        "preferred_max_decimal_odds": 2.5,
+        "preferred_min_decimal_odds": 1.4
+      }
+    }
+  }
+}
