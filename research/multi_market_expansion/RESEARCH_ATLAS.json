@@ -1,0 +1,147 @@
+{
+  "atlas_version": "1.0",
+  "generated_at": "2026-09-22",
+  "generated_by_cycle": "phase4_multi_market_expansion / gate1b_ou25_probability_architecture_comparison",
+  "schema_note": "One entry per (sport, market). status is one of: EXHAUSTED, READY_FOR_OUTCOME_DISCOVERY, PARTIALLY_EXPLORED, BLOCKED_BY_HISTORICAL_DATA, BLOCKED_BY_LIVE_DATA, REQUIRES_NEW_INFORMATION, UNEXPLORED. outcome_prediction_status and betting_backtest_status are tracked as SEPARATE axes per Phase 4 Section 8/20 -- a market can be READY on one axis and BLOCKED_BY_HISTORICAL_DATA on the other.",
+  "markets": [
+    {
+      "sport": "football",
+      "market": "1X2 (match winner, 3-way)",
+      "status": "EXHAUSTED",
+      "outcome_prediction_status": "EXHAUSTED",
+      "betting_backtest_status": "EXHAUSTED",
+      "data_family": "cycle_002_discovery_features.csv (fundamentals) + cycle_001_consensus_full.csv (market)",
+      "cycles_completed": [
+        "gate1_1x2_architecture_comparison",
+        "outcome_discovery_winner_loser_prediction"
+      ],
+      "best_estimator": "market consensus probability (no fundamentals model beats it)",
+      "sample_size": 5800,
+      "calibration_status": "DONE -- market well-calibrated across probability bands",
+      "sealed_holdout_status": "DONE -- 2024_25 fold, market wins on every metric",
+      "betting_overlay_status": "EXHAUSTED -- no persistent inefficiency found; conditioning on market probability collapses winner/loser feature differences to near-zero",
+      "live_support": "LIVE -- production Daily Bet Card already scans this market",
+      "limitations": [
+        "2025_26 season not yet run through the acquisition/feature pipeline (raw files present, unprocessed)",
+        "fundamentals cannot beat market probability once conditioned on it"
+      ],
+      "next_action": "Do not spend further Claude research cycles on 1X2 outcome-prediction with the current feature set. Revisit only if a genuinely new information source becomes available (e.g. team news, lineups, live in-play data)."
+    },
+    {
+      "sport": "football",
+      "market": "Over/Under 2.5 goals (O/U 2.5)",
+      "status": "READY_FOR_OUTCOME_DISCOVERY",
+      "outcome_prediction_status": "READY -- Stage A complete this cycle (Gate 1b)",
+      "betting_backtest_status": "BLOCKED_BY_HISTORICAL_DATA -- historical panel is only 2-3 bookmakers per match, below production's min_bookmakers=3 floor; cycle_002_consensus_ou25.csv is 0 bytes",
+      "data_family": "cycle_002_discovery_features.csv (19 fundamentals + thin-panel market field market_ou25_closing_source_avg_over_probability)",
+      "cycles_completed": [
+        "gate1b_ou25_probability_architecture_comparison (Phase 4)"
+      ],
+      "best_estimator": "market (thin-panel, research-grade) -- log_loss 0.6755 pooled vs fundamentals 0.6867 vs market+fundamentals 0.6806 vs naive 0.6964",
+      "sample_size": 5800,
+      "calibration_status": "DONE -- fixed-band calibration report produced (CALIBRATION_BANDS.csv); market best-calibrated overall (ECE 0.0117 vs fundamentals 0.0185 vs naive 0.0454)",
+      "sealed_holdout_status": "DONE -- 2024_25 fold; market still best (log_loss 0.6796 vs fundamentals 0.6909 vs naive 0.6933); not a fully blind prospective holdout (raw seasons reused across cycles) but a genuine first look for this target",
+      "betting_overlay_status": "BLOCKED_BY_HISTORICAL_DATA for retrospective backtest; prospective/live scanning already possible since the outcome-prediction model needs no historical odds panel to train",
+      "live_support": "READY -- fundamentals features and live odds quotes are both obtainable pre-kickoff; not yet wired into production",
+      "limitations": [
+        "Historical bookmaker panel too thin (2-3 books) for a production-grade consensus; only research-grade thin-panel average available",
+        "2025_26 season not yet in the feature pipeline",
+        "No feature-stability (season-by-season coefficient drift) analysis run this cycle -- only performance metrics"
+      ],
+      "next_action": "Market alone remains the strongest O/U2.5 estimator; no fundamentals model justifies production deployment yet. Recommend: (a) begin preserving raw per-bookmaker O/U2.5 quotes prospectively for a future thicker panel, (b) do not build a betting overlay from historical data, (c) move to the next market (BTTS) for the next Stage-A-only cycle rather than re-working O/U2.5."
+    },
+    {
+      "sport": "football",
+      "market": "Both Teams to Score (BTTS)",
+      "status": "UNEXPLORED",
+      "outcome_prediction_status": "UNEXPLORED -- no cycle run yet",
+      "betting_backtest_status": "UNEXPLORED -- historical odds depth not yet audited for this market",
+      "data_family": "goal counts already present in cycle_002_match_statistics.csv; BTTS market odds not yet extracted from raw bookmaker feeds",
+      "cycles_completed": [],
+      "best_estimator": null,
+      "sample_size": null,
+      "calibration_status": "NOT_STARTED",
+      "sealed_holdout_status": "NOT_STARTED",
+      "betting_overlay_status": "NOT_STARTED",
+      "live_support": "LIKELY -- BTTS odds are commonly quoted live, same infrastructure as O/U2.5",
+      "limitations": [
+        "Target (both teams score >=1) is trivially derivable from existing goal data, so no new acquisition needed for Stage A",
+        "Market odds extraction/aggregation code for BTTS does not yet exist and would need to be built (adapted from the O/U2.5 aggregation pipeline)"
+      ],
+      "next_action": "Strong candidate for the next Stage-A-only cycle after O/U2.5. Target construction is nearly free (same match_statistics source); would need a new market-odds extraction step if a market-only model is desired."
+    },
+    {
+      "sport": "football",
+      "market": "Asian Handicap (AH)",
+      "status": "PARTIALLY_EXPLORED",
+      "outcome_prediction_status": "UNEXPLORED for outcome prediction (no AH-specific cycle run yet)",
+      "betting_backtest_status": "BLOCKED_BY_HISTORICAL_DATA -- cycle_002_consensus_ah.csv is 0 bytes (thin historical panel, same limitation as O/U2.5); additionally lines vary match-to-match so different handicap lines must never be merged",
+      "data_family": "cycle_002_bookmaker_markets_ah.csv, cycle_002_market_context_ah.csv, cycle_002_discovery_features.csv (market_ah_* fields)",
+      "cycles_completed": [
+        "data_expansion_audit (Phase 3, audit only -- no modelling)"
+      ],
+      "best_estimator": null,
+      "sample_size": 5800,
+      "calibration_status": "NOT_STARTED",
+      "sealed_holdout_status": "NOT_STARTED",
+      "betting_overlay_status": "NOT_STARTED",
+      "live_support": "LIKELY -- AH odds commonly quoted live",
+      "limitations": [
+        "Handicap line varies by match (e.g. -0.5, -1.0, -1.5) -- lines must be modelled separately or handled with a line-relative target, adding real complexity versus a fixed binary target like O/U2.5 or BTTS",
+        "Historical panel thin, same as O/U2.5",
+        "More implementation complexity than O/U2.5 or BTTS for a first cycle"
+      ],
+      "next_action": "Defer until after BTTS. Requires a line-handling design decision (per-line modelling or line-relative feature) before a Stage A cycle can start cleanly."
+    },
+    {
+      "sport": "tennis",
+      "market": "Match Winner",
+      "status": "PARTIALLY_EXPLORED",
+      "outcome_prediction_status": "EXHAUSTED for the features already tried (edge-hunting workstream)",
+      "betting_backtest_status": "PARTIALLY_EXPLORED -- Phase 3's own top nomination for a future money-qualification cycle, not yet executed",
+      "data_family": "tennis match-level features + Match Winner market odds (multiple data sources acquired across cycles 1-2)",
+      "cycles_completed": [
+        "tennis_edge_hunting_workstream_b (13/13 candidate edges rejected)"
+      ],
+      "best_estimator": "market (no edge found)",
+      "sample_size": null,
+      "calibration_status": "DONE (for the features tested)",
+      "sealed_holdout_status": "DONE (for the features tested)",
+      "betting_overlay_status": "PARTIALLY_EXPLORED -- Phase 3 nominated this as a strong candidate for a money-qualification backtest cycle but it has not yet been executed",
+      "live_support": "LIVE -- production already includes tennis in the scan",
+      "limitations": [
+        "Substantially researched already; do not default back to it without a genuinely new question (per Phase 4 Section 5)",
+        "13 candidate edge features already rejected in Workstream B"
+      ],
+      "next_action": "Do not reopen for outcome-prediction discovery. The open item is the money-qualification/betting-backtest cycle Phase 3 nominated -- pick this up only when the project is ready to run a Stage B-focused cycle rather than another Stage A discovery pass."
+    },
+    {
+      "sport": "other (basketball, cricket, etc.)",
+      "market": "not yet represented",
+      "status": "UNEXPLORED",
+      "outcome_prediction_status": "UNEXPLORED",
+      "betting_backtest_status": "UNEXPLORED",
+      "data_family": null,
+      "cycles_completed": [],
+      "best_estimator": null,
+      "sample_size": null,
+      "calibration_status": "NOT_STARTED",
+      "sealed_holdout_status": "NOT_STARTED",
+      "betting_overlay_status": "NOT_STARTED",
+      "live_support": "UNKNOWN -- no data acquisition attempted",
+      "limitations": [
+        "No data source has been acquired or audited for any sport outside football and tennis"
+      ],
+      "next_action": "Out of scope until the football/tennis portfolio (1X2, O/U2.5, BTTS, AH) is further along. No action this cycle."
+    }
+  ],
+  "selection_history": [
+    {
+      "cycle": "phase4_multi_market_expansion",
+      "date": "2026-09-22",
+      "candidates_considered": ["football_ou25", "football_btts", "football_ah", "tennis_match_winner"],
+      "selected": "football_ou25",
+      "reason": "Highest combination of sample size (5,800 matches, 99.3% feature coverage), lowest implementation complexity (binary target, existing binary-outcome tooling directly reusable), full research independence from the exhausted 1X2 question, live compatibility, and calibration feasibility -- all per the criteria in Phase 4 Section 18, explicitly not chosen for perceived historical profitability. BTTS and AH deferred (BTTS needs new market-odds extraction code; AH needs a line-handling design). Tennis deliberately not defaulted to per Section 5."
+    }
+  ]
+}

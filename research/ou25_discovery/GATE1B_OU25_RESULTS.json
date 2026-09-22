@@ -1,0 +1,198 @@
+{
+  "cycle": "gate1b_ou25_probability_architecture_comparison",
+  "generated_at": "2026-09-22T16:54:40.073995+00:00",
+  "source_file": "data/processed/football/cycle_002_discovery_features.csv",
+  "n_candidates_total": 5800,
+  "n_by_partition": {
+    "discovery": 3480,
+    "validation": 1160,
+    "holdout": 1160,
+    "unknown": 0
+  },
+  "folds": [
+    {
+      "fold_id": "train_through_2020_21_eval_2021_22",
+      "train_seasons": [
+        "2020_21"
+      ],
+      "evaluate_season": "2021_22"
+    },
+    {
+      "fold_id": "train_through_2021_22_eval_2022_23",
+      "train_seasons": [
+        "2020_21",
+        "2021_22"
+      ],
+      "evaluate_season": "2022_23"
+    },
+    {
+      "fold_id": "train_through_2022_23_eval_2023_24",
+      "train_seasons": [
+        "2020_21",
+        "2021_22",
+        "2022_23"
+      ],
+      "evaluate_season": "2023_24"
+    },
+    {
+      "fold_id": "train_through_2023_24_eval_2024_25",
+      "train_seasons": [
+        "2020_21",
+        "2021_22",
+        "2022_23",
+        "2023_24"
+      ],
+      "evaluate_season": "2024_25"
+    }
+  ],
+  "pooled_metrics": {
+    "naive": {
+      "n": 4640,
+      "log_loss": 0.6963726344277396,
+      "brier_score": 0.25160790002808214,
+      "ece_quantile_bins": 0.04535201149425289,
+      "auc": 0.5199540331973372,
+      "accuracy_at_0.5": 0.484698275862069,
+      "mean_predicted_probability": 0.4702945402299265,
+      "actual_occurrence_rate": 0.5153017241379311
+    },
+    "market": {
+      "n": 4640,
+      "log_loss": 0.6755173494492176,
+      "brier_score": 0.24134256933239367,
+      "ece_quantile_bins": 0.01166059956896552,
+      "auc": 0.604609065528264,
+      "accuracy_at_0.5": 0.5732758620689655,
+      "mean_predicted_probability": 0.5071712172413786,
+      "actual_occurrence_rate": 0.5153017241379311
+    },
+    "fundamentals": {
+      "n": 4629,
+      "log_loss": 0.6866275292187833,
+      "brier_score": 0.2467225922677043,
+      "ece_quantile_bins": 0.018470393514521097,
+      "auc": 0.5693173495164496,
+      "accuracy_at_0.5": 0.5523871246489522,
+      "mean_predicted_probability": 0.49678473400108925,
+      "actual_occurrence_rate": 0.5150140419096997
+    },
+    "market_fundamentals": {
+      "n": 4629,
+      "log_loss": 0.6806122908816084,
+      "brier_score": 0.24376556407911454,
+      "ece_quantile_bins": 0.025375540245612307,
+      "auc": 0.5928033586941899,
+      "accuracy_at_0.5": 0.5664290343486714,
+      "mean_predicted_probability": 0.49476075885219567,
+      "actual_occurrence_rate": 0.5150140419096997
+    }
+  },
+  "validation_only_metrics_2023_24": {
+    "naive": {
+      "n": 1160,
+      "log_loss": 0.7010604099304316,
+      "brier_score": 0.2539529660457155,
+      "ece_quantile_bins": 0.09080459770114949,
+      "auc": 0.5,
+      "accuracy_at_0.5": 0.43448275862068964,
+      "mean_predicted_probability": 0.47471264367816685,
+      "actual_occurrence_rate": 0.5655172413793104
+    },
+    "market": {
+      "n": 1160,
+      "log_loss": 0.6633374303587672,
+      "brier_score": 0.23540890855825683,
+      "ece_quantile_bins": 0.039674874137931,
+      "auc": 0.6254551998644986,
+      "accuracy_at_0.5": 0.6,
+      "mean_predicted_probability": 0.537069901724139,
+      "actual_occurrence_rate": 0.5655172413793104
+    },
+    "fundamentals": {
+      "n": 1158,
+      "log_loss": 0.6747427762707753,
+      "brier_score": 0.2409598427640617,
+      "ece_quantile_bins": 0.0418802415589592,
+      "auc": 0.5921011115965245,
+      "accuracy_at_0.5": 0.581174438687392,
+      "mean_predicted_probability": 0.524367783897081,
+      "actual_occurrence_rate": 0.5647668393782384
+    },
+    "market_fundamentals": {
+      "n": 1158,
+      "log_loss": 0.6641232045858424,
+      "brier_score": 0.23582978108238267,
+      "ece_quantile_bins": 0.04431633852669553,
+      "auc": 0.623886583175574,
+      "accuracy_at_0.5": 0.6001727115716753,
+      "mean_predicted_probability": 0.5329469243523411,
+      "actual_occurrence_rate": 0.5647668393782384
+    }
+  },
+  "sealed_holdout_only_metrics_2024_25": {
+    "naive": {
+      "n": 1160,
+      "log_loss": 0.6933210822893441,
+      "brier_score": 0.250086950059451,
+      "ece_quantile_bins": 0.06775862068965516,
+      "auc": 0.5,
+      "accuracy_at_0.5": 0.4844827586206897,
+      "mean_predicted_probability": 0.49741379310345707,
+      "actual_occurrence_rate": 0.5155172413793103
+    },
+    "market": {
+      "n": 1160,
+      "log_loss": 0.6795972833147496,
+      "brier_score": 0.24332231757146053,
+      "ece_quantile_bins": 0.024101203448275835,
+      "auc": 0.5922157488187195,
+      "accuracy_at_0.5": 0.5612068965517242,
+      "mean_predicted_probability": 0.5227583793103442,
+      "actual_occurrence_rate": 0.5155172413793103
+    },
+    "fundamentals": {
+      "n": 1158,
+      "log_loss": 0.6909496771644901,
+      "brier_score": 0.24872722139789544,
+      "ece_quantile_bins": 0.04995189426386869,
+      "auc": 0.5583413203868421,
+      "accuracy_at_0.5": 0.531951640759931,
+      "mean_predicted_probability": 0.5175747105908214,
+      "actual_occurrence_rate": 0.5155440414507773
+    },
+    "market_fundamentals": {
+      "n": 1158,
+      "log_loss": 0.6841318892057073,
+      "brier_score": 0.24534368711369534,
+      "ece_quantile_bins": 0.03842678205733974,
+      "auc": 0.5851091464452387,
+      "accuracy_at_0.5": 0.5613126079447323,
+      "mean_predicted_probability": 0.5271749706365487,
+      "actual_occurrence_rate": 0.5155440414507773
+    }
+  },
+  "bootstrap_paired_log_loss_ci": {
+    "fundamentals_minus_market": {
+      "n_paired": 4629,
+      "point_estimate_a_minus_b": 0.011072305602777943,
+      "ci_lower": 0.007007949053822959,
+      "ci_upper": 0.015122466259428147,
+      "excludes_zero": true
+    },
+    "market_fundamentals_minus_market": {
+      "n_paired": 4629,
+      "point_estimate_a_minus_b": 0.005057067265603399,
+      "ci_lower": 0.0026917021824961473,
+      "ci_upper": 0.0073912955426527205,
+      "excludes_zero": true
+    },
+    "fundamentals_minus_naive": {
+      "n_paired": 4629,
+      "point_estimate_a_minus_b": -0.00967974093289281,
+      "ci_lower": -0.013743431933425865,
+      "ci_upper": -0.005657008620832182,
+      "excludes_zero": true
+    }
+  },
+  "holdout_2025_26_availability": "UNAVAILABLE -- cycle_002_discovery_features.csv does not cover 2025_26 (same data gap already documented in the Outcome Discovery cycle, research/outcome_discovery/HOLDOUT_REPORT.md). No genuine prospective holdout beyond 2024_25 currently exists for this target."
+}
