@@ -1,0 +1,19 @@
+{
+ "phase": "Phase 5 BTTS outcome prediction",
+ "frozen_at": "2026-09-22T19:01:44Z",
+ "frozen_before_holdout_opened": true,
+ "holdout_season": "2024_25",
+ "training_seasons_for_holdout": ["2020_21", "2021_22", "2022_23", "2023_24"],
+ "selected_estimator": "market_implied_poisson",
+ "selection_basis": "PRE_REGISTRATION.md rule: lowest dev pooled log loss on common set (n=3437); no simpler model within CI (it has 0 fitted parameters, the minimum).",
+ "estimator_definition": "Solve lambda_home, lambda_away by least squares so independent-Poisson P(home), P(away), P(over2.5) match the CLOSING de-vigged 1X2 consensus and closing OU2.5 source-average probability (1X2 only if OU2.5 missing); P(BTTS YES) = (1-exp(-lh))(1-exp(-la)). No recalibration.",
+ "calibration_procedure": "none (raw). market_implied_poisson_recal is reported but not selected.",
+ "config": {"lambda_grid": [0.05, 5.0, 0.05], "refine_step": 0.005, "refine_half_width": 0.05, "max_goals": 15},
+ "all_models_reported": ["naive", "data_logit", "poisson_goal", "market_implied_poisson", "market_implied_poisson_recal", "market_implied_plus_data", "market_implied_poisson_opening"],
+ "reliability_filters_to_test": [
+  {"name": "exclude_E1_high_prob_picks", "context_field": "competition", "op": "!=", "value": "E1",
+   "rationale": "Dev error analysis: E1 >=60% picks 56.3% correct (n=48) vs E0 71.2% (n=139); CIs overlap, so this is a hypothesis only. Accept only if holdout shows the same direction AND the kept-set accuracy stays calibrated."}
+ ],
+ "no_other_filters_or_thresholds": true,
+ "dev_results_sha256": "a9835626ffcaaa9679394df2226260e39b2c1a01d44e2488d5da616f36c20b0c"
+}

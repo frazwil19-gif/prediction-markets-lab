@@ -1,0 +1,207 @@
+{
+ "soccer_epl": {
+  "n_events": 20
+ },
+ "probe": {
+  "sport": "soccer_epl",
+  "event": {
+   "id": "b870dcfba5e5920d3f1551a3aa1ea435",
+   "home_team": "Arsenal",
+   "away_team": "Leeds United",
+   "commence_time": "2026-10-10T11:30:00Z"
+  },
+  "headers": {
+   "x-requests-remaining": "459",
+   "x-requests-used": "41",
+   "x-requests-last": "1"
+  },
+  "bookmakers": [
+   {
+    "key": "betfred_uk",
+    "title": "Betfred (UK)",
+    "markets": [
+     {
+      "key": "btts",
+      "last_update": "2026-09-22T18:53:35Z",
+      "outcomes": [
+       {
+        "name": "Yes",
+        "price": 2.0
+       },
+       {
+        "name": "No",
+        "price": 1.73
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "key": "leovegas",
+    "title": "LeoVegas",
+    "markets": [
+     {
+      "key": "btts",
+      "last_update": "2026-09-22T18:53:15Z",
+      "outcomes": [
+       {
+        "name": "Yes",
+        "price": 1.98
+       },
+       {
+        "name": "No",
+        "price": 1.75
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "key": "williamhill",
+    "title": "William Hill",
+    "markets": [
+     {
+      "key": "btts",
+      "last_update": "2026-09-22T18:54:15Z",
+      "outcomes": [
+       {
+        "name": "Yes",
+        "price": 1.95
+       },
+       {
+        "name": "No",
+        "price": 1.75
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "key": "paddypower",
+    "title": "Paddy Power",
+    "markets": [
+     {
+      "key": "btts",
+      "last_update": "2026-09-22T18:54:17Z",
+      "outcomes": [
+       {
+        "name": "Yes",
+        "price": 2.1
+       },
+       {
+        "name": "No",
+        "price": 1.65
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "key": "betfair_ex_uk",
+    "title": "Betfair",
+    "markets": [
+     {
+      "key": "btts",
+      "last_update": "2026-09-22T18:53:50Z",
+      "outcomes": [
+       {
+        "name": "Yes",
+        "price": 2.08
+       },
+       {
+        "name": "No",
+        "price": 1.8
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "key": "virginbet",
+    "title": "Virgin Bet",
+    "markets": [
+     {
+      "key": "btts",
+      "last_update": "2026-09-22T18:54:15Z",
+      "outcomes": [
+       {
+        "name": "Yes",
+        "price": 2.02
+       },
+       {
+        "name": "No",
+        "price": 1.71
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "key": "livescorebet",
+    "title": "LiveScore Bet",
+    "markets": [
+     {
+      "key": "btts",
+      "last_update": "2026-09-22T18:54:15Z",
+      "outcomes": [
+       {
+        "name": "Yes",
+        "price": 2.02
+       },
+       {
+        "name": "No",
+        "price": 1.71
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "key": "ladbrokes_uk",
+    "title": "Ladbrokes",
+    "markets": [
+     {
+      "key": "btts",
+      "last_update": "2026-09-22T18:54:15Z",
+      "outcomes": [
+       {
+        "name": "Yes",
+        "price": 2.05
+       },
+       {
+        "name": "No",
+        "price": 1.7
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "key": "coral",
+    "title": "Coral",
+    "markets": [
+     {
+      "key": "btts",
+      "last_update": "2026-09-22T18:52:35Z",
+      "outcomes": [
+       {
+        "name": "Yes",
+        "price": 2.05
+       },
+       {
+        "name": "No",
+        "price": 1.7
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "soccer_efl_champ": {
+  "n_events": 12
+ },
+ "soccer_spl": {
+  "n_events": 6
+ }
+}
