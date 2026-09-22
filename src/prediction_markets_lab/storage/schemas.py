@@ -81,6 +81,28 @@ class MarketRecord(BaseModel):
     rejection_reason: str = ""
     notes: str = ""
 
+    # --- Added 2026-09-22 (TARGETED PRODUCTION CHANGE -- DAILY MONEY WINDOW
+    # + MONEY/PAPER SEPARATION). `grade` above is preserved unchanged and
+    # remains the single source of truth for the A+/A/B/C/Reject research
+    # classification -- `research_grade` simply names that same value
+    # explicitly, per the instruction's requirement that every candidate
+    # carry a `research_grade` distinct from the new `money_decision`
+    # concept, without destroying the existing field. See
+    # decisions.money_qualification for how these are computed.
+    research_grade: str = ""
+    money_decision: str = ""  # "BET" | "WATCH" | "PAPER_ONLY" | "REJECT"
+    money_qualified: bool = False
+    # Semicolon-joined, matching this project's existing reason-string
+    # convention (see decisions/payout_policy.py) -- kept a plain str (not a
+    # list) so this pydantic model keeps round-tripping cleanly through CSV
+    # storage (storage/csv_store.py), which has no native list type.
+    money_rejection_reason: str = ""
+    # Full ISO kickoff timestamp, when known (live odds-api scans only --
+    # see ingestion/the_odds_api_loader.py). None for manual-mode scans,
+    # which only ever had a date. Optional and additive; every existing
+    # caller that never set this keeps working unchanged.
+    kickoff_time: str | None = None
+
 
 class DailyShortlistRow(BaseModel):
     """A single ranked row on the Daily Shortlist tab."""

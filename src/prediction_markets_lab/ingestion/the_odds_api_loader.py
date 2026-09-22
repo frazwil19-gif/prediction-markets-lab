@@ -395,6 +395,13 @@ def build_canonical_odds_and_metadata(
                 "competition": competition,
                 "event": event_label,
                 "event_date": event_date,
+                # Full ISO kickoff timestamp, added 2026-09-22 (TARGETED
+                # PRODUCTION CHANGE -- DAILY MONEY WINDOW instruction) so
+                # decisions.money_qualification can check a real money-event
+                # horizon instead of only a date. event_date (above) is kept
+                # unchanged for backward compatibility with every existing
+                # consumer that only ever needed the date.
+                "commence_time": event.commence_time,
                 "market_type": "1x2",
                 "scan_timestamp": scan_timestamp,
             }
@@ -404,6 +411,7 @@ def build_canonical_odds_and_metadata(
                 "competition": competition,
                 "event": event_label,
                 "event_date": event_date,
+                "commence_time": event.commence_time,
                 "market_type": "over_under_2_5",
                 "scan_timestamp": scan_timestamp,
             }

@@ -179,6 +179,19 @@ _CSV_FIELDS = [
     "reason",
     "model_version",
     "price_timestamp",
+    # --- Added 2026-09-22 (TARGETED PRODUCTION CHANGE -- DAILY MONEY
+    # WINDOW + MONEY/PAPER SEPARATION). Appended at the end so column
+    # POSITION for every existing field above is unchanged for any
+    # consumer reading card.csv positionally; every consumer should read
+    # by header name regardless. `grade` above is unchanged and remains
+    # the research classification -- `research_grade` is that same value
+    # named explicitly, per the instruction. See
+    # decisions/money_qualification.py.
+    "research_grade",
+    "money_decision",
+    "money_qualified",
+    "money_rejection_reason",
+    "kickoff_time",
 ]
 
 
@@ -213,6 +226,12 @@ def _candidate_contract_row(rec: RecommendationResult, engine_version: str) -> d
         "reason": m.decision,
         "model_version": engine_version,
         "price_timestamp": m.scan_timestamp,
+        # --- Added 2026-09-22 -- see _CSV_FIELDS comment above.
+        "research_grade": m.research_grade or m.grade,
+        "money_decision": m.money_decision,
+        "money_qualified": m.money_qualified,
+        "money_rejection_reason": m.money_rejection_reason,
+        "kickoff_time": m.kickoff_time,
     }
 
 

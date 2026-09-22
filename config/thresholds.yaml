@@ -59,3 +59,38 @@ payout_policy:
   normal_min_decimal_odds: 1.33
   preferred_min_decimal_odds: 1.40
   preferred_max_decimal_odds: 2.50
+
+# --- Added 2026-09-22 (TARGETED PRODUCTION CHANGE -- DAILY MONEY WINDOW +
+# MONEY/PAPER SEPARATION). Fraser's own framing: "high/strong probability +
+# credible confidence + statistical support + meaningful payout + acceptable
+# value + acceptable risk" -- NOT "highest probability regardless of price"
+# and NOT "any positive-EV selection regardless of probability." Every value
+# below is the operator's own initial, explicitly-NOT-assumed-optimal
+# starting point (see decisions/money_qualification.py's module docstring)
+# -- paper-trading and backtest evidence should challenge these, tracked
+# prospectively by odds band / probability band, not tuned on a tiny sample.
+money_qualification:
+  # A candidate may appear on the actionable Daily Money Card only if its
+  # kickoff is after the scan timestamp AND within this many hours. Backend/
+  # paper research is NOT limited by this horizon -- see run_daily_scan.py.
+  event_horizon_hours: 24.0
+  # Real-money probability floor for HIGH-confidence candidates.
+  min_probability: 0.50
+  # A stricter probability floor applied when confidence is only MEDIUM --
+  # "potentially eligible only if all other requirements are strong."
+  min_probability_medium_confidence: 0.60
+  # Value/EV floor for HIGH-confidence candidates. Kept separate from (and
+  # in addition to) decisions/grading.py's own net-EV grade thresholds --
+  # this project never assumes an actionable research grade alone proves
+  # acceptable value for a MONEY bet.
+  min_net_ev: 0.02
+  # Stricter EV floor for MEDIUM-confidence candidates.
+  min_net_ev_medium_confidence: 0.05
+  # Confidence labels (decisions/confidence.py) automatically eligible for
+  # money qualification, subject to every other gate.
+  eligible_confidence_labels: ["High"]
+  # Confidence labels conditionally eligible -- only when probability/value
+  # clear the stricter *_medium_confidence floors above AND (optionally)
+  # odds sit inside the preferred payout_policy range.
+  conditional_confidence_labels: ["Medium"]
+  require_preferred_odds_band_for_conditional_confidence: true

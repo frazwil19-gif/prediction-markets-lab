@@ -89,3 +89,36 @@ Real-money (Track A) performance is deliberately NOT in
 `latest_performance.json` -- see `real_bets/README.md` on why paper and
 real performance are kept separate. A real-performance report is not yet
 built.
+
+## Section 8 -- Daily Money Card (2026-09-22 addition)
+
+The "TARGETED PRODUCTION CHANGE -- DAILY MONEY WINDOW + MONEY/PAPER
+SEPARATION" instruction added a narrower, actionable sibling to
+`card.json`/`card.csv`/`card.md`: `daily_cards/<date>/money_card.json`
+and `daily_cards/<date>/money_card.md`. ChatGPT should treat this pair,
+not `card.json`, as the day's actionable recommendation surface --
+`card.json` remains the complete research/audit output (every candidate,
+every grade, regardless of money qualification or event horizon).
+
+**ChatGPT should normally read exactly these three files, in this
+order of priority, and never recompute anything from them:**
+
+1. `daily_cards/<date>/money_card.json` (or `.md` for a human-readable
+   render) -- the actionable Daily Money Card. Empty
+   `money_qualified_candidates` with `money_qualified_count: 0` is a
+   valid, expected outcome, not a failure.
+2. `status/latest.json` -- whether today's scan/settlement actually
+   succeeded (see `money_card_status`, `last_scan_status`), so an empty
+   money card is never mistaken for a broken scanner.
+3. `reports/latest_performance.json` -- specifically its `money_strategy`
+   key for "how has the actual selective strategy performed", as
+   distinct from the broader `overall`/`by_grade`/etc. keys at the top
+   level, which cover the full paper-research candidate universe. These
+   two are deliberately never mixed (see
+   `src/prediction_markets_lab/performance/paper_performance.py`'s
+   module docstring).
+
+`card.json`/`card.csv`/`card.md` remain available for deeper research
+review but are not the day-to-day interface -- see
+`research/cycles/CYCLE_003_FOOTBALL/MONEY_WINDOW_AND_MONEY_PAPER_SEPARATION_CHECKPOINT.md`
+for the full design.

@@ -29,6 +29,21 @@ class SystemStatus:
     unsettled_paper_bet_count: int
     warnings: list[str] = field(default_factory=list)
     generated_at: str = field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
+    # --- Added 2026-09-22 (TARGETED PRODUCTION CHANGE -- DAILY MONEY
+    # WINDOW + MONEY/PAPER SEPARATION, Section 13). All optional/defaulted
+    # so every existing caller that built a SystemStatus before these
+    # fields existed keeps working unchanged.
+    research_candidates: int | None = None
+    money_qualified_count: int | None = None
+    paper_money_pending: int | None = None
+    paper_research_pending: int | None = None
+    # "ok" (a money_card.json exists for the latest scan, whether or not
+    # it has any qualifying bets in it -- "no money bets qualified today"
+    # is a valid, successful outcome) vs "missing" (no money card was
+    # produced -- e.g. because the scan itself failed). Mirrors this
+    # module's own core distinction (last_scan_status) at the money-card
+    # level specifically -- see module docstring.
+    money_card_status: str = "unknown"
 
     def to_dict(self) -> dict:
         return {
@@ -47,4 +62,9 @@ class SystemStatus:
             "engine_version": self.engine_version,
             "unsettled_paper_bet_count": self.unsettled_paper_bet_count,
             "warnings": self.warnings,
+            "research_candidates": self.research_candidates,
+            "money_qualified_count": self.money_qualified_count,
+            "paper_money_pending": self.paper_money_pending,
+            "paper_research_pending": self.paper_research_pending,
+            "money_card_status": self.money_card_status,
         }

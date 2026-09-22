@@ -86,6 +86,19 @@ _FIELDS = [
     "closing_odds_if_available",
     "actual_pnl",
     "paper_bankroll_after_settlement",
+    # --- Added 2026-09-22 (TARGETED PRODUCTION CHANGE -- DAILY MONEY
+    # WINDOW + MONEY/PAPER SEPARATION). A core decision field, set once at
+    # bet-creation time from decisions.money_qualification's result and
+    # never touched by settle_paper_bet (it is not in _SETTLEMENT_FIELDS
+    # below). This is what lets performance.paper_performance separate
+    # the narrow, actually-selective "paper_money_strategy" from the
+    # broad "paper_research" universe -- see that module's module
+    # docstring. Appended at the end so every existing row (written
+    # before this field existed) still parses: csv.DictReader leaves a
+    # missing trailing column as a KeyError-free absence, and
+    # load_paper_bets/_write_all round-trip it as "" for old rows, which
+    # performance.paper_performance treats as not money-qualified.
+    "money_qualified",
 ]
 
 # Fields that settle_paper_bet is allowed to change. Everything else in
@@ -125,6 +138,7 @@ class PaperBet:
     closing_odds_if_available: str = ""
     actual_pnl: str = ""
     paper_bankroll_after_settlement: str = ""
+    money_qualified: bool = False
 
 
 def _fair_odds(probability: float) -> float:
@@ -201,7 +215,13 @@ def record_qualifying_candidates(
             created_at=created_at,
             event_id=m.market_id,
             event=m.event,
-            kickoff=m.event_date,  # see module docstring's KNOWN LIMITATION
+            # Prefer the real kickoff timestamp when this scan supplied one
+            # (live odds-api scans -- see ingestion/the_odds_api_loader.py
+            # and decisions/money_qualification.py); fall back to the
+            # date-only value for manual-mode scans, which never had one --
+            # see this module's KNOWN LIMITATION note above, now resolved
+            # for the live path.
+            kickoff=m.kickoff_time or m.event_date,
             sport=m.sport,
             competition=m.competition,
             market=m.market_type,
@@ -218,6 +238,7 @@ def record_qualifying_candidates(
             data_version=data_version,
             decision_reason=m.decision,
             status="pending",
+            money_qualified=m.money_qualified,
         )
         new_rows.append(asdict(bet))
         newly_recorded.append(bet_id)
@@ -334,7 +355,10 @@ def record_qualifying_candidates_from_contract(
             created_at=created_at,
             event_id=bet_id,
             event=candidate["event"],
-            kickoff=candidate["date"],  # see module docstring's KNOWN LIMITATION
+            # Prefer the real kickoff timestamp when the contract carries
+            # one (see this module's other record_* function) -- older
+            # contracts built before 2026-09-22 will not have this key.
+            kickoff=candidate.get("kickoff_time") or candidate["date"],
             sport=candidate["sport"],
             competition=candidate["competition"],
             market=candidate["market"],
@@ -351,6 +375,7 @@ def record_qualifying_candidates_from_contract(
             data_version=candidate["model_version"],
             decision_reason=candidate["reason"],
             status="pending",
+            money_qualified=bool(candidate.get("money_qualified", False)),
         )
         new_rows.append(asdict(bet))
         newly_recorded.append(bet_id)

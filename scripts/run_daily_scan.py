@@ -97,6 +97,7 @@ import yaml
 from prediction_markets_lab.decisions.confidence import ConfidenceThresholds
 from prediction_markets_lab.decisions.data_quality import DataQualityThresholds
 from prediction_markets_lab.decisions.grading import GradingThresholds
+from prediction_markets_lab.decisions.money_qualification import MoneyQualificationThresholds
 from prediction_markets_lab.decisions.payout_policy import PayoutPolicyThresholds
 from prediction_markets_lab.decisions.recommendation import (
     PriceQuote,
@@ -125,6 +126,11 @@ from prediction_markets_lab.reports.daily_bet_card import (
     build_daily_bet_card_contract,
     render_daily_bet_card,
     write_daily_bet_card_outputs,
+)
+from prediction_markets_lab.reports.money_card import (
+    build_money_card_contract,
+    render_money_card_markdown,
+    write_money_card_outputs,
 )
 from prediction_markets_lab.risk.staking import StakingConfig
 from prediction_markets_lab.storage.csv_store import append_record
@@ -179,6 +185,22 @@ def build_payout_policy_thresholds(t: dict) -> PayoutPolicyThresholds:
         normal_min_decimal_odds=p.get("normal_min_decimal_odds", 1.33),
         preferred_min_decimal_odds=p.get("preferred_min_decimal_odds", 1.40),
         preferred_max_decimal_odds=p.get("preferred_max_decimal_odds", 2.50),
+    )
+
+
+def build_money_qualification_thresholds(t: dict) -> MoneyQualificationThresholds:
+    m = t.get("money_qualification", {})
+    return MoneyQualificationThresholds(
+        event_horizon_hours=m.get("event_horizon_hours", 24.0),
+        min_probability=m.get("min_probability", 0.50),
+        min_probability_medium_confidence=m.get("min_probability_medium_confidence", 0.60),
+        min_net_ev=m.get("min_net_ev", 0.02),
+        min_net_ev_medium_confidence=m.get("min_net_ev_medium_confidence", 0.05),
+        eligible_confidence_labels=frozenset(m.get("eligible_confidence_labels", ["High"])),
+        conditional_confidence_labels=frozenset(m.get("conditional_confidence_labels", ["Medium"])),
+        require_preferred_odds_band_for_conditional_confidence=m.get(
+            "require_preferred_odds_band_for_conditional_confidence", True
+        ),
     )
 
 
@@ -287,6 +309,7 @@ def main() -> int:
     confidence_thresholds = build_confidence_thresholds(thresholds)
     data_quality_thresholds = build_data_quality_thresholds(thresholds)
     payout_policy_thresholds = build_payout_policy_thresholds(thresholds)
+    money_qualification_thresholds = build_money_qualification_thresholds(thresholds)
 
     system_warnings: list[str] = []
     live_scan_timestamp: str | None = None
@@ -381,6 +404,8 @@ def main() -> int:
                 confidence_thresholds=confidence_thresholds,
                 data_quality_thresholds=data_quality_thresholds,
                 payout_policy_thresholds=payout_policy_thresholds,
+                money_qualification_thresholds=money_qualification_thresholds,
+                kickoff_iso=meta.get("commence_time"),
             )
             recommendations.append(result)
 
@@ -409,6 +434,19 @@ def main() -> int:
     written = write_daily_bet_card_outputs(cards_dir, contract, card_text)
     print(f"Daily Bet Card contract (json/csv/md) written to {cards_dir}", file=sys.stderr)
     for kind, path in written.items():
+        print(f"  {kind}: {path}", file=sys.stderr)
+
+    money_contract = build_money_card_contract(
+        contract, money_qualification_thresholds.event_horizon_hours
+    )
+    money_markdown = render_money_card_markdown(money_contract, date_label=date.today().isoformat())
+    money_written = write_money_card_outputs(cards_dir, money_contract, money_markdown)
+    print(
+        f"Daily Money Card (json/md) written to {cards_dir} -- "
+        f"{money_contract['money_qualified_count']} money-qualified candidate(s)",
+        file=sys.stderr,
+    )
+    for kind, path in money_written.items():
         print(f"  {kind}: {path}", file=sys.stderr)
 
     candidates_path = (

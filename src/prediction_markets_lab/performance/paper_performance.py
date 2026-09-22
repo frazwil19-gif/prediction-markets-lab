@@ -19,6 +19,23 @@ Only SETTLED bets contribute to win-rate/Brier/log-loss/calibration
 from those same metrics (neither a win nor a loss) but their stake and
 zero pnl are still included in exposure/P&L/ROI totals, matching
 standard betting-performance convention.
+
+2026-09-22 addition (TARGETED PRODUCTION CHANGE -- DAILY MONEY WINDOW +
+MONEY/PAPER SEPARATION instruction, Section 12): every top-level key this
+module has always returned (overall/by_grade/by_sport/by_competition/
+by_market/by_odds_band/pending_bet_count/current_paper_bankroll_gbp)
+keeps its EXACT existing meaning, unchanged -- the broad "paper research"
+universe: every A+/A/B graded candidate ever recorded to the ledger,
+whether or not it later passed real-money qualification. This is
+deliberate backward compatibility, not an oversight. A NEW sibling key,
+`money_strategy`, mirrors the same overall/by_grade/by_sport/
+by_competition/by_market/by_odds_band/pending_bet_count shape but is
+computed ONLY over rows where storage.paper_ledger.PaperBet.
+money_qualified is true -- the actual, selective real-money strategy's
+own forward performance. The two are never combined or averaged
+together anywhere in this module: "Need to know 'how would the actual
+money strategy have performed?' separately from 'how did the broader
+research candidate universe perform?'"
 """
 
 from __future__ import annotations
@@ -109,6 +126,38 @@ def _group_by(rows: list[dict], key: str) -> dict[str, list[dict]]:
     return groups
 
 
+def _is_money_qualified(row: dict) -> bool:
+    """Truthy-string-tolerant read of the ledger's money_qualified column.
+
+    storage.paper_ledger writes bool fields through csv.DictWriter, which
+    stringifies True/False -- and an older row recorded before this
+    column existed reads back as "" (see storage/paper_ledger.py's
+    money_qualified field comment). Both "" and "False" (any case) are
+    treated as not money-qualified; nothing here ever guesses a row INTO
+    the money strategy that was not explicitly recorded as such.
+    """
+    return str(row.get("money_qualified", "")).strip().lower() in {"true", "1", "yes"}
+
+
+def _breakdown(rows: list[dict]) -> dict:
+    """Build the overall/by_grade/.../by_odds_band breakdown shared by
+    both the broad paper-research report and the narrower money-strategy
+    report -- kept as one function so the two are computed identically
+    and never drift apart in method, only in which rows feed them."""
+    by_odds_band: dict[str, list[dict]] = {label: [] for label, _, _ in ODDS_BANDS}
+    for row in rows:
+        by_odds_band[band_for_odds(_to_float(row["quoted_odds"]))].append(row)
+
+    return {
+        "overall": _summarise(rows),
+        "by_grade": {k: _summarise(v) for k, v in sorted(_group_by(rows, "grade").items())},
+        "by_sport": {k: _summarise(v) for k, v in sorted(_group_by(rows, "sport").items())},
+        "by_competition": {k: _summarise(v) for k, v in sorted(_group_by(rows, "competition").items())},
+        "by_market": {k: _summarise(v) for k, v in sorted(_group_by(rows, "market").items())},
+        "by_odds_band": {k: _summarise(v) for k, v in by_odds_band.items() if v},
+    }
+
+
 def build_performance_report(paper_bets: list[dict], starting_bankroll_gbp: float) -> dict:
     """Build the full latest_performance.json contract for the paper ledger.
 
@@ -119,18 +168,17 @@ def build_performance_report(paper_bets: list[dict], starting_bankroll_gbp: floa
         starting_bankroll_gbp: config/bankroll.yaml's starting_bankroll_gbp.
 
     Returns:
-        A JSON-serialisable dict: overall summary plus breakdowns by
-        grade/sport/competition/market/odds-band (Section 8's required
-        breakdowns; probability-band is covered by the calibration bins
-        already, so is not separately re-bucketed here to avoid a
-        redundant, harder-to-reconcile second slicing of the same data).
+        A JSON-serialisable dict: the broad paper-research breakdown at
+        the top level (unchanged shape/meaning -- see module docstring),
+        plus a `money_strategy` key with the identical breakdown shape
+        computed only over money-qualified rows.
     """
     settled = [r for r in paper_bets if r.get("status") == "settled"]
     pending_count = sum(1 for r in paper_bets if r.get("status") == "pending")
 
-    by_odds_band: dict[str, list[dict]] = {label: [] for label, _, _ in ODDS_BANDS}
-    for row in settled:
-        by_odds_band[band_for_odds(_to_float(row["quoted_odds"]))].append(row)
+    money_bets = [r for r in paper_bets if _is_money_qualified(r)]
+    money_settled = [r for r in money_bets if r.get("status") == "settled"]
+    money_pending_count = sum(1 for r in money_bets if r.get("status") == "pending")
 
     paper_bankroll_gbp = starting_bankroll_gbp
     if settled:
@@ -140,14 +188,21 @@ def build_performance_report(paper_bets: list[dict], starting_bankroll_gbp: floa
                 with_bankroll[-1]["paper_bankroll_after_settlement"], starting_bankroll_gbp
             )
 
-    return {
+    report = {
         "starting_bankroll_gbp": starting_bankroll_gbp,
         "current_paper_bankroll_gbp": round(paper_bankroll_gbp, 2),
         "pending_bet_count": pending_count,
-        "overall": _summarise(settled),
-        "by_grade": {k: _summarise(v) for k, v in sorted(_group_by(settled, "grade").items())},
-        "by_sport": {k: _summarise(v) for k, v in sorted(_group_by(settled, "sport").items())},
-        "by_competition": {k: _summarise(v) for k, v in sorted(_group_by(settled, "competition").items())},
-        "by_market": {k: _summarise(v) for k, v in sorted(_group_by(settled, "market").items())},
-        "by_odds_band": {k: _summarise(v) for k, v in by_odds_band.items() if v},
+        "paper_universe_note": (
+            "overall/by_grade/by_sport/by_competition/by_market/by_odds_band above cover the "
+            "BROAD paper-research candidate universe -- every A+/A/B graded candidate recorded "
+            "to the ledger, whether or not it passed real-money qualification. See "
+            "money_strategy below for the narrower, selective real-money strategy's own "
+            "forward performance; the two are never mixed together in any calculation here."
+        ),
     }
+    report.update(_breakdown(settled))
+    report["money_strategy"] = {
+        "pending_bet_count": money_pending_count,
+        **_breakdown(money_settled),
+    }
+    return report

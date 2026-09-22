@@ -26,6 +26,10 @@ from prediction_markets_lab.decisions.grading import (
     GradingThresholds,
     grade_opportunity,
 )
+from prediction_markets_lab.decisions.money_qualification import (
+    MoneyQualificationThresholds,
+    assess_money_qualification,
+)
 from prediction_markets_lab.decisions.payout_policy import PayoutPolicyThresholds, apply_payout_floor
 from prediction_markets_lab.decisions.liquidity import assess_liquidity
 from prediction_markets_lab.ev.expected_value import evaluate
@@ -82,6 +86,8 @@ def build_recommendation(
     no_material_info_risk: bool = True,
     market_rules_match: bool = True,
     payout_policy_thresholds: PayoutPolicyThresholds = PayoutPolicyThresholds(),
+    money_qualification_thresholds: MoneyQualificationThresholds = MoneyQualificationThresholds(),
+    kickoff_iso: str | None = None,
 ) -> RecommendationResult:
     """Assemble one candidate's full Daily Card row and recommended stake.
 
@@ -125,6 +131,19 @@ def build_recommendation(
             C (watch-only) if the price is below the configured payout
             floor. Callers should normally load config/thresholds.yaml's
             payout_policy section rather than relying on this default.
+        money_qualification_thresholds: The active decisions.
+            money_qualification.MoneyQualificationThresholds, applied
+            AFTER the payout floor above (so research_grade already
+            reflects any payout-floor demotion) to decide money_qualified/
+            money_decision/money_rejection_reason -- see that module.
+            Callers should normally load config/thresholds.yaml's
+            money_qualification section rather than relying on this
+            default.
+        kickoff_iso: The fixture's full ISO kickoff timestamp, if known
+            (live odds-api scans only). None for manual-mode scans, which
+            always fail the money-event horizon check (see
+            decisions.money_qualification's module docstring) -- research_
+            grade/paper-tracking are entirely unaffected by this.
 
     Returns:
         A RecommendationResult with the fully populated MarketRecord
@@ -173,6 +192,19 @@ def build_recommendation(
         grading_result = GradingResult(demoted_grade, demoted_reason)
     stake_gbp = recommended_stake_gbp(grading_result.grade, staking_config)
 
+    money_result = assess_money_qualification(
+        research_grade=grading_result.grade,
+        estimated_probability=consensus.consensus_probability,
+        confidence_label=confidence_label,
+        data_quality_ok=data_quality.ok,
+        decimal_odds=best_price.decimal_odds,
+        net_ev=ev_result.net_ev,
+        kickoff_iso=kickoff_iso,
+        scan_timestamp_iso=scan_timestamp,
+        payout_policy_thresholds=payout_policy_thresholds,
+        thresholds=money_qualification_thresholds,
+    )
+
     record = MarketRecord(
         market_id=market_id,
         scan_timestamp=scan_timestamp,
@@ -201,5 +233,10 @@ def build_recommendation(
         grade=grading_result.grade,
         decision=grading_result.reason,
         rejection_reason=grading_result.reason if grading_result.grade == "Reject" else "",
+        research_grade=grading_result.grade,
+        money_decision=money_result.money_decision,
+        money_qualified=money_result.money_qualified,
+        money_rejection_reason="; ".join(money_result.money_rejection_reasons),
+        kickoff_time=kickoff_iso,
     )
     return RecommendationResult(market_record=record, stake_gbp=stake_gbp)

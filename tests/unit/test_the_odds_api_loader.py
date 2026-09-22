@@ -236,3 +236,20 @@ def test_h2h_lay_market_key_is_ignored_not_treated_as_h2h():
     # no overwrite, no second "William Hill" entry.
     assert odds[market_id_1x2]["William Hill"] == {"home": 2.10, "draw": 3.40, "away": 3.60}
     assert not any("duplicate" in w.lower() for w in warnings)
+
+
+# ---------------------------------------------------------------------------
+# commence_time in metadata (TARGETED PRODUCTION CHANGE -- DAILY MONEY
+# WINDOW + MONEY/PAPER SEPARATION, 2026-09-22): decisions.money_qualification
+# needs the full kickoff timestamp, not just the date -- added additively,
+# event_date is unchanged.
+# ---------------------------------------------------------------------------
+
+
+def test_metadata_carries_full_commence_time_alongside_event_date():
+    events = parse_odds_response([_sample_event()], sport_key="soccer_epl")
+    config = TheOddsApiConfig()
+    _, metadata, _ = build_canonical_odds_and_metadata(events, config, scan_timestamp="2026-09-19T09:00:00")
+    market_id = "soccer_epl-evt-001-1x2"
+    assert metadata[market_id]["event_date"] == "2026-09-19"
+    assert metadata[market_id]["commence_time"] == "2026-09-19T19:00:00Z"
