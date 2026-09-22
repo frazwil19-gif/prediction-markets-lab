@@ -5,6 +5,20 @@ session, any operator instruction) can check a market's status here before propo
 than accidentally repeating exhausted research -- the whole point Section 26 of the Phase 4 instruction
 asked for.
 
+
+## Best Available Probability Estimator by market (added Phase 5, 2026-09-22)
+
+This atlas records the **best available estimator**, not the best model that beats the market. Market consensus is a
+legitimate estimator. See `research/btts_outcome_prediction/PROBABILITY_ENGINE_ARCHITECTURE.md`.
+
+| market | best probability estimator | outcome-prediction | betting replay | live |
+|---|---|---|---|---|
+| Football 1X2 | de-vigged consensus | EXHAUSTED (validated) | EXHAUSTED | LIVE |
+| Football O/U 2.5 | de-vigged consensus | VALIDATED | BLOCKED (thin panel) | LIVE |
+| Football BTTS | market-implied Poisson (1X2 + O/U 2.5) | VALIDATED | BLOCKED (no odds) | available, not wired |
+| Football Asian Handicap | not researched | UNEXPLORED | BLOCKED (thin panel) | available (spreads), not wired |
+| Tennis Match Winner | Betfair-archive consensus | edge-hunting EXHAUSTED | open (money-qualification) | not wired |
+
 ## Football 1X2
 
 - **Status**: EXHAUSTED -- CURRENT INFORMATION SET
@@ -70,22 +84,22 @@ asked for.
   evidence behind it); optionally extend the feature pipeline to 2025/26+ for a genuine prospective
   check (shared recommendation with the 1X2 Outcome Discovery cycle)
 
-## Football Both Teams To Score (BTTS)
+## Football Both Teams To Score (BTTS)  — updated Phase 5, 2026-09-22
 
-- **Status**: UNEXPLORED
-- **Outcome-prediction feasibility**: HIGH -- BTTS = (home_goals > 0 AND away_goals > 0) is trivially
-  derivable from the same `outcome_full_time_home_goals`/`outcome_full_time_away_goals` columns already
-  used for O/U 2.5, for all 5,800 matches. The same fundamentals feature set (rolling goals/shots/SOT)
-  is directly relevant. No new acquisition needed to build Stage A.
-- **Money-qualification backtest feasibility**: NONE currently -- no historical BTTS bookmaker odds of
-  any kind exist anywhere in the repository (confirmed, Phase 3 inventory). The Odds API's documented
-  `btts` market key is not currently fetched by `the_odds_api_loader.py`; BTTS is NOT wired into
-  `decisions/recommendation.py` or `scripts/run_daily_scan.py` at all (`research/data_expansion/
-  LIVE_MARKET_COMPATIBILITY.md`).
-- **Next action**: a legitimate candidate for a FUTURE Stage-A-only outcome-prediction cycle (same
-  target-construction and modelling pattern as this cycle's O/U 2.5 work, near-zero marginal
-  engineering cost) but NOT selected this cycle -- see Market Priority Decision below for why O/U 2.5
-  was chosen first (live compatibility, existing production wiring).
+| field | value |
+|---|---|
+| OUTCOME PREDICTION STATUS | **VALIDATED** (dev walk-forward 2021/22–2023/24 + sealed 2024/25 holdout, opened once) |
+| BEST PROBABILITY ESTIMATOR | **market_implied_poisson**: λ from de-vigged 1X2 + O/U 2.5 prices, P = (1−e^−λh)(1−e^−λa), 0 fitted params. Market-derived, not a BTTS price |
+| HISTORICAL SAMPLE | 5,800 matches, E0/E1/SC0, 2020/21–2024/25, YES base rate 50.5% (45.6% → 55.0% drift by season) |
+| CALIBRATION STATUS | good: slope 1.06 dev / 0.93 holdout, ECE 1.2% / 1.7%; bands with n≥100 within about ±4.5 pp |
+| SEALED HOLDOUT STATUS | DONE: log loss 0.6857, Brier 0.2463, AUC 0.563, top-pick accuracy 55.9%. Data-only model REJECTED (AUC 0.496) |
+| HISTORICAL BETTING-REPLAY STATUS | BLOCKED_BY_HISTORICAL_DATA (no BTTS odds exist in the archive) |
+| LIVE MARKET STATUS | AVAILABLE: Odds API `btts`, per-event endpoint, 1 credit/event, 9 UK books incl. Betfair Exchange (probe 2026-09-22). Not wired |
+| PROSPECTIVE PAPER STATUS | NOT STARTED (needs approval: credit budget + adapter) |
+| KNOWN LIMITATIONS | BTTS is intrinsically low-confidence: P spans 0.31–0.72, ≥60% picks on only 7–10% of matches, never ≥75%. No direct BTTS-consensus benchmark historically |
+| NEXT ACTION | live quote preservation, then paper-only BTTS wiring under the unchanged money policy |
+
+Full package: `research/btts_outcome_prediction/`.
 
 ## Football Asian Handicap
 

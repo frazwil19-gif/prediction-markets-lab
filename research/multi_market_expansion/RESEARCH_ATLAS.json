@@ -1,7 +1,7 @@
 {
-  "atlas_version": "1.0",
+  "atlas_version": "1.1",
   "generated_at": "2026-09-22",
-  "generated_by_cycle": "phase4_multi_market_expansion / gate1b_ou25_probability_architecture_comparison",
+  "generated_by_cycle": "phase5_btts_outcome_prediction (updates v1.0 from phase4)",
   "schema_note": "One entry per (sport, market). status is one of: EXHAUSTED, READY_FOR_OUTCOME_DISCOVERY, PARTIALLY_EXPLORED, BLOCKED_BY_HISTORICAL_DATA, BLOCKED_BY_LIVE_DATA, REQUIRES_NEW_INFORMATION, UNEXPLORED. outcome_prediction_status and betting_backtest_status are tracked as SEPARATE axes per Phase 4 Section 8/20 -- a market can be READY on one axis and BLOCKED_BY_HISTORICAL_DATA on the other.",
   "markets": [
     {
@@ -25,7 +25,10 @@
         "2025_26 season not yet run through the acquisition/feature pipeline (raw files present, unprocessed)",
         "fundamentals cannot beat market probability once conditioned on it"
       ],
-      "next_action": "Do not spend further Claude research cycles on 1X2 outcome-prediction with the current feature set. Revisit only if a genuinely new information source becomes available (e.g. team news, lineups, live in-play data)."
+      "next_action": "Do not spend further Claude research cycles on 1X2 outcome-prediction with the current feature set. Revisit only if a genuinely new information source becomes available (e.g. team news, lineups, live in-play data).",
+      "best_probability_estimator": "de-vigged multi-bookmaker consensus",
+      "live_market_status": "LIVE in production (Daily Card + Money Card)",
+      "prospective_paper_status": "RUNNING -- paper ledger since 2026-09-19"
     },
     {
       "sport": "football",
@@ -48,27 +51,55 @@
         "2025_26 season not yet in the feature pipeline",
         "No feature-stability (season-by-season coefficient drift) analysis run this cycle -- only performance metrics"
       ],
-      "next_action": "Market alone remains the strongest O/U2.5 estimator; no fundamentals model justifies production deployment yet. Recommend: (a) begin preserving raw per-bookmaker O/U2.5 quotes prospectively for a future thicker panel, (b) do not build a betting overlay from historical data, (c) move to the next market (BTTS) for the next Stage-A-only cycle rather than re-working O/U2.5."
+      "next_action": "Market alone remains the strongest O/U2.5 estimator; no fundamentals model justifies production deployment yet. Recommend: (a) begin preserving raw per-bookmaker O/U2.5 quotes prospectively for a future thicker panel, (b) do not build a betting overlay from historical data, (c) move to the next market (BTTS) for the next Stage-A-only cycle rather than re-working O/U2.5.",
+      "best_probability_estimator": "de-vigged multi-bookmaker consensus",
+      "live_market_status": "LIVE in production (totals 2.5 line)",
+      "prospective_paper_status": "RUNNING -- paper ledger since 2026-09-19"
     },
     {
       "sport": "football",
       "market": "Both Teams to Score (BTTS)",
-      "status": "UNEXPLORED",
-      "outcome_prediction_status": "UNEXPLORED -- no cycle run yet",
-      "betting_backtest_status": "UNEXPLORED -- historical odds depth not yet audited for this market",
-      "data_family": "goal counts already present in cycle_002_match_statistics.csv; BTTS market odds not yet extracted from raw bookmaker feeds",
-      "cycles_completed": [],
-      "best_estimator": null,
-      "sample_size": null,
-      "calibration_status": "NOT_STARTED",
-      "sealed_holdout_status": "NOT_STARTED",
-      "betting_overlay_status": "NOT_STARTED",
-      "live_support": "LIKELY -- BTTS odds are commonly quoted live, same infrastructure as O/U2.5",
-      "limitations": [
-        "Target (both teams score >=1) is trivially derivable from existing goal data, so no new acquisition needed for Stage A",
-        "Market odds extraction/aggregation code for BTTS does not yet exist and would need to be built (adapted from the O/U2.5 aggregation pipeline)"
+      "status": "OUTCOME_PREDICTION_VALIDATED",
+      "outcome_prediction_status": "VALIDATED -- Phase 5 Stage A complete (dev walk-forward + sealed 2024_25 holdout, opened once)",
+      "best_probability_estimator": "market_implied_poisson -- lambda_home/lambda_away solved from de-vigged 1X2 consensus + O/U2.5 probability, P(BTTS)=(1-e^-lh)(1-e^-la); zero fitted parameters. MARKET-DERIVED, not a BTTS price.",
+      "best_estimator": "market_implied_poisson (see best_probability_estimator)",
+      "sample_size": 5800,
+      "base_rate_yes": 0.505,
+      "development_metrics": {
+        "n": 3437,
+        "log_loss": 0.6867,
+        "brier": 0.2468,
+        "auc": 0.56,
+        "accuracy": 0.537,
+        "calibration_slope": 1.06,
+        "ece": 0.012
+      },
+      "holdout_metrics": {
+        "n": 1158,
+        "log_loss": 0.6857,
+        "brier": 0.2463,
+        "auc": 0.563,
+        "accuracy": 0.559,
+        "calibration_slope": 0.93,
+        "ece": 0.017
+      },
+      "calibration_status": "DONE -- well calibrated in all bands with n>=100 (within about +-4.5pp); predictions span only 0.31-0.72; >=60% picks occur on 7-10% of matches and hit 63.2% on holdout (63.2% predicted); no prediction >=75% ever",
+      "sealed_holdout_status": "DONE -- selected estimator confirmed; data-only model REJECTED (holdout AUC 0.496); goal-model Poisson, recalibrated and opening-price variants statistically tied",
+      "betting_backtest_status": "BLOCKED_BY_HISTORICAL_DATA -- zero BTTS odds columns in football-data.co.uk",
+      "betting_overlay_status": "BLOCKED_BY_HISTORICAL_DATA -- not fabricated",
+      "live_market_status": "AVAILABLE -- Odds API 'btts' via per-event endpoint, 1 credit/event; probe 2026-09-22 found 9 UK books incl. Betfair Exchange. NOT wired.",
+      "prospective_paper_status": "NOT_STARTED -- needs approval (API credit budget + adapter)",
+      "data_family": "cycle_002_discovery_features.csv + phase5 rolling BTTS features",
+      "cycles_completed": [
+        "phase5_btts_outcome_prediction"
       ],
-      "next_action": "Strong candidate for the next Stage-A-only cycle after O/U2.5. Target construction is nearly free (same match_statistics source); would need a new market-odds extraction step if a market-only model is desired."
+      "limitations": [
+        "No historical BTTS prices -> no direct BTTS consensus benchmark yet",
+        "BTTS is intrinsically low-confidence: AUC ~0.56",
+        "2024_25 not fully blind at dataset level",
+        "2025_26 not in feature pipeline"
+      ],
+      "next_action": "If approved: fetch live BTTS quotes for money-window fixtures only, log per PROBABILITY_ENGINE_ARCHITECTURE.md s4, compare direct BTTS consensus vs market_implied_poisson prospectively, evaluate paper selections under the UNCHANGED money policy."
     },
     {
       "sport": "football",
@@ -91,7 +122,10 @@
         "Historical panel thin, same as O/U2.5",
         "More implementation complexity than O/U2.5 or BTTS for a first cycle"
       ],
-      "next_action": "Defer until after BTTS. Requires a line-handling design decision (per-line modelling or line-relative feature) before a Stage A cycle can start cleanly."
+      "next_action": "Defer until after BTTS. Requires a line-handling design decision (per-line modelling or line-relative feature) before a Stage A cycle can start cleanly.",
+      "best_probability_estimator": null,
+      "live_market_status": "AVAILABLE via Odds API spreads (not wired)",
+      "prospective_paper_status": "NOT_STARTED"
     },
     {
       "sport": "tennis",
@@ -113,7 +147,10 @@
         "Substantially researched already; do not default back to it without a genuinely new question (per Phase 4 Section 5)",
         "13 candidate edge features already rejected in Workstream B"
       ],
-      "next_action": "Do not reopen for outcome-prediction discovery. The open item is the money-qualification/betting-backtest cycle Phase 3 nominated -- pick this up only when the project is ready to run a Stage B-focused cycle rather than another Stage A discovery pass."
+      "next_action": "Do not reopen for outcome-prediction discovery. The open item is the money-qualification/betting-backtest cycle Phase 3 nominated -- pick this up only when the project is ready to run a Stage B-focused cycle rather than another Stage A discovery pass.",
+      "best_probability_estimator": "Betfair-archive consensus (edge-hunting exhausted)",
+      "live_market_status": "NOT WIRED",
+      "prospective_paper_status": "NOT_STARTED"
     },
     {
       "sport": "other (basketball, cricket, etc.)",
@@ -139,9 +176,20 @@
     {
       "cycle": "phase4_multi_market_expansion",
       "date": "2026-09-22",
-      "candidates_considered": ["football_ou25", "football_btts", "football_ah", "tennis_match_winner"],
+      "candidates_considered": [
+        "football_ou25",
+        "football_btts",
+        "football_ah",
+        "tennis_match_winner"
+      ],
       "selected": "football_ou25",
       "reason": "Highest combination of sample size (5,800 matches, 99.3% feature coverage), lowest implementation complexity (binary target, existing binary-outcome tooling directly reusable), full research independence from the exhausted 1X2 question, live compatibility, and calibration feasibility -- all per the criteria in Phase 4 Section 18, explicitly not chosen for perceived historical profitability. BTTS and AH deferred (BTTS needs new market-odds extraction code; AH needs a line-handling design). Tennis deliberately not defaulted to per Section 5."
+    },
+    {
+      "date": "2026-09-22",
+      "cycle": "phase5_btts_outcome_prediction",
+      "decision": "BTTS best estimator = market_implied_poisson; next recommended = live-data preservation + BTTS/OU prospective paper wiring, then Football Asian Handicap Stage A"
     }
-  ]
+  ],
+  "probability_engine_principle": "Each market records its BEST AVAILABLE PROBABILITY ESTIMATOR, not the best model that beats the market. Market consensus is a legitimate estimator. The probability engine does not need historical betting profitability to be useful; the betting decision engine separately judges price/value/risk. See research/btts_outcome_prediction/PROBABILITY_ENGINE_ARCHITECTURE.md."
 }

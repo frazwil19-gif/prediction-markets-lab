@@ -1,0 +1,97 @@
+{
+ "n_matches": 5800,
+ "snapshot": "closing",
+ "methods": {
+  "inclusive": {
+   "n_ev_positive": 3040,
+   "share_ev_positive": 0.17471264367816092,
+   "mean_claimed_ev": 0.02841771081343202,
+   "realised_roi": -0.01174999999999999,
+   "realised_roi_ci95": [
+    -0.09205534539473685,
+    0.06948848684210521
+   ],
+   "mean_odds": 6.968253289473685,
+   "roi_by_outcome": {
+    "away": {
+     "n": 1504,
+     "roi": -0.03360372340425531
+    },
+    "draw": {
+     "n": 819,
+     "roi": -0.0015750915750915848
+    },
+    "home": {
+     "n": 717,
+     "roi": 0.022468619246861925
+    }
+   }
+  },
+  "leave_one_bookmaker_out": {
+   "n_ev_positive": 4640,
+   "share_ev_positive": 0.26666666666666666,
+   "mean_claimed_ev": 0.033507173873563216,
+   "realised_roi": -0.019189655172413802,
+   "realised_roi_ci95": [
+    -0.08246535560344827,
+    0.039845689655172406
+   ],
+   "mean_odds": 6.016366379310345,
+   "roi_by_outcome": {
+    "away": {
+     "n": 2105,
+     "roi": -0.02240380047505937
+    },
+    "draw": {
+     "n": 1391,
+     "roi": -0.03314881380301942
+    },
+    "home": {
+     "n": 1144,
+     "roi": 0.003697552447552457
+    }
+   }
+  },
+  "sharp_reference_PS": {
+   "n_ev_positive": 1772,
+   "share_ev_positive": 0.10189178310620436,
+   "mean_claimed_ev": 0.02550162916478555,
+   "realised_roi": 0.013978555304740405,
+   "realised_roi_ci95": [
+    -0.07809382054176071,
+    0.10837485891647847
+   ],
+   "mean_odds": 5.232178329571106,
+   "roi_by_outcome": {
+    "away": {
+     "n": 633,
+     "roi": 0.012654028436018937
+    },
+    "draw": {
+     "n": 616,
+     "roi": 0.019431818181818196
+    },
+    "home": {
+     "n": 523,
+     "roi": 0.009158699808795414
+    }
+   }
+  }
+ },
+ "n_candidates": 17400,
+ "mean_ev_inflation_inclusive_minus_loo": -0.006644306935766283,
+ "share_candidates_where_inclusive_positive_but_loo_not": 0.0,
+ "baseline_back_every_best_price": {
+  "n": 17400,
+  "roi": -0.028873563218390803,
+  "ci95": [
+   -0.05157012931034483,
+   -0.0047456178160919585
+  ]
+ },
+ "caveats": [
+  "Closing snapshot only: consensus and price drawn from the same instant (leakage-safe, but not a live scan-time replay).",
+  "Best price among 4-6 football-data.co.uk bookmakers; live panel has ~20, so dispersion live is larger.",
+  "No thresholds searched; EV>0 is the only split. This is design evidence, not a strategy backtest."
+ ]
+}
