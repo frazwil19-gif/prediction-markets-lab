@@ -1,0 +1,14 @@
+{
+ "phase": "V2-2 Workstream B WTA Match Winner",
+ "frozen_before_opening": true,
+ "dataset": "data/interim/v2_wta_market_dataset.csv (scripts/build_v2_wta_market_dataset.py; 10,352 rows; Betfair source hash prefix e34da4cea6db2a2a; results SHA256SUMS in data/raw/tennis/tennis_court_log_wta)",
+ "development_years": [2021, 2022, 2023],
+ "holdout_years": [2024, 2025],
+ "default_estimator": "market_multiplicative",
+ "candidates": ["market_additive", "market_power", "market_odds_ratio", "market_shin", "elo_global", "stack_market_elo"],
+ "elo": "global Elo, initial 1500, warm-up 2018-2020, k=32 chosen on 2021-23 log loss from grid [16,24,32,40,48,64], frozen",
+ "stack_definition": "logistic regression on [logit(market_multiplicative), logit(elo_global)] fitted on development years only",
+ "stack_l2": 1e-06,
+ "selection_rule": "default unless a candidate has holdout log loss lower with paired-bootstrap 95% CI (seed 20260923, 2000 resamples) excluding zero",
+ "calibration_verdict_rule": "slope 95% bootstrap CI (1000 resamples, seed 20260923) includes 1 AND every band with n>=200 has predicted mean inside the realised rate's 99.5% Wilson interval (Bonferroni over 10 bands)"
+}
