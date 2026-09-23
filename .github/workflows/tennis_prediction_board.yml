@@ -1,0 +1,65 @@
+name: tennis_prediction_board
+
+# Phase V2-2 (2026-09-23): PAPER tennis Prediction Board + settlement. Research only --
+# no stakes, no Money Card, no bankroll. Protocol:
+# research/platform_v2/tennis_prospective/ATP_PROSPECTIVE_PROTOCOL.md
+# Credits: /sports is free; 1 credit per active covered tennis key per scan (regions=uk,
+# markets=h2h); a guard in the script stops tennis fetches below 150 remaining credits
+# so the football scan's budget is protected. Settlement uses free published results.
+
+on:
+  schedule:
+    - cron: "30 6 * * *"   # morning board (Europe/Asia sessions)
+    - cron: "30 15 * * *"  # afternoon board (picks up newly scheduled Americas matches)
+    - cron: "30 22 * * *"  # settlement + performance (no API credits)
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "board or settle"
+        type: choice
+        options: [board, settle]
+        default: board
+
+permissions:
+  contents: write
+
+concurrency:
+  group: prediction-markets-lab-production
+  cancel-in-progress: false
+
+jobs:
+  tennis:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install -e .
+      - name: Run the test suite first
+        run: pytest -q
+      - name: Board
+        if: (github.event_name == 'schedule' && github.event.schedule != '30 22 * * *') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'board')
+        env:
+          THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
+        run: python scripts/run_tennis_prediction_board.py
+      - name: Settle
+        if: (github.event_name == 'schedule' && github.event.schedule == '30 22 * * *') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'settle')
+        run: python scripts/run_tennis_settlement.py
+      - name: Commit tennis prediction artefacts
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add tennis_predictions/
+          if git diff --cached --quiet; then
+            echo "No tennis prediction changes"
+          else
+            git commit -m "Tennis Prediction Board: $(date -u +%F)"
+            git pull --rebase
+            git push
+          fi

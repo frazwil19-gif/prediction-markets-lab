@@ -1,0 +1,183 @@
+{
+ "note": "Engine evidence records for the tennis Prediction Board. Band tables are from each engine's sealed holdout (unseen data). Frozen; changing them requires a new engine version.",
+ "engines": {
+  "atp_match_winner": {
+   "engine_id": "atp_match_winner.betfair_market",
+   "version": "1",
+   "historical_estimator": "Betfair Exchange last-traded prices of both runners at T-30min, two-runner proportional normalisation",
+   "holdout": "2024-2025 sealed, opened once",
+   "holdout_n": 5066,
+   "bands": {
+    "50-54.9%": {
+     "n": 700,
+     "actual_rate": 0.5457,
+     "wilson95": [
+      0.5087,
+      0.5822
+     ]
+    },
+    "55-59.9%": {
+     "n": 870,
+     "actual_rate": 0.5678,
+     "wilson95": [
+      0.5347,
+      0.6004
+     ]
+    },
+    "60-64.9%": {
+     "n": 829,
+     "actual_rate": 0.6019,
+     "wilson95": [
+      0.5682,
+      0.6347
+     ]
+    },
+    "65-69.9%": {
+     "n": 646,
+     "actual_rate": 0.7121,
+     "wilson95": [
+      0.676,
+      0.7457
+     ]
+    },
+    "70-74.9%": {
+     "n": 574,
+     "actual_rate": 0.7038,
+     "wilson95": [
+      0.6652,
+      0.7397
+     ]
+    },
+    "75-79.9%": {
+     "n": 446,
+     "actual_rate": 0.7691,
+     "wilson95": [
+      0.7277,
+      0.8058
+     ]
+    },
+    "80-84.9%": {
+     "n": 411,
+     "actual_rate": 0.8224,
+     "wilson95": [
+      0.7825,
+      0.8563
+     ]
+    },
+    "85-89.9%": {
+     "n": 257,
+     "actual_rate": 0.8794,
+     "wilson95": [
+      0.8339,
+      0.9137
+     ]
+    },
+    "90-94.9%": {
+     "n": 208,
+     "actual_rate": 0.9183,
+     "wilson95": [
+      0.873,
+      0.9483
+     ]
+    },
+    "95%+": {
+     "n": 125,
+     "actual_rate": 0.96,
+     "wilson95": [
+      0.9098,
+      0.9828
+     ]
+    }
+   }
+  },
+  "wta_match_winner": {
+   "engine_id": "wta_match_winner.betfair_market",
+   "version": "1",
+   "historical_estimator": "Betfair Exchange last-traded prices of both runners at T-30min, two-runner proportional normalisation",
+   "holdout": "2024-2025 sealed, opened once",
+   "holdout_n": 4339,
+   "bands": {
+    "50-54.9%": {
+     "n": 654,
+     "actual_rate": 0.5031,
+     "wilson95": [
+      0.4648,
+      0.5412
+     ]
+    },
+    "55-59.9%": {
+     "n": 718,
+     "actual_rate": 0.5585,
+     "wilson95": [
+      0.522,
+      0.5944
+     ]
+    },
+    "60-64.9%": {
+     "n": 704,
+     "actual_rate": 0.5923,
+     "wilson95": [
+      0.5556,
+      0.628
+     ]
+    },
+    "65-69.9%": {
+     "n": 559,
+     "actual_rate": 0.6905,
+     "wilson95": [
+      0.651,
+      0.7274
+     ]
+    },
+    "70-74.9%": {
+     "n": 513,
+     "actual_rate": 0.7271,
+     "wilson95": [
+      0.687,
+      0.7638
+     ]
+    },
+    "75-79.9%": {
+     "n": 423,
+     "actual_rate": 0.7636,
+     "wilson95": [
+      0.7208,
+      0.8016
+     ]
+    },
+    "80-84.9%": {
+     "n": 338,
+     "actual_rate": 0.8136,
+     "wilson95": [
+      0.7687,
+      0.8515
+     ]
+    },
+    "85-89.9%": {
+     "n": 213,
+     "actual_rate": 0.892,
+     "wilson95": [
+      0.8432,
+      0.927
+     ]
+    },
+    "90-94.9%": {
+     "n": 158,
+     "actual_rate": 0.9114,
+     "wilson95": [
+      0.8568,
+      0.9465
+     ]
+    },
+    "95%+": {
+     "n": 59,
+     "actual_rate": 1.0,
+     "wilson95": [
+      0.9389,
+      1.0
+     ]
+    }
+   }
+  }
+ }
+}
