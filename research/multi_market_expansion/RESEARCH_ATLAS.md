@@ -25,6 +25,16 @@ See `research/platform_v2/CROSS_MARKET_RESEARCH_STATUS.md`. Share of events whos
 1X2 3.3%, O/U 2.5 0.1%, BTTS 0%, **tennis Betfair market 20.7%** (calibrated within ±0.6 pp from 65–90%).
 Proportional de-vig under-predicts strong favourites. Multis remain disabled (`MULTI_ENGINE_SPEC.md`).
 
+## V2-2 update (2026-09-23)
+
+- **Tennis WTA Match Winner: VALIDATED** (a never-analysed population; sealed 2024–25 holdout, n = 4,339). Betfair
+  market log loss 0.5967, slope 0.979. At ≥80%: 17.7% of matches, 86.9% predicted vs 87.0% won. It becomes the
+  second tennis probability engine. Watch items: 2025 and grass at ≥80%.
+- **ATP + WTA paper Prediction Board is live** (The Odds API covered universe; `tennis_predictions/`). The first 6
+  WTA predictions are ledgered. Live-source decision **A**. Betfair Delayed: free, but GitHub runners are blocked
+  (USA is a restricted IP region), so it is a local complement only.
+- Next research family: **Basketball Moneyline**, starting with a Stage-0 data audit.
+
 ## V2-1 update (2026-09-23)
 
 - **De-vig study: decision C.** Retain proportional. Power/additive fix football's slightly flat probabilities on

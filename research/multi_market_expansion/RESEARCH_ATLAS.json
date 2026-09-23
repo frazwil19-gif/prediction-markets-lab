@@ -1,7 +1,7 @@
 {
-  "atlas_version": "1.3",
+  "atlas_version": "1.4",
   "generated_at": "2026-09-23",
-  "generated_by_cycle": "phase_v2_1 (margin-removal calibration + tennis high-probability engine)",
+  "generated_by_cycle": "phase_v2_2 (ATP prospective engine + WTA engine + Betfair delayed audit)",
   "schema_note": "One entry per (sport, market). status is one of: EXHAUSTED, READY_FOR_OUTCOME_DISCOVERY, PARTIALLY_EXPLORED, BLOCKED_BY_HISTORICAL_DATA, BLOCKED_BY_LIVE_DATA, REQUIRES_NEW_INFORMATION, UNEXPLORED. outcome_prediction_status and betting_backtest_status are tracked as SEPARATE axes per Phase 4 Section 8/20 -- a market can be READY on one axis and BLOCKED_BY_HISTORICAL_DATA on the other.",
   "markets": [
     {
@@ -159,10 +159,10 @@
         "no current-context input",
         "live source not solved"
       ],
-      "next_action": "Solve live source (Odds API stage 1; Betfair Delayed after terms check); then paper Prediction Board",
+      "next_action": "Accumulate prospective predictions to INTERMEDIATE (>=300 settled, >=100 at >=80%)",
       "best_probability_estimator": "Betfair Exchange last-traded price 30 min pre-start, two-runner proportional normalisation (de-vig method irrelevant)",
-      "live_market_status": "PARTIAL -- Odds API covers Slams/Masters/some 500s (incl betfair_ex_uk quote); Betfair Delayed key covers all but terms for standing feed unconfirmed",
-      "prospective_paper_status": "NOT_STARTED -- blocked on live source",
+      "live_market_status": "LIVE (paper): Odds API covered universe (Slams/1000/500) via betfair_ex_uk back+lay midpoint; Betfair Delayed = later local complement (GitHub runners blocked: USA restricted IP region)",
+      "prospective_paper_status": "COLLECTING -- tennis_prediction_board.yml (06:30/15:30 boards, 22:30 settlement); ledger tennis_predictions/",
       "high_probability_coverage": "holdout: >=80% 19.8% of priced matches, 87.6% predicted vs 87.4% won [85.2,89.3]; >=90% 6.6%, 94.0 vs 93.4; dev 2021-23 >=80% 20.71% (1478/7136) verified",
       "multi_eligibility_status": "STRONGEST LEG POOL (11.6% of matches >=85%); cross-event independence untested",
       "holdout_metrics": {
@@ -201,13 +201,46 @@
     {
       "sport": "tennis",
       "market": "Tennis WTA Match Winner",
+      "status": "OUTCOME_PREDICTION_VALIDATED",
+      "outcome_prediction_status": "VALIDATED -- V2-2 sealed 2024-25 holdout (never-analysed population), opened once",
+      "best_probability_estimator": "Betfair Exchange LTP 30 min pre-start, two-runner proportional normalisation",
+      "data_family": "TennisCourtLog WTA results (CC BY-NC-SA) + Betfair BASIC archive",
+      "live_market_status": "LIVE (paper), same as ATP (Odds API WTA 1000/500 + Slams)",
+      "multi_eligibility_status": "STRONG LEG POOL (9.9% of matches >=85%); independence untested",
+      "next_action": "Prospective collection alongside ATP",
+      "best_estimator": "Betfair market LTP",
+      "sample_size": 10352,
+      "holdout_metrics": {
+        "n": 4339,
+        "log_loss": 0.5967,
+        "brier": 0.2063,
+        "auc": 0.738,
+        "top_pick_accuracy": 0.668,
+        "cal_slope": 0.979,
+        "cal_slope_ci95": [
+          0.9,
+          1.063
+        ]
+      },
+      "high_probability_coverage": "holdout >=80% 17.7% of priced matches, 86.9% predicted vs 87.0% won; >=90% 5.0%, 93.5 vs 93.5",
+      "calibration_status": "DONE -- pre-registered multiplicity-aware rule passed",
+      "sealed_holdout_status": "DONE -- market best; Elo overconfident (slope 0.81); stack no gain",
+      "prospective_paper_status": "COLLECTING -- first 6 predictions ledgered 2026-09-23 (WTA Singapore)",
+      "limitations": [
+        "2025 >=80% 83.5% vs 86.9% (CI just excludes); grass >=80% 77.9% (n=95) -- monitor",
+        "player identity by name (no ids)",
+        "results source CC BY-NC-SA non-commercial"
+      ]
+    },
+    {
+      "sport": "basketball",
+      "market": "Basketball Moneyline (NBA)",
       "status": "UNEXPLORED",
       "outcome_prediction_status": "UNEXPLORED",
       "best_probability_estimator": null,
-      "data_family": "TML-Database WTA CSVs 1990-2026 (free, MIT, reliability caveat) + WTA markets already inside Fraser's Betfair data.tar",
-      "live_market_status": "same as ATP",
-      "multi_eligibility_status": "NOT ASSESSED",
-      "next_action": "Recommended next probability research family (V2-2); separate population from ATP"
+      "live_market_status": "Odds API basketball_nba active (in season Oct-Jun)",
+      "data_family": "to audit: Betfair BASIC basketball archive (free, same pipeline), SBR/Kaggle odds archives (reachability via allowlist unverified)",
+      "next_action": "Recommended next research family: Stage-0 data audit"
     }
   ],
   "selection_history": [
@@ -237,6 +270,11 @@
       "date": "2026-09-23",
       "cycle": "phase_v2_1",
       "decision": "De-vig C (retain proportional); Tennis ATP gate B (validated, live source unsolved); next: live-source solution + WTA engine"
+    },
+    {
+      "date": "2026-09-23",
+      "cycle": "phase_v2_2",
+      "decision": "WTA validated (second tennis engine); ATP+WTA paper Prediction Board live; next: Basketball Moneyline Stage-0 audit"
     }
   ],
   "probability_engine_principle": "Each market records its BEST AVAILABLE PROBABILITY ESTIMATOR, not the best model that beats the market. Market consensus is a legitimate estimator. The probability engine does not need historical betting profitability to be useful; the betting decision engine separately judges price/value/risk. See research/btts_outcome_prediction/PROBABILITY_ENGINE_ARCHITECTURE.md.",
@@ -247,5 +285,6 @@
     "tennis": "method irrelevant (Betfair LTP book-sum ~1.00); all methods within 0.0001 log loss on sealed holdout",
     "recommendation": "log power alongside multiplicative prospectively; no production change",
     "files": "research/platform_v2/calibration/"
-  }
+  },
+  "tennis_live_source_decision": "A -- The Odds API sufficient for initial prospective validation; Betfair Delayed later local complement"
 }
