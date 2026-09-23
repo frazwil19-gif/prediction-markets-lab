@@ -1,0 +1,54 @@
+{
+ "note": "SENSITIVITY added after panel coverage (not outcomes) showed Pinnacle closing missing for ~54% of 2025/26; B365+BW closing, n=1160",
+ "log_loss": {
+  "multiplicative": 1.01735,
+  "additive": 1.01745,
+  "power": 1.01776,
+  "odds_ratio": 1.01758,
+  "shin": 1.01738
+ },
+ "cal_intercept_slope": {
+  "multiplicative": [
+   -0.022,
+   0.966
+  ],
+  "additive": [
+   -0.066,
+   0.898
+  ],
+  "power": [
+   -0.07,
+   0.892
+  ],
+  "odds_ratio": [
+   -0.053,
+   0.919
+  ],
+  "shin": [
+   -0.055,
+   0.915
+  ]
+ },
+ "diff_vs_multiplicative_ci": {
+  "additive": [
+   0.0001,
+   -0.00146,
+   0.0017
+  ],
+  "power": [
+   0.00041,
+   -0.00133,
+   0.00219
+  ],
+  "odds_ratio": [
+   0.00023,
+   -0.00086,
+   0.00137
+  ],
+  "shin": [
+   3e-05,
+   -0.00113,
+   0.0012
+  ]
+ }
+}

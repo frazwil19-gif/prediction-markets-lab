@@ -1,0 +1,15 @@
+{
+ "phase": "V2-1 Workstream B tennis ATP Match Winner",
+ "frozen_before_opening": true,
+ "dataset": "data/interim/v2_tennis_market_dataset.csv (built by scripts/build_v2_tennis_market_dataset.py; 12,202 rows; combined source hash prefix 6f1237b6c705777a)",
+ "population": "ATP TML non-walkover, Betfair MATCH_ODDS MATCHED link, both runners LTP at or before start-30min, each <=1h old",
+ "development_years": [2021, 2022, 2023],
+ "holdout_years": [2024, 2025],
+ "default_estimator": "market_multiplicative",
+ "candidates": ["market_additive", "market_power", "market_odds_ratio", "market_shin", "elo_global", "ranking_baseline", "stack_market_elo"],
+ "stack_definition": "logistic regression on [logit(market_multiplicative), logit(elo_global)] fitted on development years only",
+ "stack_l2": 1e-06,
+ "selection_rule": "default unless a candidate has holdout log loss lower with paired-bootstrap 95% CI (seed 20260923, 2000 resamples) excluding zero; if several, the largest improvement",
+ "reported": "log loss, Brier, AUC, calibration intercept/slope, top-pick accuracy, expected vs actual correct, bands 50-54.9..95%+, thresholds >=55..>=95 with Wilson CIs, subgroups by year/surface/tourney_level/best_of",
+ "decision_gate": "A calibrated on holdout (slope 95% CI includes 1 AND every band with n>=200 has its realised rate inside its Wilson CI of the predicted mean +-) AND live source demonstrated; B calibrated but no dependable live source; C calibration fails; D new information required"
+}
