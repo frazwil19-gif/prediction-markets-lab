@@ -1,0 +1,109 @@
+{
+ "engine_summaries": [
+  {
+   "engine": "football_1x2_market_consensus",
+   "n_events": 5776,
+   "top_pick_accuracy": 0.5211218836565097,
+   "mean_top_pick_p": 0.5092691017564576,
+   "top_pick_log_loss": 0.6558867818186845,
+   "top_pick_brier": 0.23237990412331502,
+   "max_p": 0.9077025630579856
+  },
+  {
+   "engine": "football_ou25_market",
+   "n_events": 4640,
+   "top_pick_accuracy": 0.5719827586206897,
+   "mean_top_pick_p": 0.5699210732758621,
+   "top_pick_log_loss": 0.6755173494492177,
+   "top_pick_brier": 0.24134256933239315,
+   "max_p": 0.818038
+  },
+  {
+   "engine": "football_btts_market_implied",
+   "n_events": 4595,
+   "top_pick_accuracy": 0.5425462459194776,
+   "mean_top_pick_p": 0.542992003174311,
+   "top_pick_log_loss": 0.6864236744955374,
+   "top_pick_brier": 0.24666629246593336,
+   "max_p": 0.7167119603197464
+  },
+  {
+   "engine": "tennis_winner_global_elo_2025_holdout",
+   "n_events": 2921,
+   "top_pick_accuracy": 0.6347141389934954,
+   "mean_top_pick_p": 0.6617692009235797,
+   "top_pick_log_loss": 0.6324639750764145,
+   "top_pick_brier": 0.22157693334245004,
+   "max_p": 0.9866633102268778
+  },
+  {
+   "engine": "tennis_winner_betfair_market_30min",
+   "n_events": 7136,
+   "top_pick_accuracy": 0.679652466367713,
+   "mean_top_pick_p": 0.688104264733151,
+   "top_pick_log_loss": 0.5821525772524554,
+   "top_pick_brier": 0.20035846422080686,
+   "max_p": 0.9882571793977445
+  }
+ ],
+ "cross_event_1x2_favourite_pairs": {
+  "favourite_threshold": 0.7,
+  "n_favourites": 601,
+  "favourite_single_rate": 0.7986688851913477,
+  "favourite_mean_p": 0.7747003125210795,
+  "all_pairs": {
+   "n_pairs": 293,
+   "mean_product_p": 0.6018688133398774,
+   "realised_joint_rate": 0.6313993174061433,
+   "wilson_low": 0.5747922948065798,
+   "wilson_high": 0.6846054332126439,
+   "note": "pairs share dates, so they are not independent observations; CI is optimistic"
+  },
+  "same_competition": {
+   "n_pairs": 114,
+   "mean_product_p": 0.6005223445591635,
+   "realised_joint_rate": 0.6842105263157895,
+   "wilson_low": 0.5940657058910772,
+   "wilson_high": 0.762345360471455,
+   "note": "pairs share dates, so they are not independent observations; CI is optimistic"
+  },
+  "different_competition": {
+   "n_pairs": 179,
+   "mean_product_p": 0.6027263409432372,
+   "realised_joint_rate": 0.5977653631284916,
+   "wilson_low": 0.524606825640163,
+   "wilson_high": 0.6668158430792066,
+   "note": "pairs share dates, so they are not independent observations; CI is optimistic"
+  }
+ },
+ "same_game_football": {
+  "n": 5763,
+  "home_win_and_over25": {
+   "p_a": 0.4367516918271733,
+   "p_b": 0.5009543640465035,
+   "realised_joint": 0.25854589623460006,
+   "independence_product": 0.21879266602551609,
+   "ratio_joint_to_product": 1.1816936140101144
+  },
+  "home_win_and_btts": {
+   "p_a": 0.4367516918271733,
+   "p_b": 0.5045982994967899,
+   "realised_joint": 0.18636127017178553,
+   "independence_product": 0.22038416099833769,
+   "ratio_joint_to_product": 0.8456200723662315
+  },
+  "over25_and_btts": {
+   "p_a": 0.5009543640465035,
+   "p_b": 0.5045982994967899,
+   "realised_joint": 0.3892070102377234,
+   "independence_product": 0.2527807202233615,
+   "ratio_joint_to_product": 1.5397021176845023
+  },
+  "strong_home_favourites_home_win_and_over25": {
+   "n": 852,
+   "realised_joint": 0.5046948356807511,
+   "market_product": 0.43588881398593304,
+   "ratio": 1.1578522308605024
+  }
+ }
+}

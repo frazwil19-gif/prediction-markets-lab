@@ -1,7 +1,7 @@
 {
-  "atlas_version": "1.1",
-  "generated_at": "2026-09-22",
-  "generated_by_cycle": "phase5_btts_outcome_prediction (updates v1.0 from phase4)",
+  "atlas_version": "1.2",
+  "generated_at": "2026-09-23",
+  "generated_by_cycle": "platform_v2_audit (adds multi_eligibility_status, high-probability coverage; see research/platform_v2/)",
   "schema_note": "One entry per (sport, market). status is one of: EXHAUSTED, READY_FOR_OUTCOME_DISCOVERY, PARTIALLY_EXPLORED, BLOCKED_BY_HISTORICAL_DATA, BLOCKED_BY_LIVE_DATA, REQUIRES_NEW_INFORMATION, UNEXPLORED. outcome_prediction_status and betting_backtest_status are tracked as SEPARATE axes per Phase 4 Section 8/20 -- a market can be READY on one axis and BLOCKED_BY_HISTORICAL_DATA on the other.",
   "markets": [
     {
@@ -28,7 +28,9 @@
       "next_action": "Do not spend further Claude research cycles on 1X2 outcome-prediction with the current feature set. Revisit only if a genuinely new information source becomes available (e.g. team news, lineups, live in-play data).",
       "best_probability_estimator": "de-vigged multi-bookmaker consensus",
       "live_market_status": "LIVE in production (Daily Card + Money Card)",
-      "prospective_paper_status": "RUNNING -- paper ledger since 2026-09-19"
+      "prospective_paper_status": "RUNNING -- paper ledger since 2026-09-19",
+      "high_probability_coverage": ">=70% 10.4% of events (79.9% won vs 77.5% priced); >=80% 3.3% (88.3% vs 83.7%) -- favourites under-predicted by proportional de-vig",
+      "multi_eligibility_status": "CANDIDATE -- favourites as cross-event legs after margin-removal study (DESIGN ONLY)"
     },
     {
       "sport": "football",
@@ -54,7 +56,9 @@
       "next_action": "Market alone remains the strongest O/U2.5 estimator; no fundamentals model justifies production deployment yet. Recommend: (a) begin preserving raw per-bookmaker O/U2.5 quotes prospectively for a future thicker panel, (b) do not build a betting overlay from historical data, (c) move to the next market (BTTS) for the next Stage-A-only cycle rather than re-working O/U2.5.",
       "best_probability_estimator": "de-vigged multi-bookmaker consensus",
       "live_market_status": "LIVE in production (totals 2.5 line)",
-      "prospective_paper_status": "RUNNING -- paper ledger since 2026-09-19"
+      "prospective_paper_status": "RUNNING -- paper ledger since 2026-09-19",
+      "high_probability_coverage": ">=70% 2.8%; >=75% 0.4% (n=20)",
+      "multi_eligibility_status": "RARELY -- few strong predictions"
     },
     {
       "sport": "football",
@@ -99,7 +103,9 @@
         "2024_25 not fully blind at dataset level",
         "2025_26 not in feature pipeline"
       ],
-      "next_action": "If approved: fetch live BTTS quotes for money-window fixtures only, log per PROBABILITY_ENGINE_ARCHITECTURE.md s4, compare direct BTTS consensus vs market_implied_poisson prospectively, evaluate paper selections under the UNCHANGED money policy."
+      "next_action": "If approved: fetch live BTTS quotes for money-window fixtures only, log per PROBABILITY_ENGINE_ARCHITECTURE.md s4, compare direct BTTS consensus vs market_implied_poisson prospectively, evaluate paper selections under the UNCHANGED money policy.",
+      "high_probability_coverage": ">=70% 0.2% (n=9); none >=75%",
+      "multi_eligibility_status": "NOT USEFUL -- almost never strong"
     },
     {
       "sport": "football",
@@ -125,7 +131,8 @@
       "next_action": "Defer until after BTTS. Requires a line-handling design decision (per-line modelling or line-relative feature) before a Stage A cycle can start cleanly.",
       "best_probability_estimator": null,
       "live_market_status": "AVAILABLE via Odds API spreads (not wired)",
-      "prospective_paper_status": "NOT_STARTED"
+      "prospective_paper_status": "NOT_STARTED",
+      "multi_eligibility_status": "NOT ASSESSED"
     },
     {
       "sport": "tennis",
@@ -147,10 +154,12 @@
         "Substantially researched already; do not default back to it without a genuinely new question (per Phase 4 Section 5)",
         "13 candidate edge features already rejected in Workstream B"
       ],
-      "next_action": "Do not reopen for outcome-prediction discovery. The open item is the money-qualification/betting-backtest cycle Phase 3 nominated -- pick this up only when the project is ready to run a Stage B-focused cycle rather than another Stage A discovery pass.",
+      "next_action": "Cycle V2-2: formal market-engine validation on 2024-25 Betfair archive + live-source decision (after V2-1 margin-removal study)",
       "best_probability_estimator": "Betfair-archive consensus (edge-hunting exhausted)",
-      "live_market_status": "NOT WIRED",
-      "prospective_paper_status": "NOT_STARTED"
+      "live_market_status": "WEAK via Odds API (tournament-level keys; 1 active 2026-09-23); Betfair Delayed app key is the candidate free path (terms unverified)",
+      "prospective_paper_status": "NOT_STARTED",
+      "high_probability_coverage": "Betfair 30min market: >=80% 20.7% of matches (88.0% won vs 87.2% priced); >=90% 6.4% (96.3% vs 93.8%). Global Elo 2025 holdout overconfident at top",
+      "multi_eligibility_status": "STRONGEST CANDIDATE -- needs validated engine + live feed"
     },
     {
       "sport": "other (basketball, cricket, etc.)",
@@ -169,7 +178,8 @@
       "limitations": [
         "No data source has been acquired or audited for any sport outside football and tennis"
       ],
-      "next_action": "Out of scope until the football/tennis portfolio (1X2, O/U2.5, BTTS, AH) is further along. No action this cycle."
+      "next_action": "Out of scope until the football/tennis portfolio (1X2, O/U2.5, BTTS, AH) is further along. No action this cycle.",
+      "multi_eligibility_status": "NOT ASSESSED"
     }
   ],
   "selection_history": [
@@ -189,7 +199,13 @@
       "date": "2026-09-22",
       "cycle": "phase5_btts_outcome_prediction",
       "decision": "BTTS best estimator = market_implied_poisson; next recommended = live-data preservation + BTTS/OU prospective paper wiring, then Football Asian Handicap Stage A"
+    },
+    {
+      "date": "2026-09-23",
+      "cycle": "platform_v2_audit",
+      "decision": "Next: Phase 1 evidence plumbing (approval), research Cycle V2-1 margin-removal calibration, then V2-2 tennis market engine"
     }
   ],
-  "probability_engine_principle": "Each market records its BEST AVAILABLE PROBABILITY ESTIMATOR, not the best model that beats the market. Market consensus is a legitimate estimator. The probability engine does not need historical betting profitability to be useful; the betting decision engine separately judges price/value/risk. See research/btts_outcome_prediction/PROBABILITY_ENGINE_ARCHITECTURE.md."
+  "probability_engine_principle": "Each market records its BEST AVAILABLE PROBABILITY ESTIMATOR, not the best model that beats the market. Market consensus is a legitimate estimator. The probability engine does not need historical betting profitability to be useful; the betting decision engine separately judges price/value/risk. See research/btts_outcome_prediction/PROBABILITY_ENGINE_ARCHITECTURE.md.",
+  "multi_policy": "Multis disabled. Same-game disabled pending joint scoreline model. Cross-event: DESIGN ONLY, research/platform_v2/MULTI_ENGINE_SPEC.md"
 }

@@ -19,6 +19,12 @@ legitimate estimator. See `research/btts_outcome_prediction/PROBABILITY_ENGINE_A
 | Football Asian Handicap | not researched | UNEXPLORED | BLOCKED (thin panel) | available (spreads), not wired |
 | Tennis Match Winner | Betfair-archive consensus | edge-hunting EXHAUSTED | open (money-qualification) | not wired |
 
+## V2 cross-market high-probability view (added 2026-09-23)
+
+See `research/platform_v2/CROSS_MARKET_RESEARCH_STATUS.md`. Share of events whose top pick is at least 80%: football
+1X2 3.3%, O/U 2.5 0.1%, BTTS 0%, **tennis Betfair market 20.7%** (calibrated within ±0.6 pp from 65–90%).
+Proportional de-vig under-predicts strong favourites. Multis remain disabled (`MULTI_ENGINE_SPEC.md`).
+
 ## Football 1X2
 
 - **Status**: EXHAUSTED -- CURRENT INFORMATION SET
