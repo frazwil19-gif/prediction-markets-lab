@@ -66,3 +66,26 @@ apply to singles and multis combined.
 2. **Prospective paper multis**, generated mechanically from the daily pool, never hand-picked: expected vs realised
    joint win rate, bankroll impact, CLV of legs.
 3. Explicit promotion decision (`MODEL_PROMOTION_STANDARD.md`).
+
+---
+## Clarification after V2-1 (operator §31, 2026-09-23)
+The arithmetic in §1 stands: combining legs does not change their underlying expected value. **That is not a reason
+to drop multis.** Their purpose is *payout construction*: several individually strong predictions that are each too
+short to bet as singles can be combined into one position with a meaningful payout. The multi question is therefore:
+(1) is every leg a trustworthy prediction, (2) is the joint probability defensible, and (3) do the offered combined
+payout and risk suit the bankroll? Value against an independent reference is **not** a primary eligibility criterion
+for a leg. It is reported, and the combined position still passes the Bet-Selection layer's payout, value and risk
+checks as a whole.
+
+## Three-tier status (design)
+| status | requires |
+|---|---|
+| PREDICTION_VALID | validated engine, band support (n ≥ 200 unseen), complete data, no material warning |
+| SINGLE_ELIGIBLE | PREDICTION_VALID plus the existing single-bet gates (money window, probability floors, payout policy, value floor, risk) |
+| MULTI_ELIGIBLE | PREDICTION_VALID plus P ≥ a configured leg floor, band CI width within max, quote fresh, independent of the other legs under the dependency screen. **Standalone odds may be below the single-bet payout floor.** |
+
+## Evidence from V2-1 relevant to multi legs
+Tennis supplies the leg pool. On the sealed holdout, 590 ATP matches (11.6%) were ≥85% (91.2% predicted, 91.0% won)
+and 333 (6.6%) were ≥90% (94.0% predicted, 93.4% won). Cross-event tennis legs from different matches are
+plausibly independent, but that is *untested*. The next multi-research step would be a historical joint-calibration
+replay on tennis pairs from the same day, using exactly this holdout data (design only).

@@ -40,4 +40,7 @@ was refit and no threshold was chosen. "Top pick" = the most likely outcome of e
 | Football O/U 2.5 | VALIDATED | consensus | 4,640 | done | BLOCKED (thin panel) | LIVE | rarely strong | none now |
 | Football BTTS | VALIDATED, low-confidence | market-implied Poisson | 4,595 | done | BLOCKED (no odds) | available, not wired | effectively never (≤0.2% ≥70%) | paper-only wiring |
 | Football AH | UNEXPLORED | — | ~5,800 (thin prices) | — | BLOCKED | available (spreads) | — | later |
-| Tennis Winner | market calibration unvalidated as an engine | Betfair consensus (candidate) | 7,136 priced (2021–23), 12,956 linked (2021–25) | Elo only | open | **weak via Odds API** (1 active tournament today) | strongest candidate | next cycle |
+| Tennis Winner (ATP) | **VALIDATED (V2-1 sealed 2024–25 holdout)** | Betfair market LTP | 12,202 (dev 7,136 + holdout 5,066) | done, slope 0.986; ≥80% 87.6 → 87.4% | open | partial via Odds API; Betfair Delayed key pending terms | strongest leg pool | live-source solution |
+
+
+**Update 2026-09-23 (V2-1):** the tennis market engine was validated on the never-opened 2024–25 holdout. See `tennis/TENNIS_PREDICTION_ENGINE_DECISION.md`. De-vig study verdict C (retain proportional): `calibration/V2_1_CALIBRATION_REPORT.md`.

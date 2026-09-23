@@ -25,6 +25,17 @@ See `research/platform_v2/CROSS_MARKET_RESEARCH_STATUS.md`. Share of events whos
 1X2 3.3%, O/U 2.5 0.1%, BTTS 0%, **tennis Betfair market 20.7%** (calibrated within ±0.6 pp from 65–90%).
 Proportional de-vig under-predicts strong favourites. Multis remain disabled (`MULTI_ENGINE_SPEC.md`).
 
+## V2-1 update (2026-09-23)
+
+- **De-vig study: decision C.** Retain proportional. Power/additive fix football's slightly flat probabilities on
+  exposed seasons (not significant, and reversed on 2025/26). For tennis the method is irrelevant.
+  `research/platform_v2/calibration/`.
+- **Tennis ATP Match Winner: VALIDATED on the sealed 2024–25 holdout, gate B.** Betfair market log loss 0.5883,
+  slope 0.986. At ≥80%: 19.8% of matches, 87.6% predicted vs 87.4% won (n = 1,001). Elo is overconfident, and adding
+  Elo to the market does not help. The live source is unsolved. `research/platform_v2/tennis/`.
+- **Tennis WTA:** unexplored. Free data is already available (TML WTA CSVs plus WTA markets inside the Betfair
+  archive). Recommended next family.
+
 ## Football 1X2
 
 - **Status**: EXHAUSTED -- CURRENT INFORMATION SET

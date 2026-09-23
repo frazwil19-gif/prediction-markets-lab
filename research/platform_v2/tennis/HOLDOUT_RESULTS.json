@@ -1,0 +1,184 @@
+{
+ "opened_at": "2026-09-23T16:01:21.328836+00:00",
+ "spec_sha256": "4f1a56701b7af813a06a6c20a07bb796d660580393db76b20cc4aa6724902e09",
+ "n_holdout": 5066,
+ "n_development": 7136,
+ "selected_estimator": "market_multiplicative",
+ "stack_coefficients": {
+  "intercept": 0.04721005434396281,
+  "logit_market": 1.0704641741597518,
+  "logit_elo": -0.11308962666166003
+ },
+ "bootstrap_vs_default": [
+  {
+   "estimator": "market_additive",
+   "vs": "market_multiplicative",
+   "log_loss_diff": 8.635826176054452e-06,
+   "ci95_low": -9.299512793355374e-05,
+   "ci95_high": 0.00011396849642390919,
+   "better_and_excludes_zero": false
+  },
+  {
+   "estimator": "market_power",
+   "vs": "market_multiplicative",
+   "log_loss_diff": 1.4330684010940553e-05,
+   "ci95_low": -0.0001502741212272055,
+   "ci95_high": 0.0001842590158347593,
+   "better_and_excludes_zero": false
+  },
+  {
+   "estimator": "market_odds_ratio",
+   "vs": "market_multiplicative",
+   "log_loss_diff": 4.0953197744946947e-07,
+   "ci95_low": -0.00010927939285404623,
+   "ci95_high": 0.00011177806659977185,
+   "better_and_excludes_zero": false
+  },
+  {
+   "estimator": "market_shin",
+   "vs": "market_multiplicative",
+   "log_loss_diff": -1.944882380166614e-05,
+   "ci95_low": -0.00010914128580717813,
+   "ci95_high": 7.637799130088441e-05,
+   "better_and_excludes_zero": false
+  },
+  {
+   "estimator": "elo_global",
+   "vs": "market_multiplicative",
+   "log_loss_diff": 0.033802298269352736,
+   "ci95_low": 0.027865234180242344,
+   "ci95_high": 0.03971154298003214,
+   "better_and_excludes_zero": false
+  },
+  {
+   "estimator": "ranking_baseline",
+   "vs": "market_multiplicative",
+   "log_loss_diff": NaN,
+   "ci95_low": NaN,
+   "ci95_high": NaN,
+   "better_and_excludes_zero": false
+  },
+  {
+   "estimator": "stack_market_elo",
+   "vs": "market_multiplicative",
+   "log_loss_diff": -0.0005556951506524785,
+   "ci95_low": -0.0014369933178743995,
+   "ci95_high": 0.00031192036706326345,
+   "better_and_excludes_zero": false
+  }
+ ],
+ "holdout_metrics": [
+  {
+   "period": "SEALED_HOLDOUT_2024_2025",
+   "estimator": "market_multiplicative",
+   "n": 5066,
+   "log_loss": 0.5882750690242299,
+   "brier": 0.2025466846672393,
+   "auc": 0.7495020805502232,
+   "cal_intercept": 0.04452187839983644,
+   "cal_slope": 0.9856027841263426,
+   "top_pick_accuracy": 0.6823924200552705,
+   "mean_top_pick_p": 0.6828503683604403,
+   "expected_correct": 3459.3199661139906,
+   "actual_correct": 3457
+  },
+  {
+   "period": "SEALED_HOLDOUT_2024_2025",
+   "estimator": "market_additive",
+   "n": 5066,
+   "log_loss": 0.5882837048504083,
+   "brier": 0.20253960540625324,
+   "auc": 0.7495409817253349,
+   "cal_intercept": 0.04458027226821341,
+   "cal_slope": 0.98397119293117,
+   "top_pick_accuracy": 0.6823924200552705,
+   "mean_top_pick_p": 0.683103932874186,
+   "expected_correct": 3460.6045239406267,
+   "actual_correct": 3457
+  },
+  {
+   "period": "SEALED_HOLDOUT_2024_2025",
+   "estimator": "market_power",
+   "n": 5066,
+   "log_loss": 0.5882893997082392,
+   "brier": 0.20253647350777007,
+   "auc": 0.749550258759079,
+   "cal_intercept": 0.04457993038047483,
+   "cal_slope": 0.9829065010329142,
+   "top_pick_accuracy": 0.6823924200552705,
+   "mean_top_pick_p": 0.683240002112614,
+   "expected_correct": 3461.293850702503,
+   "actual_correct": 3457
+  },
+  {
+   "period": "SEALED_HOLDOUT_2024_2025",
+   "estimator": "market_odds_ratio",
+   "n": 5066,
+   "log_loss": 0.5882754785562062,
+   "brier": 0.20253771727848421,
+   "auc": 0.7495410596836017,
+   "cal_intercept": 0.04455051344937437,
+   "cal_slope": 0.9838025042188719,
+   "top_pick_accuracy": 0.6823924200552705,
+   "mean_top_pick_p": 0.6831212795189593,
+   "expected_correct": 3460.692402043048,
+   "actual_correct": 3457
+  },
+  {
+   "period": "SEALED_HOLDOUT_2024_2025",
+   "estimator": "market_shin",
+   "n": 5066,
+   "log_loss": 0.5882556202004273,
+   "brier": 0.20253836874422326,
+   "auc": 0.7495296777766551,
+   "cal_intercept": 0.04452459405785828,
+   "cal_slope": 0.9815510815689568,
+   "top_pick_accuracy": 0.6823924200552705,
+   "mean_top_pick_p": 0.6833515947104524,
+   "expected_correct": 3461.8591788031517,
+   "actual_correct": 3457
+  },
+  {
+   "period": "SEALED_HOLDOUT_2024_2025",
+   "estimator": "elo_global",
+   "n": 5066,
+   "log_loss": 0.6220773672935822,
+   "brier": 0.21732380730966275,
+   "auc": 0.7057722483538332,
+   "cal_intercept": 0.0320002145513301,
+   "cal_slope": 0.8579478819278801,
+   "top_pick_accuracy": 0.6431109356494276,
+   "mean_top_pick_p": 0.6685840466542174,
+   "expected_correct": 3387.0467803502656,
+   "actual_correct": 3258
+  },
+  {
+   "period": "SEALED_HOLDOUT_2024_2025",
+   "estimator": "ranking_baseline",
+   "n": 5060,
+   "log_loss": 0.6361426932821562,
+   "brier": 0.22216614779572694,
+   "auc": 0.6920199565554359,
+   "cal_intercept": 0.02381662990182992,
+   "cal_slope": 0.9118361002503528,
+   "top_pick_accuracy": 0.6405138339920948,
+   "mean_top_pick_p": 0.6440026286090798,
+   "expected_correct": 3258.6533007619437,
+   "actual_correct": 3241
+  },
+  {
+   "period": "SEALED_HOLDOUT_2024_2025",
+   "estimator": "stack_market_elo",
+   "n": 5066,
+   "log_loss": 0.5877193738735786,
+   "brier": 0.20229552021290428,
+   "auc": 0.7499929837559919,
+   "cal_intercept": -0.0015823917311805695,
+   "cal_slope": 1.0050200236341726,
+   "top_pick_accuracy": 0.6831819976312673,
+   "mean_top_pick_p": 0.6808103869989106,
+   "expected_correct": 3448.985420536481,
+   "actual_correct": 3461
+  }
+ ]
+}
