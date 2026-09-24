@@ -25,6 +25,16 @@ See `research/platform_v2/CROSS_MARKET_RESEARCH_STATUS.md`. Share of events whos
 1X2 3.3%, O/U 2.5 0.1%, BTTS 0%, **tennis Betfair market 20.7%** (calibrated within ±0.6 pp from 65–90%).
 Proportional de-vig under-predicts strong favourites. Multis remain disabled (`MULTI_ENGINE_SPEC.md`).
 
+## V2-3 update (2026-09-24)
+
+- **NBA Moneyline: VALIDATED (gate A)** on the sealed 2024-26 holdout (n = 2,629, never analysed before). The market
+  (OddsPortal average closing odds) is best: log loss 0.581, slope 1.05. At ≥80%: 20.9% of games, 85.5% predicted vs
+  87.5% won. At ≥90%: 2.6%. Elo is less informative; schedule and form add nothing beyond the market. No
+  injury/lineup history exists. `research/platform_v2/nba/`.
+- Cross-sport ≥80% share (predicted → actual): ATP 19.8% (87.6 → 87.4), WTA 17.7% (86.9 → 87.0), NBA 20.9% (85.5 →
+  87.5), football 1X2 3.3%, O/U 0.1%, BTTS 0%.
+- Next recommended family: **Football Double Chance** (≥80% in ~33% of matches descriptively).
+
 ## V2-2 update (2026-09-23)
 
 - **Tennis WTA Match Winner: VALIDATED** (a never-analysed population; sealed 2024–25 holdout, n = 4,339). Betfair

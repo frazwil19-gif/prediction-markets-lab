@@ -1,0 +1,113 @@
+{
+ "opened_at": "2026-09-24T15:25:09.929171+00:00",
+ "spec_sha256": "fd22f61695eaa8ebd048faa2036fa2483b25e3bf8b17441882f17cd416883341",
+ "n_holdout": 2629,
+ "selected_estimator": "market",
+ "bootstrap_vs_default": [
+  {
+   "estimator": "elo",
+   "log_loss_diff": 0.027258749783906747,
+   "ci95_low": 0.019413416218419858,
+   "ci95_high": 0.0349906685945133,
+   "better_and_excludes_zero": false
+  },
+  {
+   "estimator": "data_logit",
+   "log_loss_diff": 0.020599577975703907,
+   "ci95_low": 0.01312445851299049,
+   "ci95_high": 0.02829276882613107,
+   "better_and_excludes_zero": false
+  },
+  {
+   "estimator": "stack_market_elo",
+   "log_loss_diff": 0.00010502770734483258,
+   "ci95_low": -0.0003690690038533572,
+   "ci95_high": 0.0005589623046924244,
+   "better_and_excludes_zero": false
+  }
+ ],
+ "selected_slope_ci95": [
+  0.9560615565386277,
+  1.1366901423635103
+ ],
+ "band_checks_995": [
+  {
+   "band": "50-54.9%",
+   "n": 328,
+   "mean_predicted": 0.5269271949914788,
+   "actual_rate": 0.4817073170731707,
+   "wilson995_low": 0.4056046495943541,
+   "wilson995_high": 0.5586682453144468,
+   "inside": true
+  },
+  {
+   "band": "55-59.9%",
+   "n": 375,
+   "mean_predicted": 0.5745074175084338,
+   "actual_rate": 0.6026666666666667,
+   "wilson995_low": 0.5303227706614784,
+   "wilson995_high": 0.6707849207994478,
+   "inside": true
+  },
+  {
+   "band": "60-64.9%",
+   "n": 383,
+   "mean_predicted": 0.6236423023008094,
+   "actual_rate": 0.6135770234986945,
+   "wilson995_low": 0.5421155228277471,
+   "wilson995_high": 0.6804595000918731,
+   "inside": true
+  },
+  {
+   "band": "65-69.9%",
+   "n": 387,
+   "mean_predicted": 0.6752674759585533,
+   "actual_rate": 0.6537467700258398,
+   "wilson995_low": 0.5834015207007622,
+   "wilson995_high": 0.7179562821490036,
+   "inside": true
+  },
+  {
+   "band": "70-74.9%",
+   "n": 308,
+   "mean_predicted": 0.7243650500118444,
+   "actual_rate": 0.7564935064935064,
+   "wilson995_low": 0.6820073898267793,
+   "wilson995_high": 0.8181834447269365,
+   "inside": true
+  },
+  {
+   "band": "75-79.9%",
+   "n": 298,
+   "mean_predicted": 0.7744996373449078,
+   "actual_rate": 0.7483221476510067,
+   "wilson995_low": 0.6719793518257418,
+   "wilson995_high": 0.8118714120199821,
+   "inside": true
+  },
+  {
+   "band": "80-84.9%",
+   "n": 259,
+   "mean_predicted": 0.8247939599959838,
+   "actual_rate": 0.8223938223938224,
+   "wilson995_low": 0.7465203170845192,
+   "wilson995_high": 0.87923039975856,
+   "inside": true
+  },
+  {
+   "band": "85-89.9%",
+   "n": 223,
+   "mean_predicted": 0.8722811865572406,
+   "actual_rate": 0.9013452914798207,
+   "wilson995_low": 0.830882608485676,
+   "wilson995_high": 0.944413802071884,
+   "inside": true
+  }
+ ],
+ "prediction_gate": "A",
+ "elo_slope_ci95": [
+  0.9585334449015459,
+  1.1823983839733456
+ ],
+ "home_win_rate": 0.5500190186382655
+}

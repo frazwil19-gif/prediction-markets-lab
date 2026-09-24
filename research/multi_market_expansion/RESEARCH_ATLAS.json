@@ -1,7 +1,7 @@
 {
-  "atlas_version": "1.4",
-  "generated_at": "2026-09-23",
-  "generated_by_cycle": "phase_v2_2 (ATP prospective engine + WTA engine + Betfair delayed audit)",
+  "atlas_version": "1.5",
+  "generated_at": "2026-09-24",
+  "generated_by_cycle": "phase_v2_3 (NBA Moneyline)",
   "schema_note": "One entry per (sport, market). status is one of: EXHAUSTED, READY_FOR_OUTCOME_DISCOVERY, PARTIALLY_EXPLORED, BLOCKED_BY_HISTORICAL_DATA, BLOCKED_BY_LIVE_DATA, REQUIRES_NEW_INFORMATION, UNEXPLORED. outcome_prediction_status and betting_backtest_status are tracked as SEPARATE axes per Phase 4 Section 8/20 -- a market can be READY on one axis and BLOCKED_BY_HISTORICAL_DATA on the other.",
   "markets": [
     {
@@ -162,7 +162,7 @@
       "next_action": "Accumulate prospective predictions to INTERMEDIATE (>=300 settled, >=100 at >=80%)",
       "best_probability_estimator": "Betfair Exchange last-traded price 30 min pre-start, two-runner proportional normalisation (de-vig method irrelevant)",
       "live_market_status": "LIVE (paper): Odds API covered universe (Slams/1000/500) via betfair_ex_uk back+lay midpoint; Betfair Delayed = later local complement (GitHub runners blocked: USA restricted IP region)",
-      "prospective_paper_status": "COLLECTING -- tennis_prediction_board.yml (06:30/15:30 boards, 22:30 settlement); ledger tennis_predictions/",
+      "prospective_paper_status": "COLLECTING -- ATP 0 / WTA 6 predictions, 0 settled at 2026-09-24; scheduled workflow blocked 22-24 Sep by a CI test failure, fixed in c4d7779 (pending push)",
       "high_probability_coverage": "holdout: >=80% 19.8% of priced matches, 87.6% predicted vs 87.4% won [85.2,89.3]; >=90% 6.6%, 94.0 vs 93.4; dev 2021-23 >=80% 20.71% (1478/7136) verified",
       "multi_eligibility_status": "STRONGEST LEG POOL (11.6% of matches >=85%); cross-event independence untested",
       "holdout_metrics": {
@@ -225,7 +225,7 @@
       "high_probability_coverage": "holdout >=80% 17.7% of priced matches, 86.9% predicted vs 87.0% won; >=90% 5.0%, 93.5 vs 93.5",
       "calibration_status": "DONE -- pre-registered multiplicity-aware rule passed",
       "sealed_holdout_status": "DONE -- market best; Elo overconfident (slope 0.81); stack no gain",
-      "prospective_paper_status": "COLLECTING -- first 6 predictions ledgered 2026-09-23 (WTA Singapore)",
+      "prospective_paper_status": "COLLECTING -- ATP 0 / WTA 6 predictions, 0 settled at 2026-09-24; scheduled workflow blocked 22-24 Sep by a CI test failure, fixed in c4d7779 (pending push)",
       "limitations": [
         "2025 >=80% 83.5% vs 86.9% (CI just excludes); grass >=80% 77.9% (n=95) -- monitor",
         "player identity by name (no ids)",
@@ -235,12 +235,47 @@
     {
       "sport": "basketball",
       "market": "Basketball Moneyline (NBA)",
+      "status": "OUTCOME_PREDICTION_VALIDATED",
+      "outcome_prediction_status": "VALIDATED -- V2-3 sealed 2024-26 holdout (never analysed), opened once; gate A",
+      "best_probability_estimator": "OddsPortal average closing moneyline, proportional de-vig",
+      "live_market_status": "Odds API basketball_nba h2h (uk), 1 credit/scan; season from late Oct; betfair_ex_uk presence unverified",
+      "data_family": "wippa-nba-data (OddsPortal results + average closing moneyline, MIT) 2016-17..2025-26; SBR archive (MIT) 2011-16 Elo warm-up + cross-check",
+      "next_action": "Prospective paper NBA board from season start (needs approval + credit decision)",
+      "sample_size": 12825,
+      "features": "Elo, rest, back-to-back, 7-day load, rolling-10 point diff/win%, season point diff, season game number, neutral",
+      "best_estimator": "market (average closing odds)",
+      "holdout_metrics": {
+        "n": 2629,
+        "log_loss": 0.5809,
+        "brier": 0.199,
+        "auc": 0.754,
+        "top_pick_accuracy": 0.688,
+        "cal_slope": 1.046,
+        "cal_slope_ci95": [
+          0.956,
+          1.137
+        ]
+      },
+      "high_probability_coverage": ">=60 73.3% (74.0->74.0); >=65 58.7% (76.8->77.1); >=70 44.0% (80.0->81.1); >=75 32.3% (82.7->83.0); >=80 20.9% (85.5->87.5); >=85 11.1% (88.2->92.1); >=90 2.6% (91.6->98.5); >=95 n=2",
+      "calibration_status": "DONE -- slope CI includes 1; 8/8 bands pass 99.5% rule",
+      "sealed_holdout_status": "DONE -- market best; Elo less informative but not overconfident; stack no gain",
+      "prospective_paper_status": "NOT_STARTED -- awaiting approval",
+      "multi_eligibility_status": "STRONG LEG POOL (11% of games >=85%), independent sport",
+      "limitations": [
+        "single averaged closing price",
+        "no box scores",
+        "no historical injuries/lineups",
+        "closing vs scan-time timing",
+        "OddsPortal date offset"
+      ]
+    },
+    {
+      "sport": "football",
+      "market": "Double Chance",
       "status": "UNEXPLORED",
-      "outcome_prediction_status": "UNEXPLORED",
-      "best_probability_estimator": null,
-      "live_market_status": "Odds API basketball_nba active (in season Oct-Jun)",
-      "data_family": "to audit: Betfair BASIC basketball archive (free, same pipeline), SBR/Kaggle odds archives (reachability via allowlist unverified)",
-      "next_action": "Recommended next research family: Stage-0 data audit"
+      "outcome_prediction_status": "UNEXPLORED (descriptive: >=80% in 32.6% of matches, 86.4->86.4 on exposed data)",
+      "best_probability_estimator": "candidate: derived from validated 1X2 consensus",
+      "next_action": "Recommended next research family (V2-4): pre-registered chronological test + live DC price availability"
     }
   ],
   "selection_history": [
@@ -275,6 +310,11 @@
       "date": "2026-09-23",
       "cycle": "phase_v2_2",
       "decision": "WTA validated (second tennis engine); ATP+WTA paper Prediction Board live; next: Basketball Moneyline Stage-0 audit"
+    },
+    {
+      "date": "2026-09-24",
+      "cycle": "phase_v2_3",
+      "decision": "NBA Moneyline validated (gate A); next: Football Double Chance"
     }
   ],
   "probability_engine_principle": "Each market records its BEST AVAILABLE PROBABILITY ESTIMATOR, not the best model that beats the market. Market consensus is a legitimate estimator. The probability engine does not need historical betting profitability to be useful; the betting decision engine separately judges price/value/risk. See research/btts_outcome_prediction/PROBABILITY_ENGINE_ARCHITECTURE.md.",
@@ -286,5 +326,33 @@
     "recommendation": "log power alongside multiplicative prospectively; no production change",
     "files": "research/platform_v2/calibration/"
   },
-  "tennis_live_source_decision": "A -- The Odds API sufficient for initial prospective validation; Betfair Delayed later local complement"
+  "tennis_live_source_decision": "A -- The Odds API sufficient for initial prospective validation; Betfair Delayed later local complement",
+  "cross_sport_high_probability": {
+    "ATP": {
+      "share_ge_80": 0.198,
+      "pred": 0.876,
+      "actual": 0.874
+    },
+    "WTA": {
+      "share_ge_80": 0.177,
+      "pred": 0.869,
+      "actual": 0.87
+    },
+    "NBA": {
+      "share_ge_80": 0.209,
+      "pred": 0.855,
+      "actual": 0.875
+    },
+    "Football_1X2_descriptive": {
+      "share_ge_80": 0.033,
+      "pred": 0.837,
+      "actual": 0.883
+    },
+    "Football_OU25": {
+      "share_ge_80": 0.001
+    },
+    "Football_BTTS": {
+      "share_ge_80": 0.0
+    }
+  }
 }
