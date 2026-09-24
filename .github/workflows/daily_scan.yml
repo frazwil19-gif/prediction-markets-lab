@@ -48,6 +48,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
+      - name: Record workflow start (V2-5 timing evidence)
+        run: echo "WORKFLOW_START=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_ENV"
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -62,6 +64,7 @@ jobs:
           pip install -e .
 
       - name: Run the test suite first
+        id: tests
         # Fail fast on a broken engine before spending any API credits.
         run: pytest -q
 
@@ -90,12 +93,28 @@ jobs:
           python scripts/generate_system_status.py \
             --scan-status ${{ steps.scan.outcome == 'success' && 'success' || 'failure' }}
 
+      - name: Unified Prediction Board (V2-5 paper; 0 credits; never affects the Money Card)
+        if: always()
+        continue-on-error: true
+        env:
+          TRIGGER_EVENT: ${{ github.event_name }}
+          TRIGGER_SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          git fetch -q origin master && (git checkout origin/master -- predictions/ 2>/dev/null || true)
+          CI_FLAG=""; [ "${{ steps.tests.outcome }}" = "success" ] && CI_FLAG="--ci-passed"
+          if [ "${{ steps.scan.outcome }}" = "success" ]; then
+            python scripts/run_unified_prediction_board.py ingest-football $CI_FLAG
+          else
+            python scripts/run_unified_prediction_board.py build
+          fi
+
       - name: Commit and push the Daily Bet Card contract and system status
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add daily_cards/ paper_ledger/ status/
+          for f in predictions reports/latest_prediction_board.json reports/latest_prediction_board.csv reports/latest_prediction_board.md reports/latest_prediction_performance.json; do if [ -e "$f" ]; then git add "$f"; fi; done  # V2-5 (per path: absent files cannot break this step)
           if git diff --cached --quiet; then
             echo "No Daily Bet Card / paper-ledger / status changes to commit"
           else

@@ -48,7 +48,10 @@ def main() -> int:
     summary = settle_pending_paper_bets(
         ledger_path, config, starting_bankroll_gbp=bankroll_cfg["starting_bankroll_gbp"],
         archive_dir=REPO_ROOT / "settlement_archive",  # raw scores kept for the free-source shadow comparison
+        skip_if_nothing_started=True,  # V2-5: no scores call for a league with no pending bet started in the window
     )
+    if summary.skipped_sport_keys_nothing_started:
+        print(f"Skipped (no pending bet started in window; 0 credits): {summary.skipped_sport_keys_nothing_started}")
 
     print(f"Settled: {len(summary.settled_bet_ids)} -- {summary.settled_bet_ids}")
     print(f"Not yet completed: {len(summary.not_yet_completed_bet_ids)}")

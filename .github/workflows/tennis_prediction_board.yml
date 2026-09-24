@@ -32,6 +32,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
+      - name: Record workflow start (V2-5 timing evidence)
+        run: echo "WORKFLOW_START=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_ENV"
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
@@ -41,6 +43,7 @@ jobs:
           pip install -r requirements.txt
           pip install -e .
       - name: Run the test suite first
+        id: tests
         run: pytest -q
       - name: Board
         if: (github.event_name == 'schedule' && github.event.schedule != '30 22 * * *') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'board')
@@ -53,12 +56,28 @@ jobs:
       - name: Settle
         if: (github.event_name == 'schedule' && github.event.schedule == '30 22 * * *') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'settle')
         run: python scripts/run_tennis_settlement.py
+      - name: Unified Prediction Board -- tennis mirror + NBA (V2-5 paper; NBA inactive until 2026-10-20)
+        if: always() && steps.tests.outcome == 'success'
+        continue-on-error: true
+        env:
+          THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
+          TRIGGER_EVENT: ${{ github.event_name }}
+          TRIGGER_SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          git fetch -q origin master && (git checkout origin/master -- predictions/ 2>/dev/null || true)
+          python scripts/run_unified_prediction_board.py ingest-tennis --ci-passed
+          if [ "${{ github.event.schedule }}" = "30 22 * * *" ] || [ "${{ inputs.mode }}" = "settle" ]; then
+            python scripts/run_unified_prediction_board.py settle
+          else
+            python scripts/run_unified_prediction_board.py collect-nba
+          fi
       - name: Commit tennis prediction artefacts
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add tennis_predictions/
+          for f in predictions reports/latest_prediction_board.json reports/latest_prediction_board.csv reports/latest_prediction_board.md reports/latest_prediction_performance.json; do if [ -e "$f" ]; then git add "$f"; fi; done  # V2-5 (per path: absent files cannot break this step)
           if git diff --cached --quiet; then
             echo "No tennis prediction changes"
           else

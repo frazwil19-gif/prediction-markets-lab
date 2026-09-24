@@ -204,3 +204,31 @@ def test_event_not_found_in_scores_window(tmp_path, monkeypatch):
 
     assert summary.settled_bet_ids == []
     assert "soccer_epl-abc123-1x2::home" in summary.event_not_found_bet_ids
+
+
+def test_skip_if_nothing_started_avoids_useless_scores_calls(tmp_path, monkeypatch):
+    """V2-5 credit control: no scores call when no pending bet kicked off inside the scores window."""
+    from datetime import datetime, timezone
+
+    ledger_path = tmp_path / "paper_bets.csv"
+    strong = _build("soccer_epl-abc123-1x2", "home", [0.60, 0.61, 0.59, 0.60, 0.60], 2.20, 5)
+    record_qualifying_candidates(ledger_path, [strong], scan_id="scan-1", created_at="2026-09-19T09:00:00")
+    calls: list[str] = []
+
+    def fake_fetch(sport_key, config, days_from=3):
+        calls.append(sport_key)
+        return []
+
+    monkeypatch.setattr(settle_mod, "fetch_scores_raw", fake_fetch)
+    monkeypatch.setattr(settle_mod, "parse_scores_response", lambda raw, sk: [])
+    before = datetime(2026, 9, 19, 12, tzinfo=timezone.utc)      # not kicked off yet
+    s = settle_pending_paper_bets(ledger_path, TheOddsApiConfig(), 10.0, skip_if_nothing_started=True, now=before)
+    assert calls == [] and s.skipped_sport_keys_nothing_started == ["soccer_epl"]
+    long_after = datetime(2026, 9, 25, tzinfo=timezone.utc)      # outside the 3-day scores window
+    settle_pending_paper_bets(ledger_path, TheOddsApiConfig(), 10.0, skip_if_nothing_started=True, now=long_after)
+    assert calls == []
+    inside = datetime(2026, 9, 21, tzinfo=timezone.utc)
+    settle_pending_paper_bets(ledger_path, TheOddsApiConfig(), 10.0, skip_if_nothing_started=True, now=inside)
+    assert calls == ["soccer_epl"]
+    settle_pending_paper_bets(ledger_path, TheOddsApiConfig(), 10.0, now=before)     # default: unchanged behaviour
+    assert calls == ["soccer_epl", "soccer_epl"]

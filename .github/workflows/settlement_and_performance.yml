@@ -32,6 +32,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
+      - name: Record workflow start (V2-5 timing evidence)
+        run: echo "WORKFLOW_START=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_ENV"
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -59,6 +61,15 @@ jobs:
         continue-on-error: true
         run: python scripts/run_football_settlement_shadow.py
 
+      - name: Unified Prediction Board settlement (V2-5 paper; football-data.co.uk, 0 credits)
+        continue-on-error: true
+        env:
+          TRIGGER_EVENT: ${{ github.event_name }}
+          TRIGGER_SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          git fetch -q origin master && (git checkout origin/master -- predictions/ 2>/dev/null || true)
+          python scripts/run_unified_prediction_board.py settle --ci-passed
+
       - name: Regenerate performance report
         run: python scripts/generate_performance_report.py
 
@@ -75,6 +86,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add paper_ledger/ reports/latest_performance.json status/ settlement_archive/
+          for f in predictions reports/latest_prediction_board.json reports/latest_prediction_board.csv reports/latest_prediction_board.md reports/latest_prediction_performance.json; do if [ -e "$f" ]; then git add "$f"; fi; done  # V2-5 (per path: absent files cannot break this step)
           if git diff --cached --quiet; then
             echo "No settlement/performance/status changes to commit"
           else

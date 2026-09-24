@@ -51,6 +51,23 @@ class SettlementRunSummary:
     unresolvable_no_provider_id: list[str] = field(default_factory=list)
     event_not_found_bet_ids: list[str] = field(default_factory=list)
     errors: list[str] = field(default_factory=list)
+    skipped_sport_keys_nothing_started: list[str] = field(default_factory=list)
+
+
+def _any_started_in_window(rows: list[dict], days_from: int, now: "datetime | None" = None) -> bool:
+    """True if any row kicked off within [now - days_from days, now], or if any kickoff is unparseable."""
+    from datetime import datetime as _dt, timedelta as _td, timezone as _tz
+    now = now or _dt.now(_tz.utc)
+    for row in rows:
+        try:
+            ko = _dt.fromisoformat(str(row.get("kickoff", "")).replace("Z", "+00:00"))
+        except ValueError:
+            return True
+        if ko.tzinfo is None:
+            ko = ko.replace(tzinfo=_tz.utc)
+        if now - _td(days=days_from) <= ko <= now:
+            return True
+    return False
 
 
 def _parse_provider_event_id(event_id_field: str) -> tuple[str, str] | None:
@@ -90,6 +107,8 @@ def settle_pending_paper_bets(
     starting_bankroll_gbp: float,
     days_from: int = 3,
     archive_dir: Path | None = None,
+    skip_if_nothing_started: bool = False,
+    now: "datetime | None" = None,
 ) -> SettlementRunSummary:
     """Settle every pending paper bet whose event has a completed score.
 
@@ -103,6 +122,11 @@ def settle_pending_paper_bets(
         archive_dir: Optional (added 2026-09-24, V2-4 settlement migration). When given, every raw
             scores payload is also written to archive_dir as JSON so a free-results settlement source
             can be shadow-compared against it. It does not change settlement behaviour.
+        skip_if_nothing_started: Optional (added 2026-09-24, V2-5 credit control). When True, a sport_key's
+            scores are fetched only if at least one of its pending bets kicked off within the scores window
+            (now - days_from days <= kickoff <= now). A kickoff that cannot be parsed keeps the old behaviour
+            (fetch). This only avoids calls that could not settle anything.
+        now: Clock override for tests.
 
     Returns:
         A SettlementRunSummary describing what happened to every pending
@@ -122,7 +146,10 @@ def settle_pending_paper_bets(
         pending_by_sport_key.setdefault(sport_key, []).append(row)
 
     scores_by_sport_key: dict[str, dict[str, ParsedScore]] = {}
-    for sport_key in pending_by_sport_key:
+    for sport_key in list(pending_by_sport_key):
+        if skip_if_nothing_started and not _any_started_in_window(pending_by_sport_key[sport_key], days_from, now):
+            summary.skipped_sport_keys_nothing_started.append(sport_key)
+            continue
         try:
             raw = fetch_scores_raw(sport_key, config, days_from=days_from)
             if archive_dir is not None:
