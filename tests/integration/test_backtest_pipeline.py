@@ -12,12 +12,20 @@ from __future__ import annotations
 
 import json
 
+import pytest
+
 from prediction_markets_lab.backtesting.frozen_strategy import load_and_freeze_current_strategy
+from prediction_markets_lab.backtesting import historical_loader as _hl
 from prediction_markets_lab.backtesting.historical_loader import load_matches_for_replay
 from prediction_markets_lab.backtesting.replay import build_candidates, simulate_bankroll, ReplayRun
 from prediction_markets_lab.backtesting.report import write_backtest_outputs
 
 
+# Real-data test: the processed Cycle 1 files are gitignored (regenerable, not committed), so they
+# are absent on a clean GitHub Actions checkout. Skip there rather than fail the whole suite --
+# this was silently failing CI (and therefore every scheduled workflow's test step) since 2026-09-22.
+@pytest.mark.skipif(not (_hl.CYCLE_001_MATCHES.exists() and _hl.CYCLE_001_BOOKMAKER_MARKETS.exists()),
+                    reason="processed Cycle 1 data not present (gitignored; local-only)")
 def test_full_pipeline_on_one_real_season_produces_a_valid_report(tmp_path):
     strategy = load_and_freeze_current_strategy()
     matches, load_report = load_matches_for_replay("closing")

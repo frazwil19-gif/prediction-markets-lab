@@ -158,6 +158,8 @@ def test_actual_result_letter_matches():
     assert hl.actual_result_letter_matches("away", "A") is True
 
 
+@pytest.mark.skipif(not (hl.CYCLE_001_MATCHES.exists() and hl.CYCLE_001_BOOKMAKER_MARKETS.exists() and hl.RAW_DATA_ROOT.exists()),
+                    reason="processed/raw Cycle 1 data not present (gitignored; local-only)")
 def test_real_cycle_001_data_join_succeeds_for_almost_every_eligible_match():
     """Integration-style sanity check against the actual repository data
     (not synthetic) -- guards against the join silently regressing to a
