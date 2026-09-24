@@ -1,0 +1,70 @@
+{
+ "generated_at": "2026-09-24T20:10:06.819258+00:00",
+ "mode": "SHADOW (no ledger writes)",
+ "football_data_sources": {
+  "E0": "https://www.football-data.co.uk/mmz4281/2627/E0.csv",
+  "E1": "https://www.football-data.co.uk/mmz4281/2627/E1.csv",
+  "SC0": "https://www.football-data.co.uk/mmz4281/2627/SC0.csv"
+ },
+ "fd_results_loaded": 187,
+ "fd_unresolved_names": [
+  "Bolton",
+  "Lincoln"
+ ],
+ "fd_internal_inconsistencies": 0,
+ "fixture_comparisons_total": 0,
+ "fixture_status_counts": {},
+ "disagreement_examples": [],
+ "migration_gate": {
+  "min_comparisons": 100,
+  "matched_comparisons": 0,
+  "score_disagreements": 0,
+  "passed": false
+ },
+ "ledger_pending_past_kickoff": [
+  {
+   "bet_id": "Norwich City v Bolton Wanderers::1x2::away",
+   "event": "Norwich City v Bolton Wanderers",
+   "kickoff": "2026-09-20",
+   "market": "1x2",
+   "selection": "away",
+   "fd_status": "UNRESOLVED_NAME",
+   "fd_score": "",
+   "would_win": null,
+   "detail": "unmapped: Bolton Wanderers"
+  },
+  {
+   "bet_id": "Leeds United v Crystal Palace::1x2::away",
+   "event": "Leeds United v Crystal Palace",
+   "kickoff": "2026-09-20",
+   "market": "1x2",
+   "selection": "away",
+   "fd_status": "MATCHED",
+   "fd_score": "0-0",
+   "would_win": false,
+   "detail": ""
+  },
+  {
+   "bet_id": "Manchester City v Sunderland::1x2::away",
+   "event": "Manchester City v Sunderland",
+   "kickoff": "2026-09-20",
+   "market": "1x2",
+   "selection": "away",
+   "fd_status": "MATCHED",
+   "fd_score": "5-3",
+   "would_win": false,
+   "detail": ""
+  },
+  {
+   "bet_id": "Leeds United v Crystal Palace::over_under_2_5::under",
+   "event": "Leeds United v Crystal Palace",
+   "kickoff": "2026-09-20",
+   "market": "over_under_2_5",
+   "selection": "under",
+   "fd_status": "MATCHED",
+   "fd_score": "0-0",
+   "would_win": true,
+   "detail": ""
+  }
+ ]
+}
