@@ -102,17 +102,17 @@
    "engine": "football_double_chance.derived_1x2",
    "sport": "football",
    "market": "Double Chance",
-   "version": "pending",
-   "status": "IN RESEARCH (V2-4)",
-   "best_estimator": "derived from 1X2 consensus (candidate)",
-   "historical_sample": null,
-   "holdout": "pending",
-   "prospective": "NOT STARTED",
-   "ge80_share": null,
-   "calibration": "pending",
-   "live_source": "to audit",
-   "money_status": "NOT ELIGIBLE",
-   "multi_research": "potential"
+   "version": "1 (frozen; no fitting)",
+   "status": "VALIDATED ON EXPOSED DATA (V2-4 gate A, provisional)",
+   "best_estimator": "pairwise sums of the production 1X2 proportional consensus (B365/BW/PS closing)",
+   "historical_sample": 5897,
+   "holdout": "sealed 2026/27 Aug-Dec, opens >= 2027-01-03",
+   "prospective": "DESIGNED, not active",
+   "ge80_share": 0.315,
+   "calibration": "slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected)",
+   "live_source": "Odds API double_chance per-event (1 credit/event/region; 4 UK books seen); synthetic DC from h2h at 0 credits",
+   "money_status": "NOT ELIGIBLE (and >=80% fair odds <=1.25 sit below the 1.33 payout floor)",
+   "multi_research": "leg pool only; highly dependent on 1X2 of the same match"
   }
  ]
 }
