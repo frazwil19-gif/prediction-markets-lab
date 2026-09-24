@@ -1,0 +1,14 @@
+{
+ "phase": "V2-3 NBA Moneyline",
+ "frozen_before_opening": true,
+ "holdout_seasons": ["2024-25", "2025-26"],
+ "fit_seasons": ["2016-17", "2017-18", "2018-19", "2019-20", "2020-21", "2021-22", "2022-23", "2023-24"],
+ "elo": {"k": 15.0, "hca": 50.0, "mov": true, "carry": 0.75, "note": "chosen on development log loss from the pre-registered grid; hca=50 is the grid's lower edge (recorded, not extended)"},
+ "default_estimator": "market",
+ "candidates": ["elo", "data_logit", "stack_market_elo"],
+ "data_features": ["elo_logit", "rest_diff", "home_b2b", "away_b2b", "games_7d_diff", "roll10_pd_diff", "roll10_win_diff", "season_pd_diff", "season_game_number", "neutral"],
+ "data_logit_l2": 1.0,
+ "selection_rule": "default unless a candidate has holdout log loss lower with paired-bootstrap 95% CI (seed 20260924, 2000 resamples) excluding zero",
+ "prediction_gate": "A if selected slope 95% bootstrap CI includes 1 AND every band n>=200 has predicted mean inside realised 99.5% Wilson interval; B if one of the two; C if neither",
+ "dev_results_reference": "research/platform_v2/nba/DEV_RESULTS.json"
+}
