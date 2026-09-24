@@ -73,8 +73,8 @@
 41. Expansion candidates stay parked: NHL/MLB moneyline (data partly sourced), which have lower high-P potential.
 
 ## Engineering
-42. Local suite: **1,122 passed**. Clean-clone suite: see 43.
-43. Clean clone (at 8ce0e83, before the DC files): 1,111 passed, 8 skipped. Re-run at the final commit below.
+42. Local suite: **1,122 passed**.
+43. Clean clone at 1361ca4 (final): **1,114 passed, 8 skipped** (real-data tests skip; 8ce0e83 gave 1,111 + 8).
 44. Commits: 8ce0e83 (recovery, schedule, settlement shadow, budget guard), 217c7fb (DC pre-registration), plus the DC results commit.
 45. Nothing touches frozen engines or the production money gate. No purchases. 1 credit spent on research.
 46. **Needs Fraser:** `git push`; then verify settlement tonight (or dispatch it manually). Decisions: approve the unified board (40) and the
