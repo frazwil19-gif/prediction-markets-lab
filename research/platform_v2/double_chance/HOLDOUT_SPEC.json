@@ -1,0 +1,13 @@
+{
+  "study": "V2-4 football double chance",
+  "estimator": "per-book multiplicative de-vig, mean consensus of B365/BW/PS closing; DC = pairwise sums; no fitting",
+  "competitions": ["E0", "E1", "SC0"],
+  "season": "2026_27",
+  "date_from": "2026-08-01",
+  "date_to": "2026-12-31",
+  "open_not_before": "2027-01-03",
+  "source": "https://www.football-data.co.uk/mmz4281/2627/{E0,E1,SC0}.csv",
+  "pass_criteria": "calibration slope 1000-bootstrap CI includes 1 AND every band n>=200 mean predicted inside 99.5% Wilson AND >=80 share >=15%",
+  "events": "1X, X2, 12 as separate binary events; best-selection per match as the operational view",
+  "opened_once": true
+}
