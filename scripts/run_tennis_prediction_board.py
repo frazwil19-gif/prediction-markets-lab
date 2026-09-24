@@ -14,6 +14,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
+from prediction_markets_lab.ops.api_budget import check as budget_check, load_budget, month_spend
 from prediction_markets_lab.tennis_prospective import board as B
 from prediction_markets_lab.tennis_prospective.engine import parse_tennis_odds, predict, tour_of
 from prediction_markets_lab.tennis_prospective.ledger import append_predictions
@@ -21,7 +22,7 @@ from prediction_markets_lab.tennis_prospective.ledger import append_predictions
 REPO = Path(__file__).resolve().parents[1]
 OUT = REPO / "tennis_predictions"
 BASE = "https://api.the-odds-api.com/v4/sports"
-MIN_REMAINING_CREDITS = 150  # protects the football scan's budget
+BUDGET_FILE = REPO / "config" / "api_budget.json"  # per-consumer cap + floors (optional consumer)
 
 
 def _get(url: str) -> tuple[object, dict]:
@@ -59,13 +60,16 @@ def main() -> int:
     now = datetime.now(timezone.utc)
     preds, fetched, events, skipped = [], [], 0, []
     remaining = int(hdr.get("x-requests-remaining") or 0)
+    budget = load_budget(BUDGET_FILE)
+    spent = month_spend(OUT / "credit_log.csv", now)
     for sk in keys[: a.max_keys]:
-        if remaining - 1 < MIN_REMAINING_CREDITS:
+        if not budget_check(budget, "tennis_prediction_board", spent, remaining).allowed:
             skipped.append(sk)
             continue
         raw, h = _get(f"{BASE}/{sk}/odds/?{urllib.parse.urlencode({'apiKey': key, 'regions': 'uk', 'markets': 'h2h', 'oddsFormat': 'decimal'})}")
         log_credits(f"odds:{sk}", h)
         remaining = int(h.get("x-requests-remaining") or remaining)
+        spent += int(h.get("x-requests-last") or 1)
         fetched.append(sk)
         qs = parse_tennis_odds(raw, sk)
         events += len(qs)
@@ -81,6 +85,20 @@ def main() -> int:
     stamp = now.strftime("%H%M")
     (OUT / day / f"board_{stamp}.json").write_text(json.dumps(board, indent=1))
     (OUT / day / f"board_{stamp}.md").write_text(B.render_markdown(board))
+    # Scheduling audit (V2-4): GitHub cron can start hours late, so every run records what was
+    # configured vs when it actually ran; minutes-to-start per prediction follows from the ledger's
+    # prediction_timestamp and commence_time.
+    rl = OUT / "run_log.csv"
+    new_log = not rl.exists()
+    with open(rl, "a", newline="") as f:
+        w = csv.writer(f)
+        if new_log:
+            w.writerow(["scan_timestamp_utc", "trigger_event", "configured_schedule_utc", "run_id",
+                        "active_keys", "events", "predictions_added", "median_minutes_to_start"])
+        mins = sorted((datetime.fromisoformat(p.commence_time) - now).total_seconds() / 60 for p in preds)
+        w.writerow([now.isoformat(), os.environ.get("TRIGGER_EVENT", "manual"), os.environ.get("TRIGGER_SCHEDULE", ""),
+                    os.environ.get("RUN_ID", ""), "|".join(fetched), events, added,
+                    round(mins[len(mins) // 2]) if mins else ""])
     print(json.dumps({"keys": fetched, "events": events, "predictions_this_scan": len(preds),
                       "ledger_added": added, "already_predicted": existing, "credits_remaining": remaining}, indent=1))
     return 0

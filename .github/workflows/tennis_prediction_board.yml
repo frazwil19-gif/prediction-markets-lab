@@ -46,6 +46,9 @@ jobs:
         if: (github.event_name == 'schedule' && github.event.schedule != '30 22 * * *') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'board')
         env:
           THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
+          TRIGGER_EVENT: ${{ github.event_name }}
+          TRIGGER_SCHEDULE: ${{ github.event.schedule }}
+          RUN_ID: ${{ github.run_id }}
         run: python scripts/run_tennis_prediction_board.py
       - name: Settle
         if: (github.event_name == 'schedule' && github.event.schedule == '30 22 * * *') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'settle')

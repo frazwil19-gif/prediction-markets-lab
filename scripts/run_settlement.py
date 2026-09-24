@@ -46,7 +46,8 @@ def main() -> int:
         return 1
 
     summary = settle_pending_paper_bets(
-        ledger_path, config, starting_bankroll_gbp=bankroll_cfg["starting_bankroll_gbp"]
+        ledger_path, config, starting_bankroll_gbp=bankroll_cfg["starting_bankroll_gbp"],
+        archive_dir=REPO_ROOT / "settlement_archive",  # raw scores kept for the free-source shadow comparison
     )
 
     print(f"Settled: {len(summary.settled_bet_ids)} -- {summary.settled_bet_ids}")

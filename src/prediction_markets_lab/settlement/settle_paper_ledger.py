@@ -89,6 +89,7 @@ def settle_pending_paper_bets(
     config: TheOddsApiConfig,
     starting_bankroll_gbp: float,
     days_from: int = 3,
+    archive_dir: Path | None = None,
 ) -> SettlementRunSummary:
     """Settle every pending paper bet whose event has a completed score.
 
@@ -99,6 +100,9 @@ def settle_pending_paper_bets(
             value (config/bankroll.yaml's starting_bankroll_gbp), used to
             recompute the running paper bankroll after each settlement.
         days_from: Passed through to fetch_scores_raw.
+        archive_dir: Optional (added 2026-09-24, V2-4 settlement migration). When given, every raw
+            scores payload is also written to archive_dir as JSON so a free-results settlement source
+            can be shadow-compared against it. It does not change settlement behaviour.
 
     Returns:
         A SettlementRunSummary describing what happened to every pending
@@ -121,6 +125,12 @@ def settle_pending_paper_bets(
     for sport_key in pending_by_sport_key:
         try:
             raw = fetch_scores_raw(sport_key, config, days_from=days_from)
+            if archive_dir is not None:
+                import json as _json
+                from datetime import datetime as _dt, timezone as _tz
+                archive_dir.mkdir(parents=True, exist_ok=True)
+                stamp = _dt.now(_tz.utc).strftime("%Y%m%dT%H%M%SZ")
+                (archive_dir / f"odds_api_scores_{sport_key}_{stamp}.json").write_text(_json.dumps(raw))
             parsed_scores = parse_scores_response(raw, sport_key)
             scores_by_sport_key[sport_key] = {s.event_id: s for s in parsed_scores}
         except Exception as exc:  # noqa: BLE001 -- one sport_key's failure must not block the others

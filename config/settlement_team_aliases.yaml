@@ -1,0 +1,8 @@
+# Settlement-only alias OVERLAY (added 2026-09-24, V2-4 settlement adapter).
+# config/football_team_aliases.yaml is hash-frozen by earlier research, so it must never be edited;
+# settlement merges this file on top of it (a conflicting mapping is an error). Only names actually observed in the
+# Football-Data 2025/26 raw files and on The Odds API daily cards; no guessed spellings.
+Charlton Athletic: [Charlton]
+Wrexham: [Wrexham AFC]
+Falkirk: [Falkirk F.C.]
+Dundee: [Dundee FC]

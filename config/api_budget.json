@@ -1,0 +1,12 @@
+{
+  "_doc": "Odds API monthly credit budget (research/platform_v2/API_CREDIT_BUDGET.md). Optional consumers stop first.",
+  "monthly_plan_limit": 500,
+  "monthly_target_max": 425,
+  "global_reserve_remaining": 75,
+  "consumers": {
+    "football_daily_scan": {"priority": "core", "monthly_cap": 180},
+    "football_settlement": {"priority": "core", "monthly_cap": 60},
+    "tennis_prediction_board": {"priority": "optional", "monthly_cap": 120, "min_remaining": 150},
+    "nba_prediction_board": {"priority": "optional", "monthly_cap": 60, "min_remaining": 150}
+  }
+}
