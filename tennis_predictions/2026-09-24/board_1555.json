@@ -1,0 +1,119 @@
+{
+ "board_date": "2026-09-24",
+ "layer": "PREDICTION (paper) -- not a bet recommendation",
+ "coverage": {
+  "active_keys": [
+   "tennis_wta_singapore_open"
+  ],
+  "skipped_for_credit_guard": [],
+  "keys_over_cap": [],
+  "events_returned": 3,
+  "scan_timestamp": "2026-09-24T15:55:14.493291+00:00",
+  "credits_remaining_after": 451,
+  "universe_note": "Odds-API-covered universe only (Slams, 1000s, 500s) -- not the full ATP/WTA calendar"
+ },
+ "counts": {
+  "events_scanned": 3,
+  "valid_predictions": 3,
+  "research_only_predictions": 0,
+  "ge_70": 1,
+  "ge_75": 1,
+  "ge_80": 0,
+  "ge_85": 0,
+  "ge_90": 0,
+  "ge_95": 0
+ },
+ "predictions": [
+  {
+   "prediction_id": "2a72cc520e872b49",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "WTA",
+   "sport_key": "tennis_wta_singapore_open",
+   "tournament": "WTA Singapore Open",
+   "event_id": "019e16123376050b7a03b6e497b7bbcd",
+   "player_a": "Mirra Andreeva",
+   "player_b": "Leylah Fernandez",
+   "commence_time": "2026-09-25T10:30:00+00:00",
+   "prediction_timestamp": "2026-09-24T15:55:14.493291+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=1.29/4.3;ex_lay=1.3/4.5",
+   "p_a": 0.772608,
+   "p_b": 0.227392,
+   "predicted_winner": "Mirra Andreeva",
+   "predicted_probability": 0.772608,
+   "probability_band": "75-79.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 423,
+   "historical_band_actual_rate": 0.7636,
+   "historical_band_wilson95": [
+    0.7208,
+    0.8016
+   ],
+   "engine_holdout_n": 4339
+  },
+  {
+   "prediction_id": "a1772eac2b9a262e",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "WTA",
+   "sport_key": "tennis_wta_singapore_open",
+   "tournament": "WTA Singapore Open",
+   "event_id": "f0731c18d689ed876e51dc1a9bf12170",
+   "player_a": "Elise Mertens",
+   "player_b": "Maja Chwalinska",
+   "commence_time": "2026-09-25T05:00:00+00:00",
+   "prediction_timestamp": "2026-09-24T15:55:14.493291+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=1.5/2.98;ex_lay=1.51/3.05",
+   "p_a": 0.667035,
+   "p_b": 0.332965,
+   "predicted_winner": "Elise Mertens",
+   "predicted_probability": 0.667035,
+   "probability_band": "65-69.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 559,
+   "historical_band_actual_rate": 0.6905,
+   "historical_band_wilson95": [
+    0.651,
+    0.7274
+   ],
+   "engine_holdout_n": 4339
+  },
+  {
+   "prediction_id": "b3e2e99ebd422e2e",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "WTA",
+   "sport_key": "tennis_wta_singapore_open",
+   "tournament": "WTA Singapore Open",
+   "event_id": "4b9798f2942c776f60e433fb4b9cd90a",
+   "player_a": "Xinyu Wang",
+   "player_b": "Tatiana Prozorova",
+   "commence_time": "2026-09-25T06:30:00+00:00",
+   "prediction_timestamp": "2026-09-24T15:55:14.493291+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=1.4/2.38;ex_lay=1.72/3.5",
+   "p_a": 0.653333,
+   "p_b": 0.346667,
+   "predicted_winner": "Xinyu Wang",
+   "predicted_probability": 0.653333,
+   "probability_band": "65-69.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 559,
+   "historical_band_actual_rate": 0.6905,
+   "historical_band_wilson95": [
+    0.651,
+    0.7274
+   ],
+   "engine_holdout_n": 4339
+  }
+ ],
+ "research_only": []
+}
