@@ -2,9 +2,9 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 4 · Valid predictions: 4 · Sports: tennis
-Counts: >=70: 1 · >=75: 0 · >=80: 0 · >=85: 0 · >=90: 0 · >=95: 0
-Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 442
+Upcoming events: 0 · Valid predictions: 0 · Sports: —
+Counts: >=70: 0 · >=75: 0 · >=80: 0 · >=85: 0 · >=90: 0 · >=95: 0
+Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 441
 
 ## Top predictions (P ≥ 80%)
 
@@ -28,7 +28,7 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 442
 
 - daily_scan: OK (last 2026-09-24T15:52:36.013393+00:00)
 - settlement: OK (last 2026-09-24T23:51:10.674045+00:00)
-- tennis_board: OK (last 2026-09-24T20:37:57.452945+00:00)
-- ci_tests: OK (last 2026-09-25T00:39:44.959047+00:00)
+- tennis_board: OK (last 2026-09-25T12:05:36.150127+00:00)
+- ci_tests: OK (last 2026-09-25T12:05:36.803906+00:00)
 
 Single = passes the engine money status and payout floor pre-filter only; the Money Card decides bets. Double Chance is PROVISIONAL_PROSPECTIVE (exposed-data history; sealed holdout opens 2027-01-03).
