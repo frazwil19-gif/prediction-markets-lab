@@ -1,0 +1,59 @@
+{
+ "board_date": "2026-09-25",
+ "layer": "PREDICTION (paper) -- not a bet recommendation",
+ "coverage": {
+  "active_keys": [
+   "tennis_wta_singapore_open"
+  ],
+  "skipped_for_credit_guard": [],
+  "keys_over_cap": [],
+  "events_returned": 1,
+  "scan_timestamp": "2026-09-25T19:29:06.140163+00:00",
+  "credits_remaining_after": 434,
+  "universe_note": "Odds-API-covered universe only (Slams, 1000s, 500s) -- not the full ATP/WTA calendar"
+ },
+ "counts": {
+  "events_scanned": 1,
+  "valid_predictions": 1,
+  "research_only_predictions": 0,
+  "ge_70": 0,
+  "ge_75": 0,
+  "ge_80": 0,
+  "ge_85": 0,
+  "ge_90": 0,
+  "ge_95": 0
+ },
+ "predictions": [
+  {
+   "prediction_id": "3d6ec003b8ef55e1",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "WTA",
+   "sport_key": "tennis_wta_singapore_open",
+   "tournament": "WTA Singapore Open",
+   "event_id": "fc6f0c9af77a5fa7e183f85d576cac79",
+   "player_a": "Leylah Fernandez",
+   "player_b": "Maja Chwalinska",
+   "commence_time": "2026-09-26T10:00:00+00:00",
+   "prediction_timestamp": "2026-09-25T19:29:06.140163+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=1.72/2.34;ex_lay=1.74/2.4",
+   "p_a": 0.578049,
+   "p_b": 0.421951,
+   "predicted_winner": "Leylah Fernandez",
+   "predicted_probability": 0.578049,
+   "probability_band": "55-59.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 718,
+   "historical_band_actual_rate": 0.5585,
+   "historical_band_wilson95": [
+    0.522,
+    0.5944
+   ],
+   "engine_holdout_n": 4339
+  }
+ ],
+ "research_only": []
+}
