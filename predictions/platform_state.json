@@ -1,6 +1,12 @@
 {
- "last_ci_pass": "2026-09-25T12:05:36.803906+00:00",
+ "last_ci_pass": "2026-09-25T12:39:00.845837+00:00",
  "last_runs": {
+  "football": {
+   "added": 0,
+   "already_recorded": 0,
+   "at": "2026-09-25T12:39:00.855383+00:00",
+   "candidates": 0
+  },
   "settle": {
    "added": 0,
    "at": "2026-09-25T00:39:45.129810+00:00",
@@ -16,6 +22,9 @@
  "last_tennis_ingest": "2026-09-25T12:05:36.811076+00:00",
  "pending_review": [],
  "skips": {
+  "football": {
+   "football: OUTSIDE_48H_WINDOW": 38
+  },
   "tennis": {}
  }
 }
