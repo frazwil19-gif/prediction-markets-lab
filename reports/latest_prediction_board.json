@@ -1,14 +1,12 @@
 {
  "board_schema_version": 1,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-09-26T00:44:57.982989+00:00",
+ "generated_at": "2026-09-26T11:41:49.923552+00:00",
  "date": "2026-09-26",
  "summary": {
-  "upcoming_events": 1,
-  "valid_predictions": 1,
-  "sports_active": [
-   "tennis"
-  ],
+  "upcoming_events": 0,
+  "valid_predictions": 0,
+  "sports_active": [],
   "engines_active": [
    "football_1x2.market_consensus",
    "football_ou25.market",
@@ -26,11 +24,11 @@
   },
   "settled_yesterday": 0,
   "system": "HEALTHY",
-  "api_credits_last_observed": 434
+  "api_credits_last_observed": 433
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-09-26T00:44:57.982989+00:00",
+  "generated_at": "2026-09-26T11:41:49.923552+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -38,30 +36,30 @@
     "last": "2026-09-25T12:39:00.148961+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 12.1
+    "age_hours": 23.0
    },
    "settlement": {
     "last": "2026-09-25T23:56:18.662350+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 0.8
+    "age_hours": 11.8
    },
    "tennis_board": {
-    "last": "2026-09-25T19:29:06.140163+00:00",
+    "last": "2026-09-26T11:41:49.071769+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 5.3
+    "age_hours": 0.0
    },
    "ci_tests": {
-    "last": "2026-09-26T00:44:57.811920+00:00",
+    "last": "2026-09-26T11:41:49.719901+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    }
   },
   "api_credits": {
-   "remaining": 434,
-   "observed_at": "2026-09-25T19:29:06.227059+00:00",
+   "remaining": 433,
+   "observed_at": "2026-09-26T11:41:49.218266+00:00",
    "source": "credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
@@ -160,45 +158,5 @@
   },
   "tennis": {}
  },
- "predictions": [
-  {
-   "prediction_id": "3d6ec003b8ef55e1",
-   "engine_id": "wta_match_winner.betfair_market",
-   "engine_version": "1",
-   "sport": "tennis",
-   "competition": "WTA Singapore Open",
-   "event_id": "fc6f0c9af77a5fa7e183f85d576cac79",
-   "event_key": "tennis|tennis_wta_singapore_open|fc6f0c9af77a5fa7e183f85d576cac79",
-   "event_name": "Leylah Fernandez v Maja Chwalinska",
-   "event_start": "2026-09-26T10:00:00+00:00",
-   "market": "match_winner",
-   "selection": "Leylah Fernandez",
-   "estimated_probability": "0.578049",
-   "fair_odds": "1.72995714896142",
-   "probability_band": "55-59.9%",
-   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
-   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "30 15 * * *",
-   "actual_workflow_start": "2026-09-25T19:29:06.140163+00:00",
-   "prediction_timestamp": "2026-09-25T19:29:06.140163+00:00",
-   "minutes_to_event": "870.9",
-   "live_price": "1.72",
-   "live_price_source": "betfair_ex_uk back (odds_api)",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "False",
-   "single_ineligible_reason": "engine not money-eligible",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
-   "origin": "tennis_predictions/ledger_predictions.csv",
-   "origin_prediction_id": "3d6ec003b8ef55e1",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": ""
-  }
- ]
+ "predictions": []
 }
