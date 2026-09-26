@@ -1,12 +1,14 @@
 {
  "board_schema_version": 1,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-09-26T12:07:49.336709+00:00",
+ "generated_at": "2026-09-26T18:42:06.291645+00:00",
  "date": "2026-09-26",
  "summary": {
-  "upcoming_events": 0,
-  "valid_predictions": 0,
-  "sports_active": [],
+  "upcoming_events": 1,
+  "valid_predictions": 1,
+  "sports_active": [
+   "tennis"
+  ],
   "engines_active": [
    "football_1x2.market_consensus",
    "football_ou25.market",
@@ -24,11 +26,11 @@
   },
   "settled_yesterday": 0,
   "system": "HEALTHY",
-  "api_credits_last_observed": 433
+  "api_credits_last_observed": 426
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-09-26T12:07:49.336709+00:00",
+  "generated_at": "2026-09-26T18:42:06.291645+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -36,30 +38,30 @@
     "last": "2026-09-26T12:07:48.650703+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 0.0
+    "age_hours": 6.6
    },
    "settlement": {
     "last": "2026-09-25T23:56:18.662350+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 12.2
+    "age_hours": 18.8
    },
    "tennis_board": {
-    "last": "2026-09-26T11:41:49.071769+00:00",
+    "last": "2026-09-26T18:42:05.297583+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 0.4
+    "age_hours": 0.0
    },
    "ci_tests": {
-    "last": "2026-09-26T12:07:49.327088+00:00",
+    "last": "2026-09-26T18:42:06.119790+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    }
   },
   "api_credits": {
-   "remaining": 433,
-   "observed_at": "2026-09-26T11:41:49.218266+00:00",
+   "remaining": 426,
+   "observed_at": "2026-09-26T18:42:05.479025+00:00",
    "source": "credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
@@ -119,7 +121,7 @@
    "status": "VALIDATED_HISTORICAL",
    "prospective_status": "COLLECTING",
    "money_eligible": false,
-   "predictions": 9,
+   "predictions": 10,
    "settled_rows": 0,
    "maturity": "COLLECTING",
    "ge80_settled": 0,
@@ -158,5 +160,45 @@
   },
   "tennis": {}
  },
- "predictions": []
+ "predictions": [
+  {
+   "prediction_id": "f81233fab144841e",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "sport": "tennis",
+   "competition": "WTA Singapore Open",
+   "event_id": "4cf827b985faae04b7886aebea6cf96e",
+   "event_key": "tennis|tennis_wta_singapore_open|4cf827b985faae04b7886aebea6cf96e",
+   "event_name": "Leylah Fernandez v Talia Gibson",
+   "event_start": "2026-09-27T09:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Leylah Fernandez",
+   "estimated_probability": "0.648402",
+   "fair_odds": "1.54225310841114",
+   "probability_band": "60-64.9%",
+   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
+   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "data_quality": "OK",
+   "current_context_status": "NOT_MODELLED",
+   "configured_scan_time": "30 15 * * *",
+   "actual_workflow_start": "2026-09-26T18:42:05.297583+00:00",
+   "prediction_timestamp": "2026-09-26T18:42:05.297583+00:00",
+   "minutes_to_event": "857.9",
+   "live_price": "1.52",
+   "live_price_source": "betfair_ex_uk back (odds_api)",
+   "paper_status": "PAPER",
+   "prediction_valid": "True",
+   "single_eligible": "False",
+   "single_ineligible_reason": "engine not money-eligible",
+   "multi_research_eligible": "False",
+   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
+   "origin": "tennis_predictions/ledger_predictions.csv",
+   "origin_prediction_id": "f81233fab144841e",
+   "settlement_status": "",
+   "result": "",
+   "correct": "",
+   "settlement_timestamp": ""
+  }
+ ]
 }
