@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-28T15:06:53.841564+00:00",
+ "generated_at": "2026-09-28T21:21:53.839136+00:00",
  "protocol": "research/platform_v2/unified_board/PROSPECTIVE_PROTOCOL.md",
  "pending_review": [],
  "pooled": {
@@ -18,6 +18,16 @@
   "by_engine": {}
  },
  "engines": {
+  "atp_match_winner.betfair_market": {
+   "predictions": 0,
+   "prediction_events": 0,
+   "settled_rows": 0,
+   "settled_events": 0,
+   "settled_ge80_events": 0,
+   "maturity": "COLLECTING",
+   "ge80_maturity": "COLLECTING",
+   "alarm_review_required": false
+  },
   "wta_match_winner.betfair_market": {
    "predictions": 10,
    "prediction_events": 10,
