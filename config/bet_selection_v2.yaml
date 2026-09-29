@@ -1,0 +1,68 @@
+# Bet-Selection V2 (Phase V2-6) -- PAPER research layer. Pre-registered 2026-09-29 before any evaluation ran.
+# Spec: research/platform_v2/bet_selection_v2/BET_SELECTION_V2_SPEC.md
+#
+# Every gate below is a RESEARCH BASELINE copied from the existing money gates in config/thresholds.yaml
+# (not re-tuned, not lowered). Changing any value requires a new rule_version and a dated note in the spec;
+# rows written under an old rule_version are never re-labelled.
+
+rule_version: "bsv2-1"
+
+# Real-money actions: permanently disabled in this layer. Fraser's explicit approval + a separate change is required.
+real_money_enabled: false
+
+decision_gates:
+  # PAPER_BET requires ALL of these.
+  paper_bet:
+    min_probability: 0.50                  # thresholds.yaml money_qualification.min_probability
+    min_net_ev: 0.02                       # thresholds.yaml money_qualification.min_net_ev
+    min_decimal_odds: 1.33                 # thresholds.yaml payout_policy.normal_min_decimal_odds
+    max_hours_to_event: 24.0               # thresholds.yaml money_qualification.event_horizon_hours
+    max_price_age_minutes: 240.0           # thresholds.yaml data_quality.max_quote_age_minutes
+    engine_statuses: ["VALIDATED_HISTORICAL", "VALIDATED_HISTORICAL_AND_PROSPECTIVE"]
+  # WATCH: a valid prediction with a fresh real price and net EV > 0 that fails a PAPER_BET gate other than
+  # the hard rejections below (EV below 2%, outside the 24h horizon, provisional engine, odds below payout floor).
+  watch:
+    min_net_ev_exclusive: 0.0
+    engine_statuses: ["VALIDATED_HISTORICAL", "VALIDATED_HISTORICAL_AND_PROSPECTIVE", "PROVISIONAL_PROSPECTIVE"]
+  # MULTI_RESEARCH_ELIGIBLE: strong, validated, fresh-priced leg that does not qualify as a single on value.
+  # A research flag only -- multis stay DISABLED (see multi below).
+  multi_research:
+    min_probability: 0.80
+    engine_statuses: ["VALIDATED_HISTORICAL", "VALIDATED_HISTORICAL_AND_PROSPECTIVE"]
+
+# Commission on net winnings, by price source. Bookmakers charge none. An exchange not listed here makes the
+# candidate REJECT (COMMISSION_UNKNOWN) -- never assumed zero. Rates mirror config/commissions.yaml (verify before
+# any live use).
+commission:
+  # keyed by lower-cased Odds API bookmaker key OR title (the football card stores titles, e.g. "Betfair" = the exchange)
+  betfair_ex_uk: 0.05
+  betfair_ex_eu: 0.05
+  betfair: 0.05
+  smarkets: 0.02
+  matchbook: null          # unknown -> reject until verified
+exchange_keys: ["betfair_ex_uk", "betfair_ex_eu", "betfair", "smarkets", "matchbook"]
+
+high_probability_threshold: 0.70   # funnel "high-P candidate" (same as the Prediction Board's >=70 count)
+
+paper_stake_units: 1.0             # every paper single is recorded at 1 unit; bankroll simulations re-stake later
+
+bankroll_simulation:
+  bankrolls_gbp: [20, 30, 50, 100]
+  practical_min_stake_gbp:          # smallest stake a real account would accept -- VERIFY before live use
+    exchange: 1.00
+    bookmaker: 0.10
+  max_stake_fraction: 0.05          # never more than 5% of current bankroll on one bet
+  max_daily_exposure_fraction: 0.10 # total stakes per UTC day
+  daily_loss_lock_fraction: 0.10    # stop for the day after losing 10% of the day's opening bankroll
+  drawdown_stop_fraction: 0.30      # stop the simulation after a 30% fall from peak (review required)
+  policies:
+    flat_1pct:  {kind: fraction, fraction: 0.01}
+    flat_2pct:  {kind: fraction, fraction: 0.02}
+    kelly_1_8:  {kind: kelly, multiplier: 0.125, cap_fraction: 0.02}
+    min_stake:  {kind: min_stake}   # always the practical minimum, if it fits the caps
+  # martingale / chasing / loss-recovery staking: not implemented and not configurable.
+
+multi:
+  enabled: false                    # paper multis disabled until the pre-registered gate is met
+  same_event_allowed: false
+  max_legs: 2
