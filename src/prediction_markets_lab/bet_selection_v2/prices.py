@@ -24,6 +24,9 @@ class PriceSnapshot:
     observed_at: datetime  # when production fetched the response
     quote_at: datetime     # provider last_update for the quote (falls back to observed_at)
     origin: str            # which production artefact supplied it
+    # bsv2-2: the engine probability for this selection computed from the SAME snapshot as the price (None = unknown ->
+    # the candidate is rejected; a later price is never paired with an earlier probability)
+    p_same_snapshot: float | None = None
 
 
 def norm_source(s: str) -> str:
@@ -48,7 +51,8 @@ def from_ledger_row(row: dict) -> PriceSnapshot | None:
     else:
         return None  # unknown provenance: never guessed
     t = ts(row["prediction_timestamp"])
-    return PriceSnapshot(row["prediction_id"], source, odds, t, t, "unified_ledger.live_price")
+    p = float(row["estimated_probability"]) if str(row.get("prediction_valid")) == "True" else None
+    return PriceSnapshot(row["prediction_id"], source, odds, t, t, "unified_ledger.live_price", p)
 
 
 # ---------------------------------------------------------------- tennis: prices from the tennis board's own response
@@ -86,7 +90,50 @@ def append_tennis_snapshots(path: Path, rows: list[dict]) -> int:
     return len(rows)
 
 
-def tennis_from_snapshots(pred: dict, snap_rows: list[dict]) -> list[PriceSnapshot]:
+PROB_SNAPSHOT_FIELDS = ["scan_timestamp_utc", "sport_key", "event_id", "player_a", "player_b", "commence_time", "source",
+                        "source_validated", "p_a", "p_b"]
+
+
+def tennis_probability_rows(preds: list, scan_ts: datetime) -> list[dict]:
+    """Every prediction the frozen engine produced in this scan (including events already in the ledger). 0 credits."""
+    return [{"scan_timestamp_utc": scan_ts.isoformat(), "sport_key": p.sport_key, "event_id": p.event_id,
+             "player_a": p.player_a, "player_b": p.player_b, "commence_time": p.commence_time, "source": p.source,
+             "source_validated": p.source_validated, "p_a": p.p_a, "p_b": p.p_b} for p in preds]
+
+
+def append_rows(path: Path, fields: list[str], rows: list[dict]) -> int:
+    if not rows:
+        return 0
+    new = not path.exists()
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=fields)
+        if new:
+            w.writeheader()
+        w.writerows(rows)
+    return len(rows)
+
+
+def same_scan_probability(pred: dict, prob_rows: list[dict]) -> dict[str, float]:
+    """scan_timestamp -> validated engine P for pred's selection in that scan."""
+    try:
+        pa, pb = pred["event_name"].split(" v ", 1)
+    except ValueError:
+        return {}
+    out = {}
+    for r in prob_rows:
+        if r.get("event_id") != pred.get("event_id") or str(r.get("source_validated")) != "True":
+            continue
+        if {r.get("player_a"), r.get("player_b")} != {pa, pb}:
+            continue
+        try:
+            out[r["scan_timestamp_utc"]] = float(r["p_a"] if pred["selection"] == r["player_a"] else r["p_b"])
+        except (KeyError, ValueError):
+            continue
+    return out
+
+
+def tennis_from_snapshots(pred: dict, snap_rows: list[dict], prob_rows: list[dict] | None = None) -> list[PriceSnapshot]:
     """Prices for the predicted side of one tennis prediction (matched on provider event id + player names)."""
     if pred.get("sport") != "tennis" or not pred.get("event_id"):
         return []
@@ -97,6 +144,7 @@ def tennis_from_snapshots(pred: dict, snap_rows: list[dict]) -> list[PriceSnapsh
     sel = pred["selection"]
     if sel not in (pa, pb):
         return []
+    same_p = same_scan_probability(pred, prob_rows or [])
     out = []
     for r in snap_rows:
         if r.get("event_id") != pred["event_id"] or r.get("market") != "h2h":
@@ -111,7 +159,7 @@ def tennis_from_snapshots(pred: dict, snap_rows: list[dict]) -> list[PriceSnapsh
         quote = ts(r["last_update"]) if r.get("last_update") else seen
         if odds > 1.0:
             out.append(PriceSnapshot(pred["prediction_id"], norm_source(r["bookmaker"]), odds, seen, quote,
-                                     "tennis_predictions/price_snapshots.csv"))
+                                     "tennis_predictions/price_snapshots.csv", same_p.get(r["scan_timestamp_utc"])))
     return out
 
 
@@ -132,6 +180,10 @@ def football_from_card(pred: dict, card: dict) -> list[PriceSnapshot]:
             seen = ts(c.get("price_timestamp") or card["data_timestamp"])
         except (KeyError, TypeError, ValueError):
             continue
+        try:
+            p_card = float(c["estimated_probability"])   # same card => same snapshot as the price
+        except (KeyError, TypeError, ValueError):
+            p_card = None
         if odds > 1.0:
-            out.append(PriceSnapshot(pred["prediction_id"], norm_source(c["bookmaker"]), odds, seen, seen, "daily_card"))
+            out.append(PriceSnapshot(pred["prediction_id"], norm_source(c["bookmaker"]), odds, seen, seen, "daily_card", p_card))
     return out

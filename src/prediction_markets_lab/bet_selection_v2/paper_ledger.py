@@ -76,14 +76,18 @@ def selection_row(c: Candidate, rule_version: str, stake_units: float, now: date
             "source": c.source, "is_exchange": c.is_exchange, "commission": c.commission,
             "price_observed_at": c.price_observed_at, "price_age_minutes": c.price_age_minutes, "decision_at": now.isoformat(),
             "minutes_to_event": c.minutes_to_event, "break_even_probability": c.break_even_probability, "net_ev": c.net_ev,
-            "value_reference": c.value_reference, "decision": c.decision, "reasons": "|".join(c.reasons),
+            "value_reference": c.value_reference, "decision": c.decision,
+            "reasons": "|".join(c.reasons + ([f"LEDGER_P={c.ledger_probability:.6f}"] if c.ledger_probability is not None else [])),
             "stake_units": stake_units}
 
 
-def record_selections(path: Path, decided: list[Candidate], rule_version: str, stake_units: float, now: datetime) -> int:
+def record_selections(path: Path, decided: list[Candidate], rule_version: str, stake_units: float, now: datetime,
+                      exclude_prediction_ids: set[str] | None = None) -> int:
+    """exclude_prediction_ids: predictions already carrying a valid selection under an earlier rule version
+    (no duplicate exposure on one event)."""
     rows = []
     for c in decided:
-        if c.decision != PAPER_BET:
+        if c.decision != PAPER_BET or c.prediction_id in (exclude_prediction_ids or set()):
             continue
         start = ts(c.event_start)
         if now >= start or ts(c.price_observed_at) >= start:   # never a post-start selection (no backfilling)

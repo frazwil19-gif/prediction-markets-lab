@@ -5,7 +5,11 @@
 # (not re-tuned, not lowered). Changing any value requires a new rule_version and a dated note in the spec;
 # rows written under an old rule_version are never re-labelled.
 
-rule_version: "bsv2-1"
+rule_version: "bsv2-2"
+# bsv2-2 (2026-09-29): gates UNCHANGED. Fix: EV is computed only with the engine probability from the SAME snapshot as the
+# price, and only the latest snapshot's coexisting quotes are compared. bsv2-1 paired a frozen earlier P with later prices
+# (adverse selection: 5 of its 9 first selections were negative-EV at the same snapshot). bsv2-1 rows stay immutable and are
+# annotated in paper_betting_v2/selection_annotations.csv.
 
 # Real-money actions: permanently disabled in this layer. Fraser's explicit approval + a separate change is required.
 real_money_enabled: false

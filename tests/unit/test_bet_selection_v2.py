@@ -29,13 +29,24 @@ def pred(p=0.60, start=NOW + timedelta(hours=6), sport="tennis", status="VALIDAT
             "prediction_timestamp": (pred_ts or NOW - timedelta(minutes=10)).isoformat()}
 
 
-def snap(odds, source="bet365", at=NOW - timedelta(minutes=5), pid="p1"):
-    return PR.PriceSnapshot(pid, source, odds, at, at, "test")
+SAME = "SAME_AS_PREDICTION"   # test sentinel: the snapshot's engine P equals the prediction's P (same snapshot)
+
+
+def snap(odds, source="bet365", at=NOW - timedelta(minutes=5), pid="p1", p=SAME):
+    return PR.PriceSnapshot(pid, source, odds, at, at, "test", p)
+
+
+def evaluate_same(pred_row, snaps, cfg, now):
+    """Fill the SAME sentinel from the prediction row (tests written before bsv2-2 assume same-snapshot P)."""
+    from dataclasses import replace
+    snaps = [replace(x, p_same_snapshot=float(pred_row["estimated_probability"])) if x.p_same_snapshot == SAME else x
+             for x in snaps]
+    return evaluate_prediction(pred_row, snaps, cfg, now)
 
 
 # ---------------------------------------------------------------- arithmetic
 def test_fair_odds_break_even_and_ev_bookmaker():
-    best, _ = evaluate_prediction(pred(0.60), [snap(1.80)], CFG, NOW)
+    best, _ = evaluate_same(pred(0.60), [snap(1.80)], CFG, NOW)
     assert best.fair_odds == pytest.approx(1 / 0.60)
     assert best.break_even_probability == pytest.approx(1 / 1.80)
     assert best.gross_ev == pytest.approx(0.60 * 1.80 - 1)
@@ -44,7 +55,7 @@ def test_fair_odds_break_even_and_ev_bookmaker():
 
 
 def test_exchange_commission_applied_to_net_winnings():
-    best, _ = evaluate_prediction(pred(0.60), [snap(1.80, "betfair_ex_uk")], CFG, NOW)
+    best, _ = evaluate_same(pred(0.60), [snap(1.80, "betfair_ex_uk")], CFG, NOW)
     assert best.is_exchange and best.commission == 0.05
     assert best.net_ev == pytest.approx(0.60 * 0.80 * 0.95 - 0.40)
     assert best.break_even_probability == pytest.approx(1 / (0.80 * 0.95 + 1))
@@ -52,12 +63,12 @@ def test_exchange_commission_applied_to_net_winnings():
 
 def test_unknown_exchange_commission_is_rejected_not_assumed_zero():
     assert commission_for("matchbook", CFG) == (True, None)
-    best, _ = evaluate_prediction(pred(0.60), [snap(1.90, "matchbook")], CFG, NOW)
+    best, _ = evaluate_same(pred(0.60), [snap(1.90, "matchbook")], CFG, NOW)
     assert best.decision == REJECT and "COMMISSION_UNKNOWN" in best.reasons
 
 
 def test_best_fresh_price_is_used_and_all_candidates_kept():
-    best, cands = evaluate_prediction(pred(0.60), [snap(1.70), snap(1.85, "williamhill"), snap(1.75, "betfair_ex_uk")], CFG, NOW)
+    best, cands = evaluate_same(pred(0.60), [snap(1.70), snap(1.85, "williamhill"), snap(1.75, "betfair_ex_uk")], CFG, NOW)
     assert len(cands) == 3 and best.source == "williamhill"
 
 
@@ -72,12 +83,12 @@ def test_best_fresh_price_is_used_and_all_candidates_kept():
     (0.60, 1.80, 6, "RESEARCH_VALIDATED", REJECT, "ENGINE_STATUS_INELIGIBLE"),
 ])
 def test_decision_table(p, odds, hours, status, expect, reason):
-    best, _ = evaluate_prediction(pred(p, start=NOW + timedelta(hours=hours), status=status), [snap(odds)], CFG, NOW)
+    best, _ = evaluate_same(pred(p, start=NOW + timedelta(hours=hours), status=status), [snap(odds)], CFG, NOW)
     assert best.decision == expect and reason in best.reasons
 
 
 def test_strong_prediction_poor_price_is_multi_research_not_bet():
-    best, _ = evaluate_prediction(pred(0.90), [snap(1.09, "betfair_ex_uk")], CFG, NOW)
+    best, _ = evaluate_same(pred(0.90), [snap(1.09, "betfair_ex_uk")], CFG, NOW)
     assert best.net_ev < 0 and best.decision == MULTI
 
 
@@ -102,19 +113,19 @@ def test_config_guards_real_money_and_same_event(tmp_path):
 
 # ---------------------------------------------------------------- timestamps and validity
 def test_stale_price_and_price_after_start_rejected():
-    best, _ = evaluate_prediction(pred(0.60), [snap(1.90, at=NOW - timedelta(minutes=241))], CFG, NOW)
+    best, _ = evaluate_same(pred(0.60), [snap(1.90, at=NOW - timedelta(minutes=241))], CFG, NOW)
     assert best.decision == REJECT and "PRICE_STALE" in best.reasons
     start = NOW + timedelta(hours=1)
-    best, _ = evaluate_prediction(pred(0.60, start=start), [snap(1.90, at=start)], CFG, NOW)
+    best, _ = evaluate_same(pred(0.60, start=start), [snap(1.90, at=start)], CFG, NOW)
     assert "PRICE_AT_OR_AFTER_START" in best.reasons and best.decision == REJECT
 
 
 def test_event_started_and_invalid_prediction_rejected():
-    best, _ = evaluate_prediction(pred(0.60, start=NOW - timedelta(minutes=1)), [snap(1.90)], CFG, NOW)
+    best, _ = evaluate_same(pred(0.60, start=NOW - timedelta(minutes=1)), [snap(1.90)], CFG, NOW)
     assert best.decision == REJECT and "EVENT_STARTED" in best.reasons
-    best, _ = evaluate_prediction(pred(0.60, valid=False), [snap(1.90)], CFG, NOW)
+    best, _ = evaluate_same(pred(0.60, valid=False), [snap(1.90)], CFG, NOW)
     assert best.decision == REJECT and "PREDICTION_NOT_VALID" in best.reasons
-    best, _ = evaluate_prediction(pred(0.60), [], CFG, NOW)
+    best, _ = evaluate_same(pred(0.60), [], CFG, NOW)
     assert best.decision == REJECT and "NO_EXECUTABLE_PRICE" in best.reasons
 
 
@@ -160,7 +171,7 @@ def test_football_card_prices_match_exact_selection():
 
 # ---------------------------------------------------------------- immutable paper singles
 def _paper(pid="p1", p=0.60, odds=1.80, start=NOW + timedelta(hours=6)):
-    best, cands = evaluate_prediction(pred(p, start=start, pid=pid), [snap(odds, pid=pid)], CFG, NOW)
+    best, cands = evaluate_same(pred(p, start=start, pid=pid), [snap(odds, pid=pid)], CFG, NOW)
     return best, cands
 
 
@@ -169,7 +180,7 @@ def test_selection_recorded_once_retries_idempotent_and_immutable(tmp_path):
     best, _ = _paper()
     assert L.record_selections(path, [best], "bsv2-1", 1.0, NOW) == 1
     before = path.read_bytes()
-    later, _ = evaluate_prediction(pred(0.60), [snap(2.20, at=NOW + timedelta(minutes=30))], CFG, NOW + timedelta(hours=1))
+    later, _ = evaluate_same(pred(0.60), [snap(2.20, at=NOW + timedelta(minutes=30))], CFG, NOW + timedelta(hours=1))
     assert L.record_selections(path, [later, later], "bsv2-1", 1.0, NOW + timedelta(hours=1)) == 0
     assert path.read_bytes() == before
     row = L.read_rows(path)[0]
@@ -202,7 +213,7 @@ def test_no_post_event_selection_even_if_decided_paper_bet(tmp_path):
 
 def test_only_paper_bets_become_selections_and_snapshots_are_separate(tmp_path):
     good, c1 = _paper("p1")
-    watch, c2 = evaluate_prediction(pred(0.60, pid="p2"), [snap(1.70, pid="p2")], CFG, NOW)
+    watch, c2 = evaluate_same(pred(0.60, pid="p2"), [snap(1.70, pid="p2")], CFG, NOW)
     assert watch.decision == WATCH
     assert L.record_selections(tmp_path / "sel.csv", [good, watch], "bsv2-1", 1.0, NOW) == 1
     assert L.record_snapshots(tmp_path / "snap.csv", c1 + c2, {"p1": PAPER_BET, "p2": WATCH}) == 2
@@ -212,7 +223,7 @@ def test_only_paper_bets_become_selections_and_snapshots_are_separate(tmp_path):
 # ---------------------------------------------------------------- settlement
 def test_settlement_fail_closed_and_pnl(tmp_path):
     sels = [L.selection_row(_paper("p1")[0], "bsv2-1", 1.0, NOW),
-            L.selection_row(evaluate_prediction(pred(0.60, pid="p2"), [snap(1.80, "betfair_ex_uk", pid="p2")], CFG, NOW)[0],
+            L.selection_row(evaluate_same(pred(0.60, pid="p2"), [snap(1.80, "betfair_ex_uk", pid="p2")], CFG, NOW)[0],
                             "bsv2-1", 1.0, NOW),
             L.selection_row(_paper("p3")[0], "bsv2-1", 1.0, NOW),
             L.selection_row(_paper("p4")[0], "bsv2-1", 1.0, NOW)]
@@ -292,12 +303,12 @@ def test_report_results_and_funnel():
 
 # ---------------------------------------------------------------- multi research (disabled)
 def test_multi_disabled_same_event_blocked_and_no_fabricated_odds():
-    a, _ = evaluate_prediction(pred(0.90, pid="a", key="tennis|k|e1"), [snap(1.09, "betfair_ex_uk", pid="a")], CFG, NOW)
-    b, _ = evaluate_prediction(pred(0.88, pid="b", key="tennis|k|e1"), [snap(1.12, "betfair_ex_uk", pid="b")], CFG, NOW)
+    a, _ = evaluate_same(pred(0.90, pid="a", key="tennis|k|e1"), [snap(1.09, "betfair_ex_uk", pid="a")], CFG, NOW)
+    b, _ = evaluate_same(pred(0.88, pid="b", key="tennis|k|e1"), [snap(1.12, "betfair_ex_uk", pid="b")], CFG, NOW)
     rec = M.assess_pair(a, b, CFG)
     assert not rec.enabled and rec.blocked and "SAME_EVENT" in rec.dependency_flags
     assert rec.combined_price_source == "NOT_QUOTED" and rec.quoted_multi_odds is None
-    c, _ = evaluate_prediction(pred(0.88, pid="c", key="tennis|k|e2", name="Cy Cee v Di Dee", sel="Cy Cee"),
+    c, _ = evaluate_same(pred(0.88, pid="c", key="tennis|k|e2", name="Cy Cee v Di Dee", sel="Cy Cee"),
                                [snap(1.12, "betfair_ex_uk", pid="c")], CFG, NOW)
     rec = M.assess_pair(a, c, CFG)
     assert "SAME_TOURNAMENT_DRAW" in rec.dependency_flags and rec.joint_probability_status == "UNVALIDATED"
@@ -305,8 +316,8 @@ def test_multi_disabled_same_event_blocked_and_no_fabricated_odds():
 
 
 def test_multi_leg_must_be_independently_eligible():
-    a, _ = evaluate_prediction(pred(0.90, pid="a"), [snap(1.09, "betfair_ex_uk", pid="a")], CFG, NOW)
-    bad, _ = evaluate_prediction(pred(0.90, pid="z", valid=False, key="tennis|q|z", name="Q v R", sel="Q"), [], CFG, NOW)
+    a, _ = evaluate_same(pred(0.90, pid="a"), [snap(1.09, "betfair_ex_uk", pid="a")], CFG, NOW)
+    bad, _ = evaluate_same(pred(0.90, pid="z", valid=False, key="tennis|q|z", name="Q v R", sel="Q"), [], CFG, NOW)
     assert M.assess_pair(a, bad, CFG).blocked
 
 
@@ -328,3 +339,40 @@ def test_bet_selection_never_imports_money_layer():
     text = "\n".join(p.read_text() for p in src.glob("*.py"))
     for forbidden in ("decisions.money_qualification", "risk.decision_gates", "run_daily_scan"):
         assert forbidden not in text
+
+
+# ---------------------------------------------------------------- bsv2-2: same-snapshot probability (production defect 2026-09-29)
+def test_stale_ledger_probability_never_paired_with_later_price():
+    """Reproduces the first production run: ledger P 0.745 from 08:31, price 1.40 at 13:13 when the engine said 0.708."""
+    best, _ = evaluate_prediction(pred(0.745489), [snap(1.40, "betfair_ex_uk", p=0.708376)], CFG, NOW)
+    assert best.probability == pytest.approx(0.708376) and best.ledger_probability == pytest.approx(0.745489)
+    assert best.net_ev < 0 and best.decision != PAPER_BET
+
+
+def test_missing_same_snapshot_probability_is_rejected():
+    best, _ = evaluate_prediction(pred(0.60), [snap(1.90, p=None)], CFG, NOW)
+    assert best.decision == REJECT and "PROBABILITY_NOT_SAME_SNAPSHOT" in best.reasons
+
+
+def test_only_latest_snapshot_quotes_are_compared():
+    old = snap(2.10, "williamhill", at=NOW - timedelta(minutes=60), p=0.60)   # better price, but an older snapshot
+    new = snap(1.75, "bet365", at=NOW - timedelta(minutes=5), p=0.60)
+    best, cands = evaluate_prediction(pred(0.60), [old, new], CFG, NOW)
+    assert len(cands) == 2 and best.source == "bet365"
+
+
+def test_tennis_same_scan_probability_matching():
+    rows = [{"scan_timestamp_utc": "t1", "event_id": "ev1", "player_a": "Ann Able", "player_b": "Bea Bold",
+             "source_validated": "True", "p_a": "0.7", "p_b": "0.3"},
+            {"scan_timestamp_utc": "t2", "event_id": "ev1", "player_a": "Ann Able", "player_b": "Bea Bold",
+             "source_validated": "False", "p_a": "0.9", "p_b": "0.1"}]
+    got = PR.same_scan_probability(pred(sel="Bea Bold"), rows)
+    assert got == {"t1": 0.3}   # research-only scan never supplies P
+
+
+def test_valid_legacy_selection_blocks_duplicate_exposure(tmp_path):
+    path = tmp_path / "sel.csv"
+    best, _ = _paper()
+    assert L.record_selections(path, [best], "bsv2-2", 1.0, NOW, exclude_prediction_ids={"p1"}) == 0
+    assert L.record_selections(path, [best], "bsv2-2", 1.0, NOW) == 1
+    assert "LEDGER_P=" in L.read_rows(path)[0]["reasons"]

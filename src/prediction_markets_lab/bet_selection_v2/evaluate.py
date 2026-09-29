@@ -40,7 +40,7 @@ class Candidate:
     event_start: str
     market: str
     selection: str
-    probability: float
+    probability: float           # probability USED for the decision (same snapshot as the price)
     fair_odds: float
     prediction_valid: bool
     evaluated_at: str
@@ -56,6 +56,7 @@ class Candidate:
     net_ev: float | None = None
     value_reference: str = ""
     price_origin: str = ""
+    ledger_probability: float | None = None   # frozen first-snapshot P from the prediction ledger (calibration record)
     decision: str = REJECT
     reasons: list[str] = field(default_factory=list)
 
@@ -95,6 +96,12 @@ def _price_candidate(pred: dict, snap: PriceSnapshot | None, cfg: dict, now: dat
     if snap is None:
         c.reasons.append("NO_EXECUTABLE_PRICE")
         return c
+    c.ledger_probability = p
+    if snap.p_same_snapshot is None:
+        c.reasons.append("PROBABILITY_NOT_SAME_SNAPSHOT")
+    else:
+        p = float(snap.p_same_snapshot)
+        c.probability, c.fair_odds = p, 1.0 / p
     exch, comm = commission_for(snap.source, cfg)
     c.source, c.is_exchange, c.commission, c.decimal_odds = snap.source, exch, comm, snap.decimal_odds
     c.price_observed_at, c.price_origin = snap.observed_at.isoformat(), snap.origin
@@ -116,7 +123,7 @@ def _price_candidate(pred: dict, snap: PriceSnapshot | None, cfg: dict, now: dat
     return c
 
 
-HARD = {"PREDICTION_NOT_VALID", "EVENT_STARTED", "NO_EXECUTABLE_PRICE", "PRICE_AT_OR_AFTER_START", "PRICE_STALE",
+HARD = {"PROBABILITY_NOT_SAME_SNAPSHOT", "PREDICTION_NOT_VALID", "EVENT_STARTED", "NO_EXECUTABLE_PRICE", "PRICE_AT_OR_AFTER_START", "PRICE_STALE",
         "COMMISSION_UNKNOWN", "PROBABILITY_OUT_OF_RANGE", "NET_EV_NOT_POSITIVE", "P_BELOW_FLOOR", "ENGINE_STATUS_INELIGIBLE"}
 
 
@@ -156,7 +163,11 @@ def evaluate_prediction(pred: dict, snaps: list[PriceSnapshot], cfg: dict, now: 
     """Evaluate every executable snapshot; the decision uses the best fresh, computable net-EV candidate.
     Returns (decided candidate, all evaluated candidates)."""
     cands = [_price_candidate(pred, s, cfg, now) for s in snaps] or [_price_candidate(pred, None, cfg, now)]
-    usable = [c for c in cands if c.net_ev is not None and not ({"PRICE_STALE", "PRICE_AT_OR_AFTER_START"} & set(c.reasons))]
+    usable = [c for c in cands if c.net_ev is not None
+              and not ({"PRICE_STALE", "PRICE_AT_OR_AFTER_START", "PROBABILITY_NOT_SAME_SNAPSHOT"} & set(c.reasons))]
+    if usable:   # bsv2-2: only the LATEST snapshot's quotes (quotes that coexist); never the best across times
+        latest = max(c.price_observed_at for c in usable)
+        usable = [c for c in usable if c.price_observed_at == latest]
     if usable:
         best = max(usable, key=lambda c: (c.net_ev, c.price_observed_at))
     else:

@@ -49,12 +49,13 @@ def latest_card() -> tuple[dict | None, dict | None]:
     return card, (json.loads(mc.read_text()) if mc.exists() else None)
 
 
-def gather_snapshots(pred: dict, tennis_rows: list[dict], card: dict | None) -> list[PR.PriceSnapshot]:
+def gather_snapshots(pred: dict, tennis_rows: list[dict], card: dict | None,
+                     prob_rows: list[dict] | None = None) -> list[PR.PriceSnapshot]:
     snaps = []
     own = PR.from_ledger_row(pred)
     if own:
         snaps.append(own)
-    snaps += PR.tennis_from_snapshots(pred, tennis_rows)
+    snaps += PR.tennis_from_snapshots(pred, tennis_rows, prob_rows)
     if card:
         snaps += PR.football_from_card(pred, card)
     seen, out = set(), []
@@ -66,18 +67,26 @@ def gather_snapshots(pred: dict, tennis_rows: list[dict], card: dict | None) -> 
     return out
 
 
+def valid_legacy_prediction_ids(cfg: dict) -> set[str]:
+    notes = {r["selection_id"]: r["annotation"] for r in L.read_rows(OUT / "selection_annotations.csv")}
+    return {r["prediction_id"] for r in L.read_rows(SELECTIONS)
+            if r["rule_version"] != cfg["rule_version"] and notes.get(r["selection_id"]) == "VALID_SAME_SNAPSHOT"}
+
+
 def evaluate(cfg: dict, now: datetime) -> dict:
     preds = L.read_rows(REPO / "predictions/unified_ledger.csv")
     upcoming = [p for p in preds if PR.ts(p["event_start"]) > now]
     tennis_rows = L.read_rows(REPO / "tennis_predictions/price_snapshots.csv")
+    prob_rows = L.read_rows(REPO / "tennis_predictions/probability_snapshots.csv")
     card, money = latest_card()
     decided, all_cands = [], []
     for p in upcoming:
-        best, cands = evaluate_prediction(p, gather_snapshots(p, tennis_rows, card), cfg, now)
+        best, cands = evaluate_prediction(p, gather_snapshots(p, tennis_rows, card, prob_rows), cfg, now)
         decided.append(best)
         all_cands += cands
     snaps_added = L.record_snapshots(SNAPSHOTS, all_cands, {c.prediction_id: c.decision for c in decided})
-    added = L.record_selections(SELECTIONS, decided, cfg["rule_version"], cfg["paper_stake_units"], now)
+    added = L.record_selections(SELECTIONS, decided, cfg["rule_version"], cfg["paper_stake_units"], now,
+                                exclude_prediction_ids=valid_legacy_prediction_ids(cfg))
     hp = cfg["high_probability_threshold"]
     run = {"run_at": now.isoformat(), "trigger": os.environ.get("TRIGGER_EVENT", "manual"), "rule_version": cfg["rule_version"],
            "events_scanned": len({p["event_key"] for p in upcoming}),
@@ -117,7 +126,14 @@ def settle(now: datetime) -> int:
 
 def build_report(cfg: dict, now: datetime, latest: dict | None = None) -> dict:
     runs = L.read_rows(RUNS)
-    sels = L.read_rows(SELECTIONS)
+    all_sels = L.read_rows(SELECTIONS)
+    # current rule version + earlier-version rows annotated VALID_SAME_SNAPSHOT (they satisfy the current semantics)
+    notes_ = {r["selection_id"]: r["annotation"] for r in L.read_rows(OUT / "selection_annotations.csv")}
+    sels = [r for r in all_sels if r["rule_version"] == cfg["rule_version"] or notes_.get(r["selection_id"]) == "VALID_SAME_SNAPSHOT"]
+    notes = {r["selection_id"]: r for r in L.read_rows(OUT / "selection_annotations.csv")}
+    legacy = [{"selection_id": r["selection_id"], "rule_version": r["rule_version"], "event": r["event_name"],
+               "selection": r["selection"], "annotation": notes.get(r["selection_id"], {}).get("annotation", "NOT_ANNOTATED")}
+              for r in all_sels if r["rule_version"] != cfg["rule_version"]]
     sett = {r["selection_id"]: r for r in L.read_rows(SETTLEMENTS)}
     if latest is None:
         p = REPORTS / "bet_selection_v2_candidates.csv"
@@ -126,7 +142,8 @@ def build_report(cfg: dict, now: datetime, latest: dict | None = None) -> dict:
            "rule_version": cfg["rule_version"], "real_money_enabled": False, "multis_enabled": cfg["multi"]["enabled"],
            "funnel": R.funnel_from_runs(runs), "latest_run": runs[-1] if runs else None,
            "latest_decisions": R.decision_breakdown(latest["decided"]) if latest["decided"] else {},
-           "paper_results": R.results(sels, sett, cfg["bankroll_simulation"])}
+           "paper_results": R.results(sels, sett, cfg["bankroll_simulation"]),
+           "superseded_rule_version_selections": legacy}
     REPORTS.mkdir(exist_ok=True)
     (REPORTS / "bet_selection_v2.json").write_text(json.dumps(rep, indent=1, default=str))
     (REPORTS / "bet_selection_v2.md").write_text(render_md(rep, latest["decided"]))
