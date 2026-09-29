@@ -1,35 +1,92 @@
 {
- "generated_at": "2026-09-29T08:11:20.609359+00:00",
+ "generated_at": "2026-09-29T13:13:48.871244+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-1",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 0,
+  "runs": 1,
   "totals_over_runs": {
-   "events_scanned": 0,
-   "valid_predictions": 0,
-   "high_p_candidates": 0,
-   "priced_candidates": 0,
-   "PAPER_BET": 0,
-   "MULTI_RESEARCH_ELIGIBLE": 0,
-   "WATCH": 0,
-   "REJECT": 0,
-   "paper_bets_added": 0,
+   "events_scanned": 64,
+   "valid_predictions": 64,
+   "high_p_candidates": 24,
+   "priced_candidates": 64,
+   "PAPER_BET": 9,
+   "MULTI_RESEARCH_ELIGIBLE": 9,
+   "WATCH": 10,
+   "REJECT": 67,
+   "paper_bets_added": 9,
    "money_card_qualified": 0
   },
   "note": "per-run counts summed; a prediction re-evaluated in several runs is counted in each run",
-  "days_evaluated": 0,
+  "days_evaluated": 1,
   "no_bet_days": [],
-  "bet_days": {}
+  "bet_days": {
+   "2026-09-29": 9
+  }
  },
- "latest_run": null,
- "latest_decisions": {},
+ "latest_run": {
+  "run_at": "2026-09-29T13:13:48.871244+00:00",
+  "trigger": "schedule",
+  "rule_version": "bsv2-1",
+  "events_scanned": "64",
+  "valid_predictions": "64",
+  "high_p_candidates": "24",
+  "priced_candidates": "64",
+  "PAPER_BET": "9",
+  "MULTI_RESEARCH_ELIGIBLE": "9",
+  "WATCH": "10",
+  "REJECT": "67",
+  "paper_bets_added": "9",
+  "snapshots_added": "1691",
+  "money_card_qualified": "0",
+  "football_fixtures_on_card": "38"
+ },
+ "latest_decisions": {
+  "decisions": {
+   "REJECT": 67,
+   "WATCH": 10,
+   "PAPER_BET": 9,
+   "MULTI_RESEARCH_ELIGIBLE": 9
+  },
+  "reason_counts": {
+   "NET_EV_NOT_POSITIVE": 61,
+   "PREDICTION_NOT_VALID": 31,
+   "ALL_PAPER_GATES_PASSED": 9,
+   "NET_EV_BELOW_PAPER_GATE": 8,
+   "OUTSIDE_EVENT_HORIZON": 7,
+   "ODDS_BELOW_PAYOUT_FLOOR": 6,
+   "NO_EXECUTABLE_PRICE": 2,
+   "PRICE_STALE": 2
+  },
+  "by_sport": {
+   "tennis": {
+    "REJECT": 67,
+    "WATCH": 10,
+    "PAPER_BET": 9,
+    "MULTI_RESEARCH_ELIGIBLE": 9
+   }
+  },
+  "by_engine": {
+   "atp_match_winner.betfair_market": {
+    "REJECT": 33,
+    "WATCH": 4,
+    "PAPER_BET": 1,
+    "MULTI_RESEARCH_ELIGIBLE": 6
+   },
+   "wta_match_winner.betfair_market": {
+    "REJECT": 34,
+    "PAPER_BET": 8,
+    "WATCH": 6,
+    "MULTI_RESEARCH_ELIGIBLE": 3
+   }
+  }
+ },
  "paper_results": {
   "overall": {
-   "selections": 0,
+   "selections": 9,
    "settled": 0,
-   "pending": 0,
+   "pending": 9,
    "void": 0,
    "won": 0,
    "win_rate": null,
@@ -42,12 +99,183 @@
    "longest_losing_streak": 0
   },
   "breakdowns": {
-   "sport": {},
-   "engine": {},
-   "p_band": {},
-   "odds_band": {},
-   "decision": {},
-   "source_type": {}
+   "sport": {
+    "tennis": {
+     "selections": 9,
+     "settled": 0,
+     "pending": 9,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0
+    }
+   },
+   "engine": {
+    "atp_match_winner.betfair_market": {
+     "selections": 1,
+     "settled": 0,
+     "pending": 1,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0
+    },
+    "wta_match_winner.betfair_market": {
+     "selections": 8,
+     "settled": 0,
+     "pending": 8,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0
+    }
+   },
+   "p_band": {
+    "50-59.9%": {
+     "selections": 1,
+     "settled": 0,
+     "pending": 1,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0
+    },
+    "60-69.9%": {
+     "selections": 1,
+     "settled": 0,
+     "pending": 1,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0
+    },
+    "70-79.9%": {
+     "selections": 7,
+     "settled": 0,
+     "pending": 7,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0
+    }
+   },
+   "odds_band": {
+    "1.33-1.49": {
+     "selections": 4,
+     "settled": 0,
+     "pending": 4,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0
+    },
+    "1.50-1.99": {
+     "selections": 5,
+     "settled": 0,
+     "pending": 5,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0
+    }
+   },
+   "decision": {
+    "PAPER_BET": {
+     "selections": 9,
+     "settled": 0,
+     "pending": 9,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0
+    }
+   },
+   "source_type": {
+    "bookmaker": {
+     "selections": 7,
+     "settled": 0,
+     "pending": 7,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0
+    },
+    "exchange": {
+     "selections": 2,
+     "settled": 0,
+     "pending": 2,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0
+    }
+   }
   },
   "bankroll_simulations": [
    {
