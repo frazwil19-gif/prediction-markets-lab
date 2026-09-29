@@ -1,11 +1,241 @@
 {
- "generated_at": "2026-09-28T00:59:45.098309+00:00",
+ "generated_at": "2026-09-29T02:08:54.225097+00:00",
  "note": "PAPER prediction performance; Odds-API-covered universe only",
  "engines": {
-  "wta_match_winner.betfair_market": {
+  "atp_match_winner.betfair_market": {
    "settled": 0,
    "settled_ge_80": 0,
    "maturity": "COLLECTING"
+  },
+  "wta_match_winner.betfair_market": {
+   "settled": 10,
+   "settled_ge_80": 2,
+   "maturity": "COLLECTING",
+   "correct": 5,
+   "accuracy": 0.5,
+   "expected_correct": 7.212759,
+   "brier_top_pick": 0.28443846689990004,
+   "log_loss_top_pick": 0.760781604875525,
+   "bands": [
+    {
+     "band": "50-54.9%",
+     "n": 0,
+     "share_of_events": 0.0,
+     "mean_predicted": null,
+     "expected_wins": 0.0,
+     "actual_wins": 0,
+     "actual_rate": null,
+     "difference_pp": null,
+     "wilson95_low": null,
+     "wilson95_high": null
+    },
+    {
+     "band": "55-59.9%",
+     "n": 1,
+     "share_of_events": 0.1,
+     "mean_predicted": 0.578049,
+     "expected_wins": 0.578049,
+     "actual_wins": 1,
+     "actual_rate": 1.0,
+     "difference_pp": 42.1951,
+     "wilson95_low": 0.20654931437723745,
+     "wilson95_high": 1.0
+    },
+    {
+     "band": "60-64.9%",
+     "n": 2,
+     "share_of_events": 0.2,
+     "mean_predicted": 0.6479995000000001,
+     "expected_wins": 1.2959990000000001,
+     "actual_wins": 1,
+     "actual_rate": 0.5,
+     "difference_pp": -14.799950000000006,
+     "wilson95_low": 0.09453120573423074,
+     "wilson95_high": 0.9054687942657693
+    },
+    {
+     "band": "65-69.9%",
+     "n": 2,
+     "share_of_events": 0.2,
+     "mean_predicted": 0.669169,
+     "expected_wins": 1.338338,
+     "actual_wins": 0,
+     "actual_rate": 0.0,
+     "difference_pp": -66.9169,
+     "wilson95_low": 0.0,
+     "wilson95_high": 0.6576197724933469
+    },
+    {
+     "band": "70-74.9%",
+     "n": 1,
+     "share_of_events": 0.1,
+     "mean_predicted": 0.70615,
+     "expected_wins": 0.70615,
+     "actual_wins": 0,
+     "actual_rate": 0.0,
+     "difference_pp": -70.61500000000001,
+     "wilson95_low": 0.0,
+     "wilson95_high": 0.7934506856227626
+    },
+    {
+     "band": "75-79.9%",
+     "n": 2,
+     "share_of_events": 0.2,
+     "mean_predicted": 0.7744715,
+     "expected_wins": 1.548943,
+     "actual_wins": 1,
+     "actual_rate": 0.5,
+     "difference_pp": -27.447149999999997,
+     "wilson95_low": 0.09453120573423074,
+     "wilson95_high": 0.9054687942657693
+    },
+    {
+     "band": "80-84.9%",
+     "n": 1,
+     "share_of_events": 0.1,
+     "mean_predicted": 0.836189,
+     "expected_wins": 0.836189,
+     "actual_wins": 1,
+     "actual_rate": 1.0,
+     "difference_pp": 16.381100000000004,
+     "wilson95_low": 0.20654931437723745,
+     "wilson95_high": 1.0
+    },
+    {
+     "band": "85-89.9%",
+     "n": 0,
+     "share_of_events": 0.0,
+     "mean_predicted": null,
+     "expected_wins": 0.0,
+     "actual_wins": 0,
+     "actual_rate": null,
+     "difference_pp": null,
+     "wilson95_low": null,
+     "wilson95_high": null
+    },
+    {
+     "band": "90-94.9%",
+     "n": 1,
+     "share_of_events": 0.1,
+     "mean_predicted": 0.909091,
+     "expected_wins": 0.909091,
+     "actual_wins": 1,
+     "actual_rate": 1.0,
+     "difference_pp": 9.090900000000001,
+     "wilson95_low": 0.20654931437723745,
+     "wilson95_high": 1.0
+    },
+    {
+     "band": "95%+",
+     "n": 0,
+     "share_of_events": 0.0,
+     "mean_predicted": null,
+     "expected_wins": 0.0,
+     "actual_wins": 0,
+     "actual_rate": null,
+     "difference_pp": null,
+     "wilson95_low": null,
+     "wilson95_high": null
+    }
+   ],
+   "thresholds": [
+    {
+     "threshold": 0.6,
+     "n": 9,
+     "share_of_events": 0.9,
+     "mean_predicted": 0.73719,
+     "expected_wins": 6.63471,
+     "actual_wins": 4,
+     "actual_rate": 0.4444444444444444,
+     "difference_pp": -29.27455555555556,
+     "wilson95_low": 0.18877852109766452,
+     "wilson95_high": 0.733348706504507
+    },
+    {
+     "threshold": 0.65,
+     "n": 7,
+     "share_of_events": 0.7,
+     "mean_predicted": 0.762673,
+     "expected_wins": 5.338711,
+     "actual_wins": 3,
+     "actual_rate": 0.42857142857142855,
+     "difference_pp": -33.41015714285715,
+     "wilson95_low": 0.15821985525146975,
+     "wilson95_high": 0.7495416354723428
+    },
+    {
+     "threshold": 0.7,
+     "n": 5,
+     "share_of_events": 0.5,
+     "mean_predicted": 0.8000746,
+     "expected_wins": 4.000373,
+     "actual_wins": 3,
+     "actual_rate": 0.6,
+     "difference_pp": -20.00746,
+     "wilson95_low": 0.2307242812760128,
+     "wilson95_high": 0.882379225767352
+    },
+    {
+     "threshold": 0.75,
+     "n": 4,
+     "share_of_events": 0.4,
+     "mean_predicted": 0.82355575,
+     "expected_wins": 3.294223,
+     "actual_wins": 3,
+     "actual_rate": 0.75,
+     "difference_pp": -7.3555750000000035,
+     "wilson95_low": 0.30064184258240184,
+     "wilson95_high": 0.9544127391902995
+    },
+    {
+     "threshold": 0.8,
+     "n": 2,
+     "share_of_events": 0.2,
+     "mean_predicted": 0.87264,
+     "expected_wins": 1.74528,
+     "actual_wins": 2,
+     "actual_rate": 1.0,
+     "difference_pp": 12.736000000000002,
+     "wilson95_low": 0.34238022750665303,
+     "wilson95_high": 1.0
+    },
+    {
+     "threshold": 0.85,
+     "n": 1,
+     "share_of_events": 0.1,
+     "mean_predicted": 0.909091,
+     "expected_wins": 0.909091,
+     "actual_wins": 1,
+     "actual_rate": 1.0,
+     "difference_pp": 9.090900000000001,
+     "wilson95_low": 0.20654931437723745,
+     "wilson95_high": 1.0
+    },
+    {
+     "threshold": 0.9,
+     "n": 1,
+     "share_of_events": 0.1,
+     "mean_predicted": 0.909091,
+     "expected_wins": 0.909091,
+     "actual_wins": 1,
+     "actual_rate": 1.0,
+     "difference_pp": 9.090900000000001,
+     "wilson95_low": 0.20654931437723745,
+     "wilson95_high": 1.0
+    },
+    {
+     "threshold": 0.95,
+     "n": 0,
+     "share_of_events": 0.0,
+     "mean_predicted": null,
+     "expected_wins": 0.0,
+     "actual_wins": 0,
+     "actual_rate": null,
+     "difference_pp": null,
+     "wilson95_low": null,
+     "wilson95_high": null
+    }
+   ]
   }
  },
  "unresolved_after_21_days": []

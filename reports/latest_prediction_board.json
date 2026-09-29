@@ -1,7 +1,7 @@
 {
  "board_schema_version": 1,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-09-29T00:57:01.594727+00:00",
+ "generated_at": "2026-09-29T02:08:55.254971+00:00",
  "date": "2026-09-29",
  "summary": {
   "upcoming_events": 0,
@@ -28,7 +28,7 @@
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-09-29T00:57:01.594727+00:00",
+  "generated_at": "2026-09-29T02:08:55.254971+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -36,22 +36,22 @@
     "last": "2026-09-28T15:06:53.305426+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 9.8
+    "age_hours": 11.0
    },
    "settlement": {
-    "last": "2026-09-27T23:45:30.476218+00:00",
+    "last": "2026-09-29T00:57:01.957995+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 25.2
+    "age_hours": 1.2
    },
    "tennis_board": {
     "last": "2026-09-28T21:21:52.936610+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 3.6
+    "age_hours": 4.8
    },
    "ci_tests": {
-    "last": "2026-09-29T00:57:01.593431+00:00",
+    "last": "2026-09-29T02:08:55.135602+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -120,11 +120,11 @@
    "prospective_status": "COLLECTING",
    "money_eligible": false,
    "predictions": 10,
-   "settled_rows": 0,
+   "settled_rows": 10,
    "maturity": "COLLECTING",
-   "ge80_settled": 0,
-   "ge80_mean_pred": null,
-   "ge80_actual": null,
+   "ge80_settled": 2,
+   "ge80_mean_pred": 0.87264,
+   "ge80_actual": 1.0,
    "alarm_review_required": false
   },
   "nba_moneyline.market": {
