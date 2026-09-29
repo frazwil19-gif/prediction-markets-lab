@@ -40,3 +40,11 @@ For each variant, by tour and year:
 - realised ROI with a match-level bootstrap 95% CI (2,000 resamples, seed 20260929).
 
 Nothing is tuned; no threshold search. Code: `scripts/v2_6d_tennis_closing_diagnostic.py`.
+
+## Amendment A1 (post-hoc, disclosed, 2026-09-29, after the first run)
+The first run exposed corrupt tennis-data rows (for example B365W 29.0 / B365L 0.967 on a 98% favourite). Because such errors
+create "value" only when the favourite *won* (the Winner/Loser orientation of the error carries the result), they leak the outcome.
+**Added:** a generic validity screen on Bet365 (both prices > 1.01 and a two-way overround within [0.98, 1.20]), applied to every
+variant, with the raw unscreened V1 kept alongside. Also added, as a descriptive sensitivity: V1 restricted to matches where the
+T−30 Betfair P is within 0.10 of the Pinnacle closing P, because a large gap flags stale or possibly in-play-contaminated LTP.
+No gate, rule or threshold changed.
