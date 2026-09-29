@@ -41,7 +41,7 @@ becomes "value" only when the favourite **won**, it **leaks the outcome**. Unscr
 | | | WTA | 482 | **2** | 0.41 | +2.9% | — | n = 2 |
 | **V3 Pinnacle close vs B365 close** (reference, not the frozen engine) | **ALIGNED** | ATP | 10,326 | 99 | 0.96 | +3.9% | 58% / 58% | +5.0% (−12.9, +22.8) |
 | | | WTA | 8,823 | 94 | 1.07 | +4.1% | 56% / 59% | −0.6% (−18.6, +16.7) |
-| All favourites at B365 close, no value filter | — | ATP / WTA | ~10.4k / ~8.9k | — | — | — | calibrated | **−3.3% / −3.8%** (CIs < 0) |
+| All favourites at B365 close, no value filter (screened) | — | ATP / WTA | 10,377 / 8,913 | — | — | — | calibrated | **−4.1% / −3.8%** (CIs < 0) |
 | Self-check: BFE close vs its own de-vig, 5% commission | aligned | both | ~500 | **0** | 0 | — | — | as expected |
 
 ## 5. Reading
@@ -56,7 +56,7 @@ becomes "value" only when the favourite **won**, it **leaks the outcome**. Unscr
 2. **Time-aligned closing comparisons show value is rare and unproven.**
    - Bet365 closes above an exchange-derived fair price by ≥ 2% in 0.2–0.4 of 100 favourite matches (2025, BFE).
    - It closes above Pinnacle-fair in about 1 per 100, with ROI indistinguishable from zero.
-3. **Accuracy without value loses:** backing every favourite at the Bet365 close gives −3.3% / −3.8%, the same pattern as football.
+3. **Accuracy without value loses:** backing every favourite at the Bet365 close gives −4.1% / −3.8%, the same pattern as football.
 4. Consistent with football (V2-6H): opportunities at UK retail closing prices are rare; any edge would have to come from *earlier*
    prices, which free data cannot show.
 
