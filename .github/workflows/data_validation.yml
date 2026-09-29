@@ -8,3 +8,11 @@ name: data_validation
 
 on:
   workflow_dispatch: {}
+
+# A workflow file with no jobs is reported by GitHub as an invalid-workflow failure on every push
+# (0-second red runs since Stage 1). This no-op job keeps the placeholder valid; it only runs on manual dispatch.
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "placeholder workflow -- intentionally does nothing yet"
