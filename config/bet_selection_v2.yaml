@@ -5,7 +5,11 @@
 # (not re-tuned, not lowered). Changing any value requires a new rule_version and a dated note in the spec;
 # rows written under an old rule_version are never re-labelled.
 
-rule_version: "bsv2-2"
+rule_version: "bsv2-3"
+# bsv2-3 (PROPOSED 2026-09-29, not deployed until Fraser approves): EV gates UNCHANGED. Adds a data-quality gate: when the
+# engine P is a Betfair back/lay midpoint, the book's width (max over runners of 1/back - 1/lay) must be <= 0.03. Rationale
+# fixed before any outcome was examined: the midpoint's error is up to half the width (1.5 pp), comparable to the 2% EV floor,
+# so a wider book cannot support the EV sign. Observed on 113 live quotes (spreads only, no results): 34% exceed 0.03.
 # bsv2-2 (2026-09-29): gates UNCHANGED. Fix: EV is computed only with the engine probability from the SAME snapshot as the
 # price, and only the latest snapshot's coexisting quotes are compared. bsv2-1 paired a frozen earlier P with later prices
 # (adverse selection: 5 of its 9 first selections were negative-EV at the same snapshot). bsv2-1 rows stay immutable and are
@@ -45,6 +49,9 @@ commission:
   smarkets: 0.02
   matchbook: null          # unknown -> reject until verified
 exchange_keys: ["betfair_ex_uk", "betfair_ex_eu", "betfair", "smarkets", "matchbook"]
+
+data_quality:
+  max_exchange_spread_prob: 0.03   # bsv2-3; None disables
 
 high_probability_threshold: 0.70   # funnel "high-P candidate" (same as the Prediction Board's >=70 count)
 

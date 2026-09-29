@@ -77,7 +77,7 @@ def evaluate(cfg: dict, now: datetime) -> dict:
     preds = L.read_rows(REPO / "predictions/unified_ledger.csv")
     upcoming = [p for p in preds if PR.ts(p["event_start"]) > now]
     tennis_rows = L.read_rows(REPO / "tennis_predictions/price_snapshots.csv")
-    prob_rows = L.read_rows(REPO / "tennis_predictions/probability_snapshots.csv")
+    prob_rows = L.read_rows(REPO / "tennis_predictions/exchange_probability_snapshots.csv")   # bsv2-3: includes spread
     card, money = latest_card()
     decided, all_cands = [], []
     for p in upcoming:

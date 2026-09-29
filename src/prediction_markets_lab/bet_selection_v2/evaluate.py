@@ -102,6 +102,12 @@ def _price_candidate(pred: dict, snap: PriceSnapshot | None, cfg: dict, now: dat
     else:
         p = float(snap.p_same_snapshot)
         c.probability, c.fair_odds = p, 1.0 / p
+        dq = cfg.get("data_quality", {})
+        if snap.p_same_source == "EXCHANGE_MID" and dq.get("max_exchange_spread_prob") is not None:
+            if snap.p_same_spread is None:
+                c.reasons.append("EXCHANGE_SPREAD_UNKNOWN")
+            elif snap.p_same_spread > dq["max_exchange_spread_prob"]:
+                c.reasons.append("EXCHANGE_SPREAD_TOO_WIDE")
     exch, comm = commission_for(snap.source, cfg)
     c.source, c.is_exchange, c.commission, c.decimal_odds = snap.source, exch, comm, snap.decimal_odds
     c.price_observed_at, c.price_origin = snap.observed_at.isoformat(), snap.origin
@@ -123,7 +129,7 @@ def _price_candidate(pred: dict, snap: PriceSnapshot | None, cfg: dict, now: dat
     return c
 
 
-HARD = {"PROBABILITY_NOT_SAME_SNAPSHOT", "PREDICTION_NOT_VALID", "EVENT_STARTED", "NO_EXECUTABLE_PRICE", "PRICE_AT_OR_AFTER_START", "PRICE_STALE",
+HARD = {"EXCHANGE_SPREAD_TOO_WIDE", "EXCHANGE_SPREAD_UNKNOWN", "PROBABILITY_NOT_SAME_SNAPSHOT", "PREDICTION_NOT_VALID", "EVENT_STARTED", "NO_EXECUTABLE_PRICE", "PRICE_AT_OR_AFTER_START", "PRICE_STALE",
         "COMMISSION_UNKNOWN", "PROBABILITY_OUT_OF_RANGE", "NET_EV_NOT_POSITIVE", "P_BELOW_FLOOR", "ENGINE_STATUS_INELIGIBLE"}
 
 
@@ -164,7 +170,8 @@ def evaluate_prediction(pred: dict, snaps: list[PriceSnapshot], cfg: dict, now: 
     Returns (decided candidate, all evaluated candidates)."""
     cands = [_price_candidate(pred, s, cfg, now) for s in snaps] or [_price_candidate(pred, None, cfg, now)]
     usable = [c for c in cands if c.net_ev is not None
-              and not ({"PRICE_STALE", "PRICE_AT_OR_AFTER_START", "PROBABILITY_NOT_SAME_SNAPSHOT"} & set(c.reasons))]
+              and not ({"PRICE_STALE", "PRICE_AT_OR_AFTER_START", "PROBABILITY_NOT_SAME_SNAPSHOT",
+                        "EXCHANGE_SPREAD_TOO_WIDE", "EXCHANGE_SPREAD_UNKNOWN"} & set(c.reasons))]
     if usable:   # bsv2-2: only the LATEST snapshot's quotes (quotes that coexist); never the best across times
         latest = max(c.price_observed_at for c in usable)
         usable = [c for c in usable if c.price_observed_at == latest]

@@ -27,6 +27,10 @@ class PriceSnapshot:
     # bsv2-2: the engine probability for this selection computed from the SAME snapshot as the price (None = unknown ->
     # the candidate is rejected; a later price is never paired with an earlier probability)
     p_same_snapshot: float | None = None
+    # bsv2-3: Betfair back/lay spread (probability points, max over both runners) behind p_same_snapshot, and the
+    # engine source. None spread with source EXCHANGE_MID = unknown -> fail closed.
+    p_same_spread: float | None = None
+    p_same_source: str | None = None
 
 
 def norm_source(s: str) -> str:
@@ -101,6 +105,29 @@ def tennis_probability_rows(preds: list, scan_ts: datetime) -> list[dict]:
              "source_validated": p.source_validated, "p_a": p.p_a, "p_b": p.p_b} for p in preds]
 
 
+EXCHANGE_PROB_FIELDS = PROB_SNAPSHOT_FIELDS + ["raw_prices", "exchange_spread_prob"]
+
+
+def exchange_spread_prob(raw: str) -> float | None:
+    """max over runners of (1/back - 1/lay): width of the exchange book in probability points; None if not parseable."""
+    import re
+    m = re.search(r"ex_back=([\d.]+)/([\d.]+);ex_lay=([\d.]+)/([\d.]+)", raw or "")
+    if not m:
+        return None
+    ba, bb, la, lb = map(float, m.groups())
+    if min(ba, bb, la, lb) <= 1.0:
+        return None
+    return round(max(1 / ba - 1 / la, 1 / bb - 1 / lb), 6)
+
+
+def tennis_exchange_probability_rows(preds: list, scan_ts: datetime) -> list[dict]:
+    rows = tennis_probability_rows(preds, scan_ts)
+    for r, p in zip(rows, preds):
+        r["raw_prices"] = p.raw_prices
+        r["exchange_spread_prob"] = exchange_spread_prob(p.raw_prices)
+    return rows
+
+
 def append_rows(path: Path, fields: list[str], rows: list[dict]) -> int:
     if not rows:
         return 0
@@ -112,6 +139,27 @@ def append_rows(path: Path, fields: list[str], rows: list[dict]) -> int:
             w.writeheader()
         w.writerows(rows)
     return len(rows)
+
+
+def same_scan_details(pred: dict, prob_rows: list[dict]) -> dict[str, tuple[float, float | None, str]]:
+    """scan_timestamp -> (P for pred's selection, exchange spread or None, engine source), validated rows only."""
+    try:
+        pa, pb = pred["event_name"].split(" v ", 1)
+    except ValueError:
+        return {}
+    out = {}
+    for r in prob_rows:
+        if r.get("event_id") != pred.get("event_id") or str(r.get("source_validated")) != "True":
+            continue
+        if {r.get("player_a"), r.get("player_b")} != {pa, pb}:
+            continue
+        try:
+            p = float(r["p_a"] if pred["selection"] == r["player_a"] else r["p_b"])
+        except (KeyError, ValueError):
+            continue
+        sp = r.get("exchange_spread_prob")
+        out[r["scan_timestamp_utc"]] = (p, float(sp) if sp not in (None, "") else None, r.get("source", ""))
+    return out
 
 
 def same_scan_probability(pred: dict, prob_rows: list[dict]) -> dict[str, float]:
@@ -144,7 +192,7 @@ def tennis_from_snapshots(pred: dict, snap_rows: list[dict], prob_rows: list[dic
     sel = pred["selection"]
     if sel not in (pa, pb):
         return []
-    same_p = same_scan_probability(pred, prob_rows or [])
+    same_p = same_scan_details(pred, prob_rows or [])
     out = []
     for r in snap_rows:
         if r.get("event_id") != pred["event_id"] or r.get("market") != "h2h":
@@ -159,7 +207,8 @@ def tennis_from_snapshots(pred: dict, snap_rows: list[dict], prob_rows: list[dic
         quote = ts(r["last_update"]) if r.get("last_update") else seen
         if odds > 1.0:
             out.append(PriceSnapshot(pred["prediction_id"], norm_source(r["bookmaker"]), odds, seen, quote,
-                                     "tennis_predictions/price_snapshots.csv", same_p.get(r["scan_timestamp_utc"])))
+                                     "tennis_predictions/price_snapshots.csv",
+                                     *(same_p.get(r["scan_timestamp_utc"]) or (None, None, None))))
     return out
 
 

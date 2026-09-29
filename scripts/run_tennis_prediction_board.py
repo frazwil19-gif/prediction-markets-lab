@@ -18,7 +18,8 @@ from prediction_markets_lab.ops.api_budget import check as budget_check, load_bu
 from prediction_markets_lab.tennis_prospective import board as B
 from prediction_markets_lab.tennis_prospective.engine import parse_tennis_odds, predict, tour_of
 from prediction_markets_lab.tennis_prospective.ledger import append_predictions
-from prediction_markets_lab.bet_selection_v2.prices import (PROB_SNAPSHOT_FIELDS, append_rows, append_tennis_snapshots,
+from prediction_markets_lab.bet_selection_v2.prices import (EXCHANGE_PROB_FIELDS, PROB_SNAPSHOT_FIELDS, append_rows,
+                                                         append_tennis_snapshots, tennis_exchange_probability_rows,
                                                          tennis_probability_rows, tennis_snapshot_rows)
 
 REPO = Path(__file__).resolve().parents[1]
@@ -82,6 +83,8 @@ def main() -> int:
     try:  # V2-6 executable price capture; can never affect the frozen prediction ledger above
         n_snap = append_tennis_snapshots(OUT / "price_snapshots.csv", tennis_snapshot_rows(all_quotes, now))
         append_rows(OUT / "probability_snapshots.csv", PROB_SNAPSHOT_FIELDS, tennis_probability_rows(preds, now))
+        append_rows(OUT / "exchange_probability_snapshots.csv", EXCHANGE_PROB_FIELDS,
+                    tennis_exchange_probability_rows(preds, now))
         print(f"price snapshots recorded: {n_snap}")
     except Exception as exc:  # noqa: BLE001 -- additive research capture must not fail the board
         print(f"price snapshot capture failed (board unaffected): {exc}")

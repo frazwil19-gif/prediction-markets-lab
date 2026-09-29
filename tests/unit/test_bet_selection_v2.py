@@ -376,3 +376,34 @@ def test_valid_legacy_selection_blocks_duplicate_exposure(tmp_path):
     assert L.record_selections(path, [best], "bsv2-2", 1.0, NOW, exclude_prediction_ids={"p1"}) == 0
     assert L.record_selections(path, [best], "bsv2-2", 1.0, NOW) == 1
     assert "LEDGER_P=" in L.read_rows(path)[0]["reasons"]
+
+
+# ---------------------------------------------------------------- bsv2-3 (proposed): exchange book width gate
+def test_exchange_spread_parsing():
+    assert PR.exchange_spread_prob("ex_back=1.6/2.62;ex_lay=1.62/2.66") == pytest.approx(max(1/1.6-1/1.62, 1/2.62-1/2.66), abs=1e-6)
+    assert PR.exchange_spread_prob("ex_back=1.6/2.62") is None
+    assert PR.exchange_spread_prob("") is None
+
+
+def test_holger_rune_collapsed_book_is_rejected():
+    """Real 13:13 quote: back/lay 1.13/1.62 and 2.6/8.8 -> mid P 0.806 vs books ~0.62; BoyleSports 1.57 looked +26%."""
+    s = PR.PriceSnapshot("p1", "boylesports", 1.57, NOW - timedelta(minutes=2), NOW - timedelta(minutes=2), "test",
+                         0.806, PR.exchange_spread_prob("ex_back=1.13/2.6;ex_lay=1.62/8.8"), "EXCHANGE_MID")
+    best, _ = evaluate_prediction(pred(0.806), [s], CFG, NOW)
+    assert best.decision == REJECT and "EXCHANGE_SPREAD_TOO_WIDE" in best.reasons
+
+
+def test_tight_book_passes_and_unknown_spread_fails_closed():
+    tight = PR.PriceSnapshot("p1", "bet365", 1.80, NOW - timedelta(minutes=2), NOW - timedelta(minutes=2), "test",
+                             0.60, 0.008, "EXCHANGE_MID")
+    assert evaluate_prediction(pred(0.60), [tight], CFG, NOW)[0].decision == PAPER_BET
+    unknown = PR.PriceSnapshot("p1", "bet365", 1.80, NOW - timedelta(minutes=2), NOW - timedelta(minutes=2), "test",
+                               0.60, None, "EXCHANGE_MID")
+    best, _ = evaluate_prediction(pred(0.60), [unknown], CFG, NOW)
+    assert best.decision == REJECT and "EXCHANGE_SPREAD_UNKNOWN" in best.reasons
+
+
+def test_spread_gate_does_not_apply_to_non_exchange_probability():
+    fb = PR.PriceSnapshot("p1", "bet365", 1.80, NOW - timedelta(minutes=2), NOW - timedelta(minutes=2), "test",
+                          0.60, None, None)   # e.g. football card consensus
+    assert evaluate_prediction(pred(0.60), [fb], CFG, NOW)[0].decision == PAPER_BET
