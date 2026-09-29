@@ -187,7 +187,8 @@ def analyse(td_dir: Path, raw: Path = RAW) -> dict:
                     "event_name": f"{p.player_a} v {p.player_b}", "event_start": p.commence_time, "market": "match_winner",
                     "selection": p.predicted_winner, "estimated_probability": str(p.predicted_probability),
                     "prediction_valid": "True", "live_price": "", "live_price_source": "", "prediction_timestamp": ts.isoformat()}
-            best, _ = evaluate_prediction(pred, PR.tennis_from_snapshots(pred, snap_rows), cfg, ts)
+            prob_rows = PR.tennis_probability_rows([p], ts)          # same-snapshot engine P (bsv2-2)
+            best, _ = evaluate_prediction(pred, PR.tennis_from_snapshots(pred, snap_rows, prob_rows), cfg, ts)
             # settlement: unique tennis-data match (+-1 day, both players structurally matched)
             tour = "atp" if "_atp_" in sk else "wta"
             day = PR.ts(p.commence_time).date()
