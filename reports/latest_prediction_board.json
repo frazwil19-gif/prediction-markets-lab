@@ -1,11 +1,11 @@
 {
  "board_schema_version": 1,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-09-29T13:52:26.558055+00:00",
+ "generated_at": "2026-09-29T20:11:51.490825+00:00",
  "date": "2026-09-29",
  "summary": {
-  "upcoming_events": 64,
-  "valid_predictions": 64,
+  "upcoming_events": 66,
+  "valid_predictions": 66,
   "sports_active": [
    "tennis"
   ],
@@ -17,20 +17,20 @@
    "football_double_chance.derived_1x2"
   ],
   "threshold_counts": {
-   ">=70": 24,
-   ">=75": 15,
-   ">=80": 9,
-   ">=85": 6,
-   ">=90": 4,
-   ">=95": 0
+   ">=70": 26,
+   ">=75": 17,
+   ">=80": 11,
+   ">=85": 8,
+   ">=90": 6,
+   ">=95": 2
   },
   "settled_yesterday": 0,
   "system": "HEALTHY",
-  "api_credits_last_observed": 406
+  "api_credits_last_observed": 397
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-09-29T13:52:26.558055+00:00",
+  "generated_at": "2026-09-29T20:11:51.490825+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -38,30 +38,30 @@
     "last": "2026-09-29T13:52:26.010984+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 0.0
+    "age_hours": 6.3
    },
    "settlement": {
     "last": "2026-09-29T00:57:01.957995+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 12.9
+    "age_hours": 19.2
    },
    "tennis_board": {
-    "last": "2026-09-29T13:13:46.945822+00:00",
+    "last": "2026-09-29T20:11:50.324947+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 0.6
+    "age_hours": 0.0
    },
    "ci_tests": {
-    "last": "2026-09-29T13:52:26.546596+00:00",
+    "last": "2026-09-29T20:11:51.288735+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    }
   },
   "api_credits": {
-   "remaining": 406,
-   "observed_at": "2026-09-29T13:13:47.617797+00:00",
+   "remaining": 397,
+   "observed_at": "2026-09-29T20:11:50.738415+00:00",
    "source": "credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
@@ -121,7 +121,7 @@
    "status": "VALIDATED_HISTORICAL",
    "prospective_status": "COLLECTING",
    "money_eligible": false,
-   "predictions": 42,
+   "predictions": 44,
    "settled_rows": 10,
    "maturity": "COLLECTING",
    "ge80_settled": 2,
@@ -161,6 +161,84 @@
   "tennis": {}
  },
  "predictions": [
+  {
+   "prediction_id": "21bcb59acd9670f6",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "sport": "tennis",
+   "competition": "WTA China Open",
+   "event_id": "982ff3992a464e7e52910a12f402a08b",
+   "event_key": "tennis|tennis_wta_china_open|982ff3992a464e7e52910a12f402a08b",
+   "event_name": "Yu Jun Lin v Storm Hunter",
+   "event_start": "2026-10-01T04:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Storm Hunter",
+   "estimated_probability": "0.98256",
+   "fair_odds": "1.0177495521901971",
+   "probability_band": "95%+",
+   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
+   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "data_quality": "OK",
+   "current_context_status": "NOT_MODELLED",
+   "configured_scan_time": "30 15 * * *",
+   "actual_workflow_start": "2026-09-29T20:11:50.324947+00:00",
+   "prediction_timestamp": "2026-09-29T20:11:50.324947+00:00",
+   "minutes_to_event": "1908.2",
+   "live_price": "1.02",
+   "live_price_source": "betfair_ex_uk back (odds_api)",
+   "paper_status": "PAPER",
+   "prediction_valid": "True",
+   "single_eligible": "False",
+   "single_ineligible_reason": "engine not money-eligible",
+   "multi_research_eligible": "True",
+   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
+   "origin": "tennis_predictions/ledger_predictions.csv",
+   "origin_prediction_id": "21bcb59acd9670f6",
+   "settlement_status": "",
+   "result": "",
+   "correct": "",
+   "settlement_timestamp": ""
+  },
+  {
+   "prediction_id": "c2b11109982ea171",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "sport": "tennis",
+   "competition": "WTA China Open",
+   "event_id": "d335a62e23f27b87cc79d2e6c6589617",
+   "event_key": "tennis|tennis_wta_china_open|d335a62e23f27b87cc79d2e6c6589617",
+   "event_name": "Harriet Dart v Yihan Qu",
+   "event_start": "2026-10-01T04:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Harriet Dart",
+   "estimated_probability": "0.966945",
+   "fair_odds": "1.0341849846682076",
+   "probability_band": "95%+",
+   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
+   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "data_quality": "OK",
+   "current_context_status": "NOT_MODELLED",
+   "configured_scan_time": "30 15 * * *",
+   "actual_workflow_start": "2026-09-29T20:11:50.324947+00:00",
+   "prediction_timestamp": "2026-09-29T20:11:50.324947+00:00",
+   "minutes_to_event": "1908.2",
+   "live_price": "1.03",
+   "live_price_source": "betfair_ex_uk back (odds_api)",
+   "paper_status": "PAPER",
+   "prediction_valid": "True",
+   "single_eligible": "False",
+   "single_ineligible_reason": "engine not money-eligible",
+   "multi_research_eligible": "True",
+   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
+   "origin": "tennis_predictions/ledger_predictions.csv",
+   "origin_prediction_id": "c2b11109982ea171",
+   "settlement_status": "",
+   "result": "",
+   "correct": "",
+   "settlement_timestamp": ""
+  },
   {
    "prediction_id": "457f772c5b646ff7",
    "engine_id": "wta_match_winner.betfair_market",
