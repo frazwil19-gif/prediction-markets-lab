@@ -174,3 +174,44 @@ def test_board_ranks_by_probability_and_separates_research_only():
     assert ps == sorted(ps, reverse=True) and len(b["research_only"]) == 1
     md = B.render_markdown(b)
     assert "PAPER" in md and "EV" not in md and "stake" not in md.lower().replace("no stakes", "")
+
+
+# ---- Protocol amendment A1 (2026-09-29): a research-only first snapshot must not block the first VALID snapshot
+def test_research_only_first_snapshot_does_not_block_first_valid_snapshot(tmp_path):
+    from prediction_markets_lab.tennis_prospective.ledger import validated_upgrade_id
+    path = tmp_path / "l.csv"
+    research = predict(parse_tennis_odds([_event(bookmakers=BOOKS)], "tennis_atp_china_open")[0], NOW)
+    assert not research.source_validated
+    assert append_predictions(path, [research]) == (1, 0)
+    before = path.read_bytes()
+    valid = predict(parse_tennis_odds([_event(bookmakers=EX_FULL)], "tennis_atp_china_open")[0], NOW + timedelta(hours=2))
+    assert valid.prediction_id == research.prediction_id  # same canonical id -> previously silently skipped
+    assert append_predictions(path, [valid]) == (1, 0)
+    rows = read_predictions(path)
+    assert path.read_bytes().startswith(before)  # research row untouched
+    assert rows[1]["prediction_id"] == validated_upgrade_id(research.prediction_id)
+    assert rows[1]["source_validated"] == "True" and rows[1]["source"] == "EXCHANGE_MID"
+    # retries and later valid snapshots are idempotent: the first valid snapshot stays canonical
+    again = predict(parse_tennis_odds([_event(bookmakers=EX_FULL)], "tennis_atp_china_open")[0], NOW + timedelta(hours=4))
+    assert append_predictions(path, [again, again]) == (0, 2)
+    # a later research-only snapshot never adds anything
+    assert append_predictions(path, [research]) == (0, 1)
+    assert len(read_predictions(path)) == 2
+
+
+def test_validated_first_snapshot_still_blocks_everything_later(tmp_path):
+    path = tmp_path / "l.csv"
+    valid = predict(parse_tennis_odds([_event(bookmakers=EX_FULL)], "tennis_atp_china_open")[0], NOW)
+    append_predictions(path, [valid])
+    later_valid = predict(parse_tennis_odds([_event(bookmakers=EX_FULL)], "tennis_atp_china_open")[0], NOW + timedelta(hours=1))
+    later_research = predict(parse_tennis_odds([_event(bookmakers=BOOKS)], "tennis_atp_china_open")[0], NOW + timedelta(hours=1))
+    assert append_predictions(path, [later_valid, later_research]) == (0, 2)
+    assert len(read_predictions(path)) == 1
+
+
+def test_research_then_valid_in_same_batch(tmp_path):
+    path = tmp_path / "l.csv"
+    research = predict(parse_tennis_odds([_event(bookmakers=BOOKS)], "tennis_atp_china_open")[0], NOW)
+    valid = predict(parse_tennis_odds([_event(bookmakers=EX_FULL)], "tennis_atp_china_open")[0], NOW)
+    assert append_predictions(path, [research, valid]) == (2, 0)
+    assert [r["source_validated"] for r in read_predictions(path)] == ["False", "True"]
