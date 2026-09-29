@@ -1,4 +1,4 @@
-# Incident 2 (2026-09-29): positive EV is driven by collapsed Betfair books — PROPOSED fix bsv2-3 (NOT deployed)
+# Incident 2 (2026-09-29): positive EV is driven by collapsed Betfair books — fix bsv2-3 (approved by Fraser 2026-09-29 19:43 BST)
 
 ## Finding (post-merge verification of bsv2-2, before any bsv2-2 production run)
 - The frozen tennis engine sets P to the **midpoint** of the Betfair back/lay book. At 13:13 UTC many books were thin:
