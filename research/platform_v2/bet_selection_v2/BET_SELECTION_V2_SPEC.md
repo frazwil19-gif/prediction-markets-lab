@@ -42,7 +42,8 @@ P < 0.50 · engine status outside WATCH statuses.
 
 Otherwise:
 - **PAPER_BET**: P ≥ 0.50, net EV ≥ 2%, odds ≥ 1.33, ≤ 24 h to start, price ≤ 240 min old, engine VALIDATED_HISTORICAL(+PROSPECTIVE).
-- **MULTI_RESEARCH_ELIGIBLE**: not a PAPER_BET, but P ≥ 0.80 from a validated engine with a fresh real price (a research flag; no multi is built).
+- **MULTI_RESEARCH_ELIGIBLE**: not a PAPER_BET, but P ≥ 0.80 from a validated engine with a fresh real price. This includes
+  the "strong prediction, poor price" case (net EV ≤ 0) as long as no *other* hard rejection applies. It is a research flag; no multi is built.
 - **WATCH**: everything else that passed the hard rejections (0 < EV < 2%, outside 24 h, odds < 1.33, or a PROVISIONAL_PROSPECTIVE engine such as Double Chance).
 
 Gates are the existing money gates copied as research baselines (thresholds.yaml). They are never lowered to force

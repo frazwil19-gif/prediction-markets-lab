@@ -108,13 +108,22 @@ jobs:
             python scripts/run_unified_prediction_board.py build
           fi
 
+      - name: Bet-Selection V2 (V2-6 PAPER research; 0 credits; never affects the Money Card)
+        if: always() && steps.tests.outcome == 'success'
+        continue-on-error: true
+        env:
+          TRIGGER_EVENT: ${{ github.event_name }}
+        run: |
+          git fetch -q origin master && (git checkout origin/master -- paper_betting_v2/ 2>/dev/null || true)
+          python scripts/run_bet_selection_v2.py evaluate
+
       - name: Commit and push the Daily Bet Card contract and system status
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add daily_cards/ paper_ledger/ status/
-          for f in predictions reports/latest_prediction_board.json reports/latest_prediction_board.csv reports/latest_prediction_board.md reports/latest_prediction_performance.json; do if [ -e "$f" ]; then git add "$f"; fi; done  # V2-5 (per path: absent files cannot break this step)
+          for f in predictions reports/latest_prediction_board.json reports/latest_prediction_board.csv reports/latest_prediction_board.md reports/latest_prediction_performance.json paper_betting_v2 reports/bet_selection_v2.json reports/bet_selection_v2.md reports/bet_selection_v2_candidates.csv reports/bet_selection_v2_retrospective.json; do if [ -e "$f" ]; then git add "$f"; fi; done  # V2-5 (per path: absent files cannot break this step)
           if git diff --cached --quiet; then
             echo "No Daily Bet Card / paper-ledger / status changes to commit"
           else

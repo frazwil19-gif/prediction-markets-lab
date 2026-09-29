@@ -1,0 +1,155 @@
+{
+ "generated_at": "2026-09-29T08:11:20.536389+00:00",
+ "summary": {
+  "n": 10,
+  "decisions": {
+   "MULTI_RESEARCH_ELIGIBLE": 2,
+   "REJECT": 8
+  },
+  "mean_net_ev": -0.0416,
+  "hypothetical_level_stakes_pnl_units": -3.252,
+  "label": "RETROSPECTIVE DIAGNOSTIC -- not paper selections, not backfilled, not evidence of an edge"
+ },
+ "rows": [
+  {
+   "prediction_id": "bd5f7921242f7ae2",
+   "event": "Talia Gibson v Vikt\u00f3ria Morvayov\u00e1",
+   "P": 0.909091,
+   "odds": 1.09,
+   "source": "betfair_ex_uk",
+   "net_ev": -0.013181719499999953,
+   "decision_at_prediction_time": "MULTI_RESEARCH_ELIGIBLE",
+   "reasons": [
+    "NET_EV_NOT_POSITIVE"
+   ],
+   "correct": 1,
+   "hypothetical_unit_pnl": 0.08550000000000008
+  },
+  {
+   "prediction_id": "bb21001094a42161",
+   "event": "Xinyu Wang v Joanna Garland",
+   "P": 0.753488,
+   "odds": 1.32,
+   "source": "betfair_ex_uk",
+   "net_ev": -0.017451647999999903,
+   "decision_at_prediction_time": "REJECT",
+   "reasons": [
+    "NET_EV_NOT_POSITIVE"
+   ],
+   "correct": 1,
+   "hypothetical_unit_pnl": 0.30400000000000005
+  },
+  {
+   "prediction_id": "b86f41d426222208",
+   "event": "Tatiana Prozorova v Alexandra Eala",
+   "P": 0.795455,
+   "odds": 1.25,
+   "source": "betfair_ex_uk",
+   "net_ev": -0.015624437499999977,
+   "decision_at_prediction_time": "REJECT",
+   "reasons": [
+    "NET_EV_NOT_POSITIVE"
+   ],
+   "correct": 0,
+   "hypothetical_unit_pnl": -1.0
+  },
+  {
+   "prediction_id": "0f74694fdc7b5923",
+   "event": "Maria Sakkari v Nao Hibino",
+   "P": 0.836189,
+   "odds": 1.19,
+   "source": "betfair_ex_uk",
+   "net_ev": -0.012878885500000103,
+   "decision_at_prediction_time": "MULTI_RESEARCH_ELIGIBLE",
+   "reasons": [
+    "NET_EV_NOT_POSITIVE"
+   ],
+   "correct": 1,
+   "hypothetical_unit_pnl": 0.18049999999999994
+  },
+  {
+   "prediction_id": "a1772eac2b9a262e",
+   "event": "Elise Mertens v Maja Chwalinska",
+   "P": 0.647597,
+   "odds": 1.53,
+   "source": "betfair_ex_uk",
+   "net_ev": -0.02633791050000006,
+   "decision_at_prediction_time": "REJECT",
+   "reasons": [
+    "NET_EV_NOT_POSITIVE"
+   ],
+   "correct": 0,
+   "hypothetical_unit_pnl": -1.0
+  },
+  {
+   "prediction_id": "2a72cc520e872b49",
+   "event": "Mirra Andreeva v Leylah Fernandez",
+   "P": 0.70615,
+   "odds": 1.24,
+   "source": "betfair_ex_uk",
+   "net_ev": -0.13284779999999993,
+   "decision_at_prediction_time": "REJECT",
+   "reasons": [
+    "NET_EV_NOT_POSITIVE"
+   ],
+   "correct": 0,
+   "hypothetical_unit_pnl": -1.0
+  },
+  {
+   "prediction_id": "b3e2e99ebd422e2e",
+   "event": "Xinyu Wang v Tatiana Prozorova",
+   "P": 0.653333,
+   "odds": 1.4,
+   "source": "betfair_ex_uk",
+   "net_ev": -0.09840045999999997,
+   "decision_at_prediction_time": "REJECT",
+   "reasons": [
+    "NET_EV_NOT_POSITIVE"
+   ],
+   "correct": 0,
+   "hypothetical_unit_pnl": -1.0
+  },
+  {
+   "prediction_id": "64b72857afccc33d",
+   "event": "Maria Sakkari v Talia Gibson",
+   "P": 0.685005,
+   "odds": 1.42,
+   "source": "betfair_ex_uk",
+   "net_ev": -0.04167800500000007,
+   "decision_at_prediction_time": "REJECT",
+   "reasons": [
+    "NET_EV_NOT_POSITIVE"
+   ],
+   "correct": 0,
+   "hypothetical_unit_pnl": -1.0
+  },
+  {
+   "prediction_id": "3d6ec003b8ef55e1",
+   "event": "Leylah Fernandez v Maja Chwalinska",
+   "P": 0.578049,
+   "odds": 1.72,
+   "source": "betfair_ex_uk",
+   "net_ev": -0.026565483999999973,
+   "decision_at_prediction_time": "REJECT",
+   "reasons": [
+    "NET_EV_NOT_POSITIVE"
+   ],
+   "correct": 1,
+   "hypothetical_unit_pnl": 0.6839999999999999
+  },
+  {
+   "prediction_id": "f81233fab144841e",
+   "event": "Leylah Fernandez v Talia Gibson",
+   "P": 0.648402,
+   "odds": 1.52,
+   "source": "betfair_ex_uk",
+   "net_ev": -0.03128741199999996,
+   "decision_at_prediction_time": "REJECT",
+   "reasons": [
+    "NET_EV_NOT_POSITIVE"
+   ],
+   "correct": 1,
+   "hypothetical_unit_pnl": 0.494
+  }
+ ]
+}

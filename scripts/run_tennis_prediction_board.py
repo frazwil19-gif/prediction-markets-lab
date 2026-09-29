@@ -18,6 +18,7 @@ from prediction_markets_lab.ops.api_budget import check as budget_check, load_bu
 from prediction_markets_lab.tennis_prospective import board as B
 from prediction_markets_lab.tennis_prospective.engine import parse_tennis_odds, predict, tour_of
 from prediction_markets_lab.tennis_prospective.ledger import append_predictions
+from prediction_markets_lab.bet_selection_v2.prices import append_tennis_snapshots, tennis_snapshot_rows
 
 REPO = Path(__file__).resolve().parents[1]
 OUT = REPO / "tennis_predictions"
@@ -59,6 +60,7 @@ def main() -> int:
                   and not s.get("has_outrights"))
     now = datetime.now(timezone.utc)
     preds, fetched, events, skipped = [], [], 0, []
+    all_quotes = []  # V2-6: every price in the responses already paid for (0 extra credits)
     remaining = int(hdr.get("x-requests-remaining") or 0)
     budget = load_budget(BUDGET_FILE)
     spent = month_spend(OUT / "credit_log.csv", now)
@@ -73,8 +75,14 @@ def main() -> int:
         fetched.append(sk)
         qs = parse_tennis_odds(raw, sk)
         events += len(qs)
+        all_quotes += qs
         preds += [p for p in (predict(q, now) for q in qs) if p is not None]
     added, existing = append_predictions(OUT / "ledger_predictions.csv", preds)
+    try:  # V2-6 executable price capture; can never affect the frozen prediction ledger above
+        n_snap = append_tennis_snapshots(OUT / "price_snapshots.csv", tennis_snapshot_rows(all_quotes, now))
+        print(f"price snapshots recorded: {n_snap}")
+    except Exception as exc:  # noqa: BLE001 -- additive research capture must not fail the board
+        print(f"price snapshot capture failed (board unaffected): {exc}")
     day = now.date().isoformat()
     coverage = {"active_keys": fetched, "skipped_for_credit_guard": skipped, "keys_over_cap": keys[a.max_keys:],
                 "events_returned": events, "scan_timestamp": now.isoformat(), "credits_remaining_after": remaining,
