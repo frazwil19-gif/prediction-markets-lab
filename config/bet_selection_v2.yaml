@@ -5,7 +5,12 @@
 # (not re-tuned, not lowered). Changing any value requires a new rule_version and a dated note in the spec;
 # rows written under an old rule_version are never re-labelled.
 
-rule_version: "bsv2-3"
+rule_version: "bsv2-4"
+# bsv2-4 (V2-11; PROPOSED -- effective only from its deployment commit; rows written under bsv2-3 are never re-labelled):
+# gates and values UNCHANGED. Implementation correction: the unified-ledger price path (the tennis ledger's own Betfair
+# back quote) carried no engine source or book width, so the bsv2-3 width gate could not be evaluated on it. The ledger
+# snapshot now carries the width/source of the SAME scan (same event, same players, validated); if that cannot be resolved
+# it fails closed (EXCHANGE_SPREAD_UNKNOWN). Report: research/platform_v2/v2_11_spread_gate_ledger_path/REPORT.md
 # bsv2-3 (approved by Fraser 2026-09-29 19:43 BST; deployed via GitHub): EV gates UNCHANGED. Adds a data-quality gate: when the
 # engine P is a Betfair back/lay midpoint, the book's width (max over runners of 1/back - 1/lay) must be <= 0.03. Rationale
 # fixed before any outcome was examined: the midpoint's error is up to half the width (1.5 pp), comparable to the 2% EV floor,

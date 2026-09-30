@@ -214,7 +214,7 @@ def test_sampled_trebles_identical_across_reruns_order_and_odds(repo):
 def test_run_logs_this_runs_scan_and_rerun_is_idempotent(repo):
     rec, store = run(repo)
     assert rec["status"] == S.OK and rec["cards_logged"] > 0 and rec["run_id"] == "r1" and rec["commit_sha"] == "abc"
-    assert rec["config_sha"] and rec["bsv2_rule_version"] == "bsv2-3" and json.loads(rec["input_shas"])["prices"]
+    assert rec["config_sha"] and rec["bsv2_rule_version"] == yaml.safe_load((REPO / "config/bet_selection_v2.yaml").read_text())["rule_version"] and json.loads(rec["input_shas"])["prices"]
     before = tree(store.root)
     again, _ = run(repo)
     assert again["status"] == "ALREADY_LOGGED" and tree(store.root) == before
