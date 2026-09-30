@@ -269,3 +269,11 @@ NO BET whenever no option has positive EV after error sensitivity. Grades A+ to 
 3. On approval, build the offline V2-8 analyser over the V2-7 prospective data. It requires no change to V2-7.
 4. Fraser could verify one bookmaker's accumulator bet-slip price against the product of its leg prices, without placing a bet. This
    is the only way to move multi prices from INDICATIVE toward EXECUTABLE.
+
+## Erratum E1 (2026-09-30, found while building the offline analyser)
+In the REAL-price scenarios, the historical HIGH_P set selection took each book's own top-N and then chose the book with the
+highest price product. That could, in principle, have selected weaker legs at a book lacking a stronger one. The code now fixes the
+N strongest predictions **first**, then uses the book that prices all N. In the POS_EV population, the book with the highest joint P
+is now used. After a full re-run, **every result block is byte-identical**: every priced set had already been the global top-N,
+since tennis has one book and the football books priced the same legs. The only change is the `days_no_single_book` counter, which
+had been counting days without enough legs. Prior numbers stand.

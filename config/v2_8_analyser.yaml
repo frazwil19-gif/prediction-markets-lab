@@ -1,0 +1,29 @@
+# V2-8 OFFLINE portfolio analyser (RESEARCH ONLY). Read by scripts/run_v2_8_analyser.py only; production never reads it.
+# Consumes frozen V2-7 prospective records read-only. 0 API credits. Never writes V2-7 or production files. Places nothing.
+analyser_version: v2-8a-1
+
+inputs:
+  v2_7_records: research/platform_v2/card_engine_v2_7/prospective     # frozen V2-7 cer-2 output (read-only)
+  prices: tennis_predictions/price_snapshots.csv                       # production, append-only (read-only)
+  shadow_config: config/card_research_shadow.yaml                      # the V2-7 quality rules (read-only; identical to bsv2-3)
+  calibration_results: research/platform_v2/card_engine_v2_7/RESULTS.json
+  ledger_predictions: tennis_predictions/ledger_predictions.csv        # only with --with-outcomes (needs approval; see README)
+  ledger_settlements: tennis_predictions/ledger_settlements.csv
+
+# Stage A (prediction board): ordering is by probability, never by EV.
+board:
+  investigate_if_abs_p_minus_book_consensus_gt: 0.10   # disagreement triggers INVESTIGATE, never "value" (V2-6D 0.10 screen)
+  agrees_if_abs_p_minus_book_consensus_le: 0.03        # descriptive label only (bsv2-3 exchange-width scale); not a gate
+
+# Stage B (betting evaluation). These are labels only: no grades (A+..REJECT thresholds deliberately not set).
+structures:
+  set_sizes: [3, 5]            # top-N strongest predictions (computational cap, not a betting rule)
+  pos_ev_set_sizes: [2, 3]     # separate POS_EV population (every leg EV > 0 at one book)
+  include_systems: true        # round robins / full cover (bounded: <= 31 lines at N = 5)
+sensitivity_deltas_pp: [-5, -3, -2, -1.5, -1, -0.5, 0.5, 1, 1.5, 2, 3, 5]
+
+bankroll:
+  bankrolls_gbp: [20, 30, 50, 100]
+  daily_capital_fractions: [0.02, 0.05]
+  min_line_stake_gbp: [0.10, 1.00]    # 0.10 from config/bet_selection_v2.yaml (bookmaker); 1.00 conservative sensitivity
+  stake_tick_gbp: 0.10                # lines rounded DOWN; never scaled up to meet a minimum

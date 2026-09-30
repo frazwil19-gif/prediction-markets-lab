@@ -66,15 +66,28 @@ def candidate_sets(legs: pd.DataFrame, n: int, quotes: pd.DataFrame | None = Non
                 continue
             q = CB.strip_outcomes(q[q.book.isin(BT.MULTI_BOOKS if n >= 2 else tuple(BT.PRIMARY_BOOKS))])
             best = None
-            for bk, gb in q.groupby("book", sort=True):
-                rr = gb.to_dict("records")
-                cand = [r for r in rr if (r["ev"] > 0 if pos_ev else r["p"] >= pmin)]
-                sel = CB.pick_top(cand, n, lambda r: r["p"])
-                if sel is None:
+            if pos_ev:
+                # POS_EV: per book, top-n by P among EV > 0; the book with the highest JOINT P is used (probability first)
+                for bk, gb in q.groupby("book", sort=True):
+                    sel = CB.pick_top([r for r in gb.to_dict("records") if r["ev"] > 0], n, lambda r: r["p"])
+                    if sel is None:
+                        continue
+                    key = (math.prod(r["p"] for r in sel), math.prod(r["odds_net"] for r in sel))
+                    if best is None or key > best[0]:
+                        best = (key, bk, sel)
+            else:
+                # HIGH_P (erratum E1 fix): fix the n strongest predictions FIRST, then the book pricing all n at the best product
+                top = CB.pick_top([r for r in rows if r["p"] >= pmin], n, lambda r: r["p"])
+                if top is None:
                     continue
-                prod = math.prod(r["odds_net"] for r in sel)
-                if best is None or (prod, bk) > (best[0], best[1]):
-                    best = (prod, bk, sel)
+                want = [r["event"] for r in top]
+                for bk, gb in q.groupby("book", sort=True):
+                    m = {r["event"]: r for r in gb.to_dict("records")}
+                    if all(e in m for e in want):
+                        sel = [m[e] for e in want]
+                        key = (math.prod(r["odds_net"] for r in sel),)
+                        if best is None or key > best[0]:
+                            best = (key, bk, sel)
             if best is None:
                 cnt["days_no_single_book"] += 1
                 continue
