@@ -1,5 +1,7 @@
 # V2-7 Dynamic Betting-Card Engine (singles / doubles / trebles) — Phase 1 Research Report (2026-09-30)
 
+> **ERRATUM (2026-09-30, audit):** §4's claim that singles dominate multis on the same legs is **withdrawn**. At equal total capital, a double of genuine +EV legs grows faster below about a 4.8% stake. See `AUDIT_AND_LOGGER.md` §1, which also adds calibration precision, overlap-corrected indicative CIs and the streak assumption table. The original text is kept unchanged below for provenance.
+
 **Status: research only.** No production, workflow, gate or engine change; no purchase; no merge. Pre-registration: `PREREGISTRATION.md`
 (commit `f4ded15`, before any joint result). Code: `scripts/v2_7_card_engine_research.py`. Numbers: `RESULTS.json`.
 Evidence classes: **A** probability-only · **B** indicative historical odds · **C** executable multi backtest (**not possible**) · **D** prospective.
