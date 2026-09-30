@@ -4,7 +4,7 @@
 # immediately, writes nothing and commits nothing (merging this file therefore activates nothing).
 # Never writes production ledgers; 0 Odds API credits (reads files the tennis board already wrote in the same run).
 rule_version: cer-2
-logging_enabled: false
+logging_enabled: true
 settlement_enabled: false
 
 output_dir: research/platform_v2/card_engine_v2_7/prospective
