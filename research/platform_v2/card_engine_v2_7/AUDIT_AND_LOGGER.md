@@ -89,8 +89,9 @@
 ## 4. Proposal: prospective shadow integration (NOT approved; needs Fraser)
 1. One extra `continue-on-error` step in `tennis_prediction_board`, after bet selection, runs `run_card_research.py log` and `settle`.
    0 credits. It writes only `research/.../shadow_cards/`, with a per-path `git add`.
-2. **Growth control:** about 5k card rows per scan is roughly 5–8 MB/day. The alternative is to log only POS_EV plus a deterministic 10%
-   sample of HIGH_P, with the sample rule pre-declared.
+2. **Growth control (measured):** the demo scan produced 4,857 cards = **9.0 MB**, so about 18 MB/day at 2 scans/day, which is too
+   much for git. Log all POS_EV cards plus HIGH_P singles and doubles, and a deterministic 10% hash-sample of HIGH_P trebles, with the
+   sample rule pre-declared and the sampled fraction recorded. That gives roughly 1–1.5 MB per scan.
 3. **Review, pre-registered, with no automatic "100 cards = validated":** after ≥ 30 settled scans, report per group and k:
    - calibration-in-the-large with a day-cluster CI and effective n;
    - EV-low > 0 hit rate;
