@@ -374,7 +374,7 @@ def simulate(days: list[dict], s: float, structure: str, seed: int = SEED, n_boo
     idx = rng.integers(0, n, size=(n_boot, n))
     mb = rets[idx].mean(1)
     ub = np.array(pnl_u)[idx].mean(1)
-    impaired = float(np.mean([np.exp(np.cumsum(rets[i])).min() < 0.5 for i in idx]))
+    impaired = float(np.mean(np.cumsum(rets[idx], axis=1).min(axis=1) < math.log(0.5)))
     q = np.array(card_q)
     return {"days": n, "stake": s, "win_share": round(float(np.mean(won_any)), 4),
             "whole_stake_loss_share": round(float(np.mean(lost_all)), 4),
