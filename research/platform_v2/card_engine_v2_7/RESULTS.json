@@ -1,0 +1,1157 @@
+{
+ "label": "RESEARCH ONLY -- classes A (probability-only), B (indicative), D (live descriptive); no executable multi backtest",
+ "A1_joint_calibration": {
+  "football": {
+   "development": {
+    "singles": {
+     "50-65%": {
+      "n": 1284,
+      "pred": 0.5655,
+      "actual": 0.5802,
+      "wilson95": [
+       0.553,
+       0.6069
+      ],
+      "actual_over_pred": 1.026,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 530,
+      "pred": 0.7194,
+      "actual": 0.7547,
+      "wilson95": [
+       0.7163,
+       0.7894
+      ],
+      "actual_over_pred": 1.0492,
+      "pred_inside_ci": "True"
+     },
+     "80%+": {
+      "n": 152,
+      "pred": 0.8382,
+      "actual": 0.875,
+      "wilson95": [
+       0.813,
+       0.9185
+      ],
+      "actual_over_pred": 1.0439,
+      "pred_inside_ci": "True"
+     }
+    },
+    "doubles": {
+     "50-65%": {
+      "n": 85,
+      "pred": 0.554,
+      "actual": 0.6471,
+      "wilson95": [
+       0.5411,
+       0.7403
+      ],
+      "actual_over_pred": 1.168,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 12,
+      "pred": 0.6846,
+      "actual": 0.75,
+      "wilson95": [
+       0.4677,
+       0.9111
+      ],
+      "actual_over_pred": 1.0956,
+      "pred_inside_ci": "True"
+     }
+    },
+    "trebles": {
+     "50-65%": {
+      "n": 2,
+      "pred": 0.5333,
+      "actual": 1.0,
+      "wilson95": [
+       0.3424,
+       1.0
+      ],
+      "actual_over_pred": 1.875,
+      "pred_inside_ci": "True"
+     }
+    }
+   },
+   "holdout_years": {
+    "singles": {
+     "50-65%": {
+      "n": 723,
+      "pred": 0.5638,
+      "actual": 0.5408,
+      "wilson95": [
+       0.5044,
+       0.5768
+      ],
+      "actual_over_pred": 0.9592,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 250,
+      "pred": 0.7146,
+      "actual": 0.728,
+      "wilson95": [
+       0.6697,
+       0.7794
+      ],
+      "actual_over_pred": 1.0187,
+      "pred_inside_ci": "True"
+     },
+     "80%+": {
+      "n": 53,
+      "pred": 0.8363,
+      "actual": 0.8868,
+      "wilson95": [
+       0.7742,
+       0.9471
+      ],
+      "actual_over_pred": 1.0604,
+      "pred_inside_ci": "True"
+     }
+    },
+    "doubles": {
+     "50-65%": {
+      "n": 25,
+      "pred": 0.5504,
+      "actual": 0.48,
+      "wilson95": [
+       0.3003,
+       0.665
+      ],
+      "actual_over_pred": 0.872,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 5,
+      "pred": 0.7088,
+      "actual": 1.0,
+      "wilson95": [
+       0.5655,
+       1.0
+      ],
+      "actual_over_pred": 1.4108,
+      "pred_inside_ci": "True"
+     }
+    },
+    "trebles": {}
+   },
+   "search_space": {
+    "legs": 2992,
+    "days": 865,
+    "doubles": 1230,
+    "trebles": 683
+   }
+  },
+  "nba": {
+   "development": {
+    "singles": {
+     "50-65%": {
+      "n": 3722,
+      "pred": 0.5762,
+      "actual": 0.5752,
+      "wilson95": [
+       0.5593,
+       0.591
+      ],
+      "actual_over_pred": 0.9982,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 2828,
+      "pred": 0.7181,
+      "actual": 0.726,
+      "wilson95": [
+       0.7092,
+       0.7421
+      ],
+      "actual_over_pred": 1.0109,
+      "pred_inside_ci": "True"
+     },
+     "80%+": {
+      "n": 1348,
+      "pred": 0.8553,
+      "actual": 0.845,
+      "wilson95": [
+       0.8247,
+       0.8633
+      ],
+      "actual_over_pred": 0.9879,
+      "pred_inside_ci": "True"
+     }
+    },
+    "doubles": {
+     "50-65%": {
+      "n": 903,
+      "pred": 0.5586,
+      "actual": 0.5781,
+      "wilson95": [
+       0.5456,
+       0.6099
+      ],
+      "actual_over_pred": 1.0349,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 180,
+      "pred": 0.7015,
+      "actual": 0.6889,
+      "wilson95": [
+       0.6179,
+       0.752
+      ],
+      "actual_over_pred": 0.982,
+      "pred_inside_ci": "True"
+     },
+     "80%+": {
+      "n": 9,
+      "pred": 0.8151,
+      "actual": 0.6667,
+      "wilson95": [
+       0.3542,
+       0.8794
+      ],
+      "actual_over_pred": 0.8179,
+      "pred_inside_ci": "True"
+     }
+    },
+    "trebles": {
+     "50-65%": {
+      "n": 70,
+      "pred": 0.5516,
+      "actual": 0.6,
+      "wilson95": [
+       0.4829,
+       0.7067
+      ],
+      "actual_over_pred": 1.0878,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 3,
+      "pred": 0.6991,
+      "actual": 0.6667,
+      "wilson95": [
+       0.2077,
+       0.9385
+      ],
+      "actual_over_pred": 0.9536,
+      "pred_inside_ci": "True"
+     }
+    }
+   },
+   "holdout_years": {
+    "singles": {
+     "50-65%": {
+      "n": 1086,
+      "pred": 0.5775,
+      "actual": 0.57,
+      "wilson95": [
+       0.5403,
+       0.5991
+      ],
+      "actual_over_pred": 0.987,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 993,
+      "pred": 0.7203,
+      "actual": 0.714,
+      "wilson95": [
+       0.6851,
+       0.7412
+      ],
+      "actual_over_pred": 0.9913,
+      "pred_inside_ci": "True"
+     },
+     "80%+": {
+      "n": 550,
+      "pred": 0.8553,
+      "actual": 0.8745,
+      "wilson95": [
+       0.8442,
+       0.8997
+      ],
+      "actual_over_pred": 1.0225,
+      "pred_inside_ci": "True"
+     }
+    },
+    "doubles": {
+     "50-65%": {
+      "n": 328,
+      "pred": 0.5642,
+      "actual": 0.5671,
+      "wilson95": [
+       0.513,
+       0.6196
+      ],
+      "actual_over_pred": 1.0052,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 102,
+      "pred": 0.7111,
+      "actual": 0.7745,
+      "wilson95": [
+       0.6843,
+       0.8448
+      ],
+      "actual_over_pred": 1.0892,
+      "pred_inside_ci": "True"
+     },
+     "80%+": {
+      "n": 6,
+      "pred": 0.8082,
+      "actual": 1.0,
+      "wilson95": [
+       0.6097,
+       1.0
+      ],
+      "actual_over_pred": 1.2373,
+      "pred_inside_ci": "True"
+     }
+    },
+    "trebles": {
+     "50-65%": {
+      "n": 41,
+      "pred": 0.5556,
+      "actual": 0.561,
+      "wilson95": [
+       0.4104,
+       0.7011
+      ],
+      "actual_over_pred": 1.0096,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 7,
+      "pred": 0.6813,
+      "actual": 0.5714,
+      "wilson95": [
+       0.2505,
+       0.8418
+      ],
+      "actual_over_pred": 0.8388,
+      "pred_inside_ci": "True"
+     }
+    }
+   },
+   "search_space": {
+    "legs": 10527,
+    "days": 1680,
+    "doubles": 4826,
+    "trebles": 2920
+   }
+  },
+  "tennis_atp": {
+   "development": {
+    "singles": {
+     "50-65%": {
+      "n": 3203,
+      "pred": 0.5796,
+      "actual": 0.5535,
+      "wilson95": [
+       0.5363,
+       0.5707
+      ],
+      "actual_over_pred": 0.955,
+      "pred_inside_ci": "False"
+     },
+     "65-80%": {
+      "n": 2455,
+      "pred": 0.7187,
+      "actual": 0.723,
+      "wilson95": [
+       0.705,
+       0.7404
+      ],
+      "actual_over_pred": 1.006,
+      "pred_inside_ci": "True"
+     },
+     "80%+": {
+      "n": 1478,
+      "pred": 0.8723,
+      "actual": 0.8796,
+      "wilson95": [
+       0.862,
+       0.8952
+      ],
+      "actual_over_pred": 1.0083,
+      "pred_inside_ci": "True"
+     }
+    },
+    "doubles": {
+     "50-65%": {
+      "n": 894,
+      "pred": 0.5623,
+      "actual": 0.5492,
+      "wilson95": [
+       0.5165,
+       0.5816
+      ],
+      "actual_over_pred": 0.9767,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 248,
+      "pred": 0.7145,
+      "actual": 0.746,
+      "wilson95": [
+       0.6883,
+       0.7961
+      ],
+      "actual_over_pred": 1.0441,
+      "pred_inside_ci": "True"
+     },
+     "80%+": {
+      "n": 61,
+      "pred": 0.853,
+      "actual": 0.8689,
+      "wilson95": [
+       0.762,
+       0.932
+      ],
+      "actual_over_pred": 1.0186,
+      "pred_inside_ci": "True"
+     }
+    },
+    "trebles": {
+     "50-65%": {
+      "n": 134,
+      "pred": 0.5525,
+      "actual": 0.4851,
+      "wilson95": [
+       0.4021,
+       0.5689
+      ],
+      "actual_over_pred": 0.8779,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 28,
+      "pred": 0.7059,
+      "actual": 0.7143,
+      "wilson95": [
+       0.5294,
+       0.8475
+      ],
+      "actual_over_pred": 1.0119,
+      "pred_inside_ci": "True"
+     },
+     "80%+": {
+      "n": 2,
+      "pred": 0.8145,
+      "actual": 0.5,
+      "wilson95": [
+       0.0945,
+       0.9055
+      ],
+      "actual_over_pred": 0.6139,
+      "pred_inside_ci": "True"
+     }
+    }
+   },
+   "holdout_years": {
+    "singles": {
+     "50-65%": {
+      "n": 2399,
+      "pred": 0.5778,
+      "actual": 0.5732,
+      "wilson95": [
+       0.5533,
+       0.5928
+      ],
+      "actual_over_pred": 0.9919,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 1666,
+      "pred": 0.7183,
+      "actual": 0.7245,
+      "wilson95": [
+       0.7025,
+       0.7454
+      ],
+      "actual_over_pred": 1.0086,
+      "pred_inside_ci": "True"
+     },
+     "80%+": {
+      "n": 1001,
+      "pred": 0.8755,
+      "actual": 0.8741,
+      "wilson95": [
+       0.8521,
+       0.8933
+      ],
+      "actual_over_pred": 0.9984,
+      "pred_inside_ci": "True"
+     }
+    },
+    "doubles": {
+     "50-65%": {
+      "n": 587,
+      "pred": 0.563,
+      "actual": 0.552,
+      "wilson95": [
+       0.5115,
+       0.5917
+      ],
+      "actual_over_pred": 0.9803,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 185,
+      "pred": 0.7083,
+      "actual": 0.6811,
+      "wilson95": [
+       0.6108,
+       0.744
+      ],
+      "actual_over_pred": 0.9616,
+      "pred_inside_ci": "True"
+     },
+     "80%+": {
+      "n": 35,
+      "pred": 0.855,
+      "actual": 0.8571,
+      "wilson95": [
+       0.7062,
+       0.9374
+      ],
+      "actual_over_pred": 1.0025,
+      "pred_inside_ci": "True"
+     }
+    },
+    "trebles": {
+     "50-65%": {
+      "n": 88,
+      "pred": 0.5532,
+      "actual": 0.4886,
+      "wilson95": [
+       0.3869,
+       0.5913
+      ],
+      "actual_over_pred": 0.8833,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 22,
+      "pred": 0.7048,
+      "actual": 0.7727,
+      "wilson95": [
+       0.5656,
+       0.8988
+      ],
+      "actual_over_pred": 1.0964,
+      "pred_inside_ci": "True"
+     }
+    }
+   },
+   "tennis_doubles_by_dependence": {
+    "same_tournament": {
+     "50-65%": {
+      "n": 1059,
+      "pred": 0.564,
+      "actual": 0.5524,
+      "wilson95": [
+       0.5223,
+       0.5821
+      ],
+      "actual_over_pred": 0.9795,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 364,
+      "pred": 0.7122,
+      "actual": 0.717,
+      "wilson95": [
+       0.6687,
+       0.7609
+      ],
+      "actual_over_pred": 1.0068,
+      "pred_inside_ci": "True"
+     },
+     "80%+": {
+      "n": 85,
+      "pred": 0.8553,
+      "actual": 0.8588,
+      "wilson95": [
+       0.7693,
+       0.9174
+      ],
+      "actual_over_pred": 1.0041,
+      "pred_inside_ci": "True"
+     }
+    },
+    "different_tournament": {
+     "50-65%": {
+      "n": 422,
+      "pred": 0.5591,
+      "actual": 0.545,
+      "wilson95": [
+       0.4973,
+       0.5919
+      ],
+      "actual_over_pred": 0.9748,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 69,
+      "pred": 0.7096,
+      "actual": 0.7246,
+      "wilson95": [
+       0.6095,
+       0.8161
+      ],
+      "actual_over_pred": 1.0211,
+      "pred_inside_ci": "True"
+     },
+     "80%+": {
+      "n": 11,
+      "pred": 0.8415,
+      "actual": 0.9091,
+      "wilson95": [
+       0.6226,
+       0.9838
+      ],
+      "actual_over_pred": 1.0803,
+      "pred_inside_ci": "True"
+     }
+    }
+   },
+   "search_space": {
+    "legs": 12202,
+    "days": 1508,
+    "doubles": 5751,
+    "trebles": 3502
+   }
+  },
+  "tennis_wta": {
+   "development": {
+    "singles": {
+     "50-65%": {
+      "n": 2785,
+      "pred": 0.5769,
+      "actual": 0.572,
+      "wilson95": [
+       0.5535,
+       0.5903
+      ],
+      "actual_over_pred": 0.9915,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 2115,
+      "pred": 0.7188,
+      "actual": 0.7102,
+      "wilson95": [
+       0.6905,
+       0.7291
+      ],
+      "actual_over_pred": 0.988,
+      "pred_inside_ci": "True"
+     },
+     "80%+": {
+      "n": 1113,
+      "pred": 0.8644,
+      "actual": 0.885,
+      "wilson95": [
+       0.8649,
+       0.9024
+      ],
+      "actual_over_pred": 1.0239,
+      "pred_inside_ci": "False"
+     }
+    },
+    "doubles": {
+     "50-65%": {
+      "n": 724,
+      "pred": 0.561,
+      "actual": 0.5691,
+      "wilson95": [
+       0.5327,
+       0.6047
+      ],
+      "actual_over_pred": 1.0144,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 188,
+      "pred": 0.7041,
+      "actual": 0.7606,
+      "wilson95": [
+       0.6948,
+       0.816
+      ],
+      "actual_over_pred": 1.0803,
+      "pred_inside_ci": "True"
+     },
+     "80%+": {
+      "n": 26,
+      "pred": 0.8388,
+      "actual": 0.8846,
+      "wilson95": [
+       0.7102,
+       0.96
+      ],
+      "actual_over_pred": 1.0546,
+      "pred_inside_ci": "True"
+     }
+    },
+    "trebles": {
+     "50-65%": {
+      "n": 88,
+      "pred": 0.5602,
+      "actual": 0.5682,
+      "wilson95": [
+       0.464,
+       0.6667
+      ],
+      "actual_over_pred": 1.0142,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 15,
+      "pred": 0.6918,
+      "actual": 0.8,
+      "wilson95": [
+       0.5481,
+       0.9295
+      ],
+      "actual_over_pred": 1.1565,
+      "pred_inside_ci": "True"
+     },
+     "80%+": {
+      "n": 1,
+      "pred": 0.8322,
+      "actual": 0.0,
+      "wilson95": [
+       0.0,
+       0.7935
+      ],
+      "actual_over_pred": 0.0,
+      "pred_inside_ci": "False"
+     }
+    }
+   },
+   "holdout_years": {
+    "singles": {
+     "50-65%": {
+      "n": 2076,
+      "pred": 0.5771,
+      "actual": 0.5525,
+      "wilson95": [
+       0.531,
+       0.5738
+      ],
+      "actual_over_pred": 0.9574,
+      "pred_inside_ci": "False"
+     },
+     "65-80%": {
+      "n": 1495,
+      "pred": 0.7188,
+      "actual": 0.7237,
+      "wilson95": [
+       0.7005,
+       0.7458
+      ],
+      "actual_over_pred": 1.0068,
+      "pred_inside_ci": "True"
+     },
+     "80%+": {
+      "n": 768,
+      "pred": 0.8687,
+      "actual": 0.8698,
+      "wilson95": [
+       0.8441,
+       0.8918
+      ],
+      "actual_over_pred": 1.0012,
+      "pred_inside_ci": "True"
+     }
+    },
+    "doubles": {
+     "50-65%": {
+      "n": 493,
+      "pred": 0.5648,
+      "actual": 0.5193,
+      "wilson95": [
+       0.4752,
+       0.5631
+      ],
+      "actual_over_pred": 0.9195,
+      "pred_inside_ci": "False"
+     },
+     "65-80%": {
+      "n": 142,
+      "pred": 0.7038,
+      "actual": 0.7394,
+      "wilson95": [
+       0.6616,
+       0.8046
+      ],
+      "actual_over_pred": 1.0506,
+      "pred_inside_ci": "True"
+     },
+     "80%+": {
+      "n": 13,
+      "pred": 0.8503,
+      "actual": 0.9231,
+      "wilson95": [
+       0.6669,
+       0.9863
+      ],
+      "actual_over_pred": 1.0856,
+      "pred_inside_ci": "True"
+     }
+    },
+    "trebles": {
+     "50-65%": {
+      "n": 57,
+      "pred": 0.5541,
+      "actual": 0.5614,
+      "wilson95": [
+       0.4328,
+       0.6823
+      ],
+      "actual_over_pred": 1.0132,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 7,
+      "pred": 0.712,
+      "actual": 0.4286,
+      "wilson95": [
+       0.1582,
+       0.7495
+      ],
+      "actual_over_pred": 0.6019,
+      "pred_inside_ci": "True"
+     }
+    }
+   },
+   "tennis_doubles_by_dependence": {
+    "same_tournament": {
+     "50-65%": {
+      "n": 952,
+      "pred": 0.5643,
+      "actual": 0.5504,
+      "wilson95": [
+       0.5187,
+       0.5818
+      ],
+      "actual_over_pred": 0.9754,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 269,
+      "pred": 0.7047,
+      "actual": 0.7509,
+      "wilson95": [
+       0.696,
+       0.7988
+      ],
+      "actual_over_pred": 1.0655,
+      "pred_inside_ci": "True"
+     },
+     "80%+": {
+      "n": 28,
+      "pred": 0.844,
+      "actual": 0.9643,
+      "wilson95": [
+       0.8229,
+       0.9937
+      ],
+      "actual_over_pred": 1.1426,
+      "pred_inside_ci": "True"
+     }
+    },
+    "different_tournament": {
+     "50-65%": {
+      "n": 265,
+      "pred": 0.5561,
+      "actual": 0.5434,
+      "wilson95": [
+       0.4832,
+       0.6023
+      ],
+      "actual_over_pred": 0.9772,
+      "pred_inside_ci": "True"
+     },
+     "65-80%": {
+      "n": 61,
+      "pred": 0.7006,
+      "actual": 0.7541,
+      "wilson95": [
+       0.6332,
+       0.8449
+      ],
+      "actual_over_pred": 1.0764,
+      "pred_inside_ci": "True"
+     },
+     "80%+": {
+      "n": 11,
+      "pred": 0.8392,
+      "actual": 0.7273,
+      "wilson95": [
+       0.4343,
+       0.9025
+      ],
+      "actual_over_pred": 0.8666,
+      "pred_inside_ci": "True"
+     }
+    }
+   },
+   "search_space": {
+    "legs": 10352,
+    "days": 1381,
+    "doubles": 4832,
+    "trebles": 2946
+   }
+  }
+ },
+ "A2_dispersion": {
+  "football": {
+   "days": 586,
+   "dispersion_index": 0.9562,
+   "ci95": [
+    0.8581,
+    1.0595
+   ],
+   "mean_legs_per_day": 4.63
+  },
+  "nba": {
+   "days": 1498,
+   "dispersion_index": 1.0492,
+   "ci95": [
+    0.9831,
+    1.1205
+   ],
+   "mean_legs_per_day": 6.91
+  },
+  "tennis_atp": {
+   "days": 1385,
+   "dispersion_index": 0.9737,
+   "ci95": [
+    0.9094,
+    1.0406
+   ],
+   "mean_legs_per_day": 8.72
+  },
+  "tennis_wta": {
+   "days": 1243,
+   "dispersion_index": 0.9438,
+   "ci95": [
+    0.8746,
+    1.0171
+   ],
+   "mean_legs_per_day": 8.22
+  }
+ },
+ "B_indicative_b365_tennis": {
+  "label": "INDICATIVE (class B): Bet365 closing, untimestamped; P = Pinnacle closing de-vig (reference, not the frozen engine)",
+  "ATP": {
+   "favourite_legs": 10326,
+   "positive_ev_legs": 397,
+   "positive_ev_legs_per_100_favourites": 3.84,
+   "doubles": {
+    "cards": 103,
+    "days_with_any": 70,
+    "of_days_with_a_positive_leg": 312,
+    "mean_p_joint": 0.4008,
+    "mean_est_ev": 0.0324,
+    "hit_rate": 0.3883,
+    "wilson95": [
+     0.2999,
+     0.4849
+    ],
+    "roi_indicative": -0.0027
+   },
+   "trebles": {
+    "cards": 21,
+    "days_with_any": 12,
+    "of_days_with_a_positive_leg": 312,
+    "mean_p_joint": 0.2591,
+    "mean_est_ev": 0.0584,
+    "hit_rate": 0.1905,
+    "wilson95": [
+     0.0767,
+     0.4
+    ],
+    "roi_indicative": -0.2587
+   },
+   "singles": {
+    "n": 397,
+    "mean_p": 0.6294,
+    "mean_est_ev": 0.0161,
+    "hit_rate": 0.6448,
+    "roi_indicative": 0.0371
+   }
+  },
+  "WTA": {
+   "favourite_legs": 8823,
+   "positive_ev_legs": 401,
+   "positive_ev_legs_per_100_favourites": 4.54,
+   "doubles": {
+    "cards": 87,
+    "days_with_any": 65,
+    "of_days_with_a_positive_leg": 326,
+    "mean_p_joint": 0.4007,
+    "mean_est_ev": 0.0277,
+    "hit_rate": 0.4023,
+    "wilson95": [
+     0.3055,
+     0.5074
+    ],
+    "roi_indicative": 0.0113
+   },
+   "trebles": {
+    "cards": 14,
+    "days_with_any": 8,
+    "of_days_with_a_positive_leg": 326,
+    "mean_p_joint": 0.2605,
+    "mean_est_ev": 0.032,
+    "hit_rate": 0.1429,
+    "wilson95": [
+     0.0401,
+     0.3994
+    ],
+    "roi_indicative": -0.2501
+   },
+   "singles": {
+    "n": 401,
+    "mean_p": 0.6222,
+    "mean_est_ev": 0.0159,
+    "hit_rate": 0.6185,
+    "roi_indicative": 0.0075
+   }
+  }
+ },
+ "D_live_snapshot": {
+  "scan": "2026-09-29T20:11:50.324947+00:00",
+  "tight_book_favourites": 53,
+  "per_bookmaker": {
+   "betano_uk": {
+    "favourites_priced": 53,
+    "positive_ev_legs": 1,
+    "doubles_all_legs_positive": 0,
+    "trebles_all_legs_positive": 0,
+    "median_P_times_O": 0.9537
+   },
+   "betfair_sb_uk": {
+    "favourites_priced": 23,
+    "positive_ev_legs": 0,
+    "doubles_all_legs_positive": 0,
+    "trebles_all_legs_positive": 0,
+    "median_P_times_O": 0.9629
+   },
+   "betvictor": {
+    "favourites_priced": 53,
+    "positive_ev_legs": 1,
+    "doubles_all_legs_positive": 0,
+    "trebles_all_legs_positive": 0,
+    "median_P_times_O": 0.9537
+   },
+   "betway": {
+    "favourites_priced": 53,
+    "positive_ev_legs": 1,
+    "doubles_all_legs_positive": 0,
+    "trebles_all_legs_positive": 0,
+    "median_P_times_O": 0.964
+   },
+   "boylesports": {
+    "favourites_priced": 53,
+    "positive_ev_legs": 3,
+    "doubles_all_legs_positive": 3,
+    "trebles_all_legs_positive": 1,
+    "median_P_times_O": 0.9657
+   },
+   "casumo": {
+    "favourites_priced": 53,
+    "positive_ev_legs": 2,
+    "doubles_all_legs_positive": 1,
+    "trebles_all_legs_positive": 0,
+    "median_P_times_O": 0.9621
+   },
+   "coral": {
+    "favourites_priced": 53,
+    "positive_ev_legs": 0,
+    "doubles_all_legs_positive": 0,
+    "trebles_all_legs_positive": 0,
+    "median_P_times_O": 0.9515
+   },
+   "grosvenor": {
+    "favourites_priced": 53,
+    "positive_ev_legs": 2,
+    "doubles_all_legs_positive": 1,
+    "trebles_all_legs_positive": 0,
+    "median_P_times_O": 0.9621
+   },
+   "ladbrokes_uk": {
+    "favourites_priced": 53,
+    "positive_ev_legs": 0,
+    "doubles_all_legs_positive": 0,
+    "trebles_all_legs_positive": 0,
+    "median_P_times_O": 0.9515
+   },
+   "leovegas": {
+    "favourites_priced": 53,
+    "positive_ev_legs": 0,
+    "doubles_all_legs_positive": 0,
+    "trebles_all_legs_positive": 0,
+    "median_P_times_O": 0.9509
+   },
+   "livescorebet": {
+    "favourites_priced": 53,
+    "positive_ev_legs": 2,
+    "doubles_all_legs_positive": 1,
+    "trebles_all_legs_positive": 0,
+    "median_P_times_O": 0.9646
+   },
+   "paddypower": {
+    "favourites_priced": 53,
+    "positive_ev_legs": 0,
+    "doubles_all_legs_positive": 0,
+    "trebles_all_legs_positive": 0,
+    "median_P_times_O": 0.9451
+   },
+   "skybet": {
+    "favourites_priced": 53,
+    "positive_ev_legs": 0,
+    "doubles_all_legs_positive": 0,
+    "trebles_all_legs_positive": 0,
+    "median_P_times_O": 0.946
+   },
+   "sport888": {
+    "favourites_priced": 52,
+    "positive_ev_legs": 2,
+    "doubles_all_legs_positive": 1,
+    "trebles_all_legs_positive": 0,
+    "median_P_times_O": 0.965
+   },
+   "unibet_uk": {
+    "favourites_priced": 52,
+    "positive_ev_legs": 0,
+    "doubles_all_legs_positive": 0,
+    "trebles_all_legs_positive": 0,
+    "median_P_times_O": 0.9579
+   },
+   "virginbet": {
+    "favourites_priced": 53,
+    "positive_ev_legs": 2,
+    "doubles_all_legs_positive": 1,
+    "trebles_all_legs_positive": 0,
+    "median_P_times_O": 0.9646
+   },
+   "williamhill": {
+    "favourites_priced": 45,
+    "positive_ev_legs": 1,
+    "doubles_all_legs_positive": 0,
+    "trebles_all_legs_positive": 0,
+    "median_P_times_O": 0.9654
+   }
+  }
+ }
+}

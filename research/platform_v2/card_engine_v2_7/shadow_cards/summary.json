@@ -1,0 +1,265 @@
+{
+ "label": "RESEARCH ONLY (class D shadow). Odds INDICATIVE / NOT EXECUTION-VERIFIED. Not paper bets.",
+ "cards": 4857,
+ "by_group_k_status": {
+  "HIGH_P|k=1|RESEARCH_HIGH_P": 199,
+  "HIGH_P|k=2|RESEARCH_HIGH_P": 1077,
+  "HIGH_P|k=3|RESEARCH_HIGH_P": 3555,
+  "POS_EV|k=1|SHADOW_WATCH": 16,
+  "POS_EV|k=1|SHADOW_CANDIDATE": 1,
+  "POS_EV|k=2|SHADOW_WATCH": 8,
+  "POS_EV|k=3|SHADOW_WATCH": 1
+ },
+ "unique_leg_sets_by_k": {
+  "1": 19,
+  "2": 88,
+  "3": 301
+ },
+ "settled": {},
+ "representative_best_ev_cards": [
+  {
+   "group": "POS_EV",
+   "k": 1,
+   "card_id": "72bae1d6a3f2230f",
+   "status": "SHADOW_CANDIDATE",
+   "book": "betway",
+   "legs": [
+    "Zhuoxuan Bai (Zhuoxuan Bai v Linda Fruhvirtova) P=0.599 @ 1.73 EV=+0.036"
+   ],
+   "p_joint": 0.598558,
+   "sigma_joint": 0.011943,
+   "odds_indicative": 1.73,
+   "ev": 0.035505,
+   "ev_range_1sigma": [
+    0.014844,
+    0.056166
+   ],
+   "equal_capital": null
+  },
+  {
+   "group": "POS_EV",
+   "k": 2,
+   "card_id": "8a01b06f30471723",
+   "status": "SHADOW_WATCH",
+   "book": "boylesports",
+   "legs": [
+    "Polina Kudermetova (Mayar Sherif v Polina Kudermetova) P=0.643 @ 1.57 EV=+0.009",
+    "Novak Djokovic (Nuno Borges v Novak Djokovic) P=0.699 @ 1.44 EV=+0.007"
+   ],
+   "p_joint": 0.449584,
+   "sigma_joint": 0.01125,
+   "odds_indicative": 2.2608,
+   "ev": 0.01642,
+   "ev_range_1sigma": [
+    -0.009014,
+    0.041854
+   ],
+   "equal_capital": [
+    {
+     "stake_fraction": 0.01,
+     "card_ev": 0.00016419726262476787,
+     "singles_ev": 8.177194999999915e-05,
+     "card_log_growth": 0.00010105582897043663,
+     "singles_log_growth": 6.922518995036275e-05,
+     "card_p_total_loss": 0.5504159031040001,
+     "singles_p_total_loss": 0.10738109689600002,
+     "better_growth": "CARD"
+    },
+    {
+     "stake_fraction": 0.02,
+     "card_ev": 0.00032839452524953573,
+     "singles_ev": 0.0001635438999999983,
+     "card_log_growth": 7.624618131828707e-05,
+     "singles_log_growth": 0.00011327680563167405,
+     "card_p_total_loss": 0.5504159031040001,
+     "singles_p_total_loss": 0.10738109689600002,
+     "better_growth": "SINGLES"
+    },
+    {
+     "stake_fraction": 0.05,
+     "card_ev": 0.0008209863131238394,
+     "singles_ev": 0.0004088597499999957,
+     "card_log_growth": -0.0007483426436030553,
+     "singles_log_growth": 9.308071561240153e-05,
+     "card_p_total_loss": 0.5504159031040001,
+     "singles_p_total_loss": 0.10738109689600002,
+     "better_growth": "SINGLES"
+    }
+   ]
+  },
+  {
+   "group": "POS_EV",
+   "k": 3,
+   "card_id": "4f3ea786ccd99dad",
+   "status": "SHADOW_WATCH",
+   "book": "boylesports",
+   "legs": [
+    "Lilli Tagger (Elena Gabriela Ruse v Lilli Tagger) P=0.526 @ 1.91 EV=+0.004",
+    "Polina Kudermetova (Mayar Sherif v Polina Kudermetova) P=0.643 @ 1.57 EV=+0.009",
+    "Novak Djokovic (Nuno Borges v Novak Djokovic) P=0.699 @ 1.44 EV=+0.007"
+   ],
+   "p_joint": 0.236269,
+   "sigma_joint": 0.00775,
+   "odds_indicative": 4.3181,
+   "ev": 0.020242,
+   "ev_range_1sigma": [
+    -0.013226,
+    0.053709
+   ],
+   "equal_capital": [
+    {
+     "stake_fraction": 0.01,
+     "card_ev": 0.00020241860836916814,
+     "singles_ev": 6.704926666666629e-05,
+     "card_log_growth": 3.671696564380364e-05,
+     "singles_log_growth": 5.642099278763959e-05,
+     "card_p_total_loss": 0.763730519142342,
+     "singles_p_total_loss": 0.050949216425342024,
+     "better_growth": "SINGLES"
+    },
+    {
+     "stake_fraction": 0.02,
+     "card_ev": 0.0004048372167383363,
+     "singles_ev": 0.00013409853333333258,
+     "card_log_growth": -0.0002483112962421187,
+     "singles_log_growth": 9.15586830974582e-05,
+     "card_p_total_loss": 0.763730519142342,
+     "singles_p_total_loss": 0.050949216425342024,
+     "better_growth": "SINGLES"
+    },
+    {
+     "stake_fraction": 0.05,
+     "card_ev": 0.0010120930418458407,
+     "singles_ev": 0.00033524633333333146,
+     "card_log_growth": -0.0029071701378768564,
+     "singles_log_growth": 6.8790082730297e-05,
+     "card_p_total_loss": 0.763730519142342,
+     "singles_p_total_loss": 0.050949216425342024,
+     "better_growth": "SINGLES"
+    }
+   ]
+  },
+  {
+   "group": "HIGH_P",
+   "k": 1,
+   "card_id": "cfb7207fda764671",
+   "status": "RESEARCH_HIGH_P",
+   "book": "casumo",
+   "legs": [
+    "Arthur Gea (Zhizhen Zhang v Arthur Gea) P=0.759 @ 1.33 EV=+0.009"
+   ],
+   "p_joint": 0.758684,
+   "sigma_joint": 0.014478,
+   "odds_indicative": 1.33,
+   "ev": 0.00905,
+   "ev_range_1sigma": [
+    -0.010205,
+    0.028305
+   ],
+   "equal_capital": null
+  },
+  {
+   "group": "HIGH_P",
+   "k": 2,
+   "card_id": "faaca349f7c8252e",
+   "status": "RESEARCH_HIGH_P",
+   "book": "casumo",
+   "legs": [
+    "Arthur Gea (Zhizhen Zhang v Arthur Gea) P=0.759 @ 1.33 EV=+0.009",
+    "Frances Tiafoe (Kei Nishikori v Frances Tiafoe) P=0.807 @ 1.24 EV=+0.001"
+   ],
+   "p_joint": 0.612602,
+   "sigma_joint": 0.017869,
+   "odds_indicative": 1.6492,
+   "ev": 0.010303,
+   "ev_range_1sigma": [
+    -0.019168,
+    0.039773
+   ],
+   "equal_capital": [
+    {
+     "stake_fraction": 0.01,
+     "card_ev": 0.00010302677218318346,
+     "singles_ev": 5.14572000000002e-05,
+     "card_log_growth": 7.067297319564812e-05,
+     "singles_log_growth": 4.440320904072851e-05,
+     "card_p_total_loss": 0.387398328148,
+     "singles_p_total_loss": 0.046464671852000004,
+     "better_growth": "CARD"
+    },
+    {
+     "stake_fraction": 0.02,
+     "card_ev": 0.0002060535443663669,
+     "singles_ev": 0.0001029144000000004,
+     "card_log_growth": 7.633023619978141e-05,
+     "singles_log_growth": 7.463209364723649e-05,
+     "card_p_total_loss": 0.387398328148,
+     "singles_p_total_loss": 0.046464671852000004,
+     "better_growth": "CARD"
+    },
+    {
+     "stake_fraction": 0.05,
+     "card_ev": 0.0005151338609159173,
+     "singles_ev": 0.00025728600000000105,
+     "card_log_growth": -0.0003018023425888118,
+     "singles_log_growth": 7.923296056812227e-05,
+     "card_p_total_loss": 0.387398328148,
+     "singles_p_total_loss": 0.046464671852000004,
+     "better_growth": "SINGLES"
+    }
+   ]
+  },
+  {
+   "group": "HIGH_P",
+   "k": 3,
+   "card_id": "49ed1248442b52bd",
+   "status": "RESEARCH_HIGH_P",
+   "book": "casumo",
+   "legs": [
+    "Daria Snigur (Daria Snigur v Katarzyna Kawa) P=0.859 @ 1.16 EV=-0.004",
+    "Arthur Gea (Zhizhen Zhang v Arthur Gea) P=0.759 @ 1.33 EV=+0.009",
+    "Frances Tiafoe (Kei Nishikori v Frances Tiafoe) P=0.807 @ 1.24 EV=+0.001"
+   ],
+   "p_joint": 0.525934,
+   "sigma_joint": 0.017634,
+   "odds_indicative": 1.9131,
+   "ev": 0.006149,
+   "ev_range_1sigma": [
+    -0.027586,
+    0.039884
+   ],
+   "equal_capital": [
+    {
+     "stake_fraction": 0.01,
+     "card_ev": 6.149322912273991e-05,
+     "singles_ev": 2.0601466666666517e-05,
+     "card_log_growth": 1.5839684460581226e-05,
+     "singles_log_growth": 1.6559436489366612e-05,
+     "card_p_total_loss": 0.47406614967326166,
+     "singles_p_total_loss": 0.006573589450261701,
+     "better_growth": "SINGLES"
+    },
+    {
+     "stake_fraction": 0.02,
+     "card_ev": 0.00012298645824547982,
+     "singles_ev": 4.1202933333333033e-05,
+     "card_log_growth": -5.975127576162559e-05,
+     "singles_log_growth": 2.5008159710607696e-05,
+     "card_p_total_loss": 0.47406614967326166,
+     "singles_p_total_loss": 0.006573589450261701,
+     "better_growth": "SINGLES"
+    },
+    {
+     "stake_fraction": 0.05,
+     "card_ev": 0.0003074661456136996,
+     "singles_ev": 0.00010300733333333257,
+     "card_log_growth": -0.0008375996584815137,
+     "singles_log_growth": 1.2748303098557572e-06,
+     "card_p_total_loss": 0.47406614967326166,
+     "singles_p_total_loss": 0.006573589450261701,
+     "better_growth": "SINGLES"
+    }
+   ]
+  }
+ ]
+}

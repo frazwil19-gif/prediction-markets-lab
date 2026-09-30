@@ -97,3 +97,50 @@ jobs:
             git pull --rebase
             git push
           fi
+      # V2-7 research card shadow (cer-2). RESEARCH ONLY: 0 API credits (no key passed), reads files the board already wrote,
+      # writes only research/platform_v2/card_engine_v2_7/prospective/, commits separately AFTER the production commit
+      # above, so it cannot block, delay or alter production artefacts. Inert while both flags in
+      # config/card_research_shadow.yaml are false (activation needs Fraser's separate approval).
+      - name: V2-7 research card shadow (research only; after production commit; config-gated)
+        if: always()
+        continue-on-error: true
+        timeout-minutes: 5
+        env:
+          RUN_ID: ${{ github.run_id }}
+          TRIGGER_EVENT: ${{ github.event_name }}
+          TRIGGER_SCHEDULE: ${{ github.event.schedule }}
+          PRODUCTION_TESTS: ${{ steps.tests.outcome }}
+        run: |
+          OUT=research/platform_v2/card_engine_v2_7/prospective
+          SETTLE_RUN=0
+          if [ "${{ github.event.schedule }}" = "30 22 * * *" ] || [ "${{ inputs.mode }}" = "settle" ]; then SETTLE_RUN=1; fi
+          FLAG=logging_enabled; [ "$SETTLE_RUN" = 1 ] && FLAG=settlement_enabled
+          if ! python -c "import sys,yaml; sys.exit(0 if yaml.safe_load(open('config/card_research_shadow.yaml'))['$FLAG'] is True else 3)"; then
+            echo "card shadow: $FLAG is not true -- inert"; exit 0
+          fi
+          snap() { { git status --porcelain --untracked-files=all -- . ":(exclude)$OUT"; git diff -- . ":(exclude)$OUT"; } | sha256sum; }
+          BEFORE=$(snap)
+          rc=0
+          if [ "$PRODUCTION_TESTS" != "success" ]; then
+            [ "$SETTLE_RUN" = 1 ] || python scripts/run_card_shadow.py record-failure --reason PRODUCTION_TESTS_FAILED_NO_SCAN || true
+            rc=1
+          elif ! python -m pytest -q -p no:cacheprovider tests_research; then
+            [ "$SETTLE_RUN" = 1 ] || python scripts/run_card_shadow.py record-failure --reason RESEARCH_TESTS_FAILED || true
+            rc=1
+          elif [ "$SETTLE_RUN" = 1 ]; then
+            python scripts/run_card_shadow.py settle || rc=$?
+          else
+            python scripts/run_card_shadow.py log || rc=$?
+          fi
+          if [ "$(snap)" != "$BEFORE" ]; then
+            echo "::error::card shadow changed files outside $OUT -- nothing committed"; exit 1
+          fi
+          if [ -d "$OUT" ] && [ -n "$(git status --porcelain --untracked-files=all -- "$OUT")" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add -- "$OUT"
+            git commit -q -m "V2-7 research card shadow: $(date -u +%F) (research only)"
+            for i in 1 2 3; do git pull -q --rebase --autostash && git push -q && break; sleep 10; done
+          fi
+          [ "$rc" = 0 ] || echo "::warning::card shadow research step reported a failure (see scan_runs.csv); production unaffected"
+          exit $rc
