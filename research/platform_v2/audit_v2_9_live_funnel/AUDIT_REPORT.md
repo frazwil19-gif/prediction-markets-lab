@@ -273,3 +273,15 @@ No single reasonable relaxation produces more than one weak candidate, at EV +1.
 5. **Research σ:** estimate calibration error correlation across legs and scans, and event-specific uncertainty, before any multi/structure staking.
 6. **Longer-term research:** probability sources that are not exchange-derived, which are the only route to a materially larger edge than bookmaker margin.
 7. Do **not** loosen the spread, EV or σ thresholds to generate bets. Treat zero-bet days as valid outputs.
+
+---
+
+## Erratum E1 (2026-10-01, found during V2-10; original text above left unchanged)
+
+**§12 claim.** §12 says: "4 NOT_VALID events with no valid twin (Starodubtseva, Ito/Birrell, Kenin/Krueger, Badosa/Kasatkina) — expected: BOOKMAKER_CONSENSUS-only".
+
+**Correction.** This is **wrong**. Validated prediction rows for all four existed in the unified ledger. They were hidden by the rescheduled-start defect itself, because their first-seen start was the 2026-09-30T02:00 placeholder.
+
+**Full scope of the defect.** The defect therefore hid more than the 10 / 9 board matches counted in §12. It hid 25 / 23 prediction rows (15 / 14 validated), covering 11 / 10 unique events. Every restored row has net EV ≤ 0, so the zero-candidate conclusion is unchanged.
+
+**Details:** `research/platform_v2/v2_10_fixes/REPORT.md` (branch `v2-10-start-time-and-stage-a`).
