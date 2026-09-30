@@ -1,0 +1,57 @@
+# V2-7 prospective SHADOW card logging (research only). Rule version cer-2.
+# Approval scope (2026-09-30, "APPROVED — V2-7 BOUNDED PROSPECTIVE SHADOW-LOGGING PREPARATION"): prepare and test only.
+# BOTH FLAGS STAY false UNTIL FRASER SEPARATELY APPROVES ACTIVATION. With both false, the workflow step exits
+# immediately, writes nothing and commits nothing (merging this file therefore activates nothing).
+# Never writes production ledgers; 0 Odds API credits (reads files the tennis board already wrote in the same run).
+rule_version: cer-2
+logging_enabled: false
+settlement_enabled: false
+
+output_dir: research/platform_v2/card_engine_v2_7/prospective
+
+inputs:
+  probabilities: tennis_predictions/exchange_probability_snapshots.csv
+  prices: tennis_predictions/price_snapshots.csv
+  ledger_predictions: tennis_predictions/ledger_predictions.csv
+  ledger_settlements: tennis_predictions/ledger_settlements.csv
+  calibration_results: research/platform_v2/card_engine_v2_7/RESULTS.json
+  bet_selection_config: config/bet_selection_v2.yaml
+
+# Leg data-quality rules. MUST equal the deployed bsv2-3 values (a test asserts this; never weaker).
+quality:
+  max_quote_age_minutes: 240
+  max_exchange_spread_prob: 0.03
+
+# No backfilling: a scan is logged only by the run that produced it, and only within this many minutes of the scan.
+# Legs whose event starts before the logging time are excluded (STARTED_BEFORE_LOGGING).
+max_scan_to_log_minutes: 90
+
+cohorts:
+  HIGH_P:
+    # Probability research, any EV. Logged as book-agnostic unique leg sets (probability is per event, not per book);
+    # per-book indicative prices are summarised on the card and every contributing clean per-book leg is stored,
+    # so any same-book HIGH_P card can be reconstructed exactly without storing each book's copy.
+    min_leg_p: 0.70
+    max_events: 24             # pre-declared order: P desc, then event_id; truncation counted
+    log_k: [1, 2]              # all singles and doubles
+    treble_sample_rate: 0.10   # trebles: fixed hash sample, weight 1/rate
+    treble_sample_salt: "cer-2|HIGH_P|k3|2026-09-30"   # fixed before any prospective outcome; never changed after activation
+  POS_EV:
+    # Every leg clean with estimated net EV > 0 at the SAME bookmaker in the SAME scan. All distinct cards logged.
+    max_legs_per_book: 12      # pre-declared order: EV desc, then event_id; truncation counted
+    max_cards_per_scan: 2000   # beyond this the scan is anomalous: only singles logged, dropped counts recorded
+max_k: 3
+
+# Calibration support labels (V2-7 A1 holdout; AUDIT_AND_LOGGER.md s.1). Labels only, never filters.
+calibration_support:
+  doubles_verified_below_p: 0.80
+  trebles_verified_below_p: 0.65
+
+equal_capital_stakes: [0.01, 0.02, 0.05]
+
+# Hard bound on rows written per scan (legs + cards). Exceeding it writes the scan record with counts and
+# status OUTPUT_CAP_EXCEEDED, and no card rows (explicit, never a silent zero).
+max_rows_per_scan: 3000
+
+settlement:
+  overdue_days: 7              # unsettled legs this long after start are reported OVERDUE (never guessed)

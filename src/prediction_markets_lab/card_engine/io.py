@@ -124,7 +124,13 @@ def settle(card_rows: list[dict], ledger_preds: list[dict], ledger_settle: list[
             status = "VOID"
             won = 0
         elif all(r[0] in ("SETTLED_CORRECT", "SETTLED_INCORRECT") for r in res):
-            won = sum(r[1] == l["selection"] for r, l in zip(res, legs))
+            # audit fix (cer-2 prep): match winner names with the production tennis matcher and never count an
+            # unmatched name as a loss (cer-1 compared raw strings, so an accent/format difference would read as LOST)
+            from prediction_markets_lab.card_engine.shadow_settle import _same
+            m = [(_same(l["selection"], r[1]), _same(l["opponent"], r[1])) for r, l in zip(res, legs)]
+            if any(a == b for a, b in m):
+                continue
+            won = sum(a for a, _ in m)
             status = "WON" if won == len(legs) else "LOST"
         else:
             continue

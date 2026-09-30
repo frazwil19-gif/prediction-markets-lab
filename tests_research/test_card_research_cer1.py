@@ -148,7 +148,7 @@ def test_settlement_fail_closed():
 
 
 def test_research_code_never_touches_production_ledgers():
-    repo = Path(__file__).resolve().parents[2]
+    repo = Path(__file__).resolve().parents[1]
     src = "\n".join(p.read_text() for p in (repo / "src/prediction_markets_lab/card_engine").glob("*.py"))
     src += (repo / "scripts/run_card_research.py").read_text()
     for forbidden in ("paper_betting_v2", "record_selections", "unified_ledger", "append_predictions"):

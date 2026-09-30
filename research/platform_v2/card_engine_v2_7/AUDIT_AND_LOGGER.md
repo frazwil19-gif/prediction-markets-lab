@@ -1,3 +1,5 @@
+> **2026-09-30 note (cer-2 prep):** §4's integration proposal is superseded by `SHADOW_INTEGRATION_AUDIT.md` (bounded cer-2 design, measured ~76 KB/scan). The cer-1 settlement name-matching defect found in that audit is fixed in `io.py`. Text below unchanged for provenance.
+
 # V2-7 — Audit of Phase 1, Offline Shadow Card Logger (cer-1), and Integration Proposal (2026-09-30)
 
 ## 1. Audit of Phase 1 calculations (done before building)
