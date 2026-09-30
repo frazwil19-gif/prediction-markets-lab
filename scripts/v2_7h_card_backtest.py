@@ -122,7 +122,8 @@ def legs_football(bt, b, m, snapshot: str) -> tuple[pd.DataFrame, pd.DataFrame]:
                          "p": pf, "won": won, "selection": sel,
                          "participants": [tuple(sorted((str(a), str(bb)))) for a, bb in zip(c.home_team_normalised, c.away_team_normalised)]})
     legs = legs[legs.p >= 0.5].reset_index(drop=True)
-    q = bs[bs.bookmaker.isin(PRIMARY_BOOKS)].merge(legs[["event", "selection"]].assign(match_id=lambda x: x.event.astype(int)), on="match_id")
+    q = bs[bs.bookmaker.isin(PRIMARY_BOOKS)].assign(match_id=lambda x: x.match_id.astype(str)).merge(
+        legs[["event", "selection"]].assign(match_id=lambda x: x.event.astype(str)), on="match_id")
     q["odds"] = np.select([q.selection == "home", q.selection == "draw"], [q.home_odds, q.draw_odds], q.away_odds).astype(float)
     q = q[q.odds > 1.0]
     quotes = q[["event", "bookmaker", "odds"]].rename(columns={"bookmaker": "book"}).merge(legs, on="event")
