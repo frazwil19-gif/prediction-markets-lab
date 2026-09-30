@@ -124,7 +124,7 @@ jobs:
           if [ "$PRODUCTION_TESTS" != "success" ]; then
             [ "$SETTLE_RUN" = 1 ] || python scripts/run_card_shadow.py record-failure --reason PRODUCTION_TESTS_FAILED_NO_SCAN || true
             rc=1
-          elif ! pytest -q -p no:cacheprovider tests_research; then
+          elif ! python -m pytest -q -p no:cacheprovider tests_research; then
             [ "$SETTLE_RUN" = 1 ] || python scripts/run_card_shadow.py record-failure --reason RESEARCH_TESTS_FAILED || true
             rc=1
           elif [ "$SETTLE_RUN" = 1 ]; then
