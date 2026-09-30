@@ -36,9 +36,9 @@ Settled yesterday: 10 · System: **HEALTHY** · API credits (last observed): 394
 
 ## System health
 
-- daily_scan: OK (last 2026-09-29T13:52:26.010984+00:00)
+- daily_scan: OK (last 2026-09-30T13:26:35.214373+00:00)
 - settlement: OK (last 2026-09-30T00:18:29.905262+00:00)
 - tennis_board: OK (last 2026-09-30T12:54:22.695202+00:00)
-- ci_tests: OK (last 2026-09-30T12:54:24.518762+00:00)
+- ci_tests: OK (last 2026-09-30T13:26:35.835807+00:00)
 
 Single = passes the engine money status and payout floor pre-filter only; the Money Card decides bets. Double Chance is PROVISIONAL_PROSPECTIVE (exposed-data history; sealed holdout opens 2027-01-03).
