@@ -96,7 +96,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add paper_ledger/ reports/latest_performance.json status/ settlement_archive/
-          for f in predictions reports/latest_prediction_board.json reports/latest_prediction_board.csv reports/latest_prediction_board.md reports/latest_prediction_performance.json paper_betting_v2 reports/bet_selection_v2.json reports/bet_selection_v2.md reports/bet_selection_v2_candidates.csv reports/bet_selection_v2_retrospective.json; do if [ -e "$f" ]; then git add "$f"; fi; done  # V2-5 (per path: absent files cannot break this step)
+          for f in predictions reports/latest_prediction_board.json reports/latest_prediction_board.csv reports/latest_prediction_board.md reports/latest_prediction_performance.json paper_betting_v2 reports/bet_selection_v2.json reports/bet_selection_v2.md reports/bet_selection_v2_candidates.csv reports/bet_selection_v2_retrospective.json reports/bet_selection_v2_start_time_resolution.csv reports/latest_stage_a_board.json reports/latest_stage_a_board.csv reports/latest_stage_a_board.md; do if [ -e "$f" ]; then git add "$f"; fi; done  # V2-5 (per path: absent files cannot break this step)
           if git diff --cached --quiet; then
             echo "No settlement/performance/status changes to commit"
           else

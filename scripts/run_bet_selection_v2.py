@@ -24,6 +24,7 @@ from prediction_markets_lab.bet_selection_v2 import paper_ledger as L
 from prediction_markets_lab.bet_selection_v2 import prices as PR
 from prediction_markets_lab.bet_selection_v2 import report as R
 from prediction_markets_lab.bet_selection_v2.evaluate import DECISIONS, PAPER_BET, evaluate_prediction, load_config
+from prediction_markets_lab.prediction_platform import event_times as ET
 
 REPO = Path(__file__).resolve().parents[1]
 OUT = REPO / "paper_betting_v2"
@@ -75,7 +76,10 @@ def valid_legacy_prediction_ids(cfg: dict) -> set[str]:
 
 def evaluate(cfg: dict, now: datetime) -> dict:
     preds = L.read_rows(REPO / "predictions/unified_ledger.csv")
-    upcoming = [p for p in preds if PR.ts(p["event_start"]) > now]
+    # V2-10 fix A (est-1): eligibility uses the CURRENT start (latest provider observation), not the first-seen ledger
+    # start; every exclusion is written with a reason code (never silently dropped). Ledger rows are not modified.
+    upcoming, start_rows = ET.apply(preds, ET.load_index(REPO), now)
+    ET.write_resolution(REPORTS / "bet_selection_v2_start_time_resolution.csv", start_rows)
     tennis_rows = L.read_rows(REPO / "tennis_predictions/price_snapshots.csv")
     prob_rows = L.read_rows(REPO / "tennis_predictions/exchange_probability_snapshots.csv")   # bsv2-3: includes spread
     card, money = latest_card()
@@ -112,6 +116,7 @@ def evaluate(cfg: dict, now: datetime) -> dict:
             w.writeheader()
             w.writerows(rows)
     print(json.dumps(run, indent=1))
+    print("start-time resolution:", json.dumps(ET.summary(start_rows)))
     return {"run": run, "decided": rows}
 
 
