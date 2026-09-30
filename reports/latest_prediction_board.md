@@ -2,15 +2,16 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 39 · Valid predictions: 39 · Sports: tennis
-Counts: >=70: 19 · >=75: 19 · >=80: 11 · >=85: 10 · >=90: 7 · >=95: 2
-Settled yesterday: 10 · System: **HEALTHY** · API credits (last observed): 394
+Upcoming events: 42 · Valid predictions: 42 · Sports: tennis
+Counts: >=70: 21 · >=75: 21 · >=80: 12 · >=85: 11 · >=90: 8 · >=95: 3
+Settled yesterday: 10 · System: **HEALTHY** · API credits (last observed): 385
 
 ## Top predictions (P ≥ 80%)
 
 | Sport | Event | Start (UTC) | Market | Selection | P | Fair | Band | Engine | Evidence | Price (source) | Single | Multi-research |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | tennis | Yu Jun Lin v Storm Hunter | 2026-10-01T04:00 | match_winner | Storm Hunter | 98.3% | 1.02 | 95%+ | wta_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.02 (betfair_ex_uk back (odds_api)) | no | yes |
+| tennis | Renata Zarazua v Aryna Sabalenka | 2026-10-02T04:00 | match_winner | Aryna Sabalenka | 96.9% | 1.03 | 95%+ | wta_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.02 (betfair_ex_uk back (odds_api)) | no | yes |
 | tennis | Harriet Dart v Yihan Qu | 2026-10-01T04:00 | match_winner | Harriet Dart | 96.7% | 1.03 | 95%+ | wta_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.03 (betfair_ex_uk back (odds_api)) | no | yes |
 | tennis | Yushan Shao v Anastasia Zakharova | 2026-10-01T04:00 | match_winner | Anastasia Zakharova | 92.7% | 1.08 | 90-94.9% | wta_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.08 (betfair_ex_uk back (odds_api)) | no | yes |
 | tennis | Linda Fruhvirtova v Liudmila Samsonova | 2026-10-02T04:00 | match_winner | Liudmila Samsonova | 92.6% | 1.08 | 90-94.9% | wta_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.04 (betfair_ex_uk back (odds_api)) | no | yes |
@@ -29,8 +30,8 @@ Settled yesterday: 10 · System: **HEALTHY** · API credits (last observed): 394
 | football_1x2.market_consensus | VALIDATED_HISTORICAL / COLLECTING | 0 | 0 | COLLECTING | 0 | — → — |
 | football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 0 | 0 | COLLECTING | 0 | — → — |
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
-| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 33 | 0 | COLLECTING | 0 | — → — |
-| wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 58 | 10 | COLLECTING | 2 | 87.3% → 100.0% |
+| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 34 | 0 | COLLECTING | 0 | — → — |
+| wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 60 | 10 | COLLECTING | 2 | 87.3% → 100.0% |
 | nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 0 | 0 | COLLECTING | 0 | — → — |
 | football_double_chance.derived_1x2 | PROVISIONAL_PROSPECTIVE / COLLECTING | 0 | 0 | COLLECTING | 0 | — → — |
 
@@ -38,7 +39,7 @@ Settled yesterday: 10 · System: **HEALTHY** · API credits (last observed): 394
 
 - daily_scan: OK (last 2026-09-30T13:26:35.214373+00:00)
 - settlement: OK (last 2026-09-30T00:18:29.905262+00:00)
-- tennis_board: OK (last 2026-09-30T12:54:22.695202+00:00)
-- ci_tests: OK (last 2026-09-30T13:26:35.835807+00:00)
+- tennis_board: OK (last 2026-09-30T20:16:17.495727+00:00)
+- ci_tests: OK (last 2026-09-30T20:16:18.441086+00:00)
 
 Single = passes the engine money status and payout floor pre-filter only; the Money Card decides bets. Double Chance is PROVISIONAL_PROSPECTIVE (exposed-data history; sealed holdout opens 2027-01-03).
