@@ -124,3 +124,21 @@ file stays far below GitHub's 50/100 MB limits. The working tree is currently 58
 6. **Favourite-only legs** and the Odds-API-covered universe limit generality (selection bias, plan §6).
 7. **The growth advantage of multis is fragile.** A 1.5 pp probability error reverses it at a 2% stake (§1).
 8. **Settlement coverage** depends on TennisCourtLog (weekly updates). Unresolved results are counted, never guessed.
+
+## 7. Reconstructability of card mathematics and exposure (documented, no extra code; 2026-09-30)
+Everything below can be recomputed from the prospective ledger plus the append-only production inputs whose shas are in each
+`scan_runs.csv` record (`input_shas`). No per-card field is needed beyond what is stored.
+
+| quantity | source |
+|---|---|
+| component legs | `cards.legset` (event_id:selection) → `legs.csv` rows with the same `record_id` (selection, opponent, start, sport_key) |
+| leg P and uncertainty inputs | `legs.p`, `legs.exchange_width`; band calibration SE from `RESULTS.json` (sha recorded); σ_leg = √(SE² + (width/2)²) |
+| joint P, σ_joint, fair odds, P(lose whole stake) | `cards.p_joint`, `cards.sigma_joint`; fair = 1/p_joint; P(lose all) = 1 − p_joint |
+| same-book same-snapshot indicative odds | POS_EV: `cards.odds_indicative` + per-leg `legs.odds`. HIGH_P: min/median/max/best-book on the card; any single book's product from `price_snapshots.csv` rows of that `scan` |
+| central EV and ±1σ EV range | POS_EV: `ev`, `ev_low`, `ev_high`. HIGH_P: `ev_median` on the card; per book = p_joint·O_book − 1 with range (p_joint ± σ)·O_book − 1 |
+| equal-capital comparison and log growth at 1/2/5% | POS_EV multis: `equal_capital_json`. Any card: `cards.equal_capital(legs, s)` on the reconstructed legs and one book's prices |
+| dependence and eligibility flags; cohort | `dependence`, `dependence_flags`, `calibration_support`, `status`, `reasons`, `cohort`, `sample_weight` |
+| exposure by match / player / bookmaker / shared across cards | `legs.event_id`; `legs.selection` and `legs.opponent`; `cards.book` (POS_EV) and `price_snapshots.bookmaker` (HIGH_P); the `legset` overlap between cards. Per-scan summaries are in `scan_diagnostics.jsonl` |
+| total hypothetical bankroll exposure | Σ over the cards a staking policy would place × stake fraction. Computed at analysis time for a stated policy; the logger places nothing |
+
+Every multi price stays labelled **INDICATIVE / NOT EXECUTION-VERIFIED**.
