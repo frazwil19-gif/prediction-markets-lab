@@ -13,7 +13,7 @@ def test_repo_budget_respects_limits() -> None:
     total = sum(c["monthly_cap"] for c in b["consumers"].values())
     assert total <= b["monthly_target_max"]
     assert b["monthly_plan_limit"] - b["monthly_target_max"] >= b["global_reserve_remaining"]
-    assert b["consumers"]["tennis_prediction_board"]["monthly_cap"] <= 120
+    assert b["consumers"]["tennis_prediction_board"]["monthly_cap"] <= 150   # V2-14 Credit Plan A (approved 2026-10-01)
     assert b["consumers"]["nba_prediction_board"]["monthly_cap"] <= 60
 
 

@@ -14,6 +14,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
+from prediction_markets_lab.ops import credit_ledger as CL
 from prediction_markets_lab.ops.api_budget import check as budget_check, load_budget, month_spend
 from prediction_markets_lab.tennis_prospective import board as B
 from prediction_markets_lab.tennis_prospective.engine import parse_tennis_odds, predict, tour_of
@@ -26,6 +27,20 @@ REPO = Path(__file__).resolve().parents[1]
 OUT = REPO / "tennis_predictions"
 BASE = "https://api.the-odds-api.com/v4/sports"
 BUDGET_FILE = REPO / "config" / "api_budget.json"  # per-consumer cap + floors (optional consumer)
+CREDIT_LEDGER = REPO / "status" / "credit_ledger.csv"   # V2-14 shared credit accounting
+CONSUMER = "tennis_prediction_board"
+
+
+def has_upcoming_event(events: object, now: datetime) -> bool:
+    """V2-14 Credit Plan A gate: True if >=1 listed event has not started. Unparseable times count as upcoming (fail
+    open: never skip on doubt). No horizon is applied, so the frozen first-valid-snapshot rule is unchanged."""
+    for ev in events if isinstance(events, list) else []:
+        try:
+            if datetime.fromisoformat(str(ev["commence_time"]).replace("Z", "+00:00")) > now:
+                return True
+        except (KeyError, ValueError):
+            return True
+    return False
 
 
 def _get(url: str) -> tuple[object, dict]:
@@ -66,12 +81,22 @@ def main() -> int:
     remaining = int(hdr.get("x-requests-remaining") or 0)
     budget = load_budget(BUDGET_FILE)
     spent = month_spend(OUT / "credit_log.csv", now)
+    gate = bool(budget["consumers"][CONSUMER].get("upcoming_event_gate"))
+    gated_out = []
     for sk in keys[: a.max_keys]:
-        if not budget_check(budget, "tennis_prediction_board", spent, remaining).allowed:
+        if not budget_check(budget, CONSUMER, spent, remaining).allowed:
             skipped.append(sk)
+            CL.append(CREDIT_LEDGER, CONSUMER, f"odds:{sk}", CL.SKIPPED_FLOOR, 0, 1, None, "budget cap/floor")
             continue
+        if gate:   # free /events pre-check (0 credits)
+            evs, eh = _get(f"{BASE}/{sk}/events/?{urllib.parse.urlencode({'apiKey': key})}")
+            if not has_upcoming_event(evs, now):
+                gated_out.append(sk)
+                CL.append(CREDIT_LEDGER, CONSUMER, f"odds:{sk}", CL.SKIPPED_GATE, 0, 1, eh, "no not-yet-started event listed")
+                continue
         raw, h = _get(f"{BASE}/{sk}/odds/?{urllib.parse.urlencode({'apiKey': key, 'regions': 'uk', 'markets': 'h2h', 'oddsFormat': 'decimal'})}")
         log_credits(f"odds:{sk}", h)
+        CL.append(CREDIT_LEDGER, CONSUMER, f"odds:{sk}", CL.PAID, int(h.get("x-requests-last") or 1), 0, h)
         remaining = int(h.get("x-requests-remaining") or remaining)
         spent += int(h.get("x-requests-last") or 1)
         fetched.append(sk)
@@ -90,6 +115,7 @@ def main() -> int:
         print(f"price snapshot capture failed (board unaffected): {exc}")
     day = now.date().isoformat()
     coverage = {"active_keys": fetched, "skipped_for_credit_guard": skipped, "keys_over_cap": keys[a.max_keys:],
+                "skipped_no_upcoming_event": gated_out,
                 "events_returned": events, "scan_timestamp": now.isoformat(), "credits_remaining_after": remaining,
                 "universe_note": "Odds-API-covered universe only (Slams, 1000s, 500s) -- not the full ATP/WTA calendar"}
     registry = json.loads((REPO / "config/tennis_engine_registry.json").read_text())

@@ -1,12 +1,31 @@
 {
-  "_doc": "Odds API monthly credit budget (research/platform_v2/API_CREDIT_BUDGET.md). Optional consumers stop first.",
+  "_doc": "Odds API monthly credit budget (research/platform_v2/API_CREDIT_BUDGET.md; Credit Plan A approved 2026-10-01: research/platform_v2/v2_13_october/CREDIT_AUDIT.md). Optional consumers stop first.",
   "monthly_plan_limit": 500,
   "monthly_target_max": 425,
   "global_reserve_remaining": 75,
   "consumers": {
-    "football_daily_scan": {"priority": "core", "monthly_cap": 180},
-    "football_settlement": {"priority": "core", "monthly_cap": 60},
-    "tennis_prediction_board": {"priority": "optional", "monthly_cap": 120, "min_remaining": 150},
-    "nba_prediction_board": {"priority": "optional", "monthly_cap": 60, "min_remaining": 150}
+    "football_daily_scan": {
+      "priority": "core",
+      "monthly_cap": 150,
+      "fixture_gate_hours": 48,
+      "hard_floor_remaining": 25,
+      "_note": "core: not stopped by its cap (documentary); pays per league only if a fixture kicks off within fixture_gate_hours (= unified ledger FIRST_SCAN_WITHIN_48H window) and remaining >= hard_floor_remaining"
+    },
+    "football_settlement": {
+      "priority": "core",
+      "monthly_cap": 60
+    },
+    "tennis_prediction_board": {
+      "priority": "optional",
+      "monthly_cap": 150,
+      "min_remaining": 100,
+      "upcoming_event_gate": true,
+      "_note": "pays per active key only if >=1 not-yet-started event is listed (free /events); no horizon gate (would alter the frozen first-snapshot rule)"
+    },
+    "nba_prediction_board": {
+      "priority": "optional",
+      "monthly_cap": 60,
+      "min_remaining": 100
+    }
   }
 }
