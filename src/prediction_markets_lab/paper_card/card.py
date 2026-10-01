@@ -48,7 +48,7 @@ def load_config(path: Path, repo: Path) -> CardConfig:
     for name, pol in bs["bankroll_simulation"]["policies"].items():
         if pol["kind"] not in ("fraction", "kelly", "min_stake"):
             raise ValueError(f"policy {name}: staking kind {pol['kind']!r} refused")
-    paths = {k: repo / v for k, v in {**{k: c[k] for k in ("stage_a_board", "candidates", "paper_dir", "enrichment_ledger")},
+    paths = {k: repo / v for k, v in {**{k: c[k] for k in ("stage_a_board", "candidates", "paper_dir", "enrichment_ledger", "decision_shadow_ledger")},
                                       **c["outputs"]}.items()}
     return CardConfig(c["rule_version"], float(c["grades"]["z_grade_a"]), float(c["grades"]["z_grade_a_plus"]),
                       c["grades"]["a_plus_min_evidence_state"], states, c["default_evidence_state"],
@@ -155,7 +155,8 @@ def build_card(cfg: CardConfig, candidates: list[dict], stage_a: dict, selection
         rows.append({"prediction_id": c["prediction_id"], "selection_id": sel["selection_id"] if same_run else "",
                      "sport": c["sport"], "competition": s.get("competition") or _competition(c["event_key"]),
                      "event_name": c["event_name"], "event_start": c["event_start"], "market": c["market"],
-                     "selection": c["selection"], "engine_id": c["engine_id"], "probability": p,
+                     "selection": c["selection"], "engine_id": c["engine_id"], "engine_version": s.get("engine_version", ""),
+                     "evaluated_at": c.get("evaluated_at", ""), "price_status": s.get("price_status", ""), "probability": p,
                      "p_first_snapshot": _num(s.get("p_first_snapshot")), "p_current_scan": _num(s.get("p_current_scan")),
                      "sigma": sigma, "sigma_method": s.get("sigma_method", ""),
                      "calibration_status": s.get("calibration_status", ""), "fair_odds": _num(c.get("fair_odds")),
@@ -173,7 +174,33 @@ def build_card(cfg: CardConfig, candidates: list[dict], stage_a: dict, selection
             "generated_at": now.isoformat(), "real_money_enabled": False, "multis_enabled": False,
             "principle": "bsv2-4 decides; grades rank confidence in value; STRONG PREDICTION != VALID BET",
             "grade_counts": counts, "no_bet_today": not any(r["grade"] in STAKED_GRADES for r in rows),
+            "candidates_evaluated_at": max((c.get("evaluated_at", "") for c in candidates), default=""),
             "stake_columns": stake_columns(cfg.sim), "rows": rows}
+
+
+# ----------------------------------------------------------------------------------------------- decision shadow
+# Directive s.7: ANALYTICAL SHADOW DATA of the whole decided space (every candidate, whatever its decision), so the
+# frozen gates can be evaluated later. Never a paper bet, never staked; outcomes are joined at analysis time from
+# predictions/unified_settlements.csv by prediction_id (nothing is written back). A new row only when the decided
+# price/decision changes (same idea as the bsv2 price-snapshot id).
+SHADOW_FIELDS = ["shadow_id", "card_rule_version", "evaluated_at", "prediction_id", "sport", "competition", "engine_id",
+                 "engine_version", "event_start", "market", "selection", "probability", "sigma", "sigma_method",
+                 "calibration_status", "fair_odds", "decimal_odds", "source", "is_exchange", "commission",
+                 "price_observed_at", "price_age_minutes", "price_status", "net_ev", "ev_at_p", "ev_minus_1sigma",
+                 "ev_minus_1645sigma", "bsv2_decision", "bsv2_reasons", "grade", "analytical_only"]
+
+
+def shadow_rows(card: dict) -> list[dict]:
+    out = []
+    for r in card["rows"]:
+        key = "|".join(str(r.get(k, "")) for k in ("prediction_id", "source", "decimal_odds", "price_observed_at", "bsv2_decision"))
+        out.append({**{k: r.get(k, "") for k in SHADOW_FIELDS}, "shadow_id": L._h(key),
+                    "card_rule_version": card["rule_version"], "analytical_only": True})
+    return out
+
+
+def append_shadow(path: Path, rows: list[dict]) -> int:
+    return L._append(path, SHADOW_FIELDS, "shadow_id", rows)
 
 
 ENRICH_FIELDS_BASE = ["selection_id", "prediction_id", "card_rule_version", "graded_at", "competition", "sigma",
@@ -227,19 +254,24 @@ def dashboard(cfg: CardConfig, selections: list[dict], settlements: dict, enrich
     hid = {s["selection_id"] for s in headline}
     head_rows = [r for r in joined if r["selection_id"] in hid]
     fin = R.results(headline, settlements, cfg.sim)
+    for r in joined:
+        r["p_band"] = R.band(float(r["probability"]), R.P_BANDS)
+        r["odds_band"] = R.band(float(r["decimal_odds"]), R.ODDS_BANDS)
     keys = {"sport": "sport", "competition": "competition", "market": "market", "engine": "engine_id",
-            "rule_version": "rule_version", "grade": "grade"}
+            "rule_version": "rule_version", "grade": "grade", "probability_band": "p_band", "odds_band": "odds_band"}
     by = {}
     for name, k in keys.items():
         g: dict[str, list] = defaultdict(list)
         for r in joined:
             g[r[k]].append(r)
-        by[name] = {v: {"financial": R._stats(rs), "prediction": _prediction_quality(rs)} for v, rs in sorted(g.items())}
+        by[name] = {v: {"financial": {**R._stats(rs), "mean_net_ev_at_decision": round(sum(float(x["net_ev"] or 0) for x in rs) / len(rs), 4)},
+                        "prediction": _prediction_quality(rs)} for v, rs in sorted(g.items())}
     return {"product": "PAPER PERFORMANCE DASHBOARD (paper only; descriptive, no projections)", "generated_at": now.isoformat(),
             "card_rule_version": cfg.rule_version, "bsv2_rule_version": bs_rule_version, "real_money_enabled": False,
             "headline_set": f"bsv2 {bs_rule_version} selections + earlier rows annotated VALID_SAME_SNAPSHOT",
             "financial": fin, "prediction_quality_headline": _prediction_quality(head_rows),
             "all_selections": {"financial": R._stats(joined), "prediction": _prediction_quality(joined)},
+            "clv": "NOT_AVAILABLE: no closing executable price is recorded for paper selections (not estimated)",
             "breakdowns_all_selections": by}
 
 
@@ -254,20 +286,23 @@ def render_card_md(card: dict) -> str:
     out = [f"# Daily Paper Bet Card — {card['generated_at'][:16]}Z", "",
            "**PAPER ONLY. Not a real-money card. No bet here may be placed with real money without a "
            "MONEY_ELIGIBILITY_REVIEW and Fraser's explicit approval.**", "",
-           f"Rule `{card['rule_version']}` on top of bsv2-4. {card['principle']}.", "",
+           f"Rule `{card['rule_version']}` on top of bsv2-4. {card['principle']}.",
+           f"Candidates evaluated at {card.get('candidates_evaluated_at') or '—'}.", "",
            "Grades: " + ", ".join(f"{g} {n}" for g, n in card["grade_counts"].items()), ""]
     staked = [r for r in card["rows"] if r["grade"] in STAKED_GRADES]
     if card["no_bet_today"]:
-        out += ["**NO PAPER BET TODAY.** No candidate passed every bsv2-4 gate. That is a valid outcome.", ""]
+        out += ["**NO PAPER BETS TODAY.** No candidate passed every bsv2-4 gate. That is a valid outcome.", ""]
     else:
         out += ["## Paper bets (A+/A/B)", "",
-                "| # | Grade | Sport | Event | Selection | P | σ | Odds (source, age min) | Fair | EV | EV@P−1σ | £20 1% | £50 1% | £100 ⅛K |",
-                "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
+                "| # | Grade | Sport · competition | Event (start UTC) | Market · selection | P | σ | Odds (source, price time UTC) | Fair | EV | EV@P−1σ | £20 1% | £50 1% | £100 ⅛K | Model |",
+                "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
         for r in staked:
-            out.append(f"| {r['rank']} | {r['grade']} | {r['sport']} | {r['event_name']} ({r['event_start'][:16]}) | {r['selection']} "
-                       f"| {_fmt(r['probability'])} | {_fmt(r['sigma'])} | {_fmt(r['decimal_odds'], 2)} ({r['source']}, {_fmt(r['price_age_minutes'], 0)}) "
+            out.append(f"| {r['rank']} | {r['grade']} | {r['sport']} · {r['competition']} | {r['event_name']} ({r['event_start'][:16]}) "
+                       f"| {r['market']} · {r['selection']} | {_fmt(r['probability'])} | {_fmt(r['sigma'])} "
+                       f"| {_fmt(r['decimal_odds'], 2)} ({r['source']}, {str(r['price_observed_at'])[:16]}) "
                        f"| {_fmt(r['fair_odds'], 2)} | {_fmt(r['ev_at_p'])} | {_fmt(r['ev_minus_1sigma'])} "
-                       f"| {r.get('stake_20_flat_1pct', '')} | {r.get('stake_50_flat_1pct', '')} | {r.get('stake_100_kelly_1_8', '')} |")
+                       f"| {r.get('stake_20_flat_1pct', '')} | {r.get('stake_50_flat_1pct', '')} | {r.get('stake_100_kelly_1_8', '')} "
+                       f"| {r['engine_id']} v{r.get('engine_version') or '?'} |")
         out += ["", "Grade reasons: " + "; ".join(f"#{r['rank']} {r['grade_reason']}" for r in staked), ""]
     watch = [r for r in card["rows"] if r["grade"] == C]
     if watch:

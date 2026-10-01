@@ -2,7 +2,8 @@
 
 Run after `run_bet_selection_v2.py evaluate` (or `settle`). Reads the bsv2 candidates of the latest run, the Stage A
 board and the bsv2 paper ledgers; writes reports/daily_paper_card.{json,md}, reports/paper_dashboard.{json,md} and
-appends first-sight grades to paper_betting_v2/card_enrichment.csv (never rewritten). Never changes a bsv2 decision.
+appends first-sight grades to paper_betting_v2/card_enrichment.csv and the analytical decision shadow to
+paper_betting_v2/decision_shadow.csv (both never rewritten; the shadow is never a paper bet). Never changes a bsv2 decision.
 Spec: research/platform_v2/v2_20_paper/PREREGISTRATION.md
 """
 from __future__ import annotations
@@ -28,6 +29,7 @@ def run(repo: Path, now: datetime, cfg_path: Path | None = None) -> dict:
     sels = L.read_rows(p["paper_dir"] / "selections.csv")
     card = PC.build_card(cfg, L.read_rows(p["candidates"]), stage_a, sels, now)
     added = PC.append_enrichment(p["enrichment_ledger"], PC.enrichment_rows(card, sels, cfg), card["stake_columns"])
+    shadow_added = PC.append_shadow(p["decision_shadow_ledger"], PC.shadow_rows(card))   # analytical only (s.7)
     enrich = {r["selection_id"]: r for r in L.read_rows(p["enrichment_ledger"])}
     ann = {r["selection_id"]: r["annotation"] for r in L.read_rows(p["paper_dir"] / "selection_annotations.csv")}
     sett = {r["selection_id"]: r for r in L.read_rows(p["paper_dir"] / "settlements.csv")}
@@ -37,8 +39,8 @@ def run(repo: Path, now: datetime, cfg_path: Path | None = None) -> dict:
         p[f"{key}_json"].write_text(json.dumps(obj, indent=1, default=str))
         p[f"{key}_md"].write_text(md)
     print(json.dumps({"grade_counts": card["grade_counts"], "no_bet_today": card["no_bet_today"],
-                      "enrichment_rows_added": added}, indent=1))
-    return {"card": card, "dashboard": dash, "enrichment_added": added}
+                      "enrichment_rows_added": added, "decision_shadow_rows_added": shadow_added}, indent=1))
+    return {"card": card, "dashboard": dash, "enrichment_added": added, "shadow_added": shadow_added}
 
 
 def main() -> int:

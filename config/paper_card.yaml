@@ -6,6 +6,7 @@ stage_a_board: reports/latest_stage_a_board.json
 candidates: reports/bet_selection_v2_candidates.csv
 paper_dir: paper_betting_v2
 enrichment_ledger: paper_betting_v2/card_enrichment.csv
+decision_shadow_ledger: paper_betting_v2/decision_shadow.csv   # directive s.7: analytical shadow, never a paper bet
 outputs:
   card_json: reports/daily_paper_card.json
   card_md: reports/daily_paper_card.md

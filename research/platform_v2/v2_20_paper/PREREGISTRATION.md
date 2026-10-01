@@ -77,3 +77,19 @@ rule version, P band, odds band, grade, source type. Small samples are labelled 
 ## 6. Out of scope / unchanged
 
 Paper multis (disabled), NHL, DC holdout, real money, Stage B thresholds, frozen engines, sealed holdouts.
+
+## 7. Amendment A1 (2026-10-01, before merge / before any production card) — approval directive s.6, s.7, s.11, s.12
+
+* **Frozen ≠ optimal.** bsv2-4 gates (odds ≥ 1.33, net EV ≥ 2%, price/spread/age rules) and the pcard-1 grade
+  multipliers (1σ, 1.645σ) are frozen prospective policy parameters for this cohort. Nothing here claims they are
+  empirically optimal; they will not be changed after a small number of results.
+* **Decision shadow (analytical only).** `paper_betting_v2/decision_shadow.csv`, append-only: every decided candidate
+  (PAPER_BET, WATCH, MULTI_RESEARCH_ELIGIBLE, REJECT) with P, σ, fair odds, actual price + source + time, Stage A price
+  status, central EV, EV at P−1σ / P−1.645σ, bsv2 decision + reasons, grade, `analytical_only = True`. A new row only
+  when price or decision changes. It is never a paper bet and never staked; outcomes are joined at analysis time from
+  `predictions/unified_settlements.csv` (nothing written back). Purpose: later evaluation of the frozen gates
+  (odds < / ≥ 1.33, EV bands, P bands, σ bands, sports/leagues). No threshold optimisation now.
+* **Card fields.** Paper-bet rows also show competition, market, price time, engine id + version; the card header shows
+  when the candidates were evaluated; zero-bet days print "NO PAPER BETS TODAY".
+* **Dashboard.** Adds probability-band and odds-band breakdowns and mean decision-time EV per group. CLV is reported
+  as NOT_AVAILABLE (no closing executable price is recorded for paper selections; it is not estimated).

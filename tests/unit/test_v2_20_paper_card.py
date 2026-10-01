@@ -66,7 +66,7 @@ def test_card_ranks_by_grade_then_probability_and_never_changes_decisions():
 
 def test_no_bet_day_is_explicit():
     card = PC.build_card(CFG, [cand("w", "WATCH", 0.95, 1.03)], stage_a(), [], NOW)
-    assert card["no_bet_today"] and "NO PAPER BET TODAY" in PC.render_card_md(card)
+    assert card["no_bet_today"] and "NO PAPER BETS TODAY" in PC.render_card_md(card)
 
 
 def test_stakes_respect_caps_min_stake_and_daily_exposure():
@@ -147,3 +147,35 @@ def test_end_to_end_first_sight_enrichment_is_immutable_and_dashboard_separates_
     assert d["financial"]["overall"]["realised_net_pnl_units"] == 0.45
     assert d["breakdowns_all_selections"]["grade"][PC.A]["financial"]["won"] == 1
     assert (tmp_path / "reports/paper_dashboard.md").exists() and (tmp_path / "reports/daily_paper_card.md").exists()
+
+
+def test_decision_shadow_covers_whole_decided_space_is_analytical_and_append_only(tmp_path):
+    cs = [cand("pb", "PAPER_BET", 0.75, 1.45), cand("w", "WATCH", 0.95, 1.03), cand("r", "REJECT", 0.60, 1.20)]
+    card = PC.build_card(CFG, cs, stage_a(("pb", 0.01), ("w", 0.01)), [], NOW)
+    rows = PC.shadow_rows(card)
+    assert {r["prediction_id"] for r in rows} == {"pb", "w", "r"} and all(r["analytical_only"] is True for r in rows)
+    assert all("stake_20_flat_1pct" not in r for r in rows)                      # never staked, never a paper bet
+    w = next(r for r in rows if r["prediction_id"] == "w")
+    assert w["ev_minus_1sigma"] is not None and w["ev_minus_1sigma"] < w["ev_at_p"] and w["bsv2_decision"] == "WATCH"
+    p = tmp_path / "decision_shadow.csv"
+    assert PC.append_shadow(p, rows) == 3 and PC.append_shadow(p, rows) == 0     # same price + decision -> no new row
+    moved = PC.shadow_rows(PC.build_card(CFG, [cand("w", "WATCH", 0.95, 1.04)], stage_a(("w", 0.01)), [], NOW))
+    assert PC.append_shadow(p, moved) == 1                                       # price moved -> one new row
+
+
+def test_card_md_shows_directive_fields():
+    card = PC.build_card(CFG, [cand("pb", "PAPER_BET", 0.75, 1.45)], {"predictions": [
+        {"prediction_id": "pb", "sigma": 0.01, "competition": "ATP X", "engine_version": "1"}]}, [], NOW)
+    md = PC.render_card_md(card)
+    for s in ("ATP X", "match_winner", "bk", "2026-10-08T08:59", "atp_match_winner.betfair_market v1", "EV@P−1σ", "£20 1%"):
+        assert s in md
+    assert card["candidates_evaluated_at"] == NOW.isoformat()
+
+
+def test_dashboard_has_band_breakdowns_and_no_fabricated_clv(tmp_path):
+    from prediction_markets_lab.bet_selection_v2 import paper_ledger as L
+    s = {**{k: "" for k in L.SELECTION_FIELDS}, **{k: v for k, v in cand("x", "PAPER_BET", 0.75, 1.45).items() if k in L.SELECTION_FIELDS},
+         "selection_id": "s1", "rule_version": "bsv2-4", "stake_units": "1.0"}
+    d = PC.dashboard(CFG, [s], {}, {}, {}, "bsv2-4", NOW)
+    assert set(d["breakdowns_all_selections"]) >= {"probability_band", "odds_band", "grade", "competition", "rule_version"}
+    assert "70-79.9%" in d["breakdowns_all_selections"]["probability_band"] and d["clv"].startswith("NOT_AVAILABLE")
