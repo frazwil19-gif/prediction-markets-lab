@@ -1,4 +1,4 @@
-"""V2-8 OFFLINE portfolio analyser (research only; analyser v2-8a-1).
+"""V2-8 OFFLINE portfolio analyser (research only; analyser v2-8a-2: Stage A input = stage-a-2 board when it matches the scan).
 
 Probability-first, two stages (research/platform_v2/DECISION_PHILOSOPHY.md):
   Stage A  PREDICTION BOARD  -- every frozen HIGH_P prediction, ranked by probability (never by EV), with uncertainty, calibration
@@ -136,6 +136,57 @@ def prediction_board(hp_legs: list[dict], price_rows: list[dict], scan: str, cfg
     for i, r in enumerate(board, 1):
         r["rank"] = i
     return board
+
+
+# ---------------------------------------------------------------- Stage A input: stage-a-2 multi-sport board (v2-8a-2)
+STAGE_A_SOURCE_SA2, STAGE_A_SOURCE_V27 = "stage-a-2 board (complete, multi-sport)", "V2-7 HIGH_P legs (fallback: no matching stage-a-2 board)"
+
+
+def _opponent(event_name: str, selection: str) -> str:
+    for sep in (" v ", " @ "):
+        if sep in event_name:
+            a, b = event_name.split(sep, 1)
+            return b if a == selection else a
+    return event_name
+
+
+def stage_a2_rows(board_json: Path, scan: str) -> list[dict] | None:
+    """Strong rows of the stage-a-2 board IF it was built from this scan (its tennis P_CURRENT_SCAN rows were observed at
+    exactly `scan`); otherwise None. Read-only. Minimum input adaptation: no allocation method changes."""
+    if not board_json.exists():
+        return None
+    b = json.loads(board_json.read_text())
+    if not str(b.get("board_version", "")).startswith("stage-a-2"):
+        return None
+    rows = b.get("predictions", [])
+    if not any(r.get("sport") == "tennis" and r.get("probability_observed_at") == scan for r in rows):
+        return None
+    return [r for r in rows if r.get("strength") == "STRONG_PREDICTION"]
+
+
+def board_from_stage_a2(rows: list[dict], v27_board: list[dict], scan: str) -> list[dict]:
+    bench = {b["event_id"]: b for b in v27_board}
+    out = []
+    for r in rows:
+        eid = r["event_key"].split("|")[-1] if r["sport"] == "tennis" else r["event_key"]
+        sig = r.get("sigma")
+        v = bench.get(eid, {})
+        out.append({"sport": r["sport"], "event_id": eid, "event": f"{r['selection']} v {_opponent(r['event_name'], r['selection'])}",
+                    "market": r["market"], "selection": r["selection"], "start": r["event_start"], "p": round(float(r["probability"]), 4),
+                    "sigma": None if sig is None else round(float(sig), 4),
+                    "p_range_1sigma": None if sig is None else [round(max(r["probability"] - sig, 0), 4), round(min(r["probability"] + sig, 1), 4)],
+                    "calibration_support": v.get("calibration_support") or {"band": r.get("probability_band"), "status": r.get("calibration_status")},
+                    "exchange_width": r.get("exchange_width"), "model": r["engine_id"], "scan": scan,
+                    "probability_basis": r.get("probability_basis"), "p_first_snapshot": r.get("p_first_snapshot"),
+                    "p_current_scan": r.get("p_current_scan"), "stage_a_label": r.get("stage_a_label"),
+                    "price_status": r.get("price_status"),
+                    "market_benchmark_book_consensus_p": v.get("market_benchmark_book_consensus_p"),
+                    "benchmark_books": v.get("benchmark_books", 0), "p_minus_benchmark": v.get("p_minus_benchmark"),
+                    "benchmark_flag": v.get("benchmark_flag", "NO_BENCHMARK")})
+    out.sort(key=lambda r: (-r["p"], r["event_id"]))                    # PROBABILITY-FIRST ordering, never EV
+    for i, r in enumerate(out, 1):
+        r["rank"] = i
+    return out
 
 
 # ---------------------------------------------------------------- Stage B: single-bet evaluation
@@ -319,7 +370,13 @@ def analyse_scan(rec: dict, v27_root: Path, repo: Path, cfg: AnalyserConfig, sha
     price_rows = read_csv(repo / cfg.inputs["prices"])
     cal_se, support = calibration_support(repo / cfg.inputs["calibration_results"])
     scan = rec["scan"]
-    board = prediction_board(hp_legs, price_rows, scan, cfg, shadow_cfg.exchange_keys, cal_se, support)
+    v27_board = prediction_board(hp_legs, price_rows, scan, cfg, shadow_cfg.exchange_keys, cal_se, support)
+    sa2 = stage_a2_rows(repo / cfg.inputs["stage_a_board"], scan) if cfg.inputs.get("stage_a_board") else None
+    board = board_from_stage_a2(sa2, v27_board, scan) if sa2 is not None else v27_board
+    stage_a_source = STAGE_A_SOURCE_SA2 if sa2 is not None else STAGE_A_SOURCE_V27
+    # Stage B structures keep their v2-8a-1 input population (predictions with V2-7 clean-quote legs): allocation unchanged
+    hp_ids = {l["event_id"] for l in hp_legs}
+    structures_board = [b for b in board if b["event_id"] in hp_ids]
     # per-book quotes for the frozen HIGH_P predictions, same scan, with the V2-7 (= bsv2-3) quality rules
     prob_rows = [{"scan_timestamp_utc": scan, "sport_key": l["sport_key"], "event_id": l["event_id"], "player_a": l["selection"],
                   "player_b": l["opponent"], "commence_time": l["start"], "source_validated": "True", "p_a": l["p"],
@@ -331,9 +388,10 @@ def analyse_scan(rec: dict, v27_root: Path, repo: Path, cfg: AnalyserConfig, sha
     out = {"analyser_version": cfg.version, "record_id": rec["record_id"], "scan": scan, "mode": rec["mode"],
            "v2_7_rule_version": rec["rule_version"], "v2_7_commit_sha": rec["commit_sha"], "run_id": rec["run_id"],
            "input_shas": {"prices": file_sha(repo / cfg.inputs["prices"]), "v2_7_legs": file_sha(v27_root / month / "legs.csv")},
+           "stage_A_source": stage_a_source,
            "stage_A_prediction_board": board,
            "stage_B_single_evaluation": single_evaluation(board, quotes, S.ts(scan)),
-           "stage_B_structures": betting_structures(board, quotes, pos_ev, cfg, cal_se),
+           "stage_B_structures": betting_structures(structures_board, quotes, pos_ev, cfg, cal_se),
            "labels": {"prices": "multi prices INDICATIVE / NOT EXECUTION-VERIFIED", "grades": "not set (no thresholds)",
                       "status": "RESEARCH ONLY -- no bet placed, no paper bet created"}}
     if with_outcomes:
@@ -354,11 +412,13 @@ def guard_output(out_dir: Path, repo: Path) -> Path:
 def render_markdown(a: dict) -> str:
     L = [f"# Daily Bet Card -- RESEARCH PREVIEW (analyser {a['analyser_version']})", "",
          f"Scan {a['scan']} · mode {a['mode']} · V2-7 {a['v2_7_rule_version']} · NO BET PLACED · grades not set · multi prices INDICATIVE", "",
-         "## Stage A -- Prediction board (ranked by probability)", "",
+         "## Stage A -- Prediction board (ranked by probability)", "", f"Source: {a.get('stage_A_source', STAGE_A_SOURCE_V27)}", "",
          "| # | event | selection | P ± σ | band (holdout n) | book consensus | ΔP | flag | model |", "|---|---|---|---|---|---|---|---|---|"]
     for b in a["stage_A_prediction_board"]:
         cs = b["calibration_support"]
-        L.append(f"| {b['rank']} | {b['event']} | {b['selection']} | {b['p']:.3f} ± {b['sigma']:.3f} | {cs['band']} ({cs['holdout_n']}) | "
+        sig = "n/e" if b.get("sigma") is None else f"{b['sigma']:.3f}"
+        sup = f"{cs.get('band')} ({cs['holdout_n']})" if "holdout_n" in cs else f"{cs.get('band')} ({str(cs.get('status', '')).split(' ')[0]})"
+        L.append(f"| {b['rank']} | {b['event']} | {b['selection']} | {b['p']:.3f} ± {sig} | {sup} | "
                  f"{b['market_benchmark_book_consensus_p']} | {b['p_minus_benchmark']} | {b['benchmark_flag']} | {b['model']} |")
     L += ["", "## Stage B -- Betting evaluation (singles)", "", "| # | selection | P | fair | best odds (book) | EV [±1σ] | label |",
           "|---|---|---|---|---|---|---|"]

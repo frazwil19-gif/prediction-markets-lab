@@ -1,6 +1,6 @@
 # V2-8 OFFLINE portfolio analyser (RESEARCH ONLY). Read by scripts/run_v2_8_analyser.py only; production never reads it.
 # Consumes frozen V2-7 prospective records read-only. 0 API credits. Never writes V2-7 or production files. Places nothing.
-analyser_version: v2-8a-1
+analyser_version: v2-8a-2   # v2-8a-2 (V2-16): Stage A input = complete stage-a-2 board; allocation methodology unchanged
 
 inputs:
   v2_7_records: research/platform_v2/card_engine_v2_7/prospective     # frozen V2-7 cer-2 output (read-only)
@@ -9,6 +9,7 @@ inputs:
   calibration_results: research/platform_v2/card_engine_v2_7/RESULTS.json
   ledger_predictions: tennis_predictions/ledger_predictions.csv        # only with --with-outcomes (needs approval; see README)
   ledger_settlements: tennis_predictions/ledger_settlements.csv
+  stage_a_board: reports/latest_stage_a_board.json                     # stage-a-2 (read-only); used only if it was built from the analysed scan
 
 # Stage A (prediction board): ordering is by probability, never by EV.
 board:
