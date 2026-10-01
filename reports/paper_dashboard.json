@@ -1,83 +1,11 @@
 {
- "generated_at": "2026-10-01T20:28:20.829941+00:00",
- "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
- "rule_version": "bsv2-4",
+ "product": "PAPER PERFORMANCE DASHBOARD (paper only; descriptive, no projections)",
+ "generated_at": "2026-10-01T20:28:21.014664+00:00",
+ "card_rule_version": "pcard-1",
+ "bsv2_rule_version": "bsv2-4",
  "real_money_enabled": false,
- "multis_enabled": false,
- "funnel": {
-  "runs": 9,
-  "totals_over_runs": {
-   "events_scanned": 464,
-   "valid_predictions": 452,
-   "high_p_candidates": 197,
-   "priced_candidates": 452,
-   "PAPER_BET": 19,
-   "MULTI_RESEARCH_ELIGIBLE": 78,
-   "WATCH": 40,
-   "REJECT": 429,
-   "paper_bets_added": 10,
-   "money_card_qualified": 0
-  },
-  "note": "per-run counts summed; a prediction re-evaluated in several runs is counted in each run",
-  "days_evaluated": 3,
-  "no_bet_days": [
-   "2026-09-30",
-   "2026-10-01"
-  ],
-  "bet_days": {
-   "2026-09-29": 10
-  }
- },
- "latest_run": {
-  "run_at": "2026-10-01T20:28:20.829941+00:00",
-  "trigger": "schedule",
-  "rule_version": "bsv2-4",
-  "events_scanned": "48",
-  "valid_predictions": "48",
-  "high_p_candidates": "24",
-  "priced_candidates": "48",
-  "PAPER_BET": "0",
-  "MULTI_RESEARCH_ELIGIBLE": "8",
-  "WATCH": "1",
-  "REJECT": "39",
-  "paper_bets_added": "0",
-  "snapshots_added": "881",
-  "money_card_qualified": "0",
-  "football_fixtures_on_card": "38"
- },
- "latest_decisions": {
-  "decisions": {
-   "MULTI_RESEARCH_ELIGIBLE": 8,
-   "REJECT": 39,
-   "WATCH": 1
-  },
-  "reason_counts": {
-   "NET_EV_NOT_POSITIVE": 43,
-   "EXCHANGE_SPREAD_TOO_WIDE": 15,
-   "NET_EV_BELOW_PAPER_GATE": 4,
-   "ODDS_BELOW_PAYOUT_FLOOR": 3,
-   "OUTSIDE_EVENT_HORIZON": 3
-  },
-  "by_sport": {
-   "tennis": {
-    "MULTI_RESEARCH_ELIGIBLE": 8,
-    "REJECT": 39,
-    "WATCH": 1
-   }
-  },
-  "by_engine": {
-   "atp_match_winner.betfair_market": {
-    "MULTI_RESEARCH_ELIGIBLE": 3,
-    "REJECT": 13
-   },
-   "wta_match_winner.betfair_market": {
-    "REJECT": 26,
-    "MULTI_RESEARCH_ELIGIBLE": 5,
-    "WATCH": 1
-   }
-  }
- },
- "paper_results": {
+ "headline_set": "bsv2 bsv2-4 selections + earlier rows annotated VALID_SAME_SNAPSHOT",
+ "financial": {
   "overall": {
    "selections": 1,
    "settled": 0,
@@ -472,76 +400,340 @@
    }
   ]
  },
- "superseded_rule_version_selections": [
-  {
-   "selection_id": "aace2533252d0f98",
-   "rule_version": "bsv2-1",
-   "event": "Alejandro Tabilo v Tommy Paul",
-   "selection": "Tommy Paul",
-   "annotation": "INVALID_STALE_PROBABILITY"
+ "prediction_quality_headline": {
+  "n": 0
+ },
+ "all_selections": {
+  "financial": {
+   "selections": 10,
+   "settled": 0,
+   "pending": 10,
+   "void": 0,
+   "won": 0,
+   "win_rate": null,
+   "avg_probability": null,
+   "avg_odds": null,
+   "expected_net_pnl_units": 0,
+   "realised_net_pnl_units": 0,
+   "roi_yield": null,
+   "max_drawdown_units": 0.0,
+   "longest_losing_streak": 0
   },
-  {
-   "selection_id": "bd342bd49bcb5ab4",
-   "rule_version": "bsv2-1",
-   "event": "Aoi Ito v Kimberly Birrell",
-   "selection": "Kimberly Birrell",
-   "annotation": "INVALID_STALE_PROBABILITY"
-  },
-  {
-   "selection_id": "eaa60a7e05c87842",
-   "rule_version": "bsv2-1",
-   "event": "Paula Badosa v Daria Kasatkina",
-   "selection": "Paula Badosa",
-   "annotation": "INVALID_STALE_PROBABILITY"
-  },
-  {
-   "selection_id": "1f1b3eef12ecf783",
-   "rule_version": "bsv2-1",
-   "event": "Elena Gabriela Ruse v Lilli Tagger",
-   "selection": "Lilli Tagger",
-   "annotation": "INVALID_STALE_PROBABILITY"
-  },
-  {
-   "selection_id": "db1b4212e24e1199",
-   "rule_version": "bsv2-1",
-   "event": "Mayar Sherif v Polina Kudermetova",
-   "selection": "Polina Kudermetova",
-   "annotation": "INVALID_STALE_PROBABILITY"
-  },
-  {
-   "selection_id": "0ad92cf03b20d586",
-   "rule_version": "bsv2-1",
-   "event": "Viktorija Golubic v Elvina Kalieva",
-   "selection": "Viktorija Golubic",
-   "annotation": "INVALID_WIDE_EXCHANGE_SPREAD"
-  },
-  {
-   "selection_id": "badff2e9d3e82118",
-   "rule_version": "bsv2-1",
-   "event": "Maddison Inglis v Zeynep Sonmez",
-   "selection": "Zeynep Sonmez",
-   "annotation": "INVALID_WIDE_EXCHANGE_SPREAD"
-  },
-  {
-   "selection_id": "d1f976be4b019b36",
-   "rule_version": "bsv2-1",
-   "event": "Mai Hontama v Katie Boulter",
-   "selection": "Katie Boulter",
-   "annotation": "INVALID_WIDE_EXCHANGE_SPREAD"
-  },
-  {
-   "selection_id": "f2dc653333abdc6f",
-   "rule_version": "bsv2-1",
-   "event": "Elsa Jacquemot v Magdalena Frech",
-   "selection": "Magdalena Frech",
-   "annotation": "INVALID_WIDE_EXCHANGE_SPREAD"
-  },
-  {
-   "selection_id": "3975c986120c0633",
-   "rule_version": "bsv2-3",
-   "event": "Zhuoxuan Bai v Linda Fruhvirtova",
-   "selection": "Zhuoxuan Bai",
-   "annotation": "VALID_SAME_SNAPSHOT"
+  "prediction": {
+   "n": 0
   }
- ]
+ },
+ "clv": "NOT_AVAILABLE: no closing executable price is recorded for paper selections (not estimated)",
+ "breakdowns_all_selections": {
+  "sport": {
+   "tennis": {
+    "financial": {
+     "selections": 10,
+     "settled": 0,
+     "pending": 10,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0,
+     "mean_net_ev_at_decision": 0.0505
+    },
+    "prediction": {
+     "n": 0
+    }
+   }
+  },
+  "competition": {
+   "tennis_atp_japan_open": {
+    "financial": {
+     "selections": 1,
+     "settled": 0,
+     "pending": 1,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0,
+     "mean_net_ev_at_decision": 0.0288
+    },
+    "prediction": {
+     "n": 0
+    }
+   },
+   "tennis_wta_china_open": {
+    "financial": {
+     "selections": 9,
+     "settled": 0,
+     "pending": 9,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0,
+     "mean_net_ev_at_decision": 0.053
+    },
+    "prediction": {
+     "n": 0
+    }
+   }
+  },
+  "market": {
+   "match_winner": {
+    "financial": {
+     "selections": 10,
+     "settled": 0,
+     "pending": 10,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0,
+     "mean_net_ev_at_decision": 0.0505
+    },
+    "prediction": {
+     "n": 0
+    }
+   }
+  },
+  "engine": {
+   "atp_match_winner.betfair_market": {
+    "financial": {
+     "selections": 1,
+     "settled": 0,
+     "pending": 1,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0,
+     "mean_net_ev_at_decision": 0.0288
+    },
+    "prediction": {
+     "n": 0
+    }
+   },
+   "wta_match_winner.betfair_market": {
+    "financial": {
+     "selections": 9,
+     "settled": 0,
+     "pending": 9,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0,
+     "mean_net_ev_at_decision": 0.053
+    },
+    "prediction": {
+     "n": 0
+    }
+   }
+  },
+  "rule_version": {
+   "bsv2-1": {
+    "financial": {
+     "selections": 9,
+     "settled": 0,
+     "pending": 9,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0,
+     "mean_net_ev_at_decision": 0.0522
+    },
+    "prediction": {
+     "n": 0
+    }
+   },
+   "bsv2-3": {
+    "financial": {
+     "selections": 1,
+     "settled": 0,
+     "pending": 1,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0,
+     "mean_net_ev_at_decision": 0.0355
+    },
+    "prediction": {
+     "n": 0
+    }
+   }
+  },
+  "grade": {
+   "UNGRADED_PRE_PCARD": {
+    "financial": {
+     "selections": 10,
+     "settled": 0,
+     "pending": 10,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0,
+     "mean_net_ev_at_decision": 0.0505
+    },
+    "prediction": {
+     "n": 0
+    }
+   }
+  },
+  "probability_band": {
+   "50-59.9%": {
+    "financial": {
+     "selections": 2,
+     "settled": 0,
+     "pending": 2,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0,
+     "mean_net_ev_at_decision": 0.0366
+    },
+    "prediction": {
+     "n": 0
+    }
+   },
+   "60-69.9%": {
+    "financial": {
+     "selections": 1,
+     "settled": 0,
+     "pending": 1,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0,
+     "mean_net_ev_at_decision": 0.0226
+    },
+    "prediction": {
+     "n": 0
+    }
+   },
+   "70-79.9%": {
+    "financial": {
+     "selections": 7,
+     "settled": 0,
+     "pending": 7,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0,
+     "mean_net_ev_at_decision": 0.0585
+    },
+    "prediction": {
+     "n": 0
+    }
+   }
+  },
+  "odds_band": {
+   "1.33-1.49": {
+    "financial": {
+     "selections": 4,
+     "settled": 0,
+     "pending": 4,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0,
+     "mean_net_ev_at_decision": 0.0371
+    },
+    "prediction": {
+     "n": 0
+    }
+   },
+   "1.50-1.99": {
+    "financial": {
+     "selections": 6,
+     "settled": 0,
+     "pending": 6,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0,
+     "mean_net_ev_at_decision": 0.0595
+    },
+    "prediction": {
+     "n": 0
+    }
+   }
+  }
+ }
 }

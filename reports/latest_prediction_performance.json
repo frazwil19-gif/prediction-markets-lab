@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-01T14:19:26.040780+00:00",
+ "generated_at": "2026-10-01T20:28:20.098034+00:00",
  "protocol": "research/platform_v2/unified_board/PROSPECTIVE_PROTOCOL.md",
  "pending_review": [],
  "pooled": {
@@ -782,6 +782,23 @@
    }
   }
  },
+ "holdout_masked": {
+  "reason": "SEALED_HOLDOUT_NO_PEEK",
+  "settled_rows_masked_by_engine": {},
+  "guards": [
+   {
+    "engine_id": "football_double_chance.derived_1x2",
+    "date_from": "2026-08-01",
+    "date_to": "2026-12-31",
+    "opened": false,
+    "competitions": [
+     "Premier League",
+     "Championship",
+     "Scottish Premiership"
+    ]
+   }
+  ]
+ },
  "ge80_decomposition": {
   "pooled": {
    "n": 2,
@@ -996,24 +1013,26 @@
  },
  "engines": {
   "atp_match_winner.betfair_market": {
-   "predictions": 46,
-   "prediction_events": 46,
+   "predictions": 48,
+   "prediction_events": 48,
    "settled_rows": 0,
    "settled_events": 0,
    "settled_ge80_events": 0,
    "maturity": "COLLECTING",
    "ge80_maturity": "COLLECTING",
-   "alarm_review_required": false
+   "alarm_review_required": false,
+   "settled_rows_masked_no_peek": 0
   },
   "wta_match_winner.betfair_market": {
-   "predictions": 75,
-   "prediction_events": 75,
+   "predictions": 76,
+   "prediction_events": 76,
    "settled_rows": 11,
    "settled_events": 11,
    "settled_ge80_events": 2,
    "maturity": "COLLECTING",
    "ge80_maturity": "COLLECTING",
-   "alarm_review_required": false
+   "alarm_review_required": false,
+   "settled_rows_masked_no_peek": 0
   }
  },
  "by_minutes_to_event": {

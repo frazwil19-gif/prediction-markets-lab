@@ -1,11 +1,11 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-01T14:19:26.040780+00:00",
+ "generated_at": "2026-10-01T20:28:20.098034+00:00",
  "date": "2026-10-01",
  "summary": {
-  "upcoming_events": 45,
-  "valid_predictions": 45,
+  "upcoming_events": 48,
+  "valid_predictions": 48,
   "sports_active": [
    "tennis"
   ],
@@ -17,20 +17,20 @@
    "football_double_chance.derived_1x2"
   ],
   "threshold_counts": {
-   ">=70": 22,
-   ">=75": 20,
-   ">=80": 11,
-   ">=85": 10,
-   ">=90": 8,
-   ">=95": 1
+   ">=70": 23,
+   ">=75": 21,
+   ">=80": 12,
+   ">=85": 11,
+   ">=90": 9,
+   ">=95": 2
   },
   "settled_yesterday": 0,
   "system": "HEALTHY",
-  "api_credits_last_observed": 497
+  "api_credits_last_observed": 488
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-01T14:19:26.040780+00:00",
+  "generated_at": "2026-10-01T20:28:20.098034+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -38,30 +38,30 @@
     "last": "2026-10-01T14:19:25.497332+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 0.0
+    "age_hours": 6.1
    },
    "settlement": {
     "last": "2026-10-01T00:29:29.266793+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 13.8
+    "age_hours": 20.0
    },
    "tennis_board": {
-    "last": "2026-10-01T13:45:31.929772+00:00",
+    "last": "2026-10-01T20:28:17.957003+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 0.6
+    "age_hours": 0.0
    },
    "ci_tests": {
-    "last": "2026-10-01T14:19:26.029209+00:00",
+    "last": "2026-10-01T20:28:19.780833+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    }
   },
   "api_credits": {
-   "remaining": 497,
-   "observed_at": "2026-10-01T13:45:32.730284+00:00",
+   "remaining": 488,
+   "observed_at": "2026-10-01T20:28:19.111782+00:00",
    "source": "credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
@@ -109,7 +109,7 @@
    "status": "VALIDATED_HISTORICAL",
    "prospective_status": "COLLECTING",
    "money_eligible": false,
-   "predictions": 46,
+   "predictions": 48,
    "settled_rows": 0,
    "maturity": "COLLECTING",
    "ge80_settled": 0,
@@ -121,7 +121,7 @@
    "status": "VALIDATED_HISTORICAL",
    "prospective_status": "COLLECTING",
    "money_eligible": false,
-   "predictions": 75,
+   "predictions": 76,
    "settled_rows": 11,
    "maturity": "COLLECTING",
    "ge80_settled": 2,
@@ -162,7 +162,7 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 45,
+   "ELIGIBLE": 48,
    "EXCLUDED": 107
   },
   "exclusion_reason": {
@@ -171,12 +171,54 @@
   "start_time_status": {
    "LEDGER_ONLY": 14,
    "RESCHEDULED": 94,
-   "UNCHANGED": 44
+   "UNCHANGED": 47
   },
   "eligible_rescheduled": 18,
   "rule": "est-1"
  },
  "predictions": [
+  {
+   "prediction_id": "20fbfef53f425026",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "sport": "tennis",
+   "competition": "WTA China Open",
+   "event_id": "6bf6841c79aa53815b86f5fd0463dbe3",
+   "event_key": "tennis|tennis_wta_china_open|6bf6841c79aa53815b86f5fd0463dbe3",
+   "event_name": "Xinyu Gao v Iga Swiatek",
+   "event_start": "2026-10-03T04:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Iga Swiatek",
+   "estimated_probability": "0.97198",
+   "fair_odds": "1.0288277536574828",
+   "probability_band": "95%+",
+   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
+   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "data_quality": "OK",
+   "current_context_status": "NOT_MODELLED",
+   "configured_scan_time": "30 15 * * *",
+   "actual_workflow_start": "2026-10-01T20:28:17.957003+00:00",
+   "prediction_timestamp": "2026-10-01T20:28:17.957003+00:00",
+   "minutes_to_event": "1891.7",
+   "live_price": "1.03",
+   "live_price_source": "betfair_ex_uk back (odds_api)",
+   "paper_status": "PAPER",
+   "prediction_valid": "True",
+   "single_eligible": "False",
+   "single_ineligible_reason": "engine not money-eligible",
+   "multi_research_eligible": "True",
+   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
+   "origin": "tennis_predictions/ledger_predictions.csv",
+   "origin_prediction_id": "20fbfef53f425026",
+   "settlement_status": "",
+   "result": "",
+   "correct": "",
+   "settlement_timestamp": "",
+   "event_start_original": "2026-10-03T04:00:00+00:00",
+   "start_time_status": "UNCHANGED",
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+  },
   {
    "prediction_id": "19a0e17c3be366ba",
    "engine_id": "wta_match_winner.betfair_market",
@@ -259,7 +301,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T04:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "8c54a6cca21351e5",
@@ -301,7 +343,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T02:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "2fa353ce073d7770",
@@ -343,7 +385,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T04:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "11a82663b19cd075",
@@ -469,7 +511,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T03:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "5fbcafd464750966",
@@ -511,7 +553,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T04:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "80eea4f6b6b3885b",
@@ -721,7 +763,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T04:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "94cfed5b1ba3a87f",
@@ -763,7 +805,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T04:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "051d9af1a2042867",
@@ -805,7 +847,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-02T05:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "aae644f00e4a6ab7",
@@ -889,7 +931,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T04:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "3c5c2a92f7c49360",
@@ -1057,7 +1099,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T03:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "990f7bed94f370da",
@@ -1099,7 +1141,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-02T08:10:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "750394d957106835",
@@ -1141,7 +1183,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T04:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "e63460cd6d5ab08a",
@@ -1183,7 +1225,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T04:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "7dc15a3edd425311",
@@ -1225,7 +1267,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T04:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "bc6f7f03d40fc036",
@@ -1351,6 +1393,48 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T04:00:00+00:00",
    "start_time_status": "UNCHANGED",
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
+  },
+  {
+   "prediction_id": "4ee587cd0e01226e",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "sport": "tennis",
+   "competition": "ATP China Open",
+   "event_id": "33518edfa1e26f2c0e3ae617afe0ab1b",
+   "event_key": "tennis|tennis_atp_china_open|33518edfa1e26f2c0e3ae617afe0ab1b",
+   "event_name": "Francisco Cerundolo v Jakub Mensik",
+   "event_start": "2026-10-03T03:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Jakub Mensik",
+   "estimated_probability": "0.630966",
+   "fair_odds": "1.584871451076603",
+   "probability_band": "60-64.9%",
+   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
+   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "data_quality": "OK",
+   "current_context_status": "NOT_MODELLED",
+   "configured_scan_time": "30 15 * * *",
+   "actual_workflow_start": "2026-10-01T20:28:17.957003+00:00",
+   "prediction_timestamp": "2026-10-01T20:28:17.957003+00:00",
+   "minutes_to_event": "1831.7",
+   "live_price": "1.53",
+   "live_price_source": "betfair_ex_uk back (odds_api)",
+   "paper_status": "PAPER",
+   "prediction_valid": "True",
+   "single_eligible": "False",
+   "single_ineligible_reason": "engine not money-eligible",
+   "multi_research_eligible": "False",
+   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
+   "origin": "tennis_predictions/ledger_predictions.csv",
+   "origin_prediction_id": "4ee587cd0e01226e",
+   "settlement_status": "",
+   "result": "",
+   "correct": "",
+   "settlement_timestamp": "",
+   "event_start_original": "2026-10-03T03:00:00+00:00",
+   "start_time_status": "UNCHANGED",
    "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
   },
   {
@@ -1393,7 +1477,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T02:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "e8ec74d9f520f314",
@@ -1435,7 +1519,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-02T02:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "7665b91ee1f6e89e",
@@ -1519,7 +1603,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T04:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "45e525ab9491f277",
@@ -1603,7 +1687,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T02:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "441c5ea08c0de913",
@@ -1645,7 +1729,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-02T03:10:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "5b844a521aa250aa",
@@ -1729,7 +1813,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T04:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "f3154511859f90cf",
@@ -1771,7 +1855,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T04:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "ad28df786e306113",
@@ -1813,7 +1897,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T03:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "9ada3b0076db3553",
@@ -1856,6 +1940,48 @@
    "event_start_original": "2026-10-02T04:00:00+00:00",
    "start_time_status": "RESCHEDULED",
    "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
+  },
+  {
+   "prediction_id": "12061ad092a11cdf",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "sport": "tennis",
+   "competition": "ATP China Open",
+   "event_id": "74e207143d73fada6963397830c5c2d9",
+   "event_key": "tennis|tennis_atp_china_open|74e207143d73fada6963397830c5c2d9",
+   "event_name": "Hubert Hurkacz v Arthur Gea",
+   "event_start": "2026-10-02T11:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Hubert Hurkacz",
+   "estimated_probability": "0.568266",
+   "fair_odds": "1.7597392770287152",
+   "probability_band": "55-59.9%",
+   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
+   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "data_quality": "OK",
+   "current_context_status": "NOT_MODELLED",
+   "configured_scan_time": "30 15 * * *",
+   "actual_workflow_start": "2026-10-01T20:28:17.957003+00:00",
+   "prediction_timestamp": "2026-10-01T20:28:17.957003+00:00",
+   "minutes_to_event": "871.7",
+   "live_price": "1.75",
+   "live_price_source": "betfair_ex_uk back (odds_api)",
+   "paper_status": "PAPER",
+   "prediction_valid": "True",
+   "single_eligible": "False",
+   "single_ineligible_reason": "engine not money-eligible",
+   "multi_research_eligible": "False",
+   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
+   "origin": "tennis_predictions/ledger_predictions.csv",
+   "origin_prediction_id": "12061ad092a11cdf",
+   "settlement_status": "",
+   "result": "",
+   "correct": "",
+   "settlement_timestamp": "",
+   "event_start_original": "2026-10-02T11:00:00+00:00",
+   "start_time_status": "UNCHANGED",
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
   },
   {
    "prediction_id": "cff7f27954a10c97",
@@ -1939,7 +2065,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-02T07:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "195061137baf4069",
@@ -1981,7 +2107,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T04:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "0e0003f07019152a",
@@ -2023,7 +2149,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T02:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "b2c0630e4e440d73",
@@ -2065,7 +2191,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T04:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   }
  ]
 }
