@@ -3,8 +3,11 @@ from __future__ import annotations
 
 import math
 from collections import defaultdict
+from dataclasses import dataclass
+from pathlib import Path
 
 import numpy as np
+import yaml
 
 from prediction_markets_lab.prediction_platform.schema import HIGH_P, THRESHOLDS
 from prediction_markets_lab.research.probability_reliability import V2_BANDS, wilson
@@ -14,6 +17,31 @@ COLLECTING_MAX, EARLY_MAX, INTERMEDIATE_MIN_HIGH, MATURE_MIN, MATURE_MIN_HIGH = 
 ALARM_MIN_HIGH, ALARM_SHORTFALL = 100, 0.10
 Z995 = 2.807033768343811
 TIMING_BUCKETS = ((0, 360, "<6h"), (360, 1440, "6-24h"), (1440, 2880, "24-48h"), (2880, math.inf, ">48h"))
+MASK_REASON = "SEALED_HOLDOUT_NO_PEEK"
+
+
+@dataclass(frozen=True)
+class HoldoutGuard:
+    """V2-13: while ``opened`` is False, settled rows of ``engine_id`` with an event date in [date_from, date_to] are
+    masked from every performance output (sealed holdout overlaps prospective collection)."""
+    engine_id: str
+    date_from: str
+    date_to: str
+    opened: bool
+
+
+def load_guards(repo: Path, config: Path | None = None) -> list[HoldoutGuard]:
+    path = config or repo / "config/holdout_guards.yaml"
+    if not path.exists():
+        return []
+    data = yaml.safe_load(path.read_text()) or {}
+    return [HoldoutGuard(eid, str(g["date_from"]), str(g["date_to"]), (repo / g["results"]).exists())
+            for eid, g in (data.get("guards") or {}).items()]
+
+
+def masked(row: dict, guards: list[HoldoutGuard]) -> bool:
+    day = str(row.get("event_start", ""))[:10]
+    return any(g.engine_id == row.get("engine_id") and not g.opened and g.date_from <= day <= g.date_to for g in guards)
 
 
 def maturity(n_settled_units: int, n_high_units: int) -> str:
@@ -68,9 +96,16 @@ def _units(rows: list[dict]) -> int:
     return len({r["event_key"] for r in rows})
 
 
-def report(preds: list[dict], settlements: dict[str, dict]) -> dict:
-    rows = settled_rows(preds, settlements)
-    out: dict = {"pooled": metrics(rows), "by": {}}
+def report(preds: list[dict], settlements: dict[str, dict], guards: list[HoldoutGuard] | None = None) -> dict:
+    rows_all = settled_rows(preds, settlements)
+    rows = [r for r in rows_all if not masked(r, guards or [])]
+    hidden: dict[str, int] = defaultdict(int)
+    for r in rows_all:
+        if masked(r, guards or []):
+            hidden[r["engine_id"]] += 1
+    out: dict = {"pooled": metrics(rows), "by": {},
+                 "holdout_masked": {"reason": MASK_REASON, "settled_rows_masked_by_engine": dict(hidden),
+                                    "guards": [g.__dict__ for g in guards or []]}}
     for dim in ("sport", "engine_id", "market", "engine_version"):
         g: dict[str, list] = defaultdict(list)
         for r in rows:
@@ -92,7 +127,7 @@ def report(preds: list[dict], settlements: dict[str, dict]) -> dict:
         eng[eid] = {"predictions": len(pred_n), "prediction_events": _units(pred_n), "settled_rows": len(er),
                     "settled_events": _units(er), "settled_ge80_events": _units(eh),
                     "maturity": maturity(_units(er), _units(eh)), "ge80_maturity": maturity(_units(eh), _units(eh)),
-                    "alarm_review_required": bool(alarm)}
+                    "alarm_review_required": bool(alarm), "settled_rows_masked_no_peek": hidden.get(eid, 0)}
     out["engines"] = eng
     tb: dict[str, list] = defaultdict(list)
     for r in rows:

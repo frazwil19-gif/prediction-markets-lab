@@ -1,0 +1,1537 @@
+{
+ "label": "DRY RUN - not prospective evidence; no ledger written; 48h window widened in memory; no outcomes",
+ "card": "daily_cards/2026-09-30/card.json",
+ "card_data_timestamp": "2026-09-30T13:26:33.683134+00:00",
+ "skips": [],
+ "stage_a_summary": {
+  "predictions": 266,
+  "strong_predictions": 61,
+  "strong_unique_events": 38,
+  "strong_by_price_status": {
+   "POOR_PAYOUT": 3,
+   "PRICE_UNAVAILABLE": 58
+  },
+  "all_by_price_status": {
+   "POOR_PAYOUT": 144,
+   "PRICE_UNAVAILABLE": 114,
+   "PRICE_VALID": 8
+  },
+  "duplicate_prediction_rows_collapsed": 0,
+  "strong_by_sport": {
+   "football": 61
+  },
+  "all_by_sport": {
+   "football": 266
+  }
+ },
+ "volume_by_iso_week": {
+  "41": {
+   "fixtures": 27,
+   "prediction_rows": 162,
+   "1x2_top_ge70": 1,
+   "dc_best_ge70": 27,
+   "1x2_top_ge80": 1,
+   "dc_best_ge80": 6
+  },
+  "42": {
+   "fixtures": 10,
+   "prediction_rows": 60,
+   "1x2_top_ge70": 1,
+   "dc_best_ge70": 10,
+   "1x2_top_ge80": 0,
+   "dc_best_ge80": 4
+  },
+  "43": {
+   "fixtures": 1,
+   "prediction_rows": 6,
+   "1x2_top_ge70": 0,
+   "dc_best_ge70": 1,
+   "1x2_top_ge80": 0,
+   "dc_best_ge80": 1
+  }
+ },
+ "fixtures": [
+  {
+   "fixture": "West Ham United v Queens Park Rangers",
+   "league": "Championship",
+   "kickoff": "2026-10-09T19:00:00+00:00",
+   "raw_hda": [
+    0.6148340923877684,
+    0.21361238432932628,
+    0.17191011235955056
+   ],
+   "normalised_hda": [
+    0.614615,
+    0.213536,
+    0.171849
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "home",
+    "p": 0.614615,
+    "sigma": 0.012567,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 1.57
+   },
+   "dc": {
+    "1X": 0.828151,
+    "X2": 0.385385,
+    "12": 0.786464
+   },
+   "best_dc": {
+    "selection": "1X",
+    "p": 0.828151,
+    "sigma": 0.006363,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Arsenal v Leeds United",
+   "league": "Premier League",
+   "kickoff": "2026-10-10T11:30:00+00:00",
+   "raw_hda": [
+    0.6822901216256304,
+    0.1892877173303421,
+    0.12027917296295627
+   ],
+   "normalised_hda": [
+    0.687892,
+    0.190842,
+    0.121267
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "home",
+    "p": 0.687892,
+    "sigma": 0.016716,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 1.4
+   },
+   "dc": {
+    "1X": 0.878733,
+    "X2": 0.312108,
+    "12": 0.809158
+   },
+   "best_dc": {
+    "selection": "1X",
+    "p": 0.878733,
+    "sigma": 0.006363,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Swansea City v Norwich City",
+   "league": "Championship",
+   "kickoff": "2026-10-10T11:30:00+00:00",
+   "raw_hda": [
+    0.36623967361995785,
+    0.2707581227436823,
+    0.35915492957746475
+   ],
+   "normalised_hda": [
+    0.367654,
+    0.271804,
+    0.360542
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "home",
+    "p": 0.367654,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.62
+   },
+   "dc": {
+    "1X": 0.639458,
+    "X2": 0.632346,
+    "12": 0.728196
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.728196,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "West Bromwich Albion v Birmingham City",
+   "league": "Championship",
+   "kickoff": "2026-10-10T11:30:00+00:00",
+   "raw_hda": [
+    0.41185551096017287,
+    0.27184466019417475,
+    0.31568877551020413
+   ],
+   "normalised_hda": [
+    0.412107,
+    0.272011,
+    0.315882
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "home",
+    "p": 0.412107,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.4
+   },
+   "dc": {
+    "1X": 0.684118,
+    "X2": 0.587893,
+    "12": 0.727989
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.727989,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Charlton Athletic v Bristol City",
+   "league": "Championship",
+   "kickoff": "2026-10-10T11:30:00+00:00",
+   "raw_hda": [
+    0.3029259896729776,
+    0.28399311531841653,
+    0.41308089500860584
+   ],
+   "normalised_hda": [
+    0.302926,
+    0.283993,
+    0.413081
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "away",
+    "p": 0.413081,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.3
+   },
+   "dc": {
+    "1X": 0.586919,
+    "X2": 0.697074,
+    "12": 0.716007
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.716007,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Rangers v Kilmarnock",
+   "league": "Scottish Premiership",
+   "kickoff": "2026-10-10T14:00:00+00:00",
+   "raw_hda": [
+    0.812096368769094,
+    0.12235585289454348,
+    0.06554777833636258
+   ],
+   "normalised_hda": [
+    0.812096,
+    0.122356,
+    0.065548
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "home",
+    "p": 0.812096,
+    "sigma": 0.021572,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 1.18
+   },
+   "dc": {
+    "1X": 0.934452,
+    "X2": 0.187904,
+    "12": 0.877644
+   },
+   "best_dc": {
+    "selection": "1X",
+    "p": 0.934452,
+    "sigma": 0.006363,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Hearts v St Mirren",
+   "league": "Scottish Premiership",
+   "kickoff": "2026-10-10T14:00:00+00:00",
+   "raw_hda": [
+    0.6430868167202572,
+    0.20229885057471264,
+    0.15520088057237205
+   ],
+   "normalised_hda": [
+    0.64271,
+    0.20218,
+    0.15511
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "home",
+    "p": 0.64271,
+    "sigma": 0.012567,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 1.48
+   },
+   "dc": {
+    "1X": 0.84489,
+    "X2": 0.35729,
+    "12": 0.79782
+   },
+   "best_dc": {
+    "selection": "1X",
+    "p": 0.84489,
+    "sigma": 0.006363,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Chelsea v Bournemouth",
+   "league": "Premier League",
+   "kickoff": "2026-10-10T14:00:00+00:00",
+   "raw_hda": [
+    0.5488595251411218,
+    0.23089671349532137,
+    0.22334718062452769
+   ],
+   "normalised_hda": [
+    0.547161,
+    0.230182,
+    0.222656
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "home",
+    "p": 0.547161,
+    "sigma": 0.012567,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 1.77
+   },
+   "dc": {
+    "1X": 0.777344,
+    "X2": 0.452839,
+    "12": 0.769818
+   },
+   "best_dc": {
+    "selection": "1X",
+    "p": 0.777344,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Middlesbrough v Wolverhampton Wanderers",
+   "league": "Championship",
+   "kickoff": "2026-10-10T14:00:00+00:00",
+   "raw_hda": [
+    0.4339526597098498,
+    0.2552028074757202,
+    0.31356579282260116
+   ],
+   "normalised_hda": [
+    0.432775,
+    0.25451,
+    0.312715
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "home",
+    "p": 0.432775,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.24
+   },
+   "dc": {
+    "1X": 0.687285,
+    "X2": 0.567225,
+    "12": 0.74549
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.74549,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Sheffield United v Lincoln City",
+   "league": "Championship",
+   "kickoff": "2026-10-10T14:00:00+00:00",
+   "raw_hda": [
+    0.4717467621333228,
+    0.27149321266968324,
+    0.25808281338627337
+   ],
+   "normalised_hda": [
+    0.471124,
+    0.271135,
+    0.257742
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "home",
+    "p": 0.471124,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.1
+   },
+   "dc": {
+    "1X": 0.742258,
+    "X2": 0.528876,
+    "12": 0.728865
+   },
+   "best_dc": {
+    "selection": "1X",
+    "p": 0.742258,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Dundee United v Hibernian",
+   "league": "Scottish Premiership",
+   "kickoff": "2026-10-10T14:00:00+00:00",
+   "raw_hda": [
+    0.35269709543568467,
+    0.26200355660936575,
+    0.38529934795494963
+   ],
+   "normalised_hda": [
+    0.352697,
+    0.262004,
+    0.385299
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "away",
+    "p": 0.385299,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.5
+   },
+   "dc": {
+    "1X": 0.614701,
+    "X2": 0.647303,
+    "12": 0.737996
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.737996,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Blackburn Rovers v Cardiff City",
+   "league": "Championship",
+   "kickoff": "2026-10-10T14:00:00+00:00",
+   "raw_hda": [
+    0.3600178774873351,
+    0.26553739395091797,
+    0.3764514705604479
+   ],
+   "normalised_hda": [
+    0.359297,
+    0.265006,
+    0.375698
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "away",
+    "p": 0.375698,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.5
+   },
+   "dc": {
+    "1X": 0.624302,
+    "X2": 0.640703,
+    "12": 0.734994
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.734994,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Falkirk F.C. v Dundee FC",
+   "league": "Scottish Premiership",
+   "kickoff": "2026-10-10T14:00:00+00:00",
+   "raw_hda": [
+    0.451165096678235,
+    0.26497838171710936,
+    0.27754795035727714
+   ],
+   "normalised_hda": [
+    0.454029,
+    0.266661,
+    0.27931
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "home",
+    "p": 0.454029,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.05
+   },
+   "dc": {
+    "1X": 0.72069,
+    "X2": 0.545971,
+    "12": 0.733339
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.733339,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Aston Villa v Brentford",
+   "league": "Premier League",
+   "kickoff": "2026-10-10T14:00:00+00:00",
+   "raw_hda": [
+    0.3638253638253638,
+    0.2669404517453799,
+    0.36909349016426696
+   ],
+   "normalised_hda": [
+    0.363877,
+    0.266978,
+    0.369145
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "away",
+    "p": 0.369145,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.7
+   },
+   "dc": {
+    "1X": 0.630855,
+    "X2": 0.636123,
+    "12": 0.733022
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.733022,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Watford v Burnley",
+   "league": "Championship",
+   "kickoff": "2026-10-10T14:00:00+00:00",
+   "raw_hda": [
+    0.3229706390328152,
+    0.26897133220910624,
+    0.4110535405872193
+   ],
+   "normalised_hda": [
+    0.322006,
+    0.268168,
+    0.409826
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "away",
+    "p": 0.409826,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.4
+   },
+   "dc": {
+    "1X": 0.590174,
+    "X2": 0.677994,
+    "12": 0.731832
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.731832,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Ipswich Town v Fulham",
+   "league": "Premier League",
+   "kickoff": "2026-10-10T14:00:00+00:00",
+   "raw_hda": [
+    0.35439136005005345,
+    0.2711736551043984,
+    0.37564925501084884
+   ],
+   "normalised_hda": [
+    0.353962,
+    0.270845,
+    0.375194
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "away",
+    "p": 0.375194,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.64
+   },
+   "dc": {
+    "1X": 0.624806,
+    "X2": 0.646038,
+    "12": 0.729155
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.729155,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Preston North End v Millwall",
+   "league": "Championship",
+   "kickoff": "2026-10-10T14:00:00+00:00",
+   "raw_hda": [
+    0.3493748929611234,
+    0.27536846569822926,
+    0.38118811881188125
+   ],
+   "normalised_hda": [
+    0.347315,
+    0.273745,
+    0.37894
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "away",
+    "p": 0.37894,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.55
+   },
+   "dc": {
+    "1X": 0.62106,
+    "X2": 0.652685,
+    "12": 0.726255
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.726255,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Sunderland v Brighton and Hove Albion",
+   "league": "Premier League",
+   "kickoff": "2026-10-10T14:00:00+00:00",
+   "raw_hda": [
+    0.3229892988918353,
+    0.27418099758773634,
+    0.4011514757061015
+   ],
+   "normalised_hda": [
+    0.323532,
+    0.274642,
+    0.401826
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "away",
+    "p": 0.401826,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.46
+   },
+   "dc": {
+    "1X": 0.598174,
+    "X2": 0.676468,
+    "12": 0.725358
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.725358,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Bolton Wanderers v Stoke City",
+   "league": "Championship",
+   "kickoff": "2026-10-10T14:00:00+00:00",
+   "raw_hda": [
+    0.3717935294733536,
+    0.2776473122912852,
+    0.3497000947069347
+   ],
+   "normalised_hda": [
+    0.372113,
+    0.277886,
+    0.350001
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "home",
+    "p": 0.372113,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.62
+   },
+   "dc": {
+    "1X": 0.649999,
+    "X2": 0.627887,
+    "12": 0.722114
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.722114,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Derby County v Wrexham AFC",
+   "league": "Championship",
+   "kickoff": "2026-10-10T14:00:00+00:00",
+   "raw_hda": [
+    0.34890033800933806,
+    0.2845881332633253,
+    0.3648101120333719
+   ],
+   "normalised_hda": [
+    0.349495,
+    0.285073,
+    0.365432
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "away",
+    "p": 0.365432,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.6
+   },
+   "dc": {
+    "1X": 0.634568,
+    "X2": 0.650505,
+    "12": 0.714927
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.714927,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Manchester United v Tottenham Hotspur",
+   "league": "Premier League",
+   "kickoff": "2026-10-10T16:30:00+00:00",
+   "raw_hda": [
+    0.5529345945222444,
+    0.2312549531691226,
+    0.2158566366842284
+   ],
+   "normalised_hda": [
+    0.552909,
+    0.231244,
+    0.215847
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "home",
+    "p": 0.552909,
+    "sigma": 0.012567,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 1.77
+   },
+   "dc": {
+    "1X": 0.784153,
+    "X2": 0.447091,
+    "12": 0.768756
+   },
+   "best_dc": {
+    "selection": "1X",
+    "p": 0.784153,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Southampton v Portsmouth",
+   "league": "Championship",
+   "kickoff": "2026-10-11T11:00:00+00:00",
+   "raw_hda": [
+    0.5951725617153032,
+    0.2224544192684109,
+    0.17746039462760707
+   ],
+   "normalised_hda": [
+    0.598111,
+    0.223553,
+    0.178336
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "home",
+    "p": 0.598111,
+    "sigma": 0.012567,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 1.66
+   },
+   "dc": {
+    "1X": 0.821664,
+    "X2": 0.401889,
+    "12": 0.776447
+   },
+   "best_dc": {
+    "selection": "1X",
+    "p": 0.821664,
+    "sigma": 0.006363,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Motherwell v Celtic",
+   "league": "Scottish Premiership",
+   "kickoff": "2026-10-11T11:00:00+00:00",
+   "raw_hda": [
+    0.19899653213310706,
+    0.21043311443960747,
+    0.5888816959792843
+   ],
+   "normalised_hda": [
+    0.199333,
+    0.210789,
+    0.589878
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "away",
+    "p": 0.589878,
+    "sigma": 0.012567,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 1.62
+   },
+   "dc": {
+    "1X": 0.410122,
+    "X2": 0.800667,
+    "12": 0.789211
+   },
+   "best_dc": {
+    "selection": "X2",
+    "p": 0.800667,
+    "sigma": 0.006363,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Hull City v Everton",
+   "league": "Premier League",
+   "kickoff": "2026-10-11T13:00:00+00:00",
+   "raw_hda": [
+    0.25994236311239194,
+    0.28333463065307074,
+    0.4564841498559078
+   ],
+   "normalised_hda": [
+    0.260004,
+    0.283402,
+    0.456593
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "away",
+    "p": 0.456593,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.14
+   },
+   "dc": {
+    "1X": 0.543407,
+    "X2": 0.739996,
+    "12": 0.716598
+   },
+   "best_dc": {
+    "selection": "X2",
+    "p": 0.739996,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Aberdeen v St Johnstone",
+   "league": "Scottish Premiership",
+   "kickoff": "2026-10-11T13:00:00+00:00",
+   "raw_hda": [
+    0.42683790069774497,
+    0.2778240933722384,
+    0.29539892810193147
+   ],
+   "normalised_hda": [
+    0.426812,
+    0.277807,
+    0.295381
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "home",
+    "p": 0.426812,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.18
+   },
+   "dc": {
+    "1X": 0.704619,
+    "X2": 0.573188,
+    "12": 0.722193
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.722193,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Crystal Palace v Nottingham Forest",
+   "league": "Premier League",
+   "kickoff": "2026-10-11T13:00:00+00:00",
+   "raw_hda": [
+    0.3591307297504571,
+    0.28744334420739626,
+    0.3553854565336249
+   ],
+   "normalised_hda": [
+    0.358428,
+    0.286881,
+    0.35469
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "home",
+    "p": 0.358428,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.74
+   },
+   "dc": {
+    "1X": 0.64531,
+    "X2": 0.641572,
+    "12": 0.713119
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.713119,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Liverpool v Manchester City",
+   "league": "Premier League",
+   "kickoff": "2026-10-11T15:30:00+00:00",
+   "raw_hda": [
+    0.37113402061855666,
+    0.25645660859652963,
+    0.3737270030904528
+   ],
+   "normalised_hda": [
+    0.370646,
+    0.256119,
+    0.373235
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "away",
+    "p": 0.373235,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.66
+   },
+   "dc": {
+    "1X": 0.626765,
+    "X2": 0.629354,
+    "12": 0.743881
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.743881,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Coventry City v Newcastle United",
+   "league": "Premier League",
+   "kickoff": "2026-10-12T19:00:00+00:00",
+   "raw_hda": [
+    0.29829545454545453,
+    0.26345909283594743,
+    0.44072887464957955
+   ],
+   "normalised_hda": [
+    0.297556,
+    0.262806,
+    0.439637
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "away",
+    "p": 0.439637,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.26
+   },
+   "dc": {
+    "1X": 0.560363,
+    "X2": 0.702444,
+    "12": 0.737194
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.737194,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Everton v Chelsea",
+   "league": "Premier League",
+   "kickoff": "2026-10-17T11:30:00+00:00",
+   "raw_hda": [
+    0.3337762149414638,
+    0.2588016585663506,
+    0.41124124204737633
+   ],
+   "normalised_hda": [
+    0.332506,
+    0.257817,
+    0.409677
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "away",
+    "p": 0.409677,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.42
+   },
+   "dc": {
+    "1X": 0.590323,
+    "X2": 0.667494,
+    "12": 0.742183
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.742183,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Manchester City v Ipswich Town",
+   "league": "Premier League",
+   "kickoff": "2026-10-17T14:00:00+00:00",
+   "raw_hda": [
+    0.7684124906888318,
+    0.14612691892403268,
+    0.0839386196510864
+   ],
+   "normalised_hda": [
+    0.769584,
+    0.14635,
+    0.084067
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "home",
+    "p": 0.769584,
+    "sigma": 0.016716,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 1.24
+   },
+   "dc": {
+    "1X": 0.915933,
+    "X2": 0.230416,
+    "12": 0.85365
+   },
+   "best_dc": {
+    "selection": "1X",
+    "p": 0.915933,
+    "sigma": 0.006363,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Fulham v Hull City",
+   "league": "Premier League",
+   "kickoff": "2026-10-17T14:00:00+00:00",
+   "raw_hda": [
+    0.5634687289832704,
+    0.23924956938551256,
+    0.19703812764902612
+   ],
+   "normalised_hda": [
+    0.563606,
+    0.239308,
+    0.197086
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "home",
+    "p": 0.563606,
+    "sigma": 0.012567,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 1.74
+   },
+   "dc": {
+    "1X": 0.802914,
+    "X2": 0.436394,
+    "12": 0.760692
+   },
+   "best_dc": {
+    "selection": "1X",
+    "p": 0.802914,
+    "sigma": 0.006363,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Brentford v Liverpool",
+   "league": "Premier League",
+   "kickoff": "2026-10-17T14:00:00+00:00",
+   "raw_hda": [
+    0.34705294016209687,
+    0.25389863067577934,
+    0.39285714285714285
+   ],
+   "normalised_hda": [
+    0.349215,
+    0.25548,
+    0.395305
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "away",
+    "p": 0.395305,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.45
+   },
+   "dc": {
+    "1X": 0.604695,
+    "X2": 0.650785,
+    "12": 0.74452
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.74452,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Newcastle United v Aston Villa",
+   "league": "Premier League",
+   "kickoff": "2026-10-17T16:30:00+00:00",
+   "raw_hda": [
+    0.4506631915321697,
+    0.2515372104724045,
+    0.2962752836523859
+   ],
+   "normalised_hda": [
+    0.451351,
+    0.251921,
+    0.296728
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "home",
+    "p": 0.451351,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.15
+   },
+   "dc": {
+    "1X": 0.703272,
+    "X2": 0.548649,
+    "12": 0.748079
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.748079,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Brighton and Hove Albion v Crystal Palace",
+   "league": "Premier League",
+   "kickoff": "2026-10-18T13:00:00+00:00",
+   "raw_hda": [
+    0.597119775201967,
+    0.21809784468012317,
+    0.1844096991223358
+   ],
+   "normalised_hda": [
+    0.597342,
+    0.218179,
+    0.184478
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "home",
+    "p": 0.597342,
+    "sigma": 0.012567,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 1.65
+   },
+   "dc": {
+    "1X": 0.815522,
+    "X2": 0.402658,
+    "12": 0.781821
+   },
+   "best_dc": {
+    "selection": "1X",
+    "p": 0.815522,
+    "sigma": 0.006363,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Leeds United v Manchester United",
+   "league": "Premier League",
+   "kickoff": "2026-10-18T13:00:00+00:00",
+   "raw_hda": [
+    0.33488372093023255,
+    0.2573529411764706,
+    0.40783289817232377
+   ],
+   "normalised_hda": [
+    0.33486,
+    0.257335,
+    0.407805
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "away",
+    "p": 0.407805,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.42
+   },
+   "dc": {
+    "1X": 0.592195,
+    "X2": 0.66514,
+    "12": 0.742665
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.742665,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Bournemouth v Sunderland",
+   "league": "Premier League",
+   "kickoff": "2026-10-18T13:00:00+00:00",
+   "raw_hda": [
+    0.47297297297297297,
+    0.2631578947368421,
+    0.2632003534179744
+   ],
+   "normalised_hda": [
+    0.473289,
+    0.263334,
+    0.263376
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "home",
+    "p": 0.473289,
+    "sigma": 0.001813,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 2.02
+   },
+   "dc": {
+    "1X": 0.736624,
+    "X2": 0.526711,
+    "12": 0.736666
+   },
+   "best_dc": {
+    "selection": "12",
+    "p": 0.736666,
+    "sigma": 0.003828,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Nottingham Forest v Arsenal",
+   "league": "Premier League",
+   "kickoff": "2026-10-18T15:30:00+00:00",
+   "raw_hda": [
+    0.167823431426985,
+    0.23806460998733053,
+    0.5955024986118822
+   ],
+   "normalised_hda": [
+    0.16759,
+    0.237734,
+    0.594676
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "away",
+    "p": 0.594676,
+    "sigma": 0.012567,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 1.62
+   },
+   "dc": {
+    "1X": 0.405324,
+    "X2": 0.83241,
+    "12": 0.762266
+   },
+   "best_dc": {
+    "selection": "X2",
+    "p": 0.83241,
+    "sigma": 0.006363,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  },
+  {
+   "fixture": "Tottenham Hotspur v Coventry City",
+   "league": "Premier League",
+   "kickoff": "2026-10-19T19:00:00+00:00",
+   "raw_hda": [
+    0.633259911894273,
+    0.2092526690391459,
+    0.159143811355126
+   ],
+   "normalised_hda": [
+    0.632213,
+    0.208907,
+    0.158881
+   ],
+   "normalisation": "TRIPLET_NORMALISED",
+   "top_1x2": {
+    "selection": "home",
+    "p": 0.632213,
+    "sigma": 0.012567,
+    "price_status": "POOR_PAYOUT",
+    "best_clean_odds": 1.53
+   },
+   "dc": {
+    "1X": 0.841119,
+    "X2": 0.367787,
+    "12": 0.791093
+   },
+   "best_dc": {
+    "selection": "1X",
+    "p": 0.841119,
+    "sigma": 0.006363,
+    "price_status": "PRICE_UNAVAILABLE"
+   },
+   "probability_basis": "P_FIRST_SNAPSHOT",
+   "calibration_status": {
+    "1x2": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+    "double_chance": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)"
+   }
+  }
+ ]
+}

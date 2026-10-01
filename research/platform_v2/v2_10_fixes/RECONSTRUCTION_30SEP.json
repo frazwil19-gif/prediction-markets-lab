@@ -1,0 +1,2162 @@
+{
+ "label": "V2-10 diagnostic reconstruction; read-only; no outcomes; production inputs via git show",
+ "scans": {
+  "morning": {
+   "production_commit": "e9cc1a4",
+   "scan": "2026-09-30T12:54:22.695202+00:00",
+   "evaluated_at": "2026-09-30T12:54:25.206146+00:00",
+   "start_time_resolution": {
+    "eligibility": {
+     "ELIGIBLE": 71,
+     "EXCLUDED": 51
+    },
+    "exclusion_reason": {
+     "EVENT_STARTED": 51
+    },
+    "start_time_status": {
+     "LEDGER_ONLY": 14,
+     "RESCHEDULED": 77,
+     "UNCHANGED": 31
+    },
+    "eligible_rescheduled": 55,
+    "rule": "est-1"
+   },
+   "universe_old_filter": 46,
+   "universe_est_1": 71,
+   "unique_events_old": 43,
+   "unique_events_est_1": 54,
+   "harness_reproduces_production_bsv2_3_exactly": true,
+   "existing_candidates_unchanged": false,
+   "restored_predictions": [
+    {
+     "prediction_id": "e88636b0c87f3133",
+     "event": "Alex de Minaur v Mariano Navone",
+     "selection": "Alex de Minaur",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T03:00:00+00:00",
+     "p": 0.7977,
+     "best_source": "sport888",
+     "best_odds": 1.25,
+     "net_ev": -0.0028,
+     "decision": "REJECT",
+     "reasons": [
+      "PREDICTION_NOT_VALID",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "f76245b6aa7205c0",
+     "event": "Alexander Bublik v Jakub Mensik",
+     "selection": "Jakub Mensik",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T12:10:00+00:00",
+     "p": 0.6088,
+     "best_source": "boylesports",
+     "best_odds": 1.62,
+     "net_ev": -0.0137,
+     "decision": "REJECT",
+     "reasons": [
+      "PREDICTION_NOT_VALID",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "990dd803693d7233",
+     "event": "Alexander Zverev v Cameron Norrie",
+     "selection": "Alexander Zverev",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T07:00:00+00:00",
+     "p": 0.8867,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.12,
+     "net_ev": -0.0123,
+     "decision": "REJECT",
+     "reasons": [
+      "PREDICTION_NOT_VALID",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "10c8c71d4a2f1521",
+     "event": "Tallon Griekspoor v Andrey Rublev",
+     "selection": "Andrey Rublev",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T08:00:00+00:00",
+     "p": 0.6187,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.61,
+     "net_ev": -0.0228,
+     "decision": "REJECT",
+     "reasons": [
+      "PREDICTION_NOT_VALID",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "018c9d3a0228786a",
+     "event": "Roman Safiullin v Flavio Cobolli",
+     "selection": "Flavio Cobolli",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T04:10:00+00:00",
+     "p": 0.523,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.9,
+     "net_ev": -0.0298,
+     "decision": "REJECT",
+     "reasons": [
+      "PREDICTION_NOT_VALID",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "7202f2615dfea79c",
+     "event": "Learner Tien v Hubert Hurkacz",
+     "selection": "Learner Tien",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T11:00:00+00:00",
+     "p": 0.631,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.58,
+     "net_ev": -0.0214,
+     "decision": "REJECT",
+     "reasons": [
+      "PREDICTION_NOT_VALID",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "302daebd1d5c53c1",
+     "event": "Ignacio Buse v Quentin Halys",
+     "selection": "Quentin Halys",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T04:10:00+00:00",
+     "p": 0.5459,
+     "best_source": "betfair_sb_uk",
+     "best_odds": 1.8,
+     "net_ev": -0.0174,
+     "decision": "REJECT",
+     "reasons": [
+      "PREDICTION_NOT_VALID",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "118df79f6804e299",
+     "event": "Juncheng Shang v Sebastian Baez",
+     "selection": "Juncheng Shang",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T05:40:00+00:00",
+     "p": 0.5867,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.7,
+     "net_ev": -0.0232,
+     "decision": "REJECT",
+     "reasons": [
+      "PREDICTION_NOT_VALID",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "39d82f8735af7f6b",
+     "event": "Anna Bond\u00e1r v Renata Zarazua",
+     "selection": "Anna Bond\u00e1r",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-09-30T13:00:00+00:00",
+     "p": 0.6946,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.43,
+     "net_ev": -0.0217,
+     "decision": "REJECT",
+     "reasons": [
+      "PREDICTION_NOT_VALID",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "6d67bfc497b0d25c",
+     "event": "Xinyu Gao v Panna Udvardy",
+     "selection": "Panna Udvardy",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T08:00:00+00:00",
+     "p": 0.6179,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.6,
+     "net_ev": -0.0299,
+     "decision": "REJECT",
+     "reasons": [
+      "PREDICTION_NOT_VALID",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "23fc85e598be4e28",
+     "event": "Alejandro Davidovich Fokina v Matteo Berrettini",
+     "selection": "Alejandro Davidovich Fokina",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T06:50:00+00:00",
+     "p": 0.5711,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.74,
+     "net_ev": -0.0275,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "f8a49590b3961582",
+     "event": "Carlos Alcaraz v Alex Michelsen",
+     "selection": "Carlos Alcaraz",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T07:00:00+00:00",
+     "p": 0.8274,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.2,
+     "net_ev": -0.0154,
+     "decision": "MULTI_RESEARCH_ELIGIBLE",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "35e1e89f42ef6234",
+     "event": "Lorenzo Musetti v Arthur Fery",
+     "selection": "Lorenzo Musetti",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T02:00:00+00:00",
+     "p": 0.6733,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.47,
+     "net_ev": -0.0261,
+     "decision": "REJECT",
+     "reasons": [
+      "PRICE_STALE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "6c2f86d7e16c1125",
+     "event": "Brandon Nakashima v Ugo Humbert",
+     "selection": "Brandon Nakashima",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T02:00:00+00:00",
+     "p": 0.6889,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.44,
+     "net_ev": -0.0231,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "717a216c0bf9dd42",
+     "event": "Luciano Darderi v Casper Ruud",
+     "selection": "Casper Ruud",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T02:00:00+00:00",
+     "p": 0.6678,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.49,
+     "net_ev": -0.0214,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "63a854763b339d8e",
+     "event": "Denis Shapovalov v Sho Shimabukuro",
+     "selection": "Denis Shapovalov",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T05:40:00+00:00",
+     "p": 0.7371,
+     "best_source": "sport888",
+     "best_odds": 1.33,
+     "net_ev": -0.0196,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "151b441460d9820a",
+     "event": "Kei Nishikori v Frances Tiafoe",
+     "selection": "Frances Tiafoe",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T03:10:00+00:00",
+     "p": 0.7921,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.25,
+     "net_ev": -0.0198,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "1e9ff1efb29e5b24",
+     "event": "Holger Rune v Kyrian Jacquet",
+     "selection": "Holger Rune",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T03:10:00+00:00",
+     "p": 0.6237,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.6,
+     "net_ev": -0.0208,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "141191390bddd2f8",
+     "event": "Yuliia Starodubtseva v Alina Charaeva",
+     "selection": "Yuliia Starodubtseva",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T03:00:00+00:00",
+     "p": 0.5798,
+     "best_source": "smarkets",
+     "best_odds": 1.69,
+     "net_ev": -0.0282,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "10aed912d24ec9c6",
+     "event": "Anna Bond\u00e1r v Renata Zarazua",
+     "selection": "Anna Bond\u00e1r",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-09-30T13:00:00+00:00",
+     "p": 0.6946,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.43,
+     "net_ev": -0.0217,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "71b5ed80c465bb83",
+     "event": "Aoi Ito v Kimberly Birrell",
+     "selection": "Kimberly Birrell",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T04:10:00+00:00",
+     "p": 0.7384,
+     "best_source": "sport888",
+     "best_odds": 1.33,
+     "net_ev": -0.0179,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "d4a3ef8d546b9b7f",
+     "event": "Sofia Kenin v Ashlyn Krueger",
+     "selection": "Ashlyn Krueger",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T03:00:00+00:00",
+     "p": 0.617,
+     "best_source": "betfair_sb_uk",
+     "best_odds": 1.62,
+     "net_ev": -0.0004,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "6a7cca8e712a9d05",
+     "event": "Paula Badosa v Daria Kasatkina",
+     "selection": "Paula Badosa",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T04:10:00+00:00",
+     "p": 0.6826,
+     "best_source": "betway",
+     "best_odds": 1.44,
+     "net_ev": -0.0171,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "796da617a7e68e25",
+     "event": "Xinyu Gao v Panna Udvardy",
+     "selection": "Panna Udvardy",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T08:00:00+00:00",
+     "p": 0.6179,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.6,
+     "net_ev": -0.0299,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "48c1b236b8e26dc0",
+     "event": "Tomas Martin Etcheverry v Stefanos Tsitsipas",
+     "selection": "Stefanos Tsitsipas",
+     "event_start_original": "2026-09-30T03:15:00+00:00",
+     "event_start_current": "2026-10-01T03:10:00+00:00",
+     "p": 0.7331,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.36,
+     "net_ev": -0.0161,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    }
+   ],
+   "stage_b_decisions_old": {
+    "REJECT": 34,
+    "WATCH": 2,
+    "MULTI_RESEARCH_ELIGIBLE": 10
+   },
+   "stage_b_decisions_est_1": {
+    "REJECT": 58,
+    "MULTI_RESEARCH_ELIGIBLE": 11,
+    "WATCH": 2
+   },
+   "stage_b_paper_bets_old": 0,
+   "stage_b_paper_bets_est_1": 0,
+   "rescheduled_eligible": [
+    {
+     "event": "Alex de Minaur v Mariano Navone",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T03:00:00+00:00"
+    },
+    {
+     "event": "Alexander Bublik v Jakub Mensik",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T12:10:00+00:00"
+    },
+    {
+     "event": "Alexander Zverev v Cameron Norrie",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T07:00:00+00:00"
+    },
+    {
+     "event": "Tallon Griekspoor v Andrey Rublev",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T08:00:00+00:00"
+    },
+    {
+     "event": "Roman Safiullin v Flavio Cobolli",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T04:10:00+00:00"
+    },
+    {
+     "event": "Learner Tien v Hubert Hurkacz",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T11:00:00+00:00"
+    },
+    {
+     "event": "Ignacio Buse v Quentin Halys",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T04:10:00+00:00"
+    },
+    {
+     "event": "Juncheng Shang v Sebastian Baez",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T05:40:00+00:00"
+    },
+    {
+     "event": "Anna Bond\u00e1r v Renata Zarazua",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-09-30T13:00:00+00:00"
+    },
+    {
+     "event": "Xinyu Gao v Panna Udvardy",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T08:00:00+00:00"
+    },
+    {
+     "event": "Yuliia Starodubtseva v Alina Charaeva",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T03:00:00+00:00"
+    },
+    {
+     "event": "Alycia Parks v Lin Zhu",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T09:00:00+00:00"
+    },
+    {
+     "event": "Aoi Ito v Kimberly Birrell",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T04:10:00+00:00"
+    },
+    {
+     "event": "Sofia Kenin v Ashlyn Krueger",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T03:00:00+00:00"
+    },
+    {
+     "event": "Paula Badosa v Daria Kasatkina",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T04:10:00+00:00"
+    },
+    {
+     "event": "Magda Linette v Katerina Siniakova",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T05:20:00+00:00"
+    },
+    {
+     "event": "Lanlana Tararudee v Maria Camila Osorio Serrano",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T06:50:00+00:00"
+    },
+    {
+     "event": "Alejandro Davidovich Fokina v Matteo Berrettini",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T06:50:00+00:00"
+    },
+    {
+     "event": "Carlos Alcaraz v Alex Michelsen",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T07:00:00+00:00"
+    },
+    {
+     "event": "Lorenzo Musetti v Arthur Fery",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T02:00:00+00:00"
+    },
+    {
+     "event": "Brandon Nakashima v Ugo Humbert",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T02:00:00+00:00"
+    },
+    {
+     "event": "Luciano Darderi v Casper Ruud",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T02:00:00+00:00"
+    },
+    {
+     "event": "Denis Shapovalov v Sho Shimabukuro",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T05:40:00+00:00"
+    },
+    {
+     "event": "Kei Nishikori v Frances Tiafoe",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T03:10:00+00:00"
+    },
+    {
+     "event": "Holger Rune v Kyrian Jacquet",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T03:10:00+00:00"
+    },
+    {
+     "event": "Yuliia Starodubtseva v Alina Charaeva",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T03:00:00+00:00"
+    },
+    {
+     "event": "Anna Bond\u00e1r v Renata Zarazua",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-09-30T13:00:00+00:00"
+    },
+    {
+     "event": "Aoi Ito v Kimberly Birrell",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T04:10:00+00:00"
+    },
+    {
+     "event": "Sofia Kenin v Ashlyn Krueger",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T03:00:00+00:00"
+    },
+    {
+     "event": "Paula Badosa v Daria Kasatkina",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T04:10:00+00:00"
+    },
+    {
+     "event": "Xinyu Gao v Panna Udvardy",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T08:00:00+00:00"
+    },
+    {
+     "event": "Alycia Parks v Lin Zhu",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T09:00:00+00:00"
+    },
+    {
+     "event": "Magda Linette v Katerina Siniakova",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T05:20:00+00:00"
+    },
+    {
+     "event": "Lanlana Tararudee v Maria Camila Osorio Serrano",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T06:50:00+00:00"
+    },
+    {
+     "event": "Alex Molcan v Arthur Rinderknech",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-01T03:00:00+00:00"
+    },
+    {
+     "event": "Alex de Minaur v Mariano Navone",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-01T03:00:00+00:00"
+    },
+    {
+     "event": "Alexander Bublik v Jakub Mensik",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-01T12:10:00+00:00"
+    },
+    {
+     "event": "Alexander Zverev v Cameron Norrie",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-01T07:00:00+00:00"
+    },
+    {
+     "event": "Tallon Griekspoor v Andrey Rublev",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-01T08:00:00+00:00"
+    },
+    {
+     "event": "Botic van de Zandschulp v Francisco Cerundolo",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-01T04:30:00+00:00"
+    },
+    {
+     "event": "Daniil Medvedev v Pablo Carreno Busta",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-02T02:00:00+00:00"
+    },
+    {
+     "event": "Roman Safiullin v Flavio Cobolli",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-01T04:10:00+00:00"
+    },
+    {
+     "event": "Learner Tien v Hubert Hurkacz",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-01T11:00:00+00:00"
+    },
+    {
+     "event": "Ignacio Buse v Quentin Halys",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-01T04:10:00+00:00"
+    },
+    {
+     "event": "Juncheng Shang v Sebastian Baez",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-01T05:40:00+00:00"
+    },
+    {
+     "event": "Tomas Martin Etcheverry v Stefanos Tsitsipas",
+     "original": "2026-09-30T03:15:00+00:00",
+     "current": "2026-10-01T03:10:00+00:00"
+    },
+    {
+     "event": "Adolfo Daniel Vallejo v Rafael Jodar",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-01T08:10:00+00:00"
+    },
+    {
+     "event": "Yushan Shao v Anastasia Zakharova",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T06:00:00+00:00"
+    },
+    {
+     "event": "Sonay Kartal v Andrea Lazaro Garcia",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T04:30:00+00:00"
+    },
+    {
+     "event": "Eva Lys v Sun Xinran",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T11:00:00+00:00"
+    },
+    {
+     "event": "Marina Bassols Ribera v Kamilla Rakhimova",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T07:30:00+00:00"
+    },
+    {
+     "event": "Katie Volynets v Robin Montgomery",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T03:00:00+00:00"
+    },
+    {
+     "event": "Qinwen Zheng v Shi Han",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T03:00:00+00:00"
+    },
+    {
+     "event": "Harriet Dart v Yihan Qu",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T07:30:00+00:00"
+    },
+    {
+     "event": "Yu Jun Lin v Storm Hunter",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T06:00:00+00:00"
+    }
+   ],
+   "stage_a_summary": {
+    "predictions": 54,
+    "strong_predictions": 24,
+    "strong_unique_events": 24,
+    "strong_by_price_status": {
+     "POOR_PAYOUT": 14,
+     "PRICE_QUALITY_FAIL": 8,
+     "PRICE_VALID": 2
+    },
+    "all_by_price_status": {
+     "POOR_PAYOUT": 36,
+     "PRICE_QUALITY_FAIL": 15,
+     "PRICE_VALID": 3
+    },
+    "duplicate_prediction_rows_collapsed": 0
+   },
+   "stage_a_strong": [
+    {
+     "rank": 1,
+     "event_name": "Yushan Shao v Anastasia Zakharova",
+     "selection": "Anastasia Zakharova",
+     "probability": 0.930979,
+     "sigma": 0.013073,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T06:00:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_PRICE_VALID",
+     "price_status_reasons": "",
+     "best_clean_source": "betvictor",
+     "best_clean_odds": 1.08,
+     "best_clean_net_ev": 0.005457
+    },
+    {
+     "rank": 2,
+     "event_name": "Linda Fruhvirtova v Liudmila Samsonova",
+     "selection": "Liudmila Samsonova",
+     "probability": 0.92627,
+     "sigma": 0.109652,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-02T04:00:00+00:00",
+     "start_time_status": "UNCHANGED",
+     "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
+     "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
+     "best_clean_source": "",
+     "best_clean_odds": null,
+     "best_clean_net_ev": null
+    },
+    {
+     "rank": 3,
+     "event_name": "Yu Jun Lin v Storm Hunter",
+     "selection": "Storm Hunter",
+     "probability": 0.925926,
+     "sigma": 0.014886,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T06:00:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "betfair_ex_uk",
+     "best_clean_odds": 1.07,
+     "best_clean_net_ev": -0.0125
+    },
+    {
+     "rank": 4,
+     "event_name": "Harriet Dart v Yihan Qu",
+     "selection": "Harriet Dart",
+     "probability": 0.919794,
+     "sigma": 0.014796,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T07:30:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "smarkets",
+     "best_clean_odds": 1.08,
+     "best_clean_net_ev": -0.008094
+    },
+    {
+     "rank": 5,
+     "event_name": "Karolina Muchova v Katie Boulter",
+     "selection": "Karolina Muchova",
+     "probability": 0.908732,
+     "sigma": 0.07324,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-02T04:00:00+00:00",
+     "start_time_status": "UNCHANGED",
+     "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
+     "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
+     "best_clean_source": "",
+     "best_clean_odds": null,
+     "best_clean_net_ev": null
+    },
+    {
+     "rank": 6,
+     "event_name": "Qinwen Zheng v Shi Han",
+     "selection": "Qinwen Zheng",
+     "probability": 0.901421,
+     "sigma": 0.014627,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T03:00:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "boylesports",
+     "best_clean_odds": 1.1,
+     "best_clean_net_ev": -0.008437
+    },
+    {
+     "rank": 7,
+     "event_name": "Yue Yuan v Mirra Andreeva",
+     "selection": "Mirra Andreeva",
+     "probability": 0.897494,
+     "sigma": 0.03186,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-02T04:00:00+00:00",
+     "start_time_status": "UNCHANGED",
+     "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
+     "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
+     "best_clean_source": "",
+     "best_clean_odds": null,
+     "best_clean_net_ev": null
+    },
+    {
+     "rank": 8,
+     "event_name": "Alexander Zverev v Cameron Norrie",
+     "selection": "Alexander Zverev",
+     "probability": 0.88665,
+     "sigma": 0.012794,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T07:00:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "betfair_ex_uk",
+     "best_clean_odds": 1.12,
+     "best_clean_net_ev": -0.012272
+    },
+    {
+     "rank": 9,
+     "event_name": "Carlos Alcaraz v Alex Michelsen",
+     "selection": "Carlos Alcaraz",
+     "probability": 0.827389,
+     "sigma": 0.013954,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T07:00:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "betfair_ex_uk",
+     "best_clean_odds": 1.2,
+     "best_clean_net_ev": -0.015407
+    },
+    {
+     "rank": 10,
+     "event_name": "Adolfo Daniel Vallejo v Rafael Jodar",
+     "selection": "Rafael Jodar",
+     "probability": 0.813688,
+     "sigma": 0.015749,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T08:10:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "williamhill",
+     "best_clean_odds": 1.2,
+     "best_clean_net_ev": -0.023574
+    },
+    {
+     "rank": 11,
+     "event_name": "Linda Noskova v Elena Gabriela Ruse",
+     "selection": "Linda Noskova",
+     "probability": 0.807453,
+     "sigma": 0.029038,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-02T04:00:00+00:00",
+     "start_time_status": "UNCHANGED",
+     "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
+     "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
+     "best_clean_source": "",
+     "best_clean_odds": null,
+     "best_clean_net_ev": null
+    },
+    {
+     "rank": 12,
+     "event_name": "Alex de Minaur v Mariano Navone",
+     "selection": "Alex de Minaur",
+     "probability": 0.797744,
+     "sigma": 0.011984,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T03:00:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "williamhill",
+     "best_clean_odds": 1.25,
+     "best_clean_net_ev": -0.00282
+    },
+    {
+     "rank": 13,
+     "event_name": "Maria Timofeeva v Naomi Osaka",
+     "selection": "Naomi Osaka",
+     "probability": 0.793132,
+     "sigma": 0.030436,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-02T04:00:00+00:00",
+     "start_time_status": "UNCHANGED",
+     "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
+     "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
+     "best_clean_source": "",
+     "best_clean_odds": null,
+     "best_clean_net_ev": null
+    },
+    {
+     "rank": 14,
+     "event_name": "Kei Nishikori v Frances Tiafoe",
+     "selection": "Frances Tiafoe",
+     "probability": 0.792079,
+     "sigma": 0.013161,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T03:10:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "betfair_ex_uk",
+     "best_clean_odds": 1.25,
+     "best_clean_net_ev": -0.019802
+    },
+    {
+     "rank": 15,
+     "event_name": "Daniil Medvedev v Pablo Carreno Busta",
+     "selection": "Daniil Medvedev",
+     "probability": 0.78793,
+     "sigma": 0.014881,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-02T02:00:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_PRICE_VALID",
+     "price_status_reasons": "",
+     "best_clean_source": "betvictor",
+     "best_clean_odds": 1.29,
+     "best_clean_net_ev": 0.01643
+    },
+    {
+     "rank": 16,
+     "event_name": "Janice Tjen v Diana Shnaider",
+     "selection": "Diana Shnaider",
+     "probability": 0.774527,
+     "sigma": 0.053945,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-02T04:00:00+00:00",
+     "start_time_status": "UNCHANGED",
+     "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
+     "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
+     "best_clean_source": "",
+     "best_clean_odds": null,
+     "best_clean_net_ev": null
+    },
+    {
+     "rank": 17,
+     "event_name": "Sara Bejlek v Maddison Inglis",
+     "selection": "Sara Bejlek",
+     "probability": 0.765262,
+     "sigma": 0.090609,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-02T04:00:00+00:00",
+     "start_time_status": "UNCHANGED",
+     "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
+     "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
+     "best_clean_source": "",
+     "best_clean_odds": null,
+     "best_clean_net_ev": null
+    },
+    {
+     "rank": 18,
+     "event_name": "Anastasia Potapova v Sinja Kraus",
+     "selection": "Anastasia Potapova",
+     "probability": 0.759091,
+     "sigma": 0.038871,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-02T04:00:00+00:00",
+     "start_time_status": "UNCHANGED",
+     "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
+     "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
+     "best_clean_source": "",
+     "best_clean_odds": null,
+     "best_clean_net_ev": null
+    },
+    {
+     "rank": 19,
+     "event_name": "Sonay Kartal v Andrea Lazaro Garcia",
+     "selection": "Sonay Kartal",
+     "probability": 0.745489,
+     "sigma": 0.012828,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T04:30:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "betfair_ex_uk",
+     "best_clean_odds": 1.33,
+     "best_clean_net_ev": -0.0208
+    },
+    {
+     "rank": 20,
+     "event_name": "Taylor Fritz v Jaume Munar",
+     "selection": "Taylor Fritz",
+     "probability": 0.743565,
+     "sigma": 0.014224,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T02:00:00+00:00",
+     "start_time_status": "UNCHANGED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "williamhill",
+     "best_clean_odds": 1.33,
+     "best_clean_net_ev": -0.011059
+    },
+    {
+     "rank": 21,
+     "event_name": "Aoi Ito v Kimberly Birrell",
+     "selection": "Kimberly Birrell",
+     "probability": 0.738417,
+     "sigma": 0.014377,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T04:10:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "williamhill",
+     "best_clean_odds": 1.33,
+     "best_clean_net_ev": -0.017905
+    },
+    {
+     "rank": 22,
+     "event_name": "Denis Shapovalov v Sho Shimabukuro",
+     "selection": "Denis Shapovalov",
+     "probability": 0.737148,
+     "sigma": 0.014153,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T05:40:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "williamhill",
+     "best_clean_odds": 1.33,
+     "best_clean_net_ev": -0.019593
+    },
+    {
+     "rank": 23,
+     "event_name": "Tomas Martin Etcheverry v Stefanos Tsitsipas",
+     "selection": "Stefanos Tsitsipas",
+     "probability": 0.733138,
+     "sigma": 0.012091,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T03:10:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "betfair_ex_uk",
+     "best_clean_odds": 1.36,
+     "best_clean_net_ev": -0.016129
+    },
+    {
+     "rank": 24,
+     "event_name": "Marina Bassols Ribera v Kamilla Rakhimova",
+     "selection": "Kamilla Rakhimova",
+     "probability": 0.727723,
+     "sigma": 0.014018,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T07:30:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "betfair_ex_uk",
+     "best_clean_odds": 1.36,
+     "best_clean_net_ev": -0.023396
+    }
+   ],
+   "scan_board_validated_strong_events": 24,
+   "stage_a_strong_events_in_scan_board": 24,
+   "scan_board_strong_missing_from_stage_a": []
+  },
+  "afternoon": {
+   "production_commit": "7e3ce99",
+   "scan": "2026-09-30T20:16:17.495727+00:00",
+   "evaluated_at": "2026-09-30T20:16:18.937926+00:00",
+   "start_time_resolution": {
+    "eligibility": {
+     "ELIGIBLE": 72,
+     "EXCLUDED": 53
+    },
+    "exclusion_reason": {
+     "EVENT_STARTED": 53
+    },
+    "start_time_status": {
+     "LEDGER_ONLY": 14,
+     "RESCHEDULED": 77,
+     "UNCHANGED": 34
+    },
+    "eligible_rescheduled": 53,
+    "rule": "est-1"
+   },
+   "universe_old_filter": 49,
+   "universe_est_1": 72,
+   "unique_events_old": 46,
+   "unique_events_est_1": 56,
+   "harness_reproduces_production_bsv2_3_exactly": true,
+   "existing_candidates_unchanged": true,
+   "restored_predictions": [
+    {
+     "prediction_id": "e88636b0c87f3133",
+     "event": "Alex de Minaur v Mariano Navone",
+     "selection": "Alex de Minaur",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T03:00:00+00:00",
+     "p": 0.7914,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.26,
+     "net_ev": -0.0131,
+     "decision": "REJECT",
+     "reasons": [
+      "PREDICTION_NOT_VALID",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "f76245b6aa7205c0",
+     "event": "Alexander Bublik v Jakub Mensik",
+     "selection": "Jakub Mensik",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T12:10:00+00:00",
+     "p": 0.6079,
+     "best_source": "boylesports",
+     "best_odds": 1.62,
+     "net_ev": -0.0153,
+     "decision": "REJECT",
+     "reasons": [
+      "PREDICTION_NOT_VALID",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "990dd803693d7233",
+     "event": "Alexander Zverev v Cameron Norrie",
+     "selection": "Alexander Zverev",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T07:00:00+00:00",
+     "p": 0.8792,
+     "best_source": "betfair_sb_uk",
+     "best_odds": 1.13,
+     "net_ev": -0.0065,
+     "decision": "REJECT",
+     "reasons": [
+      "PREDICTION_NOT_VALID",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "10c8c71d4a2f1521",
+     "event": "Tallon Griekspoor v Andrey Rublev",
+     "selection": "Andrey Rublev",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T08:00:00+00:00",
+     "p": 0.6145,
+     "best_source": "boylesports",
+     "best_odds": 1.62,
+     "net_ev": -0.0046,
+     "decision": "REJECT",
+     "reasons": [
+      "PREDICTION_NOT_VALID",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "018c9d3a0228786a",
+     "event": "Roman Safiullin v Flavio Cobolli",
+     "selection": "Flavio Cobolli",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T04:10:00+00:00",
+     "p": 0.5081,
+     "best_source": "smarkets",
+     "best_odds": 1.94,
+     "net_ev": -0.0238,
+     "decision": "REJECT",
+     "reasons": [
+      "PREDICTION_NOT_VALID",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "7202f2615dfea79c",
+     "event": "Learner Tien v Hubert Hurkacz",
+     "selection": "Learner Tien",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T11:00:00+00:00",
+     "p": 0.6069,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.64,
+     "net_ev": -0.0241,
+     "decision": "REJECT",
+     "reasons": [
+      "PREDICTION_NOT_VALID",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "302daebd1d5c53c1",
+     "event": "Ignacio Buse v Quentin Halys",
+     "selection": "Quentin Halys",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T04:10:00+00:00",
+     "p": 0.5556,
+     "best_source": "betfair_sb_uk",
+     "best_odds": 1.8,
+     "net_ev": 0.0,
+     "decision": "REJECT",
+     "reasons": [
+      "PREDICTION_NOT_VALID"
+     ]
+    },
+    {
+     "prediction_id": "118df79f6804e299",
+     "event": "Juncheng Shang v Sebastian Baez",
+     "selection": "Juncheng Shang",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T05:40:00+00:00",
+     "p": 0.5756,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.73,
+     "net_ev": -0.0252,
+     "decision": "REJECT",
+     "reasons": [
+      "PREDICTION_NOT_VALID",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "6d67bfc497b0d25c",
+     "event": "Xinyu Gao v Panna Udvardy",
+     "selection": "Panna Udvardy",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T08:00:00+00:00",
+     "p": 0.6137,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.61,
+     "net_ev": -0.0306,
+     "decision": "REJECT",
+     "reasons": [
+      "PREDICTION_NOT_VALID",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "23fc85e598be4e28",
+     "event": "Alejandro Davidovich Fokina v Matteo Berrettini",
+     "selection": "Alejandro Davidovich Fokina",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T06:50:00+00:00",
+     "p": 0.5756,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.73,
+     "net_ev": -0.0252,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "f8a49590b3961582",
+     "event": "Carlos Alcaraz v Alex Michelsen",
+     "selection": "Carlos Alcaraz",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T07:00:00+00:00",
+     "p": 0.8292,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.2,
+     "net_ev": -0.0133,
+     "decision": "MULTI_RESEARCH_ELIGIBLE",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "35e1e89f42ef6234",
+     "event": "Lorenzo Musetti v Arthur Fery",
+     "selection": "Lorenzo Musetti",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T02:00:00+00:00",
+     "p": 0.6733,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.47,
+     "net_ev": -0.0261,
+     "decision": "REJECT",
+     "reasons": [
+      "PRICE_STALE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "6c2f86d7e16c1125",
+     "event": "Brandon Nakashima v Ugo Humbert",
+     "selection": "Brandon Nakashima",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T02:00:00+00:00",
+     "p": 0.6678,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.49,
+     "net_ev": -0.0214,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "717a216c0bf9dd42",
+     "event": "Luciano Darderi v Casper Ruud",
+     "selection": "Casper Ruud",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T02:00:00+00:00",
+     "p": 0.6692,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.49,
+     "net_ev": -0.0192,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "63a854763b339d8e",
+     "event": "Denis Shapovalov v Sho Shimabukuro",
+     "selection": "Denis Shapovalov",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T05:40:00+00:00",
+     "p": 0.7352,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.35,
+     "net_ev": -0.0204,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "151b441460d9820a",
+     "event": "Kei Nishikori v Frances Tiafoe",
+     "selection": "Frances Tiafoe",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T03:10:00+00:00",
+     "p": 0.8022,
+     "best_source": "casumo",
+     "best_odds": 1.23,
+     "net_ev": -0.0133,
+     "decision": "MULTI_RESEARCH_ELIGIBLE",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "1e9ff1efb29e5b24",
+     "event": "Holger Rune v Kyrian Jacquet",
+     "selection": "Holger Rune",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T03:10:00+00:00",
+     "p": 0.6294,
+     "best_source": "betfair_sb_uk",
+     "best_odds": 1.57,
+     "net_ev": -0.0119,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "141191390bddd2f8",
+     "event": "Yuliia Starodubtseva v Alina Charaeva",
+     "selection": "Yuliia Starodubtseva",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T03:00:00+00:00",
+     "p": 0.5867,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.7,
+     "net_ev": -0.0232,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "71b5ed80c465bb83",
+     "event": "Aoi Ito v Kimberly Birrell",
+     "selection": "Kimberly Birrell",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T04:10:00+00:00",
+     "p": 0.7644,
+     "best_source": "betway",
+     "best_odds": 1.3,
+     "net_ev": -0.0063,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "d4a3ef8d546b9b7f",
+     "event": "Sofia Kenin v Ashlyn Krueger",
+     "selection": "Ashlyn Krueger",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T03:00:00+00:00",
+     "p": 0.6079,
+     "best_source": "betfair_sb_uk",
+     "best_odds": 1.62,
+     "net_ev": -0.0153,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "6a7cca8e712a9d05",
+     "event": "Paula Badosa v Daria Kasatkina",
+     "selection": "Paula Badosa",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T04:10:00+00:00",
+     "p": 0.6707,
+     "best_source": "smarkets",
+     "best_odds": 1.48,
+     "net_ev": -0.0138,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "796da617a7e68e25",
+     "event": "Xinyu Gao v Panna Udvardy",
+     "selection": "Panna Udvardy",
+     "event_start_original": "2026-09-30T02:00:00+00:00",
+     "event_start_current": "2026-10-01T08:00:00+00:00",
+     "p": 0.6137,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.61,
+     "net_ev": -0.0306,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "48c1b236b8e26dc0",
+     "event": "Tomas Martin Etcheverry v Stefanos Tsitsipas",
+     "selection": "Stefanos Tsitsipas",
+     "event_start_original": "2026-09-30T03:15:00+00:00",
+     "event_start_current": "2026-10-01T03:10:00+00:00",
+     "p": 0.7304,
+     "best_source": "betfair_ex_uk",
+     "best_odds": 1.37,
+     "net_ev": -0.0129,
+     "decision": "REJECT",
+     "reasons": [
+      "NET_EV_NOT_POSITIVE"
+     ]
+    }
+   ],
+   "stage_b_decisions_old": {
+    "REJECT": 39,
+    "WATCH": 4,
+    "MULTI_RESEARCH_ELIGIBLE": 6
+   },
+   "stage_b_decisions_est_1": {
+    "REJECT": 60,
+    "MULTI_RESEARCH_ELIGIBLE": 8,
+    "WATCH": 4
+   },
+   "stage_b_paper_bets_old": 0,
+   "stage_b_paper_bets_est_1": 0,
+   "rescheduled_eligible": [
+    {
+     "event": "Alex de Minaur v Mariano Navone",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T03:00:00+00:00"
+    },
+    {
+     "event": "Alexander Bublik v Jakub Mensik",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T12:10:00+00:00"
+    },
+    {
+     "event": "Alexander Zverev v Cameron Norrie",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T07:00:00+00:00"
+    },
+    {
+     "event": "Tallon Griekspoor v Andrey Rublev",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T08:00:00+00:00"
+    },
+    {
+     "event": "Roman Safiullin v Flavio Cobolli",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T04:10:00+00:00"
+    },
+    {
+     "event": "Learner Tien v Hubert Hurkacz",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T11:00:00+00:00"
+    },
+    {
+     "event": "Ignacio Buse v Quentin Halys",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T04:10:00+00:00"
+    },
+    {
+     "event": "Juncheng Shang v Sebastian Baez",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T05:40:00+00:00"
+    },
+    {
+     "event": "Xinyu Gao v Panna Udvardy",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T08:00:00+00:00"
+    },
+    {
+     "event": "Yuliia Starodubtseva v Alina Charaeva",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T03:00:00+00:00"
+    },
+    {
+     "event": "Alycia Parks v Lin Zhu",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T09:00:00+00:00"
+    },
+    {
+     "event": "Aoi Ito v Kimberly Birrell",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T04:10:00+00:00"
+    },
+    {
+     "event": "Sofia Kenin v Ashlyn Krueger",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T03:00:00+00:00"
+    },
+    {
+     "event": "Paula Badosa v Daria Kasatkina",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T04:10:00+00:00"
+    },
+    {
+     "event": "Magda Linette v Katerina Siniakova",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T05:20:00+00:00"
+    },
+    {
+     "event": "Lanlana Tararudee v Maria Camila Osorio Serrano",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T06:50:00+00:00"
+    },
+    {
+     "event": "Alejandro Davidovich Fokina v Matteo Berrettini",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T06:50:00+00:00"
+    },
+    {
+     "event": "Carlos Alcaraz v Alex Michelsen",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T07:00:00+00:00"
+    },
+    {
+     "event": "Lorenzo Musetti v Arthur Fery",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T02:00:00+00:00"
+    },
+    {
+     "event": "Brandon Nakashima v Ugo Humbert",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T02:00:00+00:00"
+    },
+    {
+     "event": "Luciano Darderi v Casper Ruud",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T02:00:00+00:00"
+    },
+    {
+     "event": "Denis Shapovalov v Sho Shimabukuro",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T05:40:00+00:00"
+    },
+    {
+     "event": "Kei Nishikori v Frances Tiafoe",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T03:10:00+00:00"
+    },
+    {
+     "event": "Holger Rune v Kyrian Jacquet",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T03:10:00+00:00"
+    },
+    {
+     "event": "Yuliia Starodubtseva v Alina Charaeva",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T03:00:00+00:00"
+    },
+    {
+     "event": "Aoi Ito v Kimberly Birrell",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T04:10:00+00:00"
+    },
+    {
+     "event": "Sofia Kenin v Ashlyn Krueger",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T03:00:00+00:00"
+    },
+    {
+     "event": "Paula Badosa v Daria Kasatkina",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T04:10:00+00:00"
+    },
+    {
+     "event": "Xinyu Gao v Panna Udvardy",
+     "original": "2026-09-30T02:00:00+00:00",
+     "current": "2026-10-01T08:00:00+00:00"
+    },
+    {
+     "event": "Alycia Parks v Lin Zhu",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T09:00:00+00:00"
+    },
+    {
+     "event": "Magda Linette v Katerina Siniakova",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T05:20:00+00:00"
+    },
+    {
+     "event": "Lanlana Tararudee v Maria Camila Osorio Serrano",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T06:50:00+00:00"
+    },
+    {
+     "event": "Alex Molcan v Arthur Rinderknech",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-01T03:00:00+00:00"
+    },
+    {
+     "event": "Alex de Minaur v Mariano Navone",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-01T03:00:00+00:00"
+    },
+    {
+     "event": "Alexander Bublik v Jakub Mensik",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-01T12:10:00+00:00"
+    },
+    {
+     "event": "Alexander Zverev v Cameron Norrie",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-01T07:00:00+00:00"
+    },
+    {
+     "event": "Tallon Griekspoor v Andrey Rublev",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-01T08:00:00+00:00"
+    },
+    {
+     "event": "Botic van de Zandschulp v Francisco Cerundolo",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-01T04:30:00+00:00"
+    },
+    {
+     "event": "Daniil Medvedev v Pablo Carreno Busta",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-02T02:00:00+00:00"
+    },
+    {
+     "event": "Roman Safiullin v Flavio Cobolli",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-01T04:10:00+00:00"
+    },
+    {
+     "event": "Learner Tien v Hubert Hurkacz",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-01T11:00:00+00:00"
+    },
+    {
+     "event": "Ignacio Buse v Quentin Halys",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-01T04:10:00+00:00"
+    },
+    {
+     "event": "Juncheng Shang v Sebastian Baez",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-01T05:40:00+00:00"
+    },
+    {
+     "event": "Tomas Martin Etcheverry v Stefanos Tsitsipas",
+     "original": "2026-09-30T03:15:00+00:00",
+     "current": "2026-10-01T03:10:00+00:00"
+    },
+    {
+     "event": "Adolfo Daniel Vallejo v Rafael Jodar",
+     "original": "2026-10-01T02:00:00+00:00",
+     "current": "2026-10-01T08:10:00+00:00"
+    },
+    {
+     "event": "Yushan Shao v Anastasia Zakharova",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T06:00:00+00:00"
+    },
+    {
+     "event": "Sonay Kartal v Andrea Lazaro Garcia",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T04:30:00+00:00"
+    },
+    {
+     "event": "Eva Lys v Sun Xinran",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T11:00:00+00:00"
+    },
+    {
+     "event": "Marina Bassols Ribera v Kamilla Rakhimova",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T07:30:00+00:00"
+    },
+    {
+     "event": "Katie Volynets v Robin Montgomery",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T03:00:00+00:00"
+    },
+    {
+     "event": "Qinwen Zheng v Shi Han",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T03:00:00+00:00"
+    },
+    {
+     "event": "Harriet Dart v Yihan Qu",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T07:30:00+00:00"
+    },
+    {
+     "event": "Yu Jun Lin v Storm Hunter",
+     "original": "2026-10-01T04:00:00+00:00",
+     "current": "2026-10-01T06:00:00+00:00"
+    }
+   ],
+   "stage_a_summary": {
+    "predictions": 56,
+    "strong_predictions": 26,
+    "strong_unique_events": 26,
+    "strong_by_price_status": {
+     "POOR_PAYOUT": 17,
+     "PRICE_QUALITY_FAIL": 9
+    },
+    "all_by_price_status": {
+     "POOR_PAYOUT": 35,
+     "PRICE_QUALITY_FAIL": 17,
+     "PRICE_VALID": 4
+    },
+    "duplicate_prediction_rows_collapsed": 0
+   },
+   "stage_a_strong": [
+    {
+     "rank": 1,
+     "event_name": "Renata Zarazua v Aryna Sabalenka",
+     "selection": "Aryna Sabalenka",
+     "probability": 0.968878,
+     "sigma": 0.038345,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-02T04:00:00+00:00",
+     "start_time_status": "UNCHANGED",
+     "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
+     "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
+     "best_clean_source": "",
+     "best_clean_odds": null,
+     "best_clean_net_ev": null
+    },
+    {
+     "rank": 2,
+     "event_name": "Yu Jun Lin v Storm Hunter",
+     "selection": "Storm Hunter",
+     "probability": 0.933416,
+     "sigma": 0.014979,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T06:00:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "ladbrokes_uk",
+     "best_clean_odds": 1.06,
+     "best_clean_net_ev": -0.010579
+    },
+    {
+     "rank": 3,
+     "event_name": "Harriet Dart v Yihan Qu",
+     "selection": "Harriet Dart",
+     "probability": 0.924311,
+     "sigma": 0.012888,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T07:30:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "betfair_ex_uk",
+     "best_clean_odds": 1.08,
+     "best_clean_net_ev": -0.005441
+    },
+    {
+     "rank": 4,
+     "event_name": "Yushan Shao v Anastasia Zakharova",
+     "selection": "Anastasia Zakharova",
+     "probability": 0.919794,
+     "sigma": 0.014796,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T06:00:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "betvictor",
+     "best_clean_odds": 1.08,
+     "best_clean_net_ev": -0.006622
+    },
+    {
+     "rank": 5,
+     "event_name": "Karolina Muchova v Katie Boulter",
+     "selection": "Karolina Muchova",
+     "probability": 0.912201,
+     "sigma": 0.056873,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-02T04:00:00+00:00",
+     "start_time_status": "UNCHANGED",
+     "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
+     "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
+     "best_clean_source": "",
+     "best_clean_odds": null,
+     "best_clean_net_ev": null
+    },
+    {
+     "rank": 6,
+     "event_name": "Yue Yuan v Mirra Andreeva",
+     "selection": "Mirra Andreeva",
+     "probability": 0.899731,
+     "sigma": 0.028516,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-02T04:00:00+00:00",
+     "start_time_status": "UNCHANGED",
+     "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
+     "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
+     "best_clean_source": "",
+     "best_clean_odds": null,
+     "best_clean_net_ev": null
+    },
+    {
+     "rank": 7,
+     "event_name": "Qinwen Zheng v Shi Han",
+     "selection": "Qinwen Zheng",
+     "probability": 0.892086,
+     "sigma": 0.012794,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T03:00:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "betfair_ex_uk",
+     "best_clean_odds": 1.12,
+     "best_clean_net_ev": -0.006216
+    },
+    {
+     "rank": 8,
+     "event_name": "Alexander Zverev v Cameron Norrie",
+     "selection": "Alexander Zverev",
+     "probability": 0.879237,
+     "sigma": 0.014398,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T07:00:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "betfair_sb_uk",
+     "best_clean_odds": 1.13,
+     "best_clean_net_ev": -0.006462
+    },
+    {
+     "rank": 9,
+     "event_name": "Linda Noskova v Elena Gabriela Ruse",
+     "selection": "Linda Noskova",
+     "probability": 0.832232,
+     "sigma": 0.095098,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-02T04:00:00+00:00",
+     "start_time_status": "UNCHANGED",
+     "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
+     "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
+     "best_clean_source": "",
+     "best_clean_odds": null,
+     "best_clean_net_ev": null
+    },
+    {
+     "rank": 10,
+     "event_name": "Carlos Alcaraz v Alex Michelsen",
+     "selection": "Carlos Alcaraz",
+     "probability": 0.829199,
+     "sigma": 0.012646,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T07:00:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "betfair_ex_uk",
+     "best_clean_odds": 1.2,
+     "best_clean_net_ev": -0.013253
+    },
+    {
+     "rank": 11,
+     "event_name": "Kei Nishikori v Frances Tiafoe",
+     "selection": "Frances Tiafoe",
+     "probability": 0.802224,
+     "sigma": 0.012589,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T03:10:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "virginbet",
+     "best_clean_odds": 1.23,
+     "best_clean_net_ev": -0.013264
+    },
+    {
+     "rank": 12,
+     "event_name": "Alex de Minaur v Mariano Navone",
+     "selection": "Alex de Minaur",
+     "probability": 0.791426,
+     "sigma": 0.012345,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T03:00:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "betfair_ex_uk",
+     "best_clean_odds": 1.26,
+     "best_clean_net_ev": -0.013092
+    },
+    {
+     "rank": 13,
+     "event_name": "Maria Timofeeva v Naomi Osaka",
+     "selection": "Naomi Osaka",
+     "probability": 0.790774,
+     "sigma": 0.027382,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-02T04:00:00+00:00",
+     "start_time_status": "UNCHANGED",
+     "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
+     "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
+     "best_clean_source": "",
+     "best_clean_odds": null,
+     "best_clean_net_ev": null
+    },
+    {
+     "rank": 14,
+     "event_name": "Daniil Medvedev v Pablo Carreno Busta",
+     "selection": "Daniil Medvedev",
+     "probability": 0.78793,
+     "sigma": 0.014881,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-02T02:00:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "williamhill",
+     "best_clean_odds": 1.25,
+     "best_clean_net_ev": -0.015087
+    },
+    {
+     "rank": 15,
+     "event_name": "Adolfo Daniel Vallejo v Rafael Jodar",
+     "selection": "Rafael Jodar",
+     "probability": 0.78727,
+     "sigma": 0.013115,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T08:10:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "betfair_ex_uk",
+     "best_clean_odds": 1.26,
+     "best_clean_net_ev": -0.018274
+    },
+    {
+     "rank": 16,
+     "event_name": "Linda Fruhvirtova v Liudmila Samsonova",
+     "selection": "Liudmila Samsonova",
+     "probability": 0.785953,
+     "sigma": 0.039045,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-02T04:00:00+00:00",
+     "start_time_status": "UNCHANGED",
+     "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
+     "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
+     "best_clean_source": "",
+     "best_clean_odds": null,
+     "best_clean_net_ev": null
+    },
+    {
+     "rank": 17,
+     "event_name": "Janice Tjen v Diana Shnaider",
+     "selection": "Diana Shnaider",
+     "probability": 0.772569,
+     "sigma": 0.053945,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-02T04:00:00+00:00",
+     "start_time_status": "UNCHANGED",
+     "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
+     "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
+     "best_clean_source": "",
+     "best_clean_odds": null,
+     "best_clean_net_ev": null
+    },
+    {
+     "rank": 18,
+     "event_name": "Aoi Ito v Kimberly Birrell",
+     "selection": "Kimberly Birrell",
+     "probability": 0.764388,
+     "sigma": 0.012942,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T04:10:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "williamhill",
+     "best_clean_odds": 1.3,
+     "best_clean_net_ev": -0.006296
+    },
+    {
+     "rank": 19,
+     "event_name": "Sonay Kartal v Andrea Lazaro Garcia",
+     "selection": "Sonay Kartal",
+     "probability": 0.759378,
+     "sigma": 0.011915,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T04:30:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "williamhill",
+     "best_clean_odds": 1.3,
+     "best_clean_net_ev": -0.012809
+    },
+    {
+     "rank": 20,
+     "event_name": "Bu Yunchaokete v Novak Djokovic",
+     "selection": "Novak Djokovic",
+     "probability": 0.756881,
+     "sigma": 0.015482,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-02T03:00:00+00:00",
+     "start_time_status": "UNCHANGED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "virginbet",
+     "best_clean_odds": 1.3,
+     "best_clean_net_ev": -0.016055
+    },
+    {
+     "rank": 21,
+     "event_name": "Taylor Fritz v Jaume Munar",
+     "selection": "Taylor Fritz",
+     "probability": 0.740385,
+     "sigma": 0.012793,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T02:00:00+00:00",
+     "start_time_status": "UNCHANGED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "williamhill",
+     "best_clean_odds": 1.33,
+     "best_clean_net_ev": -0.015288
+    },
+    {
+     "rank": 22,
+     "event_name": "Denis Shapovalov v Sho Shimabukuro",
+     "selection": "Denis Shapovalov",
+     "probability": 0.735151,
+     "sigma": 0.012759,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T05:40:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "betfair_ex_uk",
+     "best_clean_odds": 1.35,
+     "best_clean_net_ev": -0.020411
+    },
+    {
+     "rank": 23,
+     "event_name": "Anastasia Potapova v Sinja Kraus",
+     "selection": "Anastasia Potapova",
+     "probability": 0.732547,
+     "sigma": 0.01996,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-02T04:00:00+00:00",
+     "start_time_status": "UNCHANGED",
+     "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
+     "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
+     "best_clean_source": "",
+     "best_clean_odds": null,
+     "best_clean_net_ev": null
+    },
+    {
+     "rank": 24,
+     "event_name": "Tomas Martin Etcheverry v Stefanos Tsitsipas",
+     "selection": "Stefanos Tsitsipas",
+     "probability": 0.730392,
+     "sigma": 0.011855,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T03:10:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "betfair_ex_uk",
+     "best_clean_odds": 1.37,
+     "best_clean_net_ev": -0.012875
+    },
+    {
+     "rank": 25,
+     "event_name": "Viktorija Golubic v Peyton Stearns",
+     "selection": "Peyton Stearns",
+     "probability": 0.728214,
+     "sigma": 0.170314,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-02T04:00:00+00:00",
+     "start_time_status": "UNCHANGED",
+     "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
+     "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
+     "best_clean_source": "",
+     "best_clean_odds": null,
+     "best_clean_net_ev": null
+    },
+    {
+     "rank": 26,
+     "event_name": "Marina Bassols Ribera v Kamilla Rakhimova",
+     "selection": "Kamilla Rakhimova",
+     "probability": 0.724276,
+     "sigma": 0.015617,
+     "probability_basis": "LATEST_VALIDATED_SAME_SCAN",
+     "event_start": "2026-10-01T07:30:00+00:00",
+     "start_time_status": "RESCHEDULED",
+     "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+     "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+     "best_clean_source": "betfair_ex_uk",
+     "best_clean_odds": 1.36,
+     "best_clean_net_ev": -0.028022
+    }
+   ],
+   "scan_board_validated_strong_events": 26,
+   "stage_a_strong_events_in_scan_board": 26,
+   "scan_board_strong_missing_from_stage_a": []
+  }
+ }
+}

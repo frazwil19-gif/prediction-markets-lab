@@ -26,10 +26,14 @@ import yaml
 
 from prediction_markets_lab.ops.api_budget import check as budget_check, load_budget, month_spend
 from prediction_markets_lab.prediction_platform import adapters as A
+from prediction_markets_lab.bet_selection_v2 import prices as PR
+from prediction_markets_lab.bet_selection_v2.evaluate import load_config as load_bs_config
 from prediction_markets_lab.prediction_platform import board as B
+from prediction_markets_lab.prediction_platform import event_times as ET
 from prediction_markets_lab.prediction_platform import health as H
 from prediction_markets_lab.prediction_platform import performance as P
 from prediction_markets_lab.prediction_platform import settle as S
+from prediction_markets_lab.prediction_platform import stage_a as SA
 from prediction_markets_lab.prediction_platform.ledger import append_unique, read_rows
 from prediction_markets_lab.prediction_platform.registry import Registry
 from prediction_markets_lab.prediction_platform.schema import PREDICTION_FIELDS, SETTLEMENT_FIELDS, to_row
@@ -43,6 +47,7 @@ NBA_CREDIT_LOG = PRED_DIR / "nba_credit_log.csv"
 REPORTS = REPO / "reports"
 ODDS = "https://api.the-odds-api.com/v4/sports"
 NBA_SCORES_EVERY_DAYS = 3
+STAGE_A_CONFIG = REPO / "config/prediction_board_stage_a.yaml"
 
 
 def now_utc() -> datetime:
@@ -209,15 +214,47 @@ def build(reg: Registry, st: dict) -> None:
     now = now_utc()
     preds = read_rows(LEDGER)
     settlements = {r["prediction_id"]: r for r in read_rows(SETTLEMENTS)}
-    perf = P.report(preds, settlements)
+    perf = P.report(preds, settlements, P.load_guards(REPO))   # V2-13: sealed-holdout no-peek masking
     health = H.evaluate(REPO, now, st)
     active = [e for e in reg.engines if reg.collectable(e, now)]
-    board = B.build(preds, settlements, reg.engines, active, health, perf, st.get("skips", {}), now)
+    start_index = ET.load_index(REPO)
+    board = B.build(preds, settlements, reg.engines, active, health, perf, st.get("skips", {}), now, start_index)
     B.write(board, REPORTS)
+    try:   # Stage A is additive: a failure is recorded explicitly and never blocks the production board above
+        build_stage_a(preds, start_index, now)
+    except Exception as exc:  # noqa: BLE001
+        REPORTS.mkdir(exist_ok=True)
+        (REPORTS / "latest_stage_a_board.json").write_text(json.dumps(
+            {"generated_at": now.isoformat(), "status": "STAGE_A_BUILD_FAILED", "error": repr(exc)}, indent=1))
+        print(f"STAGE A BUILD FAILED (production board unaffected): {exc!r}")
     (REPORTS / "latest_prediction_performance.json").write_text(json.dumps(
         {"generated_at": now.isoformat(), "protocol": "research/platform_v2/unified_board/PROSPECTIVE_PROTOCOL.md",
          "pending_review": st.get("pending_review", []), **perf}, indent=1, default=str))
     print(f"board: {board['summary']}")
+
+
+def build_stage_a(preds: list[dict], start_index: ET.StartIndex, now: datetime) -> None:
+    """V2-10 fix B: Stage A probability board (0 credits; reads files production already wrote; never stakes)."""
+    cfg = SA.load_config(STAGE_A_CONFIG, REPO)
+    bs_cfg = load_bs_config(cfg.bet_selection_config)
+    eligible, _ = ET.apply(preds, start_index, now)
+    prob_rows = read_rows(REPO / "tennis_predictions/exchange_probability_snapshots.csv")
+    price_rows = read_rows(REPO / "tennis_predictions/price_snapshots.csv")
+    days = sorted(d for d in (REPO / "daily_cards").iterdir() if d.is_dir() and (d / "card.json").exists()) \
+        if (REPO / "daily_cards").exists() else []
+    card = json.loads((days[-1] / "card.json").read_text()) if days else None
+
+    def snaps_for(p: dict) -> list[PR.PriceSnapshot]:   # the same price sources bet-selection gathers
+        own = PR.from_ledger_row(p, prob_rows)
+        return ([own] if own else []) + PR.tennis_from_snapshots(p, price_rows, prob_rows) + \
+            (PR.football_from_card(p, card) if card else [])
+
+    cal = SA.calibration_se(cfg.calibration_results) if cfg.calibration_results.exists() else None
+    fse = SA.football_sigma(cfg.football_sigma_evidence) if cfg.football_sigma_evidence and cfg.football_sigma_evidence.exists() else None
+    status = {eid: e.get("calibration_status", "UNKNOWN") for eid, e in Registry.load().engines.items()}
+    board = SA.build(eligible, prob_rows, snaps_for, bs_cfg, cfg, cal, now, fse, status)
+    SA.write(board, REPORTS)
+    print(f"stage A: {board['summary']}")
 
 
 def main() -> int:

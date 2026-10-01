@@ -9,13 +9,15 @@ import json
 from datetime import datetime, timedelta
 from pathlib import Path
 
+from prediction_markets_lab.prediction_platform import event_times as ET
 from prediction_markets_lab.prediction_platform.schema import PREDICTION_FIELDS, THRESHOLDS
 
-BOARD_SCHEMA_VERSION = 1
+BOARD_SCHEMA_VERSION = 2   # 2 (V2-10): current start time (est-1) + original start + start-time status columns
 DEFAULT_VIEW = 0.80
 EVIDENCE_ORDER = {"VALIDATED_HISTORICAL_AND_PROSPECTIVE": 0, "VALIDATED_HISTORICAL": 1, "PROVISIONAL_PROSPECTIVE": 2,
                   "RESEARCH_VALIDATED": 3}
 JOINED = ["settlement_status", "result", "correct", "settlement_timestamp"]
+START_COLS = ["event_start_original", "start_time_status", "start_time_source"]
 
 
 def _ts(s: str) -> datetime:
@@ -28,8 +30,10 @@ def rank_key(p: dict) -> tuple:
 
 
 def build(preds: list[dict], settlements: dict[str, dict], registry_engines: dict[str, dict], active: list[str],
-          health: dict, perf: dict, skips_last_run: dict, now: datetime) -> dict:
-    upcoming = [p for p in preds if _ts(p["event_start"]) > now and str(p["prediction_valid"]) == "True"]
+          health: dict, perf: dict, skips_last_run: dict, now: datetime, start_index: ET.StartIndex | None = None) -> dict:
+    # V2-10 fix A (est-1): upcoming = CURRENT start in the future (a stale first-seen ledger start no longer hides a match)
+    eligible, start_rows = ET.apply(preds, start_index or ET.StartIndex(), now)
+    upcoming = [p for p in eligible if str(p["prediction_valid"]) == "True"]
     upcoming.sort(key=rank_key)
     yday = (now - timedelta(days=1)).date().isoformat()
     settled_yday = [s for s in settlements.values() if str(s.get("settlement_timestamp", "")).startswith(yday)]
@@ -46,7 +50,8 @@ def build(preds: list[dict], settlements: dict[str, dict], registry_engines: dic
     rows = []
     for p in upcoming:
         s = settlements.get(p["prediction_id"], {})
-        rows.append({**{k: p.get(k, "") for k in PREDICTION_FIELDS}, **{k: s.get(k, "") for k in JOINED}})
+        rows.append({**{k: p.get(k, "") for k in PREDICTION_FIELDS}, **{k: s.get(k, "") for k in JOINED},
+                     **{k: p.get(k, "") for k in START_COLS}})
     return {"board_schema_version": BOARD_SCHEMA_VERSION, "product": "PREDICTION_BOARD (paper; not a betting card)",
             "generated_at": now.isoformat(), "date": now.date().isoformat(),
             "summary": {"upcoming_events": len({p["event_key"] for p in upcoming}), "valid_predictions": len(upcoming),
@@ -54,14 +59,14 @@ def build(preds: list[dict], settlements: dict[str, dict], registry_engines: dic
                         "threshold_counts": counts, "settled_yesterday": len(settled_yday),
                         "system": health["overall"], "api_credits_last_observed": health["api_credits"]["remaining"]},
             "default_view_min_probability": DEFAULT_VIEW, "health": health, "prospective_evidence": evidence,
-            "skipped_last_run": skips_last_run, "predictions": rows}
+            "skipped_last_run": skips_last_run, "start_time_resolution": ET.summary(start_rows), "predictions": rows}
 
 
 def write(board: dict, out_dir: Path) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "latest_prediction_board.json").write_text(json.dumps(board, indent=1, default=str))
     with (out_dir / "latest_prediction_board.csv").open("w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=PREDICTION_FIELDS + JOINED)
+        w = csv.DictWriter(f, fieldnames=PREDICTION_FIELDS + JOINED + START_COLS)
         w.writeheader()
         w.writerows(board["predictions"])
     (out_dir / "latest_prediction_board.md").write_text(render_md(board))
@@ -88,7 +93,8 @@ def render_md(b: dict) -> str:
     top = [p for p in b["predictions"] if float(p["estimated_probability"]) >= b["default_view_min_probability"]]
     for p in top:
         price = f"{float(p['live_price']):.2f} ({p['live_price_source']})" if p["live_price"] not in ("", None) else "—"
-        lines.append(f"| {p['sport']} | {p['event_name']} | {p['event_start'][:16]} | {p['market']} | {p['selection']} | "
+        resched = " ⟳" if p.get("start_time_status") == ET.RESCHEDULED else ""
+        lines.append(f"| {p['sport']} | {p['event_name']} | {p['event_start'][:16]}{resched} | {p['market']} | {p['selection']} | "
                      f"{_pct(p['estimated_probability'])} | {float(p['fair_odds']):.2f} | {p['probability_band']} | "
                      f"{p['engine_id']}@{p['engine_version']} | {p['engine_status']} | {price} | "
                      f"{'yes' if str(p['single_eligible']) == 'True' else 'no'} | {'yes' if str(p['multi_research_eligible']) == 'True' else 'no'} |")
@@ -104,6 +110,7 @@ def render_md(b: dict) -> str:
         lines.append(f"- {k}: {v['flag']} (last {v['last'] or 'unknown'})")
     if h["warnings"]:
         lines.append("- Warnings: " + "; ".join(h["warnings"]))
-    lines += ["", "Single = passes the engine money status and payout floor pre-filter only; the Money Card decides bets. "
+    lines += ["", "⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).",
+              "", "Single = passes the engine money status and payout floor pre-filter only; the Money Card decides bets. "
               "Double Chance is PROVISIONAL_PROSPECTIVE (exposed-data history; sealed holdout opens 2027-01-03)."]
     return "\n".join(lines) + "\n"

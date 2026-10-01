@@ -44,7 +44,12 @@
    "ge80_historical_coverage": 0.033,
    "money_eligible": true,
    "multi_research_eligible": true,
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-10-01",
+   "calibration_status": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live 24-48h estimator not validated; calibration not transferred)",
+   "estimator_id": "football_1x2.market_consensus@1-live",
+   "live_estimator": "per-book proportional de-vig, MEDIAN across UK Odds API books (h2h), first scan within 48h of kickoff; H/D/A triplet renormalised for Stage A display and derived identities, raw ledger values kept",
+   "validated_estimator": "closing odds: B365/BW/PS mean multiplicative (V2-1) and >=4-book median renormalised (Gate 1)",
+   "calibration_transfer": "NOT_ASSUMED"
   },
   {
    "engine": "football_ou25.market",
@@ -74,7 +79,8 @@
    "ge80_historical_coverage": 0.001,
    "money_eligible": true,
    "multi_research_eligible": false,
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-24",
+   "calibration_status": "HISTORICAL_CLOSING_ESTIMATOR_ONLY (live estimator not validated)"
   },
   {
    "engine": "football_btts.market_implied_poisson",
@@ -104,7 +110,8 @@
    "ge80_historical_coverage": 0.0,
    "money_eligible": false,
    "multi_research_eligible": false,
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-24",
+   "calibration_status": "RESEARCH_ONLY (not wired)"
   },
   {
    "engine": "atp_match_winner.betfair_market",
@@ -134,7 +141,8 @@
    "ge80_historical_coverage": 0.198,
    "money_eligible": false,
    "multi_research_eligible": true,
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-24",
+   "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)"
   },
   {
    "engine": "wta_match_winner.betfair_market",
@@ -164,7 +172,8 @@
    "ge80_historical_coverage": 0.177,
    "money_eligible": false,
    "multi_research_eligible": true,
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-24",
+   "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)"
   },
   {
    "engine": "nba_moneyline.market",
@@ -195,7 +204,8 @@
    "ge80_historical_coverage": 0.209,
    "money_eligible": false,
    "multi_research_eligible": true,
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-24",
+   "calibration_status": "HOLDOUT_PASSED on closing estimator (live early-snapshot estimator not validated)"
   },
   {
    "engine": "football_double_chance.derived_1x2",
@@ -206,7 +216,7 @@
    "best_estimator": "pairwise sums of the production 1X2 proportional consensus (B365/BW/PS closing)",
    "historical_sample": 5897,
    "holdout": "sealed 2026/27 Aug-Dec, opens >= 2027-01-03",
-   "prospective": "DESIGNED, not active",
+   "prospective": "APPROVED 2026-10-01 for prospective SHADOW probability collection ONLY",
    "ge80_share": 0.315,
    "calibration": "slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected)",
    "live_source": "Odds API double_chance per-event (1 credit/event/region; 4 UK books seen); synthetic DC from h2h at 0 credits",
@@ -225,7 +235,23 @@
    "ge80_historical_coverage": 0.315,
    "money_eligible": false,
    "multi_research_eligible": true,
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-10-01",
+   "calibration_status": "EXPOSED_DATA_ONLY (sealed 2026/27 Aug-Dec holdout pending, opens >= 2027-01-03; live estimator not validated)",
+   "approval": {
+    "date": "2026-10-01",
+    "by": "Fraser (V2-12 review decision, relayed directive 'NEXT PHASE - OCTOBER MULTI-SPORT EXECUTION PREPARATION')",
+    "scope": "prospective shadow probability collection only",
+    "not_approved": [
+     "real money",
+     "paper staking",
+     "Stage B financial qualification using synthetic prices"
+    ]
+   },
+   "estimator_id": "football_double_chance.derived_1x2@1-live",
+   "live_estimator": "pairwise sums of the renormalised live 1X2 triplet (football_1x2.market_consensus@1-live)",
+   "calibration_transfer": "NOT_ASSUMED",
+   "stage_b_status": "DATA_BLOCKED (no executable DC prices collected; the synthetic dutch of best 1X2 prices is never executable)",
+   "holdout_guard": "research/platform_v2/v2_13_football/DC_HOLDOUT_NO_PEEK.md"
   }
  ]
 }

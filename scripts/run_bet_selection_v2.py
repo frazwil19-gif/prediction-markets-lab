@@ -24,6 +24,7 @@ from prediction_markets_lab.bet_selection_v2 import paper_ledger as L
 from prediction_markets_lab.bet_selection_v2 import prices as PR
 from prediction_markets_lab.bet_selection_v2 import report as R
 from prediction_markets_lab.bet_selection_v2.evaluate import DECISIONS, PAPER_BET, evaluate_prediction, load_config
+from prediction_markets_lab.prediction_platform import event_times as ET
 
 REPO = Path(__file__).resolve().parents[1]
 OUT = REPO / "paper_betting_v2"
@@ -52,7 +53,7 @@ def latest_card() -> tuple[dict | None, dict | None]:
 def gather_snapshots(pred: dict, tennis_rows: list[dict], card: dict | None,
                      prob_rows: list[dict] | None = None) -> list[PR.PriceSnapshot]:
     snaps = []
-    own = PR.from_ledger_row(pred)
+    own = PR.from_ledger_row(pred, prob_rows)
     if own:
         snaps.append(own)
     snaps += PR.tennis_from_snapshots(pred, tennis_rows, prob_rows)
@@ -75,7 +76,10 @@ def valid_legacy_prediction_ids(cfg: dict) -> set[str]:
 
 def evaluate(cfg: dict, now: datetime) -> dict:
     preds = L.read_rows(REPO / "predictions/unified_ledger.csv")
-    upcoming = [p for p in preds if PR.ts(p["event_start"]) > now]
+    # V2-10 fix A (est-1): eligibility uses the CURRENT start (latest provider observation), not the first-seen ledger
+    # start; every exclusion is written with a reason code (never silently dropped). Ledger rows are not modified.
+    upcoming, start_rows = ET.apply(preds, ET.load_index(REPO), now)
+    ET.write_resolution(REPORTS / "bet_selection_v2_start_time_resolution.csv", start_rows)
     tennis_rows = L.read_rows(REPO / "tennis_predictions/price_snapshots.csv")
     prob_rows = L.read_rows(REPO / "tennis_predictions/exchange_probability_snapshots.csv")   # bsv2-3: includes spread
     card, money = latest_card()
@@ -112,6 +116,7 @@ def evaluate(cfg: dict, now: datetime) -> dict:
             w.writeheader()
             w.writerows(rows)
     print(json.dumps(run, indent=1))
+    print("start-time resolution:", json.dumps(ET.summary(start_rows)))
     return {"run": run, "decided": rows}
 
 
@@ -202,13 +207,14 @@ def diagnose(cfg: dict) -> dict:
     """Re-evaluate settled VALID predictions at their own prediction time and recorded price. Diagnostic only."""
     preds = {p["prediction_id"]: p for p in L.read_rows(REPO / "predictions/unified_ledger.csv")}
     sett = L.read_rows(REPO / "predictions/unified_settlements.csv")
+    prob_rows = L.read_rows(REPO / "tennis_predictions/exchange_probability_snapshots.csv")   # bsv2-4: same-snapshot spread
     rows = []
     for s in sett:
         p = preds.get(s["prediction_id"])
         if not p or str(p["prediction_valid"]) != "True" or s["settlement_status"] != "SETTLED":
             continue
         at = PR.ts(p["prediction_timestamp"])
-        best, _ = evaluate_prediction(p, [x for x in [PR.from_ledger_row(p)] if x], cfg, at)
+        best, _ = evaluate_prediction(p, [x for x in [PR.from_ledger_row(p, prob_rows)] if x], cfg, at)
         comm = best.commission or 0.0
         won = str(s["correct"]) == "1"
         pnl = ((best.decimal_odds - 1) * (1 - comm) if won else -1.0) if best.decimal_odds else None

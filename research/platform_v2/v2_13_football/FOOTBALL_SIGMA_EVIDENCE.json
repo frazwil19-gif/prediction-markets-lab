@@ -1,0 +1,148 @@
+{
+ "source": "research/platform_v2/double_chance/DC_PRIMARY_PANEL_DERIVED.csv",
+ "estimator": "closing B365/BW/PS, multiplicative de-vig, mean, renormalised",
+ "seasons": [
+  "2020_21",
+  "2021_22",
+  "2022_23",
+  "2023_24",
+  "2024_25",
+  "2025_26"
+ ],
+ "matches": 5897,
+ "exposed_data": true,
+ "sigma_method": "match-clustered bootstrap SE of the band's realised rate (1000 resamples, seed fixed)",
+ "excludes": "live 24-48h median-of-UK-books estimator bias (unmeasured; prospective test)",
+ "bands": [
+  "<50%",
+  "50-65%",
+  "65-80%",
+  "80%+"
+ ],
+ "markets": {
+  "1x2": [
+   {
+    "band": "<50%",
+    "lo": 0.0,
+    "hi": 0.5,
+    "rows": 15165,
+    "effective_n_matches": 5897,
+    "mean_pred": 0.28485757446256843,
+    "actual": 0.2834817012858556,
+    "wilson95": [
+     0.2763641960382158,
+     0.29070887161644776
+    ],
+    "wilson_half_width_over_1_96": 0.003659356014855086,
+    "sigma_clustered_se": 0.0018125316214017266
+   },
+   {
+    "band": "50-65%",
+    "lo": 0.5,
+    "hi": 0.65,
+    "rows": 1691,
+    "effective_n_matches": 1691,
+    "mean_pred": 0.5644983905655205,
+    "actual": 0.5594322885866351,
+    "wilson95": [
+     0.5356617602539876,
+     0.5829334032959174
+    ],
+    "wilson_half_width_over_1_96": 0.012059092612737186,
+    "sigma_clustered_se": 0.012567377986947343
+   },
+   {
+    "band": "65-80%",
+    "lo": 0.65,
+    "hi": 0.8,
+    "rows": 644,
+    "effective_n_matches": 644,
+    "mean_pred": 0.7182037091931135,
+    "actual": 0.7484472049689441,
+    "wilson95": [
+     0.7135290505792641,
+     0.780418960377793
+    ],
+    "wilson_half_width_over_1_96": 0.01706375249962473,
+    "sigma_clustered_se": 0.01671617812543083
+   },
+   {
+    "band": "80%+",
+    "lo": 0.8,
+    "hi": 1.0,
+    "rows": 191,
+    "effective_n_matches": 191,
+    "mean_pred": 0.8379314979502094,
+    "actual": 0.8900523560209425,
+    "wilson95": [
+     0.8377694128413457,
+     0.9269548963577535
+    ],
+    "wilson_half_width_over_1_96": 0.0227513988562265,
+    "sigma_clustered_se": 0.02157217548876126
+   }
+  ],
+  "double_chance": [
+   {
+    "band": "<50%",
+    "lo": 0.0,
+    "hi": 0.5,
+    "rows": 2526,
+    "effective_n_matches": 2526,
+    "mean_pred": 0.3756393969615399,
+    "actual": 0.3673792557403009,
+    "wilson95": [
+     0.3487937220305881,
+     0.38636754759603675
+    ],
+    "wilson_half_width_over_1_96": 0.009585159583022612,
+    "sigma_clustered_se": 0.010007952161438835
+   },
+   {
+    "band": "50-65%",
+    "lo": 0.5,
+    "hi": 0.65,
+    "rows": 3460,
+    "effective_n_matches": 3323,
+    "mean_pred": 0.5807613298357578,
+    "actual": 0.576300578034682,
+    "wilson95": [
+     0.5597598072933443,
+     0.5926721115104001
+    ],
+    "wilson_half_width_over_1_96": 0.00839599597373873,
+    "sigma_clustered_se": 0.008132582761800327
+   },
+   {
+    "band": "65-80%",
+    "lo": 0.65,
+    "hi": 0.8,
+    "rows": 9100,
+    "effective_n_matches": 5147,
+    "mean_pred": 0.725357439838777,
+    "actual": 0.7267032967032967,
+    "wilson95": [
+     0.7174527028979606,
+     0.735762570968911
+    ],
+    "wilson_half_width_over_1_96": 0.004670884711977134,
+    "sigma_clustered_se": 0.0038283398707766913
+   },
+   {
+    "band": "80%+",
+    "lo": 0.8,
+    "hi": 1.0,
+    "rows": 2605,
+    "effective_n_matches": 1855,
+    "mean_pred": 0.8579454815779494,
+    "actual": 0.8671785028790787,
+    "wilson95": [
+     0.8536035735502909,
+     0.8796721084701706
+    ],
+    "wilson_half_width_over_1_96": 0.006650136459152986,
+    "sigma_clustered_se": 0.006363122779168498
+   }
+  ]
+ }
+}
