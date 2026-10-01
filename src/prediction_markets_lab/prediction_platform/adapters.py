@@ -187,6 +187,12 @@ NBA = "nba_moneyline.market"
 
 def nba_from_odds(raw: list[dict], reg: Registry, ctx: RunContext, now: datetime,
                   origin: str) -> tuple[list[Prediction], list[Skip]]:
+    """Frozen NBA estimator (mean decimal odds per side over >= MIN_NBA_BOOKS paired non-exchange books, then 2-way
+    proportional de-vig) -- unchanged. V2-15 data-quality/provenance fixes around it (no change to the method):
+      * only the 30 NBA franchises (exhibitions such as All-Star events are skipped: NOT_REGULAR_COMPETITION);
+      * books whose last_update is older than STALE_AFTER are excluded before the book-count check;
+      * live_price_source names the actual best book ("odds_api:<book key>") so Stage B can price it."""
+    from prediction_markets_lab.nba.data import FULL_NAME_TO_FRANCHISE
     preds, skips = [], []
     if not reg.collectable(NBA, now):
         return [], [Skip(NBA, "*", "NOT_ACTIVE (awaiting season activation date)")]
@@ -197,25 +203,36 @@ def nba_from_odds(raw: list[dict], reg: Registry, ctx: RunContext, now: datetime
         if mins <= 0 or mins > NBA_WINDOW_MIN:
             skips.append(Skip(NBA, key, "EVENT_STARTED" if mins <= 0 else "OUTSIDE_36H_WINDOW"))
             continue
-        prices: dict[str, list[float]] = {ev["home_team"]: [], ev["away_team"]: []}
+        if ev["home_team"] not in FULL_NAME_TO_FRANCHISE or ev["away_team"] not in FULL_NAME_TO_FRANCHISE:
+            skips.append(Skip(NBA, key, "NOT_REGULAR_COMPETITION: non-franchise team(s) (exhibition)"))
+            continue
+        prices: dict[str, list[tuple[float, str]]] = {ev["home_team"]: [], ev["away_team"]: []}
+        stale = 0
         for b in ev.get("bookmakers", []):
             if b["key"].startswith("betfair_ex"):
+                continue
+            lu = b.get("last_update")
+            if lu and now - _ts(lu) > STALE_AFTER:
+                stale += 1
                 continue
             for mk in b.get("markets", []):
                 if mk["key"] == "h2h" and len(mk["outcomes"]) == 2:
                     for o in mk["outcomes"]:
                         if o["name"] in prices and float(o["price"]) > 1.0:
-                            prices[o["name"]].append(float(o["price"]))
+                            prices[o["name"]].append((float(o["price"]), b["key"]))
         h, a = prices[ev["home_team"]], prices[ev["away_team"]]
         if min(len(h), len(a)) < MIN_NBA_BOOKS or len(h) != len(a):
-            skips.append(Skip(NBA, key, f"DATA_INVALID: books home={len(h)} away={len(a)} (need >= {MIN_NBA_BOOKS}, paired)"))
+            skips.append(Skip(NBA, key, f"DATA_INVALID: fresh books home={len(h)} away={len(a)} "
+                                        f"(need >= {MIN_NBA_BOOKS}, paired; {stale} stale excluded)"))
             continue
-        ih, ia = 1 / (sum(h) / len(h)), 1 / (sum(a) / len(a))
+        ih, ia = 1 / (sum(x for x, _ in h) / len(h)), 1 / (sum(x for x, _ in a) / len(a))
         ph = ih / (ih + ia)
-        sel, p, live = (ev["home_team"], ph, max(h)) if ph >= 0.5 else (ev["away_team"], 1 - ph, max(a))
+        sel, p, side = (ev["home_team"], ph, h) if ph >= 0.5 else (ev["away_team"], 1 - ph, a)
+        best_odds, best_book = max(side, key=lambda t: (t[0], t[1]))
         preds.append(_build(reg, ctx, NBA, sport="basketball", competition="NBA", event_id=ev["id"], event_key=key,
                             event_name=f"{ev['away_team']} @ {ev['home_team']}", event_start=start, market="moneyline",
-                            selection=sel, p=p, pred_ts=now, live_price=live, live_src="odds_api best book", origin=origin))
+                            selection=sel, p=p, pred_ts=now, live_price=best_odds, live_src=f"odds_api:{best_book}",
+                            origin=origin))
     return _checked(preds, skips)
 
 

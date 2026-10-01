@@ -8,3 +8,4 @@ strong_prediction_min_probability: 0.70
 calibration_results: research/platform_v2/card_engine_v2_7/RESULTS.json   # per-band calibration SE (same as V2-7)
 bet_selection_config: config/bet_selection_v2.yaml                          # read-only: quality rules + commission
 football_sigma_evidence: research/platform_v2/v2_13_football/FOOTBALL_SIGMA_EVIDENCE.json         # band SE (V2-13 pre-registration s.3)
+nba_sigma_evidence: research/platform_v2/v2_15_nba/NBA_SIGMA_EVIDENCE.json                          # band SE (V2-15; closing estimator)

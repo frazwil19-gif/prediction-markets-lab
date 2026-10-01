@@ -42,11 +42,14 @@ BASIS_SCAN, BASIS_LEDGER = "P_CURRENT_SCAN", "P_FIRST_SNAPSHOT"
 NORMALISED, INCOMPLETE = "TRIPLET_NORMALISED", "TRIPLET_INCOMPLETE"
 SIGMA_TENNIS = "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)"
 SIGMA_FOOTBALL = "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)"
+SIGMA_NBA = "HIST_BAND_WILSON_SE (closing estimator; early-snapshot bias excluded)"
 SIGMA_NONE = "NOT_ESTIMATED"
+SIGMA_LABEL = {"football": SIGMA_FOOTBALL, "basketball": SIGMA_NBA}
 
 FIELDS = ["rank", "prediction_id", "sport", "competition", "event_key", "event_name", "event_start", "event_start_original",
           "start_time_status", "market", "selection", "probability", "probability_basis", "probability_observed_at",
-          "p_first_snapshot", "p_current_scan", "ledger_probability", "normalisation", "sigma", "sigma_method",
+          "p_first_snapshot", "p_current_scan", "ledger_probability", "normalisation", "minutes_to_event_at_prediction",
+          "sigma", "sigma_method",
           "sigma_calibration", "sigma_half_width", "exchange_width", "calibration_status", "probability_band",
           "engine_id", "engine_version", "engine_status", "prediction_timestamp", "historical_support", "strength",
           "price_status", "stage_a_label", "financially_assessable", "price_status_reasons", "best_clean_source",
@@ -61,13 +64,24 @@ class StageAConfig:
     calibration_results: Path
     bet_selection_config: Path
     football_sigma_evidence: Path | None = None
+    nba_sigma_evidence: Path | None = None
 
 
 def load_config(path: Path, repo: Path) -> StageAConfig:
     c = yaml.safe_load(path.read_text())
-    fse = c.get("football_sigma_evidence")
+    fse, nse = c.get("football_sigma_evidence"), c.get("nba_sigma_evidence")
     return StageAConfig(c["board_version"], float(c["strong_prediction_min_probability"]),
-                        repo / c["calibration_results"], repo / c["bet_selection_config"], repo / fse if fse else None)
+                        repo / c["calibration_results"], repo / c["bet_selection_config"], repo / fse if fse else None,
+                        repo / nse if nse else None)
+
+
+def sport_sigma(cfg: StageAConfig) -> dict[str, Callable[[str, float], float | None]]:
+    """sport -> (market, P) -> band sigma, from the evidence files that exist (V2-13 football, V2-15 NBA)."""
+    out = {}
+    for sport, path in (("football", cfg.football_sigma_evidence), ("basketball", cfg.nba_sigma_evidence)):
+        if path is not None and path.exists():
+            out[sport] = football_sigma(path)    # same evidence schema: markets -> bands -> sigma_clustered_se
+    return out
 
 
 def football_sigma(evidence_path: Path) -> Callable[[str, float], float | None]:
@@ -155,11 +169,15 @@ def price_status(pred: dict, snaps: list[PR.PriceSnapshot], bs_cfg: dict, now: d
 def build(eligible: list[dict], prob_rows: list[dict], snaps_for: Callable[[dict], list[PR.PriceSnapshot]], bs_cfg: dict,
           cfg: StageAConfig, cal_se: Callable[[float], float] | None, now: datetime,
           football_se: Callable[[str, float], float | None] | None = None,
-          calibration_status: dict[str, str] | None = None) -> dict:
+          calibration_status: dict[str, str] | None = None,
+          sport_se: dict[str, Callable[[str, float], float | None]] | None = None) -> dict:
     """eligible: unified predictions already filtered by the est-1 start-time rule (current start overlaid).
     cal_se: tennis band SE (V2-7); football_se: football band SE; calibration_status: engine_id -> registry status."""
     valid = [p for p in eligible if str(p.get("prediction_valid")) == "True"]
     norm = normalise_1x2(valid)
+    se_by_sport = dict(sport_se or {})
+    if football_se and "football" not in se_by_sport:
+        se_by_sport["football"] = football_se
     by_sel: dict[tuple[str, str, str], dict] = {}
     dup = 0
     for p in valid:   # one row per (event, market, selection): the most recent prediction of record
@@ -179,9 +197,9 @@ def build(eligible: list[dict], prob_rows: list[dict], snaps_for: Callable[[dict
             cse = cal_se(prob) if cal_se else None
             sig = leg_sigma(prob, width, cse) if (cse is not None and width is not None) else cse
             smethod = SIGMA_TENNIS if sig is not None else SIGMA_NONE
-        elif p.get("sport") == "football" and football_se:
-            cse = football_se(p["market"], prob)
-            sig, smethod = cse, (SIGMA_FOOTBALL if cse is not None else SIGMA_NONE)
+        elif p.get("sport") in se_by_sport:
+            cse = se_by_sport[p["sport"]](p["market"], prob)
+            sig, smethod = cse, (SIGMA_LABEL.get(p["sport"], SIGMA_NONE) if cse is not None else SIGMA_NONE)
         else:
             cse, sig, smethod = None, None, SIGMA_NONE
         strength = STRONG if prob >= cfg.strong_min_probability else BELOW_STRONG
@@ -193,6 +211,7 @@ def build(eligible: list[dict], prob_rows: list[dict], snaps_for: Callable[[dict
                      "probability": round(prob, 6), "probability_basis": basis, "probability_observed_at": obs_at,
                      "p_first_snapshot": round(p_first, 6), "p_current_scan": round(prob, 6) if basis == BASIS_SCAN else None,
                      "ledger_probability": float(p["estimated_probability"]), "normalisation": nstat,
+                     "minutes_to_event_at_prediction": p.get("minutes_to_event", ""),
                      "sigma": None if sig is None else round(sig, 6), "sigma_method": smethod,
                      "sigma_calibration": None if cse is None else round(cse, 6),
                      "calibration_status": (calibration_status or {}).get(p["engine_id"], "UNKNOWN"),
