@@ -120,6 +120,7 @@ from prediction_markets_lab.ingestion.the_odds_api_loader import (
     fetch_and_canonicalise,
 )
 from prediction_markets_lab.ops import credit_ledger as CL
+from prediction_markets_lab.ops import football_coverage as FC
 from prediction_markets_lab.probability.market_pipeline import compute_market_consensus
 from prediction_markets_lab.reports.daily_bet_card import (
     ENGINE_VERSION,
@@ -141,18 +142,31 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 CREDIT_LEDGER = REPO_ROOT / "status" / "credit_ledger.csv"   # V2-14 shared credit accounting
 
 
-def gated_odds_config() -> TheOddsApiConfig:
-    """V2-14 Credit Plan A: fixtures-first gate + hard floor from config/api_budget.json (no magic numbers)."""
-    import json
-    c = json.loads((REPO_ROOT / "config" / "api_budget.json").read_text())["consumers"]["football_daily_scan"]
-    return TheOddsApiConfig(gate_horizon_hours=c.get("fixture_gate_hours"), hard_floor_remaining=c.get("hard_floor_remaining"))
+def gated_odds_config(now: datetime | None = None) -> TheOddsApiConfig:
+    """V2-14 Credit Plan A: fixtures-first gate + hard floor from config/api_budget.json (no magic numbers).
+    Final football coverage: observed leagues/markets from config/football_coverage.yaml; Tier 2/3 leagues get the
+    dynamic tier-throttle floor (Tier 3 stops first, Tier 1 only by the hard floor)."""
+    budget = FC.load_budget(REPO_ROOT / "config" / "api_budget.json")
+    leagues = FC.load(REPO_ROOT / "config" / "football_coverage.yaml")
+    c = budget["consumers"]["football_daily_scan"]
+    return TheOddsApiConfig(sport_keys=FC.sport_keys(leagues), markets_by_sport=FC.markets_by_sport(leagues),
+                            floor_by_sport=FC.tier_floors(budget, leagues, now or datetime.now(timezone.utc)),
+                            gate_horizon_hours=c.get("fixture_gate_hours"), hard_floor_remaining=c.get("hard_floor_remaining"))
+
+
+def consumer_for_call(call: str, leagues: list | None = None) -> str:
+    """Credit-ledger consumer: Tier 1 football -> football_daily_scan; Tier 2/3 shadow -> football_shadow_scan."""
+    leagues = leagues if leagues is not None else FC.load(REPO_ROOT / "config" / "football_coverage.yaml")
+    tier = {lg.sport_key: lg.tier for lg in FC.observed(leagues)}.get(call.split(":", 1)[-1], FC.TIER_PAPER_CORE)
+    return "football_daily_scan" if tier == FC.TIER_PAPER_CORE else "football_shadow_scan"
 
 
 def log_calls(call_log: list) -> None:
+    leagues = FC.load(REPO_ROOT / "config" / "football_coverage.yaml")
     for c in call_log:
         paid = c["outcome"] == "PAID"
         charged = c.get("credits_charged")
-        CL.append(CREDIT_LEDGER, "football_daily_scan", c["call"], CL.PAID if paid else CL.SKIPPED_GATE,
+        CL.append(CREDIT_LEDGER, consumer_for_call(c["call"], leagues), c["call"], CL.PAID if paid else CL.SKIPPED_GATE,
                   int(charged) if paid and charged not in (None, "") else (None if paid else 0),
                   0 if paid else int(c.get("credits_saved_estimate", 0)), c.get("headers"), c.get("reason", ""))
 
@@ -178,6 +192,13 @@ def money_card_competitions() -> frozenset[str] | None:
     football = load_yaml(REPO_ROOT / "config" / "competitions.yaml").get("football", {})
     allowed = football.get("money_card_competitions")
     return None if allowed is None else frozenset(allowed)
+
+
+def legacy_ledger_scope(recommendations: list, allowed: frozenset[str] | None) -> list:
+    """Final football coverage: the legacy V1 paper ledger (settled through paid /scores calls) keeps its original
+    competition scope (= money_card_competitions). Other leagues are observed through the unified ledger / Stage A /
+    bsv2 (free football-data settlement) instead, so shadow leagues never add /scores credits."""
+    return list(recommendations) if allowed is None else [r for r in recommendations if r.market_record.competition in allowed]
 
 
 def restrict_money_competition(result: RecommendationResult, allowed: frozenset[str] | None) -> RecommendationResult:
@@ -508,7 +529,7 @@ def main() -> int:
     else:
         newly_recorded, skipped = record_qualifying_candidates(
             args.paper_ledger,
-            recommendations,
+            legacy_ledger_scope(recommendations, money_allowed),
             scan_id=context.generated_at.isoformat(),
             created_at=datetime.now(timezone.utc).isoformat(),
             data_version=ENGINE_VERSION,

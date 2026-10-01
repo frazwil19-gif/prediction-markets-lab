@@ -53,7 +53,11 @@ def build(repo: Path, now: datetime) -> dict:
     proj = {k: {"plan_a_month_range": v, "plan_a_to_date_range": [round(v[0] * day / 30, 1), round(v[1] * day / 30, 1)],
                 "actual_to_date": by[k]["credits_charged"] if k in by else 0} for k, v in PLAN_A_MONTHLY.items()}
     fb_days = len({r["timestamp_utc"][:10] for r in led if r["consumer"] == "football_daily_scan"})
+    import calendar
+    dim = calendar.monthrange(now.year, now.month)[1]
+    run_rate = None if latest_used is None else round(latest_used / day * dim)   # naive linear; early-month values are noisy
     return {"generated_at": now.isoformat(), "month": month, "account_used_month_to_date_latest_counter": latest_used,
+            "projected_month_end_at_current_rate": run_rate,
             "by_consumer": {k: dict(v) for k, v in sorted(by.items())}, "plan_a_comparison": proj,
             "football_counterfactual": {"scan_days_logged": fb_days, "baseline_credits_if_ungated": fb_days * BASELINE_FOOTBALL_PER_DAY,
                                         "actual": by["football_daily_scan"]["credits_charged"] if "football_daily_scan" in by else 0},
@@ -63,7 +67,9 @@ def build(repo: Path, now: datetime) -> dict:
 
 def render_md(r: dict) -> str:
     lines = [f"# Odds API credit report — {r['month']} (generated {r['generated_at'][:16]}Z)", "",
-             f"Account credits used this month (latest logged counter): **{r['account_used_month_to_date_latest_counter']}** of 500", "",
+             f"Account credits used this month (latest logged counter): **{r['account_used_month_to_date_latest_counter']}** of 500",
+             f"Naive month-end projection at the current rate: {r.get('projected_month_end_at_current_rate')} "
+             "(shadow football tiers throttle themselves before the reserve; see config/api_budget.json football_shadow_tiers)", "",
              "| Consumer | Paid calls | Credits charged | Skipped (gate/floor) | Credits saved (est.) |", "|---|---|---|---|---|"]
     for k, v in r["by_consumer"].items():
         lines.append(f"| {k} | {v['paid_calls']} | {v['credits_charged']} | {v['skipped_calls']} | {v['credits_saved_estimate']} |")

@@ -85,7 +85,8 @@ def test_fetch_and_canonicalise_skips_only_gated_leagues(cfg, monkeypatch):
     assert [(x["call"], x["outcome"]) for x in log][:3] == [("odds:soccer_epl", "PAID"), ("odds:soccer_efl_champ", "SKIPPED"),
                                                            ("odds:soccer_spl", "SKIPPED")]
     skipped = len(cfg.sport_keys) - 1
-    assert sum(x.get("credits_saved_estimate", 0) for x in log) == 2 * skipped
+    # saved estimate = paid markets per skipped league (h2h+totals for E0/E1/SC0, h2h only elsewhere)
+    assert sum(x.get("credits_saved_estimate", 0) for x in log) == sum(len(cfg.markets_for(k)) for k in cfg.sport_keys if k != "soccer_epl")
     assert len([w for w in warnings if "skipped" in w]) == skipped
 
 

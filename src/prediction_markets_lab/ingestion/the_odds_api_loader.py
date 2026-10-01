@@ -43,6 +43,8 @@ import urllib.request
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
 
+from prediction_markets_lab.ops import football_coverage as FC
+
 
 class TheOddsApiCredentialError(RuntimeError):
     """Raised when no API key is configured.
@@ -77,18 +79,14 @@ class TheOddsApiConfig:
     # see the module docstring and the implementation checkpoint. If a
     # key is wrong, fetch_odds_raw will surface a clear HTTP error
     # rather than silently returning nothing.
-    sport_keys: dict[str, str] = field(
-        default_factory=lambda: {
-            "soccer_epl": "Premier League",
-            "soccer_efl_champ": "Championship",
-            "soccer_spl": "Scottish Premiership",
-            # V2-19 (V2-18 study: EXPAND NOW, grade A, best strong-predictions per credit within the 425 target)
-            "soccer_netherlands_eredivisie": "Eredivisie",
-            "soccer_germany_bundesliga": "Bundesliga",
-        }
-    )
+    # Final football coverage (2026-10-01): the observed leagues and their paid markets come from
+    # config/football_coverage.yaml (single source; tiers/paper eligibility live there too).
+    sport_keys: dict[str, str] = field(default_factory=lambda: FC.sport_keys(FC.load()))
     regions: str = "uk"
-    markets: tuple[str, ...] = ("h2h", "totals")
+    markets: tuple[str, ...] = ("h2h", "totals")   # fallback for a sport key absent from markets_by_sport
+    markets_by_sport: dict[str, tuple[str, ...]] = field(default_factory=lambda: FC.markets_by_sport(FC.load()))
+    # sport_key -> minimum remaining credits to pay this run (tier throttle); absent -> hard_floor_remaining
+    floor_by_sport: dict[str, float] = field(default_factory=dict)
     # V2-14 Credit Plan A (approved 2026-10-01). None = no gate (previous behaviour). The daily scan sets these from
     # config/api_budget.json (fixture_gate_hours, hard_floor_remaining).
     gate_horizon_hours: float | None = None
@@ -97,6 +95,9 @@ class TheOddsApiConfig:
     base_url: str = "https://api.the-odds-api.com"
     request_timeout_seconds: float = 15.0
     total_goals_line: float = 2.5
+
+    def markets_for(self, sport_key: str) -> tuple[str, ...]:
+        return tuple(self.markets_by_sport.get(sport_key, self.markets))
 
     def resolve_api_key(self) -> str:
         """Read the API key from the environment, or raise a clear, actionable error.
@@ -460,7 +461,7 @@ def fetch_odds_raw(sport_key: str, config: TheOddsApiConfig, headers_out: dict |
     params = {
         "apiKey": api_key,
         "regions": config.regions,
-        "markets": ",".join(config.markets),
+        "markets": ",".join(config.markets_for(sport_key)),
         "oddsFormat": config.odds_format,
     }
     url = f"{config.base_url}/v4/sports/{sport_key}/odds/?{urllib.parse.urlencode(params)}"
@@ -533,8 +534,10 @@ def fixture_gate(sport_key: str, config: TheOddsApiConfig, now: datetime) -> Gat
             continue
         n += int(now < t <= horizon)
     rem = hdr.get("x-requests-remaining")
-    if config.hard_floor_remaining is not None and rem not in (None, "") and float(rem) < config.hard_floor_remaining:
-        return GateDecision(sport_key, False, f"credit floor: remaining {rem} < {config.hard_floor_remaining}", n, hdr)
+    floor = config.floor_by_sport.get(sport_key, config.hard_floor_remaining)
+    if floor is not None and rem not in (None, "") and float(rem) < floor:
+        kind = "credit floor" if floor == config.hard_floor_remaining else "tier throttle"
+        return GateDecision(sport_key, False, f"{kind}: remaining {rem} < {floor}", n, hdr)
     if n == 0:
         return GateDecision(sport_key, False, f"no fixture within {config.gate_horizon_hours}h", 0, hdr)
     return GateDecision(sport_key, True, f"{n} fixture(s) within {config.gate_horizon_hours}h", n, hdr)
@@ -570,7 +573,7 @@ def fetch_and_canonicalise(config: TheOddsApiConfig, now: datetime | None = None
                 all_warnings.append(f"{sport_key}: odds call skipped (0 credits) -- {g.reason}")
                 if call_log is not None:
                     call_log.append({"call": f"odds:{sport_key}", "outcome": "SKIPPED", "reason": g.reason,
-                                     "credits_saved_estimate": len(config.markets), "headers": g.headers})
+                                     "credits_saved_estimate": len(config.markets_for(sport_key)), "headers": g.headers})
                 continue
         hdr: dict = {}
         raw = fetch_odds_raw(sport_key, config, hdr)

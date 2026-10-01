@@ -1,5 +1,5 @@
 {
-  "_doc": "Odds API monthly credit budget (research/platform_v2/API_CREDIT_BUDGET.md; Credit Plan A approved 2026-10-01: research/platform_v2/v2_13_october/CREDIT_AUDIT.md). Optional consumers stop first.",
+  "_doc": "Odds API monthly credit budget (research/platform_v2/API_CREDIT_BUDGET.md; Credit Plan A approved 2026-10-01: research/platform_v2/v2_13_october/CREDIT_AUDIT.md; final football coverage 2026-10-01: research/platform_v2/football_coverage/COVERAGE_DESIGN.md). HARD LIMIT = monthly_plan_limit (free plan, never purchased); SAFETY RESERVE = global_reserve_remaining; OPERATING BUDGET = monthly_target_max = hard limit - reserve. Consumer caps are planned allocations for the core; shadow football tiers have no planned allocation and run only on measured surplus (football_shadow_tiers). Optional consumers stop first.",
   "monthly_plan_limit": 500,
   "monthly_target_max": 425,
   "global_reserve_remaining": 75,
@@ -9,7 +9,7 @@
       "monthly_cap": 160,
       "fixture_gate_hours": 48,
       "hard_floor_remaining": 25,
-      "_note": "core: not stopped by its cap (documentary); pays per league only if a fixture kicks off within fixture_gate_hours (= unified ledger FIRST_SCAN_WITHIN_48H window) and remaining >= hard_floor_remaining; V2-19: 5 leagues (E0/E1/SC0/N1/D1) ~158/month in season (V2-18 paying-day estimate)"
+      "_note": "core = football Tier 1 (E0/E1/SC0 h2h+totals; N1/D1/F1 h2h; config/football_coverage.yaml). Not stopped by its cap (documentary); pays per league only if a fixture kicks off within fixture_gate_hours and remaining >= hard_floor_remaining. Expected ~162/month in season, high month ~215 (COVERAGE_DESIGN.md; corrected paying-day count incl. same-day fixtures)."
     },
     "football_settlement": {
       "priority": "core",
@@ -27,6 +27,36 @@
       "priority": "optional",
       "monthly_cap": 60,
       "min_remaining": 100
+    }
+  },
+  "football_shadow_tiers": {
+    "_doc": "Tier 2 (prospective shadow) and Tier 3 (conditional shadow) leagues pay only while remaining >= base + days_left_in_month x sum(protected_daily_need of the consumers they protect); base = max(global_reserve_remaining, largest consumer min_remaining). Tier 3 stops first, then Tier 2; Tier 1 is never sacrificed. Logged as consumer football_shadow_scan.",
+    "protected_daily_need": {
+      "football_tier1": 5.4,
+      "_football_tier1": "expected in-season 161.6/month / 30 (CREDIT_MODEL.json A_core_plus_F1_recommended_tier1: E0/E1/SC0/N1/D1/F1)",
+      "tennis": 3.2,
+      "_tennis": "observed 2026-09-23..10-01: 28 credits / 9 days (tennis_predictions/credit_log.csv)",
+      "nba": 2.0,
+      "_nba": "60/month plan (v2_13_october/NBA_FIX_PLAN.md) / 30",
+      "settlement": 0.4,
+      "_settlement": "legacy /scores, E0/E1/SC0 only, expected ~10/month (Plan A 0-20) / 30, rounded up",
+      "football_tier2": 2.7,
+      "_football_tier2": "expected in-season 80.8/month (C_major_europe - A_core_plus_F1) / 30: SP1/I1/P1/B1"
+    },
+    "protects": {
+      "2": [
+        "football_tier1",
+        "tennis",
+        "nba",
+        "settlement"
+      ],
+      "3": [
+        "football_tier1",
+        "tennis",
+        "nba",
+        "settlement",
+        "football_tier2"
+      ]
     }
   }
 }

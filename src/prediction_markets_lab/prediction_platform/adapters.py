@@ -9,6 +9,7 @@ from collections import defaultdict
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 
+from prediction_markets_lab.ops import football_coverage as FC
 from prediction_markets_lab.prediction_platform.registry import Registry
 from prediction_markets_lab.prediction_platform.schema import (
     HIGH_P, Prediction, band_of, fair_odds, make_prediction_id, validate)
@@ -47,11 +48,17 @@ def _iso(d: datetime) -> str:
 def _build(reg: Registry, ctx: RunContext, engine_id: str, *, sport: str, competition: str, event_id: str | None,
            event_key: str, event_name: str, event_start: datetime, market: str, selection: str, p: float,
            pred_ts: datetime, live_price: float | None, live_src: str | None, paper_status: str = "PAPER",
-           valid: bool = True, origin: str, origin_id: str | None = None, pid: str | None = None) -> Prediction:
+           valid: bool = True, origin: str, origin_id: str | None = None, pid: str | None = None,
+           shadow_league: str | None = None) -> Prediction:
+    """shadow_league: set for a football competition observed prospectively but NOT paper-eligible
+    (config/football_coverage.yaml): engine_status becomes SHADOW_LEAGUE_STATUS (outside every bsv2 engine_statuses
+    list -> never a PAPER_BET), money/single eligibility is forced off and the league evidence is appended to the
+    engine's historical-support text. The probability itself is unchanged (same frozen estimator)."""
     e = reg.get(engine_id)
     fo = fair_odds(p)
-    single = bool(e["money_eligible"]) and fo >= ctx.single_min_odds and valid
-    reason = None if single else ("engine not money-eligible" if not e["money_eligible"]
+    single = bool(e["money_eligible"]) and fo >= ctx.single_min_odds and valid and shadow_league is None
+    reason = None if single else ("prospective shadow league (not paper/money eligible)" if shadow_league is not None
+                                  else "engine not money-eligible" if not e["money_eligible"]
                                   else f"fair odds {fo:.2f} below payout floor {ctx.single_min_odds}" if fo < ctx.single_min_odds
                                   else "prediction not valid")
     return Prediction(
@@ -59,7 +66,9 @@ def _build(reg: Registry, ctx: RunContext, engine_id: str, *, sport: str, compet
         engine_id=engine_id, engine_version=e["ledger_version"], sport=sport, competition=competition, event_id=event_id,
         event_key=event_key, event_name=event_name, event_start=_iso(event_start), market=market, selection=selection,
         estimated_probability=float(p), fair_odds=fo, probability_band=band_of(p), probability_source=e["probability_source"],
-        historical_support=reg.support_text(engine_id), engine_status=e["status"], data_quality="OK" if valid else "RESEARCH_ONLY",
+        historical_support=reg.support_text(engine_id) + (f" | {shadow_league}" if shadow_league is not None else ""),
+        engine_status=FC.SHADOW_LEAGUE_STATUS if shadow_league is not None else e["status"],
+        data_quality="OK" if valid else "RESEARCH_ONLY",
         current_context_status=CONTEXT_STATUS, configured_scan_time=ctx.configured_scan_time,
         actual_workflow_start=ctx.actual_workflow_start, prediction_timestamp=_iso(pred_ts),
         minutes_to_event=round((event_start - pred_ts).total_seconds() / 60, 1), live_price=live_price, live_price_source=live_src,
@@ -77,8 +86,20 @@ def football_event_key(competition: str, event: str, kickoff: str) -> str:
     return f"football|{competition}|{event}|{_iso(_ts(kickoff))}"
 
 
+def _shadow_text(coverage: dict | None, comp: str) -> str | None:
+    if coverage is None:
+        return None
+    lg = coverage.get(comp)
+    if lg is None:
+        return f"PROSPECTIVE SHADOW: {comp} not in config/football_coverage.yaml"
+    return None if lg.paper_eligible else f"PROSPECTIVE SHADOW {lg.code} (V2-18 1X2 grade {lg.grade_1x2}): {lg.evidence}"
+
+
 def football_from_card(card: dict, reg: Registry, ctx: RunContext, now: datetime,
-                       origin: str) -> tuple[list[Prediction], list[Skip]]:
+                       origin: str, coverage: dict | None = None) -> tuple[list[Prediction], list[Skip]]:
+    """coverage: competition name -> ops.football_coverage.League. None keeps the pre-coverage behaviour (every
+    competition treated as the engine's own status). With coverage, a competition that is absent or not
+    paper_eligible is recorded as a prospective SHADOW league (fail closed)."""
     preds: list[Prediction] = []
     skips: list[Skip] = []
     data_ts = _ts(card["data_timestamp"])
@@ -105,7 +126,7 @@ def football_from_card(card: dict, reg: Registry, ctx: RunContext, now: datetime
             skips.append(Skip("football", key, "REVIEW_REQUIRED: duplicate selection rows for one event"))
             continue
         common = dict(sport="football", competition=comp, event_id=None, event_key=key, event_name=event,
-                      event_start=start, pred_ts=data_ts, origin=origin)
+                      event_start=start, pred_ts=data_ts, origin=origin, shadow_league=_shadow_text(coverage, comp))
         trip = [by_sel.get(("1x2", s), [None])[0] for s in ("home", "draw", "away")]
         if all(trip):
             ps = [float(t["estimated_probability"]) for t in trip]

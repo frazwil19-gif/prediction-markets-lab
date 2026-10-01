@@ -12,6 +12,19 @@ football:
     - Scottish Premiership
     - Eredivisie        # V2-19: V2-18 EXPAND NOW (grade A 1X2/DC; settlement aliases added from first observed spellings)
     - Bundesliga        # V2-19: V2-18 EXPAND NOW
+    # Final football coverage (2026-10-01): observed prospectively; tier / paper eligibility in config/football_coverage.yaml
+    # (shadow leagues never produce a PAPER_BET; none of these is in money_card_competitions).
+    - Ligue 1
+    - La Liga
+    - Serie A
+    - Primeira Liga
+    - Belgian Pro League
+    - League One
+    - League Two
+    - Segunda Division
+    - 2. Bundesliga
+    - Serie B
+    - Ligue 2
     # Additional competitions may be added only once bookmaker
     # coverage is confirmed strong (section 4).
   # V2-19: the legacy Daily Money Card may money-qualify ONLY these (unchanged pre-V2-19 set). Leagues added by the
