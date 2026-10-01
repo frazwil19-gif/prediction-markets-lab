@@ -14,6 +14,12 @@ football:
     - Bundesliga        # V2-19: V2-18 EXPAND NOW
     # Additional competitions may be added only once bookmaker
     # coverage is confirmed strong (section 4).
+  # V2-19: the legacy Daily Money Card may money-qualify ONLY these (unchanged pre-V2-19 set). Leagues added by the
+  # V2-18 expansion run prospectively / paper-only (Evidence & Promotion Protocol); money needs Fraser's approval.
+  money_card_competitions:
+    - Premier League
+    - Championship
+    - Scottish Premiership
   # V2-13 (2026-10-01): listed competitions MUST have an Odds API sport key (ingestion/the_odds_api_loader.py),
   # a settlement mapping (prediction_platform/settle.py COMP_TO_FD) and explicit calibration/coverage support
   # (a test enforces the first two). Disabled until all three exist -- kept here for provenance, never silently deleted:
