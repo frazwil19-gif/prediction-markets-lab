@@ -58,8 +58,10 @@ def test_reversed_fixture_is_not_matched(aliases):
 
 def test_unresolved_name_never_guessed(aliases):
     rows = fd.parse_fd_csv(CSV, "E1", aliases)
-    m = fd.match_fixture("E1", "Norwich City", "Bolton Wanderers", date(2026, 9, 20), rows, aliases)
-    assert m.status == "UNRESOLVED_NAME" and "Bolton" in m.detail
+    m = fd.match_fixture("E1", "Norwich City", "Nowhere Rovers", date(2026, 9, 20), rows, aliases)
+    assert m.status == "UNRESOLVED_NAME" and "Nowhere Rovers" in m.detail
+    # V2-13: Bolton was the original real-world example of this defect; it now resolves via an observed-spelling alias
+    assert fd.match_fixture("E1", "Norwich City", "Bolton Wanderers", date(2026, 9, 20), rows, aliases).status == "MATCHED"
 
 
 def test_duplicate_results_are_ambiguous(aliases):

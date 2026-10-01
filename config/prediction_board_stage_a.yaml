@@ -1,9 +1,10 @@
 # V2-10 fix B -- Stage A probability-first Prediction Board (research/platform_v2/DECISION_PHILOSOPHY.md).
 # Stage A ranks predictions by probability ONLY and never filters on price. Price/market quality is a descriptive label.
 # Stage B (config/bet_selection_v2.yaml, bsv2-3) is read, never modified; it alone decides bets.
-board_version: stage-a-1
+board_version: stage-a-2   # stage-a-2 (V2-13): P_FIRST_SNAPSHOT / P_CURRENT_SCAN, football sigma + 1X2 normalisation, calibration status
 # "Strong prediction" label threshold; equals the existing Prediction Board >=70 count, bsv2-3 high_probability_threshold
 # and the V2-7 HIGH_P cohort (min_leg_p) -- not a new tuned value.
 strong_prediction_min_probability: 0.70
 calibration_results: research/platform_v2/card_engine_v2_7/RESULTS.json   # per-band calibration SE (same as V2-7)
 bet_selection_config: config/bet_selection_v2.yaml                          # read-only: quality rules + commission
+football_sigma_evidence: research/platform_v2/v2_13_football/FOOTBALL_SIGMA_EVIDENCE.json         # band SE (V2-13 pre-registration s.3)

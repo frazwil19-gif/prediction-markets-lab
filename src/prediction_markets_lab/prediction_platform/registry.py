@@ -53,5 +53,11 @@ class Registry:
 
     def support_text(self, engine_id: str) -> str:
         e = self.get(engine_id)
-        return (f"hist n={e['historical_sample']}; holdout {e['sealed_holdout_status']}; "
+        text = (f"hist n={e['historical_sample']}; holdout {e['sealed_holdout_status']}; "
                 f">=80% coverage {e['ge80_historical_coverage']}; {e['historical_calibration']}")
+        if e.get("estimator_id"):   # V2-13: the live estimator is named; historical calibration is not silently transferred
+            text += f"; live estimator {e['estimator_id']} (calibration transfer {e.get('calibration_transfer', 'NOT_ASSUMED')})"
+        return text
+
+    def calibration_status(self, engine_id: str) -> str:
+        return self.get(engine_id).get("calibration_status", "UNKNOWN")

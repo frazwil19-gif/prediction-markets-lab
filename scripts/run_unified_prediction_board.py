@@ -214,7 +214,7 @@ def build(reg: Registry, st: dict) -> None:
     now = now_utc()
     preds = read_rows(LEDGER)
     settlements = {r["prediction_id"]: r for r in read_rows(SETTLEMENTS)}
-    perf = P.report(preds, settlements)
+    perf = P.report(preds, settlements, P.load_guards(REPO))   # V2-13: sealed-holdout no-peek masking
     health = H.evaluate(REPO, now, st)
     active = [e for e in reg.engines if reg.collectable(e, now)]
     start_index = ET.load_index(REPO)
@@ -250,7 +250,9 @@ def build_stage_a(preds: list[dict], start_index: ET.StartIndex, now: datetime) 
             (PR.football_from_card(p, card) if card else [])
 
     cal = SA.calibration_se(cfg.calibration_results) if cfg.calibration_results.exists() else None
-    board = SA.build(eligible, prob_rows, snaps_for, bs_cfg, cfg, cal, now)
+    fse = SA.football_sigma(cfg.football_sigma_evidence) if cfg.football_sigma_evidence and cfg.football_sigma_evidence.exists() else None
+    status = {eid: e.get("calibration_status", "UNKNOWN") for eid, e in Registry.load().engines.items()}
+    board = SA.build(eligible, prob_rows, snaps_for, bs_cfg, cfg, cal, now, fse, status)
     SA.write(board, REPORTS)
     print(f"stage A: {board['summary']}")
 

@@ -36,11 +36,18 @@ STRONG, BELOW_STRONG = "STRONG_PREDICTION", "BELOW_STRONG_THRESHOLD"
 QUALITY_REASONS = frozenset({"EXCHANGE_SPREAD_TOO_WIDE", "EXCHANGE_SPREAD_UNKNOWN", "PROBABILITY_NOT_SAME_SNAPSHOT",
                              "PRICE_STALE", "PRICE_AT_OR_AFTER_START", "COMMISSION_UNKNOWN", "PROBABILITY_OUT_OF_RANGE"})
 NO_PRICE = "NO_EXECUTABLE_PRICE"
-BASIS_SCAN, BASIS_LEDGER = "LATEST_VALIDATED_SAME_SCAN", "LEDGER_FIRST_OBSERVATION"
+# stage-a-2: explicit probability bases. P_FIRST_SNAPSHOT = the immutable prediction of record (ledger; calibration and
+# prospective validation). P_CURRENT_SCAN = the latest same-snapshot engine P (what Stage B prices). Both always shown.
+BASIS_SCAN, BASIS_LEDGER = "P_CURRENT_SCAN", "P_FIRST_SNAPSHOT"
+NORMALISED, INCOMPLETE = "TRIPLET_NORMALISED", "TRIPLET_INCOMPLETE"
+SIGMA_TENNIS = "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)"
+SIGMA_FOOTBALL = "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)"
+SIGMA_NONE = "NOT_ESTIMATED"
 
 FIELDS = ["rank", "prediction_id", "sport", "competition", "event_key", "event_name", "event_start", "event_start_original",
           "start_time_status", "market", "selection", "probability", "probability_basis", "probability_observed_at",
-          "ledger_probability", "sigma", "sigma_calibration", "sigma_half_width", "exchange_width", "probability_band",
+          "p_first_snapshot", "p_current_scan", "ledger_probability", "normalisation", "sigma", "sigma_method",
+          "sigma_calibration", "sigma_half_width", "exchange_width", "calibration_status", "probability_band",
           "engine_id", "engine_version", "engine_status", "prediction_timestamp", "historical_support", "strength",
           "price_status", "stage_a_label", "financially_assessable", "price_status_reasons", "best_clean_source",
           "best_clean_odds", "best_clean_net_ev", "n_quotes_latest", "n_clean_quotes_latest", "price_observed_at",
@@ -53,12 +60,46 @@ class StageAConfig:
     strong_min_probability: float
     calibration_results: Path
     bet_selection_config: Path
+    football_sigma_evidence: Path | None = None
 
 
 def load_config(path: Path, repo: Path) -> StageAConfig:
     c = yaml.safe_load(path.read_text())
+    fse = c.get("football_sigma_evidence")
     return StageAConfig(c["board_version"], float(c["strong_prediction_min_probability"]),
-                        repo / c["calibration_results"], repo / c["bet_selection_config"])
+                        repo / c["calibration_results"], repo / c["bet_selection_config"], repo / fse if fse else None)
+
+
+def football_sigma(evidence_path: Path) -> Callable[[str, float], float | None]:
+    """(market, P) -> band sigma from FOOTBALL_SIGMA_EVIDENCE.json (match-clustered bootstrap SE of the historical
+    band's realised rate). Markets without evidence (e.g. over_under_2_5) -> None (NOT_ESTIMATED)."""
+    ev = json.loads(evidence_path.read_text())["markets"]
+
+    def lookup(market: str, p: float) -> float | None:
+        for b in ev.get(market, []):
+            if b["lo"] <= p < b["hi"] or (p >= 1.0 and b["hi"] >= 1.0):
+                return float(b["sigma_clustered_se"])
+        return None
+    return lookup
+
+
+def normalise_1x2(rows: list[dict]) -> dict[str, tuple[float, str]]:
+    """prediction_id -> (normalised P, status) for football 1X2 rows. A triplet = the three H/D/A rows of one snapshot
+    (same event, engine, prediction timestamp). Raw ledger values are never modified (pre-registered, V2-13 s.2)."""
+    groups: dict[tuple, list[dict]] = {}
+    for r in rows:
+        if r.get("sport") == "football" and r.get("market") == "1x2":
+            groups.setdefault((r["event_key"], r["engine_id"], r["prediction_timestamp"]), []).append(r)
+    out = {}
+    for g in groups.values():
+        if sorted(x["selection"] for x in g) == ["away", "draw", "home"]:
+            tot = sum(float(x["estimated_probability"]) for x in g)
+            for x in g:
+                out[x["prediction_id"]] = (float(x["estimated_probability"]) / tot, NORMALISED)
+        else:
+            for x in g:
+                out[x["prediction_id"]] = (float(x["estimated_probability"]), INCOMPLETE)
+    return out
 
 
 def calibration_se(results_path: Path) -> Callable[[float], float]:
@@ -112,9 +153,13 @@ def price_status(pred: dict, snaps: list[PR.PriceSnapshot], bs_cfg: dict, now: d
 
 
 def build(eligible: list[dict], prob_rows: list[dict], snaps_for: Callable[[dict], list[PR.PriceSnapshot]], bs_cfg: dict,
-          cfg: StageAConfig, cal_se: Callable[[float], float] | None, now: datetime) -> dict:
-    """eligible: unified predictions already filtered by the est-1 start-time rule (current start overlaid)."""
+          cfg: StageAConfig, cal_se: Callable[[float], float] | None, now: datetime,
+          football_se: Callable[[str, float], float | None] | None = None,
+          calibration_status: dict[str, str] | None = None) -> dict:
+    """eligible: unified predictions already filtered by the est-1 start-time rule (current start overlaid).
+    cal_se: tennis band SE (V2-7); football_se: football band SE; calibration_status: engine_id -> registry status."""
     valid = [p for p in eligible if str(p.get("prediction_valid")) == "True"]
+    norm = normalise_1x2(valid)
     by_sel: dict[tuple[str, str, str], dict] = {}
     dup = 0
     for p in valid:   # one row per (event, market, selection): the most recent prediction of record
@@ -127,8 +172,18 @@ def build(eligible: list[dict], prob_rows: list[dict], snaps_for: Callable[[dict
     rows = []
     for p in by_sel.values():
         prob, basis, obs_at, width = current_probability(p, prob_rows, now)
-        cse = cal_se(prob) if (cal_se and p.get("sport") == "tennis") else None
-        sig = leg_sigma(prob, width, cse) if (cse is not None and width is not None) else cse
+        p_first, nstat = norm.get(p["prediction_id"], (float(p["estimated_probability"]), ""))
+        if basis == BASIS_LEDGER:
+            prob = p_first                     # football 1X2: the normalised triplet is the displayed/ranked P
+        if p.get("sport") == "tennis":
+            cse = cal_se(prob) if cal_se else None
+            sig = leg_sigma(prob, width, cse) if (cse is not None and width is not None) else cse
+            smethod = SIGMA_TENNIS if sig is not None else SIGMA_NONE
+        elif p.get("sport") == "football" and football_se:
+            cse = football_se(p["market"], prob)
+            sig, smethod = cse, (SIGMA_FOOTBALL if cse is not None else SIGMA_NONE)
+        else:
+            cse, sig, smethod = None, None, SIGMA_NONE
         strength = STRONG if prob >= cfg.strong_min_probability else BELOW_STRONG
         ps = price_status(p, snaps_for(p), bs_cfg, now, width if basis == BASIS_SCAN else None)
         rows.append({"prediction_id": p["prediction_id"], "sport": p["sport"], "competition": p["competition"],
@@ -136,8 +191,11 @@ def build(eligible: list[dict], prob_rows: list[dict], snaps_for: Callable[[dict
                      "event_start_original": p.get("event_start_original", p["event_start"]),
                      "start_time_status": p.get("start_time_status", ""), "market": p["market"], "selection": p["selection"],
                      "probability": round(prob, 6), "probability_basis": basis, "probability_observed_at": obs_at,
-                     "ledger_probability": float(p["estimated_probability"]),
-                     "sigma": None if sig is None else round(sig, 6), "sigma_calibration": None if cse is None else round(cse, 6),
+                     "p_first_snapshot": round(p_first, 6), "p_current_scan": round(prob, 6) if basis == BASIS_SCAN else None,
+                     "ledger_probability": float(p["estimated_probability"]), "normalisation": nstat,
+                     "sigma": None if sig is None else round(sig, 6), "sigma_method": smethod,
+                     "sigma_calibration": None if cse is None else round(cse, 6),
+                     "calibration_status": (calibration_status or {}).get(p["engine_id"], "UNKNOWN"),
                      "sigma_half_width": None if width is None else round(width / 2, 6), "exchange_width": width,
                      "probability_band": p["probability_band"], "engine_id": p["engine_id"], "engine_version": p["engine_version"],
                      "engine_status": p["engine_status"], "prediction_timestamp": p["prediction_timestamp"],
@@ -161,7 +219,8 @@ def build(eligible: list[dict], prob_rows: list[dict], snaps_for: Callable[[dict
             "summary": {"predictions": len(rows), "strong_predictions": len(strong),
                         "strong_unique_events": len({r["event_key"] for r in strong}),
                         "strong_by_price_status": count(strong, "price_status"),
-                        "all_by_price_status": count(rows, "price_status"), "duplicate_prediction_rows_collapsed": dup},
+                        "all_by_price_status": count(rows, "price_status"), "duplicate_prediction_rows_collapsed": dup,
+                        "strong_by_sport": count(strong, "sport"), "all_by_sport": count(rows, "sport")},
             "predictions": rows}
 
 
@@ -187,18 +246,21 @@ def render_md(b: dict) -> str:
              f"Predictions: {s['predictions']} · strong (P ≥ {int(100 * b['strong_prediction_min_probability'])}%): "
              f"{s['strong_predictions']} on {s['strong_unique_events']} events · strong by price status: "
              + (" · ".join(f"{k} {v}" for k, v in s["strong_by_price_status"].items()) or "—"), "",
-             "| # | Event | Start (UTC) | Selection | P | σ | Basis | Engine | Stage A status | Why not assessable | Best clean price | Net EV |",
-             "|---|---|---|---|---|---|---|---|---|---|---|---|"]
+             "| # | Sport | Event | Start (UTC) | Market | Selection | P | P first snapshot | P current scan | σ | Engine | Calibration status | Stage A status | Why not assessable | Best clean price | Net EV |",
+             "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
     strong = [r for r in b["predictions"] if r["strength"] == STRONG]
     for r in strong:
         price = f"{float(r['best_clean_odds']):.2f} ({r['best_clean_source']})" if r["best_clean_odds"] else "—"
         why = "" if r["financially_assessable"] else (r["price_status_reasons"] or r["price_status"])
         resched = " ⟳" if r["start_time_status"] == "RESCHEDULED" else ""
-        lines.append(f"| {r['rank']} | {r['event_name']} | {r['event_start'][:16]}{resched} | {r['selection']} | {_pct(r['probability'])} | "
-                     f"{_pct(r['sigma'])} | {r['probability_basis']} | {r['engine_id']} | {r['stage_a_label']} | {why} | {price} | "
-                     f"{_pct(r['best_clean_net_ev'])} |")
+        lines.append(f"| {r['rank']} | {r['sport']} | {r['event_name']} | {r['event_start'][:16]}{resched} | {r['market']} | "
+                     f"{r['selection']} | {_pct(r['probability'])} | {_pct(r['p_first_snapshot'])} | {_pct(r['p_current_scan'])} | "
+                     f"{_pct(r['sigma'])} | {r['engine_id']} | {r['calibration_status'].split(' ')[0]} | {r['stage_a_label']} | "
+                     f"{why} | {price} | {_pct(r['best_clean_net_ev'])} |")
     if not strong:
-        lines.append("| — | no strong prediction | | | | | | | | | | |")
-    lines += ["", "⟳ = start time rescheduled since first observation (est-1: the current provider start is used).",
+        lines.append("| — | | no strong prediction | | | | | | | | | | | | | |")
+    lines += ["", "P = P current scan when one exists, else P first snapshot (football 1X2: normalised H/D/A triplet; raw kept "
+              "in the ledger). Ranking uses P only.",
+              "⟳ = start time rescheduled since first observation (est-1: the current provider start is used).",
               "PRICE_VALID means only that a clean quote above fair exists; it is NOT a bet. See reports/bet_selection_v2.md."]
     return "\n".join(lines) + "\n"

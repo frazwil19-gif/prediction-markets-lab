@@ -10,9 +10,15 @@ football:
     - Premier League
     - Championship
     - Scottish Premiership
-    - Champions League
     # Additional competitions may be added only once bookmaker
     # coverage is confirmed strong (section 4).
+  # V2-13 (2026-10-01): listed competitions MUST have an Odds API sport key (ingestion/the_odds_api_loader.py),
+  # a settlement mapping (prediction_platform/settle.py COMP_TO_FD) and explicit calibration/coverage support
+  # (a test enforces the first two). Disabled until all three exist -- kept here for provenance, never silently deleted:
+  disabled_competitions:
+    - name: Champions League
+      reason: "no Odds API sport key, no football-data settlement mapping, no calibration evidence (V2-12 audit)"
+      disabled_on: "2026-10-01"
 
 tennis:
   active: true

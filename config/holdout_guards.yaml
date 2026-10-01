@@ -1,0 +1,10 @@
+# V2-13 no-peek guards for sealed holdouts that overlap prospective collection.
+# While a guard is CLOSED (no results file), settled rows of the engine whose event_start falls in the window are
+# excluded from every performance output (they are counted as masked, never shown). The raw settlement ledger is
+# untouched. Design: research/platform_v2/v2_13_football/DC_HOLDOUT_NO_PEEK.md
+guards:
+  football_double_chance.derived_1x2:
+    spec: research/platform_v2/double_chance/HOLDOUT_SPEC.json
+    results: research/platform_v2/double_chance/HOLDOUT_RESULTS.json   # written only by scripts/open_dc_holdout.py
+    date_from: "2026-08-01"
+    date_to: "2026-12-31"
