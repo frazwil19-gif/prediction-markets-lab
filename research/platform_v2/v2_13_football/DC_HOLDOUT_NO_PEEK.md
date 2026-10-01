@@ -24,11 +24,17 @@
 
    It applies exactly the spec's estimator and pass criteria using the frozen V2-4 functions. It writes `HOLDOUT_RESULTS.json`, which also flips the masking guard to OPENED. **It has not been run.**
 
-## Residual leakage (approval needed: choose one)
+## Residual leakage — DECIDED 2026-10-01: Option L1 (1X2 reporting stays ON)
 
-Football 1X2 prospective calibration (needed for the football launch) is reported on the same matches. Because DC = sums of 1X2, band-level 1X2 calibration carries partial information about DC calibration, although for a different estimator (live, 24–48h, not closing).
+**Decision.** Football 1X2 prospective reporting stays ON. It is a separate experiment testing a different (live) estimator.
 
-- **Option L1 (recommended):** allow 1X2 prospective reporting. Record in the eventual DC holdout report that live-estimator 1X2 calibration on overlapping matches was visible. The holdout tests the closing estimator, so contamination is indirect.
-- **Option L2:** mask football 1X2 for window dates too. This gives the strongest protection, but blinds the football launch evidence until January.
+**What stays masked or forbidden until the guarded opener runs (on or after 2027-01-03):**
+- every aggregate or performance analysis of DC on window dates;
+- DC calibration, Brier score, log loss, win rates, band tables, and any other outcome-derived DC statistic;
+- any DC tuning from Aug–Dec 2026 outcomes.
 
-Until you choose, **L1 is in effect**, because only the DC guard is configured.
+**What does not open the holdout.** Ordinary knowledge of match results, or of 1X2 prospective results, does **not** constitute an authorised quantitative opening of the DC holdout. Opening means running `scripts/open_dc_holdout.py`, and nothing else counts.
+
+**Disclosure.** The eventual holdout report must state that live-estimator 1X2 calibration on overlapping matches was visible before opening.
+
+(Option L2, masking 1X2 as well, was considered and rejected.)

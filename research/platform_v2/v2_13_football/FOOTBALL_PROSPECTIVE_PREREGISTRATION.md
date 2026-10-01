@@ -75,12 +75,13 @@ The pre-registered sample-triggered rules in `unified_board/PROSPECTIVE_PROTOCOL
 - an engine becomes reviewable at INTERMEDIATE: ≥ 300 settled events and ≥ 100 at ≥ 80%;
 - the alarm rule is unchanged.
 
-**Proposed amendment A1 (needs your approval; not active until approved).** The ≥80% count rarely binds where a bet can actually occur. 1X2 singles require fair odds ≥ 1.33, i.e. P ≤ 0.752. So a review intended to move an engine toward Stage B must also report, for the **probability bands in which Stage B can act**:
-- effective N (independent events) and Wilson 95% precision of realised minus predicted, with the event-clustered calibration slope and CI;
-- the 99.5% Wilson band check;
-- stability (first half vs second half of the prospective sample);
-- data-quality failure rate (rows lost to staleness, settlement mapping or missed scans);
-- estimator consistency (live vs closing P on the same matches, once closing odds are available from football-data.co.uk);
-- clustering (same matchday or league).
+~~**Proposed amendment A1**~~ — **SUPERSEDED 2026-10-01 (rejected at review; kept for provenance).**
 
-Promotion is decided on these quantities, never on the number of weeks elapsed.
+The proposal argued that "1X2 singles require fair odds ≥ 1.33, i.e. P ≤ 0.752", and defined the bet-relevant region as P ≤ 0.75. **That is incorrect.** The 1.33 floor constrains the *offered* price, not the model probability. For example, P = 0.82 at offered odds 1.35 gives EV = 0.82 × 1.35 − 1 = +10.7%, a potentially valid bet.
+
+The replacement is the general three-layer framework in `research/platform_v2/EVIDENCE_PROMOTION_PROTOCOL.md`:
+- probability quality;
+- an **empirically defined** decision region with no probability ceiling;
+- financial / paper evidence.
+
+Promotion moves through evidence states triggered by precision, never by elapsed time, and real-money eligibility always needs explicit approval.
