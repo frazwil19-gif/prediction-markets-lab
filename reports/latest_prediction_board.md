@@ -33,16 +33,16 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 385
 | football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 0 | 0 | COLLECTING | 0 | — → — |
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
 | atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 34 | 0 | COLLECTING | 0 | — → — |
-| wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 60 | 10 | COLLECTING | 2 | 87.3% → 100.0% |
+| wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 60 | 11 | COLLECTING | 2 | 87.3% → 100.0% |
 | nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 0 | 0 | COLLECTING | 0 | — → — |
 | football_double_chance.derived_1x2 | PROVISIONAL_PROSPECTIVE / COLLECTING | 0 | 0 | COLLECTING | 0 | — → — |
 
 ## System health
 
 - daily_scan: OK (last 2026-09-30T13:26:35.214373+00:00)
-- settlement: OK (last 2026-09-30T00:18:29.905262+00:00)
+- settlement: OK (last 2026-10-01T00:29:29.266793+00:00)
 - tennis_board: OK (last 2026-09-30T20:16:17.495727+00:00)
-- ci_tests: OK (last 2026-10-01T00:29:28.527598+00:00)
+- ci_tests: OK (last 2026-10-01T01:23:58.023220+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
