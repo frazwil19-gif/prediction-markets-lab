@@ -37,8 +37,18 @@ def norm_source(s: str) -> str:
     return str(s).strip().lower()
 
 
-def from_ledger_row(row: dict) -> PriceSnapshot | None:
-    """The executable price already recorded on a unified prediction row (tennis exchange back / football best book)."""
+# bsv2-4: marker for a ledger-path tennis quote whose same-snapshot engine source/spread could not be resolved.
+# evaluate treats it exactly like an EXCHANGE_MID probability with unknown spread (fail closed: EXCHANGE_SPREAD_UNKNOWN).
+UNRESOLVED_SOURCE = "UNRESOLVED_LEDGER_SNAPSHOT"
+
+
+def from_ledger_row(row: dict, prob_rows: list[dict] | None = None) -> PriceSnapshot | None:
+    """The executable price already recorded on a unified prediction row (tennis exchange back / football best book).
+
+    bsv2-4 (V2-11): a tennis ledger P is a Betfair-derived engine probability, so the exchange-quality information of
+    the SAME snapshot is attached from ``prob_rows`` (the row whose scan timestamp equals the prediction timestamp, same
+    event and players, validated). If it cannot be resolved the snapshot is marked UNRESOLVED_SOURCE -- never assumed
+    narrow, never taken from another scan."""
     lp, src = row.get("live_price", ""), row.get("live_price_source", "") or ""
     if lp in ("", None) or src.startswith("SYNTHETIC"):
         return None
@@ -56,7 +66,14 @@ def from_ledger_row(row: dict) -> PriceSnapshot | None:
         return None  # unknown provenance: never guessed
     t = ts(row["prediction_timestamp"])
     p = float(row["estimated_probability"]) if str(row.get("prediction_valid")) == "True" else None
-    return PriceSnapshot(row["prediction_id"], source, odds, t, t, "unified_ledger.live_price", p)
+    spread, p_src = None, None
+    if row.get("sport") == "tennis":
+        p_src = UNRESOLVED_SOURCE
+        same = [v for k, v in same_scan_details(row, prob_rows or []).items() if ts(k) == t]
+        if len(same) == 1:
+            _p_scan, spread, p_src = same[0]
+            p_src = p_src or UNRESOLVED_SOURCE
+    return PriceSnapshot(row["prediction_id"], source, odds, t, t, "unified_ledger.live_price", p, spread, p_src)
 
 
 # ---------------------------------------------------------------- tennis: prices from the tennis board's own response

@@ -1,0 +1,1155 @@
+{
+ "label": "V2-11 diagnostic; read-only; no outcomes; production inputs via git show",
+ "rule_versions": {
+  "A": "bsv2-3 (actual)",
+  "B": "bsv2-4 (proposed)"
+ },
+ "runs": {
+  "2026-09-29T20:11": {
+   "production_commit": "896cdbf",
+   "evaluated_at": "2026-09-29T20:11:51.841749+00:00",
+   "universe": 97,
+   "A_reproduces_production_exactly": true,
+   "decisions_A": {
+    "REJECT": 83,
+    "MULTI_RESEARCH_ELIGIBLE": 8,
+    "WATCH": 5,
+    "PAPER_BET": 1
+   },
+   "decisions_B": {
+    "REJECT": 85,
+    "MULTI_RESEARCH_ELIGIBLE": 6,
+    "WATCH": 5,
+    "PAPER_BET": 1
+   },
+   "spread_quality_failures_on_decided_A": 9,
+   "spread_quality_failures_on_decided_B": 13,
+   "paper_bets_A": [
+    {
+     "prediction_id": "cb04639bd402e869",
+     "event": "Zhuoxuan Bai v Linda Fruhvirtova",
+     "source": "betway",
+     "origin": "tennis_predictions/price_snapshots.csv"
+    }
+   ],
+   "paper_bets_B": [
+    {
+     "prediction_id": "cb04639bd402e869",
+     "event": "Zhuoxuan Bai v Linda Fruhvirtova",
+     "source": "betway"
+    }
+   ],
+   "decided_on_ledger_path_A": 4,
+   "ledger_path_quotes": 66,
+   "ledger_path_net_ev_max_A": 0.0012286400000000065,
+   "ledger_path_quotes_resolved_B": 2,
+   "ledger_path_B_reason_counts": {
+    "EXCHANGE_SPREAD_UNKNOWN": 64,
+    "PRICE_STALE": 64,
+    "EXCHANGE_SPREAD_TOO_WIDE": 2
+   },
+   "changed_predictions": [
+    {
+     "prediction_id": "100e9bc4f4a73a0c",
+     "event": "Viktorija Golubic v Alina Korneeva",
+     "selection": "Alina Korneeva",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "PRICE_STALE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.027917729500000044
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_UNKNOWN",
+       "PRICE_STALE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.027917729500000044
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_UNKNOWN",
+      "PRICE_STALE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "a8c287d7938cdb90",
+     "event": "Petra Marcinko v Magdalena Frech",
+     "selection": "Magdalena Frech",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "PRICE_STALE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.060999530500000065
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_UNKNOWN",
+       "PRICE_STALE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.060999530500000065
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_UNKNOWN",
+      "PRICE_STALE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "c2b11109982ea171",
+     "event": "Harriet Dart v Yihan Qu",
+     "selection": "Harriet Dart",
+     "A": {
+      "decision": "MULTI_RESEARCH_ELIGIBLE",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.005497067499999921
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.005497067499999921
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "21bcb59acd9670f6",
+     "event": "Yu Jun Lin v Storm Hunter",
+     "selection": "Storm Hunter",
+     "A": {
+      "decision": "MULTI_RESEARCH_ELIGIBLE",
+      "reasons": [
+       "NET_EV_BELOW_PAPER_GATE",
+       "ODDS_BELOW_PAYOUT_FLOOR",
+       "OUTSIDE_EVENT_HORIZON"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": 0.0012286400000000065
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": 0.0012286400000000065
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE"
+     ]
+    }
+   ]
+  },
+  "2026-09-30T12:54 (morning)": {
+   "production_commit": "e9cc1a4",
+   "evaluated_at": "2026-09-30T12:54:25.206146+00:00",
+   "universe": 46,
+   "A_reproduces_production_exactly": true,
+   "decisions_A": {
+    "REJECT": 34,
+    "WATCH": 2,
+    "MULTI_RESEARCH_ELIGIBLE": 10
+   },
+   "decisions_B": {
+    "REJECT": 38,
+    "WATCH": 2,
+    "MULTI_RESEARCH_ELIGIBLE": 6
+   },
+   "spread_quality_failures_on_decided_A": 0,
+   "spread_quality_failures_on_decided_B": 14,
+   "paper_bets_A": [],
+   "paper_bets_B": [],
+   "decided_on_ledger_path_A": 14,
+   "ledger_path_quotes": 39,
+   "ledger_path_net_ev_max_A": 0.0012286400000000065,
+   "ledger_path_quotes_resolved_B": 17,
+   "ledger_path_B_reason_counts": {
+    "EXCHANGE_SPREAD_UNKNOWN": 22,
+    "PRICE_STALE": 24,
+    "EXCHANGE_SPREAD_TOO_WIDE": 16
+   },
+   "changed_predictions": [
+    {
+     "prediction_id": "cff7f27954a10c97",
+     "event": "Ekaterina Alexandrova v Aliaksandra Sasnovich",
+     "selection": "Ekaterina Alexandrova",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.10456565499999992
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.10456565499999992
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "cef4e891f700c242",
+     "event": "Anastasia Potapova v Sinja Kraus",
+     "selection": "Anastasia Potapova",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.053413523000000046
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.053413523000000046
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "f45942b601601aa2",
+     "event": "Clara Tauson v Polina Kudermetova",
+     "selection": "Clara Tauson",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.11941384599999993
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.11941384599999993
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "bc6f7f03d40fc036",
+     "event": "Jasmine Paolini v Daria Snigur",
+     "selection": "Jasmine Paolini",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.10881067499999994
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.10881067499999994
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "45e525ab9491f277",
+     "event": "Dayana Yastremska v Maja Chwalinska",
+     "selection": "Maja Chwalinska",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.08358637599999996
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.08358637599999996
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "aae644f00e4a6ab7",
+     "event": "Janice Tjen v Diana Shnaider",
+     "selection": "Diana Shnaider",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.06359685700000006
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.06359685700000006
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "9ada3b0076db3553",
+     "event": "Taylah Preston v Diane Parry",
+     "selection": "Diane Parry",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.09905549999999996
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.09905549999999996
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "66b8d6ecab7cde25",
+     "event": "Linda Noskova v Elena Gabriela Ruse",
+     "selection": "Linda Noskova",
+     "A": {
+      "decision": "MULTI_RESEARCH_ELIGIBLE",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.039130930000000064
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.039130930000000064
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "180c792925c85e89",
+     "event": "Karolina Muchova v Katie Boulter",
+     "selection": "Karolina Muchova",
+     "A": {
+      "decision": "MULTI_RESEARCH_ELIGIBLE",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.03947027599999998
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.03947027599999998
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "11a82663b19cd075",
+     "event": "Linda Fruhvirtova v Liudmila Samsonova",
+     "selection": "Liudmila Samsonova",
+     "A": {
+      "decision": "MULTI_RESEARCH_ELIGIBLE",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.03853173999999993
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.03853173999999993
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "3c5c2a92f7c49360",
+     "event": "Sara Bejlek v Maddison Inglis",
+     "selection": "Sara Bejlek",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.08933822000000002
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.08933822000000002
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "b3cf18ee47cb8522",
+     "event": "Maria Timofeeva v Naomi Osaka",
+     "selection": "Naomi Osaka",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.04110341200000009
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.04110341200000009
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "80eea4f6b6b3885b",
+     "event": "Yue Yuan v Mirra Andreeva",
+     "selection": "Mirra Andreeva",
+     "A": {
+      "decision": "MULTI_RESEARCH_ELIGIBLE",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.02577026299999992
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.02577026299999992
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "7665b91ee1f6e89e",
+     "event": "Viktorija Golubic v Peyton Stearns",
+     "selection": "Peyton Stearns",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.13810128200000002
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.13810128200000002
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    }
+   ],
+   "C_est1_plus_bsv2_4": {
+    "universe": 71,
+    "decisions": {
+     "REJECT": 62,
+     "MULTI_RESEARCH_ELIGIBLE": 7,
+     "WATCH": 2
+    },
+    "paper_bets": 0,
+    "stage_a_summary": {
+     "predictions": 54,
+     "strong_predictions": 24,
+     "strong_unique_events": 24,
+     "strong_by_price_status": {
+      "POOR_PAYOUT": 14,
+      "PRICE_QUALITY_FAIL": 8,
+      "PRICE_VALID": 2
+     },
+     "all_by_price_status": {
+      "POOR_PAYOUT": 36,
+      "PRICE_QUALITY_FAIL": 15,
+      "PRICE_VALID": 3
+     },
+     "duplicate_prediction_rows_collapsed": 0
+    }
+   }
+  },
+  "2026-09-30T13:26 (daily scan)": {
+   "production_commit": "a893041",
+   "evaluated_at": "2026-09-30T13:26:36.200034+00:00",
+   "universe": 46,
+   "A_reproduces_production_exactly": true,
+   "decisions_A": {
+    "REJECT": 34,
+    "WATCH": 2,
+    "MULTI_RESEARCH_ELIGIBLE": 10
+   },
+   "decisions_B": {
+    "REJECT": 38,
+    "WATCH": 2,
+    "MULTI_RESEARCH_ELIGIBLE": 6
+   },
+   "spread_quality_failures_on_decided_A": 0,
+   "spread_quality_failures_on_decided_B": 14,
+   "paper_bets_A": [],
+   "paper_bets_B": [],
+   "decided_on_ledger_path_A": 14,
+   "ledger_path_quotes": 39,
+   "ledger_path_net_ev_max_A": 0.0012286400000000065,
+   "ledger_path_quotes_resolved_B": 17,
+   "ledger_path_B_reason_counts": {
+    "EXCHANGE_SPREAD_UNKNOWN": 22,
+    "PRICE_STALE": 24,
+    "EXCHANGE_SPREAD_TOO_WIDE": 16
+   },
+   "changed_predictions": [
+    {
+     "prediction_id": "cff7f27954a10c97",
+     "event": "Ekaterina Alexandrova v Aliaksandra Sasnovich",
+     "selection": "Ekaterina Alexandrova",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.10456565499999992
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.10456565499999992
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "cef4e891f700c242",
+     "event": "Anastasia Potapova v Sinja Kraus",
+     "selection": "Anastasia Potapova",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.053413523000000046
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.053413523000000046
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "f45942b601601aa2",
+     "event": "Clara Tauson v Polina Kudermetova",
+     "selection": "Clara Tauson",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.11941384599999993
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.11941384599999993
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "bc6f7f03d40fc036",
+     "event": "Jasmine Paolini v Daria Snigur",
+     "selection": "Jasmine Paolini",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.10881067499999994
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.10881067499999994
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "45e525ab9491f277",
+     "event": "Dayana Yastremska v Maja Chwalinska",
+     "selection": "Maja Chwalinska",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.08358637599999996
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.08358637599999996
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "aae644f00e4a6ab7",
+     "event": "Janice Tjen v Diana Shnaider",
+     "selection": "Diana Shnaider",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.06359685700000006
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.06359685700000006
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "9ada3b0076db3553",
+     "event": "Taylah Preston v Diane Parry",
+     "selection": "Diane Parry",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.09905549999999996
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.09905549999999996
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "66b8d6ecab7cde25",
+     "event": "Linda Noskova v Elena Gabriela Ruse",
+     "selection": "Linda Noskova",
+     "A": {
+      "decision": "MULTI_RESEARCH_ELIGIBLE",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.039130930000000064
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.039130930000000064
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "180c792925c85e89",
+     "event": "Karolina Muchova v Katie Boulter",
+     "selection": "Karolina Muchova",
+     "A": {
+      "decision": "MULTI_RESEARCH_ELIGIBLE",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.03947027599999998
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.03947027599999998
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "11a82663b19cd075",
+     "event": "Linda Fruhvirtova v Liudmila Samsonova",
+     "selection": "Liudmila Samsonova",
+     "A": {
+      "decision": "MULTI_RESEARCH_ELIGIBLE",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.03853173999999993
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.03853173999999993
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "3c5c2a92f7c49360",
+     "event": "Sara Bejlek v Maddison Inglis",
+     "selection": "Sara Bejlek",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.08933822000000002
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.08933822000000002
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "b3cf18ee47cb8522",
+     "event": "Maria Timofeeva v Naomi Osaka",
+     "selection": "Naomi Osaka",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.04110341200000009
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.04110341200000009
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "80eea4f6b6b3885b",
+     "event": "Yue Yuan v Mirra Andreeva",
+     "selection": "Mirra Andreeva",
+     "A": {
+      "decision": "MULTI_RESEARCH_ELIGIBLE",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.02577026299999992
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.02577026299999992
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "7665b91ee1f6e89e",
+     "event": "Viktorija Golubic v Peyton Stearns",
+     "selection": "Peyton Stearns",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.13810128200000002
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.13810128200000002
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    }
+   ]
+  },
+  "2026-09-30T20:16 (afternoon)": {
+   "production_commit": "7e3ce99",
+   "evaluated_at": "2026-09-30T20:16:18.937926+00:00",
+   "universe": 49,
+   "A_reproduces_production_exactly": true,
+   "decisions_A": {
+    "REJECT": 39,
+    "WATCH": 4,
+    "MULTI_RESEARCH_ELIGIBLE": 6
+   },
+   "decisions_B": {
+    "REJECT": 40,
+    "WATCH": 4,
+    "MULTI_RESEARCH_ELIGIBLE": 5
+   },
+   "spread_quality_failures_on_decided_A": 14,
+   "spread_quality_failures_on_decided_B": 16,
+   "paper_bets_A": [],
+   "paper_bets_B": [],
+   "decided_on_ledger_path_A": 2,
+   "ledger_path_quotes": 42,
+   "ledger_path_net_ev_max_A": 0.0012286400000000065,
+   "ledger_path_quotes_resolved_B": 20,
+   "ledger_path_B_reason_counts": {
+    "EXCHANGE_SPREAD_UNKNOWN": 22,
+    "PRICE_STALE": 39,
+    "EXCHANGE_SPREAD_TOO_WIDE": 18
+   },
+   "changed_predictions": [
+    {
+     "prediction_id": "19a0e17c3be366ba",
+     "event": "Renata Zarazua v Aryna Sabalenka",
+     "selection": "Aryna Sabalenka",
+     "A": {
+      "decision": "MULTI_RESEARCH_ELIGIBLE",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.01271331799999997
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.01271331799999997
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    },
+    {
+     "prediction_id": "5b844a521aa250aa",
+     "event": "Nikola Bartunkova v Magdalena Frech",
+     "selection": "Nikola Bartunkova",
+     "A": {
+      "decision": "REJECT",
+      "reasons": [
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.04714530750000001
+     },
+     "B": {
+      "decision": "REJECT",
+      "reasons": [
+       "EXCHANGE_SPREAD_TOO_WIDE",
+       "NET_EV_NOT_POSITIVE"
+      ],
+      "source": "betfair_ex_uk",
+      "origin": "unified_ledger.live_price",
+      "net_ev": -0.04714530750000001
+     },
+     "ledger_quote_B_reasons": [
+      "EXCHANGE_SPREAD_TOO_WIDE",
+      "NET_EV_NOT_POSITIVE"
+     ]
+    }
+   ],
+   "C_est1_plus_bsv2_4": {
+    "universe": 72,
+    "decisions": {
+     "REJECT": 61,
+     "MULTI_RESEARCH_ELIGIBLE": 7,
+     "WATCH": 4
+    },
+    "paper_bets": 0,
+    "stage_a_summary": {
+     "predictions": 56,
+     "strong_predictions": 26,
+     "strong_unique_events": 26,
+     "strong_by_price_status": {
+      "POOR_PAYOUT": 17,
+      "PRICE_QUALITY_FAIL": 9
+     },
+     "all_by_price_status": {
+      "POOR_PAYOUT": 35,
+      "PRICE_QUALITY_FAIL": 17,
+      "PRICE_VALID": 4
+     },
+     "duplicate_prediction_rows_collapsed": 0
+    }
+   }
+  }
+ }
+}

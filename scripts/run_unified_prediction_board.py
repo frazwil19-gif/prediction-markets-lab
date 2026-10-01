@@ -245,7 +245,7 @@ def build_stage_a(preds: list[dict], start_index: ET.StartIndex, now: datetime) 
     card = json.loads((days[-1] / "card.json").read_text()) if days else None
 
     def snaps_for(p: dict) -> list[PR.PriceSnapshot]:   # the same price sources bet-selection gathers
-        own = PR.from_ledger_row(p)
+        own = PR.from_ledger_row(p, prob_rows)
         return ([own] if own else []) + PR.tennis_from_snapshots(p, price_rows, prob_rows) + \
             (PR.football_from_card(p, card) if card else [])
 
