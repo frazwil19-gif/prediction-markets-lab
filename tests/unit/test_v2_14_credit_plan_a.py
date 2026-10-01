@@ -131,3 +131,11 @@ def test_credit_report_counts_spend_and_savings(tmp_path):
     assert r["account_used_month_to_date_latest_counter"] == 21
     assert r["football_counterfactual"] == {"scan_days_logged": 1, "baseline_credits_if_ungated": 6, "actual": 2}
     assert "Plan A to date" in m.render_md(r)
+
+
+def test_gate_fails_open_when_the_free_precheck_errors(cfg, monkeypatch):
+    def boom(*a, **k):
+        raise L.TheOddsApiResponseError("HTTP 500")
+    monkeypatch.setattr(L, "fetch_events_raw", boom)
+    g = L.fixture_gate("soccer_epl", cfg, NOW)
+    assert g.pay and "failed" in g.reason

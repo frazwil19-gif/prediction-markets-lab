@@ -516,7 +516,10 @@ def fixture_gate(sport_key: str, config: TheOddsApiConfig, now: datetime) -> Gat
     """Pay for odds only if >=1 fixture kicks off in (now, now + gate_horizon_hours] and the account stays above the
     hard floor. Unparseable commence times count as in-horizon (fail OPEN for data, never skip on doubt)."""
     hdr: dict = {}
-    events = fetch_events_raw(sport_key, config, hdr)
+    try:
+        events = fetch_events_raw(sport_key, config, hdr)
+    except TheOddsApiResponseError as exc:   # the free pre-check must never cost data: fail OPEN (pay as before)
+        return GateDecision(sport_key, True, f"events pre-check failed, paying as before: {exc}", -1, hdr)
     horizon = now + timedelta(hours=float(config.gate_horizon_hours))
     n = 0
     for ev in events if isinstance(events, list) else []:

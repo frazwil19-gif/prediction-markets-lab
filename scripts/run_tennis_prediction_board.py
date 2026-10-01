@@ -88,9 +88,13 @@ def main() -> int:
             skipped.append(sk)
             CL.append(CREDIT_LEDGER, CONSUMER, f"odds:{sk}", CL.SKIPPED_FLOOR, 0, 1, None, "budget cap/floor")
             continue
-        if gate:   # free /events pre-check (0 credits)
-            evs, eh = _get(f"{BASE}/{sk}/events/?{urllib.parse.urlencode({'apiKey': key})}")
-            if not has_upcoming_event(evs, now):
+        if gate:   # free /events pre-check (0 credits); any failure fails OPEN (pays as before)
+            try:
+                evs, eh = _get(f"{BASE}/{sk}/events/?{urllib.parse.urlencode({'apiKey': key})}")
+            except Exception as exc:  # noqa: BLE001
+                print(f"events pre-check failed for {sk}, paying as before: {exc}")
+                evs, eh = None, {}
+            if evs is not None and not has_upcoming_event(evs, now):
                 gated_out.append(sk)
                 CL.append(CREDIT_LEDGER, CONSUMER, f"odds:{sk}", CL.SKIPPED_GATE, 0, 1, eh, "no not-yet-started event listed")
                 continue
