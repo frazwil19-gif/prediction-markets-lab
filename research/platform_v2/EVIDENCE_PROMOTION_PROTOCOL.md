@@ -1,7 +1,7 @@
-# Evidence & Promotion Protocol (per engine) — PROPOSED 2026-10-01 (V2-13 revision; replaces superseded A1)
+# Evidence & Promotion Protocol (per engine) — APPROVED 2026-10-01 (V2-13 revision; replaces superseded A1)
 
-**Status:** proposed design, **pending your approval**. Until approved:
-- the pre-registered sample-triggered rules in `unified_board/PROSPECTIVE_PROTOCOL.md` §5–6 stay in force: maturity (COLLECTING / EARLY / INTERMEDIATE / MATURE, counted in events) and the 10pp alarm;
+**Status:** **APPROVED 2026-10-01** (your expansion directive §13: "use the approved evidence-promotion framework"). The proposed text is unchanged.
+- The pre-registered sample-triggered rules in `unified_board/PROSPECTIVE_PROTOCOL.md` §5–6 remain in force alongside it: maturity (COLLECTING / EARLY / INTERMEDIATE / MATURE, counted in events) and the 10pp alarm;
 - this document adds to them and replaces nothing;
 - `money_eligible` changes **only** by your explicit approval, never automatically.
 
