@@ -171,6 +171,25 @@ def load_yaml(path: Path) -> dict:
         return yaml.safe_load(f) or {}
 
 
+def money_card_competitions() -> frozenset[str] | None:
+    """V2-19: the legacy Daily Money Card may only money-qualify the competitions listed under
+    football.money_card_competitions (config/competitions.yaml). Leagues added later (N1/D1) run prospectively and
+    paper-only; they never become money-qualified here. None (key absent) keeps the previous behaviour."""
+    football = load_yaml(REPO_ROOT / "config" / "competitions.yaml").get("football", {})
+    allowed = football.get("money_card_competitions")
+    return None if allowed is None else frozenset(allowed)
+
+
+def restrict_money_competition(result: RecommendationResult, allowed: frozenset[str] | None) -> RecommendationResult:
+    rec = result.market_record
+    if allowed is None or rec.competition in allowed or not rec.money_qualified:
+        return result
+    reason = f"competition {rec.competition!r} is prospective/paper-only (not in football.money_card_competitions)"
+    upd = {"money_qualified": False, "money_decision": "PAPER_ONLY",
+           "money_rejection_reason": "; ".join(x for x in (rec.money_rejection_reason, reason) if x)}
+    return RecommendationResult(market_record=rec.model_copy(update=upd), stake_gbp=result.stake_gbp)
+
+
 def build_staking_config() -> StakingConfig:
     cfg = load_yaml(REPO_ROOT / "config" / "bankroll.yaml")
     return StakingConfig(
@@ -358,6 +377,7 @@ def main() -> int:
             live_scan_timestamp = next(iter(market_metadata.values()))["scan_timestamp"]
 
     recommendations: list[RecommendationResult] = []
+    money_allowed = money_card_competitions()   # V2-19: N1/D1 never money-qualify on the legacy card
     fixtures_seen: set[str] = set()
 
     for market_id, bookmaker_odds in bookmaker_odds_by_market.items():
@@ -430,7 +450,7 @@ def main() -> int:
                 money_qualification_thresholds=money_qualification_thresholds,
                 kickoff_iso=meta.get("commence_time"),
             )
-            recommendations.append(result)
+            recommendations.append(restrict_money_competition(result, money_allowed))   # V2-19
 
     context = DailyBetCardContext(
         generated_at=datetime.now(),

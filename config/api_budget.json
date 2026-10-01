@@ -6,14 +6,15 @@
   "consumers": {
     "football_daily_scan": {
       "priority": "core",
-      "monthly_cap": 150,
+      "monthly_cap": 160,
       "fixture_gate_hours": 48,
       "hard_floor_remaining": 25,
-      "_note": "core: not stopped by its cap (documentary); pays per league only if a fixture kicks off within fixture_gate_hours (= unified ledger FIRST_SCAN_WITHIN_48H window) and remaining >= hard_floor_remaining"
+      "_note": "core: not stopped by its cap (documentary); pays per league only if a fixture kicks off within fixture_gate_hours (= unified ledger FIRST_SCAN_WITHIN_48H window) and remaining >= hard_floor_remaining; V2-19: 5 leagues (E0/E1/SC0/N1/D1) ~158/month in season (V2-18 paying-day estimate)"
     },
     "football_settlement": {
       "priority": "core",
-      "monthly_cap": 60
+      "monthly_cap": 50,
+      "_note": "V2-19: lowered 60->50 (Plan A projection 0-20; scores only for leagues with started pending bets)"
     },
     "tennis_prediction_board": {
       "priority": "optional",

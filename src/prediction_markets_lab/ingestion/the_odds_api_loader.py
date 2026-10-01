@@ -82,6 +82,9 @@ class TheOddsApiConfig:
             "soccer_epl": "Premier League",
             "soccer_efl_champ": "Championship",
             "soccer_spl": "Scottish Premiership",
+            # V2-19 (V2-18 study: EXPAND NOW, grade A, best strong-predictions per credit within the 425 target)
+            "soccer_netherlands_eredivisie": "Eredivisie",
+            "soccer_germany_bundesliga": "Bundesliga",
         }
     )
     regions: str = "uk"

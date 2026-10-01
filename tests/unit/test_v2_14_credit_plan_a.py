@@ -71,7 +71,7 @@ def test_gate_fails_open_on_unparseable_time_and_closed_on_credit_floor(cfg, mon
 
 def test_fetch_and_canonicalise_skips_only_gated_leagues(cfg, monkeypatch):
     windows = {"soccer_epl": [ev(30)], "soccer_efl_champ": [ev(100)], "soccer_spl": []}
-    monkeypatch.setattr(L, "fetch_events_raw", lambda sk, c, h=None: windows[sk])
+    monkeypatch.setattr(L, "fetch_events_raw", lambda sk, c, h=None: windows.get(sk, []))
     paid = []
 
     def odds(sk, c, h=None):
@@ -82,9 +82,11 @@ def test_fetch_and_canonicalise_skips_only_gated_leagues(cfg, monkeypatch):
     log: list = []
     _, _, warnings = L.fetch_and_canonicalise(cfg, now=NOW, call_log=log)
     assert paid == ["soccer_epl"]
-    assert [(x["call"], x["outcome"]) for x in log] == [("odds:soccer_epl", "PAID"), ("odds:soccer_efl_champ", "SKIPPED"),
-                                                       ("odds:soccer_spl", "SKIPPED")]
-    assert sum(x.get("credits_saved_estimate", 0) for x in log) == 4 and len([w for w in warnings if "skipped" in w]) == 2
+    assert [(x["call"], x["outcome"]) for x in log][:3] == [("odds:soccer_epl", "PAID"), ("odds:soccer_efl_champ", "SKIPPED"),
+                                                           ("odds:soccer_spl", "SKIPPED")]
+    skipped = len(cfg.sport_keys) - 1
+    assert sum(x.get("credits_saved_estimate", 0) for x in log) == 2 * skipped
+    assert len([w for w in warnings if "skipped" in w]) == skipped
 
 
 def test_no_gate_keeps_previous_behaviour(monkeypatch):

@@ -190,3 +190,33 @@ def test_opener_loads_only_window_and_complete_closing_books(tmp_path):
     assert len(df) == n_good and set(shas) == set(spec["competitions"])
     res = m.evaluate(df)
     assert res["matches"] == n_good and res["events"] == 3 * n_good and isinstance(res["passed"], bool)
+
+
+def test_v2_19_expansion_leagues_wired_and_holdout_guard_scoped():
+    from prediction_markets_lab.ingestion.the_odds_api_loader import TheOddsApiConfig
+    keys = TheOddsApiConfig().sport_keys
+    assert keys["soccer_netherlands_eredivisie"] == "Eredivisie" and keys["soccer_germany_bundesliga"] == "Bundesliga"
+    assert COMP_TO_FD["Eredivisie"] == "N1" and COMP_TO_FD["Bundesliga"] == "D1"
+    g = P.load_guards(REPO)[0]
+    assert set(g.competitions) == {"Premier League", "Championship", "Scottish Premiership"}
+    row = {"engine_id": g.engine_id, "event_start": "2026-10-10T14:00:00+00:00", "competition": "Eredivisie"}
+    assert not P.masked(row, [g]) and P.masked({**row, "competition": "Premier League"}, [g])
+
+
+def test_v2_19_new_leagues_never_money_qualify_on_legacy_card():
+    from prediction_markets_lab.decisions.recommendation import RecommendationResult
+    from prediction_markets_lab.storage.schemas import MarketRecord
+    spec = importlib.util.spec_from_file_location("run_daily_scan_v219", REPO / "scripts/run_daily_scan.py")
+    m = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = m
+    spec.loader.exec_module(m)
+    allowed = m.money_card_competitions()
+    assert allowed == {"Premier League", "Championship", "Scottish Premiership"}
+    def rec(comp):   # model_construct: only the money fields matter here
+        r = MarketRecord.model_construct(competition=comp, money_qualified=True, money_decision="BET", money_rejection_reason="")
+        return RecommendationResult(market_record=r, stake_gbp=1.0)
+    for comp in ("Eredivisie", "Bundesliga"):
+        out = m.restrict_money_competition(rec(comp), allowed).market_record
+        assert out.money_qualified is False and out.money_decision == "PAPER_ONLY" and "paper-only" in out.money_rejection_reason
+    kept = m.restrict_money_competition(rec("Premier League"), allowed).market_record
+    assert kept.money_qualified is True and kept.money_decision == "BET"            # existing leagues unchanged
