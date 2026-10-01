@@ -1,0 +1,198 @@
+{
+ "tennis_ATP_betfair_basic": {
+  "file": "data/interim/v2_tennis_market_dataset.csv",
+  "rows": 12202,
+  "events": 12202,
+  "years": {
+   "2021": 2240,
+   "2022": 2415,
+   "2023": 2481,
+   "2024": 2620,
+   "2025": 2446
+  },
+  "date_range": [
+   "2021-01-07",
+   "2025-12-21"
+  ],
+  "prediction": "frozen engine P = multiplicative de-vig of Betfair LTP at/before T-30 min",
+  "outcome": 12202,
+  "odds": "Betfair LTP both runners (same source as P)",
+  "timestamp_semantics": "LTP at/before T-30 min of scheduled start; ~1% contaminated when match started early (V2-6D)",
+  "executable": "no (LTP is not a back price; no bookmakers)",
+  "suitability": {
+   "A_probability": true,
+   "B_indicative_price": false,
+   "C_executable_profitability": false
+  }
+ },
+ "tennis_WTA_betfair_basic": {
+  "file": "data/interim/v2_wta_market_dataset.csv",
+  "rows": 10352,
+  "events": 10352,
+  "years": {
+   "2021": 2009,
+   "2022": 1982,
+   "2023": 2022,
+   "2024": 2116,
+   "2025": 2223
+  },
+  "date_range": [
+   "2021-01-06",
+   "2025-11-08"
+  ],
+  "prediction": "frozen engine P = multiplicative de-vig of Betfair LTP at/before T-30 min",
+  "outcome": 10352,
+  "odds": "Betfair LTP both runners (same source as P)",
+  "timestamp_semantics": "LTP at/before T-30 min of scheduled start; ~1% contaminated when match started early (V2-6D)",
+  "executable": "no (LTP is not a back price; no bookmakers)",
+  "suitability": {
+   "A_probability": true,
+   "B_indicative_price": false,
+   "C_executable_profitability": false
+  }
+ },
+ "tennis_ATP_tennis_data_co_uk": {
+  "files": "/mnt/user-data/uploads/prediction-markets-lab/data/raw/tennis/tennis_data_co_uk/tennis_data_atp_2021..2025.xlsx (gitignored; hashes in historical_v2_6h/tennis_data_co_uk)",
+  "rows_by_year": {
+   "2021": 2489,
+   "2022": 2632,
+   "2023": 2703,
+   "2024": 2703,
+   "2025": 2644
+  },
+  "price_columns": [
+   "AvgW",
+   "B365W",
+   "BFEW",
+   "MaxW",
+   "PSW"
+  ],
+  "linkage_to_betfair_rows": "ATP 88.2% / WTA 89.2% unique, 0 ambiguous, winner agreement 99.95% (V2-6D)",
+  "timestamp_semantics": "CLOSING ONLY ('most recent before play starts'), no timestamps",
+  "known_issues": "corrupt price rows leak outcomes -> validity screen (both > 1.01, overround 0.98-1.20); BFE only ~5% (2025)",
+  "executable": "B365/PS closing = named-book closing quote (indicative of close, not decision-time)",
+  "suitability": {
+   "A_probability": true,
+   "B_indicative_price": "CLOSING-PRICE DIAGNOSTIC only (P from PS close, price B365 close)",
+   "C_executable_profitability": false
+  }
+ },
+ "tennis_WTA_tennis_data_co_uk": {
+  "files": "/mnt/user-data/uploads/prediction-markets-lab/data/raw/tennis/tennis_data_co_uk/tennis_data_wta_2021..2025.xlsx (gitignored; hashes in historical_v2_6h/tennis_data_co_uk)",
+  "rows_by_year": {
+   "2021": 2447,
+   "2022": 2369,
+   "2023": 2491,
+   "2024": 2490,
+   "2025": 2505
+  },
+  "price_columns": [
+   "AvgW",
+   "B365W",
+   "BFEW",
+   "MaxW",
+   "PSW"
+  ],
+  "linkage_to_betfair_rows": "ATP 88.2% / WTA 89.2% unique, 0 ambiguous, winner agreement 99.95% (V2-6D)",
+  "timestamp_semantics": "CLOSING ONLY ('most recent before play starts'), no timestamps",
+  "known_issues": "corrupt price rows leak outcomes -> validity screen (both > 1.01, overround 0.98-1.20); BFE only ~5% (2025)",
+  "executable": "B365/PS closing = named-book closing quote (indicative of close, not decision-time)",
+  "suitability": {
+   "A_probability": true,
+   "B_indicative_price": "CLOSING-PRICE DIAGNOSTIC only (P from PS close, price B365 close)",
+   "C_executable_profitability": false
+  }
+ },
+ "nba_wippa_oddsportal": {
+  "files": "raw/basketball/wippa_nba/nba_<season>_results_odds.csv",
+  "rows": 11081,
+  "non_preseason_rows": 10527,
+  "seasons": {
+   "2016-2017": 1317,
+   "2017-2018": 1316,
+   "2018-2019": 1312,
+   "2021-2022": 1321,
+   "2022-2023": 1320,
+   "2023-2024": 1312,
+   "2024-2025": 1314,
+   "2025-2026": 1315
+  },
+  "missing_seasons": [
+   "2019-2020",
+   "2020-2021"
+  ],
+  "prediction": "frozen engine P = proportional de-vig of the average closing moneyline",
+  "odds": "one AVERAGE closing price per side (OddsPortal), no per-book",
+  "timestamp_semantics": "closing, untimestamped",
+  "executable": "no",
+  "suitability": {
+   "A_probability": true,
+   "B_indicative_price": false,
+   "C_executable_profitability": false
+  }
+ },
+ "football_1x2_football_data_co_uk": {
+  "files": "processed/football/cycle_001_* + h_fb2_002_sealed_oos_2025_26_*",
+  "matches": 6960,
+  "by_season_competition": {
+   "2020_21|E0": 380,
+   "2020_21|E1": 552,
+   "2020_21|SC0": 228,
+   "2021_22|E0": 380,
+   "2021_22|E1": 552,
+   "2021_22|SC0": 228,
+   "2022_23|E0": 380,
+   "2022_23|E1": 552,
+   "2022_23|SC0": 228,
+   "2023_24|E0": 380,
+   "2023_24|E1": 552,
+   "2023_24|SC0": 228,
+   "2024_25|E0": 380,
+   "2024_25|E1": 552,
+   "2024_25|SC0": 228,
+   "2025_26|E0": 380,
+   "2025_26|E1": 552,
+   "2025_26|SC0": 228
+  },
+  "book_rows_by_snapshot": {
+   "closing|1XB": 1160,
+   "closing|B365": 6960,
+   "closing|BF": 1160,
+   "closing|BFD": 1140,
+   "closing|BMGM": 1160,
+   "closing|BV": 1142,
+   "closing|BW": 6524,
+   "closing|CL": 816,
+   "closing|LB": 871,
+   "closing|PS": 6333,
+   "closing|WH": 5563,
+   "opening|1XB": 1135,
+   "opening|B365": 6958,
+   "opening|BF": 1159,
+   "opening|BFD": 1157,
+   "opening|BMGM": 1155,
+   "opening|BV": 1153,
+   "opening|BW": 6536,
+   "opening|CL": 884,
+   "opening|LB": 895,
+   "opening|PS": 6314,
+   "opening|WH": 5562
+  },
+  "prediction": "frozen engine P = median across >=3 books of per-book proportional fair probabilities, SAME snapshot",
+  "timestamp_semantics": "'opening' = football-data pre-closing collection (Fri for weekend, Tue for midweek); 'closing' = at kick-off; no exact times",
+  "executable": "per-book named quotes at each snapshot (UK primary: B365, WH, BW, BF[2024/25, 5% comm]); availability at stake not verified",
+  "known_issues": "single-book outlier quotes (V2-6H); 2025/26 has no WH/BF; 2025/26 file was a sealed OOS set already opened by V2-6H",
+  "suitability": {
+   "A_probability": true,
+   "B_indicative_price": true,
+   "C_executable_profitability": "closest available: same-snapshot per-book singles; multis INDICATIVE (no acca prices)"
+  }
+ },
+ "prospective_live_files": {
+  "tennis_predictions/*, paper_betting_v2/*, V2-7 prospective/": "EXCLUDED from V2-7H (independent prospective evidence streams; rule P)"
+ },
+ "previous_research_outputs_used_as_reference_only": [
+  "research/platform_v2/historical_v2_6h/* (V2-6H, V2-6D)",
+  "research/platform_v2/card_engine_v2_7/RESULTS.json (Phase 1 A1/A2/B)"
+ ]
+}

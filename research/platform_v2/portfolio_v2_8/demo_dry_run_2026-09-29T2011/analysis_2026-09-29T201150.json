@@ -1,0 +1,4500 @@
+{
+ "analyser_version": "v2-8a-1",
+ "record_id": "81182fdbc710e3fc",
+ "scan": "2026-09-29T20:11:50.324947+00:00",
+ "mode": "DRY_RUN_REPLAY",
+ "v2_7_rule_version": "cer-2",
+ "v2_7_commit_sha": "",
+ "run_id": "DRY_RUN",
+ "input_shas": {
+  "prices": "df21e2263d5cba46",
+  "v2_7_legs": "6d8b88ef1dc1fd26"
+ },
+ "stage_A_prediction_board": [
+  {
+   "sport": "tennis_wta_china_open",
+   "event_id": "1b26a19876c9aaf7be957f87c1e4e7a2",
+   "event": "Anastasia Zakharova v Yushan Shao",
+   "market": "match winner (h2h)",
+   "selection": "Anastasia Zakharova",
+   "start": "2026-10-01T04:00:00+00:00",
+   "p": 0.9299,
+   "sigma": 0.0178,
+   "p_range_1sigma": [
+    0.9121,
+    0.9476
+   ],
+   "calibration_support": {
+    "band": "80%+",
+    "se": 0.012168367346938795,
+    "holdout_n": 1769,
+    "holdout_pred_vs_actual": [
+     [
+      0.8755,
+      0.8741
+     ],
+     [
+      0.8687,
+      0.8698
+     ]
+    ]
+   },
+   "exchange_width": 0.026,
+   "model": "wta_match_winner.betfair_market@1",
+   "scan": "2026-09-29T20:11:50.324947+00:00",
+   "market_benchmark_book_consensus_p": 0.9042,
+   "benchmark_books": 15,
+   "p_minus_benchmark": 0.0257,
+   "benchmark_flag": "AGREES_WITH_MARKET",
+   "rank": 1
+  },
+  {
+   "sport": "tennis_atp_china_open",
+   "event_id": "baf8f73b47a664fcede53262ff09e26d",
+   "event": "Alexander Zverev v Cameron Norrie",
+   "market": "match winner (h2h)",
+   "selection": "Alexander Zverev",
+   "start": "2026-10-01T02:00:00+00:00",
+   "p": 0.8873,
+   "sigma": 0.0145,
+   "p_range_1sigma": [
+    0.8729,
+    0.9018
+   ],
+   "calibration_support": {
+    "band": "80%+",
+    "se": 0.012168367346938795,
+    "holdout_n": 1769,
+    "holdout_pred_vs_actual": [
+     [
+      0.8755,
+      0.8741
+     ],
+     [
+      0.8687,
+      0.8698
+     ]
+    ]
+   },
+   "exchange_width": 0.0157,
+   "model": "atp_match_winner.betfair_market@1",
+   "scan": "2026-09-29T20:11:50.324947+00:00",
+   "market_benchmark_book_consensus_p": 0.8731,
+   "benchmark_books": 16,
+   "p_minus_benchmark": 0.0142,
+   "benchmark_flag": "AGREES_WITH_MARKET",
+   "rank": 2
+  },
+  {
+   "sport": "tennis_wta_china_open",
+   "event_id": "c91ca7289161efc89f8baceaaef3511a",
+   "event": "Daria Snigur v Katarzyna Kawa",
+   "market": "match winner (h2h)",
+   "selection": "Daria Snigur",
+   "start": "2026-09-30T04:30:00+00:00",
+   "p": 0.8585,
+   "sigma": 0.0142,
+   "p_range_1sigma": [
+    0.8443,
+    0.8727
+   ],
+   "calibration_support": {
+    "band": "80%+",
+    "se": 0.012168367346938795,
+    "holdout_n": 1769,
+    "holdout_pred_vs_actual": [
+     [
+      0.8755,
+      0.8741
+     ],
+     [
+      0.8687,
+      0.8698
+     ]
+    ]
+   },
+   "exchange_width": 0.0146,
+   "model": "wta_match_winner.betfair_market@1",
+   "scan": "2026-09-29T20:11:50.324947+00:00",
+   "market_benchmark_book_consensus_p": 0.8283,
+   "benchmark_books": 17,
+   "p_minus_benchmark": 0.0302,
+   "benchmark_flag": "MILD_DISAGREEMENT",
+   "rank": 3
+  },
+  {
+   "sport": "tennis_atp_japan_open",
+   "event_id": "a85db81434b7d74d5946fa1c53960914",
+   "event": "Arthur Fils v Luca Van Assche",
+   "market": "match winner (h2h)",
+   "selection": "Arthur Fils",
+   "start": "2026-09-30T07:00:00+00:00",
+   "p": 0.8527,
+   "sigma": 0.0163,
+   "p_range_1sigma": [
+    0.8364,
+    0.869
+   ],
+   "calibration_support": {
+    "band": "80%+",
+    "se": 0.012168367346938795,
+    "holdout_n": 1769,
+    "holdout_pred_vs_actual": [
+     [
+      0.8755,
+      0.8741
+     ],
+     [
+      0.8687,
+      0.8698
+     ]
+    ]
+   },
+   "exchange_width": 0.0217,
+   "model": "atp_match_winner.betfair_market@1",
+   "scan": "2026-09-29T20:11:50.324947+00:00",
+   "market_benchmark_book_consensus_p": 0.8176,
+   "benchmark_books": 17,
+   "p_minus_benchmark": 0.0351,
+   "benchmark_flag": "MILD_DISAGREEMENT",
+   "rank": 4
+  },
+  {
+   "sport": "tennis_atp_japan_open",
+   "event_id": "d700980c8b97f7b97b85b0698f5b3824",
+   "event": "Carlos Alcaraz v Alex Michelsen",
+   "market": "match winner (h2h)",
+   "selection": "Carlos Alcaraz",
+   "start": "2026-10-01T02:00:00+00:00",
+   "p": 0.8274,
+   "sigma": 0.0183,
+   "p_range_1sigma": [
+    0.8091,
+    0.8457
+   ],
+   "calibration_support": {
+    "band": "80%+",
+    "se": 0.012168367346938795,
+    "holdout_n": 1769,
+    "holdout_pred_vs_actual": [
+     [
+      0.8755,
+      0.8741
+     ],
+     [
+      0.8687,
+      0.8698
+     ]
+    ]
+   },
+   "exchange_width": 0.0273,
+   "model": "atp_match_winner.betfair_market@1",
+   "scan": "2026-09-29T20:11:50.324947+00:00",
+   "market_benchmark_book_consensus_p": 0.8104,
+   "benchmark_books": 16,
+   "p_minus_benchmark": 0.017,
+   "benchmark_flag": "AGREES_WITH_MARKET",
+   "rank": 5
+  },
+  {
+   "sport": "tennis_atp_japan_open",
+   "event_id": "150be9ac3e148ecdc824890bed898996",
+   "event": "Frances Tiafoe v Kei Nishikori",
+   "market": "match winner (h2h)",
+   "selection": "Frances Tiafoe",
+   "start": "2026-10-01T02:00:00+00:00",
+   "p": 0.8075,
+   "sigma": 0.0178,
+   "p_range_1sigma": [
+    0.7896,
+    0.8253
+   ],
+   "calibration_support": {
+    "band": "80%+",
+    "se": 0.012168367346938795,
+    "holdout_n": 1769,
+    "holdout_pred_vs_actual": [
+     [
+      0.8755,
+      0.8741
+     ],
+     [
+      0.8687,
+      0.8698
+     ]
+    ]
+   },
+   "exchange_width": 0.026,
+   "model": "atp_match_winner.betfair_market@1",
+   "scan": "2026-09-29T20:11:50.324947+00:00",
+   "market_benchmark_book_consensus_p": 0.77,
+   "benchmark_books": 16,
+   "p_minus_benchmark": 0.0375,
+   "benchmark_flag": "MILD_DISAGREEMENT",
+   "rank": 6
+  },
+  {
+   "sport": "tennis_atp_china_open",
+   "event_id": "f3149a5c4e24243211d462d3becfe39d",
+   "event": "Alex de Minaur v Mariano Navone",
+   "market": "match winner (h2h)",
+   "selection": "Alex de Minaur",
+   "start": "2026-10-01T02:00:00+00:00",
+   "p": 0.7955,
+   "sigma": 0.0143,
+   "p_range_1sigma": [
+    0.7812,
+    0.8097
+   ],
+   "calibration_support": {
+    "band": "65-80%",
+    "se": 0.011556122448979593,
+    "holdout_n": 3161,
+    "holdout_pred_vs_actual": [
+     [
+      0.7183,
+      0.7245
+     ],
+     [
+      0.7188,
+      0.7237
+     ]
+    ]
+   },
+   "exchange_width": 0.0167,
+   "model": "atp_match_winner.betfair_market@1",
+   "scan": "2026-09-29T20:11:50.324947+00:00",
+   "market_benchmark_book_consensus_p": 0.777,
+   "benchmark_books": 15,
+   "p_minus_benchmark": 0.0185,
+   "benchmark_flag": "AGREES_WITH_MARKET",
+   "rank": 7
+  },
+  {
+   "sport": "tennis_atp_china_open",
+   "event_id": "cc2d916c71c7c424e48b2025e02ead52",
+   "event": "Arthur Gea v Zhizhen Zhang",
+   "market": "match winner (h2h)",
+   "selection": "Arthur Gea",
+   "start": "2026-09-30T09:00:00+00:00",
+   "p": 0.7587,
+   "sigma": 0.0145,
+   "p_range_1sigma": [
+    0.7442,
+    0.7732
+   ],
+   "calibration_support": {
+    "band": "65-80%",
+    "se": 0.011556122448979593,
+    "holdout_n": 3161,
+    "holdout_pred_vs_actual": [
+     [
+      0.7183,
+      0.7245
+     ],
+     [
+      0.7188,
+      0.7237
+     ]
+    ]
+   },
+   "exchange_width": 0.0174,
+   "model": "atp_match_winner.betfair_market@1",
+   "scan": "2026-09-29T20:11:50.324947+00:00",
+   "market_benchmark_book_consensus_p": 0.7322,
+   "benchmark_books": 17,
+   "p_minus_benchmark": 0.0265,
+   "benchmark_flag": "AGREES_WITH_MARKET",
+   "rank": 8
+  },
+  {
+   "sport": "tennis_atp_japan_open",
+   "event_id": "f4c24c41c66d5ecb136d40ee73c7d089",
+   "event": "Denis Shapovalov v Sho Shimabukuro",
+   "market": "match winner (h2h)",
+   "selection": "Denis Shapovalov",
+   "start": "2026-10-01T02:00:00+00:00",
+   "p": 0.7558,
+   "sigma": 0.0144,
+   "p_range_1sigma": [
+    0.7414,
+    0.7701
+   ],
+   "calibration_support": {
+    "band": "65-80%",
+    "se": 0.011556122448979593,
+    "holdout_n": 3161,
+    "holdout_pred_vs_actual": [
+     [
+      0.7183,
+      0.7245
+     ],
+     [
+      0.7188,
+      0.7237
+     ]
+    ]
+   },
+   "exchange_width": 0.0171,
+   "model": "atp_match_winner.betfair_market@1",
+   "scan": "2026-09-29T20:11:50.324947+00:00",
+   "market_benchmark_book_consensus_p": 0.7368,
+   "benchmark_books": 16,
+   "p_minus_benchmark": 0.0189,
+   "benchmark_flag": "AGREES_WITH_MARKET",
+   "rank": 9
+  },
+  {
+   "sport": "tennis_wta_china_open",
+   "event_id": "c61cca87a103a35f8e1889747b27f171",
+   "event": "Kimberly Birrell v Aoi Ito",
+   "market": "match winner (h2h)",
+   "selection": "Kimberly Birrell",
+   "start": "2026-10-01T02:00:00+00:00",
+   "p": 0.7429,
+   "sigma": 0.0175,
+   "p_range_1sigma": [
+    0.7253,
+    0.7604
+   ],
+   "calibration_support": {
+    "band": "65-80%",
+    "se": 0.011556122448979593,
+    "holdout_n": 3161,
+    "holdout_pred_vs_actual": [
+     [
+      0.7183,
+      0.7245
+     ],
+     [
+      0.7188,
+      0.7237
+     ]
+    ]
+   },
+   "exchange_width": 0.0264,
+   "model": "wta_match_winner.betfair_market@1",
+   "scan": "2026-09-29T20:11:50.324947+00:00",
+   "market_benchmark_book_consensus_p": 0.7292,
+   "benchmark_books": 16,
+   "p_minus_benchmark": 0.0137,
+   "benchmark_flag": "AGREES_WITH_MARKET",
+   "rank": 10
+  },
+  {
+   "sport": "tennis_wta_china_open",
+   "event_id": "3d7ca27dc89b58d3883de95847cfc74e",
+   "event": "Maya Joint v Sinja Kraus",
+   "market": "match winner (h2h)",
+   "selection": "Maya Joint",
+   "start": "2026-09-30T03:00:00+00:00",
+   "p": 0.7277,
+   "sigma": 0.0119,
+   "p_range_1sigma": [
+    0.7159,
+    0.7396
+   ],
+   "calibration_support": {
+    "band": "65-80%",
+    "se": 0.011556122448979593,
+    "holdout_n": 3161,
+    "holdout_pred_vs_actual": [
+     [
+      0.7183,
+      0.7245
+     ],
+     [
+      0.7188,
+      0.7237
+     ]
+    ]
+   },
+   "exchange_width": 0.0053,
+   "model": "wta_match_winner.betfair_market@1",
+   "scan": "2026-09-29T20:11:50.324947+00:00",
+   "market_benchmark_book_consensus_p": 0.7263,
+   "benchmark_books": 17,
+   "p_minus_benchmark": 0.0014,
+   "benchmark_flag": "AGREES_WITH_MARKET",
+   "rank": 11
+  },
+  {
+   "sport": "tennis_atp_japan_open",
+   "event_id": "de4c813cd2aaa6863d98ebc68a30defc",
+   "event": "Stefanos Tsitsipas v Tomas Martin Etcheverry",
+   "market": "match winner (h2h)",
+   "selection": "Stefanos Tsitsipas",
+   "start": "2026-09-30T03:15:00+00:00",
+   "p": 0.7229,
+   "sigma": 0.0127,
+   "p_range_1sigma": [
+    0.7102,
+    0.7356
+   ],
+   "calibration_support": {
+    "band": "65-80%",
+    "se": 0.011556122448979593,
+    "holdout_n": 3161,
+    "holdout_pred_vs_actual": [
+     [
+      0.7183,
+      0.7245
+     ],
+     [
+      0.7188,
+      0.7237
+     ]
+    ]
+   },
+   "exchange_width": 0.0105,
+   "model": "atp_match_winner.betfair_market@1",
+   "scan": "2026-09-29T20:11:50.324947+00:00",
+   "market_benchmark_book_consensus_p": 0.7111,
+   "benchmark_books": 17,
+   "p_minus_benchmark": 0.0118,
+   "benchmark_flag": "AGREES_WITH_MARKET",
+   "rank": 12
+  },
+  {
+   "sport": "tennis_atp_japan_open",
+   "event_id": "65d2de2fdc31755b2b993f5176bbb836",
+   "event": "Tommy Paul v Alejandro Tabilo",
+   "market": "match winner (h2h)",
+   "selection": "Tommy Paul",
+   "start": "2026-09-30T03:15:00+00:00",
+   "p": 0.7106,
+   "sigma": 0.0123,
+   "p_range_1sigma": [
+    0.6983,
+    0.7229
+   ],
+   "calibration_support": {
+    "band": "65-80%",
+    "se": 0.011556122448979593,
+    "holdout_n": 3161,
+    "holdout_pred_vs_actual": [
+     [
+      0.7183,
+      0.7245
+     ],
+     [
+      0.7188,
+      0.7237
+     ]
+    ]
+   },
+   "exchange_width": 0.0084,
+   "model": "atp_match_winner.betfair_market@1",
+   "scan": "2026-09-29T20:11:50.324947+00:00",
+   "market_benchmark_book_consensus_p": 0.6897,
+   "benchmark_books": 17,
+   "p_minus_benchmark": 0.021,
+   "benchmark_flag": "AGREES_WITH_MARKET",
+   "rank": 13
+  },
+  {
+   "sport": "tennis_atp_japan_open",
+   "event_id": "0bff2782ee07c23760cbe4d2877ea6b4",
+   "event": "Jiri Lehecka v Zizou Bergs",
+   "market": "match winner (h2h)",
+   "selection": "Jiri Lehecka",
+   "start": "2026-09-30T02:00:00+00:00",
+   "p": 0.7039,
+   "sigma": 0.0133,
+   "p_range_1sigma": [
+    0.6906,
+    0.7172
+   ],
+   "calibration_support": {
+    "band": "65-80%",
+    "se": 0.011556122448979593,
+    "holdout_n": 3161,
+    "holdout_pred_vs_actual": [
+     [
+      0.7183,
+      0.7245
+     ],
+     [
+      0.7188,
+      0.7237
+     ]
+    ]
+   },
+   "exchange_width": 0.0132,
+   "model": "atp_match_winner.betfair_market@1",
+   "scan": "2026-09-29T20:11:50.324947+00:00",
+   "market_benchmark_book_consensus_p": 0.6897,
+   "benchmark_books": 17,
+   "p_minus_benchmark": 0.0142,
+   "benchmark_flag": "AGREES_WITH_MARKET",
+   "rank": 14
+  }
+ ],
+ "stage_B_single_evaluation": [
+  {
+   "rank": 1,
+   "event": "Anastasia Zakharova v Yushan Shao",
+   "selection": "Anastasia Zakharova",
+   "p": 0.9299,
+   "sigma": 0.0178,
+   "fair_odds": 1.0754,
+   "clean_books": 15,
+   "grade": "UNGRADED (thresholds not set)",
+   "best_book": "betvictor",
+   "offered_odds": 1.08,
+   "median_book_odds": 1.06,
+   "payout_per_1gbp": 1.08,
+   "profit_if_win_per_1gbp": 0.08,
+   "downside_per_1gbp": -1.0,
+   "ev": 0.00429,
+   "ev_range_1sigma": [
+    -0.01493,
+    0.02352
+   ],
+   "quote_age_min": 3.8,
+   "label": "POSITIVE_CENTRAL_BUT_UNCERTAIN"
+  },
+  {
+   "rank": 2,
+   "event": "Alexander Zverev v Cameron Norrie",
+   "selection": "Alexander Zverev",
+   "p": 0.8873,
+   "sigma": 0.0145,
+   "fair_odds": 1.127,
+   "clean_books": 16,
+   "grade": "UNGRADED (thresholds not set)",
+   "best_book": "boylesports",
+   "offered_odds": 1.1,
+   "median_book_odds": 1.0750000000000002,
+   "payout_per_1gbp": 1.1,
+   "profit_if_win_per_1gbp": 0.1,
+   "downside_per_1gbp": -1.0,
+   "ev": -0.02397,
+   "ev_range_1sigma": [
+    -0.03992,
+    -0.00802
+   ],
+   "quote_age_min": 0.3,
+   "label": "STRONG_PREDICTION_POOR_PRICE"
+  },
+  {
+   "rank": 3,
+   "event": "Daria Snigur v Katarzyna Kawa",
+   "selection": "Daria Snigur",
+   "p": 0.8585,
+   "sigma": 0.0142,
+   "fair_odds": 1.1648,
+   "clean_books": 17,
+   "grade": "UNGRADED (thresholds not set)",
+   "best_book": "virginbet",
+   "offered_odds": 1.16,
+   "median_book_odds": 1.14,
+   "payout_per_1gbp": 1.16,
+   "profit_if_win_per_1gbp": 0.16,
+   "downside_per_1gbp": -1.0,
+   "ev": -0.00414,
+   "ev_range_1sigma": [
+    -0.02061,
+    0.01233
+   ],
+   "quote_age_min": 0.9,
+   "label": "STRONG_PREDICTION_POOR_PRICE"
+  },
+  {
+   "rank": 4,
+   "event": "Arthur Fils v Luca Van Assche",
+   "selection": "Arthur Fils",
+   "p": 0.8527,
+   "sigma": 0.0163,
+   "fair_odds": 1.1727,
+   "clean_books": 17,
+   "grade": "UNGRADED (thresholds not set)",
+   "best_book": "betfair_sb_uk",
+   "offered_odds": 1.17,
+   "median_book_odds": 1.14,
+   "payout_per_1gbp": 1.17,
+   "profit_if_win_per_1gbp": 0.17,
+   "downside_per_1gbp": -1.0,
+   "ev": -0.00234,
+   "ev_range_1sigma": [
+    -0.02141,
+    0.01673
+   ],
+   "quote_age_min": 0.9,
+   "label": "STRONG_PREDICTION_POOR_PRICE"
+  },
+  {
+   "rank": 5,
+   "event": "Carlos Alcaraz v Alex Michelsen",
+   "selection": "Carlos Alcaraz",
+   "p": 0.8274,
+   "sigma": 0.0183,
+   "fair_odds": 1.2086,
+   "clean_books": 16,
+   "grade": "UNGRADED (thresholds not set)",
+   "best_book": "ladbrokes_uk",
+   "offered_odds": 1.18,
+   "median_book_odds": 1.17,
+   "payout_per_1gbp": 1.18,
+   "profit_if_win_per_1gbp": 0.18,
+   "downside_per_1gbp": -1.0,
+   "ev": -0.02367,
+   "ev_range_1sigma": [
+    -0.04526,
+    -0.00207
+   ],
+   "quote_age_min": 0.9,
+   "label": "STRONG_PREDICTION_POOR_PRICE"
+  },
+  {
+   "rank": 6,
+   "event": "Frances Tiafoe v Kei Nishikori",
+   "selection": "Frances Tiafoe",
+   "p": 0.8075,
+   "sigma": 0.0178,
+   "fair_odds": 1.2384,
+   "clean_books": 16,
+   "grade": "UNGRADED (thresholds not set)",
+   "best_book": "virginbet",
+   "offered_odds": 1.24,
+   "median_book_odds": 1.22,
+   "payout_per_1gbp": 1.24,
+   "profit_if_win_per_1gbp": 0.24,
+   "downside_per_1gbp": -1.0,
+   "ev": 0.0013,
+   "ev_range_1sigma": [
+    -0.02077,
+    0.02337
+   ],
+   "quote_age_min": 0.9,
+   "label": "POSITIVE_CENTRAL_BUT_UNCERTAIN"
+  },
+  {
+   "rank": 7,
+   "event": "Alex de Minaur v Mariano Navone",
+   "selection": "Alex de Minaur",
+   "p": 0.7955,
+   "sigma": 0.0143,
+   "fair_odds": 1.2571,
+   "clean_books": 15,
+   "grade": "UNGRADED (thresholds not set)",
+   "best_book": "williamhill",
+   "offered_odds": 1.22,
+   "median_book_odds": 1.2,
+   "payout_per_1gbp": 1.22,
+   "profit_if_win_per_1gbp": 0.22,
+   "downside_per_1gbp": -1.0,
+   "ev": -0.02949,
+   "ev_range_1sigma": [
+    -0.04694,
+    -0.01204
+   ],
+   "quote_age_min": 0.1,
+   "label": "STRONG_PREDICTION_POOR_PRICE"
+  },
+  {
+   "rank": 8,
+   "event": "Arthur Gea v Zhizhen Zhang",
+   "selection": "Arthur Gea",
+   "p": 0.7587,
+   "sigma": 0.0145,
+   "fair_odds": 1.318,
+   "clean_books": 17,
+   "grade": "UNGRADED (thresholds not set)",
+   "best_book": "virginbet",
+   "offered_odds": 1.33,
+   "median_book_odds": 1.29,
+   "payout_per_1gbp": 1.33,
+   "profit_if_win_per_1gbp": 0.33,
+   "downside_per_1gbp": -1.0,
+   "ev": 0.00907,
+   "ev_range_1sigma": [
+    -0.01021,
+    0.02836
+   ],
+   "quote_age_min": 0.9,
+   "label": "POSITIVE_CENTRAL_BUT_UNCERTAIN"
+  },
+  {
+   "rank": 9,
+   "event": "Denis Shapovalov v Sho Shimabukuro",
+   "selection": "Denis Shapovalov",
+   "p": 0.7558,
+   "sigma": 0.0144,
+   "fair_odds": 1.3231,
+   "clean_books": 16,
+   "grade": "UNGRADED (thresholds not set)",
+   "best_book": "williamhill",
+   "offered_odds": 1.3,
+   "median_book_odds": 1.275,
+   "payout_per_1gbp": 1.3,
+   "profit_if_win_per_1gbp": 0.3,
+   "downside_per_1gbp": -1.0,
+   "ev": -0.01746,
+   "ev_range_1sigma": [
+    -0.03618,
+    0.00126
+   ],
+   "quote_age_min": 0.9,
+   "label": "STRONG_PREDICTION_POOR_PRICE"
+  },
+  {
+   "rank": 10,
+   "event": "Kimberly Birrell v Aoi Ito",
+   "selection": "Kimberly Birrell",
+   "p": 0.7429,
+   "sigma": 0.0175,
+   "fair_odds": 1.3461,
+   "clean_books": 16,
+   "grade": "UNGRADED (thresholds not set)",
+   "best_book": "virginbet",
+   "offered_odds": 1.33,
+   "median_book_odds": 1.295,
+   "payout_per_1gbp": 1.33,
+   "profit_if_win_per_1gbp": 0.33,
+   "downside_per_1gbp": -1.0,
+   "ev": -0.01194,
+   "ev_range_1sigma": [
+    -0.03522,
+    0.01133
+   ],
+   "quote_age_min": 0.9,
+   "label": "STRONG_PREDICTION_POOR_PRICE"
+  },
+  {
+   "rank": 11,
+   "event": "Maya Joint v Sinja Kraus",
+   "selection": "Maya Joint",
+   "p": 0.7277,
+   "sigma": 0.0119,
+   "fair_odds": 1.3742,
+   "clean_books": 17,
+   "grade": "UNGRADED (thresholds not set)",
+   "best_book": "williamhill",
+   "offered_odds": 1.33,
+   "median_book_odds": 1.3,
+   "payout_per_1gbp": 1.33,
+   "profit_if_win_per_1gbp": 0.33,
+   "downside_per_1gbp": -1.0,
+   "ev": -0.03216,
+   "ev_range_1sigma": [
+    -0.04799,
+    -0.01633
+   ],
+   "quote_age_min": 0.9,
+   "label": "STRONG_PREDICTION_POOR_PRICE"
+  },
+  {
+   "rank": 12,
+   "event": "Stefanos Tsitsipas v Tomas Martin Etcheverry",
+   "selection": "Stefanos Tsitsipas",
+   "p": 0.7229,
+   "sigma": 0.0127,
+   "fair_odds": 1.3833,
+   "clean_books": 17,
+   "grade": "UNGRADED (thresholds not set)",
+   "best_book": "unibet_uk",
+   "offered_odds": 1.34,
+   "median_book_odds": 1.33,
+   "payout_per_1gbp": 1.34,
+   "profit_if_win_per_1gbp": 0.34,
+   "downside_per_1gbp": -1.0,
+   "ev": -0.03131,
+   "ev_range_1sigma": [
+    -0.04833,
+    -0.0143
+   ],
+   "quote_age_min": 0.5,
+   "label": "STRONG_PREDICTION_POOR_PRICE"
+  },
+  {
+   "rank": 13,
+   "event": "Tommy Paul v Alejandro Tabilo",
+   "selection": "Tommy Paul",
+   "p": 0.7106,
+   "sigma": 0.0123,
+   "fair_odds": 1.4073,
+   "clean_books": 17,
+   "grade": "UNGRADED (thresholds not set)",
+   "best_book": "williamhill",
+   "offered_odds": 1.4,
+   "median_book_odds": 1.36,
+   "payout_per_1gbp": 1.4,
+   "profit_if_win_per_1gbp": 0.4,
+   "downside_per_1gbp": -1.0,
+   "ev": -0.00516,
+   "ev_range_1sigma": [
+    -0.02238,
+    0.01206
+   ],
+   "quote_age_min": 0.9,
+   "label": "STRONG_PREDICTION_POOR_PRICE"
+  },
+  {
+   "rank": 14,
+   "event": "Jiri Lehecka v Zizou Bergs",
+   "selection": "Jiri Lehecka",
+   "p": 0.7039,
+   "sigma": 0.0133,
+   "fair_odds": 1.4207,
+   "clean_books": 17,
+   "grade": "UNGRADED (thresholds not set)",
+   "best_book": "boylesports",
+   "offered_odds": 1.4,
+   "median_book_odds": 1.36,
+   "payout_per_1gbp": 1.4,
+   "profit_if_win_per_1gbp": 0.4,
+   "downside_per_1gbp": -1.0,
+   "ev": -0.01454,
+   "ev_range_1sigma": [
+    -0.03316,
+    0.00408
+   ],
+   "quote_age_min": 0.3,
+   "label": "STRONG_PREDICTION_POOR_PRICE"
+  }
+ ],
+ "stage_B_structures": {
+  "HIGH_P": {
+   "N3": {
+    "population": "HIGH_P",
+    "book": "betano_uk",
+    "n": 3,
+    "prices": "INDICATIVE (product of one book's leg prices, same scan)",
+    "legs": [
+     {
+      "rank": 1,
+      "event": "Anastasia Zakharova v Yushan Shao",
+      "selection": "Anastasia Zakharova",
+      "p": 0.9299,
+      "sigma": 0.0178,
+      "odds": 1.08,
+      "leg_ev": 0.00424,
+      "quote_last_update": "2026-09-29T20:11:42+00:00"
+     },
+     {
+      "rank": 2,
+      "event": "Alexander Zverev v Cameron Norrie",
+      "selection": "Alexander Zverev",
+      "p": 0.8873,
+      "sigma": 0.0145,
+      "odds": 1.08,
+      "leg_ev": -0.04167,
+      "quote_last_update": "2026-09-29T20:11:06+00:00"
+     },
+     {
+      "rank": 3,
+      "event": "Daria Snigur v Katarzyna Kawa",
+      "selection": "Daria Snigur",
+      "p": 0.8585,
+      "sigma": 0.0142,
+      "odds": 1.15,
+      "leg_ev": -0.0127,
+      "quote_last_update": "2026-09-29T20:11:42+00:00"
+     }
+    ],
+    "legs_correct_pmf": [
+     0.00112,
+     0.03041,
+     0.26011,
+     0.70836
+    ],
+    "leg_level_rule_all_legs_ev_gt_0": false,
+    "structures": {
+     "SINGLES": {
+      "lines": 3,
+      "max_share_on_one_leg": 0.3333333333333333,
+      "mean_lines_per_leg": 1.0,
+      "p_complete_win": null,
+      "fair_odds": null,
+      "indicative_odds": null,
+      "expected_return": -0.01671,
+      "expected_return_at_p_minus_sigma": -0.03377,
+      "sd": 0.1981,
+      "p_any_loss_day": 0.29164,
+      "p_total_daily_loss": 0.00112,
+      "p_positive_day": 0.70836,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": -0.0001691,
+       "2%": -0.0003421,
+       "5%": -0.0008855
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.03846,
+       "-3.0pp": 0.01639,
+       "-2.0pp": 0.00536,
+       "-1.5pp": -0.00016,
+       "-1.0pp": -0.00568,
+       "-0.5pp": -0.01119,
+       "+0.5pp": -0.02223,
+       "+1.0pp": -0.02774,
+       "+1.5pp": -0.03326,
+       "+2.0pp": -0.03878,
+       "+3.0pp": -0.04981,
+       "+5.0pp": -0.07188
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 0.5,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 0.5,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 0.8,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 0.8,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 0.6,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 0.6,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 1.6,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 1.6,
+        "lines": 3,
+        "feasible": true
+       }
+      }
+     },
+     "ACC_2": {
+      "lines": 1,
+      "max_share_on_one_leg": 1.0,
+      "mean_lines_per_leg": 0.6666666666666666,
+      "p_complete_win": 0.82509,
+      "fair_odds": 1.212,
+      "indicative_odds": 1.1664,
+      "expected_return": -0.03761,
+      "expected_return_at_p_minus_sigma": -0.07142,
+      "sd": 0.4431,
+      "p_any_loss_day": 0.17491,
+      "p_total_daily_loss": 0.17491,
+      "p_positive_day": 0.82509,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": -0.000386,
+       "2%": -0.0007922,
+       "5%": -0.0021351
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.07128,
+       "-3.0pp": 0.02703,
+       "-2.0pp": 0.00525,
+       "-1.5pp": -0.00555,
+       "-1.0pp": -0.0163,
+       "-0.5pp": -0.02698,
+       "+0.5pp": -0.04818,
+       "+1.0pp": -0.05869,
+       "+1.5pp": -0.06914,
+       "+2.0pp": -0.07954,
+       "+3.0pp": -0.10015,
+       "+5.0pp": -0.14067
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.4,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.4,
+        "lines": 1,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.6,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.6,
+        "lines": 1,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 1.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 1.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 2.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 2.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 2.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 2.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 5.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 5.0,
+        "lines": 1,
+        "feasible": true
+       }
+      }
+     },
+     "ACC_3": {
+      "lines": 1,
+      "max_share_on_one_leg": 1.0,
+      "mean_lines_per_leg": 1.0,
+      "p_complete_win": 0.70836,
+      "fair_odds": 1.4117,
+      "indicative_odds": 1.3414,
+      "expected_return": -0.04983,
+      "expected_return_at_p_minus_sigma": -0.09837,
+      "sd": 0.6097,
+      "p_any_loss_day": 0.29164,
+      "p_total_daily_loss": 0.29164,
+      "p_positive_day": 0.70836,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": -0.0005171,
+       "2%": -0.0010721,
+       "5%": -0.0029707
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.11928,
+       "-3.0pp": 0.04942,
+       "-2.0pp": 0.01561,
+       "-1.5pp": -0.00103,
+       "-1.0pp": -0.01747,
+       "-0.5pp": -0.03374,
+       "+0.5pp": -0.06574,
+       "+1.0pp": -0.08147,
+       "+1.5pp": -0.09702,
+       "+2.0pp": -0.11239,
+       "+3.0pp": -0.14262,
+       "+5.0pp": -0.20099
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.4,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.4,
+        "lines": 1,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.6,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.6,
+        "lines": 1,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 1.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 1.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 2.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 2.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 2.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 2.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 5.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 5.0,
+        "lines": 1,
+        "feasible": true
+       }
+      }
+     },
+     "DBL12+SINGLES": {
+      "lines": 2,
+      "max_share_on_one_leg": 0.5,
+      "mean_lines_per_leg": 1.0,
+      "p_complete_win": null,
+      "fair_odds": null,
+      "indicative_odds": null,
+      "expected_return": -0.02515,
+      "expected_return_at_p_minus_sigma": -0.05022,
+      "sd": 0.2987,
+      "p_any_loss_day": 0.29164,
+      "p_total_daily_loss": 0.02474,
+      "p_positive_day": 0.70836,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": -0.000256,
+       "2%": -0.0005212,
+       "5%": -0.0013718
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.05804,
+       "-3.0pp": 0.02442,
+       "-2.0pp": 0.00778,
+       "-1.5pp": -0.0005,
+       "-1.0pp": -0.00875,
+       "-0.5pp": -0.01696,
+       "+0.5pp": -0.03331,
+       "+1.0pp": -0.04144,
+       "+1.5pp": -0.04954,
+       "+2.0pp": -0.05762,
+       "+3.0pp": -0.07367,
+       "+5.0pp": -0.10543
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 2,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 0.5,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 0.5,
+        "lines": 2,
+        "feasible": false
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 2,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 0.7,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 0.7,
+        "lines": 2,
+        "feasible": false
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 0.5,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 0.5,
+        "lines": 2,
+        "feasible": false
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 1.2,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 1.2,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 1.0,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 1.0,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 2.5,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 2.5,
+        "lines": 2,
+        "feasible": true
+       }
+      }
+     },
+     "RR_DOUBLES": {
+      "lines": 3,
+      "max_share_on_one_leg": 0.6666666666666666,
+      "mean_lines_per_leg": 2.0,
+      "p_complete_win": null,
+      "fair_odds": null,
+      "indicative_odds": null,
+      "expected_return": -0.03332,
+      "expected_return_at_p_minus_sigma": -0.06655,
+      "sd": 0.3957,
+      "p_any_loss_day": 0.29164,
+      "p_total_daily_loss": 0.03153,
+      "p_positive_day": 0.70836,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": -0.0003411,
+       "2%": -0.0006982,
+       "5%": -0.0018665
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.07821,
+       "-3.0pp": 0.03287,
+       "-2.0pp": 0.01056,
+       "-1.5pp": -0.0005,
+       "-1.0pp": -0.0115,
+       "-0.5pp": -0.02244,
+       "+0.5pp": -0.04414,
+       "+1.0pp": -0.0549,
+       "+1.5pp": -0.06559,
+       "+2.0pp": -0.07623,
+       "+3.0pp": -0.09732,
+       "+5.0pp": -0.13876
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 0.5,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 0.5,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 0.8,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 0.8,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 0.6,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 0.6,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 1.6,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 1.6,
+        "lines": 3,
+        "feasible": true
+       }
+      }
+     },
+     "FULL_COVER": {
+      "lines": 4,
+      "max_share_on_one_leg": 0.75,
+      "mean_lines_per_leg": 3.0,
+      "p_complete_win": null,
+      "fair_odds": null,
+      "indicative_odds": null,
+      "expected_return": -0.03745,
+      "expected_return_at_p_minus_sigma": -0.0745,
+      "sd": 0.4477,
+      "p_any_loss_day": 0.29164,
+      "p_total_daily_loss": 0.03153,
+      "p_positive_day": 0.70836,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": -0.0003846,
+       "2%": -0.0007896,
+       "5%": -0.0021294
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.08848,
+       "-3.0pp": 0.037,
+       "-2.0pp": 0.01182,
+       "-1.5pp": -0.00063,
+       "-1.0pp": -0.013,
+       "-0.5pp": -0.02527,
+       "+0.5pp": -0.04954,
+       "+1.0pp": -0.06154,
+       "+1.5pp": -0.07345,
+       "+2.0pp": -0.08527,
+       "+3.0pp": -0.10864,
+       "+5.0pp": -0.15432
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 4,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 4,
+        "feasible": false
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 4,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 4,
+        "feasible": false
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 4,
+        "feasible": false
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 0.6,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 0.6,
+        "lines": 4,
+        "feasible": false
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 0.5,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 0.5,
+        "lines": 4,
+        "feasible": false
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 1.2,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 1.2,
+        "lines": 4,
+        "feasible": true
+       }
+      }
+     },
+     "FULL_COVER+SINGLES": {
+      "lines": 7,
+      "max_share_on_one_leg": 0.5714285714285714,
+      "mean_lines_per_leg": 4.0,
+      "p_complete_win": null,
+      "fair_odds": null,
+      "indicative_odds": null,
+      "expected_return": -0.02856,
+      "expected_return_at_p_minus_sigma": -0.05704,
+      "sd": 0.3391,
+      "p_any_loss_day": 0.29164,
+      "p_total_daily_loss": 0.00112,
+      "p_positive_day": 0.70836,
+      "max_loss": -0.9999999999999998,
+      "exp_log_growth": {
+       "1%": -0.0002914,
+       "2%": -0.0005945,
+       "5%": -0.0015749
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.06704,
+       "-3.0pp": 0.02817,
+       "-2.0pp": 0.00905,
+       "-1.5pp": -0.00043,
+       "-1.0pp": -0.00986,
+       "-0.5pp": -0.01924,
+       "+0.5pp": -0.03783,
+       "+1.0pp": -0.04705,
+       "+1.5pp": -0.05622,
+       "+2.0pp": -0.06534,
+       "+3.0pp": -0.08343,
+       "+5.0pp": -0.11899
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 7,
+        "feasible": false
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 7,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 7,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 7,
+        "feasible": false
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 7,
+        "feasible": false
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 7,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 7,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 7,
+        "feasible": false
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 7,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 7,
+        "feasible": false
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 7,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 7,
+        "feasible": false
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 7,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 7,
+        "feasible": false
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 0.7,
+        "lines": 7,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 0.7,
+        "lines": 7,
+        "feasible": false
+       }
+      }
+     },
+     "NO_BET": {
+      "lines": 0,
+      "expected_return": 0.0,
+      "p_total_daily_loss": 0.0
+     }
+    },
+    "research_screen": {
+     "structures_passing_ev_low_gt_0": [],
+     "default_if_none": "NO BET",
+     "note": "Screen = expected return > 0 even with every leg at P - 1 sigma. Research label only; no grade, no paper bet. Leg-level rule (all legs EV > 0) shown separately."
+    }
+   },
+   "N5": {
+    "population": "HIGH_P",
+    "book": "betano_uk",
+    "n": 5,
+    "prices": "INDICATIVE (product of one book's leg prices, same scan)",
+    "legs": [
+     {
+      "rank": 1,
+      "event": "Anastasia Zakharova v Yushan Shao",
+      "selection": "Anastasia Zakharova",
+      "p": 0.9299,
+      "sigma": 0.0178,
+      "odds": 1.08,
+      "leg_ev": 0.00424,
+      "quote_last_update": "2026-09-29T20:11:42+00:00"
+     },
+     {
+      "rank": 2,
+      "event": "Alexander Zverev v Cameron Norrie",
+      "selection": "Alexander Zverev",
+      "p": 0.8873,
+      "sigma": 0.0145,
+      "odds": 1.08,
+      "leg_ev": -0.04167,
+      "quote_last_update": "2026-09-29T20:11:06+00:00"
+     },
+     {
+      "rank": 3,
+      "event": "Daria Snigur v Katarzyna Kawa",
+      "selection": "Daria Snigur",
+      "p": 0.8585,
+      "sigma": 0.0142,
+      "odds": 1.15,
+      "leg_ev": -0.0127,
+      "quote_last_update": "2026-09-29T20:11:42+00:00"
+     },
+     {
+      "rank": 4,
+      "event": "Arthur Fils v Luca Van Assche",
+      "selection": "Arthur Fils",
+      "p": 0.8527,
+      "sigma": 0.0163,
+      "odds": 1.14,
+      "leg_ev": -0.02796,
+      "quote_last_update": "2026-09-29T20:11:42+00:00"
+     },
+     {
+      "rank": 5,
+      "event": "Carlos Alcaraz v Alex Michelsen",
+      "selection": "Carlos Alcaraz",
+      "p": 0.8274,
+      "sigma": 0.0183,
+      "odds": 1.17,
+      "leg_ev": -0.03195,
+      "quote_last_update": "2026-09-29T20:11:42+00:00"
+     }
+    ],
+    "legs_correct_pmf": [
+     3e-05,
+     0.00107,
+     0.01559,
+     0.10946,
+     0.37411,
+     0.49974
+    ],
+    "leg_level_rule_all_legs_ev_gt_0": false,
+    "structures": {
+     "SINGLES": {
+      "lines": 5,
+      "max_share_on_one_leg": 0.2,
+      "mean_lines_per_leg": 1.0,
+      "p_complete_win": null,
+      "fair_odds": null,
+      "indicative_odds": null,
+      "expected_return": -0.02201,
+      "expected_return_at_p_minus_sigma": -0.04024,
+      "sd": 0.1688,
+      "p_any_loss_day": 0.50026,
+      "p_total_daily_loss": 3e-05,
+      "p_positive_day": 0.49974,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": -0.0002215,
+       "2%": -0.000446,
+       "5%": -0.001137
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.03419,
+       "-3.0pp": 0.01171,
+       "-2.0pp": 0.00047,
+       "-1.5pp": -0.00515,
+       "-1.0pp": -0.01077,
+       "-0.5pp": -0.01639,
+       "+0.5pp": -0.02763,
+       "+1.0pp": -0.03325,
+       "+1.5pp": -0.03887,
+       "+2.0pp": -0.04449,
+       "+3.0pp": -0.05573,
+       "+5.0pp": -0.07821
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 5,
+        "feasible": false
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 5,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 5,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 5,
+        "feasible": false
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 5,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 5,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 5,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 5,
+        "feasible": false
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 5,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 5,
+        "feasible": false
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 0.5,
+        "lines": 5,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 0.5,
+        "lines": 5,
+        "feasible": false
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 0.4,
+        "lines": 5,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 0.4,
+        "lines": 5,
+        "feasible": false
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 1.0,
+        "lines": 5,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 1.0,
+        "lines": 5,
+        "feasible": true
+       }
+      }
+     },
+     "ACC_2": {
+      "lines": 1,
+      "max_share_on_one_leg": 1.0,
+      "mean_lines_per_leg": 0.4,
+      "p_complete_win": 0.82509,
+      "fair_odds": 1.212,
+      "indicative_odds": 1.1664,
+      "expected_return": -0.03761,
+      "expected_return_at_p_minus_sigma": -0.07142,
+      "sd": 0.4431,
+      "p_any_loss_day": 0.17491,
+      "p_total_daily_loss": 0.17491,
+      "p_positive_day": 0.82509,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": -0.000386,
+       "2%": -0.0007922,
+       "5%": -0.0021351
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.07128,
+       "-3.0pp": 0.02703,
+       "-2.0pp": 0.00525,
+       "-1.5pp": -0.00555,
+       "-1.0pp": -0.0163,
+       "-0.5pp": -0.02698,
+       "+0.5pp": -0.04818,
+       "+1.0pp": -0.05869,
+       "+1.5pp": -0.06914,
+       "+2.0pp": -0.07954,
+       "+3.0pp": -0.10015,
+       "+5.0pp": -0.14067
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.4,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.4,
+        "lines": 1,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.6,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.6,
+        "lines": 1,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 1.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 1.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 2.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 2.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 2.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 2.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 5.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 5.0,
+        "lines": 1,
+        "feasible": true
+       }
+      }
+     },
+     "ACC_3": {
+      "lines": 1,
+      "max_share_on_one_leg": 1.0,
+      "mean_lines_per_leg": 0.6,
+      "p_complete_win": 0.70836,
+      "fair_odds": 1.4117,
+      "indicative_odds": 1.3414,
+      "expected_return": -0.04983,
+      "expected_return_at_p_minus_sigma": -0.09837,
+      "sd": 0.6097,
+      "p_any_loss_day": 0.29164,
+      "p_total_daily_loss": 0.29164,
+      "p_positive_day": 0.70836,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": -0.0005171,
+       "2%": -0.0010721,
+       "5%": -0.0029707
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.11928,
+       "-3.0pp": 0.04942,
+       "-2.0pp": 0.01561,
+       "-1.5pp": -0.00103,
+       "-1.0pp": -0.01747,
+       "-0.5pp": -0.03374,
+       "+0.5pp": -0.06574,
+       "+1.0pp": -0.08147,
+       "+1.5pp": -0.09702,
+       "+2.0pp": -0.11239,
+       "+3.0pp": -0.14262,
+       "+5.0pp": -0.20099
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.4,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.4,
+        "lines": 1,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.6,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.6,
+        "lines": 1,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 1.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 1.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 2.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 2.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 2.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 2.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 5.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 5.0,
+        "lines": 1,
+        "feasible": true
+       }
+      }
+     },
+     "ACC_4": {
+      "lines": 1,
+      "max_share_on_one_leg": 1.0,
+      "mean_lines_per_leg": 0.8,
+      "p_complete_win": 0.604,
+      "fair_odds": 1.6556,
+      "indicative_odds": 1.5292,
+      "expected_return": -0.0764,
+      "expected_return_at_p_minus_sigma": -0.14035,
+      "sd": 0.7479,
+      "p_any_loss_day": 0.396,
+      "p_total_daily_loss": 0.396,
+      "p_positive_day": 0.604,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": -0.0007923,
+       "2%": -0.0016418,
+       "5%": -0.0045398
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.15178,
+       "-3.0pp": 0.05597,
+       "-2.0pp": 0.01036,
+       "-1.5pp": -0.01188,
+       "-1.0pp": -0.03375,
+       "-0.5pp": -0.05525,
+       "+0.5pp": -0.09719,
+       "+1.0pp": -0.11762,
+       "+1.5pp": -0.13771,
+       "+2.0pp": -0.15745,
+       "+3.0pp": -0.19591,
+       "+5.0pp": -0.26888
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.4,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.4,
+        "lines": 1,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.6,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.6,
+        "lines": 1,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 1.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 1.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 2.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 2.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 2.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 2.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 5.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 5.0,
+        "lines": 1,
+        "feasible": true
+       }
+      }
+     },
+     "ACC_5": {
+      "lines": 1,
+      "max_share_on_one_leg": 1.0,
+      "mean_lines_per_leg": 1.0,
+      "p_complete_win": 0.49974,
+      "fair_odds": 2.001,
+      "indicative_odds": 1.7891,
+      "expected_return": -0.10591,
+      "expected_return_at_p_minus_sigma": -0.18622,
+      "sd": 0.8946,
+      "p_any_loss_day": 0.50026,
+      "p_total_daily_loss": 0.50026,
+      "p_positive_day": 0.49974,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": -0.0010998,
+       "2%": -0.0022812,
+       "5%": -0.0063216
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.18236,
+       "-3.0pp": 0.05929,
+       "-2.0pp": 0.00172,
+       "-1.5pp": -0.02611,
+       "-1.0pp": -0.05332,
+       "-0.5pp": -0.07992,
+       "+0.5pp": -0.13132,
+       "+1.0pp": -0.15614,
+       "+1.5pp": -0.1804,
+       "+2.0pp": -0.20409,
+       "+3.0pp": -0.24983,
+       "+5.0pp": -0.33501
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.4,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.4,
+        "lines": 1,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.6,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.6,
+        "lines": 1,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 1.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 1.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 2.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 2.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 2.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 2.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 5.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 5.0,
+        "lines": 1,
+        "feasible": true
+       }
+      }
+     },
+     "DBL12+SINGLES": {
+      "lines": 4,
+      "max_share_on_one_leg": 0.25,
+      "mean_lines_per_leg": 1.0,
+      "p_complete_win": null,
+      "fair_odds": null,
+      "indicative_odds": null,
+      "expected_return": -0.02756,
+      "expected_return_at_p_minus_sigma": -0.05009,
+      "sd": 0.2115,
+      "p_any_loss_day": 0.50026,
+      "p_total_daily_loss": 0.00063,
+      "p_positive_day": 0.49974,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": -0.0002778,
+       "2%": -0.0005602,
+       "5%": -0.0014352
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.04292,
+       "-3.0pp": 0.01455,
+       "-2.0pp": 0.00046,
+       "-1.5pp": -0.00657,
+       "-1.0pp": -0.01358,
+       "-0.5pp": -0.02057,
+       "+0.5pp": -0.03452,
+       "+1.0pp": -0.04148,
+       "+1.5pp": -0.04841,
+       "+2.0pp": -0.05534,
+       "+3.0pp": -0.06914,
+       "+5.0pp": -0.09657
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 4,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 4,
+        "feasible": false
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 4,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 4,
+        "feasible": false
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 4,
+        "feasible": false
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 0.6,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 0.6,
+        "lines": 4,
+        "feasible": false
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 0.5,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 0.5,
+        "lines": 4,
+        "feasible": false
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 1.2,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 1.2,
+        "lines": 4,
+        "feasible": true
+       }
+      }
+     },
+     "2DBL+SINGLE": {
+      "lines": 3,
+      "max_share_on_one_leg": 0.3333333333333333,
+      "mean_lines_per_leg": 1.0,
+      "p_complete_win": null,
+      "fair_odds": null,
+      "indicative_odds": null,
+      "expected_return": -0.03662,
+      "expected_return_at_p_minus_sigma": -0.06634,
+      "sd": 0.2846,
+      "p_any_loss_day": 0.50026,
+      "p_total_daily_loss": 0.00809,
+      "p_positive_day": 0.49974,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": -0.0003704,
+       "2%": -0.000749,
+       "5%": -0.0019353
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.05766,
+       "-3.0pp": 0.01945,
+       "-2.0pp": 0.00059,
+       "-1.5pp": -0.00877,
+       "-1.0pp": -0.0181,
+       "-0.5pp": -0.02738,
+       "+0.5pp": -0.04582,
+       "+1.0pp": -0.05498,
+       "+1.5pp": -0.0641,
+       "+2.0pp": -0.07318,
+       "+3.0pp": -0.09121,
+       "+5.0pp": -0.12677
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 0.5,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 0.5,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 0.8,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 0.8,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 0.6,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 0.6,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 1.6,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 1.6,
+        "lines": 3,
+        "feasible": true
+       }
+      }
+     },
+     "TBL123+SINGLES": {
+      "lines": 3,
+      "max_share_on_one_leg": 0.3333333333333333,
+      "mean_lines_per_leg": 1.0,
+      "p_complete_win": null,
+      "fair_odds": null,
+      "indicative_odds": null,
+      "expected_return": -0.03658,
+      "expected_return_at_p_minus_sigma": -0.0661,
+      "sd": 0.2849,
+      "p_any_loss_day": 0.50026,
+      "p_total_daily_loss": 0.00742,
+      "p_positive_day": 0.49974,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": -0.00037,
+       "2%": -0.0007482,
+       "5%": -0.0019334
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.05829,
+       "-3.0pp": 0.0196,
+       "-2.0pp": 0.00063,
+       "-1.5pp": -0.00876,
+       "-1.0pp": -0.0181,
+       "-0.5pp": -0.02737,
+       "+0.5pp": -0.04573,
+       "+1.0pp": -0.05483,
+       "+1.5pp": -0.06386,
+       "+2.0pp": -0.07284,
+       "+3.0pp": -0.09061,
+       "+5.0pp": -0.12547
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 0.5,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 0.5,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 0.8,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 0.8,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 0.6,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 0.6,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 1.6,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 1.6,
+        "lines": 3,
+        "feasible": true
+       }
+      }
+     },
+     "RR_TREBLES": {
+      "lines": 10,
+      "max_share_on_one_leg": 0.6,
+      "mean_lines_per_leg": 6.0,
+      "p_complete_win": null,
+      "fair_odds": null,
+      "indicative_odds": null,
+      "expected_return": -0.06478,
+      "expected_return_at_p_minus_sigma": -0.11612,
+      "sd": 0.5025,
+      "p_any_loss_day": 0.50026,
+      "p_total_daily_loss": 0.01669,
+      "p_positive_day": 0.49974,
+      "max_loss": -0.9999999999999999,
+      "exp_log_growth": {
+       "1%": -0.0006606,
+       "2%": -0.0013471,
+       "5%": -0.0035631
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.10592,
+       "-3.0pp": 0.03535,
+       "-2.0pp": 0.00122,
+       "-1.5pp": -0.01556,
+       "-1.0pp": -0.03215,
+       "-0.5pp": -0.04856,
+       "+0.5pp": -0.08081,
+       "+1.0pp": -0.09666,
+       "+1.5pp": -0.11232,
+       "+2.0pp": -0.12781,
+       "+3.0pp": -0.15823,
+       "+5.0pp": -0.21695
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 10,
+        "feasible": false
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 10,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 10,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 10,
+        "feasible": false
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 10,
+        "feasible": false
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 10,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 10,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 10,
+        "feasible": false
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 10,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 10,
+        "feasible": false
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 10,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 10,
+        "feasible": false
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 10,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 10,
+        "feasible": false
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 0.5,
+        "lines": 10,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 0.5,
+        "lines": 10,
+        "feasible": false
+       }
+      }
+     },
+     "RR_DOUBLES": {
+      "lines": 10,
+      "max_share_on_one_leg": 0.4,
+      "mean_lines_per_leg": 4.0,
+      "p_complete_win": null,
+      "fair_odds": null,
+      "indicative_odds": null,
+      "expected_return": -0.0436,
+      "expected_return_at_p_minus_sigma": -0.07893,
+      "sd": 0.3333,
+      "p_any_loss_day": 0.50026,
+      "p_total_daily_loss": 0.0011,
+      "p_positive_day": 0.49974,
+      "max_loss": -0.9999999999999999,
+      "exp_log_growth": {
+       "1%": -0.0004417,
+       "2%": -0.0008947,
+       "5%": -0.0023227
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.06949,
+       "-3.0pp": 0.0235,
+       "-2.0pp": 0.00088,
+       "-1.5pp": -0.01034,
+       "-1.0pp": -0.02149,
+       "-0.5pp": -0.03257,
+       "+0.5pp": -0.05456,
+       "+1.0pp": -0.06546,
+       "+1.5pp": -0.07629,
+       "+2.0pp": -0.08707,
+       "+3.0pp": -0.10842,
+       "+5.0pp": -0.15037
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 10,
+        "feasible": false
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 10,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 10,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 10,
+        "feasible": false
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 10,
+        "feasible": false
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 10,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 10,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 10,
+        "feasible": false
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 10,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 10,
+        "feasible": false
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 10,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 10,
+        "feasible": false
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 10,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 10,
+        "feasible": false
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 0.5,
+        "lines": 10,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 0.5,
+        "lines": 10,
+        "feasible": false
+       }
+      }
+     },
+     "FULL_COVER": {
+      "lines": 26,
+      "max_share_on_one_leg": 0.5769230769230768,
+      "mean_lines_per_leg": 15.0,
+      "p_complete_win": null,
+      "fair_odds": null,
+      "indicative_odds": null,
+      "expected_return": -0.06221,
+      "expected_return_at_p_minus_sigma": -0.11139,
+      "sd": 0.4842,
+      "p_any_loss_day": 0.50026,
+      "p_total_daily_loss": 0.0011,
+      "p_positive_day": 0.49974,
+      "max_loss": -0.9999999999999996,
+      "exp_log_growth": {
+       "1%": -0.000634,
+       "2%": -0.001292,
+       "5%": -0.0034112
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.10208,
+       "-3.0pp": 0.03401,
+       "-2.0pp": 0.00116,
+       "-1.5pp": -0.01497,
+       "-1.0pp": -0.0309,
+       "-0.5pp": -0.04665,
+       "+0.5pp": -0.07758,
+       "+1.0pp": -0.09276,
+       "+1.5pp": -0.10775,
+       "+2.0pp": -0.12257,
+       "+3.0pp": -0.15165,
+       "+5.0pp": -0.20769
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 26,
+        "feasible": false
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 26,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 26,
+        "feasible": false
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 26,
+        "feasible": false
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 26,
+        "feasible": false
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 26,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 26,
+        "feasible": false
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 26,
+        "feasible": false
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 26,
+        "feasible": false
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 26,
+        "feasible": false
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 26,
+        "feasible": false
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 26,
+        "feasible": false
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 26,
+        "feasible": false
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 26,
+        "feasible": false
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 26,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 26,
+        "feasible": false
+       }
+      }
+     },
+     "FULL_COVER+SINGLES": {
+      "lines": 31,
+      "max_share_on_one_leg": 0.5161290322580643,
+      "mean_lines_per_leg": 16.0,
+      "p_complete_win": null,
+      "fair_odds": null,
+      "indicative_odds": null,
+      "expected_return": -0.05572,
+      "expected_return_at_p_minus_sigma": -0.09991,
+      "sd": 0.4323,
+      "p_any_loss_day": 0.50026,
+      "p_total_daily_loss": 3e-05,
+      "p_positive_day": 0.49974,
+      "max_loss": -0.9999999999999993,
+      "exp_log_growth": {
+       "1%": -0.0005667,
+       "2%": -0.0011526,
+       "5%": -0.0030258
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.09113,
+       "-3.0pp": 0.03041,
+       "-2.0pp": 0.00105,
+       "-1.5pp": -0.01338,
+       "-1.0pp": -0.02766,
+       "-0.5pp": -0.04177,
+       "+0.5pp": -0.06952,
+       "+1.0pp": -0.08316,
+       "+1.5pp": -0.09664,
+       "+2.0pp": -0.10997,
+       "+3.0pp": -0.13618,
+       "+5.0pp": -0.18681
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 31,
+        "feasible": false
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 31,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 31,
+        "feasible": false
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 31,
+        "feasible": false
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 31,
+        "feasible": false
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 31,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 31,
+        "feasible": false
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 31,
+        "feasible": false
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 31,
+        "feasible": false
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 31,
+        "feasible": false
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 31,
+        "feasible": false
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 31,
+        "feasible": false
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 31,
+        "feasible": false
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 31,
+        "feasible": false
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 31,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 31,
+        "feasible": false
+       }
+      }
+     },
+     "NO_BET": {
+      "lines": 0,
+      "expected_return": 0.0,
+      "p_total_daily_loss": 0.0
+     }
+    },
+    "research_screen": {
+     "structures_passing_ev_low_gt_0": [],
+     "default_if_none": "NO BET",
+     "note": "Screen = expected return > 0 even with every leg at P - 1 sigma. Research label only; no grade, no paper bet. Leg-level rule (all legs EV > 0) shown separately."
+    }
+   }
+  },
+  "POS_EV": {
+   "N2": {
+    "population": "POS_EV",
+    "book": "casumo",
+    "n": 2,
+    "prices": "INDICATIVE (product of one book's leg prices, same scan)",
+    "legs": [
+     {
+      "rank": 1,
+      "event": "Frances Tiafoe v Kei Nishikori",
+      "selection": "Frances Tiafoe",
+      "p": 0.8075,
+      "sigma": 0.0178,
+      "odds": 1.24,
+      "leg_ev": 0.00124,
+      "quote_last_update": "2026-09-29T20:11:29+00:00"
+     },
+     {
+      "rank": 2,
+      "event": "Arthur Gea v Zhizhen Zhang",
+      "selection": "Arthur Gea",
+      "p": 0.7587,
+      "sigma": 0.0145,
+      "odds": 1.33,
+      "leg_ev": 0.00905,
+      "quote_last_update": "2026-09-29T20:10:54+00:00"
+     }
+    ],
+    "legs_correct_pmf": [
+     0.04646,
+     0.34093,
+     0.6126
+    ],
+    "leg_level_rule_all_legs_ev_gt_0": true,
+    "structures": {
+     "SINGLES": {
+      "lines": 2,
+      "max_share_on_one_leg": 0.5,
+      "mean_lines_per_leg": 1.0,
+      "p_complete_win": null,
+      "fair_odds": null,
+      "indicative_odds": null,
+      "expected_return": 0.00515,
+      "expected_return_at_p_minus_sigma": -0.01553,
+      "sd": 0.3751,
+      "p_any_loss_day": 0.3874,
+      "p_total_daily_loss": 0.04646,
+      "p_positive_day": 0.6126,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": 4.44e-05,
+       "2%": 7.46e-05,
+       "5%": 7.92e-05
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.0694,
+       "-3.0pp": 0.0437,
+       "-2.0pp": 0.03085,
+       "-1.5pp": 0.02442,
+       "-1.0pp": 0.018,
+       "-0.5pp": 0.01157,
+       "+0.5pp": -0.00128,
+       "+1.0pp": -0.0077,
+       "+1.5pp": -0.01413,
+       "+2.0pp": -0.02055,
+       "+3.0pp": -0.0334,
+       "+5.0pp": -0.0591
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 2,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 0.5,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 0.5,
+        "lines": 2,
+        "feasible": false
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 2,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 0.7,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 0.7,
+        "lines": 2,
+        "feasible": false
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 0.5,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 0.5,
+        "lines": 2,
+        "feasible": false
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 1.2,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 1.2,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 1.0,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 1.0,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 2.5,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 2.5,
+        "lines": 2,
+        "feasible": true
+       }
+      }
+     },
+     "ACC_2": {
+      "lines": 1,
+      "max_share_on_one_leg": 1.0,
+      "mean_lines_per_leg": 1.0,
+      "p_complete_win": 0.6126,
+      "fair_odds": 1.6324,
+      "indicative_odds": 1.6492,
+      "expected_return": 0.0103,
+      "expected_return_at_p_minus_sigma": -0.03084,
+      "sd": 0.8034,
+      "p_any_loss_day": 0.3874,
+      "p_total_daily_loss": 0.3874,
+      "p_positive_day": 0.6126,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": 7.07e-05,
+       "2%": 7.63e-05,
+       "5%": -0.0003018
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.14357,
+       "-3.0pp": 0.08927,
+       "-2.0pp": 0.06262,
+       "-1.5pp": 0.04942,
+       "-1.0pp": 0.0363,
+       "-0.5pp": 0.02326,
+       "+0.5pp": -0.00257,
+       "+1.0pp": -0.01536,
+       "+1.5pp": -0.02807,
+       "+2.0pp": -0.0407,
+       "+3.0pp": -0.0657,
+       "+5.0pp": -0.11472
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.4,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.4,
+        "lines": 1,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.6,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.6,
+        "lines": 1,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 1.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 1.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 2.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 2.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 2.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 2.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 5.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 5.0,
+        "lines": 1,
+        "feasible": true
+       }
+      }
+     },
+     "FULL_COVER+SINGLES": {
+      "lines": 3,
+      "max_share_on_one_leg": 0.6666666666666666,
+      "mean_lines_per_leg": 2.0,
+      "p_complete_win": null,
+      "fair_odds": null,
+      "indicative_odds": null,
+      "expected_return": 0.00686,
+      "expected_return_at_p_minus_sigma": -0.02063,
+      "sd": 0.5098,
+      "p_any_loss_day": 0.3874,
+      "p_total_daily_loss": 0.04646,
+      "p_positive_day": 0.6126,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": 5.56e-05,
+       "2%": 8.51e-05,
+       "5%": 1.52e-05
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.09412,
+       "-3.0pp": 0.05889,
+       "-2.0pp": 0.04144,
+       "-1.5pp": 0.03275,
+       "-1.0pp": 0.0241,
+       "-0.5pp": 0.01547,
+       "+0.5pp": -0.00171,
+       "+1.0pp": -0.01026,
+       "+1.5pp": -0.01878,
+       "+2.0pp": -0.02727,
+       "+3.0pp": -0.04417,
+       "+5.0pp": -0.07764
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 0.5,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 0.5,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 0.8,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 0.8,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 0.6,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 0.6,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 1.6,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 1.6,
+        "lines": 3,
+        "feasible": true
+       }
+      }
+     },
+     "NO_BET": {
+      "lines": 0,
+      "expected_return": 0.0,
+      "p_total_daily_loss": 0.0
+     }
+    },
+    "research_screen": {
+     "structures_passing_ev_low_gt_0": [],
+     "default_if_none": "NO BET",
+     "note": "Screen = expected return > 0 even with every leg at P - 1 sigma. Research label only; no grade, no paper bet. Leg-level rule (all legs EV > 0) shown separately."
+    }
+   },
+   "N3": {
+    "population": "POS_EV",
+    "book": "boylesports",
+    "n": 3,
+    "prices": "INDICATIVE (product of one book's leg prices, same scan)",
+    "legs": [
+     {
+      "rank": 1,
+      "event": "Novak Djokovic v Nuno Borges",
+      "selection": "Novak Djokovic",
+      "p": 0.6993,
+      "sigma": 0.0125,
+      "odds": 1.44,
+      "leg_ev": 0.00694,
+      "quote_last_update": "2026-09-29T20:11:31+00:00"
+     },
+     {
+      "rank": 2,
+      "event": "Polina Kudermetova v Mayar Sherif",
+      "selection": "Polina Kudermetova",
+      "p": 0.6429,
+      "sigma": 0.0112,
+      "odds": 1.57,
+      "leg_ev": 0.00941,
+      "quote_last_update": "2026-09-29T20:11:14+00:00"
+     },
+     {
+      "rank": 3,
+      "event": "Lilli Tagger v Elena Gabriela Ruse",
+      "selection": "Lilli Tagger",
+      "p": 0.5255,
+      "sigma": 0.0111,
+      "odds": 1.91,
+      "leg_ev": 0.00376,
+      "quote_last_update": "2026-09-29T20:11:14+00:00"
+     }
+    ],
+    "legs_correct_pmf": [
+     0.05095,
+     0.26664,
+     0.44614,
+     0.23627
+    ],
+    "leg_level_rule_all_legs_ev_gt_0": true,
+    "structures": {
+     "SINGLES": {
+      "lines": 3,
+      "max_share_on_one_leg": 0.3333333333333333,
+      "mean_lines_per_leg": 1.0,
+      "p_complete_win": null,
+      "fair_odds": null,
+      "indicative_odds": null,
+      "expected_return": 0.0067,
+      "expected_return_at_p_minus_sigma": -0.01228,
+      "sd": 0.4609,
+      "p_any_loss_day": 0.31759,
+      "p_total_daily_loss": 0.05095,
+      "p_positive_day": 0.68241,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": 5.64e-05,
+       "2%": 9.16e-05,
+       "5%": 6.88e-05
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.0887,
+       "-3.0pp": 0.0559,
+       "-2.0pp": 0.0395,
+       "-1.5pp": 0.0313,
+       "-1.0pp": 0.0231,
+       "-0.5pp": 0.0149,
+       "+0.5pp": -0.0015,
+       "+1.0pp": -0.0097,
+       "+1.5pp": -0.0179,
+       "+2.0pp": -0.0261,
+       "+3.0pp": -0.0425,
+       "+5.0pp": -0.0753
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 0.5,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 0.5,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 0.8,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 0.8,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 0.6,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 0.6,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 1.6,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 1.6,
+        "lines": 3,
+        "feasible": true
+       }
+      }
+     },
+     "ACC_2": {
+      "lines": 1,
+      "max_share_on_one_leg": 1.0,
+      "mean_lines_per_leg": 0.6666666666666666,
+      "p_complete_win": 0.44958,
+      "fair_odds": 2.2243,
+      "indicative_odds": 2.2608,
+      "expected_return": 0.01642,
+      "expected_return_at_p_minus_sigma": -0.01923,
+      "sd": 1.1246,
+      "p_any_loss_day": 0.55042,
+      "p_total_daily_loss": 0.55042,
+      "p_positive_day": 0.44958,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": 0.0001011,
+       "2%": 7.62e-05,
+       "5%": -0.0007483
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.17379,
+       "-3.0pp": 0.10949,
+       "-2.0pp": 0.07801,
+       "-1.5pp": 0.06245,
+       "-1.0pp": 0.04699,
+       "-0.5pp": 0.03165,
+       "+0.5pp": 0.0013,
+       "+1.0pp": -0.0137,
+       "+1.5pp": -0.02859,
+       "+2.0pp": -0.04337,
+       "+3.0pp": -0.07258,
+       "+5.0pp": -0.12965
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.4,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.4,
+        "lines": 1,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.6,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.6,
+        "lines": 1,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 1.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 1.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 2.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 2.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 2.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 2.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 5.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 5.0,
+        "lines": 1,
+        "feasible": true
+       }
+      }
+     },
+     "ACC_3": {
+      "lines": 1,
+      "max_share_on_one_leg": 1.0,
+      "mean_lines_per_leg": 1.0,
+      "p_complete_win": 0.23627,
+      "fair_odds": 4.2325,
+      "indicative_odds": 4.3181,
+      "expected_return": 0.02024,
+      "expected_return_at_p_minus_sigma": -0.03642,
+      "sd": 1.8343,
+      "p_any_loss_day": 0.76373,
+      "p_total_daily_loss": 0.76373,
+      "p_positive_day": 0.23627,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": 3.67e-05,
+       "2%": -0.0002483,
+       "5%": -0.0029072
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.29031,
+       "-3.0pp": 0.17723,
+       "-2.0pp": 0.12325,
+       "-1.5pp": 0.09688,
+       "-1.0pp": 0.07092,
+       "-0.5pp": 0.04538,
+       "+0.5pp": -0.00449,
+       "+1.0pp": -0.02883,
+       "+1.5pp": -0.05277,
+       "+2.0pp": -0.07631,
+       "+3.0pp": -0.12223,
+       "+5.0pp": -0.2095
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.4,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.4,
+        "lines": 1,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.6,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.6,
+        "lines": 1,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 1.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 1.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 1.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 2.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 2.5,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 2.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 2.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 5.0,
+        "lines": 1,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 5.0,
+        "lines": 1,
+        "feasible": true
+       }
+      }
+     },
+     "DBL12+SINGLES": {
+      "lines": 2,
+      "max_share_on_one_leg": 0.5,
+      "mean_lines_per_leg": 1.0,
+      "p_complete_win": null,
+      "fair_odds": null,
+      "indicative_odds": null,
+      "expected_return": 0.01009,
+      "expected_return_at_p_minus_sigma": -0.01838,
+      "sd": 0.7373,
+      "p_any_loss_day": 0.55042,
+      "p_total_daily_loss": 0.26116,
+      "p_positive_day": 0.44958,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": 7.37e-05,
+       "2%": 9.31e-05,
+       "5%": -0.0001743
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.13653,
+       "-3.0pp": 0.08527,
+       "-2.0pp": 0.05999,
+       "-1.5pp": 0.04743,
+       "-1.0pp": 0.03493,
+       "-0.5pp": 0.02248,
+       "+0.5pp": -0.00224,
+       "+1.0pp": -0.01452,
+       "+1.5pp": -0.02674,
+       "+2.0pp": -0.0389,
+       "+3.0pp": -0.06306,
+       "+5.0pp": -0.1107
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 2,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 0.5,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 0.5,
+        "lines": 2,
+        "feasible": false
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 2,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 0.7,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 0.7,
+        "lines": 2,
+        "feasible": false
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 0.5,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 0.5,
+        "lines": 2,
+        "feasible": false
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 1.2,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 1.2,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 1.0,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 1.0,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 2.5,
+        "lines": 2,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 2.5,
+        "lines": 2,
+        "feasible": true
+       }
+      }
+     },
+     "RR_DOUBLES": {
+      "lines": 3,
+      "max_share_on_one_leg": 0.6666666666666666,
+      "mean_lines_per_leg": 2.0,
+      "p_complete_win": null,
+      "fair_odds": null,
+      "indicative_odds": null,
+      "expected_return": 0.01345,
+      "expected_return_at_p_minus_sigma": -0.02442,
+      "sd": 0.9951,
+      "p_any_loss_day": 0.76373,
+      "p_total_daily_loss": 0.31759,
+      "p_positive_day": 0.23627,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": 8.53e-05,
+       "2%": 7.3e-05,
+       "5%": -0.0005361
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.18524,
+       "-3.0pp": 0.11493,
+       "-2.0pp": 0.08057,
+       "-1.5pp": 0.06359,
+       "-1.0pp": 0.04674,
+       "-0.5pp": 0.03003,
+       "+0.5pp": -0.00299,
+       "+1.0pp": -0.0193,
+       "+1.5pp": -0.03548,
+       "+2.0pp": -0.05153,
+       "+3.0pp": -0.08321,
+       "+5.0pp": -0.14499
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 0.5,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 0.5,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 0.8,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 0.8,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 0.6,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 0.6,
+        "lines": 3,
+        "feasible": false
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 1.6,
+        "lines": 3,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 1.6,
+        "lines": 3,
+        "feasible": true
+       }
+      }
+     },
+     "FULL_COVER": {
+      "lines": 4,
+      "max_share_on_one_leg": 0.75,
+      "mean_lines_per_leg": 3.0,
+      "p_complete_win": null,
+      "fair_odds": null,
+      "indicative_odds": null,
+      "expected_return": 0.01515,
+      "expected_return_at_p_minus_sigma": -0.02742,
+      "sd": 1.1837,
+      "p_any_loss_day": 0.76373,
+      "p_total_daily_loss": 0.31759,
+      "p_positive_day": 0.23627,
+      "max_loss": -1.0,
+      "exp_log_growth": {
+       "1%": 8.2e-05,
+       "2%": 2.73e-05,
+       "5%": -0.0009264
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.21151,
+       "-3.0pp": 0.1305,
+       "-2.0pp": 0.09124,
+       "-1.5pp": 0.07191,
+       "-1.0pp": 0.05279,
+       "-0.5pp": 0.03387,
+       "+0.5pp": -0.00337,
+       "+1.0pp": -0.02169,
+       "+1.5pp": -0.0398,
+       "+2.0pp": -0.05772,
+       "+3.0pp": -0.09297,
+       "+5.0pp": -0.16112
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 4,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 4,
+        "feasible": false
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 4,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 4,
+        "feasible": false
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 4,
+        "feasible": false
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 0.6,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 0.6,
+        "lines": 4,
+        "feasible": false
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 0.5,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 0.5,
+        "lines": 4,
+        "feasible": false
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 1.2,
+        "lines": 4,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 1.2,
+        "lines": 4,
+        "feasible": true
+       }
+      }
+     },
+     "FULL_COVER+SINGLES": {
+      "lines": 7,
+      "max_share_on_one_leg": 0.5714285714285714,
+      "mean_lines_per_leg": 4.0,
+      "p_complete_win": null,
+      "fair_odds": null,
+      "indicative_odds": null,
+      "expected_return": 0.01153,
+      "expected_return_at_p_minus_sigma": -0.02093,
+      "sd": 0.856,
+      "p_any_loss_day": 0.76373,
+      "p_total_daily_loss": 0.05095,
+      "p_positive_day": 0.23627,
+      "max_loss": -0.9999999999999998,
+      "exp_log_growth": {
+       "1%": 7.88e-05,
+       "2%": 8.55e-05,
+       "5%": -0.000318
+      },
+      "sensitivity_expected_return": {
+       "-5.0pp": 0.15888,
+       "-3.0pp": 0.09853,
+       "-2.0pp": 0.06907,
+       "-1.5pp": 0.05451,
+       "-1.0pp": 0.04007,
+       "-0.5pp": 0.02574,
+       "+0.5pp": -0.00257,
+       "+1.0pp": -0.01655,
+       "+1.5pp": -0.03041,
+       "+2.0pp": -0.04417,
+       "+3.0pp": -0.07134,
+       "+5.0pp": -0.12434
+      },
+      "structure_level_screen_ev_low_gt_0": false,
+      "stake_feasibility": {
+       "GBP20|2%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 7,
+        "feasible": false
+       },
+       "GBP20|2%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 7,
+        "feasible": false
+       },
+       "GBP20|5%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 7,
+        "feasible": true
+       },
+       "GBP20|5%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 7,
+        "feasible": false
+       },
+       "GBP30|2%|min0.10": {
+        "line_stake": 0.0,
+        "lines": 7,
+        "feasible": false
+       },
+       "GBP30|2%|min1.00": {
+        "line_stake": 0.0,
+        "lines": 7,
+        "feasible": false
+       },
+       "GBP30|5%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 7,
+        "feasible": true
+       },
+       "GBP30|5%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 7,
+        "feasible": false
+       },
+       "GBP50|2%|min0.10": {
+        "line_stake": 0.1,
+        "lines": 7,
+        "feasible": true
+       },
+       "GBP50|2%|min1.00": {
+        "line_stake": 0.1,
+        "lines": 7,
+        "feasible": false
+       },
+       "GBP50|5%|min0.10": {
+        "line_stake": 0.3,
+        "lines": 7,
+        "feasible": true
+       },
+       "GBP50|5%|min1.00": {
+        "line_stake": 0.3,
+        "lines": 7,
+        "feasible": false
+       },
+       "GBP100|2%|min0.10": {
+        "line_stake": 0.2,
+        "lines": 7,
+        "feasible": true
+       },
+       "GBP100|2%|min1.00": {
+        "line_stake": 0.2,
+        "lines": 7,
+        "feasible": false
+       },
+       "GBP100|5%|min0.10": {
+        "line_stake": 0.7,
+        "lines": 7,
+        "feasible": true
+       },
+       "GBP100|5%|min1.00": {
+        "line_stake": 0.7,
+        "lines": 7,
+        "feasible": false
+       }
+      }
+     },
+     "NO_BET": {
+      "lines": 0,
+      "expected_return": 0.0,
+      "p_total_daily_loss": 0.0
+     }
+    },
+    "research_screen": {
+     "structures_passing_ev_low_gt_0": [],
+     "default_if_none": "NO BET",
+     "note": "Screen = expected return > 0 even with every leg at P - 1 sigma. Research label only; no grade, no paper bet. Leg-level rule (all legs EV > 0) shown separately."
+    }
+   }
+  }
+ },
+ "labels": {
+  "prices": "multi prices INDICATIVE / NOT EXECUTION-VERIFIED",
+  "grades": "not set (no thresholds)",
+  "status": "RESEARCH ONLY -- no bet placed, no paper bet created"
+ }
+}
