@@ -28,6 +28,7 @@ class HoldoutGuard:
     date_from: str
     date_to: str
     opened: bool
+    competitions: tuple[str, ...] = ()   # V2-19: only the holdout's competitions are masked (empty = all)
 
 
 def load_guards(repo: Path, config: Path | None = None) -> list[HoldoutGuard]:
@@ -35,13 +36,15 @@ def load_guards(repo: Path, config: Path | None = None) -> list[HoldoutGuard]:
     if not path.exists():
         return []
     data = yaml.safe_load(path.read_text()) or {}
-    return [HoldoutGuard(eid, str(g["date_from"]), str(g["date_to"]), (repo / g["results"]).exists())
+    return [HoldoutGuard(eid, str(g["date_from"]), str(g["date_to"]), (repo / g["results"]).exists(),
+                         tuple(g.get("competitions") or ()))
             for eid, g in (data.get("guards") or {}).items()]
 
 
 def masked(row: dict, guards: list[HoldoutGuard]) -> bool:
     day = str(row.get("event_start", ""))[:10]
-    return any(g.engine_id == row.get("engine_id") and not g.opened and g.date_from <= day <= g.date_to for g in guards)
+    return any(g.engine_id == row.get("engine_id") and not g.opened and g.date_from <= day <= g.date_to
+               and (not g.competitions or row.get("competition") in g.competitions) for g in guards)
 
 
 def maturity(n_settled_units: int, n_high_units: int) -> str:

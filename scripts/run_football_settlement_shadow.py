@@ -19,8 +19,9 @@ from prediction_markets_lab.settlement.market_settlement import determine_result
 
 REPO = Path(__file__).resolve().parents[1]
 ARCHIVE = REPO / "settlement_archive"
-SPORT_TO_FD = {"soccer_epl": "E0", "soccer_efl_champ": "E1", "soccer_spl": "SC0"}
-COMP_TO_FD = {"Premier League": "E0", "Championship": "E1", "Scottish Premiership": "SC0"}
+SPORT_TO_FD = {"soccer_epl": "E0", "soccer_efl_champ": "E1", "soccer_spl": "SC0",
+               "soccer_netherlands_eredivisie": "N1", "soccer_germany_bundesliga": "D1"}   # N1/D1: V2-19
+COMP_TO_FD = {"Premier League": "E0", "Championship": "E1", "Scottish Premiership": "SC0", "Eredivisie": "N1", "Bundesliga": "D1"}
 GATE_MIN_COMPARISONS = 100
 
 

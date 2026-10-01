@@ -190,3 +190,14 @@ def test_opener_loads_only_window_and_complete_closing_books(tmp_path):
     assert len(df) == n_good and set(shas) == set(spec["competitions"])
     res = m.evaluate(df)
     assert res["matches"] == n_good and res["events"] == 3 * n_good and isinstance(res["passed"], bool)
+
+
+def test_v2_19_expansion_leagues_wired_and_holdout_guard_scoped():
+    from prediction_markets_lab.ingestion.the_odds_api_loader import TheOddsApiConfig
+    keys = TheOddsApiConfig().sport_keys
+    assert keys["soccer_netherlands_eredivisie"] == "Eredivisie" and keys["soccer_germany_bundesliga"] == "Bundesliga"
+    assert COMP_TO_FD["Eredivisie"] == "N1" and COMP_TO_FD["Bundesliga"] == "D1"
+    g = P.load_guards(REPO)[0]
+    assert set(g.competitions) == {"Premier League", "Championship", "Scottish Premiership"}
+    row = {"engine_id": g.engine_id, "event_start": "2026-10-10T14:00:00+00:00", "competition": "Eredivisie"}
+    assert not P.masked(row, [g]) and P.masked({**row, "competition": "Premier League"}, [g])

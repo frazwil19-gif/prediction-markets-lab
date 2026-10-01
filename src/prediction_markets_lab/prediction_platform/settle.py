@@ -9,7 +9,8 @@ from datetime import datetime, timedelta, timezone
 
 from prediction_markets_lab.settlement import football_data_results as fd
 
-COMP_TO_FD = {"Premier League": "E0", "Championship": "E1", "Scottish Premiership": "SC0"}
+COMP_TO_FD = {"Premier League": "E0", "Championship": "E1", "Scottish Premiership": "SC0",
+              "Eredivisie": "N1", "Bundesliga": "D1"}   # N1/D1: V2-19
 SETTLE_AFTER_KICKOFF = timedelta(hours=3)
 
 

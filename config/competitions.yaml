@@ -10,6 +10,8 @@ football:
     - Premier League
     - Championship
     - Scottish Premiership
+    - Eredivisie        # V2-19: V2-18 EXPAND NOW (grade A 1X2/DC; settlement aliases added from first observed spellings)
+    - Bundesliga        # V2-19: V2-18 EXPAND NOW
     # Additional competitions may be added only once bookmaker
     # coverage is confirmed strong (section 4).
   # V2-13 (2026-10-01): listed competitions MUST have an Odds API sport key (ingestion/the_odds_api_loader.py),

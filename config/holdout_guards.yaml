@@ -8,3 +8,4 @@ guards:
     results: research/platform_v2/double_chance/HOLDOUT_RESULTS.json   # written only by scripts/open_dc_holdout.py
     date_from: "2026-08-01"
     date_to: "2026-12-31"
+    competitions: [Premier League, Championship, Scottish Premiership]   # = spec E0/E1/SC0 (V2-19: new leagues are not in the holdout)
