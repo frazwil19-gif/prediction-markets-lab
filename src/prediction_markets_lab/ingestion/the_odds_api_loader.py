@@ -41,7 +41,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 
 class TheOddsApiCredentialError(RuntimeError):
@@ -86,6 +86,10 @@ class TheOddsApiConfig:
     )
     regions: str = "uk"
     markets: tuple[str, ...] = ("h2h", "totals")
+    # V2-14 Credit Plan A (approved 2026-10-01). None = no gate (previous behaviour). The daily scan sets these from
+    # config/api_budget.json (fixture_gate_hours, hard_floor_remaining).
+    gate_horizon_hours: float | None = None
+    hard_floor_remaining: int | None = None
     odds_format: str = "decimal"
     base_url: str = "https://api.the-odds-api.com"
     request_timeout_seconds: float = 15.0
@@ -427,7 +431,7 @@ def build_canonical_odds_and_metadata(
 # ---------------------------------------------------------------------------
 
 
-def fetch_odds_raw(sport_key: str, config: TheOddsApiConfig) -> list:
+def fetch_odds_raw(sport_key: str, config: TheOddsApiConfig, headers_out: dict | None = None) -> list:
     """Call The Odds API's /v4/sports/{sport}/odds endpoint for one sport_key.
 
     Costs len(config.markets) x 1 (config.regions is a single region
@@ -457,10 +461,18 @@ def fetch_odds_raw(sport_key: str, config: TheOddsApiConfig) -> list:
         "oddsFormat": config.odds_format,
     }
     url = f"{config.base_url}/v4/sports/{sport_key}/odds/?{urllib.parse.urlencode(params)}"
+    return _get_json(url, sport_key, config, headers_out)
+
+
+def _get_json(url: str, sport_key: str, config: TheOddsApiConfig, headers_out: dict | None = None) -> list:
+    """GET a JSON body; optionally copy the x-requests-* credit headers into headers_out (V2-14 accounting)."""
     request = urllib.request.Request(url, headers={"Accept": "application/json"})
     try:
         with urllib.request.urlopen(request, timeout=config.request_timeout_seconds) as response:
             body = response.read()
+            if headers_out is not None:
+                for h in ("x-requests-used", "x-requests-remaining", "x-requests-last"):
+                    headers_out[h] = response.headers.get(h)
     except urllib.error.HTTPError as exc:
         detail = ""
         try:
@@ -484,7 +496,46 @@ def fetch_odds_raw(sport_key: str, config: TheOddsApiConfig) -> list:
     return payload
 
 
-def fetch_and_canonicalise(config: TheOddsApiConfig) -> tuple[
+def fetch_events_raw(sport_key: str, config: TheOddsApiConfig, headers_out: dict | None = None) -> list:
+    """FREE /v4/sports/{sport}/events listing (no odds; 0 credits per The Odds API docs). V2-14 fixtures-first gate."""
+    api_key = config.resolve_api_key()
+    url = f"{config.base_url}/v4/sports/{sport_key}/events/?{urllib.parse.urlencode({'apiKey': api_key})}"
+    return _get_json(url, sport_key, config, headers_out)
+
+
+@dataclass(frozen=True)
+class GateDecision:
+    sport_key: str
+    pay: bool
+    reason: str
+    events_in_horizon: int
+    headers: dict
+
+
+def fixture_gate(sport_key: str, config: TheOddsApiConfig, now: datetime) -> GateDecision:
+    """Pay for odds only if >=1 fixture kicks off in (now, now + gate_horizon_hours] and the account stays above the
+    hard floor. Unparseable commence times count as in-horizon (fail OPEN for data, never skip on doubt)."""
+    hdr: dict = {}
+    events = fetch_events_raw(sport_key, config, hdr)
+    horizon = now + timedelta(hours=float(config.gate_horizon_hours))
+    n = 0
+    for ev in events if isinstance(events, list) else []:
+        try:
+            t = datetime.fromisoformat(str(ev["commence_time"]).replace("Z", "+00:00"))
+        except (KeyError, ValueError):
+            n += 1
+            continue
+        n += int(now < t <= horizon)
+    rem = hdr.get("x-requests-remaining")
+    if config.hard_floor_remaining is not None and rem not in (None, "") and float(rem) < config.hard_floor_remaining:
+        return GateDecision(sport_key, False, f"credit floor: remaining {rem} < {config.hard_floor_remaining}", n, hdr)
+    if n == 0:
+        return GateDecision(sport_key, False, f"no fixture within {config.gate_horizon_hours}h", 0, hdr)
+    return GateDecision(sport_key, True, f"{n} fixture(s) within {config.gate_horizon_hours}h", n, hdr)
+
+
+def fetch_and_canonicalise(config: TheOddsApiConfig, now: datetime | None = None,
+                           call_log: list | None = None) -> tuple[
     dict[str, dict[str, dict[str, float]]], dict[str, dict[str, str]], list[str]
 ]:
     """Fetch and canonicalise odds for every configured sport_key, merged.
@@ -507,7 +558,19 @@ def fetch_and_canonicalise(config: TheOddsApiConfig) -> tuple[
     scan_timestamp = datetime.now(timezone.utc).isoformat()
 
     for sport_key in config.sport_keys:
-        raw = fetch_odds_raw(sport_key, config)
+        if config.gate_horizon_hours is not None:   # V2-14 Credit Plan A: fixtures-first, free pre-check
+            g = fixture_gate(sport_key, config, now or datetime.now(timezone.utc))
+            if not g.pay:
+                all_warnings.append(f"{sport_key}: odds call skipped (0 credits) -- {g.reason}")
+                if call_log is not None:
+                    call_log.append({"call": f"odds:{sport_key}", "outcome": "SKIPPED", "reason": g.reason,
+                                     "credits_saved_estimate": len(config.markets), "headers": g.headers})
+                continue
+        hdr: dict = {}
+        raw = fetch_odds_raw(sport_key, config, hdr)
+        if call_log is not None:
+            call_log.append({"call": f"odds:{sport_key}", "outcome": "PAID", "reason": "",
+                             "credits_charged": hdr.get("x-requests-last"), "headers": hdr})
         events = parse_odds_response(raw, sport_key)
         odds, metadata, warnings = build_canonical_odds_and_metadata(
             events, config, scan_timestamp=scan_timestamp

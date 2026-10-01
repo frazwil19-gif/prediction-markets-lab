@@ -119,6 +119,7 @@ from prediction_markets_lab.ingestion.the_odds_api_loader import (
     TheOddsApiResponseError,
     fetch_and_canonicalise,
 )
+from prediction_markets_lab.ops import credit_ledger as CL
 from prediction_markets_lab.probability.market_pipeline import compute_market_consensus
 from prediction_markets_lab.reports.daily_bet_card import (
     ENGINE_VERSION,
@@ -137,6 +138,23 @@ from prediction_markets_lab.storage.csv_store import append_record
 from prediction_markets_lab.storage.paper_ledger import record_qualifying_candidates
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
+CREDIT_LEDGER = REPO_ROOT / "status" / "credit_ledger.csv"   # V2-14 shared credit accounting
+
+
+def gated_odds_config() -> TheOddsApiConfig:
+    """V2-14 Credit Plan A: fixtures-first gate + hard floor from config/api_budget.json (no magic numbers)."""
+    import json
+    c = json.loads((REPO_ROOT / "config" / "api_budget.json").read_text())["consumers"]["football_daily_scan"]
+    return TheOddsApiConfig(gate_horizon_hours=c.get("fixture_gate_hours"), hard_floor_remaining=c.get("hard_floor_remaining"))
+
+
+def log_calls(call_log: list) -> None:
+    for c in call_log:
+        paid = c["outcome"] == "PAID"
+        charged = c.get("credits_charged")
+        CL.append(CREDIT_LEDGER, "football_daily_scan", c["call"], CL.PAID if paid else CL.SKIPPED_GATE,
+                  int(charged) if paid and charged not in (None, "") else (None if paid else 0),
+                  0 if paid else int(c.get("credits_saved_estimate", 0)), c.get("headers"), c.get("reason", ""))
 
 # V1 market scope -- see module docstring. Extending this to a new market
 # family is the correct way to add one (per project engineering standards:
@@ -320,9 +338,14 @@ def main() -> int:
         best_prices = load_exchange_prices(args.best_price)
     else:
         try:
+            call_log: list = []
             bookmaker_odds_by_market, market_metadata, fetch_warnings = fetch_and_canonicalise(
-                TheOddsApiConfig()
+                gated_odds_config(), call_log=call_log
             )
+            try:   # accounting must never fail the scan
+                log_calls(call_log)
+            except Exception as exc:  # noqa: BLE001
+                print(f"credit ledger write failed (scan unaffected): {exc}", file=sys.stderr)
         except TheOddsApiCredentialError as exc:
             print(f"Cannot run a live scan: {exc}", file=sys.stderr)
             return 1
