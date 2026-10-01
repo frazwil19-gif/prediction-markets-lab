@@ -25,6 +25,7 @@ from pathlib import Path
 import yaml
 
 from prediction_markets_lab.ops.api_budget import check as budget_check, load_budget, month_spend
+from prediction_markets_lab.ops import football_coverage as FC
 from prediction_markets_lab.prediction_platform import adapters as A
 from prediction_markets_lab.bet_selection_v2 import prices as PR
 from prediction_markets_lab.bet_selection_v2.evaluate import load_config as load_bs_config
@@ -103,7 +104,9 @@ def ingest_football(card_path: Path | None, reg: Registry, st: dict) -> None:
         print("no daily card found -- nothing ingested")
         return
     card = json.loads(card_path.read_text())
-    preds, skips = A.football_from_card(card, reg, run_context(now_utc()), now_utc(), origin=str(card_path.relative_to(REPO)))
+    coverage = FC.by_name(FC.load(REPO / "config" / "football_coverage.yaml"))   # shadow vs paper-eligible leagues
+    preds, skips = A.football_from_card(card, reg, run_context(now_utc()), now_utc(), origin=str(card_path.relative_to(REPO)),
+                                        coverage=coverage)
     record(preds, skips, st, "football")
 
 
@@ -205,7 +208,7 @@ def settle(st: dict) -> None:
     if fb_due:
         from prediction_markets_lab.settlement import football_data_results as fd
         results, aliases = [], fd.load_settlement_aliases()
-        for code in sorted(set(S.COMP_TO_FD.values())):
+        for code in sorted({S.COMP_TO_FD[p["competition"]] for p in fb_due if p["competition"] in S.COMP_TO_FD}):
             url = fd.fd_url(code, now.date())
             try:
                 with urllib.request.urlopen(url, timeout=60) as r:

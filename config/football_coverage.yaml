@@ -1,0 +1,35 @@
+# FINAL FOOTBALL COVERAGE (2026-10-01). Design + evidence: research/platform_v2/football_coverage/COVERAGE_DESIGN.md
+# Three separate things (never conflated):
+#   observe        -- prospective observation (Stage A / unified ledger / decision shadow), credits permitting
+#   paper_state    -- ACTIVE: bsv2 may record PAPER_BET rows (frozen bsv2-4 rules); requires first_row_pass (verifier
+#                     result reference). PENDING_FIRST_ROW_PASS: approved Tier-1 paper league, rows are recorded as
+#                     shadow (never a PAPER_BET) until its own genuine first-row PASS. SHADOW: observation only.
+#   real money     -- NOT controlled here: config/competitions.yaml football.money_card_competitions (unchanged)
+# PENDING_FIRST_ROW_PASS -> ACTIVE is a recorded state transition: run
+#   python scripts/verify_first_rows.py --sport football --competition "<name>"
+# on the first genuine rows; on PASS set paper_state: ACTIVE and first_row_pass: "<date> <commit>" in one commit.
+# SHADOW -> PENDING needs Fraser's explicit approval. Rows recorded while pending stay shadow forever (append-only).
+#
+# tier: credit priority. 1 = paper core (only the hard floor stops it), 2 = prospective shadow, 3 = conditional shadow.
+#   Tiers 2/3 are throttled automatically by the dynamic floor in config/api_budget.json (football_tiers): Tier 3 first.
+# markets: Odds API featured markets paid per call (credits = number of markets). totals only where the legacy V1
+#   card already uses them (E0/E1/SC0); O/U 2.5 is REJECTED for strong-prediction use (V2-18) and is not reopened.
+# first_row_pass: null, grade_1x2: V2-18 historical grade (research/platform_v2/v2_18_expansion/LEAGUE_SUMMARY.csv); not re-estimated here.
+leagues:
+  - {code: E0,  name: Premier League,       sport_key: soccer_epl,                    tier: 1, markets: [h2h, totals], observe: true,  paper_state: PENDING_FIRST_ROW_PASS,  first_row_pass: null, grade_1x2: A, evidence: "Gate1 + V2-18 reference"}
+  - {code: E1,  name: Championship,         sport_key: soccer_efl_champ,              tier: 1, markets: [h2h, totals], observe: true,  paper_state: PENDING_FIRST_ROW_PASS,  first_row_pass: null, grade_1x2: A, evidence: "V2-18 reference"}
+  - {code: SC0, name: Scottish Premiership, sport_key: soccer_spl,                    tier: 1, markets: [h2h, totals], observe: true,  paper_state: PENDING_FIRST_ROW_PASS,  first_row_pass: null, grade_1x2: A, evidence: "V2-18 reference"}
+  - {code: N1,  name: Eredivisie,           sport_key: soccer_netherlands_eredivisie, tier: 1, markets: [h2h],         observe: true,  paper_state: PENDING_FIRST_ROW_PASS,  first_row_pass: null, grade_1x2: A, evidence: "V2-18 EXPAND NOW; V2-19 approved; paper after first-row PASS"}
+  - {code: D1,  name: Bundesliga,           sport_key: soccer_germany_bundesliga,     tier: 1, markets: [h2h],         observe: true,  paper_state: PENDING_FIRST_ROW_PASS,  first_row_pass: null, grade_1x2: A, evidence: "V2-18 EXPAND NOW; V2-19 approved; paper after first-row PASS"}
+  - {code: F1,  name: Ligue 1,              sport_key: soccer_france_ligue_one,       tier: 1, markets: [h2h],         observe: true,  paper_state: PENDING_FIRST_ROW_PASS, first_row_pass: null, grade_1x2: A, evidence: "V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS"}
+  - {code: SP1, name: La Liga,              sport_key: soccer_spain_la_liga,          tier: 2, markets: [h2h],         observe: true,  paper_state: SHADOW, first_row_pass: null, grade_1x2: B, evidence: "V2-18 grade B (slope CI above 1): transfer not established -> shadow"}
+  - {code: I1,  name: Serie A,              sport_key: soccer_italy_serie_a,          tier: 2, markets: [h2h],         observe: true,  paper_state: SHADOW, first_row_pass: null, grade_1x2: B, evidence: "V2-18 grade B -> shadow"}
+  - {code: P1,  name: Primeira Liga,        sport_key: soccer_portugal_primeira_liga, tier: 2, markets: [h2h],         observe: true,  paper_state: SHADOW, first_row_pass: null, grade_1x2: B, evidence: "V2-18 grade B (slope 1.28/1.16) -> shadow; highest strong volume"}
+  - {code: B1,  name: Belgian Pro League,   sport_key: soccer_belgium_first_div,      tier: 2, markets: [h2h],         observe: true,  paper_state: SHADOW, first_row_pass: null, grade_1x2: A, evidence: "V2-18 grade A -> RECOMMENDED for paper (awaiting approval + first-row PASS)"}
+  - {code: E2,  name: League One,           sport_key: soccer_england_league1,        tier: 3, markets: [h2h],         observe: true,  paper_state: SHADOW, first_row_pass: null, grade_1x2: B, evidence: "V2-18 grade B; ~6 strong/season"}
+  - {code: E3,  name: League Two,           sport_key: soccer_england_league2,        tier: 3, markets: [h2h],         observe: true,  paper_state: SHADOW, first_row_pass: null, grade_1x2: A, evidence: "V2-18 grade A; ~4 strong/season -> shadow (low volume)"}
+  - {code: SP2, name: Segunda Division,     sport_key: soccer_spain_segunda_division, tier: 3, markets: [h2h],         observe: true,  paper_state: SHADOW, first_row_pass: null, grade_1x2: B, evidence: "V2-18 grade B; ~5 strong/season"}
+  - {code: D2,  name: 2. Bundesliga,        sport_key: soccer_germany_bundesliga2,    tier: 3, markets: [h2h],         observe: true,  paper_state: SHADOW, first_row_pass: null, grade_1x2: A, evidence: "V2-18 grade A; ~3 strong/season -> shadow (low volume)"}
+  - {code: I2,  name: Serie B,              sport_key: soccer_italy_serie_b,          tier: 3, markets: [h2h],         observe: true,  paper_state: SHADOW, first_row_pass: null, grade_1x2: B, evidence: "V2-18 grade B; ~2 strong/season"}
+  - {code: F2,  name: Ligue 2,              sport_key: soccer_france_ligue_two,       tier: 3, markets: [h2h],         observe: true,  paper_state: SHADOW, first_row_pass: null, grade_1x2: A, evidence: "V2-18 grade A; ~2 strong/season -> shadow (low volume)"}
+  - {code: SC1, name: Scottish Championship, sport_key: null,                         tier: 3, markets: [],            observe: false, paper_state: SHADOW, first_row_pass: null, grade_1x2: A, evidence: "DATA_BLOCKED: The Odds API lists no Scottish Championship sport key (checked 2026-10-01)"}

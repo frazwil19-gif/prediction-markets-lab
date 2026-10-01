@@ -16,12 +16,13 @@ from pathlib import Path
 
 from prediction_markets_lab.settlement import football_data_results as fd
 from prediction_markets_lab.settlement.market_settlement import determine_result
+from prediction_markets_lab.prediction_platform.settle import COMP_TO_FD as SETTLE_COMP_TO_FD
 
 REPO = Path(__file__).resolve().parents[1]
 ARCHIVE = REPO / "settlement_archive"
 SPORT_TO_FD = {"soccer_epl": "E0", "soccer_efl_champ": "E1", "soccer_spl": "SC0",
                "soccer_netherlands_eredivisie": "N1", "soccer_germany_bundesliga": "D1"}   # N1/D1: V2-19
-COMP_TO_FD = {"Premier League": "E0", "Championship": "E1", "Scottish Premiership": "SC0", "Eredivisie": "N1", "Bundesliga": "D1"}
+COMP_TO_FD = SETTLE_COMP_TO_FD   # single source: config/football_coverage.yaml (lookup only)
 GATE_MIN_COMPARISONS = 100
 
 

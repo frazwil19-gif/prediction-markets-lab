@@ -25,6 +25,7 @@ from typing import Callable
 
 import yaml
 
+from prediction_markets_lab.ops.football_coverage import SHADOW_LEAGUE_STATUS
 from prediction_markets_lab.bet_selection_v2 import prices as PR
 from prediction_markets_lab.bet_selection_v2.evaluate import evaluate_prediction
 from prediction_markets_lab.card_engine.cards import leg_sigma
@@ -214,7 +215,10 @@ def build(eligible: list[dict], prob_rows: list[dict], snaps_for: Callable[[dict
                      "minutes_to_event_at_prediction": p.get("minutes_to_event", ""),
                      "sigma": None if sig is None else round(sig, 6), "sigma_method": smethod,
                      "sigma_calibration": None if cse is None else round(cse, 6),
-                     "calibration_status": (calibration_status or {}).get(p["engine_id"], "UNKNOWN"),
+                     # a prospective-shadow football league is not covered by the engine's reference-league evidence
+                     "calibration_status": ("LEAGUE_SHADOW_NOT_TRANSFERRED (" + str(p.get("historical_support", "")) + ")"
+                                            if p.get("engine_status") == SHADOW_LEAGUE_STATUS
+                                            else (calibration_status or {}).get(p["engine_id"], "UNKNOWN")),
                      "sigma_half_width": None if width is None else round(width / 2, 6), "exchange_width": width,
                      "probability_band": p["probability_band"], "engine_id": p["engine_id"], "engine_version": p["engine_version"],
                      "engine_status": p["engine_status"], "prediction_timestamp": p["prediction_timestamp"],

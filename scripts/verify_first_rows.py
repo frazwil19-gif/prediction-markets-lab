@@ -37,10 +37,13 @@ def _ts(s: str) -> datetime:
     return datetime.fromisoformat(s.replace("Z", "+00:00"))
 
 
-def verify(repo: Path, sport: str) -> dict:
-    led = [r for r in _rows(repo / "predictions/unified_ledger.csv") if r["sport"] == sport]
+def verify(repo: Path, sport: str, competition: str | None = None) -> dict:
+    """competition: optional per-league verification (final football coverage: a league joins paper operation only
+    after its own first-row PASS)."""
+    led = [r for r in _rows(repo / "predictions/unified_ledger.csv")
+           if r["sport"] == sport and (competition is None or r["competition"] == competition)]
     if not led:
-        return {"sport": sport, "status": "PENDING", "reason": "no prospective rows yet"}
+        return {"sport": sport, "competition": competition, "status": "PENDING", "reason": "no prospective rows yet"}
     checks: dict[str, tuple[str, str]] = {}
 
     def chk(name: str, ok: bool, detail: str = "") -> None:
@@ -64,7 +67,8 @@ def verify(repo: Path, sport: str) -> dict:
         chk("nba_one_row_per_game", max(Counter(r["event_key"] for r in led).values()) == 1)
         chk("nba_actual_book_source", all(r["live_price_source"].startswith("odds_api:") for r in led))
     board = json.loads((repo / "reports/latest_stage_a_board.json").read_text()) if (repo / "reports/latest_stage_a_board.json").exists() else {}
-    sa = [b for b in board.get("predictions", []) if b.get("sport") == sport]
+    sa = [b for b in board.get("predictions", []) if b.get("sport") == sport
+          and (competition is None or b.get("competition") == competition)]
     gen = _ts(board["generated_at"]) if board.get("generated_at") else None
     upcoming = {r["prediction_id"] for r in led if r["prediction_valid"] == "True" and gen and _ts(r["event_start"]) > gen}
     on_board = {b["prediction_id"] for b in sa}
@@ -82,7 +86,7 @@ def verify(repo: Path, sport: str) -> dict:
     chk("stage_b_candidates_for_priced_markets", all(r["prediction_id"] in cands for r in bets) if cands else False,
         f"{sum(r['prediction_id'] in cands for r in bets)}/{len(bets)}")
     status = "PASS" if all(v[0] == "PASS" for v in checks.values()) else "FAIL"
-    return {"sport": sport, "status": status, "rows": len(led), "first_prediction_at": min(r["prediction_timestamp"] for r in led),
+    return {"sport": sport, "competition": competition, "status": status, "rows": len(led), "first_prediction_at": min(r["prediction_timestamp"] for r in led),
             "checks": {k: {"result": v[0], "detail": v[1]} for k, v in checks.items()}}
 
 
@@ -90,8 +94,9 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--sport", choices=sorted(WINDOW_MIN), required=True)
     ap.add_argument("--repo", type=Path, default=Path(__file__).resolve().parents[1])
+    ap.add_argument("--competition", default=None, help="verify one league only (e.g. 'Eredivisie')")
     a = ap.parse_args()
-    print(json.dumps(verify(a.repo, a.sport), indent=1))
+    print(json.dumps(verify(a.repo, a.sport, a.competition), indent=1))
     return 0
 
 
