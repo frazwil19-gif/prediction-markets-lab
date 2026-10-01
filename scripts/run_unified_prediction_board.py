@@ -214,7 +214,7 @@ def build(reg: Registry, st: dict) -> None:
     now = now_utc()
     preds = read_rows(LEDGER)
     settlements = {r["prediction_id"]: r for r in read_rows(SETTLEMENTS)}
-    perf = P.report(preds, settlements)
+    perf = P.report(preds, settlements, P.load_guards(REPO))   # V2-13: sealed-holdout no-peek masking
     health = H.evaluate(REPO, now, st)
     active = [e for e in reg.engines if reg.collectable(e, now)]
     start_index = ET.load_index(REPO)
