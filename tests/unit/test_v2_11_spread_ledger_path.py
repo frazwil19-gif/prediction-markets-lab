@@ -80,10 +80,15 @@ def test_no_probability_rows_fails_closed_by_default():
     assert "EXCHANGE_SPREAD_UNKNOWN" in evaluate_prediction(ledger_row(), [s], CFG, NOW)[0].reasons
 
 
-def test_exchange_back_source_needs_no_width():
-    """bsv2-3 scope unchanged: the width rule applies to midpoint P; the validated EXCHANGE_BACK fallback is exempt."""
-    s, b = decide(ledger_row(0.60), [prob_row("", source="EXCHANGE_BACK")])
-    assert s.p_same_source == "EXCHANGE_BACK" and not set(SPREAD) & set(b.reasons)
+def test_exchange_back_source_fails_closed_for_financial_use():
+    """bsv2-4 (revised after the Track-0 audit): a back-only Betfair P has no measurable book width, so it can never be
+    financially assessed (bsv2-3 exempted it). It is never observed prospectively so far (0 of 172 snapshots)."""
+    s, b = decide(ledger_row(0.70, live="1.80"), [prob_row("", source="EXCHANGE_BACK", pa=0.70)])
+    assert s.p_same_source == "EXCHANGE_BACK" and b.decision == REJECT and "EXCHANGE_SPREAD_UNKNOWN" in b.reasons
+    price = [{"scan_timestamp_utc": SCAN, "sport_key": "k", "event_id": "e1", "player_a": "Ann Able", "player_b": "Bea Bold",
+              "bookmaker": "betway", "market": "h2h", "odds_a": "1.80", "odds_b": "2.1", "last_update": SCAN}]
+    snaps = PR.tennis_from_snapshots(ledger_row(0.70), price, [prob_row("", source="EXCHANGE_BACK", pa=0.70)])
+    assert "EXCHANGE_SPREAD_UNKNOWN" in evaluate_prediction(ledger_row(0.70), snaps, CFG, NOW)[0].reasons
 
 
 def test_football_bookmaker_ledger_quote_unaffected():

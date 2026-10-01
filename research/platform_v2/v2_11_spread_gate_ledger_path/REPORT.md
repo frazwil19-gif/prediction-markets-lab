@@ -129,3 +129,44 @@ No threshold, V2-7, V2-8, settlement, multi or money change. No new network call
 
 - `scripts/v2_10_reconstruct_30sep.py` (a historical record) calls `from_ledger_row(p)` without probability rows. Re-running it after this change would mark ledger quotes UNRESOLVED; its committed JSON is the V2-10 record and stays as is.
 - The Stage A width override (V2-10) is now redundant for the ledger path but kept as defence in depth.
+
+---
+
+## Addendum A1 (2026-10-01) — Track-0 audits and revision before merge
+
+### A1.1 EXCHANGE_BACK exemption: REVISED (now fails closed for financial use)
+
+- **Origin.** `tennis_prospective/engine.predict` falls back to EXCHANGE_BACK when Betfair back prices exist but lay prices don't. P is the two-way normalised back prices; `raw_prices` holds `ex_back` only.
+- **Validation.** The protocol (`ATP_PROSPECTIVE_PROTOCOL.md` §hierarchy) calls it "Includes the back-lay spread; flagged". The holdouts validated a last-traded-price estimator, and EXCHANGE_MID is the declared analogue of that. **No artefact validates EXCHANGE_BACK separately.**
+- **Observed use.** 0 occurrences: 172/172 exchange-probability snapshots and 94/94 validated ledger rows are EXCHANGE_MID.
+- **Why the exemption was wrong.** bsv2-3 exempted EXCHANGE_BACK because "the width rule is about midpoint error". But a back-only P has an **unmeasurable** book width. Its bias can be the whole spread, not half of it.
+- **Under the stated invariant** ("no financial decision may use an exchange-derived probability without the data-quality information required to validate it"), EXCHANGE_BACK must therefore fail closed.
+- **Change.** bsv2-4 now treats it like an unknown-width midpoint: `EXCHANGE_SPREAD_UNKNOWN`. The prediction stays valid and visible on Stage A. `config/bet_selection_v2.yaml` documents the revision.
+- **Impact.** 0, since there are no occurrences. The reconstruction (`RECONSTRUCTION.json`) was re-run and is byte-identical. The test was replaced by `test_exchange_back_source_fails_closed_for_financial_use`, which covers both the ledger and the bookmaker-snapshot paths.
+
+### A1.2 Bai bsv2-3 → bsv2-4 carry-forward: semantics audited, KEEP
+
+**What the annotation does.**
+- `build_report` includes earlier-rule selections only if their latest annotation is `VALID_SAME_SNAPSHOT`.
+- `valid_legacy_prediction_ids` blocks a second selection on the same prediction (duplicate exposure).
+- The carry-forward row therefore:
+  - (a) keeps the single bsv2-3 paper bet in the running paper record under bsv2-4;
+  - (b) preserves its exposure lock.
+- The selection row itself stays `rule_version=bsv2-3`, unchanged.
+
+**Why it's legitimate.**
+- The decision was re-derived mechanically. The bsv2-4 evaluator was run on the exact decision-time inputs at commit `896cdbf`: betway 1.73, same-scan EXCHANGE_MID P 0.598558, width 0.0097, EV +3.55%.
+- The outcome was not read, so inclusion cannot depend on the result.
+- The A1.1 revision does not affect it (source EXCHANGE_MID).
+- Precedent: the bsv2-1→bsv2-3 annotations.
+
+**Caveats (recorded, not blocking).**
+- The label name `VALID_SAME_SNAPSHOT` is overloaded: it really means "satisfies the current rule".
+- The annotation was written after the event had started. This is acceptable only because it is rule-determined.
+- Analyses by rule version should report bsv2-3 and bsv2-4 rows separately and treat the carried row as bsv2-3-originated.
+
+### A1.3 Recommendation
+
+**MERGE after the first genuine post-V2-10 scan run is verified.**
+
+The 01:22 UTC run (36800820871) was the 22:30 settlement-only cron: the board step was skipped and no scan happened. So it verified the est-1 board build and Stage A build only; Stage A correctly showed all 56 rows PRICE_QUALITY_FAIL, because every quote was more than 240 minutes old. The scan-run checkpoint is **PENDING**.

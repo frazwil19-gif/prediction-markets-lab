@@ -10,7 +10,9 @@ rule_version: "bsv2-4"
 # gates and values UNCHANGED. Implementation correction: the unified-ledger price path (the tennis ledger's own Betfair
 # back quote) carried no engine source or book width, so the bsv2-3 width gate could not be evaluated on it. The ledger
 # snapshot now carries the width/source of the SAME scan (same event, same players, validated); if that cannot be resolved
-# it fails closed (EXCHANGE_SPREAD_UNKNOWN). Report: research/platform_v2/v2_11_spread_gate_ledger_path/REPORT.md
+# it fails closed (EXCHANGE_SPREAD_UNKNOWN). Revision (Track-0 audit, 2026-10-01): the back-only EXCHANGE_BACK fallback is no
+# longer exempt -- its book width is unmeasurable, so it fails closed for financial use (0 occurrences to date).
+# Report: research/platform_v2/v2_11_spread_gate_ledger_path/REPORT.md
 # bsv2-3 (approved by Fraser 2026-09-29 19:43 BST; deployed via GitHub): EV gates UNCHANGED. Adds a data-quality gate: when the
 # engine P is a Betfair back/lay midpoint, the book's width (max over runners of 1/back - 1/lay) must be <= 0.03. Rationale
 # fixed before any outcome was examined: the midpoint's error is up to half the width (1.5 pp), comparable to the 2% EV floor,
