@@ -46,7 +46,8 @@ STATE = PRED_DIR / "platform_state.json"
 NBA_CREDIT_LOG = PRED_DIR / "nba_credit_log.csv"
 REPORTS = REPO / "reports"
 ODDS = "https://api.the-odds-api.com/v4/sports"
-NBA_SCORES_EVERY_DAYS = 3
+NBA_SCORES_EVERY_DAYS = 2   # V2-15: every 2nd day with daysFrom=3 leaves one day of overlap (was 3: no margin)
+NBA_OVERDUE_DAYS = 3        # V2-15: unsettled this long after tip -> REVIEW_REQUIRED (never guessed)
 STAGE_A_CONFIG = REPO / "config/prediction_board_stage_a.yaml"
 
 
@@ -138,6 +139,27 @@ def _nba_budget_ok(remaining: int, cost: int) -> bool:
     return d.allowed
 
 
+def first_snapshot_only(preds: list, ledger_rows: list[dict]) -> tuple[list, list]:
+    """V2-15: FIRST_SCAN_WITHIN_36H means ONE prediction per game. prediction_id includes the selection, so a later scan
+    in which the favourite flipped would otherwise append a second row for the same game."""
+    seen = {r["event_key"] for r in ledger_rows if r.get("engine_id") == A.NBA}
+    keep, skips = [], []
+    for p in preds:
+        if p.event_key in seen:
+            skips.append(A.Skip(A.NBA, p.event_key, "ALREADY_PREDICTED_FIRST_SNAPSHOT_CANONICAL"))
+        else:
+            keep.append(p)
+            seen.add(p.event_key)
+    return keep, skips
+
+
+def nba_overdue(preds: list[dict], done: set[str], now: datetime) -> list[dict]:
+    return [{"prediction_id": p["prediction_id"], "event": p["event_name"], "event_start": p["event_start"],
+             "status": "REVIEW_REQUIRED", "detail": f"unsettled > {NBA_OVERDUE_DAYS} days after tip"}
+            for p in preds if p["sport"] == "basketball" and p["prediction_id"] not in done
+            and (now - datetime.fromisoformat(p["event_start"])).days >= NBA_OVERDUE_DAYS]
+
+
 def collect_nba(reg: Registry, st: dict) -> None:
     now = now_utc()
     if not reg.collectable(A.NBA, now):
@@ -165,7 +187,8 @@ def collect_nba(reg: Registry, st: dict) -> None:
     _log_credit("odds:basketball_nba", h)
     st["nba_last_odds_date"] = now.date().isoformat()
     preds, skips = A.nba_from_odds(raw, reg, run_context(now), now, origin="odds_api:basketball_nba")
-    record(preds, skips, st, "nba")
+    preds, dup_skips = first_snapshot_only(preds, read_rows(LEDGER))
+    record(preds, skips + dup_skips, st, "nba")
 
 
 def settle(st: dict) -> None:
@@ -205,6 +228,7 @@ def settle(st: dict) -> None:
                 st["nba_last_scores_date"] = now.date().isoformat()
                 new += S.settle_from_odds_api_scores(nba_due, done, scores, now)
     added, _ = append_unique(SETTLEMENTS, new, SETTLEMENT_FIELDS)
+    review = review + nba_overdue(preds, done | {r["prediction_id"] for r in new}, now)
     st["pending_review"] = review
     st.setdefault("last_runs", {})["settle"] = {"at": now.isoformat(), "added": added, "pending_review": len(review)}
     print(f"settle: {added} new settlements; {len(review)} pending review")
@@ -252,7 +276,7 @@ def build_stage_a(preds: list[dict], start_index: ET.StartIndex, now: datetime) 
     cal = SA.calibration_se(cfg.calibration_results) if cfg.calibration_results.exists() else None
     fse = SA.football_sigma(cfg.football_sigma_evidence) if cfg.football_sigma_evidence and cfg.football_sigma_evidence.exists() else None
     status = {eid: e.get("calibration_status", "UNKNOWN") for eid, e in Registry.load().engines.items()}
-    board = SA.build(eligible, prob_rows, snaps_for, bs_cfg, cfg, cal, now, fse, status)
+    board = SA.build(eligible, prob_rows, snaps_for, bs_cfg, cfg, cal, now, fse, status, SA.sport_sigma(cfg))
     SA.write(board, REPORTS)
     print(f"stage A: {board['summary']}")
 

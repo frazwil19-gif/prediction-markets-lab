@@ -204,8 +204,12 @@
    "ge80_historical_coverage": 0.209,
    "money_eligible": false,
    "multi_research_eligible": true,
-   "last_updated": "2026-09-24",
-   "calibration_status": "HOLDOUT_PASSED on closing estimator (live early-snapshot estimator not validated)"
+   "last_updated": "2026-10-01",
+   "calibration_status": "HOLDOUT_PASSED on closing estimator (live early-snapshot estimator not validated)",
+   "estimator_id": "nba_moneyline.market@1-live",
+   "live_estimator": "mean decimal odds per side over >=3 FRESH (<=6h) non-exchange UK books, 2-way proportional; first scan within 36h of tip (~17-21h before tip at the 06:30 UTC run); 30 franchises only",
+   "validated_estimator": "OddsPortal average CLOSING moneyline, proportional (sealed holdout 2024-26, n=2629)",
+   "calibration_transfer": "NOT_ASSUMED"
   },
   {
    "engine": "football_double_chance.derived_1x2",

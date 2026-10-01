@@ -47,3 +47,6 @@ hypothesis only (not pre-registered).
 One averaged closing price (no book panel, no timestamps); no box scores; **no historical injuries or lineups**;
 OddsPortal dates are offset +1 day (consistent); playoffs are a small sample. The validated number is a *closing*
 price, so a live board must address timing (`NBA_LIVE_COMPATIBILITY.md`).
+
+---
+**Erratum (2026-10-01, V2-15; text above unchanged):** the commit hashes `12561fc` and `abc2b87` cited above do not exist in this repository. The actual history is `a047ab1` → `8083a43` (holdout spec) → `1cd2259` (holdout results). See `research/platform_v2/v2_15_nba/NBA_PROSPECTIVE_PREREGISTRATION.md`.
