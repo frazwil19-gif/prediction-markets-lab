@@ -53,7 +53,7 @@ def latest_card() -> tuple[dict | None, dict | None]:
 def gather_snapshots(pred: dict, tennis_rows: list[dict], card: dict | None,
                      prob_rows: list[dict] | None = None) -> list[PR.PriceSnapshot]:
     snaps = []
-    own = PR.from_ledger_row(pred)
+    own = PR.from_ledger_row(pred, prob_rows)
     if own:
         snaps.append(own)
     snaps += PR.tennis_from_snapshots(pred, tennis_rows, prob_rows)
@@ -207,13 +207,14 @@ def diagnose(cfg: dict) -> dict:
     """Re-evaluate settled VALID predictions at their own prediction time and recorded price. Diagnostic only."""
     preds = {p["prediction_id"]: p for p in L.read_rows(REPO / "predictions/unified_ledger.csv")}
     sett = L.read_rows(REPO / "predictions/unified_settlements.csv")
+    prob_rows = L.read_rows(REPO / "tennis_predictions/exchange_probability_snapshots.csv")   # bsv2-4: same-snapshot spread
     rows = []
     for s in sett:
         p = preds.get(s["prediction_id"])
         if not p or str(p["prediction_valid"]) != "True" or s["settlement_status"] != "SETTLED":
             continue
         at = PR.ts(p["prediction_timestamp"])
-        best, _ = evaluate_prediction(p, [x for x in [PR.from_ledger_row(p)] if x], cfg, at)
+        best, _ = evaluate_prediction(p, [x for x in [PR.from_ledger_row(p, prob_rows)] if x], cfg, at)
         comm = best.commission or 0.0
         won = str(s["correct"]) == "1"
         pnl = ((best.decimal_odds - 1) * (1 - comm) if won else -1.0) if best.decimal_odds else None

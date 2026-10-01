@@ -11,11 +11,14 @@ from pathlib import Path
 
 import yaml
 
-from prediction_markets_lab.bet_selection_v2.prices import PriceSnapshot, ts
+from prediction_markets_lab.bet_selection_v2.prices import UNRESOLVED_SOURCE, PriceSnapshot, ts
 from prediction_markets_lab.ev.expected_value import break_even_probability, net_expected_value
 
 CONFIG_PATH = Path(__file__).resolve().parents[3] / "config/bet_selection_v2.yaml"
 
+# bsv2-4: every Betfair-derived probability needs a verified same-snapshot book width. EXCHANGE_BACK (back prices only, no
+# lay) can never have one, so it fails closed for FINANCIAL use (it stays a valid PREDICTION on Stage A).
+SPREAD_REQUIRED_SOURCES = ("EXCHANGE_MID", "EXCHANGE_BACK", UNRESOLVED_SOURCE)
 PAPER_BET, WATCH, MULTI, REJECT = "PAPER_BET", "WATCH", "MULTI_RESEARCH_ELIGIBLE", "REJECT"
 DECISIONS = (PAPER_BET, MULTI, WATCH, REJECT)
 
@@ -103,7 +106,8 @@ def _price_candidate(pred: dict, snap: PriceSnapshot | None, cfg: dict, now: dat
         p = float(snap.p_same_snapshot)
         c.probability, c.fair_odds = p, 1.0 / p
         dq = cfg.get("data_quality", {})
-        if snap.p_same_source == "EXCHANGE_MID" and dq.get("max_exchange_spread_prob") is not None:
+        # bsv2-4: any Betfair-derived P (midpoint, back-only or unresolved ledger path) requires a known width (fail closed)
+        if snap.p_same_source in SPREAD_REQUIRED_SOURCES and dq.get("max_exchange_spread_prob") is not None:
             if snap.p_same_spread is None:
                 c.reasons.append("EXCHANGE_SPREAD_UNKNOWN")
             elif snap.p_same_spread > dq["max_exchange_spread_prob"]:
