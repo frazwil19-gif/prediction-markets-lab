@@ -92,7 +92,11 @@ def _shadow_text(coverage: dict | None, comp: str) -> str | None:
     lg = coverage.get(comp)
     if lg is None:
         return f"PROSPECTIVE SHADOW: {comp} not in config/football_coverage.yaml"
-    return None if lg.paper_eligible else f"PROSPECTIVE SHADOW {lg.code} (V2-18 1X2 grade {lg.grade_1x2}): {lg.evidence}"
+    if lg.paper_eligible:
+        return None
+    if lg.paper_state == FC.PENDING:
+        return f"PENDING FIRST-ROW PASS {lg.code} (Tier 1; recorded as shadow until verified): {lg.evidence}"
+    return f"PROSPECTIVE SHADOW {lg.code} (V2-18 1X2 grade {lg.grade_1x2}): {lg.evidence}"
 
 
 def football_from_card(card: dict, reg: Registry, ctx: RunContext, now: datetime,

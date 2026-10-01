@@ -26,6 +26,7 @@ COVERAGE_PATH = REPO / "config" / "football_coverage.yaml"
 BUDGET_PATH = REPO / "config" / "api_budget.json"
 TIER_PAPER_CORE, TIER_SHADOW, TIER_CONDITIONAL = 1, 2, 3
 SHADOW_LEAGUE_STATUS = "PROSPECTIVE_SHADOW_LEAGUE"   # not in any bsv2 engine_statuses list -> never a PAPER_BET
+ACTIVE, PENDING, SHADOW = "ACTIVE", "PENDING_FIRST_ROW_PASS", "SHADOW"
 
 
 @dataclass(frozen=True)
@@ -36,22 +37,32 @@ class League:
     tier: int
     markets: tuple[str, ...]
     observe: bool
-    paper_eligible: bool
+    paper_state: str
+    first_row_pass: str | None
     grade_1x2: str
     evidence: str
+
+    @property
+    def paper_eligible(self) -> bool:
+        """Only ACTIVE (first-row PASS recorded) leagues may produce bsv2 PAPER_BET rows."""
+        return self.paper_state == ACTIVE
 
 
 def load(path: Path = COVERAGE_PATH) -> list[League]:
     out = []
     for r in yaml.safe_load(path.read_text())["leagues"]:
         lg = League(r["code"], r["name"], r.get("sport_key"), int(r["tier"]), tuple(r.get("markets") or ()),
-                    bool(r["observe"]), bool(r["paper_eligible"]), str(r["grade_1x2"]), str(r["evidence"]))
+                    bool(r["observe"]), str(r["paper_state"]), r.get("first_row_pass"), str(r["grade_1x2"]), str(r["evidence"]))
+        if lg.paper_state not in (ACTIVE, PENDING, SHADOW):
+            raise ValueError(f"{lg.code}: unknown paper_state {lg.paper_state!r}")
+        if lg.paper_state == ACTIVE and not lg.first_row_pass:
+            raise ValueError(f"{lg.code}: ACTIVE paper needs a recorded first_row_pass")
         if lg.tier not in (TIER_PAPER_CORE, TIER_SHADOW, TIER_CONDITIONAL):
             raise ValueError(f"{lg.code}: unknown tier {lg.tier}")
         if lg.observe and (not lg.sport_key or "h2h" not in lg.markets):
             raise ValueError(f"{lg.code}: an observed league needs a sport key and the h2h market")
-        if lg.paper_eligible and (lg.tier != TIER_PAPER_CORE or not lg.observe):
-            raise ValueError(f"{lg.code}: paper-eligible leagues must be observed Tier 1 (never throttled)")
+        if lg.paper_state != SHADOW and (lg.tier != TIER_PAPER_CORE or not lg.observe):
+            raise ValueError(f"{lg.code}: paper-eligible/pending leagues must be observed Tier 1 (never throttled)")
         out.append(lg)
     if len({lg.code for lg in out}) != len(out) or len({lg.name for lg in out}) != len(out):
         raise ValueError("duplicate league code or name")

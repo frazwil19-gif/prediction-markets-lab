@@ -36,11 +36,14 @@ def test_every_target_league_has_a_recorded_state():
     by = {lg.code: lg for lg in LEAGUES}
     assert set(by) == TARGET
     assert not by["SC1"].observe and "DATA_BLOCKED" in by["SC1"].evidence           # no Odds API key
-    assert {lg.code for lg in LEAGUES if lg.paper_eligible} == {"E0", "E1", "SC0", "N1", "D1"}   # unchanged paper core
-    assert {lg.code for lg in LEAGUES if lg.tier == 1} == {"E0", "E1", "SC0", "N1", "D1", "F1"}   # F1: credit-protected, paper pending approval
-    assert not by["F1"].paper_eligible and "RECOMMENDED" in by["F1"].evidence
-    for code in ("SP1", "I1", "P1", "E2", "SP2", "I2"):                                # grade B never paper-eligible
-        assert by[code].grade_1x2 == "B" and not by[code].paper_eligible
+    tier1 = {"E0", "E1", "SC0", "N1", "D1", "F1"}
+    assert {lg.code for lg in LEAGUES if lg.tier == 1} == tier1
+    # approved Tier-1 paper leagues all wait for their own first-row PASS; none is ACTIVE yet
+    assert {lg.code for lg in LEAGUES if lg.paper_state == FC.PENDING} == tier1
+    assert not any(lg.paper_eligible for lg in LEAGUES)
+    assert "APPROVED" in by["F1"].evidence
+    for code in ("SP1", "I1", "P1", "B1", "E2", "E3", "SP2", "D2", "I2", "F2"):
+        assert by[code].paper_state == FC.SHADOW
 
 
 def test_real_money_allowlist_untouched():
@@ -109,23 +112,30 @@ def _card(comp):
     return {"data_timestamp": (NOW - timedelta(minutes=5)).isoformat(), "candidates": rows}
 
 
-@pytest.mark.parametrize("comp,shadow", [("Premier League", False), ("Eredivisie", False), ("La Liga", True),
-                                         ("Ligue 1", True), ("League Two", True), ("Unknown League", True)])
-def test_shadow_leagues_are_observed_but_never_paper_eligible(comp, shadow):
+def _coverage(active=()):
+    from dataclasses import replace
+    return {lg.name: (replace(lg, paper_state=FC.ACTIVE, first_row_pass="test") if lg.name in active else lg) for lg in LEAGUES}
+
+
+@pytest.mark.parametrize("comp,active,paper", [("Premier League", (), False), ("Ligue 1", (), False),
+                                               ("Premier League", ("Premier League",), True), ("Ligue 1", ("Ligue 1",), True),
+                                               ("La Liga", (), False), ("League Two", (), False), ("Unknown League", (), False)])
+def test_only_first_row_passed_leagues_can_paper_bet(comp, active, paper):
     reg = Registry.load()
     ctx = A.RunContext(None, None, 1.33)
-    preds, _ = A.football_from_card(_card(comp), reg, ctx, NOW, "t", coverage=FC.by_name(LEAGUES))
+    preds, _ = A.football_from_card(_card(comp), reg, ctx, NOW, "t", coverage=_coverage(active))
     one = [p for p in preds if p.market == "1x2"]
     assert len(one) == 3                                                                  # observed either way
     paper_statuses = load_bs(REPO / "config/bet_selection_v2.yaml")["decision_gates"]["paper_bet"]["engine_statuses"]
     for p in one:
-        assert (p.engine_status == FC.SHADOW_LEAGUE_STATUS) is shadow
-        assert (p.engine_status in paper_statuses) is (not shadow)
+        assert (p.engine_status in paper_statuses) is paper
+        assert (p.engine_status == FC.SHADOW_LEAGUE_STATUS) is (not paper)
         assert "live estimator" in p.historical_support                                    # engine provenance kept
-        if shadow:
-            assert p.single_eligible is False and "PROSPECTIVE SHADOW" in p.historical_support
-    # probability is the same frozen estimator whatever the league
-    base, _ = A.football_from_card(_card(comp), reg, ctx, NOW, "t")
+        if not paper:
+            assert p.single_eligible is False
+    if comp in ("Premier League", "Ligue 1") and not paper:
+        assert "PENDING FIRST-ROW PASS" in one[0].historical_support
+    base, _ = A.football_from_card(_card(comp), reg, ctx, NOW, "t")                        # same frozen estimator
     assert [p.estimated_probability for p in base if p.market == "1x2"] == [p.estimated_probability for p in one]
 
 
@@ -133,8 +143,13 @@ def test_config_validation_refuses_unsafe_states(tmp_path):
     bad = yaml.safe_load((REPO / "config/football_coverage.yaml").read_text())
     for lg in bad["leagues"]:
         if lg["code"] == "SP1":
-            lg["paper_eligible"] = True                                                   # a Tier 2 league cannot be paper
+            lg["paper_state"] = "PENDING_FIRST_ROW_PASS"                                 # a Tier 2 league cannot be paper
     p = tmp_path / "c.yaml"
     p.write_text(yaml.safe_dump(bad))
     with pytest.raises(ValueError, match="paper-eligible"):
+        FC.load(p)
+    good = yaml.safe_load((REPO / "config/football_coverage.yaml").read_text())
+    good["leagues"][0]["paper_state"] = "ACTIVE"                                          # ACTIVE without a recorded PASS
+    p.write_text(yaml.safe_dump(good))
+    with pytest.raises(ValueError, match="first_row_pass"):
         FC.load(p)

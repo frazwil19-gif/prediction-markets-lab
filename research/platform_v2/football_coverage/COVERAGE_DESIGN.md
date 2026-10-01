@@ -150,3 +150,18 @@ Every skip is logged with its reason ("tier throttle" / "credit floor").
 
 bsv2-4 rules, pcard-1 grades, frozen engines, DC holdout (scoped to E0/E1/SC0), real-money allow-list, the
 O/U / BTTS / AH / tennis-secondary / NBA spread-total / NHL conclusions.
+
+## 8. Approval record (2026-10-01, before merge)
+
+Fraser approved the merge and Ligue 1 paper ("APPROVED — FINAL FOOTBALL COVERAGE + LIGUE 1 PAPER"). The directive
+requires every Tier-1 league to pass its own first-row verification before paper operation, so `paper_eligible`
+became `paper_state`:
+
+* `PENDING_FIRST_ROW_PASS`: E0, E1, SC0, N1, D1, F1. Rows are observed with the shadow status, so they produce no
+  PAPER_BET.
+* `ACTIVE`: requires `first_row_pass` to be recorded, and the loader enforces this.
+* `SHADOW`: all other observed leagues.
+
+The transition to ACTIVE is a single commit after
+`verify_first_rows.py --sport football --competition "<name>"` returns PASS. Rows recorded while a league was pending
+stay shadow (append-only). Real-money allow-list unchanged; football expansion frozen after this merge.
