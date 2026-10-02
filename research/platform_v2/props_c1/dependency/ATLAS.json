@@ -1,0 +1,215 @@
+{
+ "label": "DESCRIPTIVE (sporting dependency only; no prices, no SGM claims, no betting rules)",
+ "n": 36252,
+ "window": "2015-07-01..2026-07-01",
+ "pairs": {
+  "WIN_x_SOT": {
+   "A": "fav_win",
+   "B": "fav_sot_over_4.5",
+   "n": 36252,
+   "P_A": 0.5299,
+   "P_B": 0.5605,
+   "P_AB": 0.3707,
+   "P_A_x_P_B": 0.297,
+   "ratio": 1.2481,
+   "ratio_ci95": [
+    1.2391,
+    1.2573
+   ],
+   "P_B_given_A": 0.6995,
+   "P_B_given_notA": 0.4038,
+   "season_ratio_min_max": [
+    1.207,
+    1.296
+   ],
+   "season_share_same_side": 1.0,
+   "league_ratio_min_max": [
+    1.177,
+    1.324
+   ],
+   "league_share_same_side": 1.0
+  },
+  "WIN_x_CORNERS": {
+   "A": "fav_win",
+   "B": "total_corners_over_9.5",
+   "n": 36252,
+   "P_A": 0.5299,
+   "P_B": 0.5307,
+   "P_AB": 0.2704,
+   "P_A_x_P_B": 0.2812,
+   "ratio": 0.9616,
+   "ratio_ci95": [
+    0.952,
+    0.9708
+   ],
+   "P_B_given_A": 0.5104,
+   "P_B_given_notA": 0.5537,
+   "season_ratio_min_max": [
+    0.948,
+    1.0
+   ],
+   "season_share_same_side": 0.909,
+   "league_ratio_min_max": [
+    0.943,
+    0.977
+   ],
+   "league_share_same_side": 1.0
+  },
+  "WIN_x_CARDS": {
+   "A": "fav_win",
+   "B": "total_cards_over_4.5",
+   "n": 36252,
+   "P_A": 0.5299,
+   "P_B": 0.3994,
+   "P_AB": 0.1915,
+   "P_A_x_P_B": 0.2117,
+   "ratio": 0.9047,
+   "ratio_ci95": [
+    0.8928,
+    0.9171
+   ],
+   "P_B_given_A": 0.3614,
+   "P_B_given_notA": 0.4423,
+   "season_ratio_min_max": [
+    0.873,
+    0.938
+   ],
+   "season_share_same_side": 1.0,
+   "league_ratio_min_max": [
+    0.838,
+    0.937
+   ],
+   "league_share_same_side": 1.0
+  },
+  "GOALS_x_SOT": {
+   "A": "total_goals_over_2.5",
+   "B": "total_sot_over_8.5",
+   "n": 36252,
+   "P_A": 0.5227,
+   "P_B": 0.4941,
+   "P_AB": 0.3504,
+   "P_A_x_P_B": 0.2583,
+   "ratio": 1.3566,
+   "ratio_ci95": [
+    1.3459,
+    1.3678
+   ],
+   "P_B_given_A": 0.6703,
+   "P_B_given_notA": 0.3011,
+   "season_ratio_min_max": [
+    1.307,
+    1.394
+   ],
+   "season_share_same_side": 1.0,
+   "league_ratio_min_max": [
+    1.228,
+    1.489
+   ],
+   "league_share_same_side": 1.0
+  },
+  "GOALS_x_CORNERS": {
+   "A": "total_goals_over_2.5",
+   "B": "total_corners_over_9.5",
+   "n": 36252,
+   "P_A": 0.5227,
+   "P_B": 0.5307,
+   "P_AB": 0.2715,
+   "P_A_x_P_B": 0.2774,
+   "ratio": 0.9787,
+   "ratio_ci95": [
+    0.9698,
+    0.9883
+   ],
+   "P_B_given_A": 0.5194,
+   "P_B_given_notA": 0.5431,
+   "season_ratio_min_max": [
+    0.958,
+    1.016
+   ],
+   "season_share_same_side": 0.909,
+   "league_ratio_min_max": [
+    0.944,
+    1.004
+   ],
+   "league_share_same_side": 0.9
+  },
+  "GOALS_x_CARDS": {
+   "A": "total_goals_over_2.5",
+   "B": "total_cards_over_4.5",
+   "n": 36252,
+   "P_A": 0.5227,
+   "P_B": 0.3994,
+   "P_AB": 0.2033,
+   "P_A_x_P_B": 0.2088,
+   "ratio": 0.9737,
+   "ratio_ci95": [
+    0.9612,
+    0.9865
+   ],
+   "P_B_given_A": 0.3889,
+   "P_B_given_notA": 0.4109,
+   "season_ratio_min_max": [
+    0.933,
+    1.007
+   ],
+   "season_share_same_side": 0.909,
+   "league_ratio_min_max": [
+    0.941,
+    1.017
+   ],
+   "league_share_same_side": 0.8
+  },
+  "SOT_x_CORNERS": {
+   "A": "total_sot_over_8.5",
+   "B": "total_corners_over_9.5",
+   "n": 36252,
+   "P_A": 0.4941,
+   "P_B": 0.5307,
+   "P_AB": 0.2875,
+   "P_A_x_P_B": 0.2622,
+   "ratio": 1.0962,
+   "ratio_ci95": [
+    1.0859,
+    1.1056
+   ],
+   "P_B_given_A": 0.5818,
+   "P_B_given_notA": 0.4809,
+   "season_ratio_min_max": [
+    1.068,
+    1.133
+   ],
+   "season_share_same_side": 1.0,
+   "league_ratio_min_max": [
+    1.07,
+    1.13
+   ],
+   "league_share_same_side": 1.0
+  },
+  "SOT_x_CARDS": {
+   "A": "total_sot_over_8.5",
+   "B": "total_cards_over_4.5",
+   "n": 36252,
+   "P_A": 0.4941,
+   "P_B": 0.3994,
+   "P_AB": 0.19,
+   "P_A_x_P_B": 0.1974,
+   "ratio": 0.9626,
+   "ratio_ci95": [
+    0.9494,
+    0.9752
+   ],
+   "P_B_given_A": 0.3845,
+   "P_B_given_notA": 0.414,
+   "season_ratio_min_max": [
+    0.907,
+    1.014
+   ],
+   "season_share_same_side": 0.909,
+   "league_ratio_min_max": [
+    0.939,
+    0.997
+   ],
+   "league_share_same_side": 1.0
+  }
+ }
+}
