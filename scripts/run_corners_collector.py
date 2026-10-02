@@ -23,7 +23,7 @@ PARAMS = REPO / "research/platform_v2/corners_abc/corners_A_v1_params.json"
 FIXTURES_URL = "https://www.football-data.co.uk/fixtures.csv"
 HORIZON_DAYS = 7
 TIMEOUT = 30
-RUN_LOG_FIELDS = ["run_ts", "played_rows", "fixtures_listed_10_leagues", "fixtures_in_horizon", "next_fixture_date",
+RUN_LOG_FIELDS = ["run_ts", "played_rows", "fixtures_file_rows", "fixtures_file_divisions", "fixtures_listed_10_leagues", "fixtures_in_horizon", "next_fixture_date",
                   "predictions_written", "outcomes_written", "download_warnings"]
 
 
@@ -47,7 +47,9 @@ def main() -> int:
             except Exception as exc:          # one missing file never stops the run
                 warnings.append(f"{url}: {type(exc).__name__}")
     played = pd.concat([f for f in frames if not f.empty], ignore_index=True).drop_duplicates(["Division", "MatchDate", "HomeTeam", "AwayTeam"])
-    fx_all = CC.parse_fixtures(fetch(FIXTURES_URL))
+    fx_text = fetch(FIXTURES_URL)
+    fx_all = CC.parse_fixtures(fx_text)
+    fx_lines = [ln.split(",")[0].lstrip("\ufeff") for ln in fx_text.splitlines()[1:] if ln.strip()]
     fx = fx_all[(fx_all.MatchDate.dt.date >= today) & (fx_all.MatchDate.dt.date <= today + timedelta(days=HORIZON_DAYS))]
     state, div_fill, league = CC.team_states(played, c["MINP"], c["LEAGUE_WIN"], c["LEAGUE_MINP"])
     feats = CC.fixture_features(fx, state, div_fill, league)
@@ -60,7 +62,8 @@ def main() -> int:
     outs = [o for o in CC.outcome_rows(played, date(2026, 10, 1), known, now) if o["event_key"] in predicted]
     n_out = CC.append_csv(out_path, CC.OUTCOME_FIELDS, outs)
     CC.append_csv(OUT / "run_log.csv", RUN_LOG_FIELDS, [{
-        "run_ts": now.isoformat(), "played_rows": len(played), "fixtures_listed_10_leagues": len(fx_all),
+        "run_ts": now.isoformat(), "played_rows": len(played), "fixtures_file_rows": len(fx_lines), "fixtures_file_divisions": ";".join(sorted(set(fx_lines))),
+        "fixtures_listed_10_leagues": len(fx_all),
         "fixtures_in_horizon": len(fx), "next_fixture_date": fx_all.MatchDate.min().date().isoformat() if len(fx_all) else "",
         "predictions_written": n_pred, "outcomes_written": n_out, "download_warnings": len(warnings)}])
     print(f"fixtures in horizon: {len(fx)}; predictions written: {n_pred}; outcomes written: {n_out}; warnings: {len(warnings)}")
