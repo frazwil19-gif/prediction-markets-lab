@@ -1,0 +1,366 @@
+{
+  "preregistration": "research/platform_v2/props_c1/PREREGISTRATION.md",
+  "divisions": [
+    "E0",
+    "E1",
+    "SC0",
+    "N1",
+    "D1",
+    "F1",
+    "SP1",
+    "I1",
+    "P1",
+    "B1"
+  ],
+  "split": "2022-07-01",
+  "results": {
+    "total_corners": {
+      "n_train": 45632,
+      "n_test": 13895,
+      "test_mean": 9.936,
+      "test_var_over_mean": 1.183,
+      "pearson_dispersion": {
+        "M1": 1.165,
+        "M2": 1.163
+      },
+      "corr_mu_y": {
+        "M0": 0.1173,
+        "M1": 0.1517,
+        "M1nb": 0.1517,
+        "M2": 0.1653,
+        "M2nb": 0.1653
+      },
+      "lines": {
+        "9.5": {
+          "base_rate": 0.5228,
+          "M0": {
+            "logloss": 0.68807,
+            "brier": 0.24746,
+            "calib_max_gap": 0.0439,
+            "mean_p": 0.5335
+          },
+          "M1": {
+            "logloss": 0.68567,
+            "brier": 0.24627,
+            "calib_max_gap": 0.0437,
+            "mean_p": 0.5369,
+            "d_logloss_vs_M0": -0.0024,
+            "ci95": [
+              -0.0039,
+              -0.00099
+            ]
+          },
+          "M1nb": {
+            "logloss": 0.68523,
+            "brier": 0.24607,
+            "calib_max_gap": 0.0316,
+            "mean_p": 0.5281,
+            "d_logloss_vs_M0": -0.00283,
+            "ci95": [
+              -0.00419,
+              -0.00155
+            ]
+          },
+          "M2": {
+            "logloss": 0.68466,
+            "brier": 0.24577,
+            "calib_max_gap": 0.0374,
+            "mean_p": 0.5419,
+            "d_logloss_vs_M0": -0.00341,
+            "ci95": [
+              -0.00509,
+              -0.00171
+            ]
+          },
+          "M2nb": {
+            "logloss": 0.68403,
+            "brier": 0.24548,
+            "calib_max_gap": 0.0248,
+            "mean_p": 0.5328,
+            "d_logloss_vs_M0": -0.00403,
+            "ci95": [
+              -0.00549,
+              -0.00256
+            ]
+          },
+          "predictable_beyond_baseline_M1": true,
+          "note_secondary_nb": true
+        },
+        "10.5": {
+          "base_rate": 0.4108,
+          "M0": {
+            "logloss": 0.67292,
+            "brier": 0.24,
+            "calib_max_gap": 0.0346,
+            "mean_p": 0.4098
+          },
+          "M1": {
+            "logloss": 0.66973,
+            "brier": 0.23847,
+            "calib_max_gap": 0.0263,
+            "mean_p": 0.4135,
+            "d_logloss_vs_M0": -0.0032,
+            "ci95": [
+              -0.0046,
+              -0.00181
+            ]
+          },
+          "M1nb": {
+            "logloss": 0.66968,
+            "brier": 0.23845,
+            "calib_max_gap": 0.0254,
+            "mean_p": 0.4133,
+            "d_logloss_vs_M0": -0.00325,
+            "ci95": [
+              -0.00473,
+              -0.00188
+            ]
+          },
+          "M2": {
+            "logloss": 0.6683,
+            "brier": 0.23779,
+            "calib_max_gap": 0.0238,
+            "mean_p": 0.4187,
+            "d_logloss_vs_M0": -0.00463,
+            "ci95": [
+              -0.00626,
+              -0.00317
+            ]
+          },
+          "M2nb": {
+            "logloss": 0.66825,
+            "brier": 0.23777,
+            "calib_max_gap": 0.023,
+            "mean_p": 0.4181,
+            "d_logloss_vs_M0": -0.00468,
+            "ci95": [
+              -0.00616,
+              -0.00318
+            ]
+          },
+          "predictable_beyond_baseline_M1": true,
+          "note_secondary_nb": true
+        }
+      }
+    },
+    "total_cards": {
+      "n_train": 46021,
+      "n_test": 13895,
+      "test_mean": 4.165,
+      "test_var_over_mean": 1.257,
+      "pearson_dispersion": {
+        "M1": 1.077,
+        "M2": 1.068
+      },
+      "corr_mu_y": {
+        "M0": 0.2528,
+        "M1": 0.2781,
+        "M2": 0.2984
+      },
+      "lines": {
+        "3.5": {
+          "base_rate": 0.5826,
+          "M0": {
+            "logloss": 0.66393,
+            "brier": 0.2357,
+            "calib_max_gap": 0.0545,
+            "mean_p": 0.5921
+          },
+          "M1": {
+            "logloss": 0.65904,
+            "brier": 0.23327,
+            "calib_max_gap": 0.055,
+            "mean_p": 0.5805,
+            "d_logloss_vs_M0": -0.00489,
+            "ci95": [
+              -0.00697,
+              -0.00276
+            ]
+          },
+          "M2": {
+            "logloss": 0.65425,
+            "brier": 0.23098,
+            "calib_max_gap": 0.0446,
+            "mean_p": 0.5765,
+            "d_logloss_vs_M0": -0.00968,
+            "ci95": [
+              -0.01228,
+              -0.00714
+            ]
+          },
+          "predictable_beyond_baseline_M1": true,
+          "note_secondary_nb": false
+        },
+        "4.5": {
+          "base_rate": 0.4037,
+          "M0": {
+            "logloss": 0.65683,
+            "brier": 0.2322,
+            "calib_max_gap": 0.0557,
+            "mean_p": 0.4063
+          },
+          "M1": {
+            "logloss": 0.65205,
+            "brier": 0.22988,
+            "calib_max_gap": 0.0527,
+            "mean_p": 0.3955,
+            "d_logloss_vs_M0": -0.00477,
+            "ci95": [
+              -0.00695,
+              -0.00241
+            ]
+          },
+          "M2": {
+            "logloss": 0.64831,
+            "brier": 0.22811,
+            "calib_max_gap": 0.0496,
+            "mean_p": 0.3931,
+            "d_logloss_vs_M0": -0.00852,
+            "ci95": [
+              -0.01137,
+              -0.00584
+            ]
+          },
+          "predictable_beyond_baseline_M1": true,
+          "note_secondary_nb": false
+        }
+      }
+    },
+    "home_sot": {
+      "n_train": 45686,
+      "n_test": 13895,
+      "test_mean": 4.807,
+      "test_var_over_mean": 1.372,
+      "pearson_dispersion": {
+        "M1": 1.166,
+        "M2": 1.146
+      },
+      "corr_mu_y": {
+        "M0": 0.1255,
+        "M1": 0.4411,
+        "M1nb": 0.4411,
+        "M2": 0.4612
+      },
+      "lines": {
+        "4.5": {
+          "base_rate": 0.4988,
+          "M0": {
+            "logloss": 0.69028,
+            "brier": 0.24854,
+            "calib_max_gap": 0.0667,
+            "mean_p": 0.5193
+          },
+          "M1": {
+            "logloss": 0.63253,
+            "brier": 0.22162,
+            "calib_max_gap": 0.0369,
+            "mean_p": 0.5114,
+            "d_logloss_vs_M0": -0.05775,
+            "ci95": [
+              -0.06304,
+              -0.05246
+            ]
+          },
+          "M1nb": {
+            "logloss": 0.63243,
+            "brier": 0.22153,
+            "calib_max_gap": 0.027,
+            "mean_p": 0.5019,
+            "d_logloss_vs_M0": -0.05786,
+            "ci95": [
+              -0.06309,
+              -0.05308
+            ]
+          },
+          "M2": {
+            "logloss": 0.62546,
+            "brier": 0.21821,
+            "calib_max_gap": 0.0342,
+            "mean_p": 0.5114,
+            "d_logloss_vs_M0": -0.06482,
+            "ci95": [
+              -0.06993,
+              -0.05922
+            ]
+          },
+          "predictable_beyond_baseline_M1": true,
+          "note_secondary_nb": true
+        }
+      }
+    },
+    "away_sot": {
+      "n_train": 45686,
+      "n_test": 13895,
+      "test_mean": 3.939,
+      "test_var_over_mean": 1.386,
+      "pearson_dispersion": {
+        "M1": 1.179,
+        "M2": 1.16
+      },
+      "corr_mu_y": {
+        "M0": 0.106,
+        "M1": 0.4131,
+        "M1nb": 0.4131,
+        "M2": 0.4278,
+        "M2nb": 0.4278
+      },
+      "lines": {
+        "4.5": {
+          "base_rate": 0.3543,
+          "M0": {
+            "logloss": 0.6476,
+            "brier": 0.22764,
+            "calib_max_gap": 0.0362,
+            "mean_p": 0.3583
+          },
+          "M1": {
+            "logloss": 0.59773,
+            "brier": 0.2053,
+            "calib_max_gap": 0.0173,
+            "mean_p": 0.3565,
+            "d_logloss_vs_M0": -0.04987,
+            "ci95": [
+              -0.05535,
+              -0.04484
+            ]
+          },
+          "M1nb": {
+            "logloss": 0.59775,
+            "brier": 0.20531,
+            "calib_max_gap": 0.0149,
+            "mean_p": 0.3553,
+            "d_logloss_vs_M0": -0.04985,
+            "ci95": [
+              -0.05479,
+              -0.04525
+            ]
+          },
+          "M2": {
+            "logloss": 0.59356,
+            "brier": 0.20347,
+            "calib_max_gap": 0.0391,
+            "mean_p": 0.3719,
+            "d_logloss_vs_M0": -0.05403,
+            "ci95": [
+              -0.05933,
+              -0.0485
+            ]
+          },
+          "M2nb": {
+            "logloss": 0.59318,
+            "brier": 0.20329,
+            "calib_max_gap": 0.0288,
+            "mean_p": 0.3698,
+            "d_logloss_vs_M0": -0.05442,
+            "ci95": [
+              -0.05939,
+              -0.04971
+            ]
+          },
+          "predictable_beyond_baseline_M1": true,
+          "note_secondary_nb": true
+        }
+      }
+    }
+  }
+}
