@@ -23,3 +23,9 @@
 - Raw and player-level data stay private in `data/private/api_football/`, which is gitignored and never committed or
   published. Only aggregate research results are committed.
 - If API-Football staff or a rights holder later object, stop using the data and record it here.
+
+## Amendment (2026-10-02, before any player data was received)
+The free plan rejects `/fixtures?ids=` ("Free plans do not have access to the Ids parameter"). Acquisition therefore
+uses `/fixtures/players?fixture=<id>`, one request per fixture. That is about 1,143 requests for 2022–2024, which at
+the free 100/day takes about 12 daily runs. Scope, privacy and conditions are unchanged; nothing is purchased.
+The pre-registered cycle-2 design is unaffected.
