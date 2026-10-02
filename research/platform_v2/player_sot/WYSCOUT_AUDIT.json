@@ -1,0 +1,114 @@
+{
+ "source": "Wyscout public dataset (CC BY 4.0), 2017-18",
+ "rows": 50587,
+ "matches": 1826,
+ "players": 2570,
+ "competitions": [
+  "Bundesliga",
+  "EPL",
+  "LaLiga",
+  "Ligue1",
+  "SerieA"
+ ],
+ "seasons": [
+  "2017-18"
+ ],
+ "missing_share": {
+  "source": 0.0,
+  "competition": 0.0,
+  "season": 0.0,
+  "match_id": 0.0,
+  "date": 0.0,
+  "team_id": 0.0,
+  "opponent_id": 0.0,
+  "home": 0.0,
+  "player_id": 0.0,
+  "player_name": 0.0,
+  "role": 0.0,
+  "starter": 0.0,
+  "minute_in": 0.0,
+  "minute_out": 0.0,
+  "minutes": 0.0,
+  "shots": 0.0,
+  "sot": 0.0,
+  "goals": 0.0
+ },
+ "duplicates_match_player": 0,
+ "starters_per_team_match": {
+  "eq_11": 1.0,
+  "min": 11,
+  "max": 11
+ },
+ "matches_without_two_teams": 0,
+ "violations": {
+  "sot_gt_shots": 0,
+  "goals_gt_sot": 0,
+  "minutes_out_of_range": 0,
+  "events_with_zero_minutes": 16
+ },
+ "players_with_2plus_teams_in_season": 124,
+ "role_distribution_starters": {
+  "DF": 14893,
+  "MD": 14141,
+  "FW": 7487,
+  "GK": 3651
+ },
+ "starter_minutes": {
+  "mean": 84.68,
+  "share_full_90": 0.75
+ },
+ "base_rates_starters": {
+  "sot_1plus": 0.2483,
+  "sot_2plus": 0.0683
+ },
+ "base_rates_starters_by_role": {
+  "DF": {
+   "sot_1plus": 0.1174,
+   "sot_2plus": 0.0105,
+   "n": 14893
+  },
+  "FW": {
+   "sot_1plus": 0.5464,
+   "sot_2plus": 0.2223,
+   "n": 7487
+  },
+  "GK": {
+   "sot_1plus": 0.0003,
+   "sot_2plus": 0.0,
+   "n": 3651
+  },
+  "MD": {
+   "sot_1plus": 0.2925,
+   "sot_2plus": 0.0654,
+   "n": 14141
+  }
+ },
+ "base_rates_starters_by_competition": {
+  "Bundesliga": {
+   "sot_1plus": 0.2546,
+   "sot_2plus": 0.0692,
+   "n": 6732
+  },
+  "EPL": {
+   "sot_1plus": 0.2447,
+   "sot_2plus": 0.0666,
+   "n": 8360
+  },
+  "LaLiga": {
+   "sot_1plus": 0.2462,
+   "sot_2plus": 0.0671,
+   "n": 8360
+  },
+  "Ligue1": {
+   "sot_1plus": 0.2467,
+   "sot_2plus": 0.0707,
+   "n": 8360
+  },
+  "SerieA": {
+   "sot_1plus": 0.2507,
+   "sot_2plus": 0.0682,
+   "n": 8360
+  }
+ },
+ "starter_observations": 40172
+}

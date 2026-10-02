@@ -1,0 +1,114 @@
+{
+ "spec": {
+  "family_selected": "A1",
+  "comparator": "B1",
+  "delta_dev_sot_1plus": -0.01821,
+  "script_sha256": "995365456bddb23684af4bfa82fe4e196528358b03d7bebb08c2b60fe28ddcc3",
+  "pipeline_sha256": "672fc4398a566806bd286865201da7d0ebee9983dab7dec2cba7e15a6a316dbd",
+  "data_sha256": "6380e82aed361cf159570911709f09cd76bc053f20d2acbe909b8f41a5f39824",
+  "preregistration": "research/platform_v2/player_sot/pilot/PREREGISTRATION.md (487d21a)",
+  "note": "Frozen as produced by the pre-registered develop step; holdout = 2018-03-01 onward, refit on all earlier data, opened once."
+ },
+ "n_train": 21204,
+ "n_holdout": 10780,
+ "targets": {
+  "sot_1plus": {
+   "model_a": {
+    "n": 10780,
+    "base_rate": 0.2691,
+    "mean_p": 0.2668,
+    "logloss": 0.4968,
+    "brier": 0.16299,
+    "cal_intercept": 0.0151,
+    "cal_slope": 1.0013
+   },
+   "comparator": {
+    "n": 10780,
+    "base_rate": 0.2691,
+    "mean_p": 0.3021,
+    "logloss": 0.51293,
+    "brier": 0.16877,
+    "cal_intercept": -0.3126,
+    "cal_slope": 0.8178
+   },
+   "delta": -0.016133,
+   "ci95_match_bootstrap": [
+    -0.019806,
+    -0.012584
+   ],
+   "by_league": {
+    "EPL": -0.019077,
+    "LaLiga": -0.011664,
+    "SerieA": -0.020776,
+    "Bundesliga": -0.019794,
+    "Ligue1": -0.010364
+   },
+   "by_role": {
+    "DF": {
+     "n": 4376,
+     "delta": -0.011283
+    },
+    "MD": {
+     "n": 4180,
+     "delta": -0.014079
+    },
+    "FW": {
+     "n": 2224,
+     "delta": -0.029535
+    }
+   }
+  },
+  "sot_2plus": {
+   "model_a": {
+    "n": 10780,
+    "base_rate": 0.0739,
+    "mean_p": 0.0712,
+    "logloss": 0.21073,
+    "brier": 0.05984,
+    "cal_intercept": -0.0097,
+    "cal_slope": 0.9706
+   },
+   "comparator": {
+    "n": 10780,
+    "base_rate": 0.0739,
+    "mean_p": 0.0867,
+    "logloss": 0.2175,
+    "brier": 0.06187,
+    "cal_intercept": -0.4647,
+    "cal_slope": 0.842
+   },
+   "delta": -0.006769,
+   "ci95_match_bootstrap": [
+    -0.009381,
+    -0.004332
+   ],
+   "by_league": {
+    "EPL": -0.007963,
+    "LaLiga": -0.003514,
+    "SerieA": -0.013635,
+    "Bundesliga": -0.007385,
+    "Ligue1": -0.001285
+   },
+   "by_role": {
+    "DF": {
+     "n": 4376,
+     "delta": -0.001
+    },
+    "MD": {
+     "n": 4180,
+     "delta": -0.004876
+    },
+    "FW": {
+     "n": 2224,
+     "delta": -0.021679
+    }
+   }
+  }
+ },
+ "criteria": {
+  "1_material_ci": true,
+  "2_calibration": true,
+  "3_leagues": true
+ },
+ "verdict": "PILOT_SIGNAL"
+}

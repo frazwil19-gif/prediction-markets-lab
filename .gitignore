@@ -64,3 +64,6 @@ credentials.json
 
 # Betfair raw API responses: never committed (licence; may contain account-specific data)
 research/platform_v2/price_execution/betfair_audit/raw/
+
+# Player-level data whose licence does not allow publication (e.g. API-Football): never committed
+data/private/

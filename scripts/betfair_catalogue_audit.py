@@ -11,7 +11,8 @@ runners. Credentials are read at run time and never written anywhere:
   BETFAIR_USERNAME  (environment)
   password          (typed at the prompt via getpass; or BETFAIR_PASSWORD if set in the environment)
 
-  python scripts/betfair_catalogue_audit.py [--days 8] [--events-per-competition 10]
+  python scripts/betfair_catalogue_audit.py [--days 8] [--events-per-competition 10]   # 10-league coverage
+  python scripts/betfair_catalogue_audit.py --discover                                 # schema discovery, any competition, <=36h
 
 Outputs:
   research/platform_v2/price_execution/betfair_audit/COVERAGE.json + COVERAGE.csv (aggregates only, committable)
@@ -223,6 +224,60 @@ def audit(client: Client, now: datetime, days: int, per_comp: int, max_hours: fl
     return cov, raw
 
 
+DISCOVER_EVENTS = 25         # busiest near-kickoff football events sampled in --discover mode
+INTEREST = ("corners", "bookings_cards", "player_sot", "player_to_score", "player_card", "gk_saves")
+
+
+def discover(client: Client, now: datetime, max_hours: float, n_events: int = DISCOVER_EVENTS) -> tuple[dict, dict]:
+    """SCHEMA DISCOVERY (any competition): which marketTypeCodes / runner structures exist on football events
+    kicking off within `max_hours`. Not evidence of coverage for the project's leagues."""
+    window = {"from": now.isoformat(), "to": (now + timedelta(hours=max_hours)).isoformat()}
+    events = client.call("listEvents", {"filter": {"eventTypeIds": [FOOTBALL], "marketStartTime": window}})
+    events = sorted(events, key=lambda e: -int(e.get("marketCount") or 0))[:n_events]
+    raw: dict = {"generated_at": now.isoformat(), "events": events, "catalogue": []}
+    codes: dict = {}
+    for e in events:
+        cat = client.call("listMarketCatalogue", {"filter": {"eventIds": [e["event"]["id"]]}, "maxResults": CATALOGUE_MAX,
+                                                  "marketProjection": ["MARKET_START_TIME", "MARKET_DESCRIPTION", "RUNNER_DESCRIPTION", "EVENT", "COMPETITION"]})
+        raw["catalogue"] += cat
+        for m in cat:
+            code = (m.get("description") or {}).get("marketType", "")
+            c = codes.setdefault(code, {"family": family_of(code, m.get("marketName", "")), "events": set(), "competitions": set(),
+                                        "market_names": set(), "runner_counts": set(), "example_runners": [], "hours": [], "market_ids": []})
+            c["events"].add(e["event"]["id"])
+            c["competitions"].add((m.get("competition") or {}).get("name", "?"))
+            c["market_names"].add(m.get("marketName", ""))
+            c["runner_counts"].add(len(m.get("runners", [])))
+            if not c["example_runners"]:
+                c["example_runners"] = [r.get("runnerName", "") for r in m.get("runners", [])][:8]
+            if m.get("marketStartTime"):
+                c["hours"].append((datetime.fromisoformat(m["marketStartTime"].replace("Z", "+00:00")) - now).total_seconds() / 3600)
+            c["market_ids"].append(m["marketId"])
+    ids = [mid for c in codes.values() if c["family"] in INTEREST for mid in c["market_ids"][:5]]
+    books = {}
+    for i in range(0, len(ids), BOOK_BATCH):
+        for b in client.call("listMarketBook", {"marketIds": ids[i:i + BOOK_BATCH], "priceProjection": {"priceData": ["EX_BEST_OFFERS"]}}):
+            books[b["marketId"]] = b
+    raw["books"] = list(books.values())
+    out = {"generated_at": now.isoformat(), "mode": "SCHEMA_DISCOVERY (any competition; NOT coverage evidence for project leagues)",
+           "max_hours_to_kickoff": max_hours, "n_events_sampled": len(events),
+           "events": [{"name": e["event"].get("name"), "openDate": e["event"].get("openDate"), "marketCount": e.get("marketCount")} for e in events],
+           "market_types": {}}
+    for code, c in sorted(codes.items(), key=lambda kv: (kv[1]["family"] == "other", kv[0])):
+        st = [book_stats(books[mid]) for mid in c["market_ids"] if mid in books]
+        two = [s["all_two_sided"] for s in st]
+        out["market_types"][code] = {"family": c["family"], "n_events": len(c["events"]), "n_markets": len(c["market_ids"]),
+                                     "competitions": sorted(c["competitions"])[:10], "market_names": sorted(c["market_names"])[:15],
+                                     "runner_counts": sorted(c["runner_counts"]), "example_runners": c["example_runners"],
+                                     "hours_to_kickoff_range": [round(min(c["hours"]), 1), round(max(c["hours"]), 1)] if c["hours"] else None,
+                                     "n_books_sampled": len(st), "two_sided_share": round(sum(two) / len(two), 3) if two else None,
+                                     "median_spread": round(statistics.median([s["median_spread"] for s in st if s["median_spread"] is not None]), 4)
+                                     if any(s["median_spread"] is not None for s in st) else None}
+    out["families_found"] = sorted({v["family"] for v in out["market_types"].values()} - {"other"})
+    out["api_calls"] = client.calls
+    return out, raw
+
+
 def write_outputs(cov: dict, raw: dict, now: datetime) -> None:
     (OUT / "raw").mkdir(parents=True, exist_ok=True)
     (OUT / "raw" / f"{now.strftime('%Y%m%dT%H%M%SZ')}.json").write_text(json.dumps(raw, default=str))
@@ -242,6 +297,7 @@ def main() -> int:
     ap.add_argument("--days", type=int, default=8)
     ap.add_argument("--events-per-competition", type=int, default=10)
     ap.add_argument("--max-hours-to-kickoff", type=float, default=DEFAULT_MAX_HOURS)
+    ap.add_argument("--discover", action="store_true", help="schema discovery on the busiest football events within --max-hours-to-kickoff (any competition)")
     a = ap.parse_args()
     app_key, user = os.environ.get("BETFAIR_APP_KEY"), os.environ.get("BETFAIR_USERNAME")
     if not app_key or not user:
@@ -252,9 +308,22 @@ def main() -> int:
     del pw
     now = datetime.now(timezone.utc)
     try:
-        cov, raw = audit(Client(app_key, token), now, a.days, a.events_per_competition, a.max_hours_to_kickoff)
+        if a.discover:
+            sch, raw = discover(Client(app_key, token), now, a.max_hours_to_kickoff)
+        else:
+            cov, raw = audit(Client(app_key, token), now, a.days, a.events_per_competition, a.max_hours_to_kickoff)
     finally:
         logout(app_key, token)
+    if a.discover:
+        (OUT / "raw").mkdir(parents=True, exist_ok=True)
+        (OUT / "raw" / f"discover_{now.strftime('%Y%m%dT%H%M%SZ')}.json").write_text(json.dumps(raw, default=str))
+        (OUT / "SCHEMA_DISCOVERY.json").write_text(json.dumps(sch, indent=1, default=str) + "\n")
+        print("families found:", sch["families_found"] or "none")
+        for code, v in sch["market_types"].items():
+            if v["family"] != "other":
+                print(f"  {code:28s} {v['family']:16s} events={v['n_events']} names={v['market_names'][:3]} two-sided={v['two_sided_share']}")
+        print(f"api calls: {sch['api_calls']}; written to {OUT / 'SCHEMA_DISCOVERY.json'}")
+        return 0
     write_outputs(cov, raw, now)
     for code, e in cov["competitions"].items():
         print(code, {f: s.get("classification") for f, s in e["families"].items()})
