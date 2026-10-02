@@ -1,0 +1,44 @@
+name: wyscout_acquire
+
+# One-off acquisition of the openly licensed Wyscout public dataset (CC BY 4.0, 2017-18 big-5 leagues) for the Player
+# SOT pilot audit. figshare is reachable from GitHub runners but not from the research container. Writes only the
+# derived player-match table (with attribution) and the data audit. No model is fitted.
+on:
+  workflow_dispatch:
+  push:
+    branches: ["pre-matchday-c4"]     # TEMPORARY: removed before merge
+    paths: [".github/workflows/wyscout_acquire.yml", "scripts/wyscout_player_match.py"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wyscout-acquire
+  cancel-in-progress: false
+
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: |
+          pip install -r requirements.txt
+          pip install -e .
+      - run: pytest -q tests/unit/test_player_sot_pipeline.py
+      - name: Acquire + audit
+        run: |
+          if [ -f data/open/wyscout/player_match.csv.gz ]; then echo "already acquired -- nothing to do"; exit 0; fi
+          python scripts/wyscout_player_match.py
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/open/wyscout research/platform_v2/player_sot/WYSCOUT_AUDIT.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Wyscout public dataset (CC BY 4.0): derived player-match table + audit"
+            for i in 1 2 3; do git pull --rebase && git push && break; sleep 10; done
+          fi

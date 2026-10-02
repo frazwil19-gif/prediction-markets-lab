@@ -87,3 +87,21 @@ def test_audit_builds_coverage_matrix_with_read_methods_only(tmp_path, monkeypat
     B.write_outputs(cov, raw, NOW)
     text = "".join(p.read_text() for p in tmp_path.rglob("*") if p.is_file())
     assert "APPKEY" not in text and "TOKEN" not in text
+
+
+def test_discover_mode_lists_schema_with_read_methods_only():
+    calls = []
+    base = fake_transport(calls)
+
+    def t(url, body, headers):
+        req = json.loads(body)
+        if req["method"].endswith("listEvents"):
+            calls.append("listEvents")
+            return {"result": [{"event": {"id": "e0", "name": "A v B", "openDate": "2026-10-03T14:00:00Z"}, "marketCount": 60},
+                               {"event": {"id": "e1", "name": "C v D", "openDate": "2026-10-03T14:00:00Z"}, "marketCount": 5}]}
+        return base(url, body, headers)
+    sch, raw = B.discover(B.Client("APPKEY", "TOKEN", transport=t), NOW, 36)
+    assert set(calls) <= B.READ_ONLY_METHODS
+    assert sch["market_types"]["CORNER_ODDS"]["family"] == "corners" and sch["market_types"]["CORNER_ODDS"]["n_events"] == 1
+    assert sch["market_types"]["CORNER_ODDS"]["two_sided_share"] == 1.0 and "corners" in sch["families_found"]
+    assert "APPKEY" not in json.dumps(sch) and "TOKEN" not in json.dumps(sch)
