@@ -1,0 +1,169 @@
+{
+ "divisions": [
+  "E0",
+  "E1",
+  "SC0"
+ ],
+ "n_matches": 6960,
+ "referee_missing_by_div_season": {
+  "E0 2020_21": 0.0,
+  "E0 2021_22": 0.0,
+  "E0 2022_23": 0.0,
+  "E0 2023_24": 0.0,
+  "E0 2024_25": 0.0,
+  "E0 2025_26": 0.0,
+  "E1 2020_21": 0.0,
+  "E1 2021_22": 0.0,
+  "E1 2022_23": 0.0,
+  "E1 2023_24": 0.0,
+  "E1 2024_25": 0.0,
+  "E1 2025_26": 0.0,
+  "SC0 2020_21": 0.0,
+  "SC0 2021_22": 0.0,
+  "SC0 2022_23": 0.0,
+  "SC0 2023_24": 0.0,
+  "SC0 2024_25": 0.0,
+  "SC0 2025_26": 0.0
+ },
+ "identity": {
+  "distinct_raw": 121,
+  "distinct_normalised": 119,
+  "normalisation_merges": {
+   "j gillett": [
+    "J Gillett",
+    "J Gillett "
+   ],
+   "k stroud": [
+    "K Stroud",
+    "k Stroud"
+   ]
+  },
+  "same_surname_groups_review": {
+   "anderson": [
+    "e anderson",
+    "w anderson"
+   ],
+   "beaton": [
+    "a beaton",
+    "j beaton",
+    "k beaton"
+   ],
+   "bell": [
+    "e bell",
+    "j bell"
+   ],
+   "doughty": [
+    "d doughty",
+    "l doughty"
+   ],
+   "gillett": [
+    "a gillett",
+    "j gillett",
+    "jj gillett",
+    "m gillett"
+   ],
+   "kavanagh": [
+    "c kavanagh",
+    "k kavanagh"
+   ],
+   "linington": [
+    "j linington",
+    "l linington"
+   ],
+   "madley": [
+    "a madley",
+    "r madley"
+   ],
+   "martin": [
+    "a martin",
+    "s martin"
+   ],
+   "moss": [
+    "a moss",
+    "j moss"
+   ],
+   "oliver": [
+    "m oliver",
+    "o oliver"
+   ],
+   "pawson": [
+    "c pawson",
+    "j pawson"
+   ],
+   "robertson": [
+    "a robertson",
+    "d robertson"
+   ],
+   "scott": [
+    "c scott",
+    "g scott"
+   ],
+   "smith": [
+    "j smith",
+    "l smith"
+   ],
+   "steven": [
+    "c steven",
+    "d steven",
+    "s steven"
+   ],
+   "webb": [
+    "d webb",
+    "g webb"
+   ]
+  }
+ },
+ "matches_per_referee": {
+  "n_referees": 119,
+  "median": 48.0,
+  "p90": 138.2,
+  "n_with_>=20": 72,
+  "share_matches_by_refs_>=20": 0.9619,
+  "refs_officiating_in_multiple_divisions": 36
+ },
+ "rate_stability": {
+  "referee_season_pairs_(n>=10_matches_each)": 229,
+  "pearson_r_t_vs_t+1": 0.245,
+  "p_value": 0.0001787843590450574,
+  "sd_referee_season_relative_rate": 0.573
+ },
+ "R2_referee_coef": 0.6926,
+ "oos_test": {
+  "n_train": 3241,
+  "n_test": 3417,
+  "test_mean_cards": 3.957,
+  "test_var_over_mean": 1.068,
+  "lines": {
+   "3.5": {
+    "base_rate": 0.5634,
+    "logloss_R0": 0.69454,
+    "logloss_R1": 0.68206,
+    "logloss_R2": 0.67954,
+    "d_logloss_R2_minus_R1": -0.00252,
+    "ci95": [
+     -0.00597,
+     0.00078
+    ],
+    "d_logloss_R1_minus_R0": -0.01248
+   },
+   "4.5": {
+    "base_rate": 0.3664,
+    "logloss_R0": 0.66715,
+    "logloss_R1": 0.65689,
+    "logloss_R2": 0.65091,
+    "d_logloss_R2_minus_R1": -0.00597,
+    "ci95": [
+     -0.00915,
+     -0.00309
+    ],
+    "d_logloss_R1_minus_R0": -0.01026
+   }
+  },
+  "referee_adds_information": false
+ },
+ "card_counting": {
+  "mean_HY_plus_AY": 3.619,
+  "mean_HR_plus_AR": 0.13,
+  "note": "Football-Data HY/AY/HR/AR; a second yellow is recorded as a red (whether its first yellow stays in HY is not documented) \u2014 bookmaker 'total cards' and 'booking points' definitions must be mapped per venue."
+ }
+}
