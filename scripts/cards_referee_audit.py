@@ -36,9 +36,8 @@ def load(root: Path) -> pd.DataFrame:
     frames = []
     for div in DIVS:
         for f in sorted((root / div).glob(f"*/{div}.csv")):
-            t = pd.read_csv(f, encoding="latin-1")
-            t["Division"], t["season"] = div, f.parent.name
-            frames.append(t[["Division", "season", "Date", "HomeTeam", "AwayTeam", "Referee", "HY", "AY", "HR", "AR"]])
+            t = pd.read_csv(f, encoding="latin-1", usecols=["Date", "HomeTeam", "AwayTeam", "Referee", "HY", "AY", "HR", "AR"])
+            frames.append(t.assign(Division=div, season=f.parent.name))
     d = pd.concat(frames, ignore_index=True)
     d["date"] = pd.to_datetime(d.Date, dayfirst=True, format="mixed")
     d["ref_raw"] = d.Referee

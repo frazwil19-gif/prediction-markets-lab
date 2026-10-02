@@ -1,0 +1,5 @@
+entry_id,family,finding,n,window,metric,value,evidence_type,use_restriction,source
+BA-DEP-001,winner+team prop dependency,"P(fav win AND fav team SOT>4.5) vs independence",14131,2022-07..2026-09 (10 leagues),joint/independent,1.227 (0.371 vs 0.302),descriptive historical (post-match result used only to characterise dependency),"no betting rule; never multiply same-match marginals; no SGMs",DEPENDENCY.json
+BA-DEP-002,winner+match prop dependency,"P(fav win AND total cards>4.5) vs independence",14131,2022-07..2026-09 (10 leagues),joint/independent,0.912 (0.196 vs 0.215),descriptive historical,as above,DEPENDENCY.json
+BA-DEP-003,winner+match prop dependency,"P(fav win AND total corners>9.5) vs independence",14131,2022-07..2026-09 (10 leagues),joint/independent,0.958 (0.267 vs 0.279),descriptive historical,as above,DEPENDENCY.json
+BA-CRN-001,corners structure,"home and away corner counts negatively correlated",67947,2000..2026 (10 leagues),pearson r,-0.222,descriptive historical,"team-split total via independent convolution would be mis-specified; Phase 3 must model the dependence",corners/AUDIT.json
