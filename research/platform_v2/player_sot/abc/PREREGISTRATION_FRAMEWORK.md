@@ -84,3 +84,37 @@ availability), never from match results or returns.
   SOT and cards in the project's leagues.
 - Must run on Fraser's Mac (Betfair blocks US runner IP addresses).
 - Raw per-runner prices stay private in `raw/` (gitignored). Only aggregates are committed.
+
+## Addendum (2026-10-02): B construction is NOT yet frozen
+This addendum supersedes §1's working definition of B. §1's definition is the candidate primary estimator, not a
+final choice. It must be confirmed or replaced, and frozen, BEFORE any confirmatory A/B/C evidence is examined, using
+mechanics and non-outcome microstructure data only.
+
+**Contract mechanics, to be verified from the 10 October capture fields `number_of_winners` and `betting_type` and
+from Betfair rules:**
+- Each player is a single runner in a multi-winner market. Expected: `numberOfWinners` > 1, or each runner settles
+  independently.
+- There is no separate "No" runner. Backing the runner means "player records ≥ k SOT"; laying it means "player does
+  not". If the capture shows a different structure, B is redefined accordingly before activation.
+- Runner prices in such a market do not sum to 1 across players. B is therefore a per-runner probability with no
+  cross-runner de-vig.
+
+**Midpoint definitions (all computed; primary chosen before activation):**
+- probability-space midpoint: p = (1/back + 1/lay) / 2. This is the current §1 candidate, since 1/[2/(1/b + 1/l)] is
+  the same quantity.
+- odds-space midpoint: p = 1 / ((back + lay) / 2);
+- size-weighted microprice: p = (1/back·lay_size + 1/lay·back_size) / (back_size + lay_size);
+- last traded price, as a diagnostic only.
+
+**Selection rule for the primary B, fixed now and using no outcomes:**
+- Probability space is the default, because B is evaluated with log loss and Brier score in probability space.
+- Sensitivity is reported as the distribution of |p_method − p_primary| per runner.
+- If the median absolute difference between methods is ≥ 0.02 on the target-league captures, every A/B/C result is
+  reported under each method as well. The verdict still uses only the primary.
+
+**Commission:** never enters B. It affects only executable net odds.
+
+**One-sided, stale or suspended quotes:** no B, as in §1.
+
+**Spread and size gates:** characterised from the 10 October and later captures (non-outcome data), then frozen
+before outcomes are joined.

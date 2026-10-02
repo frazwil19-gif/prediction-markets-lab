@@ -134,5 +134,6 @@ def test_capture_rows_and_summary():
     assert {r["side_status"] for r in corners} == {"BOTH", "BACK_ONLY"} and abs(corners[0]["spread"] - (1.9 / 1.8 - 1)) < 1e-4
     g = summ["groups"]["E0|CORNER_ODDS"]
     assert g["both"] == 1 and g["back_only"] == 1 and g["markets_passing_preregistered_10pct_gate"] == "0/1"
+    assert g["two_sided_share"] == 0.5 and g["back_size_p25_p50_p75"] is not None and g["lay_size_p25_p50_p75"] == [5.0, 5.0, 5.0]
     assert all(r["family"] in B.CAPTURE_FAMILIES for r in rows)
     assert "APPKEY" not in json.dumps(summ)

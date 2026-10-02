@@ -286,7 +286,7 @@ def discover(client: Client, now: datetime, max_hours: float, n_events: int = DI
 
 CAPTURE_FAMILIES = ("corners", "player_sot", "bookings_cards")
 CAPTURE_FIELDS = ["capture_ts", "competition", "event", "kickoff", "mins_to_kickoff", "market_id", "market_type", "family", "market_name",
-                  "status", "inplay", "market_total_matched", "runner", "back", "back_size", "lay", "lay_size", "spread", "side_status",
+                  "status", "inplay", "number_of_winners", "betting_type", "market_total_matched", "runner", "back", "back_size", "lay", "lay_size", "spread", "side_status",
                   "last_traded"]
 CORNERS_SPREAD_GATE = 0.10   # pre-registered corners A/B/C rule (research/platform_v2/corners_abc/PREREGISTRATION.md §4) -- reported, never changed
 
@@ -323,7 +323,8 @@ def capture(client: Client, now: datetime, max_hours: float) -> tuple[dict, list
                         rows.append({"capture_ts": now.isoformat(), "competition": code, "event": m.get("event", {}).get("name", e["event"].get("name")),
                                      "kickoff": m["marketStartTime"], "mins_to_kickoff": round((ko - now).total_seconds() / 60, 1), "market_id": b["marketId"],
                                      "market_type": code_, "family": family_of(code_, m.get("marketName", "")), "market_name": m.get("marketName", ""),
-                                     "status": b.get("status"), "inplay": b.get("inplay"), "market_total_matched": b.get("totalMatched"),
+                                     "status": b.get("status"), "inplay": b.get("inplay"), "number_of_winners": b.get("numberOfWinners"),
+                                     "betting_type": (m.get("description") or {}).get("bettingType"), "market_total_matched": b.get("totalMatched"),
                                      "runner": names.get(r.get("selectionId"), str(r.get("selectionId"))), "back": back.get("price"), "back_size": back.get("size"),
                                      "lay": lay.get("price"), "lay_size": lay.get("size"),
                                      "spread": round(lay["price"] / back["price"] - 1, 5) if both else None,
@@ -347,7 +348,12 @@ def summarise_capture(rows: list[dict], now: datetime, max_hours: float) -> dict
              "both": len(both), "back_only": sum(r["side_status"] == "BACK_ONLY" for r in rs), "lay_only": sum(r["side_status"] == "LAY_ONLY" for r in rs),
              "none": sum(r["side_status"] == "NONE" for r in rs),
              "spread_p25_p50_p75": [_q(sp, .25), _q(sp, .5), _q(sp, .75)] if sp else None,
+             "back_size_p25_p50_p75": [_q(bs, .25), _q(bs, .5), _q(bs, .75)] if (bs := [r["back_size"] for r in rs if r["back_size"] is not None]) else None,
+             "lay_size_p25_p50_p75": [_q(ls, .25), _q(ls, .5), _q(ls, .75)] if (ls := [r["lay_size"] for r in rs if r["lay_size"] is not None]) else None,
+             "two_sided_share": round(len(both) / len(rs), 4) if rs else None,
+             "number_of_winners": sorted({r["number_of_winners"] for r in rs if r["number_of_winners"] is not None}),
              "market_matched_median_max": [round(statistics.median(matched), 2), round(max(matched), 2)] if matched else None,
+             "market_matched_p25_p50_p75": [_q(matched, .25), _q(matched, .5), _q(matched, .75)] if matched else None,
              "mins_to_kickoff_range": [min(r["mins_to_kickoff"] for r in rs), max(r["mins_to_kickoff"] for r in rs)]}
         if g["family"] == "corners":
             per_market = defaultdict(list)
