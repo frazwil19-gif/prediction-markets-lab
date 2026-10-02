@@ -121,6 +121,7 @@ from prediction_markets_lab.ingestion.the_odds_api_loader import (
 )
 from prediction_markets_lab.ops import credit_ledger as CL
 from prediction_markets_lab.ops import football_coverage as FC
+from prediction_markets_lab.research_shadow import h1_devig as H1
 from prediction_markets_lab.probability.market_pipeline import compute_market_consensus
 from prediction_markets_lab.reports.daily_bet_card import (
     ENGINE_VERSION,
@@ -399,6 +400,7 @@ def main() -> int:
 
     recommendations: list[RecommendationResult] = []
     money_allowed = money_card_competitions()   # V2-19: N1/D1 never money-qualify on the legacy card
+    h1_rows: list[dict] = []                    # H1 research shadow rows (power de-vig), written after the scan
     fixtures_seen: set[str] = set()
 
     for market_id, bookmaker_odds in bookmaker_odds_by_market.items():
@@ -424,6 +426,15 @@ def main() -> int:
             system_warnings.append(
                 f"{rejected.bookmaker} excluded from {market_id} consensus -- {rejected.reason}"
             )
+
+        if market_type == "1x2":   # H1 research shadow (pre-registered; never affects any decision)
+            try:
+                h1 = H1.shadow_row(meta.get("scan_timestamp", live_scan_timestamp or ""), market_id, meta, bookmaker_odds,
+                                   {o: c.consensus_probability for o, c in market_result.consensus_by_outcome.items()})
+                if h1:
+                    h1_rows.append(h1)
+            except Exception as exc:   # research must never break the scan
+                system_warnings.append(f"H1 shadow skipped for {market_id}: {exc}")
 
         for selection, consensus in market_result.consensus_by_outcome.items():
             if args.source == "manual":
@@ -523,6 +534,13 @@ def main() -> int:
     for rec in recommendations:
         append_record(candidates_path, rec.market_record)
     print(f"{len(recommendations)} candidate(s) logged to {candidates_path}", file=sys.stderr)
+
+    if args.source != "manual":   # H1 research shadow: live scans only
+        try:
+            n_h1 = H1.append_rows(REPO_ROOT / "research_shadow" / "h1_devig" / f"{date.today().isoformat()}{suffix}.csv", h1_rows)
+            print(f"H1 research shadow: {n_h1} market row(s) written", file=sys.stderr)
+        except Exception as exc:
+            print(f"H1 research shadow write failed (research only; scan unaffected): {exc}", file=sys.stderr)
 
     if args.no_paper_ledger:
         print("Paper ledger: skipped (--no-paper-ledger)", file=sys.stderr)

@@ -1,0 +1,51 @@
+name: pre_close_capture
+
+# Track A / H2 (research diagnostic; pre-registered research/platform_v2/track_a/H2_PREREGISTRATION.md).
+# Hourly: for PAPER selections starting within the next 75 minutes, one /odds h2h uk call (1 credit) per sport key
+# and a PRE_CLOSE_VALUE row in research_shadow/h2_pre_close/pre_close_value.csv. No due selections -> no API call at all.
+# Budget: consumer pre_close_capture, monthly_cap 25 credits, and never below the Tier-2 shadow floor (free /events
+# check first). Never touches selections, decisions, grades, stakes or the Money Card.
+# Own concurrency group: a queued hourly run must never displace a pending production run.
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: prediction-markets-lab-pre-close
+  cancel-in-progress: false
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install -e .
+      - name: Module tests
+        run: pytest -q tests/unit/test_research_shadow.py tests/unit/test_football_coverage.py
+      - name: Capture
+        env:
+          THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
+        run: python scripts/capture_pre_close.py
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add research_shadow/h2_pre_close/ 2>/dev/null || true   # only its own files: never conflicts with production commits
+          if git diff --cached --quiet; then
+            echo "No pre-close captures"
+          else
+            git commit -m "H2 pre-close capture: $(date -u +%FT%H:%MZ) (research diagnostic)"
+            for i in 1 2 3; do git pull --rebase && git push && break; sleep 10; done
+          fi
