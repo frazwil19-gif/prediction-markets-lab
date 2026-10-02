@@ -23,6 +23,8 @@ PARAMS = REPO / "research/platform_v2/corners_abc/corners_A_v1_params.json"
 FIXTURES_URL = "https://www.football-data.co.uk/fixtures.csv"
 HORIZON_DAYS = 7
 TIMEOUT = 30
+RUN_LOG_FIELDS = ["run_ts", "played_rows", "fixtures_listed_10_leagues", "fixtures_in_horizon", "next_fixture_date",
+                  "predictions_written", "outcomes_written", "download_warnings"]
 
 
 def fetch(url: str) -> str:
@@ -45,8 +47,8 @@ def main() -> int:
             except Exception as exc:          # one missing file never stops the run
                 warnings.append(f"{url}: {type(exc).__name__}")
     played = pd.concat([f for f in frames if not f.empty], ignore_index=True).drop_duplicates(["Division", "MatchDate", "HomeTeam", "AwayTeam"])
-    fx = CC.parse_fixtures(fetch(FIXTURES_URL))
-    fx = fx[(fx.MatchDate.dt.date >= today) & (fx.MatchDate.dt.date <= today + timedelta(days=HORIZON_DAYS))]
+    fx_all = CC.parse_fixtures(fetch(FIXTURES_URL))
+    fx = fx_all[(fx_all.MatchDate.dt.date >= today) & (fx_all.MatchDate.dt.date <= today + timedelta(days=HORIZON_DAYS))]
     state, div_fill, league = CC.team_states(played, c["MINP"], c["LEAGUE_WIN"], c["LEAGUE_MINP"])
     feats = CC.fixture_features(fx, state, div_fill, league)
     pred_path, out_path = OUT / "model_a_predictions.csv", OUT / "outcomes.csv"
@@ -57,6 +59,10 @@ def main() -> int:
     known = {r["event_key"] for r in CC.read_csv(out_path)}
     outs = [o for o in CC.outcome_rows(played, date(2026, 10, 1), known, now) if o["event_key"] in predicted]
     n_out = CC.append_csv(out_path, CC.OUTCOME_FIELDS, outs)
+    CC.append_csv(OUT / "run_log.csv", RUN_LOG_FIELDS, [{
+        "run_ts": now.isoformat(), "played_rows": len(played), "fixtures_listed_10_leagues": len(fx_all),
+        "fixtures_in_horizon": len(fx), "next_fixture_date": fx_all.MatchDate.min().date().isoformat() if len(fx_all) else "",
+        "predictions_written": n_pred, "outcomes_written": n_out, "download_warnings": len(warnings)}])
     print(f"fixtures in horizon: {len(fx)}; predictions written: {n_pred}; outcomes written: {n_out}; warnings: {len(warnings)}")
     for w in warnings:
         print("warning:", w)
