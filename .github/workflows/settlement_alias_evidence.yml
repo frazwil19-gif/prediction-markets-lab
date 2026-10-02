@@ -1,0 +1,39 @@
+name: settlement_alias_evidence
+
+# Settlement hardening (2026-10-02). Collects fixture-identity evidence for football-data <-> Odds API team names in
+# the paper-tier leagues. 0 Odds API credits (free /events only; the script stops calling if a charge is reported).
+# Proposals only: config/settlement_team_aliases.yaml is changed solely by a reviewed commit with regression tests.
+on:
+  schedule:
+    - cron: "23 6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: prediction-markets-lab-production
+  cancel-in-progress: false
+
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: |
+          pip install -r requirements.txt
+          pip install -e .
+      - name: Collect alias evidence (0 credits)
+        env:
+          THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
+        run: python scripts/derive_settlement_aliases.py
+      - name: Commit evidence
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add research/platform_v2/settlement_hardening/
+          if git diff --cached --quiet; then echo "no change"; else git commit -m "Settlement alias evidence: $(date -u +%F)"; git pull --rebase -q && git push; fi

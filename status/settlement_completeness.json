@@ -1,0 +1,177 @@
+{
+ "generated_at": "2026-10-02T22:13:56.651933+00:00",
+ "lag_hours": {
+  "football_data_co_uk": 120,
+  "tennis_court_log": 240,
+  "odds_api_scores": 96
+ },
+ "totals": {
+  "NOT_STARTED": 56,
+  "NORMAL_SOURCE_LAG": 129,
+  "SETTLED": 12,
+  "UNRESOLVED_AFTER_EXPECTED_LAG": 4,
+  "SOURCE_UNAVAILABLE": 0
+ },
+ "groups": [
+  {
+   "ledger": "bsv2_paper_selections",
+   "sport": "tennis",
+   "competition": "ATP Japan Open",
+   "source": "tennis_court_log",
+   "NOT_STARTED": 0,
+   "NORMAL_SOURCE_LAG": 1,
+   "SETTLED": 0,
+   "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
+   "SOURCE_UNAVAILABLE": 0,
+   "completed_events_past_lag": 0,
+   "settled_share_of_started": 0.0
+  },
+  {
+   "ledger": "bsv2_paper_selections",
+   "sport": "tennis",
+   "competition": "WTA China Open",
+   "source": "tennis_court_log",
+   "NOT_STARTED": 0,
+   "NORMAL_SOURCE_LAG": 9,
+   "SETTLED": 0,
+   "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
+   "SOURCE_UNAVAILABLE": 0,
+   "completed_events_past_lag": 0,
+   "settled_share_of_started": 0.0
+  },
+  {
+   "ledger": "legacy_paper_ledger",
+   "sport": "football",
+   "competition": "Championship",
+   "source": "odds_api_scores",
+   "NOT_STARTED": 2,
+   "NORMAL_SOURCE_LAG": 0,
+   "SETTLED": 0,
+   "UNRESOLVED_AFTER_EXPECTED_LAG": 1,
+   "SOURCE_UNAVAILABLE": 0,
+   "completed_events_past_lag": 1,
+   "settled_share_of_started": 0.0
+  },
+  {
+   "ledger": "legacy_paper_ledger",
+   "sport": "football",
+   "competition": "Premier League",
+   "source": "odds_api_scores",
+   "NOT_STARTED": 17,
+   "NORMAL_SOURCE_LAG": 0,
+   "SETTLED": 0,
+   "UNRESOLVED_AFTER_EXPECTED_LAG": 3,
+   "SOURCE_UNAVAILABLE": 0,
+   "completed_events_past_lag": 3,
+   "settled_share_of_started": 0.0
+  },
+  {
+   "ledger": "legacy_paper_ledger",
+   "sport": "football",
+   "competition": "Scottish Premiership",
+   "source": "odds_api_scores",
+   "NOT_STARTED": 1,
+   "NORMAL_SOURCE_LAG": 0,
+   "SETTLED": 0,
+   "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
+   "SOURCE_UNAVAILABLE": 0,
+   "completed_events_past_lag": 0,
+   "settled_share_of_started": null
+  },
+  {
+   "ledger": "unified_ledger",
+   "sport": "tennis",
+   "competition": "ATP China Open",
+   "source": "tennis_court_log",
+   "NOT_STARTED": 6,
+   "NORMAL_SOURCE_LAG": 31,
+   "SETTLED": 0,
+   "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
+   "SOURCE_UNAVAILABLE": 0,
+   "completed_events_past_lag": 0,
+   "settled_share_of_started": 0.0
+  },
+  {
+   "ledger": "unified_ledger",
+   "sport": "tennis",
+   "competition": "ATP Japan Open",
+   "source": "tennis_court_log",
+   "NOT_STARTED": 6,
+   "NORMAL_SOURCE_LAG": 21,
+   "SETTLED": 0,
+   "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
+   "SOURCE_UNAVAILABLE": 0,
+   "completed_events_past_lag": 0,
+   "settled_share_of_started": 0.0
+  },
+  {
+   "ledger": "unified_ledger",
+   "sport": "tennis",
+   "competition": "WTA China Open",
+   "source": "tennis_court_log",
+   "NOT_STARTED": 24,
+   "NORMAL_SOURCE_LAG": 67,
+   "SETTLED": 2,
+   "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
+   "SOURCE_UNAVAILABLE": 0,
+   "completed_events_past_lag": 2,
+   "settled_share_of_started": 0.029
+  },
+  {
+   "ledger": "unified_ledger",
+   "sport": "tennis",
+   "competition": "WTA Singapore Open",
+   "source": "tennis_court_log",
+   "NOT_STARTED": 0,
+   "NORMAL_SOURCE_LAG": 0,
+   "SETTLED": 10,
+   "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
+   "SOURCE_UNAVAILABLE": 0,
+   "completed_events_past_lag": 10,
+   "settled_share_of_started": 1.0
+  }
+ ],
+ "flagged": [
+  {
+   "ledger": "legacy_paper_ledger",
+   "id": "Norwich City v Bolton Wanderers::1x2::away",
+   "sport": "football",
+   "competition": "Championship",
+   "event": "Norwich City v Bolton Wanderers",
+   "start": "2026-09-20T00:00:00+00:00",
+   "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
+   "hours_since_start": 310.2
+  },
+  {
+   "ledger": "legacy_paper_ledger",
+   "id": "Leeds United v Crystal Palace::1x2::away",
+   "sport": "football",
+   "competition": "Premier League",
+   "event": "Leeds United v Crystal Palace",
+   "start": "2026-09-20T00:00:00+00:00",
+   "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
+   "hours_since_start": 310.2
+  },
+  {
+   "ledger": "legacy_paper_ledger",
+   "id": "Manchester City v Sunderland::1x2::away",
+   "sport": "football",
+   "competition": "Premier League",
+   "event": "Manchester City v Sunderland",
+   "start": "2026-09-20T00:00:00+00:00",
+   "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
+   "hours_since_start": 310.2
+  },
+  {
+   "ledger": "legacy_paper_ledger",
+   "id": "Leeds United v Crystal Palace::over_under_2_5::under",
+   "sport": "football",
+   "competition": "Premier League",
+   "event": "Leeds United v Crystal Palace",
+   "start": "2026-09-20T00:00:00+00:00",
+   "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
+   "hours_since_start": 310.2
+  }
+ ],
+ "healthy": false
+}
