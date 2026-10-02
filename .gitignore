@@ -61,3 +61,6 @@ reports/audits/*
 .env
 *.key
 credentials.json
+
+# Betfair raw API responses: never committed (licence; may contain account-specific data)
+research/platform_v2/price_execution/betfair_audit/raw/
