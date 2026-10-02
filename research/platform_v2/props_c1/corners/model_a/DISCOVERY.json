@@ -1,0 +1,454 @@
+{
+ "label": "EXPLORATORY (discovery set 2005-07..2019-06 only)",
+ "n": 37115,
+ "features": {
+  "h_cf5": {
+   "rho_T": 0.0834,
+   "rho_H": 0.1397,
+   "rho_A": -0.0477,
+   "season_sign_consistency": 1.0,
+   "season_sd": 0.0287,
+   "league_sign_consistency": 1.0,
+   "league_range": [
+    0.034,
+    0.101
+   ]
+  },
+  "h_ca5": {
+   "rho_T": 0.0411,
+   "rho_H": -0.0682,
+   "rho_A": 0.1406,
+   "season_sign_consistency": 0.786,
+   "season_sd": 0.0294,
+   "league_sign_consistency": 0.7,
+   "league_range": [
+    -0.05,
+    0.043
+   ]
+  },
+  "a_cf5": {
+   "rho_T": 0.0399,
+   "rho_H": -0.0723,
+   "rho_A": 0.1336,
+   "season_sign_consistency": 0.929,
+   "season_sd": 0.0341,
+   "league_sign_consistency": 0.8,
+   "league_range": [
+    -0.075,
+    0.062
+   ]
+  },
+  "a_ca5": {
+   "rho_T": 0.0749,
+   "rho_H": 0.1437,
+   "rho_A": -0.0588,
+   "season_sign_consistency": 1.0,
+   "season_sd": 0.0264,
+   "league_sign_consistency": 0.9,
+   "league_range": [
+    -0.004,
+    0.069
+   ]
+  },
+  "h_cf10": {
+   "rho_T": 0.094,
+   "rho_H": 0.1653,
+   "rho_A": -0.0627,
+   "season_sign_consistency": 1.0,
+   "season_sd": 0.0373,
+   "league_sign_consistency": 1.0,
+   "league_range": [
+    0.041,
+    0.091
+   ]
+  },
+  "h_ca10": {
+   "rho_T": 0.0525,
+   "rho_H": -0.0792,
+   "rho_A": 0.1691,
+   "season_sign_consistency": 0.857,
+   "season_sd": 0.0355,
+   "league_sign_consistency": 0.7,
+   "league_range": [
+    -0.022,
+    0.059
+   ]
+  },
+  "a_cf10": {
+   "rho_T": 0.0509,
+   "rho_H": -0.0826,
+   "rho_A": 0.1578,
+   "season_sign_consistency": 0.929,
+   "season_sd": 0.0397,
+   "league_sign_consistency": 0.8,
+   "league_range": [
+    -0.096,
+    0.073
+   ]
+  },
+  "a_ca10": {
+   "rho_T": 0.0839,
+   "rho_H": 0.1649,
+   "rho_A": -0.0694,
+   "season_sign_consistency": 1.0,
+   "season_sd": 0.0319,
+   "league_sign_consistency": 0.9,
+   "league_range": [
+    -0.024,
+    0.087
+   ]
+  },
+  "h_cf20": {
+   "rho_T": 0.1114,
+   "rho_H": 0.1923,
+   "rho_A": -0.0707,
+   "season_sign_consistency": 1.0,
+   "season_sd": 0.0354,
+   "league_sign_consistency": 1.0,
+   "league_range": [
+    0.05,
+    0.11
+   ]
+  },
+  "h_ca20": {
+   "rho_T": 0.0582,
+   "rho_H": -0.0862,
+   "rho_A": 0.1862,
+   "season_sign_consistency": 0.857,
+   "season_sd": 0.0406,
+   "league_sign_consistency": 0.7,
+   "league_range": [
+    -0.044,
+    0.054
+   ]
+  },
+  "a_cf20": {
+   "rho_T": 0.0557,
+   "rho_H": -0.0961,
+   "rho_A": 0.179,
+   "season_sign_consistency": 0.929,
+   "season_sd": 0.0436,
+   "league_sign_consistency": 0.8,
+   "league_range": [
+    -0.07,
+    0.056
+   ]
+  },
+  "a_ca20": {
+   "rho_T": 0.0944,
+   "rho_H": 0.1884,
+   "rho_A": -0.0797,
+   "season_sign_consistency": 1.0,
+   "season_sd": 0.0293,
+   "league_sign_consistency": 0.9,
+   "league_range": [
+    -0.007,
+    0.097
+   ]
+  },
+  "h_hcf10": {
+   "rho_T": 0.0935,
+   "rho_H": 0.1642,
+   "rho_A": -0.0624,
+   "season_sign_consistency": 1.0,
+   "season_sd": 0.0352,
+   "league_sign_consistency": 1.0,
+   "league_range": [
+    0.031,
+    0.1
+   ]
+  },
+  "h_hca10": {
+   "rho_T": 0.0552,
+   "rho_H": -0.0637,
+   "rho_A": 0.1524,
+   "season_sign_consistency": 1.0,
+   "season_sd": 0.0361,
+   "league_sign_consistency": 0.7,
+   "league_range": [
+    -0.056,
+    0.051
+   ]
+  },
+  "a_acf10": {
+   "rho_T": 0.0479,
+   "rho_H": -0.0773,
+   "rho_A": 0.1504,
+   "season_sign_consistency": 0.929,
+   "season_sd": 0.035,
+   "league_sign_consistency": 0.7,
+   "league_range": [
+    -0.16,
+    0.083
+   ]
+  },
+  "a_aca10": {
+   "rho_T": 0.0806,
+   "rho_H": 0.1643,
+   "rho_A": -0.072,
+   "season_sign_consistency": 1.0,
+   "season_sd": 0.0288,
+   "league_sign_consistency": 1.0,
+   "league_range": [
+    0.005,
+    0.079
+   ]
+  },
+  "h_sf10": {
+   "rho_T": 0.0297,
+   "rho_H": 0.1237,
+   "rho_A": -0.1073,
+   "season_sign_consistency": 0.714,
+   "season_sd": 0.0503,
+   "league_sign_consistency": 0.8,
+   "league_range": [
+    -0.026,
+    0.091
+   ]
+  },
+  "h_sa10": {
+   "rho_T": 0.0031,
+   "rho_H": -0.0911,
+   "rho_A": 0.1135,
+   "season_sign_consistency": 0.429,
+   "season_sd": 0.034,
+   "league_sign_consistency": 0.6,
+   "league_range": [
+    -0.027,
+    0.043
+   ]
+  },
+  "a_sf10": {
+   "rho_T": -0.008,
+   "rho_H": -0.1109,
+   "rho_A": 0.1089,
+   "season_sign_consistency": 0.571,
+   "season_sd": 0.0403,
+   "league_sign_consistency": 0.4,
+   "league_range": [
+    -0.064,
+    0.048
+   ]
+  },
+  "a_sa10": {
+   "rho_T": 0.039,
+   "rho_H": 0.1405,
+   "rho_A": -0.1023,
+   "season_sign_consistency": 0.929,
+   "season_sd": 0.0366,
+   "league_sign_consistency": 0.9,
+   "league_range": [
+    -0.017,
+    0.087
+   ]
+  },
+  "h_tf10": {
+   "rho_T": 0.0828,
+   "rho_H": 0.147,
+   "rho_A": -0.0608,
+   "season_sign_consistency": 1.0,
+   "season_sd": 0.0294,
+   "league_sign_consistency": 0.8,
+   "league_range": [
+    -0.018,
+    0.076
+   ]
+  },
+  "h_ta10": {
+   "rho_T": 0.0569,
+   "rho_H": -0.0468,
+   "rho_A": 0.138,
+   "season_sign_consistency": 0.786,
+   "season_sd": 0.0529,
+   "league_sign_consistency": 0.7,
+   "league_range": [
+    -0.029,
+    0.079
+   ]
+  },
+  "a_tf10": {
+   "rho_T": 0.0353,
+   "rho_H": -0.0835,
+   "rho_A": 0.1376,
+   "season_sign_consistency": 0.571,
+   "season_sd": 0.0467,
+   "league_sign_consistency": 0.6,
+   "league_range": [
+    -0.057,
+    0.058
+   ]
+  },
+  "a_ta10": {
+   "rho_T": 0.0899,
+   "rho_H": 0.1515,
+   "rho_A": -0.0444,
+   "season_sign_consistency": 1.0,
+   "season_sd": 0.0378,
+   "league_sign_consistency": 0.9,
+   "league_range": [
+    -0.02,
+    0.114
+   ]
+  },
+  "h_gf10": {
+   "rho_T": 0.0378,
+   "rho_H": 0.1127,
+   "rho_A": -0.0849,
+   "season_sign_consistency": 0.929,
+   "season_sd": 0.025,
+   "league_sign_consistency": 0.9,
+   "league_range": [
+    -0.003,
+    0.085
+   ]
+  },
+  "h_ga10": {
+   "rho_T": 0.0008,
+   "rho_H": -0.0869,
+   "rho_A": 0.1061,
+   "season_sign_consistency": 0.571,
+   "season_sd": 0.0224,
+   "league_sign_consistency": 0.5,
+   "league_range": [
+    -0.03,
+    0.03
+   ]
+  },
+  "a_gf10": {
+   "rho_T": -0.0039,
+   "rho_H": -0.1161,
+   "rho_A": 0.1176,
+   "season_sign_consistency": 0.5,
+   "season_sd": 0.0256,
+   "league_sign_consistency": 0.6,
+   "league_range": [
+    -0.066,
+    0.019
+   ]
+  },
+  "a_ga10": {
+   "rho_T": 0.032,
+   "rho_H": 0.1165,
+   "rho_A": -0.083,
+   "season_sign_consistency": 0.929,
+   "season_sd": 0.0191,
+   "league_sign_consistency": 0.8,
+   "league_range": [
+    -0.046,
+    0.05
+   ]
+  },
+  "elo_diff": {
+   "rho_T": 0.0488,
+   "rho_H": 0.2418,
+   "rho_A": -0.2091,
+   "season_sign_consistency": 1.0,
+   "season_sd": 0.0221,
+   "league_sign_consistency": 0.9,
+   "league_range": [
+    -0.026,
+    0.07
+   ]
+  },
+  "elo_level": {
+   "rho_T": -0.0293,
+   "rho_H": -0.0105,
+   "rho_A": -0.0364,
+   "season_sign_consistency": 0.929,
+   "season_sd": 0.0266,
+   "league_sign_consistency": 0.5,
+   "league_range": [
+    -0.039,
+    0.054
+   ]
+  },
+  "h_rest": {
+   "rho_T": -0.0151,
+   "rho_H": -0.0153,
+   "rho_A": -0.0037,
+   "season_sign_consistency": 0.857,
+   "season_sd": 0.0265,
+   "league_sign_consistency": 0.2,
+   "league_range": [
+    -0.023,
+    0.059
+   ]
+  },
+  "a_rest": {
+   "rho_T": -0.0136,
+   "rho_H": -0.0121,
+   "rho_A": -0.0052,
+   "season_sign_consistency": 0.714,
+   "season_sd": 0.0216,
+   "league_sign_consistency": 0.3,
+   "league_range": [
+    -0.013,
+    0.05
+   ]
+  },
+  "stage": {
+   "rho_T": -0.0078,
+   "rho_H": -0.0012,
+   "rho_A": -0.0084,
+   "season_sign_consistency": 0.5,
+   "season_sd": 0.0233,
+   "league_sign_consistency": 0.4,
+   "league_range": [
+    -0.04,
+    0.063
+   ]
+  },
+  "lm_T": {
+   "rho_T": 0.1466,
+   "rho_H": 0.0936,
+   "rho_A": 0.0951,
+   "season_sign_consistency": 1.0,
+   "season_sd": 0.0414,
+   "league_sign_consistency": 0.7,
+   "league_range": [
+    -0.142,
+    0.133
+   ]
+  }
+ },
+ "redundant_pairs_|rho|>=0.8": [
+  [
+   "a_ca20",
+   "a_aca10",
+   0.845
+  ],
+  [
+   "h_cf20",
+   "h_hcf10",
+   0.839
+  ],
+  [
+   "a_cf10",
+   "a_cf20",
+   0.827
+  ],
+  [
+   "h_ca10",
+   "h_ca20",
+   0.825
+  ],
+  [
+   "h_cf10",
+   "h_cf20",
+   0.824
+  ],
+  [
+   "a_ca10",
+   "a_ca20",
+   0.823
+  ],
+  [
+   "h_rest",
+   "a_rest",
+   0.82
+  ]
+ ],
+ "home_away_corr_raw": -0.1988,
+ "home_away_corr_within_league_season": -0.212,
+ "total_var_over_mean_discovery": 1.2131
+}

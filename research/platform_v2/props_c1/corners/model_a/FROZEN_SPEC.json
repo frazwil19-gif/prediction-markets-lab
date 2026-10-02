@@ -1,0 +1,24 @@
+{
+ "selected_groups": [
+  "G3_corners20"
+ ],
+ "family": "MA4",
+ "primary_comparator": "B2",
+ "script": "scripts/corners_model_a.py",
+ "script_sha256": "851a95bfb13bef390e4fe28f6db756bfaf9032f10c09eada0ef23669a038f234",
+ "preregistration": "research/platform_v2/props_c1/corners/MODEL_A_PREREGISTRATION.md (44a6961)",
+ "development_summary": {
+  "delta_primary_mean": -0.003239,
+  "delta_by_fold": [
+   -0.00401,
+   -0.001949,
+   -0.000457,
+   -0.00493,
+   -0.00485
+  ],
+  "proceed_to_holdout": true,
+  "dev_calibration_slope_9.5": 0.8258,
+  "dev_calibration_slope_10.5": 0.8558
+ },
+ "note": "Frozen exactly as produced by the pre-registered develop procedure. No recalibration step (not pre-registered). Holdout = 2024-07-01 onward, opened once."
+}
