@@ -142,6 +142,7 @@ def book_stats(book: dict) -> dict:
         b, l = r["ex"]["availableToBack"][0]["price"], r["ex"]["availableToLay"][0]["price"]
         spreads.append(l / b - 1)
     return {"n_runners": len(runners), "n_two_sided": len(two), "all_two_sided": bool(runners) and len(two) == len(runners),
+            "runner_two_sided_share": (len(two) / len(runners)) if runners else None,   # per-runner (player markets: 1 runner per player)
             "median_spread": statistics.median(spreads) if spreads else None, "total_matched": book.get("totalMatched"),
             "status": book.get("status"), "inplay": book.get("inplay")}
 
@@ -271,6 +272,10 @@ def discover(client: Client, now: datetime, max_hours: float, n_events: int = DI
                                      "runner_counts": sorted(c["runner_counts"]), "example_runners": c["example_runners"],
                                      "hours_to_kickoff_range": [round(min(c["hours"]), 1), round(max(c["hours"]), 1)] if c["hours"] else None,
                                      "n_books_sampled": len(st), "two_sided_share": round(sum(two) / len(two), 3) if two else None,
+                                     "runner_two_sided_share": round(statistics.mean(s["runner_two_sided_share"] for s in st if s["runner_two_sided_share"] is not None), 3)
+                                     if any(s["runner_two_sided_share"] is not None for s in st) else None,
+                                     "median_total_matched": statistics.median([s["total_matched"] for s in st if s["total_matched"] is not None])
+                                     if any(s["total_matched"] is not None for s in st) else None,
                                      "median_spread": round(statistics.median([s["median_spread"] for s in st if s["median_spread"] is not None]), 4)
                                      if any(s["median_spread"] is not None for s in st) else None}
     out["families_found"] = sorted({v["family"] for v in out["market_types"].values()} - {"other"})
@@ -321,7 +326,8 @@ def main() -> int:
         print("families found:", sch["families_found"] or "none")
         for code, v in sch["market_types"].items():
             if v["family"] != "other":
-                print(f"  {code:28s} {v['family']:16s} events={v['n_events']} names={v['market_names'][:3]} two-sided={v['two_sided_share']}")
+                print(f"  {code:28s} {v['family']:16s} events={v['n_events']} names={v['market_names'][:3]} "
+                      f"markets-fully-two-sided={v['two_sided_share']} runners-two-sided={v['runner_two_sided_share']} median-matched={v['median_total_matched']}")
         print(f"api calls: {sch['api_calls']}; written to {OUT / 'SCHEMA_DISCOVERY.json'}")
         return 0
     write_outputs(cov, raw, now)

@@ -1,0 +1,2232 @@
+{
+ "generated_at": "2026-10-02T15:22:54.897482+00:00",
+ "mode": "SCHEMA_DISCOVERY (any competition; NOT coverage evidence for project leagues)",
+ "max_hours_to_kickoff": 36.0,
+ "n_events_sampled": 25,
+ "events": [
+  {
+   "name": "Spain v Czechia",
+   "openDate": "2026-10-03T18:45:00.000Z",
+   "marketCount": 59
+  },
+  {
+   "name": "France v Italy",
+   "openDate": "2026-10-02T18:45:00.000Z",
+   "marketCount": 59
+  },
+  {
+   "name": "Croatia v England",
+   "openDate": "2026-10-03T16:00:00.000Z",
+   "marketCount": 59
+  },
+  {
+   "name": "Ukraine v Northern Ireland",
+   "openDate": "2026-10-02T18:45:00.000Z",
+   "marketCount": 58
+  },
+  {
+   "name": "North Macedonia v Scotland",
+   "openDate": "2026-10-03T18:45:00.000Z",
+   "marketCount": 55
+  },
+  {
+   "name": "Belgium v T\u00fcrkiye",
+   "openDate": "2026-10-02T18:45:00.000Z",
+   "marketCount": 55
+  },
+  {
+   "name": "Hungary v Georgia",
+   "openDate": "2026-10-02T18:45:00.000Z",
+   "marketCount": 54
+  },
+  {
+   "name": "Bosnia v Sweden",
+   "openDate": "2026-10-02T18:45:00.000Z",
+   "marketCount": 54
+  },
+  {
+   "name": "Switzerland v Slovenia",
+   "openDate": "2026-10-03T18:45:00.000Z",
+   "marketCount": 54
+  },
+  {
+   "name": "Poland v Romania",
+   "openDate": "2026-10-02T18:45:00.000Z",
+   "marketCount": 54
+  },
+  {
+   "name": "Chesterfield v Tranmere",
+   "openDate": "2026-10-03T11:30:00.000Z",
+   "marketCount": 44
+  },
+  {
+   "name": "Latvia v Montenegro",
+   "openDate": "2026-10-02T16:00:00.000Z",
+   "marketCount": 41
+  },
+  {
+   "name": "Pro Vercelli v Carpi",
+   "openDate": "2026-10-03T18:30:00.000Z",
+   "marketCount": 33
+  },
+  {
+   "name": "Sao Paulo v Santos",
+   "openDate": "2026-10-02T23:00:00.000Z",
+   "marketCount": 33
+  },
+  {
+   "name": "FK Pribram B v Aritma Praha",
+   "openDate": "2026-10-03T13:00:00.000Z",
+   "marketCount": 33
+  },
+  {
+   "name": "Hodd v Odds BK",
+   "openDate": "2026-10-03T14:00:00.000Z",
+   "marketCount": 33
+  },
+  {
+   "name": "Albacete v Eibar",
+   "openDate": "2026-10-03T12:00:00.000Z",
+   "marketCount": 33
+  },
+  {
+   "name": "Deportivo Maldonado v Central Espanol",
+   "openDate": "2026-10-03T21:00:00.000Z",
+   "marketCount": 33
+  },
+  {
+   "name": "Albion FC v Defensor Sporting",
+   "openDate": "2026-10-03T18:00:00.000Z",
+   "marketCount": 33
+  },
+  {
+   "name": "Bray Wanderers v Cobh Ramblers",
+   "openDate": "2026-10-02T18:45:00.000Z",
+   "marketCount": 33
+  },
+  {
+   "name": "England U20 v Germany U20",
+   "openDate": "2026-10-03T15:30:00.000Z",
+   "marketCount": 33
+  },
+  {
+   "name": "Finn Harps v Kerry FC",
+   "openDate": "2026-10-02T18:45:00.000Z",
+   "marketCount": 33
+  },
+  {
+   "name": "Sabadell v FC Andorra",
+   "openDate": "2026-10-03T16:30:00.000Z",
+   "marketCount": 33
+  },
+  {
+   "name": "Bonaire v Grenada",
+   "openDate": "2026-10-03T00:00:00.000Z",
+   "marketCount": 33
+  },
+  {
+   "name": "Veraguas FC v Tauro FC",
+   "openDate": "2026-10-03T23:15:00.000Z",
+   "marketCount": 33
+  }
+ ],
+ "market_types": {
+  "BOOKING_ODDS": {
+   "family": "bookings_cards",
+   "n_events": 12,
+   "n_markets": 12,
+   "competitions": [
+    "English Sky Bet League 2",
+    "UEFA Nations League A",
+    "UEFA Nations League B",
+    "UEFA Nations League C"
+   ],
+   "market_names": [
+    "Cards Bookings Points"
+   ],
+   "runner_counts": [
+    3
+   ],
+   "example_runners": [
+    "25pts and Under",
+    "30 - 40pts",
+    "45pts and Over"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    27.4
+   ],
+   "n_books_sampled": 5,
+   "two_sided_share": 0.6,
+   "median_spread": 1.4057
+  },
+  "CORNER_ODDS": {
+   "family": "corners",
+   "n_events": 12,
+   "n_markets": 12,
+   "competitions": [
+    "English Sky Bet League 2",
+    "UEFA Nations League A",
+    "UEFA Nations League B",
+    "UEFA Nations League C"
+   ],
+   "market_names": [
+    "Corners Number"
+   ],
+   "runner_counts": [
+    3
+   ],
+   "example_runners": [
+    "9 or less",
+    "10 - 12",
+    "13 or more"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    27.4
+   ],
+   "n_books_sampled": 5,
+   "two_sided_share": 1.0,
+   "median_spread": 0.2286
+  },
+  "FIRST_GOAL_SCORER": {
+   "family": "player_to_score",
+   "n_events": 12,
+   "n_markets": 12,
+   "competitions": [
+    "English Sky Bet League 2",
+    "UEFA Nations League A",
+    "UEFA Nations League B",
+    "UEFA Nations League C"
+   ],
+   "market_names": [
+    "Player First Goalscorer"
+   ],
+   "runner_counts": [
+    43,
+    44,
+    46,
+    48,
+    49,
+    50,
+    51
+   ],
+   "example_runners": [
+    "Roberto Fernandez",
+    "Mikel Oyarzabal",
+    "Ferran Torres",
+    "Lamine Yamal",
+    "Nico Williams",
+    "Dani Olmo",
+    "Mikel Merino",
+    "Victor Munoz"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    27.4
+   ],
+   "n_books_sampled": 5,
+   "two_sided_share": 0.0,
+   "median_spread": 16.3267
+  },
+  "MATCH_ODDS": {
+   "family": "match_odds",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Match Odds"
+   ],
+   "runner_counts": [
+    3
+   ],
+   "example_runners": [
+    "Spain",
+    "Czechia",
+    "The Draw"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "OVER_UNDER_105_CORNR": {
+   "family": "corners",
+   "n_events": 12,
+   "n_markets": 12,
+   "competitions": [
+    "English Sky Bet League 2",
+    "UEFA Nations League A",
+    "UEFA Nations League B",
+    "UEFA Nations League C"
+   ],
+   "market_names": [
+    "Corners Over/Under 10.5"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 10.5 Corners",
+    "Over 10.5 Corners"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    27.4
+   ],
+   "n_books_sampled": 5,
+   "two_sided_share": 1.0,
+   "median_spread": 0.2022
+  },
+  "OVER_UNDER_25_CARDS": {
+   "family": "bookings_cards",
+   "n_events": 10,
+   "n_markets": 10,
+   "competitions": [
+    "UEFA Nations League A",
+    "UEFA Nations League B"
+   ],
+   "market_names": [
+    "Cards Over/Under 2.5"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 2.5 Cards",
+    "Over 2.5 Cards"
+   ],
+   "hours_to_kickoff_range": [
+    3.4,
+    27.4
+   ],
+   "n_books_sampled": 5,
+   "two_sided_share": 0.4,
+   "median_spread": 0.4949
+  },
+  "OVER_UNDER_35_CARDS": {
+   "family": "bookings_cards",
+   "n_events": 10,
+   "n_markets": 10,
+   "competitions": [
+    "UEFA Nations League A",
+    "UEFA Nations League B"
+   ],
+   "market_names": [
+    "Cards Over/Under 3.5"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 3.5 Cards",
+    "Over 3.5 Cards"
+   ],
+   "hours_to_kickoff_range": [
+    3.4,
+    27.4
+   ],
+   "n_books_sampled": 5,
+   "two_sided_share": 0.4,
+   "median_spread": 161.293
+  },
+  "OVER_UNDER_85_CORNR": {
+   "family": "corners",
+   "n_events": 12,
+   "n_markets": 12,
+   "competitions": [
+    "English Sky Bet League 2",
+    "UEFA Nations League A",
+    "UEFA Nations League B",
+    "UEFA Nations League C"
+   ],
+   "market_names": [
+    "Corners Over/Under 8.5"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 8.5 Corners",
+    "Over 8.5 Corners"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    27.4
+   ],
+   "n_books_sampled": 5,
+   "two_sided_share": 1.0,
+   "median_spread": 0.1519
+  },
+  "SENDING_OFF": {
+   "family": "bookings_cards",
+   "n_events": 12,
+   "n_markets": 12,
+   "competitions": [
+    "English Sky Bet League 2",
+    "UEFA Nations League A",
+    "UEFA Nations League B",
+    "UEFA Nations League C"
+   ],
+   "market_names": [
+    "Cards Sending Off?"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Yes",
+    "No"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    27.4
+   ],
+   "n_books_sampled": 5,
+   "two_sided_share": 0.4,
+   "median_spread": 0.2673
+  },
+  "SHOTS_ON_TARGET_P1": {
+   "family": "player_sot",
+   "n_events": 10,
+   "n_markets": 10,
+   "competitions": [
+    "UEFA Nations League A",
+    "UEFA Nations League B"
+   ],
+   "market_names": [
+    "Player Shots on Target 1 or More"
+   ],
+   "runner_counts": [
+    43,
+    45,
+    47,
+    48,
+    49,
+    50
+   ],
+   "example_runners": [
+    "Roberto Fernandez",
+    "Mikel Oyarzabal",
+    "Ferran Torres",
+    "Lamine Yamal",
+    "Nico Williams",
+    "Dani Olmo",
+    "Mikel Merino",
+    "Victor Munoz"
+   ],
+   "hours_to_kickoff_range": [
+    3.4,
+    27.4
+   ],
+   "n_books_sampled": 5,
+   "two_sided_share": 0.0,
+   "median_spread": 0.8797
+  },
+  "SHOTS_ON_TARGET_P2": {
+   "family": "player_sot",
+   "n_events": 4,
+   "n_markets": 4,
+   "competitions": [
+    "UEFA Nations League A",
+    "UEFA Nations League B"
+   ],
+   "market_names": [
+    "Player Shots on Target 2 or More"
+   ],
+   "runner_counts": [
+    45,
+    48,
+    50
+   ],
+   "example_runners": [
+    "Roberto Fernandez",
+    "Mikel Oyarzabal",
+    "Ferran Torres",
+    "Lamine Yamal",
+    "Nico Williams",
+    "Dani Olmo",
+    "Mikel Merino",
+    "Victor Munoz"
+   ],
+   "hours_to_kickoff_range": [
+    3.4,
+    27.4
+   ],
+   "n_books_sampled": 4,
+   "two_sided_share": 0.0,
+   "median_spread": 2.1906
+  },
+  "SHOWN_A_CARD": {
+   "family": "player_card",
+   "n_events": 5,
+   "n_markets": 5,
+   "competitions": [
+    "English Sky Bet League 2",
+    "UEFA Nations League A",
+    "UEFA Nations League B"
+   ],
+   "market_names": [
+    "Player Shown a Card"
+   ],
+   "runner_counts": [
+    42,
+    45,
+    48,
+    50
+   ],
+   "example_runners": [
+    "Ondrej Lingr",
+    "Mikel Merino",
+    "Lamine Yamal",
+    "Dani Olmo",
+    "Roman Macek",
+    "Rodri",
+    "Fermin Lopez",
+    "Lukas Cerv"
+   ],
+   "hours_to_kickoff_range": [
+    3.4,
+    27.4
+   ],
+   "n_books_sampled": 5,
+   "two_sided_share": 0.0,
+   "median_spread": null
+  },
+  "TO_SCORE": {
+   "family": "player_to_score",
+   "n_events": 12,
+   "n_markets": 12,
+   "competitions": [
+    "English Sky Bet League 2",
+    "UEFA Nations League A",
+    "UEFA Nations League B",
+    "UEFA Nations League C"
+   ],
+   "market_names": [
+    "Player To Score"
+   ],
+   "runner_counts": [
+    42,
+    43,
+    45,
+    47,
+    48,
+    49,
+    50
+   ],
+   "example_runners": [
+    "Roberto Fernandez",
+    "Mikel Oyarzabal",
+    "Ferran Torres",
+    "Lamine Yamal",
+    "Nico Williams",
+    "Dani Olmo",
+    "Mikel Merino",
+    "Victor Munoz"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    27.4
+   ],
+   "n_books_sampled": 5,
+   "two_sided_share": 0.0,
+   "median_spread": 0.6885
+  },
+  "TO_SCORE_2_OR_MORE": {
+   "family": "player_to_score",
+   "n_events": 5,
+   "n_markets": 5,
+   "competitions": [
+    "English Sky Bet League 2",
+    "UEFA Nations League A",
+    "UEFA Nations League B"
+   ],
+   "market_names": [
+    "Player To Score 2 Goals or More"
+   ],
+   "runner_counts": [
+    10,
+    11,
+    12
+   ],
+   "example_runners": [
+    "Roberto Fernandez",
+    "Mikel Oyarzabal",
+    "Ferran Torres",
+    "Lamine Yamal",
+    "Nico Williams",
+    "Dani Olmo",
+    "Alex Baena",
+    "Daniel Vasulin"
+   ],
+   "hours_to_kickoff_range": [
+    3.4,
+    27.4
+   ],
+   "n_books_sampled": 5,
+   "two_sided_share": 0.0,
+   "median_spread": 0.967
+  },
+  "TO_SCORE_HATTRICK": {
+   "family": "player_to_score",
+   "n_events": 5,
+   "n_markets": 5,
+   "competitions": [
+    "English Sky Bet League 2",
+    "UEFA Nations League A",
+    "UEFA Nations League B"
+   ],
+   "market_names": [
+    "Player To Score a Hat-trick?"
+   ],
+   "runner_counts": [
+    10,
+    12
+   ],
+   "example_runners": [
+    "Roberto Fernandez",
+    "Mikel Oyarzabal",
+    "Ferran Torres",
+    "Lamine Yamal",
+    "Nico Williams",
+    "Dani Olmo",
+    "Alex Baena",
+    "Daniel Vasulin"
+   ],
+   "hours_to_kickoff_range": [
+    3.4,
+    27.4
+   ],
+   "n_books_sampled": 5,
+   "two_sided_share": 0.0,
+   "median_spread": 1.6961
+  },
+  "ALT_TOTAL_GOALS": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Goal Lines"
+   ],
+   "runner_counts": [
+    66
+   ],
+   "example_runners": [
+    "Under",
+    "Over",
+    "Under",
+    "Over",
+    "Under",
+    "Over",
+    "Under",
+    "Over"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "ASIAN_HANDICAP": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Asian Handicap"
+   ],
+   "runner_counts": [
+    66
+   ],
+   "example_runners": [
+    "Spain",
+    "Czechia",
+    "Spain",
+    "Czechia",
+    "Spain",
+    "Czechia",
+    "Spain",
+    "Czechia"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "BOTH_TEAMS_TO_SCORE": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Both teams to Score?"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Yes",
+    "No"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "CORRECT_SCORE": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Correct Score"
+   ],
+   "runner_counts": [
+    19
+   ],
+   "example_runners": [
+    "0 - 0",
+    "0 - 1",
+    "0 - 2",
+    "0 - 3",
+    "1 - 0",
+    "1 - 1",
+    "1 - 2",
+    "1 - 3"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "CORRECT_SCORE2": {
+   "family": "other",
+   "n_events": 10,
+   "n_markets": 20,
+   "competitions": [
+    "UEFA Nations League A",
+    "UEFA Nations League B"
+   ],
+   "market_names": [
+    "Correct Score 2 Away",
+    "Correct Score 2 Home"
+   ],
+   "runner_counts": [
+    13
+   ],
+   "example_runners": [
+    "4 - 0",
+    "4 - 1",
+    "4 - 2",
+    "5 - 0",
+    "5 - 1",
+    "5 - 2",
+    "6 - 0",
+    "6 - 1"
+   ],
+   "hours_to_kickoff_range": [
+    3.4,
+    27.4
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "DOUBLE_CHANCE": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Double Chance"
+   ],
+   "runner_counts": [
+    3
+   ],
+   "example_runners": [
+    "Home or Draw",
+    "Draw or Away",
+    "Home or Away"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "DRAW_NO_BET": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Draw no Bet"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Spain",
+    "Czechia"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "FIRST_HALF_GOALS_05": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "First Half Goals 0.5"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 0.5 Goals",
+    "Over 0.5 Goals"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "FIRST_HALF_GOALS_15": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "First Half Goals 1.5"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 1.5 Goals",
+    "Over 1.5 Goals"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "FIRST_HALF_GOALS_25": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "First Half Goals 2.5"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 2.5 Goals",
+    "Over 2.5 Goals"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "FIRST_HALF_GOALS_35": {
+   "family": "other",
+   "n_events": 12,
+   "n_markets": 12,
+   "competitions": [
+    "English Sky Bet League 2",
+    "UEFA Nations League A",
+    "UEFA Nations League B",
+    "UEFA Nations League C"
+   ],
+   "market_names": [
+    "First Half Goals 3.5"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 3.5 Goals",
+    "Over 3.5 Goals"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    27.4
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "HALF_TIME": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Half Time"
+   ],
+   "runner_counts": [
+    3
+   ],
+   "example_runners": [
+    "Spain",
+    "Czechia",
+    "The Draw"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "HALF_TIME_FULL_TIME": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Half Time/Full Time"
+   ],
+   "runner_counts": [
+    9
+   ],
+   "example_runners": [
+    "Spain/Spain",
+    "Spain/Draw",
+    "Spain/Czechia",
+    "Draw/Spain",
+    "Draw/Draw",
+    "Draw/Czechia",
+    "Czechia/Spain",
+    "Czechia/Draw"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "HALF_TIME_SCORE": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Half Time Score"
+   ],
+   "runner_counts": [
+    10
+   ],
+   "example_runners": [
+    "0 - 0",
+    "1 - 1",
+    "2 - 2",
+    "1 - 0",
+    "2 - 0",
+    "2 - 1",
+    "0 - 1",
+    "0 - 2"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "MATCH_ODDS_AND_BTTS": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Match Odds and Both teams to Score"
+   ],
+   "runner_counts": [
+    6
+   ],
+   "example_runners": [
+    "Spain/Yes",
+    "Czechia/Yes",
+    "Draw/Yes",
+    "Spain/No",
+    "Czechia/No",
+    "Draw/No"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "MATCH_ODDS_AND_OU_25": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Match Odds and Over/Under 2.5 Goals"
+   ],
+   "runner_counts": [
+    6
+   ],
+   "example_runners": [
+    "Spain/Under 2.5 Goals",
+    "Spain/Over 2.5 Goals",
+    "Czechia/Under 2.5 Goals",
+    "Czechia/Over 2.5 Goals",
+    "Draw/Under 2.5 Goals",
+    "Draw/Over 2.5 Goals"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "MATCH_ODDS_AND_OU_35": {
+   "family": "other",
+   "n_events": 10,
+   "n_markets": 10,
+   "competitions": [
+    "UEFA Nations League A",
+    "UEFA Nations League B"
+   ],
+   "market_names": [
+    "Match Odds and Over/Under 3.5 Goals"
+   ],
+   "runner_counts": [
+    6
+   ],
+   "example_runners": [
+    "Spain/Under 3.5 Goals",
+    "Spain/Over 3.5 Goals",
+    "Czechia/Under 3.5 Goals",
+    "Czechia/Over 3.5 Goals",
+    "Draw/Under 3.5 Goals",
+    "Draw/Over 3.5 Goals"
+   ],
+   "hours_to_kickoff_range": [
+    3.4,
+    27.4
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "MATCH_SPECIALS": {
+   "family": "other",
+   "n_events": 5,
+   "n_markets": 5,
+   "competitions": [
+    "UEFA Nations League A",
+    "UEFA Nations League B"
+   ],
+   "market_names": [
+    "Match Specials"
+   ],
+   "runner_counts": [
+    6
+   ],
+   "example_runners": [
+    "ESP to Score First",
+    "CZE to Score First",
+    "ESP to Score in First Half",
+    "CZE to Score in First Half",
+    "ESP to Score in Both Halves",
+    "CZE to Score in Both Halves"
+   ],
+   "hours_to_kickoff_range": [
+    3.4,
+    27.4
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "ODD_OR_EVEN": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Total Goals Odd/Even"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Odd",
+    "Even"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "OVER_UNDER_05": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Over/Under 0.5 Goals"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 0.5 Goals",
+    "Over 0.5 Goals"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "OVER_UNDER_15": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Over/Under 1.5 Goals"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 1.5 Goals",
+    "Over 1.5 Goals"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "OVER_UNDER_25": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Over/Under 2.5 Goals"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 2.5 Goals",
+    "Over 2.5 Goals"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "OVER_UNDER_35": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Over/Under 3.5 Goals"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 3.5 Goals",
+    "Over 3.5 Goals"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "OVER_UNDER_45": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Over/Under 4.5 Goals"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 4.5 Goals",
+    "Over 4.5 Goals"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "OVER_UNDER_55": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Over/Under 5.5 Goals"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 5.5 Goals",
+    "Over 5.5 Goals"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "OVER_UNDER_65": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Over/Under 6.5 Goals"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 6.5 Goals",
+    "Over 6.5 Goals"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "OVER_UNDER_75": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Over/Under 7.5 Goals"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 7.5 Goals",
+    "Over 7.5 Goals"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "OVER_UNDER_85": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Over/Under 8.5 Goals"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 8.5 Goals",
+    "Over 8.5 Goals"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "PENALTY_TAKEN": {
+   "family": "other",
+   "n_events": 10,
+   "n_markets": 10,
+   "competitions": [
+    "UEFA Nations League A",
+    "UEFA Nations League B"
+   ],
+   "market_names": [
+    "Penalty Taken?"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Yes",
+    "No"
+   ],
+   "hours_to_kickoff_range": [
+    3.4,
+    27.4
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "TEAM_A_1": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Albacete +1",
+    "Albion FC +1",
+    "Belgium +1",
+    "Bonaire +1",
+    "Bosnia +1",
+    "Bray Wanderers +1",
+    "Chesterfield +1",
+    "Croatia +1",
+    "Deportivo Maldonado +1",
+    "England U20 +1",
+    "FK Pribram B +1",
+    "Finn Harps +1",
+    "France +1",
+    "Hodd +1",
+    "Hungary +1"
+   ],
+   "runner_counts": [
+    3
+   ],
+   "example_runners": [
+    "Spain +1",
+    "Czechia -1",
+    "Draw"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "TEAM_A_2": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Albacete +2",
+    "Albion FC +2",
+    "Belgium +2",
+    "Bonaire +2",
+    "Bosnia +2",
+    "Bray Wanderers +2",
+    "Chesterfield +2",
+    "Croatia +2",
+    "Deportivo Maldonado +2",
+    "England U20 +2",
+    "FK Pribram B +2",
+    "Finn Harps +2",
+    "France +2",
+    "Hodd +2",
+    "Hungary +2"
+   ],
+   "runner_counts": [
+    3
+   ],
+   "example_runners": [
+    "Spain +2",
+    "Czechia -2",
+    "Draw"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "TEAM_A_3": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Albacete +3",
+    "Albion FC +3",
+    "Belgium +3",
+    "Bonaire +3",
+    "Bosnia +3",
+    "Bray Wanderers +3",
+    "Chesterfield +3",
+    "Croatia +3",
+    "Deportivo Maldonado +3",
+    "England U20 +3",
+    "FK Pribram B +3",
+    "Finn Harps +3",
+    "France +3",
+    "Hodd +3",
+    "Hungary +3"
+   ],
+   "runner_counts": [
+    3
+   ],
+   "example_runners": [
+    "Spain +3",
+    "Czechia -3",
+    "Draw"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "TEAM_A_OVER_UNDER_05": {
+   "family": "other",
+   "n_events": 10,
+   "n_markets": 10,
+   "competitions": [
+    "UEFA Nations League A",
+    "UEFA Nations League B"
+   ],
+   "market_names": [
+    "Belgium Over/Under 0.5 Goals",
+    "Bosnia Over/Under 0.5 Goals",
+    "Croatia Over/Under 0.5 Goals",
+    "France Over/Under 0.5 Goals",
+    "Hungary Over/Under 0.5 Goals",
+    "North Macedonia Over/Under 0.5 Goals",
+    "Poland Over/Under 0.5 Goals",
+    "Spain Over/Under 0.5 Goals",
+    "Switzerland Over/Under 0.5 Goals",
+    "Ukraine Over/Under 0.5 Goals"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 0.5 Goals",
+    "Over 0.5 Goals"
+   ],
+   "hours_to_kickoff_range": [
+    3.4,
+    27.4
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "TEAM_A_OVER_UNDER_15": {
+   "family": "other",
+   "n_events": 10,
+   "n_markets": 10,
+   "competitions": [
+    "UEFA Nations League A",
+    "UEFA Nations League B"
+   ],
+   "market_names": [
+    "Belgium Over/Under 1.5 Goals",
+    "Bosnia Over/Under 1.5 Goals",
+    "Croatia Over/Under 1.5 Goals",
+    "France Over/Under 1.5 Goals",
+    "Hungary Over/Under 1.5 Goals",
+    "North Macedonia Over/Under 1.5 Goals",
+    "Poland Over/Under 1.5 Goals",
+    "Spain Over/Under 1.5 Goals",
+    "Switzerland Over/Under 1.5 Goals",
+    "Ukraine Over/Under 1.5 Goals"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 1.5 Goals",
+    "Over 1.5 Goals"
+   ],
+   "hours_to_kickoff_range": [
+    3.4,
+    27.4
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "TEAM_A_OVER_UNDER_25": {
+   "family": "other",
+   "n_events": 10,
+   "n_markets": 10,
+   "competitions": [
+    "UEFA Nations League A",
+    "UEFA Nations League B"
+   ],
+   "market_names": [
+    "Belgium Over/Under 2.5 Goals",
+    "Bosnia Over/Under 2.5 Goals",
+    "Croatia Over/Under 2.5 Goals",
+    "France Over/Under 2.5 Goals",
+    "Hungary Over/Under 2.5 Goals",
+    "North Macedonia Over/Under 2.5 Goals",
+    "Poland Over/Under 2.5 Goals",
+    "Spain Over/Under 2.5 Goals",
+    "Switzerland Over/Under 2.5 Goals",
+    "Ukraine Over/Under 2.5 Goals"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 2.5 Goals",
+    "Over 2.5 Goals"
+   ],
+   "hours_to_kickoff_range": [
+    3.4,
+    27.4
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "TEAM_A_WIN_TO_NIL": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Albacete Win to Nil",
+    "Albion FC Win to Nil",
+    "Belgium Win to Nil",
+    "Bonaire Win to Nil",
+    "Bosnia Win to Nil",
+    "Bray Wanderers Win to Nil",
+    "Chesterfield Win to Nil",
+    "Croatia Win to Nil",
+    "Deportivo Maldonado Win to Nil",
+    "England U20 Win to Nil",
+    "FK Pribram B Win to Nil",
+    "Finn Harps Win to Nil",
+    "France win to nil",
+    "Hodd Win to Nil",
+    "Hungary Win to Nil"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Yes",
+    "No"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "TEAM_B_1": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Aritma Praha +1",
+    "Carpi +1",
+    "Central Espanol +1",
+    "Cobh Ramblers +1",
+    "Czechia +1",
+    "Defensor Sporting +1",
+    "Eibar +1",
+    "England +1",
+    "FC Andorra +1",
+    "Georgia +1",
+    "Germany U20 +1",
+    "Grenada +1",
+    "Italy +1",
+    "Kerry FC +1",
+    "Montenegro +1"
+   ],
+   "runner_counts": [
+    3
+   ],
+   "example_runners": [
+    "Czechia +1",
+    "Spain -1",
+    "Draw"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "TEAM_B_2": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Aritma Praha +2",
+    "Carpi +2",
+    "Central Espanol +2",
+    "Cobh Ramblers +2",
+    "Czechia +2",
+    "Defensor Sporting +2",
+    "Eibar +2",
+    "England +2",
+    "FC Andorra +2",
+    "Georgia +2",
+    "Germany U20 +2",
+    "Grenada +2",
+    "Italy +2",
+    "Kerry FC +2",
+    "Montenegro +2"
+   ],
+   "runner_counts": [
+    3
+   ],
+   "example_runners": [
+    "Czechia +2",
+    "Spain -2",
+    "Draw"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "TEAM_B_3": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Aritma Praha +3",
+    "Carpi +3",
+    "Central Espanol +3",
+    "Cobh Ramblers +3",
+    "Czechia +3",
+    "Defensor Sporting +3",
+    "Eibar +3",
+    "England +3",
+    "FC Andorra +3",
+    "Georgia +3",
+    "Germany U20 +3",
+    "Grenada +3",
+    "Italy +3",
+    "Kerry FC +3",
+    "Montenegro +3"
+   ],
+   "runner_counts": [
+    3
+   ],
+   "example_runners": [
+    "Czechia +3",
+    "Spain -3",
+    "Draw"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "TEAM_B_OVER_UNDER_05": {
+   "family": "other",
+   "n_events": 10,
+   "n_markets": 10,
+   "competitions": [
+    "UEFA Nations League A",
+    "UEFA Nations League B"
+   ],
+   "market_names": [
+    "Czechia Over/Under 0.5 Goals",
+    "England Over/Under 0.5 Goals",
+    "Georgia Over/Under 0.5 Goals",
+    "Italy Over/Under 0.5 Goals",
+    "Northern Ireland Over/Under 0.5 Goals",
+    "Romania Over/Under 0.5 Goals",
+    "Scotland Over/Under 0.5 Goals",
+    "Slovenia Over/Under 0.5 Goals",
+    "Sweden Over/Under 0.5 Goals",
+    "T\u00fcrkiye Over/Under 0.5 Goals"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 0.5 Goals",
+    "Over 0.5 Goals"
+   ],
+   "hours_to_kickoff_range": [
+    3.4,
+    27.4
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "TEAM_B_OVER_UNDER_15": {
+   "family": "other",
+   "n_events": 10,
+   "n_markets": 10,
+   "competitions": [
+    "UEFA Nations League A",
+    "UEFA Nations League B"
+   ],
+   "market_names": [
+    "Czechia Over/Under 1.5 Goals",
+    "England Over/Under 1.5 Goals",
+    "Georgia Over/Under 1.5 Goals",
+    "Italy Over/Under 1.5 Goals",
+    "Northern Ireland Over/Under 1.5 Goals",
+    "Romania Over/Under 1.5 Goals",
+    "Scotland Over/Under 1.5 Goals",
+    "Slovenia Over/Under 1.5 Goals",
+    "Sweden Over/Under 1.5 Goals",
+    "T\u00fcrkiye Over/Under 1.5 Goals"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 1.5 Goals",
+    "Over 1.5 Goals"
+   ],
+   "hours_to_kickoff_range": [
+    3.4,
+    27.4
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "TEAM_B_OVER_UNDER_25": {
+   "family": "other",
+   "n_events": 10,
+   "n_markets": 10,
+   "competitions": [
+    "UEFA Nations League A",
+    "UEFA Nations League B"
+   ],
+   "market_names": [
+    "Czechia Over/Under 2.5 Goals",
+    "England Over/Under 2.5 Goals",
+    "Georgia Over/Under 2.5 Goals",
+    "Italy Over/Under 2.5 Goals",
+    "Northern Ireland Over/Under 2.5 Goals",
+    "Romania Over/Under 2.5 Goals",
+    "Scotland Over/Under 2.5 Goals",
+    "Slovenia Over/Under 2.5 Goals",
+    "Sweden Over/Under 2.5 Goals",
+    "T\u00fcrkiye Over/Under 2.5 Goals"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Under 2.5 Goals",
+    "Over 2.5 Goals"
+   ],
+   "hours_to_kickoff_range": [
+    3.4,
+    27.4
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  },
+  "TEAM_B_WIN_TO_NIL": {
+   "family": "other",
+   "n_events": 25,
+   "n_markets": 25,
+   "competitions": [
+    "Brazilian Serie A",
+    "CONCACAF Nations League B",
+    "Czech 3 Liga",
+    "English Sky Bet League 2",
+    "Friendlies International U20",
+    "Irish Division 1",
+    "Italian Serie C",
+    "Norwegian 1st Division",
+    "Panamanian Premier League",
+    "Spanish Segunda Division"
+   ],
+   "market_names": [
+    "Aritma Praha Win to Nil",
+    "Carpi Win to Nil",
+    "Central Espanol Win to Nil",
+    "Cobh Ramblers Win to Nil",
+    "Czechia Win to Nil",
+    "Defensor Sporting Win to Nil",
+    "Eibar Win to Nil",
+    "England Win To Nil",
+    "FC Andorra Win to Nil",
+    "Georgia Win to Nil",
+    "Germany U20 Win to Nil",
+    "Grenada Win to Nil",
+    "Italy Win to Nil",
+    "Kerry FC Win to Nil",
+    "Montenegro Win to Nil"
+   ],
+   "runner_counts": [
+    2
+   ],
+   "example_runners": [
+    "Yes",
+    "No"
+   ],
+   "hours_to_kickoff_range": [
+    0.6,
+    31.9
+   ],
+   "n_books_sampled": 0,
+   "two_sided_share": null,
+   "median_spread": null
+  }
+ },
+ "families_found": [
+  "bookings_cards",
+  "corners",
+  "match_odds",
+  "player_card",
+  "player_sot",
+  "player_to_score"
+ ],
+ "api_calls": 28
+}
