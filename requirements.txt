@@ -4,6 +4,7 @@ numpy>=1.24
 pydantic>=2.0
 PyYAML>=6.0
 pyarrow>=17.0
+scipy>=1.11            # research models (corners Model A, research_shadow collectors); imported by unit tests
 
 # Dev / test dependencies
 pytest>=7.4
