@@ -1,7 +1,7 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-02T13:00:25.996798+00:00",
+ "generated_at": "2026-10-02T13:41:33.070142+00:00",
  "date": "2026-10-02",
  "summary": {
   "upcoming_events": 34,
@@ -30,30 +30,30 @@
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-02T13:00:25.996798+00:00",
+  "generated_at": "2026-10-02T13:41:33.070142+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
    "daily_scan": {
-    "last": "2026-10-01T14:19:25.497332+00:00",
+    "last": "2026-10-02T13:41:32.406797+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 22.7
+    "age_hours": 0.0
    },
    "settlement": {
     "last": "2026-10-02T00:39:55.634198+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 12.3
+    "age_hours": 13.0
    },
    "tennis_board": {
     "last": "2026-10-02T13:00:24.074015+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 0.0
+    "age_hours": 0.7
    },
    "ci_tests": {
-    "last": "2026-10-02T13:00:25.743799+00:00",
+    "last": "2026-10-02T13:41:33.052671+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -155,9 +155,7 @@
   }
  },
  "skipped_last_run": {
-  "football": {
-   "football: OUTSIDE_48H_WINDOW": 38
-  },
+  "football": {},
   "tennis": {}
  },
  "start_time_resolution": {
