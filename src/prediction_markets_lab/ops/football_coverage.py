@@ -89,19 +89,22 @@ def by_name(leagues: list[League]) -> dict[str, League]:
     return {lg.name: lg for lg in leagues}
 
 
-def tier_floors(budget: dict, leagues: list[League], now: datetime) -> dict[str, float]:
-    """sport_key -> minimum remaining credits required to pay for odds this run (Tier 1: the hard floor)."""
+def tier_floor(budget: dict, tier: int, now: datetime) -> float:
+    """Minimum remaining credits for a Tier-2/3 (or tier-2-protected) consumer to pay this run."""
     t = budget["football_shadow_tiers"]
     need = t["protected_daily_need"]
     cons = budget["consumers"]
+    if tier == TIER_PAPER_CORE:
+        return float(cons["football_daily_scan"]["hard_floor_remaining"])
     base = max([float(budget["global_reserve_remaining"])]
                + [float(c["min_remaining"]) for c in cons.values() if "min_remaining" in c])
     days_left = calendar.monthrange(now.year, now.month)[1] - now.day + 1
-    protect = {TIER_SHADOW: sum(float(need[k]) for k in t["protects"]["2"]),
-               TIER_CONDITIONAL: sum(float(need[k]) for k in t["protects"]["3"])}
-    hard = float(cons["football_daily_scan"]["hard_floor_remaining"])
-    return {lg.sport_key: hard if lg.tier == TIER_PAPER_CORE else round(base + days_left * protect[lg.tier], 1)
-            for lg in observed(leagues)}
+    return round(base + days_left * sum(float(need[k]) for k in t["protects"][str(tier)]), 1)
+
+
+def tier_floors(budget: dict, leagues: list[League], now: datetime) -> dict[str, float]:
+    """sport_key -> minimum remaining credits required to pay for odds this run (Tier 1: the hard floor)."""
+    return {lg.sport_key: tier_floor(budget, lg.tier, now) for lg in observed(leagues)}
 
 
 def load_budget(path: Path = BUDGET_PATH) -> dict:
