@@ -29,3 +29,14 @@ UNRESOLVED_NAME resolved by an explicit alias · no AMBIGUOUS auto-settled · po
 left pending · local and clean-clone tests pass. Then: add `settlement_source` / `mapping_status` columns to the
 ledger (schema change, a separate approved commit), keep the Odds API path as a **fallback only** for bets unsettled 4
 days after kickoff, and log the source per settled bet (`football_data_uk` / `odds_api_fallback` / `manual_review`).
+
+## 2026-10-02 settlement hardening (addendum; the migration gate above is unchanged)
+- Legacy rows the Odds API path can NEVER settle (no provider event id, or kickoff older than the 3-day scores window)
+  now go through `settle_paper_ledger.settle_with_football_data_fallback` inside `scripts/run_settlement.py`: same
+  MATCHED-only rule, same result/P&L functions, one audit row per settlement in
+  `settlement_archive/legacy_football_data_settlements.csv`. Rows the scores path can still settle are never touched,
+  so football-data is not promoted to primary. This replaces the earlier "settle by hand" instruction for backfill rows.
+- The shadow now covers every observed league from `config/football_coverage.yaml` (F1 and others were missing because
+  of a hand-maintained 5-league dict).
+- Note: the ≥100-comparison gate accrues only when a legacy pending bet has started inside the scores window (V2-5
+  credit control: no scores call otherwise), so it stays at 0 through international breaks. Reported, not changed.

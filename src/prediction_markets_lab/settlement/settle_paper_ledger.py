@@ -205,3 +205,88 @@ def settle_pending_paper_bets(
             summary.settled_bet_ids.append(row["bet_id"])
 
     return summary
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# Football-data.co.uk fallback (settlement hardening, 2026-10-02).
+#
+# The Odds API scores path above can never settle two kinds of legacy football rows:
+#   NO_PROVIDER_ID         -- card.json backfill rows without a provider event id (the module docstring's KNOWN LIMITATION)
+#   OUTSIDE_SCORES_WINDOW  -- rows whose kickoff is older than the scores endpoint's daysFrom window
+# Previously these could only be settled by hand. They now go through this deterministic path instead:
+# football_data_results.match_fixture (explicit aliases only; competition + exact home/away pair within +/-3 days;
+# only MATCHED is settled -- AMBIGUOUS / NOT_FOUND / UNRESOLVED_NAME stay pending), the same determine_result /
+# compute_pnl_gbp / settle_paper_bet functions as the primary path, and one append-only audit row per settlement.
+# Rows the primary path can still settle are never touched, so this does not make football-data the primary source
+# (see research/platform_v2/SETTLEMENT_MIGRATION.md).
+LEGACY_FD_AUDIT_FIELDS = ["settled_at", "bet_id", "reason", "settlement_source", "competition_code", "fd_match_date", "fd_home_raw",
+                          "fd_away_raw", "score", "result"]
+FD_SETTLEABLE_MARKETS = ("1x2", "over_under_2_5")
+
+
+@dataclass(frozen=True)
+class FallbackSummary:
+    settled: list[str] = field(default_factory=list)
+    left_pending: list[tuple[str, str]] = field(default_factory=list)   # (bet_id, match status / reason)
+
+
+def fallback_reason(row: dict, now: "datetime", days_from: int = 3) -> str | None:
+    """Why the Odds API path cannot settle this row (or None if it still can / it is not eligible)."""
+    from datetime import datetime as _dt, timedelta as _td, timezone as _tz
+    if row.get("status") != "pending" or row.get("sport") != "football" or row.get("market") not in FD_SETTLEABLE_MARKETS:
+        return None
+    try:
+        ko = _dt.fromisoformat(str(row.get("kickoff", "")).replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    ko = ko if ko.tzinfo else ko.replace(tzinfo=_tz.utc)
+    if ko >= now:
+        return None
+    if _parse_provider_event_id(row.get("event_id", "")) is None:
+        return "NO_PROVIDER_ID"
+    if ko < now - _td(days=days_from):
+        return "OUTSIDE_SCORES_WINDOW"
+    return None
+
+
+def settle_with_football_data_fallback(ledger_path: Path, starting_bankroll_gbp: float, results: list, aliases: dict[str, str],
+                                       comp_to_fd: dict[str, str], now: "datetime", audit_path: Path,
+                                       days_from: int = 3) -> FallbackSummary:
+    import csv as _csv
+    from datetime import date as _date
+
+    from prediction_markets_lab.settlement import football_data_results as fd
+
+    out = FallbackSummary()
+    for row in load_paper_bets(ledger_path):
+        reason = fallback_reason(row, now, days_from)
+        if reason is None:
+            continue
+        code = comp_to_fd.get(row.get("competition", ""))
+        home, sep, away = row.get("event", "").partition(" v ")
+        if code is None or not sep:
+            out.left_pending.append((row["bet_id"], "UNRESOLVED_COMPETITION_OR_EVENT"))
+            continue
+        m = fd.match_fixture(code, home, away, _date.fromisoformat(row["kickoff"][:10]), results, aliases)
+        if m.status != "MATCHED" or m.result is None:
+            out.left_pending.append((row["bet_id"], m.status))
+            continue
+        r = m.result
+        winning = determine_result(row["market"], r.home_goals, r.away_goals)
+        pnl = compute_pnl_gbp(stake_gbp=float(row["recommended_stake"]), quoted_odds=float(row["quoted_odds"]),
+                              selection=row["selection"], winning_selection=winning)
+        label = "void" if winning == "void" else ("won" if row["selection"] == winning else "lost")
+        new_bankroll = _running_paper_bankroll(ledger_path, starting_bankroll_gbp) + pnl
+        settle_paper_bet(ledger_path, bet_id=row["bet_id"], result=label, closing_odds_if_available="",
+                         actual_pnl=f"{pnl:.2f}", paper_bankroll_after_settlement=f"{new_bankroll:.2f}")
+        audit_path.parent.mkdir(parents=True, exist_ok=True)
+        new_file = not audit_path.exists()
+        with open(audit_path, "a", newline="") as fh:
+            w = _csv.DictWriter(fh, fieldnames=LEGACY_FD_AUDIT_FIELDS)
+            if new_file:
+                w.writeheader()
+            w.writerow({"settled_at": now.isoformat(), "bet_id": row["bet_id"], "reason": reason, "settlement_source": "football_data_co_uk",
+                        "competition_code": code, "fd_match_date": r.match_date.isoformat(), "fd_home_raw": r.home_raw, "fd_away_raw": r.away_raw,
+                        "score": f"{r.home_goals}-{r.away_goals}", "result": label})
+        out.settled.append(row["bet_id"])
+    return out

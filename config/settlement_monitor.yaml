@@ -1,0 +1,13 @@
+# Settlement completeness monitor (2026-10-02, settlement hardening). Diagnostic only: never changes a bet decision,
+# a grade, a stake or a settlement. Lags are the documented refresh cadence of each source plus the event duration.
+# A started, unsettled record older than its expected lag is UNRESOLVED_AFTER_EXPECTED_LAG and is surfaced.
+expected_lag_hours:
+  football_data_co_uk: 120     # football-data.co.uk updates about twice a week (results within ~3-4 days)
+  tennis_court_log: 240        # TennisCourtLog refreshes weekly (tourney-level files); 7 days + tournament week tail
+  odds_api_scores: 96          # Odds API scores window is 3 days (daysFrom=3); settled within it or never
+# Event duration before a result can exist at all (started but not yet finished is still NORMAL_SOURCE_LAG).
+sources:
+  football: football_data_co_uk
+  tennis: tennis_court_log
+  basketball: odds_api_scores
+legacy_paper_ledger_source: odds_api_scores   # legacy football ledger; football-data fallback for rows the scores API cannot settle

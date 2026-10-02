@@ -20,8 +20,10 @@ from prediction_markets_lab.prediction_platform.settle import COMP_TO_FD as SETT
 
 REPO = Path(__file__).resolve().parents[1]
 ARCHIVE = REPO / "settlement_archive"
-SPORT_TO_FD = {"soccer_epl": "E0", "soccer_efl_champ": "E1", "soccer_spl": "SC0",
-               "soccer_netherlands_eredivisie": "N1", "soccer_germany_bundesliga": "D1"}   # N1/D1: V2-19
+from prediction_markets_lab.ops import football_coverage as FC
+# Settlement hardening (2026-10-02): was a hand-maintained 5-league dict (E0/E1/SC0/N1/D1), so F1 and every other
+# observed league were silently missing from the shadow. Single source now: config/football_coverage.yaml.
+SPORT_TO_FD = {lg.sport_key: lg.code for lg in FC.load() if lg.observe and lg.sport_key}
 COMP_TO_FD = SETTLE_COMP_TO_FD   # single source: config/football_coverage.yaml (lookup only)
 GATE_MIN_COMPARISONS = 100
 
@@ -111,6 +113,9 @@ def main() -> int:
     out = {"generated_at": datetime.now(timezone.utc).isoformat(), "mode": "SHADOW (no ledger writes)",
            "football_data_sources": sources, "fd_results_loaded": len(results),
            "fd_unresolved_names": sorted({r.home_raw for r in results if r.home is None} | {r.away_raw for r in results if r.away is None}),
+           "fd_unresolved_names_by_competition": {c: sorted({r.home_raw for r in results if r.competition == c and r.home is None}
+                                                            | {r.away_raw for r in results if r.competition == c and r.away is None})
+                                                  for c in sorted({r.competition for r in results})},
            "fd_internal_inconsistencies": sum(1 for r in results if not fd.fd_consistent(r)),
            "fixture_comparisons_total": len(allrows), "fixture_status_counts": status_counts,
            "disagreement_examples": disagreements[:10], "migration_gate": gate,

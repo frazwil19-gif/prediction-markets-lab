@@ -43,6 +43,7 @@ def main() -> int:
         config.resolve_api_key()
     except TheOddsApiCredentialError as exc:
         print(f"Cannot run settlement: {exc}", file=sys.stderr)
+        football_data_fallback(ledger_path, bankroll_cfg["starting_bankroll_gbp"])
         return 1
 
     summary = settle_pending_paper_bets(
@@ -63,7 +64,40 @@ def main() -> int:
     if summary.errors:
         print(f"Errors: {summary.errors}", file=sys.stderr)
 
+    football_data_fallback(ledger_path, bankroll_cfg["starting_bankroll_gbp"])
     return 0
+
+
+def football_data_fallback(ledger_path: Path, starting_bankroll_gbp: float) -> None:
+    """Settlement hardening (2026-10-02): rows the scores API can never settle (no provider id / outside the scores
+    window) go through the deterministic football-data.co.uk path. 0 credits. A download failure settles nothing."""
+    import urllib.request
+    from datetime import datetime, timezone
+
+    from prediction_markets_lab.prediction_platform.settle import COMP_TO_FD
+    from prediction_markets_lab.settlement import football_data_results as fd
+    from prediction_markets_lab.settlement.settle_paper_ledger import fallback_reason, settle_with_football_data_fallback
+    from prediction_markets_lab.storage.paper_ledger import load_paper_bets
+
+    now = datetime.now(timezone.utc)
+    due = [r for r in load_paper_bets(ledger_path) if fallback_reason(r, now)]
+    if not due:
+        print("football-data fallback: nothing eligible")
+        return
+    aliases, results = fd.load_settlement_aliases(), []
+    for code in sorted({COMP_TO_FD[r["competition"]] for r in due if r.get("competition") in COMP_TO_FD}):
+        url = fd.fd_url(code, now.date())
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "prediction-markets-lab settlement (non-commercial)"})
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                results += fd.parse_fd_csv(resp.read().decode("utf-8-sig", errors="replace"), code, aliases)
+        except Exception as exc:  # noqa: BLE001 -- fail closed: that league settles nothing this run
+            print(f"::warning::football-data {code} unavailable ({exc}); its fallback rows stay pending")
+    res = settle_with_football_data_fallback(ledger_path, starting_bankroll_gbp, results, aliases, COMP_TO_FD, now,
+                                             REPO_ROOT / "settlement_archive" / "legacy_football_data_settlements.csv")
+    print(f"football-data fallback settled: {len(res.settled)} -- {res.settled}")
+    if res.left_pending:
+        print(f"::warning::football-data fallback left pending: {res.left_pending}")
 
 
 if __name__ == "__main__":
