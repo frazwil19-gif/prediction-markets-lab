@@ -1,0 +1,1657 @@
+{
+ "generated_at": "2026-10-02T14:52:59.815255+00:00",
+ "window_days": 8,
+ "events_sampled_per_competition": 10,
+ "competitions": {
+  "E0": {
+   "betfair_competition": {
+    "id": "10932509",
+    "name": "English Premier League"
+   },
+   "families": {
+    "match_odds": {
+     "n_markets": 5,
+     "n_events_with_market": 5,
+     "n_events_sampled": 5,
+     "market_names": [
+      "Match Odds"
+     ],
+     "runner_counts": [
+      3
+     ],
+     "n_books_sampled": 5,
+     "two_sided_share": 1.0,
+     "median_spread": 0.0213,
+     "median_total_matched": 8605.46,
+     "hours_to_kickoff_range": [
+      188.6,
+      191.1
+     ],
+     "classification": "GOOD COVERAGE"
+    },
+    "player_sot": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 5,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "player_to_score": {
+     "n_markets": 5,
+     "n_events_with_market": 5,
+     "n_events_sampled": 5,
+     "market_names": [
+      "Both teams to Score?"
+     ],
+     "runner_counts": [
+      2
+     ],
+     "n_books_sampled": 5,
+     "two_sided_share": 1.0,
+     "median_spread": 0.0533,
+     "median_total_matched": 66.79,
+     "hours_to_kickoff_range": [
+      188.6,
+      191.1
+     ],
+     "classification": "GOOD COVERAGE"
+    },
+    "player_card": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 5,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "gk_saves": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 5,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "corners": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 5,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "bookings_cards": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 5,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "other": {
+     "n_markets": 30,
+     "n_events_with_market": 5,
+     "n_events_sampled": 5,
+     "market_names": [
+      "Asian Handicap",
+      "Correct Score",
+      "Goal Lines",
+      "Over/Under 0.5 Goals",
+      "Over/Under 1.5 Goals",
+      "Over/Under 2.5 Goals"
+     ],
+     "runner_counts": [
+      2,
+      19,
+      66
+     ],
+     "n_books_sampled": 20,
+     "two_sided_share": 0.55,
+     "median_spread": 0.1205,
+     "median_total_matched": 36.95,
+     "hours_to_kickoff_range": [
+      188.6,
+      191.1
+     ],
+     "classification": "GOOD COVERAGE"
+    }
+   },
+   "market_types": [
+    {
+     "code": "SPECIALS_NEXT_MGR",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "WINNER",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "HANDICAP",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "TOP_2_FINISH",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "TOP_4_FINISH_FT",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "TOP_5_FINISH",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "TOP_6_FINISH",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "TOP_10_FINISH",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "RELEGATION",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "ROCK_BOTTOM",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "TOP_GOALSCORER",
+     "family": "player_to_score",
+     "marketCount": 1
+    },
+    {
+     "code": "SPECIAL",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "ALT_TOTAL_GOALS",
+     "family": "other",
+     "marketCount": 20
+    },
+    {
+     "code": "OVER_UNDER_15",
+     "family": "other",
+     "marketCount": 10
+    },
+    {
+     "code": "CORRECT_SCORE",
+     "family": "other",
+     "marketCount": 20
+    },
+    {
+     "code": "OVER_UNDER_25",
+     "family": "other",
+     "marketCount": 20
+    },
+    {
+     "code": "OVER_UNDER_05",
+     "family": "other",
+     "marketCount": 20
+    },
+    {
+     "code": "BOTH_TEAMS_TO_SCORE",
+     "family": "player_to_score",
+     "marketCount": 20
+    },
+    {
+     "code": "MATCH_ODDS",
+     "family": "match_odds",
+     "marketCount": 20
+    },
+    {
+     "code": "ASIAN_HANDICAP",
+     "family": "other",
+     "marketCount": 20
+    }
+   ],
+   "n_events_sampled": 5
+  },
+  "E1": {
+   "betfair_competition": {
+    "id": "7129730",
+    "name": "English Sky Bet Championship"
+   },
+   "families": {
+    "match_odds": {
+     "n_markets": 10,
+     "n_events_with_market": 10,
+     "n_events_sampled": 10,
+     "market_names": [
+      "Match Odds"
+     ],
+     "runner_counts": [
+      3
+     ],
+     "n_books_sampled": 10,
+     "two_sided_share": 1.0,
+     "median_spread": 0.0975,
+     "median_total_matched": 147.82,
+     "hours_to_kickoff_range": [
+      172.1,
+      191.1
+     ],
+     "classification": "GOOD COVERAGE"
+    },
+    "player_sot": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 10,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "player_to_score": {
+     "n_markets": 1,
+     "n_events_with_market": 1,
+     "n_events_sampled": 10,
+     "market_names": [
+      "Both teams to Score?"
+     ],
+     "runner_counts": [
+      2
+     ],
+     "n_books_sampled": 1,
+     "two_sided_share": 1.0,
+     "median_spread": 0.1856,
+     "median_total_matched": 0.0,
+     "hours_to_kickoff_range": [
+      172.1,
+      172.1
+     ],
+     "classification": "RARE"
+    },
+    "player_card": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 10,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "gk_saves": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 10,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "corners": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 10,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "bookings_cards": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 10,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "other": {
+     "n_markets": 23,
+     "n_events_with_market": 10,
+     "n_events_sampled": 10,
+     "market_names": [
+      "Asian Handicap",
+      "Correct Score",
+      "Goal Lines",
+      "Over/Under 0.5 Goals",
+      "Over/Under 2.5 Goals"
+     ],
+     "runner_counts": [
+      2,
+      19,
+      66
+     ],
+     "n_books_sampled": 20,
+     "two_sided_share": 0.8,
+     "median_spread": 0.2642,
+     "median_total_matched": 2.1,
+     "hours_to_kickoff_range": [
+      172.1,
+      191.1
+     ],
+     "classification": "GOOD COVERAGE"
+    }
+   },
+   "market_types": [
+    {
+     "code": "HANDICAP",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "WINNER",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "PROMOTION",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "TOP_2_FINISH",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "TOP_8_FINISH",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "RELEGATION",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "TOP_GOALSCORER",
+     "family": "player_to_score",
+     "marketCount": 1
+    },
+    {
+     "code": "OVER_UNDER_25",
+     "family": "other",
+     "marketCount": 12
+    },
+    {
+     "code": "ASIAN_HANDICAP",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "OVER_UNDER_05",
+     "family": "other",
+     "marketCount": 12
+    },
+    {
+     "code": "CORRECT_SCORE",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "ALT_TOTAL_GOALS",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "MATCH_ODDS",
+     "family": "match_odds",
+     "marketCount": 12
+    },
+    {
+     "code": "BOTH_TEAMS_TO_SCORE",
+     "family": "player_to_score",
+     "marketCount": 1
+    }
+   ],
+   "n_events_sampled": 10
+  },
+  "SC0": {
+   "betfair_competition": {
+    "id": "105",
+    "name": "Scottish Premiership"
+   },
+   "families": {
+    "match_odds": {
+     "classification": "UNRESOLVED",
+     "note": "no events in window"
+    },
+    "player_sot": {
+     "classification": "UNRESOLVED",
+     "note": "no events in window"
+    },
+    "player_to_score": {
+     "classification": "UNRESOLVED",
+     "note": "no events in window"
+    },
+    "player_card": {
+     "classification": "UNRESOLVED",
+     "note": "no events in window"
+    },
+    "gk_saves": {
+     "classification": "UNRESOLVED",
+     "note": "no events in window"
+    },
+    "corners": {
+     "classification": "UNRESOLVED",
+     "note": "no events in window"
+    },
+    "bookings_cards": {
+     "classification": "UNRESOLVED",
+     "note": "no events in window"
+    },
+    "other": {
+     "classification": "UNRESOLVED",
+     "note": "no events in window"
+    }
+   },
+   "market_types": [
+    {
+     "code": "WINNER",
+     "family": "other",
+     "marketCount": 1
+    }
+   ],
+   "n_events_sampled": 0
+  },
+  "SP1": {
+   "betfair_competition": {
+    "id": "117",
+    "name": "Spanish La Liga"
+   },
+   "families": {
+    "match_odds": {
+     "n_markets": 3,
+     "n_events_with_market": 3,
+     "n_events_sampled": 3,
+     "market_names": [
+      "Match Odds"
+     ],
+     "runner_counts": [
+      3
+     ],
+     "n_books_sampled": 3,
+     "two_sided_share": 1.0,
+     "median_spread": 0.041,
+     "median_total_matched": 489.17,
+     "hours_to_kickoff_range": [
+      172.1,
+      191.4
+     ],
+     "classification": "GOOD COVERAGE"
+    },
+    "player_sot": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 3,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "player_to_score": {
+     "n_markets": 3,
+     "n_events_with_market": 3,
+     "n_events_sampled": 3,
+     "market_names": [
+      "Both teams to Score?"
+     ],
+     "runner_counts": [
+      2
+     ],
+     "n_books_sampled": 3,
+     "two_sided_share": 1.0,
+     "median_spread": 0.0475,
+     "median_total_matched": 0.0,
+     "hours_to_kickoff_range": [
+      172.1,
+      191.4
+     ],
+     "classification": "GOOD COVERAGE"
+    },
+    "player_card": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 3,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "gk_saves": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 3,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "corners": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 3,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "bookings_cards": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 3,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "other": {
+     "n_markets": 16,
+     "n_events_with_market": 3,
+     "n_events_sampled": 3,
+     "market_names": [
+      "Asian Handicap",
+      "Correct Score",
+      "First Half Goals 3.5",
+      "Goal Lines",
+      "Over/Under 0.5 Goals",
+      "Over/Under 2.5 Goals"
+     ],
+     "runner_counts": [
+      2,
+      19,
+      66
+     ],
+     "n_books_sampled": 16,
+     "two_sided_share": 0.375,
+     "median_spread": 0.1469,
+     "median_total_matched": 6.3,
+     "hours_to_kickoff_range": [
+      172.1,
+      191.4
+     ],
+     "classification": "PARTIAL COVERAGE"
+    }
+   },
+   "market_types": [
+    {
+     "code": "WINNER",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "TOP_4_FINISH_FT",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "RELEGATION",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "ALT_TOTAL_GOALS",
+     "family": "other",
+     "marketCount": 18
+    },
+    {
+     "code": "ASIAN_HANDICAP",
+     "family": "other",
+     "marketCount": 20
+    },
+    {
+     "code": "BOTH_TEAMS_TO_SCORE",
+     "family": "player_to_score",
+     "marketCount": 18
+    },
+    {
+     "code": "MATCH_ODDS",
+     "family": "match_odds",
+     "marketCount": 19
+    },
+    {
+     "code": "OVER_UNDER_25",
+     "family": "other",
+     "marketCount": 20
+    },
+    {
+     "code": "CORRECT_SCORE",
+     "family": "other",
+     "marketCount": 20
+    },
+    {
+     "code": "OVER_UNDER_05",
+     "family": "other",
+     "marketCount": 20
+    },
+    {
+     "code": "FIRST_HALF_GOALS_35",
+     "family": "other",
+     "marketCount": 6
+    }
+   ],
+   "n_events_sampled": 3
+  },
+  "D1": {
+   "betfair_competition": {
+    "id": "59",
+    "name": "German Bundesliga"
+   },
+   "families": {
+    "match_odds": {
+     "n_markets": 6,
+     "n_events_with_market": 6,
+     "n_events_sampled": 6,
+     "market_names": [
+      "Match Odds"
+     ],
+     "runner_counts": [
+      3
+     ],
+     "n_books_sampled": 6,
+     "two_sided_share": 1.0,
+     "median_spread": 0.0632,
+     "median_total_matched": 191.0,
+     "hours_to_kickoff_range": [
+      171.6,
+      190.6
+     ],
+     "classification": "GOOD COVERAGE"
+    },
+    "player_sot": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 6,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "player_to_score": {
+     "n_markets": 6,
+     "n_events_with_market": 6,
+     "n_events_sampled": 6,
+     "market_names": [
+      "Both teams to Score?"
+     ],
+     "runner_counts": [
+      2
+     ],
+     "n_books_sampled": 6,
+     "two_sided_share": 1.0,
+     "median_spread": 0.0522,
+     "median_total_matched": 1.0,
+     "hours_to_kickoff_range": [
+      171.6,
+      190.6
+     ],
+     "classification": "GOOD COVERAGE"
+    },
+    "player_card": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 6,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "gk_saves": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 6,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "corners": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 6,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "bookings_cards": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 6,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "other": {
+     "n_markets": 30,
+     "n_events_with_market": 6,
+     "n_events_sampled": 6,
+     "market_names": [
+      "Asian Handicap",
+      "Correct Score",
+      "Goal Lines",
+      "Over/Under 0.5 Goals",
+      "Over/Under 2.5 Goals"
+     ],
+     "runner_counts": [
+      2,
+      19,
+      66
+     ],
+     "n_books_sampled": 20,
+     "two_sided_share": 0.55,
+     "median_spread": 0.2834,
+     "median_total_matched": 4.06,
+     "hours_to_kickoff_range": [
+      171.6,
+      190.6
+     ],
+     "classification": "GOOD COVERAGE"
+    }
+   },
+   "market_types": [
+    {
+     "code": "WINNER",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "ASIAN_HANDICAP",
+     "family": "other",
+     "marketCount": 18
+    },
+    {
+     "code": "MATCH_ODDS",
+     "family": "match_odds",
+     "marketCount": 18
+    },
+    {
+     "code": "OVER_UNDER_05",
+     "family": "other",
+     "marketCount": 18
+    },
+    {
+     "code": "ALT_TOTAL_GOALS",
+     "family": "other",
+     "marketCount": 18
+    },
+    {
+     "code": "CORRECT_SCORE",
+     "family": "other",
+     "marketCount": 18
+    },
+    {
+     "code": "OVER_UNDER_25",
+     "family": "other",
+     "marketCount": 18
+    },
+    {
+     "code": "BOTH_TEAMS_TO_SCORE",
+     "family": "player_to_score",
+     "marketCount": 18
+    }
+   ],
+   "n_events_sampled": 6
+  },
+  "I1": {
+   "betfair_competition": {
+    "id": "81",
+    "name": "Italian Serie A"
+   },
+   "families": {
+    "match_odds": {
+     "n_markets": 1,
+     "n_events_with_market": 1,
+     "n_events_sampled": 1,
+     "market_names": [
+      "Match Odds"
+     ],
+     "runner_counts": [
+      3
+     ],
+     "n_books_sampled": 1,
+     "two_sided_share": 1.0,
+     "median_spread": 0.0308,
+     "median_total_matched": 342.0,
+     "hours_to_kickoff_range": [
+      190.1,
+      190.1
+     ],
+     "classification": "GOOD COVERAGE"
+    },
+    "player_sot": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 1,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "player_to_score": {
+     "n_markets": 1,
+     "n_events_with_market": 1,
+     "n_events_sampled": 1,
+     "market_names": [
+      "Both teams to Score?"
+     ],
+     "runner_counts": [
+      2
+     ],
+     "n_books_sampled": 1,
+     "two_sided_share": 1.0,
+     "median_spread": 0.0427,
+     "median_total_matched": 0.0,
+     "hours_to_kickoff_range": [
+      190.1,
+      190.1
+     ],
+     "classification": "GOOD COVERAGE"
+    },
+    "player_card": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 1,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "gk_saves": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 1,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "corners": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 1,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "bookings_cards": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 1,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "other": {
+     "n_markets": 5,
+     "n_events_with_market": 1,
+     "n_events_sampled": 1,
+     "market_names": [
+      "Asian Handicap",
+      "Correct Score",
+      "Goal Lines",
+      "Over/Under 0.5 Goals",
+      "Over/Under 2.5 Goals"
+     ],
+     "runner_counts": [
+      2,
+      19,
+      66
+     ],
+     "n_books_sampled": 5,
+     "two_sided_share": 0.4,
+     "median_spread": 0.1403,
+     "median_total_matched": 2.2,
+     "hours_to_kickoff_range": [
+      190.1,
+      190.1
+     ],
+     "classification": "PARTIAL COVERAGE"
+    }
+   },
+   "market_types": [
+    {
+     "code": "WINNER",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "RELEGATION",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "TOP_4_FINISH",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "BOTH_TEAMS_TO_SCORE",
+     "family": "player_to_score",
+     "marketCount": 20
+    },
+    {
+     "code": "OVER_UNDER_25",
+     "family": "other",
+     "marketCount": 20
+    },
+    {
+     "code": "OVER_UNDER_05",
+     "family": "other",
+     "marketCount": 20
+    },
+    {
+     "code": "ASIAN_HANDICAP",
+     "family": "other",
+     "marketCount": 20
+    },
+    {
+     "code": "CORRECT_SCORE",
+     "family": "other",
+     "marketCount": 20
+    },
+    {
+     "code": "ALT_TOTAL_GOALS",
+     "family": "other",
+     "marketCount": 20
+    },
+    {
+     "code": "MATCH_ODDS",
+     "family": "match_odds",
+     "marketCount": 20
+    }
+   ],
+   "n_events_sampled": 1
+  },
+  "F1": {
+   "betfair_competition": {
+    "id": "55",
+    "name": "French Ligue 1"
+   },
+   "families": {
+    "match_odds": {
+     "n_markets": 1,
+     "n_events_with_market": 1,
+     "n_events_sampled": 1,
+     "market_names": [
+      "Match Odds"
+     ],
+     "runner_counts": [
+      3
+     ],
+     "n_books_sampled": 1,
+     "two_sided_share": 1.0,
+     "median_spread": 0.0526,
+     "median_total_matched": 78.37,
+     "hours_to_kickoff_range": [
+      171.9,
+      171.9
+     ],
+     "classification": "GOOD COVERAGE"
+    },
+    "player_sot": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 1,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "player_to_score": {
+     "n_markets": 1,
+     "n_events_with_market": 1,
+     "n_events_sampled": 1,
+     "market_names": [
+      "Both teams to Score?"
+     ],
+     "runner_counts": [
+      2
+     ],
+     "n_books_sampled": 1,
+     "two_sided_share": 1.0,
+     "median_spread": 0.1911,
+     "median_total_matched": 5.54,
+     "hours_to_kickoff_range": [
+      171.9,
+      171.9
+     ],
+     "classification": "GOOD COVERAGE"
+    },
+    "player_card": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 1,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "gk_saves": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 1,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "corners": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 1,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "bookings_cards": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 1,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "other": {
+     "n_markets": 5,
+     "n_events_with_market": 1,
+     "n_events_sampled": 1,
+     "market_names": [
+      "Asian Handicap",
+      "Correct Score",
+      "Goal Lines",
+      "Over/Under 0.5 Goals",
+      "Over/Under 2.5 Goals"
+     ],
+     "runner_counts": [
+      2,
+      19,
+      66
+     ],
+     "n_books_sampled": 5,
+     "two_sided_share": 0.4,
+     "median_spread": 0.7097,
+     "median_total_matched": 0.0,
+     "hours_to_kickoff_range": [
+      171.9,
+      171.9
+     ],
+     "classification": "PARTIAL COVERAGE"
+    }
+   },
+   "market_types": [
+    {
+     "code": "WINNER",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "BOTH_TEAMS_TO_SCORE",
+     "family": "player_to_score",
+     "marketCount": 10
+    },
+    {
+     "code": "MATCH_ODDS",
+     "family": "match_odds",
+     "marketCount": 10
+    },
+    {
+     "code": "OVER_UNDER_25",
+     "family": "other",
+     "marketCount": 10
+    },
+    {
+     "code": "ALT_TOTAL_GOALS",
+     "family": "other",
+     "marketCount": 10
+    },
+    {
+     "code": "CORRECT_SCORE",
+     "family": "other",
+     "marketCount": 10
+    },
+    {
+     "code": "OVER_UNDER_05",
+     "family": "other",
+     "marketCount": 10
+    },
+    {
+     "code": "ASIAN_HANDICAP",
+     "family": "other",
+     "marketCount": 10
+    }
+   ],
+   "n_events_sampled": 1
+  },
+  "N1": {
+   "betfair_competition": null,
+   "families": {
+    "match_odds": {
+     "classification": "UNRESOLVED"
+    },
+    "player_sot": {
+     "classification": "UNRESOLVED"
+    },
+    "player_to_score": {
+     "classification": "UNRESOLVED"
+    },
+    "player_card": {
+     "classification": "UNRESOLVED"
+    },
+    "gk_saves": {
+     "classification": "UNRESOLVED"
+    },
+    "corners": {
+     "classification": "UNRESOLVED"
+    },
+    "bookings_cards": {
+     "classification": "UNRESOLVED"
+    },
+    "other": {
+     "classification": "UNRESOLVED"
+    }
+   }
+  },
+  "P1": {
+   "betfair_competition": null,
+   "families": {
+    "match_odds": {
+     "classification": "UNRESOLVED"
+    },
+    "player_sot": {
+     "classification": "UNRESOLVED"
+    },
+    "player_to_score": {
+     "classification": "UNRESOLVED"
+    },
+    "player_card": {
+     "classification": "UNRESOLVED"
+    },
+    "gk_saves": {
+     "classification": "UNRESOLVED"
+    },
+    "corners": {
+     "classification": "UNRESOLVED"
+    },
+    "bookings_cards": {
+     "classification": "UNRESOLVED"
+    },
+    "other": {
+     "classification": "UNRESOLVED"
+    }
+   }
+  },
+  "B1": {
+   "betfair_competition": {
+    "id": "12258021",
+    "name": "Belgian Beloften Pro League Reserve"
+   },
+   "families": {
+    "match_odds": {
+     "n_markets": 3,
+     "n_events_with_market": 1,
+     "n_events_sampled": 1,
+     "market_names": [
+      "Match Odds",
+      "Match Odds and Both teams to Score",
+      "Match Odds and Over/Under 2.5 Goals"
+     ],
+     "runner_counts": [
+      3,
+      6
+     ],
+     "n_books_sampled": 3,
+     "two_sided_share": 0.667,
+     "median_spread": 494.6665,
+     "median_total_matched": 0.0,
+     "hours_to_kickoff_range": [
+      3.6,
+      3.6
+     ],
+     "classification": "GOOD COVERAGE"
+    },
+    "player_sot": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 1,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "player_to_score": {
+     "n_markets": 1,
+     "n_events_with_market": 1,
+     "n_events_sampled": 1,
+     "market_names": [
+      "Both teams to Score?"
+     ],
+     "runner_counts": [
+      2
+     ],
+     "n_books_sampled": 1,
+     "two_sided_share": 1.0,
+     "median_spread": 888.0469,
+     "median_total_matched": 33.02,
+     "hours_to_kickoff_range": [
+      3.6,
+      3.6
+     ],
+     "classification": "GOOD COVERAGE"
+    },
+    "player_card": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 1,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "gk_saves": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 1,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "corners": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 1,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "bookings_cards": {
+     "n_markets": 0,
+     "n_events_with_market": 0,
+     "n_events_sampled": 1,
+     "market_names": [],
+     "runner_counts": [],
+     "n_books_sampled": 0,
+     "two_sided_share": null,
+     "median_spread": null,
+     "median_total_matched": null,
+     "hours_to_kickoff_range": null,
+     "classification": "ABSENT"
+    },
+    "other": {
+     "n_markets": 29,
+     "n_events_with_market": 1,
+     "n_events_sampled": 1,
+     "market_names": [
+      "Asian Handicap",
+      "Correct Score",
+      "Double Chance",
+      "Draw no Bet",
+      "First Half Goals 0.5",
+      "First Half Goals 1.5",
+      "First Half Goals 2.5",
+      "Goal Lines",
+      "Half Time",
+      "Half Time Score",
+      "Half Time/Full Time",
+      "KSK Has'lt U21 +1",
+      "KSK Has'lt U21 +2",
+      "KSK Has'lt U21 +3",
+      "KSK Has'lt U21 Win to Nil",
+      "Kortrijk (Res) +1",
+      "Kortrijk (Res) +2",
+      "Kortrijk (Res) +3",
+      "Kortrijk (Res) Win to Nil",
+      "Over/Under 0.5 Goals",
+      "Over/Under 1.5 Goals",
+      "Over/Under 2.5 Goals",
+      "Over/Under 3.5 Goals",
+      "Over/Under 4.5 Goals",
+      "Over/Under 5.5 Goals"
+     ],
+     "runner_counts": [
+      2,
+      3,
+      9,
+      10,
+      19,
+      66
+     ],
+     "n_books_sampled": 20,
+     "two_sided_share": 0.45,
+     "median_spread": 0.1749,
+     "median_total_matched": 0.0,
+     "hours_to_kickoff_range": [
+      3.6,
+      3.6
+     ],
+     "classification": "PARTIAL COVERAGE"
+    }
+   },
+   "market_types": [
+    {
+     "code": "TEAM_A_WIN_TO_NIL",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "TEAM_B_WIN_TO_NIL",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "TEAM_A_3",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "TEAM_B_3",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "ODD_OR_EVEN",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "MATCH_ODDS_AND_BTTS",
+     "family": "match_odds",
+     "marketCount": 1
+    },
+    {
+     "code": "MATCH_ODDS_AND_OU_25",
+     "family": "match_odds",
+     "marketCount": 1
+    },
+    {
+     "code": "HALF_TIME_SCORE",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "HALF_TIME_FULL_TIME",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "TEAM_A_2",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "TEAM_B_2",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "TEAM_A_1",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "TEAM_B_1",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "FIRST_HALF_GOALS_15",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "FIRST_HALF_GOALS_25",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "OVER_UNDER_85",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "FIRST_HALF_GOALS_05",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "HALF_TIME",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "ASIAN_HANDICAP",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "OVER_UNDER_15",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "OVER_UNDER_35",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "OVER_UNDER_25",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "MATCH_ODDS",
+     "family": "match_odds",
+     "marketCount": 1
+    },
+    {
+     "code": "OVER_UNDER_05",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "OVER_UNDER_65",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "OVER_UNDER_75",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "OVER_UNDER_45",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "OVER_UNDER_55",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "ALT_TOTAL_GOALS",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "DOUBLE_CHANCE",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "DRAW_NO_BET",
+     "family": "other",
+     "marketCount": 1
+    },
+    {
+     "code": "BOTH_TEAMS_TO_SCORE",
+     "family": "player_to_score",
+     "marketCount": 1
+    },
+    {
+     "code": "CORRECT_SCORE",
+     "family": "other",
+     "marketCount": 1
+    }
+   ],
+   "n_events_sampled": 1
+  }
+ },
+ "api_calls": 65,
+ "delayed_key_note": "Delayed application key: prices are delayed and volume fields may be absent; sufficient for coverage/structure research, not for execution."
+}

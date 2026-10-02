@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import importlib.util
 import json
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import pytest
@@ -31,7 +31,9 @@ def test_client_refuses_non_read_methods():
 @pytest.mark.parametrize("code,name,fam", [("MATCH_ODDS", "Match Odds", "match_odds"), ("CORNER_ODDS", "Corners Over/Under 10.5", "corners"),
                                            ("BOOKING_ODDS", "Booking Points", "bookings_cards"), ("", "Player Shots On Target 1+", "player_sot"),
                                            ("TO_SCORE", "To Score", "player_to_score"), ("", "Player Shown A Card", "player_card"),
-                                           ("", "Goalkeeper Saves 3+", "gk_saves"), ("OVER_UNDER_25", "Over/Under 2.5 Goals", "other")])
+                                           ("", "Goalkeeper Saves 3+", "gk_saves"), ("OVER_UNDER_25", "Over/Under 2.5 Goals", "other"),
+                                           ("BOTH_TEAMS_TO_SCORE", "Both teams to Score?", "other"), ("TOP_GOALSCORER", "Top Goalscorer", "other"),
+                                           ("MATCH_ODDS_AND_BTTS", "Match Odds and Both teams to Score", "other"), ("TEAM_A_WIN_TO_NIL", "X Win to Nil", "other")])
 def test_family_classification(code, name, fam):
     assert B.family_of(code, name) == fam
 
@@ -44,7 +46,9 @@ def fake_transport(calls):
         p = req["params"]
         if m == "listCompetitions":
             return {"result": [{"competition": {"id": "10932509", "name": "English Premier League"}, "marketCount": 900},
-                               {"competition": {"id": "1", "name": "English Premier League Women"}, "marketCount": 50}]}
+                               {"competition": {"id": "1", "name": "English Premier League Women"}, "marketCount": 50},
+                               {"competition": {"id": "2", "name": "Belgian Beloften Pro League Reserve"}, "marketCount": 999},
+                               {"competition": {"id": "3", "name": "Belgian Pro League"}, "marketCount": 10}]}
         if m == "listMarketTypes":
             return {"result": [{"marketType": "MATCH_ODDS", "marketCount": 10}, {"marketType": "CORNER_ODDS", "marketCount": 10}]}
         if m == "listEvents":
@@ -76,6 +80,9 @@ def test_audit_builds_coverage_matrix_with_read_methods_only(tmp_path, monkeypat
     assert e0["families"]["corners"]["classification"] == "PARTIAL COVERAGE"      # 1 of 2 events
     assert e0["families"]["player_sot"]["classification"] == "ABSENT"
     assert cov["competitions"]["E1"]["families"]["corners"]["classification"] == "UNRESOLVED"
+    assert cov["competitions"]["B1"]["betfair_competition"]["name"] == "Belgian Pro League"   # reserve league excluded
+    far, _ = B.audit(B.Client("APPKEY", "TOKEN", transport=fake_transport([])), NOW - timedelta(days=3), 8, 10)
+    assert far["competitions"]["E0"]["families"]["corners"]["classification"] == "UNRESOLVED"  # events > 36h away not sampled
     monkeypatch.setattr(B, "OUT", tmp_path)
     B.write_outputs(cov, raw, NOW)
     text = "".join(p.read_text() for p in tmp_path.rglob("*") if p.is_file())
