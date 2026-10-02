@@ -1,0 +1,72 @@
+{
+ "generated_at": "2026-10-02T00:39:55.454263+00:00",
+ "month": "2026-10",
+ "account_used_month_to_date_latest_counter": 12,
+ "projected_month_end_at_current_rate": 186,
+ "by_consumer": {
+  "nba_prediction_board": {
+   "paid_calls": 0,
+   "credits_charged": 0,
+   "skipped_calls": 0,
+   "credits_saved_estimate": 0
+  },
+  "tennis_prediction_board": {
+   "paid_calls": 3,
+   "credits_charged": 3,
+   "skipped_calls": 0,
+   "credits_saved_estimate": 0
+  }
+ },
+ "plan_a_comparison": {
+  "football_daily_scan": {
+   "plan_a_month_range": [
+    70,
+    100
+   ],
+   "plan_a_to_date_range": [
+    4.7,
+    6.7
+   ],
+   "actual_to_date": 0
+  },
+  "football_settlement": {
+   "plan_a_month_range": [
+    0,
+    20
+   ],
+   "plan_a_to_date_range": [
+    0.0,
+    1.3
+   ],
+   "actual_to_date": 0
+  },
+  "tennis_prediction_board": {
+   "plan_a_month_range": [
+    100,
+    150
+   ],
+   "plan_a_to_date_range": [
+    6.7,
+    10.0
+   ],
+   "actual_to_date": 3
+  },
+  "nba_prediction_board": {
+   "plan_a_month_range": [
+    20,
+    60
+   ],
+   "plan_a_to_date_range": [
+    1.3,
+    4.0
+   ],
+   "actual_to_date": 0
+  }
+ },
+ "football_counterfactual": {
+  "scan_days_logged": 0,
+  "baseline_credits_if_ungated": 0,
+  "actual": 0
+ },
+ "note": "credits_saved_estimate = markets x regions of each skipped odds call; settlement scores and research calls are not in the shared ledger yet (account counter covers them)."
+}
