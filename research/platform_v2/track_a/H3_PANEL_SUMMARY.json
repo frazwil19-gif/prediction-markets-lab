@@ -3,12 +3,17 @@
   "paper_bet_rows": 0,
   "median_n_books": 19.0,
   "median_dispersion": 0.0612,
-  "median_chosen_gap_to_best": 0.0,
-  "share_chosen_is_best": 0.562,
+  "median_decision_gap_to_best_gross": 0.0,
+  "share_decision_is_best_gross": 0.562,
   "median_exchange_spread": 0.014,
-  "share_best_net_is_exchange": 0.354,
-  "n_chosen_exchange_but_sportsbook_better_net": 15,
-  "median_best_net_quote_age_min": 0.6,
+  "share_best_executable_is_exchange": 0.354,
+  "decision_price_basis_counts": {
+    "BEST_USABLE_NET_EV_LATEST_SNAPSHOT": 33,
+    "FALLBACK_NO_USABLE_CANDIDATE": 15
+  },
+  "n_decision_net_below_best_executable": 15,
+  "n_fallback_net_below_best_executable": 15,
+  "median_best_executable_quote_age_min": 0.6,
   "football_h1_panel_rows": 0,
   "note": "Descriptive only. Small N; no rule change; evaluated per H3/H7 evidence conditions, not calendar."
 }

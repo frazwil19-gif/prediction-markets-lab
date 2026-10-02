@@ -87,9 +87,9 @@ def test_sport_keys():
 
 
 def test_reference_exchange_mid_then_uk_fallback():
-    basis, p, uk = PC.reference(event(), ["A", "B"])
+    basis, p, uk, _ = PC.reference(event(), ["A", "B"])
     assert basis == "EXCHANGE_MID" and sum(p.values()) == pytest.approx(1) and "betfair_ex_uk" not in uk
-    basis2, p2, _ = PC.reference(event(exch=False), ["A", "B"])
+    basis2, p2, _, _ = PC.reference(event(exch=False), ["A", "B"])
     assert basis2 == "UK_MEDIAN_FAIR" and p2["B"] > 0.6
     assert PC.reference(event(exch=False, uk=False), ["A", "B"]) is None
 
@@ -153,7 +153,7 @@ def test_capture_spends_one_credit_per_key_and_logs(tmp_path):
         return [event()]
     out = m.run(repo, NOW, ev, odds)
     assert calls == [("tennis_atp_x", ("h2h",))] and out["captured"] == 2
-    assert m.month_spend(repo / "status/credit_ledger.csv", NOW) == 1
+    assert m.month_spend(repo / m.OUT_DIR / "credit_ledger.csv", NOW) == 1
     assert m.run(repo, NOW, ev, odds)["due"] == 0 and len(calls) == 1            # captured once only
 
 
@@ -169,7 +169,7 @@ def test_capture_respects_floor_and_cap(tmp_path):
     assert not called and out["captured"] == 0
     from prediction_markets_lab.ops import credit_ledger as CL
     for _ in range(25):
-        CL.append(repo / "status/credit_ledger.csv", m.CONSUMER, "odds:x", CL.PAID, 1, 0, now=NOW)
+        CL.append(repo / m.OUT_DIR / "credit_ledger.csv", m.CONSUMER, "odds:x", CL.PAID, 1, 0, now=NOW)
 
     def ok(key, cfg, h):
         h["x-requests-remaining"] = "450"
@@ -181,3 +181,57 @@ def test_capture_respects_floor_and_cap(tmp_path):
 def test_pre_close_not_in_cap_sum():
     b = json.loads((REPO / "config/api_budget.json").read_text())
     assert "pre_close_capture" not in b["consumers"] and b["pre_close_capture"]["monthly_cap"] == 25
+
+
+def test_capture_logs_missed_and_isolates_failures(tmp_path):
+    m = _load_script()
+    past = sel(selection_id="old", event_start=(NOW - timedelta(minutes=30)).isoformat(), decision_at=(NOW - timedelta(hours=5)).isoformat())
+    repo = _repo(tmp_path, [sel(), past])
+
+    def ev(key, cfg, h):
+        h["x-requests-remaining"] = "450"
+        return []
+
+    def boom(key, cfg, h):
+        raise RuntimeError("network")
+    out = m.run(repo, NOW, ev, boom)
+    assert out["captured"] == 0
+    rows = PC.read_rows(repo / m.OUT_DIR / "pre_close_missed.csv")
+    assert {(r["selection_id"], r["status"]) for r in rows} == {("old", PC.NOT_CAPTURED), ("s1", PC.ATTEMPT_FAILED)}
+    assert "ODDS_CALL_FAILED" in [r for r in rows if r["selection_id"] == "s1"][0]["reason"]
+    m.run(repo, NOW, ev, boom)
+    rows = PC.read_rows(repo / m.OUT_DIR / "pre_close_missed.csv")
+    assert sum(r["status"] == PC.NOT_CAPTURED for r in rows) == 1                     # terminal row written once
+    assert not (repo / m.OUT_DIR / "pre_close_value.csv").exists()               # nothing imputed
+
+
+def test_measure_records_quote_timestamps():
+    e = event()
+    for b in e["bookmakers"]:
+        for mk in b["markets"]:
+            mk["last_update"] = f"2026-10-03T13:5{len(b['key']) % 10}:00Z"
+    r = PC.measure(sel(), e, NOW)
+    assert r["reference_quote_at"] and r["best_uk_quote_at"].startswith("2026-10-03T13:5")
+
+
+# ---------------- H3/H7 panel ----------------
+def test_panel_unusable_set_matches_bsv2():
+    spec = importlib.util.spec_from_file_location("lpp", REPO / "scripts/live_price_panel.py")
+    lpp = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(lpp)
+    src = (REPO / "src/prediction_markets_lab/bet_selection_v2/evaluate.py").read_text()
+    assert all(f'"{r}"' in src for r in lpp.UNUSABLE)
+
+
+def test_panel_separates_decision_and_best_executable_price():
+    spec = importlib.util.spec_from_file_location("lpp", REPO / "scripts/live_price_panel.py")
+    lpp = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(lpp)
+    rows, summary = lpp.build(REPO)
+    if not rows:
+        pytest.skip("no tennis decision-shadow rows in this checkout")
+    need = {"decision_price", "decision_venue", "decision_price_basis", "decision_reasons", "best_executable_net_price",
+            "best_executable_net_venue", "best_sportsbook_price", "exchange_back", "exchange_lay", "all_quotes_json"}
+    assert need <= set(rows[0])
+    assert all(r["decision_price_basis"] in (lpp.BEST_USABLE, lpp.FALLBACK) for r in rows)
+    assert all(r["decision_price_basis"] == lpp.FALLBACK for r in rows if "EXCHANGE_SPREAD_TOO_WIDE" in r["decision_reasons"].split("|"))

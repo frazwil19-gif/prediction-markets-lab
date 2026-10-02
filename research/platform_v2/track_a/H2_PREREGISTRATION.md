@@ -43,3 +43,12 @@ commission, decision timestamp (`decision_at`), quote timestamp (`price_observed
 * Breakdown by sport, book and minutes-before-start.
 
 There is no rule change from this analysis without separate approval.
+
+## Amendment 1 (2026-10-02, before merge and before any capture; operational only — no metric, threshold or analysis change)
+* Output paths move to `research_shadow/h2_pre_close/` (`pre_close_value.csv`, `pre_close_missed.csv`, and its own
+  `credit_ledger.csv`, which `scripts/credit_report.py` now includes). Reason: the hourly job must never touch files
+  production workflows commit, so a concurrent `git pull --rebase` can never conflict and block a production push.
+* Added fields: `reference_quote_at`, `best_uk_quote_at` (quote timestamps), `commission_basis`.
+* Missing captures are logged, never imputed: `ATTEMPT_FAILED` rows (cap, floor, events check, odds call failure,
+  event not found/ambiguous, no reference price, unsupported sport key) and one terminal `NOT_CAPTURED_BEFORE_START`
+  row per selection decided on/after `active_from` whose start passed uncaptured (e.g. cron lateness).

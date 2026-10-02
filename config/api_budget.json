@@ -63,6 +63,8 @@
     "_doc": "H2 PRE_CLOSE_VALUE (research/platform_v2/track_a/H2_PREREGISTRATION.md; approved 2026-10-02). Diagnostic only. One /odds call (h2h, uk = 1 credit) per sport key per capture run, only when a paper selection starts within capture_window_minutes. Pays only while remaining >= the Tier-2 shadow floor (protects Tier-1 football, tennis, NBA, settlement) and monthly spend < monthly_cap. Consumer pre_close_capture in the credit ledger.",
     "monthly_cap": 25,
     "capture_window_minutes": 75,
-    "protect_as_tier": 2
+    "protect_as_tier": 2,
+    "active_from": "2026-10-02T00:00:00+00:00",
+    "_active_from": "H2 go-live; selections decided before this are not counted as missed captures"
   }
 }

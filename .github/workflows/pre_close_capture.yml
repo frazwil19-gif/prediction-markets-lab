@@ -2,7 +2,7 @@ name: pre_close_capture
 
 # Track A / H2 (research diagnostic; pre-registered research/platform_v2/track_a/H2_PREREGISTRATION.md).
 # Hourly: for PAPER selections starting within the next 75 minutes, one /odds h2h uk call (1 credit) per sport key
-# and a PRE_CLOSE_VALUE row in paper_betting_v2/pre_close_value.csv. No due selections -> no API call at all.
+# and a PRE_CLOSE_VALUE row in research_shadow/h2_pre_close/pre_close_value.csv. No due selections -> no API call at all.
 # Budget: consumer pre_close_capture, monthly_cap 25 credits, and never below the Tier-2 shadow floor (free /events
 # check first). Never touches selections, decisions, grades, stakes or the Money Card.
 # Own concurrency group: a queued hourly run must never displace a pending production run.
@@ -42,7 +42,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          for f in paper_betting_v2/pre_close_value.csv status/credit_ledger.csv; do if [ -e "$f" ]; then git add "$f"; fi; done
+          git add research_shadow/h2_pre_close/ 2>/dev/null || true   # only its own files: never conflicts with production commits
           if git diff --cached --quiet; then
             echo "No pre-close captures"
           else
