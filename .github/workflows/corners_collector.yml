@@ -10,8 +10,6 @@ on:
   schedule:
     - cron: "41 7 * * *"
   workflow_dispatch:
-  push:
-    branches: ["engines-c3"]     # TEMPORARY: first-run validation before merge; removed before merging
 
 permissions:
   contents: write
