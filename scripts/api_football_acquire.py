@@ -24,6 +24,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
 OUT = REPO / "data/private/api_football"
+KEY_FILE = Path.home() / ".config/prediction-markets-lab/api_football_key"
 BASE = "https://v3.football.api-sports.io"
 LEAGUE = 39                      # English Premier League
 SEASONS = (2022, 2023, 2024)     # 2024 required by the cycle-2 sample rule (2023-24 alone < 8,700 eligible rows)
@@ -87,6 +88,13 @@ def _rows(fx: dict, season: int) -> list[dict]:
 
 def main() -> int:
     key = os.environ.get("API_FOOTBALL_KEY")
+    if not key and KEY_FILE.exists():                     # set up by scripts/setup_api_football_daily.sh (chmod 600)
+        key = KEY_FILE.read_text().strip()
+    if (OUT / "player_match.csv.gz").exists() and all((OUT / "raw" / f"fixtures_{LEAGUE}_{s}.json.gz").exists() for s in SEASONS) and \
+            all((OUT / "raw" / f"players_{s}_{fx['fixture']['id']}.json.gz").exists()
+                for s in SEASONS for fx in load(OUT / "raw" / f"fixtures_{LEAGUE}_{s}.json.gz")["response"]):
+        print("done: all seasons already acquired -- nothing to do")
+        return 0
     if not key:
         print("Set API_FOOTBALL_KEY in this terminal first (export API_FOOTBALL_KEY='...'). The key is never written anywhere.")
         return 2
