@@ -13,6 +13,7 @@ runners. Credentials are read at run time and never written anywhere:
 
   python scripts/betfair_catalogue_audit.py [--days 8] [--events-per-competition 10]   # 10-league coverage
   python scripts/betfair_catalogue_audit.py --discover                                 # schema discovery, any competition, <=36h
+  python scripts/betfair_catalogue_audit.py --capture --max-hours-to-kickoff 6         # 10-league per-runner liquidity snapshot
 
 Outputs:
   research/platform_v2/price_execution/betfair_audit/COVERAGE.json + COVERAGE.csv (aggregates only, committable)
@@ -283,6 +284,81 @@ def discover(client: Client, now: datetime, max_hours: float, n_events: int = DI
     return out, raw
 
 
+CAPTURE_FAMILIES = ("corners", "player_sot", "bookings_cards")
+CAPTURE_FIELDS = ["capture_ts", "competition", "event", "kickoff", "mins_to_kickoff", "market_id", "market_type", "family", "market_name",
+                  "status", "inplay", "market_total_matched", "runner", "back", "back_size", "lay", "lay_size", "spread", "side_status",
+                  "last_traded"]
+CORNERS_SPREAD_GATE = 0.10   # pre-registered corners A/B/C rule (research/platform_v2/corners_abc/PREREGISTRATION.md §4) -- reported, never changed
+
+
+def _q(xs: list[float], q: float) -> float | None:
+    return round(float(statistics.quantiles(xs, n=100)[int(q * 100) - 1]), 4) if len(xs) >= 2 else (round(xs[0], 4) if xs else None)
+
+
+def capture(client: Client, now: datetime, max_hours: float) -> tuple[dict, list[dict]]:
+    """Per-runner liquidity capture for the project's leagues (corners, player SOT, cards) for events within
+    max_hours. Returns (aggregate summary -- committable, per-runner rows -- private/raw)."""
+    comps = match_competitions(client.call("listCompetitions", {"filter": {"eventTypeIds": [FOOTBALL]}}))
+    window = {"from": (now - timedelta(minutes=5)).isoformat(), "to": (now + timedelta(hours=max_hours)).isoformat()}
+    rows: list[dict] = []
+    for code, comp in comps.items():
+        if not comp:
+            continue
+        events = client.call("listEvents", {"filter": {"competitionIds": [comp["competition"]["id"]], "marketStartTime": window}})
+        for e in events:
+            cat = client.call("listMarketCatalogue", {"filter": {"eventIds": [e["event"]["id"]]}, "maxResults": CATALOGUE_MAX,
+                                                      "marketProjection": ["MARKET_START_TIME", "MARKET_DESCRIPTION", "RUNNER_DESCRIPTION", "EVENT"]})
+            want = {m["marketId"]: m for m in cat if family_of((m.get("description") or {}).get("marketType", ""), m.get("marketName", "")) in CAPTURE_FAMILIES}
+            ids = list(want)
+            for i in range(0, len(ids), BOOK_BATCH):
+                for b in client.call("listMarketBook", {"marketIds": ids[i:i + BOOK_BATCH], "priceProjection": {"priceData": ["EX_BEST_OFFERS"]}}):
+                    m = want[b["marketId"]]
+                    names = {r["selectionId"]: r.get("runnerName", "") for r in m.get("runners", [])}
+                    ko = datetime.fromisoformat(m["marketStartTime"].replace("Z", "+00:00"))
+                    code_ = (m.get("description") or {}).get("marketType", "")
+                    for r in b.get("runners", []):
+                        atb, atl = r.get("ex", {}).get("availableToBack") or [], r.get("ex", {}).get("availableToLay") or []
+                        back, lay = (atb[0] if atb else {}), (atl[0] if atl else {})
+                        both = bool(atb and atl)
+                        rows.append({"capture_ts": now.isoformat(), "competition": code, "event": m.get("event", {}).get("name", e["event"].get("name")),
+                                     "kickoff": m["marketStartTime"], "mins_to_kickoff": round((ko - now).total_seconds() / 60, 1), "market_id": b["marketId"],
+                                     "market_type": code_, "family": family_of(code_, m.get("marketName", "")), "market_name": m.get("marketName", ""),
+                                     "status": b.get("status"), "inplay": b.get("inplay"), "market_total_matched": b.get("totalMatched"),
+                                     "runner": names.get(r.get("selectionId"), str(r.get("selectionId"))), "back": back.get("price"), "back_size": back.get("size"),
+                                     "lay": lay.get("price"), "lay_size": lay.get("size"),
+                                     "spread": round(lay["price"] / back["price"] - 1, 5) if both else None,
+                                     "side_status": "BOTH" if both else ("BACK_ONLY" if atb else ("LAY_ONLY" if atl else "NONE")),
+                                     "last_traded": r.get("lastPriceTraded")})
+    return summarise_capture(rows, now, max_hours), rows
+
+
+def summarise_capture(rows: list[dict], now: datetime, max_hours: float) -> dict:
+    out: dict = {"capture_ts": now.isoformat(), "max_hours_to_kickoff": max_hours, "n_runner_rows": len(rows),
+                 "note": "Aggregates only; per-runner prices stay private (raw/). Liquidity description, not an execution rule.", "groups": {}}
+    groups: dict = defaultdict(list)
+    for r in rows:
+        groups[(r["competition"], r["market_type"])].append(r)
+    for (comp, mt), rs in sorted(groups.items()):
+        both = [r for r in rs if r["side_status"] == "BOTH"]
+        sp = [r["spread"] for r in both]
+        mkt = {r["market_id"]: r["market_total_matched"] for r in rs}
+        matched = [v for v in mkt.values() if v is not None]
+        g = {"family": rs[0]["family"], "events": len({r["event"] for r in rs}), "markets": len(mkt), "runners": len(rs),
+             "both": len(both), "back_only": sum(r["side_status"] == "BACK_ONLY" for r in rs), "lay_only": sum(r["side_status"] == "LAY_ONLY" for r in rs),
+             "none": sum(r["side_status"] == "NONE" for r in rs),
+             "spread_p25_p50_p75": [_q(sp, .25), _q(sp, .5), _q(sp, .75)] if sp else None,
+             "market_matched_median_max": [round(statistics.median(matched), 2), round(max(matched), 2)] if matched else None,
+             "mins_to_kickoff_range": [min(r["mins_to_kickoff"] for r in rs), max(r["mins_to_kickoff"] for r in rs)]}
+        if g["family"] == "corners":
+            per_market = defaultdict(list)
+            for r in rs:
+                per_market[r["market_id"]].append(r)
+            ok = [all(x["side_status"] == "BOTH" and x["spread"] <= CORNERS_SPREAD_GATE for x in v) for v in per_market.values()]
+            g["markets_passing_preregistered_10pct_gate"] = f"{sum(ok)}/{len(ok)}"
+        out["groups"][f"{comp}|{mt}"] = g
+    return out
+
+
 def write_outputs(cov: dict, raw: dict, now: datetime) -> None:
     (OUT / "raw").mkdir(parents=True, exist_ok=True)
     (OUT / "raw" / f"{now.strftime('%Y%m%dT%H%M%SZ')}.json").write_text(json.dumps(raw, default=str))
@@ -302,6 +378,7 @@ def main() -> int:
     ap.add_argument("--days", type=int, default=8)
     ap.add_argument("--events-per-competition", type=int, default=10)
     ap.add_argument("--max-hours-to-kickoff", type=float, default=DEFAULT_MAX_HOURS)
+    ap.add_argument("--capture", action="store_true", help="per-runner liquidity capture (corners, player SOT, cards) for the 10 leagues' events within --max-hours-to-kickoff")
     ap.add_argument("--discover", action="store_true", help="schema discovery on the busiest football events within --max-hours-to-kickoff (any competition)")
     a = ap.parse_args()
     app_key, user = os.environ.get("BETFAIR_APP_KEY"), os.environ.get("BETFAIR_USERNAME")
@@ -313,12 +390,29 @@ def main() -> int:
     del pw
     now = datetime.now(timezone.utc)
     try:
-        if a.discover:
+        if a.capture:
+            summ, cap_rows = capture(Client(app_key, token), now, a.max_hours_to_kickoff)
+        elif a.discover:
             sch, raw = discover(Client(app_key, token), now, a.max_hours_to_kickoff)
         else:
             cov, raw = audit(Client(app_key, token), now, a.days, a.events_per_competition, a.max_hours_to_kickoff)
     finally:
         logout(app_key, token)
+    if a.capture:
+        stamp = now.strftime('%Y%m%dT%H%M%SZ')
+        (OUT / "raw").mkdir(parents=True, exist_ok=True)
+        with (OUT / "raw" / f"capture_{stamp}.csv").open("w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=CAPTURE_FIELDS)
+            w.writeheader()
+            w.writerows(cap_rows)
+        (OUT / f"CAPTURE_SUMMARY_{stamp}.json").write_text(json.dumps(summ, indent=1, default=str) + "\n")
+        for k, g in summ["groups"].items():
+            if g["family"] in ("corners", "player_sot"):
+                print(f"  {k:40s} events={g['events']} runners={g['runners']} both={g['both']} back-only={g['back_only']} "
+                      f"spread(p50)={(g['spread_p25_p50_p75'] or [None, None])[1]} matched(med,max)={g['market_matched_median_max']}"
+                      + (f" gate10%={g['markets_passing_preregistered_10pct_gate']}" if 'markets_passing_preregistered_10pct_gate' in g else ""))
+        print(f"runner rows: {summ['n_runner_rows']}; summary written: CAPTURE_SUMMARY_{stamp}.json (per-runner prices stay in raw/)")
+        return 0
     if a.discover:
         (OUT / "raw").mkdir(parents=True, exist_ok=True)
         (OUT / "raw" / f"discover_{now.strftime('%Y%m%dT%H%M%SZ')}.json").write_text(json.dumps(raw, default=str))
