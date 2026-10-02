@@ -6,9 +6,10 @@ RUN ON FRASER'S MAC ONLY (standard library only; no installs). Data stays PRIVAT
   export API_FOOTBALL_KEY='<key>'          # never written anywhere
   python3 scripts/api_football_acquire.py
 
-Requests: per season 1 x /fixtures?league=39&season=S&status=FT-AET-PEN, then /fixtures?ids=<20 ids> (20 fixtures per
-request, players + lineups embedded) -> about 20 per season, about 63 in total for 2022-2024, under the free 100/day.
-Throttled; stops early if the daily allowance runs low; resumable (already-saved batches are skipped).
+Requests: per season 1 x /fixtures?league=39&season=S&status=FT-AET-PEN, then 1 x /fixtures/players?fixture=<id> per
+fixture (both teams' players in one response). The FREE plan does not allow /fixtures?ids= (confirmed 2026-10-02), so
+this is ~380 requests per season, ~1,143 for 2022-2024: about 12 daily runs at the free 100/day. Throttled; stops
+before the daily allowance runs out; resumable -- run the same command once a day until it prints "done".
 """
 from __future__ import annotations
 
@@ -26,7 +27,6 @@ OUT = REPO / "data/private/api_football"
 BASE = "https://v3.football.api-sports.io"
 LEAGUE = 39                      # English Premier League
 SEASONS = (2022, 2023, 2024)     # 2024 required by the cycle-2 sample rule (2023-24 alone < 8,700 eligible rows)
-BATCH = 20                       # max ids per /fixtures?ids= request
 PAUSE_SECONDS = 7.0              # <= ~8.5 requests/minute
 MIN_REMAINING = 5                # stop before the daily allowance is exhausted
 ROLE = {"G": "GK", "D": "DF", "M": "MD", "F": "FW"}
@@ -56,6 +56,11 @@ def load(path: Path) -> dict:
 
 
 def rows_from_fixture(fx: dict, season: int) -> list[dict]:
+    """fx: a fixture object with 'fixture', 'teams' and 'players' (the /fixtures/players response)."""
+    return _rows(fx, season)
+
+
+def _rows(fx: dict, season: int) -> list[dict]:
     """Canonical player-match rows (same schema as research_shadow/player_sot.FIELDS). Players with no minutes are
     unused substitutes and are skipped. minute_in/out are approximations from minutes (no event parsing)."""
     f, teams = fx["fixture"], fx["teams"]
@@ -94,26 +99,27 @@ def main() -> int:
             save(list_path, body)
             print(f"season {season}: {body.get('results')} finished fixtures listed (remaining today: {hdr.get('x-ratelimit-requests-remaining')})")
             time.sleep(PAUSE_SECONDS)
-        ids = sorted(fx["fixture"]["id"] for fx in load(list_path)["response"])
-        for i in range(0, len(ids), BATCH):
-            chunk = ids[i:i + BATCH]
-            p = OUT / "raw" / f"details_{season}_{i // BATCH:03d}.json.gz"
+        fixtures = sorted(load(list_path)["response"], key=lambda fx: fx["fixture"]["id"])
+        for n, fx in enumerate(fixtures, 1):
+            p = OUT / "raw" / f"players_{season}_{fx['fixture']['id']}.json.gz"
             if p.exists():
                 continue
-            body, hdr = get("/fixtures?ids=" + "-".join(map(str, chunk)), key)
+            body, hdr = get(f"/fixtures/players?fixture={fx['fixture']['id']}", key)
             used += 1
-            save(p, body)
+            save(p, {"fixture": fx["fixture"], "teams": fx["teams"], "players": body.get("response", [])})
             rem = int(hdr.get("x-ratelimit-requests-remaining") or 0)
-            print(f"season {season} batch {i // BATCH + 1}/{(len(ids) + BATCH - 1) // BATCH}: {body.get('results')} fixtures (remaining today: {rem})")
+            if n % 20 == 0 or rem < MIN_REMAINING:
+                print(f"season {season}: {n}/{len(fixtures)} fixtures saved (remaining today: {rem})")
             if rem < MIN_REMAINING:
-                print("Daily allowance nearly used -- stopping. Re-run tomorrow; saved batches are skipped.")
+                done = sum(1 for _ in (OUT / "raw").glob("players_*.json.gz"))
+                print(f"Daily allowance nearly used -- stopping after {used} requests ({done} fixtures saved in total). "
+                      "Run the same command again tomorrow; saved fixtures are skipped.")
                 return 0
             time.sleep(PAUSE_SECONDS)
     rows = []
     for season in SEASONS:
-        for p in sorted((OUT / "raw").glob(f"details_{season}_*.json.gz")):
-            for fx in load(p)["response"]:
-                rows.extend(rows_from_fixture(fx, season))
+        for p in sorted((OUT / "raw").glob(f"players_{season}_*.json.gz")):
+            rows.extend(rows_from_fixture(load(p), season))
     with gzip.open(OUT / "player_match.csv.gz", "wt", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=FIELDS)
         w.writeheader()
