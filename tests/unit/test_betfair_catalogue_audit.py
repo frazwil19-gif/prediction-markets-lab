@@ -105,3 +105,34 @@ def test_discover_mode_lists_schema_with_read_methods_only():
     assert sch["market_types"]["CORNER_ODDS"]["family"] == "corners" and sch["market_types"]["CORNER_ODDS"]["n_events"] == 1
     assert sch["market_types"]["CORNER_ODDS"]["two_sided_share"] == 1.0 and "corners" in sch["families_found"]
     assert "APPKEY" not in json.dumps(sch) and "TOKEN" not in json.dumps(sch)
+
+
+def test_capture_rows_and_summary():
+    calls = []
+    base = fake_transport(calls)
+
+    def t(url, body, headers):
+        req = json.loads(body)
+        m = req["method"].split("/")[-1]
+        if m == "listMarketCatalogue":
+            r = base(url, body, headers)
+            for mk in r["result"]:
+                mk["runners"] = [{"selectionId": i, "runnerName": f"R{i}"} for i in range(len(mk["runners"]))]
+            return r
+        if m == "listMarketBook":
+            calls.append(m)
+            out = []
+            for mid in req["params"]["marketIds"]:
+                out.append({"marketId": mid, "status": "OPEN", "inplay": False, "totalMatched": 120.0,
+                            "runners": [{"selectionId": 0, "ex": {"availableToBack": [{"price": 1.8, "size": 10}], "availableToLay": [{"price": 1.9, "size": 5}]}},
+                                        {"selectionId": 1, "ex": {"availableToBack": [{"price": 2.0, "size": 3}], "availableToLay": []}}]})
+            return {"result": out}
+        return base(url, body, headers)
+    summ, rows = B.capture(B.Client("APPKEY", "TOKEN", transport=t), NOW, 48)
+    assert set(calls) <= B.READ_ONLY_METHODS
+    corners = [r for r in rows if r["family"] == "corners"]
+    assert {r["side_status"] for r in corners} == {"BOTH", "BACK_ONLY"} and abs(corners[0]["spread"] - (1.9 / 1.8 - 1)) < 1e-4
+    g = summ["groups"]["E0|CORNER_ODDS"]
+    assert g["both"] == 1 and g["back_only"] == 1 and g["markets_passing_preregistered_10pct_gate"] == "0/1"
+    assert all(r["family"] in B.CAPTURE_FAMILIES for r in rows)
+    assert "APPKEY" not in json.dumps(summ)
