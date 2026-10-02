@@ -52,8 +52,10 @@ COMPETITIONS = {
     "F1": [["french", "ligue 1"]], "N1": [["dutch", "eredivisie"]], "P1": [["portuguese", "primeira"]],
     "B1": [["belgian", "first division"], ["belgian", "pro league"], ["belgian", "jupiler"]],
 }
-FAMILIES = [  # first match wins; tested on codes AND names
-    ("match_odds", ["MATCH_ODDS"]),
+# codes/names that contain a family keyword but are NOT that family (found in the first live run, 2026-10-02)
+NOT_FAMILY = ["BOTH_TEAMS_TO_SCORE", "TOP_GOALSCORER", "MATCH_ODDS_AND_", "WIN_TO_NIL"]
+FAMILIES = [  # first match wins; tested on codes AND names (match_odds: exact code only)
+    ("match_odds", []),
     ("player_sot", ["SHOTS_ON_TARGET", "SHOT_ON_TARGET", "PLAYER_SOT", "SOT"]),
     ("player_to_score", ["TO_SCORE", "GOALSCORER", "GOAL_SCORER", "SCORER"]),
     ("player_card", ["SHOWN_A_CARD", "PLAYER_CARD", "PLAYER_BOOKED", "TO_BE_CARDED"]),
@@ -62,10 +64,16 @@ FAMILIES = [  # first match wins; tested on codes AND names
     ("bookings_cards", ["BOOKING", "CARDS", "CARD"]),
 ]
 FAMILY_NAMES = [f for f, _ in FAMILIES] + ["other"]
+EXCLUDE_COMPETITION_WORDS = ("women", "u21", "u23", "u19", "reserve", "beloften", "national division", "youth")
+DEFAULT_MAX_HOURS = 36.0     # prop/corner markets are typically listed close to kickoff: sample only near events
 
 
 def family_of(code: str, name: str = "") -> str:
     hay = f"{code} {name}".upper().replace(" ", "_")
+    if code.upper() == "MATCH_ODDS" or name.strip().lower() == "match odds":
+        return "match_odds"
+    if any(x in hay for x in NOT_FAMILY):
+        return "other"
     for fam, keys in FAMILIES:
         if any(k in hay for k in keys):
             return fam
@@ -76,7 +84,7 @@ def match_competitions(comps: list[dict]) -> dict[str, dict | None]:
     out = {}
     for code, alts in COMPETITIONS.items():
         hits = [c for c in comps if any(all(k in c["competition"]["name"].lower() for k in kw) for kw in alts)]
-        hits = [h for h in hits if "women" not in h["competition"]["name"].lower() and "u21" not in h["competition"]["name"].lower()]
+        hits = [h for h in hits if not any(x in h["competition"]["name"].lower() for x in EXCLUDE_COMPETITION_WORDS)]
         out[code] = max(hits, key=lambda c: c.get("marketCount", 0)) if hits else None
     return out
 
@@ -150,7 +158,7 @@ def classify(n_events: int, n_with: int, two_sided_share: float | None) -> str:
     return "RARE"
 
 
-def audit(client: Client, now: datetime, days: int, per_comp: int) -> tuple[dict, dict]:
+def audit(client: Client, now: datetime, days: int, per_comp: int, max_hours: float = DEFAULT_MAX_HOURS) -> tuple[dict, dict]:
     raw: dict = {"generated_at": now.isoformat()}
     comps = client.call("listCompetitions", {"filter": {"eventTypeIds": [FOOTBALL]}})
     raw["competitions"] = comps
@@ -166,12 +174,16 @@ def audit(client: Client, now: datetime, days: int, per_comp: int) -> tuple[dict
         cid = comp["competition"]["id"]
         mtypes = client.call("listMarketTypes", {"filter": {"competitionIds": [cid]}})
         events = client.call("listEvents", {"filter": {"competitionIds": [cid], "marketStartTime": window}})
-        events = sorted(events, key=lambda e: e["event"].get("openDate", ""))[:per_comp]
+        n_listed = len(events)
+        near = [e for e in events if e["event"].get("openDate") and
+                (datetime.fromisoformat(e["event"]["openDate"].replace("Z", "+00:00")) - now).total_seconds() / 3600 <= max_hours]
+        events = sorted(near, key=lambda e: e["event"].get("openDate", ""))[:per_comp]
         entry.update({"market_types": [{"code": m["marketType"], "family": family_of(m["marketType"]), "marketCount": m.get("marketCount")} for m in mtypes],
-                      "n_events_sampled": len(events)})
+                      "n_events_sampled": len(events), "n_events_listed_in_window": n_listed, "max_hours_to_kickoff": max_hours})
         raw.setdefault("by_competition", {})[code] = {"market_types": mtypes, "events": events}
         if not events:
-            entry["families"] = {f: {"classification": "UNRESOLVED", "note": "no events in window"} for f in FAMILY_NAMES}
+            entry["families"] = {f: {"classification": "UNRESOLVED", "note": f"no event within {max_hours:g}h of kickoff ({n_listed} listed in window)"}
+                                 for f in FAMILY_NAMES}
             continue
         cats = []
         for e in events:
@@ -229,6 +241,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--days", type=int, default=8)
     ap.add_argument("--events-per-competition", type=int, default=10)
+    ap.add_argument("--max-hours-to-kickoff", type=float, default=DEFAULT_MAX_HOURS)
     a = ap.parse_args()
     app_key, user = os.environ.get("BETFAIR_APP_KEY"), os.environ.get("BETFAIR_USERNAME")
     if not app_key or not user:
@@ -239,7 +252,7 @@ def main() -> int:
     del pw
     now = datetime.now(timezone.utc)
     try:
-        cov, raw = audit(Client(app_key, token), now, a.days, a.events_per_competition)
+        cov, raw = audit(Client(app_key, token), now, a.days, a.events_per_competition, a.max_hours_to_kickoff)
     finally:
         logout(app_key, token)
     write_outputs(cov, raw, now)
