@@ -35,7 +35,10 @@ def _write(path: Path, fields: list[str], rows: list[dict]) -> None:
 
 
 def deploy(tmp: Path, duplicate: bool = False, drop_from_board: bool = False) -> Path:
-    card = json.loads(sorted((REPO / "daily_cards").glob("*/card.json"))[-1].read_text())
+    # latest committed card that actually has priced candidates (a no-fixture day -- e.g. an international break,
+    # when the fixtures-first gate skips every odds call -- legitimately writes an empty card)
+    cards = [json.loads(p.read_text()) for p in sorted((REPO / "daily_cards").glob("*/card.json"))]
+    card = next(c for c in reversed(cards) if any(x.get("kickoff_time") for x in c.get("candidates", [])))
     first_ko = min(A._ts(c["kickoff_time"]) for c in card["candidates"] if c.get("kickoff_time"))
     now = first_ko - timedelta(hours=30)
     card = {**card, "data_timestamp": now.isoformat()}
