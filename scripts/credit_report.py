@@ -32,8 +32,9 @@ def _rows(p: Path) -> list[dict]:
 
 def build(repo: Path, now: datetime) -> dict:
     month = now.strftime("%Y-%m")
-    led = [r for r in CL.read(repo / "status/credit_ledger.csv") + CL.read(repo / "research_shadow/h2_pre_close/credit_ledger.csv")
-           if r["timestamp_utc"].startswith(month)]   # H2 keeps its own ledger file so its hourly commits never conflict
+    extra = sorted((repo / "research_shadow").glob("*/credit_ledger.csv"))   # research consumers keep their own ledgers
+    led = [r for r in CL.read(repo / "status/credit_ledger.csv") + [x for p in extra for x in CL.read(p)]
+           if r["timestamp_utc"].startswith(month)]   # (own files so research commits never conflict with production)
     by: dict[str, dict] = defaultdict(lambda: {"paid_calls": 0, "credits_charged": 0, "skipped_calls": 0,
                                                "credits_saved_estimate": 0})
     for r in led:
