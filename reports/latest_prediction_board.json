@@ -1,11 +1,11 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-02T13:41:33.070142+00:00",
+ "generated_at": "2026-10-02T20:07:09.825664+00:00",
  "date": "2026-10-02",
  "summary": {
-  "upcoming_events": 34,
-  "valid_predictions": 34,
+  "upcoming_events": 36,
+  "valid_predictions": 36,
   "sports_active": [
    "tennis"
   ],
@@ -17,20 +17,20 @@
    "football_double_chance.derived_1x2"
   ],
   "threshold_counts": {
-   ">=70": 16,
-   ">=75": 14,
-   ">=80": 10,
-   ">=85": 8,
+   ">=70": 17,
+   ">=75": 15,
+   ">=80": 11,
+   ">=85": 9,
    ">=90": 7,
    ">=95": 1
   },
   "settled_yesterday": 2,
   "system": "HEALTHY",
-  "api_credits_last_observed": 485
+  "api_credits_last_observed": 482
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-02T13:41:33.070142+00:00",
+  "generated_at": "2026-10-02T20:07:09.825664+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -38,30 +38,30 @@
     "last": "2026-10-02T13:41:32.406797+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 0.0
+    "age_hours": 6.4
    },
    "settlement": {
     "last": "2026-10-02T00:39:55.634198+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 13.0
+    "age_hours": 19.5
    },
    "tennis_board": {
-    "last": "2026-10-02T13:00:24.074015+00:00",
+    "last": "2026-10-02T20:07:08.313165+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 0.7
+    "age_hours": 0.0
    },
    "ci_tests": {
-    "last": "2026-10-02T13:41:33.052671+00:00",
+    "last": "2026-10-02T20:07:09.636356+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    }
   },
   "api_credits": {
-   "remaining": 485,
-   "observed_at": "2026-10-02T13:00:25.072882+00:00",
+   "remaining": 482,
+   "observed_at": "2026-10-02T20:07:09.148462+00:00",
    "source": "credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
@@ -109,7 +109,7 @@
    "status": "VALIDATED_HISTORICAL",
    "prospective_status": "COLLECTING",
    "money_eligible": false,
-   "predictions": 51,
+   "predictions": 52,
    "settled_rows": 0,
    "maturity": "COLLECTING",
    "ge80_settled": 0,
@@ -121,7 +121,7 @@
    "status": "VALIDATED_HISTORICAL",
    "prospective_status": "COLLECTING",
    "money_eligible": false,
-   "predictions": 83,
+   "predictions": 84,
    "settled_rows": 11,
    "maturity": "COLLECTING",
    "ge80_settled": 2,
@@ -160,7 +160,7 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 34,
+   "ELIGIBLE": 36,
    "EXCLUDED": 131
   },
   "exclusion_reason": {
@@ -168,10 +168,10 @@
   },
   "start_time_status": {
    "LEDGER_ONLY": 14,
-   "RESCHEDULED": 116,
+   "RESCHEDULED": 118,
    "UNCHANGED": 35
   },
-  "eligible_rescheduled": 22,
+  "eligible_rescheduled": 24,
   "rule": "est-1"
  },
  "predictions": [
@@ -310,7 +310,7 @@
    "event_id": "b3093f7932ea06973dff88f56a7b5505",
    "event_key": "tennis|tennis_wta_china_open|b3093f7932ea06973dff88f56a7b5505",
    "event_name": "Iva Jovi\u0107 v Harriet Dart",
-   "event_start": "2026-10-03T06:00:00+00:00",
+   "event_start": "2026-10-03T05:20:00+00:00",
    "market": "match_winner",
    "selection": "Iva Jovi\u0107",
    "estimated_probability": "0.931211",
@@ -383,7 +383,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-04T03:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "c116f1447c7ccaf3",
@@ -470,6 +470,48 @@
    "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
+   "prediction_id": "2030851e38bbb593",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "sport": "tennis",
+   "competition": "WTA China Open",
+   "event_id": "86d5be8c100a0589e1b1b737111770ae",
+   "event_key": "tennis|tennis_wta_china_open|86d5be8c100a0589e1b1b737111770ae",
+   "event_name": "Nikola Bartunkova v Aryna Sabalenka",
+   "event_start": "2026-10-04T03:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Aryna Sabalenka",
+   "estimated_probability": "0.853051",
+   "fair_odds": "1.1722628541552615",
+   "probability_band": "85-89.9%",
+   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
+   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "data_quality": "OK",
+   "current_context_status": "NOT_MODELLED",
+   "configured_scan_time": "30 15 * * *",
+   "actual_workflow_start": "2026-10-02T20:07:08.313165+00:00",
+   "prediction_timestamp": "2026-10-02T20:07:08.313165+00:00",
+   "minutes_to_event": "1852.9",
+   "live_price": "1.14",
+   "live_price_source": "betfair_ex_uk back (odds_api)",
+   "paper_status": "PAPER",
+   "prediction_valid": "True",
+   "single_eligible": "False",
+   "single_ineligible_reason": "engine not money-eligible",
+   "multi_research_eligible": "True",
+   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
+   "origin": "tennis_predictions/ledger_predictions.csv",
+   "origin_prediction_id": "2030851e38bbb593",
+   "settlement_status": "",
+   "result": "",
+   "correct": "",
+   "settlement_timestamp": "",
+   "event_start_original": "2026-10-04T03:00:00+00:00",
+   "start_time_status": "UNCHANGED",
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+  },
+  {
    "prediction_id": "11cccff19bdfcfa6",
    "engine_id": "wta_match_winner.betfair_market",
    "engine_version": "1",
@@ -478,7 +520,7 @@
    "event_id": "7079fae92b1e1fbd3acdd13e50cd0e8a",
    "event_key": "tennis|tennis_wta_china_open|7079fae92b1e1fbd3acdd13e50cd0e8a",
    "event_name": "Linda Noskova v Viktorija Golubic",
-   "event_start": "2026-10-04T04:00:00+00:00",
+   "event_start": "2026-10-04T03:00:00+00:00",
    "market": "match_winner",
    "selection": "Linda Noskova",
    "estimated_probability": "0.852905",
@@ -508,8 +550,8 @@
    "correct": "",
    "settlement_timestamp": "",
    "event_start_original": "2026-10-04T04:00:00+00:00",
-   "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_status": "RESCHEDULED",
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "8b7b9714c869fcd7",
@@ -551,7 +593,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-03T09:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "850a838e3adb3d64",
@@ -593,7 +635,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-04T02:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "e735fdac662dd9f0",
@@ -604,7 +646,7 @@
    "event_id": "657bc17d8194a0c05f205cb6436f9051",
    "event_key": "tennis|tennis_wta_china_open|657bc17d8194a0c05f205cb6436f9051",
    "event_name": "Belinda Bencic v Anastasia Zakharova",
-   "event_start": "2026-10-03T06:30:00+00:00",
+   "event_start": "2026-10-03T06:10:00+00:00",
    "market": "match_winner",
    "selection": "Belinda Bencic",
    "estimated_probability": "0.784483",
@@ -646,7 +688,7 @@
    "event_id": "39032a3e8201f3579fb82fa4026abf11",
    "event_key": "tennis|tennis_wta_china_open|39032a3e8201f3579fb82fa4026abf11",
    "event_name": "Kamilla Rakhimova v Leylah Fernandez",
-   "event_start": "2026-10-03T06:00:00+00:00",
+   "event_start": "2026-10-03T05:20:00+00:00",
    "market": "match_winner",
    "selection": "Leylah Fernandez",
    "estimated_probability": "0.779772",
@@ -719,7 +761,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-04T03:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "3c6fa2d279002d88",
@@ -730,7 +772,7 @@
    "event_id": "44fcdd07c482fa1615fc60d12fa24698",
    "event_key": "tennis|tennis_wta_china_open|44fcdd07c482fa1615fc60d12fa24698",
    "event_name": "Katerina Siniakova v Elina Svitolina",
-   "event_start": "2026-10-03T04:30:00+00:00",
+   "event_start": "2026-10-03T04:10:00+00:00",
    "market": "match_winner",
    "selection": "Elina Svitolina",
    "estimated_probability": "0.768551",
@@ -814,7 +856,7 @@
    "event_id": "984b276e5c976125c744389eaaadece8",
    "event_key": "tennis|tennis_wta_china_open|984b276e5c976125c744389eaaadece8",
    "event_name": "Sinja Kraus v Dayana Yastremska",
-   "event_start": "2026-10-04T04:00:00+00:00",
+   "event_start": "2026-10-04T03:00:00+00:00",
    "market": "match_winner",
    "selection": "Dayana Yastremska",
    "estimated_probability": "0.736549",
@@ -844,8 +886,8 @@
    "correct": "",
    "settlement_timestamp": "",
    "event_start_original": "2026-10-04T04:00:00+00:00",
-   "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_status": "RESCHEDULED",
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "620fd6d4af233ba2",
@@ -887,7 +929,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-04T03:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "750394d957106835",
@@ -898,7 +940,7 @@
    "event_id": "0642ea82817d319579dab471f14fc8f4",
    "event_key": "tennis|tennis_wta_china_open|0642ea82817d319579dab471f14fc8f4",
    "event_name": "Maria Sakkari v Storm Hunter",
-   "event_start": "2026-10-03T04:30:00+00:00",
+   "event_start": "2026-10-03T04:10:00+00:00",
    "market": "match_winner",
    "selection": "Maria Sakkari",
    "estimated_probability": "0.685165",
@@ -940,7 +982,7 @@
    "event_id": "79657d5f6b239c5710a9d3ea165a4f51",
    "event_key": "tennis|tennis_wta_china_open|79657d5f6b239c5710a9d3ea165a4f51",
    "event_name": "Marie Bouzkova v Kimberly Birrell",
-   "event_start": "2026-10-03T07:30:00+00:00",
+   "event_start": "2026-10-03T06:30:00+00:00",
    "market": "match_winner",
    "selection": "Marie Bouzkova",
    "estimated_probability": "0.68172",
@@ -982,7 +1024,7 @@
    "event_id": "c666871f9f247e6d225d808cf0a40c51",
    "event_key": "tennis|tennis_wta_china_open|c666871f9f247e6d225d808cf0a40c51",
    "event_name": "Sun Xinran v Cristina Bucsa",
-   "event_start": "2026-10-03T07:30:00+00:00",
+   "event_start": "2026-10-03T06:30:00+00:00",
    "market": "match_winner",
    "selection": "Cristina Bucsa",
    "estimated_probability": "0.670732",
@@ -1055,7 +1097,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-04T03:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "aa44fa120031b742",
@@ -1066,7 +1108,7 @@
    "event_id": "49a219b3e9fe502b903f289a5b49c773",
    "event_key": "tennis|tennis_wta_china_open|49a219b3e9fe502b903f289a5b49c773",
    "event_name": "Jelena Ostapenko v Paula Badosa",
-   "event_start": "2026-10-03T04:30:00+00:00",
+   "event_start": "2026-10-03T04:10:00+00:00",
    "market": "match_winner",
    "selection": "Paula Badosa",
    "estimated_probability": "0.636782",
@@ -1223,7 +1265,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-04T02:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "4e810ef4b4a6f7a6",
@@ -1307,7 +1349,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-04T03:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "561827b97c9082c2",
@@ -1360,7 +1402,7 @@
    "event_id": "ecfecd80927a50500f83832f5cb4bdcc",
    "event_key": "tennis|tennis_wta_china_open|ecfecd80927a50500f83832f5cb4bdcc",
    "event_name": "Qinwen Zheng v Anna Kalinskaya",
-   "event_start": "2026-10-03T06:30:00+00:00",
+   "event_start": "2026-10-03T06:10:00+00:00",
    "market": "match_winner",
    "selection": "Qinwen Zheng",
    "estimated_probability": "0.588235",
@@ -1476,6 +1518,48 @@
    "event_start_original": "2026-10-03T03:00:00+00:00",
    "start_time_status": "RESCHEDULED",
    "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
+  },
+  {
+   "prediction_id": "72b7806f3bdc89b4",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "sport": "tennis",
+   "competition": "ATP China Open",
+   "event_id": "69ec18acddec63da011d8f44d376b90c",
+   "event_key": "tennis|tennis_atp_china_open|69ec18acddec63da011d8f44d376b90c",
+   "event_name": "Hubert Hurkacz v Karen Khachanov",
+   "event_start": "2026-10-04T03:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Karen Khachanov",
+   "estimated_probability": "0.555556",
+   "fair_odds": "1.7999985600011519",
+   "probability_band": "55-59.9%",
+   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
+   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "data_quality": "OK",
+   "current_context_status": "NOT_MODELLED",
+   "configured_scan_time": "30 15 * * *",
+   "actual_workflow_start": "2026-10-02T20:07:08.313165+00:00",
+   "prediction_timestamp": "2026-10-02T20:07:08.313165+00:00",
+   "minutes_to_event": "1852.9",
+   "live_price": "1.73",
+   "live_price_source": "betfair_ex_uk back (odds_api)",
+   "paper_status": "PAPER",
+   "prediction_valid": "True",
+   "single_eligible": "False",
+   "single_ineligible_reason": "engine not money-eligible",
+   "multi_research_eligible": "False",
+   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
+   "origin": "tennis_predictions/ledger_predictions.csv",
+   "origin_prediction_id": "72b7806f3bdc89b4",
+   "settlement_status": "",
+   "result": "",
+   "correct": "",
+   "settlement_timestamp": "",
+   "event_start_original": "2026-10-04T03:00:00+00:00",
+   "start_time_status": "UNCHANGED",
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
   },
   {
    "prediction_id": "195061137baf4069",
