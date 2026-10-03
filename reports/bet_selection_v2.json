@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-10-03T11:54:39.515544+00:00",
+ "generated_at": "2026-10-03T12:20:26.689230+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-4",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 13,
+  "runs": 14,
   "totals_over_runs": {
-   "events_scanned": 585,
-   "valid_predictions": 573,
-   "high_p_candidates": 259,
-   "priced_candidates": 573,
+   "events_scanned": 601,
+   "valid_predictions": 589,
+   "high_p_candidates": 269,
+   "priced_candidates": 589,
    "PAPER_BET": 19,
-   "MULTI_RESEARCH_ELIGIBLE": 104,
-   "WATCH": 44,
-   "REJECT": 520,
+   "MULTI_RESEARCH_ELIGIBLE": 109,
+   "WATCH": 46,
+   "REJECT": 529,
    "paper_bets_added": 10,
    "money_card_qualified": 0
   },
@@ -31,30 +31,30 @@
   }
  },
  "latest_run": {
-  "run_at": "2026-10-03T11:54:39.515544+00:00",
+  "run_at": "2026-10-03T12:20:26.689230+00:00",
   "trigger": "schedule",
   "rule_version": "bsv2-4",
-  "events_scanned": "17",
-  "valid_predictions": "17",
+  "events_scanned": "16",
+  "valid_predictions": "16",
   "high_p_candidates": "10",
-  "priced_candidates": "17",
+  "priced_candidates": "16",
   "PAPER_BET": "0",
   "MULTI_RESEARCH_ELIGIBLE": "5",
   "WATCH": "2",
-  "REJECT": "10",
+  "REJECT": "9",
   "paper_bets_added": "0",
-  "snapshots_added": "319",
+  "snapshots_added": "0",
   "money_card_qualified": "0",
   "football_fixtures_on_card": "0"
  },
  "latest_decisions": {
   "decisions": {
    "MULTI_RESEARCH_ELIGIBLE": 5,
-   "REJECT": 10,
+   "REJECT": 9,
    "WATCH": 2
   },
   "reason_counts": {
-   "NET_EV_NOT_POSITIVE": 14,
+   "NET_EV_NOT_POSITIVE": 13,
    "NET_EV_BELOW_PAPER_GATE": 2,
    "ODDS_BELOW_PAYOUT_FLOOR": 1,
    "EXCHANGE_SPREAD_TOO_WIDE": 1,
@@ -63,13 +63,13 @@
   "by_sport": {
    "tennis": {
     "MULTI_RESEARCH_ELIGIBLE": 5,
-    "REJECT": 10,
+    "REJECT": 9,
     "WATCH": 2
    }
   },
   "by_engine": {
    "atp_match_winner.betfair_market": {
-    "REJECT": 4,
+    "REJECT": 3,
     "WATCH": 1,
     "MULTI_RESEARCH_ELIGIBLE": 1
    },

@@ -1,11 +1,11 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-03T11:54:39.159274+00:00",
+ "generated_at": "2026-10-03T12:20:26.322690+00:00",
  "date": "2026-10-03",
  "summary": {
-  "upcoming_events": 17,
-  "valid_predictions": 17,
+  "upcoming_events": 16,
+  "valid_predictions": 16,
   "sports_active": [
    "tennis"
   ],
@@ -30,30 +30,30 @@
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-03T11:54:39.159274+00:00",
+  "generated_at": "2026-10-03T12:20:26.322690+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
    "daily_scan": {
-    "last": "2026-10-02T13:41:32.406797+00:00",
+    "last": "2026-10-03T12:20:25.737548+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 22.2
+    "age_hours": 0.0
    },
    "settlement": {
     "last": "2026-10-03T00:23:09.424635+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 11.5
+    "age_hours": 12.0
    },
    "tennis_board": {
     "last": "2026-10-03T11:54:36.513622+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 0.0
+    "age_hours": 0.4
    },
    "ci_tests": {
-    "last": "2026-10-03T11:54:38.857485+00:00",
+    "last": "2026-10-03T12:20:26.300755+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -160,18 +160,18 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 17,
-   "EXCLUDED": 154
+   "ELIGIBLE": 16,
+   "EXCLUDED": 155
   },
   "exclusion_reason": {
-   "EVENT_STARTED": 154
+   "EVENT_STARTED": 155
   },
   "start_time_status": {
    "LEDGER_ONLY": 14,
    "RESCHEDULED": 125,
    "UNCHANGED": 32
   },
-  "eligible_rescheduled": 11,
+  "eligible_rescheduled": 10,
   "rule": "est-1"
  },
  "predictions": [
@@ -634,48 +634,6 @@
    "correct": "",
    "settlement_timestamp": "",
    "event_start_original": "2026-10-04T03:00:00+00:00",
-   "start_time_status": "RESCHEDULED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
-  },
-  {
-   "prediction_id": "4ee587cd0e01226e",
-   "engine_id": "atp_match_winner.betfair_market",
-   "engine_version": "1",
-   "sport": "tennis",
-   "competition": "ATP China Open",
-   "event_id": "33518edfa1e26f2c0e3ae617afe0ab1b",
-   "event_key": "tennis|tennis_atp_china_open|33518edfa1e26f2c0e3ae617afe0ab1b",
-   "event_name": "Francisco Cerundolo v Jakub Mensik",
-   "event_start": "2026-10-03T12:00:00+00:00",
-   "market": "match_winner",
-   "selection": "Jakub Mensik",
-   "estimated_probability": "0.630966",
-   "fair_odds": "1.584871451076603",
-   "probability_band": "60-64.9%",
-   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
-   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "30 15 * * *",
-   "actual_workflow_start": "2026-10-01T20:28:17.957003+00:00",
-   "prediction_timestamp": "2026-10-01T20:28:17.957003+00:00",
-   "minutes_to_event": "1831.7",
-   "live_price": "1.53",
-   "live_price_source": "betfair_ex_uk back (odds_api)",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "False",
-   "single_ineligible_reason": "engine not money-eligible",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
-   "origin": "tennis_predictions/ledger_predictions.csv",
-   "origin_prediction_id": "4ee587cd0e01226e",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-10-03T03:00:00+00:00",
    "start_time_status": "RESCHEDULED",
    "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },

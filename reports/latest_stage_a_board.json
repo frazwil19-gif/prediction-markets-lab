@@ -2,10 +2,10 @@
  "board_version": "stage-a-2",
  "product": "STAGE A PREDICTION BOARD (probability first; NOT a betting card)",
  "principle": "STRONG PREDICTION != VALID BET. Stage B (bet-selection) alone decides bets.",
- "generated_at": "2026-10-03T11:54:39.159274+00:00",
+ "generated_at": "2026-10-03T12:20:26.322690+00:00",
  "strong_prediction_min_probability": 0.7,
  "summary": {
-  "predictions": 17,
+  "predictions": 16,
   "strong_predictions": 10,
   "strong_unique_events": 10,
   "strong_by_price_status": {
@@ -14,7 +14,7 @@
    "PRICE_VALID": 1
   },
   "all_by_price_status": {
-   "POOR_PAYOUT": 13,
+   "POOR_PAYOUT": 12,
    "PRICE_QUALITY_FAIL": 1,
    "PRICE_VALID": 3
   },
@@ -23,7 +23,7 @@
    "tennis": 10
   },
   "all_by_sport": {
-   "tennis": 17
+   "tennis": 16
   }
  },
  "predictions": [
@@ -534,52 +534,6 @@
    "rank": 11
   },
   {
-   "prediction_id": "4ee587cd0e01226e",
-   "sport": "tennis",
-   "competition": "ATP China Open",
-   "event_key": "tennis|tennis_atp_china_open|33518edfa1e26f2c0e3ae617afe0ab1b",
-   "event_name": "Francisco Cerundolo v Jakub Mensik",
-   "event_start": "2026-10-03T12:00:00+00:00",
-   "event_start_original": "2026-10-03T03:00:00+00:00",
-   "start_time_status": "RESCHEDULED",
-   "market": "match_winner",
-   "selection": "Jakub Mensik",
-   "probability": 0.644495,
-   "probability_basis": "P_CURRENT_SCAN",
-   "probability_observed_at": "2026-10-03T11:54:36.513622+00:00",
-   "p_first_snapshot": 0.630966,
-   "p_current_scan": 0.644495,
-   "ledger_probability": 0.630966,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "1831.7",
-   "sigma": 0.011685,
-   "sigma_method": "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)",
-   "sigma_calibration": 0.010918,
-   "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)",
-   "sigma_half_width": 0.004163,
-   "exchange_width": 0.008325,
-   "probability_band": "60-64.9%",
-   "engine_id": "atp_match_winner.betfair_market",
-   "engine_version": "1",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "prediction_timestamp": "2026-10-01T20:28:17.957003+00:00",
-   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "POOR_PAYOUT",
-   "stage_a_label": "POOR_PAYOUT",
-   "financially_assessable": true,
-   "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
-   "best_clean_source": "williamhill",
-   "best_clean_odds": 1.53,
-   "best_clean_net_ev": -0.013923,
-   "n_quotes_latest": 20,
-   "n_clean_quotes_latest": 19,
-   "price_observed_at": "2026-10-03T11:54:36.513622+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 12
-  },
-  {
    "prediction_id": "e52979e017c26cab",
    "sport": "tennis",
    "competition": "WTA China Open",
@@ -623,7 +577,7 @@
    "price_observed_at": "2026-10-03T11:54:36.513622+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 13
+   "rank": 12
   },
   {
    "prediction_id": "1ffbb8f4bfb9adfc",
@@ -669,7 +623,7 @@
    "price_observed_at": "2026-10-03T11:54:36.513622+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 14
+   "rank": 13
   },
   {
    "prediction_id": "1a7181925c76b629",
@@ -715,7 +669,7 @@
    "price_observed_at": "2026-10-03T11:54:36.513622+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 15
+   "rank": 14
   },
   {
    "prediction_id": "72b7806f3bdc89b4",
@@ -761,7 +715,7 @@
    "price_observed_at": "2026-10-03T11:54:36.513622+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 16
+   "rank": 15
   },
   {
    "prediction_id": "f6859ffe7fda32fd",
@@ -807,7 +761,7 @@
    "price_observed_at": "2026-10-03T11:54:36.513622+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 17
+   "rank": 16
   }
  ]
 }
