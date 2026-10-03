@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-02T22:13:56.651933+00:00",
+ "generated_at": "2026-10-03T00:23:08.987279+00:00",
  "lag_hours": {
   "football_data_co_uk": 120,
   "tennis_court_log": 240,
@@ -8,8 +8,8 @@
  "totals": {
   "NOT_STARTED": 56,
   "NORMAL_SOURCE_LAG": 129,
-  "SETTLED": 12,
-  "UNRESOLVED_AFTER_EXPECTED_LAG": 4,
+  "SETTLED": 16,
+  "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
   "SOURCE_UNAVAILABLE": 0
  },
  "groups": [
@@ -46,11 +46,11 @@
    "source": "odds_api_scores",
    "NOT_STARTED": 2,
    "NORMAL_SOURCE_LAG": 0,
-   "SETTLED": 0,
-   "UNRESOLVED_AFTER_EXPECTED_LAG": 1,
+   "SETTLED": 1,
+   "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
    "SOURCE_UNAVAILABLE": 0,
    "completed_events_past_lag": 1,
-   "settled_share_of_started": 0.0
+   "settled_share_of_started": 1.0
   },
   {
    "ledger": "legacy_paper_ledger",
@@ -59,11 +59,11 @@
    "source": "odds_api_scores",
    "NOT_STARTED": 17,
    "NORMAL_SOURCE_LAG": 0,
-   "SETTLED": 0,
-   "UNRESOLVED_AFTER_EXPECTED_LAG": 3,
+   "SETTLED": 3,
+   "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
    "SOURCE_UNAVAILABLE": 0,
    "completed_events_past_lag": 3,
-   "settled_share_of_started": 0.0
+   "settled_share_of_started": 1.0
   },
   {
    "ledger": "legacy_paper_ledger",
@@ -131,47 +131,6 @@
    "settled_share_of_started": 1.0
   }
  ],
- "flagged": [
-  {
-   "ledger": "legacy_paper_ledger",
-   "id": "Norwich City v Bolton Wanderers::1x2::away",
-   "sport": "football",
-   "competition": "Championship",
-   "event": "Norwich City v Bolton Wanderers",
-   "start": "2026-09-20T00:00:00+00:00",
-   "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 310.2
-  },
-  {
-   "ledger": "legacy_paper_ledger",
-   "id": "Leeds United v Crystal Palace::1x2::away",
-   "sport": "football",
-   "competition": "Premier League",
-   "event": "Leeds United v Crystal Palace",
-   "start": "2026-09-20T00:00:00+00:00",
-   "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 310.2
-  },
-  {
-   "ledger": "legacy_paper_ledger",
-   "id": "Manchester City v Sunderland::1x2::away",
-   "sport": "football",
-   "competition": "Premier League",
-   "event": "Manchester City v Sunderland",
-   "start": "2026-09-20T00:00:00+00:00",
-   "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 310.2
-  },
-  {
-   "ledger": "legacy_paper_ledger",
-   "id": "Leeds United v Crystal Palace::over_under_2_5::under",
-   "sport": "football",
-   "competition": "Premier League",
-   "event": "Leeds United v Crystal Palace",
-   "start": "2026-09-20T00:00:00+00:00",
-   "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 310.2
-  }
- ],
- "healthy": false
+ "flagged": [],
+ "healthy": true
 }
