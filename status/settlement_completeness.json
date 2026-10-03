@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-03T00:23:08.987279+00:00",
+ "generated_at": "2026-10-03T23:44:04.309156+00:00",
  "lag_hours": {
   "football_data_co_uk": 120,
   "tennis_court_log": 240,
   "odds_api_scores": 96
  },
  "totals": {
-  "NOT_STARTED": 56,
-  "NORMAL_SOURCE_LAG": 129,
+  "NOT_STARTED": 44,
+  "NORMAL_SOURCE_LAG": 154,
   "SETTLED": 16,
   "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
   "SOURCE_UNAVAILABLE": 0
@@ -83,8 +83,8 @@
    "sport": "tennis",
    "competition": "ATP China Open",
    "source": "tennis_court_log",
-   "NOT_STARTED": 6,
-   "NORMAL_SOURCE_LAG": 31,
+   "NOT_STARTED": 4,
+   "NORMAL_SOURCE_LAG": 36,
    "SETTLED": 0,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
    "SOURCE_UNAVAILABLE": 0,
@@ -96,8 +96,8 @@
    "sport": "tennis",
    "competition": "ATP Japan Open",
    "source": "tennis_court_log",
-   "NOT_STARTED": 6,
-   "NORMAL_SOURCE_LAG": 21,
+   "NOT_STARTED": 4,
+   "NORMAL_SOURCE_LAG": 25,
    "SETTLED": 0,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
    "SOURCE_UNAVAILABLE": 0,
@@ -109,13 +109,13 @@
    "sport": "tennis",
    "competition": "WTA China Open",
    "source": "tennis_court_log",
-   "NOT_STARTED": 24,
-   "NORMAL_SOURCE_LAG": 67,
+   "NOT_STARTED": 16,
+   "NORMAL_SOURCE_LAG": 83,
    "SETTLED": 2,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
    "SOURCE_UNAVAILABLE": 0,
    "completed_events_past_lag": 2,
-   "settled_share_of_started": 0.029
+   "settled_share_of_started": 0.0235
   },
   {
    "ledger": "unified_ledger",
