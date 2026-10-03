@@ -1,4 +1,4 @@
-# Paper Performance Dashboard — 2026-10-03T00:23Z
+# Paper Performance Dashboard — 2026-10-03T01:17Z
 
 Paper only. Descriptive; no projections.
 
