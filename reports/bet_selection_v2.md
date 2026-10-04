@@ -4,28 +4,30 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-04T13:06Z · events scanned 14 · valid predictions 14 · high-P (≥70%) 8 · priced 14 · PAPER_BET 0 · MULTI-research 4 · WATCH 1 · REJECT 9 · new paper bets 0 · Money Card qualified 0
+Run 2026-10-04T18:46Z · events scanned 16 · valid predictions 16 · high-P (≥70%) 8 · priced 16 · PAPER_BET 0 · MULTI-research 4 · WATCH 0 · REJECT 12 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): NET_EV_NOT_POSITIVE 13 · EXCHANGE_SPREAD_TOO_WIDE 2 · NET_EV_BELOW_PAPER_GATE 1 · OUTSIDE_EVENT_HORIZON 1
+Reason codes (latest run): NET_EV_NOT_POSITIVE 16 · EXCHANGE_SPREAD_TOO_WIDE 3
 
 ## Candidates (latest run, best price per prediction)
 
 | Event | Start | Sel | P | Fair | Odds (source) | Break-even | Net EV | Decision |
 |---|---|---|---|---|---|---|---|---|
-| Coco Gauff v Sun Xinran | 2026-10-05T12:30 | Coco Gauff | 93.9% | 1.06 | 1.06 (betfair_ex_uk) | 94.6% | -0.7% | MULTI_RESEARCH_ELIGIBLE |
-| Donna Vekic v Iga Swiatek | 2026-10-05T03:00 | Iga Swiatek | 90.9% | 1.10 | 1.10 (betfair_ex_uk) | 91.3% | -0.5% | MULTI_RESEARCH_ELIGIBLE |
-| Carlos Alcaraz v Jaume Munar | 2026-10-05T07:00 | Carlos Alcaraz | 88.5% | 1.13 | 1.13 (betfair_ex_uk) | 89.0% | -0.6% | MULTI_RESEARCH_ELIGIBLE |
-| Sinja Kraus v Nikola Bartunkova | 2026-10-06T04:00 | Nikola Bartunkova | 82.6% | 1.21 | 1.20 (betfair_ex_uk) | 84.0% | -1.7% | MULTI_RESEARCH_ELIGIBLE |
-| Daria Snigur v Mirra Andreeva | 2026-10-06T04:00 | Mirra Andreeva | 80.6% | 1.24 | 1.17 (betfair_ex_uk) | 86.1% | -6.4% | REJECT |
-| Iva Jović v Kamilla Rakhimova | 2026-10-05T04:30 | Iva Jović | 79.0% | 1.27 | 1.26 (betfair_ex_uk) | 80.2% | -1.5% | REJECT |
-| Linda Noskova v Ekaterina Alexandrova | 2026-10-06T04:00 | Linda Noskova | 74.9% | 1.34 | 1.36 (sport888) | 73.5% | 1.8% | WATCH |
-| Maria Sakkari v Elina Svitolina | 2026-10-05T08:30 | Elina Svitolina | 74.5% | 1.34 | 1.33 (betfair_ex_uk) | 76.1% | -2.2% | REJECT |
-| Belinda Bencic v Ann Li | 2026-10-05T07:00 | Belinda Bencic | 69.9% | 1.43 | 1.42 (casumo) | 70.4% | -0.8% | REJECT |
-| Jiri Lehecka v Valentin Vacherot | 2026-10-05T09:00 | Jiri Lehecka | 65.5% | 1.53 | 1.35 (betfair_ex_uk) | 75.0% | -12.7% | REJECT |
-| Jelena Ostapenko v Elise Mertens | 2026-10-05T08:30 | Elise Mertens | 62.7% | 1.60 | 1.57 (betfair_ex_uk) | 64.9% | -3.4% | REJECT |
-| Alina Charaeva v Sonay Kartal | 2026-10-05T06:00 | Sonay Kartal | 62.7% | 1.60 | 1.57 (sport888) | 63.7% | -1.6% | REJECT |
-| Alex de Minaur v Hubert Hurkacz | 2026-10-05T07:00 | Alex de Minaur | 56.2% | 1.78 | 1.77 (betfair_ex_uk) | 57.8% | -2.8% | REJECT |
-| Marie Bouzkova v Qinwen Zheng | 2026-10-05T04:30 | Qinwen Zheng | 55.9% | 1.79 | 1.73 (betfair_sb_uk) | 57.8% | -3.3% | REJECT |
+| Coco Gauff v Sun Xinran | 2026-10-05T12:30 | Coco Gauff | 93.8% | 1.07 | 1.06 (betfair_ex_uk) | 94.6% | -0.8% | MULTI_RESEARCH_ELIGIBLE |
+| Donna Vekic v Iga Swiatek | 2026-10-05T03:00 | Iga Swiatek | 88.7% | 1.13 | 1.12 (betfair_ex_uk) | 89.8% | -1.2% | MULTI_RESEARCH_ELIGIBLE |
+| Daria Snigur v Mirra Andreeva | 2026-10-06T04:00 | Mirra Andreeva | 88.4% | 1.13 | 1.08 (betfair_ex_uk) | 92.9% | -4.9% | REJECT |
+| Carlos Alcaraz v Jaume Munar | 2026-10-05T07:00 | Carlos Alcaraz | 88.2% | 1.13 | 1.13 (betfair_ex_uk) | 89.0% | -0.9% | MULTI_RESEARCH_ELIGIBLE |
+| Sinja Kraus v Nikola Bartunkova | 2026-10-06T04:00 | Nikola Bartunkova | 81.8% | 1.22 | 1.20 (betfair_ex_uk) | 84.0% | -2.6% | MULTI_RESEARCH_ELIGIBLE |
+| Iva Jović v Kamilla Rakhimova | 2026-10-05T04:30 | Iva Jović | 78.7% | 1.27 | 1.27 (betfair_ex_uk) | 79.6% | -1.2% | REJECT |
+| Linda Noskova v Ekaterina Alexandrova | 2026-10-06T04:00 | Linda Noskova | 77.6% | 1.29 | 1.25 (betfair_ex_uk) | 80.8% | -4.0% | REJECT |
+| Maria Sakkari v Elina Svitolina | 2026-10-05T08:30 | Elina Svitolina | 74.4% | 1.34 | 1.33 (smarkets) | 75.6% | -1.6% | REJECT |
+| Belinda Bencic v Ann Li | 2026-10-05T07:00 | Belinda Bencic | 69.9% | 1.43 | 1.43 (casumo) | 69.9% | -0.1% | REJECT |
+| Jiri Lehecka v Valentin Vacherot | 2026-10-05T09:00 | Jiri Lehecka | 62.9% | 1.59 | 1.58 (betfair_ex_uk) | 64.5% | -2.4% | REJECT |
+| Alina Charaeva v Sonay Kartal | 2026-10-05T06:00 | Sonay Kartal | 62.1% | 1.61 | 1.60 (betfair_ex_uk) | 63.7% | -2.5% | REJECT |
+| Jelena Ostapenko v Elise Mertens | 2026-10-05T08:30 | Elise Mertens | 61.6% | 1.62 | 1.61 (betfair_ex_uk) | 63.3% | -2.7% | REJECT |
+| Karolina Muchova v Naomi Osaka | 2026-10-06T03:00 | Karolina Muchova | 59.4% | 1.68 | 1.51 (betfair_ex_uk) | 67.4% | -11.8% | REJECT |
+| Novak Djokovic v Daniil Medvedev | 2026-10-05T11:00 | Daniil Medvedev | 59.1% | 1.69 | 1.67 (betfair_sb_uk) | 59.9% | -1.3% | REJECT |
+| Marie Bouzkova v Qinwen Zheng | 2026-10-05T04:30 | Qinwen Zheng | 57.6% | 1.74 | 1.73 (betfair_sb_uk) | 57.8% | -0.3% | REJECT |
+| Alex de Minaur v Hubert Hurkacz | 2026-10-05T07:00 | Alex de Minaur | 54.3% | 1.84 | 1.80 (betway) | 55.6% | -2.3% | REJECT |
 
 ## Paper results (all time)
 
