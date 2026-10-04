@@ -1,7 +1,7 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-04T18:46:05.735769+00:00",
+ "generated_at": "2026-10-04T23:56:05.482261+00:00",
  "date": "2026-10-04",
  "summary": {
   "upcoming_events": 16,
@@ -30,7 +30,7 @@
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-04T18:46:05.735769+00:00",
+  "generated_at": "2026-10-04T23:56:05.482261+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -38,22 +38,22 @@
     "last": "2026-10-04T13:06:00.770119+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 5.7
+    "age_hours": 10.8
    },
    "settlement": {
     "last": "2026-10-03T23:44:04.743284+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 19.0
+    "age_hours": 24.2
    },
    "tennis_board": {
     "last": "2026-10-04T18:46:03.882660+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 0.0
+    "age_hours": 5.2
    },
    "ci_tests": {
-    "last": "2026-10-04T18:46:05.406947+00:00",
+    "last": "2026-10-04T23:56:05.479264+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
