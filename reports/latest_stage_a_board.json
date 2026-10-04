@@ -2,28 +2,28 @@
  "board_version": "stage-a-2",
  "product": "STAGE A PREDICTION BOARD (probability first; NOT a betting card)",
  "principle": "STRONG PREDICTION != VALID BET. Stage B (bet-selection) alone decides bets.",
- "generated_at": "2026-10-04T12:45:59.887046+00:00",
+ "generated_at": "2026-10-04T13:06:01.281827+00:00",
  "strong_prediction_min_probability": 0.7,
  "summary": {
-  "predictions": 15,
-  "strong_predictions": 9,
-  "strong_unique_events": 9,
+  "predictions": 14,
+  "strong_predictions": 8,
+  "strong_unique_events": 8,
   "strong_by_price_status": {
    "POOR_PAYOUT": 6,
    "PRICE_QUALITY_FAIL": 1,
-   "PRICE_VALID": 2
+   "PRICE_VALID": 1
   },
   "all_by_price_status": {
    "POOR_PAYOUT": 11,
    "PRICE_QUALITY_FAIL": 2,
-   "PRICE_VALID": 2
+   "PRICE_VALID": 1
   },
   "duplicate_prediction_rows_collapsed": 0,
   "strong_by_sport": {
-   "tennis": 9
+   "tennis": 8
   },
   "all_by_sport": {
-   "tennis": 15
+   "tennis": 14
   }
  },
  "predictions": [
@@ -304,52 +304,6 @@
    "rank": 6
   },
   {
-   "prediction_id": "9fe67e4d93ff45b2",
-   "sport": "tennis",
-   "competition": "WTA China Open",
-   "event_key": "tennis|tennis_wta_china_open|5dcb61ea08af6d8049acffbcb7735ce2",
-   "event_name": "Karolina Muchova v Liudmila Samsonova",
-   "event_start": "2026-10-04T13:00:00+00:00",
-   "event_start_original": "2026-10-04T03:00:00+00:00",
-   "start_time_status": "RESCHEDULED",
-   "market": "match_winner",
-   "selection": "Karolina Muchova",
-   "probability": 0.779777,
-   "probability_basis": "P_CURRENT_SCAN",
-   "probability_observed_at": "2026-10-04T12:45:58.026306+00:00",
-   "p_first_snapshot": 0.769561,
-   "p_current_scan": 0.779777,
-   "ledger_probability": 0.769561,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "2279.6",
-   "sigma": 0.011946,
-   "sigma_method": "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)",
-   "sigma_calibration": 0.011556,
-   "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)",
-   "sigma_half_width": 0.003028,
-   "exchange_width": 0.006056,
-   "probability_band": "75-79.9%",
-   "engine_id": "wta_match_winner.betfair_market",
-   "engine_version": "1",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "prediction_timestamp": "2026-10-02T13:00:24.074015+00:00",
-   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
-   "strength": "STRONG_PREDICTION",
-   "price_status": "PRICE_VALID",
-   "stage_a_label": "STRONG_PREDICTION_PRICE_VALID",
-   "financially_assessable": true,
-   "price_status_reasons": "",
-   "best_clean_source": "unibet_uk",
-   "best_clean_odds": 1.32,
-   "best_clean_net_ev": 0.029306,
-   "n_quotes_latest": 20,
-   "n_clean_quotes_latest": 19,
-   "price_observed_at": "2026-10-04T12:45:58.026306+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 7
-  },
-  {
    "prediction_id": "7fa669969475c708",
    "sport": "tennis",
    "competition": "WTA China Open",
@@ -393,7 +347,7 @@
    "price_observed_at": "2026-10-04T12:45:58.026306+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 8
+   "rank": 7
   },
   {
    "prediction_id": "9143b4a5979e5234",
@@ -439,7 +393,7 @@
    "price_observed_at": "2026-10-04T12:45:58.026306+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 9
+   "rank": 8
   },
   {
    "prediction_id": "4e2e07a3ca1c669e",
@@ -485,7 +439,7 @@
    "price_observed_at": "2026-10-04T12:45:58.026306+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 10
+   "rank": 9
   },
   {
    "prediction_id": "28a4e5d9ed22674f",
@@ -531,7 +485,7 @@
    "price_observed_at": "2026-10-04T12:45:58.026306+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 11
+   "rank": 10
   },
   {
    "prediction_id": "da40b23c97dd0c37",
@@ -577,7 +531,7 @@
    "price_observed_at": "2026-10-04T12:45:58.026306+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 12
+   "rank": 11
   },
   {
    "prediction_id": "e52979e017c26cab",
@@ -623,7 +577,7 @@
    "price_observed_at": "2026-10-04T12:45:58.026306+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 13
+   "rank": 12
   },
   {
    "prediction_id": "39d88e8a750b3724",
@@ -669,7 +623,7 @@
    "price_observed_at": "2026-10-04T12:45:58.026306+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 14
+   "rank": 13
   },
   {
    "prediction_id": "f5abce11c182344b",
@@ -715,7 +669,7 @@
    "price_observed_at": "2026-10-04T12:45:58.026306+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 15
+   "rank": 14
   }
  ]
 }

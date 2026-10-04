@@ -4,9 +4,9 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-04T12:46Z · events scanned 15 · valid predictions 15 · high-P (≥70%) 9 · priced 15 · PAPER_BET 0 · MULTI-research 4 · WATCH 2 · REJECT 9 · new paper bets 0 · Money Card qualified 0
+Run 2026-10-04T13:06Z · events scanned 14 · valid predictions 14 · high-P (≥70%) 8 · priced 14 · PAPER_BET 0 · MULTI-research 4 · WATCH 1 · REJECT 9 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): NET_EV_NOT_POSITIVE 13 · EXCHANGE_SPREAD_TOO_WIDE 2 · ODDS_BELOW_PAYOUT_FLOOR 1 · NET_EV_BELOW_PAPER_GATE 1 · OUTSIDE_EVENT_HORIZON 1
+Reason codes (latest run): NET_EV_NOT_POSITIVE 13 · EXCHANGE_SPREAD_TOO_WIDE 2 · NET_EV_BELOW_PAPER_GATE 1 · OUTSIDE_EVENT_HORIZON 1
 
 ## Candidates (latest run, best price per prediction)
 
@@ -18,7 +18,6 @@ Reason codes (latest run): NET_EV_NOT_POSITIVE 13 · EXCHANGE_SPREAD_TOO_WIDE 2 
 | Sinja Kraus v Nikola Bartunkova | 2026-10-06T04:00 | Nikola Bartunkova | 82.6% | 1.21 | 1.20 (betfair_ex_uk) | 84.0% | -1.7% | MULTI_RESEARCH_ELIGIBLE |
 | Daria Snigur v Mirra Andreeva | 2026-10-06T04:00 | Mirra Andreeva | 80.6% | 1.24 | 1.17 (betfair_ex_uk) | 86.1% | -6.4% | REJECT |
 | Iva Jović v Kamilla Rakhimova | 2026-10-05T04:30 | Iva Jović | 79.0% | 1.27 | 1.26 (betfair_ex_uk) | 80.2% | -1.5% | REJECT |
-| Karolina Muchova v Liudmila Samsonova | 2026-10-04T13:00 | Karolina Muchova | 78.0% | 1.28 | 1.32 (unibet_uk) | 75.8% | 2.9% | WATCH |
 | Linda Noskova v Ekaterina Alexandrova | 2026-10-06T04:00 | Linda Noskova | 74.9% | 1.34 | 1.36 (sport888) | 73.5% | 1.8% | WATCH |
 | Maria Sakkari v Elina Svitolina | 2026-10-05T08:30 | Elina Svitolina | 74.5% | 1.34 | 1.33 (betfair_ex_uk) | 76.1% | -2.2% | REJECT |
 | Belinda Bencic v Ann Li | 2026-10-05T07:00 | Belinda Bencic | 69.9% | 1.43 | 1.42 (casumo) | 70.4% | -0.8% | REJECT |

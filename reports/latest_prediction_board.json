@@ -1,11 +1,11 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-04T12:45:59.887046+00:00",
+ "generated_at": "2026-10-04T13:06:01.281827+00:00",
  "date": "2026-10-04",
  "summary": {
-  "upcoming_events": 15,
-  "valid_predictions": 15,
+  "upcoming_events": 14,
+  "valid_predictions": 14,
   "sports_active": [
    "tennis"
   ],
@@ -17,8 +17,8 @@
    "football_double_chance.derived_1x2"
   ],
   "threshold_counts": {
-   ">=70": 9,
-   ">=75": 7,
+   ">=70": 8,
+   ">=75": 6,
    ">=80": 5,
    ">=85": 3,
    ">=90": 1,
@@ -30,30 +30,30 @@
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-04T12:45:59.887046+00:00",
+  "generated_at": "2026-10-04T13:06:01.281827+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
    "daily_scan": {
-    "last": "2026-10-03T12:20:25.737548+00:00",
+    "last": "2026-10-04T13:06:00.770119+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 24.4
+    "age_hours": 0.0
    },
    "settlement": {
     "last": "2026-10-03T23:44:04.743284+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 13.0
+    "age_hours": 13.4
    },
    "tennis_board": {
     "last": "2026-10-04T12:45:58.026306+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 0.0
+    "age_hours": 0.3
    },
    "ci_tests": {
-    "last": "2026-10-04T12:45:59.591609+00:00",
+    "last": "2026-10-04T13:06:01.268837+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -160,18 +160,18 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 15,
-   "EXCLUDED": 171
+   "ELIGIBLE": 14,
+   "EXCLUDED": 172
   },
   "exclusion_reason": {
-   "EVENT_STARTED": 171
+   "EVENT_STARTED": 172
   },
   "start_time_status": {
    "LEDGER_ONLY": 14,
    "RESCHEDULED": 133,
    "UNCHANGED": 39
   },
-  "eligible_rescheduled": 9,
+  "eligible_rescheduled": 8,
   "rule": "est-1"
  },
  "predictions": [
@@ -424,48 +424,6 @@
    "correct": "",
    "settlement_timestamp": "",
    "event_start_original": "2026-10-05T04:00:00+00:00",
-   "start_time_status": "RESCHEDULED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
-  },
-  {
-   "prediction_id": "9fe67e4d93ff45b2",
-   "engine_id": "wta_match_winner.betfair_market",
-   "engine_version": "1",
-   "sport": "tennis",
-   "competition": "WTA China Open",
-   "event_id": "5dcb61ea08af6d8049acffbcb7735ce2",
-   "event_key": "tennis|tennis_wta_china_open|5dcb61ea08af6d8049acffbcb7735ce2",
-   "event_name": "Karolina Muchova v Liudmila Samsonova",
-   "event_start": "2026-10-04T13:00:00+00:00",
-   "market": "match_winner",
-   "selection": "Karolina Muchova",
-   "estimated_probability": "0.769561",
-   "fair_odds": "1.299442149485226",
-   "probability_band": "75-79.9%",
-   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
-   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "30 6 * * *",
-   "actual_workflow_start": "2026-10-02T13:00:24.074015+00:00",
-   "prediction_timestamp": "2026-10-02T13:00:24.074015+00:00",
-   "minutes_to_event": "2279.6",
-   "live_price": "1.2",
-   "live_price_source": "betfair_ex_uk back (odds_api)",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "False",
-   "single_ineligible_reason": "engine not money-eligible",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
-   "origin": "tennis_predictions/ledger_predictions.csv",
-   "origin_prediction_id": "9fe67e4d93ff45b2",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-10-04T03:00:00+00:00",
    "start_time_status": "RESCHEDULED",
    "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
