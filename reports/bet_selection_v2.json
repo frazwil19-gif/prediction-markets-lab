@@ -1,77 +1,75 @@
 {
- "generated_at": "2026-10-06T02:23:18.352843+00:00",
+ "generated_at": "2026-10-06T13:31:45.720390+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-4",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 21,
+  "runs": 22,
   "totals_over_runs": {
-   "events_scanned": 715,
-   "valid_predictions": 686,
-   "high_p_candidates": 328,
-   "priced_candidates": 686,
+   "events_scanned": 741,
+   "valid_predictions": 692,
+   "high_p_candidates": 333,
+   "priced_candidates": 692,
    "PAPER_BET": 19,
    "MULTI_RESEARCH_ELIGIBLE": 132,
    "WATCH": 49,
-   "REJECT": 617,
+   "REJECT": 643,
    "paper_bets_added": 10,
    "money_card_qualified": 0
   },
   "note": "per-run counts summed; a prediction re-evaluated in several runs is counted in each run",
-  "days_evaluated": 7,
+  "days_evaluated": 8,
   "no_bet_days": [
    "2026-09-30",
    "2026-10-01",
    "2026-10-02",
    "2026-10-03",
    "2026-10-04",
-   "2026-10-05"
+   "2026-10-05",
+   "2026-10-06"
   ],
   "bet_days": {
    "2026-09-29": 10
   }
  },
  "latest_run": {
-  "run_at": "2026-10-05T22:10:06.756954+00:00",
+  "run_at": "2026-10-06T13:31:45.720390+00:00",
   "trigger": "schedule",
   "rule_version": "bsv2-4",
-  "events_scanned": "27",
-  "valid_predictions": "10",
-  "high_p_candidates": "7",
-  "priced_candidates": "10",
+  "events_scanned": "26",
+  "valid_predictions": "6",
+  "high_p_candidates": "5",
+  "priced_candidates": "6",
   "PAPER_BET": "0",
-  "MULTI_RESEARCH_ELIGIBLE": "2",
+  "MULTI_RESEARCH_ELIGIBLE": "0",
   "WATCH": "0",
-  "REJECT": "25",
+  "REJECT": "26",
   "paper_bets_added": "0",
-  "snapshots_added": "358",
+  "snapshots_added": "336",
   "money_card_qualified": "0",
   "football_fixtures_on_card": "0"
  },
  "latest_decisions": {
   "decisions": {
-   "MULTI_RESEARCH_ELIGIBLE": 2,
-   "REJECT": 25
+   "REJECT": 26
   },
   "reason_counts": {
-   "NET_EV_NOT_POSITIVE": 27,
-   "PREDICTION_NOT_VALID": 17,
-   "PROBABILITY_NOT_SAME_SNAPSHOT": 17,
+   "NET_EV_NOT_POSITIVE": 26,
+   "PREDICTION_NOT_VALID": 20,
+   "PROBABILITY_NOT_SAME_SNAPSHOT": 20,
    "EXCHANGE_SPREAD_TOO_WIDE": 1
   },
   "by_sport": {
    "tennis": {
-    "MULTI_RESEARCH_ELIGIBLE": 2,
-    "REJECT": 25
+    "REJECT": 26
    }
   },
   "by_engine": {
    "atp_match_winner.betfair_market": {
-    "REJECT": 19
+    "REJECT": 20
    },
    "wta_match_winner.betfair_market": {
-    "MULTI_RESEARCH_ELIGIBLE": 2,
     "REJECT": 6
    }
   }

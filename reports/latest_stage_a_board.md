@@ -1,18 +1,16 @@
-# STAGE A PREDICTION BOARD — 2026-10-06T02:23Z (stage-a-2)
+# STAGE A PREDICTION BOARD — 2026-10-06T13:31Z (stage-a-2)
 
 _Probability first. Ranked by estimated probability only. **A strong prediction is not a bet** — price status is descriptive; Stage B (bet-selection) alone decides bets._
 
-Predictions: 10 · strong (P ≥ 70%): 7 on 7 events · strong by price status: PRICE_QUALITY_FAIL 7
+Predictions: 6 · strong (P ≥ 70%): 5 on 5 events · strong by price status: POOR_PAYOUT 4 · PRICE_QUALITY_FAIL 1
 
 | # | Sport | Event | Start (UTC) | Market | Selection | P | P first snapshot | P current scan | σ | Engine | Calibration status | Stage A status | Why not assessable | Best clean price | Net EV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | tennis | Daria Snigur v Mirra Andreeva | 2026-10-06T03:00 ⟳ | match_winner | Mirra Andreeva | 83.8% | 80.6% | 83.8% | 1.3% | wta_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
-| 2 | tennis | Sinja Kraus v Nikola Bartunkova | 2026-10-06T08:10 ⟳ | match_winner | Nikola Bartunkova | 80.8% | 82.6% | 80.8% | 1.3% | wta_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
-| 3 | tennis | Coco Gauff v Elise Mertens | 2026-10-07T03:00 | match_winner | Coco Gauff | 80.7% | 80.7% | 80.7% | 4.0% | wta_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | EXCHANGE_SPREAD_TOO_WIDE | — | — |
-| 4 | tennis | Alina Charaeva v Qinwen Zheng | 2026-10-07T03:00 | match_winner | Qinwen Zheng | 76.8% | 76.3% | 76.8% | 1.7% | wta_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
-| 5 | tennis | Carlos Alcaraz v Jiri Lehecka | 2026-10-06T09:00 | match_winner | Carlos Alcaraz | 76.5% | 77.1% | 76.5% | 1.2% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
-| 6 | tennis | Linda Noskova v Ekaterina Alexandrova | 2026-10-06T04:10 ⟳ | match_winner | Linda Noskova | 76.2% | 74.9% | 76.2% | 1.3% | wta_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
-| 7 | tennis | Ann Li v Elina Svitolina | 2026-10-07T03:00 | match_winner | Elina Svitolina | 75.4% | 73.8% | 75.4% | 1.8% | wta_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
+| 1 | tennis | Coco Gauff v Elise Mertens | 2026-10-07T06:15 ⟳ | match_winner | Coco Gauff | 78.5% | 80.7% | 78.5% | 1.3% | wta_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.27 (betfair_ex_uk) | -1.4% |
+| 2 | tennis | Alina Charaeva v Qinwen Zheng | 2026-10-07T11:00 ⟳ | match_winner | Qinwen Zheng | 77.0% | 76.3% | 77.0% | 1.4% | wta_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.29 (williamhill) | -0.7% |
+| 3 | tennis | Ann Li v Elina Svitolina | 2026-10-07T12:30 ⟳ | match_winner | Elina Svitolina | 76.5% | 73.8% | 76.5% | 1.5% | wta_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.30 (betway) | -0.5% |
+| 4 | tennis | Ekaterina Alexandrova v Mirra Andreeva | 2026-10-08T03:00 | match_winner | Mirra Andreeva | 75.1% | 75.1% | 75.1% | 1.8% | wta_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.33 (williamhill) | -0.1% |
+| 5 | tennis | Karolina Muchova v Nikola Bartunkova | 2026-10-08T03:00 | match_winner | Karolina Muchova | 71.9% | 71.9% | 71.9% | 4.9% | wta_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | EXCHANGE_SPREAD_TOO_WIDE | — | — |
 
 P = P current scan when one exists, else P first snapshot (football 1X2: normalised H/D/A triplet; raw kept in the ledger). Ranking uses P only.
 ⟳ = start time rescheduled since first observation (est-1: the current provider start is used).
