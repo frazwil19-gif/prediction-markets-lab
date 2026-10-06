@@ -42,7 +42,7 @@ Reason codes (latest run): NET_EV_NOT_POSITIVE 27 · PREDICTION_NOT_VALID 17 · 
 
 ## Paper results (all time)
 
-Selections 1 · settled 0 · pending 1 · win rate — · avg P — · avg odds — · expected net +0.00u · realised net +0.00u · yield — · max DD 0.00u · longest losing streak 0
+Selections 1 · settled 1 · pending 0 · win rate 0.0% · avg P 59.9% · avg odds 1.73 · expected net +0.04u · realised net -1.00u · yield -100.0% · max DD 1.00u · longest losing streak 1
 
 Days evaluated 7 · no-bet days 6 (2026-09-30, 2026-10-01, 2026-10-02, 2026-10-03, 2026-10-04, 2026-10-05)
 
@@ -50,21 +50,21 @@ Days evaluated 7 · no-bet days 6 (2026-09-30, 2026-10-01, 2026-10-02, 2026-10-0
 
 | Start £ | Policy | Bets | Final £ | P&L £ | Max DD | Skipped | Locks |
 |---|---|---|---|---|---|---|---|
-| 20 | flat_1pct | 0 | 20.00 | +0.00 | 0.0% | — |  |
-| 20 | flat_2pct | 0 | 20.00 | +0.00 | 0.0% | — |  |
-| 20 | kelly_1_8 | 0 | 20.00 | +0.00 | 0.0% | — |  |
-| 20 | min_stake | 0 | 20.00 | +0.00 | 0.0% | — |  |
-| 30 | flat_1pct | 0 | 30.00 | +0.00 | 0.0% | — |  |
-| 30 | flat_2pct | 0 | 30.00 | +0.00 | 0.0% | — |  |
-| 30 | kelly_1_8 | 0 | 30.00 | +0.00 | 0.0% | — |  |
-| 30 | min_stake | 0 | 30.00 | +0.00 | 0.0% | — |  |
-| 50 | flat_1pct | 0 | 50.00 | +0.00 | 0.0% | — |  |
-| 50 | flat_2pct | 0 | 50.00 | +0.00 | 0.0% | — |  |
-| 50 | kelly_1_8 | 0 | 50.00 | +0.00 | 0.0% | — |  |
-| 50 | min_stake | 0 | 50.00 | +0.00 | 0.0% | — |  |
-| 100 | flat_1pct | 0 | 100.00 | +0.00 | 0.0% | — |  |
-| 100 | flat_2pct | 0 | 100.00 | +0.00 | 0.0% | — |  |
-| 100 | kelly_1_8 | 0 | 100.00 | +0.00 | 0.0% | — |  |
-| 100 | min_stake | 0 | 100.00 | +0.00 | 0.0% | — |  |
+| 20 | flat_1pct | 1 | 19.80 | -0.20 | 1.0% | — |  |
+| 20 | flat_2pct | 1 | 19.60 | -0.40 | 2.0% | — |  |
+| 20 | kelly_1_8 | 1 | 19.88 | -0.12 | 0.6% | — |  |
+| 20 | min_stake | 1 | 19.90 | -0.10 | 0.5% | — |  |
+| 30 | flat_1pct | 1 | 29.70 | -0.30 | 1.0% | — |  |
+| 30 | flat_2pct | 1 | 29.40 | -0.60 | 2.0% | — |  |
+| 30 | kelly_1_8 | 1 | 29.82 | -0.18 | 0.6% | — |  |
+| 30 | min_stake | 1 | 29.90 | -0.10 | 0.3% | — |  |
+| 50 | flat_1pct | 1 | 49.50 | -0.50 | 1.0% | — |  |
+| 50 | flat_2pct | 1 | 49.00 | -1.00 | 2.0% | — |  |
+| 50 | kelly_1_8 | 1 | 49.70 | -0.30 | 0.6% | — |  |
+| 50 | min_stake | 1 | 49.90 | -0.10 | 0.2% | — |  |
+| 100 | flat_1pct | 1 | 99.00 | -1.00 | 1.0% | — |  |
+| 100 | flat_2pct | 1 | 98.00 | -2.00 | 2.0% | — |  |
+| 100 | kelly_1_8 | 1 | 99.39 | -0.61 | 0.6% | — |  |
+| 100 | min_stake | 1 | 99.90 | -0.10 | 0.1% | — |  |
 
 Positive estimated EV is not realised profit. The live-money gate is pre-registered in `research/platform_v2/bet_selection_v2/LIVE_GATE_PREREGISTRATION.md`; real-money betting stays disabled.

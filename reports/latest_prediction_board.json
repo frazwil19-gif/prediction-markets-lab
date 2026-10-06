@@ -1,7 +1,7 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-06T01:44:37.858918+00:00",
+ "generated_at": "2026-10-06T02:23:17.829292+00:00",
  "date": "2026-10-06",
  "summary": {
   "upcoming_events": 10,
@@ -30,7 +30,7 @@
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-06T01:44:37.858918+00:00",
+  "generated_at": "2026-10-06T02:23:17.829292+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -38,22 +38,22 @@
     "last": "2026-10-05T15:41:49.035038+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 10.0
+    "age_hours": 10.7
    },
    "settlement": {
-    "last": "2026-10-04T23:56:06.439359+00:00",
+    "last": "2026-10-06T01:44:38.961344+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 25.8
+    "age_hours": 0.6
    },
    "tennis_board": {
     "last": "2026-10-05T22:10:04.450686+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 3.6
+    "age_hours": 4.2
    },
    "ci_tests": {
-    "last": "2026-10-06T01:44:37.853906+00:00",
+    "last": "2026-10-06T02:23:17.535360+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -110,11 +110,11 @@
    "prospective_status": "COLLECTING",
    "money_eligible": false,
    "predictions": 63,
-   "settled_rows": 0,
-   "maturity": "COLLECTING",
-   "ge80_settled": 0,
-   "ge80_mean_pred": null,
-   "ge80_actual": null,
+   "settled_rows": 53,
+   "maturity": "EARLY",
+   "ge80_settled": 11,
+   "ge80_mean_pred": 0.8684190909090909,
+   "ge80_actual": 0.8181818181818182,
    "alarm_review_required": false
   },
   "wta_match_winner.betfair_market": {
@@ -122,11 +122,11 @@
    "prospective_status": "COLLECTING",
    "money_eligible": false,
    "predictions": 100,
-   "settled_rows": 11,
-   "maturity": "COLLECTING",
-   "ge80_settled": 2,
-   "ge80_mean_pred": 0.87264,
-   "ge80_actual": 1.0,
+   "settled_rows": 77,
+   "maturity": "EARLY",
+   "ge80_settled": 18,
+   "ge80_mean_pred": 0.9134367222222222,
+   "ge80_actual": 0.8888888888888888,
    "alarm_review_required": false
   },
   "nba_moneyline.market": {
