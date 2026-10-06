@@ -1,4 +1,4 @@
-# DAILY PREDICTION BOARD — 2026-10-05
+# DAILY PREDICTION BOARD — 2026-10-06
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
@@ -31,7 +31,7 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 463
 - daily_scan: OK (last 2026-10-05T15:41:49.035038+00:00)
 - settlement: OK (last 2026-10-04T23:56:06.439359+00:00)
 - tennis_board: OK (last 2026-10-05T22:10:04.450686+00:00)
-- ci_tests: OK (last 2026-10-05T22:10:06.016619+00:00)
+- ci_tests: OK (last 2026-10-06T01:44:37.853906+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
