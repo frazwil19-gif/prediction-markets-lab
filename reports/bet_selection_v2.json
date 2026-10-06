@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-10-06T13:31:45.720390+00:00",
+ "generated_at": "2026-10-06T14:02:14.769053+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-4",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 22,
+  "runs": 23,
   "totals_over_runs": {
-   "events_scanned": 741,
-   "valid_predictions": 692,
-   "high_p_candidates": 333,
-   "priced_candidates": 692,
+   "events_scanned": 767,
+   "valid_predictions": 698,
+   "high_p_candidates": 338,
+   "priced_candidates": 698,
    "PAPER_BET": 19,
    "MULTI_RESEARCH_ELIGIBLE": 132,
    "WATCH": 49,
-   "REJECT": 643,
+   "REJECT": 669,
    "paper_bets_added": 10,
    "money_card_qualified": 0
   },
@@ -34,7 +34,7 @@
   }
  },
  "latest_run": {
-  "run_at": "2026-10-06T13:31:45.720390+00:00",
+  "run_at": "2026-10-06T14:02:14.769053+00:00",
   "trigger": "schedule",
   "rule_version": "bsv2-4",
   "events_scanned": "26",
@@ -46,7 +46,7 @@
   "WATCH": "0",
   "REJECT": "26",
   "paper_bets_added": "0",
-  "snapshots_added": "336",
+  "snapshots_added": "0",
   "money_card_qualified": "0",
   "football_fixtures_on_card": "0"
  },
