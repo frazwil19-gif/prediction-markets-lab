@@ -58,3 +58,18 @@ API-Football files reach this workspace. Nothing in the pre-registration is chan
 
 Shrinkage, the ridge and the IRLS fitting are identical to the pilot (`scripts/player_sot_pilot.py`):
 SHRINK_MINUTES = 450, ridge 1e-6.
+
+## Second addendum (2026-10-07, after Phase 1/2 on 2022/23, BEFORE any holdout data is in this workspace)
+- **Phase 1, run 1:** FAIL, caused by a defect in the code's name table, not the data. It mapped "Nottingham
+  Forest" to "Nott'm Forest", but `Matches.csv` spells it "Nottm Forest". As a result, 38 Forest fixtures were
+  unmatched (90% matched < 95%). Run 1 is kept as `PHASE1_GATE_run1_name_table_defect.json`. The entry was corrected
+  to the observed spelling. Run 2: PASS (380/380 matched; team SOT ratio 1.0006).
+- **Holdout definitions** (the pre-registration assumed one holdout season; the sample rule made it two):
+  - holdout = all 2023/24 + 2024/25 rows;
+  - "both halves" = the holdout rows split chronologically at the median row date;
+  - per-season deltas are reported, not gated;
+  - TRAIN for the holdout = all 2022/23 rows (refit rule), with priors computed on the full sequence (earlier
+    matches only).
+- **Transfer check** (frozen pilot coefficients on the modern holdout): reported in a separate run after the
+  verdict, because the pilot model was fitted on five leagues with competition dummies. It is never part of the
+  verdict.
