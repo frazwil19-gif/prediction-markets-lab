@@ -2,7 +2,8 @@
 
 GitHub cron runs 3-9 h late on this repo. The Mac dispatcher (scripts/dispatch_workflows.sh) triggers the price scans at
 fixed UK times; the cron stays as a fallback. This guard stops the fallback from paying for a second scan when a
-successful run of the same workflow started within --hours. It never skips: manual/dispatch runs, an --exempt-schedule
+successful DISPATCHED (workflow_dispatch) run of the same workflow started within --hours.
+Fix 2026-10-07: run 1 also counted a late earlier cron run, which wrongly skipped the 15:30 tennis board. It never skips: manual/dispatch runs, an --exempt-schedule
 slot (e.g. the tennis 22:30 settlement), or when the API cannot be read (fail open = run as before).
 Writes skip=true|false to $GITHUB_OUTPUT. 0 Odds API credits.
 """
@@ -20,7 +21,8 @@ def should_skip(runs: list[dict], now: datetime, hours: float, event: str, sched
         return False
     cutoff = now - timedelta(hours=hours)
     for r in runs:
-        if r.get("id") == current_id or r.get("conclusion") != "success":
+        # only a run the Mac dispatcher started counts; another (late) cron run must never suppress this slot
+        if r.get("id") == current_id or r.get("conclusion") != "success" or r.get("event") != "workflow_dispatch":
             continue
         t = datetime.fromisoformat(r["run_started_at"].replace("Z", "+00:00"))
         if t >= cutoff:
