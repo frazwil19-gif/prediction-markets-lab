@@ -117,6 +117,7 @@ jobs:
           git fetch -q origin master && (git checkout origin/master -- paper_betting_v2/ 2>/dev/null || true)
           python scripts/run_bet_selection_v2.py evaluate
           python scripts/run_paper_card.py || echo "::warning::paper card failed (paper only; scan unaffected)"  # V2-20 pcard-1
+          python scripts/run_daily_card_v1.py || echo "::warning::daily card v1 failed (presentation only)"  # card-v1 (direction change 7 Oct)
 
       - name: Commit and push the Daily Bet Card contract and system status
         if: always()
@@ -124,7 +125,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add daily_cards/ paper_ledger/ status/
-          for f in research_shadow predictions reports/latest_prediction_board.json reports/latest_prediction_board.csv reports/latest_prediction_board.md reports/latest_prediction_performance.json paper_betting_v2 reports/bet_selection_v2.json reports/bet_selection_v2.md reports/bet_selection_v2_candidates.csv reports/bet_selection_v2_retrospective.json reports/bet_selection_v2_start_time_resolution.csv reports/latest_stage_a_board.json reports/latest_stage_a_board.csv reports/latest_stage_a_board.md status/credit_ledger.csv reports/credit_report.json reports/credit_report.md reports/daily_paper_card.json reports/daily_paper_card.md reports/paper_dashboard.json reports/paper_dashboard.md; do if [ -e "$f" ]; then git add "$f"; fi; done  # V2-5 (per path: absent files cannot break this step)
+          for f in research_shadow predictions reports/latest_prediction_board.json reports/latest_prediction_board.csv reports/latest_prediction_board.md reports/latest_prediction_performance.json paper_betting_v2 reports/bet_selection_v2.json reports/bet_selection_v2.md reports/bet_selection_v2_candidates.csv reports/bet_selection_v2_retrospective.json reports/bet_selection_v2_start_time_resolution.csv reports/latest_stage_a_board.json reports/latest_stage_a_board.csv reports/latest_stage_a_board.md status/credit_ledger.csv reports/credit_report.json reports/credit_report.md reports/daily_paper_card.json reports/daily_paper_card.md reports/paper_dashboard.json reports/paper_dashboard.md reports/daily_card_v1.json reports/daily_card_v1.md; do if [ -e "$f" ]; then git add "$f"; fi; done  # V2-5 (per path: absent files cannot break this step)
           if git diff --cached --quiet; then
             echo "No Daily Bet Card / paper-ledger / status changes to commit"
           else

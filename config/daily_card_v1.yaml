@@ -1,0 +1,27 @@
+# Daily Prediction Board + Bet Card V1 (direction change approved 2026-10-07; research/platform_v2/DIRECTION_2026-10-07.md).
+# Presentation + stake policy only. It reads Stage A (probabilities) and bet-selection bsv2-4 (decisions); it never changes
+# either. Probability first; bsv2-4 alone decides which predictions are bets.
+card_version: card-v1
+horizon_hours: 36                     # events starting within this window (same window as the Stage A board inputs)
+best_predictions_min_probability: 0.50
+best_predictions_max_rows: 40
+strong_probability: 0.70              # = Stage A strong_prediction_min_probability (not a new tuned value)
+probability_bands: [0.80, 0.70, 0.60, 0.50]   # presentation bands only (directive §6), never a filter for bets
+evidence_labels:                      # engine_status -> evidence label shown on the board
+  VALIDATED_HISTORICAL_AND_PROSPECTIVE: PROSPECTIVE
+  VALIDATED_HISTORICAL: VALIDATED
+  PROVISIONAL_PROSPECTIVE: PROVISIONAL
+research:
+  corners:
+    predictions: research_shadow/corners/model_a_predictions.csv
+    lines: [8.5, 9.5, 10.5, 11.5]     # corners-A primary lines (corners pre-registration)
+    model: corners-A-1.0
+    evidence: "validated vs non-market baseline only (holdout Δ −0.0038); no market comparison yet"
+live_policy:                          # NOT ACTIVATED -- Fraser activates explicitly; until then every stake is paper
+  real_money_enabled: false
+  bankroll_gbp: 50.0
+  default_stake_gbp: 1.0
+  enhanced_stake_gbp: 2.0
+  enhanced_stake_rule_enabled: false  # a £2 rule needs quantitative justification + approval (directive 7 Oct)
+  max_daily_exposure_gbp: 5.0
+  max_bets_per_event: 1
