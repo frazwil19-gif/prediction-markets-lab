@@ -1,21 +1,19 @@
-# STAGE A PREDICTION BOARD — 2026-10-07T01:42Z (stage-a-2)
+# STAGE A PREDICTION BOARD — 2026-10-07T13:44Z (stage-a-2)
 
 _Probability first. Ranked by estimated probability only. **A strong prediction is not a bet** — price status is descriptive; Stage B (bet-selection) alone decides bets._
 
-Predictions: 37 · strong (P ≥ 70%): 10 on 10 events · strong by price status: PRICE_QUALITY_FAIL 10
+Predictions: 31 · strong (P ≥ 70%): 8 on 8 events · strong by price status: POOR_PAYOUT 5 · PRICE_QUALITY_FAIL 3
 
 | # | Sport | Event | Start (UTC) | Market | Selection | P | P first snapshot | P current scan | σ | Engine | Calibration status | Stage A status | Why not assessable | Best clean price | Net EV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | tennis | Cameron Norrie v Dalibor Svrcina | 2026-10-08T04:00 | match_winner | Cameron Norrie | 92.3% | 92.3% | 92.3% | 25.0% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | EXCHANGE_SPREAD_TOO_WIDE | — | — |
-| 2 | tennis | Kimmer Coppejans v Stefanos Tsitsipas | 2026-10-08T04:00 | match_winner | Stefanos Tsitsipas | 90.6% | 90.6% | 90.6% | 1.7% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
-| 3 | tennis | Coco Gauff v Elise Mertens | 2026-10-07T06:15 ⟳ | match_winner | Coco Gauff | 77.5% | 80.7% | 77.5% | 1.4% | wta_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
-| 4 | tennis | Mattia Bellucci v Yi Zhou | 2026-10-07T06:20 | match_winner | Mattia Bellucci | 76.8% | 76.8% | 76.8% | 1.7% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
-| 5 | tennis | Nuno Borges v Facundo Diaz Acosta | 2026-10-08T04:00 | match_winner | Nuno Borges | 75.2% | 75.2% | 75.2% | 1.6% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
-| 6 | tennis | Alina Charaeva v Qinwen Zheng | 2026-10-07T11:00 ⟳ | match_winner | Qinwen Zheng | 75.1% | 76.3% | 75.1% | 1.2% | wta_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
-| 7 | tennis | Ann Li v Elina Svitolina | 2026-10-07T12:30 ⟳ | match_winner | Elina Svitolina | 75.0% | 73.8% | 75.0% | 1.3% | wta_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
-| 8 | tennis | Ekaterina Alexandrova v Mirra Andreeva | 2026-10-08T03:00 | match_winner | Mirra Andreeva | 75.0% | 75.1% | 75.0% | 1.8% | wta_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
-| 9 | tennis | Vit Kopriva v Zizou Bergs | 2026-10-08T04:00 | match_winner | Zizou Bergs | 71.4% | 71.4% | 71.4% | 1.4% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
-| 10 | tennis | Rinky Hijikata v Roman Safiullin | 2026-10-07T07:10 | match_winner | Roman Safiullin | 70.8% | 70.8% | 70.8% | 1.3% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
+| 1 | tennis | Alexander Zverev v Wu Yibing | 2026-10-09T04:00 | match_winner | Alexander Zverev | 91.9% | 91.9% | 91.9% | 7.7% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | EXCHANGE_SPREAD_TOO_WIDE | — | — |
+| 2 | tennis | Kimmer Coppejans v Stefanos Tsitsipas | 2026-10-08T04:00 | match_winner | Stefanos Tsitsipas | 90.3% | 90.6% | 90.3% | 1.3% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.10 (boylesports) | -0.7% |
+| 3 | tennis | Elise Mertens v Iga Swiatek | 2026-10-09T04:00 | match_winner | Iga Swiatek | 79.0% | 79.0% | 79.0% | 1.2% | wta_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.26 (betfair_ex_uk) | -1.5% |
+| 4 | tennis | Ekaterina Alexandrova v Mirra Andreeva | 2026-10-08T11:00 ⟳ | match_winner | Mirra Andreeva | 75.6% | 75.1% | 75.6% | 1.4% | wta_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.30 (williamhill) | -1.8% |
+| 5 | tennis | Nuno Borges v Facundo Diaz Acosta | 2026-10-08T04:00 | match_winner | Nuno Borges | 75.3% | 75.2% | 75.3% | 1.5% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.32 (betfair_ex_uk) | -1.8% |
+| 6 | tennis | Miomir Kecmanovic v Jakub Mensik | 2026-10-09T04:00 | match_winner | Jakub Mensik | 74.6% | 74.6% | 74.6% | 2.0% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | EXCHANGE_SPREAD_TOO_WIDE | — | — |
+| 7 | tennis | Rei Sakamoto v Andrey Rublev | 2026-10-09T04:00 | match_winner | Andrey Rublev | 72.2% | 72.2% | 72.2% | 5.9% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | EXCHANGE_SPREAD_TOO_WIDE | — | — |
+| 8 | tennis | Vit Kopriva v Zizou Bergs | 2026-10-08T07:30 ⟳ | match_winner | Zizou Bergs | 70.6% | 71.4% | 70.6% | 1.4% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.40 (williamhill) | -1.1% |
 
 P = P current scan when one exists, else P first snapshot (football 1X2: normalised H/D/A triplet; raw kept in the ledger). Ranking uses P only.
 ⟳ = start time rescheduled since first observation (est-1: the current provider start is used).
