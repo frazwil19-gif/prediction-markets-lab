@@ -1,14 +1,14 @@
 {
- "generated_at": "2026-10-06T01:44:38.511645+00:00",
+ "generated_at": "2026-10-07T00:35:34.612424+00:00",
  "lag_hours": {
   "football_data_co_uk": 120,
   "tennis_court_log": 240,
   "odds_api_scores": 96
  },
  "totals": {
-  "NOT_STARTED": 47,
-  "NORMAL_SOURCE_LAG": 182,
-  "SETTLED": 16,
+  "NOT_STARTED": 77,
+  "NORMAL_SOURCE_LAG": 35,
+  "SETTLED": 169,
   "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
   "SOURCE_UNAVAILABLE": 0
  },
@@ -19,12 +19,12 @@
    "competition": "ATP Japan Open",
    "source": "tennis_court_log",
    "NOT_STARTED": 0,
-   "NORMAL_SOURCE_LAG": 1,
-   "SETTLED": 0,
+   "NORMAL_SOURCE_LAG": 0,
+   "SETTLED": 1,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
    "SOURCE_UNAVAILABLE": 0,
-   "completed_events_past_lag": 0,
-   "settled_share_of_started": 0.0
+   "completed_events_past_lag": 1,
+   "settled_share_of_started": 1.0
   },
   {
    "ledger": "bsv2_paper_selections",
@@ -32,12 +32,12 @@
    "competition": "WTA China Open",
    "source": "tennis_court_log",
    "NOT_STARTED": 0,
-   "NORMAL_SOURCE_LAG": 9,
-   "SETTLED": 0,
+   "NORMAL_SOURCE_LAG": 1,
+   "SETTLED": 8,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
    "SOURCE_UNAVAILABLE": 0,
-   "completed_events_past_lag": 0,
-   "settled_share_of_started": 0.0
+   "completed_events_past_lag": 8,
+   "settled_share_of_started": 0.8889
   },
   {
    "ledger": "legacy_paper_ledger",
@@ -83,33 +83,33 @@
    "sport": "tennis",
    "competition": "ATP China Open",
    "source": "tennis_court_log",
-   "NOT_STARTED": 1,
-   "NORMAL_SOURCE_LAG": 42,
-   "SETTLED": 0,
+   "NOT_STARTED": 0,
+   "NORMAL_SOURCE_LAG": 7,
+   "SETTLED": 36,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
    "SOURCE_UNAVAILABLE": 0,
-   "completed_events_past_lag": 0,
-   "settled_share_of_started": 0.0
+   "completed_events_past_lag": 36,
+   "settled_share_of_started": 0.8372
   },
   {
    "ledger": "unified_ledger",
    "sport": "tennis",
    "competition": "ATP Japan Open",
    "source": "tennis_court_log",
-   "NOT_STARTED": 1,
-   "NORMAL_SOURCE_LAG": 31,
-   "SETTLED": 0,
+   "NOT_STARTED": 0,
+   "NORMAL_SOURCE_LAG": 4,
+   "SETTLED": 28,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
    "SOURCE_UNAVAILABLE": 0,
-   "completed_events_past_lag": 0,
-   "settled_share_of_started": 0.0
+   "completed_events_past_lag": 28,
+   "settled_share_of_started": 0.875
   },
   {
    "ledger": "unified_ledger",
    "sport": "tennis",
    "competition": "ATP Shanghai Masters",
    "source": "tennis_court_log",
-   "NOT_STARTED": 17,
+   "NOT_STARTED": 51,
    "NORMAL_SOURCE_LAG": 0,
    "SETTLED": 0,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
@@ -122,13 +122,13 @@
    "sport": "tennis",
    "competition": "WTA China Open",
    "source": "tennis_court_log",
-   "NOT_STARTED": 8,
-   "NORMAL_SOURCE_LAG": 99,
-   "SETTLED": 2,
+   "NOT_STARTED": 6,
+   "NORMAL_SOURCE_LAG": 23,
+   "SETTLED": 82,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
    "SOURCE_UNAVAILABLE": 0,
-   "completed_events_past_lag": 2,
-   "settled_share_of_started": 0.0198
+   "completed_events_past_lag": 82,
+   "settled_share_of_started": 0.781
   },
   {
    "ledger": "unified_ledger",
