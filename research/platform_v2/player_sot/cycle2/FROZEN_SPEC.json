@@ -1,0 +1,21 @@
+{
+ "cycle": 2,
+ "families": [
+  "F_player",
+  "F_home",
+  "F_starts"
+ ],
+ "structure": "S1",
+ "comparator": "B2",
+ "targets": [
+  "sot_1plus",
+  "sot_2plus"
+ ],
+ "population": "outfield starters, >=3 prior appearances",
+ "refit_rule": "refit on all 2022-23 rows, then score the sealed holdout once",
+ "shrink_minutes": 450.0,
+ "ridge": 1e-06,
+ "prior_window": 10,
+ "verdict_rules": "PREREGISTRATION.md 'Verdict (fixed)'",
+ "addendum_commit": "464da1b"
+}

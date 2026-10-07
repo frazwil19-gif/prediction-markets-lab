@@ -1,0 +1,176 @@
+{
+ "n_train": 3187,
+ "n_dev": 3560,
+ "base_rate_dev_1plus": 0.2812,
+ "selection_path": [
+  {
+   "families": [],
+   "dev_logloss": 0.594104
+  },
+  {
+   "candidates": {
+    "F_player": 0.524553,
+    "F_starts": 0.594755,
+    "F_role": 0.543605,
+    "F_team": 0.591781,
+    "F_opp": 0.59342,
+    "F_home": 0.591249
+   },
+   "best": "F_player",
+   "gain": 0.069551
+  },
+  {
+   "candidates": {
+    "F_starts": 0.523095,
+    "F_role": 0.524631,
+    "F_team": 0.524517,
+    "F_opp": 0.524203,
+    "F_home": 0.521179
+   },
+   "best": "F_home",
+   "gain": 0.003374
+  },
+  {
+   "candidates": {
+    "F_starts": 0.519653,
+    "F_role": 0.521259,
+    "F_team": 0.521121,
+    "F_opp": 0.520746
+   },
+   "best": "F_starts",
+   "gain": 0.001526
+  },
+  {
+   "candidates": {
+    "F_role": 0.519524,
+    "F_team": 0.519625,
+    "F_opp": 0.519193
+   },
+   "best": "F_opp",
+   "gain": 0.00046
+  }
+ ],
+ "families_selected": [
+  "F_player",
+  "F_home",
+  "F_starts"
+ ],
+ "structures_dev_logloss": {
+  "S1": 0.519653,
+  "S2": 0.519413,
+  "S3": 0.519454
+ },
+ "structure_selected": "S1",
+ "targets": {
+  "sot_1plus": {
+   "model": {
+    "n": 3560,
+    "base_rate": 0.2812,
+    "mean_p": 0.2832,
+    "logloss": 0.51965,
+    "brier": 0.1715,
+    "cal_intercept": -0.0715,
+    "cal_slope": 0.9255
+   },
+   "baselines": {
+    "B0": {
+     "n": 3560,
+     "base_rate": 0.2812,
+     "mean_p": 0.2806,
+     "logloss": 0.54361,
+     "brier": 0.18157,
+     "cal_intercept": -0.1234,
+     "cal_slope": 0.8454
+    },
+    "B1": {
+     "n": 3560,
+     "base_rate": 0.2812,
+     "mean_p": 0.3124,
+     "logloss": 0.53959,
+     "brier": 0.17844,
+     "cal_intercept": -0.338,
+     "cal_slope": 0.7404
+    },
+    "B2": {
+     "n": 3560,
+     "base_rate": 0.2812,
+     "mean_p": 0.282,
+     "logloss": 0.53166,
+     "brier": 0.17547,
+     "cal_intercept": -0.1007,
+     "cal_slope": 0.8775
+    }
+   },
+   "by_role": {
+    "DF": {
+     "n": 1388,
+     "model_ll": 0.389928
+    },
+    "MD": {
+     "n": 1470,
+     "model_ll": 0.572219
+    },
+    "FW": {
+     "n": 702,
+     "model_ll": 0.666075
+    }
+   }
+  },
+  "sot_2plus": {
+   "model": {
+    "n": 3560,
+    "base_rate": 0.0781,
+    "mean_p": 0.0799,
+    "logloss": 0.22361,
+    "brier": 0.06389,
+    "cal_intercept": -0.1721,
+    "cal_slope": 0.9225
+   },
+   "baselines": {
+    "B0": {
+     "n": 3560,
+     "base_rate": 0.0781,
+     "mean_p": 0.0791,
+     "logloss": 0.23895,
+     "brier": 0.06712,
+     "cal_intercept": -0.4153,
+     "cal_slope": 0.7932
+    },
+    "B1": {
+     "n": 3560,
+     "base_rate": 0.0781,
+     "mean_p": 0.0904,
+     "logloss": 0.22606,
+     "brier": 0.06489,
+     "cal_intercept": -0.4041,
+     "cal_slope": 0.8672
+    },
+    "B2": {
+     "n": 3560,
+     "base_rate": 0.0781,
+     "mean_p": 0.0789,
+     "logloss": 0.22438,
+     "brier": 0.0642,
+     "cal_intercept": -0.1281,
+     "cal_slope": 0.9373
+    }
+   },
+   "by_role": {
+    "DF": {
+     "n": 1388,
+     "model_ll": 0.054008
+    },
+    "MD": {
+     "n": 1470,
+     "model_ll": 0.255738
+    },
+    "FW": {
+     "n": 702,
+     "model_ll": 0.491646
+    }
+   }
+  }
+ },
+ "comparator": "B2",
+ "delta_dev_sot_1plus": -0.01201
+}

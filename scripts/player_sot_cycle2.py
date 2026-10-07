@@ -2,7 +2,8 @@
 
   python scripts/player_sot_cycle2.py gate    <raw_dir> <Matches.csv>   -> cycle2/PHASE1_GATE.json (aggregates only)
   python scripts/player_sot_cycle2.py develop <raw_dir>                 -> cycle2/DEVELOPMENT.json + FROZEN_SPEC.json
-Reads ONLY 2022/23 files (players_2022_*.json.gz, fixtures_39_2022.json.gz). Player-level rows are never written to the
+  python scripts/player_sot_cycle2.py holdout <raw_dir>                 -> cycle2/HOLDOUT.json (ONCE; committed FROZEN_SPEC required)
+gate/develop read ONLY 2022/23 files (players_2022_*.json.gz, fixtures_39_2022.json.gz). Player-level rows are never written to the
 repo. No odds are used.
 """
 from __future__ import annotations
@@ -26,7 +27,7 @@ MIN_PRIOR_APPS = 3
 SEL_GAIN = 0.0005
 STRUCT_TOL = 0.0005
 RIDGE = 1e-6
-FD_NAME = {"Manchester City": "Man City", "Manchester United": "Man United", "Nottingham Forest": "Nott'm Forest"}
+FD_NAME = {"Manchester City": "Man City", "Manchester United": "Man United", "Nottingham Forest": "Nottm Forest"}  # run 1 used "Nott'm Forest" (Football-Data odds-file spelling); Matches.csv spells it "Nottm Forest"
 FAMILIES = ["F_player", "F_starts", "F_role", "F_team", "F_opp", "F_home"]
 
 
@@ -42,15 +43,14 @@ def load_json(p: Path) -> dict:
         return json.load(f)
 
 
-def build_rows(raw: Path) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Canonical player-match rows + fixture table, from 2022/23 files only."""
-    files = sorted(raw.glob(f"players_{SEASON}_*.json.gz"))
-    assert all(f.name.startswith(f"players_{SEASON}_") for f in files)
+def build_rows(raw: Path, seasons: tuple[int, ...] = (SEASON,)) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Canonical player-match rows + fixture table, from the given seasons' files only (default: 2022/23)."""
+    files = sorted(f for s_ in seasons for f in raw.glob(f"players_{s_}_*.json.gz"))
     A = acquire_module()
     rows, fx = [], []
     for f in files:
         d = load_json(f)
-        rows += A.rows_from_fixture(d, SEASON)
+        rows += A.rows_from_fixture(d, int(f.name.split("_")[1]))
         fx.append({"match_id": d["fixture"]["id"], "date": d["fixture"]["date"][:10], "home_id": d["teams"]["home"]["id"],
                    "away_id": d["teams"]["away"]["id"], "home_name": d["teams"]["home"]["name"], "away_name": d["teams"]["away"]["name"]})
     df = pd.DataFrame(rows, columns=PS.FIELDS)
@@ -232,6 +232,65 @@ def develop(raw: Path) -> tuple[dict, dict]:
     return res, spec
 
 
+HOLDOUT_SEASONS = (2023, 2024)
+HOLDOUT_START = "2023-07-01"
+BOOT, BOOT_SEED, MATERIAL, MIN_ROLE_N, MIN_N = 1000, 7, -0.004, 1000, 5000
+
+
+def boot_ci(diff: np.ndarray, groups: np.ndarray) -> list[float]:
+    rng = np.random.default_rng(BOOT_SEED)
+    ug = np.unique(groups)
+    idx = {g: np.where(groups == g)[0] for g in ug}
+    m = [np.concatenate([diff[idx[g]] for g in rng.choice(ug, len(ug))]).mean() for _ in range(BOOT)]
+    return [round(float(np.percentile(m, 2.5)), 6), round(float(np.percentile(m, 97.5)), 6)]
+
+
+def lls(y, p) -> np.ndarray:
+    p = np.clip(p, 1e-6, 1 - 1e-6)
+    return -(y * np.log(p) + (1 - y) * np.log(1 - p))
+
+
+def holdout(raw: Path) -> dict:
+    """Scored ONCE. TRAIN = all 2022/23 (refit rule); HOLDOUT = 2023/24 + 2024/25. Priors computed on the full sequence
+    (strictly earlier matches only)."""
+    spec = PS.HoldoutGuard(OUT / "FROZEN_SPEC.json", OUT / "HOLDOUT_OPENED.marker").open(_committed)
+    df, _ = build_rows(raw, (SEASON,) + HOLDOUT_SEASONS)
+    d = PS.add_targets(PS.prior_features(df))
+    d["date"] = pd.to_datetime(d.date)
+    d = d[d.starter & d.role.isin(["DF", "MD", "FW"]) & (d.p_apps_prior >= MIN_PRIOR_APPS)].copy()
+    tr, te = d[d.date < HOLDOUT_START], d[d.date >= HOLDOUT_START].sort_values("date")
+    half = te.date.iloc[len(te) // 2]
+    res = {"spec": spec, "n_train": int(len(tr)), "n_holdout": int(len(te)), "half_split_date": str(half.date()), "targets": {}}
+    for t in PS.TARGETS:
+        y = te[t].to_numpy(float)
+        pa = fit_predict(tr, te, spec["families"], spec["structure"], t)
+        pb = baselines(tr, te, t)[spec["comparator"]]
+        diff = lls(y, pa) - lls(y, pb)
+        res["targets"][t] = {"model": PS.evaluate(y, pa), "comparator": PS.evaluate(y, pb), "delta": round(float(diff.mean()), 6),
+                             "ci95_match_bootstrap": boot_ci(diff, te.match_id.to_numpy()),
+                             "by_role": {r_: {"n": int((te.role == r_).sum()), "delta": round(float(diff[(te.role == r_).to_numpy()].mean()), 6)} for r_ in ("DF", "MD", "FW")},
+                             "halves": {"first": round(float(diff[(te.date < half).to_numpy()].mean()), 6), "second": round(float(diff[(te.date >= half).to_numpy()].mean()), 6)},
+                             "by_season": {s_: round(float(diff[(te.season == s_).to_numpy()].mean()), 6) for s_ in sorted(te.season.unique())}}
+    p1 = res["targets"]["sot_1plus"]
+    if len(te) < MIN_N:
+        res["verdict"] = "REPORT_ONLY"
+        return res
+    crit = {"1_material_ci": p1["delta"] <= MATERIAL and p1["ci95_match_bootstrap"][1] < 0,
+            "2_calibration": 0.85 <= p1["model"]["cal_slope"] <= 1.15 and abs(p1["model"]["cal_intercept"]) <= 0.10,
+            "3_positions": all(v["n"] >= MIN_ROLE_N and v["delta"] < 0 for v in p1["by_role"].values()),
+            "4_halves": p1["halves"]["first"] < 0 and p1["halves"]["second"] < 0, "5_n": len(te) >= MIN_N}
+    res["criteria"] = crit
+    res["verdict"] = "MODERN_VALIDATED" if all(crit.values()) else "NOT_VALIDATED"
+    return res
+
+
+def _committed(p: Path) -> bool:
+    import subprocess
+    rel = p.relative_to(REPO).as_posix()
+    return (subprocess.run(["git", "ls-files", "--error-unmatch", rel], cwd=REPO, capture_output=True).returncode == 0
+            and subprocess.run(["git", "diff", "--quiet", "HEAD", "--", rel], cwd=REPO).returncode == 0)
+
+
 def main() -> int:
     mode = sys.argv[1]
     raw = Path(sys.argv[2])
@@ -239,6 +298,10 @@ def main() -> int:
         res = gate(raw, sys.argv[3])
         (OUT / "PHASE1_GATE.json").write_text(json.dumps(res, indent=1, default=str) + "\n")
         print(json.dumps(res["checks"], indent=1, default=str), res["verdict"])
+    elif mode == "holdout":
+        res = holdout(raw)
+        (OUT / "HOLDOUT.json").write_text(json.dumps(res, indent=1, default=str) + "\n")
+        print(json.dumps({k: v for k, v in res.items() if k != "spec"}, indent=1, default=str)[:6000])
     else:
         g = json.loads((OUT / "PHASE1_GATE.json").read_text())
         assert g["verdict"] == "PASS", "Phase 1 gate must PASS before development"

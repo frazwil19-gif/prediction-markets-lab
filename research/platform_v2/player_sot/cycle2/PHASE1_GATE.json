@@ -1,0 +1,110 @@
+{
+ "season": "2022-23",
+ "audit": {
+  "rows": 11345,
+  "matches": 380,
+  "players": 555,
+  "competitions": [
+   "EPL"
+  ],
+  "seasons": [
+   "2022-23"
+  ],
+  "missing_share": {
+   "source": 0.0,
+   "competition": 0.0,
+   "season": 0.0,
+   "match_id": 0.0,
+   "date": 0.0,
+   "team_id": 0.0,
+   "opponent_id": 0.0,
+   "home": 0.0,
+   "player_id": 0.0,
+   "player_name": 0.0,
+   "role": 0.0,
+   "starter": 0.0,
+   "minute_in": 0.0,
+   "minute_out": 0.0,
+   "minutes": 0.0,
+   "shots": 0.0,
+   "sot": 0.0,
+   "goals": 0.0
+  },
+  "duplicates_match_player": 0,
+  "starters_per_team_match": {
+   "eq_11": 1.0,
+   "min": 11,
+   "max": 11
+  },
+  "matches_without_two_teams": 0,
+  "violations": {
+   "sot_gt_shots": 0,
+   "goals_gt_sot": 0,
+   "minutes_out_of_range": 14,
+   "events_with_zero_minutes": 0
+  },
+  "players_with_2plus_teams_in_season": 15,
+  "role_distribution_starters": {
+   "MD": 3139,
+   "DF": 2930,
+   "FW": 1531,
+   "GK": 760
+  },
+  "starter_minutes": {
+   "mean": 83.28,
+   "share_full_90": 0.6417
+  },
+  "base_rates_starters": {
+   "sot_1plus": 0.2553,
+   "sot_2plus": 0.0713
+  },
+  "base_rates_starters_by_role": {
+   "DF": {
+    "sot_1plus": 0.1205,
+    "sot_2plus": 0.0082,
+    "n": 2930
+   },
+   "FW": {
+    "sot_1plus": 0.5487,
+    "sot_2plus": 0.2234,
+    "n": 1531
+   },
+   "GK": {
+    "sot_1plus": 0.0013,
+    "sot_2plus": 0.0,
+    "n": 760
+   },
+   "MD": {
+    "sot_1plus": 0.2995,
+    "sot_2plus": 0.0733,
+    "n": 3139
+   }
+  },
+  "base_rates_starters_by_competition": {
+   "EPL": {
+    "sot_1plus": 0.2553,
+    "sot_2plus": 0.0713,
+    "n": 8360
+   }
+  },
+  "starter_observations": 8360
+ },
+ "checks": {
+  "fixtures_files_vs_listed": "380/380",
+  "starters_eq_11_share": 1.0,
+  "gate_starters": true,
+  "duplicates": 0,
+  "gate_duplicates": true,
+  "violation_share": 0.0,
+  "gate_violations": true,
+  "minutes_coverage": 1.0,
+  "gate_minutes": true,
+  "fd_matched_fixture_share": 1.0,
+  "fd_unmatched": [],
+  "team_sot_ratio_api_over_fd": 1.0006,
+  "team_sot_exact_agreement_share": 0.9921,
+  "team_sot_mean_abs_diff": 0.0079,
+  "gate_team_sot": true
+ },
+ "verdict": "PASS"
+}
