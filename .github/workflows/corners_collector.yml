@@ -34,12 +34,15 @@ jobs:
       - name: Module tests
         run: pytest -q tests/unit/test_corners_collector.py
       - name: Collect
-        run: python scripts/run_corners_collector.py
+        run: |
+          python scripts/run_corners_collector.py
+          python scripts/run_daily_card_v1.py || echo "::warning::daily card v1 failed (presentation only)"
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add research_shadow/corners/ 2>/dev/null || true
+          for f in reports/daily_card_v1.json reports/daily_card_v1.md; do if [ -e "$f" ]; then git add "$f"; fi; done
           if git diff --cached --quiet; then
             echo "No corners collector changes"
           else
