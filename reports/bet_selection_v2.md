@@ -4,7 +4,7 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-07T13:44Z · events scanned 33 · valid predictions 31 · high-P (≥70%) 8 · priced 31 · PAPER_BET 0 · MULTI-research 1 · WATCH 1 · REJECT 43 · new paper bets 0 · Money Card qualified 0
+Run 2026-10-07T14:19Z · events scanned 33 · valid predictions 31 · high-P (≥70%) 8 · priced 31 · PAPER_BET 0 · MULTI-research 1 · WATCH 1 · REJECT 43 · new paper bets 0 · Money Card qualified 0
 
 Reason codes (latest run): NET_EV_NOT_POSITIVE 44 · PREDICTION_NOT_VALID 14 · EXCHANGE_SPREAD_TOO_WIDE 9 · PROBABILITY_NOT_SAME_SNAPSHOT 2 · PRICE_STALE 1 · NET_EV_BELOW_PAPER_GATE 1
 

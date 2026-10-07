@@ -1,9 +1,9 @@
 {
  "card_version": "card-v1",
- "generated_at": "2026-10-07T13:44:19.410820+00:00",
- "stage_a_generated_at": "2026-10-07T13:44:18.689535+00:00",
- "real_money_enabled": false,
- "mode": "PAPER \u2014 live betting not activated",
+ "generated_at": "2026-10-07T14:19:54.416057+00:00",
+ "stage_a_generated_at": "2026-10-07T14:19:53.673642+00:00",
+ "real_money_enabled": true,
+ "mode": "LIVE \u2014 manual \u00a31 bets (you place them; nothing is automated)",
  "summary": {
   "predictions_in_window": 20,
   "best_predictions_shown": 20,
@@ -644,7 +644,8 @@
  ],
  "research": [],
  "live_policy": {
-  "real_money_enabled": false,
+  "real_money_enabled": true,
+  "money_eligibility": "registry",
   "bankroll_gbp": 50.0,
   "default_stake_gbp": 1.0,
   "enhanced_stake_gbp": 2.0,

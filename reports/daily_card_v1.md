@@ -1,6 +1,6 @@
-# Daily Prediction Board & Bet Card — 2026-10-07T13:44Z (card-v1)
+# Daily Prediction Board & Bet Card — 2026-10-07T14:19Z (card-v1)
 
-**Mode: PAPER — live betting not activated** · bankroll £50 · default stake £1 · daily cap £5
+**Mode: LIVE — manual £1 bets (you place them; nothing is automated)** · bankroll £50 · default stake £1 · daily cap £5
 
 Predictions in the next window: 20 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 4 · research predictions: 0
 
