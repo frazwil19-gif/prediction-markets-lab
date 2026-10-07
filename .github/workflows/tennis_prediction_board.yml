@@ -22,6 +22,7 @@ on:
 
 permissions:
   contents: write
+  actions: read      # recent_run_guard reads this workflow's recent runs
 
 concurrency:
   group: prediction-markets-lab-production
@@ -29,6 +30,8 @@ concurrency:
 
 jobs:
   tennis:
+    needs: guard
+    if: needs.guard.outputs.skip != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -146,3 +149,15 @@ jobs:
           fi
           [ "$rc" = 0 ] || echo "::warning::card shadow research step reported a failure (see scan_runs.csv); production unaffected"
           exit $rc
+
+  guard:   # skip a late cron run if the Mac dispatcher already ran this workflow successfully (scripts/recent_run_guard.py)
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    outputs:
+      skip: ${{ steps.g.outputs.skip }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: g
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/recent_run_guard.py --workflow tennis_prediction_board.yml --hours 8 --event "${{ github.event_name }}" --schedule "${{ github.event.schedule }}" --exempt-schedule "30 22 * * *"

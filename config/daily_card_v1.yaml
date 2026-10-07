@@ -17,8 +17,9 @@ research:
     lines: [8.5, 9.5, 10.5, 11.5]     # corners-A primary lines (corners pre-registration)
     model: corners-A-1.0
     evidence: "validated vs non-market baseline only (holdout Δ −0.0038); no market comparison yet"
-live_policy:                          # NOT ACTIVATED -- Fraser activates explicitly; until then every stake is paper
-  real_money_enabled: false
+live_policy:                          # Controlled live phase APPROVED 2026-10-07 (Fraser + ChatGPT): manual placement only
+  real_money_enabled: true            # manual only: Fraser places every bet himself; no automated execution exists
+  money_eligibility: registry         # a live bet needs bsv2-4 PAPER_BET AND money_eligible=true in PROBABILITY_ENGINE_REGISTRY.json
   bankroll_gbp: 50.0
   default_stake_gbp: 1.0
   enhanced_stake_gbp: 2.0

@@ -41,3 +41,27 @@ continue unchanged under their pre-registrations.
 - **Preferred profile** (preference, not a filter):
   - 55–70%+ probability, many bets around decimal 1.5–2.0 when available;
   - a realised win rate must emerge from calibration, never be manufactured.
+
+## Controlled live phase (approved 2026-10-07, Fraser + ChatGPT)
+- Manual only. A live bet requires both bsv2-4 PAPER_BET and `money_eligible=true` in the engine registry. Today that
+  means `football_1x2.market_consensus` and `football_ou25.market`. Tennis engines are VALIDATED_HISTORICAL but not
+  money-eligible in the registry; their PAPER_BET rows show as "PAPER ONLY" until that flag is changed by a separate,
+  explicit decision.
+- £1 per qualifying bet; £5 per day; one bet per event; £2 disabled. Research and provisional rows stay at £0.
+- Private live ledger: the "Fraser's Bet Log" artifact (owner-only; not in the public repo). It records bookmaker,
+  card odds, odds taken, time, stake and result.
+- Player SOT frozen until the one-time holdout. Team SOT cycle 1 = NOT_CONFIRMED; a calibration follow-up will be
+  separately pre-registered.
+
+## Fresh-price findings (evidence, 7 Oct)
+- At bsv2 evaluation time prices are fresh (median age 0.2 min). The latest 45 candidates were rejected mainly for
+  NET_EV_NOT_POSITIVE (44), then PREDICTION_NOT_VALID (14) and EXCHANGE_SPREAD_TOO_WIDE (9). Only 1 was PRICE_STALE
+  and 0 were COMMISSION_UNKNOWN.
+- So stale prices are not what blocks bets at decision time. The staleness seen on the first card came from building
+  it in a later run.
+- What GitHub's lateness does cost is timing. Morning scans run 5–9 h late (07:00 cron → 12:00–15:40 UTC; tennis
+  06:30 → 11:50–15:10 UTC), so the card often appears after Fraser's useful window or near kickoff.
+- Fix: a Mac dispatcher (`scripts/setup_dispatcher_mac.sh`) triggers the scans at 07:15 and 16:15 UK. The cron stays as
+  a fallback, and `scripts/recent_run_guard.py` skips a late duplicate so credits are not spent twice.
+- Matchbook commission stays `null` (unknown → rejected). Public sources were not authoritative, and Matchbook did not
+  appear among recent best quotes. No price-quality rule changed.
