@@ -45,18 +45,6 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  guard:   # skip a late cron run if the Mac dispatcher already ran this workflow successfully (scripts/recent_run_guard.py)
-    runs-on: ubuntu-latest
-    timeout-minutes: 3
-    outputs:
-      skip: ${{ steps.g.outputs.skip }}
-    steps:
-      - uses: actions/checkout@v4
-      - id: g
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: python3 scripts/recent_run_guard.py --workflow daily_scan.yml --hours 10 --event "${{ github.event_name }}" --schedule "${{ github.event.schedule }}" 
-
   scan:
     needs: guard
     if: needs.guard.outputs.skip != 'true'
@@ -147,3 +135,15 @@ jobs:
             git commit -m "Daily Bet Card: $(date -u +%F)"
             git push
           fi
+
+  guard:   # skip a late cron run if the Mac dispatcher already ran this workflow successfully (scripts/recent_run_guard.py)
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    outputs:
+      skip: ${{ steps.g.outputs.skip }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: g
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/recent_run_guard.py --workflow daily_scan.yml --hours 10 --event "${{ github.event_name }}" --schedule "${{ github.event.schedule }}" 
