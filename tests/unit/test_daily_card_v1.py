@@ -23,9 +23,10 @@ def cand(pid, decision, ev=0.03, odds=1.9):
             "reasons": "" if decision == "PAPER_BET" else "NET_EV_NOT_POSITIVE", "price_observed_at": NOW.isoformat()}
 
 
-def test_config_is_paper_and_default_one_pound():
+def test_config_is_manual_live_one_pound_no_two_pound_rule():
     pol = CFG["live_policy"]
-    assert pol["real_money_enabled"] is False and pol["default_stake_gbp"] == 1.0 and pol["enhanced_stake_rule_enabled"] is False
+    assert pol["real_money_enabled"] is True and pol["money_eligibility"] == "registry"
+    assert pol["default_stake_gbp"] == 1.0 and pol["enhanced_stake_rule_enabled"] is False and pol["max_daily_exposure_gbp"] == 5.0
 
 
 def test_bets_only_from_bsv2_and_stake_caps():
@@ -42,7 +43,7 @@ def test_bets_only_from_bsv2_and_stake_caps():
     assert c["best_predictions"][0]["prediction_id"] == "nob"                     # ranked by probability, not price
     assert "nob" in {p["prediction_id"] for p in c["strong_price_too_low"]}
     md = C.render_md(c)
-    assert "PAPER — live betting not activated" in md and "## 2. Best bets today" in md
+    assert "LIVE — manual £1 bets" in md and "## 2. Best bets today" in md
 
 
 def test_research_rows_are_never_bets_and_show_more_likely_side():
@@ -59,3 +60,19 @@ def test_research_rows_are_never_bets_and_show_more_likely_side():
 
 def test_band_and_fair_odds():
     assert C.band(0.83, [0.8, 0.7, 0.6, 0.5]) == "80%+" and C.band(0.45, [0.8, 0.7, 0.6, 0.5]) == "<50%" and C.fair_odds(0.6) == 1.67
+
+
+def test_live_mode_only_stakes_money_eligible_engines():
+    import copy
+    raw = copy.deepcopy(CFG.raw); raw["live_policy"]["real_money_enabled"] = True
+    cfg = C.CardConfig(raw)
+    board = {"predictions": [pred("a", 0.7, "E1"), {**pred("b", 0.8, "E2"), "engine_id": "wta_match_winner.betfair_market"}]}
+    c = C.build(board, [cand("a", "PAPER_BET"), cand("b", "PAPER_BET")], [], cfg, NOW, {"football_1x2.market_consensus"})
+    st = {b["prediction_id"]: (b["stake_gbp"], b["stake_note"]) for b in c["best_bets"]}
+    assert st["a"] == (1.0, "") and st["b"][0] == 0.0 and "not money-eligible" in st["b"][1]
+    assert "LIVE" in c["mode"]
+
+
+def test_registry_money_engines_are_validated():
+    eng = C.money_eligible_engines(REPO)
+    assert "football_1x2.market_consensus" in eng and all("research" not in e for e in eng)
