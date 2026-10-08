@@ -103,6 +103,30 @@ def assign_stakes(bets: list[dict], policy: dict) -> list[dict]:
     return out
 
 
+def big_card(bets: list[dict], cfg: dict, cap_left: float) -> dict | None:
+    """Multi from independently qualifying, money-eligible legs on different events (independence assumed across events;
+    same-event legs are never combined). Legs ranked by probability. Returns None when fewer than min_legs qualify."""
+    if not cfg.get("enabled"):
+        return None
+    seen, legs = set(), []
+    for b in sorted(bets, key=lambda r: (-r["probability"], -r["net_ev"])):
+        if b.get("money_eligible", True) and b["event_key"] not in seen:
+            seen.add(b["event_key"])
+            legs.append(b)
+    legs = legs[: cfg["max_legs"]]
+    if len(legs) < cfg["min_legs"]:
+        return None
+    joint_p, odds = 1.0, 1.0
+    for b in legs:
+        joint_p *= b["probability"]
+        odds *= b["odds"]
+    stake = cfg["stake_gbp"] if cap_left + 1e-9 >= cfg["stake_gbp"] else 0.0
+    return {"legs": [{k: b[k] for k in ("event_name", "event_start", "market", "selection", "probability", "odds", "decision_source")} for b in legs],
+            "joint_probability": round(joint_p, 4), "combined_best_odds": round(odds, 2), "ev_at_best_odds": round(joint_p * odds - 1, 4),
+            "min_acceptable_acca_odds": round((1 + cfg["min_ev"]) / joint_p, 2), "stake_gbp": stake,
+            "stake_note": "" if stake else "SKIP — daily exposure cap"}
+
+
 def corners_research(rows: list[dict], lines: list[float], now: datetime, hours: float, model: str, evidence: str) -> list[dict]:
     """Latest corners-A prediction per event inside the window; for each primary line the more likely side."""
     latest: dict[str, dict] = {}
@@ -153,16 +177,18 @@ def build(board: dict, candidates: list[dict], research_rows: list[dict], cfg: C
             for p in preds if p["decision"] == PAPER_BET]
     bets = assign_stakes(bets, cfg["live_policy"])
     bet_ids = {b["prediction_id"] for b in bets}
+    cap_left = cfg["live_policy"]["max_daily_exposure_gbp"] - sum(b["stake_gbp"] for b in bets)
+    multi = big_card(bets, cfg.raw.get("big_card", {}), cap_left)
     poor_price = [p for p in preds if p["probability"] >= cfg["strong_probability"] and p["prediction_id"] not in bet_ids]
     pol = cfg["live_policy"]
-    staked = sum(b["stake_gbp"] for b in bets)
+    staked = sum(b["stake_gbp"] for b in bets) + (multi["stake_gbp"] if multi else 0.0)
     return {"card_version": cfg["card_version"], "generated_at": now.isoformat(), "stage_a_generated_at": board.get("generated_at"),
             "real_money_enabled": bool(pol["real_money_enabled"]),
             "mode": "LIVE — manual £1 bets (you place them; nothing is automated)" if pol["real_money_enabled"] else "PAPER — live betting not activated",
             "summary": {"predictions_in_window": len(preds), "best_predictions_shown": len(best_preds), "bets": sum(b["stake_gbp"] > 0 for b in bets),
                         "total_stake_gbp": staked, "exposure_pct_of_bankroll": round(100 * staked / pol["bankroll_gbp"], 1),
                         "strong_price_too_low": len(poor_price), "research_predictions": len(research_rows)},
-            "best_predictions": best_preds, "best_bets": bets, "strong_price_too_low": poor_price, "research": research_rows,
+            "best_predictions": best_preds, "best_bets": bets, "big_card": multi, "strong_price_too_low": poor_price, "research": research_rows,
             "live_policy": pol}
 
 
@@ -202,6 +228,20 @@ def render_md(c: dict) -> str:
     else:
         L.append("No bet today — no prediction currently clears the bet rules (probability ≥ 50%, EV after costs ≥ +2%, clean fresh price). "
                  "That is a valid outcome, not a failure.")
+    m = c.get("big_card")
+    L += ["", "### Big Card (multi)", ""]
+    if m:
+        L += [f"**{len(m['legs'])}-leg multi · stake £{m['stake_gbp']:.0f} · chance all legs win {_pct(m['joint_probability'])} · "
+              f"combined best odds {m['combined_best_odds']:.2f} (EV {_pct(m['ev_at_best_odds'])})** {m['stake_note']}", "",
+              "| Leg | Event | Selection | P | Best odds |", "|---|---|---|---|---|"]
+        for i, g in enumerate(m["legs"], 1):
+            L.append(f"| {i} | {g['event_name']} ({g['event_start'][:16]}) | {g['market']}: {g['selection']} | {_pct(g['probability'])} | {g['odds']:.2f} ({g['decision_source']}) |")
+        L += ["", f"_Every leg qualifies as a single on its own and comes from a different event. Combined odds use each leg's best price; "
+              f"your bookmaker's acca price may be lower. Only place it if the acca price is at least **{m['min_acceptable_acca_odds']:.2f}** "
+              f"(keeps EV ≥ +2%). An acca boost or acca insurance improves it. Most multis lose — this one lands about "
+              f"{_pct(m['joint_probability'])} of the time._"]
+    else:
+        L.append("No Big Card today — it needs at least 3 qualifying legs on different events. Never padded with weaker legs.")
     L += ["", "## 3. Strong predictions — price too low (no bet)", ""]
     if c["strong_price_too_low"]:
         L += ["| Event | Selection | P | Fair odds | Best clean price | Why no bet |", "|---|---|---|---|---|---|"]
