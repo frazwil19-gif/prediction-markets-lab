@@ -55,3 +55,10 @@ def test_credit_utilisation_review_is_advisory_and_complete():
     assert t["allocation"] == 150 and t["consumed"] == 30 and t["unused"] == 120 and t["utilisation_pct"] == 20.0
     assert u["consumers"]["football_settlement"]["recommendation"].startswith("idle")
     assert "advisory" in u["note"]
+
+
+def test_capacity_uses_current_rule_version_only():
+    r = Q.build(REPO, CFG, datetime(2026, 10, 8, tzinfo=timezone.utc))
+    rule = Q.current_rule_version(REPO)
+    assert r["capacity_rule_version"] == rule
+    assert r["capacity"]["qualifying_bets"] == r["paper_bets_by_rule_version"].get(rule, 0)

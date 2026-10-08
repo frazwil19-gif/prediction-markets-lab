@@ -57,7 +57,8 @@ def capacity(sel: list[dict], cfg: dict, observed_from: str | None = None, obser
     """observed_from/to (YYYY-MM-DD): the window in which bsv2 was evaluating (evaluation_runs.csv), so days with
     zero qualifying bets count — rates are per OBSERVED day, not per day that happened to have a bet."""
     if not sel:
-        return {"qualifying_bets": 0, "note": "no qualifying bets yet"}
+        return {"qualifying_bets": 0, "observed_window": [observed_from, observed_to],
+                "note": "no qualifying bets under the current rule in the observed window"}
     days = sorted({s["decision_at"][:10] for s in sel})
     first, last = min(days[0], observed_from or days[0]), max(days[-1], observed_to or days[-1])
     span = (datetime.fromisoformat(last) - datetime.fromisoformat(first)).days + 1
@@ -118,12 +119,26 @@ def rejection_categories(shadow: list[dict]) -> dict:
     return {"predictions_evaluated": len(latest), "rejections_by_reason": dict(c.most_common())}
 
 
+def current_rule_version(repo: Path) -> str:
+    import yaml
+    return str(yaml.safe_load((repo / "config/bet_selection_v2.yaml").read_text())["rule_version"])
+
+
 def build(repo: Path, cfg: dict, now: datetime) -> dict:
-    sel = _rows(repo / "paper_betting_v2/selections.csv")
+    """Capacity uses ONLY bets and runs under the current bsv2 rule version: earlier versions (e.g. bsv2-1, before the
+    exchange-spread gate) qualified bets the live rule would reject, so mixing them overstates capacity (qtc-1 showed
+    ~30/month; under bsv2-4 the measured rate is far lower). Expected-vs-realised still covers every paper bet."""
+    rule = current_rule_version(repo)
+    sel_all = _rows(repo / "paper_betting_v2/selections.csv")
+    sel = [s for s in sel_all if s["rule_version"] == rule]
     settle = {r["selection_id"]: r for r in _rows(repo / "paper_betting_v2/settlements.csv")}
-    runs = sorted(_rows(repo / "paper_betting_v2/evaluation_runs.csv"), key=lambda r: r["run_at"])
+    runs = sorted((r for r in _rows(repo / "paper_betting_v2/evaluation_runs.csv") if r["rule_version"] == rule),
+                  key=lambda r: r["run_at"])
+    by_rule = Counter(s["rule_version"] for s in sel_all)
     return {"report_version": cfg["report_version"], "generated_at": now.isoformat(),
-            "expected_vs_realised": expected_vs_realised(sel, settle),
+            "capacity_rule_version": rule, "paper_bets_by_rule_version": dict(sorted(by_rule.items())),
+            "runs_under_current_rule": len(runs),
+            "expected_vs_realised": expected_vs_realised(sel_all, settle),
             "capacity": capacity(sel, cfg, runs[0]["run_at"][:10] if runs else None, now.date().isoformat()),
             "rejections": rejection_categories(_rows(repo / "paper_betting_v2/decision_shadow.csv")),
             "scenario_policy_note": "Bankroll scenarios are illustrative (2% flat, 10% daily cap); live policy stays £1 flat, £5/day."}
@@ -136,6 +151,10 @@ def render_md(r: dict) -> str:
          f"Settled {e['settled_bets']} (open {e['open_bets']}). Expected profit **£{e['expected_profit_gbp']}** vs realised "
          f"**£{e['realised_profit_gbp']}**. Expected wins {e['expected_wins']} vs actual {e['actual_wins']} (z {e['wins_z']}).",
          "", e["note"], ""]
+    L += [f"Capacity below uses only rule **{r['capacity_rule_version']}** ({r['runs_under_current_rule']} evaluation runs). "
+          f"Paper bets by rule version: {r['paper_bets_by_rule_version']}.", ""]
+    if not c.get("qualifying_bets"):
+        L += ["## Capacity", "", f"0 qualifying bets under {r['capacity_rule_version']} in {c.get('observed_window')}.", ""]
     if c.get("qualifying_bets"):
         L += ["## Capacity", "", f"{c['qualifying_bets']} qualifying bets over {c['days_observed']} days → "
               f"{c['qualifying_per_month']}/month ({c['sample_flag']}; bets on {c['days_with_a_qualifying_bet']} of those days). Odds mean {c['odds']['mean']} / median {c['odds']['median']}; "
