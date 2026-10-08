@@ -11,3 +11,10 @@ sources:
   tennis: tennis_court_log
   basketball: odds_api_scores
 legacy_paper_ledger_source: odds_api_scores   # legacy football ledger; football-data fallback for rows the scores API cannot settle
+# Competitions whose settlement team aliases are complete (every Odds API name on the daily cards resolves). Others
+# appear on the cards from 2026-10-08 (international break over) and resolve only after the alias-evidence review
+# (D1/N1/F1 review trigger 2026-10-15; shadow-tier leagues after that). Until then their predictions stay unsettled and
+# are surfaced by the completeness monitor; nothing is guessed.
+aliases_complete_competitions: [Premier League, Championship, Scottish Premiership]
+aliases_pending_competitions: [Bundesliga, Eredivisie, Ligue 1, La Liga, Serie A, Primeira Liga, Belgian Pro League,
+                               2. Bundesliga, Serie B, Ligue 2, Segunda Division, League One, League Two]

@@ -1,0 +1,53 @@
+name: clv_capture
+
+# CLV capture + tennis EV-band study + market probe C3 (research/platform_v2/clv/CLV_ARCHITECTURE.md). Measurement only:
+# never touches selections, decisions, grades, stakes or the card. Triggered every 15 min by Fraser's Mac
+# (scripts/setup_clv_dispatcher_mac.sh) because GitHub's own cron runs hours late on this repo; the cron below is only a
+# fallback. A run with nothing due makes no paid API call and commits nothing.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: prediction-markets-lab-clv
+  cancel-in-progress: false
+
+jobs:
+  clv:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install -e .
+      - name: Module tests
+        run: pytest -q tests/unit/test_clv.py
+      - name: Targets, capture, report
+        env:
+          THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
+        run: python scripts/clv.py all
+      - name: Market probe C3 (once per probe per UTC day; dated windows in config/market_probe_c3.yaml)
+        continue-on-error: true
+        env:
+          THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
+        run: python scripts/market_probe_c3.py
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add research_shadow/clv/ research_shadow/market_probe_c3/ 2>/dev/null || true   # own files only
+          if git diff --cached --quiet; then
+            echo "Nothing new"
+          else
+            git commit -m "CLV capture: $(date -u +%FT%H:%MZ) (research measurement)"
+            for i in 1 2 3; do git pull --rebase && git push && break; sleep 10; done
+          fi

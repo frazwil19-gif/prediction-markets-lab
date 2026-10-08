@@ -1,0 +1,21 @@
+# Market availability probe C3 (directive 2026-10-08 18:37). Pre-registered kill criteria below; research only.
+# One paid /odds call (uk region) per probe per UTC day, only when the free /events listing shows a not-yet-started
+# event within horizon_hours. Surplus-only (same floor as clv_capture). Own ledger research_shadow/market_probe_c3/.
+version: probe-c3
+total_credit_cap: 50
+horizon_hours: 36
+probes:
+  nba_lines:
+    sport_keys: [basketball_nba]
+    markets: [spreads, totals]            # 2 credits per call
+    active_from: "2026-10-20T00:00:00+00:00"
+    active_to: "2026-11-10T00:00:00+00:00"
+  tennis_games:
+    sport_key_prefix: tennis_             # the active tennis key with the most events in horizon (free /sports list)
+    markets: [spreads, totals]            # game handicap / total games; 2 credits per call
+    active_from: "2026-10-12T00:00:00+00:00"   # after the 10-11 Oct production freeze
+    active_to: "2026-10-27T00:00:00+00:00"
+kill_criteria:                            # decided before any probe data exists
+  min_uk_books_per_event: 3               # market must be offered by >= 3 UK books ...
+  min_event_share: 0.5                    # ... on >= 50% of probed events
+  min_high_case_bets_per_month: 3         # high-case incremental qualified bets/month (line-dispersion estimate)

@@ -71,7 +71,7 @@ def build(repo: Path, now: datetime) -> dict:
 # consumer -> sports whose predictions/bets count as its "useful outputs" (credit utilisation review, 2026-10-08)
 CONSUMER_SPORTS = {"football_daily_scan": ("football",), "tennis_prediction_board": ("tennis",),
                    "nba_prediction_board": ("basketball",), "us_sports_board": ("icehockey", "americanfootball"),
-                   "football_settlement": ()}
+                   "football_settlement": (), "clv_capture": (), "pre_close_capture": ()}
 UNDER_USE_FRACTION = 0.5   # projected month-end < 50% of cap -> flag as a re-allocation candidate (review only)
 
 
@@ -84,7 +84,10 @@ def utilisation(repo: Path, by: dict, now: datetime) -> dict:
     budget = repo / "config/api_budget.json"
     if not budget.exists():
         return {}
-    caps = {k: v["monthly_cap"] for k, v in json.loads(budget.read_text())["consumers"].items()}
+    b = json.loads(budget.read_text())
+    caps = {k: v["monthly_cap"] for k, v in b["consumers"].items()}
+    caps.update({k: v["monthly_cap"] for k, v in b.items()          # surplus-only consumers (own top-level blocks)
+                 if isinstance(v, dict) and "monthly_cap" in v and k not in caps})
     us = sum(int(r["x_requests_last"] or 0) for r in _rows(repo / "predictions/us_sports_credit_log.csv")
              if r["timestamp_utc"].startswith(month))
     consumed = {k: (by.get(k, {}).get("credits_charged", 0) + (us if k == "us_sports_board" else 0)) for k in caps}

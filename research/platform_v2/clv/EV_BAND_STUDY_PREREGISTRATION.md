@@ -77,3 +77,8 @@ Planning ranges per in-season month (wide; Poisson noise at n=5 is large): 0–1
 ## What would make the study invalid
 Any change to the engine, bsv2 gates other than via a registered version (rows are tagged with rule version; the
 study is restricted to bsv2-4 rows), back-filled captures, or analysis of sealed bands before a look point.
+
+## Amendment A1 (2026-10-08, before any cohort row or capture exists)
+Capture mechanics only, no analysis change: the Odds API `h2h` market already returns Betfair `h2h_lay` prices for
+exchanges (the tennis engine depends on this), so Tier-A capture requests market `h2h` alone (1 credit per call), not
+`h2h` + `h2h_lay`. Close fair probability is unchanged (Betfair back/lay mid).
