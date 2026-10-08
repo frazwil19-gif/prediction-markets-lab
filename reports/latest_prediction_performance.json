@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08T11:07:00.611376+00:00",
+ "generated_at": "2026-10-08T14:28:06.486931+00:00",
  "protocol": "research/platform_v2/unified_board/PROSPECTIVE_PROTOCOL.md",
  "pending_review": [],
  "pooled": {
@@ -1741,6 +1741,39 @@
    "settled_events": 53,
    "settled_ge80_events": 11,
    "maturity": "EARLY",
+   "ge80_maturity": "COLLECTING",
+   "alarm_review_required": false,
+   "settled_rows_masked_no_peek": 0
+  },
+  "football_1x2.market_consensus": {
+   "predictions": 234,
+   "prediction_events": 78,
+   "settled_rows": 0,
+   "settled_events": 0,
+   "settled_ge80_events": 0,
+   "maturity": "COLLECTING",
+   "ge80_maturity": "COLLECTING",
+   "alarm_review_required": false,
+   "settled_rows_masked_no_peek": 0
+  },
+  "football_double_chance.derived_1x2": {
+   "predictions": 234,
+   "prediction_events": 78,
+   "settled_rows": 0,
+   "settled_events": 0,
+   "settled_ge80_events": 0,
+   "maturity": "COLLECTING",
+   "ge80_maturity": "COLLECTING",
+   "alarm_review_required": false,
+   "settled_rows_masked_no_peek": 0
+  },
+  "football_ou25.market": {
+   "predictions": 20,
+   "prediction_events": 20,
+   "settled_rows": 0,
+   "settled_events": 0,
+   "settled_ge80_events": 0,
+   "maturity": "COLLECTING",
    "ge80_maturity": "COLLECTING",
    "alarm_review_required": false,
    "settled_rows_masked_no_peek": 0

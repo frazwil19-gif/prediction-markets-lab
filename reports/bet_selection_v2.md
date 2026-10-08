@@ -4,54 +4,54 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-08T11:07Z · events scanned 42 · valid predictions 42 · high-P (≥70%) 16 · priced 36 · PAPER_BET 0 · MULTI-research 6 · WATCH 1 · REJECT 37 · new paper bets 0 · Money Card qualified 0
+Run 2026-10-08T14:28Z · events scanned 118 · valid predictions 528 · high-P (≥70%) 141 · priced 243 · PAPER_BET 0 · MULTI-research 6 · WATCH 1 · REJECT 522 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): NET_EV_NOT_POSITIVE 37 · EXCHANGE_SPREAD_TOO_WIDE 8 · COMMISSION_UNKNOWN 6 · PREDICTION_NOT_VALID 2 · P_BELOW_FLOOR 1 · NET_EV_BELOW_PAPER_GATE 1
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 488 · P_BELOW_FLOOR 234 · NO_EXECUTABLE_PRICE 234 · NET_EV_NOT_POSITIVE 214 · COMMISSION_UNKNOWN 51 · EXCHANGE_SPREAD_TOO_WIDE 8 · PREDICTION_NOT_VALID 1 · NET_EV_BELOW_PAPER_GATE 1
 
 ## Candidates (latest run, best price per prediction)
 
 | Event | Start | Sel | P | Fair | Odds (source) | Break-even | Net EV | Decision |
 |---|---|---|---|---|---|---|---|---|
 | Camilo Ugo Carabelli v Felix Auger-Aliassime | 2026-10-10T04:00 | Felix Auger-Aliassime | 95.4% | 1.05 | 1.04 (betvictor) | 96.2% | -0.8% | MULTI_RESEARCH_ELIGIBLE |
+| Rangers v Kilmarnock | 2026-10-10T14:00 | 1X | 93.9% | 1.07 | — | — | — | REJECT |
 | Juan Manuel Cerundolo v Carlos Alcaraz | 2026-10-10T04:00 | Carlos Alcaraz | 93.7% | 1.07 | 1.05 (betfair_ex_uk) | 95.5% | -1.8% | REJECT |
+| Augsburg v Bayern Munich | 2026-10-10T13:30 | X2 | 91.5% | 1.09 | — | — | — | REJECT |
+| PSV Eindhoven v Heerenveen | 2026-10-09T18:00 | 1X | 89.9% | 1.11 | — | — | — | REJECT |
 | Arthur Fils v Pavel Kotov | 2026-10-10T04:00 | Arthur Fils | 88.5% | 1.13 | 1.12 (betfair_ex_uk) | 89.8% | -1.4% | MULTI_RESEARCH_ELIGIBLE |
+| Rangers v Kilmarnock | 2026-10-10T14:00 | 12 | 88.5% | 1.13 | — | — | — | REJECT |
+| Augsburg v Bayern Munich | 2026-10-10T13:30 | 12 | 88.3% | 1.13 | — | — | — | REJECT |
+| Arsenal v Leeds United | 2026-10-10T11:30 | 1X | 88.1% | 1.13 | — | — | — | REJECT |
+| Borussia Dortmund v Werder Bremen | 2026-10-09T18:30 | 1X | 87.9% | 1.14 | — | — | — | REJECT |
 | Alexander Zverev v Wu Yibing | 2026-10-09T05:10 | Alexander Zverev | 87.8% | 1.14 | 1.13 (betfair_ex_uk) | 89.0% | -1.3% | MULTI_RESEARCH_ELIGIBLE |
 | Ben Shelton v Daniel Altmaier | 2026-10-09T04:00 | Ben Shelton | 86.7% | 1.15 | 1.15 (betfair_ex_uk) | 87.5% | -1.0% | MULTI_RESEARCH_ELIGIBLE |
+| PSV Eindhoven v Heerenveen | 2026-10-09T18:00 | 12 | 86.7% | 1.15 | — | — | — | REJECT |
+| TSG Hoffenheim v Hamburger SV | 2026-10-10T13:30 | 1X | 85.5% | 1.17 | — | — | — | REJECT |
+| Stockport County FC v Barnsley | 2026-10-10T14:00 | 1X | 84.4% | 1.18 | — | — | — | REJECT |
+| Hearts v St Mirren | 2026-10-10T14:00 | 1X | 84.4% | 1.18 | — | — | — | REJECT |
+| Plymouth Argyle v Wimbledon | 2026-10-10T11:30 | 1X | 84.3% | 1.19 | — | — | — | REJECT |
+| West Ham United v Queens Park Rangers | 2026-10-09T19:00 | 1X | 84.1% | 1.19 | — | — | — | REJECT |
+| Montpellier v Grenoble | 2026-10-09T18:00 | 1X | 83.1% | 1.20 | — | — | — | REJECT |
+| Borussia Dortmund v Werder Bremen | 2026-10-09T18:30 | 12 | 83.1% | 1.20 | — | — | — | REJECT |
+| Rangers v Kilmarnock | 2026-10-10T14:00 | home | 82.3% | 1.21 | 1.17 (william hill) | 85.5% | -3.7% | REJECT |
 | Yi Zhou v Lorenzo Musetti | 2026-10-09T11:10 | Lorenzo Musetti | 82.0% | 1.22 | 1.20 (betway) | 83.3% | -1.6% | REJECT |
 | Yi Zhou v Lorenzo Musetti | 2026-10-09T11:10 | Lorenzo Musetti | 82.0% | 1.22 | 1.20 (betway) | 83.3% | -1.6% | MULTI_RESEARCH_ELIGIBLE |
+| Stockport County FC v Barnsley | 2026-10-10T14:00 | 12 | 81.3% | 1.23 | — | — | — | REJECT |
+| Oldham Athletic v Accrington Stanley | 2026-10-10T11:30 | 1X | 81.1% | 1.23 | — | — | — | REJECT |
+| TSG Hoffenheim v Hamburger SV | 2026-10-10T13:30 | 12 | 81.0% | 1.23 | — | — | — | REJECT |
+| York City v Northampton Town | 2026-10-10T14:00 | 1X | 80.6% | 1.24 | — | — | — | REJECT |
 | Elise Mertens v Iga Swiatek | 2026-10-09T11:00 | Iga Swiatek | 80.5% | 1.24 | 1.24 (betfair_ex_uk) | 81.4% | -1.1% | MULTI_RESEARCH_ELIGIBLE |
-| Tampa Bay Buccaneers @ Dallas Cowboys | 2026-10-09T00:15 | Dallas Cowboys | 78.8% | 1.27 | 1.24 (smarkets) | 81.0% | -2.7% | REJECT |
-| Matteo Arnaldi v Taylor Fritz | 2026-10-10T04:00 | Taylor Fritz | 78.0% | 1.28 | 1.25 (betfair_ex_uk) | 80.8% | -3.5% | REJECT |
-| Learner Tien v Zachary Svajda | 2026-10-10T04:00 | Learner Tien | 75.1% | 1.33 | 1.28 (betfair_ex_uk) | 79.0% | -4.9% | REJECT |
-| Jiri Lehecka v Nuno Borges | 2026-10-10T04:00 | Jiri Lehecka | 74.1% | 1.35 | 1.31 (betfair_ex_uk) | 77.2% | -4.1% | REJECT |
-| Vancouver Canucks @ Carolina Hurricanes | 2026-10-08T23:10 | Carolina Hurricanes | 73.7% | 1.36 | 1.33 (matchbook) | — | — | REJECT |
-| Alex de Minaur v Alex Molcan | 2026-10-09T06:20 | Alex de Minaur | 73.2% | 1.37 | 1.35 (coral) | 74.1% | -1.2% | REJECT |
-| Miomir Kecmanovic v Jakub Mensik | 2026-10-09T07:30 | Jakub Mensik | 73.0% | 1.37 | 1.36 (boylesports) | 73.5% | -0.7% | REJECT |
-| Rei Sakamoto v Andrey Rublev | 2026-10-09T04:00 | Andrey Rublev | 70.8% | 1.41 | 1.40 (betfair_ex_uk) | 72.5% | -2.2% | REJECT |
-| Vit Kopriva v Zizou Bergs | 2026-10-08T11:20 | Zizou Bergs | 70.5% | 1.42 | 1.40 (boylesports) | 71.4% | -1.2% | REJECT |
-| Vit Kopriva v Zizou Bergs | 2026-10-08T11:20 | Zizou Bergs | 70.5% | 1.42 | 1.40 (boylesports) | 71.4% | -1.2% | REJECT |
-| Yannick Hanfmann v Frances Tiafoe | 2026-10-09T05:10 | Frances Tiafoe | 69.5% | 1.44 | 1.41 (smarkets) | 71.3% | -2.6% | REJECT |
-| Alejandro Davidovich Fokina v Jenson Brooksby | 2026-10-09T06:20 | Alejandro Davidovich Fokina | 69.0% | 1.45 | 1.45 (betano_uk) | 69.0% | 0.0% | WATCH |
-| Tommy Paul v Adolfo Daniel Vallejo | 2026-10-10T04:00 | Tommy Paul | 68.6% | 1.46 | 1.38 (betfair_ex_uk) | 73.5% | -6.6% | REJECT |
-| Luciano Darderi v Stefanos Tsitsipas | 2026-10-10T04:00 | Stefanos Tsitsipas | 68.0% | 1.47 | 1.44 (betway) | 69.4% | -2.1% | REJECT |
-| Karen Khachanov v Arthur Fery | 2026-10-09T06:20 | Karen Khachanov | 67.3% | 1.49 | 1.47 (betfair_ex_uk) | 69.1% | -2.7% | REJECT |
-| Thiago Agustin Tirante v Rafael Jodar | 2026-10-10T04:00 | Thiago Agustin Tirante | 67.1% | 1.49 | 1.12 (betfair_ex_uk) | 89.8% | -25.3% | REJECT |
-| Colorado Avalanche @ Calgary Flames | 2026-10-09T01:10 | Colorado Avalanche | 67.1% | 1.49 | 1.44 (williamhill) | 69.4% | -3.4% | REJECT |
-| Adrian Mannarino v Flavio Cobolli | 2026-10-09T04:00 | Flavio Cobolli | 65.7% | 1.52 | 1.50 (boylesports) | 66.7% | -1.5% | REJECT |
-| Cameron Norrie v Dalibor Svrcina | 2026-10-08T11:20 | Cameron Norrie | 65.1% | 1.54 | 1.53 (boylesports) | 65.4% | -0.4% | REJECT |
-| Alejandro Tabilo v Pablo Carreno Busta | 2026-10-10T04:00 | Alejandro Tabilo | 63.9% | 1.57 | 1.47 (betfair_ex_uk) | 69.1% | -7.6% | REJECT |
-| Alexander Bublik v Tomas Machac | 2026-10-09T07:30 | Alexander Bublik | 62.4% | 1.60 | 1.59 (betfair_ex_uk) | 64.1% | -2.6% | REJECT |
-| Chicago Blackhawks @ New York Islanders | 2026-10-08T23:40 | New York Islanders | 61.3% | 1.63 | 1.59 (paddypower) | 62.9% | -2.5% | REJECT |
-| Nashville Predators @ Montréal Canadiens | 2026-10-08T23:00 | Montréal Canadiens | 61.1% | 1.64 | 1.60 (matchbook) | — | — | REJECT |
-| Novak Djokovic v Hubert Hurkacz | 2026-10-09T10:00 | Novak Djokovic | 60.5% | 1.65 | 1.63 (casumo) | 61.3% | -1.3% | REJECT |
-| Toronto Maple Leafs @ Vegas Golden Knights | 2026-10-09T02:10 | Vegas Golden Knights | 59.7% | 1.67 | 1.63 (matchbook) | — | — | REJECT |
-| Matteo Berrettini v Brandon Nakashima | 2026-10-09T05:10 | Brandon Nakashima | 58.2% | 1.72 | 1.67 (sport888) | 59.9% | -2.9% | REJECT |
-| San Jose Sharks @ St Louis Blues | 2026-10-09T00:10 | St Louis Blues | 57.9% | 1.73 | 1.70 (matchbook) | — | — | REJECT |
-| Minnesota Wild @ Tampa Bay Lightning | 2026-10-08T23:10 | Tampa Bay Lightning | 57.2% | 1.75 | 1.70 (ladbrokes_uk) | 58.8% | -2.8% | REJECT |
-| Philadelphia Flyers @ Ottawa Senators | 2026-10-08T23:10 | Ottawa Senators | 57.1% | 1.75 | 1.70 (ladbrokes_uk) | 58.8% | -2.9% | REJECT |
-| Qinwen Zheng v Elina Svitolina | 2026-10-09T07:00 | Elina Svitolina | 56.9% | 1.76 | 1.74 (betfair_ex_uk) | 58.7% | -3.1% | REJECT |
-| Quentin Halys v Alexander Blockx | 2026-10-09T05:10 | Alexander Blockx | 56.7% | 1.76 | 1.73 (boylesports) | 57.8% | -1.9% | REJECT |
-| Arthur Gea v Ugo Humbert | 2026-10-09T04:00 | Arthur Gea | 53.3% | 1.88 | 1.83 (smarkets) | 55.1% | -3.3% | REJECT |
+| SC Paderborn v VfB Stuttgart | 2026-10-10T13:30 | X2 | 80.2% | 1.25 | — | — | — | REJECT |
+| Arsenal v Leeds United | 2026-10-10T11:30 | 12 | 80.2% | 1.25 | — | — | — | REJECT |
+| Leicester City v Peterborough United | 2026-10-10T14:00 | 1X | 80.2% | 1.25 | — | — | — | REJECT |
+| Hearts v St Mirren | 2026-10-10T14:00 | 12 | 80.1% | 1.25 | — | — | — | REJECT |
+| Doncaster Rovers v Burton Albion | 2026-10-10T14:00 | 1X | 79.9% | 1.25 | — | — | — | REJECT |
+| Augsburg v Bayern Munich | 2026-10-10T13:30 | away | 79.6% | 1.26 | 1.20 (smarkets) | 83.6% | -4.7% | REJECT |
+| Bradford City v Leyton Orient | 2026-10-10T14:00 | 1X | 79.6% | 1.26 | — | — | — | REJECT |
+| Crawley Town v Chesterfield FC | 2026-10-10T14:00 | X2 | 79.5% | 1.26 | — | — | — | REJECT |
+| West Ham United v Queens Park Rangers | 2026-10-09T19:00 | 12 | 79.3% | 1.26 | — | — | — | REJECT |
+| SC Paderborn v VfB Stuttgart | 2026-10-10T13:30 | 12 | 79.1% | 1.26 | — | — | — | REJECT |
+| Leicester City v Peterborough United | 2026-10-10T14:00 | 12 | 78.9% | 1.27 | — | — | — | REJECT |
+| Chelsea v Bournemouth | 2026-10-10T14:00 | 1X | 78.8% | 1.27 | — | — | — | REJECT |
 
 ## Paper results (all time)
 

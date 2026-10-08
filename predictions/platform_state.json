@@ -1,7 +1,7 @@
 {
  "americanfootball_nfl_last_odds_date": "2026-10-08",
  "icehockey_nhl_last_odds_date": "2026-10-08",
- "last_ci_pass": "2026-10-08T11:06:58.826961+00:00",
+ "last_ci_pass": "2026-10-08T14:28:06.416420+00:00",
  "last_runs": {
   "americanfootball_nfl": {
    "added": 1,
@@ -10,10 +10,10 @@
    "candidates": 1
   },
   "football": {
-   "added": 0,
+   "added": 488,
    "already_recorded": 0,
-   "at": "2026-10-07T14:19:53.673197+00:00",
-   "candidates": 0
+   "at": "2026-10-08T14:28:06.485738+00:00",
+   "candidates": 488
   },
   "icehockey_nhl": {
    "added": 10,
@@ -39,7 +39,9 @@
   "americanfootball_nfl": {
    "nfl_moneyline.market: OUTSIDE_36H_WINDOW": 28
   },
-  "football": {},
+  "football": {
+   "football: OUTSIDE_48H_WINDOW": 147
+  },
   "icehockey_nhl": {
    "nhl_moneyline.market: OUTSIDE_36H_WINDOW": 1
   },
