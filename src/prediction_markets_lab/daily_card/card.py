@@ -53,6 +53,17 @@ def fair_odds(p: float) -> float:
     return round(1 / p, 2)
 
 
+MIN_EV_BET = 0.02          # = bsv2-4 decision_gates.paper_bet.min_net_ev (bookmaker price, no commission)
+PAYOUT_FLOOR = 1.33        # = bsv2-4 decision_gates.paper_bet.min_decimal_odds
+
+
+def min_bookmaker_odds(p: float) -> float:
+    """Lowest bookmaker (non-exchange) decimal odds that still clears the bet rule: EV >= +2% and the payout floor.
+    Rounded UP to 2 dp so the shown number is never below the true threshold."""
+    import math
+    return max(PAYOUT_FLOOR, math.ceil((1 + MIN_EV_BET) / p * 100 - 1e-9) / 100)
+
+
 def in_window(start: str, now: datetime, hours: float) -> bool:
     t = ts(start)
     return now < t <= now + timedelta(hours=hours)
@@ -219,11 +230,12 @@ def render_md(c: dict) -> str:
         L.append("| — | | no predictions in the window | | | | | | | | | | |")
     L += ["", "## 2. Best bets today", ""]
     if c["best_bets"]:
-        L += ["| Event | Selection | P | Fair odds | Odds (source) | Price time | EV after costs | Stake | Note |", "|---|---|---|---|---|---|---|---|---|"]
+        L += ["| Event | Selection | P | Fair odds | Odds (source) | **Min odds at any bookmaker** | Price time | EV after costs | Stake | Note |", "|---|---|---|---|---|---|---|---|---|---|"]
         for b in c["best_bets"]:
             L.append(f"| {b['event_name']} ({b['event_start'][:16]}) | {b['market']}: {b['selection']} | {_pct(b['probability'])} | {b['fair_odds']:.2f} | "
-                     f"{b['odds']:.2f} ({b['decision_source']}) | {str(b['price_observed_at'])[:16]} | {_pct(b['net_ev'])} | £{b['stake_gbp']:.0f} | {b['stake_note']} |")
-        L += ["", "_How to bet: only rows with a £ stake. Check your bookmaker/exchange price is at least the odds shown — if it is lower, skip. "
+                     f"{b['odds']:.2f} ({b['decision_source']}) | **{min_bookmaker_odds(b['probability']):.2f}** | {str(b['price_observed_at'])[:16]} | {_pct(b['net_ev'])} | £{b['stake_gbp']:.0f} | {b['stake_note']} |")
+        L += ["", "_How to bet: only rows with a £ stake. Any bookmaker you have (e.g. Bet365) is fine if its odds are at least the **Min odds** "
+              "shown (exchanges like Betfair need ~5% higher because of commission). If no bookmaker of yours reaches it, skip. "
               "Place it, then log it in your Bet Log (bookmaker, card odds, odds taken, stake, time). Rows marked PAPER ONLY are not live bets._"]
     else:
         L.append("No bet today — no prediction currently clears the bet rules (probability ≥ 50%, EV after costs ≥ +2%, clean fresh price). "
