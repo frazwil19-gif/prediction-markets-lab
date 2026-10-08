@@ -1,6 +1,6 @@
 # Qualified Turnover Capacity (QTC) report — ChatGPT/Fraser directive 2026-10-08 (item 11).
 # Monitoring only: nothing here changes thresholds, grading, staking or live policy.
-report_version: qtc-1
+report_version: qtc-2   # 2026-10-08: capacity restricted to the current bsv2 rule version (qtc-1 mixed bsv2-1 bets)
 days_per_month: 30
 flat_stakes_gbp: [1, 5, 10]
 bankroll_scenarios_gbp: [50, 100, 250, 500, 1000]
