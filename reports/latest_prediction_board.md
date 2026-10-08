@@ -2,9 +2,9 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 118 · Valid predictions: 528 · Sports: americanfootball, football, icehockey, tennis
-Counts: >=70: 141 · >=75: 65 · >=80: 30 · >=85: 14 · >=90: 5 · >=95: 1
-Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 455
+Upcoming events: 124 · Valid predictions: 534 · Sports: americanfootball, football, icehockey, tennis
+Counts: >=70: 142 · >=75: 66 · >=80: 31 · >=85: 14 · >=90: 5 · >=95: 1
+Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 432
 
 ## Top predictions (P ≥ 80%)
 
@@ -28,6 +28,7 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 455
 | football | Hearts v St Mirren | 2026-10-10T14:00 | double_chance | 1X | 84.4% | 1.18 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.14 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Plymouth Argyle v Wimbledon | 2026-10-10T11:30 | double_chance | 1X | 84.3% | 1.19 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.15 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | West Ham United v Queens Park Rangers | 2026-10-09T19:00 | double_chance | 1X | 84.1% | 1.19 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.16 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
+| tennis | Daniil Medvedev v Jan-Lennard Struff | 2026-10-10T04:00 | match_winner | Daniil Medvedev | 83.6% | 1.20 | 80-84.9% | atp_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.18 (betfair_ex_uk back (odds_api)) | no | yes |
 | football | Montpellier v Grenoble | 2026-10-09T18:00 | double_chance | 1X | 83.1% | 1.20 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.16 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Borussia Dortmund v Werder Bremen | 2026-10-09T18:30 | double_chance | 12 | 83.1% | 1.20 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Rangers v Kilmarnock | 2026-10-10T14:00 | 1x2 | home | 82.3% | 1.21 | 80-84.9% | football_1x2.market_consensus@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.17 (odds_api:William Hill) | no | yes |
@@ -48,8 +49,8 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 455
 | football_1x2.market_consensus | VALIDATED_HISTORICAL / COLLECTING | 234 | 0 | COLLECTING | 0 | — → — |
 | football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 20 | 0 | COLLECTING | 0 | — → — |
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
-| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 122 | 53 | EARLY | 11 | 86.8% → 81.8% |
-| wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 104 | 77 | EARLY | 18 | 91.3% → 88.9% |
+| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 127 | 53 | EARLY | 11 | 86.8% → 81.8% |
+| wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 105 | 77 | EARLY | 18 | 91.3% → 88.9% |
 | nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 0 | 0 | COLLECTING | 0 | — → — |
 | nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 10 | 0 | COLLECTING | 0 | — → — |
 | nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 1 | 0 | COLLECTING | 0 | — → — |
@@ -59,8 +60,8 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 455
 
 - daily_scan: OK (last 2026-10-08T14:28:05.841944+00:00)
 - settlement: OK (last 2026-10-08T00:55:48.599280+00:00)
-- tennis_board: OK (last 2026-10-08T11:06:57.256299+00:00)
-- ci_tests: OK (last 2026-10-08T14:28:06.416420+00:00)
+- tennis_board: OK (last 2026-10-08T20:48:02.367725+00:00)
+- ci_tests: OK (last 2026-10-08T20:48:03.932325+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
