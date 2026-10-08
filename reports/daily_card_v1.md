@@ -1,4 +1,4 @@
-# Daily Prediction Board & Bet Card — 2026-10-08T14:28Z (card-v1.1)
+# Daily Prediction Board & Bet Card — 2026-10-08T14:57Z (card-v1.1)
 
 **Mode: LIVE — manual £1 bets (you place them; nothing is automated)** · bankroll £50 · default stake £1 · daily cap £5
 
