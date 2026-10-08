@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-07T00:35:34.612424+00:00",
+ "generated_at": "2026-10-08T00:55:48.276548+00:00",
  "lag_hours": {
   "football_data_co_uk": 120,
   "tennis_court_log": 240,
   "odds_api_scores": 96
  },
  "totals": {
-  "NOT_STARTED": 77,
-  "NORMAL_SOURCE_LAG": 35,
+  "NOT_STARTED": 54,
+  "NORMAL_SOURCE_LAG": 71,
   "SETTLED": 169,
   "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
   "SOURCE_UNAVAILABLE": 0
@@ -109,26 +109,26 @@
    "sport": "tennis",
    "competition": "ATP Shanghai Masters",
    "source": "tennis_court_log",
-   "NOT_STARTED": 51,
-   "NORMAL_SOURCE_LAG": 0,
+   "NOT_STARTED": 31,
+   "NORMAL_SOURCE_LAG": 32,
    "SETTLED": 0,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
    "SOURCE_UNAVAILABLE": 0,
    "completed_events_past_lag": 0,
-   "settled_share_of_started": null
+   "settled_share_of_started": 0.0
   },
   {
    "ledger": "unified_ledger",
    "sport": "tennis",
    "competition": "WTA China Open",
    "source": "tennis_court_log",
-   "NOT_STARTED": 6,
-   "NORMAL_SOURCE_LAG": 23,
+   "NOT_STARTED": 3,
+   "NORMAL_SOURCE_LAG": 27,
    "SETTLED": 82,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
    "SOURCE_UNAVAILABLE": 0,
    "completed_events_past_lag": 82,
-   "settled_share_of_started": 0.781
+   "settled_share_of_started": 0.7523
   },
   {
    "ledger": "unified_ledger",
