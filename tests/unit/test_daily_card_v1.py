@@ -99,3 +99,16 @@ def test_min_bookmaker_odds():
     assert C.min_bookmaker_odds(0.60) == 1.70 and C.min_bookmaker_odds(0.5) == 2.04 and C.min_bookmaker_odds(0.9) == 1.33
     p = 0.63
     assert p * C.min_bookmaker_odds(p) - 1 >= 0.02
+
+
+def test_provisional_live_engine_limited_and_excluded_from_big_card():
+    nfl = "nfl_moneyline.market"
+    board = {"predictions": [{**pred(f"n{i}", 0.7 + i / 100, f"N{i}"), "engine_id": nfl} for i in range(3)]
+             + [pred(f"f{i}", 0.6 + i / 100, f"F{i}") for i in range(3)]}
+    cands = [cand(f"n{i}", "PAPER_BET") for i in range(3)] + [cand(f"f{i}", "PAPER_BET") for i in range(3)]
+    c = C.build(board, cands, [], CFG, NOW, {nfl, "football_1x2.market_consensus"}, {nfl})
+    nfl_staked = [b for b in c["best_bets"] if b["engine_id"] == nfl and b["stake_gbp"] > 0]
+    assert len(nfl_staked) == 1 and any("provisional-live engine limit" in b["stake_note"] for b in c["best_bets"])
+    assert c["big_card"] and all(g["event_name"].startswith("F") for g in c["big_card"]["legs"])
+    assert C.provisional_live_engines(REPO) == {nfl}
+    assert c["rejection_reasons"] == {} and all("min_bookmaker_odds" in b for b in c["best_bets"])

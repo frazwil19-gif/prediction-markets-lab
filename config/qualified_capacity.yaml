@@ -1,0 +1,12 @@
+# Qualified Turnover Capacity (QTC) report — ChatGPT/Fraser directive 2026-10-08 (item 11).
+# Monitoring only: nothing here changes thresholds, grading, staking or live policy.
+report_version: qtc-1
+days_per_month: 30
+flat_stakes_gbp: [1, 5, 10]
+bankroll_scenarios_gbp: [50, 100, 250, 500, 1000]
+# ILLUSTRATIVE scenario staking only (NOT live policy; live policy = config/daily_card_v1.yaml live_policy, £1 flat):
+scenario_stake_fraction_of_bankroll: 0.02     # flat 2% of bankroll per bet (no Kelly)
+scenario_daily_cap_fraction_of_bankroll: 0.10 # max 10% of bankroll staked per day
+scenario_min_stake_gbp: 1.0
+live_policy_reference: config/daily_card_v1.yaml
+min_sample_for_rate_note: 30                  # below this many qualifying bets the per-month rate is flagged LOW_SAMPLE

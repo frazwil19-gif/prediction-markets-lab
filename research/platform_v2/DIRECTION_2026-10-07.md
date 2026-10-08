@@ -76,3 +76,20 @@ continue unchanged under their pre-registrations.
   - £1, counted inside the £5 daily cap.
 - **Next sports:** NHL and NFL consensus engines, validated historically on free MIT-licensed SBR archives
   (2011–2021, closing moneylines) before any live use.
+
+
+## 2026-10-08 consolidated operating directive (13:02) — implemented items
+- NFL → `live_tier: PROVISIONAL_LIVE` (registry status unchanged, still bsv2-4 gated): £1, max 1 live bet/day, no Big Card
+  legs. Pre-registered promotion/demotion rule: `nhl_nfl/NFL_PROMOTION_RULE.md`. NHL unchanged (paper only).
+- Card `card-v1.1`: rejection-reason summary; decision record fields (engine_version, decision_evaluated_at, source
+  bookmaker/price, min bookmaker odds); explicit "strong / price too low rows are NOT live — do not manually rescue".
+- Manual bookmaker shopping applies ONLY to BEST BET rows: accept any bookmaker at ≥ the card's min odds
+  = max(1.33, 1.02/P). Rejected rows are never rescued; prices seen on them may be noted as research only.
+- Reports: `reports/qualified_capacity.{md,json}` (QTC, expected profit/wins vs realised, rejection categories,
+  bankroll scenarios — illustrative only); credit utilisation review section in `reports/credit_report.md` (advisory).
+- Production freeze 10–11 Oct: no registry/threshold/model change; any later change is versioned.
+- Future research (recorded, not started): dependency between different-event Big Card legs (same-league/same-day
+  shocks, shared-price-source errors) — Big Card currently assumes independence; joint P = product.
+- Scaling criteria (draft, not active): consider raising stake above £1 only after ≥ 100 settled LIVE bets with
+  realised profit ≥ 0, positive mean CLV with 95% CI excluding 0 or ≥ 200 bets, and probability KPIs within calibration
+  tolerance — requires Fraser's approval and a pre-registration.

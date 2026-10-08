@@ -1,7 +1,7 @@
 # Daily Prediction Board + Bet Card V1 (direction change approved 2026-10-07; research/platform_v2/DIRECTION_2026-10-07.md).
 # Presentation + stake policy only. It reads Stage A (probabilities) and bet-selection bsv2-4 (decisions); it never changes
 # either. Probability first; bsv2-4 alone decides which predictions are bets.
-card_version: card-v1
+card_version: card-v1.1   # 2026-10-08: provisional-live tier, min odds, rejection summary, decision record fields
 horizon_hours: 36                     # events starting within this window (same window as the Stage A board inputs)
 best_predictions_min_probability: 0.50
 best_predictions_max_rows: 40
@@ -32,3 +32,6 @@ big_card:                             # optional multi built ONLY from independe
   max_legs: 5
   stake_gbp: 1.0                      # counts toward the daily exposure cap
   min_ev: 0.02                        # the acca price you are offered must keep EV >= +2% (same floor as singles)
+provisional_live:                     # registry live_tier == PROVISIONAL_LIVE (e.g. NFL, 2026-10-08)
+  max_live_bets_per_day_per_engine: 1
+  big_card_eligible: false
