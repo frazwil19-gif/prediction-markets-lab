@@ -270,3 +270,53 @@ def _checked(preds: list[Prediction], skips: list[Skip]) -> tuple[list[Predictio
         else:
             ok.append(p)
     return ok, skips
+
+
+# ---------------------------------------------------------------- NHL / NFL moneyline (2026-10-08)
+# Same estimator as the frozen NBA engine (mean decimal odds per side over >= MIN_NBA_BOOKS fresh, paired, non-exchange
+# UK books, then 2-way proportional de-vig; the predicted winner is the selection). Validation of the closing-line
+# consensus: research/platform_v2/nhl_nfl/VALIDATION.json (pre-registered f9ccfd0). No franchise filter: pre-season
+# and exhibition games are excluded by the season activation date in the registry.
+US_SPORTS = {"icehockey_nhl": ("nhl_moneyline.market", "icehockey", "NHL"),
+             "americanfootball_nfl": ("nfl_moneyline.market", "americanfootball", "NFL")}
+
+
+def us_moneyline_from_odds(raw: list[dict], reg: Registry, ctx: RunContext, now: datetime, sport_key: str,
+                           origin: str) -> tuple[list[Prediction], list[Skip]]:
+    engine, sport, comp = US_SPORTS[sport_key]
+    preds, skips = [], []
+    if not reg.collectable(engine, now):
+        return [], [Skip(engine, "*", "NOT_ACTIVE")]
+    for ev in raw:
+        key = f"{comp.lower()}|{ev['id']}"
+        start = _ts(ev["commence_time"])
+        mins = (start - now).total_seconds() / 60
+        if mins <= 0 or mins > NBA_WINDOW_MIN:
+            skips.append(Skip(engine, key, "EVENT_STARTED" if mins <= 0 else "OUTSIDE_36H_WINDOW"))
+            continue
+        prices: dict[str, list[tuple[float, str]]] = {ev["home_team"]: [], ev["away_team"]: []}
+        stale = 0
+        for b in ev.get("bookmakers", []):
+            if b["key"].startswith("betfair_ex"):
+                continue
+            lu = b.get("last_update")
+            if lu and now - _ts(lu) > STALE_AFTER:
+                stale += 1
+                continue
+            for mk in b.get("markets", []):
+                if mk["key"] == "h2h" and len(mk["outcomes"]) == 2:
+                    for o in mk["outcomes"]:
+                        if o["name"] in prices and float(o["price"]) > 1.0:
+                            prices[o["name"]].append((float(o["price"]), b["key"]))
+        h, a = prices[ev["home_team"]], prices[ev["away_team"]]
+        if min(len(h), len(a)) < MIN_NBA_BOOKS or len(h) != len(a):
+            skips.append(Skip(engine, key, f"DATA_INVALID: fresh books home={len(h)} away={len(a)} (need >= {MIN_NBA_BOOKS}, paired; {stale} stale excluded)"))
+            continue
+        ih, ia = 1 / (sum(x for x, _ in h) / len(h)), 1 / (sum(x for x, _ in a) / len(a))
+        ph = ih / (ih + ia)
+        sel, p, side = (ev["home_team"], ph, h) if ph >= 0.5 else (ev["away_team"], 1 - ph, a)
+        best_odds, best_book = max(side, key=lambda t: (t[0], t[1]))
+        preds.append(_build(reg, ctx, engine, sport=sport, competition=comp, event_id=ev["id"], event_key=key,
+                            event_name=f"{ev['away_team']} @ {ev['home_team']}", event_start=start, market="moneyline",
+                            selection=sel, p=p, pred_ts=now, live_price=best_odds, live_src=f"odds_api:{best_book}", origin=origin))
+    return _checked(preds, skips)

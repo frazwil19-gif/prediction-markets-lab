@@ -5,6 +5,7 @@ Subcommands (each ends by rebuilding the board, performance and health):
   ingest-football  daily card -> 1X2 / O-U / Double Chance rows      (0 credits; reads the card daily_scan wrote)
   ingest-tennis    mirror the frozen tennis ledger                    (0 credits)
   collect-nba      basketball_nba h2h, only when the engine is active and games start within 36h
+  collect-us       icehockey_nhl / americanfootball_nfl h2h, same rules as NBA (2026-10-08), budget consumer us_sports_board
                    (/sports and /events are free; <=1 odds call per UTC day under the budget guard)
   settle           football-data.co.uk (free) + tennis mirror + NBA scores (budgeted, every 3rd day)
   build            board/performance/health only
@@ -194,6 +195,59 @@ def collect_nba(reg: Registry, st: dict) -> None:
     record(preds, skips + dup_skips, st, "nba")
 
 
+US_CREDIT_LOG = PRED_DIR / "us_sports_credit_log.csv"
+
+
+def _us_budget_ok(remaining: int, cost: int) -> bool:
+    d = budget_check(load_budget(REPO / "config/api_budget.json"), "us_sports_board", month_spend(US_CREDIT_LOG, now_utc()), remaining, cost)
+    if not d.allowed:
+        print(f"US sports budget guard: {d.reason}")
+    return d.allowed
+
+
+def _log_us_credit(call: str, hdr: dict) -> None:
+    new = not US_CREDIT_LOG.exists()
+    PRED_DIR.mkdir(exist_ok=True)
+    with US_CREDIT_LOG.open("a", newline="") as f:
+        w = csv.writer(f)
+        if new:
+            w.writerow(["timestamp_utc", "call", "x_requests_used", "x_requests_remaining", "x_requests_last"])
+        w.writerow([now_utc().isoformat(), call, hdr.get("x-requests-used"), hdr.get("x-requests-remaining"), hdr.get("x-requests-last")])
+
+
+def collect_us(reg: Registry, st: dict) -> None:
+    now = now_utc()
+    key = os.environ.get("THE_ODDS_API_KEY")
+    if not key:
+        print("THE_ODDS_API_KEY not set -- stopping cleanly")
+        return
+    sports, hdr = _get(f"{ODDS}/?{urllib.parse.urlencode({'apiKey': key})}")                     # free
+    active = {s["key"] for s in sports if s.get("active")}
+    for sk, (engine, _sport, _comp) in A.US_SPORTS.items():
+        if not reg.collectable(engine, now):
+            print(f"{sk}: engine not collecting -- no API calls")
+            continue
+        if st.get(f"{sk}_last_odds_date") == now.date().isoformat():
+            print(f"{sk}: odds already fetched today -- no API calls")
+            continue
+        if sk not in active:
+            print(f"{sk} not active -- no paid call")
+            continue
+        events, _ = _get(f"{ODDS}/{sk}/events?{urllib.parse.urlencode({'apiKey': key})}")      # free
+        soon = [e for e in events if 0 < (datetime.fromisoformat(e["commence_time"].replace("Z", "+00:00")) - now).total_seconds() <= A.NBA_WINDOW_MIN * 60]
+        if not soon:
+            print(f"{sk}: no games within 36h -- no paid call")
+            continue
+        if not _us_budget_ok(int(hdr.get("x-requests-remaining") or 0), 1):
+            continue
+        raw, h = _get(f"{ODDS}/{sk}/odds/?{urllib.parse.urlencode({'apiKey': key, 'regions': 'uk', 'markets': 'h2h', 'oddsFormat': 'decimal'})}")
+        _log_us_credit(f"odds:{sk}", h)
+        st[f"{sk}_last_odds_date"] = now.date().isoformat()
+        preds, skips = A.us_moneyline_from_odds(raw, reg, run_context(now), now, sk, origin=f"odds_api:{sk}")
+        preds, dup_skips = first_snapshot_only(preds, read_rows(LEDGER))
+        record(preds, skips + dup_skips, st, sk)
+
+
 def settle(st: dict) -> None:
     now = now_utc()
     preds = read_rows(LEDGER)
@@ -230,6 +284,19 @@ def settle(st: dict) -> None:
                 _log_credit("scores:basketball_nba", h)
                 st["nba_last_scores_date"] = now.date().isoformat()
                 new += S.settle_from_odds_api_scores(nba_due, done, scores, now)
+    # NHL / NFL scores (2026-10-08): same cadence and budget rules as NBA, own consumer
+    for sk, (_engine, sport, _comp) in A.US_SPORTS.items():
+        due = [p for p in preds if p["sport"] == sport and p["prediction_id"] not in done and datetime.fromisoformat(p["event_start"]) < now]
+        last = st.get(f"{sk}_last_scores_date")
+        if due and (last is None or (now.date() - date.fromisoformat(last)).days >= NBA_SCORES_EVERY_DAYS):
+            key = os.environ.get("THE_ODDS_API_KEY")
+            if key:
+                _, hdr = _get(f"{ODDS}/?{urllib.parse.urlencode({'apiKey': key})}")
+                if _us_budget_ok(int(hdr.get("x-requests-remaining") or 0), 2):
+                    scores, h = _get(f"{ODDS}/{sk}/scores/?{urllib.parse.urlencode({'apiKey': key, 'daysFrom': 3})}")
+                    _log_us_credit(f"scores:{sk}", h)
+                    st[f"{sk}_last_scores_date"] = now.date().isoformat()
+                    new += S.settle_from_odds_api_scores(due, done, scores, now, sport=sport)
     added, _ = append_unique(SETTLEMENTS, new, SETTLEMENT_FIELDS)
     review = review + nba_overdue(preds, done | {r["prediction_id"] for r in new}, now)
     st["pending_review"] = review
@@ -286,7 +353,7 @@ def build_stage_a(preds: list[dict], start_index: ET.StartIndex, now: datetime) 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("command", choices=["ingest-football", "ingest-tennis", "collect-nba", "settle", "build"])
+    ap.add_argument("command", choices=["ingest-football", "ingest-tennis", "collect-nba", "collect-us", "settle", "build"])
     ap.add_argument("--card", type=Path)
     ap.add_argument("--ci-passed", action="store_true", help="record that this workflow's test step passed")
     a = ap.parse_args()
@@ -304,6 +371,8 @@ def main() -> int:
         ingest_tennis(reg, st)
     elif a.command == "collect-nba":
         collect_nba(reg, st)
+    elif a.command == "collect-us":
+        collect_us(reg, st)
     elif a.command == "settle":
         settle(st)
     save_state(st)
