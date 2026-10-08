@@ -73,6 +73,7 @@ jobs:
             python scripts/run_unified_prediction_board.py settle
           else
             python scripts/run_unified_prediction_board.py collect-nba
+            python scripts/run_unified_prediction_board.py collect-us || echo "::warning::NHL/NFL collection failed (board unaffected)"
           fi
       - name: Bet-Selection V2 (V2-6 PAPER research; 0 credits; never affects the Money Card)
         if: always() && steps.tests.outcome == 'success'
@@ -94,7 +95,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add tennis_predictions/
-          for f in predictions reports/latest_prediction_board.json reports/latest_prediction_board.csv reports/latest_prediction_board.md reports/latest_prediction_performance.json paper_betting_v2 reports/bet_selection_v2.json reports/bet_selection_v2.md reports/bet_selection_v2_candidates.csv reports/bet_selection_v2_retrospective.json reports/bet_selection_v2_start_time_resolution.csv reports/latest_stage_a_board.json reports/latest_stage_a_board.csv reports/latest_stage_a_board.md status/credit_ledger.csv reports/credit_report.json reports/credit_report.md reports/daily_paper_card.json reports/daily_paper_card.md reports/paper_dashboard.json reports/paper_dashboard.md reports/daily_card_v1.json reports/daily_card_v1.md; do if [ -e "$f" ]; then git add "$f"; fi; done  # V2-5 (per path: absent files cannot break this step)
+          for f in predictions reports/latest_prediction_board.json reports/latest_prediction_board.csv reports/latest_prediction_board.md reports/latest_prediction_performance.json paper_betting_v2 reports/bet_selection_v2.json reports/bet_selection_v2.md reports/bet_selection_v2_candidates.csv reports/bet_selection_v2_retrospective.json reports/bet_selection_v2_start_time_resolution.csv reports/latest_stage_a_board.json reports/latest_stage_a_board.csv reports/latest_stage_a_board.md status/credit_ledger.csv reports/credit_report.json reports/credit_report.md reports/daily_paper_card.json reports/daily_paper_card.md reports/paper_dashboard.json reports/paper_dashboard.md reports/daily_card_v1.json reports/daily_card_v1.md predictions/us_sports_credit_log.csv; do if [ -e "$f" ]; then git add "$f"; fi; done  # V2-5 (per path: absent files cannot break this step)
           if git diff --cached --quiet; then
             echo "No tennis prediction changes"
           else

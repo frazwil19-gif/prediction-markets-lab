@@ -13,8 +13,8 @@
     },
     "football_settlement": {
       "priority": "core",
-      "monthly_cap": 50,
-      "_note": "V2-19: lowered 60->50 (Plan A projection 0-20; scores only for leagues with started pending bets)"
+      "monthly_cap": 20,
+      "_note": "V2-19: lowered 60->50 (Plan A projection 0-20; scores only for leagues with started pending bets) | 2026-10-08: 50->20 (observed 0 in Oct; Plan A 0-20) to fund NHL/NFL"
     },
     "tennis_prediction_board": {
       "priority": "optional",
@@ -25,8 +25,15 @@
     },
     "nba_prediction_board": {
       "priority": "optional",
-      "monthly_cap": 60,
-      "min_remaining": 100
+      "monthly_cap": 55,
+      "min_remaining": 100,
+      "_note": "2026-10-08: 60->55 to fund NHL/NFL"
+    },
+    "us_sports_board": {
+      "priority": "optional",
+      "monthly_cap": 40,
+      "min_remaining": 100,
+      "_note": "NHL + NFL moneyline (2026-10-08): <=1 odds call per sport per UTC day, only with games within 36h; scores every 2nd day (2 credits) when predictions are due. Cap 40 fits the 425 operating budget (Plan A tennis 150 unchanged); the guard stops US calls when reached, so NHL coverage may be partial late in a month."
     }
   },
   "football_shadow_tiers": {

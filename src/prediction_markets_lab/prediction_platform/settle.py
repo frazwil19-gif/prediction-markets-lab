@@ -73,12 +73,14 @@ def mirror_tennis(tennis_settlements: dict[str, dict], unified_ids: set[str], do
     return out
 
 
-def settle_from_odds_api_scores(preds: list[dict], done: set[str], scores: list[dict], now: datetime) -> list[dict]:
-    """NBA: settle by provider event id from an Odds API /scores payload (completed events only, no draws)."""
+def settle_from_odds_api_scores(preds: list[dict], done: set[str], scores: list[dict], now: datetime,
+                                sport: str = "basketball") -> list[dict]:
+    """NBA (and, since 2026-10-08, NHL/NFL via `sport`): settle by provider event id from an Odds API /scores payload
+    (completed events only; a tied final is left unsettled for review)."""
     by_id = {e["id"]: e for e in scores if e.get("completed") and e.get("scores")}
     out = []
     for p in preds:
-        if p["sport"] != "basketball" or p["prediction_id"] in done or p["event_id"] not in by_id:
+        if p["sport"] != sport or p["prediction_id"] in done or p["event_id"] not in by_id:
             continue
         sc = {s["name"]: float(s["score"]) for s in by_id[p["event_id"]]["scores"]}
         if len(sc) != 2 or len(set(sc.values())) != 2:
