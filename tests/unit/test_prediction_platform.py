@@ -41,7 +41,7 @@ def test_registry_valid_and_statuses(reg):
     assert reg.get("football_double_chance.derived_1x2")["status"] == "PROVISIONAL_PROSPECTIVE"
     assert reg.get("football_double_chance.derived_1x2")["money_eligible"] is False
     for eid in ("atp_match_winner.betfair_market", "wta_match_winner.betfair_market", "nba_moneyline.market"):
-        assert reg.get(eid)["money_eligible"] is False
+        assert reg.get(eid)["money_eligible"] is True          # Fraser approval 2026-10-08 (manual £1 live phase)
     with pytest.raises(KeyError):
         reg.get("nope")
 
@@ -117,7 +117,8 @@ def test_tennis_mirror_keeps_ids_and_marks_research_only(reg):
     assert a.prediction_id == TROW["prediction_id"] == a.origin_prediction_id
     assert a.live_price == 1.09 and a.prediction_valid and a.configured_scan_time == "MANUAL"
     assert b.prediction_valid is False and b.paper_status == "RESEARCH_ONLY_SOURCE"
-    assert a.single_eligible is False and a.single_ineligible_reason == "engine not money-eligible"
+    # tennis is money-eligible since 2026-10-08; this row is still not a single because its fair odds sit below the payout floor
+    assert a.single_eligible is False and a.single_ineligible_reason.startswith("fair odds") and "below payout floor" in a.single_ineligible_reason
 
 
 def test_real_tennis_ledger_mirrors_cleanly(reg):

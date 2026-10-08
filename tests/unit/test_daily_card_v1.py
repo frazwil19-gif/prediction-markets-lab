@@ -76,3 +76,20 @@ def test_live_mode_only_stakes_money_eligible_engines():
 def test_registry_money_engines_are_validated():
     eng = C.money_eligible_engines(REPO)
     assert "football_1x2.market_consensus" in eng and all("research" not in e for e in eng)
+
+
+def test_big_card_only_from_qualifying_legs_on_different_events():
+    board = {"predictions": [pred(f"q{i}", 0.6 + i / 100, f"E{i}") for i in range(4)] + [pred("same", 0.9, "E0"), pred("rej", 0.95, "EX")]}
+    cands = [cand(f"q{i}", "PAPER_BET", odds=1.8) for i in range(4)] + [cand("same", "PAPER_BET", odds=1.2), cand("rej", "REJECT")]
+    c = C.build(board, cands, [], CFG, NOW)
+    m = c["big_card"]
+    assert m and 3 <= len(m["legs"]) <= 5 and len({g["event_name"] for g in m["legs"]}) == len(m["legs"])
+    assert all(g["event_name"] != "EX" for g in m["legs"])
+    jp = 1.0
+    for g in m["legs"]:
+        jp *= g["probability"]
+    assert abs(m["joint_probability"] - round(jp, 4)) < 1e-9 and m["min_acceptable_acca_odds"] == round(1.02 / jp, 2)
+    assert c["summary"]["total_stake_gbp"] <= CFG["live_policy"]["max_daily_exposure_gbp"]
+    assert "Big Card" in C.render_md(c)
+    two = C.build({"predictions": board["predictions"][:2]}, cands[:2], [], CFG, NOW)
+    assert two["big_card"] is None and "No Big Card today" in C.render_md(two)

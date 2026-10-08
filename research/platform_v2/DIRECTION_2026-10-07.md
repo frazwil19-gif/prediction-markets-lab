@@ -65,3 +65,14 @@ continue unchanged under their pre-registrations.
   a fallback, and `scripts/recent_run_guard.py` skips a late duplicate so credits are not spent twice.
 - Matchbook commission stays `null` (unknown → rejected). Public sources were not authoritative, and Matchbook did not
   appear among recent best quotes. No price-quality rule changed.
+
+## 2026-10-08 (Fraser approval)
+- **Tennis ATP/WTA and NBA moneyline are now money-eligible** (registry). NBA applies from season start (20 Oct).
+  bsv2-4 PAPER_BET is still required for any live bet.
+- **Big Card (multi):**
+  - shown only when ≥ 3 independently qualifying, money-eligible legs on different events exist (max 5);
+  - joint P = product of leg P;
+  - placed only if the bookmaker's acca price ≥ (1.02 / joint P);
+  - £1, counted inside the £5 daily cap.
+- **Next sports:** NHL and NFL consensus engines, validated historically on free MIT-licensed SBR archives
+  (2011–2021, closing moneylines) before any live use.

@@ -26,3 +26,9 @@ live_policy:                          # Controlled live phase APPROVED 2026-10-0
   enhanced_stake_rule_enabled: false  # a £2 rule needs quantitative justification + approval (directive 7 Oct)
   max_daily_exposure_gbp: 5.0
   max_bets_per_event: 1
+big_card:                             # optional multi built ONLY from independently qualifying, money-eligible legs (approved 2026-10-08)
+  enabled: true
+  min_legs: 3                         # shown only when at least this many qualifying legs on DIFFERENT events exist
+  max_legs: 5
+  stake_gbp: 1.0                      # counts toward the daily exposure cap
+  min_ev: 0.02                        # the acca price you are offered must keep EV >= +2% (same floor as singles)
