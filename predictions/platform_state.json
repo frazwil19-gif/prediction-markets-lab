@@ -1,11 +1,25 @@
 {
- "last_ci_pass": "2026-10-08T02:09:59.442826+00:00",
+ "americanfootball_nfl_last_odds_date": "2026-10-08",
+ "icehockey_nhl_last_odds_date": "2026-10-08",
+ "last_ci_pass": "2026-10-08T11:06:58.826961+00:00",
  "last_runs": {
+  "americanfootball_nfl": {
+   "added": 1,
+   "already_recorded": 0,
+   "at": "2026-10-08T11:07:00.610815+00:00",
+   "candidates": 1
+  },
   "football": {
    "added": 0,
    "already_recorded": 0,
    "at": "2026-10-07T14:19:53.673197+00:00",
    "candidates": 0
+  },
+  "icehockey_nhl": {
+   "added": 10,
+   "already_recorded": 0,
+   "at": "2026-10-08T11:07:00.037677+00:00",
+   "candidates": 10
   },
   "settle": {
    "added": 0,
@@ -13,16 +27,22 @@
    "pending_review": 0
   },
   "tennis": {
-   "added": 0,
+   "added": 18,
    "already_recorded": 260,
-   "at": "2026-10-08T02:09:59.475260+00:00",
-   "candidates": 260
+   "at": "2026-10-08T11:06:58.860927+00:00",
+   "candidates": 278
   }
  },
- "last_tennis_ingest": "2026-10-08T02:09:59.475282+00:00",
+ "last_tennis_ingest": "2026-10-08T11:06:58.860962+00:00",
  "pending_review": [],
  "skips": {
+  "americanfootball_nfl": {
+   "nfl_moneyline.market: OUTSIDE_36H_WINDOW": 28
+  },
   "football": {},
+  "icehockey_nhl": {
+   "nhl_moneyline.market: OUTSIDE_36H_WINDOW": 1
+  },
   "tennis": {}
  }
 }

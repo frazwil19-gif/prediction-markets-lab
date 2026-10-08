@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08T02:09:59.796642+00:00",
+ "generated_at": "2026-10-08T11:07:00.611376+00:00",
  "protocol": "research/platform_v2/unified_board/PROSPECTIVE_PROTOCOL.md",
  "pending_review": [],
  "pooled": {
@@ -1735,8 +1735,8 @@
  },
  "engines": {
   "atp_match_winner.betfair_market": {
-   "predictions": 105,
-   "prediction_events": 105,
+   "predictions": 122,
+   "prediction_events": 122,
    "settled_rows": 53,
    "settled_events": 53,
    "settled_ge80_events": 11,
@@ -1745,9 +1745,31 @@
    "alarm_review_required": false,
    "settled_rows_masked_no_peek": 0
   },
+  "nfl_moneyline.market": {
+   "predictions": 1,
+   "prediction_events": 1,
+   "settled_rows": 0,
+   "settled_events": 0,
+   "settled_ge80_events": 0,
+   "maturity": "COLLECTING",
+   "ge80_maturity": "COLLECTING",
+   "alarm_review_required": false,
+   "settled_rows_masked_no_peek": 0
+  },
+  "nhl_moneyline.market": {
+   "predictions": 10,
+   "prediction_events": 10,
+   "settled_rows": 0,
+   "settled_events": 0,
+   "settled_ge80_events": 0,
+   "maturity": "COLLECTING",
+   "ge80_maturity": "COLLECTING",
+   "alarm_review_required": false,
+   "settled_rows_masked_no_peek": 0
+  },
   "wta_match_winner.betfair_market": {
-   "predictions": 103,
-   "prediction_events": 103,
+   "predictions": 104,
+   "prediction_events": 104,
    "settled_rows": 77,
    "settled_events": 77,
    "settled_ge80_events": 18,
