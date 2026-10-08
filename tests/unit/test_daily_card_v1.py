@@ -93,3 +93,9 @@ def test_big_card_only_from_qualifying_legs_on_different_events():
     assert "Big Card" in C.render_md(c)
     two = C.build({"predictions": board["predictions"][:2]}, cands[:2], [], CFG, NOW)
     assert two["big_card"] is None and "No Big Card today" in C.render_md(two)
+
+
+def test_min_bookmaker_odds():
+    assert C.min_bookmaker_odds(0.60) == 1.70 and C.min_bookmaker_odds(0.5) == 2.04 and C.min_bookmaker_odds(0.9) == 1.33
+    p = 0.63
+    assert p * C.min_bookmaker_odds(p) - 1 >= 0.02
