@@ -73,5 +73,11 @@
     "protect_as_tier": 2,
     "active_from": "2026-10-02T00:00:00+00:00",
     "_active_from": "H2 go-live; selections decided before this are not counted as missed captures"
+  },
+  "clv_capture": {
+    "_doc": "CLV capture (directive 2026-10-08 18:37: up to 120 credits/month approved from genuinely unused budget). Surplus-only: pays only while remaining >= the Tier-2 shadow floor (protects Tier-1 football, tennis, NBA, settlement) + extra_protected_daily_need x days left (config/clv.yaml, US sports), and monthly spend < monthly_cap and daily spend < daily_cap. One /odds call per sport key per capture run (h2h = 1 credit; the response includes Betfair lay prices). Own ledger research_shadow/clv/credit_ledger.csv (in credit_report). Not part of consumers, so no core cap changes.",
+    "monthly_cap": 100,
+    "daily_cap": 8,
+    "protect_as_tier": 2
   }
 }

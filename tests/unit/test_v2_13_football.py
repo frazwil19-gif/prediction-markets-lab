@@ -39,13 +39,20 @@ def test_bolton_and_lincoln_resolve_from_both_sources():
 
 
 def test_every_team_on_the_daily_cards_resolves():
+    """Every team in a competition whose aliases are declared complete resolves; every other competition on the cards
+    must be listed as pending (config/settlement_monitor.yaml) so the gap is explicit, never silent."""
     a = load_settlement_aliases()
-    names = set()
+    mon = yaml.safe_load((REPO / "config/settlement_monitor.yaml").read_text())
+    complete, pending = set(mon["aliases_complete_competitions"]), set(mon["aliases_pending_competitions"])
+    names, comps = set(), set()
     for f in (REPO / "daily_cards").glob("*/card.json"):
         for c in json.loads(f.read_text()).get("candidates", []):
             if c.get("sport") == "football":
-                names |= set(c["event"].split(" v ", 1))
+                comps.add(c.get("competition"))
+                if c.get("competition") in complete:
+                    names |= set(c["event"].split(" v ", 1))
     assert names and not [n for n in names if normalise_team_name(n, a) is None]
+    assert not (comps - complete - pending), comps - complete - pending
 
 
 def test_active_competitions_have_odds_key_and_settlement_mapping():

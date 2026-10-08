@@ -1,0 +1,2026 @@
+{
+ "label": "READ-ONLY diagnostic audit; no outcomes used; nothing changed",
+ "calibration_se_by_band": {
+  "50-65%": 0.010918367346938762,
+  "65-80%": 0.011556122448979593,
+  "80%+": 0.012168367346938795
+ },
+ "scans": {
+  "morning": {
+   "scan": "2026-09-30T12:54:22.695202+00:00",
+   "run_id": "36717723414",
+   "intended_cron": "2026-09-30T06:30:00+00:00",
+   "delay_hours": 6.41,
+   "bug_checks_raw": {
+    "none_found": true
+   },
+   "midpoint_definition_effect": {
+    "note": "frozen engine averages DECIMAL ODDS (not probabilities) then de-vigs",
+    "max_abs_diff_vs_probability_average_pp": 7.351,
+    "median_abs_diff_pp": 0.006
+   },
+   "waterfall_v2_7_single_legs": [
+    {
+     "stage": "API events returned (3 active tennis keys)",
+     "unique_matches": 56,
+     "bookmaker_quotes": null,
+     "rule": "Odds API covered keys; max-keys 6 not binding"
+    },
+    {
+     "stage": "predictions (not started, has a source)",
+     "unique_matches": 53,
+     "bookmaker_quotes": null,
+     "rule": "engine.predict: event not started; exchange quote <= 6h old"
+    },
+    {
+     "stage": "validated source (EXCHANGE_MID/BACK)",
+     "unique_matches": 53,
+     "bookmaker_quotes": null,
+     "rule": "engine VALID_SOURCES"
+    },
+    {
+     "stage": "priced by >=1 UK bookmaker (non-exchange, same scan)",
+     "unique_matches": 53,
+     "bookmaker_quotes": 808,
+     "rule": ""
+    },
+    {
+     "stage": "exchange width <= 0.03 (bsv2-3 data-quality gate)",
+     "unique_matches": 39,
+     "bookmaker_quotes": 634,
+     "rule": "EXCHANGE_BOOK_TOO_WIDE: midpoint P judged unreliable"
+    },
+    {
+     "stage": "fresh quote & not started (<=240 min; start after logging)",
+     "unique_matches": 39,
+     "bookmaker_quotes": 634,
+     "rule": ""
+    },
+    {
+     "stage": "positive central EV at >=1 book (payout/value)",
+     "unique_matches": 3,
+     "bookmaker_quotes": 5,
+     "rule": ""
+    },
+    {
+     "stage": "EV still > 0 at P - 1 sigma (uncertainty; V2-7 SHADOW_CANDIDATE rule)",
+     "unique_matches": 0,
+     "bookmaker_quotes": null,
+     "rule": ""
+    },
+    {
+     "stage": "(parallel) production bsv2-3 paper gate: net EV >= 2% at a bookmaker",
+     "unique_matches": 0
+    },
+    {
+     "stage": "final candidates",
+     "unique_matches": 0,
+     "bookmaker_quotes": null,
+     "rule": ""
+    }
+   ],
+   "high_p_funnel": {
+    "board_ge_70": 24,
+    "validated_ge_70": 24,
+    "ge_70_width_too_wide": 8,
+    "ge_70_no_clean_quote_otherwise": 0,
+    "v2_7_high_p_cohort_events": 16
+   },
+   "spread_gate_unique_matches": [
+    {
+     "event": "Ekaterina Alexandrova v Aliaksandra Sasnovich",
+     "selection": "Ekaterina Alexandrova",
+     "p_midpoint": 0.5669,
+     "width": 0.1085,
+     "back": 1.61,
+     "lay": 1.95,
+     "books_rejected": 13,
+     "best_book_odds": 1.67,
+     "ev_range_across_exchange_book": [
+      -0.1436,
+      0.0373
+     ],
+     "classification": "INDETERMINATE_WITHIN_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Anastasia Potapova v Sinja Kraus",
+     "selection": "Anastasia Potapova",
+     "p_midpoint": 0.7591,
+     "width": 0.0742,
+     "back": 1.26,
+     "lay": 1.39,
+     "books_rejected": 12,
+     "best_book_odds": 1.3,
+     "ev_range_across_exchange_book": [
+      -0.0647,
+      0.0317
+     ],
+     "classification": "INDETERMINATE_WITHIN_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Clara Tauson v Polina Kudermetova",
+     "selection": "Clara Tauson",
+     "p_midpoint": 0.6656,
+     "width": 0.1876,
+     "back": 1.34,
+     "lay": 1.79,
+     "books_rejected": 14,
+     "best_book_odds": 1.38,
+     "ev_range_across_exchange_book": [
+      -0.2291,
+      0.0299
+     ],
+     "classification": "INDETERMINATE_WITHIN_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Jasmine Paolini v Daria Snigur",
+     "selection": "Jasmine Paolini",
+     "p_midpoint": 0.6688,
+     "width": 0.1709,
+     "back": 1.35,
+     "lay": 1.74,
+     "books_rejected": 13,
+     "best_book_odds": 1.55,
+     "ev_range_across_exchange_book": [
+      -0.1092,
+      0.1481
+     ],
+     "classification": "INDETERMINATE_WITHIN_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Dayana Yastremska v Maja Chwalinska",
+     "selection": "Maja Chwalinska",
+     "p_midpoint": 0.6134,
+     "width": 0.0929,
+     "back": 1.52,
+     "lay": 1.77,
+     "books_rejected": 11,
+     "best_book_odds": 1.41,
+     "ev_range_across_exchange_book": [
+      -0.2034,
+      -0.0724
+     ],
+     "classification": "POOR_EVEN_AT_TOP_OF_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Janice Tjen v Diana Shnaider",
+     "selection": "Diana Shnaider",
+     "p_midpoint": 0.7745,
+     "width": 0.1054,
+     "back": 1.22,
+     "lay": 1.4,
+     "books_rejected": 13,
+     "best_book_odds": 1.36,
+     "ev_range_across_exchange_book": [
+      -0.0286,
+      0.1148
+     ],
+     "classification": "INDETERMINATE_WITHIN_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Taylah Preston v Diane Parry",
+     "selection": "Diane Parry",
+     "p_midpoint": 0.5738,
+     "width": 0.1048,
+     "back": 1.6,
+     "lay": 1.92,
+     "books_rejected": 11,
+     "best_book_odds": 1.61,
+     "ev_range_across_exchange_book": [
+      -0.1615,
+      0.0063
+     ],
+     "classification": "INDETERMINATE_WITHIN_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Linda Noskova v Elena Gabriela Ruse",
+     "selection": "Linda Noskova",
+     "p_midpoint": 0.8075,
+     "width": 0.0527,
+     "back": 1.2,
+     "lay": 1.28,
+     "books_rejected": 13,
+     "best_book_odds": 1.25,
+     "ev_range_across_exchange_book": [
+      -0.0234,
+      0.0417
+     ],
+     "classification": "INDETERMINATE_WITHIN_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Karolina Muchova v Katie Boulter",
+     "selection": "Karolina Muchova",
+     "p_midpoint": 0.9087,
+     "width": 0.1444,
+     "back": 1.06,
+     "lay": 1.25,
+     "books_rejected": 11,
+     "best_book_odds": 1.14,
+     "ev_range_across_exchange_book": [
+      -0.088,
+      0.0755
+     ],
+     "classification": "INDETERMINATE_WITHIN_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Linda Fruhvirtova v Liudmila Samsonova",
+     "selection": "Liudmila Samsonova",
+     "p_midpoint": 0.9263,
+     "width": 0.2179,
+     "back": 1.04,
+     "lay": 1.34,
+     "books_rejected": 13,
+     "best_book_odds": 1.25,
+     "ev_range_across_exchange_book": [
+      -0.0672,
+      0.2019
+     ],
+     "classification": "INDETERMINATE_WITHIN_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Sara Bejlek v Maddison Inglis",
+     "selection": "Sara Bejlek",
+     "p_midpoint": 0.7653,
+     "width": 0.1797,
+     "back": 1.2,
+     "lay": 1.53,
+     "books_rejected": 11,
+     "best_book_odds": 1.36,
+     "ev_range_across_exchange_book": [
+      -0.1111,
+      0.1333
+     ],
+     "classification": "INDETERMINATE_WITHIN_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Maria Timofeeva v Naomi Osaka",
+     "selection": "Naomi Osaka",
+     "p_midpoint": 0.7931,
+     "width": 0.0563,
+     "back": 1.22,
+     "lay": 1.31,
+     "books_rejected": 13,
+     "best_book_odds": 1.22,
+     "ev_range_across_exchange_book": [
+      -0.0687,
+      0.0
+     ],
+     "classification": "POOR_EVEN_AT_TOP_OF_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Yue Yuan v Mirra Andreeva",
+     "selection": "Mirra Andreeva",
+     "p_midpoint": 0.8975,
+     "width": 0.0589,
+     "back": 1.09,
+     "lay": 1.16,
+     "books_rejected": 13,
+     "best_book_odds": 1.08,
+     "ev_range_across_exchange_book": [
+      -0.069,
+      -0.0092
+     ],
+     "classification": "POOR_EVEN_AT_TOP_OF_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Viktorija Golubic v Peyton Stearns",
+     "selection": "Peyton Stearns",
+     "p_midpoint": 0.6161,
+     "width": 0.1966,
+     "back": 1.42,
+     "lay": 1.97,
+     "books_rejected": 13,
+     "best_book_odds": 1.58,
+     "ev_range_across_exchange_book": [
+      -0.198,
+      0.1127
+     ],
+     "classification": "INDETERMINATE_WITHIN_EXCHANGE_RANGE"
+    }
+   ],
+   "spread_gate_summary": {
+    "unique_matches_removed": 14,
+    "quotes_removed": 174,
+    "classification": {
+     "INDETERMINATE_WITHIN_EXCHANGE_RANGE": 11,
+     "POOR_EVEN_AT_TOP_OF_EXCHANGE_RANGE": 3
+    },
+    "p_ge_070_removed": 8
+   },
+   "spread_threshold_sensitivity": {
+    "0.01": {
+     "matches_passing_width": 20,
+     "matches_with_pos_central_ev": 1
+    },
+    "0.02": {
+     "matches_passing_width": 38,
+     "matches_with_pos_central_ev": 3
+    },
+    "0.03": {
+     "matches_passing_width": 39,
+     "matches_with_pos_central_ev": 3
+    },
+    "0.04": {
+     "matches_passing_width": 39,
+     "matches_with_pos_central_ev": 3
+    },
+    "0.05": {
+     "matches_passing_width": 39,
+     "matches_with_pos_central_ev": 3
+    },
+    "none": {
+     "matches_passing_width": 53,
+     "matches_with_pos_central_ev": 9
+    }
+   },
+   "width_distribution_unique_matches": {
+    "0-1pp": 20,
+    "1-2pp": 18,
+    "2-3pp": 1,
+    "5-6pp": 3,
+    "7-8pp": 1,
+    "9-10pp": 1,
+    ">=10pp": 9
+   },
+   "uncertainty_positive_ev_legs": [
+    {
+     "event": "Daniil Medvedev v Pablo Carreno Busta",
+     "selection": "Daniil Medvedev",
+     "book": "betvictor",
+     "p": 0.7879,
+     "sigma": 0.0149,
+     "sigma_calibration": 0.0116,
+     "sigma_half_width": 0.0094,
+     "p_low": 0.773,
+     "odds": 1.29,
+     "ev": 0.0164,
+     "ev_low": -0.0028,
+     "break_even_p": 0.7752,
+     "p_margin_over_break_even_pp": 1.27,
+     "why_not_candidate": "EV_LOW_LE_0"
+    },
+    {
+     "event": "Magda Linette v Katerina Siniakova",
+     "selection": "Katerina Siniakova",
+     "book": "betano_uk",
+     "p": 0.6538,
+     "sigma": 0.013,
+     "sigma_calibration": 0.0116,
+     "sigma_half_width": 0.006,
+     "p_low": 0.6408,
+     "odds": 1.53,
+     "ev": 0.0004,
+     "ev_low": -0.0195,
+     "break_even_p": 0.6536,
+     "p_margin_over_break_even_pp": 0.03,
+     "why_not_candidate": "EV_LOW_LE_0"
+    },
+    {
+     "event": "Magda Linette v Katerina Siniakova",
+     "selection": "Katerina Siniakova",
+     "book": "betvictor",
+     "p": 0.6538,
+     "sigma": 0.013,
+     "sigma_calibration": 0.0116,
+     "sigma_half_width": 0.006,
+     "p_low": 0.6408,
+     "odds": 1.53,
+     "ev": 0.0004,
+     "ev_low": -0.0195,
+     "break_even_p": 0.6536,
+     "p_margin_over_break_even_pp": 0.03,
+     "why_not_candidate": "EV_LOW_LE_0"
+    },
+    {
+     "event": "Yushan Shao v Anastasia Zakharova",
+     "selection": "Anastasia Zakharova",
+     "book": "betano_uk",
+     "p": 0.931,
+     "sigma": 0.0131,
+     "sigma_calibration": 0.0122,
+     "sigma_half_width": 0.0048,
+     "p_low": 0.9179,
+     "odds": 1.08,
+     "ev": 0.0055,
+     "ev_low": -0.0087,
+     "break_even_p": 0.9259,
+     "p_margin_over_break_even_pp": 0.51,
+     "why_not_candidate": "EV_LOW_LE_0"
+    },
+    {
+     "event": "Yushan Shao v Anastasia Zakharova",
+     "selection": "Anastasia Zakharova",
+     "book": "betvictor",
+     "p": 0.931,
+     "sigma": 0.0131,
+     "sigma_calibration": 0.0122,
+     "sigma_half_width": 0.0048,
+     "p_low": 0.9179,
+     "odds": 1.08,
+     "ev": 0.0055,
+     "ev_low": -0.0087,
+     "break_even_p": 0.9259,
+     "p_margin_over_break_even_pp": 0.51,
+     "why_not_candidate": "EV_LOW_LE_0"
+    }
+   ],
+   "uncertainty_positive_ev_cards": [
+    {
+     "book": "betano_uk",
+     "k": "1",
+     "legset": "1b26a19876c9aaf7be957f87c1e4e7a2:Anastasia Zakharova",
+     "p_joint": "0.930979",
+     "sigma_joint": "0.013073",
+     "odds": "1.08",
+     "ev": "0.005457",
+     "ev_low": "-0.008662",
+     "status": "SHADOW_WATCH"
+    },
+    {
+     "book": "betano_uk",
+     "k": "1",
+     "legset": "8962aea3dd981eb3eb6cccc3b2fd3829:Katerina Siniakova",
+     "p_joint": "0.653846",
+     "sigma_joint": "0.013016",
+     "odds": "1.53",
+     "ev": "0.000384",
+     "ev_low": "-0.01953",
+     "status": "SHADOW_WATCH"
+    },
+    {
+     "book": "betano_uk",
+     "k": "2",
+     "legset": "1b26a19876c9aaf7be957f87c1e4e7a2:Anastasia Zakharova;8962aea3dd981eb3eb6cccc3b2fd3829:Katerina Siniakova",
+     "p_joint": "0.608717",
+     "sigma_joint": "0.014829",
+     "odds": "1.6524",
+     "ev": "0.005844",
+     "ev_low": "-0.018659",
+     "status": "SHADOW_WATCH"
+    },
+    {
+     "book": "betvictor",
+     "k": "1",
+     "legset": "d66f1937da5272c6644a583eaa98d7ce:Daniil Medvedev",
+     "p_joint": "0.78793",
+     "sigma_joint": "0.014881",
+     "odds": "1.29",
+     "ev": "0.01643",
+     "ev_low": "-0.002766",
+     "status": "SHADOW_WATCH"
+    },
+    {
+     "book": "betvictor",
+     "k": "1",
+     "legset": "1b26a19876c9aaf7be957f87c1e4e7a2:Anastasia Zakharova",
+     "p_joint": "0.930979",
+     "sigma_joint": "0.013073",
+     "odds": "1.08",
+     "ev": "0.005457",
+     "ev_low": "-0.008662",
+     "status": "SHADOW_WATCH"
+    },
+    {
+     "book": "betvictor",
+     "k": "1",
+     "legset": "8962aea3dd981eb3eb6cccc3b2fd3829:Katerina Siniakova",
+     "p_joint": "0.653846",
+     "sigma_joint": "0.013016",
+     "odds": "1.53",
+     "ev": "0.000384",
+     "ev_low": "-0.01953",
+     "status": "SHADOW_WATCH"
+    },
+    {
+     "book": "betvictor",
+     "k": "2",
+     "legset": "1b26a19876c9aaf7be957f87c1e4e7a2:Anastasia Zakharova;d66f1937da5272c6644a583eaa98d7ce:Daniil Medvedev",
+     "p_joint": "0.733546",
+     "sigma_joint": "0.017263",
+     "odds": "1.3932",
+     "ev": "0.021977",
+     "ev_low": "-0.002075",
+     "status": "SHADOW_WATCH"
+    },
+    {
+     "book": "betvictor",
+     "k": "2",
+     "legset": "8962aea3dd981eb3eb6cccc3b2fd3829:Katerina Siniakova;d66f1937da5272c6644a583eaa98d7ce:Daniil Medvedev",
+     "p_joint": "0.515185",
+     "sigma_joint": "0.014136",
+     "odds": "1.9737",
+     "ev": "0.01682",
+     "ev_low": "-0.011081",
+     "status": "SHADOW_WATCH"
+    },
+    {
+     "book": "betvictor",
+     "k": "2",
+     "legset": "1b26a19876c9aaf7be957f87c1e4e7a2:Anastasia Zakharova;8962aea3dd981eb3eb6cccc3b2fd3829:Katerina Siniakova",
+     "p_joint": "0.608717",
+     "sigma_joint": "0.014829",
+     "odds": "1.6524",
+     "ev": "0.005844",
+     "ev_low": "-0.018659",
+     "status": "SHADOW_WATCH"
+    },
+    {
+     "book": "betvictor",
+     "k": "3",
+     "legset": "1b26a19876c9aaf7be957f87c1e4e7a2:Anastasia Zakharova;8962aea3dd981eb3eb6cccc3b2fd3829:Katerina Siniakova;d66f1937da5272c6644a583eaa98d7ce:Daniil Medvedev",
+     "p_joint": "0.479626",
+     "sigma_joint": "0.014784",
+     "odds": "2.1316",
+     "ev": "0.02237",
+     "ev_low": "-0.009144",
+     "status": "SHADOW_WATCH"
+    }
+   ],
+   "counterfactuals_one_gate_at_a_time": {
+    "CURRENT (clean, EV_low>0 at 1 sigma)": {
+     "unique_matches": 0,
+     "quotes": 0
+    },
+    "central EV > 0 only (drop uncertainty rule)": {
+     "unique_matches": 3,
+     "quotes": 5
+    },
+    "EV > 0 at P - 0.5 sigma": {
+     "unique_matches": 1,
+     "quotes": 1
+    },
+    "EV > 0 at P - 1.645 sigma (one-sided 95%)": {
+     "unique_matches": 0,
+     "quotes": 0
+    },
+    "sigma = calibration SE only (no half-width term), 1 sigma": {
+     "unique_matches": 1,
+     "quotes": 1
+    },
+    "production bsv2-3 floor: EV >= 2%": {
+     "unique_matches": 0,
+     "quotes": 0
+    },
+    "NO spread gate (midpoint P treated as usable), central EV > 0 -- NOT A VALID ESTIMATE": {
+     "unique_matches": 9,
+     "quotes": 53
+    },
+    "NO spread gate, EV_low > 0 -- NOT A VALID ESTIMATE": {
+     "unique_matches": 1,
+     "quotes": 6
+    }
+   },
+   "high_p_no_bet": [
+    {
+     "event": "Yushan Shao v Anastasia Zakharova",
+     "selection": "Anastasia Zakharova",
+     "p": 0.931,
+     "sigma": 0.0131,
+     "width": 0.009558,
+     "best_book": "betano_uk",
+     "best_odds": 1.08,
+     "fair_odds": 1.074,
+     "payout_per_1gbp_profit": 0.08,
+     "ev_at_best": 0.0055,
+     "reason_not_staked": "HIGH_P + POSITIVE CENTRAL EV BUT UNCERTAINTY (EV_low <= 0)"
+    },
+    {
+     "event": "Linda Fruhvirtova v Liudmila Samsonova",
+     "selection": "Liudmila Samsonova",
+     "p": 0.9263,
+     "sigma": 0.1097,
+     "width": 0.217949,
+     "best_book": "boylesports",
+     "best_odds": 1.25,
+     "fair_odds": 1.08,
+     "payout_per_1gbp_profit": 0.25,
+     "ev_at_best": 0.1578,
+     "reason_not_staked": "DATA_QUALITY: exchange width > 0.03"
+    },
+    {
+     "event": "Yu Jun Lin v Storm Hunter",
+     "selection": "Storm Hunter",
+     "p": 0.9259,
+     "sigma": 0.0149,
+     "width": 0.017148,
+     "best_book": "coral",
+     "best_odds": 1.06,
+     "fair_odds": 1.08,
+     "payout_per_1gbp_profit": 0.06,
+     "ev_at_best": -0.0185,
+     "reason_not_staked": "HIGH_P + POOR PAYOUT (EV <= 0 at best book)"
+    },
+    {
+     "event": "Harriet Dart v Yihan Qu",
+     "selection": "Harriet Dart",
+     "p": 0.9198,
+     "sigma": 0.0148,
+     "width": 0.016835,
+     "best_book": "williamhill",
+     "best_odds": 1.07,
+     "fair_odds": 1.087,
+     "payout_per_1gbp_profit": 0.07,
+     "ev_at_best": -0.0158,
+     "reason_not_staked": "HIGH_P + POOR PAYOUT (EV <= 0 at best book)"
+    },
+    {
+     "event": "Karolina Muchova v Katie Boulter",
+     "selection": "Karolina Muchova",
+     "p": 0.9087,
+     "sigma": 0.0732,
+     "width": 0.144444,
+     "best_book": "paddypower",
+     "best_odds": 1.14,
+     "fair_odds": 1.1,
+     "payout_per_1gbp_profit": 0.14,
+     "ev_at_best": 0.036,
+     "reason_not_staked": "DATA_QUALITY: exchange width > 0.03"
+    },
+    {
+     "event": "Qinwen Zheng v Shi Han",
+     "selection": "Qinwen Zheng",
+     "p": 0.9014,
+     "sigma": 0.0146,
+     "width": 0.016234,
+     "best_book": "boylesports",
+     "best_odds": 1.1,
+     "fair_odds": 1.109,
+     "payout_per_1gbp_profit": 0.1,
+     "ev_at_best": -0.0084,
+     "reason_not_staked": "HIGH_P + POOR PAYOUT (EV <= 0 at best book)"
+    },
+    {
+     "event": "Yue Yuan v Mirra Andreeva",
+     "selection": "Mirra Andreeva",
+     "p": 0.8975,
+     "sigma": 0.0319,
+     "width": 0.058889,
+     "best_book": "sport888",
+     "best_odds": 1.08,
+     "fair_odds": 1.114,
+     "payout_per_1gbp_profit": 0.08,
+     "ev_at_best": -0.0307,
+     "reason_not_staked": "DATA_QUALITY: exchange width > 0.03"
+    },
+    {
+     "event": "Alexander Zverev v Cameron Norrie",
+     "selection": "Alexander Zverev",
+     "p": 0.8867,
+     "sigma": 0.0128,
+     "width": 0.007901,
+     "best_book": "betano_uk",
+     "best_odds": 1.1,
+     "fair_odds": 1.128,
+     "payout_per_1gbp_profit": 0.1,
+     "ev_at_best": -0.0247,
+     "reason_not_staked": "HIGH_P + POOR PAYOUT (EV <= 0 at best book)"
+    },
+    {
+     "event": "Carlos Alcaraz v Alex Michelsen",
+     "selection": "Carlos Alcaraz",
+     "p": 0.8274,
+     "sigma": 0.014,
+     "width": 0.013661,
+     "best_book": "betway",
+     "best_odds": 1.18,
+     "fair_odds": 1.209,
+     "payout_per_1gbp_profit": 0.18,
+     "ev_at_best": -0.0237,
+     "reason_not_staked": "HIGH_P + POOR PAYOUT (EV <= 0 at best book)"
+    },
+    {
+     "event": "Adolfo Daniel Vallejo v Rafael Jodar",
+     "selection": "Rafael Jodar",
+     "p": 0.8137,
+     "sigma": 0.0157,
+     "width": 0.019995,
+     "best_book": "betano_uk",
+     "best_odds": 1.2,
+     "fair_odds": 1.229,
+     "payout_per_1gbp_profit": 0.2,
+     "ev_at_best": -0.0236,
+     "reason_not_staked": "HIGH_P + POOR PAYOUT (EV <= 0 at best book)"
+    },
+    {
+     "event": "Linda Noskova v Elena Gabriela Ruse",
+     "selection": "Linda Noskova",
+     "p": 0.8075,
+     "sigma": 0.029,
+     "width": 0.052731,
+     "best_book": "casumo",
+     "best_odds": 1.25,
+     "fair_odds": 1.238,
+     "payout_per_1gbp_profit": 0.25,
+     "ev_at_best": 0.0093,
+     "reason_not_staked": "DATA_QUALITY: exchange width > 0.03"
+    },
+    {
+     "event": "Alex de Minaur v Mariano Navone",
+     "selection": "Alex de Minaur",
+     "p": 0.7977,
+     "sigma": 0.012,
+     "width": 0.006349,
+     "best_book": "sport888",
+     "best_odds": 1.25,
+     "fair_odds": 1.254,
+     "payout_per_1gbp_profit": 0.25,
+     "ev_at_best": -0.0028,
+     "reason_not_staked": "HIGH_P + POOR PAYOUT (EV <= 0 at best book)"
+    },
+    {
+     "event": "Maria Timofeeva v Naomi Osaka",
+     "selection": "Naomi Osaka",
+     "p": 0.7931,
+     "sigma": 0.0304,
+     "width": 0.056313,
+     "best_book": "betway",
+     "best_odds": 1.22,
+     "fair_odds": 1.261,
+     "payout_per_1gbp_profit": 0.22,
+     "ev_at_best": -0.0324,
+     "reason_not_staked": "DATA_QUALITY: exchange width > 0.03"
+    },
+    {
+     "event": "Kei Nishikori v Frances Tiafoe",
+     "selection": "Frances Tiafoe",
+     "p": 0.7921,
+     "sigma": 0.0132,
+     "width": 0.012598,
+     "best_book": "casumo",
+     "best_odds": 1.23,
+     "fair_odds": 1.263,
+     "payout_per_1gbp_profit": 0.23,
+     "ev_at_best": -0.0257,
+     "reason_not_staked": "HIGH_P + POOR PAYOUT (EV <= 0 at best book)"
+    },
+    {
+     "event": "Daniil Medvedev v Pablo Carreno Busta",
+     "selection": "Daniil Medvedev",
+     "p": 0.7879,
+     "sigma": 0.0149,
+     "width": 0.01875,
+     "best_book": "betvictor",
+     "best_odds": 1.29,
+     "fair_odds": 1.269,
+     "payout_per_1gbp_profit": 0.29,
+     "ev_at_best": 0.0164,
+     "reason_not_staked": "HIGH_P + POSITIVE CENTRAL EV BUT UNCERTAINTY (EV_low <= 0)"
+    }
+   ],
+   "model_minus_book_consensus_pp": {
+    "n": 53,
+    "median": 1.12,
+    "p10": -0.61,
+    "p90": 3.47,
+    "abs_gt_3pp": 9,
+    "abs_gt_10pp": 1
+   },
+   "coverage": {
+    "active_keys": [
+     "tennis_atp_china_open",
+     "tennis_atp_japan_open",
+     "tennis_wta_china_open"
+    ],
+    "keys_over_cap": [],
+    "skipped_credit": [],
+    "events_returned": 56,
+    "credits_remaining_after": 394,
+    "bookmakers_per_match": {
+     "min": 11,
+     "median": 16,
+     "max": 17
+    },
+    "bookmaker_overround_median_pct": 5.8,
+    "quote_age_min": {
+     "median": 0.5,
+     "max": 3.1
+    },
+    "distinct_bookmakers": [
+     "betano_uk",
+     "betfair_ex_uk",
+     "betfair_sb_uk",
+     "betvictor",
+     "betway",
+     "boylesports",
+     "casumo",
+     "coral",
+     "grosvenor",
+     "ladbrokes_uk",
+     "leovegas",
+     "livescorebet",
+     "matchbook",
+     "paddypower",
+     "skybet",
+     "smarkets",
+     "sport888",
+     "unibet_uk",
+     "virginbet",
+     "williamhill"
+    ]
+   },
+   "production_bsv2_3": {
+    "candidates": 46,
+    "unique_events": 43,
+    "decisions": {
+     "REJECT": 34,
+     "WATCH": 2,
+     "MULTI_RESEARCH_ELIGIBLE": 10
+    },
+    "reason_codes": {
+     "PREDICTION_NOT_VALID": 7,
+     "NET_EV_NOT_POSITIVE": 42,
+     "NET_EV_BELOW_PAPER_GATE": 3,
+     "ODDS_BELOW_PAYOUT_FLOOR": 2
+    },
+    "best_price_sources": {
+     "smarkets": 4,
+     "betway": 4,
+     "sport888": 3,
+     "betfair_sb_uk": 2,
+     "betano_uk": 4,
+     "betfair_ex_uk": 26,
+     "boylesports": 2,
+     "betvictor": 1
+    },
+    "self_source_exchange_best": 26,
+    "duplicate_event_rows": 3
+   },
+   "defect_rescheduled_matches_dropped_from_production": {
+    "count": 10,
+    "of_board_matches": 53,
+    "matches": [
+     {
+      "event": "Brandon Nakashima v Ugo Humbert",
+      "p_fav": 0.6889,
+      "scan_commence_time": "2026-10-01T02:00:00+00:00",
+      "ledger_event_start": [
+       "2026-09-30T02:00:00+00:00"
+      ],
+      "in_unified_ledger": true
+     },
+     {
+      "event": "Luciano Darderi v Casper Ruud",
+      "p_fav": 0.6678,
+      "scan_commence_time": "2026-10-01T02:00:00+00:00",
+      "ledger_event_start": [
+       "2026-09-30T02:00:00+00:00"
+      ],
+      "in_unified_ledger": true
+     },
+     {
+      "event": "Kei Nishikori v Frances Tiafoe",
+      "p_fav": 0.7921,
+      "scan_commence_time": "2026-10-01T03:10:00+00:00",
+      "ledger_event_start": [
+       "2026-09-30T02:00:00+00:00"
+      ],
+      "in_unified_ledger": true
+     },
+     {
+      "event": "Holger Rune v Kyrian Jacquet",
+      "p_fav": 0.6237,
+      "scan_commence_time": "2026-10-01T03:10:00+00:00",
+      "ledger_event_start": [
+       "2026-09-30T02:00:00+00:00"
+      ],
+      "in_unified_ledger": true
+     },
+     {
+      "event": "Tomas Martin Etcheverry v Stefanos Tsitsipas",
+      "p_fav": 0.7331,
+      "scan_commence_time": "2026-10-01T03:10:00+00:00",
+      "ledger_event_start": [
+       "2026-09-30T03:15:00+00:00"
+      ],
+      "in_unified_ledger": true
+     },
+     {
+      "event": "Denis Shapovalov v Sho Shimabukuro",
+      "p_fav": 0.7371,
+      "scan_commence_time": "2026-10-01T05:40:00+00:00",
+      "ledger_event_start": [
+       "2026-09-30T02:00:00+00:00"
+      ],
+      "in_unified_ledger": true
+     },
+     {
+      "event": "Alejandro Davidovich Fokina v Matteo Berrettini",
+      "p_fav": 0.5711,
+      "scan_commence_time": "2026-10-01T06:50:00+00:00",
+      "ledger_event_start": [
+       "2026-09-30T02:00:00+00:00"
+      ],
+      "in_unified_ledger": true
+     },
+     {
+      "event": "Carlos Alcaraz v Alex Michelsen",
+      "p_fav": 0.8274,
+      "scan_commence_time": "2026-10-01T07:00:00+00:00",
+      "ledger_event_start": [
+       "2026-09-30T02:00:00+00:00"
+      ],
+      "in_unified_ledger": true
+     },
+     {
+      "event": "Anna Bond\u00e1r v Renata Zarazua",
+      "p_fav": 0.6946,
+      "scan_commence_time": "2026-09-30T13:00:00+00:00",
+      "ledger_event_start": [
+       "2026-09-30T02:00:00+00:00"
+      ],
+      "in_unified_ledger": true
+     },
+     {
+      "event": "Xinyu Gao v Panna Udvardy",
+      "p_fav": 0.6179,
+      "scan_commence_time": "2026-10-01T08:00:00+00:00",
+      "ledger_event_start": [
+       "2026-09-30T02:00:00+00:00"
+      ],
+      "in_unified_ledger": true
+     }
+    ]
+   },
+   "cards_vs_matches": {
+    "raw_cards": 205,
+    "by_cohort_k": {
+     "HIGH_P|k1": 16,
+     "HIGH_P|k2": 120,
+     "HIGH_P|k3": 59,
+     "POS_EV|k1": 5,
+     "POS_EV|k2": 4,
+     "POS_EV|k3": 1
+    },
+    "distinct_leg_sets": 202,
+    "high_p_matches": 16,
+    "pos_ev_matches": 3,
+    "pos_ev_legs_book_quotes": 5
+   }
+  },
+  "afternoon": {
+   "scan": "2026-09-30T20:16:17.495727+00:00",
+   "run_id": "36771315893",
+   "intended_cron": "2026-09-30T15:30:00+00:00",
+   "delay_hours": 4.77,
+   "bug_checks_raw": {
+    "none_found": true
+   },
+   "midpoint_definition_effect": {
+    "note": "frozen engine averages DECIMAL ODDS (not probabilities) then de-vigs",
+    "max_abs_diff_vs_probability_average_pp": 5.119,
+    "median_abs_diff_pp": 0.002
+   },
+   "waterfall_v2_7_single_legs": [
+    {
+     "stage": "API events returned (3 active tennis keys)",
+     "unique_matches": 55,
+     "bookmaker_quotes": null,
+     "rule": "Odds API covered keys; max-keys 6 not binding"
+    },
+    {
+     "stage": "predictions (not started, has a source)",
+     "unique_matches": 55,
+     "bookmaker_quotes": null,
+     "rule": "engine.predict: event not started; exchange quote <= 6h old"
+    },
+    {
+     "stage": "validated source (EXCHANGE_MID/BACK)",
+     "unique_matches": 55,
+     "bookmaker_quotes": null,
+     "rule": "engine VALID_SOURCES"
+    },
+    {
+     "stage": "priced by >=1 UK bookmaker (non-exchange, same scan)",
+     "unique_matches": 55,
+     "bookmaker_quotes": 850,
+     "rule": ""
+    },
+    {
+     "stage": "exchange width <= 0.03 (bsv2-3 data-quality gate)",
+     "unique_matches": 39,
+     "bookmaker_quotes": 644,
+     "rule": "EXCHANGE_BOOK_TOO_WIDE: midpoint P judged unreliable"
+    },
+    {
+     "stage": "fresh quote & not started (<=240 min; start after logging)",
+     "unique_matches": 39,
+     "bookmaker_quotes": 644,
+     "rule": ""
+    },
+    {
+     "stage": "positive central EV at >=1 book (payout/value)",
+     "unique_matches": 4,
+     "bookmaker_quotes": 9,
+     "rule": ""
+    },
+    {
+     "stage": "EV still > 0 at P - 1 sigma (uncertainty; V2-7 SHADOW_CANDIDATE rule)",
+     "unique_matches": 0,
+     "bookmaker_quotes": null,
+     "rule": ""
+    },
+    {
+     "stage": "(parallel) production bsv2-3 paper gate: net EV >= 2% at a bookmaker",
+     "unique_matches": 0
+    },
+    {
+     "stage": "final candidates",
+     "unique_matches": 0,
+     "bookmaker_quotes": null,
+     "rule": ""
+    }
+   ],
+   "high_p_funnel": {
+    "board_ge_70": 26,
+    "validated_ge_70": 26,
+    "ge_70_width_too_wide": 9,
+    "ge_70_no_clean_quote_otherwise": 0,
+    "v2_7_high_p_cohort_events": 17
+   },
+   "spread_gate_unique_matches": [
+    {
+     "event": "Ekaterina Alexandrova v Aliaksandra Sasnovich",
+     "selection": "Ekaterina Alexandrova",
+     "p_midpoint": 0.5634,
+     "width": 0.1026,
+     "back": 1.63,
+     "lay": 1.95,
+     "books_rejected": 14,
+     "best_book_odds": 1.67,
+     "ev_range_across_exchange_book": [
+      -0.1436,
+      0.0245
+     ],
+     "classification": "INDETERMINATE_WITHIN_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Anastasia Potapova v Sinja Kraus",
+     "selection": "Anastasia Potapova",
+     "p_midpoint": 0.7325,
+     "width": 0.0326,
+     "back": 1.33,
+     "lay": 1.39,
+     "books_rejected": 14,
+     "best_book_odds": 1.33,
+     "ev_range_across_exchange_book": [
+      -0.0432,
+      0.0
+     ],
+     "classification": "POOR_EVEN_AT_TOP_OF_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Renata Zarazua v Aryna Sabalenka",
+     "selection": "Aryna Sabalenka",
+     "p_midpoint": 0.9689,
+     "width": 0.0727,
+     "back": 1.02,
+     "lay": 1.1,
+     "books_rejected": 10,
+     "best_book_odds": 1.02,
+     "ev_range_across_exchange_book": [
+      -0.0727,
+      0.0
+     ],
+     "classification": "POOR_EVEN_AT_TOP_OF_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Clara Tauson v Polina Kudermetova",
+     "selection": "Clara Tauson",
+     "p_midpoint": 0.6423,
+     "width": 0.0779,
+     "back": 1.47,
+     "lay": 1.66,
+     "books_rejected": 14,
+     "best_book_odds": 1.45,
+     "ev_range_across_exchange_book": [
+      -0.1265,
+      -0.0136
+     ],
+     "classification": "POOR_EVEN_AT_TOP_OF_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Jasmine Paolini v Daria Snigur",
+     "selection": "Jasmine Paolini",
+     "p_midpoint": 0.6174,
+     "width": 0.0849,
+     "back": 1.52,
+     "lay": 1.74,
+     "books_rejected": 13,
+     "best_book_odds": 1.56,
+     "ev_range_across_exchange_book": [
+      -0.1034,
+      0.0263
+     ],
+     "classification": "INDETERMINATE_WITHIN_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Dayana Yastremska v Maja Chwalinska",
+     "selection": "Maja Chwalinska",
+     "p_midpoint": 0.6861,
+     "width": 0.1593,
+     "back": 1.33,
+     "lay": 1.68,
+     "books_rejected": 14,
+     "best_book_odds": 1.5,
+     "ev_range_across_exchange_book": [
+      -0.1071,
+      0.1278
+     ],
+     "classification": "INDETERMINATE_WITHIN_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Janice Tjen v Diana Shnaider",
+     "selection": "Diana Shnaider",
+     "p_midpoint": 0.7726,
+     "width": 0.1054,
+     "back": 1.22,
+     "lay": 1.4,
+     "books_rejected": 13,
+     "best_book_odds": 1.36,
+     "ev_range_across_exchange_book": [
+      -0.0286,
+      0.1148
+     ],
+     "classification": "INDETERMINATE_WITHIN_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Taylah Preston v Diane Parry",
+     "selection": "Diane Parry",
+     "p_midpoint": 0.5857,
+     "width": 0.0449,
+     "back": 1.64,
+     "lay": 1.77,
+     "books_rejected": 13,
+     "best_book_odds": 1.63,
+     "ev_range_across_exchange_book": [
+      -0.0791,
+      -0.0061
+     ],
+     "classification": "POOR_EVEN_AT_TOP_OF_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Linda Noskova v Elena Gabriela Ruse",
+     "selection": "Linda Noskova",
+     "p_midpoint": 0.8322,
+     "width": 0.1886,
+     "back": 1.12,
+     "lay": 1.42,
+     "books_rejected": 13,
+     "best_book_odds": 1.25,
+     "ev_range_across_exchange_book": [
+      -0.1197,
+      0.1161
+     ],
+     "classification": "INDETERMINATE_WITHIN_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Karolina Muchova v Katie Boulter",
+     "selection": "Karolina Muchova",
+     "p_midpoint": 0.9122,
+     "width": 0.1111,
+     "back": 1.11,
+     "lay": 1.2,
+     "books_rejected": 13,
+     "best_book_odds": 1.11,
+     "ev_range_across_exchange_book": [
+      -0.075,
+      0.0
+     ],
+     "classification": "POOR_EVEN_AT_TOP_OF_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Linda Fruhvirtova v Liudmila Samsonova",
+     "selection": "Liudmila Samsonova",
+     "p_midpoint": 0.786,
+     "width": 0.0746,
+     "back": 1.22,
+     "lay": 1.34,
+     "books_rejected": 13,
+     "best_book_odds": 1.25,
+     "ev_range_across_exchange_book": [
+      -0.0672,
+      0.0246
+     ],
+     "classification": "INDETERMINATE_WITHIN_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Sara Bejlek v Maddison Inglis",
+     "selection": "Sara Bejlek",
+     "p_midpoint": 0.6956,
+     "width": 0.0997,
+     "back": 1.35,
+     "lay": 1.56,
+     "books_rejected": 13,
+     "best_book_odds": 1.36,
+     "ev_range_across_exchange_book": [
+      -0.1282,
+      0.0074
+     ],
+     "classification": "INDETERMINATE_WITHIN_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Nikola Bartunkova v Magdalena Frech",
+     "selection": "Nikola Bartunkova",
+     "p_midpoint": 0.5891,
+     "width": 0.0313,
+     "back": 1.65,
+     "lay": 1.74,
+     "books_rejected": 10,
+     "best_book_odds": 1.65,
+     "ev_range_across_exchange_book": [
+      -0.0517,
+      0.0
+     ],
+     "classification": "POOR_EVEN_AT_TOP_OF_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Maria Timofeeva v Naomi Osaka",
+     "selection": "Naomi Osaka",
+     "p_midpoint": 0.7908,
+     "width": 0.0496,
+     "back": 1.23,
+     "lay": 1.31,
+     "books_rejected": 13,
+     "best_book_odds": 1.22,
+     "ev_range_across_exchange_book": [
+      -0.0687,
+      -0.0081
+     ],
+     "classification": "POOR_EVEN_AT_TOP_OF_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Yue Yuan v Mirra Andreeva",
+     "selection": "Mirra Andreeva",
+     "p_midpoint": 0.8997,
+     "width": 0.0516,
+     "back": 1.09,
+     "lay": 1.15,
+     "books_rejected": 13,
+     "best_book_odds": 1.07,
+     "ev_range_across_exchange_book": [
+      -0.0696,
+      -0.0183
+     ],
+     "classification": "POOR_EVEN_AT_TOP_OF_EXCHANGE_RANGE"
+    },
+    {
+     "event": "Viktorija Golubic v Peyton Stearns",
+     "selection": "Peyton Stearns",
+     "p_midpoint": 0.7282,
+     "width": 0.3398,
+     "back": 1.18,
+     "lay": 1.97,
+     "books_rejected": 13,
+     "best_book_odds": 1.58,
+     "ev_range_across_exchange_book": [
+      -0.198,
+      0.339
+     ],
+     "classification": "INDETERMINATE_WITHIN_EXCHANGE_RANGE"
+    }
+   ],
+   "spread_gate_summary": {
+    "unique_matches_removed": 16,
+    "quotes_removed": 206,
+    "classification": {
+     "INDETERMINATE_WITHIN_EXCHANGE_RANGE": 8,
+     "POOR_EVEN_AT_TOP_OF_EXCHANGE_RANGE": 8
+    },
+    "p_ge_070_removed": 9
+   },
+   "spread_threshold_sensitivity": {
+    "0.01": {
+     "matches_passing_width": 28,
+     "matches_with_pos_central_ev": 4
+    },
+    "0.02": {
+     "matches_passing_width": 37,
+     "matches_with_pos_central_ev": 4
+    },
+    "0.03": {
+     "matches_passing_width": 39,
+     "matches_with_pos_central_ev": 4
+    },
+    "0.04": {
+     "matches_passing_width": 41,
+     "matches_with_pos_central_ev": 4
+    },
+    "0.05": {
+     "matches_passing_width": 43,
+     "matches_with_pos_central_ev": 4
+    },
+    "none": {
+     "matches_passing_width": 55,
+     "matches_with_pos_central_ev": 9
+    }
+   },
+   "width_distribution_unique_matches": {
+    "0-1pp": 28,
+    "1-2pp": 9,
+    "2-3pp": 2,
+    "3-4pp": 2,
+    "4-5pp": 2,
+    "5-6pp": 1,
+    "7-8pp": 3,
+    "8-9pp": 1,
+    "9-10pp": 1,
+    ">=10pp": 6
+   },
+   "uncertainty_positive_ev_legs": [
+    {
+     "event": "Ignacio Buse v Quentin Halys",
+     "selection": "Quentin Halys",
+     "book": "betfair_sb_uk",
+     "p": 0.5556,
+     "sigma": 0.0113,
+     "sigma_calibration": 0.0109,
+     "sigma_half_width": 0.0031,
+     "p_low": 0.5442,
+     "odds": 1.8,
+     "ev": 0.0,
+     "ev_low": -0.0204,
+     "break_even_p": 0.5556,
+     "p_margin_over_break_even_pp": 0.0,
+     "why_not_candidate": "EV_LOW_LE_0"
+    },
+    {
+     "event": "Katie Volynets v Robin Montgomery",
+     "selection": "Katie Volynets",
+     "book": "paddypower",
+     "p": 0.5477,
+     "sigma": 0.0111,
+     "sigma_calibration": 0.0109,
+     "sigma_half_width": 0.002,
+     "p_low": 0.5366,
+     "odds": 1.83,
+     "ev": 0.0023,
+     "ev_low": -0.018,
+     "break_even_p": 0.5464,
+     "p_margin_over_break_even_pp": 0.13,
+     "why_not_candidate": "EV_LOW_LE_0"
+    },
+    {
+     "event": "Katie Volynets v Robin Montgomery",
+     "selection": "Katie Volynets",
+     "book": "skybet",
+     "p": 0.5477,
+     "sigma": 0.0111,
+     "sigma_calibration": 0.0109,
+     "sigma_half_width": 0.002,
+     "p_low": 0.5366,
+     "odds": 1.83,
+     "ev": 0.0023,
+     "ev_low": -0.018,
+     "break_even_p": 0.5464,
+     "p_margin_over_break_even_pp": 0.13,
+     "why_not_candidate": "EV_LOW_LE_0"
+    },
+    {
+     "event": "Magda Linette v Katerina Siniakova",
+     "selection": "Katerina Siniakova",
+     "book": "betano_uk",
+     "p": 0.6546,
+     "sigma": 0.0123,
+     "sigma_calibration": 0.0116,
+     "sigma_half_width": 0.0043,
+     "p_low": 0.6423,
+     "odds": 1.53,
+     "ev": 0.0016,
+     "ev_low": -0.0173,
+     "break_even_p": 0.6536,
+     "p_margin_over_break_even_pp": 0.1,
+     "why_not_candidate": "EV_LOW_LE_0"
+    },
+    {
+     "event": "Magda Linette v Katerina Siniakova",
+     "selection": "Katerina Siniakova",
+     "book": "betvictor",
+     "p": 0.6546,
+     "sigma": 0.0123,
+     "sigma_calibration": 0.0116,
+     "sigma_half_width": 0.0043,
+     "p_low": 0.6423,
+     "odds": 1.53,
+     "ev": 0.0016,
+     "ev_low": -0.0173,
+     "break_even_p": 0.6536,
+     "p_margin_over_break_even_pp": 0.1,
+     "why_not_candidate": "EV_LOW_LE_0"
+    },
+    {
+     "event": "Eva Lys v Sun Xinran",
+     "selection": "Eva Lys",
+     "book": "betano_uk",
+     "p": 0.6953,
+     "sigma": 0.0118,
+     "sigma_calibration": 0.0116,
+     "sigma_half_width": 0.0024,
+     "p_low": 0.6835,
+     "odds": 1.44,
+     "ev": 0.0013,
+     "ev_low": -0.0157,
+     "break_even_p": 0.6944,
+     "p_margin_over_break_even_pp": 0.09,
+     "why_not_candidate": "EV_LOW_LE_0"
+    },
+    {
+     "event": "Eva Lys v Sun Xinran",
+     "selection": "Eva Lys",
+     "book": "betvictor",
+     "p": 0.6953,
+     "sigma": 0.0118,
+     "sigma_calibration": 0.0116,
+     "sigma_half_width": 0.0024,
+     "p_low": 0.6835,
+     "odds": 1.44,
+     "ev": 0.0013,
+     "ev_low": -0.0157,
+     "break_even_p": 0.6944,
+     "p_margin_over_break_even_pp": 0.09,
+     "why_not_candidate": "EV_LOW_LE_0"
+    },
+    {
+     "event": "Eva Lys v Sun Xinran",
+     "selection": "Eva Lys",
+     "book": "boylesports",
+     "p": 0.6953,
+     "sigma": 0.0118,
+     "sigma_calibration": 0.0116,
+     "sigma_half_width": 0.0024,
+     "p_low": 0.6835,
+     "odds": 1.44,
+     "ev": 0.0013,
+     "ev_low": -0.0157,
+     "break_even_p": 0.6944,
+     "p_margin_over_break_even_pp": 0.09,
+     "why_not_candidate": "EV_LOW_LE_0"
+    },
+    {
+     "event": "Eva Lys v Sun Xinran",
+     "selection": "Eva Lys",
+     "book": "unibet_uk",
+     "p": 0.6953,
+     "sigma": 0.0118,
+     "sigma_calibration": 0.0116,
+     "sigma_half_width": 0.0024,
+     "p_low": 0.6835,
+     "odds": 1.44,
+     "ev": 0.0013,
+     "ev_low": -0.0157,
+     "break_even_p": 0.6944,
+     "p_margin_over_break_even_pp": 0.09,
+     "why_not_candidate": "EV_LOW_LE_0"
+    }
+   ],
+   "uncertainty_positive_ev_cards": [
+    {
+     "book": "betano_uk",
+     "k": "1",
+     "legset": "8962aea3dd981eb3eb6cccc3b2fd3829:Katerina Siniakova",
+     "p_joint": "0.654628",
+     "sigma_joint": "0.01232",
+     "odds": "1.53",
+     "ev": "0.001581",
+     "ev_low": "-0.017269",
+     "status": "SHADOW_WATCH"
+    },
+    {
+     "book": "betano_uk",
+     "k": "1",
+     "legset": "8e6bcabf08e118f69eedc8e1f8690acb:Eva Lys",
+     "p_joint": "0.695329",
+     "sigma_joint": "0.011808",
+     "odds": "1.44",
+     "ev": "0.001274",
+     "ev_low": "-0.01573",
+     "status": "SHADOW_WATCH"
+    },
+    {
+     "book": "betano_uk",
+     "k": "2",
+     "legset": "8962aea3dd981eb3eb6cccc3b2fd3829:Katerina Siniakova;8e6bcabf08e118f69eedc8e1f8690acb:Eva Lys",
+     "p_joint": "0.455182",
+     "sigma_joint": "0.011539",
+     "odds": "2.2032",
+     "ev": "0.002857",
+     "ev_low": "-0.022566",
+     "status": "SHADOW_WATCH"
+    },
+    {
+     "book": "betfair_sb_uk",
+     "k": "1",
+     "legset": "0c39522d563ce8eb6ce47ba0d07b50d8:Quentin Halys",
+     "p_joint": "0.555556",
+     "sigma_joint": "0.011346",
+     "odds": "1.8",
+     "ev": "1e-06",
+     "ev_low": "-0.020422",
+     "status": "SHADOW_WATCH"
+    },
+    {
+     "book": "betvictor",
+     "k": "1",
+     "legset": "8962aea3dd981eb3eb6cccc3b2fd3829:Katerina Siniakova",
+     "p_joint": "0.654628",
+     "sigma_joint": "0.01232",
+     "odds": "1.53",
+     "ev": "0.001581",
+     "ev_low": "-0.017269",
+     "status": "SHADOW_WATCH"
+    },
+    {
+     "book": "betvictor",
+     "k": "1",
+     "legset": "8e6bcabf08e118f69eedc8e1f8690acb:Eva Lys",
+     "p_joint": "0.695329",
+     "sigma_joint": "0.011808",
+     "odds": "1.44",
+     "ev": "0.001274",
+     "ev_low": "-0.01573",
+     "status": "SHADOW_WATCH"
+    },
+    {
+     "book": "betvictor",
+     "k": "2",
+     "legset": "8962aea3dd981eb3eb6cccc3b2fd3829:Katerina Siniakova;8e6bcabf08e118f69eedc8e1f8690acb:Eva Lys",
+     "p_joint": "0.455182",
+     "sigma_joint": "0.011539",
+     "odds": "2.2032",
+     "ev": "0.002857",
+     "ev_low": "-0.022566",
+     "status": "SHADOW_WATCH"
+    },
+    {
+     "book": "boylesports",
+     "k": "1",
+     "legset": "8e6bcabf08e118f69eedc8e1f8690acb:Eva Lys",
+     "p_joint": "0.695329",
+     "sigma_joint": "0.011808",
+     "odds": "1.44",
+     "ev": "0.001274",
+     "ev_low": "-0.01573",
+     "status": "SHADOW_WATCH"
+    },
+    {
+     "book": "paddypower",
+     "k": "1",
+     "legset": "3d3077abdfe48b002d129ce81ad27117:Katie Volynets",
+     "p_joint": "0.547708",
+     "sigma_joint": "0.011109",
+     "odds": "1.83",
+     "ev": "0.002306",
+     "ev_low": "-0.018023",
+     "status": "SHADOW_WATCH"
+    },
+    {
+     "book": "skybet",
+     "k": "1",
+     "legset": "3d3077abdfe48b002d129ce81ad27117:Katie Volynets",
+     "p_joint": "0.547708",
+     "sigma_joint": "0.011109",
+     "odds": "1.83",
+     "ev": "0.002306",
+     "ev_low": "-0.018023",
+     "status": "SHADOW_WATCH"
+    },
+    {
+     "book": "unibet_uk",
+     "k": "1",
+     "legset": "8e6bcabf08e118f69eedc8e1f8690acb:Eva Lys",
+     "p_joint": "0.695329",
+     "sigma_joint": "0.011808",
+     "odds": "1.44",
+     "ev": "0.001274",
+     "ev_low": "-0.01573",
+     "status": "SHADOW_WATCH"
+    }
+   ],
+   "counterfactuals_one_gate_at_a_time": {
+    "CURRENT (clean, EV_low>0 at 1 sigma)": {
+     "unique_matches": 0,
+     "quotes": 0
+    },
+    "central EV > 0 only (drop uncertainty rule)": {
+     "unique_matches": 4,
+     "quotes": 9
+    },
+    "EV > 0 at P - 0.5 sigma": {
+     "unique_matches": 0,
+     "quotes": 0
+    },
+    "EV > 0 at P - 1.645 sigma (one-sided 95%)": {
+     "unique_matches": 0,
+     "quotes": 0
+    },
+    "sigma = calibration SE only (no half-width term), 1 sigma": {
+     "unique_matches": 0,
+     "quotes": 0
+    },
+    "production bsv2-3 floor: EV >= 2%": {
+     "unique_matches": 0,
+     "quotes": 0
+    },
+    "NO spread gate (midpoint P treated as usable), central EV > 0 -- NOT A VALID ESTIMATE": {
+     "unique_matches": 9,
+     "quotes": 58
+    },
+    "NO spread gate, EV_low > 0 -- NOT A VALID ESTIMATE": {
+     "unique_matches": 0,
+     "quotes": 0
+    }
+   },
+   "high_p_no_bet": [
+    {
+     "event": "Renata Zarazua v Aryna Sabalenka",
+     "selection": "Aryna Sabalenka",
+     "p": 0.9689,
+     "sigma": 0.0383,
+     "width": 0.072727,
+     "best_book": "casumo",
+     "best_odds": 1.02,
+     "fair_odds": 1.032,
+     "payout_per_1gbp_profit": 0.02,
+     "ev_at_best": -0.0117,
+     "reason_not_staked": "DATA_QUALITY: exchange width > 0.03"
+    },
+    {
+     "event": "Yu Jun Lin v Storm Hunter",
+     "selection": "Storm Hunter",
+     "p": 0.9334,
+     "sigma": 0.015,
+     "width": 0.01747,
+     "best_book": "coral",
+     "best_odds": 1.06,
+     "fair_odds": 1.071,
+     "payout_per_1gbp_profit": 0.06,
+     "ev_at_best": -0.0106,
+     "reason_not_staked": "HIGH_P + POOR PAYOUT (EV <= 0 at best book)"
+    },
+    {
+     "event": "Harriet Dart v Yihan Qu",
+     "selection": "Harriet Dart",
+     "p": 0.9243,
+     "sigma": 0.0129,
+     "width": 0.008495,
+     "best_book": "williamhill",
+     "best_odds": 1.07,
+     "fair_odds": 1.082,
+     "payout_per_1gbp_profit": 0.07,
+     "ev_at_best": -0.011,
+     "reason_not_staked": "HIGH_P + POOR PAYOUT (EV <= 0 at best book)"
+    },
+    {
+     "event": "Yushan Shao v Anastasia Zakharova",
+     "selection": "Anastasia Zakharova",
+     "p": 0.9198,
+     "sigma": 0.0148,
+     "width": 0.016835,
+     "best_book": "betano_uk",
+     "best_odds": 1.08,
+     "fair_odds": 1.087,
+     "payout_per_1gbp_profit": 0.08,
+     "ev_at_best": -0.0066,
+     "reason_not_staked": "HIGH_P + POOR PAYOUT (EV <= 0 at best book)"
+    },
+    {
+     "event": "Karolina Muchova v Katie Boulter",
+     "selection": "Karolina Muchova",
+     "p": 0.9122,
+     "sigma": 0.0569,
+     "width": 0.111111,
+     "best_book": "coral",
+     "best_odds": 1.11,
+     "fair_odds": 1.096,
+     "payout_per_1gbp_profit": 0.11,
+     "ev_at_best": 0.0125,
+     "reason_not_staked": "DATA_QUALITY: exchange width > 0.03"
+    },
+    {
+     "event": "Yue Yuan v Mirra Andreeva",
+     "selection": "Mirra Andreeva",
+     "p": 0.8997,
+     "sigma": 0.0285,
+     "width": 0.051579,
+     "best_book": "casumo",
+     "best_odds": 1.07,
+     "fair_odds": 1.111,
+     "payout_per_1gbp_profit": 0.07,
+     "ev_at_best": -0.0373,
+     "reason_not_staked": "DATA_QUALITY: exchange width > 0.03"
+    },
+    {
+     "event": "Qinwen Zheng v Shi Han",
+     "selection": "Qinwen Zheng",
+     "p": 0.8921,
+     "sigma": 0.0128,
+     "width": 0.007901,
+     "best_book": "betfair_sb_uk",
+     "best_odds": 1.1,
+     "fair_odds": 1.121,
+     "payout_per_1gbp_profit": 0.1,
+     "ev_at_best": -0.0187,
+     "reason_not_staked": "HIGH_P + POOR PAYOUT (EV <= 0 at best book)"
+    },
+    {
+     "event": "Alexander Zverev v Cameron Norrie",
+     "selection": "Alexander Zverev",
+     "p": 0.8792,
+     "sigma": 0.0144,
+     "width": 0.015391,
+     "best_book": "betfair_sb_uk",
+     "best_odds": 1.13,
+     "fair_odds": 1.137,
+     "payout_per_1gbp_profit": 0.13,
+     "ev_at_best": -0.0065,
+     "reason_not_staked": "HIGH_P + POOR PAYOUT (EV <= 0 at best book)"
+    },
+    {
+     "event": "Linda Noskova v Elena Gabriela Ruse",
+     "selection": "Linda Noskova",
+     "p": 0.8322,
+     "sigma": 0.0951,
+     "width": 0.188632,
+     "best_book": "betway",
+     "best_odds": 1.25,
+     "fair_odds": 1.202,
+     "payout_per_1gbp_profit": 0.25,
+     "ev_at_best": 0.0403,
+     "reason_not_staked": "DATA_QUALITY: exchange width > 0.03"
+    },
+    {
+     "event": "Carlos Alcaraz v Alex Michelsen",
+     "selection": "Carlos Alcaraz",
+     "p": 0.8292,
+     "sigma": 0.0126,
+     "width": 0.006887,
+     "best_book": "betano_uk",
+     "best_odds": 1.17,
+     "fair_odds": 1.206,
+     "payout_per_1gbp_profit": 0.17,
+     "ev_at_best": -0.0298,
+     "reason_not_staked": "HIGH_P + POOR PAYOUT (EV <= 0 at best book)"
+    },
+    {
+     "event": "Kei Nishikori v Frances Tiafoe",
+     "selection": "Frances Tiafoe",
+     "p": 0.8022,
+     "sigma": 0.0126,
+     "width": 0.006452,
+     "best_book": "casumo",
+     "best_odds": 1.23,
+     "fair_odds": 1.247,
+     "payout_per_1gbp_profit": 0.23,
+     "ev_at_best": -0.0133,
+     "reason_not_staked": "HIGH_P + POOR PAYOUT (EV <= 0 at best book)"
+    },
+    {
+     "event": "Alex de Minaur v Mariano Navone",
+     "selection": "Alex de Minaur",
+     "p": 0.7914,
+     "sigma": 0.0123,
+     "width": 0.008684,
+     "best_book": "betfair_sb_uk",
+     "best_odds": 1.22,
+     "fair_odds": 1.264,
+     "payout_per_1gbp_profit": 0.22,
+     "ev_at_best": -0.0345,
+     "reason_not_staked": "HIGH_P + POOR PAYOUT (EV <= 0 at best book)"
+    },
+    {
+     "event": "Maria Timofeeva v Naomi Osaka",
+     "selection": "Naomi Osaka",
+     "p": 0.7908,
+     "sigma": 0.0274,
+     "width": 0.049649,
+     "best_book": "betway",
+     "best_odds": 1.22,
+     "fair_odds": 1.265,
+     "payout_per_1gbp_profit": 0.22,
+     "ev_at_best": -0.0353,
+     "reason_not_staked": "DATA_QUALITY: exchange width > 0.03"
+    },
+    {
+     "event": "Daniil Medvedev v Pablo Carreno Busta",
+     "selection": "Daniil Medvedev",
+     "p": 0.7879,
+     "sigma": 0.0149,
+     "width": 0.01875,
+     "best_book": "sport888",
+     "best_odds": 1.25,
+     "fair_odds": 1.269,
+     "payout_per_1gbp_profit": 0.25,
+     "ev_at_best": -0.0151,
+     "reason_not_staked": "HIGH_P + POOR PAYOUT (EV <= 0 at best book)"
+    },
+    {
+     "event": "Adolfo Daniel Vallejo v Rafael Jodar",
+     "selection": "Rafael Jodar",
+     "p": 0.7873,
+     "sigma": 0.0131,
+     "width": 0.012401,
+     "best_book": "boylesports",
+     "best_odds": 1.22,
+     "fair_odds": 1.27,
+     "payout_per_1gbp_profit": 0.22,
+     "ev_at_best": -0.0395,
+     "reason_not_staked": "HIGH_P + POOR PAYOUT (EV <= 0 at best book)"
+    }
+   ],
+   "model_minus_book_consensus_pp": {
+    "n": 55,
+    "median": 1.31,
+    "p10": -0.58,
+    "p90": 3.24,
+    "abs_gt_3pp": 6,
+    "abs_gt_10pp": 1
+   },
+   "coverage": {
+    "active_keys": [
+     "tennis_atp_china_open",
+     "tennis_atp_japan_open",
+     "tennis_wta_china_open"
+    ],
+    "keys_over_cap": [],
+    "skipped_credit": [],
+    "events_returned": 55,
+    "credits_remaining_after": 385,
+    "bookmakers_per_match": {
+     "min": 10,
+     "median": 16,
+     "max": 17
+    },
+    "bookmaker_overround_median_pct": 5.77,
+    "quote_age_min": {
+     "median": 0.6,
+     "max": 11.1
+    },
+    "distinct_bookmakers": [
+     "betano_uk",
+     "betfair_ex_uk",
+     "betfair_sb_uk",
+     "betvictor",
+     "betway",
+     "boylesports",
+     "casumo",
+     "coral",
+     "grosvenor",
+     "ladbrokes_uk",
+     "leovegas",
+     "livescorebet",
+     "matchbook",
+     "paddypower",
+     "skybet",
+     "smarkets",
+     "sport888",
+     "unibet_uk",
+     "virginbet",
+     "williamhill"
+    ]
+   },
+   "production_bsv2_3": {
+    "candidates": 49,
+    "unique_events": 46,
+    "decisions": {
+     "REJECT": 39,
+     "WATCH": 4,
+     "MULTI_RESEARCH_ELIGIBLE": 6
+    },
+    "reason_codes": {
+     "PREDICTION_NOT_VALID": 7,
+     "NET_EV_NOT_POSITIVE": 43,
+     "NET_EV_BELOW_PAPER_GATE": 4,
+     "P_BELOW_FLOOR": 1,
+     "EXCHANGE_SPREAD_TOO_WIDE": 14
+    },
+    "best_price_sources": {
+     "betfair_ex_uk": 26,
+     "betway": 4,
+     "betfair_sb_uk": 5,
+     "smarkets": 4,
+     "betano_uk": 4,
+     "boylesports": 2,
+     "sport888": 1,
+     "paddypower": 1,
+     "coral": 1,
+     "casumo": 1
+    },
+    "self_source_exchange_best": 26,
+    "duplicate_event_rows": 3
+   },
+   "defect_rescheduled_matches_dropped_from_production": {
+    "count": 9,
+    "of_board_matches": 55,
+    "matches": [
+     {
+      "event": "Brandon Nakashima v Ugo Humbert",
+      "p_fav": 0.6678,
+      "scan_commence_time": "2026-10-01T02:00:00+00:00",
+      "ledger_event_start": [
+       "2026-09-30T02:00:00+00:00"
+      ],
+      "in_unified_ledger": true
+     },
+     {
+      "event": "Luciano Darderi v Casper Ruud",
+      "p_fav": 0.6692,
+      "scan_commence_time": "2026-10-01T02:00:00+00:00",
+      "ledger_event_start": [
+       "2026-09-30T02:00:00+00:00"
+      ],
+      "in_unified_ledger": true
+     },
+     {
+      "event": "Kei Nishikori v Frances Tiafoe",
+      "p_fav": 0.8022,
+      "scan_commence_time": "2026-10-01T03:10:00+00:00",
+      "ledger_event_start": [
+       "2026-09-30T02:00:00+00:00"
+      ],
+      "in_unified_ledger": true
+     },
+     {
+      "event": "Holger Rune v Kyrian Jacquet",
+      "p_fav": 0.6294,
+      "scan_commence_time": "2026-10-01T03:10:00+00:00",
+      "ledger_event_start": [
+       "2026-09-30T02:00:00+00:00"
+      ],
+      "in_unified_ledger": true
+     },
+     {
+      "event": "Tomas Martin Etcheverry v Stefanos Tsitsipas",
+      "p_fav": 0.7304,
+      "scan_commence_time": "2026-10-01T03:10:00+00:00",
+      "ledger_event_start": [
+       "2026-09-30T03:15:00+00:00"
+      ],
+      "in_unified_ledger": true
+     },
+     {
+      "event": "Denis Shapovalov v Sho Shimabukuro",
+      "p_fav": 0.7352,
+      "scan_commence_time": "2026-10-01T05:40:00+00:00",
+      "ledger_event_start": [
+       "2026-09-30T02:00:00+00:00"
+      ],
+      "in_unified_ledger": true
+     },
+     {
+      "event": "Alejandro Davidovich Fokina v Matteo Berrettini",
+      "p_fav": 0.5756,
+      "scan_commence_time": "2026-10-01T06:50:00+00:00",
+      "ledger_event_start": [
+       "2026-09-30T02:00:00+00:00"
+      ],
+      "in_unified_ledger": true
+     },
+     {
+      "event": "Carlos Alcaraz v Alex Michelsen",
+      "p_fav": 0.8292,
+      "scan_commence_time": "2026-10-01T07:00:00+00:00",
+      "ledger_event_start": [
+       "2026-09-30T02:00:00+00:00"
+      ],
+      "in_unified_ledger": true
+     },
+     {
+      "event": "Xinyu Gao v Panna Udvardy",
+      "p_fav": 0.6137,
+      "scan_commence_time": "2026-10-01T08:00:00+00:00",
+      "ledger_event_start": [
+       "2026-09-30T02:00:00+00:00"
+      ],
+      "in_unified_ledger": true
+     }
+    ]
+   },
+   "cards_vs_matches": {
+    "raw_cards": 235,
+    "by_cohort_k": {
+     "HIGH_P|k1": 17,
+     "HIGH_P|k2": 136,
+     "HIGH_P|k3": 71,
+     "POS_EV|k1": 9,
+     "POS_EV|k2": 2
+    },
+    "distinct_leg_sets": 229,
+    "high_p_matches": 17,
+    "pos_ev_matches": 4,
+    "pos_ev_legs_book_quotes": 9
+   }
+  }
+ },
+ "scheduling": {
+  "morning_delay_window": [
+   "2026-09-30T06:30:00+00:00",
+   "2026-09-30T12:54:22.695202+00:00"
+  ],
+  "matches_starting_in_morning_delay_window": 8,
+  "afternoon_delay_window": [
+   "2026-09-30T15:30:00+00:00",
+   "2026-09-30T20:16:17.495727+00:00"
+  ],
+  "matches_starting_in_afternoon_delay_window": 0,
+  "note": "These matches lost their intended pre-match scan; they were last observed hours earlier."
+ }
+}

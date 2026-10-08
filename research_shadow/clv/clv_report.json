@@ -1,0 +1,148 @@
+{
+ "version": "clv-1",
+ "generated_at": "2026-10-08T17:54:40.901447+00:00",
+ "credits": {
+  "month": "2026-10",
+  "spent_this_month": 0,
+  "monthly_cap": 100,
+  "paid_calls_this_month": 0
+ },
+ "missed": 0,
+ "paper_bet_clv": {
+  "n_targets": 0,
+  "n_captured": 0,
+  "fair_clv": {
+   "n": 0
+  },
+  "price_clv_same_book": {
+   "n": 0
+  },
+  "price_clv_best": {
+   "n": 0
+  },
+  "p_move": {
+   "n": 0
+  },
+  "by": {
+   "sport": {},
+   "engine": {},
+   "market": {},
+   "bookmaker": {},
+   "ev_band": {}
+  }
+ },
+ "ev_band_study": {
+  "study_start": "2026-10-08T17:53:00+00:00",
+  "combined_0_2_tier_a": 0,
+  "look_points": [
+   100,
+   200
+  ],
+  "looks_reached": [],
+  "bands": {
+   "<0": {
+    "n": 0,
+    "est_ev": {
+     "n": 0
+    },
+    "tier_a_eligible": 0,
+    "tier_a_captured": 0,
+    "top_book_share": null,
+    "price_age_median_min": null,
+    "fair_clv": {
+     "n": 0
+    },
+    "price_clv_same_book": {
+     "n": 0
+    },
+    "p_move": {
+     "n": 0
+    },
+    "tier_b_proxy_fair_clv": {
+     "n": 0
+    },
+    "outcomes": {
+     "settled": 0
+    }
+   },
+   "0-1": {
+    "n": 0,
+    "est_ev": {
+     "n": 0
+    },
+    "tier_a_eligible": 0,
+    "tier_a_captured": 0,
+    "top_book_share": null,
+    "price_age_median_min": null,
+    "sealed": "CLV/P&L/calibration sealed until 100 combined 0-2% Tier-A captures"
+   },
+   "1-2": {
+    "n": 0,
+    "est_ev": {
+     "n": 0
+    },
+    "tier_a_eligible": 0,
+    "tier_a_captured": 0,
+    "top_book_share": null,
+    "price_age_median_min": null,
+    "sealed": "CLV/P&L/calibration sealed until 100 combined 0-2% Tier-A captures"
+   },
+   "2-4": {
+    "n": 0,
+    "est_ev": {
+     "n": 0
+    },
+    "tier_a_eligible": 0,
+    "tier_a_captured": 0,
+    "top_book_share": null,
+    "price_age_median_min": null,
+    "fair_clv": {
+     "n": 0
+    },
+    "price_clv_same_book": {
+     "n": 0
+    },
+    "p_move": {
+     "n": 0
+    },
+    "tier_b_proxy_fair_clv": {
+     "n": 0
+    },
+    "outcomes": {
+     "settled": 0
+    }
+   },
+   "4+": {
+    "n": 0,
+    "est_ev": {
+     "n": 0
+    },
+    "tier_a_eligible": 0,
+    "tier_a_captured": 0,
+    "top_book_share": null,
+    "price_age_median_min": null,
+    "fair_clv": {
+     "n": 0
+    },
+    "price_clv_same_book": {
+     "n": 0
+    },
+    "p_move": {
+     "n": 0
+    },
+    "tier_b_proxy_fair_clv": {
+     "n": 0
+    },
+    "outcomes": {
+     "settled": 0
+    }
+   }
+  }
+ },
+ "definitions": {
+  "fair_clv": "(1+(odds-1)(1-commission)) x p_close - 1 (tennis p_close = Betfair back/lay mid; others UK median fair)",
+  "price_clv_same_book": "entry odds / same book closing odds - 1",
+  "price_clv_best": "entry odds / best UK closing odds - 1",
+  "p_move": "p_close - p_entry"
+ }
+}

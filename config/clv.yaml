@@ -1,0 +1,26 @@
+# CLV capture + EV-band study (directive 2026-10-08 18:37; architecture research/platform_v2/clv/CLV_ARCHITECTURE.md;
+# study pre-registration research/platform_v2/clv/EV_BAND_STUDY_PREREGISTRATION.md, commit 124dc9a).
+# Measurement only: never changes a decision, grade, stake or the live card.
+version: clv-1
+active_from: "2026-10-08T17:53:00+00:00"       # PAPER_BET targets decided from here; study rows evaluated from here
+capture_window_minutes: 25                     # capture a target when its start is within (now, now + 25 min]
+near_close_minutes: 10                         # captures <= 10 min before start are labelled NEAR_CLOSE
+markets_by_sport: {default: [h2h]}   # h2h also returns Betfair h2h_lay for exchanges (tennis engine relies on this), so 1 credit per call
+extra_protected_daily_need: 2.5                # credits/day reserved for us_sports_board on top of the Tier-2 floor
+study:
+  study_start: "2026-10-08T17:53:00+00:00"     # first cohort-builder run after the pre-registration commit
+  sport: tennis
+  rule_version_required: bsv2-4
+  clean_reasons: [NET_EV_NOT_POSITIVE, NET_EV_BELOW_PAPER_GATE]
+  bands:                                       # [lower inclusive, upper exclusive, label]; EV as a fraction
+    - [-1.0, 0.0, "<0"]
+    - [0.0, 0.01, "0-1"]
+    - [0.01, 0.02, "1-2"]
+    - [0.02, 0.04, "2-4"]
+    - [0.04, 10.0, "4+"]
+  capture_bands: ["0-1", "1-2", "2-4", "4+"]   # Tier A (paid) capture; "<0" uses the free Tier B proxy only
+  sealed_bands: ["0-1", "1-2"]                 # CLV / P&L / calibration hidden until a look point
+  look_points: [100, 200]                      # combined 0-2% Tier-A captured rows (interim futility, final)
+bootstrap_samples: 2000
+bootstrap_seed: 20261008
+min_n_for_ci: 10
