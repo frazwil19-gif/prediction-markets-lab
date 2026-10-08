@@ -92,14 +92,22 @@ def money_eligible_engines(repo: Path) -> set[str]:
     return {eid for eid, e in reg.engines.items() if e.get("money_eligible")}
 
 
-def assign_stakes(bets: list[dict], policy: dict) -> list[dict]:
+def provisional_live_engines(repo: Path) -> set[str]:
+    from prediction_markets_lab.prediction_platform.registry import Registry
+    reg = Registry.load(repo / "research/platform_v2/PROBABILITY_ENGINE_REGISTRY.json")
+    return {eid for eid, e in reg.engines.items() if e.get("money_eligible") and e.get("live_tier") == "PROVISIONAL_LIVE"}
+
+
+def assign_stakes(bets: list[dict], policy: dict, provisional_max: int | None = None) -> list[dict]:
     """Default stake to each bet in probability order, one per event, until the daily exposure cap. The £2 rule is
     disabled until a quantitatively justified rule is approved (no confidence-based doubling)."""
-    used, events, out = 0.0, set(), []
+    used, events, out, prov_count = 0.0, set(), [], {}
     for b in sorted(bets, key=lambda r: (-r["probability"], -r["net_ev"])):
         stake = policy["default_stake_gbp"]
         if not b.get("money_eligible", True):
             note, stake = "PAPER ONLY — engine not money-eligible", 0.0
+        elif b.get("provisional_live") and provisional_max is not None and prov_count.get(b["engine_id"], 0) >= provisional_max:
+            note, stake = f"SKIP — provisional-live engine limit ({provisional_max}/day)", 0.0
         elif b["event_key"] in events:
             note = "SKIP — one bet per event"
             stake = 0.0
@@ -107,9 +115,11 @@ def assign_stakes(bets: list[dict], policy: dict) -> list[dict]:
             note = "SKIP — daily exposure cap"
             stake = 0.0
         else:
-            note = ""
+            note = "PROVISIONAL_LIVE engine (£1 max, no Big Card)" if b.get("provisional_live") else ""
             used += stake
             events.add(b["event_key"])
+            if b.get("provisional_live"):
+                prov_count[b["engine_id"]] = prov_count.get(b["engine_id"], 0) + 1
         out.append({**b, "stake_gbp": stake, "stake_note": note})
     return out
 
@@ -121,7 +131,7 @@ def big_card(bets: list[dict], cfg: dict, cap_left: float) -> dict | None:
         return None
     seen, legs = set(), []
     for b in sorted(bets, key=lambda r: (-r["probability"], -r["net_ev"])):
-        if b.get("money_eligible", True) and b["event_key"] not in seen:
+        if b.get("money_eligible", True) and not b.get("provisional_live") and b["event_key"] not in seen:
             seen.add(b["event_key"])
             legs.append(b)
     legs = legs[: cfg["max_legs"]]
@@ -162,7 +172,7 @@ def corners_research(rows: list[dict], lines: list[float], now: datetime, hours:
 
 
 def build(board: dict, candidates: list[dict], research_rows: list[dict], cfg: CardConfig, now: datetime,
-          money_engines: set[str] | None = None) -> dict:
+          money_engines: set[str] | None = None, provisional_engines: set[str] | None = None) -> dict:
     """money_engines: engine ids with money_eligible=true. None = every engine (paper mode has no real stakes)."""
     hours, labels, bands = cfg["horizon_hours"], cfg["evidence_labels"], cfg["probability_bands"]
     dec = best_decisions(candidates)
@@ -179,14 +189,23 @@ def build(board: dict, candidates: list[dict], research_rows: list[dict], cfg: C
                       "price_status": r["price_status"], "best_odds": r.get("best_clean_odds"), "best_source": r.get("best_clean_source"),
                       "best_net_ev": r.get("best_clean_net_ev"), "decision": d.get("decision", "NOT_EVALUATED"),
                       "decision_reasons": d.get("reasons", ""), "decision_odds": d.get("decimal_odds"), "decision_source": d.get("source"),
-                      "decision_net_ev": d.get("net_ev"), "price_observed_at": d.get("price_observed_at")})
+                      "decision_net_ev": d.get("net_ev"), "price_observed_at": d.get("price_observed_at"),
+                      "engine_version": r.get("engine_version"), "decision_evaluated_at": d.get("evaluated_at"),
+                      "min_bookmaker_odds": min_bookmaker_odds(p)})
     preds.sort(key=lambda x: (-x["probability"], x["event_start"]))
     best_preds = [p for p in preds if p["probability"] >= cfg["best_predictions_min_probability"]][: cfg["best_predictions_max_rows"]]
     live = bool(cfg["live_policy"]["real_money_enabled"])
     bets = [{**p, "net_ev": float(p["decision_net_ev"]), "odds": float(p["decision_odds"]),
-             "money_eligible": (not live) or money_engines is None or p["engine_id"] in money_engines}
+             "money_eligible": (not live) or money_engines is None or p["engine_id"] in money_engines,
+             "provisional_live": bool(provisional_engines) and p["engine_id"] in provisional_engines}
             for p in preds if p["decision"] == PAPER_BET]
-    bets = assign_stakes(bets, cfg["live_policy"])
+    bets = assign_stakes(bets, cfg["live_policy"], cfg.raw.get("provisional_live", {}).get("max_live_bets_per_day_per_engine"))
+    rejections: dict[str, int] = {}
+    for p in preds:
+        if p["decision"] != PAPER_BET:
+            for reason in (p["decision_reasons"] or p["decision"]).split("|"):
+                if reason:
+                    rejections[reason] = rejections.get(reason, 0) + 1
     bet_ids = {b["prediction_id"] for b in bets}
     cap_left = cfg["live_policy"]["max_daily_exposure_gbp"] - sum(b["stake_gbp"] for b in bets)
     multi = big_card(bets, cfg.raw.get("big_card", {}), cap_left)
@@ -199,6 +218,7 @@ def build(board: dict, candidates: list[dict], research_rows: list[dict], cfg: C
             "summary": {"predictions_in_window": len(preds), "best_predictions_shown": len(best_preds), "bets": sum(b["stake_gbp"] > 0 for b in bets),
                         "total_stake_gbp": staked, "exposure_pct_of_bankroll": round(100 * staked / pol["bankroll_gbp"], 1),
                         "strong_price_too_low": len(poor_price), "research_predictions": len(research_rows)},
+            "rejection_reasons": dict(sorted(rejections.items(), key=lambda kv: -kv[1])),
             "best_predictions": best_preds, "best_bets": bets, "big_card": multi, "strong_price_too_low": poor_price, "research": research_rows,
             "live_policy": pol}
 
@@ -254,7 +274,9 @@ def render_md(c: dict) -> str:
               f"{_pct(m['joint_probability'])} of the time._"]
     else:
         L.append("No Big Card today — it needs at least 3 qualifying legs on different events. Never padded with weaker legs.")
-    L += ["", "## 3. Strong predictions — price too low (no bet)", ""]
+    L += ["", "## 3. Strong predictions — price too low (no bet)", "",
+          "_NOT live-money eligible. Do not check other bookmakers to rescue these — that would bias the record. (Optional: note any "
+          "prices you happen to see as research in the Bet Log's price-check section.)_", ""]
     if c["strong_price_too_low"]:
         L += ["| Event | Selection | P | Fair odds | Best clean price | Why no bet |", "|---|---|---|---|---|---|"]
         for p in c["strong_price_too_low"]:
@@ -263,6 +285,9 @@ def render_md(c: dict) -> str:
                      f"{_odds(p['best_odds'])} | {why.replace('|', ', ')} |")
     else:
         L.append("None in the window.")
+    if c.get("rejection_reasons"):
+        L += ["", "### Why predictions in the window were not bets", "",
+              " · ".join(f"{k} {v}" for k, v in c["rejection_reasons"].items())]
     L += ["", "## 4. Research predictions — not money eligible", "",
           "_Model probabilities from research engines. Shown for information and to build a prospective record; they are NOT betting recommendations._", ""]
     if c["research"]:
@@ -286,7 +311,7 @@ def run(repo: Path, cfg_path: Path, now: datetime) -> dict:
     cand = read_csv(repo / "reports/bet_selection_v2_candidates.csv")
     cc = cfg["research"]["corners"]
     research = corners_research(read_csv(repo / cc["predictions"]), cc["lines"], now, cfg["horizon_hours"], cc["model"], cc["evidence"])
-    card = build(board, cand, research, cfg, now, money_eligible_engines(repo))
+    card = build(board, cand, research, cfg, now, money_eligible_engines(repo), provisional_live_engines(repo))
     out = repo / "reports"
     out.mkdir(exist_ok=True)
     (out / "daily_card_v1.json").write_text(json.dumps(card, indent=1, default=str) + "\n")

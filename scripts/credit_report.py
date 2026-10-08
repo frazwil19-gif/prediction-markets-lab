@@ -63,8 +63,55 @@ def build(repo: Path, now: datetime) -> dict:
             "by_consumer": {k: dict(v) for k, v in sorted(by.items())}, "plan_a_comparison": proj,
             "football_counterfactual": {"scan_days_logged": fb_days, "baseline_credits_if_ungated": fb_days * BASELINE_FOOTBALL_PER_DAY,
                                         "actual": by["football_daily_scan"]["credits_charged"] if "football_daily_scan" in by else 0},
+            "utilisation": utilisation(repo, by, now),
             "note": "credits_saved_estimate = markets x regions of each skipped odds call; settlement scores and research calls "
                     "are not in the shared ledger yet (account counter covers them)."}
+
+
+# consumer -> sports whose predictions/bets count as its "useful outputs" (credit utilisation review, 2026-10-08)
+CONSUMER_SPORTS = {"football_daily_scan": ("football",), "tennis_prediction_board": ("tennis",),
+                   "nba_prediction_board": ("basketball",), "us_sports_board": ("icehockey", "americanfootball"),
+                   "football_settlement": ()}
+UNDER_USE_FRACTION = 0.5   # projected month-end < 50% of cap -> flag as a re-allocation candidate (review only)
+
+
+def utilisation(repo: Path, by: dict, now: datetime) -> dict:
+    """Monthly credit utilisation review: allocation, consumed, unused, utilisation %, useful outputs and NON-binding
+    recommendations. Never changes config/api_budget.json (changes need Fraser's approval)."""
+    import calendar
+    month, day = now.strftime("%Y-%m"), now.day
+    dim = calendar.monthrange(now.year, now.month)[1]
+    budget = repo / "config/api_budget.json"
+    if not budget.exists():
+        return {}
+    caps = {k: v["monthly_cap"] for k, v in json.loads(budget.read_text())["consumers"].items()}
+    us = sum(int(r["x_requests_last"] or 0) for r in _rows(repo / "predictions/us_sports_credit_log.csv")
+             if r["timestamp_utc"].startswith(month))
+    consumed = {k: (by.get(k, {}).get("credits_charged", 0) + (us if k == "us_sports_board" else 0)) for k in caps}
+    preds = [r for r in _rows(repo / "predictions/unified_ledger.csv") if r["prediction_timestamp"].startswith(month)]
+    bets = [r for r in _rows(repo / "paper_betting_v2/selections.csv") if r["decision_at"].startswith(month)]
+    out = {}
+    for k, cap in caps.items():
+        sports = CONSUMER_SPORTS.get(k, ())
+        n_pred = sum(r["sport"] in sports for r in preds)
+        n_bet = sum(r["sport"] in sports for r in bets)
+        proj = round(consumed[k] / day * dim, 1)
+        if consumed[k] == 0:
+            rec = "idle so far (fixture gate / season not started / nothing to settle) — not evidence of over-allocation; review at month end"
+        elif proj > cap:
+            rec = f"on pace to exceed cap ({proj} > {cap}); budget guard will stop it — review"
+        elif cap and proj < UNDER_USE_FRACTION * cap and day >= 7:
+            rec = f"under-used (projected {proj} of {cap}); candidate to release ~{int(cap - proj)} credits — review, no auto change"
+        else:
+            rec = "on plan"
+        out[k] = {"allocation": cap, "consumed": consumed[k], "unused": cap - consumed[k],
+                  "utilisation_pct": round(100 * consumed[k] / cap, 1) if cap else None, "projected_month_end": proj,
+                  "useful_outputs": {"predictions": n_pred, "qualifying_bets": n_bet,
+                                     "predictions_per_credit": round(n_pred / consumed[k], 2) if consumed[k] else None},
+                  "recommendation": rec}
+    return {"month": month, "day_of_month": day, "consumers": out,
+            "note": "Early-month projections are noisy; season starts (NBA 20 Oct) change the picture. Recommendations are "
+                    "advisory — any cap change is a versioned config change approved by Fraser."}
 
 
 def render_md(r: dict) -> str:
@@ -81,6 +128,16 @@ def render_md(r: dict) -> str:
     fc = r["football_counterfactual"]
     lines += ["", f"Football: {fc['actual']} credits over {fc['scan_days_logged']} scan days vs {fc['baseline_credits_if_ungated']} "
               "if ungated (pre-Plan-A 6/day).", "", r["note"]]
+    u = r.get("utilisation")
+    if u:
+        lines += ["", f"## Credit utilisation review ({u['month']}, day {u['day_of_month']})", "",
+                  "| Consumer | Allocation | Consumed | Unused | Util % | Proj. month-end | Predictions | Qualifying bets | Recommendation |",
+                  "|---|---|---|---|---|---|---|---|---|"]
+        for k, v in u["consumers"].items():
+            o = v["useful_outputs"]
+            lines.append(f"| {k} | {v['allocation']} | {v['consumed']} | {v['unused']} | {v['utilisation_pct']} | "
+                         f"{v['projected_month_end']} | {o['predictions']} | {o['qualifying_bets']} | {v['recommendation']} |")
+        lines += ["", u["note"]]
     return "\n".join(lines) + "\n"
 
 
