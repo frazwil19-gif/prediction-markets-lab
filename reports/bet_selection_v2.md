@@ -4,9 +4,9 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-09T06:16Z · events scanned 126 · valid predictions 642 · high-P (≥70%) 181 · priced 306 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 643 · new paper bets 0 · Money Card qualified 0
+Run 2026-10-09T13:37Z · events scanned 128 · valid predictions 643 · high-P (≥70%) 183 · priced 303 · PAPER_BET 0 · MULTI-research 4 · WATCH 1 · REJECT 639 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 615 · P_BELOW_FLOOR 298 · NO_EXECUTABLE_PRICE 297 · NET_EV_NOT_POSITIVE 265 · PRICE_STALE 160 · COMMISSION_UNKNOWN 39 · EXCHANGE_SPREAD_TOO_WIDE 6 · PREDICTION_NOT_VALID 1
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 615 · PRICE_STALE 318 · P_BELOW_FLOOR 298 · NO_EXECUTABLE_PRICE 297 · NET_EV_NOT_POSITIVE 261 · COMMISSION_UNKNOWN 43 · EXCHANGE_SPREAD_TOO_WIDE 4 · NET_EV_BELOW_PAPER_GATE 1 · PREDICTION_NOT_VALID 1 · PROBABILITY_NOT_SAME_SNAPSHOT 1
 
 ## Candidates (latest run, best price per prediction)
 
@@ -14,18 +14,18 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 615 · P_BELOW_FLOOR 298 · 
 |---|---|---|---|---|---|---|---|---|
 | Barcelona v Getafe | 2026-10-10T16:30 | 1X | 96.3% | 1.04 | — | — | — | REJECT |
 | Paris Saint Germain v Le Mans FC | 2026-10-10T18:45 | 1X | 95.9% | 1.04 | — | — | — | REJECT |
-| Juan Manuel Cerundolo v Carlos Alcaraz | 2026-10-10T04:00 | Carlos Alcaraz | 94.9% | 1.05 | 1.05 (betfair_ex_uk) | 95.5% | -0.6% | REJECT |
-| Camilo Ugo Carabelli v Felix Auger-Aliassime | 2026-10-10T04:00 | Felix Auger-Aliassime | 94.6% | 1.06 | 1.05 (betfair_ex_uk) | 95.5% | -0.9% | REJECT |
+| Juan Manuel Cerundolo v Carlos Alcaraz | 2026-10-10T10:00 | Carlos Alcaraz | 95.2% | 1.05 | 1.05 (betfair_ex_uk) | 95.5% | -0.3% | MULTI_RESEARCH_ELIGIBLE |
 | Inter Milan v Parma | 2026-10-10T16:00 | 1X | 94.5% | 1.06 | — | — | — | REJECT |
+| Camilo Ugo Carabelli v Felix Auger-Aliassime | 2026-10-10T04:00 | Felix Auger-Aliassime | 94.4% | 1.06 | 1.05 (betfair_sb_uk) | 95.2% | -0.9% | MULTI_RESEARCH_ELIGIBLE |
 | Rangers v Kilmarnock | 2026-10-10T14:00 | 1X | 93.9% | 1.07 | — | — | — | REJECT |
 | Barcelona v Getafe | 2026-10-10T16:30 | 12 | 92.7% | 1.08 | — | — | — | REJECT |
 | Paris Saint Germain v Le Mans FC | 2026-10-10T18:45 | 12 | 92.0% | 1.09 | — | — | — | REJECT |
 | Augsburg v Bayern Munich | 2026-10-10T13:30 | X2 | 91.5% | 1.09 | — | — | — | REJECT |
 | CS Maritimo v FC Porto | 2026-10-10T17:00 | X2 | 90.4% | 1.11 | — | — | — | REJECT |
 | PSV Eindhoven v Heerenveen | 2026-10-09T18:00 | 1X | 89.9% | 1.11 | — | — | — | REJECT |
+| Arthur Fils v Pavel Kotov | 2026-10-10T06:20 | Arthur Fils | 89.4% | 1.12 | 1.11 (betfair_ex_uk) | 90.5% | -1.3% | MULTI_RESEARCH_ELIGIBLE |
 | Barcelona v Getafe | 2026-10-10T16:30 | home | 89.1% | 1.12 | 1.10 (smarkets) | 91.1% | -2.2% | REJECT |
 | Inter Milan v Parma | 2026-10-10T16:00 | 12 | 88.8% | 1.13 | — | — | — | REJECT |
-| Arthur Fils v Pavel Kotov | 2026-10-10T04:00 | Arthur Fils | 88.5% | 1.13 | 1.12 (betfair_ex_uk) | 89.8% | -1.4% | REJECT |
 | Rangers v Kilmarnock | 2026-10-10T14:00 | 12 | 88.5% | 1.13 | — | — | — | REJECT |
 | Augsburg v Bayern Munich | 2026-10-10T13:30 | 12 | 88.3% | 1.13 | — | — | — | REJECT |
 | Ajax v NEC Nijmegen | 2026-10-10T19:00 | 1X | 88.2% | 1.13 | — | — | — | REJECT |
@@ -39,19 +39,19 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 615 · P_BELOW_FLOOR 298 · 
 | Genk v KV Kortrijk | 2026-10-10T18:45 | 1X | 85.9% | 1.16 | — | — | — | REJECT |
 | TSG Hoffenheim v Hamburger SV | 2026-10-10T13:30 | 1X | 85.5% | 1.17 | — | — | — | REJECT |
 | Napoli v Frosinone | 2026-10-10T18:45 | 1X | 85.5% | 1.17 | — | — | — | REJECT |
+| Alexander Zverev v Quentin Halys | 2026-10-11T04:00 | Alexander Zverev | 85.4% | 1.17 | 1.15 (betfair_ex_uk) | 87.5% | -2.4% | REJECT |
 | Fortuna Sittard v FC Twente Enschede | 2026-10-10T18:00 | X2 | 84.8% | 1.18 | — | — | — | REJECT |
+| Daniil Medvedev v Jan-Lennard Struff | 2026-10-10T04:00 | Daniil Medvedev | 84.6% | 1.18 | 1.18 (betfair_ex_uk) | 85.4% | -1.0% | MULTI_RESEARCH_ELIGIBLE |
 | Stockport County FC v Barnsley | 2026-10-10T14:00 | 1X | 84.4% | 1.18 | — | — | — | REJECT |
 | Hearts v St Mirren | 2026-10-10T14:00 | 1X | 84.4% | 1.18 | — | — | — | REJECT |
 | Plymouth Argyle v Wimbledon | 2026-10-10T11:30 | 1X | 84.3% | 1.19 | — | — | — | REJECT |
 | West Ham United v Queens Park Rangers | 2026-10-09T19:00 | 1X | 84.1% | 1.19 | — | — | — | REJECT |
 | Ajax v NEC Nijmegen | 2026-10-10T19:00 | 12 | 83.8% | 1.19 | — | — | — | REJECT |
-| Daniil Medvedev v Jan-Lennard Struff | 2026-10-10T04:00 | Daniil Medvedev | 83.6% | 1.20 | 1.18 (betfair_ex_uk) | 85.4% | -2.1% | REJECT |
 | Inter Milan v Parma | 2026-10-10T16:00 | home | 83.3% | 1.20 | 1.15 (smarkets) | 87.2% | -4.5% | REJECT |
 | Real Madrid v Villarreal | 2026-10-10T19:00 | 12 | 83.2% | 1.20 | — | — | — | REJECT |
 | Montpellier v Grenoble | 2026-10-09T18:00 | 1X | 83.1% | 1.20 | — | — | — | REJECT |
 | Borussia Dortmund v Werder Bremen | 2026-10-09T18:30 | 12 | 83.1% | 1.20 | — | — | — | REJECT |
-| Yi Zhou v Lorenzo Musetti | 2026-10-09T11:10 | Lorenzo Musetti | 82.4% | 1.21 | 1.21 (betfair_ex_uk) | 83.4% | -1.1% | REJECT |
-| Yi Zhou v Lorenzo Musetti | 2026-10-09T11:10 | Lorenzo Musetti | 82.4% | 1.21 | 1.21 (betfair_ex_uk) | 83.4% | -1.1% | REJECT |
+| Rangers v Kilmarnock | 2026-10-10T14:00 | home | 81.9% | 1.22 | 1.17 (william hill) | 85.5% | -4.1% | REJECT |
 
 ## Paper results (all time)
 
