@@ -1,14 +1,13 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-09T01:11:05.082380+00:00",
+ "generated_at": "2026-10-09T02:23:10.484100+00:00",
  "date": "2026-10-09",
  "summary": {
-  "upcoming_events": 114,
-  "valid_predictions": 524,
+  "upcoming_events": 113,
+  "valid_predictions": 523,
   "sports_active": [
    "football",
-   "icehockey",
    "tennis"
   ],
   "engines_active": [
@@ -34,7 +33,7 @@
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-09T01:11:05.082380+00:00",
+  "generated_at": "2026-10-09T02:23:10.484100+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -42,22 +41,22 @@
     "last": "2026-10-08T14:28:05.841944+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 10.7
+    "age_hours": 11.9
    },
    "settlement": {
-    "last": "2026-10-08T00:55:48.599280+00:00",
+    "last": "2026-10-09T01:11:06.781879+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 24.3
+    "age_hours": 1.2
    },
    "tennis_board": {
     "last": "2026-10-08T20:48:02.367725+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 4.4
+    "age_hours": 5.6
    },
    "ci_tests": {
-    "last": "2026-10-09T01:10:51.903133+00:00",
+    "last": "2026-10-09T02:22:53.308779+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -150,7 +149,7 @@
    "prospective_status": "COLLECTING",
    "money_eligible": false,
    "predictions": 10,
-   "settled_rows": 0,
+   "settled_rows": 7,
    "maturity": "COLLECTING",
    "ge80_settled": 0,
    "ge80_mean_pred": null,
@@ -196,11 +195,11 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 525,
-   "EXCLUDED": 258
+   "ELIGIBLE": 524,
+   "EXCLUDED": 259
   },
   "exclusion_reason": {
-   "EVENT_STARTED": 258
+   "EVENT_STARTED": 259
   },
   "start_time_status": {
    "LEDGER_ONLY": 513,
@@ -9406,48 +9405,6 @@
    "correct": "",
    "settlement_timestamp": "",
    "event_start_original": "2026-10-10T11:30:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
-  },
-  {
-   "prediction_id": "cafdf07d5b68ab60",
-   "engine_id": "nhl_moneyline.market",
-   "engine_version": "1",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event_id": "a46280b902edb2cb0a859b0efcd01e8e",
-   "event_key": "nhl|a46280b902edb2cb0a859b0efcd01e8e",
-   "event_name": "Toronto Maple Leafs @ Vegas Golden Knights",
-   "event_start": "2026-10-09T02:10:00+00:00",
-   "market": "moneyline",
-   "selection": "Vegas Golden Knights",
-   "estimated_probability": "0.5970477386934674",
-   "fair_odds": "1.6749079431877958",
-   "probability_band": "55-59.9%",
-   "probability_source": "Odds API icehockey_nhl h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=13666; holdout DONE (2020-21, n=2350; gate B); >=80% coverage None; holdout slope 1.2193 CI [1.0439, 1.4097]; live estimator nhl_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "PROVISIONAL_PROSPECTIVE",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "MANUAL:workflow_dispatch",
-   "actual_workflow_start": "2026-10-08T11:05:53Z",
-   "prediction_timestamp": "2026-10-08T11:06:59.309716+00:00",
-   "minutes_to_event": "903.0",
-   "live_price": "1.63",
-   "live_price_source": "odds_api:matchbook",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "False",
-   "single_ineligible_reason": "engine not money-eligible",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:icehockey_nhl",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-10-09T02:10:00+00:00",
    "start_time_status": "LEDGER_ONLY",
    "start_time_source": "unified_ledger.event_start"
   },

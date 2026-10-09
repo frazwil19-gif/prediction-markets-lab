@@ -2,7 +2,7 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 114 · Valid predictions: 524 · Sports: football, icehockey, tennis
+Upcoming events: 113 · Valid predictions: 523 · Sports: football, tennis
 Counts: >=70: 140 · >=75: 65 · >=80: 31 · >=85: 14 · >=90: 5 · >=95: 1
 Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 432
 
@@ -52,16 +52,16 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 432
 | atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 127 | 53 | EARLY | 11 | 86.8% → 81.8% |
 | wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 105 | 77 | EARLY | 18 | 91.3% → 88.9% |
 | nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 0 | 0 | COLLECTING | 0 | — → — |
-| nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 10 | 0 | COLLECTING | 0 | — → — |
+| nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 10 | 7 | COLLECTING | 0 | — → — |
 | nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 1 | 0 | COLLECTING | 0 | — → — |
 | football_double_chance.derived_1x2 | PROVISIONAL_PROSPECTIVE / COLLECTING | 234 | 0 | COLLECTING | 0 | — → — |
 
 ## System health
 
 - daily_scan: OK (last 2026-10-08T14:28:05.841944+00:00)
-- settlement: OK (last 2026-10-08T00:55:48.599280+00:00)
+- settlement: OK (last 2026-10-09T01:11:06.781879+00:00)
 - tennis_board: OK (last 2026-10-08T20:48:02.367725+00:00)
-- ci_tests: OK (last 2026-10-09T01:10:51.903133+00:00)
+- ci_tests: OK (last 2026-10-09T02:22:53.308779+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 

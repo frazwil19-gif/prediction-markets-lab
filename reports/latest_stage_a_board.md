@@ -1,8 +1,8 @@
-# STAGE A PREDICTION BOARD — 2026-10-09T01:11Z (stage-a-2)
+# STAGE A PREDICTION BOARD — 2026-10-09T02:23Z (stage-a-2)
 
 _Probability first. Ranked by estimated probability only. **A strong prediction is not a bet** — price status is descriptive; Stage B (bet-selection) alone decides bets._
 
-Predictions: 524 · strong (P ≥ 70%): 140 on 92 events · strong by price status: PRICE_QUALITY_FAIL 18 · PRICE_UNAVAILABLE 122
+Predictions: 523 · strong (P ≥ 70%): 140 on 92 events · strong by price status: PRICE_QUALITY_FAIL 18 · PRICE_UNAVAILABLE 122
 
 | # | Sport | Event | Start (UTC) | Market | Selection | P | P first snapshot | P current scan | σ | Engine | Calibration status | Stage A status | Why not assessable | Best clean price | Net EV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
