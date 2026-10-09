@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-10-09T13:37:54.831305+00:00",
+ "generated_at": "2026-10-09T15:16:37.429724+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-4",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 31,
+  "runs": 32,
   "totals_over_runs": {
-   "events_scanned": 1409,
-   "valid_predictions": 3186,
-   "high_p_candidates": 1027,
-   "priced_candidates": 1934,
+   "events_scanned": 1539,
+   "valid_predictions": 3832,
+   "high_p_candidates": 1213,
+   "priced_candidates": 2240,
    "PAPER_BET": 19,
-   "MULTI_RESEARCH_ELIGIBLE": 159,
-   "WATCH": 57,
-   "REJECT": 3176,
+   "MULTI_RESEARCH_ELIGIBLE": 163,
+   "WATCH": 58,
+   "REJECT": 3818,
    "paper_bets_added": 10,
    "money_card_qualified": 0
   },
@@ -37,25 +37,25 @@
   }
  },
  "latest_run": {
-  "run_at": "2026-10-09T13:37:54.831305+00:00",
-  "trigger": "schedule",
+  "run_at": "2026-10-09T15:16:37.429724+00:00",
+  "trigger": "workflow_dispatch",
   "rule_version": "bsv2-4",
-  "events_scanned": "128",
-  "valid_predictions": "643",
-  "high_p_candidates": "183",
-  "priced_candidates": "303",
+  "events_scanned": "130",
+  "valid_predictions": "646",
+  "high_p_candidates": "186",
+  "priced_candidates": "306",
   "PAPER_BET": "0",
   "MULTI_RESEARCH_ELIGIBLE": "4",
   "WATCH": "1",
-  "REJECT": "639",
+  "REJECT": "642",
   "paper_bets_added": "0",
-  "snapshots_added": "425",
+  "snapshots_added": "471",
   "money_card_qualified": "0",
   "football_fixtures_on_card": "162"
  },
  "latest_decisions": {
   "decisions": {
-   "REJECT": 639,
+   "REJECT": 642,
    "MULTI_RESEARCH_ELIGIBLE": 4,
    "WATCH": 1
   },
@@ -64,12 +64,11 @@
    "PRICE_STALE": 318,
    "P_BELOW_FLOOR": 298,
    "NO_EXECUTABLE_PRICE": 297,
-   "NET_EV_NOT_POSITIVE": 261,
+   "NET_EV_NOT_POSITIVE": 263,
    "COMMISSION_UNKNOWN": 43,
-   "EXCHANGE_SPREAD_TOO_WIDE": 4,
+   "EXCHANGE_SPREAD_TOO_WIDE": 7,
    "NET_EV_BELOW_PAPER_GATE": 1,
-   "PREDICTION_NOT_VALID": 1,
-   "PROBABILITY_NOT_SAME_SNAPSHOT": 1
+   "PREDICTION_NOT_VALID": 1
   },
   "by_sport": {
    "football": {
@@ -79,14 +78,14 @@
     "REJECT": 5
    },
    "tennis": {
-    "REJECT": 19,
+    "REJECT": 22,
     "MULTI_RESEARCH_ELIGIBLE": 4,
     "WATCH": 1
    }
   },
   "by_engine": {
    "atp_match_winner.betfair_market": {
-    "REJECT": 17,
+    "REJECT": 20,
     "MULTI_RESEARCH_ELIGIBLE": 4,
     "WATCH": 1
    },
