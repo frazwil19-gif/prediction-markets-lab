@@ -1,6 +1,12 @@
 {
- "report_version": "qtc-1",
- "generated_at": "2026-10-08T12:06:32.354799+00:00",
+ "report_version": "qtc-2",
+ "generated_at": "2026-10-09T01:11:06.579850+00:00",
+ "capacity_rule_version": "bsv2-4",
+ "paper_bets_by_rule_version": {
+  "bsv2-1": 9,
+  "bsv2-3": 1
+ },
+ "runs_under_current_rule": 21,
  "expected_vs_realised": {
   "settled_bets": 9,
   "stake_per_bet_gbp": 1.0,
@@ -13,160 +19,26 @@
   "note": "Small samples: |wins_z| < 2 is ordinary noise; do not react to it (first-weekend rule)."
  },
  "capacity": {
-  "qualifying_bets": 10,
-  "days_observed": 10,
+  "qualifying_bets": 0,
   "observed_window": [
-   "2026-09-29",
-   "2026-10-08"
+   "2026-10-01",
+   "2026-10-09"
   ],
-  "days_with_a_qualifying_bet": 1,
-  "qualifying_per_day": 1.0,
-  "qualifying_per_month": 30.0,
-  "sample_flag": "LOW_SAMPLE",
-  "odds": {
-   "n": 10,
-   "mean": 1.544,
-   "median": 1.5
-  },
-  "net_ev": {
-   "n": 10,
-   "mean": 0.0505,
-   "median": 0.0366
-  },
-  "by_group": {
-   "engine=atp_match_winner.betfair_market": {
-    "bets": 1,
-    "per_month": 3.0,
-    "odds": {
-     "n": 1,
-     "mean": 1.4,
-     "median": 1.4
-    },
-    "net_ev": {
-     "n": 1,
-     "mean": 0.0288,
-     "median": 0.0288
-    }
-   },
-   "engine=wta_match_winner.betfair_market": {
-    "bets": 9,
-    "per_month": 27.0,
-    "odds": {
-     "n": 9,
-     "mean": 1.56,
-     "median": 1.5
-    },
-    "net_ev": {
-     "n": 9,
-     "mean": 0.053,
-     "median": 0.0377
-    }
-   },
-   "market=tennis:match_winner": {
-    "bets": 10,
-    "per_month": 30.0,
-    "odds": {
-     "n": 10,
-     "mean": 1.544,
-     "median": 1.5
-    },
-    "net_ev": {
-     "n": 10,
-     "mean": 0.0505,
-     "median": 0.0366
-    }
-   },
-   "sport=tennis": {
-    "bets": 10,
-    "per_month": 30.0,
-    "odds": {
-     "n": 10,
-     "mean": 1.544,
-     "median": 1.5
-    },
-    "net_ev": {
-     "n": 10,
-     "mean": 0.0505,
-     "median": 0.0366
-    }
-   }
-  },
-  "flat_turnover": {
-   "\u00a31": {
-    "monthly_turnover_gbp": 30.0,
-    "monthly_expected_profit_gbp": 1.52
-   },
-   "\u00a35": {
-    "monthly_turnover_gbp": 150.0,
-    "monthly_expected_profit_gbp": 7.58
-   },
-   "\u00a310": {
-    "monthly_turnover_gbp": 300.0,
-    "monthly_expected_profit_gbp": 15.16
-   }
-  },
-  "bankroll_scenarios": {
-   "\u00a350": {
-    "stake_gbp": 1.0,
-    "daily_cap_gbp": 5.0,
-    "max_bets_per_day": 5,
-    "expected_profit_per_month_theoretical_gbp": 1.52,
-    "expected_profit_per_month_after_daily_cap_gbp": 1.08,
-    "expected_turnover_per_month_gbp": 15.0
-   },
-   "\u00a3100": {
-    "stake_gbp": 2.0,
-    "daily_cap_gbp": 10.0,
-    "max_bets_per_day": 5,
-    "expected_profit_per_month_theoretical_gbp": 3.03,
-    "expected_profit_per_month_after_daily_cap_gbp": 2.16,
-    "expected_turnover_per_month_gbp": 30.0
-   },
-   "\u00a3250": {
-    "stake_gbp": 5.0,
-    "daily_cap_gbp": 25.0,
-    "max_bets_per_day": 5,
-    "expected_profit_per_month_theoretical_gbp": 7.58,
-    "expected_profit_per_month_after_daily_cap_gbp": 5.4,
-    "expected_turnover_per_month_gbp": 75.0
-   },
-   "\u00a3500": {
-    "stake_gbp": 10.0,
-    "daily_cap_gbp": 50.0,
-    "max_bets_per_day": 5,
-    "expected_profit_per_month_theoretical_gbp": 15.16,
-    "expected_profit_per_month_after_daily_cap_gbp": 10.8,
-    "expected_turnover_per_month_gbp": 150.0
-   },
-   "\u00a31000": {
-    "stake_gbp": 20.0,
-    "daily_cap_gbp": 100.0,
-    "max_bets_per_day": 5,
-    "expected_profit_per_month_theoretical_gbp": 30.32,
-    "expected_profit_per_month_after_daily_cap_gbp": 21.59,
-    "expected_turnover_per_month_gbp": 300.0
-   }
-  },
-  "limits": {
-   "theoretical": "all qualifying bets staked (no caps) \u2014 bankroll_scenarios.*.theoretical",
-   "opportunity": "30.0 qualifying bets/month observed \u2014 the binding limit while this is small",
-   "daily_cap": "bets beyond the daily cap dropped (lowest EV first) \u2014 bankroll_scenarios.*.after_daily_cap",
-   "bankroll": "stake = fraction of bankroll (illustrative 2%; live policy is \u00a31 flat)",
-   "execution_price": "UNMEASURED \u2014 needs Bet Log fills (odds taken vs card price, min-odds misses)"
-  },
-  "caveat": "Expected profit uses the model's own EV estimates; real edge is unproven until settled results and CLV accrue."
+  "note": "no qualifying bets under the current rule in the observed window"
  },
  "rejections": {
-  "predictions_evaluated": 182,
+  "predictions_evaluated": 676,
   "rejections_by_reason": {
-   "NET_EV_NOT_POSITIVE": 171,
+   "ENGINE_STATUS_INELIGIBLE": 488,
+   "NET_EV_NOT_POSITIVE": 355,
+   "P_BELOW_FLOOR": 235,
+   "NO_EXECUTABLE_PRICE": 234,
+   "COMMISSION_UNKNOWN": 51,
    "PREDICTION_NOT_VALID": 21,
-   "EXCHANGE_SPREAD_TOO_WIDE": 8,
-   "COMMISSION_UNKNOWN": 6,
-   "NET_EV_BELOW_PAPER_GATE": 4,
-   "ODDS_BELOW_PAYOUT_FLOOR": 2,
-   "PROBABILITY_NOT_SAME_SNAPSHOT": 1,
-   "P_BELOW_FLOOR": 1
+   "EXCHANGE_SPREAD_TOO_WIDE": 6,
+   "NET_EV_BELOW_PAPER_GATE": 5,
+   "ODDS_BELOW_PAYOUT_FLOOR": 3,
+   "PROBABILITY_NOT_SAME_SNAPSHOT": 1
   }
  },
  "scenario_policy_note": "Bankroll scenarios are illustrative (2% flat, 10% daily cap); live policy stays \u00a31 flat, \u00a35/day."

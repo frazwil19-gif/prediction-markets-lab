@@ -1,18 +1,18 @@
 {
- "generated_at": "2026-10-08T00:55:48.466420+00:00",
+ "generated_at": "2026-10-09T01:11:06.500870+00:00",
  "month": "2026-10",
- "account_used_month_to_date_latest_counter": 43,
- "projected_month_end_at_current_rate": 167,
+ "account_used_month_to_date_latest_counter": 68,
+ "projected_month_end_at_current_rate": 234,
  "by_consumer": {
   "football_daily_scan": {
-   "paid_calls": 0,
-   "credits_charged": 0,
+   "paid_calls": 6,
+   "credits_charged": 9,
    "skipped_calls": 36,
    "credits_saved_estimate": 54
   },
   "football_shadow_scan": {
-   "paid_calls": 0,
-   "credits_charged": 0,
+   "paid_calls": 10,
+   "credits_charged": 10,
    "skipped_calls": 60,
    "credits_saved_estimate": 60
   },
@@ -29,8 +29,8 @@
    "credits_saved_estimate": 0
   },
   "tennis_prediction_board": {
-   "paid_calls": 34,
-   "credits_charged": 34,
+   "paid_calls": 38,
+   "credits_charged": 38,
    "skipped_calls": 0,
    "credits_saved_estimate": 0
   }
@@ -42,10 +42,10 @@
     100
    ],
    "plan_a_to_date_range": [
-    18.7,
-    26.7
+    21.0,
+    30.0
    ],
-   "actual_to_date": 0
+   "actual_to_date": 9
   },
   "football_settlement": {
    "plan_a_month_range": [
@@ -54,7 +54,7 @@
    ],
    "plan_a_to_date_range": [
     0.0,
-    5.3
+    6.0
    ],
    "actual_to_date": 0
   },
@@ -64,10 +64,10 @@
     150
    ],
    "plan_a_to_date_range": [
-    26.7,
-    40.0
+    30.0,
+    45.0
    ],
-   "actual_to_date": 34
+   "actual_to_date": 38
   },
   "nba_prediction_board": {
    "plan_a_month_range": [
@@ -75,16 +75,114 @@
     60
    ],
    "plan_a_to_date_range": [
-    5.3,
-    16.0
+    6.0,
+    18.0
    ],
    "actual_to_date": 0
   }
  },
  "football_counterfactual": {
-  "scan_days_logged": 6,
-  "baseline_credits_if_ungated": 36,
-  "actual": 0
+  "scan_days_logged": 7,
+  "baseline_credits_if_ungated": 42,
+  "actual": 9
+ },
+ "utilisation": {
+  "month": "2026-10",
+  "day_of_month": 9,
+  "consumers": {
+   "football_daily_scan": {
+    "allocation": 160,
+    "consumed": 9,
+    "unused": 151,
+    "utilisation_pct": 5.6,
+    "projected_month_end": 31.0,
+    "useful_outputs": {
+     "predictions": 488,
+     "qualifying_bets": 0,
+     "predictions_per_credit": 54.22
+    },
+    "recommendation": "under-used (projected 31.0 of 160); candidate to release ~129 credits \u2014 review, no auto change"
+   },
+   "football_settlement": {
+    "allocation": 20,
+    "consumed": 0,
+    "unused": 20,
+    "utilisation_pct": 0.0,
+    "projected_month_end": 0.0,
+    "useful_outputs": {
+     "predictions": 0,
+     "qualifying_bets": 0,
+     "predictions_per_credit": null
+    },
+    "recommendation": "idle so far (fixture gate / season not started / nothing to settle) \u2014 not evidence of over-allocation; review at month end"
+   },
+   "tennis_prediction_board": {
+    "allocation": 150,
+    "consumed": 38,
+    "unused": 112,
+    "utilisation_pct": 25.3,
+    "projected_month_end": 130.9,
+    "useful_outputs": {
+     "predictions": 159,
+     "qualifying_bets": 0,
+     "predictions_per_credit": 4.18
+    },
+    "recommendation": "on plan"
+   },
+   "nba_prediction_board": {
+    "allocation": 55,
+    "consumed": 0,
+    "unused": 55,
+    "utilisation_pct": 0.0,
+    "projected_month_end": 0.0,
+    "useful_outputs": {
+     "predictions": 0,
+     "qualifying_bets": 0,
+     "predictions_per_credit": null
+    },
+    "recommendation": "idle so far (fixture gate / season not started / nothing to settle) \u2014 not evidence of over-allocation; review at month end"
+   },
+   "us_sports_board": {
+    "allocation": 40,
+    "consumed": 2,
+    "unused": 38,
+    "utilisation_pct": 5.0,
+    "projected_month_end": 6.9,
+    "useful_outputs": {
+     "predictions": 11,
+     "qualifying_bets": 0,
+     "predictions_per_credit": 5.5
+    },
+    "recommendation": "under-used (projected 6.9 of 40); candidate to release ~33 credits \u2014 review, no auto change"
+   },
+   "pre_close_capture": {
+    "allocation": 25,
+    "consumed": 0,
+    "unused": 25,
+    "utilisation_pct": 0.0,
+    "projected_month_end": 0.0,
+    "useful_outputs": {
+     "predictions": 0,
+     "qualifying_bets": 0,
+     "predictions_per_credit": null
+    },
+    "recommendation": "idle so far (fixture gate / season not started / nothing to settle) \u2014 not evidence of over-allocation; review at month end"
+   },
+   "clv_capture": {
+    "allocation": 100,
+    "consumed": 0,
+    "unused": 100,
+    "utilisation_pct": 0.0,
+    "projected_month_end": 0.0,
+    "useful_outputs": {
+     "predictions": 0,
+     "qualifying_bets": 0,
+     "predictions_per_credit": null
+    },
+    "recommendation": "idle so far (fixture gate / season not started / nothing to settle) \u2014 not evidence of over-allocation; review at month end"
+   }
+  },
+  "note": "Early-month projections are noisy; season starts (NBA 20 Oct) change the picture. Recommendations are advisory \u2014 any cap change is a versioned config change approved by Fraser."
  },
  "note": "credits_saved_estimate = markets x regions of each skipped odds call; settlement scores and research calls are not in the shared ledger yet (account counter covers them)."
 }
