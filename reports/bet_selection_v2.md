@@ -4,60 +4,60 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-08T20:48Z · events scanned 124 · valid predictions 534 · high-P (≥70%) 142 · priced 249 · PAPER_BET 0 · MULTI-research 8 · WATCH 1 · REJECT 526 · new paper bets 0 · Money Card qualified 0
+Run 2026-10-09T06:16Z · events scanned 126 · valid predictions 642 · high-P (≥70%) 181 · priced 306 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 643 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 488 · PRICE_STALE 265 · P_BELOW_FLOOR 235 · NO_EXECUTABLE_PRICE 234 · NET_EV_NOT_POSITIVE 218 · COMMISSION_UNKNOWN 51 · EXCHANGE_SPREAD_TOO_WIDE 6 · NET_EV_BELOW_PAPER_GATE 2 · PREDICTION_NOT_VALID 1 · ODDS_BELOW_PAYOUT_FLOOR 1
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 615 · P_BELOW_FLOOR 298 · NO_EXECUTABLE_PRICE 297 · NET_EV_NOT_POSITIVE 265 · PRICE_STALE 160 · COMMISSION_UNKNOWN 39 · EXCHANGE_SPREAD_TOO_WIDE 6 · PREDICTION_NOT_VALID 1
 
 ## Candidates (latest run, best price per prediction)
 
 | Event | Start | Sel | P | Fair | Odds (source) | Break-even | Net EV | Decision |
 |---|---|---|---|---|---|---|---|---|
-| Juan Manuel Cerundolo v Carlos Alcaraz | 2026-10-10T04:00 | Carlos Alcaraz | 94.9% | 1.05 | 1.05 (betfair_ex_uk) | 95.5% | -0.6% | MULTI_RESEARCH_ELIGIBLE |
-| Camilo Ugo Carabelli v Felix Auger-Aliassime | 2026-10-10T04:00 | Felix Auger-Aliassime | 94.6% | 1.06 | 1.05 (casumo) | 95.2% | -0.6% | MULTI_RESEARCH_ELIGIBLE |
+| Barcelona v Getafe | 2026-10-10T16:30 | 1X | 96.3% | 1.04 | — | — | — | REJECT |
+| Paris Saint Germain v Le Mans FC | 2026-10-10T18:45 | 1X | 95.9% | 1.04 | — | — | — | REJECT |
+| Juan Manuel Cerundolo v Carlos Alcaraz | 2026-10-10T04:00 | Carlos Alcaraz | 94.9% | 1.05 | 1.05 (betfair_ex_uk) | 95.5% | -0.6% | REJECT |
+| Camilo Ugo Carabelli v Felix Auger-Aliassime | 2026-10-10T04:00 | Felix Auger-Aliassime | 94.6% | 1.06 | 1.05 (betfair_ex_uk) | 95.5% | -0.9% | REJECT |
+| Inter Milan v Parma | 2026-10-10T16:00 | 1X | 94.5% | 1.06 | — | — | — | REJECT |
 | Rangers v Kilmarnock | 2026-10-10T14:00 | 1X | 93.9% | 1.07 | — | — | — | REJECT |
+| Barcelona v Getafe | 2026-10-10T16:30 | 12 | 92.7% | 1.08 | — | — | — | REJECT |
+| Paris Saint Germain v Le Mans FC | 2026-10-10T18:45 | 12 | 92.0% | 1.09 | — | — | — | REJECT |
 | Augsburg v Bayern Munich | 2026-10-10T13:30 | X2 | 91.5% | 1.09 | — | — | — | REJECT |
+| CS Maritimo v FC Porto | 2026-10-10T17:00 | X2 | 90.4% | 1.11 | — | — | — | REJECT |
 | PSV Eindhoven v Heerenveen | 2026-10-09T18:00 | 1X | 89.9% | 1.11 | — | — | — | REJECT |
-| Arthur Fils v Pavel Kotov | 2026-10-10T04:00 | Arthur Fils | 88.5% | 1.13 | 1.12 (betfair_ex_uk) | 89.8% | -1.4% | MULTI_RESEARCH_ELIGIBLE |
+| Barcelona v Getafe | 2026-10-10T16:30 | home | 89.1% | 1.12 | 1.10 (smarkets) | 91.1% | -2.2% | REJECT |
+| Inter Milan v Parma | 2026-10-10T16:00 | 12 | 88.8% | 1.13 | — | — | — | REJECT |
+| Arthur Fils v Pavel Kotov | 2026-10-10T04:00 | Arthur Fils | 88.5% | 1.13 | 1.12 (betfair_ex_uk) | 89.8% | -1.4% | REJECT |
 | Rangers v Kilmarnock | 2026-10-10T14:00 | 12 | 88.5% | 1.13 | — | — | — | REJECT |
 | Augsburg v Bayern Munich | 2026-10-10T13:30 | 12 | 88.3% | 1.13 | — | — | — | REJECT |
+| Ajax v NEC Nijmegen | 2026-10-10T19:00 | 1X | 88.2% | 1.13 | — | — | — | REJECT |
 | Arsenal v Leeds United | 2026-10-10T11:30 | 1X | 88.1% | 1.13 | — | — | — | REJECT |
 | Borussia Dortmund v Werder Bremen | 2026-10-09T18:30 | 1X | 87.9% | 1.14 | — | — | — | REJECT |
-| Ben Shelton v Daniel Altmaier | 2026-10-09T04:00 | Ben Shelton | 87.3% | 1.14 | 1.14 (betfair_ex_uk) | 88.3% | -1.0% | MULTI_RESEARCH_ELIGIBLE |
-| Alexander Zverev v Wu Yibing | 2026-10-09T05:10 | Alexander Zverev | 86.8% | 1.15 | 1.15 (betfair_ex_uk) | 87.5% | -0.8% | MULTI_RESEARCH_ELIGIBLE |
+| Paris Saint Germain v Le Mans FC | 2026-10-10T18:45 | home | 87.7% | 1.14 | 1.10 (coral) | 90.9% | -3.5% | REJECT |
+| RAAL La Louvière v Club Brugge | 2026-10-10T16:15 | X2 | 86.8% | 1.15 | — | — | — | REJECT |
 | PSV Eindhoven v Heerenveen | 2026-10-09T18:00 | 12 | 86.7% | 1.15 | — | — | — | REJECT |
+| Real Madrid v Villarreal | 2026-10-10T19:00 | 1X | 85.9% | 1.16 | — | — | — | REJECT |
+| Lille v Le Havre | 2026-10-10T15:15 | 1X | 85.9% | 1.16 | — | — | — | REJECT |
+| Genk v KV Kortrijk | 2026-10-10T18:45 | 1X | 85.9% | 1.16 | — | — | — | REJECT |
 | TSG Hoffenheim v Hamburger SV | 2026-10-10T13:30 | 1X | 85.5% | 1.17 | — | — | — | REJECT |
+| Napoli v Frosinone | 2026-10-10T18:45 | 1X | 85.5% | 1.17 | — | — | — | REJECT |
+| Fortuna Sittard v FC Twente Enschede | 2026-10-10T18:00 | X2 | 84.8% | 1.18 | — | — | — | REJECT |
 | Stockport County FC v Barnsley | 2026-10-10T14:00 | 1X | 84.4% | 1.18 | — | — | — | REJECT |
 | Hearts v St Mirren | 2026-10-10T14:00 | 1X | 84.4% | 1.18 | — | — | — | REJECT |
 | Plymouth Argyle v Wimbledon | 2026-10-10T11:30 | 1X | 84.3% | 1.19 | — | — | — | REJECT |
 | West Ham United v Queens Park Rangers | 2026-10-09T19:00 | 1X | 84.1% | 1.19 | — | — | — | REJECT |
-| Daniil Medvedev v Jan-Lennard Struff | 2026-10-10T04:00 | Daniil Medvedev | 83.6% | 1.20 | 1.18 (casumo) | 84.7% | -1.4% | MULTI_RESEARCH_ELIGIBLE |
+| Ajax v NEC Nijmegen | 2026-10-10T19:00 | 12 | 83.8% | 1.19 | — | — | — | REJECT |
+| Daniil Medvedev v Jan-Lennard Struff | 2026-10-10T04:00 | Daniil Medvedev | 83.6% | 1.20 | 1.18 (betfair_ex_uk) | 85.4% | -2.1% | REJECT |
+| Inter Milan v Parma | 2026-10-10T16:00 | home | 83.3% | 1.20 | 1.15 (smarkets) | 87.2% | -4.5% | REJECT |
+| Real Madrid v Villarreal | 2026-10-10T19:00 | 12 | 83.2% | 1.20 | — | — | — | REJECT |
 | Montpellier v Grenoble | 2026-10-09T18:00 | 1X | 83.1% | 1.20 | — | — | — | REJECT |
 | Borussia Dortmund v Werder Bremen | 2026-10-09T18:30 | 12 | 83.1% | 1.20 | — | — | — | REJECT |
-| Yi Zhou v Lorenzo Musetti | 2026-10-09T11:10 | Lorenzo Musetti | 82.4% | 1.21 | 1.22 (sport888) | 82.0% | 0.6% | REJECT |
-| Yi Zhou v Lorenzo Musetti | 2026-10-09T11:10 | Lorenzo Musetti | 82.4% | 1.21 | 1.22 (sport888) | 82.0% | 0.6% | MULTI_RESEARCH_ELIGIBLE |
-| Rangers v Kilmarnock | 2026-10-10T14:00 | home | 82.3% | 1.21 | 1.17 (william hill) | 85.5% | -3.7% | REJECT |
-| Stockport County FC v Barnsley | 2026-10-10T14:00 | 12 | 81.3% | 1.23 | — | — | — | REJECT |
-| Oldham Athletic v Accrington Stanley | 2026-10-10T11:30 | 1X | 81.1% | 1.23 | — | — | — | REJECT |
-| TSG Hoffenheim v Hamburger SV | 2026-10-10T13:30 | 12 | 81.0% | 1.23 | — | — | — | REJECT |
-| York City v Northampton Town | 2026-10-10T14:00 | 1X | 80.6% | 1.24 | — | — | — | REJECT |
-| SC Paderborn v VfB Stuttgart | 2026-10-10T13:30 | X2 | 80.2% | 1.25 | — | — | — | REJECT |
-| Arsenal v Leeds United | 2026-10-10T11:30 | 12 | 80.2% | 1.25 | — | — | — | REJECT |
-| Leicester City v Peterborough United | 2026-10-10T14:00 | 1X | 80.2% | 1.25 | — | — | — | REJECT |
-| Hearts v St Mirren | 2026-10-10T14:00 | 12 | 80.1% | 1.25 | — | — | — | REJECT |
-| Elise Mertens v Iga Swiatek | 2026-10-09T11:00 | Iga Swiatek | 80.0% | 1.25 | 1.24 (betfair_ex_uk) | 81.4% | -1.8% | MULTI_RESEARCH_ELIGIBLE |
-| Doncaster Rovers v Burton Albion | 2026-10-10T14:00 | 1X | 79.9% | 1.25 | — | — | — | REJECT |
-| Augsburg v Bayern Munich | 2026-10-10T13:30 | away | 79.6% | 1.26 | 1.20 (smarkets) | 83.6% | -4.7% | REJECT |
-| Bradford City v Leyton Orient | 2026-10-10T14:00 | 1X | 79.6% | 1.26 | — | — | — | REJECT |
-| Crawley Town v Chesterfield FC | 2026-10-10T14:00 | X2 | 79.5% | 1.26 | — | — | — | REJECT |
-| West Ham United v Queens Park Rangers | 2026-10-09T19:00 | 12 | 79.3% | 1.26 | — | — | — | REJECT |
-| SC Paderborn v VfB Stuttgart | 2026-10-10T13:30 | 12 | 79.1% | 1.26 | — | — | — | REJECT |
-| Leicester City v Peterborough United | 2026-10-10T14:00 | 12 | 78.9% | 1.27 | — | — | — | REJECT |
+| Yi Zhou v Lorenzo Musetti | 2026-10-09T11:10 | Lorenzo Musetti | 82.4% | 1.21 | 1.21 (betfair_ex_uk) | 83.4% | -1.1% | REJECT |
+| Yi Zhou v Lorenzo Musetti | 2026-10-09T11:10 | Lorenzo Musetti | 82.4% | 1.21 | 1.21 (betfair_ex_uk) | 83.4% | -1.1% | REJECT |
 
 ## Paper results (all time)
 
 Selections 1 · settled 1 · pending 0 · win rate 0.0% · avg P 59.9% · avg odds 1.73 · expected net +0.04u · realised net -1.00u · yield -100.0% · max DD 1.00u · longest losing streak 1
 
-Days evaluated 10 · no-bet days 9 (2026-09-30, 2026-10-01, 2026-10-02, 2026-10-03, 2026-10-04, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-08)
+Days evaluated 11 · no-bet days 10 (2026-09-30, 2026-10-01, 2026-10-02, 2026-10-03, 2026-10-04, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-08, 2026-10-09)
 
 ## Bankroll simulations (descriptive; small samples prove nothing)
 
