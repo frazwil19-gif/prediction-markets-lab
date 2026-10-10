@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T01:10:51.334244+00:00",
+ "generated_at": "2026-10-10T00:42:18.105960+00:00",
  "mode": "SHADOW (no ledger writes)",
  "football_data_sources": {
   "B1": "https://www.football-data.co.uk/mmz4281/2627/B1.csv",
@@ -540,8 +540,10 @@
   ]
  },
  "fd_internal_inconsistencies": 0,
- "fixture_comparisons_total": 0,
- "fixture_status_counts": {},
+ "fixture_comparisons_total": 1,
+ "fixture_status_counts": {
+  "NOT_FOUND": 1
+ },
  "disagreement_examples": [],
  "migration_gate": {
   "min_comparisons": 100,

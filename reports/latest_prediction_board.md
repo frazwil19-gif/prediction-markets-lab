@@ -1,10 +1,10 @@
-# DAILY PREDICTION BOARD — 2026-10-09
+# DAILY PREDICTION BOARD — 2026-10-10
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 130 · Valid predictions: 646 · Sports: football, icehockey, tennis
-Counts: >=70: 185 · >=75: 102 · >=80: 58 · >=85: 29 · >=90: 11 · >=95: 3
-Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 405
+Upcoming events: 110 · Valid predictions: 545 · Sports: football, icehockey, tennis
+Counts: >=70: 156 · >=75: 90 · >=80: 52 · >=85: 26 · >=90: 11 · >=95: 3
+Settled yesterday: 7 · System: **HEALTHY** · API credits (last observed): 405
 
 ## Top predictions (P ≥ 80%)
 
@@ -21,7 +21,6 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 405
 | football | Augsburg v Bayern Munich | 2026-10-10T13:30 | double_chance | X2 | 91.5% | 1.09 | 90-94.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.07 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | CS Maritimo v FC Porto | 2026-10-10T17:00 | double_chance | X2 | 90.4% | 1.11 | 90-94.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.07 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | tennis | Hubert Hurkacz v Yi Zhou | 2026-10-11T04:00 | match_winner | Hubert Hurkacz | 90.2% | 1.11 | 90-94.9% | atp_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.04 (betfair_ex_uk back (odds_api)) | no | yes |
-| football | PSV Eindhoven v Heerenveen | 2026-10-09T18:00 | double_chance | 1X | 89.9% | 1.11 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.09 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Barcelona v Getafe | 2026-10-10T16:30 | 1x2 | home | 89.1% | 1.12 | 85-89.9% | football_1x2.market_consensus@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.10 (odds_api:Smarkets) | no | yes |
 | football | Inter Milan v Parma | 2026-10-10T16:00 | double_chance | 12 | 88.8% | 1.13 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.10 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | tennis | Arthur Fils v Pavel Kotov | 2026-10-10T06:20 ⟳ | match_winner | Arthur Fils | 88.5% | 1.13 | 85-89.9% | atp_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.12 (betfair_ex_uk back (odds_api)) | no | yes |
@@ -29,10 +28,8 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 405
 | football | Augsburg v Bayern Munich | 2026-10-10T13:30 | double_chance | 12 | 88.3% | 1.13 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.10 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Ajax v NEC Nijmegen | 2026-10-10T19:00 | double_chance | 1X | 88.2% | 1.13 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.09 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Arsenal v Leeds United | 2026-10-10T11:30 | double_chance | 1X | 88.1% | 1.13 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.11 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Borussia Dortmund v Werder Bremen | 2026-10-09T18:30 | double_chance | 1X | 87.9% | 1.14 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.12 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Paris Saint Germain v Le Mans FC | 2026-10-10T18:45 | 1x2 | home | 87.7% | 1.14 | 85-89.9% | football_1x2.market_consensus@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.10 (odds_api:Coral) | no | yes |
 | football | RAAL La Louvière v Club Brugge | 2026-10-10T16:15 | double_chance | X2 | 86.8% | 1.15 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.11 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | PSV Eindhoven v Heerenveen | 2026-10-09T18:00 | double_chance | 12 | 86.7% | 1.15 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.14 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Real Madrid v Villarreal | 2026-10-10T19:00 | double_chance | 1X | 85.9% | 1.16 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.14 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Lille v Le Havre | 2026-10-10T15:15 | double_chance | 1X | 85.9% | 1.16 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.13 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Genk v KV Kortrijk | 2026-10-10T18:45 | double_chance | 1X | 85.9% | 1.16 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.12 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
@@ -43,13 +40,10 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 405
 | football | Stockport County FC v Barnsley | 2026-10-10T14:00 | double_chance | 1X | 84.4% | 1.18 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.14 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Hearts v St Mirren | 2026-10-10T14:00 | double_chance | 1X | 84.4% | 1.18 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.14 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Plymouth Argyle v Wimbledon | 2026-10-10T11:30 | double_chance | 1X | 84.3% | 1.19 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.15 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | West Ham United v Queens Park Rangers | 2026-10-09T19:00 | double_chance | 1X | 84.1% | 1.19 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.16 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Ajax v NEC Nijmegen | 2026-10-10T19:00 | double_chance | 12 | 83.8% | 1.19 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.14 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | tennis | Daniil Medvedev v Jan-Lennard Struff | 2026-10-10T04:00 | match_winner | Daniil Medvedev | 83.6% | 1.20 | 80-84.9% | atp_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.18 (betfair_ex_uk back (odds_api)) | no | yes |
 | football | Inter Milan v Parma | 2026-10-10T16:00 | 1x2 | home | 83.3% | 1.20 | 80-84.9% | football_1x2.market_consensus@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.15 (odds_api:Smarkets) | no | yes |
 | football | Real Madrid v Villarreal | 2026-10-10T19:00 | double_chance | 12 | 83.2% | 1.20 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Montpellier v Grenoble | 2026-10-09T18:00 | double_chance | 1X | 83.1% | 1.20 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.16 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Borussia Dortmund v Werder Bremen | 2026-10-09T18:30 | double_chance | 12 | 83.1% | 1.20 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Rangers v Kilmarnock | 2026-10-10T14:00 | 1x2 | home | 82.3% | 1.21 | 80-84.9% | football_1x2.market_consensus@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.17 (odds_api:William Hill) | no | yes |
 | tennis | Alexander Bublik v Brandon Nakashima | 2026-10-11T04:00 | match_winner | Brandon Nakashima | 81.7% | 1.22 | 80-84.9% | atp_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.10 (betfair_ex_uk back (odds_api)) | no | yes |
 | football | AS Monaco v Toulouse | 2026-10-10T18:45 | double_chance | 1X | 81.3% | 1.23 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.20 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
@@ -88,7 +82,7 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 405
 - daily_scan: OK (last 2026-10-09T06:16:41.543524+00:00)
 - settlement: OK (last 2026-10-09T01:11:06.781879+00:00)
 - tennis_board: OK (last 2026-10-09T15:16:32.961666+00:00)
-- ci_tests: OK (last 2026-10-09T15:16:34.459500+00:00)
+- ci_tests: OK (last 2026-10-10T00:42:18.891712+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 

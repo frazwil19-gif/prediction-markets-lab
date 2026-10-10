@@ -1,12 +1,12 @@
 {
  "report_version": "qtc-2",
- "generated_at": "2026-10-09T01:11:06.579850+00:00",
+ "generated_at": "2026-10-10T00:42:39.161073+00:00",
  "capacity_rule_version": "bsv2-4",
  "paper_bets_by_rule_version": {
   "bsv2-1": 9,
   "bsv2-3": 1
  },
- "runs_under_current_rule": 21,
+ "runs_under_current_rule": 24,
  "expected_vs_realised": {
   "settled_bets": 9,
   "stake_per_bet_gbp": 1.0,
@@ -22,22 +22,23 @@
   "qualifying_bets": 0,
   "observed_window": [
    "2026-10-01",
-   "2026-10-09"
+   "2026-10-10"
   ],
   "note": "no qualifying bets under the current rule in the observed window"
  },
  "rejections": {
-  "predictions_evaluated": 676,
+  "predictions_evaluated": 818,
   "rejections_by_reason": {
-   "ENGINE_STATUS_INELIGIBLE": 488,
-   "NET_EV_NOT_POSITIVE": 355,
-   "P_BELOW_FLOOR": 235,
-   "NO_EXECUTABLE_PRICE": 234,
-   "COMMISSION_UNKNOWN": 51,
-   "PREDICTION_NOT_VALID": 21,
-   "EXCHANGE_SPREAD_TOO_WIDE": 6,
-   "NET_EV_BELOW_PAPER_GATE": 5,
-   "ODDS_BELOW_PAYOUT_FLOOR": 3,
+   "ENGINE_STATUS_INELIGIBLE": 615,
+   "NET_EV_NOT_POSITIVE": 424,
+   "P_BELOW_FLOOR": 298,
+   "NO_EXECUTABLE_PRICE": 297,
+   "COMMISSION_UNKNOWN": 49,
+   "PREDICTION_NOT_VALID": 22,
+   "PRICE_STALE": 8,
+   "EXCHANGE_SPREAD_TOO_WIDE": 7,
+   "NET_EV_BELOW_PAPER_GATE": 4,
+   "ODDS_BELOW_PAYOUT_FLOOR": 2,
    "PROBABILITY_NOT_SAME_SNAPSHOT": 1
   }
  },

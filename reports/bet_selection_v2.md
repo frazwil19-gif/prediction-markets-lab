@@ -1,4 +1,4 @@
-# BET-SELECTION V2 — PAPER RESEARCH (2026-10-09)
+# BET-SELECTION V2 — PAPER RESEARCH (2026-10-10)
 
 _Paper only. Real money disabled. Not a betting card; the Money Card is separate and unchanged._
 
