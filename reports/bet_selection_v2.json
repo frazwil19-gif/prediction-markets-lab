@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-10-10T12:54:07.515295+00:00",
+ "generated_at": "2026-10-10T15:16:21.555514+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-4",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 34,
+  "runs": 35,
   "totals_over_runs": {
-   "events_scanned": 1812,
-   "valid_predictions": 5234,
-   "high_p_candidates": 1611,
-   "priced_candidates": 2909,
+   "events_scanned": 1904,
+   "valid_predictions": 5582,
+   "high_p_candidates": 1717,
+   "priced_candidates": 3080,
    "PAPER_BET": 19,
-   "MULTI_RESEARCH_ELIGIBLE": 165,
+   "MULTI_RESEARCH_ELIGIBLE": 167,
    "WATCH": 58,
-   "REJECT": 5221,
+   "REJECT": 5570,
    "paper_bets_added": 10,
    "money_card_qualified": 0
   },
@@ -38,36 +38,36 @@
   }
  },
  "latest_run": {
-  "run_at": "2026-10-10T12:54:07.515295+00:00",
-  "trigger": "schedule",
+  "run_at": "2026-10-10T15:16:21.555514+00:00",
+  "trigger": "workflow_dispatch",
   "rule_version": "bsv2-4",
-  "events_scanned": "139",
-  "valid_predictions": "666",
-  "high_p_candidates": "188",
-  "priced_candidates": "314",
+  "events_scanned": "92",
+  "valid_predictions": "348",
+  "high_p_candidates": "106",
+  "priced_candidates": "171",
   "PAPER_BET": "0",
   "MULTI_RESEARCH_ELIGIBLE": "2",
   "WATCH": "0",
-  "REJECT": "666",
+  "REJECT": "349",
   "paper_bets_added": "0",
-  "snapshots_added": "224",
+  "snapshots_added": "273",
   "money_card_qualified": "0",
   "football_fixtures_on_card": "155"
  },
  "latest_decisions": {
   "decisions": {
-   "REJECT": 666,
+   "REJECT": 349,
    "MULTI_RESEARCH_ELIGIBLE": 2
   },
   "reason_counts": {
-   "ENGINE_STATUS_INELIGIBLE": 629,
-   "PRICE_STALE": 327,
-   "P_BELOW_FLOOR": 305,
-   "NO_EXECUTABLE_PRICE": 303,
-   "NET_EV_NOT_POSITIVE": 259,
-   "COMMISSION_UNKNOWN": 49,
-   "PREDICTION_NOT_VALID": 2,
-   "EXCHANGE_SPREAD_TOO_WIDE": 2,
+   "ENGINE_STATUS_INELIGIBLE": 307,
+   "PRICE_STALE": 158,
+   "P_BELOW_FLOOR": 151,
+   "NO_EXECUTABLE_PRICE": 150,
+   "NET_EV_NOT_POSITIVE": 139,
+   "COMMISSION_UNKNOWN": 27,
+   "EXCHANGE_SPREAD_TOO_WIDE": 7,
+   "PREDICTION_NOT_VALID": 3,
    "PROBABILITY_NOT_SAME_SNAPSHOT": 1
   },
   "by_sport": {
@@ -75,35 +75,38 @@
     "REJECT": 13
    },
    "football": {
-    "REJECT": 629
+    "REJECT": 307
    },
    "icehockey": {
     "REJECT": 14
    },
    "tennis": {
-    "REJECT": 10,
+    "REJECT": 15,
     "MULTI_RESEARCH_ELIGIBLE": 2
    }
   },
   "by_engine": {
    "atp_match_winner.betfair_market": {
-    "REJECT": 10,
+    "REJECT": 14,
     "MULTI_RESEARCH_ELIGIBLE": 2
    },
    "football_1x2.market_consensus": {
-    "REJECT": 303
+    "REJECT": 150
    },
    "football_double_chance.derived_1x2": {
-    "REJECT": 303
+    "REJECT": 150
    },
    "football_ou25.market": {
-    "REJECT": 23
+    "REJECT": 7
    },
    "nfl_moneyline.market": {
     "REJECT": 13
    },
    "nhl_moneyline.market": {
     "REJECT": 14
+   },
+   "wta_match_winner.betfair_market": {
+    "REJECT": 1
    }
   }
  },
