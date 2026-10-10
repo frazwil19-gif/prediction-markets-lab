@@ -1,0 +1,197 @@
+{
+ "n_bookmakers_in_response": 5,
+ "exchanges_present": [
+  "betfair_ex_uk"
+ ],
+ "exchange_commission": {
+  "betfair_ex_uk": 0.05
+ },
+ "markets": {
+  "alternate_totals_corners": {
+   "n_quotes": 26,
+   "bookmakers": [
+    "betfair_ex_uk",
+    "leovegas",
+    "livescorebet",
+    "paddypower",
+    "virginbet"
+   ],
+   "lines": {
+    "6.5": {
+     "n_books": 2,
+     "n_two_sided": 2,
+     "best_over": 1.13,
+     "median_over": 1.13,
+     "best_under": 4.7,
+     "median_under": 4.7,
+     "over_dispersion_best_worst": 0.0,
+     "under_dispersion_best_worst": 0.0,
+     "median_fair_p_over": 0.8062,
+     "fair_p_over_range": [
+      0.80617,
+      0.80617
+     ],
+     "median_overround": 0.0977
+    },
+    "7.5": {
+     "n_books": 3,
+     "n_two_sided": 3,
+     "best_over": 1.28,
+     "median_over": 1.28,
+     "best_under": 3.25,
+     "median_under": 3.25,
+     "over_dispersion_best_worst": 0.0079,
+     "under_dispersion_best_worst": 0.0317,
+     "median_fair_p_over": 0.7174,
+     "fair_p_over_range": [
+      0.71267,
+      0.71744
+     ],
+     "median_overround": 0.0889
+    },
+    "8.5": {
+     "n_books": 4,
+     "n_two_sided": 4,
+     "best_over": 1.53,
+     "median_over": 1.49,
+     "best_under": 2.54,
+     "median_under": 2.4,
+     "over_dispersion_best_worst": 0.0338,
+     "under_dispersion_best_worst": 0.0809,
+     "median_fair_p_over": 0.617,
+     "fair_p_over_range": [
+      0.61358,
+      0.62408
+     ],
+     "median_overround": 0.0878
+    },
+    "9.5": {
+     "n_books": 4,
+     "n_two_sided": 4,
+     "best_over": 1.91,
+     "median_over": 1.8,
+     "best_under": 1.88,
+     "median_under": 1.88,
+     "over_dispersion_best_worst": 0.0791,
+     "under_dispersion_best_worst": 0.0444,
+     "median_fair_p_over": 0.5109,
+     "fair_p_over_range": [
+      0.48518,
+      0.51507
+     ],
+     "median_overround": 0.0875
+    },
+    "10.5": {
+     "n_books": 5,
+     "n_two_sided": 5,
+     "best_over": 2.55,
+     "median_over": 2.25,
+     "best_under": 1.56,
+     "median_under": 1.55,
+     "over_dispersion_best_worst": 0.1333,
+     "under_dispersion_best_worst": 0.0759,
+     "median_fair_p_over": 0.4048,
+     "fair_p_over_range": [
+      0.3625,
+      0.40789
+     ],
+     "median_overround": 0.0896
+    },
+    "11.5": {
+     "n_books": 4,
+     "n_two_sided": 4,
+     "best_over": 3.3,
+     "median_over": 2.9,
+     "best_under": 1.34,
+     "median_under": 1.335,
+     "over_dispersion_best_worst": 0.1458,
+     "under_dispersion_best_worst": 0.0388,
+     "median_fair_p_over": 0.316,
+     "fair_p_over_range": [
+      0.28105,
+      0.31604
+     ],
+     "median_overround": 0.0911
+    },
+    "12.5": {
+     "n_books": 2,
+     "n_two_sided": 2,
+     "best_over": 3.8,
+     "median_over": 3.8,
+     "best_under": 1.2,
+     "median_under": 1.2,
+     "over_dispersion_best_worst": 0.0,
+     "under_dispersion_best_worst": 0.0,
+     "median_fair_p_over": 0.24,
+     "fair_p_over_range": [
+      0.24,
+      0.24
+     ],
+     "median_overround": 0.0965
+    },
+    "13.5": {
+     "n_books": 2,
+     "n_two_sided": 2,
+     "best_over": 5.1,
+     "median_over": 5.1,
+     "best_under": 1.11,
+     "median_under": 1.11,
+     "over_dispersion_best_worst": 0.0,
+     "under_dispersion_best_worst": 0.0,
+     "median_fair_p_over": 0.1787,
+     "fair_p_over_range": [
+      0.17874,
+      0.17874
+     ],
+     "median_overround": 0.097
+    }
+   },
+   "max_two_sided_books_on_one_line": 5,
+   "gate0": "A"
+  },
+  "alternate_totals_cards": {
+   "n_quotes": 6,
+   "bookmakers": [
+    "betfair_ex_uk",
+    "livescorebet",
+    "virginbet"
+   ],
+   "lines": {
+    "2.5": {
+     "n_books": 3,
+     "n_two_sided": 3,
+     "best_over": 1.58,
+     "median_over": 1.58,
+     "best_under": 2.26,
+     "median_under": 2.17,
+     "over_dispersion_best_worst": 0.0897,
+     "under_dispersion_best_worst": 0.0415,
+     "median_fair_p_over": 0.5787,
+     "fair_p_over_range": [
+      0.57867,
+      0.60916
+     ],
+     "median_overround": 0.0937
+    },
+    "3.5": {
+     "n_books": 3,
+     "n_two_sided": 3,
+     "best_over": 2.32,
+     "median_over": 2.32,
+     "best_under": 1.54,
+     "median_under": 1.52,
+     "over_dispersion_best_worst": 0.0943,
+     "under_dispersion_best_worst": 0.0132,
+     "median_fair_p_over": 0.3958,
+     "fair_p_over_range": [
+      0.39583,
+      0.42077
+     ],
+     "median_overround": 0.0889
+    }
+   },
+   "max_two_sided_books_on_one_line": 3,
+   "gate0": "A"
+  }
+ }
+}
