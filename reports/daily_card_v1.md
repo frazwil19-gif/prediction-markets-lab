@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-10-10T12:54Z (card-v1.1)
+# Daily Prediction Board & Bet Card — 2026-10-10T13:59Z (card-v1.1)
 
 **Mode: LIVE — manual £1 bets (you place them; nothing is automated)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 664 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 186 · research predictions: 324
+Predictions in the next window: 604 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 169 · research predictions: 320
 
 ## 1. Best predictions today
 
@@ -17,39 +17,39 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | 5 | football | Barcelona v Getafe | 2026-10-10T16:30 | double_chance | 12 | 92.7% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.08 | no price | no |
 | 6 | football | Benfica v Vitória SC | 2026-10-11T17:00 | double_chance | 1X | 92.4% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.08 | no price | no |
 | 7 | football | Paris Saint Germain v Le Mans FC | 2026-10-10T18:45 | double_chance | 12 | 92.0% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.09 | no price | no |
-| 8 | football | Augsburg v Bayern Munich | 2026-10-10T13:30 | double_chance | X2 | 91.5% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.09 | no price | no |
-| 9 | football | Union Saint-Gilloise v Leuven | 2026-10-11T14:00 | double_chance | 1X | 90.9% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.10 | no price | no |
-| 10 | football | CS Maritimo v FC Porto | 2026-10-10T17:00 | double_chance | X2 | 90.4% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.11 | no price | no |
-| 11 | football | Barcelona v Getafe | 2026-10-10T16:30 | 1x2 | home | 89.0% | 80%+ | 2.2% | PROSPECTIVE_SHADOW_LEAGUE | 1.12 | price not usable (stale/wide/unknown commission) | no |
-| 12 | football | Inter Milan v Parma | 2026-10-10T16:00 | double_chance | 12 | 88.8% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.13 | no price | no |
-| 13 | football | Rangers v Kilmarnock | 2026-10-10T14:00 | double_chance | 12 | 88.5% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.13 | no price | no |
-| 14 | football | Augsburg v Bayern Munich | 2026-10-10T13:30 | double_chance | 12 | 88.3% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.13 | no price | no |
-| 15 | football | Ajax v NEC Nijmegen | 2026-10-10T19:00 | double_chance | 1X | 88.2% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.13 | no price | no |
-| 16 | football | Paris Saint Germain v Le Mans FC | 2026-10-10T18:45 | 1x2 | home | 87.9% | 80%+ | 2.2% | PROSPECTIVE_SHADOW_LEAGUE | 1.14 | price not usable (stale/wide/unknown commission) | no |
-| 17 | football | RAAL La Louvière v Club Brugge | 2026-10-10T16:15 | double_chance | X2 | 86.8% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.15 | no price | no |
-| 18 | football | Real Madrid v Villarreal | 2026-10-10T19:00 | double_chance | 1X | 85.9% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.16 | no price | no |
-| 19 | tennis | Alexander Zverev v Quentin Halys | 2026-10-11T10:00 | match_winner | Alexander Zverev | 85.9% | 80%+ | 1.4% | VALIDATED | 1.16 | 1.16 (betfair_ex_uk) | no |
-| 20 | football | Lille v Le Havre | 2026-10-10T15:15 | double_chance | 1X | 85.9% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.16 | no price | no |
-| 21 | football | Genk v KV Kortrijk | 2026-10-10T18:45 | double_chance | 1X | 85.9% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.16 | no price | no |
-| 22 | football | Benfica v Vitória SC | 2026-10-11T17:00 | double_chance | 12 | 85.7% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.17 | no price | no |
-| 23 | tennis | Hubert Hurkacz v Yi Zhou | 2026-10-11T05:10 | match_winner | Hubert Hurkacz | 85.7% | 80%+ | 1.5% | VALIDATED | 1.17 | 1.16 (betfair_ex_uk) | no |
-| 24 | football | TSG Hoffenheim v Hamburger SV | 2026-10-10T13:30 | double_chance | 1X | 85.5% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.17 | no price | no |
-| 25 | football | Rennes v Auxerre | 2026-10-11T15:15 | double_chance | 1X | 85.5% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.17 | no price | no |
-| 26 | football | Napoli v Frosinone | 2026-10-10T18:45 | double_chance | 1X | 85.5% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.17 | no price | no |
-| 27 | football | Fortuna Sittard v FC Twente Enschede | 2026-10-10T18:00 | double_chance | X2 | 84.8% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.18 | no price | no |
-| 28 | football | Cagliari v Juventus | 2026-10-11T18:45 | double_chance | X2 | 84.5% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.18 | no price | no |
-| 29 | football | Stockport County FC v Barnsley | 2026-10-10T14:00 | double_chance | 1X | 84.4% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.18 | no price | no |
-| 30 | football | Hearts v St Mirren | 2026-10-10T14:00 | double_chance | 1X | 84.4% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.18 | no price | no |
-| 31 | football | Union Saint-Gilloise v Leuven | 2026-10-11T14:00 | double_chance | 12 | 84.1% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.19 | no price | no |
-| 32 | football | Ajax v NEC Nijmegen | 2026-10-10T19:00 | double_chance | 12 | 83.8% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.19 | no price | no |
-| 33 | football | Real Betis v CA Osasuna | 2026-10-11T16:30 | double_chance | 1X | 83.8% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.19 | no price | no |
-| 34 | football | Inter Milan v Parma | 2026-10-10T16:00 | 1x2 | home | 83.3% | 80%+ | 2.2% | PROSPECTIVE_SHADOW_LEAGUE | 1.20 | price not usable (stale/wide/unknown commission) | no |
-| 35 | football | FC Utrecht v Willem II | 2026-10-11T10:15 | double_chance | 1X | 83.3% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.20 | no price | no |
-| 36 | football | Real Madrid v Villarreal | 2026-10-10T19:00 | double_chance | 12 | 83.2% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.20 | no price | no |
-| 37 | football | Real Sociedad v Deportivo La Coruña | 2026-10-11T14:15 | double_chance | 1X | 82.8% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.21 | no price | no |
-| 38 | football | Lazio v Monza | 2026-10-11T13:00 | double_chance | 1X | 82.8% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.21 | no price | no |
-| 39 | football | Rangers v Kilmarnock | 2026-10-10T14:00 | 1x2 | home | 82.3% | 80%+ | 2.2% | PROSPECTIVE_SHADOW_LEAGUE | 1.21 | price not usable (stale/wide/unknown commission) | no |
-| 40 | football | SC Freiburg v FC Schalke 04 | 2026-10-11T15:30 | double_chance | 1X | 82.3% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.22 | no price | no |
+| 8 | football | Union Saint-Gilloise v Leuven | 2026-10-11T14:00 | double_chance | 1X | 90.9% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.10 | no price | no |
+| 9 | football | CS Maritimo v FC Porto | 2026-10-10T17:00 | double_chance | X2 | 90.4% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.11 | no price | no |
+| 10 | football | Barcelona v Getafe | 2026-10-10T16:30 | 1x2 | home | 89.0% | 80%+ | 2.2% | PROSPECTIVE_SHADOW_LEAGUE | 1.12 | price not usable (stale/wide/unknown commission) | no |
+| 11 | football | Inter Milan v Parma | 2026-10-10T16:00 | double_chance | 12 | 88.8% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.13 | no price | no |
+| 12 | football | Rangers v Kilmarnock | 2026-10-10T14:00 | double_chance | 12 | 88.5% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.13 | no price | no |
+| 13 | football | Ajax v NEC Nijmegen | 2026-10-10T19:00 | double_chance | 1X | 88.2% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.13 | no price | no |
+| 14 | football | Paris Saint Germain v Le Mans FC | 2026-10-10T18:45 | 1x2 | home | 87.9% | 80%+ | 2.2% | PROSPECTIVE_SHADOW_LEAGUE | 1.14 | price not usable (stale/wide/unknown commission) | no |
+| 15 | football | RAAL La Louvière v Club Brugge | 2026-10-10T16:15 | double_chance | X2 | 86.8% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.15 | no price | no |
+| 16 | football | Real Madrid v Villarreal | 2026-10-10T19:00 | double_chance | 1X | 85.9% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.16 | no price | no |
+| 17 | tennis | Alexander Zverev v Quentin Halys | 2026-10-11T10:00 | match_winner | Alexander Zverev | 85.9% | 80%+ | 1.4% | VALIDATED | 1.16 | 1.16 (betfair_ex_uk) | no |
+| 18 | football | Lille v Le Havre | 2026-10-10T15:15 | double_chance | 1X | 85.9% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.16 | no price | no |
+| 19 | football | Genk v KV Kortrijk | 2026-10-10T18:45 | double_chance | 1X | 85.9% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.16 | no price | no |
+| 20 | football | Benfica v Vitória SC | 2026-10-11T17:00 | double_chance | 12 | 85.7% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.17 | no price | no |
+| 21 | tennis | Hubert Hurkacz v Yi Zhou | 2026-10-11T05:10 | match_winner | Hubert Hurkacz | 85.7% | 80%+ | 1.5% | VALIDATED | 1.17 | 1.16 (betfair_ex_uk) | no |
+| 22 | football | Rennes v Auxerre | 2026-10-11T15:15 | double_chance | 1X | 85.5% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.17 | no price | no |
+| 23 | football | Napoli v Frosinone | 2026-10-10T18:45 | double_chance | 1X | 85.5% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.17 | no price | no |
+| 24 | football | Fortuna Sittard v FC Twente Enschede | 2026-10-10T18:00 | double_chance | X2 | 84.8% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.18 | no price | no |
+| 25 | football | Cagliari v Juventus | 2026-10-11T18:45 | double_chance | X2 | 84.5% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.18 | no price | no |
+| 26 | football | Stockport County FC v Barnsley | 2026-10-10T14:00 | double_chance | 1X | 84.4% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.18 | no price | no |
+| 27 | football | Hearts v St Mirren | 2026-10-10T14:00 | double_chance | 1X | 84.4% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.18 | no price | no |
+| 28 | football | Union Saint-Gilloise v Leuven | 2026-10-11T14:00 | double_chance | 12 | 84.1% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.19 | no price | no |
+| 29 | football | Ajax v NEC Nijmegen | 2026-10-10T19:00 | double_chance | 12 | 83.8% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.19 | no price | no |
+| 30 | football | Real Betis v CA Osasuna | 2026-10-11T16:30 | double_chance | 1X | 83.8% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.19 | no price | no |
+| 31 | football | Inter Milan v Parma | 2026-10-10T16:00 | 1x2 | home | 83.3% | 80%+ | 2.2% | PROSPECTIVE_SHADOW_LEAGUE | 1.20 | price not usable (stale/wide/unknown commission) | no |
+| 32 | football | FC Utrecht v Willem II | 2026-10-11T10:15 | double_chance | 1X | 83.3% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.20 | no price | no |
+| 33 | football | Real Madrid v Villarreal | 2026-10-10T19:00 | double_chance | 12 | 83.2% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.20 | no price | no |
+| 34 | football | Real Sociedad v Deportivo La Coruña | 2026-10-11T14:15 | double_chance | 1X | 82.8% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.21 | no price | no |
+| 35 | football | Lazio v Monza | 2026-10-11T13:00 | double_chance | 1X | 82.8% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.21 | no price | no |
+| 36 | football | Rangers v Kilmarnock | 2026-10-10T14:00 | 1x2 | home | 82.3% | 80%+ | 2.2% | PROSPECTIVE_SHADOW_LEAGUE | 1.21 | price not usable (stale/wide/unknown commission) | no |
+| 37 | football | SC Freiburg v FC Schalke 04 | 2026-10-11T15:30 | double_chance | 1X | 82.3% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.22 | no price | no |
+| 38 | football | Southampton v Portsmouth | 2026-10-11T11:00 | double_chance | 1X | 81.7% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.22 | no price | no |
+| 39 | football | AS Monaco v Toulouse | 2026-10-10T18:45 | double_chance | 1X | 81.3% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.23 | no price | no |
+| 40 | football | Stockport County FC v Barnsley | 2026-10-10T14:00 | double_chance | 12 | 81.3% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.23 | no price | no |
 
 ## 2. Best bets today
 
@@ -72,13 +72,11 @@ _NOT live-money eligible. Do not check other bookmakers to rescue these — that
 | Barcelona v Getafe (2026-10-10T16:30) | double_chance: 12 | 92.7% | 1.08 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Benfica v Vitória SC (2026-10-11T17:00) | double_chance: 1X | 92.4% | 1.08 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Paris Saint Germain v Le Mans FC (2026-10-10T18:45) | double_chance: 12 | 92.0% | 1.09 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Augsburg v Bayern Munich (2026-10-10T13:30) | double_chance: X2 | 91.5% | 1.09 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Union Saint-Gilloise v Leuven (2026-10-11T14:00) | double_chance: 1X | 90.9% | 1.10 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | CS Maritimo v FC Porto (2026-10-10T17:00) | double_chance: X2 | 90.4% | 1.11 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Barcelona v Getafe (2026-10-10T16:30) | 1x2: home | 89.0% | 1.12 | — | PRICE_STALE, NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
 | Inter Milan v Parma (2026-10-10T16:00) | double_chance: 12 | 88.8% | 1.13 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Rangers v Kilmarnock (2026-10-10T14:00) | double_chance: 12 | 88.5% | 1.13 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Augsburg v Bayern Munich (2026-10-10T13:30) | double_chance: 12 | 88.3% | 1.13 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Ajax v NEC Nijmegen (2026-10-10T19:00) | double_chance: 1X | 88.2% | 1.13 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Paris Saint Germain v Le Mans FC (2026-10-10T18:45) | 1x2: home | 87.9% | 1.14 | — | PRICE_STALE, NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
 | RAAL La Louvière v Club Brugge (2026-10-10T16:15) | double_chance: X2 | 86.8% | 1.15 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
@@ -88,7 +86,6 @@ _NOT live-money eligible. Do not check other bookmakers to rescue these — that
 | Genk v KV Kortrijk (2026-10-10T18:45) | double_chance: 1X | 85.9% | 1.16 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Benfica v Vitória SC (2026-10-11T17:00) | double_chance: 12 | 85.7% | 1.17 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Hubert Hurkacz v Yi Zhou (2026-10-11T05:10) | match_winner: Hubert Hurkacz | 85.7% | 1.17 | 1.16 | NET_EV_NOT_POSITIVE |
-| TSG Hoffenheim v Hamburger SV (2026-10-10T13:30) | double_chance: 1X | 85.5% | 1.17 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Rennes v Auxerre (2026-10-11T15:15) | double_chance: 1X | 85.5% | 1.17 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Napoli v Frosinone (2026-10-10T18:45) | double_chance: 1X | 85.5% | 1.17 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Fortuna Sittard v FC Twente Enschede (2026-10-10T18:00) | double_chance: X2 | 84.8% | 1.18 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
@@ -109,26 +106,22 @@ _NOT live-money eligible. Do not check other bookmakers to rescue these — that
 | AS Monaco v Toulouse (2026-10-10T18:45) | double_chance: 1X | 81.3% | 1.23 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Stockport County FC v Barnsley (2026-10-10T14:00) | double_chance: 12 | 81.3% | 1.23 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Fortuna Sittard v FC Twente Enschede (2026-10-10T18:00) | double_chance: 12 | 81.1% | 1.23 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| TSG Hoffenheim v Hamburger SV (2026-10-10T13:30) | double_chance: 12 | 81.0% | 1.23 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | CS Maritimo v FC Porto (2026-10-10T17:00) | double_chance: 12 | 81.0% | 1.24 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | RAAL La Louvière v Club Brugge (2026-10-10T16:15) | double_chance: 12 | 80.9% | 1.24 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | RB Leipzig v Eintracht Frankfurt (2026-10-10T16:30) | double_chance: 1X | 80.7% | 1.24 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | York City v Northampton Town (2026-10-10T14:00) | double_chance: 1X | 80.6% | 1.24 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Motherwell v Celtic (2026-10-11T11:00) | double_chance: X2 | 80.5% | 1.24 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Rennes v Auxerre (2026-10-11T15:15) | double_chance: 12 | 80.3% | 1.24 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| SC Paderborn v VfB Stuttgart (2026-10-10T13:30) | double_chance: X2 | 80.2% | 1.25 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | RB Leipzig v Eintracht Frankfurt (2026-10-10T16:30) | double_chance: 12 | 80.2% | 1.25 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Napoli v Frosinone (2026-10-10T18:45) | double_chance: 12 | 80.2% | 1.25 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Leicester City v Peterborough United (2026-10-10T14:00) | double_chance: 1X | 80.2% | 1.25 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Hearts v St Mirren (2026-10-10T14:00) | double_chance: 12 | 80.1% | 1.25 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Lille v Le Havre (2026-10-10T15:15) | double_chance: 12 | 80.1% | 1.25 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Doncaster Rovers v Burton Albion (2026-10-10T14:00) | double_chance: 1X | 79.9% | 1.25 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Augsburg v Bayern Munich (2026-10-10T13:30) | 1x2: away | 79.8% | 1.25 | — | PRICE_STALE, NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
 | Genk v KV Kortrijk (2026-10-10T18:45) | double_chance: 12 | 79.6% | 1.26 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Bradford City v Leyton Orient (2026-10-10T14:00) | double_chance: 1X | 79.6% | 1.26 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | FC Utrecht v Willem II (2026-10-11T10:15) | double_chance: 12 | 79.6% | 1.26 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Crawley Town v Chesterfield FC (2026-10-10T14:00) | double_chance: X2 | 79.5% | 1.26 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| SC Paderborn v VfB Stuttgart (2026-10-10T13:30) | double_chance: 12 | 79.1% | 1.26 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Leicester City v Peterborough United (2026-10-10T14:00) | double_chance: 12 | 78.9% | 1.27 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Casa Pia v Santa Clara (2026-10-10T14:30) | double_chance: X2 | 78.8% | 1.27 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Chelsea v Bournemouth (2026-10-10T14:00) | double_chance: 1X | 78.8% | 1.27 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
@@ -160,9 +153,7 @@ _NOT live-money eligible. Do not check other bookmakers to rescue these — that
 | York City v Northampton Town (2026-10-10T14:00) | double_chance: 12 | 75.9% | 1.32 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | 1. FC Köln v Borussia Monchengladbach (2026-10-11T13:30) | double_chance: 12 | 75.8% | 1.32 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | FC Zwolle v SC Cambuur (2026-10-11T12:30) | double_chance: 12 | 75.7% | 1.32 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Benevento v Cesena FC (2026-10-10T13:00) | double_chance: 1X | 75.6% | 1.32 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Cagliari v Juventus (2026-10-11T18:45) | double_chance: 12 | 75.6% | 1.32 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| FSV Mainz 05 v Bayer Leverkusen (2026-10-10T13:30) | double_chance: 12 | 75.5% | 1.32 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Feyenoord v AZ Alkmaar (2026-10-10T16:45) | double_chance: 1X | 75.5% | 1.32 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Mansfield Town v Bromley FC (2026-10-10T14:00) | double_chance: 12 | 75.4% | 1.33 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Houston Texans @ Tennessee Titans (2026-10-11T17:00) | moneyline: Houston Texans | 75.3% | 1.33 | — | COMMISSION_UNKNOWN |
@@ -173,7 +164,6 @@ _NOT live-money eligible. Do not check other bookmakers to rescue these — that
 | SC Telstar v ADO Den Haag (2026-10-11T12:30) | double_chance: 12 | 74.8% | 1.34 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Cheltenham Town v Salford City (2026-10-10T14:00) | double_chance: 12 | 74.8% | 1.34 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Westerlo v Royal Antwerp (2026-10-11T16:30) | double_chance: 12 | 74.7% | 1.34 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Union Berlin v Elversberg (2026-10-10T13:30) | double_chance: 12 | 74.6% | 1.34 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Cercle Brugge KSV v Anderlecht (2026-10-10T14:00) | double_chance: 12 | 74.5% | 1.34 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Middlesbrough v Wolverhampton Wanderers (2026-10-10T14:00) | double_chance: 12 | 74.5% | 1.34 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Alavés v Atlético Madrid (2026-10-10T14:15) | double_chance: 12 | 74.5% | 1.34 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
@@ -181,11 +171,9 @@ _NOT live-money eligible. Do not check other bookmakers to rescue these — that
 | Troyes v Marseille (2026-10-11T18:45) | double_chance: X2 | 74.3% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Liverpool v Manchester City (2026-10-11T15:30) | double_chance: 12 | 74.3% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Brest v Angers (2026-10-10T18:45) | double_chance: 12 | 74.2% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Virtus Entella v Juve Stabia (2026-10-10T13:00) | double_chance: 1X | 74.1% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Excelsior v Groningen (2026-10-11T14:45) | double_chance: 12 | 74.1% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Cambridge United v Blackpool (2026-10-10T14:00) | double_chance: 12 | 74.1% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Blackburn Rovers v Cardiff City (2026-10-10T14:00) | double_chance: 12 | 74.0% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Empoli v Palermo (2026-10-10T13:00) | double_chance: X2 | 73.9% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Tranmere Rovers v Rochdale (2026-10-10T14:00) | double_chance: 1X | 73.9% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Wycombe Wanderers v Luton (2026-10-10T14:00) | double_chance: 12 | 73.8% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Milton Keynes Dons v Reading (2026-10-10T14:00) | double_chance: 12 | 73.8% | 1.36 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
@@ -193,13 +181,11 @@ _NOT live-money eligible. Do not check other bookmakers to rescue these — that
 | Dundee United v Hibernian (2026-10-10T14:00) | double_chance: 12 | 73.8% | 1.36 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Nice v Strasbourg (2026-10-11T13:00) | double_chance: 12 | 73.6% | 1.36 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Cincinnati Bengals @ Miami Dolphins (2026-10-11T17:00) | moneyline: Cincinnati Bengals | 73.6% | 1.36 | 1.33 | NET_EV_NOT_POSITIVE |
-| Empoli v Palermo (2026-10-10T13:00) | double_chance: 12 | 73.5% | 1.36 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Bristol Rovers v Barnet (2026-10-10T14:00) | double_chance: 12 | 73.5% | 1.36 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Falkirk F.C. v Dundee FC (2026-10-10T14:00) | double_chance: 12 | 73.5% | 1.36 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Rotherham United v Gillingham (2026-10-10T14:00) | double_chance: 12 | 73.5% | 1.36 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Stevenage v Wigan Athletic (2026-10-10T14:00) | double_chance: 1X | 73.5% | 1.36 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Brest v Angers (2026-10-10T18:45) | double_chance: 1X | 73.5% | 1.36 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Benevento v Cesena FC (2026-10-10T13:00) | double_chance: 12 | 73.5% | 1.36 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Como v AS Roma (2026-10-11T10:30) | double_chance: 12 | 73.4% | 1.36 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Aston Villa v Brentford (2026-10-10T14:00) | double_chance: 12 | 73.2% | 1.37 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Hull City v Everton (2026-10-11T13:00) | double_chance: X2 | 73.2% | 1.37 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
@@ -241,20 +227,17 @@ _NOT live-money eligible. Do not check other bookmakers to rescue these — that
 | CS Maritimo v FC Porto (2026-10-10T17:00) | 1x2: away | 71.3% | 1.40 | — | PRICE_STALE, NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
 | Aberdeen v St Johnstone (2026-10-11T13:00) | double_chance: 1X | 71.3% | 1.40 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Rio Ave FC v Nacional (2026-10-11T14:30) | double_chance: 12 | 71.3% | 1.40 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Genoa v Fiorentina (2026-10-10T13:00) | double_chance: 12 | 71.2% | 1.40 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Ben Shelton v Arthur Gea (2026-10-11T04:00) | match_winner: Ben Shelton | 71.2% | 1.40 | 1.40 | NET_EV_NOT_POSITIVE |
 | Elche CF v Celta Vigo (2026-10-11T12:00) | double_chance: 12 | 71.0% | 1.41 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Vancouver Canucks @ New Jersey Devils (2026-10-10T19:40) | moneyline: New Jersey Devils | 70.9% | 1.41 | — | COMMISSION_UNKNOWN |
 | 1. FC Köln v Borussia Monchengladbach (2026-10-11T13:30) | double_chance: 1X | 70.8% | 1.41 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | AD Ceuta FC v Sabadell FC (2026-10-10T14:15) | double_chance: X2 | 70.7% | 1.41 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Virtus Entella v Juve Stabia (2026-10-10T13:00) | double_chance: 12 | 70.7% | 1.41 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Südtirol v Ascoli (2026-10-10T13:00) | double_chance: 12 | 70.5% | 1.42 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | KV Mechelen v Sint Truiden (2026-10-11T17:15) | double_chance: X2 | 70.5% | 1.42 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Lorient v Paris FC (2026-10-10T18:45) | double_chance: X2 | 70.4% | 1.42 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 629 · PRICE_STALE 327 · P_BELOW_FLOOR 305 · NO_EXECUTABLE_PRICE 303 · NET_EV_NOT_POSITIVE 255 · COMMISSION_UNKNOWN 49
+ENGINE_STATUS_INELIGIBLE 569 · PRICE_STALE 297 · P_BELOW_FLOOR 275 · NO_EXECUTABLE_PRICE 273 · NET_EV_NOT_POSITIVE 235 · COMMISSION_UNKNOWN 46
 
 ## 4. Research predictions — not money eligible
 
@@ -350,13 +333,11 @@ _Model probabilities from research engines. Shown for information and to build a
 | Telstar v Den Haag (N1) | 2026-10-11 | total_corners | over 8.5 | 67.6% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Real Madrid v Villarreal (SP1) | 2026-10-10 | total_corners | under 11.5 | 67.6% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Excelsior v Groningen (N1) | 2026-10-11 | total_corners | under 11.5 | 67.6% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Vallecano v Ath Bilbao (SP1) | 2026-10-10 | total_corners | under 11.5 | 67.5% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Westerlo v Antwerp (B1) | 2026-10-11 | total_corners | under 11.5 | 67.5% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Troyes v Marseille (F1) | 2026-10-11 | total_corners | under 10.5 | 67.5% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Aston Villa v Brentford (E0) | 2026-10-10 | total_corners | under 11.5 | 67.5% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Barcelona v Getafe (SP1) | 2026-10-10 | total_corners | under 11.5 | 67.4% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Rennes v Auxerre (F1) | 2026-10-11 | total_corners | over 8.5 | 67.3% | 1.49 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Vallecano v Ath Bilbao (SP1) | 2026-10-10 | total_corners | over 8.5 | 66.9% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Rennes v Auxerre (F1) | 2026-10-11 | total_corners | under 11.5 | 66.7% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Westerlo v Antwerp (B1) | 2026-10-11 | total_corners | over 8.5 | 66.7% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Freiburg v Schalke 04 (D1) | 2026-10-11 | total_corners | under 10.5 | 66.7% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -493,7 +474,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | For Sittard v Twente (N1) | 2026-10-10 | total_corners | over 9.5 | 56.9% | 1.76 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Hoffenheim v Hamburg (D1) | 2026-10-10 | total_corners | under 11.5 | 56.9% | 1.76 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Excelsior v Groningen (N1) | 2026-10-11 | total_corners | under 10.5 | 56.9% | 1.76 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Vallecano v Ath Bilbao (SP1) | 2026-10-10 | total_corners | under 10.5 | 56.9% | 1.76 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Real Madrid v Villarreal (SP1) | 2026-10-10 | total_corners | under 10.5 | 56.8% | 1.76 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Barcelona v Getafe (SP1) | 2026-10-10 | total_corners | under 10.5 | 56.7% | 1.76 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Zwolle v Cambuur (N1) | 2026-10-11 | total_corners | over 9.5 | 56.7% | 1.76 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -518,7 +498,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | Zwolle v Cambuur (N1) | 2026-10-11 | total_corners | under 10.5 | 55.2% | 1.81 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Aston Villa v Brentford (E0) | 2026-10-10 | total_corners | over 9.5 | 55.1% | 1.82 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Barcelona v Getafe (SP1) | 2026-10-10 | total_corners | over 9.5 | 55.0% | 1.82 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Vallecano v Ath Bilbao (SP1) | 2026-10-10 | total_corners | over 9.5 | 54.9% | 1.82 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Derby v Wrexham (E1) | 2026-10-10 | total_corners | over 9.5 | 54.9% | 1.82 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Excelsior v Groningen (N1) | 2026-10-11 | total_corners | over 9.5 | 54.9% | 1.82 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Waregem v Gent (B1) | 2026-10-10 | total_corners | over 9.5 | 54.9% | 1.82 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
