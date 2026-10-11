@@ -1,7 +1,7 @@
 # Daily Prediction Board + Bet Card V1 (direction change approved 2026-10-07; research/platform_v2/DIRECTION_2026-10-07.md).
 # Presentation + stake policy only. It reads Stage A (probabilities) and bet-selection bsv2-4 (decisions); it never changes
 # either. Probability first; bsv2-4 alone decides which predictions are bets.
-card_version: card-v1.1   # 2026-10-08: provisional-live tier, min odds, rejection summary, decision record fields
+card_version: card-v1.2   # 2026-10-11 unattended paper mode; v1.1 (2026-10-08) provisional-live tier, min odds, rejection summary, record fields
 horizon_hours: 36                     # events starting within this window (same window as the Stage A board inputs)
 best_predictions_min_probability: 0.50
 best_predictions_max_rows: 40
@@ -18,7 +18,8 @@ research:
     model: corners-A-1.0
     evidence: "validated vs non-market baseline only (holdout Δ −0.0038); no market comparison yet"
 live_policy:                          # Controlled live phase APPROVED 2026-10-07 (Fraser + ChatGPT): manual placement only
-  real_money_enabled: true            # manual only: Fraser places every bet himself; no automated execution exists
+  real_money_enabled: false           # 2026-10-11: PAUSED (Fraser): unattended prospective paper validation; stakes are simulated.
+                                      # Re-enabling real money needs an explicit decision (research/platform_v2/execution/AUTOMATION_ARCHITECTURE.md gate).
   money_eligibility: registry         # a live bet needs bsv2-4 PAPER_BET AND money_eligible=true in PROBABILITY_ENGINE_REGISTRY.json
   bankroll_gbp: 50.0
   default_stake_gbp: 1.0

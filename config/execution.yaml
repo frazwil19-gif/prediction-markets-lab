@@ -1,0 +1,15 @@
+# Execution layer (research/platform_v2/execution/AUTOMATION_ARCHITECTURE.md). 2026-10-11: PAPER ONLY.
+# LIVE execution is not implemented and is refused by code even if this file is edited (see execution/broker.py).
+environment: PAPER                 # PAPER | LIVE (LIVE requires the readiness gate + Fraser's explicit authorisation)
+kill_switch_file: data/private/KILL_SWITCH   # if this file exists, no order of any kind is submitted
+limits:
+  max_stake_gbp: 1.0               # hard per-order maximum
+  daily_stake_cap_gbp: 5.0
+  daily_loss_lock_gbp: 5.0         # stop for the day after this realised loss
+  max_orders_per_event: 1
+  max_orders_per_engine_per_day: {nfl_moneyline.market: 1}
+  default_max_orders_per_engine_per_day: 10
+  max_price_age_seconds: 120       # fresh executable price required immediately before submission
+  max_slippage_pct: 0.0            # executable price must be >= the signal's minimum acceptable odds (no worse)
+  max_drawdown_pct_of_bankroll: 0.30
+bankroll_gbp: 50.0
