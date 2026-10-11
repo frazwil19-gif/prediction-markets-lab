@@ -25,7 +25,7 @@ def cand(pid, decision, ev=0.03, odds=1.9):
 
 def test_config_is_manual_live_one_pound_no_two_pound_rule():
     pol = CFG["live_policy"]
-    assert pol["real_money_enabled"] is True and pol["money_eligibility"] == "registry"
+    assert pol["real_money_enabled"] is False and pol["money_eligibility"] == "registry"   # paper mode since 2026-10-11
     assert pol["default_stake_gbp"] == 1.0 and pol["enhanced_stake_rule_enabled"] is False and pol["max_daily_exposure_gbp"] == 5.0
 
 
@@ -43,7 +43,7 @@ def test_bets_only_from_bsv2_and_stake_caps():
     assert c["best_predictions"][0]["prediction_id"] == "nob"                     # ranked by probability, not price
     assert "nob" in {p["prediction_id"] for p in c["strong_price_too_low"]}
     md = C.render_md(c)
-    assert "LIVE — manual £1 bets" in md and "## 2. Best bets today" in md
+    assert c["mode"].startswith("PAPER") and "## 2. Qualified paper bets" in md   # simulated stakes keep the live caps
 
 
 def test_research_rows_are_never_bets_and_show_more_likely_side():
@@ -112,3 +112,16 @@ def test_provisional_live_engine_limited_and_excluded_from_big_card():
     assert c["big_card"] and all(g["event_name"].startswith("F") for g in c["big_card"]["legs"])
     assert C.provisional_live_engines(REPO) == {nfl}
     assert c["rejection_reasons"] == {} and all("min_bookmaker_odds" in b for b in c["best_bets"])
+
+
+def test_paper_mode_card_is_unattended_and_keeps_tiers():
+    nfl = "nfl_moneyline.market"
+    board = {"predictions": [{**pred("n0", 0.7, "N0"), "engine_id": nfl}, pred("f0", 0.6, "F0"),
+                             {**pred("h0", 0.65, "H0"), "engine_id": "nhl_moneyline.market"}]}
+    cands = [cand("n0", "PAPER_BET"), cand("f0", "PAPER_BET"), cand("h0", "PAPER_BET")]
+    c = C.build(board, cands, [], CFG, NOW, {nfl, "football_1x2.market_consensus"}, {nfl})
+    tiers = {b["engine_id"]: b["tier"] for b in c["best_bets"]}
+    assert tiers == {nfl: "PROVISIONAL_LIVE", "football_1x2.market_consensus": "LIVE_ELIGIBLE", "nhl_moneyline.market": "PAPER_ONLY"}
+    assert all(b["stake_kind"] == "SIMULATED" for b in c["best_bets"]) and c["mode"].startswith("PAPER")
+    md = C.render_md(c)
+    assert "Qualified paper bets" in md and "Bet Log" not in md and "How to bet" not in md

@@ -1,0 +1,1025 @@
+{
+ "generated_at": "2026-10-11T08:34:47.013727+00:00",
+ "mode": "PAPER \u2014 unattended prospective validation; stakes SIMULATED",
+ "windows": {
+  "weekly": {
+   "metrics": {
+    "orders": 0,
+    "settled": 0,
+    "open": 0,
+    "expected_wins": 0,
+    "actual_wins": 0,
+    "expected_profit_gbp": 0,
+    "realised_paper_profit_gbp": 0,
+    "roi": null,
+    "max_drawdown_gbp": 0.0,
+    "brier": null,
+    "log_loss": null,
+    "calibration": {},
+    "avg_odds": {
+     "n": 0
+    },
+    "ev": {
+     "n": 0
+    },
+    "clv_fair": {
+     "n": 0
+    },
+    "clv_price": {
+     "n": 0
+    },
+    "close_coverage": null,
+    "unique_events": 0,
+    "hypothetical": {
+     "\u00a31": {
+      "turnover": 0,
+      "expected_profit": 0,
+      "realised": 0
+     },
+     "\u00a35": {
+      "turnover": 0,
+      "expected_profit": 0,
+      "realised": 0
+     },
+     "\u00a310": {
+      "turnover": 0,
+      "expected_profit": 0,
+      "realised": 0
+     }
+    }
+   },
+   "candidates_evaluated": 1018,
+   "qualified_in_shadow": 0,
+   "qualification_rate": 0.0,
+   "rejections": {
+    "ENGINE_STATUS_INELIGIBLE": 845,
+    "NET_EV_NOT_POSITIVE": 456,
+    "P_BELOW_FLOOR": 411,
+    "NO_EXECUTABLE_PRICE": 408,
+    "COMMISSION_UNKNOWN": 69,
+    "PREDICTION_NOT_VALID": 24,
+    "PRICE_STALE": 16,
+    "EXCHANGE_SPREAD_TOO_WIDE": 7,
+    "PROBABILITY_NOT_SAME_SNAPSHOT": 2,
+    "NET_EV_BELOW_PAPER_GATE": 2,
+    "ODDS_BELOW_PAYOUT_FLOOR": 1
+   },
+   "by": {
+    "sport": {},
+    "market": {},
+    "engine_id": {},
+    "execution_class": {}
+   },
+   "concentration": {
+    "sport": {
+     "top": null,
+     "top_share": null,
+     "counts": {}
+    },
+    "engine_id": {
+     "top": null,
+     "top_share": null,
+     "counts": {}
+    },
+    "source": {
+     "top": null,
+     "top_share": null,
+     "counts": {}
+    },
+    "execution_class": {
+     "top": null,
+     "top_share": null,
+     "counts": {}
+    },
+    "market": {
+     "top": null,
+     "top_share": null,
+     "counts": {}
+    }
+   },
+   "data_failures": {}
+  },
+  "monthly": {
+   "metrics": {
+    "orders": 10,
+    "settled": 9,
+    "open": 1,
+    "expected_wins": 6.28,
+    "actual_wins": 5,
+    "expected_profit_gbp": 0.48,
+    "realised_paper_profit_gbp": -1.72,
+    "roi": -0.1911,
+    "max_drawdown_gbp": 2.72,
+    "brier": 0.2292,
+    "log_loss": 0.6482,
+    "calibration": {
+     "50-59%": {
+      "n": 2,
+      "mean_p": 0.571,
+      "win_rate": 0.0
+     },
+     "70-79%": {
+      "n": 7,
+      "mean_p": 0.734,
+      "win_rate": 0.714
+     }
+    },
+    "avg_odds": {
+     "n": 10,
+     "mean": 1.544,
+     "median": 1.5,
+     "positive_rate": 1.0
+    },
+    "ev": {
+     "n": 10,
+     "mean": 0.0505,
+     "median": 0.0366,
+     "positive_rate": 1.0
+    },
+    "clv_fair": {
+     "n": 0
+    },
+    "clv_price": {
+     "n": 0
+    },
+    "close_coverage": 0.0,
+    "unique_events": 10,
+    "hypothetical": {
+     "\u00a31": {
+      "turnover": 9.0,
+      "expected_profit": 0.48,
+      "realised": -1.72
+     },
+     "\u00a35": {
+      "turnover": 45.0,
+      "expected_profit": 2.41,
+      "realised": -8.6
+     },
+     "\u00a310": {
+      "turnover": 90.0,
+      "expected_profit": 4.83,
+      "realised": -17.2
+     }
+    }
+   },
+   "candidates_evaluated": 1082,
+   "qualified_in_shadow": 0,
+   "qualification_rate": 0.0,
+   "rejections": {
+    "ENGINE_STATUS_INELIGIBLE": 845,
+    "NET_EV_NOT_POSITIVE": 519,
+    "P_BELOW_FLOOR": 411,
+    "NO_EXECUTABLE_PRICE": 408,
+    "COMMISSION_UNKNOWN": 69,
+    "PREDICTION_NOT_VALID": 24,
+    "PRICE_STALE": 16,
+    "EXCHANGE_SPREAD_TOO_WIDE": 7,
+    "NET_EV_BELOW_PAPER_GATE": 3,
+    "ODDS_BELOW_PAYOUT_FLOOR": 2,
+    "PROBABILITY_NOT_SAME_SNAPSHOT": 2
+   },
+   "by": {
+    "sport": {
+     "tennis": {
+      "orders": 10,
+      "settled": 9,
+      "open": 1,
+      "expected_wins": 6.28,
+      "actual_wins": 5,
+      "expected_profit_gbp": 0.48,
+      "realised_paper_profit_gbp": -1.72,
+      "roi": -0.1911,
+      "max_drawdown_gbp": 2.72,
+      "brier": 0.2292,
+      "log_loss": 0.6482,
+      "calibration": {
+       "50-59%": {
+        "n": 2,
+        "mean_p": 0.571,
+        "win_rate": 0.0
+       },
+       "70-79%": {
+        "n": 7,
+        "mean_p": 0.734,
+        "win_rate": 0.714
+       }
+      },
+      "avg_odds": {
+       "n": 10,
+       "mean": 1.544,
+       "median": 1.5,
+       "positive_rate": 1.0
+      },
+      "ev": {
+       "n": 10,
+       "mean": 0.0505,
+       "median": 0.0366,
+       "positive_rate": 1.0
+      },
+      "clv_fair": {
+       "n": 0
+      },
+      "clv_price": {
+       "n": 0
+      },
+      "close_coverage": 0.0,
+      "unique_events": 10,
+      "hypothetical": {
+       "\u00a31": {
+        "turnover": 9.0,
+        "expected_profit": 0.48,
+        "realised": -1.72
+       }
+      }
+     }
+    },
+    "market": {
+     "match_winner": {
+      "orders": 10,
+      "settled": 9,
+      "open": 1,
+      "expected_wins": 6.28,
+      "actual_wins": 5,
+      "expected_profit_gbp": 0.48,
+      "realised_paper_profit_gbp": -1.72,
+      "roi": -0.1911,
+      "max_drawdown_gbp": 2.72,
+      "brier": 0.2292,
+      "log_loss": 0.6482,
+      "calibration": {
+       "50-59%": {
+        "n": 2,
+        "mean_p": 0.571,
+        "win_rate": 0.0
+       },
+       "70-79%": {
+        "n": 7,
+        "mean_p": 0.734,
+        "win_rate": 0.714
+       }
+      },
+      "avg_odds": {
+       "n": 10,
+       "mean": 1.544,
+       "median": 1.5,
+       "positive_rate": 1.0
+      },
+      "ev": {
+       "n": 10,
+       "mean": 0.0505,
+       "median": 0.0366,
+       "positive_rate": 1.0
+      },
+      "clv_fair": {
+       "n": 0
+      },
+      "clv_price": {
+       "n": 0
+      },
+      "close_coverage": 0.0,
+      "unique_events": 10,
+      "hypothetical": {
+       "\u00a31": {
+        "turnover": 9.0,
+        "expected_profit": 0.48,
+        "realised": -1.72
+       }
+      }
+     }
+    },
+    "engine_id": {
+     "atp_match_winner.betfair_market": {
+      "orders": 1,
+      "settled": 1,
+      "open": 0,
+      "expected_wins": 0.75,
+      "actual_wins": 0,
+      "expected_profit_gbp": 0.03,
+      "realised_paper_profit_gbp": -1.0,
+      "roi": -1.0,
+      "max_drawdown_gbp": 1.0,
+      "brier": 0.5558,
+      "log_loss": 1.3684,
+      "calibration": {
+       "70-79%": {
+        "n": 1,
+        "mean_p": 0.745,
+        "win_rate": 0.0
+       }
+      },
+      "avg_odds": {
+       "n": 1,
+       "mean": 1.4,
+       "median": 1.4,
+       "positive_rate": 1.0
+      },
+      "ev": {
+       "n": 1,
+       "mean": 0.0288,
+       "median": 0.0288,
+       "positive_rate": 1.0
+      },
+      "clv_fair": {
+       "n": 0
+      },
+      "clv_price": {
+       "n": 0
+      },
+      "close_coverage": 0.0,
+      "unique_events": 1,
+      "hypothetical": {
+       "\u00a31": {
+        "turnover": 1.0,
+        "expected_profit": 0.03,
+        "realised": -1.0
+       }
+      }
+     },
+     "wta_match_winner.betfair_market": {
+      "orders": 9,
+      "settled": 8,
+      "open": 1,
+      "expected_wins": 5.53,
+      "actual_wins": 5,
+      "expected_profit_gbp": 0.45,
+      "realised_paper_profit_gbp": -0.72,
+      "roi": -0.09,
+      "max_drawdown_gbp": 2.48,
+      "brier": 0.1884,
+      "log_loss": 0.5582,
+      "calibration": {
+       "50-59%": {
+        "n": 2,
+        "mean_p": 0.571,
+        "win_rate": 0.0
+       },
+       "70-79%": {
+        "n": 6,
+        "mean_p": 0.732,
+        "win_rate": 0.833
+       }
+      },
+      "avg_odds": {
+       "n": 9,
+       "mean": 1.56,
+       "median": 1.5,
+       "positive_rate": 1.0
+      },
+      "ev": {
+       "n": 9,
+       "mean": 0.053,
+       "median": 0.0377,
+       "positive_rate": 1.0
+      },
+      "clv_fair": {
+       "n": 0
+      },
+      "clv_price": {
+       "n": 0
+      },
+      "close_coverage": 0.0,
+      "unique_events": 9,
+      "hypothetical": {
+       "\u00a31": {
+        "turnover": 8.0,
+        "expected_profit": 0.45,
+        "realised": -0.72
+       }
+      }
+     }
+    },
+    "execution_class": {
+     "API_EXECUTABLE": {
+      "orders": 2,
+      "settled": 2,
+      "open": 0,
+      "expected_wins": 1.29,
+      "actual_wins": 0,
+      "expected_profit_gbp": 0.07,
+      "realised_paper_profit_gbp": -2.0,
+      "roi": -1.0,
+      "max_drawdown_gbp": 2.0,
+      "brier": 0.4252,
+      "log_loss": 1.0755,
+      "calibration": {
+       "50-59%": {
+        "n": 1,
+        "mean_p": 0.543,
+        "win_rate": 0.0
+       },
+       "70-79%": {
+        "n": 1,
+        "mean_p": 0.745,
+        "win_rate": 0.0
+       }
+      },
+      "avg_odds": {
+       "n": 2,
+       "mean": 1.68,
+       "median": 1.68,
+       "positive_rate": 1.0
+      },
+      "ev": {
+       "n": 2,
+       "mean": 0.0333,
+       "median": 0.0333,
+       "positive_rate": 1.0
+      },
+      "clv_fair": {
+       "n": 0
+      },
+      "clv_price": {
+       "n": 0
+      },
+      "close_coverage": 0.0,
+      "unique_events": 2,
+      "hypothetical": {
+       "\u00a31": {
+        "turnover": 2.0,
+        "expected_profit": 0.07,
+        "realised": -2.0
+       }
+      }
+     },
+     "BOOKMAKER_ONLY": {
+      "orders": 8,
+      "settled": 7,
+      "open": 1,
+      "expected_wins": 4.99,
+      "actual_wins": 5,
+      "expected_profit_gbp": 0.42,
+      "realised_paper_profit_gbp": 0.28,
+      "roi": 0.04,
+      "max_drawdown_gbp": 2.0,
+      "brier": 0.1732,
+      "log_loss": 0.5261,
+      "calibration": {
+       "50-59%": {
+        "n": 1,
+        "mean_p": 0.599,
+        "win_rate": 0.0
+       },
+       "70-79%": {
+        "n": 6,
+        "mean_p": 0.732,
+        "win_rate": 0.833
+       }
+      },
+      "avg_odds": {
+       "n": 8,
+       "mean": 1.51,
+       "median": 1.5,
+       "positive_rate": 1.0
+      },
+      "ev": {
+       "n": 8,
+       "mean": 0.0549,
+       "median": 0.0483,
+       "positive_rate": 1.0
+      },
+      "clv_fair": {
+       "n": 0
+      },
+      "clv_price": {
+       "n": 0
+      },
+      "close_coverage": 0.0,
+      "unique_events": 8,
+      "hypothetical": {
+       "\u00a31": {
+        "turnover": 7.0,
+        "expected_profit": 0.42,
+        "realised": 0.28
+       }
+      }
+     }
+    }
+   },
+   "concentration": {
+    "sport": {
+     "top": [
+      "tennis",
+      10
+     ],
+     "top_share": 1.0,
+     "counts": {
+      "tennis": 10
+     }
+    },
+    "engine_id": {
+     "top": [
+      "wta_match_winner.betfair_market",
+      9
+     ],
+     "top_share": 0.9,
+     "counts": {
+      "wta_match_winner.betfair_market": 9,
+      "atp_match_winner.betfair_market": 1
+     }
+    },
+    "source": {
+     "top": [
+      "betfair_ex_uk",
+      2
+     ],
+     "top_share": 0.2,
+     "counts": {
+      "betfair_ex_uk": 2,
+      "betway": 2,
+      "boylesports": 2,
+      "sport888": 1,
+      "casumo": 1,
+      "betfair_sb_uk": 1,
+      "livescorebet": 1
+     }
+    },
+    "execution_class": {
+     "top": [
+      "BOOKMAKER_ONLY",
+      8
+     ],
+     "top_share": 0.8,
+     "counts": {
+      "BOOKMAKER_ONLY": 8,
+      "API_EXECUTABLE": 2
+     }
+    },
+    "market": {
+     "top": [
+      "match_winner",
+      10
+     ],
+     "top_share": 1.0,
+     "counts": {
+      "match_winner": 10
+     }
+    }
+   },
+   "data_failures": {
+    "NO_CLOSE_CAPTURED": 10,
+    "SETTLEMENT_OVERDUE": 1
+   }
+  },
+  "all": {
+   "metrics": {
+    "orders": 10,
+    "settled": 9,
+    "open": 1,
+    "expected_wins": 6.28,
+    "actual_wins": 5,
+    "expected_profit_gbp": 0.48,
+    "realised_paper_profit_gbp": -1.72,
+    "roi": -0.1911,
+    "max_drawdown_gbp": 2.72,
+    "brier": 0.2292,
+    "log_loss": 0.6482,
+    "calibration": {
+     "50-59%": {
+      "n": 2,
+      "mean_p": 0.571,
+      "win_rate": 0.0
+     },
+     "70-79%": {
+      "n": 7,
+      "mean_p": 0.734,
+      "win_rate": 0.714
+     }
+    },
+    "avg_odds": {
+     "n": 10,
+     "mean": 1.544,
+     "median": 1.5,
+     "positive_rate": 1.0
+    },
+    "ev": {
+     "n": 10,
+     "mean": 0.0505,
+     "median": 0.0366,
+     "positive_rate": 1.0
+    },
+    "clv_fair": {
+     "n": 0
+    },
+    "clv_price": {
+     "n": 0
+    },
+    "close_coverage": 0.0,
+    "unique_events": 10,
+    "hypothetical": {
+     "\u00a31": {
+      "turnover": 9.0,
+      "expected_profit": 0.48,
+      "realised": -1.72
+     },
+     "\u00a35": {
+      "turnover": 45.0,
+      "expected_profit": 2.41,
+      "realised": -8.6
+     },
+     "\u00a310": {
+      "turnover": 90.0,
+      "expected_profit": 4.83,
+      "realised": -17.2
+     }
+    }
+   },
+   "candidates_evaluated": 1082,
+   "qualified_in_shadow": 0,
+   "qualification_rate": 0.0,
+   "rejections": {
+    "ENGINE_STATUS_INELIGIBLE": 845,
+    "NET_EV_NOT_POSITIVE": 519,
+    "P_BELOW_FLOOR": 411,
+    "NO_EXECUTABLE_PRICE": 408,
+    "COMMISSION_UNKNOWN": 69,
+    "PREDICTION_NOT_VALID": 24,
+    "PRICE_STALE": 16,
+    "EXCHANGE_SPREAD_TOO_WIDE": 7,
+    "NET_EV_BELOW_PAPER_GATE": 3,
+    "ODDS_BELOW_PAYOUT_FLOOR": 2,
+    "PROBABILITY_NOT_SAME_SNAPSHOT": 2
+   },
+   "by": {
+    "sport": {
+     "tennis": {
+      "orders": 10,
+      "settled": 9,
+      "open": 1,
+      "expected_wins": 6.28,
+      "actual_wins": 5,
+      "expected_profit_gbp": 0.48,
+      "realised_paper_profit_gbp": -1.72,
+      "roi": -0.1911,
+      "max_drawdown_gbp": 2.72,
+      "brier": 0.2292,
+      "log_loss": 0.6482,
+      "calibration": {
+       "50-59%": {
+        "n": 2,
+        "mean_p": 0.571,
+        "win_rate": 0.0
+       },
+       "70-79%": {
+        "n": 7,
+        "mean_p": 0.734,
+        "win_rate": 0.714
+       }
+      },
+      "avg_odds": {
+       "n": 10,
+       "mean": 1.544,
+       "median": 1.5,
+       "positive_rate": 1.0
+      },
+      "ev": {
+       "n": 10,
+       "mean": 0.0505,
+       "median": 0.0366,
+       "positive_rate": 1.0
+      },
+      "clv_fair": {
+       "n": 0
+      },
+      "clv_price": {
+       "n": 0
+      },
+      "close_coverage": 0.0,
+      "unique_events": 10,
+      "hypothetical": {
+       "\u00a31": {
+        "turnover": 9.0,
+        "expected_profit": 0.48,
+        "realised": -1.72
+       }
+      }
+     }
+    },
+    "market": {
+     "match_winner": {
+      "orders": 10,
+      "settled": 9,
+      "open": 1,
+      "expected_wins": 6.28,
+      "actual_wins": 5,
+      "expected_profit_gbp": 0.48,
+      "realised_paper_profit_gbp": -1.72,
+      "roi": -0.1911,
+      "max_drawdown_gbp": 2.72,
+      "brier": 0.2292,
+      "log_loss": 0.6482,
+      "calibration": {
+       "50-59%": {
+        "n": 2,
+        "mean_p": 0.571,
+        "win_rate": 0.0
+       },
+       "70-79%": {
+        "n": 7,
+        "mean_p": 0.734,
+        "win_rate": 0.714
+       }
+      },
+      "avg_odds": {
+       "n": 10,
+       "mean": 1.544,
+       "median": 1.5,
+       "positive_rate": 1.0
+      },
+      "ev": {
+       "n": 10,
+       "mean": 0.0505,
+       "median": 0.0366,
+       "positive_rate": 1.0
+      },
+      "clv_fair": {
+       "n": 0
+      },
+      "clv_price": {
+       "n": 0
+      },
+      "close_coverage": 0.0,
+      "unique_events": 10,
+      "hypothetical": {
+       "\u00a31": {
+        "turnover": 9.0,
+        "expected_profit": 0.48,
+        "realised": -1.72
+       }
+      }
+     }
+    },
+    "engine_id": {
+     "atp_match_winner.betfair_market": {
+      "orders": 1,
+      "settled": 1,
+      "open": 0,
+      "expected_wins": 0.75,
+      "actual_wins": 0,
+      "expected_profit_gbp": 0.03,
+      "realised_paper_profit_gbp": -1.0,
+      "roi": -1.0,
+      "max_drawdown_gbp": 1.0,
+      "brier": 0.5558,
+      "log_loss": 1.3684,
+      "calibration": {
+       "70-79%": {
+        "n": 1,
+        "mean_p": 0.745,
+        "win_rate": 0.0
+       }
+      },
+      "avg_odds": {
+       "n": 1,
+       "mean": 1.4,
+       "median": 1.4,
+       "positive_rate": 1.0
+      },
+      "ev": {
+       "n": 1,
+       "mean": 0.0288,
+       "median": 0.0288,
+       "positive_rate": 1.0
+      },
+      "clv_fair": {
+       "n": 0
+      },
+      "clv_price": {
+       "n": 0
+      },
+      "close_coverage": 0.0,
+      "unique_events": 1,
+      "hypothetical": {
+       "\u00a31": {
+        "turnover": 1.0,
+        "expected_profit": 0.03,
+        "realised": -1.0
+       }
+      }
+     },
+     "wta_match_winner.betfair_market": {
+      "orders": 9,
+      "settled": 8,
+      "open": 1,
+      "expected_wins": 5.53,
+      "actual_wins": 5,
+      "expected_profit_gbp": 0.45,
+      "realised_paper_profit_gbp": -0.72,
+      "roi": -0.09,
+      "max_drawdown_gbp": 2.48,
+      "brier": 0.1884,
+      "log_loss": 0.5582,
+      "calibration": {
+       "50-59%": {
+        "n": 2,
+        "mean_p": 0.571,
+        "win_rate": 0.0
+       },
+       "70-79%": {
+        "n": 6,
+        "mean_p": 0.732,
+        "win_rate": 0.833
+       }
+      },
+      "avg_odds": {
+       "n": 9,
+       "mean": 1.56,
+       "median": 1.5,
+       "positive_rate": 1.0
+      },
+      "ev": {
+       "n": 9,
+       "mean": 0.053,
+       "median": 0.0377,
+       "positive_rate": 1.0
+      },
+      "clv_fair": {
+       "n": 0
+      },
+      "clv_price": {
+       "n": 0
+      },
+      "close_coverage": 0.0,
+      "unique_events": 9,
+      "hypothetical": {
+       "\u00a31": {
+        "turnover": 8.0,
+        "expected_profit": 0.45,
+        "realised": -0.72
+       }
+      }
+     }
+    },
+    "execution_class": {
+     "API_EXECUTABLE": {
+      "orders": 2,
+      "settled": 2,
+      "open": 0,
+      "expected_wins": 1.29,
+      "actual_wins": 0,
+      "expected_profit_gbp": 0.07,
+      "realised_paper_profit_gbp": -2.0,
+      "roi": -1.0,
+      "max_drawdown_gbp": 2.0,
+      "brier": 0.4252,
+      "log_loss": 1.0755,
+      "calibration": {
+       "50-59%": {
+        "n": 1,
+        "mean_p": 0.543,
+        "win_rate": 0.0
+       },
+       "70-79%": {
+        "n": 1,
+        "mean_p": 0.745,
+        "win_rate": 0.0
+       }
+      },
+      "avg_odds": {
+       "n": 2,
+       "mean": 1.68,
+       "median": 1.68,
+       "positive_rate": 1.0
+      },
+      "ev": {
+       "n": 2,
+       "mean": 0.0333,
+       "median": 0.0333,
+       "positive_rate": 1.0
+      },
+      "clv_fair": {
+       "n": 0
+      },
+      "clv_price": {
+       "n": 0
+      },
+      "close_coverage": 0.0,
+      "unique_events": 2,
+      "hypothetical": {
+       "\u00a31": {
+        "turnover": 2.0,
+        "expected_profit": 0.07,
+        "realised": -2.0
+       }
+      }
+     },
+     "BOOKMAKER_ONLY": {
+      "orders": 8,
+      "settled": 7,
+      "open": 1,
+      "expected_wins": 4.99,
+      "actual_wins": 5,
+      "expected_profit_gbp": 0.42,
+      "realised_paper_profit_gbp": 0.28,
+      "roi": 0.04,
+      "max_drawdown_gbp": 2.0,
+      "brier": 0.1732,
+      "log_loss": 0.5261,
+      "calibration": {
+       "50-59%": {
+        "n": 1,
+        "mean_p": 0.599,
+        "win_rate": 0.0
+       },
+       "70-79%": {
+        "n": 6,
+        "mean_p": 0.732,
+        "win_rate": 0.833
+       }
+      },
+      "avg_odds": {
+       "n": 8,
+       "mean": 1.51,
+       "median": 1.5,
+       "positive_rate": 1.0
+      },
+      "ev": {
+       "n": 8,
+       "mean": 0.0549,
+       "median": 0.0483,
+       "positive_rate": 1.0
+      },
+      "clv_fair": {
+       "n": 0
+      },
+      "clv_price": {
+       "n": 0
+      },
+      "close_coverage": 0.0,
+      "unique_events": 8,
+      "hypothetical": {
+       "\u00a31": {
+        "turnover": 7.0,
+        "expected_profit": 0.42,
+        "realised": 0.28
+       }
+      }
+     }
+    }
+   },
+   "concentration": {
+    "sport": {
+     "top": [
+      "tennis",
+      10
+     ],
+     "top_share": 1.0,
+     "counts": {
+      "tennis": 10
+     }
+    },
+    "engine_id": {
+     "top": [
+      "wta_match_winner.betfair_market",
+      9
+     ],
+     "top_share": 0.9,
+     "counts": {
+      "wta_match_winner.betfair_market": 9,
+      "atp_match_winner.betfair_market": 1
+     }
+    },
+    "source": {
+     "top": [
+      "betfair_ex_uk",
+      2
+     ],
+     "top_share": 0.2,
+     "counts": {
+      "betfair_ex_uk": 2,
+      "betway": 2,
+      "boylesports": 2,
+      "sport888": 1,
+      "casumo": 1,
+      "betfair_sb_uk": 1,
+      "livescorebet": 1
+     }
+    },
+    "execution_class": {
+     "top": [
+      "BOOKMAKER_ONLY",
+      8
+     ],
+     "top_share": 0.8,
+     "counts": {
+      "BOOKMAKER_ONLY": 8,
+      "API_EXECUTABLE": 2
+     }
+    },
+    "market": {
+     "top": [
+      "match_winner",
+      10
+     ],
+     "top_share": 1.0,
+     "counts": {
+      "match_winner": 10
+     }
+    }
+   },
+   "data_failures": {
+    "NO_CLOSE_CAPTURED": 10,
+    "SETTLEMENT_OVERDUE": 1
+   }
+  }
+ }
+}

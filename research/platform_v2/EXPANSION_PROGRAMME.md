@@ -41,6 +41,13 @@ Three capacities are tracked separately, so the bankroll never steers research:
 10. Cannot beat or complement the strongest sensible comparator at the pre-registered N.
 11. Any retuning after a holdout means the market is killed, never re-run on the same holdout.
 
+## Automation feasibility (added 2026-10-11; operating mode is unattended paper)
+Every market is also scored on automation feasibility (research/platform_v2/execution/AUTOMATION_ARCHITECTURE.md §4):
+price collection, order submission, availability, liquidity, commission, stake limits, timing, stale-price risk,
+API stability, legal/terms, account-limiting risk, dry-run feasibility. If two directions have similar model quality and
+economic potential, prefer the more automatable one. Opportunities are tracked separately as BOOKMAKER_ONLY,
+EXCHANGE_EXECUTABLE and API_EXECUTABLE.
+
 ## Research priority
 - U_m = C_m (candidates/month) × q_m (qualification rate) × u_m (unique-event fraction) × e_m (executable share),
   each as a LOW–HIGH range.

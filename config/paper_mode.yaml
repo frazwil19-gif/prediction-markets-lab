@@ -1,0 +1,10 @@
+# Unattended prospective paper validation (Fraser/ChatGPT directive 2026-10-11). Real-money betting PAUSED.
+# Qualification is unchanged: bsv2-4 (config/bet_selection_v2.yaml). Every PAPER_BET is a paper order; nothing is placed.
+version: paper-1
+simulated_stake_gbp: 1.0                     # flat £1 simulated stake for continuity (labelled SIMULATED everywhere)
+hypothetical_stakes_gbp: [1, 5, 10]          # HYPOTHETICAL scaling scenarios in reports only
+exchange_sources: [betfair_ex_uk, betfair_ex_eu, smarkets, matchbook]
+api_executable_sources: [betfair_ex_uk]      # venues with an order-placement API we could use (Betfair Exchange API)
+settlement_overdue_hours: 120                # an open order past start + this is flagged SETTLEMENT_OVERDUE
+max_price_age_minutes_flag: 60               # data-quality flag only (the bsv2 gate itself is unchanged)
+report_windows_days: {weekly: 7, monthly: 30}

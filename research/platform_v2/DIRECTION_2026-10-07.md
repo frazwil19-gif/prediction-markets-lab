@@ -93,3 +93,10 @@ continue unchanged under their pre-registrations.
 - Scaling criteria (draft, not active): consider raising stake above £1 only after ≥ 100 settled LIVE bets with
   realised profit ≥ 0, positive mean CLV with 95% CI excluding 0 or ≥ 200 bets, and probability KPIs within calibration
   tolerance — requires Fraser's approval and a pre-registration.
+
+
+## 2026-10-11 operating mode change (Fraser)
+Real-money manual betting PAUSED. The project runs as FULLY AUTOMATED PROSPECTIVE PAPER VALIDATION (simulated £1 stakes,
+bsv2-4 unchanged, engine tiers preserved). Automated real-money execution is a future option behind the readiness gate
+and API-purchase hurdle in `execution/AUTOMATION_ARCHITECTURE.md`. The live-phase sections above are superseded for
+operations (kept for provenance).

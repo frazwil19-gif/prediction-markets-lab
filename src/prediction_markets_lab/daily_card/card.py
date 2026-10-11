@@ -196,10 +196,13 @@ def build(board: dict, candidates: list[dict], research_rows: list[dict], cfg: C
     best_preds = [p for p in preds if p["probability"] >= cfg["best_predictions_min_probability"]][: cfg["best_predictions_max_rows"]]
     live = bool(cfg["live_policy"]["real_money_enabled"])
     bets = [{**p, "net_ev": float(p["decision_net_ev"]), "odds": float(p["decision_odds"]),
-             "money_eligible": (not live) or money_engines is None or p["engine_id"] in money_engines,
+             "money_eligible": money_engines is None or p["engine_id"] in money_engines,   # registry tier kept in paper mode too
              "provisional_live": bool(provisional_engines) and p["engine_id"] in provisional_engines}
             for p in preds if p["decision"] == PAPER_BET]
     bets = assign_stakes(bets, cfg["live_policy"], cfg.raw.get("provisional_live", {}).get("max_live_bets_per_day_per_engine"))
+    for b in bets:
+        b["tier"] = "PAPER_ONLY" if not b["money_eligible"] else ("PROVISIONAL_LIVE" if b["provisional_live"] else "LIVE_ELIGIBLE")
+        b["stake_kind"] = "REAL" if live else "SIMULATED"
     rejections: dict[str, int] = {}
     for p in preds:
         if p["decision"] != PAPER_BET:
@@ -214,7 +217,8 @@ def build(board: dict, candidates: list[dict], research_rows: list[dict], cfg: C
     staked = sum(b["stake_gbp"] for b in bets) + (multi["stake_gbp"] if multi else 0.0)
     return {"card_version": cfg["card_version"], "generated_at": now.isoformat(), "stage_a_generated_at": board.get("generated_at"),
             "real_money_enabled": bool(pol["real_money_enabled"]),
-            "mode": "LIVE — manual £1 bets (you place them; nothing is automated)" if pol["real_money_enabled"] else "PAPER — live betting not activated",
+            "mode": ("LIVE — manual £1 bets (you place them; nothing is automated)" if pol["real_money_enabled"] else
+                     "PAPER — unattended prospective validation (real-money betting paused; nothing to place)"),
             "summary": {"predictions_in_window": len(preds), "best_predictions_shown": len(best_preds), "bets": sum(b["stake_gbp"] > 0 for b in bets),
                         "total_stake_gbp": staked, "exposure_pct_of_bankroll": round(100 * staked / pol["bankroll_gbp"], 1),
                         "strong_price_too_low": len(poor_price), "research_predictions": len(research_rows)},
@@ -248,13 +252,16 @@ def render_md(c: dict) -> str:
                  f"{p['band']} | {_pct(p['sigma'])} | {p['evidence']} | {p['fair_odds']:.2f} | {price} | {'YES' if p['decision'] == PAPER_BET else 'no'} |")
     if not c["best_predictions"]:
         L.append("| — | | no predictions in the window | | | | | | | | | | |")
-    L += ["", "## 2. Best bets today", ""]
+    paper = not c.get("real_money_enabled", True)
+    L += ["", "## 2. Qualified paper bets (simulated stakes, recorded automatically)" if paper else "## 2. Best bets today", ""]
     if c["best_bets"]:
         L += ["| Event | Selection | P | Fair odds | Odds (source) | **Min odds at any bookmaker** | Price time | EV after costs | Stake | Note |", "|---|---|---|---|---|---|---|---|---|---|"]
         for b in c["best_bets"]:
             L.append(f"| {b['event_name']} ({b['event_start'][:16]}) | {b['market']}: {b['selection']} | {_pct(b['probability'])} | {b['fair_odds']:.2f} | "
-                     f"{b['odds']:.2f} ({b['decision_source']}) | **{min_bookmaker_odds(b['probability']):.2f}** | {str(b['price_observed_at'])[:16]} | {_pct(b['net_ev'])} | £{b['stake_gbp']:.0f} | {b['stake_note']} |")
-        L += ["", "_How to bet: only rows with a £ stake. Any bookmaker you have (e.g. Bet365) is fine if its odds are at least the **Min odds** "
+                     f"{b['odds']:.2f} ({b['decision_source']}) | **{min_bookmaker_odds(b['probability']):.2f}** | {str(b['price_observed_at'])[:16]} | {_pct(b['net_ev'])} | £{b['stake_gbp']:.0f}{' (sim)' if paper else ''} | {b.get('tier', '')} {b['stake_note']} |")
+        L += ["", "_Recorded automatically in the paper ledger (paper_betting_v2); closing price, settlement and CLV are captured "
+              "automatically. Tier shows what each engine would be allowed to do if live betting were re-authorised. Nothing to do._"] if paper else \
+             ["", "_How to bet: only rows with a £ stake. Any bookmaker you have (e.g. Bet365) is fine if its odds are at least the **Min odds** "
               "shown (exchanges like Betfair need ~5% higher because of commission). If no bookmaker of yours reaches it, skip. "
               "Place it, then log it in your Bet Log (bookmaker, card odds, odds taken, stake, time). Rows marked PAPER ONLY are not live bets._"]
     else:
@@ -275,8 +282,7 @@ def render_md(c: dict) -> str:
     else:
         L.append("No Big Card today — it needs at least 3 qualifying legs on different events. Never padded with weaker legs.")
     L += ["", "## 3. Strong predictions — price too low (no bet)", "",
-          "_NOT live-money eligible. Do not check other bookmakers to rescue these — that would bias the record. (Optional: note any "
-          "prices you happen to see as research in the Bet Log's price-check section.)_", ""]
+          "_Not qualified: the price is below fair after costs. Never rescued with other prices — that would bias the record._", ""]
     if c["strong_price_too_low"]:
         L += ["| Event | Selection | P | Fair odds | Best clean price | Why no bet |", "|---|---|---|---|---|---|"]
         for p in c["strong_price_too_low"]:
