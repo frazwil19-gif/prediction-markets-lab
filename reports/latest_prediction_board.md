@@ -36,19 +36,19 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 375
 | football_1x2.market_consensus | VALIDATED_HISTORICAL / COLLECTING | 393 | 0 | COLLECTING | 0 | — → — |
 | football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 28 | 0 | COLLECTING | 0 | — → — |
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
-| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 140 | 53 | EARLY | 11 | 86.8% → 81.8% |
+| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 140 | 54 | EARLY | 12 | 86.6% → 83.3% |
 | wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 107 | 77 | EARLY | 18 | 91.3% → 88.9% |
 | nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 0 | 0 | COLLECTING | 0 | — → — |
-| nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 28 | 7 | COLLECTING | 0 | — → — |
-| nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 14 | 0 | COLLECTING | 0 | — → — |
+| nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 28 | 18 | COLLECTING | 0 | — → — |
+| nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 14 | 1 | COLLECTING | 0 | — → — |
 | football_double_chance.derived_1x2 | PROVISIONAL_PROSPECTIVE / COLLECTING | 393 | 0 | COLLECTING | 0 | — → — |
 
 ## System health
 
 - daily_scan: OK (last 2026-10-10T06:16:38.595019+00:00)
-- settlement: OK (last 2026-10-10T00:42:39.338194+00:00)
+- settlement: OK (last 2026-10-11T00:12:44.501656+00:00)
 - tennis_board: OK (last 2026-10-10T15:16:18.962393+00:00)
-- ci_tests: OK (last 2026-10-11T00:12:27.710543+00:00)
+- ci_tests: OK (last 2026-10-11T01:07:13.738088+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 

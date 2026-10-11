@@ -1,7 +1,7 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-11T00:12:43.319183+00:00",
+ "generated_at": "2026-10-11T01:07:35.957965+00:00",
  "date": "2026-10-11",
  "summary": {
   "upcoming_events": 60,
@@ -35,7 +35,7 @@
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-11T00:12:43.319183+00:00",
+  "generated_at": "2026-10-11T01:07:35.957965+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -43,22 +43,22 @@
     "last": "2026-10-10T06:16:38.595019+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 17.9
+    "age_hours": 18.8
    },
    "settlement": {
-    "last": "2026-10-10T00:42:39.338194+00:00",
+    "last": "2026-10-11T00:12:44.501656+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 23.5
+    "age_hours": 0.9
    },
    "tennis_board": {
     "last": "2026-10-10T15:16:18.962393+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 8.9
+    "age_hours": 9.9
    },
    "ci_tests": {
-    "last": "2026-10-11T00:12:27.710543+00:00",
+    "last": "2026-10-11T01:07:13.738088+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -115,11 +115,11 @@
    "prospective_status": "COLLECTING",
    "money_eligible": true,
    "predictions": 140,
-   "settled_rows": 53,
+   "settled_rows": 54,
    "maturity": "EARLY",
-   "ge80_settled": 11,
-   "ge80_mean_pred": 0.8684190909090909,
-   "ge80_actual": 0.8181818181818182,
+   "ge80_settled": 12,
+   "ge80_mean_pred": 0.8656855,
+   "ge80_actual": 0.8333333333333334,
    "alarm_review_required": false
   },
   "wta_match_winner.betfair_market": {
@@ -151,7 +151,7 @@
    "prospective_status": "COLLECTING",
    "money_eligible": false,
    "predictions": 28,
-   "settled_rows": 7,
+   "settled_rows": 18,
    "maturity": "COLLECTING",
    "ge80_settled": 0,
    "ge80_mean_pred": null,
@@ -163,7 +163,7 @@
    "prospective_status": "COLLECTING",
    "money_eligible": true,
    "predictions": 14,
-   "settled_rows": 0,
+   "settled_rows": 1,
    "maturity": "COLLECTING",
    "ge80_settled": 0,
    "ge80_mean_pred": null,
