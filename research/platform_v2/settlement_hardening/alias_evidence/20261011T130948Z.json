@@ -1,0 +1,225 @@
+{
+ "generated_at": "2026-10-11T13:09:48.455922+00:00",
+ "credits_charged": 0,
+ "warnings": [],
+ "leagues": {
+  "E0": {
+   "fd_fixtures": 60,
+   "odds_events": 30,
+   "known": 20,
+   "proposed": {},
+   "method": {},
+   "evidence": {},
+   "unresolved": {},
+   "fd_fixtures_without_odds_slot": 50,
+   "rejected": "",
+   "odds_names_not_in_alias_table": []
+  },
+  "E1": {
+   "fd_fixtures": 107,
+   "odds_events": 36,
+   "known": 24,
+   "proposed": {},
+   "method": {},
+   "evidence": {},
+   "unresolved": {},
+   "fd_fixtures_without_odds_slot": 95,
+   "rejected": "",
+   "odds_names_not_in_alias_table": []
+  },
+  "SC0": {
+   "fd_fixtures": 48,
+   "odds_events": 11,
+   "known": 12,
+   "proposed": {},
+   "method": {},
+   "evidence": {},
+   "unresolved": {},
+   "fd_fixtures_without_odds_slot": 42,
+   "rejected": "",
+   "odds_names_not_in_alias_table": []
+  },
+  "N1": {
+   "fd_fixtures": 72,
+   "odds_events": 21,
+   "known": 0,
+   "proposed": {
+    "Cambuur": "SC Cambuur",
+    "Den Haag": "ADO Den Haag",
+    "Excelsior": "Excelsior",
+    "Groningen": "Groningen",
+    "Telstar": "SC Telstar",
+    "Zwolle": "FC Zwolle"
+   },
+   "method": {
+    "Cambuur": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Den Haag": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Excelsior": "FIXTURE_IDENTITY",
+    "Groningen": "FIXTURE_IDENTITY",
+    "Telstar": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Zwolle": "FIXTURE_IDENTITY+NAME_TOKEN"
+   },
+   "evidence": {
+    "Cambuur": [
+     "2026-10-11 12:30Z Zwolle v Cambuur = FC Zwolle v SC Cambuur"
+    ],
+    "Den Haag": [
+     "2026-10-11 12:30Z Telstar v Den Haag = SC Telstar v ADO Den Haag"
+    ],
+    "Excelsior": [
+     "2026-10-11 14:45Z Excelsior v Groningen = Excelsior v Groningen"
+    ],
+    "Groningen": [
+     "2026-10-11 14:45Z Excelsior v Groningen = Excelsior v Groningen"
+    ],
+    "Telstar": [
+     "2026-10-11 12:30Z Telstar v Den Haag = SC Telstar v ADO Den Haag"
+    ],
+    "Zwolle": [
+     "2026-10-11 12:30Z Zwolle v Cambuur = FC Zwolle v SC Cambuur"
+    ]
+   },
+   "unresolved": {},
+   "fd_fixtures_without_odds_slot": 69,
+   "rejected": "",
+   "odds_names_not_in_alias_table": [
+    "ADO Den Haag",
+    "AZ Alkmaar",
+    "Ajax",
+    "Excelsior",
+    "FC Twente Enschede",
+    "FC Utrecht",
+    "FC Zwolle",
+    "Feyenoord",
+    "Fortuna Sittard",
+    "Go Ahead Eagles",
+    "Groningen",
+    "Heerenveen",
+    "NEC Nijmegen",
+    "PSV Eindhoven",
+    "SC Cambuur",
+    "SC Telstar",
+    "Sparta Rotterdam",
+    "Willem II"
+   ]
+  },
+  "D1": {
+   "fd_fixtures": 45,
+   "odds_events": 11,
+   "known": 0,
+   "proposed": {
+    "FC Koln": "1. FC K\u00f6ln",
+    "Freiburg": "SC Freiburg",
+    "M'gladbach": "Borussia Monchengladbach",
+    "Schalke 04": "FC Schalke 04"
+   },
+   "method": {
+    "FC Koln": "FIXTURE_IDENTITY",
+    "Freiburg": "FIXTURE_IDENTITY",
+    "M'gladbach": "FIXTURE_IDENTITY",
+    "Schalke 04": "FIXTURE_IDENTITY"
+   },
+   "evidence": {
+    "FC Koln": [
+     "2026-10-11 13:30Z FC Koln v M'gladbach = 1. FC K\u00f6ln v Borussia Monchengladbach"
+    ],
+    "Freiburg": [
+     "2026-10-11 15:30Z Freiburg v Schalke 04 = SC Freiburg v FC Schalke 04"
+    ],
+    "M'gladbach": [
+     "2026-10-11 13:30Z FC Koln v M'gladbach = 1. FC K\u00f6ln v Borussia Monchengladbach"
+    ],
+    "Schalke 04": [
+     "2026-10-11 15:30Z Freiburg v Schalke 04 = SC Freiburg v FC Schalke 04"
+    ]
+   },
+   "unresolved": {},
+   "fd_fixtures_without_odds_slot": 43,
+   "rejected": "",
+   "odds_names_not_in_alias_table": [
+    "1. FC K\u00f6ln",
+    "Augsburg",
+    "Bayer Leverkusen",
+    "Bayern Munich",
+    "Borussia Dortmund",
+    "Borussia Monchengladbach",
+    "Eintracht Frankfurt",
+    "Elversberg",
+    "FC Schalke 04",
+    "FSV Mainz 05",
+    "Hamburger SV",
+    "RB Leipzig",
+    "SC Freiburg",
+    "SC Paderborn",
+    "TSG Hoffenheim",
+    "Union Berlin",
+    "VfB Stuttgart",
+    "Werder Bremen"
+   ]
+  },
+  "F1": {
+   "fd_fixtures": 54,
+   "odds_events": 15,
+   "known": 0,
+   "proposed": {
+    "Auxerre": "Auxerre",
+    "Marseille": "Marseille",
+    "Nice": "Nice",
+    "Rennes": "Rennes",
+    "Strasbourg": "Strasbourg",
+    "Troyes": "Troyes"
+   },
+   "method": {
+    "Auxerre": "FIXTURE_IDENTITY",
+    "Marseille": "FIXTURE_IDENTITY",
+    "Nice": "FIXTURE_IDENTITY",
+    "Rennes": "FIXTURE_IDENTITY",
+    "Strasbourg": "FIXTURE_IDENTITY",
+    "Troyes": "FIXTURE_IDENTITY"
+   },
+   "evidence": {
+    "Auxerre": [
+     "2026-10-11 15:15Z Rennes v Auxerre = Rennes v Auxerre"
+    ],
+    "Marseille": [
+     "2026-10-11 18:45Z Troyes v Marseille = Troyes v Marseille"
+    ],
+    "Nice": [
+     "2026-10-11 13:00Z Nice v Strasbourg = Nice v Strasbourg"
+    ],
+    "Rennes": [
+     "2026-10-11 15:15Z Rennes v Auxerre = Rennes v Auxerre"
+    ],
+    "Strasbourg": [
+     "2026-10-11 13:00Z Nice v Strasbourg = Nice v Strasbourg"
+    ],
+    "Troyes": [
+     "2026-10-11 18:45Z Troyes v Marseille = Troyes v Marseille"
+    ]
+   },
+   "unresolved": {},
+   "fd_fixtures_without_odds_slot": 51,
+   "rejected": "",
+   "odds_names_not_in_alias_table": [
+    "AS Monaco",
+    "Angers",
+    "Auxerre",
+    "Brest",
+    "Le Havre",
+    "Le Mans FC",
+    "Lille",
+    "Lorient",
+    "Lyon",
+    "Marseille",
+    "Nice",
+    "Paris FC",
+    "Paris Saint Germain",
+    "RC Lens",
+    "Rennes",
+    "Strasbourg",
+    "Toulouse",
+    "Troyes"
+   ]
+  }
+ }
+}
