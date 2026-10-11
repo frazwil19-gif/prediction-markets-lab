@@ -4,54 +4,54 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-11T06:16Z · events scanned 60 · valid predictions 246 · high-P (≥70%) 68 · priced 124 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 248 · new paper bets 0 · Money Card qualified 1
+Run 2026-10-11T13:18Z · events scanned 70 · valid predictions 161 · high-P (≥70%) 46 · priced 81 · PAPER_BET 0 · MULTI-research 2 · WATCH 1 · REJECT 181 · new paper bets 0 · Money Card qualified 1
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 223 · P_BELOW_FLOOR 109 · NO_EXECUTABLE_PRICE 108 · NET_EV_NOT_POSITIVE 98 · PRICE_STALE 31 · COMMISSION_UNKNOWN 14 · EXCHANGE_SPREAD_TOO_WIDE 7 · PREDICTION_NOT_VALID 2 · PROBABILITY_NOT_SAME_SNAPSHOT 1
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 134 · NET_EV_NOT_POSITIVE 83 · PRICE_STALE 81 · P_BELOW_FLOOR 66 · NO_EXECUTABLE_PRICE 66 · PREDICTION_NOT_VALID 23 · PROBABILITY_NOT_SAME_SNAPSHOT 21 · COMMISSION_UNKNOWN 14 · EXCHANGE_SPREAD_TOO_WIDE 2 · NET_EV_BELOW_PAPER_GATE 1
 
 ## Candidates (latest run, best price per prediction)
 
 | Event | Start | Sel | P | Fair | Odds (source) | Break-even | Net EV | Decision |
 |---|---|---|---|---|---|---|---|---|
 | Benfica v Vitória SC | 2026-10-11T17:00 | 1X | 92.4% | 1.08 | — | — | — | REJECT |
+| Zizou Bergs v Carlos Alcaraz | 2026-10-12T10:00 | Carlos Alcaraz | 91.1% | 1.10 | 1.09 (smarkets) | 91.9% | -0.9% | REJECT |
+| Zizou Bergs v Carlos Alcaraz | 2026-10-12T10:00 | Carlos Alcaraz | 91.1% | 1.10 | 1.09 (smarkets) | 91.9% | -0.9% | MULTI_RESEARCH_ELIGIBLE |
 | Union Saint-Gilloise v Leuven | 2026-10-11T14:00 | 1X | 90.9% | 1.10 | — | — | — | REJECT |
-| Zizou Bergs v Carlos Alcaraz | 2026-10-12T04:00 | Carlos Alcaraz | 87.6% | 1.14 | 1.07 (betway) | 93.5% | -6.3% | REJECT |
-| Daniil Medvedev v Dalibor Svrcina | 2026-10-12T04:00 | Daniil Medvedev | 86.6% | 1.15 | 1.12 (betfair_ex_uk) | 89.8% | -3.5% | REJECT |
-| Daniil Medvedev v Dalibor Svrcina | 2026-10-12T04:00 | Daniil Medvedev | 86.6% | 1.15 | 1.12 (betfair_ex_uk) | 89.8% | -3.5% | REJECT |
-| Alexander Zverev v Quentin Halys | 2026-10-11T10:00 | Alexander Zverev | 85.9% | 1.16 | 1.16 (betfair_ex_uk) | 86.8% | -1.0% | REJECT |
 | Benfica v Vitória SC | 2026-10-11T17:00 | 12 | 85.7% | 1.17 | — | — | — | REJECT |
 | Rennes v Auxerre | 2026-10-11T15:15 | 1X | 85.5% | 1.17 | — | — | — | REJECT |
+| Guo Hanyu v Sorana Cirstea | 2026-10-13T02:00 | Sorana Cirstea | 85.0% | 1.18 | 1.12 (betano_uk) | 89.3% | -4.8% | REJECT |
+| Daniil Medvedev v Dalibor Svrcina | 2026-10-12T06:20 | Daniil Medvedev | 84.9% | 1.18 | 1.17 (sport888) | 85.5% | -0.7% | REJECT |
+| Daniil Medvedev v Dalibor Svrcina | 2026-10-12T06:20 | Daniil Medvedev | 84.9% | 1.18 | 1.17 (sport888) | 85.5% | -0.7% | MULTI_RESEARCH_ELIGIBLE |
 | Cagliari v Juventus | 2026-10-11T18:45 | X2 | 84.5% | 1.18 | — | — | — | REJECT |
 | Union Saint-Gilloise v Leuven | 2026-10-11T14:00 | 12 | 84.1% | 1.19 | — | — | — | REJECT |
 | Real Betis v CA Osasuna | 2026-10-11T16:30 | 1X | 83.8% | 1.19 | — | — | — | REJECT |
-| FC Utrecht v Willem II | 2026-10-11T10:15 | 1X | 83.3% | 1.20 | — | — | — | REJECT |
 | Real Sociedad v Deportivo La Coruña | 2026-10-11T14:15 | 1X | 82.8% | 1.21 | — | — | — | REJECT |
-| Lazio v Monza | 2026-10-11T13:00 | 1X | 82.8% | 1.21 | — | — | — | REJECT |
 | Atalanta BC v Venezia | 2026-10-12T16:30 | 1X | 82.7% | 1.21 | — | — | — | REJECT |
 | SC Freiburg v FC Schalke 04 | 2026-10-11T15:30 | 1X | 82.3% | 1.22 | — | — | — | REJECT |
-| Southampton v Portsmouth | 2026-10-11T11:00 | 1X | 81.7% | 1.22 | — | — | — | REJECT |
-| Motherwell v Celtic | 2026-10-11T11:00 | X2 | 80.5% | 1.24 | — | — | — | REJECT |
 | Rennes v Auxerre | 2026-10-11T15:15 | 12 | 80.3% | 1.24 | — | — | — | REJECT |
-| FC Utrecht v Willem II | 2026-10-11T10:15 | 12 | 79.6% | 1.26 | — | — | — | REJECT |
+| Arthur Fils v Botic van de Zandschulp | 2026-10-12T07:30 | Arthur Fils | 79.3% | 1.26 | 1.26 (betfair_ex_uk) | 80.2% | -1.1% | REJECT |
 | Benfica v Vitória SC | 2026-10-11T17:00 | home | 79.0% | 1.27 | 1.23 (betfair) | 82.1% | -3.7% | REJECT |
-| Motherwell v Celtic | 2026-10-11T11:00 | 12 | 78.5% | 1.27 | — | — | — | REJECT |
+| Belinda Bencic v Shuai Zhang | 2026-10-13T02:00 | Belinda Bencic | 78.8% | 1.27 | 1.18 (betano_uk) | 84.7% | -7.0% | REJECT |
 | Famalicão v Alverca | 2026-10-12T19:15 | 1X | 78.2% | 1.28 | — | — | — | REJECT |
 | Real Betis v CA Osasuna | 2026-10-11T16:30 | 12 | 78.1% | 1.28 | — | — | — | REJECT |
-| Lecce v Bologna | 2026-10-11T13:00 | X2 | 77.5% | 1.29 | — | — | — | REJECT |
 | Atalanta BC v Venezia | 2026-10-12T16:30 | 12 | 77.5% | 1.29 | — | — | — | REJECT |
 | Sassuolo v AC Milan | 2026-10-11T16:00 | X2 | 77.5% | 1.29 | — | — | — | REJECT |
-| Southampton v Portsmouth | 2026-10-11T11:00 | 12 | 77.3% | 1.29 | — | — | — | REJECT |
+| Alexandra Eala v Shi Han | 2026-10-12T12:40 | Alexandra Eala | 77.1% | 1.30 | 1.22 (betano_uk) | 82.0% | -5.9% | REJECT |
 | Real Sociedad v Deportivo La Coruña | 2026-10-11T14:15 | 12 | 76.5% | 1.31 | — | — | — | REJECT |
-| Lazio v Monza | 2026-10-11T13:00 | 12 | 76.3% | 1.31 | — | — | — | REJECT |
 | SC Freiburg v FC Schalke 04 | 2026-10-11T15:30 | 12 | 76.2% | 1.31 | — | — | — | REJECT |
 | Philadelphia Eagles @ Jacksonville Jaguars | 2026-10-11T13:30 | Jacksonville Jaguars | 76.0% | 1.32 | 1.30 (unibet_uk) | 76.9% | -1.3% | REJECT |
+| Mayar Sherif v Maja Chwalinska | 2026-10-13T02:00 | Maja Chwalinska | 75.9% | 1.32 | 1.25 (betano_uk) | 80.0% | -5.1% | REJECT |
 | 1. FC Köln v Borussia Monchengladbach | 2026-10-11T13:30 | 12 | 75.8% | 1.32 | — | — | — | REJECT |
-| FC Zwolle v SC Cambuur | 2026-10-11T12:30 | 12 | 75.7% | 1.32 | — | — | — | REJECT |
 | Cagliari v Juventus | 2026-10-11T18:45 | 12 | 75.6% | 1.32 | — | — | — | REJECT |
 | Union Saint-Gilloise v Leuven | 2026-10-11T14:00 | home | 75.5% | 1.33 | 1.28 (ladbrokes) | 78.1% | -3.4% | REJECT |
 | Houston Texans @ Tennessee Titans | 2026-10-11T17:00 | Houston Texans | 75.3% | 1.33 | 1.31 (matchbook) | — | — | REJECT |
+| Katie Boulter v Diana Shnaider | 2026-10-13T02:00 | Diana Shnaider | 75.3% | 1.33 | 1.25 (betano_uk) | 80.0% | -5.9% | REJECT |
 | Troyes v Marseille | 2026-10-11T18:45 | 12 | 75.2% | 1.33 | — | — | — | REJECT |
-| SC Telstar v ADO Den Haag | 2026-10-11T12:30 | 12 | 74.8% | 1.34 | — | — | — | REJECT |
+| Pablo Carreno Busta v Felix Auger-Aliassime | 2026-10-12T04:00 | Felix Auger-Aliassime | 75.0% | 1.33 | 1.32 (betfair_ex_uk) | 76.7% | -2.1% | REJECT |
 | Westerlo v Royal Antwerp | 2026-10-11T16:30 | 12 | 74.7% | 1.34 | — | — | — | REJECT |
+| Sassuolo v AC Milan | 2026-10-11T16:00 | 12 | 74.5% | 1.34 | — | — | — | REJECT |
+| Troyes v Marseille | 2026-10-11T18:45 | X2 | 74.3% | 1.35 | — | — | — | REJECT |
+| Liverpool v Manchester City | 2026-10-11T15:30 | 12 | 74.3% | 1.35 | — | — | — | REJECT |
+| Excelsior v Groningen | 2026-10-11T14:45 | 12 | 74.1% | 1.35 | — | — | — | REJECT |
 
 ## Paper results (all time)
 
