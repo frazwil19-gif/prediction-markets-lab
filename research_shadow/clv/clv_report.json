@@ -1,13 +1,13 @@
 {
  "version": "clv-1",
- "generated_at": "2026-10-08T17:54:40.901447+00:00",
+ "generated_at": "2026-10-12T00:05:31.014634+00:00",
  "credits": {
   "month": "2026-10",
   "spent_this_month": 0,
   "monthly_cap": 100,
   "paid_calls_this_month": 0
  },
- "missed": 0,
+ "missed": 2,
  "paper_bet_clv": {
   "n_targets": 0,
   "n_captured": 0,
@@ -41,14 +41,21 @@
   "looks_reached": [],
   "bands": {
    "<0": {
-    "n": 0,
+    "n": 55,
     "est_ev": {
-     "n": 0
+     "n": 55,
+     "mean": -0.0169,
+     "median": -0.01557,
+     "positive_rate": 0.0,
+     "ci95": [
+      -0.01876,
+      -0.01503
+     ]
     },
     "tier_a_eligible": 0,
     "tier_a_captured": 0,
-    "top_book_share": null,
-    "price_age_median_min": null,
+    "top_book_share": 0.455,
+    "price_age_median_min": 0.4,
     "fair_clv": {
      "n": 0
     },
@@ -59,32 +66,52 @@
      "n": 0
     },
     "tier_b_proxy_fair_clv": {
-     "n": 0
+     "n": 28,
+     "mean": -0.01692,
+     "median": -0.01297,
+     "positive_rate": 0.071,
+     "ci95": [
+      -0.023,
+      -0.01154
+     ]
     },
     "outcomes": {
-     "settled": 0
+     "settled": 1,
+     "wins": 1,
+     "expected_wins": 0.84,
+     "pnl_gbp_at_1": 0.18,
+     "roi": 0.18,
+     "expected_profit_gbp_at_1": -0.01,
+     "brier": 0.027,
+     "log_loss": 0.1796
     }
    },
    "0-1": {
-    "n": 0,
+    "n": 2,
     "est_ev": {
-     "n": 0
+     "n": 2,
+     "mean": 0.0052,
+     "median": 0.0052,
+     "positive_rate": 1.0
     },
-    "tier_a_eligible": 0,
+    "tier_a_eligible": 2,
     "tier_a_captured": 0,
-    "top_book_share": null,
-    "price_age_median_min": null,
+    "top_book_share": 0.5,
+    "price_age_median_min": 0.65,
     "sealed": "CLV/P&L/calibration sealed until 100 combined 0-2% Tier-A captures"
    },
    "1-2": {
-    "n": 0,
+    "n": 2,
     "est_ev": {
-     "n": 0
+     "n": 2,
+     "mean": 0.01438,
+     "median": 0.01438,
+     "positive_rate": 1.0
     },
-    "tier_a_eligible": 0,
+    "tier_a_eligible": 2,
     "tier_a_captured": 0,
-    "top_book_share": null,
-    "price_age_median_min": null,
+    "top_book_share": 0.5,
+    "price_age_median_min": 0.95,
     "sealed": "CLV/P&L/calibration sealed until 100 combined 0-2% Tier-A captures"
    },
    "2-4": {
