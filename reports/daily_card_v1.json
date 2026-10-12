@@ -1,7 +1,7 @@
 {
  "card_version": "card-v1.2",
- "generated_at": "2026-10-12T15:16:39.724518+00:00",
- "stage_a_generated_at": "2026-10-12T15:16:38.621886+00:00",
+ "generated_at": "2026-10-12T16:36:29.151165+00:00",
+ "stage_a_generated_at": "2026-10-12T16:36:28.174990+00:00",
  "real_money_enabled": false,
  "mode": "PAPER \u2014 unattended prospective validation (real-money betting paused; nothing to place)",
  "summary": {
@@ -10,17 +10,17 @@
   "bets": 0,
   "total_stake_gbp": 0.0,
   "exposure_pct_of_bankroll": 0.0,
-  "strong_price_too_low": 27,
+  "strong_price_too_low": 26,
   "research_predictions": 20
  },
  "rejection_reasons": {
-  "ENGINE_STATUS_INELIGIBLE": 87,
-  "PRICE_STALE": 51,
-  "NET_EV_NOT_POSITIVE": 45,
-  "NO_EXECUTABLE_PRICE": 39,
-  "P_BELOW_FLOOR": 39,
-  "COMMISSION_UNKNOWN": 22,
-  "EXCHANGE_SPREAD_TOO_WIDE": 4
+  "ENGINE_STATUS_INELIGIBLE": 81,
+  "NET_EV_NOT_POSITIVE": 56,
+  "NO_EXECUTABLE_PRICE": 36,
+  "P_BELOW_FLOOR": 36,
+  "COMMISSION_UNKNOWN": 14,
+  "PRICE_STALE": 13,
+  "EXCHANGE_SPREAD_TOO_WIDE": 8
  },
  "best_predictions": [
   {
@@ -49,7 +49,7 @@
    "decision_net_ev": "-0.029963672499999948",
    "price_observed_at": "2026-10-12T15:16:35.221565+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -78,7 +78,7 @@
    "decision_net_ev": "-0.01115971480000004",
    "price_observed_at": "2026-10-12T15:16:35.221565+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -107,36 +107,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
-   "min_bookmaker_odds": 1.33
-  },
-  {
-   "prediction_id": "66f03cb23c647ce3",
-   "sport": "football",
-   "competition": "Serie A",
-   "event_key": "football|Serie A|Atalanta BC v Venezia|2026-10-12T16:30:00+00:00",
-   "event_name": "Atalanta BC v Venezia",
-   "event_start": "2026-10-12T16:30:00+00:00",
-   "market": "double_chance",
-   "selection": "1X",
-   "probability": 0.827407,
-   "band": "80%+",
-   "sigma": 0.006363,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_double_chance.derived_1x2",
-   "fair_odds": 1.21,
-   "price_status": "PRICE_UNAVAILABLE",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "",
-   "decision_source": "",
-   "decision_net_ev": "",
-   "price_observed_at": "",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -165,7 +136,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -194,7 +165,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "71cd2eb22b45caf4",
+   "sport": "tennis",
+   "competition": "WTA Wuhan Open",
+   "event_key": "tennis|tennis_wta_wuhan_open|7371e55de8d189f3b4b1c89ee467aee1",
+   "event_name": "Karolina Muchova v Caty McNally",
+   "event_start": "2026-10-14T04:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Karolina Muchova",
+   "probability": 0.804954,
+   "band": "80%+",
+   "sigma": 0.048429,
+   "evidence": "VALIDATED",
+   "engine_id": "wta_match_winner.betfair_market",
+   "fair_odds": 1.24,
+   "price_status": "PRICE_QUALITY_FAIL",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "EXCHANGE_SPREAD_TOO_WIDE|NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.19",
+   "decision_source": "betfair_ex_uk",
+   "decision_net_ev": "-0.04975180300000012",
+   "price_observed_at": "2026-10-12T15:16:35.221565+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -223,7 +223,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -252,7 +252,7 @@
    "decision_net_ev": "-0.0036237500000000644",
    "price_observed_at": "2026-10-12T15:16:35.221565+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -281,7 +281,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -310,7 +310,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -339,7 +339,7 @@
    "decision_net_ev": "-0.01663804000000002",
    "price_observed_at": "2026-10-12T15:16:35.221565+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -368,36 +368,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
-   "min_bookmaker_odds": 1.33
-  },
-  {
-   "prediction_id": "383c3a47db2e1527",
-   "sport": "football",
-   "competition": "Serie A",
-   "event_key": "football|Serie A|Atalanta BC v Venezia|2026-10-12T16:30:00+00:00",
-   "event_name": "Atalanta BC v Venezia",
-   "event_start": "2026-10-12T16:30:00+00:00",
-   "market": "double_chance",
-   "selection": "12",
-   "probability": 0.775395,
-   "band": "70%+",
-   "sigma": 0.003828,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_double_chance.derived_1x2",
-   "fair_odds": 1.29,
-   "price_status": "PRICE_UNAVAILABLE",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "",
-   "decision_source": "",
-   "decision_net_ev": "",
-   "price_observed_at": "",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -426,7 +397,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -455,7 +426,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.35
   },
   {
@@ -484,7 +455,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.37
   },
   {
@@ -513,7 +484,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.37
   },
   {
@@ -542,7 +513,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.39
   },
   {
@@ -571,7 +542,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.39
   },
   {
@@ -600,7 +571,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -629,7 +600,7 @@
    "decision_net_ev": "-0.018313647999999905",
    "price_observed_at": "2026-10-12T15:16:35.221565+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.41
   },
   {
@@ -658,7 +629,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.41
   },
   {
@@ -687,7 +658,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.42
   },
   {
@@ -716,7 +687,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.42
   },
   {
@@ -745,7 +716,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.44
   },
   {
@@ -774,7 +745,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.46
   },
   {
@@ -803,7 +774,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.46
   },
   {
@@ -832,7 +803,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.47
   },
   {
@@ -861,7 +832,7 @@
    "decision_net_ev": "-0.04146304000000006",
    "price_observed_at": "2026-10-11T15:16:27.388196+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.47
   },
   {
@@ -890,7 +861,7 @@
    "decision_net_ev": "-0.003194560000000013",
    "price_observed_at": "2026-10-12T15:16:35.221565+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.48
   },
   {
@@ -919,7 +890,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.48
   },
   {
@@ -948,7 +919,7 @@
    "decision_net_ev": "-0.02939842450000002",
    "price_observed_at": "2026-10-11T15:16:27.388196+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.49
   },
   {
@@ -966,18 +937,18 @@
    "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
    "engine_id": "football_1x2.market_consensus",
    "fair_odds": 1.49,
-   "price_status": "PRICE_QUALITY_FAIL",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.45,
+   "best_source": "betfair",
+   "best_net_ev": -0.046982,
    "decision": "REJECT",
-   "decision_reasons": "PRICE_STALE|COMMISSION_UNKNOWN|ENGINE_STATUS_INELIGIBLE",
+   "decision_reasons": "NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
    "decision_odds": "1.45",
-   "decision_source": "matchbook",
-   "decision_net_ev": "",
-   "price_observed_at": "2026-10-12T06:16:32.569018+00:00",
+   "decision_source": "betfair",
+   "decision_net_ev": "-0.046981534090908994",
+   "price_observed_at": "2026-10-12T16:36:21.159637+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.52
   },
   {
@@ -1006,7 +977,36 @@
    "decision_net_ev": "-0.006711999999999996",
    "price_observed_at": "2026-10-12T15:16:35.221565+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
+   "min_bookmaker_odds": 1.55
+  },
+  {
+   "prediction_id": "f543a0a2bb94563b",
+   "sport": "tennis",
+   "competition": "ATP Shanghai Masters",
+   "event_key": "tennis|tennis_atp_shanghai_masters|5107fa5e4b7c51b40fec9cd4f990a632",
+   "event_name": "Daniil Medvedev v Stefanos Tsitsipas",
+   "event_start": "2026-10-14T04:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Daniil Medvedev",
+   "probability": 0.661074,
+   "band": "60%+",
+   "sigma": 0.025231,
+   "evidence": "VALIDATED",
+   "engine_id": "atp_match_winner.betfair_market",
+   "fair_odds": 1.51,
+   "price_status": "PRICE_QUALITY_FAIL",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "EXCHANGE_SPREAD_TOO_WIDE|NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.47",
+   "decision_source": "betfair_ex_uk",
+   "decision_net_ev": "-0.04375645899999997",
+   "price_observed_at": "2026-10-12T15:16:35.221565+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.55
   },
   {
@@ -1035,8 +1035,37 @@
    "decision_net_ev": "-0.026598825000000048",
    "price_observed_at": "2026-10-12T15:16:35.221565+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.55
+  },
+  {
+   "prediction_id": "720d39697cb92ba0",
+   "sport": "tennis",
+   "competition": "WTA Wuhan Open",
+   "event_key": "tennis|tennis_wta_wuhan_open|4a22193d4d0978eac90ec6ebff702b4f",
+   "event_name": "Sonay Kartal v Belinda Bencic",
+   "event_start": "2026-10-14T04:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Belinda Bencic",
+   "probability": 0.656951,
+   "band": "60%+",
+   "sigma": 0.033759,
+   "evidence": "VALIDATED",
+   "engine_id": "wta_match_winner.betfair_market",
+   "fair_odds": 1.52,
+   "price_status": "PRICE_QUALITY_FAIL",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "EXCHANGE_SPREAD_TOO_WIDE|NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.46",
+   "decision_source": "betfair_ex_uk",
+   "decision_net_ev": "-0.05596141300000007",
+   "price_observed_at": "2026-10-12T15:16:35.221565+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
+   "min_bookmaker_odds": 1.56
   },
   {
    "prediction_id": "edf2df6b08ac0c18",
@@ -1064,7 +1093,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
+   "min_bookmaker_odds": 1.57
+  },
+  {
+   "prediction_id": "84c1ad1a9c638fbb",
+   "sport": "tennis",
+   "competition": "ATP Shanghai Masters",
+   "event_key": "tennis|tennis_atp_shanghai_masters|21bd71c108821f51f2f5c0d4494cba2c",
+   "event_name": "Tommy Paul v Zizou Bergs",
+   "event_start": "2026-10-14T04:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Tommy Paul",
+   "probability": 0.650279,
+   "band": "60%+",
+   "sigma": 0.060823,
+   "evidence": "VALIDATED",
+   "engine_id": "atp_match_winner.betfair_market",
+   "fair_odds": 1.54,
+   "price_status": "PRICE_QUALITY_FAIL",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "EXCHANGE_SPREAD_TOO_WIDE|NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.42",
+   "decision_source": "betfair_ex_uk",
+   "decision_net_ev": "-0.09025967899999998",
+   "price_observed_at": "2026-10-12T15:16:35.221565+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.57
   },
   {
@@ -1093,7 +1151,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.57
   },
   {
@@ -1122,66 +1180,8 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.61
-  },
-  {
-   "prediction_id": "de0ae0cf5bcfa8e8",
-   "sport": "football",
-   "competition": "Championship",
-   "event_key": "football|Championship|Cardiff City v Watford|2026-10-13T18:45:00+00:00",
-   "event_name": "Cardiff City v Watford",
-   "event_start": "2026-10-13T18:45:00+00:00",
-   "market": "over_under_2_5",
-   "selection": "over",
-   "probability": 0.634518,
-   "band": "60%+",
-   "sigma": null,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_ou25.market",
-   "fair_odds": 1.58,
-   "price_status": "PRICE_QUALITY_FAIL",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "1.44",
-   "decision_source": "william hill",
-   "decision_net_ev": "-0.08629441624365497",
-   "price_observed_at": "2026-10-12T06:16:32.569018+00:00",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
-   "min_bookmaker_odds": 1.61
-  },
-  {
-   "prediction_id": "1affedb52aaf29dd",
-   "sport": "football",
-   "competition": "Championship",
-   "event_key": "football|Championship|Millwall v Swansea City|2026-10-13T18:45:00+00:00",
-   "event_name": "Millwall v Swansea City",
-   "event_start": "2026-10-13T18:45:00+00:00",
-   "market": "double_chance",
-   "selection": "X2",
-   "probability": 0.625138,
-   "band": "60%+",
-   "sigma": 0.008133,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_double_chance.derived_1x2",
-   "fair_odds": 1.6,
-   "price_status": "PRICE_UNAVAILABLE",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "",
-   "decision_source": "",
-   "decision_net_ev": "",
-   "price_observed_at": "",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
-   "min_bookmaker_odds": 1.64
   }
  ],
  "best_bets": [],
@@ -1213,7 +1213,7 @@
    "decision_net_ev": "-0.029963672499999948",
    "price_observed_at": "2026-10-12T15:16:35.221565+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1242,7 +1242,7 @@
    "decision_net_ev": "-0.01115971480000004",
    "price_observed_at": "2026-10-12T15:16:35.221565+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1271,36 +1271,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
-   "min_bookmaker_odds": 1.33
-  },
-  {
-   "prediction_id": "66f03cb23c647ce3",
-   "sport": "football",
-   "competition": "Serie A",
-   "event_key": "football|Serie A|Atalanta BC v Venezia|2026-10-12T16:30:00+00:00",
-   "event_name": "Atalanta BC v Venezia",
-   "event_start": "2026-10-12T16:30:00+00:00",
-   "market": "double_chance",
-   "selection": "1X",
-   "probability": 0.827407,
-   "band": "80%+",
-   "sigma": 0.006363,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_double_chance.derived_1x2",
-   "fair_odds": 1.21,
-   "price_status": "PRICE_UNAVAILABLE",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "",
-   "decision_source": "",
-   "decision_net_ev": "",
-   "price_observed_at": "",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1329,7 +1300,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1358,7 +1329,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "71cd2eb22b45caf4",
+   "sport": "tennis",
+   "competition": "WTA Wuhan Open",
+   "event_key": "tennis|tennis_wta_wuhan_open|7371e55de8d189f3b4b1c89ee467aee1",
+   "event_name": "Karolina Muchova v Caty McNally",
+   "event_start": "2026-10-14T04:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Karolina Muchova",
+   "probability": 0.804954,
+   "band": "80%+",
+   "sigma": 0.048429,
+   "evidence": "VALIDATED",
+   "engine_id": "wta_match_winner.betfair_market",
+   "fair_odds": 1.24,
+   "price_status": "PRICE_QUALITY_FAIL",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "EXCHANGE_SPREAD_TOO_WIDE|NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.19",
+   "decision_source": "betfair_ex_uk",
+   "decision_net_ev": "-0.04975180300000012",
+   "price_observed_at": "2026-10-12T15:16:35.221565+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1387,7 +1387,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1416,7 +1416,7 @@
    "decision_net_ev": "-0.0036237500000000644",
    "price_observed_at": "2026-10-12T15:16:35.221565+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1445,7 +1445,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1474,7 +1474,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1503,7 +1503,7 @@
    "decision_net_ev": "-0.01663804000000002",
    "price_observed_at": "2026-10-12T15:16:35.221565+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1532,36 +1532,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
-   "min_bookmaker_odds": 1.33
-  },
-  {
-   "prediction_id": "383c3a47db2e1527",
-   "sport": "football",
-   "competition": "Serie A",
-   "event_key": "football|Serie A|Atalanta BC v Venezia|2026-10-12T16:30:00+00:00",
-   "event_name": "Atalanta BC v Venezia",
-   "event_start": "2026-10-12T16:30:00+00:00",
-   "market": "double_chance",
-   "selection": "12",
-   "probability": 0.775395,
-   "band": "70%+",
-   "sigma": 0.003828,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_double_chance.derived_1x2",
-   "fair_odds": 1.29,
-   "price_status": "PRICE_UNAVAILABLE",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "",
-   "decision_source": "",
-   "decision_net_ev": "",
-   "price_observed_at": "",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1590,7 +1561,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1619,7 +1590,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.35
   },
   {
@@ -1648,7 +1619,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.37
   },
   {
@@ -1677,7 +1648,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.37
   },
   {
@@ -1706,7 +1677,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.39
   },
   {
@@ -1735,7 +1706,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.39
   },
   {
@@ -1764,7 +1735,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -1793,7 +1764,7 @@
    "decision_net_ev": "-0.018313647999999905",
    "price_observed_at": "2026-10-12T15:16:35.221565+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.41
   },
   {
@@ -1822,7 +1793,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.41
   },
   {
@@ -1851,7 +1822,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.42
   },
   {
@@ -1880,7 +1851,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.42
   },
   {
@@ -1909,7 +1880,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.44
   },
   {
@@ -1938,7 +1909,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.46
   },
   {
@@ -1967,7 +1938,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-12T15:16:39.254234+00:00",
+   "decision_evaluated_at": "2026-10-12T16:36:28.704930+00:00",
    "min_bookmaker_odds": 1.46
   }
  ],

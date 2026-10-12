@@ -2,8 +2,8 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 44 · Valid predictions: 118 · Sports: americanfootball, football, icehockey, tennis
-Counts: >=70: 28 · >=75: 16 · >=80: 8 · >=85: 3 · >=90: 1 · >=95: 0
+Upcoming events: 43 · Valid predictions: 112 · Sports: americanfootball, football, icehockey, tennis
+Counts: >=70: 26 · >=75: 14 · >=80: 7 · >=85: 3 · >=90: 1 · >=95: 0
 Settled yesterday: 13 · System: **HEALTHY** · API credits (last observed): 322
 
 ## Top predictions (P ≥ 80%)
@@ -13,7 +13,6 @@ Settled yesterday: 13 · System: **HEALTHY** · API credits (last observed): 322
 | tennis | Magdalena Frech v Iga Swiatek | 2026-10-14T03:00 | match_winner | Iga Swiatek | 92.6% | 1.08 | 90-94.9% | wta_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.05 (betfair_ex_uk back (odds_api)) | no | yes |
 | tennis | Guo Hanyu v Sorana Cirstea | 2026-10-13T04:10 ⟳ | match_winner | Sorana Cirstea | 88.9% | 1.12 | 85-89.9% | wta_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.10 (betfair_ex_uk back (odds_api)) | no | yes |
 | football | Wolverhampton Wanderers v Bolton Wanderers | 2026-10-13T18:45 | double_chance | 1X | 86.9% | 1.15 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.12 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Atalanta BC v Venezia | 2026-10-12T16:30 | double_chance | 1X | 82.7% | 1.21 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.18 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Burnley v Charlton Athletic | 2026-10-13T18:45 | double_chance | 1X | 81.9% | 1.22 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Birmingham City v Preston North End | 2026-10-13T19:00 | double_chance | 1X | 81.8% | 1.22 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.20 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | tennis | Karolina Muchova v Caty McNally | 2026-10-14T04:00 | match_winner | Karolina Muchova | 80.5% | 1.24 | 80-84.9% | wta_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.19 (betfair_ex_uk back (odds_api)) | no | yes |
@@ -35,10 +34,10 @@ Settled yesterday: 13 · System: **HEALTHY** · API credits (last observed): 322
 
 ## System health
 
-- daily_scan: OK (last 2026-10-12T06:16:38.109509+00:00)
+- daily_scan: OK (last 2026-10-12T16:36:27.539348+00:00)
 - settlement: OK (last 2026-10-12T00:27:01.464533+00:00)
 - tennis_board: OK (last 2026-10-12T15:16:35.221565+00:00)
-- ci_tests: OK (last 2026-10-12T15:16:36.661669+00:00)
+- ci_tests: OK (last 2026-10-12T16:36:28.119443+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
