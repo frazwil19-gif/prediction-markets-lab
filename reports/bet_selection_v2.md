@@ -4,54 +4,54 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-12T06:16Z · events scanned 34 · valid predictions 107 · high-P (≥70%) 30 · priced 49 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 121 · new paper bets 0 · Money Card qualified 0
+Run 2026-10-12T15:16Z · events scanned 45 · valid predictions 118 · high-P (≥70%) 28 · priced 57 · PAPER_BET 0 · MULTI-research 1 · WATCH 0 · REJECT 126 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 87 · NET_EV_NOT_POSITIVE 57 · P_BELOW_FLOOR 40 · NO_EXECUTABLE_PRICE 39 · PRICE_STALE 34 · COMMISSION_UNKNOWN 19 · EXCHANGE_SPREAD_TOO_WIDE 17 · PREDICTION_NOT_VALID 14 · PROBABILITY_NOT_SAME_SNAPSHOT 1
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 87 · NET_EV_NOT_POSITIVE 60 · PRICE_STALE 52 · P_BELOW_FLOOR 39 · NO_EXECUTABLE_PRICE 39 · COMMISSION_UNKNOWN 22 · PREDICTION_NOT_VALID 9 · EXCHANGE_SPREAD_TOO_WIDE 9 · PROBABILITY_NOT_SAME_SNAPSHOT 1
 
 ## Candidates (latest run, best price per prediction)
 
 | Event | Start | Sel | P | Fair | Odds (source) | Break-even | Net EV | Decision |
 |---|---|---|---|---|---|---|---|---|
-| Zizou Bergs v Carlos Alcaraz | 2026-10-12T10:00 | Carlos Alcaraz | 91.1% | 1.10 | 1.09 (betfair_ex_uk) | 92.1% | -1.1% | REJECT |
-| Zizou Bergs v Carlos Alcaraz | 2026-10-12T10:00 | Carlos Alcaraz | 91.1% | 1.10 | 1.09 (betfair_ex_uk) | 92.1% | -1.1% | REJECT |
-| Guo Hanyu v Sorana Cirstea | 2026-10-13T02:00 | Sorana Cirstea | 88.9% | 1.12 | 1.10 (betfair_ex_uk) | 91.3% | -2.6% | REJECT |
-| Guo Hanyu v Sorana Cirstea | 2026-10-13T02:00 | Sorana Cirstea | 88.9% | 1.12 | 1.10 (betfair_ex_uk) | 91.3% | -2.6% | REJECT |
+| Magdalena Frech v Iga Swiatek | 2026-10-14T03:00 | Iga Swiatek | 92.6% | 1.08 | 1.05 (betfair_ex_uk) | 95.5% | -3.0% | REJECT |
+| Guo Hanyu v Sorana Cirstea | 2026-10-13T04:10 | Sorana Cirstea | 87.7% | 1.14 | 1.13 (smarkets) | 88.7% | -1.1% | REJECT |
+| Guo Hanyu v Sorana Cirstea | 2026-10-13T04:10 | Sorana Cirstea | 87.7% | 1.14 | 1.13 (smarkets) | 88.7% | -1.1% | MULTI_RESEARCH_ELIGIBLE |
 | Wolverhampton Wanderers v Bolton Wanderers | 2026-10-13T18:45 | 1X | 86.9% | 1.15 | — | — | — | REJECT |
-| Daniil Medvedev v Dalibor Svrcina | 2026-10-12T06:20 | Daniil Medvedev | 84.9% | 1.18 | 1.17 (betfair_ex_uk) | 86.1% | -1.4% | REJECT |
-| Daniil Medvedev v Dalibor Svrcina | 2026-10-12T06:20 | Daniil Medvedev | 84.9% | 1.18 | 1.17 (betfair_ex_uk) | 86.1% | -1.4% | REJECT |
 | Atalanta BC v Venezia | 2026-10-12T16:30 | 1X | 82.7% | 1.21 | — | — | — | REJECT |
 | Burnley v Charlton Athletic | 2026-10-13T18:45 | 1X | 81.9% | 1.22 | — | — | — | REJECT |
 | Birmingham City v Preston North End | 2026-10-13T19:00 | 1X | 81.8% | 1.22 | — | — | — | REJECT |
-| Alexandra Eala v Shi Han | 2026-10-12T12:40 | Alexandra Eala | 81.7% | 1.22 | 1.18 (betfair_ex_uk) | 85.4% | -4.3% | REJECT |
-| Alexandra Eala v Shi Han | 2026-10-12T12:40 | Alexandra Eala | 81.7% | 1.22 | 1.18 (betfair_ex_uk) | 85.4% | -4.3% | REJECT |
+| Karolina Muchova v Caty McNally | 2026-10-14T04:00 | Karolina Muchova | 80.5% | 1.24 | 1.19 (betfair_ex_uk) | 84.7% | -5.0% | REJECT |
 | Wolverhampton Wanderers v Bolton Wanderers | 2026-10-13T18:45 | 12 | 80.4% | 1.24 | — | — | — | REJECT |
-| Arthur Fils v Botic van de Zandschulp | 2026-10-12T07:30 | Arthur Fils | 79.4% | 1.26 | 1.25 (betfair_ex_uk) | 80.8% | -1.8% | REJECT |
-| Mayar Sherif v Maja Chwalinska | 2026-10-13T02:00 | Maja Chwalinska | 78.9% | 1.27 | 1.21 (betfair_ex_uk) | 83.4% | -5.3% | REJECT |
-| Mayar Sherif v Maja Chwalinska | 2026-10-13T02:00 | Maja Chwalinska | 78.9% | 1.27 | 1.21 (betfair_ex_uk) | 83.4% | -5.3% | REJECT |
+| Mayar Sherif v Maja Chwalinska | 2026-10-13T04:10 | Maja Chwalinska | 79.7% | 1.25 | 1.25 (sport888) | 80.0% | -0.4% | REJECT |
+| Mayar Sherif v Maja Chwalinska | 2026-10-13T04:10 | Maja Chwalinska | 79.7% | 1.25 | 1.25 (sport888) | 80.0% | -0.4% | REJECT |
 | Cardiff City v Watford | 2026-10-13T18:45 | 1X | 78.8% | 1.27 | — | — | — | REJECT |
-| Belinda Bencic v Shuai Zhang | 2026-10-13T02:00 | Belinda Bencic | 78.8% | 1.27 | 1.18 (betway) | 84.7% | -7.0% | REJECT |
+| Belinda Bencic v Shuai Zhang | 2026-10-13T02:00 | Belinda Bencic | 78.8% | 1.27 | 1.20 (casumo) | 83.3% | -5.4% | REJECT |
 | Famalicão v Alverca | 2026-10-12T19:15 | 1X | 78.2% | 1.28 | — | — | — | REJECT |
+| Katie Boulter v Diana Shnaider | 2026-10-13T04:10 | Diana Shnaider | 78.0% | 1.28 | 1.26 (casumo) | 79.4% | -1.7% | REJECT |
+| Katie Boulter v Diana Shnaider | 2026-10-13T04:10 | Diana Shnaider | 78.0% | 1.28 | 1.26 (casumo) | 79.4% | -1.7% | REJECT |
 | Cardiff City v Watford | 2026-10-13T18:45 | 12 | 77.8% | 1.29 | — | — | — | REJECT |
 | Atalanta BC v Venezia | 2026-10-12T16:30 | 12 | 77.5% | 1.29 | — | — | — | REJECT |
 | Birmingham City v Preston North End | 2026-10-13T19:00 | 12 | 77.0% | 1.30 | — | — | — | REJECT |
-| Katie Boulter v Diana Shnaider | 2026-10-13T02:00 | Diana Shnaider | 76.2% | 1.31 | 1.31 (betfair_ex_uk) | 77.2% | -1.4% | REJECT |
-| Katie Boulter v Diana Shnaider | 2026-10-13T02:00 | Diana Shnaider | 76.2% | 1.31 | 1.31 (betfair_ex_uk) | 77.2% | -1.4% | REJECT |
 | Burnley v Charlton Athletic | 2026-10-13T18:45 | 12 | 76.1% | 1.31 | — | — | — | REJECT |
 | Stoke City v Middlesbrough | 2026-10-13T19:00 | 12 | 75.0% | 1.33 | — | — | — | REJECT |
 | Bristol City v Blackburn Rovers | 2026-10-13T18:45 | 1X | 74.9% | 1.33 | — | — | — | REJECT |
 | Coventry City v Newcastle United | 2026-10-12T19:00 | 12 | 73.7% | 1.36 | — | — | — | REJECT |
 | Stoke City v Middlesbrough | 2026-10-13T19:00 | X2 | 73.6% | 1.36 | — | — | — | REJECT |
 | Bristol City v Blackburn Rovers | 2026-10-13T18:45 | 12 | 73.2% | 1.37 | — | — | — | REJECT |
+| Alexander Zverev v Alexander Bublik | 2026-10-13T10:00 | Alexander Zverev | 72.6% | 1.38 | 1.37 (betfair_ex_uk) | 74.0% | -1.8% | REJECT |
 | Millwall v Swansea City | 2026-10-13T18:45 | 12 | 72.5% | 1.38 | — | — | — | REJECT |
 | Famalicão v Alverca | 2026-10-12T19:15 | 12 | 72.3% | 1.38 | — | — | — | REJECT |
 | Wrexham AFC v West Bromwich Albion | 2026-10-13T18:45 | 12 | 72.0% | 1.39 | — | — | — | REJECT |
 | Levante v Sevilla | 2026-10-12T19:00 | 12 | 71.2% | 1.40 | — | — | — | REJECT |
 | Torino v Udinese | 2026-10-12T18:45 | 12 | 70.2% | 1.42 | — | — | — | REJECT |
-| Lilli Tagger v Nikola Bartunkova | 2026-10-13T02:00 | Nikola Bartunkova | 70.2% | 1.43 | 1.40 (betfair_ex_uk) | 72.5% | -3.2% | REJECT |
-| Lilli Tagger v Nikola Bartunkova | 2026-10-13T02:00 | Nikola Bartunkova | 70.2% | 1.43 | 1.40 (betfair_ex_uk) | 72.5% | -3.2% | REJECT |
 | Torino v Udinese | 2026-10-12T18:45 | 1X | 70.1% | 1.43 | — | — | — | REJECT |
 | Coventry City v Newcastle United | 2026-10-12T19:00 | X2 | 69.6% | 1.44 | — | — | — | REJECT |
-| Alexander Zverev v Alexander Bublik | 2026-10-13T04:00 | Alexander Zverev | 69.5% | 1.44 | 1.36 (betfair_ex_uk) | 74.5% | -6.7% | REJECT |
+| Ann Li v Qinwen Zheng | 2026-10-13T02:00 | Qinwen Zheng | 69.5% | 1.44 | 1.40 (betfair_ex_uk) | 72.5% | -4.1% | REJECT |
+| Ann Li v Qinwen Zheng | 2026-10-13T02:00 | Qinwen Zheng | 69.5% | 1.44 | 1.40 (betfair_ex_uk) | 72.5% | -4.1% | REJECT |
+| Lilli Tagger v Nikola Bartunkova | 2026-10-13T05:20 | Nikola Bartunkova | 69.2% | 1.44 | 1.44 (betway) | 69.4% | -0.3% | REJECT |
+| Lilli Tagger v Nikola Bartunkova | 2026-10-13T05:20 | Nikola Bartunkova | 69.2% | 1.44 | 1.44 (betway) | 69.4% | -0.3% | REJECT |
+| Wrexham AFC v West Bromwich Albion | 2026-10-13T18:45 | 1X | 69.2% | 1.44 | — | — | — | REJECT |
+| Anna Kalinskaya v Shuai Zhang | 2026-10-13T02:00 | Anna Kalinskaya | 68.9% | 1.45 | 1.43 (betfair_ex_uk) | 71.0% | -2.9% | REJECT |
+| Wolverhampton Wanderers v Bolton Wanderers | 2026-10-13T18:45 | home | 67.5% | 1.48 | 1.45 (matchbook) | — | — | REJECT |
 
 ## Paper results (all time)
 
