@@ -1,21 +1,21 @@
 {
- "generated_at": "2026-10-11T01:07:11.824863+00:00",
+ "generated_at": "2026-10-12T01:29:38.655286+00:00",
  "note": "PAPER prediction performance; Odds-API-covered universe only",
  "engines": {
   "atp_match_winner.betfair_market": {
-   "settled": 54,
+   "settled": 55,
    "settled_ge_80": 12,
    "maturity": "EARLY",
    "correct": 33,
-   "accuracy": 0.6111111111111112,
-   "expected_correct": 37.21334700000001,
-   "brier_top_pick": 0.21838064099446294,
-   "log_loss_top_pick": 0.6239236487324232,
+   "accuracy": 0.6,
+   "expected_correct": 37.78164000000001,
+   "brier_top_pick": 0.22028202813727268,
+   "log_loss_top_pick": 0.6278524580570713,
    "bands": [
     {
      "band": "50-54.9%",
      "n": 4,
-     "share_of_events": 0.07407407407407407,
+     "share_of_events": 0.07272727272727272,
      "mean_predicted": 0.5272844999999999,
      "expected_wins": 2.1091379999999997,
      "actual_wins": 2,
@@ -26,20 +26,20 @@
     },
     {
      "band": "55-59.9%",
-     "n": 14,
-     "share_of_events": 0.25925925925925924,
-     "mean_predicted": 0.5755495,
-     "expected_wins": 8.057693,
+     "n": 15,
+     "share_of_events": 0.2727272727272727,
+     "mean_predicted": 0.5750657333333334,
+     "expected_wins": 8.625986000000001,
      "actual_wins": 6,
-     "actual_rate": 0.42857142857142855,
-     "difference_pp": -14.69780714285715,
-     "wilson95_low": 0.21380798904474121,
-     "wilson95_high": 0.6740935542034926
+     "actual_rate": 0.4,
+     "difference_pp": -17.506573333333343,
+     "wilson95_low": 0.1982449614134158,
+     "wilson95_high": 0.6425316987937539
     },
     {
      "band": "60-64.9%",
      "n": 8,
-     "share_of_events": 0.14814814814814814,
+     "share_of_events": 0.14545454545454545,
      "mean_predicted": 0.623406,
      "expected_wins": 4.987248,
      "actual_wins": 4,
@@ -51,7 +51,7 @@
     {
      "band": "65-69.9%",
      "n": 4,
-     "share_of_events": 0.07407407407407407,
+     "share_of_events": 0.07272727272727272,
      "mean_predicted": 0.6914057499999999,
      "expected_wins": 2.7656229999999997,
      "actual_wins": 2,
@@ -63,7 +63,7 @@
     {
      "band": "70-74.9%",
      "n": 8,
-     "share_of_events": 0.14814814814814814,
+     "share_of_events": 0.14545454545454545,
      "mean_predicted": 0.723365625,
      "expected_wins": 5.786925,
      "actual_wins": 6,
@@ -75,7 +75,7 @@
     {
      "band": "75-79.9%",
      "n": 4,
-     "share_of_events": 0.07407407407407407,
+     "share_of_events": 0.07272727272727272,
      "mean_predicted": 0.7796234999999999,
      "expected_wins": 3.1184939999999997,
      "actual_wins": 3,
@@ -87,7 +87,7 @@
     {
      "band": "80-84.9%",
      "n": 6,
-     "share_of_events": 0.1111111111111111,
+     "share_of_events": 0.10909090909090909,
      "mean_predicted": 0.8298275,
      "expected_wins": 4.9789650000000005,
      "actual_wins": 5,
@@ -99,7 +99,7 @@
     {
      "band": "85-89.9%",
      "n": 3,
-     "share_of_events": 0.05555555555555555,
+     "share_of_events": 0.05454545454545454,
      "mean_predicted": 0.8887136666666667,
      "expected_wins": 2.666141,
      "actual_wins": 2,
@@ -111,7 +111,7 @@
     {
      "band": "90-94.9%",
      "n": 3,
-     "share_of_events": 0.05555555555555555,
+     "share_of_events": 0.05454545454545454,
      "mean_predicted": 0.9143733333333334,
      "expected_wins": 2.7431200000000002,
      "actual_wins": 3,
@@ -137,7 +137,7 @@
     {
      "threshold": 0.6,
      "n": 36,
-     "share_of_events": 0.6666666666666666,
+     "share_of_events": 0.6545454545454545,
      "mean_predicted": 0.7512921111111113,
      "expected_wins": 27.046516000000004,
      "actual_wins": 25,
@@ -149,7 +149,7 @@
     {
      "threshold": 0.65,
      "n": 28,
-     "share_of_events": 0.5185185185185185,
+     "share_of_events": 0.509090909090909,
      "mean_predicted": 0.787831,
      "expected_wins": 22.059268,
      "actual_wins": 21,
@@ -161,7 +161,7 @@
     {
      "threshold": 0.7,
      "n": 24,
-     "share_of_events": 0.4444444444444444,
+     "share_of_events": 0.43636363636363634,
      "mean_predicted": 0.8039018749999999,
      "expected_wins": 19.293644999999998,
      "actual_wins": 19,
@@ -173,7 +173,7 @@
     {
      "threshold": 0.75,
      "n": 16,
-     "share_of_events": 0.2962962962962963,
+     "share_of_events": 0.2909090909090909,
      "mean_predicted": 0.84417,
      "expected_wins": 13.50672,
      "actual_wins": 13,
@@ -185,7 +185,7 @@
     {
      "threshold": 0.8,
      "n": 12,
-     "share_of_events": 0.2222222222222222,
+     "share_of_events": 0.21818181818181817,
      "mean_predicted": 0.8656855,
      "expected_wins": 10.388226,
      "actual_wins": 10,
@@ -197,7 +197,7 @@
     {
      "threshold": 0.85,
      "n": 6,
-     "share_of_events": 0.1111111111111111,
+     "share_of_events": 0.10909090909090909,
      "mean_predicted": 0.9015435000000002,
      "expected_wins": 5.409261000000001,
      "actual_wins": 5,
@@ -209,7 +209,7 @@
     {
      "threshold": 0.9,
      "n": 3,
-     "share_of_events": 0.05555555555555555,
+     "share_of_events": 0.05454545454545454,
      "mean_predicted": 0.9143733333333334,
      "expected_wins": 2.7431200000000002,
      "actual_wins": 3,
