@@ -1,26 +1,32 @@
 {
- "generated_at": "2026-10-12T00:27:01.040431+00:00",
+ "generated_at": "2026-10-13T02:32:47.052933+00:00",
  "month": "2026-10",
- "account_used_month_to_date_latest_counter": 159,
- "projected_month_end_at_current_rate": 411,
+ "account_used_month_to_date_latest_counter": 184,
+ "projected_month_end_at_current_rate": 439,
  "by_consumer": {
+  "clv_capture": {
+   "paid_calls": 0,
+   "credits_charged": 0,
+   "skipped_calls": 3,
+   "credits_saved_estimate": 3
+  },
   "football_daily_scan": {
-   "paid_calls": 24,
-   "credits_charged": 36,
-   "skipped_calls": 36,
-   "credits_saved_estimate": 54
+   "paid_calls": 28,
+   "credits_charged": 44,
+   "skipped_calls": 44,
+   "credits_saved_estimate": 64
   },
   "football_shadow_scan": {
-   "paid_calls": 22,
-   "credits_charged": 22,
-   "skipped_calls": 78,
-   "credits_saved_estimate": 78
+   "paid_calls": 25,
+   "credits_charged": 25,
+   "skipped_calls": 95,
+   "credits_saved_estimate": 95
   },
   "market_probe_c3": {
    "paid_calls": 0,
    "credits_charged": 0,
-   "skipped_calls": 2,
-   "credits_saved_estimate": 4
+   "skipped_calls": 109,
+   "credits_saved_estimate": 218
   },
   "nba_prediction_board": {
    "paid_calls": 0,
@@ -35,8 +41,8 @@
    "credits_saved_estimate": 0
   },
   "tennis_prediction_board": {
-   "paid_calls": 49,
-   "credits_charged": 49,
+   "paid_calls": 51,
+   "credits_charged": 51,
    "skipped_calls": 2,
    "credits_saved_estimate": 2
   }
@@ -48,10 +54,10 @@
     100
    ],
    "plan_a_to_date_range": [
-    28.0,
-    40.0
+    30.3,
+    43.3
    ],
-   "actual_to_date": 36
+   "actual_to_date": 44
   },
   "football_settlement": {
    "plan_a_month_range": [
@@ -60,7 +66,7 @@
    ],
    "plan_a_to_date_range": [
     0.0,
-    8.0
+    8.7
    ],
    "actual_to_date": 0
   },
@@ -70,10 +76,10 @@
     150
    ],
    "plan_a_to_date_range": [
-    40.0,
-    60.0
+    43.3,
+    65.0
    ],
-   "actual_to_date": 49
+   "actual_to_date": 51
   },
   "nba_prediction_board": {
    "plan_a_month_range": [
@@ -81,31 +87,31 @@
     60
    ],
    "plan_a_to_date_range": [
-    8.0,
-    24.0
+    8.7,
+    26.0
    ],
    "actual_to_date": 0
   }
  },
  "football_counterfactual": {
-  "scan_days_logged": 10,
-  "baseline_credits_if_ungated": 60,
-  "actual": 36
+  "scan_days_logged": 11,
+  "baseline_credits_if_ungated": 66,
+  "actual": 44
  },
  "utilisation": {
   "month": "2026-10",
-  "day_of_month": 12,
+  "day_of_month": 13,
   "consumers": {
    "football_daily_scan": {
     "allocation": 160,
-    "consumed": 36,
-    "unused": 124,
-    "utilisation_pct": 22.5,
-    "projected_month_end": 93.0,
+    "consumed": 44,
+    "unused": 116,
+    "utilisation_pct": 27.5,
+    "projected_month_end": 104.9,
     "useful_outputs": {
-     "predictions": 845,
+     "predictions": 901,
      "qualifying_bets": 0,
-     "predictions_per_credit": 23.47
+     "predictions_per_credit": 20.48
     },
     "recommendation": "on plan"
    },
@@ -124,14 +130,14 @@
    },
    "tennis_prediction_board": {
     "allocation": 150,
-    "consumed": 49,
-    "unused": 101,
-    "utilisation_pct": 32.7,
-    "projected_month_end": 126.6,
+    "consumed": 51,
+    "unused": 99,
+    "utilisation_pct": 34.0,
+    "projected_month_end": 121.6,
     "useful_outputs": {
-     "predictions": 223,
+     "predictions": 238,
      "qualifying_bets": 0,
-     "predictions_per_credit": 4.55
+     "predictions_per_credit": 4.67
     },
     "recommendation": "on plan"
    },
@@ -150,16 +156,16 @@
    },
    "us_sports_board": {
     "allocation": 40,
-    "consumed": 15,
-    "unused": 25,
-    "utilisation_pct": 37.5,
-    "projected_month_end": 38.8,
+    "consumed": 17,
+    "unused": 23,
+    "utilisation_pct": 42.5,
+    "projected_month_end": 40.5,
     "useful_outputs": {
-     "predictions": 46,
+     "predictions": 49,
      "qualifying_bets": 0,
-     "predictions_per_credit": 3.07
+     "predictions_per_credit": 2.88
     },
-    "recommendation": "on plan"
+    "recommendation": "on pace to exceed cap (40.5 > 40); budget guard will stop it \u2014 review"
    },
    "pre_close_capture": {
     "allocation": 25,

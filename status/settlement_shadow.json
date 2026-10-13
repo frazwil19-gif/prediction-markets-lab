@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-12T00:26:38.810095+00:00",
+ "generated_at": "2026-10-13T02:32:23.630122+00:00",
  "mode": "SHADOW (no ledger writes)",
  "football_data_sources": {
   "B1": "https://www.football-data.co.uk/mmz4281/2627/B1.csv",
@@ -19,7 +19,7 @@
   "SP1": "https://www.football-data.co.uk/mmz4281/2627/SP1.csv",
   "SP2": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv"
  },
- "fd_results_loaded": 1022,
+ "fd_results_loaded": 1177,
  "fd_unresolved_names": [
   "AFC Wimbledon",
   "AZ Alkmaar",
@@ -540,39 +540,17 @@
   ]
  },
  "fd_internal_inconsistencies": 0,
- "fixture_comparisons_total": 27,
+ "fixture_comparisons_total": 28,
  "fixture_status_counts": {
-  "NOT_FOUND": 27
+  "NOT_FOUND": 27,
+  "MATCHED": 1
  },
  "disagreement_examples": [],
  "migration_gate": {
   "min_comparisons": 100,
-  "matched_comparisons": 0,
+  "matched_comparisons": 1,
   "score_disagreements": 0,
   "passed": false
  },
- "ledger_pending_past_kickoff": [
-  {
-   "bet_id": "Arsenal v Leeds United::1x2::away",
-   "event": "Arsenal v Leeds United",
-   "kickoff": "2026-10-10",
-   "market": "1x2",
-   "selection": "away",
-   "fd_status": "NOT_FOUND",
-   "fd_score": "",
-   "would_win": null,
-   "detail": ""
-  },
-  {
-   "bet_id": "Arsenal v Leeds United::1x2::draw",
-   "event": "Arsenal v Leeds United",
-   "kickoff": "2026-10-10",
-   "market": "1x2",
-   "selection": "draw",
-   "fd_status": "NOT_FOUND",
-   "fd_score": "",
-   "would_win": null,
-   "detail": ""
-  }
- ]
+ "ledger_pending_past_kickoff": []
 }
