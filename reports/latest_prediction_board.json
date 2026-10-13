@@ -1,11 +1,11 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-13T14:29:45.628308+00:00",
+ "generated_at": "2026-10-13T15:16:38.885975+00:00",
  "date": "2026-10-13",
  "summary": {
-  "upcoming_events": 46,
-  "valid_predictions": 119,
+  "upcoming_events": 47,
+  "valid_predictions": 120,
   "sports_active": [
    "football",
    "icehockey",
@@ -30,11 +30,11 @@
   },
   "settled_yesterday": 1,
   "system": "HEALTHY",
-  "api_credits_last_observed": 303
+  "api_credits_last_observed": 300
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-13T14:29:45.628308+00:00",
+  "generated_at": "2026-10-13T15:16:38.885975+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -42,30 +42,30 @@
     "last": "2026-10-13T06:16:34.488591+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 8.2
+    "age_hours": 9.0
    },
    "settlement": {
     "last": "2026-10-13T02:32:47.460574+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 11.9
+    "age_hours": 12.7
    },
    "tennis_board": {
-    "last": "2026-10-13T14:29:41.920431+00:00",
+    "last": "2026-10-13T15:16:35.631255+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    },
    "ci_tests": {
-    "last": "2026-10-13T14:29:43.572126+00:00",
+    "last": "2026-10-13T15:16:37.494711+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    }
   },
   "api_credits": {
-   "remaining": 303,
-   "observed_at": "2026-10-13T14:29:42.791248+00:00",
+   "remaining": 300,
+   "observed_at": "2026-10-13T15:16:36.651660+00:00",
    "source": "credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
@@ -113,7 +113,7 @@
    "status": "VALIDATED_HISTORICAL",
    "prospective_status": "COLLECTING",
    "money_eligible": true,
-   "predictions": 151,
+   "predictions": 152,
    "settled_rows": 132,
    "maturity": "EARLY",
    "ge80_settled": 25,
@@ -194,7 +194,7 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 119,
+   "ELIGIBLE": 120,
    "EXCLUDED": 1250
   },
   "exclusion_reason": {
@@ -203,7 +203,7 @@
   "start_time_status": {
    "LEDGER_ONLY": 1009,
    "RESCHEDULED": 226,
-   "UNCHANGED": 134
+   "UNCHANGED": 135
   },
   "eligible_rescheduled": 5,
   "rule": "est-1"
@@ -333,7 +333,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-14T11:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "935f7cf5782a27ac",
@@ -501,7 +501,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-14T06:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "f8c2cebedaa93250",
@@ -711,7 +711,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-14T04:10:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "c76d5a4b5dac216f",
@@ -921,7 +921,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-14T12:30:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "25dcaeb0f705237c",
@@ -1173,7 +1173,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-14T04:30:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "778da29bebc3bbb8",
@@ -1383,7 +1383,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-14T03:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "90ce2f6adf9b9160",
@@ -1425,7 +1425,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-14T06:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "8e301b29dafda429",
@@ -1593,7 +1593,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-14T03:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "f543a0a2bb94563b",
@@ -1846,6 +1846,48 @@
    "event_start_original": "2026-10-14T18:45:00+00:00",
    "start_time_status": "LEDGER_ONLY",
    "start_time_source": "unified_ledger.event_start"
+  },
+  {
+   "prediction_id": "69f004ab5df7204e",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "sport": "tennis",
+   "competition": "ATP Shanghai Masters",
+   "event_id": "9f79a8611b72f362103f75adae40aa9f",
+   "event_key": "tennis|tennis_atp_shanghai_masters|9f79a8611b72f362103f75adae40aa9f",
+   "event_name": "Alexander Zverev v Alex de Minaur",
+   "event_start": "2026-10-15T04:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Alexander Zverev",
+   "estimated_probability": "0.646259",
+   "fair_odds": "1.5473672320230742",
+   "probability_band": "60-64.9%",
+   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
+   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "data_quality": "OK",
+   "current_context_status": "NOT_MODELLED",
+   "configured_scan_time": "",
+   "actual_workflow_start": "2026-10-13T15:16:35.631255+00:00",
+   "prediction_timestamp": "2026-10-13T15:16:35.631255+00:00",
+   "minutes_to_event": "2203.4",
+   "live_price": "1.46",
+   "live_price_source": "betfair_ex_uk back (odds_api)",
+   "paper_status": "PAPER",
+   "prediction_valid": "True",
+   "single_eligible": "True",
+   "single_ineligible_reason": "",
+   "multi_research_eligible": "False",
+   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
+   "origin": "tennis_predictions/ledger_predictions.csv",
+   "origin_prediction_id": "69f004ab5df7204e",
+   "settlement_status": "",
+   "result": "",
+   "correct": "",
+   "settlement_timestamp": "",
+   "event_start_original": "2026-10-15T04:00:00+00:00",
+   "start_time_status": "UNCHANGED",
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
   },
   {
    "prediction_id": "de0ae0cf5bcfa8e8",
@@ -2181,7 +2223,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-14T04:30:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "6346195880916a8b",
@@ -2223,7 +2265,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-14T06:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "95c6212244860860",
@@ -3021,7 +3063,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-14T07:30:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "f81e9652c50d2811",

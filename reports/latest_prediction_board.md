@@ -2,9 +2,9 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 46 · Valid predictions: 119 · Sports: football, icehockey, tennis
+Upcoming events: 47 · Valid predictions: 120 · Sports: football, icehockey, tennis
 Counts: >=70: 28 · >=75: 19 · >=80: 9 · >=85: 2 · >=90: 1 · >=95: 0
-Settled yesterday: 1 · System: **HEALTHY** · API credits (last observed): 303
+Settled yesterday: 1 · System: **HEALTHY** · API credits (last observed): 300
 
 ## Top predictions (P ≥ 80%)
 
@@ -27,7 +27,7 @@ Settled yesterday: 1 · System: **HEALTHY** · API credits (last observed): 303
 | football_1x2.market_consensus | VALIDATED_HISTORICAL / COLLECTING | 444 | 93 | COLLECTING | 1 | 82.3% → 100.0% |
 | football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 42 | 29 | COLLECTING | 0 | — → — |
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
-| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 151 | 132 | EARLY | 25 | 87.7% → 76.0% |
+| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 152 | 132 | EARLY | 25 | 87.7% → 76.0% |
 | wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 147 | 98 | EARLY | 21 | 89.9% → 85.7% |
 | nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 0 | 0 | COLLECTING | 0 | — → — |
 | nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 50 | 34 | COLLECTING | 0 | — → — |
@@ -38,8 +38,8 @@ Settled yesterday: 1 · System: **HEALTHY** · API credits (last observed): 303
 
 - daily_scan: OK (last 2026-10-13T06:16:34.488591+00:00)
 - settlement: OK (last 2026-10-13T02:32:47.460574+00:00)
-- tennis_board: OK (last 2026-10-13T14:29:41.920431+00:00)
-- ci_tests: OK (last 2026-10-13T14:29:43.572126+00:00)
+- tennis_board: OK (last 2026-10-13T15:16:35.631255+00:00)
+- ci_tests: OK (last 2026-10-13T15:16:37.494711+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 

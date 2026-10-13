@@ -4,28 +4,28 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-13T14:29Z · events scanned 46 · valid predictions 119 · high-P (≥70%) 28 · priced 57 · PAPER_BET 1 · MULTI-research 3 · WATCH 1 · REJECT 114 · new paper bets 1 · Money Card qualified 0
+Run 2026-10-13T15:16Z · events scanned 47 · valid predictions 120 · high-P (≥70%) 28 · priced 58 · PAPER_BET 1 · MULTI-research 4 · WATCH 2 · REJECT 113 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 85 · NET_EV_NOT_POSITIVE 50 · PRICE_STALE 49 · P_BELOW_FLOOR 37 · NO_EXECUTABLE_PRICE 36 · COMMISSION_UNKNOWN 26 · EXCHANGE_SPREAD_TOO_WIDE 2 · ALL_PAPER_GATES_PASSED 1 · NET_EV_BELOW_PAPER_GATE 1 · ODDS_BELOW_PAYOUT_FLOOR 1
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 85 · NET_EV_NOT_POSITIVE 50 · PRICE_STALE 49 · P_BELOW_FLOOR 37 · NO_EXECUTABLE_PRICE 36 · COMMISSION_UNKNOWN 26 · NET_EV_BELOW_PAPER_GATE 2 · EXCHANGE_SPREAD_TOO_WIDE 2 · ALL_PAPER_GATES_PASSED 1 · ODDS_BELOW_PAYOUT_FLOOR 1
 
 ## Candidates (latest run, best price per prediction)
 
 | Event | Start | Sel | P | Fair | Odds (source) | Break-even | Net EV | Decision |
 |---|---|---|---|---|---|---|---|---|
-| Marie Bouzkova v Maja Chwalinska | 2026-10-14T03:00 | Marie Bouzkova | 67.4% | 1.48 | 1.53 (boylesports) | 65.4% | 3.2% | PAPER_BET |
-| Magdalena Frech v Iga Swiatek | 2026-10-14T03:00 | Iga Swiatek | 92.3% | 1.08 | 1.08 (betfair_ex_uk) | 92.9% | -0.7% | MULTI_RESEARCH_ELIGIBLE |
+| Marie Bouzkova v Maja Chwalinska | 2026-10-14T03:00 | Marie Bouzkova | 66.7% | 1.50 | 1.53 (boylesports) | 65.4% | 2.1% | PAPER_BET |
+| Magdalena Frech v Iga Swiatek | 2026-10-14T03:00 | Iga Swiatek | 92.2% | 1.09 | 1.08 (betfair_ex_uk) | 92.9% | -0.8% | MULTI_RESEARCH_ELIGIBLE |
 | Wolverhampton Wanderers v Bolton Wanderers | 2026-10-13T18:45 | 1X | 86.9% | 1.15 | — | — | — | REJECT |
-| Aryna Sabalenka v Ann Li | 2026-10-14T11:00 | Aryna Sabalenka | 84.6% | 1.18 | 1.17 (casumo) | 85.5% | -1.0% | MULTI_RESEARCH_ELIGIBLE |
+| Aryna Sabalenka v Ann Li | 2026-10-14T11:00 | Aryna Sabalenka | 84.4% | 1.19 | 1.17 (casumo) | 85.5% | -1.3% | MULTI_RESEARCH_ELIGIBLE |
 | Burnley v Charlton Athletic | 2026-10-13T18:45 | 1X | 81.9% | 1.22 | — | — | — | REJECT |
 | Birmingham City v Preston North End | 2026-10-13T19:00 | 1X | 81.8% | 1.22 | — | — | — | REJECT |
-| Katie Volynets v Guo Hanyu | 2026-10-14T06:00 | Katie Volynets | 80.4% | 1.24 | 1.22 (betway) | 82.0% | -1.9% | MULTI_RESEARCH_ELIGIBLE |
+| Katie Volynets v Guo Hanyu | 2026-10-14T06:00 | Katie Volynets | 80.5% | 1.24 | 1.22 (betway) | 82.0% | -1.8% | MULTI_RESEARCH_ELIGIBLE |
 | Wolverhampton Wanderers v Bolton Wanderers | 2026-10-13T18:45 | 12 | 80.4% | 1.24 | — | — | — | REJECT |
 | Lincoln City v West Ham United | 2026-10-14T19:00 | X2 | 80.2% | 1.25 | — | — | — | REJECT |
-| Karolina Muchova v Caty McNally | 2026-10-14T04:30 | Karolina Muchova | 79.8% | 1.25 | 1.24 (betfair_ex_uk) | 81.4% | -2.0% | REJECT |
+| Karolina Muchova v Caty McNally | 2026-10-14T04:30 | Karolina Muchova | 80.0% | 1.25 | 1.24 (betfair_ex_uk) | 81.4% | -1.8% | MULTI_RESEARCH_ELIGIBLE |
 | Queens Park Rangers v Derby County | 2026-10-14T18:45 | 1X | 79.6% | 1.26 | — | — | — | REJECT |
 | Cardiff City v Watford | 2026-10-13T18:45 | 1X | 78.8% | 1.27 | — | — | — | REJECT |
-| Iva Jović v Dayana Yastremska | 2026-10-14T04:10 | Iva Jović | 77.8% | 1.29 | 1.25 (betfair_ex_uk) | 80.8% | -3.7% | REJECT |
 | Cardiff City v Watford | 2026-10-13T18:45 | 12 | 77.8% | 1.29 | — | — | — | REJECT |
+| Iva Jović v Dayana Yastremska | 2026-10-14T04:10 | Iva Jović | 77.7% | 1.29 | 1.25 (betfair_ex_uk) | 80.8% | -3.8% | REJECT |
 | Birmingham City v Preston North End | 2026-10-13T19:00 | 12 | 77.0% | 1.30 | — | — | — | REJECT |
 | Lincoln City v West Ham United | 2026-10-14T19:00 | 12 | 76.4% | 1.31 | — | — | — | REJECT |
 | Burnley v Charlton Athletic | 2026-10-13T18:45 | 12 | 76.1% | 1.31 | — | — | — | REJECT |
@@ -40,18 +40,18 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 85 · NET_EV_NOT_POSITIVE 50
 | Millwall v Swansea City | 2026-10-13T18:45 | 12 | 72.5% | 1.38 | — | — | — | REJECT |
 | Portsmouth v Sheffield United | 2026-10-14T18:45 | 12 | 72.3% | 1.38 | — | — | — | REJECT |
 | Wrexham AFC v West Bromwich Albion | 2026-10-13T18:45 | 12 | 72.0% | 1.39 | — | — | — | REJECT |
-| Elina Svitolina v Liudmila Samsonova | 2026-10-14T03:00 | Elina Svitolina | 71.5% | 1.40 | 1.38 (betway) | 72.5% | -1.3% | REJECT |
-| Jelena Ostapenko v Jessica Pegula | 2026-10-14T06:00 | Jessica Pegula | 69.6% | 1.44 | 1.41 (casumo) | 70.9% | -1.8% | REJECT |
+| Elina Svitolina v Liudmila Samsonova | 2026-10-14T03:00 | Elina Svitolina | 71.5% | 1.40 | 1.40 (boylesports) | 71.4% | 0.1% | WATCH |
 | Portsmouth v Sheffield United | 2026-10-14T18:45 | 1X | 69.4% | 1.44 | — | — | — | REJECT |
 | Wrexham AFC v West Bromwich Albion | 2026-10-13T18:45 | 1X | 69.2% | 1.44 | — | — | — | REJECT |
-| Daniil Medvedev v Stefanos Tsitsipas | 2026-10-14T10:00 | Daniil Medvedev | 68.4% | 1.46 | 1.44 (betway) | 69.4% | -1.5% | REJECT |
+| Jelena Ostapenko v Jessica Pegula | 2026-10-14T06:00 | Jessica Pegula | 69.1% | 1.45 | 1.42 (smarkets) | 70.8% | -2.4% | REJECT |
+| Daniil Medvedev v Stefanos Tsitsipas | 2026-10-14T10:00 | Daniil Medvedev | 68.7% | 1.45 | 1.44 (betway) | 69.4% | -1.0% | REJECT |
 | Sonay Kartal v Belinda Bencic | 2026-10-14T03:00 | Belinda Bencic | 67.3% | 1.49 | 1.47 (betfair_ex_uk) | 69.1% | -2.6% | REJECT |
 | Wolverhampton Wanderers v Bolton Wanderers | 2026-10-13T18:45 | home | 67.0% | 1.49 | 1.43 (smarkets) | 70.4% | -4.7% | REJECT |
 | Vancouver Canucks @ New York Islanders | 2026-10-13T23:55 | New York Islanders | 65.6% | 1.52 | 1.50 (matchbook) | — | — | REJECT |
-| Tommy Paul v Zizou Bergs | 2026-10-14T11:10 | Tommy Paul | 65.5% | 1.53 | 1.50 (boylesports) | 66.7% | -1.7% | REJECT |
+| Tommy Paul v Zizou Bergs | 2026-10-14T11:10 | Tommy Paul | 65.5% | 1.53 | 1.50 (boylesports) | 66.7% | -1.8% | REJECT |
 | Millwall v Swansea City | 2026-10-13T18:45 | 1X | 65.0% | 1.54 | — | — | — | REJECT |
 | Norwich City v Southampton | 2026-10-14T18:45 | 1X | 64.7% | 1.55 | — | — | — | REJECT |
-| Botic van de Zandschulp v Rafael Jodar | 2026-10-14T04:00 | Rafael Jodar | 63.9% | 1.56 | 1.57 (smarkets) | 64.2% | -0.4% | REJECT |
+| Alexander Zverev v Alex de Minaur | 2026-10-15T04:00 | Alexander Zverev | 64.6% | 1.55 | 1.46 (betfair_ex_uk) | 69.6% | -7.1% | REJECT |
 
 ## Paper results (all time)
 
