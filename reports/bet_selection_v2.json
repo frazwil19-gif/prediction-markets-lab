@@ -1,21 +1,21 @@
 {
- "generated_at": "2026-10-13T06:16:35.470594+00:00",
+ "generated_at": "2026-10-13T14:29:46.290057+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-4",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 42,
+  "runs": 43,
   "totals_over_runs": {
-   "events_scanned": 2246,
-   "valid_predictions": 6567,
-   "high_p_candidates": 1978,
-   "priced_candidates": 3584,
-   "PAPER_BET": 19,
-   "MULTI_RESEARCH_ELIGIBLE": 173,
-   "WATCH": 61,
-   "REJECT": 6626,
-   "paper_bets_added": 10,
+   "events_scanned": 2292,
+   "valid_predictions": 6686,
+   "high_p_candidates": 2006,
+   "priced_candidates": 3641,
+   "PAPER_BET": 20,
+   "MULTI_RESEARCH_ELIGIBLE": 176,
+   "WATCH": 62,
+   "REJECT": 6740,
+   "paper_bets_added": 11,
    "money_card_qualified": 3
   },
   "note": "per-run counts summed; a prediction re-evaluated in several runs is counted in each run",
@@ -33,54 +33,66 @@
    "2026-10-09",
    "2026-10-10",
    "2026-10-11",
-   "2026-10-12",
-   "2026-10-13"
+   "2026-10-12"
   ],
   "bet_days": {
-   "2026-09-29": 10
+   "2026-09-29": 10,
+   "2026-10-13": 1
   }
  },
  "latest_run": {
-  "run_at": "2026-10-13T06:16:35.470594+00:00",
-  "trigger": "workflow_dispatch",
+  "run_at": "2026-10-13T14:29:46.290057+00:00",
+  "trigger": "schedule",
   "rule_version": "bsv2-4",
-  "events_scanned": "24",
-  "valid_predictions": "97",
-  "high_p_candidates": "23",
-  "priced_candidates": "49",
-  "PAPER_BET": "0",
-  "MULTI_RESEARCH_ELIGIBLE": "0",
-  "WATCH": "0",
-  "REJECT": "97",
-  "paper_bets_added": "0",
-  "snapshots_added": "49",
+  "events_scanned": "46",
+  "valid_predictions": "119",
+  "high_p_candidates": "28",
+  "priced_candidates": "57",
+  "PAPER_BET": "1",
+  "MULTI_RESEARCH_ELIGIBLE": "3",
+  "WATCH": "1",
+  "REJECT": "114",
+  "paper_bets_added": "1",
+  "snapshots_added": "330",
   "money_card_qualified": "0",
   "football_fixtures_on_card": "24"
  },
  "latest_decisions": {
   "decisions": {
-   "REJECT": 97
+   "REJECT": 114,
+   "MULTI_RESEARCH_ELIGIBLE": 3,
+   "PAPER_BET": 1,
+   "WATCH": 1
   },
   "reason_counts": {
    "ENGINE_STATUS_INELIGIBLE": 85,
-   "NET_EV_NOT_POSITIVE": 44,
+   "NET_EV_NOT_POSITIVE": 50,
+   "PRICE_STALE": 49,
    "P_BELOW_FLOOR": 37,
    "NO_EXECUTABLE_PRICE": 36,
-   "PRICE_STALE": 13,
-   "COMMISSION_UNKNOWN": 12,
-   "EXCHANGE_SPREAD_TOO_WIDE": 7
+   "COMMISSION_UNKNOWN": 26,
+   "EXCHANGE_SPREAD_TOO_WIDE": 2,
+   "ALL_PAPER_GATES_PASSED": 1,
+   "NET_EV_BELOW_PAPER_GATE": 1,
+   "ODDS_BELOW_PAYOUT_FLOOR": 1
   },
   "by_sport": {
    "football": {
     "REJECT": 85
    },
+   "icehockey": {
+    "REJECT": 16
+   },
    "tennis": {
-    "REJECT": 12
+    "REJECT": 13,
+    "MULTI_RESEARCH_ELIGIBLE": 3,
+    "PAPER_BET": 1,
+    "WATCH": 1
    }
   },
   "by_engine": {
    "atp_match_winner.betfair_market": {
-    "REJECT": 6
+    "REJECT": 4
    },
    "football_1x2.market_consensus": {
     "REJECT": 36
@@ -91,16 +103,22 @@
    "football_ou25.market": {
     "REJECT": 13
    },
+   "nhl_moneyline.market": {
+    "REJECT": 16
+   },
    "wta_match_winner.betfair_market": {
-    "REJECT": 6
+    "MULTI_RESEARCH_ELIGIBLE": 3,
+    "REJECT": 9,
+    "PAPER_BET": 1,
+    "WATCH": 1
    }
   }
  },
  "paper_results": {
   "overall": {
-   "selections": 1,
+   "selections": 2,
    "settled": 1,
-   "pending": 0,
+   "pending": 1,
    "void": 0,
    "won": 0,
    "win_rate": 0.0,
@@ -115,9 +133,9 @@
   "breakdowns": {
    "sport": {
     "tennis": {
-     "selections": 1,
+     "selections": 2,
      "settled": 1,
-     "pending": 0,
+     "pending": 1,
      "void": 0,
      "won": 0,
      "win_rate": 0.0,
@@ -132,9 +150,9 @@
    },
    "engine": {
     "wta_match_winner.betfair_market": {
-     "selections": 1,
+     "selections": 2,
      "settled": 1,
-     "pending": 0,
+     "pending": 1,
      "void": 0,
      "won": 0,
      "win_rate": 0.0,
@@ -162,13 +180,28 @@
      "roi_yield": -1.0,
      "max_drawdown_units": 1.0,
      "longest_losing_streak": 1
+    },
+    "60-69.9%": {
+     "selections": 1,
+     "settled": 0,
+     "pending": 1,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0
     }
    },
    "odds_band": {
     "1.50-1.99": {
-     "selections": 1,
+     "selections": 2,
      "settled": 1,
-     "pending": 0,
+     "pending": 1,
      "void": 0,
      "won": 0,
      "win_rate": 0.0,
@@ -183,9 +216,9 @@
    },
    "decision": {
     "PAPER_BET": {
-     "selections": 1,
+     "selections": 2,
      "settled": 1,
-     "pending": 0,
+     "pending": 1,
      "void": 0,
      "won": 0,
      "win_rate": 0.0,
@@ -200,9 +233,9 @@
    },
    "source_type": {
     "bookmaker": {
-     "selections": 1,
+     "selections": 2,
      "settled": 1,
-     "pending": 0,
+     "pending": 1,
      "void": 0,
      "won": 0,
      "win_rate": 0.0,

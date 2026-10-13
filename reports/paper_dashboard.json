@@ -1,15 +1,15 @@
 {
  "product": "PAPER PERFORMANCE DASHBOARD (paper only; descriptive, no projections)",
- "generated_at": "2026-10-13T06:16:35.766696+00:00",
+ "generated_at": "2026-10-13T14:29:46.623290+00:00",
  "card_rule_version": "pcard-1",
  "bsv2_rule_version": "bsv2-4",
  "real_money_enabled": false,
  "headline_set": "bsv2 bsv2-4 selections + earlier rows annotated VALID_SAME_SNAPSHOT",
  "financial": {
   "overall": {
-   "selections": 1,
+   "selections": 2,
    "settled": 1,
-   "pending": 0,
+   "pending": 1,
    "void": 0,
    "won": 0,
    "win_rate": 0.0,
@@ -24,9 +24,9 @@
   "breakdowns": {
    "sport": {
     "tennis": {
-     "selections": 1,
+     "selections": 2,
      "settled": 1,
-     "pending": 0,
+     "pending": 1,
      "void": 0,
      "won": 0,
      "win_rate": 0.0,
@@ -41,9 +41,9 @@
    },
    "engine": {
     "wta_match_winner.betfair_market": {
-     "selections": 1,
+     "selections": 2,
      "settled": 1,
-     "pending": 0,
+     "pending": 1,
      "void": 0,
      "won": 0,
      "win_rate": 0.0,
@@ -71,13 +71,28 @@
      "roi_yield": -1.0,
      "max_drawdown_units": 1.0,
      "longest_losing_streak": 1
+    },
+    "60-69.9%": {
+     "selections": 1,
+     "settled": 0,
+     "pending": 1,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0
     }
    },
    "odds_band": {
     "1.50-1.99": {
-     "selections": 1,
+     "selections": 2,
      "settled": 1,
-     "pending": 0,
+     "pending": 1,
      "void": 0,
      "won": 0,
      "win_rate": 0.0,
@@ -92,9 +107,9 @@
    },
    "decision": {
     "PAPER_BET": {
-     "selections": 1,
+     "selections": 2,
      "settled": 1,
-     "pending": 0,
+     "pending": 1,
      "void": 0,
      "won": 0,
      "win_rate": 0.0,
@@ -109,9 +124,9 @@
    },
    "source_type": {
     "bookmaker": {
-     "selections": 1,
+     "selections": 2,
      "settled": 1,
-     "pending": 0,
+     "pending": 1,
      "void": 0,
      "won": 0,
      "win_rate": 0.0,
@@ -411,9 +426,9 @@
  },
  "all_selections": {
   "financial": {
-   "selections": 10,
+   "selections": 11,
    "settled": 9,
-   "pending": 1,
+   "pending": 2,
    "void": 0,
    "won": 5,
    "win_rate": 0.5556,
@@ -440,9 +455,9 @@
   "sport": {
    "tennis": {
     "financial": {
-     "selections": 10,
+     "selections": 11,
      "settled": 9,
-     "pending": 1,
+     "pending": 2,
      "void": 0,
      "won": 5,
      "win_rate": 0.5556,
@@ -453,7 +468,7 @@
      "roi_yield": -0.1911,
      "max_drawdown_units": 2.72,
      "longest_losing_streak": 2,
-     "mean_net_ev_at_decision": 0.0505
+     "mean_net_ev_at_decision": 0.0488
     },
     "prediction": {
      "n": 9,
@@ -467,6 +482,27 @@
    }
   },
   "competition": {
+   "WTA Wuhan Open": {
+    "financial": {
+     "selections": 1,
+     "settled": 0,
+     "pending": 1,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0,
+     "mean_net_ev_at_decision": 0.0317
+    },
+    "prediction": {
+     "n": 0
+    }
+   },
    "tennis_atp_japan_open": {
     "financial": {
      "selections": 1,
@@ -525,9 +561,9 @@
   "market": {
    "match_winner": {
     "financial": {
-     "selections": 10,
+     "selections": 11,
      "settled": 9,
-     "pending": 1,
+     "pending": 2,
      "void": 0,
      "won": 5,
      "win_rate": 0.5556,
@@ -538,7 +574,7 @@
      "roi_yield": -0.1911,
      "max_drawdown_units": 2.72,
      "longest_losing_streak": 2,
-     "mean_net_ev_at_decision": 0.0505
+     "mean_net_ev_at_decision": 0.0488
     },
     "prediction": {
      "n": 9,
@@ -581,9 +617,9 @@
    },
    "wta_match_winner.betfair_market": {
     "financial": {
-     "selections": 9,
+     "selections": 10,
      "settled": 8,
-     "pending": 1,
+     "pending": 2,
      "void": 0,
      "won": 5,
      "win_rate": 0.625,
@@ -594,7 +630,7 @@
      "roi_yield": -0.09,
      "max_drawdown_units": 2.0,
      "longest_losing_streak": 2,
-     "mean_net_ev_at_decision": 0.053
+     "mean_net_ev_at_decision": 0.0508
     },
     "prediction": {
      "n": 8,
@@ -661,9 +697,51 @@
      "brier": 0.35827,
      "log_loss": 0.91269
     }
+   },
+   "bsv2-4": {
+    "financial": {
+     "selections": 1,
+     "settled": 0,
+     "pending": 1,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0,
+     "mean_net_ev_at_decision": 0.0317
+    },
+    "prediction": {
+     "n": 0
+    }
    }
   },
   "grade": {
+   "A": {
+    "financial": {
+     "selections": 1,
+     "settled": 0,
+     "pending": 1,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0,
+     "mean_net_ev_at_decision": 0.0317
+    },
+    "prediction": {
+     "n": 0
+    }
+   },
    "UNGRADED_PRE_PCARD": {
     "financial": {
      "selections": 10,
@@ -722,9 +800,9 @@
    },
    "60-69.9%": {
     "financial": {
-     "selections": 1,
+     "selections": 2,
      "settled": 0,
-     "pending": 1,
+     "pending": 2,
      "void": 0,
      "won": 0,
      "win_rate": null,
@@ -735,7 +813,7 @@
      "roi_yield": null,
      "max_drawdown_units": 0.0,
      "longest_losing_streak": 0,
-     "mean_net_ev_at_decision": 0.0226
+     "mean_net_ev_at_decision": 0.0272
     },
     "prediction": {
      "n": 0
@@ -799,9 +877,9 @@
    },
    "1.50-1.99": {
     "financial": {
-     "selections": 6,
+     "selections": 7,
      "settled": 5,
-     "pending": 1,
+     "pending": 2,
      "void": 0,
      "won": 3,
      "win_rate": 0.6,
@@ -812,7 +890,7 @@
      "roi_yield": -0.096,
      "max_drawdown_units": 1.48,
      "longest_losing_streak": 1,
-     "mean_net_ev_at_decision": 0.0595
+     "mean_net_ev_at_decision": 0.0555
     },
     "prediction": {
      "n": 5,
