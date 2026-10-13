@@ -2,7 +2,7 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 33 · Valid predictions: 81 · Sports: football, tennis
+Upcoming events: 30 · Valid predictions: 78 · Sports: football, tennis
 Counts: >=70: 20 · >=75: 13 · >=80: 7 · >=85: 3 · >=90: 1 · >=95: 0
 Settled yesterday: 1 · System: **HEALTHY** · API credits (last observed): 322
 
@@ -25,19 +25,19 @@ Settled yesterday: 1 · System: **HEALTHY** · API credits (last observed): 322
 | football_1x2.market_consensus | VALIDATED_HISTORICAL / COLLECTING | 432 | 93 | COLLECTING | 1 | 82.3% → 100.0% |
 | football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 37 | 29 | COLLECTING | 0 | — → — |
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
-| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 151 | 55 | EARLY | 12 | 86.6% → 83.3% |
-| wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 136 | 77 | EARLY | 18 | 91.3% → 88.9% |
+| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 151 | 132 | EARLY | 25 | 87.7% → 76.0% |
+| wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 136 | 98 | EARLY | 21 | 89.9% → 85.7% |
 | nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 0 | 0 | COLLECTING | 0 | — → — |
-| nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 34 | 18 | COLLECTING | 0 | — → — |
-| nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 15 | 1 | COLLECTING | 0 | — → — |
+| nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 34 | 34 | COLLECTING | 0 | — → — |
+| nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 15 | 13 | COLLECTING | 0 | — → — |
 | football_double_chance.derived_1x2 | PROVISIONAL_PROSPECTIVE / COLLECTING | 432 | 9 | COLLECTING | 1 | 80.2% → 0.0% |
 
 ## System health
 
 - daily_scan: OK (last 2026-10-12T16:36:27.539348+00:00)
-- settlement: OK (last 2026-10-12T00:27:01.464533+00:00)
+- settlement: OK (last 2026-10-13T02:32:47.460574+00:00)
 - tennis_board: OK (last 2026-10-12T15:16:35.221565+00:00)
-- ci_tests: OK (last 2026-10-13T02:32:24.395365+00:00)
+- ci_tests: OK (last 2026-10-13T03:06:58.738127+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 

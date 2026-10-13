@@ -1,11 +1,11 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-13T02:32:45.916792+00:00",
+ "generated_at": "2026-10-13T03:07:14.180784+00:00",
  "date": "2026-10-13",
  "summary": {
-  "upcoming_events": 33,
-  "valid_predictions": 81,
+  "upcoming_events": 30,
+  "valid_predictions": 78,
   "sports_active": [
    "football",
    "tennis"
@@ -33,7 +33,7 @@
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-13T02:32:45.916792+00:00",
+  "generated_at": "2026-10-13T03:07:14.180784+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -41,22 +41,22 @@
     "last": "2026-10-12T16:36:27.539348+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 9.9
+    "age_hours": 10.5
    },
    "settlement": {
-    "last": "2026-10-12T00:27:01.464533+00:00",
+    "last": "2026-10-13T02:32:47.460574+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 26.1
+    "age_hours": 0.6
    },
    "tennis_board": {
     "last": "2026-10-12T15:16:35.221565+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 11.3
+    "age_hours": 11.8
    },
    "ci_tests": {
-    "last": "2026-10-13T02:32:24.395365+00:00",
+    "last": "2026-10-13T03:06:58.738127+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -113,11 +113,11 @@
    "prospective_status": "COLLECTING",
    "money_eligible": true,
    "predictions": 151,
-   "settled_rows": 55,
+   "settled_rows": 132,
    "maturity": "EARLY",
-   "ge80_settled": 12,
-   "ge80_mean_pred": 0.8656855,
-   "ge80_actual": 0.8333333333333334,
+   "ge80_settled": 25,
+   "ge80_mean_pred": 0.8766552,
+   "ge80_actual": 0.76,
    "alarm_review_required": false
   },
   "wta_match_winner.betfair_market": {
@@ -125,11 +125,11 @@
    "prospective_status": "COLLECTING",
    "money_eligible": true,
    "predictions": 136,
-   "settled_rows": 77,
+   "settled_rows": 98,
    "maturity": "EARLY",
-   "ge80_settled": 18,
-   "ge80_mean_pred": 0.9134367222222222,
-   "ge80_actual": 0.8888888888888888,
+   "ge80_settled": 21,
+   "ge80_mean_pred": 0.8990787142857142,
+   "ge80_actual": 0.8571428571428571,
    "alarm_review_required": false
   },
   "nba_moneyline.market": {
@@ -149,7 +149,7 @@
    "prospective_status": "COLLECTING",
    "money_eligible": false,
    "predictions": 34,
-   "settled_rows": 18,
+   "settled_rows": 34,
    "maturity": "COLLECTING",
    "ge80_settled": 0,
    "ge80_mean_pred": null,
@@ -161,7 +161,7 @@
    "prospective_status": "COLLECTING",
    "money_eligible": true,
    "predictions": 15,
-   "settled_rows": 1,
+   "settled_rows": 13,
    "maturity": "COLLECTING",
    "ge80_settled": 0,
    "ge80_mean_pred": null,
@@ -193,18 +193,18 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 88,
-   "EXCLUDED": 1225
+   "ELIGIBLE": 83,
+   "EXCLUDED": 1230
   },
   "exclusion_reason": {
-   "EVENT_STARTED": 1225
+   "EVENT_STARTED": 1230
   },
   "start_time_status": {
    "LEDGER_ONLY": 964,
    "RESCHEDULED": 221,
    "UNCHANGED": 128
   },
-  "eligible_rescheduled": 16,
+  "eligible_rescheduled": 12,
   "rule": "est-1"
  },
  "predictions": [
@@ -1553,48 +1553,6 @@
    "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
   },
   {
-   "prediction_id": "ac51eacb60f209d0",
-   "engine_id": "wta_match_winner.betfair_market",
-   "engine_version": "1",
-   "sport": "tennis",
-   "competition": "WTA Wuhan Open",
-   "event_id": "42aa77fdd076af7d95fbe56b34077fa9",
-   "event_key": "tennis|tennis_wta_wuhan_open|42aa77fdd076af7d95fbe56b34077fa9",
-   "event_name": "Kimberly Birrell v Katie Volynets",
-   "event_start": "2026-10-13T03:00:00+00:00",
-   "market": "match_winner",
-   "selection": "Katie Volynets",
-   "estimated_probability": "0.619552",
-   "fair_odds": "1.6140695212024172",
-   "probability_band": "60-64.9%",
-   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
-   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "",
-   "actual_workflow_start": "2026-10-12T15:16:35.221565+00:00",
-   "prediction_timestamp": "2026-10-12T15:16:35.221565+00:00",
-   "minutes_to_event": "703.4",
-   "live_price": "1.59",
-   "live_price_source": "betfair_ex_uk back (odds_api)",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "True",
-   "single_ineligible_reason": "",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
-   "origin": "tennis_predictions/ledger_predictions.csv",
-   "origin_prediction_id": "ac51eacb60f209d0",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-10-13T03:00:00+00:00",
-   "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
-  },
-  {
    "prediction_id": "767e21c3632043e0",
    "engine_id": "wta_match_winner.betfair_market",
    "engine_version": "1",
@@ -2015,48 +1973,6 @@
    "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
-   "prediction_id": "88b3ed426227df55",
-   "engine_id": "wta_match_winner.betfair_market",
-   "engine_version": "1",
-   "sport": "tennis",
-   "competition": "WTA Wuhan Open",
-   "event_id": "58a05f658522b6d5023cf97d25398dd0",
-   "event_key": "tennis|tennis_wta_wuhan_open|58a05f658522b6d5023cf97d25398dd0",
-   "event_name": "Dayana Yastremska v Cristina Bucsa",
-   "event_start": "2026-10-13T03:00:00+00:00",
-   "market": "match_winner",
-   "selection": "Dayana Yastremska",
-   "estimated_probability": "0.558426",
-   "fair_odds": "1.7907475654786849",
-   "probability_band": "55-59.9%",
-   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
-   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "",
-   "actual_workflow_start": "2026-10-11T15:16:27.388196+00:00",
-   "prediction_timestamp": "2026-10-11T15:16:27.388196+00:00",
-   "minutes_to_event": "2083.5",
-   "live_price": "1.74",
-   "live_price_source": "betfair_ex_uk back (odds_api)",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "True",
-   "single_ineligible_reason": "",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
-   "origin": "tennis_predictions/ledger_predictions.csv",
-   "origin_prediction_id": "88b3ed426227df55",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-10-13T02:00:00+00:00",
-   "start_time_status": "RESCHEDULED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
-  },
-  {
    "prediction_id": "ccb0a6593662579a",
    "engine_id": "football_ou25.market",
    "engine_version": "1",
@@ -2265,48 +2181,6 @@
    "event_start_original": "2026-10-13T07:30:00+00:00",
    "start_time_status": "UNCHANGED",
    "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
-  },
-  {
-   "prediction_id": "5ebdf8d76de16c72",
-   "engine_id": "wta_match_winner.betfair_market",
-   "engine_version": "1",
-   "sport": "tennis",
-   "competition": "WTA Wuhan Open",
-   "event_id": "151c74daf0dab5e36cb9e4534b7ee96e",
-   "event_key": "tennis|tennis_wta_wuhan_open|151c74daf0dab5e36cb9e4534b7ee96e",
-   "event_name": "Katerina Siniakova v Liudmila Samsonova",
-   "event_start": "2026-10-13T03:00:00+00:00",
-   "market": "match_winner",
-   "selection": "Liudmila Samsonova",
-   "estimated_probability": "0.527363",
-   "fair_odds": "1.896227076984923",
-   "probability_band": "50-54.9%",
-   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
-   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "",
-   "actual_workflow_start": "2026-10-11T15:16:27.388196+00:00",
-   "prediction_timestamp": "2026-10-11T15:16:27.388196+00:00",
-   "minutes_to_event": "2083.5",
-   "live_price": "1.83",
-   "live_price_source": "betfair_ex_uk back (odds_api)",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "True",
-   "single_ineligible_reason": "",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
-   "origin": "tennis_predictions/ledger_predictions.csv",
-   "origin_prediction_id": "5ebdf8d76de16c72",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-10-13T02:00:00+00:00",
-   "start_time_status": "RESCHEDULED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "434c45bb028e81e1",
