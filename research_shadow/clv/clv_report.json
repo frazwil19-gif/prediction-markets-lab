@@ -1,6 +1,6 @@
 {
  "version": "clv-1",
- "generated_at": "2026-10-13T15:10:16.980056+00:00",
+ "generated_at": "2026-10-13T15:25:14.456580+00:00",
  "credits": {
   "month": "2026-10",
   "spent_this_month": 0,
@@ -91,20 +91,20 @@
   "looks_reached": [],
   "bands": {
    "<0": {
-    "n": 82,
+    "n": 83,
     "est_ev": {
-     "n": 82,
-     "mean": -0.01686,
-     "median": -0.01654,
+     "n": 83,
+     "mean": -0.01712,
+     "median": -0.01689,
      "positive_rate": 0.0,
      "ci95": [
-      -0.01863,
-      -0.01517
+      -0.01879,
+      -0.0154
      ]
     },
     "tier_a_eligible": 0,
     "tier_a_captured": 0,
-    "top_book_share": 0.378,
+    "top_book_share": 0.373,
     "price_age_median_min": 0.4,
     "fair_clv": {
      "n": 0
@@ -116,13 +116,13 @@
      "n": 0
     },
     "tier_b_proxy_fair_clv": {
-     "n": 33,
-     "mean": -0.01471,
-     "median": -0.01174,
-     "positive_rate": 0.152,
+     "n": 45,
+     "mean": -0.01502,
+     "median": -0.01279,
+     "positive_rate": 0.089,
      "ci95": [
-      -0.02042,
-      -0.00884
+      -0.01942,
+      -0.0111
      ]
     },
     "outcomes": {
@@ -186,7 +186,10 @@
      "n": 0
     },
     "tier_b_proxy_fair_clv": {
-     "n": 0
+     "n": 1,
+     "mean": 0.02113,
+     "median": 0.02113,
+     "positive_rate": 1.0
     },
     "outcomes": {
      "settled": 0
