@@ -2,7 +2,7 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 30 · Valid predictions: 54 · Sports: football, icehockey, tennis
+Upcoming events: 26 · Valid predictions: 50 · Sports: football, icehockey, tennis
 Counts: >=70: 14 · >=75: 11 · >=80: 5 · >=85: 1 · >=90: 1 · >=95: 0
 Settled yesterday: 363 · System: **HEALTHY** · API credits (last observed): 300
 
@@ -23,8 +23,8 @@ Settled yesterday: 363 · System: **HEALTHY** · API credits (last observed): 30
 | football_1x2.market_consensus | VALIDATED_HISTORICAL / COLLECTING | 444 | 93 | COLLECTING | 1 | 82.3% → 100.0% |
 | football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 42 | 29 | COLLECTING | 0 | — → — |
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
-| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 152 | 132 | EARLY | 25 | 87.7% → 76.0% |
-| wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 147 | 98 | EARLY | 21 | 89.9% → 85.7% |
+| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 152 | 135 | EARLY | 25 | 87.7% → 76.0% |
+| wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 147 | 119 | EARLY | 21 | 89.9% → 85.7% |
 | nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 0 | 0 | COLLECTING | 0 | — → — |
 | nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 50 | 34 | COLLECTING | 0 | — → — |
 | nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 15 | 13 | COLLECTING | 0 | — → — |
@@ -33,9 +33,9 @@ Settled yesterday: 363 · System: **HEALTHY** · API credits (last observed): 30
 ## System health
 
 - daily_scan: OK (last 2026-10-13T06:16:34.488591+00:00)
-- settlement: OK (last 2026-10-13T02:32:47.460574+00:00)
+- settlement: OK (last 2026-10-14T00:15:25.689434+00:00)
 - tennis_board: OK (last 2026-10-13T15:16:35.631255+00:00)
-- ci_tests: OK (last 2026-10-14T00:15:08.857357+00:00)
+- ci_tests: OK (last 2026-10-14T01:19:27.288485+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
