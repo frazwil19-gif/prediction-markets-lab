@@ -1,4 +1,4 @@
-# CLV report (clv-1, 2026-10-14T12:12Z)
+# CLV report (clv-1, 2026-10-14T12:27Z)
 
 Credits 2026-10: 0 of 100 (0 paid calls). Missed captures logged: 13.
 
@@ -26,7 +26,7 @@ Study start 2026-10-08T17:53Z. Combined 0–2% Tier-A captures: **0** (looks at 
 
 | Band | N | est. EV mean | Tier A captured/eligible | top-book share | fair-CLV | Tier-B proxy | settled / ROI |
 |---|---|---|---|---|---|---|---|
-| <0 | 83 | -1.71% | 0/0 | 0.373 | n 0 | n 45 · mean -1.50% · median -1.28% · positive 9% CI [-1.94%, -1.11%] | 61 / -0.0736 |
+| <0 | 88 | -1.71% | 0/0 | 0.375 | n 0 | n 45 · mean -1.50% · median -1.28% · positive 9% CI [-1.94%, -1.11%] | 61 / -0.0736 |
 | 0-1 | 2 | +0.52% | 0/2 | 0.5 | sealed | sealed | sealed |
 | 1-2 | 2 | +1.44% | 0/2 | 0.5 | sealed | sealed | sealed |
 | 2-4 | 1 | +3.17% | 0/1 | 1.0 | n 0 | n 1 · mean +2.11% · median +2.11% · positive 100% | 0 / None |
