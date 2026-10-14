@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-10-13T02:32:47.052933+00:00",
+ "generated_at": "2026-10-14T00:15:25.279381+00:00",
  "month": "2026-10",
- "account_used_month_to_date_latest_counter": 184,
- "projected_month_end_at_current_rate": 439,
+ "account_used_month_to_date_latest_counter": 200,
+ "projected_month_end_at_current_rate": 443,
  "by_consumer": {
   "clv_capture": {
    "paid_calls": 0,
@@ -11,22 +11,22 @@
    "credits_saved_estimate": 3
   },
   "football_daily_scan": {
-   "paid_calls": 28,
-   "credits_charged": 44,
-   "skipped_calls": 44,
-   "credits_saved_estimate": 64
+   "paid_calls": 29,
+   "credits_charged": 46,
+   "skipped_calls": 49,
+   "credits_saved_estimate": 71
   },
   "football_shadow_scan": {
    "paid_calls": 25,
    "credits_charged": 25,
-   "skipped_calls": 95,
-   "credits_saved_estimate": 95
+   "skipped_calls": 105,
+   "credits_saved_estimate": 105
   },
   "market_probe_c3": {
    "paid_calls": 0,
    "credits_charged": 0,
-   "skipped_calls": 109,
-   "credits_saved_estimate": 218
+   "skipped_calls": 199,
+   "credits_saved_estimate": 398
   },
   "nba_prediction_board": {
    "paid_calls": 0,
@@ -41,8 +41,8 @@
    "credits_saved_estimate": 0
   },
   "tennis_prediction_board": {
-   "paid_calls": 51,
-   "credits_charged": 51,
+   "paid_calls": 55,
+   "credits_charged": 55,
    "skipped_calls": 2,
    "credits_saved_estimate": 2
   }
@@ -54,10 +54,10 @@
     100
    ],
    "plan_a_to_date_range": [
-    30.3,
-    43.3
+    32.7,
+    46.7
    ],
-   "actual_to_date": 44
+   "actual_to_date": 46
   },
   "football_settlement": {
    "plan_a_month_range": [
@@ -66,7 +66,7 @@
    ],
    "plan_a_to_date_range": [
     0.0,
-    8.7
+    9.3
    ],
    "actual_to_date": 0
   },
@@ -76,10 +76,10 @@
     150
    ],
    "plan_a_to_date_range": [
-    43.3,
-    65.0
+    46.7,
+    70.0
    ],
-   "actual_to_date": 51
+   "actual_to_date": 55
   },
   "nba_prediction_board": {
    "plan_a_month_range": [
@@ -87,31 +87,31 @@
     60
    ],
    "plan_a_to_date_range": [
-    8.7,
-    26.0
+    9.3,
+    28.0
    ],
    "actual_to_date": 0
   }
  },
  "football_counterfactual": {
-  "scan_days_logged": 11,
-  "baseline_credits_if_ungated": 66,
-  "actual": 44
+  "scan_days_logged": 12,
+  "baseline_credits_if_ungated": 72,
+  "actual": 46
  },
  "utilisation": {
   "month": "2026-10",
-  "day_of_month": 13,
+  "day_of_month": 14,
   "consumers": {
    "football_daily_scan": {
     "allocation": 160,
-    "consumed": 44,
-    "unused": 116,
-    "utilisation_pct": 27.5,
-    "projected_month_end": 104.9,
+    "consumed": 46,
+    "unused": 114,
+    "utilisation_pct": 28.8,
+    "projected_month_end": 101.9,
     "useful_outputs": {
-     "predictions": 901,
+     "predictions": 930,
      "qualifying_bets": 0,
-     "predictions_per_credit": 20.48
+     "predictions_per_credit": 20.22
     },
     "recommendation": "on plan"
    },
@@ -130,14 +130,14 @@
    },
    "tennis_prediction_board": {
     "allocation": 150,
-    "consumed": 51,
-    "unused": 99,
-    "utilisation_pct": 34.0,
-    "projected_month_end": 121.6,
+    "consumed": 55,
+    "unused": 95,
+    "utilisation_pct": 36.7,
+    "projected_month_end": 121.8,
     "useful_outputs": {
-     "predictions": 238,
-     "qualifying_bets": 0,
-     "predictions_per_credit": 4.67
+     "predictions": 250,
+     "qualifying_bets": 1,
+     "predictions_per_credit": 4.55
     },
     "recommendation": "on plan"
    },
@@ -156,16 +156,16 @@
    },
    "us_sports_board": {
     "allocation": 40,
-    "consumed": 17,
-    "unused": 23,
-    "utilisation_pct": 42.5,
-    "projected_month_end": 40.5,
+    "consumed": 22,
+    "unused": 18,
+    "utilisation_pct": 55.0,
+    "projected_month_end": 48.7,
     "useful_outputs": {
-     "predictions": 49,
+     "predictions": 65,
      "qualifying_bets": 0,
-     "predictions_per_credit": 2.88
+     "predictions_per_credit": 2.95
     },
-    "recommendation": "on pace to exceed cap (40.5 > 40); budget guard will stop it \u2014 review"
+    "recommendation": "on pace to exceed cap (48.7 > 40); budget guard will stop it \u2014 review"
    },
    "pre_close_capture": {
     "allocation": 25,

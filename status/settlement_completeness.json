@@ -1,16 +1,16 @@
 {
- "generated_at": "2026-10-13T02:32:46.792348+00:00",
+ "generated_at": "2026-10-14T00:15:25.025861+00:00",
  "lag_hours": {
   "football_data_co_uk": 120,
   "tennis_court_log": 240,
   "odds_api_scores": 96
  },
  "totals": {
-  "NOT_STARTED": 101,
-  "NORMAL_SOURCE_LAG": 802,
-  "SETTLED": 436,
-  "UNRESOLVED_AFTER_EXPECTED_LAG": 16,
-  "SOURCE_UNAVAILABLE": 30
+  "NOT_STARTED": 73,
+  "NORMAL_SOURCE_LAG": 749,
+  "SETTLED": 594,
+  "UNRESOLVED_AFTER_EXPECTED_LAG": 18,
+  "SOURCE_UNAVAILABLE": 11
  },
  "groups": [
   {
@@ -40,16 +40,29 @@
    "settled_share_of_started": 0.8889
   },
   {
+   "ledger": "bsv2_paper_selections",
+   "sport": "tennis",
+   "competition": "WTA Wuhan Open",
+   "source": "tennis_court_log",
+   "NOT_STARTED": 1,
+   "NORMAL_SOURCE_LAG": 0,
+   "SETTLED": 0,
+   "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
+   "SOURCE_UNAVAILABLE": 0,
+   "completed_events_past_lag": 0,
+   "settled_share_of_started": null
+  },
+  {
    "ledger": "legacy_paper_ledger",
    "sport": "football",
    "competition": "Championship",
    "source": "odds_api_scores",
-   "NOT_STARTED": 12,
+   "NOT_STARTED": 3,
    "NORMAL_SOURCE_LAG": 0,
-   "SETTLED": 10,
+   "SETTLED": 21,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
    "SOURCE_UNAVAILABLE": 0,
-   "completed_events_past_lag": 10,
+   "completed_events_past_lag": 21,
    "settled_share_of_started": 1.0
   },
   {
@@ -85,11 +98,11 @@
    "source": "NONE",
    "NOT_STARTED": 0,
    "NORMAL_SOURCE_LAG": 0,
-   "SETTLED": 1,
+   "SETTLED": 13,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
-   "SOURCE_UNAVAILABLE": 14,
-   "completed_events_past_lag": 1,
-   "settled_share_of_started": 0.0667
+   "SOURCE_UNAVAILABLE": 2,
+   "completed_events_past_lag": 13,
+   "settled_share_of_started": 0.8667
   },
   {
    "ledger": "unified_ledger",
@@ -135,13 +148,13 @@
    "sport": "football",
    "competition": "Championship",
    "source": "football_data_co_uk",
-   "NOT_STARTED": 56,
-   "NORMAL_SOURCE_LAG": 0,
+   "NOT_STARTED": 28,
+   "NORMAL_SOURCE_LAG": 57,
    "SETTLED": 85,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
    "SOURCE_UNAVAILABLE": 0,
    "completed_events_past_lag": 85,
-   "settled_share_of_started": 1.0
+   "settled_share_of_started": 0.5986
   },
   {
    "ledger": "unified_ledger",
@@ -304,13 +317,13 @@
    "sport": "icehockey",
    "competition": "NHL",
    "source": "NONE",
-   "NOT_STARTED": 0,
+   "NOT_STARTED": 7,
    "NORMAL_SOURCE_LAG": 0,
-   "SETTLED": 18,
+   "SETTLED": 34,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
-   "SOURCE_UNAVAILABLE": 16,
-   "completed_events_past_lag": 18,
-   "settled_share_of_started": 0.5294
+   "SOURCE_UNAVAILABLE": 9,
+   "completed_events_past_lag": 34,
+   "settled_share_of_started": 0.7907
   },
   {
    "ledger": "unified_ledger",
@@ -318,12 +331,12 @@
    "competition": "ATP China Open",
    "source": "tennis_court_log",
    "NOT_STARTED": 0,
-   "NORMAL_SOURCE_LAG": 3,
-   "SETTLED": 36,
+   "NORMAL_SOURCE_LAG": 0,
+   "SETTLED": 39,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 4,
    "SOURCE_UNAVAILABLE": 0,
-   "completed_events_past_lag": 40,
-   "settled_share_of_started": 0.8372
+   "completed_events_past_lag": 43,
+   "settled_share_of_started": 0.907
   },
   {
    "ledger": "unified_ledger",
@@ -331,25 +344,25 @@
    "competition": "ATP Japan Open",
    "source": "tennis_court_log",
    "NOT_STARTED": 0,
-   "NORMAL_SOURCE_LAG": 3,
-   "SETTLED": 28,
+   "NORMAL_SOURCE_LAG": 0,
+   "SETTLED": 31,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 1,
    "SOURCE_UNAVAILABLE": 0,
-   "completed_events_past_lag": 29,
-   "settled_share_of_started": 0.875
+   "completed_events_past_lag": 32,
+   "settled_share_of_started": 0.9688
   },
   {
    "ledger": "unified_ledger",
    "sport": "tennis",
    "competition": "ATP Shanghai Masters",
    "source": "tennis_court_log",
-   "NOT_STARTED": 8,
-   "NORMAL_SOURCE_LAG": 102,
-   "SETTLED": 2,
+   "NOT_STARTED": 5,
+   "NORMAL_SOURCE_LAG": 14,
+   "SETTLED": 94,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
    "SOURCE_UNAVAILABLE": 0,
-   "completed_events_past_lag": 2,
-   "settled_share_of_started": 0.0192
+   "completed_events_past_lag": 94,
+   "settled_share_of_started": 0.8704
   },
   {
    "ledger": "unified_ledger",
@@ -357,12 +370,12 @@
    "competition": "WTA China Open",
    "source": "tennis_court_log",
    "NOT_STARTED": 0,
-   "NORMAL_SOURCE_LAG": 24,
-   "SETTLED": 82,
-   "UNRESOLVED_AFTER_EXPECTED_LAG": 10,
+   "NORMAL_SOURCE_LAG": 1,
+   "SETTLED": 103,
+   "UNRESOLVED_AFTER_EXPECTED_LAG": 12,
    "SOURCE_UNAVAILABLE": 0,
-   "completed_events_past_lag": 92,
-   "settled_share_of_started": 0.7069
+   "completed_events_past_lag": 115,
+   "settled_share_of_started": 0.8879
   },
   {
    "ledger": "unified_ledger",
@@ -382,8 +395,8 @@
    "sport": "tennis",
    "competition": "WTA Wuhan Open",
    "source": "tennis_court_log",
-   "NOT_STARTED": 10,
-   "NORMAL_SOURCE_LAG": 40,
+   "NOT_STARTED": 14,
+   "NORMAL_SOURCE_LAG": 47,
    "SETTLED": 0,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
    "SOURCE_UNAVAILABLE": 0,
@@ -400,7 +413,7 @@
    "event": "Juan Manuel Cerundolo v Bu Yunchaokete",
    "start": "2026-09-30T02:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 312.5
+   "hours_since_start": 334.3
   },
   {
    "ledger": "unified_ledger",
@@ -410,7 +423,7 @@
    "event": "Viktorija Golubic v Alina Korneeva",
    "start": "2026-09-30T02:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 312.5
+   "hours_since_start": 334.3
   },
   {
    "ledger": "unified_ledger",
@@ -420,7 +433,7 @@
    "event": "Petra Marcinko v Magdalena Frech",
    "start": "2026-09-30T02:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 312.5
+   "hours_since_start": 334.3
   },
   {
    "ledger": "unified_ledger",
@@ -430,7 +443,7 @@
    "event": "Mayar Sherif v Polina Kudermetova",
    "start": "2026-09-30T02:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 312.5
+   "hours_since_start": 334.3
   },
   {
    "ledger": "unified_ledger",
@@ -440,7 +453,7 @@
    "event": "Lanlana Tararudee v Maria Camila Osorio Serrano",
    "start": "2026-10-01T04:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 286.5
+   "hours_since_start": 308.3
   },
   {
    "ledger": "unified_ledger",
@@ -450,7 +463,7 @@
    "event": "Lorenzo Musetti v Arthur Fery",
    "start": "2026-09-30T02:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 312.5
+   "hours_since_start": 334.3
   },
   {
    "ledger": "unified_ledger",
@@ -460,7 +473,7 @@
    "event": "Viktorija Golubic v Alina Korneeva",
    "start": "2026-09-30T02:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 312.5
+   "hours_since_start": 334.3
   },
   {
    "ledger": "unified_ledger",
@@ -470,7 +483,7 @@
    "event": "Petra Marcinko v Magdalena Frech",
    "start": "2026-09-30T02:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 312.5
+   "hours_since_start": 334.3
   },
   {
    "ledger": "unified_ledger",
@@ -480,7 +493,7 @@
    "event": "Mayar Sherif v Polina Kudermetova",
    "start": "2026-09-30T02:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 312.5
+   "hours_since_start": 334.3
   },
   {
    "ledger": "unified_ledger",
@@ -490,7 +503,7 @@
    "event": "Lanlana Tararudee v Maria Camila Osorio Serrano",
    "start": "2026-10-01T04:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 286.5
+   "hours_since_start": 308.3
   },
   {
    "ledger": "unified_ledger",
@@ -500,7 +513,7 @@
    "event": "Juan Manuel Cerundolo v Bu Yunchaokete",
    "start": "2026-09-30T06:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 308.3
+   "hours_since_start": 330.0
   },
   {
    "ledger": "unified_ledger",
@@ -510,7 +523,7 @@
    "event": "Alex Molcan v Arthur Rinderknech",
    "start": "2026-10-01T02:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 288.5
+   "hours_since_start": 310.3
   },
   {
    "ledger": "unified_ledger",
@@ -520,7 +533,7 @@
    "event": "Eva Lys v Sun Xinran",
    "start": "2026-10-01T04:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 286.5
+   "hours_since_start": 308.3
   },
   {
    "ledger": "unified_ledger",
@@ -530,7 +543,7 @@
    "event": "Qinwen Zheng v Shi Han",
    "start": "2026-10-01T04:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 286.5
+   "hours_since_start": 308.3
   },
   {
    "ledger": "unified_ledger",
@@ -540,187 +553,27 @@
    "event": "Bu Yunchaokete v Novak Djokovic",
    "start": "2026-10-02T03:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 263.5
+   "hours_since_start": 285.3
   },
   {
    "ledger": "unified_ledger",
-   "id": "534817ffc6a241a1",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event": "Utah Mammoth @ Buffalo Sabres",
-   "start": "2026-10-10T23:10:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 51.4
+   "id": "5fbcafd464750966",
+   "sport": "tennis",
+   "competition": "WTA China Open",
+   "event": "Coco Gauff v Maria Camila Osorio Serrano",
+   "start": "2026-10-03T04:00:00+00:00",
+   "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
+   "hours_since_start": 260.3
   },
   {
    "ledger": "unified_ledger",
-   "id": "cbb6b9f870198999",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event": "Carolina Hurricanes @ Chicago Blackhawks",
-   "start": "2026-10-10T23:10:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 51.4
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "d3df713857984a03",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event": "Toronto Maple Leafs @ Colorado Avalanche",
-   "start": "2026-10-10T23:10:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 51.4
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "55a8ca2a184d47e6",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event": "Columbus Blue Jackets @ St Louis Blues",
-   "start": "2026-10-10T23:10:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 51.4
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "c1b8e1e4506bdac4",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event": "Dallas Stars @ Pittsburgh Penguins",
-   "start": "2026-10-10T23:10:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 51.4
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "6336608b493239b7",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event": "Detroit Red Wings @ Montr\u00e9al Canadiens",
-   "start": "2026-10-10T23:10:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 51.4
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "255d2f49ec974e8e",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event": "Nashville Predators @ Ottawa Senators",
-   "start": "2026-10-10T23:10:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 51.4
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "320b1b56e5f11669",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event": "Tampa Bay Lightning @ New York Islanders",
-   "start": "2026-10-10T23:40:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 50.9
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "cddefb7cd2a98d5c",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event": "Anaheim Ducks @ Calgary Flames",
-   "start": "2026-10-11T02:10:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 48.4
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "6ce76067ffd1c619",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event": "Los Angeles Kings @ Vegas Golden Knights",
-   "start": "2026-10-11T02:10:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 48.4
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "e39f34d654c17e10",
-   "sport": "americanfootball",
-   "competition": "NFL",
-   "event": "Philadelphia Eagles @ Jacksonville Jaguars",
-   "start": "2026-10-11T13:30:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 37.0
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "44095a31b42b0aea",
-   "sport": "americanfootball",
-   "competition": "NFL",
-   "event": "Chicago Bears @ Green Bay Packers",
-   "start": "2026-10-11T17:00:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 33.5
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "fc61ed2fd0061af1",
-   "sport": "americanfootball",
-   "competition": "NFL",
-   "event": "Cincinnati Bengals @ Miami Dolphins",
-   "start": "2026-10-11T17:00:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 33.5
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "f931d2c3a0aef146",
-   "sport": "americanfootball",
-   "competition": "NFL",
-   "event": "Cleveland Browns @ New York Jets",
-   "start": "2026-10-11T17:00:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 33.5
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "a3d56538cfbd336a",
-   "sport": "americanfootball",
-   "competition": "NFL",
-   "event": "Houston Texans @ Tennessee Titans",
-   "start": "2026-10-11T17:00:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 33.5
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "cf3e4f727abb2c89",
-   "sport": "americanfootball",
-   "competition": "NFL",
-   "event": "Indianapolis Colts @ Pittsburgh Steelers",
-   "start": "2026-10-11T17:00:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 33.5
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "b598f3f633f2e18c",
-   "sport": "americanfootball",
-   "competition": "NFL",
-   "event": "Las Vegas Raiders @ New England Patriots",
-   "start": "2026-10-11T17:00:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 33.5
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "820fc23efb71530c",
-   "sport": "americanfootball",
-   "competition": "NFL",
-   "event": "Minnesota Vikings @ New Orleans Saints",
-   "start": "2026-10-11T17:00:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 33.5
+   "id": "7dc15a3edd425311",
+   "sport": "tennis",
+   "competition": "WTA China Open",
+   "event": "Sun Xinran v Cristina Bucsa",
+   "start": "2026-10-03T04:00:00+00:00",
+   "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
+   "hours_since_start": 260.3
   },
   {
    "ledger": "unified_ledger",
@@ -730,77 +583,7 @@
    "event": "New York Giants @ Washington Commanders",
    "start": "2026-10-11T17:00:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 33.5
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "16ba627a1781c65d",
-   "sport": "americanfootball",
-   "competition": "NFL",
-   "event": "Denver Broncos @ Los Angeles Chargers",
-   "start": "2026-10-11T20:05:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 30.5
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "e7714bf5a583cd94",
-   "sport": "americanfootball",
-   "competition": "NFL",
-   "event": "Detroit Lions @ Arizona Cardinals",
-   "start": "2026-10-11T20:25:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 30.1
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "b6b8d8559ce50481",
-   "sport": "americanfootball",
-   "competition": "NFL",
-   "event": "San Francisco 49ers @ Seattle Seahawks",
-   "start": "2026-10-11T20:25:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 30.1
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "6310ad7b33462732",
-   "sport": "americanfootball",
-   "competition": "NFL",
-   "event": "Baltimore Ravens @ Atlanta Falcons",
-   "start": "2026-10-12T00:20:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 26.2
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "4d1eb294905c67a3",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event": "Seattle Kraken @ Washington Capitals",
-   "start": "2026-10-11T21:10:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 29.4
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "260c9fb32fa700a1",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event": "Vancouver Canucks @ New York Rangers",
-   "start": "2026-10-11T22:10:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 28.4
-  },
-  {
-   "ledger": "unified_ledger",
-   "id": "590a0444395bf12e",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event": "Carolina Hurricanes @ Philadelphia Flyers",
-   "start": "2026-10-11T23:10:00+00:00",
-   "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 27.4
+   "hours_since_start": 55.3
   },
   {
    "ledger": "unified_ledger",
@@ -810,37 +593,97 @@
    "event": "Buffalo Bills @ Los Angeles Rams",
    "start": "2026-10-13T00:15:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 2.3
+   "hours_since_start": 24.0
   },
   {
    "ledger": "unified_ledger",
-   "id": "44e7ded13c5bff39",
+   "id": "c5fb2d40b54afd1d",
    "sport": "icehockey",
    "competition": "NHL",
-   "event": "Florida Panthers @ Buffalo Sabres",
-   "start": "2026-10-12T17:10:00+00:00",
+   "event": "New Jersey Devils @ Detroit Red Wings",
+   "start": "2026-10-13T22:10:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 9.4
+   "hours_since_start": 2.1
   },
   {
    "ledger": "unified_ledger",
-   "id": "f4f78ef103ae53c8",
+   "id": "439daeee8ea2dc60",
    "sport": "icehockey",
    "competition": "NHL",
-   "event": "Ottawa Senators @ New Jersey Devils",
-   "start": "2026-10-12T23:10:00+00:00",
+   "event": "Florida Panthers @ Columbus Blue Jackets",
+   "start": "2026-10-13T22:25:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 3.4
+   "hours_since_start": 1.8
   },
   {
    "ledger": "unified_ledger",
-   "id": "671468d77840bbf3",
+   "id": "5bda80595c3de572",
    "sport": "icehockey",
    "competition": "NHL",
-   "event": "Vegas Golden Knights @ Minnesota Wild",
-   "start": "2026-10-13T00:10:00+00:00",
+   "event": "Buffalo Sabres @ Montr\u00e9al Canadiens",
+   "start": "2026-10-13T22:40:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 2.4
+   "hours_since_start": 1.6
+  },
+  {
+   "ledger": "unified_ledger",
+   "id": "076b07c41ed38d38",
+   "sport": "icehockey",
+   "competition": "NHL",
+   "event": "Washington Capitals @ Carolina Hurricanes",
+   "start": "2026-10-13T22:55:00+00:00",
+   "status": "SOURCE_UNAVAILABLE",
+   "hours_since_start": 1.3
+  },
+  {
+   "ledger": "unified_ledger",
+   "id": "e2897d6fb6668f94",
+   "sport": "icehockey",
+   "competition": "NHL",
+   "event": "Seattle Kraken @ Philadelphia Flyers",
+   "start": "2026-10-13T23:10:00+00:00",
+   "status": "SOURCE_UNAVAILABLE",
+   "hours_since_start": 1.1
+  },
+  {
+   "ledger": "unified_ledger",
+   "id": "dd7f2402276b6f38",
+   "sport": "icehockey",
+   "competition": "NHL",
+   "event": "Tampa Bay Lightning @ New York Rangers",
+   "start": "2026-10-13T23:25:00+00:00",
+   "status": "SOURCE_UNAVAILABLE",
+   "hours_since_start": 0.8
+  },
+  {
+   "ledger": "unified_ledger",
+   "id": "821c756a7e44e75a",
+   "sport": "icehockey",
+   "competition": "NHL",
+   "event": "St Louis Blues @ Ottawa Senators",
+   "start": "2026-10-13T23:40:00+00:00",
+   "status": "SOURCE_UNAVAILABLE",
+   "hours_since_start": 0.6
+  },
+  {
+   "ledger": "unified_ledger",
+   "id": "0d6a99b505c472d2",
+   "sport": "icehockey",
+   "competition": "NHL",
+   "event": "Vancouver Canucks @ New York Islanders",
+   "start": "2026-10-13T23:55:00+00:00",
+   "status": "SOURCE_UNAVAILABLE",
+   "hours_since_start": 0.3
+  },
+  {
+   "ledger": "unified_ledger",
+   "id": "3cca175d7d76aa68",
+   "sport": "icehockey",
+   "competition": "NHL",
+   "event": "Pittsburgh Penguins @ Chicago Blackhawks",
+   "start": "2026-10-14T00:10:00+00:00",
+   "status": "SOURCE_UNAVAILABLE",
+   "hours_since_start": 0.1
   },
   {
    "ledger": "bsv2_paper_selections",
@@ -850,7 +693,7 @@
    "event": "Mayar Sherif v Polina Kudermetova",
    "start": "2026-09-30T02:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 312.5
+   "hours_since_start": 334.3
   }
  ],
  "healthy": false
