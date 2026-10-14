@@ -4,34 +4,40 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-14T06:16Z · events scanned 10 · valid predictions 34 · high-P (≥70%) 8 · priced 20 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 34 · new paper bets 0 · Money Card qualified 0
+Run 2026-10-14T12:15Z · events scanned 16 · valid predictions 40 · high-P (≥70%) 9 · priced 23 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 40 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 28 · NET_EV_NOT_POSITIVE 17 · P_BELOW_FLOOR 12 · NO_EXECUTABLE_PRICE 12 · PRICE_STALE 7 · COMMISSION_UNKNOWN 2 · EXCHANGE_SPREAD_TOO_WIDE 1
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 28 · NET_EV_NOT_POSITIVE 20 · PRICE_STALE 16 · P_BELOW_FLOOR 12 · NO_EXECUTABLE_PRICE 12 · COMMISSION_UNKNOWN 5 · EXCHANGE_SPREAD_TOO_WIDE 4
 
 ## Candidates (latest run, best price per prediction)
 
 | Event | Start | Sel | P | Fair | Odds (source) | Break-even | Net EV | Decision |
 |---|---|---|---|---|---|---|---|---|
-| Aryna Sabalenka v Ann Li | 2026-10-14T11:00 | Aryna Sabalenka | 84.4% | 1.19 | 1.17 (betfair_ex_uk) | 86.1% | -2.0% | REJECT |
+| Elina Svitolina v Guo Hanyu | 2026-10-15T04:30 | Elina Svitolina | 88.1% | 1.14 | 1.10 (betfair_ex_uk) | 91.3% | -3.5% | REJECT |
 | Lincoln City v West Ham United | 2026-10-14T19:00 | X2 | 80.2% | 1.25 | — | — | — | REJECT |
 | Queens Park Rangers v Derby County | 2026-10-14T18:45 | 1X | 79.6% | 1.26 | — | — | — | REJECT |
+| Shi Han v Leylah Fernandez | 2026-10-14T12:30 | Leylah Fernandez | 77.0% | 1.30 | 1.29 (betano_uk) | 77.5% | -0.7% | REJECT |
 | Lincoln City v West Ham United | 2026-10-14T19:00 | 12 | 76.4% | 1.31 | — | — | — | REJECT |
-| Shi Han v Leylah Fernandez | 2026-10-14T12:30 | Leylah Fernandez | 75.8% | 1.32 | 1.32 (betfair_ex_uk) | 76.7% | -1.2% | REJECT |
 | Queens Park Rangers v Derby County | 2026-10-14T18:45 | 12 | 75.4% | 1.33 | — | — | — | REJECT |
 | Norwich City v Southampton | 2026-10-14T18:45 | 12 | 75.2% | 1.33 | — | — | — | REJECT |
+| Iva Jović v Maja Chwalinska | 2026-10-15T04:00 | Iva Jović | 74.2% | 1.35 | 1.31 (betfair_ex_uk) | 77.2% | -4.0% | REJECT |
 | Portsmouth v Sheffield United | 2026-10-14T18:45 | 12 | 72.3% | 1.38 | — | — | — | REJECT |
 | Portsmouth v Sheffield United | 2026-10-14T18:45 | 1X | 69.4% | 1.44 | — | — | — | REJECT |
-| Daniil Medvedev v Stefanos Tsitsipas | 2026-10-14T10:00 | Daniil Medvedev | 68.7% | 1.45 | 1.45 (betfair_ex_uk) | 70.1% | -1.9% | REJECT |
-| Tommy Paul v Zizou Bergs | 2026-10-14T11:10 | Tommy Paul | 65.5% | 1.53 | 1.52 (betfair_ex_uk) | 66.9% | -2.2% | REJECT |
+| Mia Pohánková v Maria Sakkari | 2026-10-15T03:00 | Maria Sakkari | 68.6% | 1.46 | 1.44 (betfair_ex_uk) | 70.5% | -2.8% | REJECT |
+| Alexander Zverev v Alex de Minaur | 2026-10-15T10:00 | Alexander Zverev | 65.0% | 1.54 | 1.53 (betfair_ex_uk) | 66.5% | -2.3% | REJECT |
 | Norwich City v Southampton | 2026-10-14T18:45 | 1X | 64.7% | 1.55 | — | — | — | REJECT |
-| Alexander Zverev v Alex de Minaur | 2026-10-15T04:00 | Alexander Zverev | 64.6% | 1.55 | 1.46 (betfair_ex_uk) | 69.6% | -7.1% | REJECT |
 | Norwich City v Southampton | 2026-10-14T18:45 | over | 62.0% | 1.61 | 1.50 (william hill) | 66.7% | -7.0% | REJECT |
 | Norwich City v Southampton | 2026-10-14T18:45 | X2 | 60.1% | 1.66 | — | — | — | REJECT |
 | Portsmouth v Sheffield United | 2026-10-14T18:45 | X2 | 58.2% | 1.72 | — | — | — | REJECT |
 | Lincoln City v West Ham United | 2026-10-14T19:00 | over | 58.1% | 1.72 | 1.65 (william hill) | 60.6% | -4.1% | REJECT |
+| Dallas Stars @ Colorado Avalanche | 2026-10-15T00:40 | Colorado Avalanche | 57.6% | 1.74 | 1.71 (matchbook) | — | — | REJECT |
+| Rafael Jodar v Casper Ruud | 2026-10-16T04:00 | Rafael Jodar | 57.3% | 1.75 | 1.73 (boylesports) | 57.8% | -0.9% | REJECT |
 | Queens Park Rangers v Derby County | 2026-10-14T18:45 | home | 57.1% | 1.75 | 1.70 (smarkets) | 59.3% | -3.7% | REJECT |
+| Seattle Seahawks @ Denver Broncos | 2026-10-16T00:15 | Seattle Seahawks | 56.5% | 1.77 | 1.75 (matchbook) | — | — | REJECT |
 | Lincoln City v West Ham United | 2026-10-14T19:00 | away | 55.7% | 1.79 | 1.76 (smarkets) | 57.3% | -2.7% | REJECT |
-| Ashlyn Krueger v Lanlana Tararudee | 2026-10-14T07:30 | Ashlyn Krueger | 53.1% | 1.88 | 1.85 (betfair_ex_uk) | 55.3% | -4.1% | REJECT |
+| Montréal Canadiens @ Washington Capitals | 2026-10-14T23:40 | Washington Capitals | 53.9% | 1.86 | 1.83 (matchbook) | — | — | REJECT |
+| Jasmine Paolini v Sonay Kartal | 2026-10-15T05:30 | Jasmine Paolini | 53.5% | 1.87 | 1.78 (betfair_ex_uk) | 57.4% | -6.8% | REJECT |
+| Arthur Gea v Alejandro Davidovich Fokina | 2026-10-15T06:30 | Alejandro Davidovich Fokina | 53.2% | 1.88 | 1.85 (betway) | 54.1% | -1.5% | REJECT |
+| Karolina Muchova v Diana Shnaider | 2026-10-15T03:00 | Karolina Muchova | 52.9% | 1.89 | 1.80 (betfair_ex_uk) | 56.8% | -7.0% | REJECT |
 | Queens Park Rangers v Derby County | 2026-10-14T18:45 | over | 52.7% | 1.90 | 1.90 (matchbook) | — | — | REJECT |
 | Portsmouth v Sheffield United | 2026-10-14T18:45 | under | 52.0% | 1.92 | 1.90 (matchbook) | — | — | REJECT |
 | Queens Park Rangers v Derby County | 2026-10-14T18:45 | X2 | 45.0% | 2.22 | — | — | — | REJECT |
