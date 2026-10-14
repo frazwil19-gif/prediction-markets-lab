@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-14T00:15:25.471882+00:00",
+ "generated_at": "2026-10-14T23:51:58.143891+00:00",
  "mode": "PAPER \u2014 unattended prospective validation; stakes SIMULATED",
  "windows": {
   "weekly": {
@@ -29,12 +29,15 @@
      "positive_rate": 1.0
     },
     "clv_fair": {
-     "n": 0
+     "n": 1,
+     "mean": 0.0027,
+     "median": 0.0027,
+     "positive_rate": 1.0
     },
     "clv_price": {
      "n": 0
     },
-    "close_coverage": 0.0,
+    "close_coverage": 1.0,
     "unique_events": 1,
     "hypothetical": {
      "\u00a31": {
@@ -54,21 +57,20 @@
      }
     }
    },
-   "candidates_evaluated": 1154,
+   "candidates_evaluated": 1138,
    "qualified_in_shadow": 1,
    "qualification_rate": 0.0009,
    "rejections": {
     "ENGINE_STATUS_INELIGIBLE": 930,
-    "NET_EV_NOT_POSITIVE": 513,
+    "NET_EV_NOT_POSITIVE": 495,
     "P_BELOW_FLOOR": 449,
     "NO_EXECUTABLE_PRICE": 444,
-    "COMMISSION_UNKNOWN": 101,
-    "PREDICTION_NOT_VALID": 37,
-    "PRICE_STALE": 25,
-    "EXCHANGE_SPREAD_TOO_WIDE": 13,
-    "NET_EV_BELOW_PAPER_GATE": 5,
-    "PROBABILITY_NOT_SAME_SNAPSHOT": 3,
-    "ODDS_BELOW_PAYOUT_FLOOR": 1
+    "COMMISSION_UNKNOWN": 102,
+    "PRICE_STALE": 29,
+    "PREDICTION_NOT_VALID": 26,
+    "EXCHANGE_SPREAD_TOO_WIDE": 17,
+    "NET_EV_BELOW_PAPER_GATE": 3,
+    "PROBABILITY_NOT_SAME_SNAPSHOT": 3
    },
    "by": {
     "sport": {
@@ -98,12 +100,15 @@
        "positive_rate": 1.0
       },
       "clv_fair": {
-       "n": 0
+       "n": 1,
+       "mean": 0.0027,
+       "median": 0.0027,
+       "positive_rate": 1.0
       },
       "clv_price": {
        "n": 0
       },
-      "close_coverage": 0.0,
+      "close_coverage": 1.0,
       "unique_events": 1,
       "hypothetical": {
        "\u00a31": {
@@ -141,12 +146,15 @@
        "positive_rate": 1.0
       },
       "clv_fair": {
-       "n": 0
+       "n": 1,
+       "mean": 0.0027,
+       "median": 0.0027,
+       "positive_rate": 1.0
       },
       "clv_price": {
        "n": 0
       },
-      "close_coverage": 0.0,
+      "close_coverage": 1.0,
       "unique_events": 1,
       "hypothetical": {
        "\u00a31": {
@@ -184,12 +192,15 @@
        "positive_rate": 1.0
       },
       "clv_fair": {
-       "n": 0
+       "n": 1,
+       "mean": 0.0027,
+       "median": 0.0027,
+       "positive_rate": 1.0
       },
       "clv_price": {
        "n": 0
       },
-      "close_coverage": 0.0,
+      "close_coverage": 1.0,
       "unique_events": 1,
       "hypothetical": {
        "\u00a31": {
@@ -227,12 +238,15 @@
        "positive_rate": 1.0
       },
       "clv_fair": {
-       "n": 0
+       "n": 1,
+       "mean": 0.0027,
+       "median": 0.0027,
+       "positive_rate": 1.0
       },
       "clv_price": {
        "n": 0
       },
-      "close_coverage": 0.0,
+      "close_coverage": 1.0,
       "unique_events": 1,
       "hypothetical": {
        "\u00a31": {
@@ -336,12 +350,15 @@
      "positive_rate": 1.0
     },
     "clv_fair": {
-     "n": 0
+     "n": 1,
+     "mean": 0.0027,
+     "median": 0.0027,
+     "positive_rate": 1.0
     },
     "clv_price": {
      "n": 0
     },
-    "close_coverage": 0.0,
+    "close_coverage": 0.091,
     "unique_events": 11,
     "hypothetical": {
      "\u00a31": {
@@ -361,21 +378,21 @@
      }
     }
    },
-   "candidates_evaluated": 1263,
+   "candidates_evaluated": 1276,
    "qualified_in_shadow": 1,
    "qualification_rate": 0.0008,
    "rejections": {
     "ENGINE_STATUS_INELIGIBLE": 930,
-    "NET_EV_NOT_POSITIVE": 619,
+    "NET_EV_NOT_POSITIVE": 629,
     "P_BELOW_FLOOR": 449,
     "NO_EXECUTABLE_PRICE": 444,
-    "COMMISSION_UNKNOWN": 101,
+    "COMMISSION_UNKNOWN": 102,
     "PREDICTION_NOT_VALID": 45,
-    "PRICE_STALE": 25,
-    "EXCHANGE_SPREAD_TOO_WIDE": 13,
-    "NET_EV_BELOW_PAPER_GATE": 7,
+    "PRICE_STALE": 29,
+    "EXCHANGE_SPREAD_TOO_WIDE": 17,
+    "NET_EV_BELOW_PAPER_GATE": 6,
     "PROBABILITY_NOT_SAME_SNAPSHOT": 4,
-    "ODDS_BELOW_PAYOUT_FLOOR": 3
+    "ODDS_BELOW_PAYOUT_FLOOR": 2
    },
    "by": {
     "sport": {
@@ -416,12 +433,15 @@
        "positive_rate": 1.0
       },
       "clv_fair": {
-       "n": 0
+       "n": 1,
+       "mean": 0.0027,
+       "median": 0.0027,
+       "positive_rate": 1.0
       },
       "clv_price": {
        "n": 0
       },
-      "close_coverage": 0.0,
+      "close_coverage": 0.091,
       "unique_events": 11,
       "hypothetical": {
        "\u00a31": {
@@ -470,12 +490,15 @@
        "positive_rate": 1.0
       },
       "clv_fair": {
-       "n": 0
+       "n": 1,
+       "mean": 0.0027,
+       "median": 0.0027,
+       "positive_rate": 1.0
       },
       "clv_price": {
        "n": 0
       },
-      "close_coverage": 0.0,
+      "close_coverage": 0.091,
       "unique_events": 11,
       "hypothetical": {
        "\u00a31": {
@@ -571,12 +594,15 @@
        "positive_rate": 1.0
       },
       "clv_fair": {
-       "n": 0
+       "n": 1,
+       "mean": 0.0027,
+       "median": 0.0027,
+       "positive_rate": 1.0
       },
       "clv_price": {
        "n": 0
       },
-      "close_coverage": 0.0,
+      "close_coverage": 0.1,
       "unique_events": 10,
       "hypothetical": {
        "\u00a31": {
@@ -677,12 +703,15 @@
        "positive_rate": 1.0
       },
       "clv_fair": {
-       "n": 0
+       "n": 1,
+       "mean": 0.0027,
+       "median": 0.0027,
+       "positive_rate": 1.0
       },
       "clv_price": {
        "n": 0
       },
-      "close_coverage": 0.0,
+      "close_coverage": 0.111,
       "unique_events": 9,
       "hypothetical": {
        "\u00a31": {
@@ -797,12 +826,15 @@
      "positive_rate": 1.0
     },
     "clv_fair": {
-     "n": 0
+     "n": 1,
+     "mean": 0.0027,
+     "median": 0.0027,
+     "positive_rate": 1.0
     },
     "clv_price": {
      "n": 0
     },
-    "close_coverage": 0.0,
+    "close_coverage": 0.091,
     "unique_events": 11,
     "hypothetical": {
      "\u00a31": {
@@ -822,21 +854,21 @@
      }
     }
    },
-   "candidates_evaluated": 1263,
+   "candidates_evaluated": 1276,
    "qualified_in_shadow": 1,
    "qualification_rate": 0.0008,
    "rejections": {
     "ENGINE_STATUS_INELIGIBLE": 930,
-    "NET_EV_NOT_POSITIVE": 619,
+    "NET_EV_NOT_POSITIVE": 629,
     "P_BELOW_FLOOR": 449,
     "NO_EXECUTABLE_PRICE": 444,
-    "COMMISSION_UNKNOWN": 101,
+    "COMMISSION_UNKNOWN": 102,
     "PREDICTION_NOT_VALID": 45,
-    "PRICE_STALE": 25,
-    "EXCHANGE_SPREAD_TOO_WIDE": 13,
-    "NET_EV_BELOW_PAPER_GATE": 7,
+    "PRICE_STALE": 29,
+    "EXCHANGE_SPREAD_TOO_WIDE": 17,
+    "NET_EV_BELOW_PAPER_GATE": 6,
     "PROBABILITY_NOT_SAME_SNAPSHOT": 4,
-    "ODDS_BELOW_PAYOUT_FLOOR": 3
+    "ODDS_BELOW_PAYOUT_FLOOR": 2
    },
    "by": {
     "sport": {
@@ -877,12 +909,15 @@
        "positive_rate": 1.0
       },
       "clv_fair": {
-       "n": 0
+       "n": 1,
+       "mean": 0.0027,
+       "median": 0.0027,
+       "positive_rate": 1.0
       },
       "clv_price": {
        "n": 0
       },
-      "close_coverage": 0.0,
+      "close_coverage": 0.091,
       "unique_events": 11,
       "hypothetical": {
        "\u00a31": {
@@ -931,12 +966,15 @@
        "positive_rate": 1.0
       },
       "clv_fair": {
-       "n": 0
+       "n": 1,
+       "mean": 0.0027,
+       "median": 0.0027,
+       "positive_rate": 1.0
       },
       "clv_price": {
        "n": 0
       },
-      "close_coverage": 0.0,
+      "close_coverage": 0.091,
       "unique_events": 11,
       "hypothetical": {
        "\u00a31": {
@@ -1032,12 +1070,15 @@
        "positive_rate": 1.0
       },
       "clv_fair": {
-       "n": 0
+       "n": 1,
+       "mean": 0.0027,
+       "median": 0.0027,
+       "positive_rate": 1.0
       },
       "clv_price": {
        "n": 0
       },
-      "close_coverage": 0.0,
+      "close_coverage": 0.1,
       "unique_events": 10,
       "hypothetical": {
        "\u00a31": {
@@ -1138,12 +1179,15 @@
        "positive_rate": 1.0
       },
       "clv_fair": {
-       "n": 0
+       "n": 1,
+       "mean": 0.0027,
+       "median": 0.0027,
+       "positive_rate": 1.0
       },
       "clv_price": {
        "n": 0
       },
-      "close_coverage": 0.0,
+      "close_coverage": 0.111,
       "unique_events": 9,
       "hypothetical": {
        "\u00a31": {

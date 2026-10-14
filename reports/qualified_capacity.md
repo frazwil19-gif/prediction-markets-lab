@@ -1,4 +1,4 @@
-# Qualified Turnover Capacity & expected vs realised (qtc-2, 2026-10-14T00:15Z)
+# Qualified Turnover Capacity & expected vs realised (qtc-2, 2026-10-14T23:51Z)
 
 ## Expected vs realised (paper qualifying bets, £1 each)
 
@@ -6,7 +6,7 @@ Settled 9 (open 2). Expected profit **£0.48** vs realised **£-1.72**. Expected
 
 Small samples: |wins_z| < 2 is ordinary noise; do not react to it (first-weekend rule).
 
-Capacity below uses only rule **bsv2-4** (36 evaluation runs). Paper bets by rule version: {'bsv2-1': 9, 'bsv2-3': 1, 'bsv2-4': 1}.
+Capacity below uses only rule **bsv2-4** (39 evaluation runs). Paper bets by rule version: {'bsv2-1': 9, 'bsv2-3': 1, 'bsv2-4': 1}.
 
 ## Capacity
 
@@ -43,18 +43,18 @@ Expected profit uses the model's own EV estimates; real edge is unproven until s
 
 ## Rejection categories (latest evaluation per prediction)
 
-1263 predictions evaluated.
+1276 predictions evaluated.
 
 - ENGINE_STATUS_INELIGIBLE: 930
-- NET_EV_NOT_POSITIVE: 619
+- NET_EV_NOT_POSITIVE: 629
 - P_BELOW_FLOOR: 449
 - NO_EXECUTABLE_PRICE: 444
-- COMMISSION_UNKNOWN: 101
+- COMMISSION_UNKNOWN: 102
 - PREDICTION_NOT_VALID: 45
-- PRICE_STALE: 25
-- EXCHANGE_SPREAD_TOO_WIDE: 13
-- NET_EV_BELOW_PAPER_GATE: 7
+- PRICE_STALE: 29
+- EXCHANGE_SPREAD_TOO_WIDE: 17
+- NET_EV_BELOW_PAPER_GATE: 6
 - PROBABILITY_NOT_SAME_SNAPSHOT: 4
-- ODDS_BELOW_PAYOUT_FLOOR: 3
+- ODDS_BELOW_PAYOUT_FLOOR: 2
 
 Bankroll scenarios are illustrative (2% flat, 10% daily cap); live policy stays £1 flat, £5/day.

@@ -1,13 +1,13 @@
 {
  "report_version": "qtc-2",
- "generated_at": "2026-10-14T00:15:25.365469+00:00",
+ "generated_at": "2026-10-14T23:51:58.059165+00:00",
  "capacity_rule_version": "bsv2-4",
  "paper_bets_by_rule_version": {
   "bsv2-1": 9,
   "bsv2-3": 1,
   "bsv2-4": 1
  },
- "runs_under_current_rule": 36,
+ "runs_under_current_rule": 39,
  "expected_vs_realised": {
   "settled_bets": 9,
   "stake_per_bet_gbp": 1.0,
@@ -150,19 +150,19 @@
   "caveat": "Expected profit uses the model's own EV estimates; real edge is unproven until settled results and CLV accrue."
  },
  "rejections": {
-  "predictions_evaluated": 1263,
+  "predictions_evaluated": 1276,
   "rejections_by_reason": {
    "ENGINE_STATUS_INELIGIBLE": 930,
-   "NET_EV_NOT_POSITIVE": 619,
+   "NET_EV_NOT_POSITIVE": 629,
    "P_BELOW_FLOOR": 449,
    "NO_EXECUTABLE_PRICE": 444,
-   "COMMISSION_UNKNOWN": 101,
+   "COMMISSION_UNKNOWN": 102,
    "PREDICTION_NOT_VALID": 45,
-   "PRICE_STALE": 25,
-   "EXCHANGE_SPREAD_TOO_WIDE": 13,
-   "NET_EV_BELOW_PAPER_GATE": 7,
+   "PRICE_STALE": 29,
+   "EXCHANGE_SPREAD_TOO_WIDE": 17,
+   "NET_EV_BELOW_PAPER_GATE": 6,
    "PROBABILITY_NOT_SAME_SNAPSHOT": 4,
-   "ODDS_BELOW_PAYOUT_FLOOR": 3
+   "ODDS_BELOW_PAYOUT_FLOOR": 2
   }
  },
  "scenario_policy_note": "Bankroll scenarios are illustrative (2% flat, 10% daily cap); live policy stays \u00a31 flat, \u00a35/day."
