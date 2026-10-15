@@ -1,6 +1,6 @@
 {
  "version": "clv-1",
- "generated_at": "2026-10-15T11:45:08.309950+00:00",
+ "generated_at": "2026-10-15T12:00:00.434726+00:00",
  "credits": {
   "month": "2026-10",
   "spent_this_month": 0,
@@ -9,7 +9,7 @@
  },
  "missed": 13,
  "paper_bet_clv": {
-  "n_targets": 1,
+  "n_targets": 2,
   "n_captured": 0,
   "fair_clv": {
    "n": 0
@@ -26,7 +26,7 @@
   "by": {
    "sport": {
     "tennis": {
-     "n": 1,
+     "n": 2,
      "fair_clv": {
       "n": 0
      },
@@ -36,6 +36,15 @@
     }
    },
    "engine": {
+    "atp_match_winner.betfair_market": {
+     "n": 1,
+     "fair_clv": {
+      "n": 0
+     },
+     "price_clv_same_book": {
+      "n": 0
+     }
+    },
     "wta_match_winner.betfair_market": {
      "n": 1,
      "fair_clv": {
@@ -48,7 +57,7 @@
    },
    "market": {
     "tennis:match_winner": {
-     "n": 1,
+     "n": 2,
      "fair_clv": {
       "n": 0
      },
@@ -58,6 +67,15 @@
     }
    },
    "bookmaker": {
+    "betfair_sb_uk": {
+     "n": 1,
+     "fair_clv": {
+      "n": 0
+     },
+     "price_clv_same_book": {
+      "n": 0
+     }
+    },
     "boylesports": {
      "n": 1,
      "fair_clv": {
@@ -70,7 +88,7 @@
    },
    "ev_band": {
     "2-4": {
-     "n": 1,
+     "n": 2,
      "fair_clv": {
       "n": 0
      },
@@ -91,20 +109,20 @@
   "looks_reached": [],
   "bands": {
    "<0": {
-    "n": 90,
+    "n": 91,
     "est_ev": {
-     "n": 90,
-     "mean": -0.01691,
-     "median": -0.01588,
+     "n": 91,
+     "mean": -0.01675,
+     "median": -0.01557,
      "positive_rate": 0.0,
      "ci95": [
-      -0.01859,
-      -0.01532
+      -0.01837,
+      -0.01498
      ]
     },
     "tier_a_eligible": 0,
     "tier_a_captured": 0,
-    "top_book_share": 0.378,
+    "top_book_share": 0.374,
     "price_age_median_min": 0.4,
     "fair_clv": {
      "n": 0
@@ -117,12 +135,12 @@
     },
     "tier_b_proxy_fair_clv": {
      "n": 49,
-     "mean": -0.01601,
+     "mean": -0.01626,
      "median": -0.01366,
      "positive_rate": 0.082,
      "ci95": [
-      -0.02017,
-      -0.01212
+      -0.02052,
+      -0.01232
      ]
     },
     "outcomes": {
@@ -165,17 +183,17 @@
     "sealed": "CLV/P&L/calibration sealed until 100 combined 0-2% Tier-A captures"
    },
    "2-4": {
-    "n": 1,
+    "n": 2,
     "est_ev": {
-     "n": 1,
-     "mean": 0.03174,
-     "median": 0.03174,
+     "n": 2,
+     "mean": 0.02785,
+     "median": 0.02785,
      "positive_rate": 1.0
     },
-    "tier_a_eligible": 1,
+    "tier_a_eligible": 2,
     "tier_a_captured": 0,
-    "top_book_share": 1.0,
-    "price_age_median_min": 0.8,
+    "top_book_share": 0.5,
+    "price_age_median_min": 1.0,
     "fair_clv": {
      "n": 0
     },
