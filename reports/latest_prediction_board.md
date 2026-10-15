@@ -3,8 +3,8 @@
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
 Upcoming events: 22 · Valid predictions: 43 · Sports: americanfootball, football, icehockey, tennis
-Counts: >=70: 8 · >=75: 3 · >=80: 0 · >=85: 0 · >=90: 0 · >=95: 0
-Settled yesterday: 124 · System: **HEALTHY** · API credits (last observed): 269
+Counts: >=70: 9 · >=75: 4 · >=80: 0 · >=85: 0 · >=90: 0 · >=95: 0
+Settled yesterday: 124 · System: **HEALTHY** · API credits (last observed): 265
 
 ## Top predictions (P ≥ 80%)
 
@@ -19,7 +19,7 @@ Settled yesterday: 124 · System: **HEALTHY** · API credits (last observed): 26
 | football_1x2.market_consensus | VALIDATED_HISTORICAL / COLLECTING | 456 | 129 | COLLECTING | 1 | 82.3% → 100.0% |
 | football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 43 | 42 | COLLECTING | 0 | — → — |
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
-| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 155 | 137 | EARLY | 25 | 87.7% → 76.0% |
+| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 156 | 137 | EARLY | 25 | 87.7% → 76.0% |
 | wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 157 | 131 | EARLY | 24 | 89.4% → 83.3% |
 | nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 0 | 0 | COLLECTING | 0 | — → — |
 | nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 63 | 50 | EARLY | 0 | — → — |
@@ -30,8 +30,8 @@ Settled yesterday: 124 · System: **HEALTHY** · API credits (last observed): 26
 
 - daily_scan: OK (last 2026-10-15T06:16:29.838144+00:00)
 - settlement: OK (last 2026-10-14T23:51:58.321697+00:00)
-- tennis_board: OK (last 2026-10-15T11:56:25.935939+00:00)
-- ci_tests: OK (last 2026-10-15T11:56:27.700058+00:00)
+- tennis_board: OK (last 2026-10-15T15:16:34.447599+00:00)
+- ci_tests: OK (last 2026-10-15T15:16:36.019459+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 

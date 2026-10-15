@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-10-15T11:56:30.478059+00:00",
+ "generated_at": "2026-10-15T15:16:37.723482+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-4",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 49,
+  "runs": 50,
   "totals_over_runs": {
-   "events_scanned": 2416,
-   "valid_predictions": 6997,
-   "high_p_candidates": 2075,
-   "priced_candidates": 3805,
+   "events_scanned": 2438,
+   "valid_predictions": 7040,
+   "high_p_candidates": 2084,
+   "priced_candidates": 3825,
    "PAPER_BET": 22,
    "MULTI_RESEARCH_ELIGIBLE": 181,
    "WATCH": 64,
-   "REJECT": 7042,
+   "REJECT": 7085,
    "paper_bets_added": 12,
    "money_card_qualified": 3
   },
@@ -43,36 +43,33 @@
   }
  },
  "latest_run": {
-  "run_at": "2026-10-15T11:56:30.478059+00:00",
-  "trigger": "schedule",
+  "run_at": "2026-10-15T15:16:37.723482+00:00",
+  "trigger": "workflow_dispatch",
   "rule_version": "bsv2-4",
   "events_scanned": "22",
   "valid_predictions": "43",
-  "high_p_candidates": "8",
+  "high_p_candidates": "9",
   "priced_candidates": "20",
-  "PAPER_BET": "1",
+  "PAPER_BET": "0",
   "MULTI_RESEARCH_ELIGIBLE": "0",
   "WATCH": "0",
-  "REJECT": "42",
-  "paper_bets_added": "1",
-  "snapshots_added": "112",
+  "REJECT": "43",
+  "paper_bets_added": "0",
+  "snapshots_added": "111",
   "money_card_qualified": "0",
   "football_fixtures_on_card": "67"
  },
  "latest_decisions": {
   "decisions": {
-   "REJECT": 42,
-   "PAPER_BET": 1
+   "REJECT": 43
   },
   "reason_counts": {
    "ENGINE_STATUS_INELIGIBLE": 25,
-   "NET_EV_NOT_POSITIVE": 16,
+   "NET_EV_NOT_POSITIVE": 17,
    "PRICE_STALE": 14,
    "P_BELOW_FLOOR": 12,
    "NO_EXECUTABLE_PRICE": 12,
-   "COMMISSION_UNKNOWN": 11,
-   "EXCHANGE_SPREAD_TOO_WIDE": 3,
-   "ALL_PAPER_GATES_PASSED": 1
+   "COMMISSION_UNKNOWN": 11
   },
   "by_sport": {
    "americanfootball": {
@@ -85,14 +82,12 @@
     "REJECT": 11
    },
    "tennis": {
-    "REJECT": 5,
-    "PAPER_BET": 1
+    "REJECT": 6
    }
   },
   "by_engine": {
    "atp_match_winner.betfair_market": {
-    "REJECT": 1,
-    "PAPER_BET": 1
+    "REJECT": 3
    },
    "football_1x2.market_consensus": {
     "REJECT": 12
@@ -110,7 +105,7 @@
     "REJECT": 11
    },
    "wta_match_winner.betfair_market": {
-    "REJECT": 4
+    "REJECT": 3
    }
   }
  },

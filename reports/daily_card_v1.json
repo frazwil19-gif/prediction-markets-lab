@@ -1,26 +1,25 @@
 {
  "card_version": "card-v1.2",
- "generated_at": "2026-10-15T12:52:55.621276+00:00",
- "stage_a_generated_at": "2026-10-15T11:56:29.934430+00:00",
+ "generated_at": "2026-10-15T15:16:38.144478+00:00",
+ "stage_a_generated_at": "2026-10-15T15:16:37.164335+00:00",
  "real_money_enabled": false,
  "mode": "PAPER \u2014 unattended prospective validation (real-money betting paused; nothing to place)",
  "summary": {
   "predictions_in_window": 42,
   "best_predictions_shown": 30,
-  "bets": 1,
-  "total_stake_gbp": 1.0,
-  "exposure_pct_of_bankroll": 2.0,
+  "bets": 0,
+  "total_stake_gbp": 0.0,
+  "exposure_pct_of_bankroll": 0.0,
   "strong_price_too_low": 8,
   "research_predictions": 0
  },
  "rejection_reasons": {
   "ENGINE_STATUS_INELIGIBLE": 25,
-  "NET_EV_NOT_POSITIVE": 15,
+  "NET_EV_NOT_POSITIVE": 16,
   "PRICE_STALE": 14,
   "NO_EXECUTABLE_PRICE": 12,
   "P_BELOW_FLOOR": 12,
-  "COMMISSION_UNKNOWN": 11,
-  "EXCHANGE_SPREAD_TOO_WIDE": 3
+  "COMMISSION_UNKNOWN": 11
  },
  "best_predictions": [
   {
@@ -49,7 +48,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -78,7 +77,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -107,7 +106,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -136,7 +135,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-10-15T11:56:28.537235+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -165,7 +164,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -194,7 +193,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -223,7 +222,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.42
   },
   {
@@ -252,8 +251,37 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-10-15T11:56:28.537235+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.42
+  },
+  {
+   "prediction_id": "bda8c048a4ad3154",
+   "sport": "tennis",
+   "competition": "WTA Wuhan Open",
+   "event_key": "tennis|tennis_wta_wuhan_open|9289b5c0affcb229b5ab33881b4aca00",
+   "event_name": "Diana Shnaider v Jelena Ostapenko",
+   "event_start": "2026-10-16T03:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Diana Shnaider",
+   "probability": 0.683297,
+   "band": "60%+",
+   "sigma": 0.012608,
+   "evidence": "VALIDATED",
+   "engine_id": "wta_match_winner.betfair_market",
+   "fair_odds": 1.46,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.44,
+   "best_source": "betfair_sb_uk",
+   "best_net_ev": -0.016052,
+   "decision": "REJECT",
+   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.44",
+   "decision_source": "betfair_sb_uk",
+   "decision_net_ev": "-0.016052319999999953",
+   "price_observed_at": "2026-10-15T15:16:34.447599+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
+   "min_bookmaker_odds": 1.5
   },
   {
    "prediction_id": "1c742f7625fdcc3a",
@@ -281,7 +309,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-10-15T11:56:28.537235+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.5
   },
   {
@@ -310,7 +338,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.51
   },
   {
@@ -339,7 +367,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.52
   },
   {
@@ -357,48 +385,19 @@
    "evidence": "VALIDATED",
    "engine_id": "atp_match_winner.betfair_market",
    "fair_odds": 1.49,
-   "price_status": "PRICE_VALID",
-   "best_odds": 1.53,
-   "best_source": "betfair_sb_uk",
-   "best_net_ev": 0.023949,
-   "decision": "PAPER_BET",
-   "decision_reasons": "ALL_PAPER_GATES_PASSED",
-   "decision_odds": "1.53",
-   "decision_source": "betfair_sb_uk",
-   "decision_net_ev": "0.023949439999999933",
-   "price_observed_at": "2026-10-15T11:56:25.935939+00:00",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
-   "min_bookmaker_odds": 1.53
-  },
-  {
-   "prediction_id": "bda8c048a4ad3154",
-   "sport": "tennis",
-   "competition": "WTA Wuhan Open",
-   "event_key": "tennis|tennis_wta_wuhan_open|9289b5c0affcb229b5ab33881b4aca00",
-   "event_name": "Diana Shnaider v Jelena Ostapenko",
-   "event_start": "2026-10-16T03:00:00+00:00",
-   "market": "match_winner",
-   "selection": "Diana Shnaider",
-   "probability": 0.665559,
-   "band": "60%+",
-   "sigma": 0.029658,
-   "evidence": "VALIDATED",
-   "engine_id": "wta_match_winner.betfair_market",
-   "fair_odds": 1.5,
-   "price_status": "PRICE_QUALITY_FAIL",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.49,
+   "best_source": "betfair_ex_uk",
+   "best_net_ev": -0.019217,
    "decision": "REJECT",
-   "decision_reasons": "EXCHANGE_SPREAD_TOO_WIDE|NET_EV_NOT_POSITIVE",
-   "decision_odds": "1.45",
+   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.49",
    "decision_source": "betfair_ex_uk",
-   "decision_net_ev": "-0.04991452750000003",
-   "price_observed_at": "2026-10-15T11:56:25.935939+00:00",
+   "decision_net_ev": "-0.019217056000000066",
+   "price_observed_at": "2026-10-15T15:16:34.447599+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
-   "min_bookmaker_odds": 1.54
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
+   "min_bookmaker_odds": 1.53
   },
   {
    "prediction_id": "2de12580efefc29c",
@@ -406,28 +405,28 @@
    "competition": "WTA Wuhan Open",
    "event_key": "tennis|tennis_wta_wuhan_open|fa44de36bbafc64882e41dbe11b297d0",
    "event_name": "Elina Svitolina v Sonay Kartal",
-   "event_start": "2026-10-16T04:00:00+00:00",
+   "event_start": "2026-10-16T04:30:00+00:00",
    "market": "match_winner",
    "selection": "Elina Svitolina",
-   "probability": 0.660694,
+   "probability": 0.641379,
    "band": "60%+",
-   "sigma": 0.020789,
+   "sigma": 0.011666,
    "evidence": "VALIDATED",
    "engine_id": "wta_match_winner.betfair_market",
-   "fair_odds": 1.51,
-   "price_status": "PRICE_QUALITY_FAIL",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
+   "fair_odds": 1.56,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.55,
+   "best_source": "betfair_ex_uk",
+   "best_net_ev": -0.0235,
    "decision": "REJECT",
-   "decision_reasons": "EXCHANGE_SPREAD_TOO_WIDE|NET_EV_NOT_POSITIVE",
-   "decision_odds": "1.48",
+   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.55",
    "decision_source": "betfair_ex_uk",
-   "decision_net_ev": "-0.03802953600000003",
-   "price_observed_at": "2026-10-15T11:56:25.935939+00:00",
+   "decision_net_ev": "-0.023500472499999925",
+   "price_observed_at": "2026-10-15T15:16:34.447599+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
-   "min_bookmaker_odds": 1.55
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
+   "min_bookmaker_odds": 1.6
   },
   {
    "prediction_id": "08d0d9690c0057cd",
@@ -455,7 +454,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.72
   },
   {
@@ -484,7 +483,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.74
   },
   {
@@ -513,7 +512,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-10-15T11:56:28.537235+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.75
   },
   {
@@ -542,7 +541,7 @@
    "decision_net_ev": "-0.059523433801483505",
    "price_observed_at": "2026-10-15T06:16:25.008915+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.8
   },
   {
@@ -571,7 +570,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-10-15T11:56:28.537235+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.81
   },
   {
@@ -600,7 +599,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-10-14T12:15:26.340218+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.81
   },
   {
@@ -629,37 +628,8 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-10-15T11:56:28.537235+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.82
-  },
-  {
-   "prediction_id": "956792a4ad517419",
-   "sport": "tennis",
-   "competition": "ATP Shanghai Masters",
-   "event_key": "tennis|tennis_atp_shanghai_masters|ef2bb3c52f4e2850db169deeec5c619b",
-   "event_name": "Rafael Jodar v Casper Ruud",
-   "event_start": "2026-10-16T06:30:00+00:00",
-   "market": "match_winner",
-   "selection": "Rafael Jodar",
-   "probability": 0.559113,
-   "band": "50%+",
-   "sigma": 0.011356,
-   "evidence": "VALIDATED",
-   "engine_id": "atp_match_winner.betfair_market",
-   "fair_odds": 1.79,
-   "price_status": "POOR_PAYOUT",
-   "best_odds": 1.78,
-   "best_source": "betfair_ex_uk",
-   "best_net_ev": -0.026584,
-   "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
-   "decision_odds": "1.78",
-   "decision_source": "betfair_ex_uk",
-   "decision_net_ev": "-0.02658426700000005",
-   "price_observed_at": "2026-10-15T11:56:25.935939+00:00",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
-   "min_bookmaker_odds": 1.83
   },
   {
    "prediction_id": "2d031501925b3d6f",
@@ -687,7 +657,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-10-15T11:56:28.537235+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.84
   },
   {
@@ -716,8 +686,66 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-10-15T11:56:28.537235+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.84
+  },
+  {
+   "prediction_id": "956792a4ad517419",
+   "sport": "tennis",
+   "competition": "ATP Shanghai Masters",
+   "event_key": "tennis|tennis_atp_shanghai_masters|ef2bb3c52f4e2850db169deeec5c619b",
+   "event_name": "Rafael Jodar v Casper Ruud",
+   "event_start": "2026-10-16T06:30:00+00:00",
+   "market": "match_winner",
+   "selection": "Rafael Jodar",
+   "probability": 0.554455,
+   "band": "50%+",
+   "sigma": 0.011623,
+   "evidence": "VALIDATED",
+   "engine_id": "atp_match_winner.betfair_market",
+   "fair_odds": 1.8,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.77,
+   "best_source": "smarkets",
+   "best_net_ev": -0.027153,
+   "decision": "REJECT",
+   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.77",
+   "decision_source": "smarkets",
+   "decision_net_ev": "-0.027153256999999986",
+   "price_observed_at": "2026-10-15T15:16:34.447599+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
+   "min_bookmaker_odds": 1.84
+  },
+  {
+   "prediction_id": "4bd3854a032b72bb",
+   "sport": "tennis",
+   "competition": "WTA Wuhan Open",
+   "event_key": "tennis|tennis_wta_wuhan_open|57c829ee7737c8e2e9dc552eea9f699f",
+   "event_name": "Maja Chwalinska v Maria Sakkari",
+   "event_start": "2026-10-16T06:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Maria Sakkari",
+   "probability": 0.553086,
+   "band": "50%+",
+   "sigma": 0.011623,
+   "evidence": "VALIDATED",
+   "engine_id": "wta_match_winner.betfair_market",
+   "fair_odds": 1.81,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.8,
+   "best_source": "betfair_ex_uk",
+   "best_net_ev": -0.026569,
+   "decision": "REJECT",
+   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.8",
+   "decision_source": "betfair_ex_uk",
+   "decision_net_ev": "-0.026568640000000032",
+   "price_observed_at": "2026-10-15T15:16:34.447599+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
+   "min_bookmaker_odds": 1.85
   },
   {
    "prediction_id": "934a23018c9d64d5",
@@ -745,7 +773,7 @@
    "decision_net_ev": "-0.023852151313889736",
    "price_observed_at": "2026-10-15T11:56:28.537235+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.89
   },
   {
@@ -774,37 +802,8 @@
    "decision_net_ev": "-0.03330493302842191",
    "price_observed_at": "2026-10-15T11:56:28.537235+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.93
-  },
-  {
-   "prediction_id": "4bd3854a032b72bb",
-   "sport": "tennis",
-   "competition": "WTA Wuhan Open",
-   "event_key": "tennis|tennis_wta_wuhan_open|57c829ee7737c8e2e9dc552eea9f699f",
-   "event_name": "Maja Chwalinska v Maria Sakkari",
-   "event_start": "2026-10-16T04:00:00+00:00",
-   "market": "match_winner",
-   "selection": "Maria Sakkari",
-   "probability": 0.527812,
-   "band": "50%+",
-   "sigma": 0.033772,
-   "evidence": "VALIDATED",
-   "engine_id": "wta_match_winner.betfair_market",
-   "fair_odds": 1.89,
-   "price_status": "PRICE_QUALITY_FAIL",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "EXCHANGE_SPREAD_TOO_WIDE|NET_EV_NOT_POSITIVE",
-   "decision_odds": "1.8",
-   "decision_source": "betfair_ex_uk",
-   "decision_net_ev": "-0.0710508800000001",
-   "price_observed_at": "2026-10-15T11:56:25.935939+00:00",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
-   "min_bookmaker_odds": 1.94
   },
   {
    "prediction_id": "369fc36af7984a8c",
@@ -832,7 +831,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-10-15T06:16:25.008915+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.94
   },
   {
@@ -861,7 +860,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-10-15T11:56:28.537235+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.96
   },
   {
@@ -890,49 +889,11 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 2.0
   }
  ],
- "best_bets": [
-  {
-   "prediction_id": "fd27b673b49e3594",
-   "sport": "tennis",
-   "competition": "ATP Shanghai Masters",
-   "event_key": "tennis|tennis_atp_shanghai_masters|9dda9be8037459139ce1f25119c621ea",
-   "event_name": "Daniil Medvedev v Tommy Paul",
-   "event_start": "2026-10-16T10:00:00+00:00",
-   "market": "match_winner",
-   "selection": "Daniil Medvedev",
-   "probability": 0.669248,
-   "band": "60%+",
-   "sigma": 0.011875,
-   "evidence": "VALIDATED",
-   "engine_id": "atp_match_winner.betfair_market",
-   "fair_odds": 1.49,
-   "price_status": "PRICE_VALID",
-   "best_odds": 1.53,
-   "best_source": "betfair_sb_uk",
-   "best_net_ev": 0.023949,
-   "decision": "PAPER_BET",
-   "decision_reasons": "ALL_PAPER_GATES_PASSED",
-   "decision_odds": "1.53",
-   "decision_source": "betfair_sb_uk",
-   "decision_net_ev": "0.023949439999999933",
-   "price_observed_at": "2026-10-15T11:56:25.935939+00:00",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
-   "min_bookmaker_odds": 1.53,
-   "net_ev": 0.023949439999999933,
-   "odds": 1.53,
-   "money_eligible": true,
-   "provisional_live": false,
-   "stake_gbp": 1.0,
-   "stake_note": "",
-   "tier": "LIVE_ELIGIBLE",
-   "stake_kind": "SIMULATED"
-  }
- ],
+ "best_bets": [],
  "big_card": null,
  "strong_price_too_low": [
   {
@@ -961,7 +922,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -990,7 +951,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1019,7 +980,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1048,7 +1009,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-10-15T11:56:28.537235+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -1077,7 +1038,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -1106,7 +1067,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -1135,7 +1096,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.42
   },
   {
@@ -1164,7 +1125,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-10-15T11:56:28.537235+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-15T11:56:30.478059+00:00",
+   "decision_evaluated_at": "2026-10-15T15:16:37.723482+00:00",
    "min_bookmaker_odds": 1.42
   }
  ],

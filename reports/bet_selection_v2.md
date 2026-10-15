@@ -4,29 +4,29 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-15T11:56Z · events scanned 22 · valid predictions 43 · high-P (≥70%) 8 · priced 20 · PAPER_BET 1 · MULTI-research 0 · WATCH 0 · REJECT 42 · new paper bets 1 · Money Card qualified 0
+Run 2026-10-15T15:16Z · events scanned 22 · valid predictions 43 · high-P (≥70%) 9 · priced 20 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 43 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 25 · NET_EV_NOT_POSITIVE 16 · PRICE_STALE 14 · P_BELOW_FLOOR 12 · NO_EXECUTABLE_PRICE 12 · COMMISSION_UNKNOWN 11 · EXCHANGE_SPREAD_TOO_WIDE 3 · ALL_PAPER_GATES_PASSED 1
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 25 · NET_EV_NOT_POSITIVE 17 · PRICE_STALE 14 · P_BELOW_FLOOR 12 · NO_EXECUTABLE_PRICE 12 · COMMISSION_UNKNOWN 11
 
 ## Candidates (latest run, best price per prediction)
 
 | Event | Start | Sel | P | Fair | Odds (source) | Break-even | Net EV | Decision |
 |---|---|---|---|---|---|---|---|---|
-| Daniil Medvedev v Tommy Paul | 2026-10-16T10:00 | Daniil Medvedev | 66.9% | 1.49 | 1.53 (betfair_sb_uk) | 65.4% | 2.4% | PAPER_BET |
 | Heerenveen v Excelsior | 2026-10-16T18:00 | 1X | 78.9% | 1.27 | — | — | — | REJECT |
 | Heerenveen v Excelsior | 2026-10-16T18:00 | 12 | 77.8% | 1.29 | — | — | — | REJECT |
 | Eintracht Frankfurt v 1. FC Köln | 2026-10-16T18:30 | 12 | 76.8% | 1.30 | — | — | — | REJECT |
+| Alexander Zverev v Alejandro Davidovich Fokina | 2026-10-17T04:00 | Alexander Zverev | 75.1% | 1.33 | 1.32 (betfair_ex_uk) | 76.7% | -2.1% | REJECT |
 | Calgary Flames @ Vegas Golden Knights | 2026-10-16T02:10 | Vegas Golden Knights | 73.3% | 1.37 | 1.33 (matchbook) | — | — | REJECT |
 | Le Mans FC v Toulouse | 2026-10-16T18:45 | 12 | 73.3% | 1.37 | — | — | — | REJECT |
 | Burnley v Wolverhampton Wanderers | 2026-10-16T19:00 | 12 | 73.2% | 1.37 | — | — | — | REJECT |
 | Eintracht Frankfurt v 1. FC Köln | 2026-10-16T18:30 | 1X | 72.0% | 1.39 | — | — | — | REJECT |
 | Vancouver Canucks @ Florida Panthers | 2026-10-15T23:10 | Florida Panthers | 71.8% | 1.39 | 1.36 (matchbook) | — | — | REJECT |
+| Diana Shnaider v Jelena Ostapenko | 2026-10-16T03:00 | Diana Shnaider | 68.3% | 1.46 | 1.44 (betfair_sb_uk) | 69.4% | -1.6% | REJECT |
 | Seattle Kraken @ Tampa Bay Lightning | 2026-10-15T23:10 | Tampa Bay Lightning | 68.3% | 1.46 | 1.42 (matchbook) | — | — | REJECT |
 | Le Mans FC v Toulouse | 2026-10-16T18:45 | X2 | 67.9% | 1.47 | — | — | — | REJECT |
 | Burnley v Wolverhampton Wanderers | 2026-10-16T19:00 | X2 | 67.4% | 1.48 | — | — | — | REJECT |
-| Diana Shnaider v Jelena Ostapenko | 2026-10-16T03:00 | Diana Shnaider | 66.6% | 1.50 | 1.45 (betfair_ex_uk) | 70.1% | -5.0% | REJECT |
-| Ann Li v Janice Tjen | 2026-10-15T12:20 | Ann Li | 66.5% | 1.50 | 1.50 (betfair_sb_uk) | 66.7% | -0.2% | REJECT |
-| Elina Svitolina v Sonay Kartal | 2026-10-16T04:00 | Elina Svitolina | 66.1% | 1.51 | 1.48 (betfair_ex_uk) | 68.7% | -3.8% | REJECT |
+| Daniil Medvedev v Tommy Paul | 2026-10-16T10:00 | Daniil Medvedev | 66.9% | 1.49 | 1.49 (betfair_ex_uk) | 68.2% | -1.9% | REJECT |
+| Elina Svitolina v Sonay Kartal | 2026-10-16T04:30 | Elina Svitolina | 64.1% | 1.56 | 1.55 (betfair_ex_uk) | 65.7% | -2.4% | REJECT |
 | Burnley v Wolverhampton Wanderers | 2026-10-16T19:00 | 1X | 59.4% | 1.68 | — | — | — | REJECT |
 | Le Mans FC v Toulouse | 2026-10-16T18:45 | 1X | 58.9% | 1.70 | — | — | — | REJECT |
 | New York Islanders @ Ottawa Senators | 2026-10-15T23:10 | Ottawa Senators | 58.4% | 1.71 | 1.67 (matchbook) | — | — | REJECT |
@@ -34,12 +34,12 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 25 · NET_EV_NOT_POSITIVE 16
 | St Louis Blues @ Minnesota Wild | 2026-10-16T00:10 | Minnesota Wild | 56.6% | 1.77 | 1.73 (matchbook) | — | — | REJECT |
 | Seattle Seahawks @ Denver Broncos | 2026-10-16T00:15 | Seattle Seahawks | 56.5% | 1.77 | 1.75 (matchbook) | — | — | REJECT |
 | New York Rangers @ New Jersey Devils | 2026-10-15T23:10 | New Jersey Devils | 56.3% | 1.77 | 1.73 (matchbook) | — | — | REJECT |
-| Rafael Jodar v Casper Ruud | 2026-10-16T06:30 | Rafael Jodar | 55.9% | 1.79 | 1.78 (betfair_ex_uk) | 57.4% | -2.7% | REJECT |
 | San Jose Sharks @ Nashville Predators | 2026-10-16T00:10 | Nashville Predators | 55.7% | 1.80 | 1.77 (matchbook) | — | — | REJECT |
 | Philadelphia Flyers @ Detroit Red Wings | 2026-10-15T23:40 | Detroit Red Wings | 55.5% | 1.80 | 1.75 (matchbook) | — | — | REJECT |
+| Rafael Jodar v Casper Ruud | 2026-10-16T06:30 | Rafael Jodar | 55.4% | 1.80 | 1.77 (smarkets) | 57.0% | -2.7% | REJECT |
+| Maja Chwalinska v Maria Sakkari | 2026-10-16T06:00 | Maria Sakkari | 55.3% | 1.81 | 1.80 (betfair_ex_uk) | 56.8% | -2.7% | REJECT |
 | Winnipeg Jets @ Chicago Blackhawks | 2026-10-16T00:10 | Winnipeg Jets | 54.2% | 1.84 | 1.80 (paddypower) | 55.6% | -2.4% | REJECT |
 | Utah Mammoth @ Edmonton Oilers | 2026-10-16T01:10 | Edmonton Oilers | 53.0% | 1.89 | 1.84 (smarkets) | 54.8% | -3.3% | REJECT |
-| Maja Chwalinska v Maria Sakkari | 2026-10-16T04:00 | Maria Sakkari | 52.8% | 1.89 | 1.80 (betfair_ex_uk) | 56.8% | -7.1% | REJECT |
 | Burnley v Wolverhampton Wanderers | 2026-10-16T19:00 | over | 52.7% | 1.90 | 1.86 (matchbook) | — | — | REJECT |
 | Buffalo Sabres @ Toronto Maple Leafs | 2026-10-15T23:10 | Toronto Maple Leafs | 52.1% | 1.92 | 1.91 (matchbook) | — | — | REJECT |
 | Eintracht Frankfurt v 1. FC Köln | 2026-10-16T18:30 | X2 | 51.2% | 1.95 | — | — | — | REJECT |
