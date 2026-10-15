@@ -2,17 +2,17 @@
  "board_version": "stage-a-2",
  "product": "STAGE A PREDICTION BOARD (probability first; NOT a betting card)",
  "principle": "STRONG PREDICTION != VALID BET. Stage B (bet-selection) alone decides bets.",
- "generated_at": "2026-10-14T23:51:56.862696+00:00",
+ "generated_at": "2026-10-15T00:41:46.977932+00:00",
  "strong_prediction_min_probability": 0.7,
  "summary": {
-  "predictions": 13,
+  "predictions": 12,
   "strong_predictions": 3,
   "strong_unique_events": 3,
   "strong_by_price_status": {
    "PRICE_QUALITY_FAIL": 3
   },
   "all_by_price_status": {
-   "PRICE_QUALITY_FAIL": 13
+   "PRICE_QUALITY_FAIL": 12
   },
   "duplicate_prediction_rows_collapsed": 0,
   "strong_by_sport": {
@@ -20,7 +20,6 @@
   },
   "all_by_sport": {
    "americanfootball": 1,
-   "icehockey": 1,
    "tennis": 11
   }
  },
@@ -348,52 +347,6 @@
    "rank": 7
   },
   {
-   "prediction_id": "7d7a95bcbbdf5a8a",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event_key": "nhl|9604eeafec33b8980e6565c617f04fc6",
-   "event_name": "Dallas Stars @ Colorado Avalanche",
-   "event_start": "2026-10-15T00:40:00+00:00",
-   "event_start_original": "2026-10-15T00:40:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "moneyline",
-   "selection": "Colorado Avalanche",
-   "probability": 0.575593,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-14T12:15:26.340218+00:00",
-   "p_first_snapshot": 0.575593,
-   "p_current_scan": null,
-   "ledger_probability": 0.5755930265790226,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "744.6",
-   "sigma": null,
-   "sigma_method": "NOT_ESTIMATED",
-   "sigma_calibration": null,
-   "calibration_status": "GATE_B on SBR closing consensus (live early-snapshot estimator not validated)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "55-59.9%",
-   "engine_id": "nhl_moneyline.market",
-   "engine_version": "1",
-   "engine_status": "PROVISIONAL_PROSPECTIVE",
-   "prediction_timestamp": "2026-10-14T12:15:26.340218+00:00",
-   "historical_support": "hist n=13666; holdout DONE (2020-21, n=2350; gate B); >=80% coverage None; holdout slope 1.2193 CI [1.0439, 1.4097]; live estimator nhl_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "COMMISSION_UNKNOWN|PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-14T12:15:26.340218+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 8
-  },
-  {
    "prediction_id": "956792a4ad517419",
    "sport": "tennis",
    "competition": "ATP Shanghai Masters",
@@ -437,7 +390,7 @@
    "price_observed_at": "2026-10-14T15:16:39.445853+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 9
+   "rank": 8
   },
   {
    "prediction_id": "ba56b951c815719f",
@@ -483,7 +436,7 @@
    "price_observed_at": "2026-10-14T12:15:26.340218+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 10
+   "rank": 9
   },
   {
    "prediction_id": "5f6d9134a2b91020",
@@ -529,7 +482,7 @@
    "price_observed_at": "2026-10-14T15:16:39.445853+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 11
+   "rank": 10
   },
   {
    "prediction_id": "51cfc5c2b749b9f7",
@@ -575,7 +528,7 @@
    "price_observed_at": "2026-10-14T15:16:39.445853+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 12
+   "rank": 11
   },
   {
    "prediction_id": "a5ff6049b8cc41c5",
@@ -621,7 +574,7 @@
    "price_observed_at": "2026-10-14T15:16:39.445853+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 13
+   "rank": 12
   }
  ]
 }

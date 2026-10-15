@@ -1,14 +1,13 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-14T23:51:56.862696+00:00",
- "date": "2026-10-14",
+ "generated_at": "2026-10-15T00:41:46.977932+00:00",
+ "date": "2026-10-15",
  "summary": {
-  "upcoming_events": 13,
-  "valid_predictions": 13,
+  "upcoming_events": 12,
+  "valid_predictions": 12,
   "sports_active": [
    "americanfootball",
-   "icehockey",
    "tennis"
   ],
   "engines_active": [
@@ -28,13 +27,13 @@
    ">=90": 0,
    ">=95": 0
   },
-  "settled_yesterday": 363,
+  "settled_yesterday": 124,
   "system": "HEALTHY",
   "api_credits_last_observed": 286
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-14T23:51:56.862696+00:00",
+  "generated_at": "2026-10-15T00:41:46.977932+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -42,22 +41,22 @@
     "last": "2026-10-14T06:16:32.094653+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 17.6
+    "age_hours": 18.4
    },
    "settlement": {
-    "last": "2026-10-14T00:15:25.689434+00:00",
+    "last": "2026-10-14T23:51:58.321697+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 23.6
+    "age_hours": 0.8
    },
    "tennis_board": {
     "last": "2026-10-14T15:16:39.445853+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 8.6
+    "age_hours": 9.4
    },
    "ci_tests": {
-    "last": "2026-10-14T23:51:41.289569+00:00",
+    "last": "2026-10-15T00:41:30.838426+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -114,7 +113,7 @@
    "prospective_status": "COLLECTING",
    "money_eligible": true,
    "predictions": 155,
-   "settled_rows": 135,
+   "settled_rows": 137,
    "maturity": "EARLY",
    "ge80_settled": 25,
    "ge80_mean_pred": 0.8766552,
@@ -126,11 +125,11 @@
    "prospective_status": "COLLECTING",
    "money_eligible": true,
    "predictions": 154,
-   "settled_rows": 119,
+   "settled_rows": 131,
    "maturity": "EARLY",
-   "ge80_settled": 21,
-   "ge80_mean_pred": 0.8990787142857142,
-   "ge80_actual": 0.8571428571428571,
+   "ge80_settled": 24,
+   "ge80_mean_pred": 0.8940608333333334,
+   "ge80_actual": 0.8333333333333334,
    "alarm_review_required": false
   },
   "nba_moneyline.market": {
@@ -150,8 +149,8 @@
    "prospective_status": "COLLECTING",
    "money_eligible": false,
    "predictions": 52,
-   "settled_rows": 34,
-   "maturity": "COLLECTING",
+   "settled_rows": 50,
+   "maturity": "EARLY",
    "ge80_settled": 0,
    "ge80_mean_pred": null,
    "ge80_actual": null,
@@ -162,7 +161,7 @@
    "prospective_status": "COLLECTING",
    "money_eligible": true,
    "predictions": 16,
-   "settled_rows": 13,
+   "settled_rows": 14,
    "maturity": "COLLECTING",
    "ge80_settled": 0,
    "ge80_mean_pred": null,
@@ -194,11 +193,11 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 13,
-   "EXCLUDED": 1370
+   "ELIGIBLE": 12,
+   "EXCLUDED": 1371
   },
   "exclusion_reason": {
-   "EVENT_STARTED": 1370
+   "EVENT_STARTED": 1371
   },
   "start_time_status": {
    "LEDGER_ONLY": 1012,
@@ -502,48 +501,6 @@
    "event_start_original": "2026-10-15T12:10:00+00:00",
    "start_time_status": "UNCHANGED",
    "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
-  },
-  {
-   "prediction_id": "7d7a95bcbbdf5a8a",
-   "engine_id": "nhl_moneyline.market",
-   "engine_version": "1",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event_id": "9604eeafec33b8980e6565c617f04fc6",
-   "event_key": "nhl|9604eeafec33b8980e6565c617f04fc6",
-   "event_name": "Dallas Stars @ Colorado Avalanche",
-   "event_start": "2026-10-15T00:40:00+00:00",
-   "market": "moneyline",
-   "selection": "Colorado Avalanche",
-   "estimated_probability": "0.5755930265790226",
-   "fair_odds": "1.7373386295928501",
-   "probability_band": "55-59.9%",
-   "probability_source": "Odds API icehockey_nhl h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=13666; holdout DONE (2020-21, n=2350; gate B); >=80% coverage None; holdout slope 1.2193 CI [1.0439, 1.4097]; live estimator nhl_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "PROVISIONAL_PROSPECTIVE",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-10-14T06:30:00+00:00",
-   "actual_workflow_start": "2026-10-14T12:14:20Z",
-   "prediction_timestamp": "2026-10-14T12:15:26.340218+00:00",
-   "minutes_to_event": "744.6",
-   "live_price": "1.71",
-   "live_price_source": "odds_api:matchbook",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "False",
-   "single_ineligible_reason": "engine not money-eligible",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:icehockey_nhl",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-10-15T00:40:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
   },
   {
    "prediction_id": "956792a4ad517419",
