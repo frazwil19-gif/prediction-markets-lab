@@ -1,6 +1,6 @@
 {
  "version": "clv-1",
- "generated_at": "2026-10-15T15:15:31.439057+00:00",
+ "generated_at": "2026-10-15T15:30:31.063407+00:00",
  "credits": {
   "month": "2026-10",
   "spent_this_month": 0,
@@ -109,20 +109,20 @@
   "looks_reached": [],
   "bands": {
    "<0": {
-    "n": 91,
+    "n": 95,
     "est_ev": {
-     "n": 91,
-     "mean": -0.01675,
-     "median": -0.01557,
+     "n": 95,
+     "mean": -0.01696,
+     "median": -0.01619,
      "positive_rate": 0.0,
      "ci95": [
-      -0.01837,
-      -0.01498
+      -0.01858,
+      -0.01541
      ]
     },
     "tier_a_eligible": 0,
     "tier_a_captured": 0,
-    "top_book_share": 0.374,
+    "top_book_share": 0.389,
     "price_age_median_min": 0.4,
     "fair_clv": {
      "n": 0
@@ -135,12 +135,12 @@
     },
     "tier_b_proxy_fair_clv": {
      "n": 49,
-     "mean": -0.01626,
+     "mean": -0.01643,
      "median": -0.01366,
      "positive_rate": 0.082,
      "ci95": [
-      -0.02052,
-      -0.01232
+      -0.02076,
+      -0.01241
      ]
     },
     "outcomes": {
@@ -204,9 +204,9 @@
      "n": 0
     },
     "tier_b_proxy_fair_clv": {
-     "n": 1,
-     "mean": 0.02113,
-     "median": 0.02113,
+     "n": 2,
+     "mean": 0.02254,
+     "median": 0.02254,
      "positive_rate": 1.0
     },
     "outcomes": {
