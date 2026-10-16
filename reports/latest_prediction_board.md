@@ -2,9 +2,9 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 41 · Valid predictions: 248 · Sports: football, icehockey, tennis
-Counts: >=70: 69 · >=75: 48 · >=80: 20 · >=85: 9 · >=90: 2 · >=95: 0
-Settled yesterday: 31 · System: **HEALTHY** · API credits (last observed): 251
+Upcoming events: 43 · Valid predictions: 250 · Sports: football, icehockey, tennis
+Counts: >=70: 70 · >=75: 49 · >=80: 21 · >=85: 10 · >=90: 2 · >=95: 0
+Settled yesterday: 31 · System: **HEALTHY** · API credits (last observed): 248
 
 ## Top predictions (P ≥ 80%)
 
@@ -17,6 +17,7 @@ Settled yesterday: 31 · System: **HEALTHY** · API credits (last observed): 251
 | football | Bayern Munich v RB Leipzig | 2026-10-17T16:30 | double_chance | 12 | 87.4% | 1.14 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.12 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Dundee FC v Rangers | 2026-10-17T19:00 | double_chance | X2 | 87.0% | 1.15 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.11 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | ADO Den Haag v PSV Eindhoven | 2026-10-17T14:30 | double_chance | 12 | 85.7% | 1.17 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.16 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
+| tennis | Iga Swiatek v Maja Chwalinska | 2026-10-17T10:30 | match_winner | Iga Swiatek | 85.7% | 1.17 | 85-89.9% | wta_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.15 (betfair_ex_uk back (odds_api)) | no | yes |
 | football | Manchester City v Ipswich Town | 2026-10-17T14:00 | double_chance | 12 | 85.4% | 1.17 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.14 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Strasbourg v Paris Saint Germain | 2026-10-17T15:15 | double_chance | X2 | 85.3% | 1.17 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.14 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Southampton v Bolton Wanderers | 2026-10-17T14:00 | double_chance | 1X | 83.8% | 1.19 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.17 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
@@ -38,8 +39,8 @@ Settled yesterday: 31 · System: **HEALTHY** · API credits (last observed): 251
 | football_1x2.market_consensus | VALIDATED_HISTORICAL / COLLECTING | 555 | 129 | COLLECTING | 1 | 82.3% → 100.0% |
 | football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 64 | 42 | COLLECTING | 0 | — → — |
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
-| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 156 | 141 | EARLY | 25 | 87.7% → 76.0% |
-| wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 158 | 137 | EARLY | 25 | 89.4% → 84.0% |
+| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 157 | 141 | EARLY | 25 | 87.7% → 76.0% |
+| wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 159 | 137 | EARLY | 25 | 89.4% → 84.0% |
 | nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 0 | 0 | COLLECTING | 0 | — → — |
 | nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 65 | 50 | EARLY | 0 | — → — |
 | nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 16 | 14 | COLLECTING | 0 | — → — |
@@ -49,8 +50,8 @@ Settled yesterday: 31 · System: **HEALTHY** · API credits (last observed): 251
 
 - daily_scan: OK (last 2026-10-16T06:16:42.611096+00:00)
 - settlement: OK (last 2026-10-15T23:39:41.941717+00:00)
-- tennis_board: OK (last 2026-10-16T11:47:16.592872+00:00)
-- ci_tests: OK (last 2026-10-16T11:47:17.894840+00:00)
+- tennis_board: OK (last 2026-10-16T15:16:31.647036+00:00)
+- ci_tests: OK (last 2026-10-16T15:16:32.874119+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 

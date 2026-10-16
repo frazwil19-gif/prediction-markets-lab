@@ -1,11 +1,11 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-16T11:47:19.566517+00:00",
+ "generated_at": "2026-10-16T15:16:34.214817+00:00",
  "date": "2026-10-16",
  "summary": {
-  "upcoming_events": 41,
-  "valid_predictions": 248,
+  "upcoming_events": 43,
+  "valid_predictions": 250,
   "sports_active": [
    "football",
    "icehockey",
@@ -21,20 +21,20 @@
    "football_double_chance.derived_1x2"
   ],
   "threshold_counts": {
-   ">=70": 69,
-   ">=75": 48,
-   ">=80": 20,
-   ">=85": 9,
+   ">=70": 70,
+   ">=75": 49,
+   ">=80": 21,
+   ">=85": 10,
    ">=90": 2,
    ">=95": 0
   },
   "settled_yesterday": 31,
   "system": "HEALTHY",
-  "api_credits_last_observed": 251
+  "api_credits_last_observed": 248
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-16T11:47:19.566517+00:00",
+  "generated_at": "2026-10-16T15:16:34.214817+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -42,30 +42,30 @@
     "last": "2026-10-16T06:16:42.611096+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 5.5
+    "age_hours": 9.0
    },
    "settlement": {
     "last": "2026-10-15T23:39:41.941717+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 12.1
+    "age_hours": 15.6
    },
    "tennis_board": {
-    "last": "2026-10-16T11:47:16.592872+00:00",
+    "last": "2026-10-16T15:16:31.647036+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    },
    "ci_tests": {
-    "last": "2026-10-16T11:47:17.894840+00:00",
+    "last": "2026-10-16T15:16:32.874119+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    }
   },
   "api_credits": {
-   "remaining": 251,
-   "observed_at": "2026-10-16T11:47:17.166541+00:00",
+   "remaining": 248,
+   "observed_at": "2026-10-16T15:16:32.177940+00:00",
    "source": "credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
@@ -113,7 +113,7 @@
    "status": "VALIDATED_HISTORICAL",
    "prospective_status": "COLLECTING",
    "money_eligible": true,
-   "predictions": 156,
+   "predictions": 157,
    "settled_rows": 141,
    "maturity": "EARLY",
    "ge80_settled": 25,
@@ -125,7 +125,7 @@
    "status": "VALIDATED_HISTORICAL",
    "prospective_status": "COLLECTING",
    "money_eligible": true,
-   "predictions": 158,
+   "predictions": 159,
    "settled_rows": 137,
    "maturity": "EARLY",
    "ge80_settled": 25,
@@ -194,7 +194,7 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 248,
+   "ELIGIBLE": 250,
    "EXCLUDED": 1397
   },
   "exclusion_reason": {
@@ -203,7 +203,7 @@
   "start_time_status": {
    "LEDGER_ONLY": 1269,
    "RESCHEDULED": 233,
-   "UNCHANGED": 143
+   "UNCHANGED": 145
   },
   "eligible_rescheduled": 1,
   "rule": "est-1"
@@ -502,6 +502,48 @@
    "event_start_original": "2026-10-17T14:30:00+00:00",
    "start_time_status": "LEDGER_ONLY",
    "start_time_source": "unified_ledger.event_start"
+  },
+  {
+   "prediction_id": "2e14cc75d6775f3b",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "sport": "tennis",
+   "competition": "WTA Wuhan Open",
+   "event_id": "ab648a948516e13d5f2ca038684780ca",
+   "event_key": "tennis|tennis_wta_wuhan_open|ab648a948516e13d5f2ca038684780ca",
+   "event_name": "Iga Swiatek v Maja Chwalinska",
+   "event_start": "2026-10-17T10:30:00+00:00",
+   "market": "match_winner",
+   "selection": "Iga Swiatek",
+   "estimated_probability": "0.856793",
+   "fair_odds": "1.1671430555571765",
+   "probability_band": "85-89.9%",
+   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
+   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "data_quality": "OK",
+   "current_context_status": "NOT_MODELLED",
+   "configured_scan_time": "",
+   "actual_workflow_start": "2026-10-16T15:16:31.647036+00:00",
+   "prediction_timestamp": "2026-10-16T15:16:31.647036+00:00",
+   "minutes_to_event": "1153.5",
+   "live_price": "1.15",
+   "live_price_source": "betfair_ex_uk back (odds_api)",
+   "paper_status": "PAPER",
+   "prediction_valid": "True",
+   "single_eligible": "False",
+   "single_ineligible_reason": "fair odds 1.17 below payout floor 1.33",
+   "multi_research_eligible": "True",
+   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
+   "origin": "tennis_predictions/ledger_predictions.csv",
+   "origin_prediction_id": "2e14cc75d6775f3b",
+   "settlement_status": "",
+   "result": "",
+   "correct": "",
+   "settlement_timestamp": "",
+   "event_start_original": "2026-10-17T10:30:00+00:00",
+   "start_time_status": "UNCHANGED",
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
   },
   {
    "prediction_id": "7481138c0c8eae9b",
@@ -3780,6 +3822,48 @@
    "start_time_source": "unified_ledger.event_start"
   },
   {
+   "prediction_id": "43c59bc370afdf6e",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "sport": "tennis",
+   "competition": "ATP Shanghai Masters",
+   "event_id": "ec7b2ed5ca42a47451864cedfd5b61d3",
+   "event_key": "tennis|tennis_atp_shanghai_masters|ec7b2ed5ca42a47451864cedfd5b61d3",
+   "event_name": "Rafael Jodar v Daniil Medvedev",
+   "event_start": "2026-10-17T11:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Daniil Medvedev",
+   "estimated_probability": "0.637413",
+   "fair_odds": "1.568841551709802",
+   "probability_band": "60-64.9%",
+   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
+   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "data_quality": "OK",
+   "current_context_status": "NOT_MODELLED",
+   "configured_scan_time": "",
+   "actual_workflow_start": "2026-10-16T15:16:31.647036+00:00",
+   "prediction_timestamp": "2026-10-16T15:16:31.647036+00:00",
+   "minutes_to_event": "1183.5",
+   "live_price": "1.56",
+   "live_price_source": "betfair_ex_uk back (odds_api)",
+   "paper_status": "PAPER",
+   "prediction_valid": "True",
+   "single_eligible": "True",
+   "single_ineligible_reason": "",
+   "multi_research_eligible": "False",
+   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
+   "origin": "tennis_predictions/ledger_predictions.csv",
+   "origin_prediction_id": "43c59bc370afdf6e",
+   "settlement_status": "",
+   "result": "",
+   "correct": "",
+   "settlement_timestamp": "",
+   "event_start_original": "2026-10-17T11:00:00+00:00",
+   "start_time_status": "UNCHANGED",
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+  },
+  {
    "prediction_id": "c04fdef4b2bb75a6",
    "engine_id": "football_ou25.market",
    "engine_version": "1",
@@ -4953,7 +5037,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-17T09:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "8e876508b034e745",

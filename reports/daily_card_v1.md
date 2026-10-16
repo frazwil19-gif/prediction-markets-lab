@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-10-16T12:45Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-10-16T15:16Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 248 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 69 · research predictions: 284
+Predictions in the next window: 250 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 70 · research predictions: 284
 
 ## 1. Best predictions today
 
@@ -17,39 +17,39 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | 5 | football | Bayern Munich v RB Leipzig | 2026-10-17T16:30 | double_chance | 12 | 87.4% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.14 | no price | no |
 | 6 | football | Dundee FC v Rangers | 2026-10-17T19:00 | double_chance | X2 | 87.0% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.15 | no price | no |
 | 7 | football | ADO Den Haag v PSV Eindhoven | 2026-10-17T14:30 | double_chance | 12 | 85.7% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.17 | no price | no |
-| 8 | football | Manchester City v Ipswich Town | 2026-10-17T14:00 | double_chance | 12 | 85.4% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.17 | no price | no |
-| 9 | football | Strasbourg v Paris Saint Germain | 2026-10-17T15:15 | double_chance | X2 | 85.3% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.17 | no price | no |
-| 10 | football | Southampton v Bolton Wanderers | 2026-10-17T14:00 | double_chance | 1X | 83.8% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.19 | no price | no |
-| 11 | football | SC Telstar v Feyenoord | 2026-10-17T18:00 | double_chance | 12 | 83.5% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.20 | no price | no |
-| 12 | football | Strasbourg v Paris Saint Germain | 2026-10-17T15:15 | double_chance | 12 | 82.2% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.22 | no price | no |
-| 13 | football | Middlesbrough v Cardiff City | 2026-10-17T11:30 | double_chance | 1X | 82.1% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.22 | no price | no |
-| 14 | football | Union Berlin v Borussia Dortmund | 2026-10-17T13:30 | double_chance | X2 | 81.2% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.23 | no price | no |
-| 15 | football | Dundee FC v Rangers | 2026-10-17T19:00 | double_chance | 12 | 81.0% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.24 | no price | no |
-| 16 | football | Millwall v Lincoln City | 2026-10-17T11:30 | double_chance | 1X | 80.8% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.24 | no price | no |
-| 17 | football | Hibernian v Falkirk F.C. | 2026-10-17T14:00 | double_chance | 1X | 80.7% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.24 | no price | no |
-| 18 | football | Wrexham AFC v Preston North End | 2026-10-17T14:00 | double_chance | 1X | 80.4% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.24 | no price | no |
-| 19 | football | Sparta Rotterdam v Willem II | 2026-10-17T19:00 | double_chance | 1X | 80.3% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.25 | no price | no |
-| 20 | football | Southampton v Bolton Wanderers | 2026-10-17T14:00 | double_chance | 12 | 80.0% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.25 | no price | no |
-| 21 | football | Middlesbrough v Cardiff City | 2026-10-17T11:30 | double_chance | 12 | 79.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.25 | no price | no |
-| 22 | football | Fulham v Hull City | 2026-10-17T14:00 | double_chance | 1X | 79.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.26 | no price | no |
-| 23 | football | Heerenveen v Excelsior | 2026-10-16T18:00 | double_chance | 1X | 78.9% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.27 | no price | no |
-| 24 | football | Norwich City v Portsmouth | 2026-10-17T14:00 | double_chance | 1X | 78.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.27 | no price | no |
-| 25 | football | Union Berlin v Borussia Dortmund | 2026-10-17T13:30 | double_chance | 12 | 78.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.28 | no price | no |
-| 26 | football | Sparta Rotterdam v Willem II | 2026-10-17T19:00 | double_chance | 12 | 78.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.28 | no price | no |
-| 27 | football | Heerenveen v Excelsior | 2026-10-16T18:00 | double_chance | 12 | 77.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | no price | no |
-| 28 | football | Bayern Munich v RB Leipzig | 2026-10-17T16:30 | 1x2 | home | 77.4% | 70%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | price not usable (stale/wide/unknown commission) | no |
-| 29 | football | Hamburger SV v VfB Stuttgart | 2026-10-17T13:30 | double_chance | 12 | 77.0% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.30 | no price | no |
-| 30 | football | Eintracht Frankfurt v 1. FC Köln | 2026-10-16T18:30 | double_chance | 12 | 76.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.30 | no price | no |
-| 31 | football | Manchester City v Ipswich Town | 2026-10-17T14:00 | 1x2 | home | 76.6% | 70%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | price not usable (stale/wide/unknown commission) | no |
-| 32 | football | Werder Bremen v SC Paderborn | 2026-10-17T13:30 | double_chance | 12 | 76.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
-| 33 | football | Aberdeen v St Mirren | 2026-10-17T14:00 | double_chance | 1X | 76.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
-| 34 | football | Werder Bremen v SC Paderborn | 2026-10-17T13:30 | double_chance | 1X | 76.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
-| 35 | football | West Bromwich Albion v Blackburn Rovers | 2026-10-17T14:00 | double_chance | 1X | 76.2% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
-| 36 | football | Hibernian v Falkirk F.C. | 2026-10-17T14:00 | double_chance | 12 | 76.1% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
-| 37 | tennis | Alexander Zverev v Alejandro Davidovich Fokina | 2026-10-17T08:30 | match_winner | Alexander Zverev | 75.9% | 70%+ | 1.2% | VALIDATED | 1.32 | 1.30 (skybet) | no |
-| 38 | football | Lille v Brest | 2026-10-17T18:45 | double_chance | 1X | 75.9% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.32 | no price | no |
-| 39 | football | Troyes v RC Lens | 2026-10-17T18:45 | double_chance | X2 | 75.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.32 | no price | no |
-| 40 | football | Fulham v Hull City | 2026-10-17T14:00 | double_chance | 12 | 75.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.32 | no price | no |
+| 8 | tennis | Iga Swiatek v Maja Chwalinska | 2026-10-17T10:30 | match_winner | Iga Swiatek | 85.7% | 80%+ | 2.1% | VALIDATED | 1.17 | price not usable (stale/wide/unknown commission) | no |
+| 9 | football | Manchester City v Ipswich Town | 2026-10-17T14:00 | double_chance | 12 | 85.4% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.17 | no price | no |
+| 10 | football | Strasbourg v Paris Saint Germain | 2026-10-17T15:15 | double_chance | X2 | 85.3% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.17 | no price | no |
+| 11 | football | Southampton v Bolton Wanderers | 2026-10-17T14:00 | double_chance | 1X | 83.8% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.19 | no price | no |
+| 12 | football | SC Telstar v Feyenoord | 2026-10-17T18:00 | double_chance | 12 | 83.5% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.20 | no price | no |
+| 13 | football | Strasbourg v Paris Saint Germain | 2026-10-17T15:15 | double_chance | 12 | 82.2% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.22 | no price | no |
+| 14 | football | Middlesbrough v Cardiff City | 2026-10-17T11:30 | double_chance | 1X | 82.1% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.22 | no price | no |
+| 15 | football | Union Berlin v Borussia Dortmund | 2026-10-17T13:30 | double_chance | X2 | 81.2% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.23 | no price | no |
+| 16 | football | Dundee FC v Rangers | 2026-10-17T19:00 | double_chance | 12 | 81.0% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.24 | no price | no |
+| 17 | football | Millwall v Lincoln City | 2026-10-17T11:30 | double_chance | 1X | 80.8% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.24 | no price | no |
+| 18 | football | Hibernian v Falkirk F.C. | 2026-10-17T14:00 | double_chance | 1X | 80.7% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.24 | no price | no |
+| 19 | football | Wrexham AFC v Preston North End | 2026-10-17T14:00 | double_chance | 1X | 80.4% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.24 | no price | no |
+| 20 | football | Sparta Rotterdam v Willem II | 2026-10-17T19:00 | double_chance | 1X | 80.3% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.25 | no price | no |
+| 21 | football | Southampton v Bolton Wanderers | 2026-10-17T14:00 | double_chance | 12 | 80.0% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.25 | no price | no |
+| 22 | football | Middlesbrough v Cardiff City | 2026-10-17T11:30 | double_chance | 12 | 79.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.25 | no price | no |
+| 23 | football | Fulham v Hull City | 2026-10-17T14:00 | double_chance | 1X | 79.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.26 | no price | no |
+| 24 | football | Heerenveen v Excelsior | 2026-10-16T18:00 | double_chance | 1X | 78.9% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.27 | no price | no |
+| 25 | football | Norwich City v Portsmouth | 2026-10-17T14:00 | double_chance | 1X | 78.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.27 | no price | no |
+| 26 | football | Union Berlin v Borussia Dortmund | 2026-10-17T13:30 | double_chance | 12 | 78.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.28 | no price | no |
+| 27 | football | Sparta Rotterdam v Willem II | 2026-10-17T19:00 | double_chance | 12 | 78.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.28 | no price | no |
+| 28 | football | Heerenveen v Excelsior | 2026-10-16T18:00 | double_chance | 12 | 77.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | no price | no |
+| 29 | football | Bayern Munich v RB Leipzig | 2026-10-17T16:30 | 1x2 | home | 77.4% | 70%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | price not usable (stale/wide/unknown commission) | no |
+| 30 | football | Hamburger SV v VfB Stuttgart | 2026-10-17T13:30 | double_chance | 12 | 77.0% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.30 | no price | no |
+| 31 | football | Eintracht Frankfurt v 1. FC Köln | 2026-10-16T18:30 | double_chance | 12 | 76.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.30 | no price | no |
+| 32 | football | Manchester City v Ipswich Town | 2026-10-17T14:00 | 1x2 | home | 76.6% | 70%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | price not usable (stale/wide/unknown commission) | no |
+| 33 | football | Werder Bremen v SC Paderborn | 2026-10-17T13:30 | double_chance | 12 | 76.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
+| 34 | football | Aberdeen v St Mirren | 2026-10-17T14:00 | double_chance | 1X | 76.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
+| 35 | football | Werder Bremen v SC Paderborn | 2026-10-17T13:30 | double_chance | 1X | 76.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
+| 36 | football | West Bromwich Albion v Blackburn Rovers | 2026-10-17T14:00 | double_chance | 1X | 76.2% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
+| 37 | football | Hibernian v Falkirk F.C. | 2026-10-17T14:00 | double_chance | 12 | 76.1% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
+| 38 | tennis | Alexander Zverev v Alejandro Davidovich Fokina | 2026-10-17T08:30 | match_winner | Alexander Zverev | 75.9% | 70%+ | 1.2% | VALIDATED | 1.32 | 1.33 (boylesports) | no |
+| 39 | football | Lille v Brest | 2026-10-17T18:45 | double_chance | 1X | 75.9% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.32 | no price | no |
+| 40 | football | Troyes v RC Lens | 2026-10-17T18:45 | double_chance | X2 | 75.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.32 | no price | no |
 
 ## 2. Qualified paper bets (simulated stakes, recorded automatically)
 
@@ -72,6 +72,7 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 | Bayern Munich v RB Leipzig (2026-10-17T16:30) | double_chance: 12 | 87.4% | 1.14 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Dundee FC v Rangers (2026-10-17T19:00) | double_chance: X2 | 87.0% | 1.15 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | ADO Den Haag v PSV Eindhoven (2026-10-17T14:30) | double_chance: 12 | 85.7% | 1.17 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
+| Iga Swiatek v Maja Chwalinska (2026-10-17T10:30) | match_winner: Iga Swiatek | 85.7% | 1.17 | — | EXCHANGE_SPREAD_TOO_WIDE, NET_EV_NOT_POSITIVE |
 | Manchester City v Ipswich Town (2026-10-17T14:00) | double_chance: 12 | 85.4% | 1.17 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Strasbourg v Paris Saint Germain (2026-10-17T15:15) | double_chance: X2 | 85.3% | 1.17 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Southampton v Bolton Wanderers (2026-10-17T14:00) | double_chance: 1X | 83.8% | 1.19 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
@@ -101,7 +102,7 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 | Werder Bremen v SC Paderborn (2026-10-17T13:30) | double_chance: 1X | 76.4% | 1.31 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | West Bromwich Albion v Blackburn Rovers (2026-10-17T14:00) | double_chance: 1X | 76.2% | 1.31 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Hibernian v Falkirk F.C. (2026-10-17T14:00) | double_chance: 12 | 76.1% | 1.31 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Alexander Zverev v Alejandro Davidovich Fokina (2026-10-17T08:30) | match_winner: Alexander Zverev | 75.9% | 1.32 | 1.30 | NET_EV_NOT_POSITIVE |
+| Alexander Zverev v Alejandro Davidovich Fokina (2026-10-17T08:30) | match_winner: Alexander Zverev | 75.9% | 1.32 | 1.33 | NET_EV_BELOW_PAPER_GATE |
 | Lille v Brest (2026-10-17T18:45) | double_chance: 1X | 75.9% | 1.32 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Troyes v RC Lens (2026-10-17T18:45) | double_chance: X2 | 75.8% | 1.32 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Fulham v Hull City (2026-10-17T14:00) | double_chance: 12 | 75.8% | 1.32 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
@@ -137,7 +138,7 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 244 · PRICE_STALE 133 · NO_EXECUTABLE_PRICE 111 · P_BELOW_FLOOR 110 · NET_EV_NOT_POSITIVE 95 · COMMISSION_UNKNOWN 21
+ENGINE_STATUS_INELIGIBLE 244 · PRICE_STALE 133 · NO_EXECUTABLE_PRICE 111 · P_BELOW_FLOOR 110 · NET_EV_NOT_POSITIVE 96 · COMMISSION_UNKNOWN 21 · EXCHANGE_SPREAD_TOO_WIDE 1 · NET_EV_BELOW_PAPER_GATE 1
 
 ## 4. Research predictions — not money eligible
 

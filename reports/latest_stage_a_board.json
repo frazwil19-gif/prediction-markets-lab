@@ -2,31 +2,32 @@
  "board_version": "stage-a-2",
  "product": "STAGE A PREDICTION BOARD (probability first; NOT a betting card)",
  "principle": "STRONG PREDICTION != VALID BET. Stage B (bet-selection) alone decides bets.",
- "generated_at": "2026-10-16T11:47:19.566517+00:00",
+ "generated_at": "2026-10-16T15:16:34.214817+00:00",
  "strong_prediction_min_probability": 0.7,
  "summary": {
-  "predictions": 248,
-  "strong_predictions": 69,
-  "strong_unique_events": 38,
+  "predictions": 250,
+  "strong_predictions": 70,
+  "strong_unique_events": 39,
   "strong_by_price_status": {
-   "POOR_PAYOUT": 1,
-   "PRICE_QUALITY_FAIL": 4,
-   "PRICE_UNAVAILABLE": 64
+   "PRICE_QUALITY_FAIL": 5,
+   "PRICE_UNAVAILABLE": 64,
+   "PRICE_VALID": 1
   },
   "all_by_price_status": {
    "POOR_PAYOUT": 2,
-   "PRICE_QUALITY_FAIL": 135,
-   "PRICE_UNAVAILABLE": 111
+   "PRICE_QUALITY_FAIL": 136,
+   "PRICE_UNAVAILABLE": 111,
+   "PRICE_VALID": 1
   },
   "duplicate_prediction_rows_collapsed": 0,
   "strong_by_sport": {
    "football": 68,
-   "tennis": 1
+   "tennis": 2
   },
   "all_by_sport": {
    "football": 244,
    "icehockey": 2,
-   "tennis": 2
+   "tennis": 4
   }
  },
  "predictions": [
@@ -353,6 +354,52 @@
    "rank": 7
   },
   {
+   "prediction_id": "2e14cc75d6775f3b",
+   "sport": "tennis",
+   "competition": "WTA Wuhan Open",
+   "event_key": "tennis|tennis_wta_wuhan_open|ab648a948516e13d5f2ca038684780ca",
+   "event_name": "Iga Swiatek v Maja Chwalinska",
+   "event_start": "2026-10-17T10:30:00+00:00",
+   "event_start_original": "2026-10-17T10:30:00+00:00",
+   "start_time_status": "UNCHANGED",
+   "market": "match_winner",
+   "selection": "Iga Swiatek",
+   "probability": 0.856793,
+   "probability_basis": "P_CURRENT_SCAN",
+   "probability_observed_at": "2026-10-16T15:16:31.647036+00:00",
+   "p_first_snapshot": 0.856793,
+   "p_current_scan": 0.856793,
+   "ledger_probability": 0.856793,
+   "normalisation": "",
+   "minutes_to_event_at_prediction": "1153.5",
+   "sigma": 0.020536,
+   "sigma_method": "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)",
+   "sigma_calibration": 0.012168,
+   "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)",
+   "sigma_half_width": 0.016543,
+   "exchange_width": 0.033085,
+   "probability_band": "85-89.9%",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "prediction_timestamp": "2026-10-16T15:16:31.647036+00:00",
+   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
+   "strength": "STRONG_PREDICTION",
+   "price_status": "PRICE_QUALITY_FAIL",
+   "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
+   "financially_assessable": false,
+   "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
+   "best_clean_source": "",
+   "best_clean_odds": null,
+   "best_clean_net_ev": null,
+   "n_quotes_latest": 19,
+   "n_clean_quotes_latest": 0,
+   "price_observed_at": "2026-10-16T15:16:31.647036+00:00",
+   "is_bet_recommendation": false,
+   "board_version": "stage-a-2",
+   "rank": 8
+  },
+  {
    "prediction_id": "7481138c0c8eae9b",
    "sport": "football",
    "competition": "Premier League",
@@ -396,7 +443,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 8
+   "rank": 9
   },
   {
    "prediction_id": "9cd378af49330a1a",
@@ -442,7 +489,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 9
+   "rank": 10
   },
   {
    "prediction_id": "557d379973c77904",
@@ -488,7 +535,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 10
+   "rank": 11
   },
   {
    "prediction_id": "715de0093ca66644",
@@ -534,7 +581,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 11
+   "rank": 12
   },
   {
    "prediction_id": "683027f5e819086a",
@@ -580,7 +627,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 12
+   "rank": 13
   },
   {
    "prediction_id": "cc5822ab78278f30",
@@ -626,7 +673,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 13
+   "rank": 14
   },
   {
    "prediction_id": "70f3e79b2b8fd07b",
@@ -672,7 +719,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 14
+   "rank": 15
   },
   {
    "prediction_id": "00fa0347c104eea0",
@@ -718,7 +765,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 15
+   "rank": 16
   },
   {
    "prediction_id": "c47533c24243a70b",
@@ -764,7 +811,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 16
+   "rank": 17
   },
   {
    "prediction_id": "d814b67f4bb4e031",
@@ -810,7 +857,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 17
+   "rank": 18
   },
   {
    "prediction_id": "8191d4166f57efa0",
@@ -856,7 +903,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 18
+   "rank": 19
   },
   {
    "prediction_id": "9ec0c99f28f79159",
@@ -902,7 +949,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 19
+   "rank": 20
   },
   {
    "prediction_id": "a3c5927b8561c0b7",
@@ -948,7 +995,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 20
+   "rank": 21
   },
   {
    "prediction_id": "8219845811987451",
@@ -994,7 +1041,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 21
+   "rank": 22
   },
   {
    "prediction_id": "6ef75dfa20573f9a",
@@ -1040,7 +1087,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 22
+   "rank": 23
   },
   {
    "prediction_id": "207e1063c86245e9",
@@ -1086,7 +1133,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 23
+   "rank": 24
   },
   {
    "prediction_id": "352f295d15717b10",
@@ -1132,7 +1179,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 24
+   "rank": 25
   },
   {
    "prediction_id": "922b22ac4074cd27",
@@ -1178,7 +1225,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 25
+   "rank": 26
   },
   {
    "prediction_id": "fd4e962b00c76701",
@@ -1224,7 +1271,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 26
+   "rank": 27
   },
   {
    "prediction_id": "486e1003df938af4",
@@ -1270,7 +1317,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 27
+   "rank": 28
   },
   {
    "prediction_id": "a1e819b2fcc83071",
@@ -1316,7 +1363,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 28
+   "rank": 29
   },
   {
    "prediction_id": "841ae42741cf59e6",
@@ -1362,7 +1409,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 29
+   "rank": 30
   },
   {
    "prediction_id": "c45ab71b68b55835",
@@ -1408,7 +1455,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 30
+   "rank": 31
   },
   {
    "prediction_id": "49e188fafe7bf519",
@@ -1454,7 +1501,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 31
+   "rank": 32
   },
   {
    "prediction_id": "e4abf34c0930526e",
@@ -1500,7 +1547,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 32
+   "rank": 33
   },
   {
    "prediction_id": "d71963cd6444c411",
@@ -1546,7 +1593,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 33
+   "rank": 34
   },
   {
    "prediction_id": "fcbafb45d41a9746",
@@ -1592,7 +1639,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 34
+   "rank": 35
   },
   {
    "prediction_id": "413563a9d6f67725",
@@ -1638,7 +1685,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 35
+   "rank": 36
   },
   {
    "prediction_id": "8ea24b82c0574c27",
@@ -1684,7 +1731,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 36
+   "rank": 37
   },
   {
    "prediction_id": "e3de87432ef05ca0",
@@ -1699,7 +1746,7 @@
    "selection": "Alexander Zverev",
    "probability": 0.759378,
    "probability_basis": "P_CURRENT_SCAN",
-   "probability_observed_at": "2026-10-16T11:47:16.592872+00:00",
+   "probability_observed_at": "2026-10-16T15:16:31.647036+00:00",
    "p_first_snapshot": 0.750933,
    "p_current_scan": 0.759378,
    "ledger_probability": 0.750933,
@@ -1718,19 +1765,19 @@
    "prediction_timestamp": "2026-10-15T15:16:34.447599+00:00",
    "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
    "strength": "STRONG_PREDICTION",
-   "price_status": "POOR_PAYOUT",
-   "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
+   "price_status": "PRICE_VALID",
+   "stage_a_label": "STRONG_PREDICTION_PRICE_VALID",
    "financially_assessable": true,
-   "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
-   "best_clean_source": "skybet",
-   "best_clean_odds": 1.3,
-   "best_clean_net_ev": -0.012809,
+   "price_status_reasons": "",
+   "best_clean_source": "boylesports",
+   "best_clean_odds": 1.33,
+   "best_clean_net_ev": 0.009973,
    "n_quotes_latest": 20,
    "n_clean_quotes_latest": 19,
-   "price_observed_at": "2026-10-16T11:47:16.592872+00:00",
+   "price_observed_at": "2026-10-16T15:16:31.647036+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 37
+   "rank": 38
   },
   {
    "prediction_id": "5a23098a204f1f6b",
@@ -1776,7 +1823,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 38
+   "rank": 39
   },
   {
    "prediction_id": "f61c694fc0952fee",
@@ -1822,7 +1869,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 39
+   "rank": 40
   },
   {
    "prediction_id": "b23ffe5b5f926761",
@@ -1868,7 +1915,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 40
+   "rank": 41
   },
   {
    "prediction_id": "cd0af880eea82421",
@@ -1914,7 +1961,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 41
+   "rank": 42
   },
   {
    "prediction_id": "7ff06f899f20fc24",
@@ -1960,7 +2007,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 42
+   "rank": 43
   },
   {
    "prediction_id": "afb601dd275e58f4",
@@ -2006,7 +2053,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 43
+   "rank": 44
   },
   {
    "prediction_id": "de76d6d2c5644d4c",
@@ -2052,7 +2099,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 44
+   "rank": 45
   },
   {
    "prediction_id": "7c49ca7b36e3b4d0",
@@ -2098,7 +2145,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 45
+   "rank": 46
   },
   {
    "prediction_id": "b8397c7b05f659ac",
@@ -2144,7 +2191,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 46
+   "rank": 47
   },
   {
    "prediction_id": "21f3606b4ceda942",
@@ -2190,7 +2237,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 47
+   "rank": 48
   },
   {
    "prediction_id": "81bd08be9aeb98a0",
@@ -2236,7 +2283,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 48
+   "rank": 49
   },
   {
    "prediction_id": "828b63ec3b68563b",
@@ -2282,7 +2329,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 49
+   "rank": 50
   },
   {
    "prediction_id": "d229cde70c8b5c11",
@@ -2328,7 +2375,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 50
+   "rank": 51
   },
   {
    "prediction_id": "923a9c85ff9ed596",
@@ -2374,7 +2421,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 51
+   "rank": 52
   },
   {
    "prediction_id": "7231518d7d8a3c05",
@@ -2420,7 +2467,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 52
+   "rank": 53
   },
   {
    "prediction_id": "5bf0ca5e4a42fb32",
@@ -2466,7 +2513,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 53
+   "rank": 54
   },
   {
    "prediction_id": "5f0b2a08a16ac291",
@@ -2512,7 +2559,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 54
+   "rank": 55
   },
   {
    "prediction_id": "03d09f3e315afd54",
@@ -2558,7 +2605,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 55
+   "rank": 56
   },
   {
    "prediction_id": "1786a0efe38fdd1c",
@@ -2604,7 +2651,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 56
+   "rank": 57
   },
   {
    "prediction_id": "05b066043cc4915c",
@@ -2650,7 +2697,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 57
+   "rank": 58
   },
   {
    "prediction_id": "7dd4e76e5786c497",
@@ -2696,7 +2743,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 58
+   "rank": 59
   },
   {
    "prediction_id": "ceedba3f9180f136",
@@ -2742,7 +2789,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 59
+   "rank": 60
   },
   {
    "prediction_id": "e8dc112f9516eba4",
@@ -2788,7 +2835,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 60
+   "rank": 61
   },
   {
    "prediction_id": "af26bf0483b73bc4",
@@ -2834,7 +2881,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 61
+   "rank": 62
   },
   {
    "prediction_id": "7ffd72f4c6fd0b37",
@@ -2880,7 +2927,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 62
+   "rank": 63
   },
   {
    "prediction_id": "4a87d53e412bbe2c",
@@ -2926,7 +2973,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 63
+   "rank": 64
   },
   {
    "prediction_id": "770d01b78e680db2",
@@ -2972,7 +3019,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 64
+   "rank": 65
   },
   {
    "prediction_id": "ea1c24c0e1a705e3",
@@ -3018,7 +3065,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 65
+   "rank": 66
   },
   {
    "prediction_id": "fe32dcf7287c0f61",
@@ -3064,7 +3111,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 66
+   "rank": 67
   },
   {
    "prediction_id": "18ab4bd4b53dbd4a",
@@ -3110,7 +3157,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 67
+   "rank": 68
   },
   {
    "prediction_id": "45a700281e398afc",
@@ -3156,7 +3203,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 68
+   "rank": 69
   },
   {
    "prediction_id": "ff57223d3638839c",
@@ -3202,7 +3249,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 69
+   "rank": 70
   },
   {
    "prediction_id": "042c77db703d13a1",
@@ -3248,7 +3295,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 70
+   "rank": 71
   },
   {
    "prediction_id": "81c39dd5e575ab82",
@@ -3294,7 +3341,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 71
+   "rank": 72
   },
   {
    "prediction_id": "31f4ea2070e3e743",
@@ -3340,7 +3387,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 72
+   "rank": 73
   },
   {
    "prediction_id": "5832c69c6f0ad99b",
@@ -3386,7 +3433,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 73
+   "rank": 74
   },
   {
    "prediction_id": "59b2db337e43ec52",
@@ -3432,7 +3479,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 74
+   "rank": 75
   },
   {
    "prediction_id": "27e01faff7492af9",
@@ -3478,7 +3525,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 75
+   "rank": 76
   },
   {
    "prediction_id": "25f92ea57080962a",
@@ -3524,7 +3571,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 76
+   "rank": 77
   },
   {
    "prediction_id": "c5b52f5347a59cd1",
@@ -3570,7 +3617,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 77
+   "rank": 78
   },
   {
    "prediction_id": "e1ac6399b726c613",
@@ -3616,7 +3663,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 78
+   "rank": 79
   },
   {
    "prediction_id": "9eccf74f748a3efa",
@@ -3662,7 +3709,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 79
+   "rank": 80
   },
   {
    "prediction_id": "0b4ee7f1f913a9e2",
@@ -3708,7 +3755,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 80
+   "rank": 81
   },
   {
    "prediction_id": "2080a63396447ac9",
@@ -3754,7 +3801,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 81
+   "rank": 82
   },
   {
    "prediction_id": "63845a741cbe054d",
@@ -3800,7 +3847,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 82
+   "rank": 83
   },
   {
    "prediction_id": "60c09785ab704427",
@@ -3846,7 +3893,7 @@
    "price_observed_at": "2026-10-16T11:47:18.925895+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 83
+   "rank": 84
   },
   {
    "prediction_id": "96b22642c8b554df",
@@ -3892,7 +3939,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 84
+   "rank": 85
   },
   {
    "prediction_id": "c8379b8eb2ee99f2",
@@ -3938,7 +3985,53 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 85
+   "rank": 86
+  },
+  {
+   "prediction_id": "43c59bc370afdf6e",
+   "sport": "tennis",
+   "competition": "ATP Shanghai Masters",
+   "event_key": "tennis|tennis_atp_shanghai_masters|ec7b2ed5ca42a47451864cedfd5b61d3",
+   "event_name": "Rafael Jodar v Daniil Medvedev",
+   "event_start": "2026-10-17T11:00:00+00:00",
+   "event_start_original": "2026-10-17T11:00:00+00:00",
+   "start_time_status": "UNCHANGED",
+   "market": "match_winner",
+   "selection": "Daniil Medvedev",
+   "probability": 0.637413,
+   "probability_basis": "P_CURRENT_SCAN",
+   "probability_observed_at": "2026-10-16T15:16:31.647036+00:00",
+   "p_first_snapshot": 0.637413,
+   "p_current_scan": 0.637413,
+   "ledger_probability": 0.637413,
+   "normalisation": "",
+   "minutes_to_event_at_prediction": "1183.5",
+   "sigma": 0.012116,
+   "sigma_method": "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)",
+   "sigma_calibration": 0.010918,
+   "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)",
+   "sigma_half_width": 0.005252,
+   "exchange_width": 0.010504,
+   "probability_band": "60-64.9%",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "prediction_timestamp": "2026-10-16T15:16:31.647036+00:00",
+   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
+   "strength": "BELOW_STRONG_THRESHOLD",
+   "price_status": "POOR_PAYOUT",
+   "stage_a_label": "POOR_PAYOUT",
+   "financially_assessable": true,
+   "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+   "best_clean_source": "betway",
+   "best_clean_odds": 1.55,
+   "best_clean_net_ev": -0.01201,
+   "n_quotes_latest": 21,
+   "n_clean_quotes_latest": 20,
+   "price_observed_at": "2026-10-16T15:16:31.647036+00:00",
+   "is_bet_recommendation": false,
+   "board_version": "stage-a-2",
+   "rank": 87
   },
   {
    "prediction_id": "c04fdef4b2bb75a6",
@@ -3984,7 +4077,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 86
+   "rank": 88
   },
   {
    "prediction_id": "f1818724f7f08c50",
@@ -4030,7 +4123,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 87
+   "rank": 89
   },
   {
    "prediction_id": "b2c61bd8927b3881",
@@ -4076,7 +4169,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 88
+   "rank": 90
   },
   {
    "prediction_id": "e85ee84c26505026",
@@ -4122,7 +4215,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 89
+   "rank": 91
   },
   {
    "prediction_id": "f796a2b01a294b65",
@@ -4168,7 +4261,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 90
+   "rank": 92
   },
   {
    "prediction_id": "06b6e2d67c734983",
@@ -4214,7 +4307,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 91
+   "rank": 93
   },
   {
    "prediction_id": "9243622f8c295686",
@@ -4260,7 +4353,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 92
+   "rank": 94
   },
   {
    "prediction_id": "311d0ec867ad1a80",
@@ -4306,7 +4399,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 93
+   "rank": 95
   },
   {
    "prediction_id": "ef566053f1d2bbdd",
@@ -4352,7 +4445,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 94
+   "rank": 96
   },
   {
    "prediction_id": "65e279dc2300b666",
@@ -4398,7 +4491,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 95
+   "rank": 97
   },
   {
    "prediction_id": "d4907ff09f51f60d",
@@ -4444,7 +4537,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 96
+   "rank": 98
   },
   {
    "prediction_id": "08d0d9690c0057cd",
@@ -4490,7 +4583,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 97
+   "rank": 99
   },
   {
    "prediction_id": "36565f68dc2b08ea",
@@ -4536,7 +4629,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 98
+   "rank": 100
   },
   {
    "prediction_id": "b60eb61afced3c25",
@@ -4582,7 +4675,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 99
+   "rank": 101
   },
   {
    "prediction_id": "19c37382dcea2d4f",
@@ -4628,7 +4721,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 100
+   "rank": 102
   },
   {
    "prediction_id": "e167f10773882153",
@@ -4674,7 +4767,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 101
+   "rank": 103
   },
   {
    "prediction_id": "3e0a06930bf6081f",
@@ -4720,7 +4813,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 102
+   "rank": 104
   },
   {
    "prediction_id": "b468421555223a6b",
@@ -4766,7 +4859,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 103
+   "rank": 105
   },
   {
    "prediction_id": "1bec8aed11439bc6",
@@ -4812,7 +4905,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 104
+   "rank": 106
   },
   {
    "prediction_id": "a7677a90d021b91c",
@@ -4858,7 +4951,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 105
+   "rank": 107
   },
   {
    "prediction_id": "ba96be05ada0d651",
@@ -4904,7 +4997,53 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 106
+   "rank": 108
+  },
+  {
+   "prediction_id": "31b4de177d2f2019",
+   "sport": "tennis",
+   "competition": "WTA Wuhan Open",
+   "event_key": "tennis|tennis_wta_wuhan_open|3dd021eb08a07ee593039b5f1c6c8be1",
+   "event_name": "Sonay Kartal v Jelena Ostapenko",
+   "event_start": "2026-10-17T09:00:00+00:00",
+   "event_start_original": "2026-10-17T09:00:00+00:00",
+   "start_time_status": "UNCHANGED",
+   "market": "match_winner",
+   "selection": "Sonay Kartal",
+   "probability": 0.565806,
+   "probability_basis": "P_CURRENT_SCAN",
+   "probability_observed_at": "2026-10-16T15:16:31.647036+00:00",
+   "p_first_snapshot": 0.553086,
+   "p_current_scan": 0.565806,
+   "ledger_probability": 0.553086,
+   "normalisation": "",
+   "minutes_to_event_at_prediction": "1272.7",
+   "sigma": 0.011555,
+   "sigma_method": "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)",
+   "sigma_calibration": 0.010918,
+   "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)",
+   "sigma_half_width": 0.003781,
+   "exchange_width": 0.007562,
+   "probability_band": "55-59.9%",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "prediction_timestamp": "2026-10-16T11:47:16.592872+00:00",
+   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
+   "strength": "BELOW_STRONG_THRESHOLD",
+   "price_status": "POOR_PAYOUT",
+   "stage_a_label": "POOR_PAYOUT",
+   "financially_assessable": true,
+   "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+   "best_clean_source": "williamhill",
+   "best_clean_odds": 1.73,
+   "best_clean_net_ev": -0.021156,
+   "n_quotes_latest": 18,
+   "n_clean_quotes_latest": 18,
+   "price_observed_at": "2026-10-16T15:16:31.647036+00:00",
+   "is_bet_recommendation": false,
+   "board_version": "stage-a-2",
+   "rank": 109
   },
   {
    "prediction_id": "bd742cfecce96299",
@@ -4950,7 +5089,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 107
+   "rank": 110
   },
   {
    "prediction_id": "f6579ca1ba6293d9",
@@ -4996,7 +5135,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 108
+   "rank": 111
   },
   {
    "prediction_id": "8ff4df04bf0eda15",
@@ -5042,7 +5181,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 109
+   "rank": 112
   },
   {
    "prediction_id": "20dd29aaa7b922e8",
@@ -5088,7 +5227,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 110
+   "rank": 113
   },
   {
    "prediction_id": "c14586dc4e5add77",
@@ -5134,7 +5273,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 111
+   "rank": 114
   },
   {
    "prediction_id": "ec4f8a57b43f8b50",
@@ -5180,53 +5319,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 112
-  },
-  {
-   "prediction_id": "31b4de177d2f2019",
-   "sport": "tennis",
-   "competition": "WTA Wuhan Open",
-   "event_key": "tennis|tennis_wta_wuhan_open|3dd021eb08a07ee593039b5f1c6c8be1",
-   "event_name": "Sonay Kartal v Jelena Ostapenko",
-   "event_start": "2026-10-17T09:00:00+00:00",
-   "event_start_original": "2026-10-17T09:00:00+00:00",
-   "start_time_status": "UNCHANGED",
-   "market": "match_winner",
-   "selection": "Sonay Kartal",
-   "probability": 0.553086,
-   "probability_basis": "P_CURRENT_SCAN",
-   "probability_observed_at": "2026-10-16T11:47:16.592872+00:00",
-   "p_first_snapshot": 0.553086,
-   "p_current_scan": 0.553086,
-   "ledger_probability": 0.553086,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "1272.7",
-   "sigma": 0.01352,
-   "sigma_method": "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)",
-   "sigma_calibration": 0.010918,
-   "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)",
-   "sigma_half_width": 0.007975,
-   "exchange_width": 0.015949,
-   "probability_band": "55-59.9%",
-   "engine_id": "wta_match_winner.betfair_market",
-   "engine_version": "1",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "prediction_timestamp": "2026-10-16T11:47:16.592872+00:00",
-   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "POOR_PAYOUT",
-   "stage_a_label": "POOR_PAYOUT",
-   "financially_assessable": true,
-   "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
-   "best_clean_source": "smarkets",
-   "best_clean_odds": 1.77,
-   "best_clean_net_ev": -0.029555,
-   "n_quotes_latest": 18,
-   "n_clean_quotes_latest": 18,
-   "price_observed_at": "2026-10-16T11:47:16.592872+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 113
+   "rank": 115
   },
   {
    "prediction_id": "8e876508b034e745",
@@ -5272,7 +5365,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 114
+   "rank": 116
   },
   {
    "prediction_id": "8e01ad5fa3174ad8",
@@ -5318,7 +5411,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 115
+   "rank": 117
   },
   {
    "prediction_id": "8d5d23e28a76fac4",
@@ -5364,7 +5457,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 116
+   "rank": 118
   },
   {
    "prediction_id": "bf6926a5d81306c7",
@@ -5410,7 +5503,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 117
+   "rank": 119
   },
   {
    "prediction_id": "3f31de3134713ef1",
@@ -5456,7 +5549,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 118
+   "rank": 120
   },
   {
    "prediction_id": "fd8809ae5d98d7c5",
@@ -5502,7 +5595,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 119
+   "rank": 121
   },
   {
    "prediction_id": "61472f287e67a217",
@@ -5548,7 +5641,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 120
+   "rank": 122
   },
   {
    "prediction_id": "6fd48623185fab87",
@@ -5594,7 +5687,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 121
+   "rank": 123
   },
   {
    "prediction_id": "e8aafcf3f8dbada6",
@@ -5640,7 +5733,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 122
+   "rank": 124
   },
   {
    "prediction_id": "6e7c8bddb0d50f02",
@@ -5686,7 +5779,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 123
+   "rank": 125
   },
   {
    "prediction_id": "369fc36af7984a8c",
@@ -5732,7 +5825,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 124
+   "rank": 126
   },
   {
    "prediction_id": "c57f1d8f219ca852",
@@ -5778,7 +5871,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 125
+   "rank": 127
   },
   {
    "prediction_id": "86ceacee28f54c59",
@@ -5824,7 +5917,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 126
+   "rank": 128
   },
   {
    "prediction_id": "6be967a5be5a61c5",
@@ -5870,7 +5963,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 127
+   "rank": 129
   },
   {
    "prediction_id": "b033376c1355fca6",
@@ -5916,7 +6009,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 128
+   "rank": 130
   },
   {
    "prediction_id": "a2bc34bdda5dda83",
@@ -5962,7 +6055,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 129
+   "rank": 131
   },
   {
    "prediction_id": "50294bf4acc3f14a",
@@ -6008,7 +6101,7 @@
    "price_observed_at": "2026-10-16T11:47:18.925895+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 130
+   "rank": 132
   },
   {
    "prediction_id": "aff0ba8bc208d127",
@@ -6054,7 +6147,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 131
+   "rank": 133
   },
   {
    "prediction_id": "51cc2a3417659d49",
@@ -6100,7 +6193,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 132
+   "rank": 134
   },
   {
    "prediction_id": "1a9c1b0e9c12281f",
@@ -6146,7 +6239,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 133
+   "rank": 135
   },
   {
    "prediction_id": "c4b9fab53dbaa642",
@@ -6192,7 +6285,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 134
+   "rank": 136
   },
   {
    "prediction_id": "861493dbdc5c31ae",
@@ -6238,7 +6331,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 135
+   "rank": 137
   },
   {
    "prediction_id": "71812e6d477db544",
@@ -6284,7 +6377,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 136
+   "rank": 138
   },
   {
    "prediction_id": "d318341096be0ae1",
@@ -6330,7 +6423,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 137
+   "rank": 139
   },
   {
    "prediction_id": "618ddfab7a956a58",
@@ -6376,7 +6469,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 138
+   "rank": 140
   },
   {
    "prediction_id": "f2651212afb19e43",
@@ -6422,7 +6515,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 139
+   "rank": 141
   },
   {
    "prediction_id": "a4c4f39cf21353d4",
@@ -6468,7 +6561,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 140
+   "rank": 142
   },
   {
    "prediction_id": "08c83aeb2306c40e",
@@ -6514,7 +6607,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 141
+   "rank": 143
   },
   {
    "prediction_id": "271c70b57a786264",
@@ -6560,7 +6653,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 142
+   "rank": 144
   },
   {
    "prediction_id": "d25d3f4fbf400afe",
@@ -6606,7 +6699,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 143
+   "rank": 145
   },
   {
    "prediction_id": "166dd4db0451e4ca",
@@ -6652,7 +6745,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 144
+   "rank": 146
   },
   {
    "prediction_id": "2892be79603fc4ad",
@@ -6698,7 +6791,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 145
+   "rank": 147
   },
   {
    "prediction_id": "38db0a6432950e0c",
@@ -6744,7 +6837,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 146
+   "rank": 148
   },
   {
    "prediction_id": "81dd52169b6dd78e",
@@ -6790,7 +6883,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 147
+   "rank": 149
   },
   {
    "prediction_id": "2ac4ed31a11a2044",
@@ -6836,7 +6929,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 148
+   "rank": 150
   },
   {
    "prediction_id": "a8be001f6a150575",
@@ -6882,7 +6975,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 149
+   "rank": 151
   },
   {
    "prediction_id": "1ad265088541f70f",
@@ -6928,7 +7021,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 150
+   "rank": 152
   },
   {
    "prediction_id": "8355605ac64599df",
@@ -6974,7 +7067,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 151
+   "rank": 153
   },
   {
    "prediction_id": "fee7e738935575f6",
@@ -7020,7 +7113,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 152
+   "rank": 154
   },
   {
    "prediction_id": "68dd69c35e63b8ef",
@@ -7066,7 +7159,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 153
+   "rank": 155
   },
   {
    "prediction_id": "cf1909e0bdcb558d",
@@ -7112,7 +7205,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 154
+   "rank": 156
   },
   {
    "prediction_id": "16373d920a493d68",
@@ -7158,7 +7251,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 155
+   "rank": 157
   },
   {
    "prediction_id": "e307b4741656b22c",
@@ -7204,7 +7297,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 156
+   "rank": 158
   },
   {
    "prediction_id": "23f27aacf370be5d",
@@ -7250,7 +7343,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 157
+   "rank": 159
   },
   {
    "prediction_id": "ba8d1b10ca8813cd",
@@ -7296,7 +7389,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 158
+   "rank": 160
   },
   {
    "prediction_id": "6746a1bbf79e8042",
@@ -7342,7 +7435,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 159
+   "rank": 161
   },
   {
    "prediction_id": "4cef9e50b6755a89",
@@ -7388,7 +7481,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 160
+   "rank": 162
   },
   {
    "prediction_id": "a11cc8ef5e61b786",
@@ -7434,7 +7527,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 161
+   "rank": 163
   },
   {
    "prediction_id": "e644afec0876a911",
@@ -7480,7 +7573,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 162
+   "rank": 164
   },
   {
    "prediction_id": "cd2ff560291d2131",
@@ -7526,7 +7619,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 163
+   "rank": 165
   },
   {
    "prediction_id": "3b809405da2fd0cc",
@@ -7572,7 +7665,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 164
+   "rank": 166
   },
   {
    "prediction_id": "9376cf35c9f40da5",
@@ -7618,7 +7711,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 165
+   "rank": 167
   },
   {
    "prediction_id": "5ebb88aeb9c7b1e4",
@@ -7664,7 +7757,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 166
+   "rank": 168
   },
   {
    "prediction_id": "438cbe35c5dddb80",
@@ -7710,7 +7803,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 167
+   "rank": 169
   },
   {
    "prediction_id": "0dce313ee1f7a101",
@@ -7756,7 +7849,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 168
+   "rank": 170
   },
   {
    "prediction_id": "df9e9035c9f075e2",
@@ -7802,7 +7895,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 169
+   "rank": 171
   },
   {
    "prediction_id": "c45af07cf8e335f9",
@@ -7848,7 +7941,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 170
+   "rank": 172
   },
   {
    "prediction_id": "d0287298d799bebe",
@@ -7894,7 +7987,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 171
+   "rank": 173
   },
   {
    "prediction_id": "5c3291f6a5770b3c",
@@ -7940,7 +8033,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 172
+   "rank": 174
   },
   {
    "prediction_id": "58f09d17e9cf6c30",
@@ -7986,7 +8079,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 173
+   "rank": 175
   },
   {
    "prediction_id": "231c48c22929a94c",
@@ -8032,7 +8125,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 174
+   "rank": 176
   },
   {
    "prediction_id": "4073546dec59f725",
@@ -8078,7 +8171,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 175
+   "rank": 177
   },
   {
    "prediction_id": "c29349d4cb6770a2",
@@ -8124,7 +8217,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 176
+   "rank": 178
   },
   {
    "prediction_id": "17957a5328dbab45",
@@ -8170,7 +8263,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 177
+   "rank": 179
   },
   {
    "prediction_id": "8f05a44ec1a23554",
@@ -8216,7 +8309,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 178
+   "rank": 180
   },
   {
    "prediction_id": "fa795063dd94e5e1",
@@ -8262,7 +8355,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 179
+   "rank": 181
   },
   {
    "prediction_id": "c9695d396f24c042",
@@ -8308,7 +8401,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 180
+   "rank": 182
   },
   {
    "prediction_id": "21ce9cb80a9c1e4b",
@@ -8354,7 +8447,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 181
+   "rank": 183
   },
   {
    "prediction_id": "c0839334f7fb7eb4",
@@ -8400,7 +8493,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 182
+   "rank": 184
   },
   {
    "prediction_id": "9f8f0b33b095f030",
@@ -8446,7 +8539,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 183
+   "rank": 185
   },
   {
    "prediction_id": "6b73a12e1b024ed8",
@@ -8492,7 +8585,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 184
+   "rank": 186
   },
   {
    "prediction_id": "51379cec366af315",
@@ -8538,7 +8631,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 185
+   "rank": 187
   },
   {
    "prediction_id": "8c51397f68fd3a8f",
@@ -8584,7 +8677,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 186
+   "rank": 188
   },
   {
    "prediction_id": "2c97aa66cc006026",
@@ -8630,7 +8723,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 187
+   "rank": 189
   },
   {
    "prediction_id": "4bf9b9210cf0ae87",
@@ -8676,7 +8769,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 188
+   "rank": 190
   },
   {
    "prediction_id": "f32ec1d5494abd0d",
@@ -8722,7 +8815,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 189
+   "rank": 191
   },
   {
    "prediction_id": "a7e6893f8b9cc2c4",
@@ -8768,7 +8861,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 190
+   "rank": 192
   },
   {
    "prediction_id": "ee762428466e57f6",
@@ -8814,7 +8907,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 191
+   "rank": 193
   },
   {
    "prediction_id": "35bac81ad44a94aa",
@@ -8860,7 +8953,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 192
+   "rank": 194
   },
   {
    "prediction_id": "c3058a07ef7370aa",
@@ -8906,7 +8999,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 193
+   "rank": 195
   },
   {
    "prediction_id": "3ba68ee1f25111a0",
@@ -8952,7 +9045,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 194
+   "rank": 196
   },
   {
    "prediction_id": "d47a135ecf44380c",
@@ -8998,7 +9091,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 195
+   "rank": 197
   },
   {
    "prediction_id": "472721493fd1663c",
@@ -9044,7 +9137,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 196
+   "rank": 198
   },
   {
    "prediction_id": "ac718b99d4b643d5",
@@ -9090,7 +9183,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 197
+   "rank": 199
   },
   {
    "prediction_id": "5dcc9fc1da3a7aff",
@@ -9136,7 +9229,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 198
+   "rank": 200
   },
   {
    "prediction_id": "1dc39a08b38b8192",
@@ -9182,7 +9275,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 199
+   "rank": 201
   },
   {
    "prediction_id": "93bb58f0fd797191",
@@ -9228,7 +9321,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 200
+   "rank": 202
   },
   {
    "prediction_id": "2bedd67a7e0a4adc",
@@ -9274,7 +9367,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 201
+   "rank": 203
   },
   {
    "prediction_id": "549824189a6e3c63",
@@ -9320,7 +9413,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 202
+   "rank": 204
   },
   {
    "prediction_id": "29a596af24ce0ad7",
@@ -9366,7 +9459,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 203
+   "rank": 205
   },
   {
    "prediction_id": "c084958784c9de79",
@@ -9412,7 +9505,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 204
+   "rank": 206
   },
   {
    "prediction_id": "e1b586a6f630bcb3",
@@ -9458,7 +9551,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 205
+   "rank": 207
   },
   {
    "prediction_id": "ef51b11b913088a3",
@@ -9504,7 +9597,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 206
+   "rank": 208
   },
   {
    "prediction_id": "b379b2687948e342",
@@ -9550,7 +9643,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 207
+   "rank": 209
   },
   {
    "prediction_id": "82cd930b6548ab9f",
@@ -9596,7 +9689,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 208
+   "rank": 210
   },
   {
    "prediction_id": "b428bcc2f0ba6990",
@@ -9642,7 +9735,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 209
+   "rank": 211
   },
   {
    "prediction_id": "752d1f2bd440c690",
@@ -9688,7 +9781,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 210
+   "rank": 212
   },
   {
    "prediction_id": "3ef65d64e9c9b186",
@@ -9734,7 +9827,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 211
+   "rank": 213
   },
   {
    "prediction_id": "2e02fc6f31579c58",
@@ -9780,7 +9873,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 212
+   "rank": 214
   },
   {
    "prediction_id": "810a1e01d7131e6b",
@@ -9826,7 +9919,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 213
+   "rank": 215
   },
   {
    "prediction_id": "54a143cbf6cd1e19",
@@ -9872,7 +9965,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 214
+   "rank": 216
   },
   {
    "prediction_id": "987f56b8d4b4137b",
@@ -9918,7 +10011,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 215
+   "rank": 217
   },
   {
    "prediction_id": "385143e81f562e81",
@@ -9964,7 +10057,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 216
+   "rank": 218
   },
   {
    "prediction_id": "69c6d09480cb007d",
@@ -10010,7 +10103,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 217
+   "rank": 219
   },
   {
    "prediction_id": "6c49353fbdd79463",
@@ -10056,7 +10149,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 218
+   "rank": 220
   },
   {
    "prediction_id": "c2f51df5dc88d35c",
@@ -10102,7 +10195,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 219
+   "rank": 221
   },
   {
    "prediction_id": "90428fef0360e350",
@@ -10148,7 +10241,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 220
+   "rank": 222
   },
   {
    "prediction_id": "2df074813d17a778",
@@ -10194,7 +10287,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 221
+   "rank": 223
   },
   {
    "prediction_id": "ef30e91508f638ee",
@@ -10240,7 +10333,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 222
+   "rank": 224
   },
   {
    "prediction_id": "dd136fc301be1264",
@@ -10286,7 +10379,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 223
+   "rank": 225
   },
   {
    "prediction_id": "8ad79559e7f3c2e0",
@@ -10332,7 +10425,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 224
+   "rank": 226
   },
   {
    "prediction_id": "df667bbdaaf4bd10",
@@ -10378,7 +10471,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 225
+   "rank": 227
   },
   {
    "prediction_id": "fe2bff18d3c2a85e",
@@ -10424,7 +10517,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 226
+   "rank": 228
   },
   {
    "prediction_id": "582a4e541f804a59",
@@ -10470,7 +10563,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 227
+   "rank": 229
   },
   {
    "prediction_id": "84e76f39253aa5e7",
@@ -10516,7 +10609,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 228
+   "rank": 230
   },
   {
    "prediction_id": "531c95f05c6b2d37",
@@ -10562,7 +10655,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 229
+   "rank": 231
   },
   {
    "prediction_id": "29e40accb078884b",
@@ -10608,7 +10701,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 230
+   "rank": 232
   },
   {
    "prediction_id": "416787e69af825bc",
@@ -10654,7 +10747,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 231
+   "rank": 233
   },
   {
    "prediction_id": "4dee97478f1540af",
@@ -10700,7 +10793,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 232
+   "rank": 234
   },
   {
    "prediction_id": "996dd0916c90a193",
@@ -10746,7 +10839,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 233
+   "rank": 235
   },
   {
    "prediction_id": "444d0359df4d7ad0",
@@ -10792,7 +10885,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 234
+   "rank": 236
   },
   {
    "prediction_id": "5c4a0cf2a76b87d8",
@@ -10838,7 +10931,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 235
+   "rank": 237
   },
   {
    "prediction_id": "ee5dc541619aac9b",
@@ -10884,7 +10977,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 236
+   "rank": 238
   },
   {
    "prediction_id": "dd4a3e9d22ed7458",
@@ -10930,7 +11023,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 237
+   "rank": 239
   },
   {
    "prediction_id": "f313803dc0a84482",
@@ -10976,7 +11069,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 238
+   "rank": 240
   },
   {
    "prediction_id": "470f5d7548ad4523",
@@ -11022,7 +11115,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 239
+   "rank": 241
   },
   {
    "prediction_id": "0e8982e8d45555a1",
@@ -11068,7 +11161,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 240
+   "rank": 242
   },
   {
    "prediction_id": "63d76e7b92e1ef64",
@@ -11114,7 +11207,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 241
+   "rank": 243
   },
   {
    "prediction_id": "c3d005298dde3c0f",
@@ -11160,7 +11253,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 242
+   "rank": 244
   },
   {
    "prediction_id": "fc24a78521727614",
@@ -11206,7 +11299,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 243
+   "rank": 245
   },
   {
    "prediction_id": "1c642a2e3f4cf7bc",
@@ -11252,7 +11345,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 244
+   "rank": 246
   },
   {
    "prediction_id": "5358c29e3eb96d32",
@@ -11298,7 +11391,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 245
+   "rank": 247
   },
   {
    "prediction_id": "282dd94880237cf2",
@@ -11344,7 +11437,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 246
+   "rank": 248
   },
   {
    "prediction_id": "e22e810aafc27108",
@@ -11390,7 +11483,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 247
+   "rank": 249
   },
   {
    "prediction_id": "cd201891f8d46e19",
@@ -11436,7 +11529,7 @@
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 248
+   "rank": 250
   }
  ]
 }
