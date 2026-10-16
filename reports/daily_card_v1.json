@@ -1,25 +1,25 @@
 {
  "card_version": "card-v1.2",
- "generated_at": "2026-10-16T06:16:44.480814+00:00",
- "stage_a_generated_at": "2026-10-16T06:16:43.346033+00:00",
+ "generated_at": "2026-10-16T11:47:20.685461+00:00",
+ "stage_a_generated_at": "2026-10-16T11:47:19.566517+00:00",
  "real_money_enabled": false,
  "mode": "PAPER \u2014 unattended prospective validation (real-money betting paused; nothing to place)",
  "summary": {
-  "predictions_in_window": 222,
+  "predictions_in_window": 248,
   "best_predictions_shown": 40,
   "bets": 0,
   "total_stake_gbp": 0.0,
   "exposure_pct_of_bankroll": 0.0,
-  "strong_price_too_low": 61,
+  "strong_price_too_low": 69,
   "research_predictions": 0
  },
  "rejection_reasons": {
-  "ENGINE_STATUS_INELIGIBLE": 219,
-  "NO_EXECUTABLE_PRICE": 99,
-  "P_BELOW_FLOOR": 98,
-  "NET_EV_NOT_POSITIVE": 84,
-  "COMMISSION_UNKNOWN": 19,
-  "PRICE_STALE": 4
+  "ENGINE_STATUS_INELIGIBLE": 244,
+  "PRICE_STALE": 133,
+  "NO_EXECUTABLE_PRICE": 111,
+  "P_BELOW_FLOOR": 110,
+  "NET_EV_NOT_POSITIVE": 95,
+  "COMMISSION_UNKNOWN": 21
  },
  "best_predictions": [
   {
@@ -48,7 +48,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -77,7 +77,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -106,7 +106,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -135,7 +135,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -164,7 +164,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "61842c525664e16b",
+   "sport": "football",
+   "competition": "Scottish Premiership",
+   "event_key": "football|Scottish Premiership|Dundee FC v Rangers|2026-10-17T19:00:00+00:00",
+   "event_name": "Dundee FC v Rangers",
+   "event_start": "2026-10-17T19:00:00+00:00",
+   "market": "double_chance",
+   "selection": "X2",
+   "probability": 0.870008,
+   "band": "80%+",
+   "sigma": 0.006363,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.15,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -193,7 +222,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -222,7 +251,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -251,7 +280,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -280,7 +309,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -309,7 +338,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -338,7 +367,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -367,7 +396,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -396,7 +425,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "00fa0347c104eea0",
+   "sport": "football",
+   "competition": "Scottish Premiership",
+   "event_key": "football|Scottish Premiership|Dundee FC v Rangers|2026-10-17T19:00:00+00:00",
+   "event_name": "Dundee FC v Rangers",
+   "event_start": "2026-10-17T19:00:00+00:00",
+   "market": "double_chance",
+   "selection": "12",
+   "probability": 0.809686,
+   "band": "80%+",
+   "sigma": 0.006363,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.24,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -425,7 +483,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -454,7 +512,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -483,7 +541,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "9ec0c99f28f79159",
+   "sport": "football",
+   "competition": "Eredivisie",
+   "event_key": "football|Eredivisie|Sparta Rotterdam v Willem II|2026-10-17T19:00:00+00:00",
+   "event_name": "Sparta Rotterdam v Willem II",
+   "event_start": "2026-10-17T19:00:00+00:00",
+   "market": "double_chance",
+   "selection": "1X",
+   "probability": 0.802581,
+   "band": "80%+",
+   "sigma": 0.006363,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.25,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -512,7 +599,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -541,7 +628,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -570,7 +657,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -599,7 +686,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -628,7 +715,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -657,7 +744,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "fd4e962b00c76701",
+   "sport": "football",
+   "competition": "Eredivisie",
+   "event_key": "football|Eredivisie|Sparta Rotterdam v Willem II|2026-10-17T19:00:00+00:00",
+   "event_name": "Sparta Rotterdam v Willem II",
+   "event_start": "2026-10-17T19:00:00+00:00",
+   "market": "double_chance",
+   "selection": "12",
+   "probability": 0.783204,
+   "band": "70%+",
+   "sigma": 0.003828,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.28,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -686,7 +802,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -704,18 +820,18 @@
    "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
    "engine_id": "football_1x2.market_consensus",
    "fair_odds": 1.29,
-   "price_status": "POOR_PAYOUT",
-   "best_odds": 1.25,
-   "best_source": "coral",
-   "best_net_ev": -0.034945,
+   "price_status": "PRICE_QUALITY_FAIL",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
    "decision_odds": "1.25",
    "decision_source": "coral",
    "decision_net_ev": "-0.03494514425030468",
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -744,7 +860,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -773,7 +889,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -791,18 +907,18 @@
    "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
    "engine_id": "football_1x2.market_consensus",
    "fair_odds": 1.31,
-   "price_status": "POOR_PAYOUT",
-   "best_odds": 1.25,
-   "best_source": "888sport",
-   "best_net_ev": -0.047256,
+   "price_status": "PRICE_QUALITY_FAIL",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
    "decision_odds": "1.25",
    "decision_source": "888sport",
    "decision_net_ev": "-0.047256097560975735",
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -831,7 +947,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -860,7 +976,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -889,7 +1005,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -918,7 +1034,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -947,7 +1063,94 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
+   "min_bookmaker_odds": 1.35
+  },
+  {
+   "prediction_id": "e3de87432ef05ca0",
+   "sport": "tennis",
+   "competition": "ATP Shanghai Masters",
+   "event_key": "tennis|tennis_atp_shanghai_masters|85243da216a4bb91389e3da1f356f52c",
+   "event_name": "Alexander Zverev v Alejandro Davidovich Fokina",
+   "event_start": "2026-10-17T08:30:00+00:00",
+   "market": "match_winner",
+   "selection": "Alexander Zverev",
+   "probability": 0.759378,
+   "band": "70%+",
+   "sigma": 0.011915,
+   "evidence": "VALIDATED",
+   "engine_id": "atp_match_winner.betfair_market",
+   "fair_odds": 1.32,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.3,
+   "best_source": "skybet",
+   "best_net_ev": -0.012809,
+   "decision": "REJECT",
+   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.3",
+   "decision_source": "betfair_sb_uk",
+   "decision_net_ev": "-0.012808599999999976",
+   "price_observed_at": "2026-10-16T11:47:16.592872+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
+   "min_bookmaker_odds": 1.35
+  },
+  {
+   "prediction_id": "5a23098a204f1f6b",
+   "sport": "football",
+   "competition": "Ligue 1",
+   "event_key": "football|Ligue 1|Lille v Brest|2026-10-17T18:45:00+00:00",
+   "event_name": "Lille v Brest",
+   "event_start": "2026-10-17T18:45:00+00:00",
+   "market": "double_chance",
+   "selection": "1X",
+   "probability": 0.759106,
+   "band": "70%+",
+   "sigma": 0.003828,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.32,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
+   "min_bookmaker_odds": 1.35
+  },
+  {
+   "prediction_id": "f61c694fc0952fee",
+   "sport": "football",
+   "competition": "Ligue 1",
+   "event_key": "football|Ligue 1|Troyes v RC Lens|2026-10-17T18:45:00+00:00",
+   "event_name": "Troyes v RC Lens",
+   "event_start": "2026-10-17T18:45:00+00:00",
+   "market": "double_chance",
+   "selection": "X2",
+   "probability": 0.758209,
+   "band": "70%+",
+   "sigma": 0.003828,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.32,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.35
   },
   {
@@ -976,211 +1179,8 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.35
-  },
-  {
-   "prediction_id": "cd0af880eea82421",
-   "sport": "football",
-   "competition": "Bundesliga",
-   "event_key": "football|Bundesliga|Hamburger SV v VfB Stuttgart|2026-10-17T13:30:00+00:00",
-   "event_name": "Hamburger SV v VfB Stuttgart",
-   "event_start": "2026-10-17T13:30:00+00:00",
-   "market": "double_chance",
-   "selection": "X2",
-   "probability": 0.75752,
-   "band": "70%+",
-   "sigma": 0.003828,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_double_chance.derived_1x2",
-   "fair_odds": 1.32,
-   "price_status": "PRICE_UNAVAILABLE",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "",
-   "decision_source": "",
-   "decision_net_ev": "",
-   "price_observed_at": "",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
-   "min_bookmaker_odds": 1.35
-  },
-  {
-   "prediction_id": "afb601dd275e58f4",
-   "sport": "football",
-   "competition": "Championship",
-   "event_key": "football|Championship|Millwall v Lincoln City|2026-10-17T11:30:00+00:00",
-   "event_name": "Millwall v Lincoln City",
-   "event_start": "2026-10-17T11:30:00+00:00",
-   "market": "double_chance",
-   "selection": "12",
-   "probability": 0.755758,
-   "band": "70%+",
-   "sigma": 0.003828,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_double_chance.derived_1x2",
-   "fair_odds": 1.32,
-   "price_status": "PRICE_UNAVAILABLE",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "",
-   "decision_source": "",
-   "decision_net_ev": "",
-   "price_observed_at": "",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
-   "min_bookmaker_odds": 1.35
-  },
-  {
-   "prediction_id": "de76d6d2c5644d4c",
-   "sport": "football",
-   "competition": "Championship",
-   "event_key": "football|Championship|Wrexham AFC v Preston North End|2026-10-17T14:00:00+00:00",
-   "event_name": "Wrexham AFC v Preston North End",
-   "event_start": "2026-10-17T14:00:00+00:00",
-   "market": "double_chance",
-   "selection": "12",
-   "probability": 0.753945,
-   "band": "70%+",
-   "sigma": 0.003828,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_double_chance.derived_1x2",
-   "fair_odds": 1.33,
-   "price_status": "PRICE_UNAVAILABLE",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "",
-   "decision_source": "",
-   "decision_net_ev": "",
-   "price_observed_at": "",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
-   "min_bookmaker_odds": 1.36
-  },
-  {
-   "prediction_id": "7c49ca7b36e3b4d0",
-   "sport": "football",
-   "competition": "Eredivisie",
-   "event_key": "football|Eredivisie|ADO Den Haag v PSV Eindhoven|2026-10-17T14:30:00+00:00",
-   "event_name": "ADO Den Haag v PSV Eindhoven",
-   "event_start": "2026-10-17T14:30:00+00:00",
-   "market": "1x2",
-   "selection": "away",
-   "probability": 0.753459,
-   "band": "70%+",
-   "sigma": 0.016716,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_1x2.market_consensus",
-   "fair_odds": 1.33,
-   "price_status": "POOR_PAYOUT",
-   "best_odds": 1.3,
-   "best_source": "betfair",
-   "best_net_ev": -0.032412,
-   "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "1.3",
-   "decision_source": "betfair",
-   "decision_net_ev": "-0.03241190053880402",
-   "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
-   "min_bookmaker_odds": 1.36
-  },
-  {
-   "prediction_id": "b8397c7b05f659ac",
-   "sport": "football",
-   "competition": "Championship",
-   "event_key": "football|Championship|Norwich City v Portsmouth|2026-10-17T14:00:00+00:00",
-   "event_name": "Norwich City v Portsmouth",
-   "event_start": "2026-10-17T14:00:00+00:00",
-   "market": "double_chance",
-   "selection": "12",
-   "probability": 0.752869,
-   "band": "70%+",
-   "sigma": 0.003828,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_double_chance.derived_1x2",
-   "fair_odds": 1.33,
-   "price_status": "PRICE_UNAVAILABLE",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "",
-   "decision_source": "",
-   "decision_net_ev": "",
-   "price_observed_at": "",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
-   "min_bookmaker_odds": 1.36
-  },
-  {
-   "prediction_id": "21f3606b4ceda942",
-   "sport": "football",
-   "competition": "Bundesliga",
-   "event_key": "football|Bundesliga|Elversberg v Augsburg|2026-10-17T13:30:00+00:00",
-   "event_name": "Elversberg v Augsburg",
-   "event_start": "2026-10-17T13:30:00+00:00",
-   "market": "double_chance",
-   "selection": "12",
-   "probability": 0.751427,
-   "band": "70%+",
-   "sigma": 0.003828,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_double_chance.derived_1x2",
-   "fair_odds": 1.33,
-   "price_status": "PRICE_UNAVAILABLE",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "",
-   "decision_source": "",
-   "decision_net_ev": "",
-   "price_observed_at": "",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
-   "min_bookmaker_odds": 1.36
-  },
-  {
-   "prediction_id": "e3de87432ef05ca0",
-   "sport": "tennis",
-   "competition": "ATP Shanghai Masters",
-   "event_key": "tennis|tennis_atp_shanghai_masters|85243da216a4bb91389e3da1f356f52c",
-   "event_name": "Alexander Zverev v Alejandro Davidovich Fokina",
-   "event_start": "2026-10-17T04:00:00+00:00",
-   "market": "match_winner",
-   "selection": "Alexander Zverev",
-   "probability": 0.750933,
-   "band": "70%+",
-   "sigma": 0.015833,
-   "evidence": "VALIDATED",
-   "engine_id": "atp_match_winner.betfair_market",
-   "fair_odds": 1.33,
-   "price_status": "PRICE_QUALITY_FAIL",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
-   "decision_odds": "1.32",
-   "decision_source": "betfair_ex_uk",
-   "decision_net_ev": "-0.020783368000000024",
-   "price_observed_at": "2026-10-15T15:16:34.447599+00:00",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
-   "min_bookmaker_odds": 1.36
   }
  ],
  "best_bets": [],
@@ -1212,7 +1212,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1241,7 +1241,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1270,7 +1270,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1299,7 +1299,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1328,7 +1328,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "61842c525664e16b",
+   "sport": "football",
+   "competition": "Scottish Premiership",
+   "event_key": "football|Scottish Premiership|Dundee FC v Rangers|2026-10-17T19:00:00+00:00",
+   "event_name": "Dundee FC v Rangers",
+   "event_start": "2026-10-17T19:00:00+00:00",
+   "market": "double_chance",
+   "selection": "X2",
+   "probability": 0.870008,
+   "band": "80%+",
+   "sigma": 0.006363,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.15,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1357,7 +1386,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1386,7 +1415,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1415,7 +1444,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1444,7 +1473,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1473,7 +1502,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1502,7 +1531,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1531,7 +1560,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1560,7 +1589,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "00fa0347c104eea0",
+   "sport": "football",
+   "competition": "Scottish Premiership",
+   "event_key": "football|Scottish Premiership|Dundee FC v Rangers|2026-10-17T19:00:00+00:00",
+   "event_name": "Dundee FC v Rangers",
+   "event_start": "2026-10-17T19:00:00+00:00",
+   "market": "double_chance",
+   "selection": "12",
+   "probability": 0.809686,
+   "band": "80%+",
+   "sigma": 0.006363,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.24,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1589,7 +1647,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1618,7 +1676,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1647,7 +1705,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "9ec0c99f28f79159",
+   "sport": "football",
+   "competition": "Eredivisie",
+   "event_key": "football|Eredivisie|Sparta Rotterdam v Willem II|2026-10-17T19:00:00+00:00",
+   "event_name": "Sparta Rotterdam v Willem II",
+   "event_start": "2026-10-17T19:00:00+00:00",
+   "market": "double_chance",
+   "selection": "1X",
+   "probability": 0.802581,
+   "band": "80%+",
+   "sigma": 0.006363,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.25,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1676,7 +1763,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1705,7 +1792,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1734,7 +1821,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1763,7 +1850,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1792,7 +1879,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1821,7 +1908,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "fd4e962b00c76701",
+   "sport": "football",
+   "competition": "Eredivisie",
+   "event_key": "football|Eredivisie|Sparta Rotterdam v Willem II|2026-10-17T19:00:00+00:00",
+   "event_name": "Sparta Rotterdam v Willem II",
+   "event_start": "2026-10-17T19:00:00+00:00",
+   "market": "double_chance",
+   "selection": "12",
+   "probability": 0.783204,
+   "band": "70%+",
+   "sigma": 0.003828,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.28,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1850,7 +1966,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1868,18 +1984,18 @@
    "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
    "engine_id": "football_1x2.market_consensus",
    "fair_odds": 1.29,
-   "price_status": "POOR_PAYOUT",
-   "best_odds": 1.25,
-   "best_source": "coral",
-   "best_net_ev": -0.034945,
+   "price_status": "PRICE_QUALITY_FAIL",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
    "decision_odds": "1.25",
    "decision_source": "coral",
    "decision_net_ev": "-0.03494514425030468",
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1908,7 +2024,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1937,7 +2053,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1955,18 +2071,18 @@
    "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
    "engine_id": "football_1x2.market_consensus",
    "fair_odds": 1.31,
-   "price_status": "POOR_PAYOUT",
-   "best_odds": 1.25,
-   "best_source": "888sport",
-   "best_net_ev": -0.047256,
+   "price_status": "PRICE_QUALITY_FAIL",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
    "decision_odds": "1.25",
    "decision_source": "888sport",
    "decision_net_ev": "-0.047256097560975735",
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -1995,7 +2111,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -2024,7 +2140,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -2053,7 +2169,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -2082,7 +2198,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -2111,7 +2227,94 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
+   "min_bookmaker_odds": 1.35
+  },
+  {
+   "prediction_id": "e3de87432ef05ca0",
+   "sport": "tennis",
+   "competition": "ATP Shanghai Masters",
+   "event_key": "tennis|tennis_atp_shanghai_masters|85243da216a4bb91389e3da1f356f52c",
+   "event_name": "Alexander Zverev v Alejandro Davidovich Fokina",
+   "event_start": "2026-10-17T08:30:00+00:00",
+   "market": "match_winner",
+   "selection": "Alexander Zverev",
+   "probability": 0.759378,
+   "band": "70%+",
+   "sigma": 0.011915,
+   "evidence": "VALIDATED",
+   "engine_id": "atp_match_winner.betfair_market",
+   "fair_odds": 1.32,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.3,
+   "best_source": "skybet",
+   "best_net_ev": -0.012809,
+   "decision": "REJECT",
+   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.3",
+   "decision_source": "betfair_sb_uk",
+   "decision_net_ev": "-0.012808599999999976",
+   "price_observed_at": "2026-10-16T11:47:16.592872+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
+   "min_bookmaker_odds": 1.35
+  },
+  {
+   "prediction_id": "5a23098a204f1f6b",
+   "sport": "football",
+   "competition": "Ligue 1",
+   "event_key": "football|Ligue 1|Lille v Brest|2026-10-17T18:45:00+00:00",
+   "event_name": "Lille v Brest",
+   "event_start": "2026-10-17T18:45:00+00:00",
+   "market": "double_chance",
+   "selection": "1X",
+   "probability": 0.759106,
+   "band": "70%+",
+   "sigma": 0.003828,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.32,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
+   "min_bookmaker_odds": 1.35
+  },
+  {
+   "prediction_id": "f61c694fc0952fee",
+   "sport": "football",
+   "competition": "Ligue 1",
+   "event_key": "football|Ligue 1|Troyes v RC Lens|2026-10-17T18:45:00+00:00",
+   "event_name": "Troyes v RC Lens",
+   "event_start": "2026-10-17T18:45:00+00:00",
+   "market": "double_chance",
+   "selection": "X2",
+   "probability": 0.758209,
+   "band": "70%+",
+   "sigma": 0.003828,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.32,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.35
   },
   {
@@ -2140,7 +2343,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.35
   },
   {
@@ -2169,7 +2372,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
+   "min_bookmaker_odds": 1.35
+  },
+  {
+   "prediction_id": "7ff06f899f20fc24",
+   "sport": "football",
+   "competition": "Ligue 1",
+   "event_key": "football|Ligue 1|Troyes v RC Lens|2026-10-17T18:45:00+00:00",
+   "event_name": "Troyes v RC Lens",
+   "event_start": "2026-10-17T18:45:00+00:00",
+   "market": "double_chance",
+   "selection": "12",
+   "probability": 0.756757,
+   "band": "70%+",
+   "sigma": 0.003828,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.32,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.35
   },
   {
@@ -2198,7 +2430,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.35
   },
   {
@@ -2227,7 +2459,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.36
   },
   {
@@ -2245,18 +2477,18 @@
    "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
    "engine_id": "football_1x2.market_consensus",
    "fair_odds": 1.33,
-   "price_status": "POOR_PAYOUT",
-   "best_odds": 1.3,
-   "best_source": "betfair",
-   "best_net_ev": -0.032412,
+   "price_status": "PRICE_QUALITY_FAIL",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
    "decision_odds": "1.3",
    "decision_source": "betfair",
    "decision_net_ev": "-0.03241190053880402",
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.36
   },
   {
@@ -2285,7 +2517,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.36
   },
   {
@@ -2314,36 +2546,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.36
   },
   {
-   "prediction_id": "e3de87432ef05ca0",
-   "sport": "tennis",
-   "competition": "ATP Shanghai Masters",
-   "event_key": "tennis|tennis_atp_shanghai_masters|85243da216a4bb91389e3da1f356f52c",
-   "event_name": "Alexander Zverev v Alejandro Davidovich Fokina",
-   "event_start": "2026-10-17T04:00:00+00:00",
-   "market": "match_winner",
-   "selection": "Alexander Zverev",
-   "probability": 0.750933,
+   "prediction_id": "81bd08be9aeb98a0",
+   "sport": "football",
+   "competition": "Ligue 1",
+   "event_key": "football|Ligue 1|Lille v Brest|2026-10-17T18:45:00+00:00",
+   "event_name": "Lille v Brest",
+   "event_start": "2026-10-17T18:45:00+00:00",
+   "market": "double_chance",
+   "selection": "12",
+   "probability": 0.75127,
    "band": "70%+",
-   "sigma": 0.015833,
-   "evidence": "VALIDATED",
-   "engine_id": "atp_match_winner.betfair_market",
+   "sigma": 0.003828,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
    "fair_odds": 1.33,
-   "price_status": "PRICE_QUALITY_FAIL",
+   "price_status": "PRICE_UNAVAILABLE",
    "best_odds": null,
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
-   "decision_odds": "1.32",
-   "decision_source": "betfair_ex_uk",
-   "decision_net_ev": "-0.020783368000000024",
-   "price_observed_at": "2026-10-15T15:16:34.447599+00:00",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.36
   },
   {
@@ -2372,7 +2604,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.37
   },
   {
@@ -2401,7 +2633,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.38
   },
   {
@@ -2430,7 +2662,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.38
   },
   {
@@ -2459,7 +2691,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.38
   },
   {
@@ -2488,7 +2720,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.38
   },
   {
@@ -2517,7 +2749,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.39
   },
   {
@@ -2546,7 +2778,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.39
   },
   {
@@ -2575,7 +2807,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -2604,7 +2836,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -2633,7 +2865,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -2662,7 +2894,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -2691,7 +2923,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -2720,7 +2952,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -2749,7 +2981,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -2778,7 +3010,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.42
   },
   {
@@ -2807,7 +3039,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.42
   },
   {
@@ -2836,7 +3068,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.42
   },
   {
@@ -2865,7 +3097,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.43
   },
   {
@@ -2883,18 +3115,18 @@
    "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
    "engine_id": "football_1x2.market_consensus",
    "fair_odds": 1.4,
-   "price_status": "POOR_PAYOUT",
-   "best_odds": 1.36,
-   "best_source": "betfair",
-   "best_net_ev": -0.043747,
+   "price_status": "PRICE_QUALITY_FAIL",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
    "decision_odds": "1.36",
    "decision_source": "betfair",
    "decision_net_ev": "-0.04374676109863532",
    "price_observed_at": "2026-10-16T06:16:36.993252+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.43
   },
   {
@@ -2923,7 +3155,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.44
   },
   {
@@ -2952,7 +3184,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-16T06:16:44.010624+00:00",
+   "decision_evaluated_at": "2026-10-16T11:47:20.194609+00:00",
    "min_bookmaker_odds": 1.46
   }
  ],

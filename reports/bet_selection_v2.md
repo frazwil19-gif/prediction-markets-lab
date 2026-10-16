@@ -4,9 +4,9 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-16T06:16Z · events scanned 40 · valid predictions 247 · high-P (≥70%) 69 · priced 117 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 247 · new paper bets 0 · Money Card qualified 0
+Run 2026-10-16T11:47Z · events scanned 41 · valid predictions 248 · high-P (≥70%) 69 · priced 116 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 248 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 244 · NO_EXECUTABLE_PRICE 111 · P_BELOW_FLOOR 110 · NET_EV_NOT_POSITIVE 96 · COMMISSION_UNKNOWN 19 · PRICE_STALE 4
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 244 · PRICE_STALE 133 · NO_EXECUTABLE_PRICE 111 · P_BELOW_FLOOR 110 · NET_EV_NOT_POSITIVE 95 · COMMISSION_UNKNOWN 21
 
 ## Candidates (latest run, best price per prediction)
 
@@ -48,10 +48,10 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 244 · NO_EXECUTABLE_PRICE 1
 | Manchester City v Ipswich Town | 2026-10-17T14:00 | home | 76.2% | 1.31 | 1.25 (888sport) | 80.0% | -4.7% | REJECT |
 | West Bromwich Albion v Blackburn Rovers | 2026-10-17T14:00 | 1X | 76.2% | 1.31 | — | — | — | REJECT |
 | Hibernian v Falkirk F.C. | 2026-10-17T14:00 | 12 | 76.1% | 1.31 | — | — | — | REJECT |
+| Alexander Zverev v Alejandro Davidovich Fokina | 2026-10-17T08:30 | Alexander Zverev | 75.9% | 1.32 | 1.30 (betfair_sb_uk) | 76.9% | -1.3% | REJECT |
 | Lille v Brest | 2026-10-17T18:45 | 1X | 75.9% | 1.32 | — | — | — | REJECT |
 | Troyes v RC Lens | 2026-10-17T18:45 | X2 | 75.8% | 1.32 | — | — | — | REJECT |
 | Fulham v Hull City | 2026-10-17T14:00 | 12 | 75.8% | 1.32 | — | — | — | REJECT |
-| Hamburger SV v VfB Stuttgart | 2026-10-17T13:30 | X2 | 75.8% | 1.32 | — | — | — | REJECT |
 
 ## Paper results (all time)
 

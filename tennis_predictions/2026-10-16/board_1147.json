@@ -1,0 +1,91 @@
+{
+ "board_date": "2026-10-16",
+ "layer": "PREDICTION (paper) -- not a bet recommendation",
+ "coverage": {
+  "active_keys": [
+   "tennis_atp_shanghai_masters",
+   "tennis_wta_wuhan_open"
+  ],
+  "skipped_for_credit_guard": [],
+  "keys_over_cap": [],
+  "skipped_no_upcoming_event": [],
+  "events_returned": 4,
+  "scan_timestamp": "2026-10-16T11:47:16.592872+00:00",
+  "credits_remaining_after": 251,
+  "universe_note": "Odds-API-covered universe only (Slams, 1000s, 500s) -- not the full ATP/WTA calendar"
+ },
+ "counts": {
+  "events_scanned": 4,
+  "valid_predictions": 2,
+  "research_only_predictions": 0,
+  "ge_70": 1,
+  "ge_75": 1,
+  "ge_80": 0,
+  "ge_85": 0,
+  "ge_90": 0,
+  "ge_95": 0
+ },
+ "predictions": [
+  {
+   "prediction_id": "e3de87432ef05ca0",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "ATP",
+   "sport_key": "tennis_atp_shanghai_masters",
+   "tournament": "ATP Shanghai Masters",
+   "event_id": "85243da216a4bb91389e3da1f356f52c",
+   "player_a": "Alexander Zverev",
+   "player_b": "Alejandro Davidovich Fokina",
+   "commence_time": "2026-10-17T08:30:00+00:00",
+   "prediction_timestamp": "2026-10-16T11:47:16.592872+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=1.31/4.1;ex_lay=1.32/4.2",
+   "p_a": 0.759378,
+   "p_b": 0.240622,
+   "predicted_winner": "Alexander Zverev",
+   "predicted_probability": 0.759378,
+   "probability_band": "75-79.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 446,
+   "historical_band_actual_rate": 0.7691,
+   "historical_band_wilson95": [
+    0.7277,
+    0.8058
+   ],
+   "engine_holdout_n": 5066
+  },
+  {
+   "prediction_id": "31b4de177d2f2019",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "WTA",
+   "sport_key": "tennis_wta_wuhan_open",
+   "tournament": "WTA Wuhan Open",
+   "event_id": "3dd021eb08a07ee593039b5f1c6c8be1",
+   "player_a": "Sonay Kartal",
+   "player_b": "Jelena Ostapenko",
+   "commence_time": "2026-10-17T09:00:00+00:00",
+   "prediction_timestamp": "2026-10-16T11:47:16.592872+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=1.79/2.2;ex_lay=1.83/2.28",
+   "p_a": 0.553086,
+   "p_b": 0.446914,
+   "predicted_winner": "Sonay Kartal",
+   "predicted_probability": 0.553086,
+   "probability_band": "55-59.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 718,
+   "historical_band_actual_rate": 0.5585,
+   "historical_band_wilson95": [
+    0.522,
+    0.5944
+   ],
+   "engine_holdout_n": 4339
+  }
+ ],
+ "research_only": []
+}
