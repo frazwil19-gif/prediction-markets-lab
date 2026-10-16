@@ -1,6 +1,6 @@
-# CLV report (clv-1, 2026-10-16T09:32Z)
+# CLV report (clv-1, 2026-10-16T09:47Z)
 
-Credits 2026-10: 0 of 100 (0 paid calls). Missed captures logged: 13.
+Credits 2026-10: 0 of 100 (0 paid calls). Missed captures logged: 15.
 
 ## PAPER_BET (live-rule) CLV
 
