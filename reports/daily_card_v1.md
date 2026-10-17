@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-10-16T15:16Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-10-17T00:40Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 250 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 70 · research predictions: 284
+Predictions in the next window: 225 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 64 · research predictions: 260
 
 ## 1. Best predictions today
 
@@ -33,23 +33,23 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | 21 | football | Southampton v Bolton Wanderers | 2026-10-17T14:00 | double_chance | 12 | 80.0% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.25 | no price | no |
 | 22 | football | Middlesbrough v Cardiff City | 2026-10-17T11:30 | double_chance | 12 | 79.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.25 | no price | no |
 | 23 | football | Fulham v Hull City | 2026-10-17T14:00 | double_chance | 1X | 79.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.26 | no price | no |
-| 24 | football | Heerenveen v Excelsior | 2026-10-16T18:00 | double_chance | 1X | 78.9% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.27 | no price | no |
-| 25 | football | Norwich City v Portsmouth | 2026-10-17T14:00 | double_chance | 1X | 78.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.27 | no price | no |
-| 26 | football | Union Berlin v Borussia Dortmund | 2026-10-17T13:30 | double_chance | 12 | 78.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.28 | no price | no |
-| 27 | football | Sparta Rotterdam v Willem II | 2026-10-17T19:00 | double_chance | 12 | 78.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.28 | no price | no |
-| 28 | football | Heerenveen v Excelsior | 2026-10-16T18:00 | double_chance | 12 | 77.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | no price | no |
-| 29 | football | Bayern Munich v RB Leipzig | 2026-10-17T16:30 | 1x2 | home | 77.4% | 70%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | price not usable (stale/wide/unknown commission) | no |
-| 30 | football | Hamburger SV v VfB Stuttgart | 2026-10-17T13:30 | double_chance | 12 | 77.0% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.30 | no price | no |
-| 31 | football | Eintracht Frankfurt v 1. FC Köln | 2026-10-16T18:30 | double_chance | 12 | 76.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.30 | no price | no |
-| 32 | football | Manchester City v Ipswich Town | 2026-10-17T14:00 | 1x2 | home | 76.6% | 70%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | price not usable (stale/wide/unknown commission) | no |
-| 33 | football | Werder Bremen v SC Paderborn | 2026-10-17T13:30 | double_chance | 12 | 76.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
-| 34 | football | Aberdeen v St Mirren | 2026-10-17T14:00 | double_chance | 1X | 76.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
-| 35 | football | Werder Bremen v SC Paderborn | 2026-10-17T13:30 | double_chance | 1X | 76.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
-| 36 | football | West Bromwich Albion v Blackburn Rovers | 2026-10-17T14:00 | double_chance | 1X | 76.2% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
-| 37 | football | Hibernian v Falkirk F.C. | 2026-10-17T14:00 | double_chance | 12 | 76.1% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
-| 38 | tennis | Alexander Zverev v Alejandro Davidovich Fokina | 2026-10-17T08:30 | match_winner | Alexander Zverev | 75.9% | 70%+ | 1.2% | VALIDATED | 1.32 | 1.33 (boylesports) | no |
-| 39 | football | Lille v Brest | 2026-10-17T18:45 | double_chance | 1X | 75.9% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.32 | no price | no |
-| 40 | football | Troyes v RC Lens | 2026-10-17T18:45 | double_chance | X2 | 75.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.32 | no price | no |
+| 24 | football | Norwich City v Portsmouth | 2026-10-17T14:00 | double_chance | 1X | 78.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.27 | no price | no |
+| 25 | football | Union Berlin v Borussia Dortmund | 2026-10-17T13:30 | double_chance | 12 | 78.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.28 | no price | no |
+| 26 | football | Sparta Rotterdam v Willem II | 2026-10-17T19:00 | double_chance | 12 | 78.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.28 | no price | no |
+| 27 | football | Bayern Munich v RB Leipzig | 2026-10-17T16:30 | 1x2 | home | 77.4% | 70%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | price not usable (stale/wide/unknown commission) | no |
+| 28 | football | Hamburger SV v VfB Stuttgart | 2026-10-17T13:30 | double_chance | 12 | 77.0% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.30 | no price | no |
+| 29 | football | Manchester City v Ipswich Town | 2026-10-17T14:00 | 1x2 | home | 76.6% | 70%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | price not usable (stale/wide/unknown commission) | no |
+| 30 | football | Werder Bremen v SC Paderborn | 2026-10-17T13:30 | double_chance | 12 | 76.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
+| 31 | football | Aberdeen v St Mirren | 2026-10-17T14:00 | double_chance | 1X | 76.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
+| 32 | football | Werder Bremen v SC Paderborn | 2026-10-17T13:30 | double_chance | 1X | 76.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
+| 33 | football | West Bromwich Albion v Blackburn Rovers | 2026-10-17T14:00 | double_chance | 1X | 76.2% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
+| 34 | football | Hibernian v Falkirk F.C. | 2026-10-17T14:00 | double_chance | 12 | 76.1% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
+| 35 | tennis | Alexander Zverev v Alejandro Davidovich Fokina | 2026-10-17T08:30 | match_winner | Alexander Zverev | 75.9% | 70%+ | 1.2% | VALIDATED | 1.32 | price not usable (stale/wide/unknown commission) | no |
+| 36 | football | Lille v Brest | 2026-10-17T18:45 | double_chance | 1X | 75.9% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.32 | no price | no |
+| 37 | football | Troyes v RC Lens | 2026-10-17T18:45 | double_chance | X2 | 75.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.32 | no price | no |
+| 38 | football | Fulham v Hull City | 2026-10-17T14:00 | double_chance | 12 | 75.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.32 | no price | no |
+| 39 | football | Hamburger SV v VfB Stuttgart | 2026-10-17T13:30 | double_chance | X2 | 75.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.32 | no price | no |
+| 40 | football | Troyes v RC Lens | 2026-10-17T18:45 | double_chance | 12 | 75.7% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.32 | no price | no |
 
 ## 2. Qualified paper bets (simulated stakes, recorded automatically)
 
@@ -88,21 +88,18 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 | Southampton v Bolton Wanderers (2026-10-17T14:00) | double_chance: 12 | 80.0% | 1.25 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Middlesbrough v Cardiff City (2026-10-17T11:30) | double_chance: 12 | 79.8% | 1.25 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Fulham v Hull City (2026-10-17T14:00) | double_chance: 1X | 79.4% | 1.26 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Heerenveen v Excelsior (2026-10-16T18:00) | double_chance: 1X | 78.9% | 1.27 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Norwich City v Portsmouth (2026-10-17T14:00) | double_chance: 1X | 78.5% | 1.27 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Union Berlin v Borussia Dortmund (2026-10-17T13:30) | double_chance: 12 | 78.4% | 1.28 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Sparta Rotterdam v Willem II (2026-10-17T19:00) | double_chance: 12 | 78.3% | 1.28 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Heerenveen v Excelsior (2026-10-16T18:00) | double_chance: 12 | 77.8% | 1.29 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Bayern Munich v RB Leipzig (2026-10-17T16:30) | 1x2: home | 77.4% | 1.29 | — | PRICE_STALE, NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
 | Hamburger SV v VfB Stuttgart (2026-10-17T13:30) | double_chance: 12 | 77.0% | 1.30 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Eintracht Frankfurt v 1. FC Köln (2026-10-16T18:30) | double_chance: 12 | 76.8% | 1.30 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Manchester City v Ipswich Town (2026-10-17T14:00) | 1x2: home | 76.6% | 1.31 | — | PRICE_STALE, NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
 | Werder Bremen v SC Paderborn (2026-10-17T13:30) | double_chance: 12 | 76.5% | 1.31 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Aberdeen v St Mirren (2026-10-17T14:00) | double_chance: 1X | 76.5% | 1.31 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Werder Bremen v SC Paderborn (2026-10-17T13:30) | double_chance: 1X | 76.4% | 1.31 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | West Bromwich Albion v Blackburn Rovers (2026-10-17T14:00) | double_chance: 1X | 76.2% | 1.31 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Hibernian v Falkirk F.C. (2026-10-17T14:00) | double_chance: 12 | 76.1% | 1.31 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Alexander Zverev v Alejandro Davidovich Fokina (2026-10-17T08:30) | match_winner: Alexander Zverev | 75.9% | 1.32 | 1.33 | NET_EV_BELOW_PAPER_GATE |
+| Alexander Zverev v Alejandro Davidovich Fokina (2026-10-17T08:30) | match_winner: Alexander Zverev | 75.9% | 1.32 | — | NET_EV_BELOW_PAPER_GATE |
 | Lille v Brest (2026-10-17T18:45) | double_chance: 1X | 75.9% | 1.32 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Troyes v RC Lens (2026-10-17T18:45) | double_chance: X2 | 75.8% | 1.32 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Fulham v Hull City (2026-10-17T14:00) | double_chance: 12 | 75.8% | 1.32 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
@@ -123,13 +120,10 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 | Brentford v Liverpool (2026-10-17T14:00) | double_chance: 12 | 73.8% | 1.36 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Bristol City v Sheffield United (2026-10-17T14:00) | double_chance: 12 | 73.4% | 1.36 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Birmingham City v Queens Park Rangers (2026-10-17T14:00) | double_chance: 1X | 73.3% | 1.36 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Le Mans FC v Toulouse (2026-10-16T18:45) | double_chance: 12 | 73.3% | 1.37 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Burnley v Wolverhampton Wanderers (2026-10-16T19:00) | double_chance: 12 | 73.2% | 1.37 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | St Johnstone v Dundee United (2026-10-17T14:00) | double_chance: 12 | 73.1% | 1.37 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Birmingham City v Queens Park Rangers (2026-10-17T14:00) | double_chance: 12 | 73.1% | 1.37 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | West Bromwich Albion v Blackburn Rovers (2026-10-17T14:00) | double_chance: 12 | 73.0% | 1.37 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Derby County v Stoke City (2026-10-17T14:00) | double_chance: 12 | 72.1% | 1.39 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Eintracht Frankfurt v 1. FC Köln (2026-10-16T18:30) | double_chance: 1X | 72.0% | 1.39 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Bristol City v Sheffield United (2026-10-17T14:00) | double_chance: 1X | 71.8% | 1.39 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Watford v Charlton Athletic (2026-10-17T11:30) | double_chance: 12 | 71.6% | 1.40 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | SC Telstar v Feyenoord (2026-10-17T18:00) | 1x2: away | 71.4% | 1.40 | — | PRICE_STALE, NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
@@ -138,7 +132,7 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 244 · PRICE_STALE 133 · NO_EXECUTABLE_PRICE 111 · P_BELOW_FLOOR 110 · NET_EV_NOT_POSITIVE 96 · COMMISSION_UNKNOWN 21 · EXCHANGE_SPREAD_TOO_WIDE 1 · NET_EV_BELOW_PAPER_GATE 1
+ENGINE_STATUS_INELIGIBLE 219 · PRICE_STALE 120 · NO_EXECUTABLE_PRICE 99 · P_BELOW_FLOOR 99 · NET_EV_NOT_POSITIVE 85 · COMMISSION_UNKNOWN 20 · EXCHANGE_SPREAD_TOO_WIDE 1 · NET_EV_BELOW_PAPER_GATE 1
 
 ## 4. Research predictions — not money eligible
 
@@ -153,7 +147,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | Venezia v Napoli (I1) | 2026-10-17 | total_corners | under 11.5 | 79.0% | 1.27 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Roma v Genoa (I1) | 2026-10-17 | total_corners | under 11.5 | 78.5% | 1.27 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Milan v Atalanta (I1) | 2026-10-18 | total_corners | under 10.5 | 76.6% | 1.31 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Le Mans v Toulouse (F1) | 2026-10-16 | total_corners | under 11.5 | 76.5% | 1.31 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Udinese v Lecce (I1) | 2026-10-18 | total_corners | under 11.5 | 76.0% | 1.32 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Nott'm Forest v Arsenal (E0) | 2026-10-18 | total_corners | under 11.5 | 75.9% | 1.32 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Millwall v Lincoln (E1) | 2026-10-17 | total_corners | over 8.5 | 75.6% | 1.32 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -205,42 +198,32 @@ _Model probabilities from research engines. Shown for information and to build a
 | Leeds v Man United (E0) | 2026-10-18 | total_corners | under 11.5 | 69.1% | 1.45 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Swansea v West Ham (E1) | 2026-10-17 | total_corners | under 11.5 | 68.9% | 1.45 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Telstar v Feyenoord (N1) | 2026-10-17 | total_corners | over 8.5 | 68.9% | 1.45 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Frosinone v Sassuolo (I1) | 2026-10-16 | total_corners | over 8.5 | 68.6% | 1.46 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Burnley v Wolves (E1) | 2026-10-16 | total_corners | under 11.5 | 68.4% | 1.46 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Den Haag v PSV Eindhoven (N1) | 2026-10-17 | total_corners | over 8.5 | 68.2% | 1.47 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Norwich v Portsmouth (E1) | 2026-10-17 | total_corners | over 8.5 | 68.2% | 1.47 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Cambuur v AZ Alkmaar (N1) | 2026-10-18 | total_corners | over 8.5 | 68.2% | 1.47 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Birmingham v QPR (E1) | 2026-10-17 | total_corners | over 8.5 | 68.2% | 1.47 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| La Coruna v Levante (SP1) | 2026-10-16 | total_corners | under 11.5 | 68.0% | 1.47 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Paris FC v Rennes (F1) | 2026-10-18 | total_corners | under 11.5 | 68.0% | 1.47 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Lyon v Nice (F1) | 2026-10-18 | total_corners | over 8.5 | 68.0% | 1.47 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Man City v Ipswich (E0) | 2026-10-17 | total_corners | over 8.5 | 68.0% | 1.47 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Ein Frankfurt v FC Koln (D1) | 2026-10-16 | total_corners | under 11.5 | 67.9% | 1.47 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Derby v Stoke (E1) | 2026-10-17 | total_corners | over 8.5 | 67.8% | 1.47 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Bournemouth v Sunderland (E0) | 2026-10-18 | total_corners | under 11.5 | 67.7% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Dundee v Rangers (SC0) | 2026-10-17 | total_corners | over 8.5 | 67.7% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Wrexham v Preston (E1) | 2026-10-17 | total_corners | over 8.5 | 67.4% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Heerenveen v Excelsior (N1) | 2026-10-16 | total_corners | over 8.5 | 67.1% | 1.49 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Hamburg v Stuttgart (D1) | 2026-10-17 | total_corners | under 11.5 | 67.0% | 1.49 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Bayern Munich v RB Leipzig (D1) | 2026-10-17 | total_corners | under 11.5 | 66.9% | 1.49 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Hamburg v Stuttgart (D1) | 2026-10-17 | total_corners | over 8.5 | 66.9% | 1.49 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Heerenveen v Excelsior (N1) | 2026-10-16 | total_corners | under 11.5 | 66.9% | 1.49 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Le Mans v Toulouse (F1) | 2026-10-16 | total_corners | under 10.5 | 66.7% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Bayern Munich v RB Leipzig (D1) | 2026-10-17 | total_corners | over 8.5 | 66.6% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Wrexham v Preston (E1) | 2026-10-17 | total_corners | under 11.5 | 66.5% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Paris FC v Rennes (F1) | 2026-10-18 | total_corners | over 8.5 | 66.5% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Dundee v Rangers (SC0) | 2026-10-17 | total_corners | under 11.5 | 66.4% | 1.51 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Milan v Atalanta (I1) | 2026-10-18 | total_corners | under 9.5 | 66.3% | 1.51 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Bournemouth v Sunderland (E0) | 2026-10-18 | total_corners | over 8.5 | 66.3% | 1.51 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Ein Frankfurt v FC Koln (D1) | 2026-10-16 | total_corners | over 8.5 | 66.3% | 1.51 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Nott'm Forest v Arsenal (E0) | 2026-10-18 | total_corners | under 10.5 | 66.2% | 1.51 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Derby v Stoke (E1) | 2026-10-17 | total_corners | under 11.5 | 66.2% | 1.51 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Udinese v Lecce (I1) | 2026-10-18 | total_corners | under 10.5 | 66.1% | 1.51 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| La Coruna v Levante (SP1) | 2026-10-16 | total_corners | over 8.5 | 66.0% | 1.51 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Lyon v Nice (F1) | 2026-10-18 | total_corners | under 11.5 | 66.0% | 1.51 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Man City v Ipswich (E0) | 2026-10-17 | total_corners | under 11.5 | 65.9% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Birmingham v QPR (E1) | 2026-10-17 | total_corners | under 11.5 | 65.9% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Burnley v Wolves (E1) | 2026-10-16 | total_corners | over 8.5 | 65.8% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Norwich v Portsmouth (E1) | 2026-10-17 | total_corners | under 11.5 | 65.8% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Cambuur v AZ Alkmaar (N1) | 2026-10-18 | total_corners | under 11.5 | 65.7% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Troyes v Lens (F1) | 2026-10-17 | total_corners | under 10.5 | 65.6% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -252,7 +235,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | Leeds v Man United (E0) | 2026-10-18 | total_corners | over 8.5 | 65.1% | 1.54 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Malaga v Sociedad (SP1) | 2026-10-18 | total_corners | over 8.5 | 65.0% | 1.54 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Telstar v Feyenoord (N1) | 2026-10-17 | total_corners | under 11.5 | 64.9% | 1.54 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Frosinone v Sassuolo (I1) | 2026-10-16 | total_corners | under 11.5 | 64.8% | 1.54 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Brentford v Liverpool (E0) | 2026-10-17 | total_corners | over 8.5 | 64.5% | 1.55 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Everton v Chelsea (E0) | 2026-10-17 | total_corners | over 8.5 | 64.5% | 1.55 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Twente v Utrecht (N1) | 2026-10-18 | total_corners | under 11.5 | 64.4% | 1.55 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -335,16 +317,11 @@ _Model probabilities from research engines. Shown for information and to build a
 | Twente v Utrecht (N1) | 2026-10-18 | total_corners | over 9.5 | 58.2% | 1.72 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Nott'm Forest v Arsenal (E0) | 2026-10-18 | total_corners | over 8.5 | 57.9% | 1.73 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Roma v Genoa (I1) | 2026-10-17 | total_corners | under 9.5 | 57.9% | 1.73 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Burnley v Wolves (E1) | 2026-10-16 | total_corners | under 10.5 | 57.9% | 1.73 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Udinese v Lecce (I1) | 2026-10-18 | total_corners | over 8.5 | 57.8% | 1.73 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| La Coruna v Levante (SP1) | 2026-10-16 | total_corners | under 10.5 | 57.7% | 1.73 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Telstar v Feyenoord (N1) | 2026-10-17 | total_corners | over 9.5 | 57.6% | 1.74 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Frosinone v Sassuolo (I1) | 2026-10-16 | total_corners | over 9.5 | 57.6% | 1.74 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Paris FC v Rennes (F1) | 2026-10-18 | total_corners | under 10.5 | 57.4% | 1.74 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Groningen v Ajax (N1) | 2026-10-18 | total_corners | over 9.5 | 57.4% | 1.74 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Le Mans v Toulouse (F1) | 2026-10-16 | total_corners | over 8.5 | 57.4% | 1.74 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Bournemouth v Sunderland (E0) | 2026-10-18 | total_corners | under 10.5 | 57.3% | 1.75 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Ein Frankfurt v FC Koln (D1) | 2026-10-16 | total_corners | under 10.5 | 57.2% | 1.75 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Den Haag v PSV Eindhoven (N1) | 2026-10-17 | total_corners | over 9.5 | 56.9% | 1.76 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Norwich v Portsmouth (E1) | 2026-10-17 | total_corners | over 9.5 | 56.9% | 1.76 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Birmingham v QPR (E1) | 2026-10-17 | total_corners | over 9.5 | 56.8% | 1.76 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -353,7 +330,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | Cambuur v AZ Alkmaar (N1) | 2026-10-18 | total_corners | over 9.5 | 56.6% | 1.77 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Lyon v Nice (F1) | 2026-10-18 | total_corners | over 9.5 | 56.5% | 1.77 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Millwall v Lincoln (E1) | 2026-10-17 | total_corners | under 11.5 | 56.5% | 1.77 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Heerenveen v Excelsior (N1) | 2026-10-16 | total_corners | under 10.5 | 56.2% | 1.78 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Bayern Munich v RB Leipzig (D1) | 2026-10-17 | total_corners | under 10.5 | 56.1% | 1.78 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Derby v Stoke (E1) | 2026-10-17 | total_corners | over 9.5 | 56.1% | 1.78 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Nijmegen v For Sittard (N1) | 2026-10-18 | total_corners | under 11.5 | 56.0% | 1.79 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -362,8 +338,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | Dundee v Rangers (SC0) | 2026-10-17 | total_corners | over 9.5 | 55.9% | 1.79 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Derby v Stoke (E1) | 2026-10-17 | total_corners | under 10.5 | 55.9% | 1.79 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Dundee v Rangers (SC0) | 2026-10-17 | total_corners | under 10.5 | 55.9% | 1.79 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Heerenveen v Excelsior (N1) | 2026-10-16 | total_corners | over 9.5 | 55.5% | 1.80 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Le Mans v Toulouse (F1) | 2026-10-16 | total_corners | under 9.5 | 55.4% | 1.81 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Lyon v Nice (F1) | 2026-10-18 | total_corners | under 10.5 | 55.4% | 1.81 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Bayern Munich v RB Leipzig (D1) | 2026-10-17 | total_corners | over 9.5 | 55.3% | 1.81 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Hamburg v Stuttgart (D1) | 2026-10-17 | total_corners | over 9.5 | 55.1% | 1.81 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -376,18 +350,14 @@ _Model probabilities from research engines. Shown for information and to build a
 | Nott'm Forest v Arsenal (E0) | 2026-10-18 | total_corners | under 9.5 | 54.7% | 1.83 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Udinese v Lecce (I1) | 2026-10-18 | total_corners | under 9.5 | 54.7% | 1.83 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Nijmegen v For Sittard (N1) | 2026-10-18 | total_corners | over 10.5 | 54.6% | 1.83 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Ein Frankfurt v FC Koln (D1) | 2026-10-16 | total_corners | over 9.5 | 54.6% | 1.83 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Roma v Genoa (I1) | 2026-10-17 | total_corners | over 8.5 | 54.6% | 1.83 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Paris FC v Rennes (F1) | 2026-10-18 | total_corners | over 9.5 | 54.4% | 1.84 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Millwall v Lincoln (E1) | 2026-10-17 | total_corners | over 10.5 | 54.4% | 1.84 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| La Coruna v Levante (SP1) | 2026-10-16 | total_corners | over 9.5 | 54.3% | 1.84 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Groningen v Ajax (N1) | 2026-10-18 | total_corners | under 10.5 | 54.3% | 1.84 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Milan v Atalanta (I1) | 2026-10-18 | total_corners | under 8.5 | 54.2% | 1.84 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Troyes v Lens (F1) | 2026-10-17 | total_corners | under 9.5 | 54.2% | 1.84 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Venezia v Napoli (I1) | 2026-10-17 | total_corners | over 8.5 | 54.1% | 1.85 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Telstar v Feyenoord (N1) | 2026-10-17 | total_corners | under 10.5 | 54.1% | 1.85 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Frosinone v Sassuolo (I1) | 2026-10-16 | total_corners | under 10.5 | 53.9% | 1.85 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Burnley v Wolves (E1) | 2026-10-16 | total_corners | over 9.5 | 53.8% | 1.86 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Bologna v Inter (I1) | 2026-10-17 | total_corners | over 8.5 | 53.5% | 1.87 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Twente v Utrecht (N1) | 2026-10-18 | total_corners | under 10.5 | 53.5% | 1.87 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Swansea v West Ham (E1) | 2026-10-17 | total_corners | over 9.5 | 53.4% | 1.87 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |

@@ -1,8 +1,8 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-16T23:27:31.690775+00:00",
- "date": "2026-10-16",
+ "generated_at": "2026-10-17T00:40:15.260215+00:00",
+ "date": "2026-10-17",
  "summary": {
   "upcoming_events": 39,
   "valid_predictions": 225,
@@ -28,13 +28,13 @@
    ">=90": 2,
    ">=95": 0
   },
-  "settled_yesterday": 31,
+  "settled_yesterday": 10,
   "system": "HEALTHY",
   "api_credits_last_observed": 248
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-16T23:27:31.690775+00:00",
+  "generated_at": "2026-10-17T00:40:15.260215+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -42,22 +42,22 @@
     "last": "2026-10-16T06:16:42.611096+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 17.2
+    "age_hours": 18.4
    },
    "settlement": {
-    "last": "2026-10-15T23:39:41.941717+00:00",
+    "last": "2026-10-16T23:27:33.137190+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 23.8
+    "age_hours": 1.2
    },
    "tennis_board": {
     "last": "2026-10-16T15:16:31.647036+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 8.2
+    "age_hours": 9.4
    },
    "ci_tests": {
-    "last": "2026-10-16T23:27:14.273996+00:00",
+    "last": "2026-10-17T00:39:56.933222+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -114,7 +114,7 @@
    "prospective_status": "COLLECTING",
    "money_eligible": true,
    "predictions": 157,
-   "settled_rows": 141,
+   "settled_rows": 143,
    "maturity": "EARLY",
    "ge80_settled": 25,
    "ge80_mean_pred": 0.8766552,
@@ -126,7 +126,7 @@
    "prospective_status": "COLLECTING",
    "money_eligible": true,
    "predictions": 159,
-   "settled_rows": 137,
+   "settled_rows": 140,
    "maturity": "EARLY",
    "ge80_settled": 25,
    "ge80_mean_pred": 0.8938800400000001,
@@ -150,7 +150,7 @@
    "prospective_status": "COLLECTING",
    "money_eligible": false,
    "predictions": 65,
-   "settled_rows": 50,
+   "settled_rows": 63,
    "maturity": "EARLY",
    "ge80_settled": 0,
    "ge80_mean_pred": null,
@@ -162,7 +162,7 @@
    "prospective_status": "COLLECTING",
    "money_eligible": true,
    "predictions": 16,
-   "settled_rows": 14,
+   "settled_rows": 15,
    "maturity": "COLLECTING",
    "ge80_settled": 0,
    "ge80_mean_pred": null,
