@@ -4,9 +4,9 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-17T06:16Z · events scanned 54 · valid predictions 330 · high-P (≥70%) 95 · priced 167 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 330 · new paper bets 0 · Money Card qualified 2
+Run 2026-10-17T11:04Z · events scanned 77 · valid predictions 353 · high-P (≥70%) 99 · priced 169 · PAPER_BET 0 · MULTI-research 1 · WATCH 0 · REJECT 352 · new paper bets 0 · Money Card qualified 2
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 326 · P_BELOW_FLOOR 151 · NO_EXECUTABLE_PRICE 150 · NET_EV_NOT_POSITIVE 136 · COMMISSION_UNKNOWN 13 · PRICE_STALE 7 · EXCHANGE_SPREAD_TOO_WIDE 1
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 326 · PRICE_STALE 176 · P_BELOW_FLOOR 151 · NO_EXECUTABLE_PRICE 150 · NET_EV_NOT_POSITIVE 138 · COMMISSION_UNKNOWN 34
 
 ## Candidates (latest run, best price per prediction)
 
@@ -20,8 +20,8 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 326 · P_BELOW_FLOOR 151 · 
 | FC Twente Enschede v FC Utrecht | 2026-10-18T18:00 | 1X | 87.2% | 1.15 | — | — | — | REJECT |
 | Dundee FC v Rangers | 2026-10-17T19:00 | X2 | 87.0% | 1.15 | — | — | — | REJECT |
 | ADO Den Haag v PSV Eindhoven | 2026-10-17T14:30 | 12 | 85.7% | 1.17 | — | — | — | REJECT |
-| Iga Swiatek v Maja Chwalinska | 2026-10-17T10:30 | Iga Swiatek | 85.7% | 1.17 | 1.15 (betfair_ex_uk) | 87.5% | -2.1% | REJECT |
 | Manchester City v Ipswich Town | 2026-10-17T14:00 | 12 | 85.4% | 1.17 | — | — | — | REJECT |
+| Arizona Cardinals @ Los Angeles Rams | 2026-10-18T20:05 | Los Angeles Rams | 85.3% | 1.17 | 1.14 (matchbook) | — | — | REJECT |
 | Strasbourg v Paris Saint Germain | 2026-10-17T15:15 | X2 | 85.3% | 1.17 | — | — | — | REJECT |
 | SC Cambuur v AZ Alkmaar | 2026-10-18T12:30 | X2 | 84.2% | 1.19 | — | — | — | REJECT |
 | Southampton v Bolton Wanderers | 2026-10-17T14:00 | 1X | 83.8% | 1.19 | — | — | — | REJECT |
@@ -29,6 +29,7 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 326 · P_BELOW_FLOOR 151 · 
 | Brighton and Hove Albion v Crystal Palace | 2026-10-18T13:00 | 1X | 83.4% | 1.20 | — | — | — | REJECT |
 | Nottingham Forest v Arsenal | 2026-10-18T15:30 | X2 | 83.0% | 1.20 | — | — | — | REJECT |
 | FC Twente Enschede v FC Utrecht | 2026-10-18T18:00 | 12 | 82.7% | 1.21 | — | — | — | REJECT |
+| Iga Swiatek v Maja Chwalinska | 2026-10-17T11:20 | Iga Swiatek | 82.6% | 1.21 | 1.20 (sport888) | 83.3% | -0.9% | MULTI_RESEARCH_ELIGIBLE |
 | Strasbourg v Paris Saint Germain | 2026-10-17T15:15 | 12 | 82.2% | 1.22 | — | — | — | REJECT |
 | Middlesbrough v Cardiff City | 2026-10-17T11:30 | 1X | 82.1% | 1.22 | — | — | — | REJECT |
 | Union Berlin v Borussia Dortmund | 2026-10-17T13:30 | X2 | 81.2% | 1.23 | — | — | — | REJECT |
@@ -51,7 +52,6 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 326 · P_BELOW_FLOOR 151 · 
 | NEC Nijmegen v Fortuna Sittard | 2026-10-18T18:00 | 12 | 78.5% | 1.27 | — | — | — | REJECT |
 | Union Berlin v Borussia Dortmund | 2026-10-17T13:30 | 12 | 78.4% | 1.28 | — | — | — | REJECT |
 | Sparta Rotterdam v Willem II | 2026-10-17T19:00 | 12 | 78.3% | 1.28 | — | — | — | REJECT |
-| Bayer Leverkusen v SC Freiburg | 2026-10-18T13:30 | 1X | 78.0% | 1.28 | — | — | — | REJECT |
 
 ## Paper results (all time)
 

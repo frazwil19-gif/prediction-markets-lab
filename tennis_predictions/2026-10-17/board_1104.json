@@ -1,0 +1,91 @@
+{
+ "board_date": "2026-10-17",
+ "layer": "PREDICTION (paper) -- not a bet recommendation",
+ "coverage": {
+  "active_keys": [
+   "tennis_atp_shanghai_masters",
+   "tennis_wta_wuhan_open"
+  ],
+  "skipped_for_credit_guard": [],
+  "keys_over_cap": [],
+  "skipped_no_upcoming_event": [],
+  "events_returned": 3,
+  "scan_timestamp": "2026-10-17T11:04:12.235166+00:00",
+  "credits_remaining_after": 227,
+  "universe_note": "Odds-API-covered universe only (Slams, 1000s, 500s) -- not the full ATP/WTA calendar"
+ },
+ "counts": {
+  "events_scanned": 3,
+  "valid_predictions": 2,
+  "research_only_predictions": 0,
+  "ge_70": 1,
+  "ge_75": 1,
+  "ge_80": 1,
+  "ge_85": 0,
+  "ge_90": 0,
+  "ge_95": 0
+ },
+ "predictions": [
+  {
+   "prediction_id": "2e14cc75d6775f3b",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "WTA",
+   "sport_key": "tennis_wta_wuhan_open",
+   "tournament": "WTA Wuhan Open",
+   "event_id": "ab648a948516e13d5f2ca038684780ca",
+   "player_a": "Iga Swiatek",
+   "player_b": "Maja Chwalinska",
+   "commence_time": "2026-10-17T11:20:00+00:00",
+   "prediction_timestamp": "2026-10-17T11:04:12.235166+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=1.21/5.7;ex_lay=1.22/5.8",
+   "p_a": 0.825556,
+   "p_b": 0.174444,
+   "predicted_winner": "Iga Swiatek",
+   "predicted_probability": 0.825556,
+   "probability_band": "80-84.9%",
+   "multi_research_eligible": true,
+   "status": "PREDICTED",
+   "historical_band_n": 338,
+   "historical_band_actual_rate": 0.8136,
+   "historical_band_wilson95": [
+    0.7687,
+    0.8515
+   ],
+   "engine_holdout_n": 4339
+  },
+  {
+   "prediction_id": "43c59bc370afdf6e",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "ATP",
+   "sport_key": "tennis_atp_shanghai_masters",
+   "tournament": "ATP Shanghai Masters",
+   "event_id": "ec7b2ed5ca42a47451864cedfd5b61d3",
+   "player_a": "Rafael Jodar",
+   "player_b": "Daniil Medvedev",
+   "commence_time": "2026-10-17T11:10:00+00:00",
+   "prediction_timestamp": "2026-10-17T11:04:12.235166+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=2.68/1.58;ex_lay=2.74/1.6",
+   "p_a": 0.369767,
+   "p_b": 0.630233,
+   "predicted_winner": "Daniil Medvedev",
+   "predicted_probability": 0.630233,
+   "probability_band": "60-64.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 829,
+   "historical_band_actual_rate": 0.6019,
+   "historical_band_wilson95": [
+    0.5682,
+    0.6347
+   ],
+   "engine_holdout_n": 5066
+  }
+ ],
+ "research_only": []
+}
