@@ -1,6 +1,6 @@
 {
  "version": "clv-1",
- "generated_at": "2026-10-17T00:34:09.917869+00:00",
+ "generated_at": "2026-10-17T00:49:19.490760+00:00",
  "credits": {
   "month": "2026-10",
   "spent_this_month": 0,
@@ -144,14 +144,14 @@
      ]
     },
     "outcomes": {
-     "settled": 80,
-     "wins": 51,
-     "expected_wins": 54.09,
-     "pnl_gbp_at_1": -5.88,
-     "roi": -0.0735,
-     "expected_profit_gbp_at_1": -1.35,
-     "brier": 0.2207,
-     "log_loss": 0.6328
+     "settled": 84,
+     "wins": 52,
+     "expected_wins": 56.54,
+     "pnl_gbp_at_1": -8.15,
+     "roi": -0.097,
+     "expected_profit_gbp_at_1": -1.42,
+     "brier": 0.2265,
+     "log_loss": 0.6448
     }
    },
    "0-1": {
@@ -210,14 +210,14 @@
      "positive_rate": 1.0
     },
     "outcomes": {
-     "settled": 1,
-     "wins": 0,
-     "expected_wins": 0.67,
-     "pnl_gbp_at_1": -1.0,
-     "roi": -1.0,
-     "expected_profit_gbp_at_1": 0.03,
-     "brier": 0.4547,
-     "log_loss": 1.1219
+     "settled": 2,
+     "wins": 1,
+     "expected_wins": 1.34,
+     "pnl_gbp_at_1": -0.47,
+     "roi": -0.235,
+     "expected_profit_gbp_at_1": 0.06,
+     "brier": 0.2821,
+     "log_loss": 0.7618
     }
    },
    "4+": {

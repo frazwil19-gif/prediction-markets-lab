@@ -1,4 +1,4 @@
-# CLV report (clv-1, 2026-10-17T00:34Z)
+# CLV report (clv-1, 2026-10-17T00:49Z)
 
 Credits 2026-10: 0 of 100 (0 paid calls). Missed captures logged: 17.
 
@@ -26,10 +26,10 @@ Study start 2026-10-08T17:53Z. Combined 0–2% Tier-A captures: **0** (looks at 
 
 | Band | N | est. EV mean | Tier A captured/eligible | top-book share | fair-CLV | Tier-B proxy | settled / ROI |
 |---|---|---|---|---|---|---|---|
-| <0 | 97 | -1.70% | 0/0 | 0.381 | n 0 | n 51 · mean -1.61% · median -1.33% · positive 8% CI [-2.04%, -1.24%] | 80 / -0.0735 |
+| <0 | 97 | -1.70% | 0/0 | 0.381 | n 0 | n 51 · mean -1.61% · median -1.33% · positive 8% CI [-2.04%, -1.24%] | 84 / -0.097 |
 | 0-1 | 2 | +0.52% | 0/2 | 0.5 | sealed | sealed | sealed |
 | 1-2 | 2 | +1.44% | 0/2 | 0.5 | sealed | sealed | sealed |
-| 2-4 | 2 | +2.79% | 0/2 | 0.5 | n 0 | n 2 · mean +2.25% · median +2.25% · positive 100% | 1 / -1.0 |
+| 2-4 | 2 | +2.79% | 0/2 | 0.5 | n 0 | n 2 · mean +2.25% · median +2.25% · positive 100% | 2 / -0.235 |
 | 4+ | 0 |  | 0/0 | None | n 0 | n 0 | 0 / None |
 
 Definitions: fair_clv = (1+(odds-1)(1-commission)) x p_close - 1 (tennis p_close = Betfair back/lay mid; others UK median fair); price_clv_same_book = entry odds / same book closing odds - 1; price_clv_best = entry odds / best UK closing odds - 1; p_move = p_close - p_entry
