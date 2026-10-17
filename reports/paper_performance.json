@@ -1,25 +1,25 @@
 {
- "generated_at": "2026-10-16T23:27:32.956319+00:00",
+ "generated_at": "2026-10-17T23:01:04.081310+00:00",
  "mode": "PAPER \u2014 unattended prospective validation; stakes SIMULATED",
  "windows": {
   "weekly": {
    "metrics": {
     "orders": 2,
-    "settled": 1,
-    "open": 1,
-    "expected_wins": 0.67,
-    "actual_wins": 0,
-    "expected_profit_gbp": 0.03,
-    "realised_paper_profit_gbp": -1.0,
-    "roi": -1.0,
+    "settled": 2,
+    "open": 0,
+    "expected_wins": 1.34,
+    "actual_wins": 1,
+    "expected_profit_gbp": 0.06,
+    "realised_paper_profit_gbp": -0.47,
+    "roi": -0.235,
     "max_drawdown_gbp": 1.0,
-    "brier": 0.4547,
-    "log_loss": 1.1219,
+    "brier": 0.2821,
+    "log_loss": 0.7618,
     "calibration": {
      "60-69%": {
-      "n": 1,
-      "mean_p": 0.674,
-      "win_rate": 0.0
+      "n": 2,
+      "mean_p": 0.672,
+      "win_rate": 0.5
      }
     },
     "avg_odds": {
@@ -47,56 +47,56 @@
     "unique_events": 2,
     "hypothetical": {
      "\u00a31": {
-      "turnover": 1.0,
-      "expected_profit": 0.03,
-      "realised": -1.0
+      "turnover": 2.0,
+      "expected_profit": 0.06,
+      "realised": -0.47
      },
      "\u00a35": {
-      "turnover": 5.0,
-      "expected_profit": 0.16,
-      "realised": -5.0
+      "turnover": 10.0,
+      "expected_profit": 0.28,
+      "realised": -2.35
      },
      "\u00a310": {
-      "turnover": 10.0,
-      "expected_profit": 0.32,
-      "realised": -10.0
+      "turnover": 20.0,
+      "expected_profit": 0.56,
+      "realised": -4.7
      }
     }
    },
-   "candidates_evaluated": 898,
+   "candidates_evaluated": 725,
    "qualified_in_shadow": 2,
-   "qualification_rate": 0.0022,
+   "qualification_rate": 0.0028,
    "rejections": {
-    "ENGINE_STATUS_INELIGIBLE": 720,
-    "NET_EV_NOT_POSITIVE": 440,
-    "P_BELOW_FLOOR": 380,
-    "NO_EXECUTABLE_PRICE": 258,
-    "COMMISSION_UNKNOWN": 98,
-    "PREDICTION_NOT_VALID": 24,
-    "PRICE_STALE": 22,
-    "EXCHANGE_SPREAD_TOO_WIDE": 16,
-    "NET_EV_BELOW_PAPER_GATE": 4,
+    "ENGINE_STATUS_INELIGIBLE": 560,
+    "NET_EV_NOT_POSITIVE": 357,
+    "P_BELOW_FLOOR": 291,
+    "NO_EXECUTABLE_PRICE": 213,
+    "COMMISSION_UNKNOWN": 82,
+    "PREDICTION_NOT_VALID": 23,
+    "PRICE_STALE": 18,
+    "EXCHANGE_SPREAD_TOO_WIDE": 15,
+    "NET_EV_BELOW_PAPER_GATE": 3,
     "PROBABILITY_NOT_SAME_SNAPSHOT": 3
    },
    "by": {
     "sport": {
      "tennis": {
       "orders": 2,
-      "settled": 1,
-      "open": 1,
-      "expected_wins": 0.67,
-      "actual_wins": 0,
-      "expected_profit_gbp": 0.03,
-      "realised_paper_profit_gbp": -1.0,
-      "roi": -1.0,
+      "settled": 2,
+      "open": 0,
+      "expected_wins": 1.34,
+      "actual_wins": 1,
+      "expected_profit_gbp": 0.06,
+      "realised_paper_profit_gbp": -0.47,
+      "roi": -0.235,
       "max_drawdown_gbp": 1.0,
-      "brier": 0.4547,
-      "log_loss": 1.1219,
+      "brier": 0.2821,
+      "log_loss": 0.7618,
       "calibration": {
        "60-69%": {
-        "n": 1,
-        "mean_p": 0.674,
-        "win_rate": 0.0
+        "n": 2,
+        "mean_p": 0.672,
+        "win_rate": 0.5
        }
       },
       "avg_odds": {
@@ -124,9 +124,9 @@
       "unique_events": 2,
       "hypothetical": {
        "\u00a31": {
-        "turnover": 1.0,
-        "expected_profit": 0.03,
-        "realised": -1.0
+        "turnover": 2.0,
+        "expected_profit": 0.06,
+        "realised": -0.47
        }
       }
      }
@@ -134,21 +134,21 @@
     "market": {
      "match_winner": {
       "orders": 2,
-      "settled": 1,
-      "open": 1,
-      "expected_wins": 0.67,
-      "actual_wins": 0,
-      "expected_profit_gbp": 0.03,
-      "realised_paper_profit_gbp": -1.0,
-      "roi": -1.0,
+      "settled": 2,
+      "open": 0,
+      "expected_wins": 1.34,
+      "actual_wins": 1,
+      "expected_profit_gbp": 0.06,
+      "realised_paper_profit_gbp": -0.47,
+      "roi": -0.235,
       "max_drawdown_gbp": 1.0,
-      "brier": 0.4547,
-      "log_loss": 1.1219,
+      "brier": 0.2821,
+      "log_loss": 0.7618,
       "calibration": {
        "60-69%": {
-        "n": 1,
-        "mean_p": 0.674,
-        "win_rate": 0.0
+        "n": 2,
+        "mean_p": 0.672,
+        "win_rate": 0.5
        }
       },
       "avg_odds": {
@@ -176,9 +176,9 @@
       "unique_events": 2,
       "hypothetical": {
        "\u00a31": {
-        "turnover": 1.0,
-        "expected_profit": 0.03,
-        "realised": -1.0
+        "turnover": 2.0,
+        "expected_profit": 0.06,
+        "realised": -0.47
        }
       }
      }
@@ -186,17 +186,23 @@
     "engine_id": {
      "atp_match_winner.betfair_market": {
       "orders": 1,
-      "settled": 0,
-      "open": 1,
-      "expected_wins": 0,
-      "actual_wins": 0,
-      "expected_profit_gbp": 0,
-      "realised_paper_profit_gbp": 0,
-      "roi": null,
+      "settled": 1,
+      "open": 0,
+      "expected_wins": 0.67,
+      "actual_wins": 1,
+      "expected_profit_gbp": 0.02,
+      "realised_paper_profit_gbp": 0.53,
+      "roi": 0.53,
       "max_drawdown_gbp": 0.0,
-      "brier": null,
-      "log_loss": null,
-      "calibration": {},
+      "brier": 0.1094,
+      "log_loss": 0.4016,
+      "calibration": {
+       "60-69%": {
+        "n": 1,
+        "mean_p": 0.669,
+        "win_rate": 1.0
+       }
+      },
       "avg_odds": {
        "n": 1,
        "mean": 1.53,
@@ -219,9 +225,9 @@
       "unique_events": 1,
       "hypothetical": {
        "\u00a31": {
-        "turnover": 0,
-        "expected_profit": 0,
-        "realised": 0
+        "turnover": 1.0,
+        "expected_profit": 0.02,
+        "realised": 0.53
        }
       }
      },
@@ -279,21 +285,21 @@
     "execution_class": {
      "BOOKMAKER_ONLY": {
       "orders": 2,
-      "settled": 1,
-      "open": 1,
-      "expected_wins": 0.67,
-      "actual_wins": 0,
-      "expected_profit_gbp": 0.03,
-      "realised_paper_profit_gbp": -1.0,
-      "roi": -1.0,
+      "settled": 2,
+      "open": 0,
+      "expected_wins": 1.34,
+      "actual_wins": 1,
+      "expected_profit_gbp": 0.06,
+      "realised_paper_profit_gbp": -0.47,
+      "roi": -0.235,
       "max_drawdown_gbp": 1.0,
-      "brier": 0.4547,
-      "log_loss": 1.1219,
+      "brier": 0.2821,
+      "log_loss": 0.7618,
       "calibration": {
        "60-69%": {
-        "n": 1,
-        "mean_p": 0.674,
-        "win_rate": 0.0
+        "n": 2,
+        "mean_p": 0.672,
+        "win_rate": 0.5
        }
       },
       "avg_odds": {
@@ -321,9 +327,9 @@
       "unique_events": 2,
       "hypothetical": {
        "\u00a31": {
-        "turnover": 1.0,
-        "expected_profit": 0.03,
-        "realised": -1.0
+        "turnover": 2.0,
+        "expected_profit": 0.06,
+        "realised": -0.47
        }
       }
      }
@@ -390,16 +396,16 @@
   "monthly": {
    "metrics": {
     "orders": 12,
-    "settled": 10,
-    "open": 2,
-    "expected_wins": 6.95,
-    "actual_wins": 5,
-    "expected_profit_gbp": 0.51,
-    "realised_paper_profit_gbp": -2.72,
-    "roi": -0.272,
+    "settled": 11,
+    "open": 1,
+    "expected_wins": 7.62,
+    "actual_wins": 6,
+    "expected_profit_gbp": 0.54,
+    "realised_paper_profit_gbp": -2.19,
+    "roi": -0.1991,
     "max_drawdown_gbp": 2.72,
-    "brier": 0.2517,
-    "log_loss": 0.6956,
+    "brier": 0.2388,
+    "log_loss": 0.6689,
     "calibration": {
      "50-59%": {
       "n": 2,
@@ -407,9 +413,9 @@
       "win_rate": 0.0
      },
      "60-69%": {
-      "n": 1,
-      "mean_p": 0.674,
-      "win_rate": 0.0
+      "n": 2,
+      "mean_p": 0.672,
+      "win_rate": 0.5
      },
      "70-79%": {
       "n": 7,
@@ -442,35 +448,35 @@
     "unique_events": 12,
     "hypothetical": {
      "\u00a31": {
-      "turnover": 10.0,
-      "expected_profit": 0.51,
-      "realised": -2.72
+      "turnover": 11.0,
+      "expected_profit": 0.54,
+      "realised": -2.19
      },
      "\u00a35": {
-      "turnover": 50.0,
-      "expected_profit": 2.57,
-      "realised": -13.6
+      "turnover": 55.0,
+      "expected_profit": 2.69,
+      "realised": -10.95
      },
      "\u00a310": {
-      "turnover": 100.0,
-      "expected_profit": 5.15,
-      "realised": -27.2
+      "turnover": 110.0,
+      "expected_profit": 5.39,
+      "realised": -21.9
      }
     }
    },
-   "candidates_evaluated": 1540,
+   "candidates_evaluated": 1674,
    "qualified_in_shadow": 2,
-   "qualification_rate": 0.0013,
+   "qualification_rate": 0.0012,
    "rejections": {
-    "ENGINE_STATUS_INELIGIBLE": 1174,
-    "NET_EV_NOT_POSITIVE": 730,
-    "P_BELOW_FLOOR": 559,
-    "NO_EXECUTABLE_PRICE": 555,
-    "COMMISSION_UNKNOWN": 132,
+    "ENGINE_STATUS_INELIGIBLE": 1281,
+    "NET_EV_NOT_POSITIVE": 787,
+    "P_BELOW_FLOOR": 611,
+    "NO_EXECUTABLE_PRICE": 606,
+    "COMMISSION_UNKNOWN": 148,
     "PREDICTION_NOT_VALID": 45,
-    "PRICE_STALE": 30,
+    "PRICE_STALE": 32,
     "EXCHANGE_SPREAD_TOO_WIDE": 16,
-    "NET_EV_BELOW_PAPER_GATE": 7,
+    "NET_EV_BELOW_PAPER_GATE": 6,
     "PROBABILITY_NOT_SAME_SNAPSHOT": 4,
     "ODDS_BELOW_PAYOUT_FLOOR": 2
    },
@@ -478,16 +484,16 @@
     "sport": {
      "tennis": {
       "orders": 12,
-      "settled": 10,
-      "open": 2,
-      "expected_wins": 6.95,
-      "actual_wins": 5,
-      "expected_profit_gbp": 0.51,
-      "realised_paper_profit_gbp": -2.72,
-      "roi": -0.272,
+      "settled": 11,
+      "open": 1,
+      "expected_wins": 7.62,
+      "actual_wins": 6,
+      "expected_profit_gbp": 0.54,
+      "realised_paper_profit_gbp": -2.19,
+      "roi": -0.1991,
       "max_drawdown_gbp": 2.72,
-      "brier": 0.2517,
-      "log_loss": 0.6956,
+      "brier": 0.2388,
+      "log_loss": 0.6689,
       "calibration": {
        "50-59%": {
         "n": 2,
@@ -495,9 +501,9 @@
         "win_rate": 0.0
        },
        "60-69%": {
-        "n": 1,
-        "mean_p": 0.674,
-        "win_rate": 0.0
+        "n": 2,
+        "mean_p": 0.672,
+        "win_rate": 0.5
        },
        "70-79%": {
         "n": 7,
@@ -530,9 +536,9 @@
       "unique_events": 12,
       "hypothetical": {
        "\u00a31": {
-        "turnover": 10.0,
-        "expected_profit": 0.51,
-        "realised": -2.72
+        "turnover": 11.0,
+        "expected_profit": 0.54,
+        "realised": -2.19
        }
       }
      }
@@ -540,16 +546,16 @@
     "market": {
      "match_winner": {
       "orders": 12,
-      "settled": 10,
-      "open": 2,
-      "expected_wins": 6.95,
-      "actual_wins": 5,
-      "expected_profit_gbp": 0.51,
-      "realised_paper_profit_gbp": -2.72,
-      "roi": -0.272,
+      "settled": 11,
+      "open": 1,
+      "expected_wins": 7.62,
+      "actual_wins": 6,
+      "expected_profit_gbp": 0.54,
+      "realised_paper_profit_gbp": -2.19,
+      "roi": -0.1991,
       "max_drawdown_gbp": 2.72,
-      "brier": 0.2517,
-      "log_loss": 0.6956,
+      "brier": 0.2388,
+      "log_loss": 0.6689,
       "calibration": {
        "50-59%": {
         "n": 2,
@@ -557,9 +563,9 @@
         "win_rate": 0.0
        },
        "60-69%": {
-        "n": 1,
-        "mean_p": 0.674,
-        "win_rate": 0.0
+        "n": 2,
+        "mean_p": 0.672,
+        "win_rate": 0.5
        },
        "70-79%": {
         "n": 7,
@@ -592,9 +598,9 @@
       "unique_events": 12,
       "hypothetical": {
        "\u00a31": {
-        "turnover": 10.0,
-        "expected_profit": 0.51,
-        "realised": -2.72
+        "turnover": 11.0,
+        "expected_profit": 0.54,
+        "realised": -2.19
        }
       }
      }
@@ -602,17 +608,22 @@
     "engine_id": {
      "atp_match_winner.betfair_market": {
       "orders": 2,
-      "settled": 1,
-      "open": 1,
-      "expected_wins": 0.75,
-      "actual_wins": 0,
-      "expected_profit_gbp": 0.03,
-      "realised_paper_profit_gbp": -1.0,
-      "roi": -1.0,
+      "settled": 2,
+      "open": 0,
+      "expected_wins": 1.41,
+      "actual_wins": 1,
+      "expected_profit_gbp": 0.05,
+      "realised_paper_profit_gbp": -0.47,
+      "roi": -0.235,
       "max_drawdown_gbp": 1.0,
-      "brier": 0.5558,
-      "log_loss": 1.3684,
+      "brier": 0.3326,
+      "log_loss": 0.885,
       "calibration": {
+       "60-69%": {
+        "n": 1,
+        "mean_p": 0.669,
+        "win_rate": 1.0
+       },
        "70-79%": {
         "n": 1,
         "mean_p": 0.745,
@@ -641,9 +652,9 @@
       "unique_events": 2,
       "hypothetical": {
        "\u00a31": {
-        "turnover": 1.0,
-        "expected_profit": 0.03,
-        "realised": -1.0
+        "turnover": 2.0,
+        "expected_profit": 0.05,
+        "realised": -0.47
        }
       }
      },
@@ -763,16 +774,16 @@
      },
      "BOOKMAKER_ONLY": {
       "orders": 10,
-      "settled": 8,
-      "open": 2,
-      "expected_wins": 5.66,
-      "actual_wins": 5,
-      "expected_profit_gbp": 0.45,
-      "realised_paper_profit_gbp": -0.72,
-      "roi": -0.09,
+      "settled": 9,
+      "open": 1,
+      "expected_wins": 6.33,
+      "actual_wins": 6,
+      "expected_profit_gbp": 0.47,
+      "realised_paper_profit_gbp": -0.19,
+      "roi": -0.0211,
       "max_drawdown_gbp": 2.0,
-      "brier": 0.2084,
-      "log_loss": 0.6006,
+      "brier": 0.1974,
+      "log_loss": 0.5785,
       "calibration": {
        "50-59%": {
         "n": 1,
@@ -780,9 +791,9 @@
         "win_rate": 0.0
        },
        "60-69%": {
-        "n": 1,
-        "mean_p": 0.674,
-        "win_rate": 0.0
+        "n": 2,
+        "mean_p": 0.672,
+        "win_rate": 0.5
        },
        "70-79%": {
         "n": 6,
@@ -815,9 +826,9 @@
       "unique_events": 10,
       "hypothetical": {
        "\u00a31": {
-        "turnover": 8.0,
-        "expected_profit": 0.45,
-        "realised": -0.72
+        "turnover": 9.0,
+        "expected_profit": 0.47,
+        "realised": -0.19
        }
       }
      }
@@ -891,16 +902,16 @@
   "all": {
    "metrics": {
     "orders": 12,
-    "settled": 10,
-    "open": 2,
-    "expected_wins": 6.95,
-    "actual_wins": 5,
-    "expected_profit_gbp": 0.51,
-    "realised_paper_profit_gbp": -2.72,
-    "roi": -0.272,
+    "settled": 11,
+    "open": 1,
+    "expected_wins": 7.62,
+    "actual_wins": 6,
+    "expected_profit_gbp": 0.54,
+    "realised_paper_profit_gbp": -2.19,
+    "roi": -0.1991,
     "max_drawdown_gbp": 2.72,
-    "brier": 0.2517,
-    "log_loss": 0.6956,
+    "brier": 0.2388,
+    "log_loss": 0.6689,
     "calibration": {
      "50-59%": {
       "n": 2,
@@ -908,9 +919,9 @@
       "win_rate": 0.0
      },
      "60-69%": {
-      "n": 1,
-      "mean_p": 0.674,
-      "win_rate": 0.0
+      "n": 2,
+      "mean_p": 0.672,
+      "win_rate": 0.5
      },
      "70-79%": {
       "n": 7,
@@ -943,35 +954,35 @@
     "unique_events": 12,
     "hypothetical": {
      "\u00a31": {
-      "turnover": 10.0,
-      "expected_profit": 0.51,
-      "realised": -2.72
+      "turnover": 11.0,
+      "expected_profit": 0.54,
+      "realised": -2.19
      },
      "\u00a35": {
-      "turnover": 50.0,
-      "expected_profit": 2.57,
-      "realised": -13.6
+      "turnover": 55.0,
+      "expected_profit": 2.69,
+      "realised": -10.95
      },
      "\u00a310": {
-      "turnover": 100.0,
-      "expected_profit": 5.15,
-      "realised": -27.2
+      "turnover": 110.0,
+      "expected_profit": 5.39,
+      "realised": -21.9
      }
     }
    },
-   "candidates_evaluated": 1540,
+   "candidates_evaluated": 1674,
    "qualified_in_shadow": 2,
-   "qualification_rate": 0.0013,
+   "qualification_rate": 0.0012,
    "rejections": {
-    "ENGINE_STATUS_INELIGIBLE": 1174,
-    "NET_EV_NOT_POSITIVE": 730,
-    "P_BELOW_FLOOR": 559,
-    "NO_EXECUTABLE_PRICE": 555,
-    "COMMISSION_UNKNOWN": 132,
+    "ENGINE_STATUS_INELIGIBLE": 1281,
+    "NET_EV_NOT_POSITIVE": 787,
+    "P_BELOW_FLOOR": 611,
+    "NO_EXECUTABLE_PRICE": 606,
+    "COMMISSION_UNKNOWN": 148,
     "PREDICTION_NOT_VALID": 45,
-    "PRICE_STALE": 30,
+    "PRICE_STALE": 32,
     "EXCHANGE_SPREAD_TOO_WIDE": 16,
-    "NET_EV_BELOW_PAPER_GATE": 7,
+    "NET_EV_BELOW_PAPER_GATE": 6,
     "PROBABILITY_NOT_SAME_SNAPSHOT": 4,
     "ODDS_BELOW_PAYOUT_FLOOR": 2
    },
@@ -979,16 +990,16 @@
     "sport": {
      "tennis": {
       "orders": 12,
-      "settled": 10,
-      "open": 2,
-      "expected_wins": 6.95,
-      "actual_wins": 5,
-      "expected_profit_gbp": 0.51,
-      "realised_paper_profit_gbp": -2.72,
-      "roi": -0.272,
+      "settled": 11,
+      "open": 1,
+      "expected_wins": 7.62,
+      "actual_wins": 6,
+      "expected_profit_gbp": 0.54,
+      "realised_paper_profit_gbp": -2.19,
+      "roi": -0.1991,
       "max_drawdown_gbp": 2.72,
-      "brier": 0.2517,
-      "log_loss": 0.6956,
+      "brier": 0.2388,
+      "log_loss": 0.6689,
       "calibration": {
        "50-59%": {
         "n": 2,
@@ -996,9 +1007,9 @@
         "win_rate": 0.0
        },
        "60-69%": {
-        "n": 1,
-        "mean_p": 0.674,
-        "win_rate": 0.0
+        "n": 2,
+        "mean_p": 0.672,
+        "win_rate": 0.5
        },
        "70-79%": {
         "n": 7,
@@ -1031,9 +1042,9 @@
       "unique_events": 12,
       "hypothetical": {
        "\u00a31": {
-        "turnover": 10.0,
-        "expected_profit": 0.51,
-        "realised": -2.72
+        "turnover": 11.0,
+        "expected_profit": 0.54,
+        "realised": -2.19
        }
       }
      }
@@ -1041,16 +1052,16 @@
     "market": {
      "match_winner": {
       "orders": 12,
-      "settled": 10,
-      "open": 2,
-      "expected_wins": 6.95,
-      "actual_wins": 5,
-      "expected_profit_gbp": 0.51,
-      "realised_paper_profit_gbp": -2.72,
-      "roi": -0.272,
+      "settled": 11,
+      "open": 1,
+      "expected_wins": 7.62,
+      "actual_wins": 6,
+      "expected_profit_gbp": 0.54,
+      "realised_paper_profit_gbp": -2.19,
+      "roi": -0.1991,
       "max_drawdown_gbp": 2.72,
-      "brier": 0.2517,
-      "log_loss": 0.6956,
+      "brier": 0.2388,
+      "log_loss": 0.6689,
       "calibration": {
        "50-59%": {
         "n": 2,
@@ -1058,9 +1069,9 @@
         "win_rate": 0.0
        },
        "60-69%": {
-        "n": 1,
-        "mean_p": 0.674,
-        "win_rate": 0.0
+        "n": 2,
+        "mean_p": 0.672,
+        "win_rate": 0.5
        },
        "70-79%": {
         "n": 7,
@@ -1093,9 +1104,9 @@
       "unique_events": 12,
       "hypothetical": {
        "\u00a31": {
-        "turnover": 10.0,
-        "expected_profit": 0.51,
-        "realised": -2.72
+        "turnover": 11.0,
+        "expected_profit": 0.54,
+        "realised": -2.19
        }
       }
      }
@@ -1103,17 +1114,22 @@
     "engine_id": {
      "atp_match_winner.betfair_market": {
       "orders": 2,
-      "settled": 1,
-      "open": 1,
-      "expected_wins": 0.75,
-      "actual_wins": 0,
-      "expected_profit_gbp": 0.03,
-      "realised_paper_profit_gbp": -1.0,
-      "roi": -1.0,
+      "settled": 2,
+      "open": 0,
+      "expected_wins": 1.41,
+      "actual_wins": 1,
+      "expected_profit_gbp": 0.05,
+      "realised_paper_profit_gbp": -0.47,
+      "roi": -0.235,
       "max_drawdown_gbp": 1.0,
-      "brier": 0.5558,
-      "log_loss": 1.3684,
+      "brier": 0.3326,
+      "log_loss": 0.885,
       "calibration": {
+       "60-69%": {
+        "n": 1,
+        "mean_p": 0.669,
+        "win_rate": 1.0
+       },
        "70-79%": {
         "n": 1,
         "mean_p": 0.745,
@@ -1142,9 +1158,9 @@
       "unique_events": 2,
       "hypothetical": {
        "\u00a31": {
-        "turnover": 1.0,
-        "expected_profit": 0.03,
-        "realised": -1.0
+        "turnover": 2.0,
+        "expected_profit": 0.05,
+        "realised": -0.47
        }
       }
      },
@@ -1264,16 +1280,16 @@
      },
      "BOOKMAKER_ONLY": {
       "orders": 10,
-      "settled": 8,
-      "open": 2,
-      "expected_wins": 5.66,
-      "actual_wins": 5,
-      "expected_profit_gbp": 0.45,
-      "realised_paper_profit_gbp": -0.72,
-      "roi": -0.09,
+      "settled": 9,
+      "open": 1,
+      "expected_wins": 6.33,
+      "actual_wins": 6,
+      "expected_profit_gbp": 0.47,
+      "realised_paper_profit_gbp": -0.19,
+      "roi": -0.0211,
       "max_drawdown_gbp": 2.0,
-      "brier": 0.2084,
-      "log_loss": 0.6006,
+      "brier": 0.1974,
+      "log_loss": 0.5785,
       "calibration": {
        "50-59%": {
         "n": 1,
@@ -1281,9 +1297,9 @@
         "win_rate": 0.0
        },
        "60-69%": {
-        "n": 1,
-        "mean_p": 0.674,
-        "win_rate": 0.0
+        "n": 2,
+        "mean_p": 0.672,
+        "win_rate": 0.5
        },
        "70-79%": {
         "n": 6,
@@ -1316,9 +1332,9 @@
       "unique_events": 10,
       "hypothetical": {
        "\u00a31": {
-        "turnover": 8.0,
-        "expected_profit": 0.45,
-        "realised": -0.72
+        "turnover": 9.0,
+        "expected_profit": 0.47,
+        "realised": -0.19
        }
       }
      }
