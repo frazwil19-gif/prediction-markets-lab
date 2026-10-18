@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-10-18T00:08Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-10-18T06:16Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 124 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 34 · research predictions: 120
+Predictions in the next window: 121 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 34 · research predictions: 120
 
 ## 1. Best predictions today
 
@@ -44,12 +44,12 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | 32 | football | FC Zwolle v Go Ahead Eagles | 2026-10-18T10:15 | double_chance | X2 | 72.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.38 | no price | no |
 | 33 | football | Le Havre v Auxerre | 2026-10-18T15:15 | double_chance | 12 | 72.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.38 | no price | no |
 | 34 | football | Angers v Marseille | 2026-10-18T13:00 | double_chance | X2 | 71.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.40 | no price | no |
-| 35 | football | FC Twente Enschede v FC Utrecht | 2026-10-18T18:00 | 1x2 | home | 69.9% | 60%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.43 | price not usable (stale/wide/unknown commission) | no |
+| 35 | football | FC Twente Enschede v FC Utrecht | 2026-10-18T18:00 | 1x2 | home | 69.9% | 60%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.43 | 1.40 (smarkets) | no |
 | 36 | football | Paris FC v Rennes | 2026-10-18T15:15 | double_chance | 1X | 69.6% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.44 | no price | no |
 | 37 | football | Le Havre v Auxerre | 2026-10-18T15:15 | double_chance | 1X | 69.2% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.45 | no price | no |
 | 38 | football | Borussia Monchengladbach v TSG Hoffenheim | 2026-10-18T15:30 | double_chance | X2 | 68.9% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.45 | no price | no |
-| 39 | icehockey | Pittsburgh Penguins @ Vegas Golden Knights | 2026-10-18T02:10 | moneyline | Vegas Golden Knights | 67.4% | 60%+ | — | PROVISIONAL | 1.48 | price not usable (stale/wide/unknown commission) | no |
-| 40 | football | Leeds United v Manchester United | 2026-10-18T13:00 | double_chance | 1X | 67.3% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.49 | no price | no |
+| 39 | football | Leeds United v Manchester United | 2026-10-18T13:00 | double_chance | 1X | 67.3% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.49 | no price | no |
+| 40 | americanfootball | Buffalo Bills @ Las Vegas Raiders | 2026-10-18T20:25 | moneyline | Buffalo Bills | 66.7% | 60%+ | — | VALIDATED | 1.50 | price not usable (stale/wide/unknown commission) | no |
 
 ## 2. Qualified paper bets (simulated stakes, recorded automatically)
 
@@ -102,7 +102,7 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 107 · PRICE_STALE 71 · NET_EV_NOT_POSITIVE 52 · NO_EXECUTABLE_PRICE 51 · P_BELOW_FLOOR 51 · COMMISSION_UNKNOWN 14 · EXCHANGE_SPREAD_TOO_WIDE 1
+ENGINE_STATUS_INELIGIBLE 108 · NO_EXECUTABLE_PRICE 51 · P_BELOW_FLOOR 51 · NET_EV_NOT_POSITIVE 47 · PRICE_STALE 14 · COMMISSION_UNKNOWN 11 · EXCHANGE_SPREAD_TOO_WIDE 1
 
 ## 4. Research predictions — not money eligible
 
