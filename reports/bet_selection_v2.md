@@ -4,9 +4,9 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-18T06:16Z · events scanned 31 · valid predictions 128 · high-P (≥70%) 36 · priced 62 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 128 · new paper bets 0 · Money Card qualified 0
+Run 2026-10-18T11:35Z · events scanned 31 · valid predictions 123 · high-P (≥70%) 34 · priced 57 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 123 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 115 · P_BELOW_FLOOR 54 · NO_EXECUTABLE_PRICE 54 · NET_EV_NOT_POSITIVE 49 · PRICE_STALE 14 · COMMISSION_UNKNOWN 12 · EXCHANGE_SPREAD_TOO_WIDE 1
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 109 · PRICE_STALE 69 · P_BELOW_FLOOR 51 · NO_EXECUTABLE_PRICE 51 · NET_EV_NOT_POSITIVE 44 · COMMISSION_UNKNOWN 15
 
 ## Candidates (latest run, best price per prediction)
 
@@ -33,7 +33,6 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 115 · P_BELOW_FLOOR 54 · N
 | Los Angeles Chargers @ Kansas City Chiefs | 2026-10-18T20:25 | Kansas City Chiefs | 76.7% | 1.30 | 1.29 (smarkets) | 77.9% | -1.5% | REJECT |
 | Lyon v Nice | 2026-10-18T18:45 | 12 | 76.4% | 1.31 | — | — | — | REJECT |
 | Borussia Monchengladbach v TSG Hoffenheim | 2026-10-18T15:30 | 12 | 76.4% | 1.31 | — | — | — | REJECT |
-| FC Zwolle v Go Ahead Eagles | 2026-10-18T10:15 | 12 | 75.8% | 1.32 | — | — | — | REJECT |
 | Nottingham Forest v Arsenal | 2026-10-18T15:30 | 12 | 75.3% | 1.33 | — | — | — | REJECT |
 | Angers v Marseille | 2026-10-18T13:00 | 12 | 74.6% | 1.34 | — | — | — | REJECT |
 | New York Jets @ New England Patriots | 2026-10-18T17:00 | New England Patriots | 73.9% | 1.35 | 1.33 (smarkets) | 75.6% | -2.2% | REJECT |
@@ -45,13 +44,14 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 115 · P_BELOW_FLOOR 54 · N
 | Paris FC v Rennes | 2026-10-18T15:15 | 12 | 72.5% | 1.38 | — | — | — | REJECT |
 | Bournemouth v Sunderland | 2026-10-18T13:00 | 1X | 72.4% | 1.38 | — | — | — | REJECT |
 | Lorient v AS Monaco | 2026-10-18T15:15 | 12 | 72.4% | 1.38 | — | — | — | REJECT |
-| FC Zwolle v Go Ahead Eagles | 2026-10-18T10:15 | X2 | 72.3% | 1.38 | — | — | — | REJECT |
 | Le Havre v Auxerre | 2026-10-18T15:15 | 12 | 72.3% | 1.38 | — | — | — | REJECT |
 | Angers v Marseille | 2026-10-18T13:00 | X2 | 71.5% | 1.40 | — | — | — | REJECT |
 | Paris FC v Rennes | 2026-10-18T15:15 | 1X | 69.6% | 1.44 | — | — | — | REJECT |
 | FC Twente Enschede v FC Utrecht | 2026-10-18T18:00 | home | 69.4% | 1.44 | 1.40 (smarkets) | 71.8% | -3.4% | REJECT |
 | Le Havre v Auxerre | 2026-10-18T15:15 | 1X | 69.2% | 1.45 | — | — | — | REJECT |
 | Borussia Monchengladbach v TSG Hoffenheim | 2026-10-18T15:30 | X2 | 68.9% | 1.45 | — | — | — | REJECT |
+| Leeds United v Manchester United | 2026-10-18T13:00 | 1X | 67.3% | 1.49 | — | — | — | REJECT |
+| Buffalo Bills @ Las Vegas Raiders | 2026-10-18T20:25 | Buffalo Bills | 66.7% | 1.50 | 1.48 (matchbook) | — | — | REJECT |
 
 ## Paper results (all time)
 
