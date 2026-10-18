@@ -1,14 +1,18 @@
-# Daily Paper Bet Card — 2026-10-18T11:35Z
+# Daily Paper Bet Card — 2026-10-18T15:16Z
 
 **PAPER ONLY. Not a real-money card. No bet here may be placed with real money without a MONEY_ELIGIBILITY_REVIEW and Fraser's explicit approval.**
 
 Rule `pcard-1` on top of bsv2-4. bsv2-4 decides; grades rank confidence in value; STRONG PREDICTION != VALID BET.
-Candidates evaluated at 2026-10-18T11:35:11.048707+00:00.
+Candidates evaluated at 2026-10-18T15:16:27.164593+00:00.
 
-Grades: A+ 0, A 0, B 0, C 0, REJECT 123
+Grades: A+ 0, A 0, B 0, C 1, REJECT 63
 
 **NO PAPER BETS TODAY.** No candidate passed every bsv2-4 gate. That is a valid outcome.
 
-Rejected candidates: 123 (see reports/bet_selection_v2.md for reasons).
+## Grade C (WATCH / multi research — information only, no stake)
+
+- tennis · Sara Bejlek v Xiyu Wang · Xiyu Wang · P 0.502 · odds 2.00 · NET_EV_BELOW_PAPER_GATE|OUTSIDE_EVENT_HORIZON
+
+Rejected candidates: 63 (see reports/bet_selection_v2.md for reasons).
 
 Stakes are hypothetical, at the nominal bankroll, singles only, ≤5% per bet and ≤10% per day; no martingale/chasing.
