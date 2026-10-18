@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T23:00:48.245228+00:00",
+ "generated_at": "2026-10-18T22:59:33.786881+00:00",
  "mode": "SHADOW (no ledger writes)",
  "football_data_sources": {
   "B1": "https://www.football-data.co.uk/mmz4281/2627/B1.csv",
@@ -540,9 +540,9 @@
   ]
  },
  "fd_internal_inconsistencies": 0,
- "fixture_comparisons_total": 62,
+ "fixture_comparisons_total": 67,
  "fixture_status_counts": {
-  "NOT_FOUND": 57,
+  "NOT_FOUND": 62,
   "MATCHED": 5
  },
  "disagreement_examples": [],
@@ -552,5 +552,17 @@
   "score_disagreements": 0,
   "passed": false
  },
- "ledger_pending_past_kickoff": []
+ "ledger_pending_past_kickoff": [
+  {
+   "bet_id": "Manchester City v Ipswich Town::1x2::away",
+   "event": "Manchester City v Ipswich Town",
+   "kickoff": "2026-10-17",
+   "market": "1x2",
+   "selection": "away",
+   "fd_status": "NOT_FOUND",
+   "fd_score": "",
+   "would_win": null,
+   "detail": ""
+  }
+ ]
 }

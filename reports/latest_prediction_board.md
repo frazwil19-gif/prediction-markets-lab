@@ -2,8 +2,8 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 31 · Valid predictions: 64 · Sports: americanfootball, football, icehockey, tennis
-Counts: >=70: 22 · >=75: 16 · >=80: 7 · >=85: 4 · >=90: 1 · >=95: 0
+Upcoming events: 15 · Valid predictions: 21 · Sports: americanfootball, football, icehockey, tennis
+Counts: >=70: 9 · >=75: 5 · >=80: 2 · >=85: 2 · >=90: 1 · >=95: 0
 Settled yesterday: 19 · System: **HEALTHY** · API credits (last observed): 203
 
 ## Top predictions (P ≥ 80%)
@@ -11,12 +11,7 @@ Settled yesterday: 19 · System: **HEALTHY** · API credits (last observed): 203
 | Sport | Event | Start (UTC) | Market | Selection | P | Fair | Band | Engine | Evidence | Price (source) | Single | Multi-research |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | tennis | Jasmine Paolini v Anhelina Kalinina | 2026-10-20T04:00 | match_winner | Jasmine Paolini | 92.8% | 1.08 | 90-94.9% | wta_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.29 (betfair_ex_uk back (odds_api)) | no | yes |
-| football | FC Twente Enschede v FC Utrecht | 2026-10-18T18:00 | double_chance | 1X | 87.2% | 1.15 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.12 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| americanfootball | Arizona Cardinals @ Los Angeles Rams | 2026-10-18T20:05 | moneyline | Los Angeles Rams | 85.3% | 1.17 | 85-89.9% | nfl_moneyline.market@1 | VALIDATED_HISTORICAL | 1.14 (odds_api:matchbook) | no | yes |
 | football | Tottenham Hotspur v Coventry City | 2026-10-19T19:00 | double_chance | 1X | 85.0% | 1.18 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.15 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Nottingham Forest v Arsenal | 2026-10-18T15:30 | double_chance | X2 | 83.0% | 1.20 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.18 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | FC Twente Enschede v FC Utrecht | 2026-10-18T18:00 | double_chance | 12 | 82.7% | 1.21 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.20 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Lyon v Nice | 2026-10-18T18:45 | double_chance | 1X | 80.4% | 1.24 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.22 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 
 ## Prospective evidence
 
@@ -37,7 +32,7 @@ Settled yesterday: 19 · System: **HEALTHY** · API credits (last observed): 203
 - daily_scan: OK (last 2026-10-18T06:16:36.070040+00:00)
 - settlement: OK (last 2026-10-17T23:01:04.265065+00:00)
 - tennis_board: OK (last 2026-10-18T15:16:24.977001+00:00)
-- ci_tests: OK (last 2026-10-18T15:16:25.820550+00:00)
+- ci_tests: OK (last 2026-10-18T22:59:34.414610+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
