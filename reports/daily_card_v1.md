@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-10-19T00:22Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-10-19T06:16Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 19 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 9 · research predictions: 20
+Predictions in the next window: 17 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 8 · research predictions: 20
 
 ## 1. Best predictions today
 
@@ -16,16 +16,14 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | 4 | football | Tottenham Hotspur v Coventry City | 2026-10-19T19:00 | double_chance | 12 | 79.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.26 | no price | no |
 | 5 | tennis | Guo Hanyu v Ekaterina Alexandrova | 2026-10-20T04:00 | match_winner | Ekaterina Alexandrova | 77.2% | 70%+ | 1.3% | VALIDATED | 1.30 | price not usable (stale/wide/unknown commission) | no |
 | 6 | tennis | Katarzyna Kawa v Maja Chwalinska | 2026-10-20T04:00 | match_winner | Maja Chwalinska | 73.5% | 70%+ | 37.0% | VALIDATED | 1.36 | price not usable (stale/wide/unknown commission) | no |
-| 7 | tennis | Sorana Cirstea v Shi Han | 2026-10-19T05:30 | match_winner | Sorana Cirstea | 72.6% | 70%+ | 1.6% | VALIDATED | 1.38 | price not usable (stale/wide/unknown commission) | no |
-| 8 | tennis | Alexandra Eala v Diane Parry | 2026-10-19T11:30 | match_winner | Alexandra Eala | 72.4% | 70%+ | 1.3% | VALIDATED | 1.38 | price not usable (stale/wide/unknown commission) | no |
-| 9 | tennis | Kamilla Rakhimova v Marie Bouzkova | 2026-10-19T09:30 | match_winner | Marie Bouzkova | 72.2% | 70%+ | 5.9% | VALIDATED | 1.39 | price not usable (stale/wide/unknown commission) | no |
-| 10 | football | Tottenham Hotspur v Coventry City | 2026-10-19T19:00 | 1x2 | home | 64.3% | 60%+ | 1.3% | PROSPECTIVE_SHADOW_LEAGUE | 1.55 | price not usable (stale/wide/unknown commission) | no |
-| 11 | football | Tottenham Hotspur v Coventry City | 2026-10-19T19:00 | over_under_2_5 | over | 60.4% | 60%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.66 | price not usable (stale/wide/unknown commission) | no |
-| 12 | tennis | Jelena Ostapenko v Belinda Bencic | 2026-10-20T04:00 | match_winner | Belinda Bencic | 57.7% | 50%+ | 1.4% | VALIDATED | 1.73 | price not usable (stale/wide/unknown commission) | no |
-| 13 | tennis | Elise Mertens v Leylah Fernandez | 2026-10-19T04:00 | match_winner | Elise Mertens | 56.3% | 50%+ | 1.6% | VALIDATED | 1.78 | price not usable (stale/wide/unknown commission) | no |
-| 14 | tennis | Daria Kasatkina v Aliaksandra Sasnovich | 2026-10-19T08:00 | match_winner | Aliaksandra Sasnovich | 54.7% | 50%+ | 8.0% | VALIDATED | 1.83 | price not usable (stale/wide/unknown commission) | no |
-| 15 | tennis | Cristina Bucsa v Polina Kudermetova | 2026-10-20T04:00 | match_winner | Cristina Bucsa | 50.7% | 50%+ | 7.5% | VALIDATED | 1.97 | price not usable (stale/wide/unknown commission) | no |
-| 16 | tennis | Sara Bejlek v Xiyu Wang | 2026-10-20T04:00 | match_winner | Xiyu Wang | 50.2% | 50%+ | 1.3% | VALIDATED | 1.99 | price not usable (stale/wide/unknown commission) | no |
+| 7 | tennis | Alexandra Eala v Diane Parry | 2026-10-19T11:30 | match_winner | Alexandra Eala | 72.4% | 70%+ | 1.3% | VALIDATED | 1.38 | price not usable (stale/wide/unknown commission) | no |
+| 8 | tennis | Kamilla Rakhimova v Marie Bouzkova | 2026-10-19T09:30 | match_winner | Marie Bouzkova | 72.2% | 70%+ | 5.9% | VALIDATED | 1.39 | price not usable (stale/wide/unknown commission) | no |
+| 9 | football | Tottenham Hotspur v Coventry City | 2026-10-19T19:00 | 1x2 | home | 64.3% | 60%+ | 1.3% | PROSPECTIVE_SHADOW_LEAGUE | 1.55 | 1.53 (betfair) | no |
+| 10 | football | Tottenham Hotspur v Coventry City | 2026-10-19T19:00 | over_under_2_5 | over | 60.4% | 60%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.66 | price not usable (stale/wide/unknown commission) | no |
+| 11 | tennis | Jelena Ostapenko v Belinda Bencic | 2026-10-20T04:00 | match_winner | Belinda Bencic | 57.7% | 50%+ | 1.4% | VALIDATED | 1.73 | price not usable (stale/wide/unknown commission) | no |
+| 12 | tennis | Daria Kasatkina v Aliaksandra Sasnovich | 2026-10-19T08:00 | match_winner | Aliaksandra Sasnovich | 54.7% | 50%+ | 8.0% | VALIDATED | 1.83 | price not usable (stale/wide/unknown commission) | no |
+| 13 | tennis | Cristina Bucsa v Polina Kudermetova | 2026-10-20T04:00 | match_winner | Cristina Bucsa | 50.7% | 50%+ | 7.5% | VALIDATED | 1.97 | price not usable (stale/wide/unknown commission) | no |
+| 14 | tennis | Sara Bejlek v Xiyu Wang | 2026-10-20T04:00 | match_winner | Xiyu Wang | 50.2% | 50%+ | 1.3% | VALIDATED | 1.99 | price not usable (stale/wide/unknown commission) | no |
 
 ## 2. Qualified paper bets (simulated stakes, recorded automatically)
 
@@ -41,19 +39,18 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 | Event | Selection | P | Fair odds | Best clean price | Why no bet |
 |---|---|---|---|---|---|
-| Jasmine Paolini v Anhelina Kalinina (2026-10-20T04:00) | match_winner: Jasmine Paolini | 92.8% | 1.08 | — | EXCHANGE_SPREAD_TOO_WIDE |
+| Jasmine Paolini v Anhelina Kalinina (2026-10-20T04:00) | match_winner: Jasmine Paolini | 92.8% | 1.08 | — | EXCHANGE_SPREAD_TOO_WIDE, PRICE_STALE |
 | Tottenham Hotspur v Coventry City (2026-10-19T19:00) | double_chance: 1X | 85.0% | 1.18 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Yulia Putintseva v Diana Shnaider (2026-10-20T04:00) | match_winner: Diana Shnaider | 79.6% | 1.26 | — | EXCHANGE_SPREAD_TOO_WIDE, NET_EV_NOT_POSITIVE |
+| Yulia Putintseva v Diana Shnaider (2026-10-20T04:00) | match_winner: Diana Shnaider | 79.6% | 1.26 | — | EXCHANGE_SPREAD_TOO_WIDE, PRICE_STALE, NET_EV_NOT_POSITIVE |
 | Tottenham Hotspur v Coventry City (2026-10-19T19:00) | double_chance: 12 | 79.3% | 1.26 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Guo Hanyu v Ekaterina Alexandrova (2026-10-20T04:00) | match_winner: Ekaterina Alexandrova | 77.2% | 1.30 | — | NET_EV_NOT_POSITIVE |
-| Katarzyna Kawa v Maja Chwalinska (2026-10-20T04:00) | match_winner: Maja Chwalinska | 73.5% | 1.36 | — | EXCHANGE_SPREAD_TOO_WIDE, NET_EV_NOT_POSITIVE |
-| Sorana Cirstea v Shi Han (2026-10-19T05:30) | match_winner: Sorana Cirstea | 72.6% | 1.38 | — | NET_EV_NOT_POSITIVE |
-| Alexandra Eala v Diane Parry (2026-10-19T11:30) | match_winner: Alexandra Eala | 72.4% | 1.38 | — | NET_EV_NOT_POSITIVE |
-| Kamilla Rakhimova v Marie Bouzkova (2026-10-19T09:30) | match_winner: Marie Bouzkova | 72.2% | 1.39 | — | EXCHANGE_SPREAD_TOO_WIDE, NET_EV_NOT_POSITIVE |
+| Guo Hanyu v Ekaterina Alexandrova (2026-10-20T04:00) | match_winner: Ekaterina Alexandrova | 77.2% | 1.30 | — | PRICE_STALE, NET_EV_NOT_POSITIVE |
+| Katarzyna Kawa v Maja Chwalinska (2026-10-20T04:00) | match_winner: Maja Chwalinska | 73.5% | 1.36 | — | EXCHANGE_SPREAD_TOO_WIDE, PRICE_STALE, NET_EV_NOT_POSITIVE |
+| Alexandra Eala v Diane Parry (2026-10-19T11:30) | match_winner: Alexandra Eala | 72.4% | 1.38 | — | PRICE_STALE, NET_EV_NOT_POSITIVE |
+| Kamilla Rakhimova v Marie Bouzkova (2026-10-19T09:30) | match_winner: Marie Bouzkova | 72.2% | 1.39 | — | EXCHANGE_SPREAD_TOO_WIDE, PRICE_STALE, NET_EV_NOT_POSITIVE |
 
 ### Why predictions in the window were not bets
 
-NET_EV_NOT_POSITIVE 12 · ENGINE_STATUS_INELIGIBLE 7 · EXCHANGE_SPREAD_TOO_WIDE 6 · PRICE_STALE 4 · NO_EXECUTABLE_PRICE 3 · P_BELOW_FLOOR 3 · COMMISSION_UNKNOWN 1 · NET_EV_BELOW_PAPER_GATE 1 · OUTSIDE_EVENT_HORIZON 1
+NET_EV_NOT_POSITIVE 12 · PRICE_STALE 10 · ENGINE_STATUS_INELIGIBLE 7 · EXCHANGE_SPREAD_TOO_WIDE 6 · NO_EXECUTABLE_PRICE 3 · P_BELOW_FLOOR 3 · COMMISSION_UNKNOWN 1
 
 ## 4. Research predictions — not money eligible
 
