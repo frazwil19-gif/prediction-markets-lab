@@ -1,15 +1,13 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-18T23:00:37.459812+00:00",
- "date": "2026-10-18",
+ "generated_at": "2026-10-19T00:22:04.829816+00:00",
+ "date": "2026-10-19",
  "summary": {
-  "upcoming_events": 15,
-  "valid_predictions": 21,
+  "upcoming_events": 13,
+  "valid_predictions": 19,
   "sports_active": [
-   "americanfootball",
    "football",
-   "icehockey",
    "tennis"
   ],
   "engines_active": [
@@ -29,13 +27,13 @@
    ">=90": 1,
    ">=95": 0
   },
-  "settled_yesterday": 19,
+  "settled_yesterday": 4,
   "system": "HEALTHY",
   "api_credits_last_observed": 203
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-18T23:00:37.459812+00:00",
+  "generated_at": "2026-10-19T00:22:04.829816+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -43,22 +41,22 @@
     "last": "2026-10-18T06:16:36.070040+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 16.7
+    "age_hours": 18.1
    },
    "settlement": {
-    "last": "2026-10-17T23:01:04.265065+00:00",
+    "last": "2026-10-18T23:00:38.965251+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 24.0
+    "age_hours": 1.4
    },
    "tennis_board": {
     "last": "2026-10-18T15:16:24.977001+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 7.7
+    "age_hours": 9.1
    },
    "ci_tests": {
-    "last": "2026-10-18T22:59:34.414610+00:00",
+    "last": "2026-10-19T00:20:22.911044+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -115,7 +113,7 @@
    "prospective_status": "COLLECTING",
    "money_eligible": true,
    "predictions": 158,
-   "settled_rows": 145,
+   "settled_rows": 146,
    "maturity": "EARLY",
    "ge80_settled": 25,
    "ge80_mean_pred": 0.8766552,
@@ -127,7 +125,7 @@
    "prospective_status": "COLLECTING",
    "money_eligible": true,
    "predictions": 172,
-   "settled_rows": 142,
+   "settled_rows": 143,
    "maturity": "EARLY",
    "ge80_settled": 26,
    "ge80_mean_pred": 0.8924536153846154,
@@ -195,11 +193,11 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 21,
-   "EXCLUDED": 1783
+   "ELIGIBLE": 19,
+   "EXCLUDED": 1785
   },
   "exclusion_reason": {
-   "EVENT_STARTED": 1783
+   "EVENT_STARTED": 1785
   },
   "start_time_status": {
    "LEDGER_ONLY": 1412,
@@ -589,48 +587,6 @@
    "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
   },
   {
-   "prediction_id": "191daad54de4b336",
-   "engine_id": "nhl_moneyline.market",
-   "engine_version": "1",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event_id": "0922c474e6588f94af491684dbae6cdb",
-   "event_key": "nhl|0922c474e6588f94af491684dbae6cdb",
-   "event_name": "Carolina Hurricanes @ Calgary Flames",
-   "event_start": "2026-10-19T00:10:00+00:00",
-   "market": "moneyline",
-   "selection": "Carolina Hurricanes",
-   "estimated_probability": "0.658012744866651",
-   "fair_odds": "1.5197274031563845",
-   "probability_band": "65-69.9%",
-   "probability_source": "Odds API icehockey_nhl h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=13666; holdout DONE (2020-21, n=2350; gate B); >=80% coverage None; holdout slope 1.2193 CI [1.0439, 1.4097]; live estimator nhl_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "PROVISIONAL_PROSPECTIVE",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-10-18T06:30:00+00:00",
-   "actual_workflow_start": "2026-10-18T11:33:52Z",
-   "prediction_timestamp": "2026-10-18T11:35:09.542799+00:00",
-   "minutes_to_event": "754.8",
-   "live_price": "1.48",
-   "live_price_source": "odds_api:matchbook",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "False",
-   "single_ineligible_reason": "engine not money-eligible",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:icehockey_nhl",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-10-19T00:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
-  },
-  {
    "prediction_id": "2969f1d5876062a9",
    "engine_id": "football_1x2.market_consensus",
    "engine_version": "1",
@@ -839,48 +795,6 @@
    "event_start_original": "2026-10-19T08:00:00+00:00",
    "start_time_status": "UNCHANGED",
    "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
-  },
-  {
-   "prediction_id": "d272af6430a7d7aa",
-   "engine_id": "nfl_moneyline.market",
-   "engine_version": "1",
-   "sport": "americanfootball",
-   "competition": "NFL",
-   "event_id": "82fd5a159fa130e67abab93a9537f70b",
-   "event_key": "nfl|82fd5a159fa130e67abab93a9537f70b",
-   "event_name": "Dallas Cowboys @ Green Bay Packers",
-   "event_start": "2026-10-19T00:20:00+00:00",
-   "market": "moneyline",
-   "selection": "Green Bay Packers",
-   "estimated_probability": "0.5133171912832929",
-   "fair_odds": "1.94811320754717",
-   "probability_band": "50-54.9%",
-   "probability_source": "Odds API americanfootball_nfl h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=2932; holdout DONE (2020-21, n=550; gate A); >=80% coverage None; holdout slope 1.0217 CI [0.8053, 1.2738]; live estimator nfl_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-10-18T06:30:00+00:00",
-   "actual_workflow_start": "2026-10-18T11:33:52Z",
-   "prediction_timestamp": "2026-10-18T11:35:09.542799+00:00",
-   "minutes_to_event": "764.8",
-   "live_price": "1.96",
-   "live_price_source": "odds_api:matchbook",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "True",
-   "single_ineligible_reason": "",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:americanfootball_nfl",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-10-19T00:20:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
   },
   {
    "prediction_id": "18787b4289d93744",
