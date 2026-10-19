@@ -1,4 +1,4 @@
-# Daily Prediction Board & Bet Card — 2026-10-19T15:02Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-10-19T15:16Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
@@ -10,26 +10,26 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 
 | # | Sport | Event | Start (UTC) | Market | Selection | P | Band | σ | Evidence | Fair odds | Best price | Bet? |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | tennis | Yulia Putintseva v Diana Shnaider | 2026-10-20T05:00 | match_winner | Diana Shnaider | 87.2% | 80%+ | 9.9% | VALIDATED | 1.15 | price not usable (stale/wide/unknown commission) | no |
-| 2 | football | Tottenham Hotspur v Coventry City | 2026-10-19T19:00 | double_chance | 1X | 85.0% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.18 | no price | no |
-| 3 | tennis | Sara Bejlek v Alycia Parks | 2026-10-20T05:00 | match_winner | Sara Bejlek | 84.0% | 80%+ | 5.2% | VALIDATED | 1.19 | price not usable (stale/wide/unknown commission) | no |
-| 4 | football | Wolverhampton Wanderers v Portsmouth | 2026-10-20T18:45 | double_chance | 1X | 82.9% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.21 | no price | no |
-| 5 | football | Tottenham Hotspur v Coventry City | 2026-10-19T19:00 | double_chance | 12 | 79.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.26 | no price | no |
-| 6 | tennis | Guo Hanyu v Ekaterina Alexandrova | 2026-10-20T11:00 | match_winner | Ekaterina Alexandrova | 77.3% | 70%+ | 1.3% | VALIDATED | 1.29 | 1.29 (williamhill) | no |
-| 7 | football | Wolverhampton Wanderers v Portsmouth | 2026-10-20T18:45 | double_chance | 12 | 77.1% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.30 | no price | no |
-| 8 | tennis | Katarzyna Kawa v Maja Chwalinska | 2026-10-20T04:00 | match_winner | Maja Chwalinska | 73.5% | 70%+ | 37.0% | VALIDATED | 1.36 | price not usable (stale/wide/unknown commission) | no |
-| 9 | tennis | Katarzyna Kawa v Daria Snigur | 2026-10-20T09:30 | match_winner | Daria Snigur | 71.3% | 70%+ | 6.5% | VALIDATED | 1.40 | price not usable (stale/wide/unknown commission) | no |
-| 10 | tennis | Jasmine Paolini v Anhelina Kalinina | 2026-10-20T06:30 | match_winner | Jasmine Paolini | 68.9% | 60%+ | 4.9% | VALIDATED | 1.45 | price not usable (stale/wide/unknown commission) | no |
-| 11 | icehockey | Colorado Avalanche @ Philadelphia Flyers | 2026-10-19T23:10 | moneyline | Colorado Avalanche | 66.8% | 60%+ | — | PROVISIONAL | 1.50 | price not usable (stale/wide/unknown commission) | no |
+| 1 | football | Tottenham Hotspur v Coventry City | 2026-10-19T19:00 | double_chance | 1X | 85.0% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.18 | no price | no |
+| 2 | football | Wolverhampton Wanderers v Portsmouth | 2026-10-20T18:45 | double_chance | 1X | 82.9% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.21 | no price | no |
+| 3 | tennis | Sara Bejlek v Alycia Parks | 2026-10-20T05:00 | match_winner | Sara Bejlek | 81.4% | 80%+ | 3.2% | VALIDATED | 1.23 | price not usable (stale/wide/unknown commission) | no |
+| 4 | football | Tottenham Hotspur v Coventry City | 2026-10-19T19:00 | double_chance | 12 | 79.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.26 | no price | no |
+| 5 | tennis | Guo Hanyu v Ekaterina Alexandrova | 2026-10-20T11:00 | match_winner | Ekaterina Alexandrova | 77.3% | 70%+ | 1.3% | VALIDATED | 1.29 | 1.29 (betfair_ex_uk) | no |
+| 6 | football | Wolverhampton Wanderers v Portsmouth | 2026-10-20T18:45 | double_chance | 12 | 77.1% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.30 | no price | no |
+| 7 | tennis | Katarzyna Kawa v Daria Snigur | 2026-10-20T09:30 | match_winner | Daria Snigur | 76.2% | 70%+ | 1.4% | VALIDATED | 1.31 | 1.30 (williamhill) | no |
+| 8 | tennis | Yulia Putintseva v Diana Shnaider | 2026-10-20T05:00 | match_winner | Diana Shnaider | 74.5% | 70%+ | 1.8% | VALIDATED | 1.34 | 1.33 (williamhill) | no |
+| 9 | tennis | Katarzyna Kawa v Maja Chwalinska | 2026-10-20T04:00 | match_winner | Maja Chwalinska | 73.5% | 70%+ | 37.0% | VALIDATED | 1.36 | price not usable (stale/wide/unknown commission) | no |
+| 10 | icehockey | Colorado Avalanche @ Philadelphia Flyers | 2026-10-19T23:10 | moneyline | Colorado Avalanche | 66.8% | 60%+ | — | PROVISIONAL | 1.50 | price not usable (stale/wide/unknown commission) | no |
+| 11 | tennis | Jasmine Paolini v Anhelina Kalinina | 2026-10-20T06:30 | match_winner | Jasmine Paolini | 65.7% | 60%+ | 1.4% | VALIDATED | 1.52 | 1.50 (williamhill) | no |
 | 12 | football | Tottenham Hotspur v Coventry City | 2026-10-19T19:00 | 1x2 | home | 64.3% | 60%+ | 1.3% | PROSPECTIVE_SHADOW_LEAGUE | 1.55 | price not usable (stale/wide/unknown commission) | no |
 | 13 | icehockey | Pittsburgh Penguins @ Utah Mammoth | 2026-10-20T01:10 | moneyline | Utah Mammoth | 62.1% | 60%+ | — | PROVISIONAL | 1.61 | price not usable (stale/wide/unknown commission) | no |
 | 14 | football | Tottenham Hotspur v Coventry City | 2026-10-19T19:00 | over_under_2_5 | over | 60.4% | 60%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.66 | price not usable (stale/wide/unknown commission) | no |
 | 15 | football | Wolverhampton Wanderers v Portsmouth | 2026-10-20T18:45 | 1x2 | home | 59.9% | 50%+ | 1.3% | PROSPECTIVE_SHADOW_LEAGUE | 1.67 | price not usable (stale/wide/unknown commission) | no |
-| 16 | tennis | Jelena Ostapenko v Belinda Bencic | 2026-10-20T07:20 | match_winner | Belinda Bencic | 56.2% | 50%+ | 1.6% | VALIDATED | 1.78 | 1.73 (williamhill) | no |
+| 16 | tennis | Jelena Ostapenko v Belinda Bencic | 2026-10-20T07:20 | match_winner | Belinda Bencic | 56.0% | 50%+ | 1.5% | VALIDATED | 1.79 | 1.73 (williamhill) | no |
 | 17 | icehockey | San Jose Sharks @ Toronto Maple Leafs | 2026-10-19T23:40 | moneyline | Toronto Maple Leafs | 56.0% | 50%+ | — | PROVISIONAL | 1.79 | price not usable (stale/wide/unknown commission) | no |
 | 18 | icehockey | Anaheim Ducks @ New York Rangers | 2026-10-19T23:10 | moneyline | New York Rangers | 55.6% | 50%+ | — | PROVISIONAL | 1.80 | price not usable (stale/wide/unknown commission) | no |
 | 19 | football | Wolverhampton Wanderers v Portsmouth | 2026-10-20T18:45 | over_under_2_5 | over | 54.6% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.83 | price not usable (stale/wide/unknown commission) | no |
-| 20 | tennis | Cristina Bucsa v Polina Kudermetova | 2026-10-20T06:30 | match_winner | Cristina Bucsa | 52.1% | 50%+ | 1.6% | VALIDATED | 1.92 | 1.85 (virginbet) | no |
+| 20 | tennis | Cristina Bucsa v Polina Kudermetova | 2026-10-20T06:30 | match_winner | Cristina Bucsa | 51.7% | 50%+ | 1.4% | VALIDATED | 1.93 | 1.90 (betfair_ex_uk) | no |
 | 21 | tennis | Sara Bejlek v Xiyu Wang | 2026-10-20T04:00 | match_winner | Xiyu Wang | 50.2% | 50%+ | 1.3% | VALIDATED | 1.99 | price not usable (stale/wide/unknown commission) | no |
 
 ## 2. Qualified paper bets (simulated stakes, recorded automatically)
@@ -46,19 +46,19 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 | Event | Selection | P | Fair odds | Best clean price | Why no bet |
 |---|---|---|---|---|---|
-| Yulia Putintseva v Diana Shnaider (2026-10-20T05:00) | match_winner: Diana Shnaider | 87.2% | 1.15 | — | EXCHANGE_SPREAD_TOO_WIDE, NET_EV_NOT_POSITIVE |
 | Tottenham Hotspur v Coventry City (2026-10-19T19:00) | double_chance: 1X | 85.0% | 1.18 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Sara Bejlek v Alycia Parks (2026-10-20T05:00) | match_winner: Sara Bejlek | 84.0% | 1.19 | — | EXCHANGE_SPREAD_TOO_WIDE, NET_EV_NOT_POSITIVE |
 | Wolverhampton Wanderers v Portsmouth (2026-10-20T18:45) | double_chance: 1X | 82.9% | 1.21 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
+| Sara Bejlek v Alycia Parks (2026-10-20T05:00) | match_winner: Sara Bejlek | 81.4% | 1.23 | — | EXCHANGE_SPREAD_TOO_WIDE, NET_EV_NOT_POSITIVE |
 | Tottenham Hotspur v Coventry City (2026-10-19T19:00) | double_chance: 12 | 79.3% | 1.26 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Guo Hanyu v Ekaterina Alexandrova (2026-10-20T11:00) | match_winner: Ekaterina Alexandrova | 77.3% | 1.29 | 1.29 | NET_EV_NOT_POSITIVE |
 | Wolverhampton Wanderers v Portsmouth (2026-10-20T18:45) | double_chance: 12 | 77.1% | 1.30 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
+| Katarzyna Kawa v Daria Snigur (2026-10-20T09:30) | match_winner: Daria Snigur | 76.2% | 1.31 | 1.30 | NET_EV_NOT_POSITIVE |
+| Yulia Putintseva v Diana Shnaider (2026-10-20T05:00) | match_winner: Diana Shnaider | 74.5% | 1.34 | 1.33 | NET_EV_NOT_POSITIVE |
 | Katarzyna Kawa v Maja Chwalinska (2026-10-20T04:00) | match_winner: Maja Chwalinska | 73.5% | 1.36 | — | EXCHANGE_SPREAD_TOO_WIDE, PRICE_STALE, NET_EV_NOT_POSITIVE |
-| Katarzyna Kawa v Daria Snigur (2026-10-20T09:30) | match_winner: Daria Snigur | 71.3% | 1.40 | — | EXCHANGE_SPREAD_TOO_WIDE, NET_EV_NOT_POSITIVE |
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 14 · NET_EV_NOT_POSITIVE 13 · PRICE_STALE 9 · COMMISSION_UNKNOWN 7 · NO_EXECUTABLE_PRICE 6 · P_BELOW_FLOOR 6 · EXCHANGE_SPREAD_TOO_WIDE 5 · PROBABILITY_NOT_SAME_SNAPSHOT 1
+ENGINE_STATUS_INELIGIBLE 14 · NET_EV_NOT_POSITIVE 14 · PRICE_STALE 9 · COMMISSION_UNKNOWN 7 · NO_EXECUTABLE_PRICE 6 · P_BELOW_FLOOR 6 · EXCHANGE_SPREAD_TOO_WIDE 2 · PROBABILITY_NOT_SAME_SNAPSHOT 1
 
 ## 4. Research predictions — not money eligible
 

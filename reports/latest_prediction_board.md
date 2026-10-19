@@ -2,9 +2,9 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 16 · Valid predictions: 28 · Sports: football, icehockey, tennis
-Counts: >=70: 10 · >=75: 8 · >=80: 4 · >=85: 2 · >=90: 1 · >=95: 0
-Settled yesterday: 4 · System: **HEALTHY** · API credits (last observed): 192
+Upcoming events: 17 · Valid predictions: 29 · Sports: football, icehockey, tennis
+Counts: >=70: 11 · >=75: 8 · >=80: 4 · >=85: 2 · >=90: 1 · >=95: 0
+Settled yesterday: 4 · System: **HEALTHY** · API credits (last observed): 190
 
 ## Top predictions (P ≥ 80%)
 
@@ -23,7 +23,7 @@ Settled yesterday: 4 · System: **HEALTHY** · API credits (last observed): 192
 | football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 72 | 42 | COLLECTING | 0 | — → — |
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
 | atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 158 | 146 | EARLY | 25 | 87.7% → 76.0% |
-| wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 175 | 143 | EARLY | 26 | 89.2% → 80.8% |
+| wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 176 | 143 | EARLY | 26 | 89.2% → 80.8% |
 | nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 0 | 0 | COLLECTING | 0 | — → — |
 | nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 85 | 63 | EARLY | 0 | — → — |
 | nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 28 | 15 | COLLECTING | 0 | — → — |
@@ -33,8 +33,8 @@ Settled yesterday: 4 · System: **HEALTHY** · API credits (last observed): 192
 
 - daily_scan: OK (last 2026-10-19T06:16:21.365323+00:00)
 - settlement: OK (last 2026-10-18T23:00:38.965251+00:00)
-- tennis_board: OK (last 2026-10-19T13:49:01.685017+00:00)
-- ci_tests: OK (last 2026-10-19T13:49:02.575263+00:00)
+- tennis_board: OK (last 2026-10-19T15:16:25.033365+00:00)
+- ci_tests: OK (last 2026-10-19T15:16:25.850837+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
