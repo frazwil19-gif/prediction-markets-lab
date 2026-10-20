@@ -1,14 +1,13 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-20T00:15:24.754422+00:00",
+ "generated_at": "2026-10-20T01:11:52.135332+00:00",
  "date": "2026-10-20",
  "summary": {
-  "upcoming_events": 13,
-  "valid_predictions": 19,
+  "upcoming_events": 12,
+  "valid_predictions": 18,
   "sports_active": [
    "football",
-   "icehockey",
    "tennis"
   ],
   "engines_active": [
@@ -35,7 +34,7 @@
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-20T00:15:24.754422+00:00",
+  "generated_at": "2026-10-20T01:11:52.135332+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -43,22 +42,22 @@
     "last": "2026-10-19T06:16:21.365323+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 18.0
+    "age_hours": 18.9
    },
    "settlement": {
-    "last": "2026-10-18T23:00:38.965251+00:00",
+    "last": "2026-10-20T00:15:26.208907+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 25.2
+    "age_hours": 0.9
    },
    "tennis_board": {
     "last": "2026-10-19T15:16:25.033365+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 9.0
+    "age_hours": 9.9
    },
    "ci_tests": {
-    "last": "2026-10-20T00:14:42.671359+00:00",
+    "last": "2026-10-20T01:09:19.840786+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -127,7 +126,7 @@
    "prospective_status": "COLLECTING",
    "money_eligible": true,
    "predictions": 176,
-   "settled_rows": 143,
+   "settled_rows": 144,
    "maturity": "EARLY",
    "ge80_settled": 26,
    "ge80_mean_pred": 0.8924536153846154,
@@ -195,11 +194,11 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 19,
-   "EXCLUDED": 1800
+   "ELIGIBLE": 18,
+   "EXCLUDED": 1801
   },
   "exclusion_reason": {
-   "EVENT_STARTED": 1800
+   "EVENT_STARTED": 1801
   },
   "start_time_status": {
    "LEDGER_ONLY": 1423,
@@ -629,48 +628,6 @@
    "event_start_original": "2026-10-21T04:00:00+00:00",
    "start_time_status": "UNCHANGED",
    "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
-  },
-  {
-   "prediction_id": "42942727396bc60f",
-   "engine_id": "nhl_moneyline.market",
-   "engine_version": "1",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event_id": "0e2b3099b25e9827dc4a6abd7fabfa51",
-   "event_key": "nhl|0e2b3099b25e9827dc4a6abd7fabfa51",
-   "event_name": "Pittsburgh Penguins @ Utah Mammoth",
-   "event_start": "2026-10-20T01:10:00+00:00",
-   "market": "moneyline",
-   "selection": "Utah Mammoth",
-   "estimated_probability": "0.6210474308300394",
-   "fair_odds": "1.6101829753381067",
-   "probability_band": "60-64.9%",
-   "probability_source": "Odds API icehockey_nhl h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=13666; holdout DONE (2020-21, n=2350; gate B); >=80% coverage None; holdout slope 1.2193 CI [1.0439, 1.4097]; live estimator nhl_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "PROVISIONAL_PROSPECTIVE",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-10-19T06:30:00+00:00",
-   "actual_workflow_start": "2026-10-19T13:48:01Z",
-   "prediction_timestamp": "2026-10-19T13:49:03.174376+00:00",
-   "minutes_to_event": "680.9",
-   "live_price": "1.58",
-   "live_price_source": "odds_api:matchbook",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "False",
-   "single_ineligible_reason": "engine not money-eligible",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:icehockey_nhl",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-10-20T01:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
   },
   {
    "prediction_id": "6f028921c4fdad80",
