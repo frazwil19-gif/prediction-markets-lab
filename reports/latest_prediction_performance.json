@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T06:16:30.806979+00:00",
+ "generated_at": "2026-10-20T11:58:02.600388+00:00",
  "protocol": "research/platform_v2/unified_board/PROSPECTIVE_PROTOCOL.md",
  "pending_review": [
   {
@@ -8682,6 +8682,17 @@
    "alarm_review_required": false,
    "settled_rows_masked_no_peek": 0
   },
+  "nba_moneyline.market": {
+   "predictions": 8,
+   "prediction_events": 8,
+   "settled_rows": 0,
+   "settled_events": 0,
+   "settled_ge80_events": 0,
+   "maturity": "COLLECTING",
+   "ge80_maturity": "COLLECTING",
+   "alarm_review_required": false,
+   "settled_rows_masked_no_peek": 0
+  },
   "nfl_moneyline.market": {
    "predictions": 28,
    "prediction_events": 28,
@@ -8705,8 +8716,8 @@
    "settled_rows_masked_no_peek": 0
   },
   "wta_match_winner.betfair_market": {
-   "predictions": 176,
-   "prediction_events": 176,
+   "predictions": 181,
+   "prediction_events": 181,
    "settled_rows": 144,
    "settled_events": 144,
    "settled_ge80_events": 26,
