@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18T23:00:38.732887+00:00",
+ "generated_at": "2026-10-20T00:15:25.978429+00:00",
  "mode": "PAPER \u2014 unattended prospective validation; stakes SIMULATED",
  "windows": {
   "weekly": {
@@ -63,21 +63,19 @@
      }
     }
    },
-   "candidates_evaluated": 606,
+   "candidates_evaluated": 546,
    "qualified_in_shadow": 2,
-   "qualification_rate": 0.0033,
+   "qualification_rate": 0.0037,
    "rejections": {
-    "ENGINE_STATUS_INELIGIBLE": 460,
-    "NET_EV_NOT_POSITIVE": 270,
-    "P_BELOW_FLOOR": 216,
-    "NO_EXECUTABLE_PRICE": 201,
-    "COMMISSION_UNKNOWN": 80,
-    "PRICE_STALE": 17,
-    "EXCHANGE_SPREAD_TOO_WIDE": 13,
-    "PREDICTION_NOT_VALID": 11,
-    "NET_EV_BELOW_PAPER_GATE": 2,
-    "PROBABILITY_NOT_SAME_SNAPSHOT": 1,
-    "OUTSIDE_EVENT_HORIZON": 1
+    "ENGINE_STATUS_INELIGIBLE": 426,
+    "NET_EV_NOT_POSITIVE": 237,
+    "P_BELOW_FLOOR": 200,
+    "NO_EXECUTABLE_PRICE": 180,
+    "COMMISSION_UNKNOWN": 83,
+    "EXCHANGE_SPREAD_TOO_WIDE": 11,
+    "PRICE_STALE": 10,
+    "NET_EV_BELOW_PAPER_GATE": 1,
+    "PROBABILITY_NOT_SAME_SNAPSHOT": 1
    },
    "by": {
     "sport": {
@@ -465,22 +463,21 @@
      }
     }
    },
-   "candidates_evaluated": 1697,
+   "candidates_evaluated": 1712,
    "qualified_in_shadow": 2,
    "qualification_rate": 0.0012,
    "rejections": {
-    "ENGINE_STATUS_INELIGIBLE": 1289,
-    "NET_EV_NOT_POSITIVE": 795,
-    "P_BELOW_FLOOR": 614,
-    "NO_EXECUTABLE_PRICE": 609,
-    "COMMISSION_UNKNOWN": 152,
+    "ENGINE_STATUS_INELIGIBLE": 1296,
+    "NET_EV_NOT_POSITIVE": 804,
+    "P_BELOW_FLOOR": 617,
+    "NO_EXECUTABLE_PRICE": 612,
+    "COMMISSION_UNKNOWN": 158,
     "PREDICTION_NOT_VALID": 45,
     "PRICE_STALE": 33,
     "EXCHANGE_SPREAD_TOO_WIDE": 22,
-    "NET_EV_BELOW_PAPER_GATE": 7,
-    "PROBABILITY_NOT_SAME_SNAPSHOT": 4,
-    "ODDS_BELOW_PAYOUT_FLOOR": 2,
-    "OUTSIDE_EVENT_HORIZON": 1
+    "NET_EV_BELOW_PAPER_GATE": 6,
+    "PROBABILITY_NOT_SAME_SNAPSHOT": 5,
+    "ODDS_BELOW_PAYOUT_FLOOR": 2
    },
    "by": {
     "sport": {
@@ -972,22 +969,21 @@
      }
     }
    },
-   "candidates_evaluated": 1697,
+   "candidates_evaluated": 1712,
    "qualified_in_shadow": 2,
    "qualification_rate": 0.0012,
    "rejections": {
-    "ENGINE_STATUS_INELIGIBLE": 1289,
-    "NET_EV_NOT_POSITIVE": 795,
-    "P_BELOW_FLOOR": 614,
-    "NO_EXECUTABLE_PRICE": 609,
-    "COMMISSION_UNKNOWN": 152,
+    "ENGINE_STATUS_INELIGIBLE": 1296,
+    "NET_EV_NOT_POSITIVE": 804,
+    "P_BELOW_FLOOR": 617,
+    "NO_EXECUTABLE_PRICE": 612,
+    "COMMISSION_UNKNOWN": 158,
     "PREDICTION_NOT_VALID": 45,
     "PRICE_STALE": 33,
     "EXCHANGE_SPREAD_TOO_WIDE": 22,
-    "NET_EV_BELOW_PAPER_GATE": 7,
-    "PROBABILITY_NOT_SAME_SNAPSHOT": 4,
-    "ODDS_BELOW_PAYOUT_FLOOR": 2,
-    "OUTSIDE_EVENT_HORIZON": 1
+    "NET_EV_BELOW_PAPER_GATE": 6,
+    "PROBABILITY_NOT_SAME_SNAPSHOT": 5,
+    "ODDS_BELOW_PAYOUT_FLOOR": 2
    },
    "by": {
     "sport": {

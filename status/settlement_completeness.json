@@ -1,16 +1,16 @@
 {
- "generated_at": "2026-10-18T23:00:38.245904+00:00",
+ "generated_at": "2026-10-20T00:15:25.493607+00:00",
  "lag_hours": {
   "football_data_co_uk": 120,
   "tennis_court_log": 240,
   "odds_api_scores": 96
  },
  "totals": {
-  "NOT_STARTED": 31,
-  "NORMAL_SOURCE_LAG": 375,
-  "SETTLED": 815,
-  "UNRESOLVED_AFTER_EXPECTED_LAG": 656,
-  "SOURCE_UNAVAILABLE": 29
+  "NOT_STARTED": 34,
+  "NORMAL_SOURCE_LAG": 383,
+  "SETTLED": 819,
+  "UNRESOLVED_AFTER_EXPECTED_LAG": 658,
+  "SOURCE_UNAVAILABLE": 34
  },
  "groups": [
   {
@@ -70,7 +70,7 @@
    "sport": "football",
    "competition": "Championship",
    "source": "odds_api_scores",
-   "NOT_STARTED": 0,
+   "NOT_STARTED": 4,
    "NORMAL_SOURCE_LAG": 0,
    "SETTLED": 38,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
@@ -83,13 +83,13 @@
    "sport": "football",
    "competition": "Premier League",
    "source": "odds_api_scores",
-   "NOT_STARTED": 9,
+   "NOT_STARTED": 10,
    "NORMAL_SOURCE_LAG": 3,
-   "SETTLED": 26,
+   "SETTLED": 28,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
    "SOURCE_UNAVAILABLE": 0,
-   "completed_events_past_lag": 26,
-   "settled_share_of_started": 0.8966
+   "completed_events_past_lag": 28,
+   "settled_share_of_started": 0.9032
   },
   {
    "ledger": "legacy_paper_ledger",
@@ -109,13 +109,13 @@
    "sport": "americanfootball",
    "competition": "NFL",
    "source": "NONE",
-   "NOT_STARTED": 1,
+   "NOT_STARTED": 0,
    "NORMAL_SOURCE_LAG": 0,
    "SETTLED": 15,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
-   "SOURCE_UNAVAILABLE": 12,
+   "SOURCE_UNAVAILABLE": 13,
    "completed_events_past_lag": 15,
-   "settled_share_of_started": 0.5556
+   "settled_share_of_started": 0.5357
   },
   {
    "ledger": "unified_ledger",
@@ -161,7 +161,7 @@
    "sport": "football",
    "competition": "Championship",
    "source": "football_data_co_uk",
-   "NOT_STARTED": 0,
+   "NOT_STARTED": 7,
    "NORMAL_SOURCE_LAG": 84,
    "SETTLED": 170,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
@@ -252,13 +252,13 @@
    "sport": "football",
    "competition": "Premier League",
    "source": "football_data_co_uk",
-   "NOT_STARTED": 7,
-   "NORMAL_SOURCE_LAG": 64,
+   "NOT_STARTED": 0,
+   "NORMAL_SOURCE_LAG": 71,
    "SETTLED": 70,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
    "SOURCE_UNAVAILABLE": 0,
    "completed_events_past_lag": 70,
-   "settled_share_of_started": 0.5224
+   "settled_share_of_started": 0.4965
   },
   {
    "ledger": "unified_ledger",
@@ -334,9 +334,9 @@
    "NORMAL_SOURCE_LAG": 0,
    "SETTLED": 63,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
-   "SOURCE_UNAVAILABLE": 17,
+   "SOURCE_UNAVAILABLE": 21,
    "completed_events_past_lag": 63,
-   "settled_share_of_started": 0.7875
+   "settled_share_of_started": 0.75
   },
   {
    "ledger": "unified_ledger",
@@ -370,12 +370,12 @@
    "competition": "ATP Shanghai Masters",
    "source": "tennis_court_log",
    "NOT_STARTED": 0,
-   "NORMAL_SOURCE_LAG": 5,
-   "SETTLED": 107,
-   "UNRESOLVED_AFTER_EXPECTED_LAG": 7,
+   "NORMAL_SOURCE_LAG": 2,
+   "SETTLED": 108,
+   "UNRESOLVED_AFTER_EXPECTED_LAG": 9,
    "SOURCE_UNAVAILABLE": 0,
-   "completed_events_past_lag": 114,
-   "settled_share_of_started": 0.8992
+   "completed_events_past_lag": 117,
+   "settled_share_of_started": 0.9076
   },
   {
    "ledger": "unified_ledger",
@@ -395,13 +395,13 @@
    "sport": "tennis",
    "competition": "WTA Ningbo Open",
    "source": "tennis_court_log",
-   "NOT_STARTED": 12,
-   "NORMAL_SOURCE_LAG": 0,
+   "NOT_STARTED": 11,
+   "NORMAL_SOURCE_LAG": 5,
    "SETTLED": 0,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
    "SOURCE_UNAVAILABLE": 0,
    "completed_events_past_lag": 0,
-   "settled_share_of_started": null
+   "settled_share_of_started": 0.0
   },
   {
    "ledger": "unified_ledger",
@@ -422,12 +422,12 @@
    "competition": "WTA Wuhan Open",
    "source": "tennis_court_log",
    "NOT_STARTED": 0,
-   "NORMAL_SOURCE_LAG": 15,
-   "SETTLED": 59,
+   "NORMAL_SOURCE_LAG": 14,
+   "SETTLED": 60,
    "UNRESOLVED_AFTER_EXPECTED_LAG": 0,
    "SOURCE_UNAVAILABLE": 0,
-   "completed_events_past_lag": 59,
-   "settled_share_of_started": 0.7973
+   "completed_events_past_lag": 60,
+   "settled_share_of_started": 0.8108
   }
  ],
  "flagged": [
@@ -439,7 +439,7 @@
    "event": "Juan Manuel Cerundolo v Bu Yunchaokete",
    "start": "2026-09-30T02:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 453.0
+   "hours_since_start": 478.3
   },
   {
    "ledger": "unified_ledger",
@@ -449,7 +449,7 @@
    "event": "Viktorija Golubic v Alina Korneeva",
    "start": "2026-09-30T02:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 453.0
+   "hours_since_start": 478.3
   },
   {
    "ledger": "unified_ledger",
@@ -459,7 +459,7 @@
    "event": "Petra Marcinko v Magdalena Frech",
    "start": "2026-09-30T02:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 453.0
+   "hours_since_start": 478.3
   },
   {
    "ledger": "unified_ledger",
@@ -469,7 +469,7 @@
    "event": "Mayar Sherif v Polina Kudermetova",
    "start": "2026-09-30T02:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 453.0
+   "hours_since_start": 478.3
   },
   {
    "ledger": "unified_ledger",
@@ -479,7 +479,7 @@
    "event": "Lanlana Tararudee v Maria Camila Osorio Serrano",
    "start": "2026-10-01T04:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 427.0
+   "hours_since_start": 452.3
   },
   {
    "ledger": "unified_ledger",
@@ -489,7 +489,7 @@
    "event": "Lorenzo Musetti v Arthur Fery",
    "start": "2026-09-30T02:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 453.0
+   "hours_since_start": 478.3
   },
   {
    "ledger": "unified_ledger",
@@ -499,7 +499,7 @@
    "event": "Viktorija Golubic v Alina Korneeva",
    "start": "2026-09-30T02:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 453.0
+   "hours_since_start": 478.3
   },
   {
    "ledger": "unified_ledger",
@@ -509,7 +509,7 @@
    "event": "Petra Marcinko v Magdalena Frech",
    "start": "2026-09-30T02:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 453.0
+   "hours_since_start": 478.3
   },
   {
    "ledger": "unified_ledger",
@@ -519,7 +519,7 @@
    "event": "Mayar Sherif v Polina Kudermetova",
    "start": "2026-09-30T02:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 453.0
+   "hours_since_start": 478.3
   },
   {
    "ledger": "unified_ledger",
@@ -529,7 +529,7 @@
    "event": "Lanlana Tararudee v Maria Camila Osorio Serrano",
    "start": "2026-10-01T04:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 427.0
+   "hours_since_start": 452.3
   },
   {
    "ledger": "unified_ledger",
@@ -539,7 +539,7 @@
    "event": "Juan Manuel Cerundolo v Bu Yunchaokete",
    "start": "2026-09-30T06:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 448.8
+   "hours_since_start": 474.0
   },
   {
    "ledger": "unified_ledger",
@@ -549,7 +549,7 @@
    "event": "Alex Molcan v Arthur Rinderknech",
    "start": "2026-10-01T02:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 429.0
+   "hours_since_start": 454.3
   },
   {
    "ledger": "unified_ledger",
@@ -559,7 +559,7 @@
    "event": "Eva Lys v Sun Xinran",
    "start": "2026-10-01T04:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 427.0
+   "hours_since_start": 452.3
   },
   {
    "ledger": "unified_ledger",
@@ -569,7 +569,7 @@
    "event": "Qinwen Zheng v Shi Han",
    "start": "2026-10-01T04:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 427.0
+   "hours_since_start": 452.3
   },
   {
    "ledger": "unified_ledger",
@@ -579,7 +579,7 @@
    "event": "Bu Yunchaokete v Novak Djokovic",
    "start": "2026-10-02T03:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 404.0
+   "hours_since_start": 429.3
   },
   {
    "ledger": "unified_ledger",
@@ -589,7 +589,7 @@
    "event": "Coco Gauff v Maria Camila Osorio Serrano",
    "start": "2026-10-03T04:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 379.0
+   "hours_since_start": 404.3
   },
   {
    "ledger": "unified_ledger",
@@ -599,7 +599,7 @@
    "event": "Sun Xinran v Cristina Bucsa",
    "start": "2026-10-03T04:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 379.0
+   "hours_since_start": 404.3
   },
   {
    "ledger": "unified_ledger",
@@ -609,7 +609,7 @@
    "event": "Coco Gauff v Sun Xinran",
    "start": "2026-10-05T04:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 331.0
+   "hours_since_start": 356.3
   },
   {
    "ledger": "unified_ledger",
@@ -619,7 +619,7 @@
    "event": "Botic van de Zandschulp v Daniel Merida Aguilar",
    "start": "2026-10-07T04:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 283.0
+   "hours_since_start": 308.3
   },
   {
    "ledger": "unified_ledger",
@@ -629,7 +629,7 @@
    "event": "Luca Van Assche v Bu Yunchaokete",
    "start": "2026-10-07T04:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 283.0
+   "hours_since_start": 308.3
   },
   {
    "ledger": "unified_ledger",
@@ -639,7 +639,7 @@
    "event": "Cameron Norrie v Denis Shapovalov",
    "start": "2026-10-08T04:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 259.0
+   "hours_since_start": 284.3
   },
   {
    "ledger": "unified_ledger",
@@ -649,7 +649,7 @@
    "event": "Quentin Halys v Chak Lam Coleman Wong",
    "start": "2026-10-07T07:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 279.5
+   "hours_since_start": 304.8
   },
   {
    "ledger": "unified_ledger",
@@ -659,7 +659,7 @@
    "event": "Wu Yibing v Michael Zheng",
    "start": "2026-10-07T10:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 277.0
+   "hours_since_start": 302.3
   },
   {
    "ledger": "unified_ledger",
@@ -669,7 +669,7 @@
    "event": "Botic van de Zandschulp v Daniel Merida Aguilar",
    "start": "2026-10-08T04:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 259.0
+   "hours_since_start": 284.3
   },
   {
    "ledger": "unified_ledger",
@@ -679,7 +679,27 @@
    "event": "Luca Van Assche v Bu Yunchaokete",
    "start": "2026-10-08T04:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 259.0
+   "hours_since_start": 284.3
+  },
+  {
+   "ledger": "unified_ledger",
+   "id": "cf2606c1e680dcaf",
+   "sport": "tennis",
+   "competition": "ATP Shanghai Masters",
+   "event": "Alexander Zverev v Wu Yibing",
+   "start": "2026-10-09T04:00:00+00:00",
+   "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
+   "hours_since_start": 260.3
+  },
+  {
+   "ledger": "unified_ledger",
+   "id": "f53784b7e69768f4",
+   "sport": "tennis",
+   "competition": "ATP Shanghai Masters",
+   "event": "Alex de Minaur v Alex Molcan",
+   "start": "2026-10-09T06:20:00+00:00",
+   "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
+   "hours_since_start": 257.9
   },
   {
    "ledger": "unified_ledger",
@@ -689,7 +709,7 @@
    "event": "1. FC Heidenheim v 1. FC Kaiserslautern",
    "start": "2026-10-09T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 222.5
+   "hours_since_start": 247.8
   },
   {
    "ledger": "unified_ledger",
@@ -699,7 +719,7 @@
    "event": "1. FC Heidenheim v 1. FC Kaiserslautern",
    "start": "2026-10-09T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 222.5
+   "hours_since_start": 247.8
   },
   {
    "ledger": "unified_ledger",
@@ -709,7 +729,7 @@
    "event": "1. FC Heidenheim v 1. FC Kaiserslautern",
    "start": "2026-10-09T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 222.5
+   "hours_since_start": 247.8
   },
   {
    "ledger": "unified_ledger",
@@ -719,7 +739,7 @@
    "event": "1. FC Heidenheim v 1. FC Kaiserslautern",
    "start": "2026-10-09T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 222.5
+   "hours_since_start": 247.8
   },
   {
    "ledger": "unified_ledger",
@@ -729,7 +749,7 @@
    "event": "1. FC Heidenheim v 1. FC Kaiserslautern",
    "start": "2026-10-09T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 222.5
+   "hours_since_start": 247.8
   },
   {
    "ledger": "unified_ledger",
@@ -739,7 +759,7 @@
    "event": "1. FC Heidenheim v 1. FC Kaiserslautern",
    "start": "2026-10-09T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 222.5
+   "hours_since_start": 247.8
   },
   {
    "ledger": "unified_ledger",
@@ -749,7 +769,7 @@
    "event": "1. FC Magdeburg v Hannover 96",
    "start": "2026-10-10T11:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 204.0
+   "hours_since_start": 229.3
   },
   {
    "ledger": "unified_ledger",
@@ -759,7 +779,7 @@
    "event": "1. FC Magdeburg v Hannover 96",
    "start": "2026-10-10T11:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 204.0
+   "hours_since_start": 229.3
   },
   {
    "ledger": "unified_ledger",
@@ -769,7 +789,7 @@
    "event": "1. FC Magdeburg v Hannover 96",
    "start": "2026-10-10T11:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 204.0
+   "hours_since_start": 229.3
   },
   {
    "ledger": "unified_ledger",
@@ -779,7 +799,7 @@
    "event": "1. FC Magdeburg v Hannover 96",
    "start": "2026-10-10T11:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 204.0
+   "hours_since_start": 229.3
   },
   {
    "ledger": "unified_ledger",
@@ -789,7 +809,7 @@
    "event": "1. FC Magdeburg v Hannover 96",
    "start": "2026-10-10T11:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 204.0
+   "hours_since_start": 229.3
   },
   {
    "ledger": "unified_ledger",
@@ -799,7 +819,7 @@
    "event": "1. FC Magdeburg v Hannover 96",
    "start": "2026-10-10T11:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 204.0
+   "hours_since_start": 229.3
   },
   {
    "ledger": "unified_ledger",
@@ -809,7 +829,7 @@
    "event": "Eintracht Braunschweig v Holstein Kiel",
    "start": "2026-10-09T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 222.5
+   "hours_since_start": 247.8
   },
   {
    "ledger": "unified_ledger",
@@ -819,7 +839,7 @@
    "event": "Eintracht Braunschweig v Holstein Kiel",
    "start": "2026-10-09T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 222.5
+   "hours_since_start": 247.8
   },
   {
    "ledger": "unified_ledger",
@@ -829,7 +849,7 @@
    "event": "Eintracht Braunschweig v Holstein Kiel",
    "start": "2026-10-09T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 222.5
+   "hours_since_start": 247.8
   },
   {
    "ledger": "unified_ledger",
@@ -839,7 +859,7 @@
    "event": "Eintracht Braunschweig v Holstein Kiel",
    "start": "2026-10-09T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 222.5
+   "hours_since_start": 247.8
   },
   {
    "ledger": "unified_ledger",
@@ -849,7 +869,7 @@
    "event": "Eintracht Braunschweig v Holstein Kiel",
    "start": "2026-10-09T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 222.5
+   "hours_since_start": 247.8
   },
   {
    "ledger": "unified_ledger",
@@ -859,7 +879,7 @@
    "event": "Eintracht Braunschweig v Holstein Kiel",
    "start": "2026-10-09T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 222.5
+   "hours_since_start": 247.8
   },
   {
    "ledger": "unified_ledger",
@@ -869,7 +889,7 @@
    "event": "SV Darmstadt 98 v FC Energie Cottbus",
    "start": "2026-10-10T11:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 204.0
+   "hours_since_start": 229.3
   },
   {
    "ledger": "unified_ledger",
@@ -879,7 +899,7 @@
    "event": "SV Darmstadt 98 v FC Energie Cottbus",
    "start": "2026-10-10T11:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 204.0
+   "hours_since_start": 229.3
   },
   {
    "ledger": "unified_ledger",
@@ -889,7 +909,7 @@
    "event": "SV Darmstadt 98 v FC Energie Cottbus",
    "start": "2026-10-10T11:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 204.0
+   "hours_since_start": 229.3
   },
   {
    "ledger": "unified_ledger",
@@ -899,7 +919,7 @@
    "event": "SV Darmstadt 98 v FC Energie Cottbus",
    "start": "2026-10-10T11:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 204.0
+   "hours_since_start": 229.3
   },
   {
    "ledger": "unified_ledger",
@@ -909,7 +929,7 @@
    "event": "SV Darmstadt 98 v FC Energie Cottbus",
    "start": "2026-10-10T11:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 204.0
+   "hours_since_start": 229.3
   },
   {
    "ledger": "unified_ledger",
@@ -919,7 +939,7 @@
    "event": "SV Darmstadt 98 v FC Energie Cottbus",
    "start": "2026-10-10T11:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 204.0
+   "hours_since_start": 229.3
   },
   {
    "ledger": "unified_ledger",
@@ -929,7 +949,7 @@
    "event": "VfL Osnabr\u00fcck v Dynamo Dresden",
    "start": "2026-10-10T11:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 204.0
+   "hours_since_start": 229.3
   },
   {
    "ledger": "unified_ledger",
@@ -939,7 +959,7 @@
    "event": "VfL Osnabr\u00fcck v Dynamo Dresden",
    "start": "2026-10-10T11:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 204.0
+   "hours_since_start": 229.3
   },
   {
    "ledger": "unified_ledger",
@@ -949,7 +969,7 @@
    "event": "VfL Osnabr\u00fcck v Dynamo Dresden",
    "start": "2026-10-10T11:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 204.0
+   "hours_since_start": 229.3
   },
   {
    "ledger": "unified_ledger",
@@ -959,7 +979,7 @@
    "event": "VfL Osnabr\u00fcck v Dynamo Dresden",
    "start": "2026-10-10T11:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 204.0
+   "hours_since_start": 229.3
   },
   {
    "ledger": "unified_ledger",
@@ -969,7 +989,7 @@
    "event": "VfL Osnabr\u00fcck v Dynamo Dresden",
    "start": "2026-10-10T11:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 204.0
+   "hours_since_start": 229.3
   },
   {
    "ledger": "unified_ledger",
@@ -979,7 +999,7 @@
    "event": "VfL Osnabr\u00fcck v Dynamo Dresden",
    "start": "2026-10-10T11:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 204.0
+   "hours_since_start": 229.3
   },
   {
    "ledger": "unified_ledger",
@@ -989,7 +1009,7 @@
    "event": "Cercle Brugge KSV v Anderlecht",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -999,7 +1019,7 @@
    "event": "Cercle Brugge KSV v Anderlecht",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1009,7 +1029,7 @@
    "event": "Cercle Brugge KSV v Anderlecht",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1019,7 +1039,7 @@
    "event": "Cercle Brugge KSV v Anderlecht",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1029,7 +1049,7 @@
    "event": "Cercle Brugge KSV v Anderlecht",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1039,7 +1059,7 @@
    "event": "Cercle Brugge KSV v Anderlecht",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1049,7 +1069,7 @@
    "event": "SK Beveren v Lommel SK",
    "start": "2026-10-09T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.3
+   "hours_since_start": 245.5
   },
   {
    "ledger": "unified_ledger",
@@ -1059,7 +1079,7 @@
    "event": "SK Beveren v Lommel SK",
    "start": "2026-10-09T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.3
+   "hours_since_start": 245.5
   },
   {
    "ledger": "unified_ledger",
@@ -1069,7 +1089,7 @@
    "event": "SK Beveren v Lommel SK",
    "start": "2026-10-09T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.3
+   "hours_since_start": 245.5
   },
   {
    "ledger": "unified_ledger",
@@ -1079,7 +1099,7 @@
    "event": "SK Beveren v Lommel SK",
    "start": "2026-10-09T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.3
+   "hours_since_start": 245.5
   },
   {
    "ledger": "unified_ledger",
@@ -1089,7 +1109,7 @@
    "event": "SK Beveren v Lommel SK",
    "start": "2026-10-09T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.3
+   "hours_since_start": 245.5
   },
   {
    "ledger": "unified_ledger",
@@ -1099,7 +1119,7 @@
    "event": "SK Beveren v Lommel SK",
    "start": "2026-10-09T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.3
+   "hours_since_start": 245.5
   },
   {
    "ledger": "unified_ledger",
@@ -1109,7 +1129,7 @@
    "event": "Augsburg v Bayern Munich",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1119,7 +1139,7 @@
    "event": "Augsburg v Bayern Munich",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1129,7 +1149,7 @@
    "event": "Augsburg v Bayern Munich",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1139,7 +1159,7 @@
    "event": "Augsburg v Bayern Munich",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1149,7 +1169,7 @@
    "event": "Augsburg v Bayern Munich",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1159,7 +1179,7 @@
    "event": "Augsburg v Bayern Munich",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1169,7 +1189,7 @@
    "event": "Borussia Dortmund v Werder Bremen",
    "start": "2026-10-09T18:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.5
+   "hours_since_start": 245.8
   },
   {
    "ledger": "unified_ledger",
@@ -1179,7 +1199,7 @@
    "event": "Borussia Dortmund v Werder Bremen",
    "start": "2026-10-09T18:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.5
+   "hours_since_start": 245.8
   },
   {
    "ledger": "unified_ledger",
@@ -1189,7 +1209,7 @@
    "event": "Borussia Dortmund v Werder Bremen",
    "start": "2026-10-09T18:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.5
+   "hours_since_start": 245.8
   },
   {
    "ledger": "unified_ledger",
@@ -1199,7 +1219,7 @@
    "event": "Borussia Dortmund v Werder Bremen",
    "start": "2026-10-09T18:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.5
+   "hours_since_start": 245.8
   },
   {
    "ledger": "unified_ledger",
@@ -1209,7 +1229,7 @@
    "event": "Borussia Dortmund v Werder Bremen",
    "start": "2026-10-09T18:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.5
+   "hours_since_start": 245.8
   },
   {
    "ledger": "unified_ledger",
@@ -1219,7 +1239,7 @@
    "event": "Borussia Dortmund v Werder Bremen",
    "start": "2026-10-09T18:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.5
+   "hours_since_start": 245.8
   },
   {
    "ledger": "unified_ledger",
@@ -1229,7 +1249,7 @@
    "event": "FSV Mainz 05 v Bayer Leverkusen",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1239,7 +1259,7 @@
    "event": "FSV Mainz 05 v Bayer Leverkusen",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1249,7 +1269,7 @@
    "event": "FSV Mainz 05 v Bayer Leverkusen",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1259,7 +1279,7 @@
    "event": "FSV Mainz 05 v Bayer Leverkusen",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1269,7 +1289,7 @@
    "event": "FSV Mainz 05 v Bayer Leverkusen",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1279,7 +1299,7 @@
    "event": "FSV Mainz 05 v Bayer Leverkusen",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1289,7 +1309,7 @@
    "event": "SC Paderborn v VfB Stuttgart",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1299,7 +1319,7 @@
    "event": "SC Paderborn v VfB Stuttgart",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1309,7 +1329,7 @@
    "event": "SC Paderborn v VfB Stuttgart",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1319,7 +1339,7 @@
    "event": "SC Paderborn v VfB Stuttgart",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1329,7 +1349,7 @@
    "event": "SC Paderborn v VfB Stuttgart",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1339,7 +1359,7 @@
    "event": "SC Paderborn v VfB Stuttgart",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1349,7 +1369,7 @@
    "event": "TSG Hoffenheim v Hamburger SV",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1359,7 +1379,7 @@
    "event": "TSG Hoffenheim v Hamburger SV",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1369,7 +1389,7 @@
    "event": "TSG Hoffenheim v Hamburger SV",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1379,7 +1399,7 @@
    "event": "TSG Hoffenheim v Hamburger SV",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1389,7 +1409,7 @@
    "event": "TSG Hoffenheim v Hamburger SV",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1399,7 +1419,7 @@
    "event": "TSG Hoffenheim v Hamburger SV",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1409,7 +1429,7 @@
    "event": "Union Berlin v Elversberg",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1419,7 +1439,7 @@
    "event": "Union Berlin v Elversberg",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1429,7 +1449,7 @@
    "event": "Union Berlin v Elversberg",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1439,7 +1459,7 @@
    "event": "Union Berlin v Elversberg",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1449,7 +1469,7 @@
    "event": "Union Berlin v Elversberg",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1459,7 +1479,7 @@
    "event": "Union Berlin v Elversberg",
    "start": "2026-10-10T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.5
+   "hours_since_start": 226.8
   },
   {
    "ledger": "unified_ledger",
@@ -1469,7 +1489,7 @@
    "event": "PSV Eindhoven v Heerenveen",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -1479,7 +1499,7 @@
    "event": "PSV Eindhoven v Heerenveen",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -1489,7 +1509,7 @@
    "event": "PSV Eindhoven v Heerenveen",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -1499,7 +1519,7 @@
    "event": "PSV Eindhoven v Heerenveen",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -1509,7 +1529,7 @@
    "event": "PSV Eindhoven v Heerenveen",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -1519,7 +1539,7 @@
    "event": "PSV Eindhoven v Heerenveen",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -1529,7 +1549,7 @@
    "event": "Alav\u00e9s v Atl\u00e9tico Madrid",
    "start": "2026-10-10T14:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.8
+   "hours_since_start": 226.0
   },
   {
    "ledger": "unified_ledger",
@@ -1539,7 +1559,7 @@
    "event": "Alav\u00e9s v Atl\u00e9tico Madrid",
    "start": "2026-10-10T14:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.8
+   "hours_since_start": 226.0
   },
   {
    "ledger": "unified_ledger",
@@ -1549,7 +1569,7 @@
    "event": "Alav\u00e9s v Atl\u00e9tico Madrid",
    "start": "2026-10-10T14:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.8
+   "hours_since_start": 226.0
   },
   {
    "ledger": "unified_ledger",
@@ -1559,7 +1579,7 @@
    "event": "Alav\u00e9s v Atl\u00e9tico Madrid",
    "start": "2026-10-10T14:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.8
+   "hours_since_start": 226.0
   },
   {
    "ledger": "unified_ledger",
@@ -1569,7 +1589,7 @@
    "event": "Alav\u00e9s v Atl\u00e9tico Madrid",
    "start": "2026-10-10T14:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.8
+   "hours_since_start": 226.0
   },
   {
    "ledger": "unified_ledger",
@@ -1579,7 +1599,7 @@
    "event": "Alav\u00e9s v Atl\u00e9tico Madrid",
    "start": "2026-10-10T14:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.8
+   "hours_since_start": 226.0
   },
   {
    "ledger": "unified_ledger",
@@ -1589,7 +1609,7 @@
    "event": "M\u00e1laga v Espanyol",
    "start": "2026-10-09T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.0
+   "hours_since_start": 245.3
   },
   {
    "ledger": "unified_ledger",
@@ -1599,7 +1619,7 @@
    "event": "M\u00e1laga v Espanyol",
    "start": "2026-10-09T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.0
+   "hours_since_start": 245.3
   },
   {
    "ledger": "unified_ledger",
@@ -1609,7 +1629,7 @@
    "event": "M\u00e1laga v Espanyol",
    "start": "2026-10-09T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.0
+   "hours_since_start": 245.3
   },
   {
    "ledger": "unified_ledger",
@@ -1619,7 +1639,7 @@
    "event": "M\u00e1laga v Espanyol",
    "start": "2026-10-09T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.0
+   "hours_since_start": 245.3
   },
   {
    "ledger": "unified_ledger",
@@ -1629,7 +1649,7 @@
    "event": "M\u00e1laga v Espanyol",
    "start": "2026-10-09T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.0
+   "hours_since_start": 245.3
   },
   {
    "ledger": "unified_ledger",
@@ -1639,7 +1659,7 @@
    "event": "M\u00e1laga v Espanyol",
    "start": "2026-10-09T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.0
+   "hours_since_start": 245.3
   },
   {
    "ledger": "unified_ledger",
@@ -1649,7 +1669,7 @@
    "event": "Rayo Vallecano v Athletic Bilbao",
    "start": "2026-10-10T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.0
+   "hours_since_start": 228.3
   },
   {
    "ledger": "unified_ledger",
@@ -1659,7 +1679,7 @@
    "event": "Rayo Vallecano v Athletic Bilbao",
    "start": "2026-10-10T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.0
+   "hours_since_start": 228.3
   },
   {
    "ledger": "unified_ledger",
@@ -1669,7 +1689,7 @@
    "event": "Rayo Vallecano v Athletic Bilbao",
    "start": "2026-10-10T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.0
+   "hours_since_start": 228.3
   },
   {
    "ledger": "unified_ledger",
@@ -1679,7 +1699,7 @@
    "event": "Rayo Vallecano v Athletic Bilbao",
    "start": "2026-10-10T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.0
+   "hours_since_start": 228.3
   },
   {
    "ledger": "unified_ledger",
@@ -1689,7 +1709,7 @@
    "event": "Rayo Vallecano v Athletic Bilbao",
    "start": "2026-10-10T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.0
+   "hours_since_start": 228.3
   },
   {
    "ledger": "unified_ledger",
@@ -1699,7 +1719,7 @@
    "event": "Rayo Vallecano v Athletic Bilbao",
    "start": "2026-10-10T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.0
+   "hours_since_start": 228.3
   },
   {
    "ledger": "unified_ledger",
@@ -1709,7 +1729,7 @@
    "event": "Bradford City v Leyton Orient",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1719,7 +1739,7 @@
    "event": "Bradford City v Leyton Orient",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1729,7 +1749,7 @@
    "event": "Bradford City v Leyton Orient",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1739,7 +1759,7 @@
    "event": "Bradford City v Leyton Orient",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1749,7 +1769,7 @@
    "event": "Bradford City v Leyton Orient",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1759,7 +1779,7 @@
    "event": "Bradford City v Leyton Orient",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1769,7 +1789,7 @@
    "event": "Cambridge United v Blackpool",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1779,7 +1799,7 @@
    "event": "Cambridge United v Blackpool",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1789,7 +1809,7 @@
    "event": "Cambridge United v Blackpool",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1799,7 +1819,7 @@
    "event": "Cambridge United v Blackpool",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1809,7 +1829,7 @@
    "event": "Cambridge United v Blackpool",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1819,7 +1839,7 @@
    "event": "Cambridge United v Blackpool",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1829,7 +1849,7 @@
    "event": "Doncaster Rovers v Burton Albion",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1839,7 +1859,7 @@
    "event": "Doncaster Rovers v Burton Albion",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1849,7 +1869,7 @@
    "event": "Doncaster Rovers v Burton Albion",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1859,7 +1879,7 @@
    "event": "Doncaster Rovers v Burton Albion",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1869,7 +1889,7 @@
    "event": "Doncaster Rovers v Burton Albion",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1879,7 +1899,7 @@
    "event": "Doncaster Rovers v Burton Albion",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1889,7 +1909,7 @@
    "event": "Mansfield Town v Bromley FC",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1899,7 +1919,7 @@
    "event": "Mansfield Town v Bromley FC",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1909,7 +1929,7 @@
    "event": "Mansfield Town v Bromley FC",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1919,7 +1939,7 @@
    "event": "Mansfield Town v Bromley FC",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1929,7 +1949,7 @@
    "event": "Mansfield Town v Bromley FC",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1939,7 +1959,7 @@
    "event": "Mansfield Town v Bromley FC",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1949,7 +1969,7 @@
    "event": "Milton Keynes Dons v Reading",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1959,7 +1979,7 @@
    "event": "Milton Keynes Dons v Reading",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1969,7 +1989,7 @@
    "event": "Milton Keynes Dons v Reading",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1979,7 +1999,7 @@
    "event": "Milton Keynes Dons v Reading",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1989,7 +2009,7 @@
    "event": "Milton Keynes Dons v Reading",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -1999,7 +2019,7 @@
    "event": "Milton Keynes Dons v Reading",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2009,7 +2029,7 @@
    "event": "Notts County v Oxford United",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2019,7 +2039,7 @@
    "event": "Notts County v Oxford United",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2029,7 +2049,7 @@
    "event": "Notts County v Oxford United",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2039,7 +2059,7 @@
    "event": "Notts County v Oxford United",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2049,7 +2069,7 @@
    "event": "Notts County v Oxford United",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2059,7 +2079,7 @@
    "event": "Notts County v Oxford United",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2069,7 +2089,7 @@
    "event": "Plymouth Argyle v Wimbledon",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2079,7 +2099,7 @@
    "event": "Plymouth Argyle v Wimbledon",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2089,7 +2109,7 @@
    "event": "Plymouth Argyle v Wimbledon",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2099,7 +2119,7 @@
    "event": "Plymouth Argyle v Wimbledon",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2109,7 +2129,7 @@
    "event": "Plymouth Argyle v Wimbledon",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2119,7 +2139,7 @@
    "event": "Plymouth Argyle v Wimbledon",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2129,7 +2149,7 @@
    "event": "Stevenage v Wigan Athletic",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2139,7 +2159,7 @@
    "event": "Stevenage v Wigan Athletic",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2149,7 +2169,7 @@
    "event": "Stevenage v Wigan Athletic",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2159,7 +2179,7 @@
    "event": "Stevenage v Wigan Athletic",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2169,7 +2189,7 @@
    "event": "Stevenage v Wigan Athletic",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2179,7 +2199,7 @@
    "event": "Stevenage v Wigan Athletic",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2189,7 +2209,7 @@
    "event": "Stockport County FC v Barnsley",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2199,7 +2219,7 @@
    "event": "Stockport County FC v Barnsley",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2209,7 +2229,7 @@
    "event": "Stockport County FC v Barnsley",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2219,7 +2239,7 @@
    "event": "Stockport County FC v Barnsley",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2229,7 +2249,7 @@
    "event": "Stockport County FC v Barnsley",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2239,7 +2259,7 @@
    "event": "Stockport County FC v Barnsley",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2249,7 +2269,7 @@
    "event": "Bristol Rovers v Barnet",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2259,7 +2279,7 @@
    "event": "Bristol Rovers v Barnet",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2269,7 +2289,7 @@
    "event": "Bristol Rovers v Barnet",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2279,7 +2299,7 @@
    "event": "Bristol Rovers v Barnet",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2289,7 +2309,7 @@
    "event": "Bristol Rovers v Barnet",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2299,7 +2319,7 @@
    "event": "Bristol Rovers v Barnet",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2309,7 +2329,7 @@
    "event": "Cheltenham Town v Salford City",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2319,7 +2339,7 @@
    "event": "Cheltenham Town v Salford City",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2329,7 +2349,7 @@
    "event": "Cheltenham Town v Salford City",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2339,7 +2359,7 @@
    "event": "Cheltenham Town v Salford City",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2349,7 +2369,7 @@
    "event": "Cheltenham Town v Salford City",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2359,7 +2379,7 @@
    "event": "Cheltenham Town v Salford City",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2369,7 +2389,7 @@
    "event": "Crawley Town v Chesterfield FC",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2379,7 +2399,7 @@
    "event": "Crawley Town v Chesterfield FC",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2389,7 +2409,7 @@
    "event": "Crawley Town v Chesterfield FC",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2399,7 +2419,7 @@
    "event": "Crawley Town v Chesterfield FC",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2409,7 +2429,7 @@
    "event": "Crawley Town v Chesterfield FC",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2419,7 +2439,7 @@
    "event": "Crawley Town v Chesterfield FC",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2429,7 +2449,7 @@
    "event": "Fleetwood Town v Walsall",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2439,7 +2459,7 @@
    "event": "Fleetwood Town v Walsall",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2449,7 +2469,7 @@
    "event": "Fleetwood Town v Walsall",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2459,7 +2479,7 @@
    "event": "Fleetwood Town v Walsall",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2469,7 +2489,7 @@
    "event": "Fleetwood Town v Walsall",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2479,7 +2499,7 @@
    "event": "Fleetwood Town v Walsall",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2489,7 +2509,7 @@
    "event": "Newport County v Colchester United",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2499,7 +2519,7 @@
    "event": "Newport County v Colchester United",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2509,7 +2529,7 @@
    "event": "Newport County v Colchester United",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2519,7 +2539,7 @@
    "event": "Newport County v Colchester United",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2529,7 +2549,7 @@
    "event": "Newport County v Colchester United",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2539,7 +2559,7 @@
    "event": "Newport County v Colchester United",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2549,7 +2569,7 @@
    "event": "Oldham Athletic v Accrington Stanley",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2559,7 +2579,7 @@
    "event": "Oldham Athletic v Accrington Stanley",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2569,7 +2589,7 @@
    "event": "Oldham Athletic v Accrington Stanley",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2579,7 +2599,7 @@
    "event": "Oldham Athletic v Accrington Stanley",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2589,7 +2609,7 @@
    "event": "Oldham Athletic v Accrington Stanley",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2599,7 +2619,7 @@
    "event": "Oldham Athletic v Accrington Stanley",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2609,7 +2629,7 @@
    "event": "Port Vale v Grimsby Town",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2619,7 +2639,7 @@
    "event": "Port Vale v Grimsby Town",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2629,7 +2649,7 @@
    "event": "Port Vale v Grimsby Town",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2639,7 +2659,7 @@
    "event": "Port Vale v Grimsby Town",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2649,7 +2669,7 @@
    "event": "Port Vale v Grimsby Town",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2659,7 +2679,7 @@
    "event": "Port Vale v Grimsby Town",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2669,7 +2689,7 @@
    "event": "Rotherham United v Gillingham",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2679,7 +2699,7 @@
    "event": "Rotherham United v Gillingham",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2689,7 +2709,7 @@
    "event": "Rotherham United v Gillingham",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2699,7 +2719,7 @@
    "event": "Rotherham United v Gillingham",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2709,7 +2729,7 @@
    "event": "Rotherham United v Gillingham",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2719,7 +2739,7 @@
    "event": "Rotherham United v Gillingham",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2729,7 +2749,7 @@
    "event": "Shrewsbury Town v Exeter City",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2739,7 +2759,7 @@
    "event": "Shrewsbury Town v Exeter City",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2749,7 +2769,7 @@
    "event": "Shrewsbury Town v Exeter City",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2759,7 +2779,7 @@
    "event": "Shrewsbury Town v Exeter City",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2769,7 +2789,7 @@
    "event": "Shrewsbury Town v Exeter City",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2779,7 +2799,7 @@
    "event": "Shrewsbury Town v Exeter City",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2789,7 +2809,7 @@
    "event": "Swindon Town v Crewe Alexandra",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2799,7 +2819,7 @@
    "event": "Swindon Town v Crewe Alexandra",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2809,7 +2829,7 @@
    "event": "Swindon Town v Crewe Alexandra",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2819,7 +2839,7 @@
    "event": "Swindon Town v Crewe Alexandra",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2829,7 +2849,7 @@
    "event": "Swindon Town v Crewe Alexandra",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2839,7 +2859,7 @@
    "event": "Swindon Town v Crewe Alexandra",
    "start": "2026-10-10T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.5
+   "hours_since_start": 228.8
   },
   {
    "ledger": "unified_ledger",
@@ -2849,7 +2869,7 @@
    "event": "Tranmere Rovers v Rochdale",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2859,7 +2879,7 @@
    "event": "Tranmere Rovers v Rochdale",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2869,7 +2889,7 @@
    "event": "Tranmere Rovers v Rochdale",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2879,7 +2899,7 @@
    "event": "Tranmere Rovers v Rochdale",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2889,7 +2909,7 @@
    "event": "Tranmere Rovers v Rochdale",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2899,7 +2919,7 @@
    "event": "Tranmere Rovers v Rochdale",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2909,7 +2929,7 @@
    "event": "York City v Northampton Town",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2919,7 +2939,7 @@
    "event": "York City v Northampton Town",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2929,7 +2949,7 @@
    "event": "York City v Northampton Town",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2939,7 +2959,7 @@
    "event": "York City v Northampton Town",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2949,7 +2969,7 @@
    "event": "York City v Northampton Town",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2959,7 +2979,7 @@
    "event": "York City v Northampton Town",
    "start": "2026-10-10T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 201.0
+   "hours_since_start": 226.3
   },
   {
    "ledger": "unified_ledger",
@@ -2969,7 +2989,7 @@
    "event": "RC Lens v Lyon",
    "start": "2026-10-09T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.3
+   "hours_since_start": 245.5
   },
   {
    "ledger": "unified_ledger",
@@ -2979,7 +2999,7 @@
    "event": "RC Lens v Lyon",
    "start": "2026-10-09T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.3
+   "hours_since_start": 245.5
   },
   {
    "ledger": "unified_ledger",
@@ -2989,7 +3009,7 @@
    "event": "RC Lens v Lyon",
    "start": "2026-10-09T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.3
+   "hours_since_start": 245.5
   },
   {
    "ledger": "unified_ledger",
@@ -2999,7 +3019,7 @@
    "event": "RC Lens v Lyon",
    "start": "2026-10-09T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.3
+   "hours_since_start": 245.5
   },
   {
    "ledger": "unified_ledger",
@@ -3009,7 +3029,7 @@
    "event": "RC Lens v Lyon",
    "start": "2026-10-09T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.3
+   "hours_since_start": 245.5
   },
   {
    "ledger": "unified_ledger",
@@ -3019,7 +3039,7 @@
    "event": "RC Lens v Lyon",
    "start": "2026-10-09T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.3
+   "hours_since_start": 245.5
   },
   {
    "ledger": "unified_ledger",
@@ -3029,7 +3049,7 @@
    "event": "Clermont v Red Star",
    "start": "2026-10-10T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.0
+   "hours_since_start": 228.3
   },
   {
    "ledger": "unified_ledger",
@@ -3039,7 +3059,7 @@
    "event": "Clermont v Red Star",
    "start": "2026-10-10T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.0
+   "hours_since_start": 228.3
   },
   {
    "ledger": "unified_ledger",
@@ -3049,7 +3069,7 @@
    "event": "Clermont v Red Star",
    "start": "2026-10-10T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.0
+   "hours_since_start": 228.3
   },
   {
    "ledger": "unified_ledger",
@@ -3059,7 +3079,7 @@
    "event": "Clermont v Red Star",
    "start": "2026-10-10T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.0
+   "hours_since_start": 228.3
   },
   {
    "ledger": "unified_ledger",
@@ -3069,7 +3089,7 @@
    "event": "Clermont v Red Star",
    "start": "2026-10-10T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.0
+   "hours_since_start": 228.3
   },
   {
    "ledger": "unified_ledger",
@@ -3079,7 +3099,7 @@
    "event": "Clermont v Red Star",
    "start": "2026-10-10T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.0
+   "hours_since_start": 228.3
   },
   {
    "ledger": "unified_ledger",
@@ -3089,7 +3109,7 @@
    "event": "Montpellier v Grenoble",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3099,7 +3119,7 @@
    "event": "Montpellier v Grenoble",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3109,7 +3129,7 @@
    "event": "Montpellier v Grenoble",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3119,7 +3139,7 @@
    "event": "Montpellier v Grenoble",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3129,7 +3149,7 @@
    "event": "Montpellier v Grenoble",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3139,7 +3159,7 @@
    "event": "Montpellier v Grenoble",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3149,7 +3169,7 @@
    "event": "Nancy v Guingamp",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3159,7 +3179,7 @@
    "event": "Nancy v Guingamp",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3169,7 +3189,7 @@
    "event": "Nancy v Guingamp",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3179,7 +3199,7 @@
    "event": "Nancy v Guingamp",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3189,7 +3209,7 @@
    "event": "Nancy v Guingamp",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3199,7 +3219,7 @@
    "event": "Nancy v Guingamp",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3209,7 +3229,7 @@
    "event": "Nantes v Stade de Reims",
    "start": "2026-10-10T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.0
+   "hours_since_start": 228.3
   },
   {
    "ledger": "unified_ledger",
@@ -3219,7 +3239,7 @@
    "event": "Nantes v Stade de Reims",
    "start": "2026-10-10T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.0
+   "hours_since_start": 228.3
   },
   {
    "ledger": "unified_ledger",
@@ -3229,7 +3249,7 @@
    "event": "Nantes v Stade de Reims",
    "start": "2026-10-10T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.0
+   "hours_since_start": 228.3
   },
   {
    "ledger": "unified_ledger",
@@ -3239,7 +3259,7 @@
    "event": "Nantes v Stade de Reims",
    "start": "2026-10-10T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.0
+   "hours_since_start": 228.3
   },
   {
    "ledger": "unified_ledger",
@@ -3249,7 +3269,7 @@
    "event": "Nantes v Stade de Reims",
    "start": "2026-10-10T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.0
+   "hours_since_start": 228.3
   },
   {
    "ledger": "unified_ledger",
@@ -3259,7 +3279,7 @@
    "event": "Nantes v Stade de Reims",
    "start": "2026-10-10T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 203.0
+   "hours_since_start": 228.3
   },
   {
    "ledger": "unified_ledger",
@@ -3269,7 +3289,7 @@
    "event": "Pau FC v Stade Lavallois",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3279,7 +3299,7 @@
    "event": "Pau FC v Stade Lavallois",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3289,7 +3309,7 @@
    "event": "Pau FC v Stade Lavallois",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3299,7 +3319,7 @@
    "event": "Pau FC v Stade Lavallois",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3309,7 +3329,7 @@
    "event": "Pau FC v Stade Lavallois",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3319,7 +3339,7 @@
    "event": "Pau FC v Stade Lavallois",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3329,7 +3349,7 @@
    "event": "Sochaux v Boulogne",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3339,7 +3359,7 @@
    "event": "Sochaux v Boulogne",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3349,7 +3369,7 @@
    "event": "Sochaux v Boulogne",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3359,7 +3379,7 @@
    "event": "Sochaux v Boulogne",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3369,7 +3389,7 @@
    "event": "Sochaux v Boulogne",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3379,7 +3399,7 @@
    "event": "Sochaux v Boulogne",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3389,7 +3409,7 @@
    "event": "USL Dunkerque v Annecy FC",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3399,7 +3419,7 @@
    "event": "USL Dunkerque v Annecy FC",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3409,7 +3429,7 @@
    "event": "USL Dunkerque v Annecy FC",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3419,7 +3439,7 @@
    "event": "USL Dunkerque v Annecy FC",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3429,7 +3449,7 @@
    "event": "USL Dunkerque v Annecy FC",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3439,7 +3459,7 @@
    "event": "USL Dunkerque v Annecy FC",
    "start": "2026-10-09T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.0
+   "hours_since_start": 246.3
   },
   {
    "ledger": "unified_ledger",
@@ -3449,7 +3469,7 @@
    "event": "Braga v Sporting Lisbon",
    "start": "2026-10-09T19:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 219.8
+   "hours_since_start": 245.0
   },
   {
    "ledger": "unified_ledger",
@@ -3459,7 +3479,7 @@
    "event": "Braga v Sporting Lisbon",
    "start": "2026-10-09T19:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 219.8
+   "hours_since_start": 245.0
   },
   {
    "ledger": "unified_ledger",
@@ -3469,7 +3489,7 @@
    "event": "Braga v Sporting Lisbon",
    "start": "2026-10-09T19:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 219.8
+   "hours_since_start": 245.0
   },
   {
    "ledger": "unified_ledger",
@@ -3479,7 +3499,7 @@
    "event": "Braga v Sporting Lisbon",
    "start": "2026-10-09T19:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 219.8
+   "hours_since_start": 245.0
   },
   {
    "ledger": "unified_ledger",
@@ -3489,7 +3509,7 @@
    "event": "Braga v Sporting Lisbon",
    "start": "2026-10-09T19:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 219.8
+   "hours_since_start": 245.0
   },
   {
    "ledger": "unified_ledger",
@@ -3499,7 +3519,7 @@
    "event": "Braga v Sporting Lisbon",
    "start": "2026-10-09T19:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 219.8
+   "hours_since_start": 245.0
   },
   {
    "ledger": "unified_ledger",
@@ -3509,7 +3529,7 @@
    "event": "Moreirense FC v Gil Vicente",
    "start": "2026-10-09T17:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.3
+   "hours_since_start": 246.5
   },
   {
    "ledger": "unified_ledger",
@@ -3519,7 +3539,7 @@
    "event": "Moreirense FC v Gil Vicente",
    "start": "2026-10-09T17:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.3
+   "hours_since_start": 246.5
   },
   {
    "ledger": "unified_ledger",
@@ -3529,7 +3549,7 @@
    "event": "Moreirense FC v Gil Vicente",
    "start": "2026-10-09T17:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.3
+   "hours_since_start": 246.5
   },
   {
    "ledger": "unified_ledger",
@@ -3539,7 +3559,7 @@
    "event": "Moreirense FC v Gil Vicente",
    "start": "2026-10-09T17:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.3
+   "hours_since_start": 246.5
   },
   {
    "ledger": "unified_ledger",
@@ -3549,7 +3569,7 @@
    "event": "Moreirense FC v Gil Vicente",
    "start": "2026-10-09T17:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.3
+   "hours_since_start": 246.5
   },
   {
    "ledger": "unified_ledger",
@@ -3559,7 +3579,7 @@
    "event": "Moreirense FC v Gil Vicente",
    "start": "2026-10-09T17:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 221.3
+   "hours_since_start": 246.5
   },
   {
    "ledger": "unified_ledger",
@@ -3569,7 +3589,7 @@
    "event": "AD Ceuta FC v Sabadell FC",
    "start": "2026-10-10T14:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.8
+   "hours_since_start": 226.0
   },
   {
    "ledger": "unified_ledger",
@@ -3579,7 +3599,7 @@
    "event": "AD Ceuta FC v Sabadell FC",
    "start": "2026-10-10T14:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.8
+   "hours_since_start": 226.0
   },
   {
    "ledger": "unified_ledger",
@@ -3589,7 +3609,7 @@
    "event": "AD Ceuta FC v Sabadell FC",
    "start": "2026-10-10T14:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.8
+   "hours_since_start": 226.0
   },
   {
    "ledger": "unified_ledger",
@@ -3599,7 +3619,7 @@
    "event": "AD Ceuta FC v Sabadell FC",
    "start": "2026-10-10T14:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.8
+   "hours_since_start": 226.0
   },
   {
    "ledger": "unified_ledger",
@@ -3609,7 +3629,7 @@
    "event": "AD Ceuta FC v Sabadell FC",
    "start": "2026-10-10T14:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.8
+   "hours_since_start": 226.0
   },
   {
    "ledger": "unified_ledger",
@@ -3619,7 +3639,7 @@
    "event": "AD Ceuta FC v Sabadell FC",
    "start": "2026-10-10T14:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.8
+   "hours_since_start": 226.0
   },
   {
    "ledger": "unified_ledger",
@@ -3629,7 +3649,7 @@
    "event": "Genoa v Fiorentina",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3639,7 +3659,7 @@
    "event": "Genoa v Fiorentina",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3649,7 +3669,7 @@
    "event": "Genoa v Fiorentina",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3659,7 +3679,7 @@
    "event": "Genoa v Fiorentina",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3669,7 +3689,7 @@
    "event": "Genoa v Fiorentina",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3679,7 +3699,7 @@
    "event": "Genoa v Fiorentina",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3689,7 +3709,7 @@
    "event": "Avellino v Sampdoria",
    "start": "2026-10-09T18:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.5
+   "hours_since_start": 245.8
   },
   {
    "ledger": "unified_ledger",
@@ -3699,7 +3719,7 @@
    "event": "Avellino v Sampdoria",
    "start": "2026-10-09T18:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.5
+   "hours_since_start": 245.8
   },
   {
    "ledger": "unified_ledger",
@@ -3709,7 +3729,7 @@
    "event": "Avellino v Sampdoria",
    "start": "2026-10-09T18:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.5
+   "hours_since_start": 245.8
   },
   {
    "ledger": "unified_ledger",
@@ -3719,7 +3739,7 @@
    "event": "Avellino v Sampdoria",
    "start": "2026-10-09T18:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.5
+   "hours_since_start": 245.8
   },
   {
    "ledger": "unified_ledger",
@@ -3729,7 +3749,7 @@
    "event": "Avellino v Sampdoria",
    "start": "2026-10-09T18:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.5
+   "hours_since_start": 245.8
   },
   {
    "ledger": "unified_ledger",
@@ -3739,7 +3759,7 @@
    "event": "Avellino v Sampdoria",
    "start": "2026-10-09T18:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 220.5
+   "hours_since_start": 245.8
   },
   {
    "ledger": "unified_ledger",
@@ -3749,7 +3769,7 @@
    "event": "Benevento v Cesena FC",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3759,7 +3779,7 @@
    "event": "Benevento v Cesena FC",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3769,7 +3789,7 @@
    "event": "Benevento v Cesena FC",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3779,7 +3799,7 @@
    "event": "Benevento v Cesena FC",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3789,7 +3809,7 @@
    "event": "Benevento v Cesena FC",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3799,7 +3819,7 @@
    "event": "Benevento v Cesena FC",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3809,7 +3829,7 @@
    "event": "Empoli v Palermo",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3819,7 +3839,7 @@
    "event": "Empoli v Palermo",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3829,7 +3849,7 @@
    "event": "Empoli v Palermo",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3839,7 +3859,7 @@
    "event": "Empoli v Palermo",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3849,7 +3869,7 @@
    "event": "Empoli v Palermo",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3859,7 +3879,7 @@
    "event": "Empoli v Palermo",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3869,7 +3889,7 @@
    "event": "S\u00fcdtirol v Ascoli",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3879,7 +3899,7 @@
    "event": "S\u00fcdtirol v Ascoli",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3889,7 +3909,7 @@
    "event": "S\u00fcdtirol v Ascoli",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3899,7 +3919,7 @@
    "event": "S\u00fcdtirol v Ascoli",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3909,7 +3929,7 @@
    "event": "S\u00fcdtirol v Ascoli",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3919,7 +3939,7 @@
    "event": "S\u00fcdtirol v Ascoli",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3929,7 +3949,7 @@
    "event": "Virtus Entella v Juve Stabia",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3939,7 +3959,7 @@
    "event": "Virtus Entella v Juve Stabia",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3949,7 +3969,7 @@
    "event": "Virtus Entella v Juve Stabia",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3959,7 +3979,7 @@
    "event": "Virtus Entella v Juve Stabia",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3969,7 +3989,7 @@
    "event": "Virtus Entella v Juve Stabia",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3979,7 +3999,7 @@
    "event": "Virtus Entella v Juve Stabia",
    "start": "2026-10-10T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 202.0
+   "hours_since_start": 227.3
   },
   {
    "ledger": "unified_ledger",
@@ -3989,7 +4009,7 @@
    "event": "Genk v KV Kortrijk",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -3999,7 +4019,7 @@
    "event": "Genk v KV Kortrijk",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4009,7 +4029,7 @@
    "event": "Genk v KV Kortrijk",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4019,7 +4039,7 @@
    "event": "Genk v KV Kortrijk",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4029,7 +4049,7 @@
    "event": "Genk v KV Kortrijk",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4039,7 +4059,7 @@
    "event": "Genk v KV Kortrijk",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4049,7 +4069,7 @@
    "event": "RAAL La Louvi\u00e8re v Club Brugge",
    "start": "2026-10-10T16:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.8
+   "hours_since_start": 224.0
   },
   {
    "ledger": "unified_ledger",
@@ -4059,7 +4079,7 @@
    "event": "RAAL La Louvi\u00e8re v Club Brugge",
    "start": "2026-10-10T16:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.8
+   "hours_since_start": 224.0
   },
   {
    "ledger": "unified_ledger",
@@ -4069,7 +4089,7 @@
    "event": "RAAL La Louvi\u00e8re v Club Brugge",
    "start": "2026-10-10T16:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.8
+   "hours_since_start": 224.0
   },
   {
    "ledger": "unified_ledger",
@@ -4079,7 +4099,7 @@
    "event": "RAAL La Louvi\u00e8re v Club Brugge",
    "start": "2026-10-10T16:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.8
+   "hours_since_start": 224.0
   },
   {
    "ledger": "unified_ledger",
@@ -4089,7 +4109,7 @@
    "event": "RAAL La Louvi\u00e8re v Club Brugge",
    "start": "2026-10-10T16:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.8
+   "hours_since_start": 224.0
   },
   {
    "ledger": "unified_ledger",
@@ -4099,7 +4119,7 @@
    "event": "RAAL La Louvi\u00e8re v Club Brugge",
    "start": "2026-10-10T16:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.8
+   "hours_since_start": 224.0
   },
   {
    "ledger": "unified_ledger",
@@ -4109,7 +4129,7 @@
    "event": "SV Zulte-Waregem v Gent",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4119,7 +4139,7 @@
    "event": "SV Zulte-Waregem v Gent",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4129,7 +4149,7 @@
    "event": "SV Zulte-Waregem v Gent",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4139,7 +4159,7 @@
    "event": "SV Zulte-Waregem v Gent",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4149,7 +4169,7 @@
    "event": "SV Zulte-Waregem v Gent",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4159,7 +4179,7 @@
    "event": "SV Zulte-Waregem v Gent",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4169,7 +4189,7 @@
    "event": "RB Leipzig v Eintracht Frankfurt",
    "start": "2026-10-10T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.5
+   "hours_since_start": 223.8
   },
   {
    "ledger": "unified_ledger",
@@ -4179,7 +4199,7 @@
    "event": "RB Leipzig v Eintracht Frankfurt",
    "start": "2026-10-10T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.5
+   "hours_since_start": 223.8
   },
   {
    "ledger": "unified_ledger",
@@ -4189,7 +4209,7 @@
    "event": "RB Leipzig v Eintracht Frankfurt",
    "start": "2026-10-10T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.5
+   "hours_since_start": 223.8
   },
   {
    "ledger": "unified_ledger",
@@ -4199,7 +4219,7 @@
    "event": "RB Leipzig v Eintracht Frankfurt",
    "start": "2026-10-10T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.5
+   "hours_since_start": 223.8
   },
   {
    "ledger": "unified_ledger",
@@ -4209,7 +4229,7 @@
    "event": "RB Leipzig v Eintracht Frankfurt",
    "start": "2026-10-10T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.5
+   "hours_since_start": 223.8
   },
   {
    "ledger": "unified_ledger",
@@ -4219,7 +4239,7 @@
    "event": "RB Leipzig v Eintracht Frankfurt",
    "start": "2026-10-10T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.5
+   "hours_since_start": 223.8
   },
   {
    "ledger": "unified_ledger",
@@ -4229,7 +4249,7 @@
    "event": "Ajax v NEC Nijmegen",
    "start": "2026-10-10T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.0
+   "hours_since_start": 221.3
   },
   {
    "ledger": "unified_ledger",
@@ -4239,7 +4259,7 @@
    "event": "Ajax v NEC Nijmegen",
    "start": "2026-10-10T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.0
+   "hours_since_start": 221.3
   },
   {
    "ledger": "unified_ledger",
@@ -4249,7 +4269,7 @@
    "event": "Ajax v NEC Nijmegen",
    "start": "2026-10-10T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.0
+   "hours_since_start": 221.3
   },
   {
    "ledger": "unified_ledger",
@@ -4259,7 +4279,7 @@
    "event": "Ajax v NEC Nijmegen",
    "start": "2026-10-10T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.0
+   "hours_since_start": 221.3
   },
   {
    "ledger": "unified_ledger",
@@ -4269,7 +4289,7 @@
    "event": "Ajax v NEC Nijmegen",
    "start": "2026-10-10T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.0
+   "hours_since_start": 221.3
   },
   {
    "ledger": "unified_ledger",
@@ -4279,7 +4299,7 @@
    "event": "Ajax v NEC Nijmegen",
    "start": "2026-10-10T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.0
+   "hours_since_start": 221.3
   },
   {
    "ledger": "unified_ledger",
@@ -4289,7 +4309,7 @@
    "event": "Feyenoord v AZ Alkmaar",
    "start": "2026-10-10T16:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.3
+   "hours_since_start": 223.5
   },
   {
    "ledger": "unified_ledger",
@@ -4299,7 +4319,7 @@
    "event": "Feyenoord v AZ Alkmaar",
    "start": "2026-10-10T16:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.3
+   "hours_since_start": 223.5
   },
   {
    "ledger": "unified_ledger",
@@ -4309,7 +4329,7 @@
    "event": "Feyenoord v AZ Alkmaar",
    "start": "2026-10-10T16:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.3
+   "hours_since_start": 223.5
   },
   {
    "ledger": "unified_ledger",
@@ -4319,7 +4339,7 @@
    "event": "Feyenoord v AZ Alkmaar",
    "start": "2026-10-10T16:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.3
+   "hours_since_start": 223.5
   },
   {
    "ledger": "unified_ledger",
@@ -4329,7 +4349,7 @@
    "event": "Feyenoord v AZ Alkmaar",
    "start": "2026-10-10T16:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.3
+   "hours_since_start": 223.5
   },
   {
    "ledger": "unified_ledger",
@@ -4339,7 +4359,7 @@
    "event": "Feyenoord v AZ Alkmaar",
    "start": "2026-10-10T16:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.3
+   "hours_since_start": 223.5
   },
   {
    "ledger": "unified_ledger",
@@ -4349,7 +4369,7 @@
    "event": "Fortuna Sittard v FC Twente Enschede",
    "start": "2026-10-10T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 197.0
+   "hours_since_start": 222.3
   },
   {
    "ledger": "unified_ledger",
@@ -4359,7 +4379,7 @@
    "event": "Fortuna Sittard v FC Twente Enschede",
    "start": "2026-10-10T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 197.0
+   "hours_since_start": 222.3
   },
   {
    "ledger": "unified_ledger",
@@ -4369,7 +4389,7 @@
    "event": "Fortuna Sittard v FC Twente Enschede",
    "start": "2026-10-10T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 197.0
+   "hours_since_start": 222.3
   },
   {
    "ledger": "unified_ledger",
@@ -4379,7 +4399,7 @@
    "event": "Fortuna Sittard v FC Twente Enschede",
    "start": "2026-10-10T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 197.0
+   "hours_since_start": 222.3
   },
   {
    "ledger": "unified_ledger",
@@ -4389,7 +4409,7 @@
    "event": "Fortuna Sittard v FC Twente Enschede",
    "start": "2026-10-10T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 197.0
+   "hours_since_start": 222.3
   },
   {
    "ledger": "unified_ledger",
@@ -4399,7 +4419,7 @@
    "event": "Fortuna Sittard v FC Twente Enschede",
    "start": "2026-10-10T18:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 197.0
+   "hours_since_start": 222.3
   },
   {
    "ledger": "unified_ledger",
@@ -4409,7 +4429,7 @@
    "event": "Go Ahead Eagles v Sparta Rotterdam",
    "start": "2026-10-10T14:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.5
+   "hours_since_start": 225.8
   },
   {
    "ledger": "unified_ledger",
@@ -4419,7 +4439,7 @@
    "event": "Go Ahead Eagles v Sparta Rotterdam",
    "start": "2026-10-10T14:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.5
+   "hours_since_start": 225.8
   },
   {
    "ledger": "unified_ledger",
@@ -4429,7 +4449,7 @@
    "event": "Go Ahead Eagles v Sparta Rotterdam",
    "start": "2026-10-10T14:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.5
+   "hours_since_start": 225.8
   },
   {
    "ledger": "unified_ledger",
@@ -4439,7 +4459,7 @@
    "event": "Go Ahead Eagles v Sparta Rotterdam",
    "start": "2026-10-10T14:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.5
+   "hours_since_start": 225.8
   },
   {
    "ledger": "unified_ledger",
@@ -4449,7 +4469,7 @@
    "event": "Go Ahead Eagles v Sparta Rotterdam",
    "start": "2026-10-10T14:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.5
+   "hours_since_start": 225.8
   },
   {
    "ledger": "unified_ledger",
@@ -4459,7 +4479,7 @@
    "event": "Go Ahead Eagles v Sparta Rotterdam",
    "start": "2026-10-10T14:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.5
+   "hours_since_start": 225.8
   },
   {
    "ledger": "unified_ledger",
@@ -4469,7 +4489,7 @@
    "event": "Barcelona v Getafe",
    "start": "2026-10-10T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.5
+   "hours_since_start": 223.8
   },
   {
    "ledger": "unified_ledger",
@@ -4479,7 +4499,7 @@
    "event": "Barcelona v Getafe",
    "start": "2026-10-10T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.5
+   "hours_since_start": 223.8
   },
   {
    "ledger": "unified_ledger",
@@ -4489,7 +4509,7 @@
    "event": "Barcelona v Getafe",
    "start": "2026-10-10T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.5
+   "hours_since_start": 223.8
   },
   {
    "ledger": "unified_ledger",
@@ -4499,7 +4519,7 @@
    "event": "Barcelona v Getafe",
    "start": "2026-10-10T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.5
+   "hours_since_start": 223.8
   },
   {
    "ledger": "unified_ledger",
@@ -4509,7 +4529,7 @@
    "event": "Barcelona v Getafe",
    "start": "2026-10-10T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.5
+   "hours_since_start": 223.8
   },
   {
    "ledger": "unified_ledger",
@@ -4519,7 +4539,7 @@
    "event": "Barcelona v Getafe",
    "start": "2026-10-10T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.5
+   "hours_since_start": 223.8
   },
   {
    "ledger": "unified_ledger",
@@ -4529,7 +4549,7 @@
    "event": "Real Madrid v Villarreal",
    "start": "2026-10-10T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.0
+   "hours_since_start": 221.3
   },
   {
    "ledger": "unified_ledger",
@@ -4539,7 +4559,7 @@
    "event": "Real Madrid v Villarreal",
    "start": "2026-10-10T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.0
+   "hours_since_start": 221.3
   },
   {
    "ledger": "unified_ledger",
@@ -4549,7 +4569,7 @@
    "event": "Real Madrid v Villarreal",
    "start": "2026-10-10T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.0
+   "hours_since_start": 221.3
   },
   {
    "ledger": "unified_ledger",
@@ -4559,7 +4579,7 @@
    "event": "Real Madrid v Villarreal",
    "start": "2026-10-10T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.0
+   "hours_since_start": 221.3
   },
   {
    "ledger": "unified_ledger",
@@ -4569,7 +4589,7 @@
    "event": "Real Madrid v Villarreal",
    "start": "2026-10-10T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.0
+   "hours_since_start": 221.3
   },
   {
    "ledger": "unified_ledger",
@@ -4579,7 +4599,7 @@
    "event": "Real Madrid v Villarreal",
    "start": "2026-10-10T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.0
+   "hours_since_start": 221.3
   },
   {
    "ledger": "unified_ledger",
@@ -4589,7 +4609,7 @@
    "event": "AS Monaco v Toulouse",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4599,7 +4619,7 @@
    "event": "AS Monaco v Toulouse",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4609,7 +4629,7 @@
    "event": "AS Monaco v Toulouse",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4619,7 +4639,7 @@
    "event": "AS Monaco v Toulouse",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4629,7 +4649,7 @@
    "event": "AS Monaco v Toulouse",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4639,7 +4659,7 @@
    "event": "AS Monaco v Toulouse",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4649,7 +4669,7 @@
    "event": "Brest v Angers",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4659,7 +4679,7 @@
    "event": "Brest v Angers",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4669,7 +4689,7 @@
    "event": "Brest v Angers",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4679,7 +4699,7 @@
    "event": "Brest v Angers",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4689,7 +4709,7 @@
    "event": "Brest v Angers",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4699,7 +4719,7 @@
    "event": "Brest v Angers",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4709,7 +4729,7 @@
    "event": "Lille v Le Havre",
    "start": "2026-10-10T15:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 199.8
+   "hours_since_start": 225.0
   },
   {
    "ledger": "unified_ledger",
@@ -4719,7 +4739,7 @@
    "event": "Lille v Le Havre",
    "start": "2026-10-10T15:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 199.8
+   "hours_since_start": 225.0
   },
   {
    "ledger": "unified_ledger",
@@ -4729,7 +4749,7 @@
    "event": "Lille v Le Havre",
    "start": "2026-10-10T15:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 199.8
+   "hours_since_start": 225.0
   },
   {
    "ledger": "unified_ledger",
@@ -4739,7 +4759,7 @@
    "event": "Lille v Le Havre",
    "start": "2026-10-10T15:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 199.8
+   "hours_since_start": 225.0
   },
   {
    "ledger": "unified_ledger",
@@ -4749,7 +4769,7 @@
    "event": "Lille v Le Havre",
    "start": "2026-10-10T15:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 199.8
+   "hours_since_start": 225.0
   },
   {
    "ledger": "unified_ledger",
@@ -4759,7 +4779,7 @@
    "event": "Lille v Le Havre",
    "start": "2026-10-10T15:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 199.8
+   "hours_since_start": 225.0
   },
   {
    "ledger": "unified_ledger",
@@ -4769,7 +4789,7 @@
    "event": "Lorient v Paris FC",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4779,7 +4799,7 @@
    "event": "Lorient v Paris FC",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4789,7 +4809,7 @@
    "event": "Lorient v Paris FC",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4799,7 +4819,7 @@
    "event": "Lorient v Paris FC",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4809,7 +4829,7 @@
    "event": "Lorient v Paris FC",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4819,7 +4839,7 @@
    "event": "Lorient v Paris FC",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4829,7 +4849,7 @@
    "event": "Paris Saint Germain v Le Mans FC",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4839,7 +4859,7 @@
    "event": "Paris Saint Germain v Le Mans FC",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4849,7 +4869,7 @@
    "event": "Paris Saint Germain v Le Mans FC",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4859,7 +4879,7 @@
    "event": "Paris Saint Germain v Le Mans FC",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4869,7 +4889,7 @@
    "event": "Paris Saint Germain v Le Mans FC",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4879,7 +4899,7 @@
    "event": "Paris Saint Germain v Le Mans FC",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -4889,7 +4909,7 @@
    "event": "Acad\u00e9mico de Viseu v Estoril",
    "start": "2026-10-10T19:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 195.5
+   "hours_since_start": 220.8
   },
   {
    "ledger": "unified_ledger",
@@ -4899,7 +4919,7 @@
    "event": "Acad\u00e9mico de Viseu v Estoril",
    "start": "2026-10-10T19:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 195.5
+   "hours_since_start": 220.8
   },
   {
    "ledger": "unified_ledger",
@@ -4909,7 +4929,7 @@
    "event": "Acad\u00e9mico de Viseu v Estoril",
    "start": "2026-10-10T19:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 195.5
+   "hours_since_start": 220.8
   },
   {
    "ledger": "unified_ledger",
@@ -4919,7 +4939,7 @@
    "event": "Acad\u00e9mico de Viseu v Estoril",
    "start": "2026-10-10T19:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 195.5
+   "hours_since_start": 220.8
   },
   {
    "ledger": "unified_ledger",
@@ -4929,7 +4949,7 @@
    "event": "Acad\u00e9mico de Viseu v Estoril",
    "start": "2026-10-10T19:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 195.5
+   "hours_since_start": 220.8
   },
   {
    "ledger": "unified_ledger",
@@ -4939,7 +4959,7 @@
    "event": "Acad\u00e9mico de Viseu v Estoril",
    "start": "2026-10-10T19:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 195.5
+   "hours_since_start": 220.8
   },
   {
    "ledger": "unified_ledger",
@@ -4949,7 +4969,7 @@
    "event": "CS Maritimo v FC Porto",
    "start": "2026-10-10T17:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.0
+   "hours_since_start": 223.3
   },
   {
    "ledger": "unified_ledger",
@@ -4959,7 +4979,7 @@
    "event": "CS Maritimo v FC Porto",
    "start": "2026-10-10T17:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.0
+   "hours_since_start": 223.3
   },
   {
    "ledger": "unified_ledger",
@@ -4969,7 +4989,7 @@
    "event": "CS Maritimo v FC Porto",
    "start": "2026-10-10T17:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.0
+   "hours_since_start": 223.3
   },
   {
    "ledger": "unified_ledger",
@@ -4979,7 +4999,7 @@
    "event": "CS Maritimo v FC Porto",
    "start": "2026-10-10T17:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.0
+   "hours_since_start": 223.3
   },
   {
    "ledger": "unified_ledger",
@@ -4989,7 +5009,7 @@
    "event": "CS Maritimo v FC Porto",
    "start": "2026-10-10T17:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.0
+   "hours_since_start": 223.3
   },
   {
    "ledger": "unified_ledger",
@@ -4999,7 +5019,7 @@
    "event": "CS Maritimo v FC Porto",
    "start": "2026-10-10T17:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 198.0
+   "hours_since_start": 223.3
   },
   {
    "ledger": "unified_ledger",
@@ -5009,7 +5029,7 @@
    "event": "Casa Pia v Santa Clara",
    "start": "2026-10-10T14:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.5
+   "hours_since_start": 225.8
   },
   {
    "ledger": "unified_ledger",
@@ -5019,7 +5039,7 @@
    "event": "Casa Pia v Santa Clara",
    "start": "2026-10-10T14:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.5
+   "hours_since_start": 225.8
   },
   {
    "ledger": "unified_ledger",
@@ -5029,7 +5049,7 @@
    "event": "Casa Pia v Santa Clara",
    "start": "2026-10-10T14:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.5
+   "hours_since_start": 225.8
   },
   {
    "ledger": "unified_ledger",
@@ -5039,7 +5059,7 @@
    "event": "Casa Pia v Santa Clara",
    "start": "2026-10-10T14:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.5
+   "hours_since_start": 225.8
   },
   {
    "ledger": "unified_ledger",
@@ -5049,7 +5069,7 @@
    "event": "Casa Pia v Santa Clara",
    "start": "2026-10-10T14:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.5
+   "hours_since_start": 225.8
   },
   {
    "ledger": "unified_ledger",
@@ -5059,7 +5079,7 @@
    "event": "Casa Pia v Santa Clara",
    "start": "2026-10-10T14:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 200.5
+   "hours_since_start": 225.8
   },
   {
    "ledger": "unified_ledger",
@@ -5069,7 +5089,7 @@
    "event": "Inter Milan v Parma",
    "start": "2026-10-10T16:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 199.0
+   "hours_since_start": 224.3
   },
   {
    "ledger": "unified_ledger",
@@ -5079,7 +5099,7 @@
    "event": "Inter Milan v Parma",
    "start": "2026-10-10T16:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 199.0
+   "hours_since_start": 224.3
   },
   {
    "ledger": "unified_ledger",
@@ -5089,7 +5109,7 @@
    "event": "Inter Milan v Parma",
    "start": "2026-10-10T16:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 199.0
+   "hours_since_start": 224.3
   },
   {
    "ledger": "unified_ledger",
@@ -5099,7 +5119,7 @@
    "event": "Inter Milan v Parma",
    "start": "2026-10-10T16:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 199.0
+   "hours_since_start": 224.3
   },
   {
    "ledger": "unified_ledger",
@@ -5109,7 +5129,7 @@
    "event": "Inter Milan v Parma",
    "start": "2026-10-10T16:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 199.0
+   "hours_since_start": 224.3
   },
   {
    "ledger": "unified_ledger",
@@ -5119,7 +5139,7 @@
    "event": "Inter Milan v Parma",
    "start": "2026-10-10T16:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 199.0
+   "hours_since_start": 224.3
   },
   {
    "ledger": "unified_ledger",
@@ -5129,7 +5149,7 @@
    "event": "Napoli v Frosinone",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -5139,7 +5159,7 @@
    "event": "Napoli v Frosinone",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -5149,7 +5169,7 @@
    "event": "Napoli v Frosinone",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -5159,7 +5179,7 @@
    "event": "Napoli v Frosinone",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -5169,7 +5189,7 @@
    "event": "Napoli v Frosinone",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -5179,7 +5199,7 @@
    "event": "Napoli v Frosinone",
    "start": "2026-10-10T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 196.3
+   "hours_since_start": 221.5
   },
   {
    "ledger": "unified_ledger",
@@ -5189,7 +5209,7 @@
    "event": "KV Mechelen v Sint Truiden",
    "start": "2026-10-11T17:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 173.8
+   "hours_since_start": 199.0
   },
   {
    "ledger": "unified_ledger",
@@ -5199,7 +5219,7 @@
    "event": "KV Mechelen v Sint Truiden",
    "start": "2026-10-11T17:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 173.8
+   "hours_since_start": 199.0
   },
   {
    "ledger": "unified_ledger",
@@ -5209,7 +5229,7 @@
    "event": "KV Mechelen v Sint Truiden",
    "start": "2026-10-11T17:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 173.8
+   "hours_since_start": 199.0
   },
   {
    "ledger": "unified_ledger",
@@ -5219,7 +5239,7 @@
    "event": "KV Mechelen v Sint Truiden",
    "start": "2026-10-11T17:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 173.8
+   "hours_since_start": 199.0
   },
   {
    "ledger": "unified_ledger",
@@ -5229,7 +5249,7 @@
    "event": "KV Mechelen v Sint Truiden",
    "start": "2026-10-11T17:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 173.8
+   "hours_since_start": 199.0
   },
   {
    "ledger": "unified_ledger",
@@ -5239,7 +5259,7 @@
    "event": "KV Mechelen v Sint Truiden",
    "start": "2026-10-11T17:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 173.8
+   "hours_since_start": 199.0
   },
   {
    "ledger": "unified_ledger",
@@ -5249,7 +5269,7 @@
    "event": "Standard Liege v Charleroi",
    "start": "2026-10-11T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 179.5
+   "hours_since_start": 204.8
   },
   {
    "ledger": "unified_ledger",
@@ -5259,7 +5279,7 @@
    "event": "Standard Liege v Charleroi",
    "start": "2026-10-11T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 179.5
+   "hours_since_start": 204.8
   },
   {
    "ledger": "unified_ledger",
@@ -5269,7 +5289,7 @@
    "event": "Standard Liege v Charleroi",
    "start": "2026-10-11T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 179.5
+   "hours_since_start": 204.8
   },
   {
    "ledger": "unified_ledger",
@@ -5279,7 +5299,7 @@
    "event": "Standard Liege v Charleroi",
    "start": "2026-10-11T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 179.5
+   "hours_since_start": 204.8
   },
   {
    "ledger": "unified_ledger",
@@ -5289,7 +5309,7 @@
    "event": "Standard Liege v Charleroi",
    "start": "2026-10-11T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 179.5
+   "hours_since_start": 204.8
   },
   {
    "ledger": "unified_ledger",
@@ -5299,7 +5319,7 @@
    "event": "Standard Liege v Charleroi",
    "start": "2026-10-11T11:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 179.5
+   "hours_since_start": 204.8
   },
   {
    "ledger": "unified_ledger",
@@ -5309,7 +5329,7 @@
    "event": "Union Saint-Gilloise v Leuven",
    "start": "2026-10-11T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 177.0
+   "hours_since_start": 202.3
   },
   {
    "ledger": "unified_ledger",
@@ -5319,7 +5339,7 @@
    "event": "Union Saint-Gilloise v Leuven",
    "start": "2026-10-11T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 177.0
+   "hours_since_start": 202.3
   },
   {
    "ledger": "unified_ledger",
@@ -5329,7 +5349,7 @@
    "event": "Union Saint-Gilloise v Leuven",
    "start": "2026-10-11T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 177.0
+   "hours_since_start": 202.3
   },
   {
    "ledger": "unified_ledger",
@@ -5339,7 +5359,7 @@
    "event": "Union Saint-Gilloise v Leuven",
    "start": "2026-10-11T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 177.0
+   "hours_since_start": 202.3
   },
   {
    "ledger": "unified_ledger",
@@ -5349,7 +5369,7 @@
    "event": "Union Saint-Gilloise v Leuven",
    "start": "2026-10-11T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 177.0
+   "hours_since_start": 202.3
   },
   {
    "ledger": "unified_ledger",
@@ -5359,7 +5379,7 @@
    "event": "Union Saint-Gilloise v Leuven",
    "start": "2026-10-11T14:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 177.0
+   "hours_since_start": 202.3
   },
   {
    "ledger": "unified_ledger",
@@ -5369,7 +5389,7 @@
    "event": "Westerlo v Royal Antwerp",
    "start": "2026-10-11T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 174.5
+   "hours_since_start": 199.8
   },
   {
    "ledger": "unified_ledger",
@@ -5379,7 +5399,7 @@
    "event": "Westerlo v Royal Antwerp",
    "start": "2026-10-11T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 174.5
+   "hours_since_start": 199.8
   },
   {
    "ledger": "unified_ledger",
@@ -5389,7 +5409,7 @@
    "event": "Westerlo v Royal Antwerp",
    "start": "2026-10-11T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 174.5
+   "hours_since_start": 199.8
   },
   {
    "ledger": "unified_ledger",
@@ -5399,7 +5419,7 @@
    "event": "Westerlo v Royal Antwerp",
    "start": "2026-10-11T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 174.5
+   "hours_since_start": 199.8
   },
   {
    "ledger": "unified_ledger",
@@ -5409,7 +5429,7 @@
    "event": "Westerlo v Royal Antwerp",
    "start": "2026-10-11T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 174.5
+   "hours_since_start": 199.8
   },
   {
    "ledger": "unified_ledger",
@@ -5419,7 +5439,7 @@
    "event": "Westerlo v Royal Antwerp",
    "start": "2026-10-11T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 174.5
+   "hours_since_start": 199.8
   },
   {
    "ledger": "unified_ledger",
@@ -5429,7 +5449,7 @@
    "event": "1. FC K\u00f6ln v Borussia Monchengladbach",
    "start": "2026-10-11T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 177.5
+   "hours_since_start": 202.8
   },
   {
    "ledger": "unified_ledger",
@@ -5439,7 +5459,7 @@
    "event": "1. FC K\u00f6ln v Borussia Monchengladbach",
    "start": "2026-10-11T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 177.5
+   "hours_since_start": 202.8
   },
   {
    "ledger": "unified_ledger",
@@ -5449,7 +5469,7 @@
    "event": "1. FC K\u00f6ln v Borussia Monchengladbach",
    "start": "2026-10-11T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 177.5
+   "hours_since_start": 202.8
   },
   {
    "ledger": "unified_ledger",
@@ -5459,7 +5479,7 @@
    "event": "1. FC K\u00f6ln v Borussia Monchengladbach",
    "start": "2026-10-11T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 177.5
+   "hours_since_start": 202.8
   },
   {
    "ledger": "unified_ledger",
@@ -5469,7 +5489,7 @@
    "event": "1. FC K\u00f6ln v Borussia Monchengladbach",
    "start": "2026-10-11T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 177.5
+   "hours_since_start": 202.8
   },
   {
    "ledger": "unified_ledger",
@@ -5479,7 +5499,7 @@
    "event": "1. FC K\u00f6ln v Borussia Monchengladbach",
    "start": "2026-10-11T13:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 177.5
+   "hours_since_start": 202.8
   },
   {
    "ledger": "unified_ledger",
@@ -5489,7 +5509,7 @@
    "event": "SC Freiburg v FC Schalke 04",
    "start": "2026-10-11T15:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 175.5
+   "hours_since_start": 200.8
   },
   {
    "ledger": "unified_ledger",
@@ -5499,7 +5519,7 @@
    "event": "SC Freiburg v FC Schalke 04",
    "start": "2026-10-11T15:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 175.5
+   "hours_since_start": 200.8
   },
   {
    "ledger": "unified_ledger",
@@ -5509,7 +5529,7 @@
    "event": "SC Freiburg v FC Schalke 04",
    "start": "2026-10-11T15:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 175.5
+   "hours_since_start": 200.8
   },
   {
    "ledger": "unified_ledger",
@@ -5519,7 +5539,7 @@
    "event": "SC Freiburg v FC Schalke 04",
    "start": "2026-10-11T15:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 175.5
+   "hours_since_start": 200.8
   },
   {
    "ledger": "unified_ledger",
@@ -5529,7 +5549,7 @@
    "event": "SC Freiburg v FC Schalke 04",
    "start": "2026-10-11T15:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 175.5
+   "hours_since_start": 200.8
   },
   {
    "ledger": "unified_ledger",
@@ -5539,7 +5559,7 @@
    "event": "SC Freiburg v FC Schalke 04",
    "start": "2026-10-11T15:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 175.5
+   "hours_since_start": 200.8
   },
   {
    "ledger": "unified_ledger",
@@ -5549,7 +5569,7 @@
    "event": "Excelsior v Groningen",
    "start": "2026-10-11T14:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 176.3
+   "hours_since_start": 201.5
   },
   {
    "ledger": "unified_ledger",
@@ -5559,7 +5579,7 @@
    "event": "Excelsior v Groningen",
    "start": "2026-10-11T14:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 176.3
+   "hours_since_start": 201.5
   },
   {
    "ledger": "unified_ledger",
@@ -5569,7 +5589,7 @@
    "event": "Excelsior v Groningen",
    "start": "2026-10-11T14:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 176.3
+   "hours_since_start": 201.5
   },
   {
    "ledger": "unified_ledger",
@@ -5579,7 +5599,7 @@
    "event": "Excelsior v Groningen",
    "start": "2026-10-11T14:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 176.3
+   "hours_since_start": 201.5
   },
   {
    "ledger": "unified_ledger",
@@ -5589,7 +5609,7 @@
    "event": "Excelsior v Groningen",
    "start": "2026-10-11T14:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 176.3
+   "hours_since_start": 201.5
   },
   {
    "ledger": "unified_ledger",
@@ -5599,7 +5619,7 @@
    "event": "Excelsior v Groningen",
    "start": "2026-10-11T14:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 176.3
+   "hours_since_start": 201.5
   },
   {
    "ledger": "unified_ledger",
@@ -5609,7 +5629,7 @@
    "event": "FC Utrecht v Willem II",
    "start": "2026-10-11T10:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 180.8
+   "hours_since_start": 206.0
   },
   {
    "ledger": "unified_ledger",
@@ -5619,7 +5639,7 @@
    "event": "FC Utrecht v Willem II",
    "start": "2026-10-11T10:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 180.8
+   "hours_since_start": 206.0
   },
   {
    "ledger": "unified_ledger",
@@ -5629,7 +5649,7 @@
    "event": "FC Utrecht v Willem II",
    "start": "2026-10-11T10:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 180.8
+   "hours_since_start": 206.0
   },
   {
    "ledger": "unified_ledger",
@@ -5639,7 +5659,7 @@
    "event": "FC Utrecht v Willem II",
    "start": "2026-10-11T10:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 180.8
+   "hours_since_start": 206.0
   },
   {
    "ledger": "unified_ledger",
@@ -5649,7 +5669,7 @@
    "event": "FC Utrecht v Willem II",
    "start": "2026-10-11T10:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 180.8
+   "hours_since_start": 206.0
   },
   {
    "ledger": "unified_ledger",
@@ -5659,7 +5679,7 @@
    "event": "FC Utrecht v Willem II",
    "start": "2026-10-11T10:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 180.8
+   "hours_since_start": 206.0
   },
   {
    "ledger": "unified_ledger",
@@ -5669,7 +5689,7 @@
    "event": "FC Zwolle v SC Cambuur",
    "start": "2026-10-11T12:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.5
+   "hours_since_start": 203.8
   },
   {
    "ledger": "unified_ledger",
@@ -5679,7 +5699,7 @@
    "event": "FC Zwolle v SC Cambuur",
    "start": "2026-10-11T12:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.5
+   "hours_since_start": 203.8
   },
   {
    "ledger": "unified_ledger",
@@ -5689,7 +5709,7 @@
    "event": "FC Zwolle v SC Cambuur",
    "start": "2026-10-11T12:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.5
+   "hours_since_start": 203.8
   },
   {
    "ledger": "unified_ledger",
@@ -5699,7 +5719,7 @@
    "event": "FC Zwolle v SC Cambuur",
    "start": "2026-10-11T12:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.5
+   "hours_since_start": 203.8
   },
   {
    "ledger": "unified_ledger",
@@ -5709,7 +5729,7 @@
    "event": "FC Zwolle v SC Cambuur",
    "start": "2026-10-11T12:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.5
+   "hours_since_start": 203.8
   },
   {
    "ledger": "unified_ledger",
@@ -5719,7 +5739,7 @@
    "event": "FC Zwolle v SC Cambuur",
    "start": "2026-10-11T12:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.5
+   "hours_since_start": 203.8
   },
   {
    "ledger": "unified_ledger",
@@ -5729,7 +5749,7 @@
    "event": "SC Telstar v ADO Den Haag",
    "start": "2026-10-11T12:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.5
+   "hours_since_start": 203.8
   },
   {
    "ledger": "unified_ledger",
@@ -5739,7 +5759,7 @@
    "event": "SC Telstar v ADO Den Haag",
    "start": "2026-10-11T12:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.5
+   "hours_since_start": 203.8
   },
   {
    "ledger": "unified_ledger",
@@ -5749,7 +5769,7 @@
    "event": "SC Telstar v ADO Den Haag",
    "start": "2026-10-11T12:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.5
+   "hours_since_start": 203.8
   },
   {
    "ledger": "unified_ledger",
@@ -5759,7 +5779,7 @@
    "event": "SC Telstar v ADO Den Haag",
    "start": "2026-10-11T12:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.5
+   "hours_since_start": 203.8
   },
   {
    "ledger": "unified_ledger",
@@ -5769,7 +5789,7 @@
    "event": "SC Telstar v ADO Den Haag",
    "start": "2026-10-11T12:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.5
+   "hours_since_start": 203.8
   },
   {
    "ledger": "unified_ledger",
@@ -5779,7 +5799,7 @@
    "event": "SC Telstar v ADO Den Haag",
    "start": "2026-10-11T12:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.5
+   "hours_since_start": 203.8
   },
   {
    "ledger": "unified_ledger",
@@ -5789,7 +5809,7 @@
    "event": "Elche CF v Celta Vigo",
    "start": "2026-10-11T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 179.0
+   "hours_since_start": 204.3
   },
   {
    "ledger": "unified_ledger",
@@ -5799,7 +5819,7 @@
    "event": "Elche CF v Celta Vigo",
    "start": "2026-10-11T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 179.0
+   "hours_since_start": 204.3
   },
   {
    "ledger": "unified_ledger",
@@ -5809,7 +5829,7 @@
    "event": "Elche CF v Celta Vigo",
    "start": "2026-10-11T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 179.0
+   "hours_since_start": 204.3
   },
   {
    "ledger": "unified_ledger",
@@ -5819,7 +5839,7 @@
    "event": "Elche CF v Celta Vigo",
    "start": "2026-10-11T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 179.0
+   "hours_since_start": 204.3
   },
   {
    "ledger": "unified_ledger",
@@ -5829,7 +5849,7 @@
    "event": "Elche CF v Celta Vigo",
    "start": "2026-10-11T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 179.0
+   "hours_since_start": 204.3
   },
   {
    "ledger": "unified_ledger",
@@ -5839,7 +5859,7 @@
    "event": "Elche CF v Celta Vigo",
    "start": "2026-10-11T12:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 179.0
+   "hours_since_start": 204.3
   },
   {
    "ledger": "unified_ledger",
@@ -5849,7 +5869,7 @@
    "event": "Real Betis v CA Osasuna",
    "start": "2026-10-11T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 174.5
+   "hours_since_start": 199.8
   },
   {
    "ledger": "unified_ledger",
@@ -5859,7 +5879,7 @@
    "event": "Real Betis v CA Osasuna",
    "start": "2026-10-11T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 174.5
+   "hours_since_start": 199.8
   },
   {
    "ledger": "unified_ledger",
@@ -5869,7 +5889,7 @@
    "event": "Real Betis v CA Osasuna",
    "start": "2026-10-11T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 174.5
+   "hours_since_start": 199.8
   },
   {
    "ledger": "unified_ledger",
@@ -5879,7 +5899,7 @@
    "event": "Real Betis v CA Osasuna",
    "start": "2026-10-11T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 174.5
+   "hours_since_start": 199.8
   },
   {
    "ledger": "unified_ledger",
@@ -5889,7 +5909,7 @@
    "event": "Real Betis v CA Osasuna",
    "start": "2026-10-11T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 174.5
+   "hours_since_start": 199.8
   },
   {
    "ledger": "unified_ledger",
@@ -5899,7 +5919,7 @@
    "event": "Real Betis v CA Osasuna",
    "start": "2026-10-11T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 174.5
+   "hours_since_start": 199.8
   },
   {
    "ledger": "unified_ledger",
@@ -5909,7 +5929,7 @@
    "event": "Real Racing Club de Santander v Valencia",
    "start": "2026-10-11T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 172.0
+   "hours_since_start": 197.3
   },
   {
    "ledger": "unified_ledger",
@@ -5919,7 +5939,7 @@
    "event": "Real Racing Club de Santander v Valencia",
    "start": "2026-10-11T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 172.0
+   "hours_since_start": 197.3
   },
   {
    "ledger": "unified_ledger",
@@ -5929,7 +5949,7 @@
    "event": "Real Racing Club de Santander v Valencia",
    "start": "2026-10-11T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 172.0
+   "hours_since_start": 197.3
   },
   {
    "ledger": "unified_ledger",
@@ -5939,7 +5959,7 @@
    "event": "Real Racing Club de Santander v Valencia",
    "start": "2026-10-11T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 172.0
+   "hours_since_start": 197.3
   },
   {
    "ledger": "unified_ledger",
@@ -5949,7 +5969,7 @@
    "event": "Real Racing Club de Santander v Valencia",
    "start": "2026-10-11T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 172.0
+   "hours_since_start": 197.3
   },
   {
    "ledger": "unified_ledger",
@@ -5959,7 +5979,7 @@
    "event": "Real Racing Club de Santander v Valencia",
    "start": "2026-10-11T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 172.0
+   "hours_since_start": 197.3
   },
   {
    "ledger": "unified_ledger",
@@ -5969,7 +5989,7 @@
    "event": "Real Sociedad v Deportivo La Coru\u00f1a",
    "start": "2026-10-11T14:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 176.8
+   "hours_since_start": 202.0
   },
   {
    "ledger": "unified_ledger",
@@ -5979,7 +5999,7 @@
    "event": "Real Sociedad v Deportivo La Coru\u00f1a",
    "start": "2026-10-11T14:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 176.8
+   "hours_since_start": 202.0
   },
   {
    "ledger": "unified_ledger",
@@ -5989,7 +6009,7 @@
    "event": "Real Sociedad v Deportivo La Coru\u00f1a",
    "start": "2026-10-11T14:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 176.8
+   "hours_since_start": 202.0
   },
   {
    "ledger": "unified_ledger",
@@ -5999,7 +6019,7 @@
    "event": "Real Sociedad v Deportivo La Coru\u00f1a",
    "start": "2026-10-11T14:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 176.8
+   "hours_since_start": 202.0
   },
   {
    "ledger": "unified_ledger",
@@ -6009,7 +6029,7 @@
    "event": "Real Sociedad v Deportivo La Coru\u00f1a",
    "start": "2026-10-11T14:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 176.8
+   "hours_since_start": 202.0
   },
   {
    "ledger": "unified_ledger",
@@ -6019,7 +6039,7 @@
    "event": "Real Sociedad v Deportivo La Coru\u00f1a",
    "start": "2026-10-11T14:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 176.8
+   "hours_since_start": 202.0
   },
   {
    "ledger": "unified_ledger",
@@ -6029,7 +6049,7 @@
    "event": "Nice v Strasbourg",
    "start": "2026-10-11T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.0
+   "hours_since_start": 203.3
   },
   {
    "ledger": "unified_ledger",
@@ -6039,7 +6059,7 @@
    "event": "Nice v Strasbourg",
    "start": "2026-10-11T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.0
+   "hours_since_start": 203.3
   },
   {
    "ledger": "unified_ledger",
@@ -6049,7 +6069,7 @@
    "event": "Nice v Strasbourg",
    "start": "2026-10-11T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.0
+   "hours_since_start": 203.3
   },
   {
    "ledger": "unified_ledger",
@@ -6059,7 +6079,7 @@
    "event": "Nice v Strasbourg",
    "start": "2026-10-11T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.0
+   "hours_since_start": 203.3
   },
   {
    "ledger": "unified_ledger",
@@ -6069,7 +6089,7 @@
    "event": "Nice v Strasbourg",
    "start": "2026-10-11T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.0
+   "hours_since_start": 203.3
   },
   {
    "ledger": "unified_ledger",
@@ -6079,7 +6099,7 @@
    "event": "Nice v Strasbourg",
    "start": "2026-10-11T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.0
+   "hours_since_start": 203.3
   },
   {
    "ledger": "unified_ledger",
@@ -6089,7 +6109,7 @@
    "event": "Rennes v Auxerre",
    "start": "2026-10-11T15:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 175.8
+   "hours_since_start": 201.0
   },
   {
    "ledger": "unified_ledger",
@@ -6099,7 +6119,7 @@
    "event": "Rennes v Auxerre",
    "start": "2026-10-11T15:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 175.8
+   "hours_since_start": 201.0
   },
   {
    "ledger": "unified_ledger",
@@ -6109,7 +6129,7 @@
    "event": "Rennes v Auxerre",
    "start": "2026-10-11T15:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 175.8
+   "hours_since_start": 201.0
   },
   {
    "ledger": "unified_ledger",
@@ -6119,7 +6139,7 @@
    "event": "Rennes v Auxerre",
    "start": "2026-10-11T15:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 175.8
+   "hours_since_start": 201.0
   },
   {
    "ledger": "unified_ledger",
@@ -6129,7 +6149,7 @@
    "event": "Rennes v Auxerre",
    "start": "2026-10-11T15:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 175.8
+   "hours_since_start": 201.0
   },
   {
    "ledger": "unified_ledger",
@@ -6139,7 +6159,7 @@
    "event": "Rennes v Auxerre",
    "start": "2026-10-11T15:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 175.8
+   "hours_since_start": 201.0
   },
   {
    "ledger": "unified_ledger",
@@ -6149,7 +6169,7 @@
    "event": "Troyes v Marseille",
    "start": "2026-10-11T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 172.3
+   "hours_since_start": 197.5
   },
   {
    "ledger": "unified_ledger",
@@ -6159,7 +6179,7 @@
    "event": "Troyes v Marseille",
    "start": "2026-10-11T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 172.3
+   "hours_since_start": 197.5
   },
   {
    "ledger": "unified_ledger",
@@ -6169,7 +6189,7 @@
    "event": "Troyes v Marseille",
    "start": "2026-10-11T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 172.3
+   "hours_since_start": 197.5
   },
   {
    "ledger": "unified_ledger",
@@ -6179,7 +6199,7 @@
    "event": "Troyes v Marseille",
    "start": "2026-10-11T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 172.3
+   "hours_since_start": 197.5
   },
   {
    "ledger": "unified_ledger",
@@ -6189,7 +6209,7 @@
    "event": "Troyes v Marseille",
    "start": "2026-10-11T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 172.3
+   "hours_since_start": 197.5
   },
   {
    "ledger": "unified_ledger",
@@ -6199,7 +6219,7 @@
    "event": "Troyes v Marseille",
    "start": "2026-10-11T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 172.3
+   "hours_since_start": 197.5
   },
   {
    "ledger": "unified_ledger",
@@ -6209,7 +6229,7 @@
    "event": "Arouca v CF Estrela",
    "start": "2026-10-11T19:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 171.5
+   "hours_since_start": 196.8
   },
   {
    "ledger": "unified_ledger",
@@ -6219,7 +6239,7 @@
    "event": "Arouca v CF Estrela",
    "start": "2026-10-11T19:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 171.5
+   "hours_since_start": 196.8
   },
   {
    "ledger": "unified_ledger",
@@ -6229,7 +6249,7 @@
    "event": "Arouca v CF Estrela",
    "start": "2026-10-11T19:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 171.5
+   "hours_since_start": 196.8
   },
   {
    "ledger": "unified_ledger",
@@ -6239,7 +6259,7 @@
    "event": "Arouca v CF Estrela",
    "start": "2026-10-11T19:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 171.5
+   "hours_since_start": 196.8
   },
   {
    "ledger": "unified_ledger",
@@ -6249,7 +6269,7 @@
    "event": "Arouca v CF Estrela",
    "start": "2026-10-11T19:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 171.5
+   "hours_since_start": 196.8
   },
   {
    "ledger": "unified_ledger",
@@ -6259,7 +6279,7 @@
    "event": "Arouca v CF Estrela",
    "start": "2026-10-11T19:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 171.5
+   "hours_since_start": 196.8
   },
   {
    "ledger": "unified_ledger",
@@ -6269,7 +6289,7 @@
    "event": "Benfica v Vit\u00f3ria SC",
    "start": "2026-10-11T17:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 174.0
+   "hours_since_start": 199.3
   },
   {
    "ledger": "unified_ledger",
@@ -6279,7 +6299,7 @@
    "event": "Benfica v Vit\u00f3ria SC",
    "start": "2026-10-11T17:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 174.0
+   "hours_since_start": 199.3
   },
   {
    "ledger": "unified_ledger",
@@ -6289,7 +6309,7 @@
    "event": "Benfica v Vit\u00f3ria SC",
    "start": "2026-10-11T17:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 174.0
+   "hours_since_start": 199.3
   },
   {
    "ledger": "unified_ledger",
@@ -6299,7 +6319,7 @@
    "event": "Benfica v Vit\u00f3ria SC",
    "start": "2026-10-11T17:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 174.0
+   "hours_since_start": 199.3
   },
   {
    "ledger": "unified_ledger",
@@ -6309,7 +6329,7 @@
    "event": "Benfica v Vit\u00f3ria SC",
    "start": "2026-10-11T17:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 174.0
+   "hours_since_start": 199.3
   },
   {
    "ledger": "unified_ledger",
@@ -6319,7 +6339,7 @@
    "event": "Benfica v Vit\u00f3ria SC",
    "start": "2026-10-11T17:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 174.0
+   "hours_since_start": 199.3
   },
   {
    "ledger": "unified_ledger",
@@ -6329,7 +6349,7 @@
    "event": "Casa Pia v Santa Clara",
    "start": "2026-10-10T19:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 195.5
+   "hours_since_start": 220.8
   },
   {
    "ledger": "unified_ledger",
@@ -6339,7 +6359,7 @@
    "event": "Casa Pia v Santa Clara",
    "start": "2026-10-10T19:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 195.5
+   "hours_since_start": 220.8
   },
   {
    "ledger": "unified_ledger",
@@ -6349,7 +6369,7 @@
    "event": "Casa Pia v Santa Clara",
    "start": "2026-10-10T19:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 195.5
+   "hours_since_start": 220.8
   },
   {
    "ledger": "unified_ledger",
@@ -6359,7 +6379,7 @@
    "event": "Casa Pia v Santa Clara",
    "start": "2026-10-10T19:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 195.5
+   "hours_since_start": 220.8
   },
   {
    "ledger": "unified_ledger",
@@ -6369,7 +6389,7 @@
    "event": "Casa Pia v Santa Clara",
    "start": "2026-10-10T19:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 195.5
+   "hours_since_start": 220.8
   },
   {
    "ledger": "unified_ledger",
@@ -6379,7 +6399,7 @@
    "event": "Casa Pia v Santa Clara",
    "start": "2026-10-10T19:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 195.5
+   "hours_since_start": 220.8
   },
   {
    "ledger": "unified_ledger",
@@ -6389,7 +6409,7 @@
    "event": "Rio Ave FC v Nacional",
    "start": "2026-10-11T14:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 176.5
+   "hours_since_start": 201.8
   },
   {
    "ledger": "unified_ledger",
@@ -6399,7 +6419,7 @@
    "event": "Rio Ave FC v Nacional",
    "start": "2026-10-11T14:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 176.5
+   "hours_since_start": 201.8
   },
   {
    "ledger": "unified_ledger",
@@ -6409,7 +6429,7 @@
    "event": "Rio Ave FC v Nacional",
    "start": "2026-10-11T14:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 176.5
+   "hours_since_start": 201.8
   },
   {
    "ledger": "unified_ledger",
@@ -6419,7 +6439,7 @@
    "event": "Rio Ave FC v Nacional",
    "start": "2026-10-11T14:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 176.5
+   "hours_since_start": 201.8
   },
   {
    "ledger": "unified_ledger",
@@ -6429,7 +6449,7 @@
    "event": "Rio Ave FC v Nacional",
    "start": "2026-10-11T14:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 176.5
+   "hours_since_start": 201.8
   },
   {
    "ledger": "unified_ledger",
@@ -6439,7 +6459,7 @@
    "event": "Rio Ave FC v Nacional",
    "start": "2026-10-11T14:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 176.5
+   "hours_since_start": 201.8
   },
   {
    "ledger": "unified_ledger",
@@ -6449,7 +6469,7 @@
    "event": "Cagliari v Juventus",
    "start": "2026-10-11T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 172.3
+   "hours_since_start": 197.5
   },
   {
    "ledger": "unified_ledger",
@@ -6459,7 +6479,7 @@
    "event": "Cagliari v Juventus",
    "start": "2026-10-11T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 172.3
+   "hours_since_start": 197.5
   },
   {
    "ledger": "unified_ledger",
@@ -6469,7 +6489,7 @@
    "event": "Cagliari v Juventus",
    "start": "2026-10-11T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 172.3
+   "hours_since_start": 197.5
   },
   {
    "ledger": "unified_ledger",
@@ -6479,7 +6499,7 @@
    "event": "Cagliari v Juventus",
    "start": "2026-10-11T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 172.3
+   "hours_since_start": 197.5
   },
   {
    "ledger": "unified_ledger",
@@ -6489,7 +6509,7 @@
    "event": "Cagliari v Juventus",
    "start": "2026-10-11T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 172.3
+   "hours_since_start": 197.5
   },
   {
    "ledger": "unified_ledger",
@@ -6499,7 +6519,7 @@
    "event": "Cagliari v Juventus",
    "start": "2026-10-11T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 172.3
+   "hours_since_start": 197.5
   },
   {
    "ledger": "unified_ledger",
@@ -6509,7 +6529,7 @@
    "event": "Como v AS Roma",
    "start": "2026-10-11T10:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 180.5
+   "hours_since_start": 205.8
   },
   {
    "ledger": "unified_ledger",
@@ -6519,7 +6539,7 @@
    "event": "Como v AS Roma",
    "start": "2026-10-11T10:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 180.5
+   "hours_since_start": 205.8
   },
   {
    "ledger": "unified_ledger",
@@ -6529,7 +6549,7 @@
    "event": "Como v AS Roma",
    "start": "2026-10-11T10:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 180.5
+   "hours_since_start": 205.8
   },
   {
    "ledger": "unified_ledger",
@@ -6539,7 +6559,7 @@
    "event": "Como v AS Roma",
    "start": "2026-10-11T10:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 180.5
+   "hours_since_start": 205.8
   },
   {
    "ledger": "unified_ledger",
@@ -6549,7 +6569,7 @@
    "event": "Como v AS Roma",
    "start": "2026-10-11T10:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 180.5
+   "hours_since_start": 205.8
   },
   {
    "ledger": "unified_ledger",
@@ -6559,7 +6579,7 @@
    "event": "Como v AS Roma",
    "start": "2026-10-11T10:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 180.5
+   "hours_since_start": 205.8
   },
   {
    "ledger": "unified_ledger",
@@ -6569,7 +6589,7 @@
    "event": "Lazio v Monza",
    "start": "2026-10-11T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.0
+   "hours_since_start": 203.3
   },
   {
    "ledger": "unified_ledger",
@@ -6579,7 +6599,7 @@
    "event": "Lazio v Monza",
    "start": "2026-10-11T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.0
+   "hours_since_start": 203.3
   },
   {
    "ledger": "unified_ledger",
@@ -6589,7 +6609,7 @@
    "event": "Lazio v Monza",
    "start": "2026-10-11T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.0
+   "hours_since_start": 203.3
   },
   {
    "ledger": "unified_ledger",
@@ -6599,7 +6619,7 @@
    "event": "Lazio v Monza",
    "start": "2026-10-11T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.0
+   "hours_since_start": 203.3
   },
   {
    "ledger": "unified_ledger",
@@ -6609,7 +6629,7 @@
    "event": "Lazio v Monza",
    "start": "2026-10-11T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.0
+   "hours_since_start": 203.3
   },
   {
    "ledger": "unified_ledger",
@@ -6619,7 +6639,7 @@
    "event": "Lazio v Monza",
    "start": "2026-10-11T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.0
+   "hours_since_start": 203.3
   },
   {
    "ledger": "unified_ledger",
@@ -6629,7 +6649,7 @@
    "event": "Lecce v Bologna",
    "start": "2026-10-11T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.0
+   "hours_since_start": 203.3
   },
   {
    "ledger": "unified_ledger",
@@ -6639,7 +6659,7 @@
    "event": "Lecce v Bologna",
    "start": "2026-10-11T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.0
+   "hours_since_start": 203.3
   },
   {
    "ledger": "unified_ledger",
@@ -6649,7 +6669,7 @@
    "event": "Lecce v Bologna",
    "start": "2026-10-11T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.0
+   "hours_since_start": 203.3
   },
   {
    "ledger": "unified_ledger",
@@ -6659,7 +6679,7 @@
    "event": "Lecce v Bologna",
    "start": "2026-10-11T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.0
+   "hours_since_start": 203.3
   },
   {
    "ledger": "unified_ledger",
@@ -6669,7 +6689,7 @@
    "event": "Lecce v Bologna",
    "start": "2026-10-11T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.0
+   "hours_since_start": 203.3
   },
   {
    "ledger": "unified_ledger",
@@ -6679,7 +6699,7 @@
    "event": "Lecce v Bologna",
    "start": "2026-10-11T13:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 178.0
+   "hours_since_start": 203.3
   },
   {
    "ledger": "unified_ledger",
@@ -6689,7 +6709,7 @@
    "event": "Sassuolo v AC Milan",
    "start": "2026-10-11T16:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 175.0
+   "hours_since_start": 200.3
   },
   {
    "ledger": "unified_ledger",
@@ -6699,7 +6719,7 @@
    "event": "Sassuolo v AC Milan",
    "start": "2026-10-11T16:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 175.0
+   "hours_since_start": 200.3
   },
   {
    "ledger": "unified_ledger",
@@ -6709,7 +6729,7 @@
    "event": "Sassuolo v AC Milan",
    "start": "2026-10-11T16:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 175.0
+   "hours_since_start": 200.3
   },
   {
    "ledger": "unified_ledger",
@@ -6719,7 +6739,7 @@
    "event": "Sassuolo v AC Milan",
    "start": "2026-10-11T16:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 175.0
+   "hours_since_start": 200.3
   },
   {
    "ledger": "unified_ledger",
@@ -6729,7 +6749,7 @@
    "event": "Sassuolo v AC Milan",
    "start": "2026-10-11T16:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 175.0
+   "hours_since_start": 200.3
   },
   {
    "ledger": "unified_ledger",
@@ -6739,7 +6759,7 @@
    "event": "Sassuolo v AC Milan",
    "start": "2026-10-11T16:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 175.0
+   "hours_since_start": 200.3
   },
   {
    "ledger": "unified_ledger",
@@ -6749,7 +6769,7 @@
    "event": "New York Giants @ Washington Commanders",
    "start": "2026-10-11T17:00:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 174.0
+   "hours_since_start": 199.3
   },
   {
    "ledger": "unified_ledger",
@@ -6759,7 +6779,7 @@
    "event": "Levante v Sevilla",
    "start": "2026-10-12T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 148.0
+   "hours_since_start": 173.3
   },
   {
    "ledger": "unified_ledger",
@@ -6769,7 +6789,7 @@
    "event": "Levante v Sevilla",
    "start": "2026-10-12T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 148.0
+   "hours_since_start": 173.3
   },
   {
    "ledger": "unified_ledger",
@@ -6779,7 +6799,7 @@
    "event": "Levante v Sevilla",
    "start": "2026-10-12T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 148.0
+   "hours_since_start": 173.3
   },
   {
    "ledger": "unified_ledger",
@@ -6789,7 +6809,7 @@
    "event": "Levante v Sevilla",
    "start": "2026-10-12T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 148.0
+   "hours_since_start": 173.3
   },
   {
    "ledger": "unified_ledger",
@@ -6799,7 +6819,7 @@
    "event": "Levante v Sevilla",
    "start": "2026-10-12T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 148.0
+   "hours_since_start": 173.3
   },
   {
    "ledger": "unified_ledger",
@@ -6809,7 +6829,7 @@
    "event": "Levante v Sevilla",
    "start": "2026-10-12T19:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 148.0
+   "hours_since_start": 173.3
   },
   {
    "ledger": "unified_ledger",
@@ -6819,7 +6839,7 @@
    "event": "Famalic\u00e3o v Alverca",
    "start": "2026-10-12T19:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 147.8
+   "hours_since_start": 173.0
   },
   {
    "ledger": "unified_ledger",
@@ -6829,7 +6849,7 @@
    "event": "Famalic\u00e3o v Alverca",
    "start": "2026-10-12T19:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 147.8
+   "hours_since_start": 173.0
   },
   {
    "ledger": "unified_ledger",
@@ -6839,7 +6859,7 @@
    "event": "Famalic\u00e3o v Alverca",
    "start": "2026-10-12T19:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 147.8
+   "hours_since_start": 173.0
   },
   {
    "ledger": "unified_ledger",
@@ -6849,7 +6869,7 @@
    "event": "Famalic\u00e3o v Alverca",
    "start": "2026-10-12T19:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 147.8
+   "hours_since_start": 173.0
   },
   {
    "ledger": "unified_ledger",
@@ -6859,7 +6879,7 @@
    "event": "Famalic\u00e3o v Alverca",
    "start": "2026-10-12T19:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 147.8
+   "hours_since_start": 173.0
   },
   {
    "ledger": "unified_ledger",
@@ -6869,7 +6889,7 @@
    "event": "Famalic\u00e3o v Alverca",
    "start": "2026-10-12T19:15:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 147.8
+   "hours_since_start": 173.0
   },
   {
    "ledger": "unified_ledger",
@@ -6879,7 +6899,7 @@
    "event": "Atalanta BC v Venezia",
    "start": "2026-10-12T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 150.5
+   "hours_since_start": 175.8
   },
   {
    "ledger": "unified_ledger",
@@ -6889,7 +6909,7 @@
    "event": "Atalanta BC v Venezia",
    "start": "2026-10-12T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 150.5
+   "hours_since_start": 175.8
   },
   {
    "ledger": "unified_ledger",
@@ -6899,7 +6919,7 @@
    "event": "Atalanta BC v Venezia",
    "start": "2026-10-12T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 150.5
+   "hours_since_start": 175.8
   },
   {
    "ledger": "unified_ledger",
@@ -6909,7 +6929,7 @@
    "event": "Atalanta BC v Venezia",
    "start": "2026-10-12T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 150.5
+   "hours_since_start": 175.8
   },
   {
    "ledger": "unified_ledger",
@@ -6919,7 +6939,7 @@
    "event": "Atalanta BC v Venezia",
    "start": "2026-10-12T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 150.5
+   "hours_since_start": 175.8
   },
   {
    "ledger": "unified_ledger",
@@ -6929,7 +6949,7 @@
    "event": "Atalanta BC v Venezia",
    "start": "2026-10-12T16:30:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 150.5
+   "hours_since_start": 175.8
   },
   {
    "ledger": "unified_ledger",
@@ -6939,7 +6959,7 @@
    "event": "Torino v Udinese",
    "start": "2026-10-12T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 148.3
+   "hours_since_start": 173.5
   },
   {
    "ledger": "unified_ledger",
@@ -6949,7 +6969,7 @@
    "event": "Torino v Udinese",
    "start": "2026-10-12T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 148.3
+   "hours_since_start": 173.5
   },
   {
    "ledger": "unified_ledger",
@@ -6959,7 +6979,7 @@
    "event": "Torino v Udinese",
    "start": "2026-10-12T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 148.3
+   "hours_since_start": 173.5
   },
   {
    "ledger": "unified_ledger",
@@ -6969,7 +6989,7 @@
    "event": "Torino v Udinese",
    "start": "2026-10-12T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 148.3
+   "hours_since_start": 173.5
   },
   {
    "ledger": "unified_ledger",
@@ -6979,7 +6999,7 @@
    "event": "Torino v Udinese",
    "start": "2026-10-12T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 148.3
+   "hours_since_start": 173.5
   },
   {
    "ledger": "unified_ledger",
@@ -6989,7 +7009,7 @@
    "event": "Torino v Udinese",
    "start": "2026-10-12T18:45:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 148.3
+   "hours_since_start": 173.5
   },
   {
    "ledger": "unified_ledger",
@@ -6999,7 +7019,7 @@
    "event": "Pittsburgh Penguins @ Colorado Avalanche",
    "start": "2026-10-17T01:10:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 45.8
+   "hours_since_start": 71.1
   },
   {
    "ledger": "unified_ledger",
@@ -7009,7 +7029,7 @@
    "event": "Boston Bruins @ Anaheim Ducks",
    "start": "2026-10-17T02:10:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 44.8
+   "hours_since_start": 70.1
   },
   {
    "ledger": "unified_ledger",
@@ -7019,7 +7039,7 @@
    "event": "New Jersey Devils @ Washington Capitals",
    "start": "2026-10-17T17:10:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 29.8
+   "hours_since_start": 55.1
   },
   {
    "ledger": "unified_ledger",
@@ -7029,7 +7049,7 @@
    "event": "Carolina Hurricanes @ Winnipeg Jets",
    "start": "2026-10-17T19:40:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 27.3
+   "hours_since_start": 52.6
   },
   {
    "ledger": "unified_ledger",
@@ -7039,7 +7059,7 @@
    "event": "Vancouver Canucks @ Tampa Bay Lightning",
    "start": "2026-10-17T20:10:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 26.8
+   "hours_since_start": 52.1
   },
   {
    "ledger": "unified_ledger",
@@ -7049,7 +7069,7 @@
    "event": "Seattle Kraken @ Florida Panthers",
    "start": "2026-10-17T22:10:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 24.8
+   "hours_since_start": 50.1
   },
   {
    "ledger": "unified_ledger",
@@ -7059,7 +7079,7 @@
    "event": "Buffalo Sabres @ Montr\u00e9al Canadiens",
    "start": "2026-10-17T23:10:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 23.8
+   "hours_since_start": 49.1
   },
   {
    "ledger": "unified_ledger",
@@ -7069,7 +7089,7 @@
    "event": "Dallas Stars @ Chicago Blackhawks",
    "start": "2026-10-17T23:10:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 23.8
+   "hours_since_start": 49.1
   },
   {
    "ledger": "unified_ledger",
@@ -7079,7 +7099,7 @@
    "event": "New York Rangers @ Columbus Blue Jackets",
    "start": "2026-10-17T23:10:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 23.8
+   "hours_since_start": 49.1
   },
   {
    "ledger": "unified_ledger",
@@ -7089,7 +7109,7 @@
    "event": "San Jose Sharks @ Detroit Red Wings",
    "start": "2026-10-17T23:10:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 23.8
+   "hours_since_start": 49.1
   },
   {
    "ledger": "unified_ledger",
@@ -7099,7 +7119,7 @@
    "event": "New York Islanders @ Toronto Maple Leafs",
    "start": "2026-10-17T23:10:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 23.8
+   "hours_since_start": 49.1
   },
   {
    "ledger": "unified_ledger",
@@ -7109,7 +7129,7 @@
    "event": "Ottawa Senators @ Philadelphia Flyers",
    "start": "2026-10-17T23:10:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 23.8
+   "hours_since_start": 49.1
   },
   {
    "ledger": "unified_ledger",
@@ -7119,7 +7139,7 @@
    "event": "St Louis Blues @ Nashville Predators",
    "start": "2026-10-18T00:10:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 22.8
+   "hours_since_start": 48.1
   },
   {
    "ledger": "unified_ledger",
@@ -7129,7 +7149,7 @@
    "event": "Boston Bruins @ Los Angeles Kings",
    "start": "2026-10-18T01:10:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 21.8
+   "hours_since_start": 47.1
   },
   {
    "ledger": "unified_ledger",
@@ -7139,7 +7159,7 @@
    "event": "Edmonton Oilers @ Utah Mammoth",
    "start": "2026-10-18T02:10:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 20.8
+   "hours_since_start": 46.1
   },
   {
    "ledger": "unified_ledger",
@@ -7149,7 +7169,7 @@
    "event": "Pittsburgh Penguins @ Vegas Golden Knights",
    "start": "2026-10-18T02:10:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 20.8
+   "hours_since_start": 46.1
   },
   {
    "ledger": "unified_ledger",
@@ -7159,7 +7179,7 @@
    "event": "Houston Texans @ Jacksonville Jaguars",
    "start": "2026-10-18T13:30:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 9.5
+   "hours_since_start": 34.8
   },
   {
    "ledger": "unified_ledger",
@@ -7169,7 +7189,7 @@
    "event": "Chicago Bears @ Atlanta Falcons",
    "start": "2026-10-18T17:00:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 6.0
+   "hours_since_start": 31.3
   },
   {
    "ledger": "unified_ledger",
@@ -7179,7 +7199,7 @@
    "event": "Baltimore Ravens @ Cleveland Browns",
    "start": "2026-10-18T17:00:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 6.0
+   "hours_since_start": 31.3
   },
   {
    "ledger": "unified_ledger",
@@ -7189,7 +7209,7 @@
    "event": "Carolina Panthers @ Philadelphia Eagles",
    "start": "2026-10-18T17:00:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 6.0
+   "hours_since_start": 31.3
   },
   {
    "ledger": "unified_ledger",
@@ -7199,7 +7219,7 @@
    "event": "Tennessee Titans @ Indianapolis Colts",
    "start": "2026-10-18T17:00:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 6.0
+   "hours_since_start": 31.3
   },
   {
    "ledger": "unified_ledger",
@@ -7209,7 +7229,7 @@
    "event": "New York Jets @ New England Patriots",
    "start": "2026-10-18T17:00:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 6.0
+   "hours_since_start": 31.3
   },
   {
    "ledger": "unified_ledger",
@@ -7219,7 +7239,7 @@
    "event": "New Orleans Saints @ New York Giants",
    "start": "2026-10-18T17:00:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 6.0
+   "hours_since_start": 31.3
   },
   {
    "ledger": "unified_ledger",
@@ -7229,7 +7249,7 @@
    "event": "Pittsburgh Steelers @ Tampa Bay Buccaneers",
    "start": "2026-10-18T17:00:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 6.0
+   "hours_since_start": 31.3
   },
   {
    "ledger": "unified_ledger",
@@ -7239,7 +7259,7 @@
    "event": "Arizona Cardinals @ Los Angeles Rams",
    "start": "2026-10-18T20:05:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 2.9
+   "hours_since_start": 28.2
   },
   {
    "ledger": "unified_ledger",
@@ -7249,7 +7269,7 @@
    "event": "Buffalo Bills @ Las Vegas Raiders",
    "start": "2026-10-18T20:25:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 2.6
+   "hours_since_start": 27.8
   },
   {
    "ledger": "unified_ledger",
@@ -7259,7 +7279,7 @@
    "event": "Los Angeles Chargers @ Kansas City Chiefs",
    "start": "2026-10-18T20:25:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 2.6
+   "hours_since_start": 27.8
   },
   {
    "ledger": "unified_ledger",
@@ -7269,7 +7289,57 @@
    "event": "Columbus Blue Jackets @ Minnesota Wild",
    "start": "2026-10-18T22:10:00+00:00",
    "status": "SOURCE_UNAVAILABLE",
-   "hours_since_start": 0.8
+   "hours_since_start": 26.1
+  },
+  {
+   "ledger": "unified_ledger",
+   "id": "191daad54de4b336",
+   "sport": "icehockey",
+   "competition": "NHL",
+   "event": "Carolina Hurricanes @ Calgary Flames",
+   "start": "2026-10-19T00:10:00+00:00",
+   "status": "SOURCE_UNAVAILABLE",
+   "hours_since_start": 24.1
+  },
+  {
+   "ledger": "unified_ledger",
+   "id": "d272af6430a7d7aa",
+   "sport": "americanfootball",
+   "competition": "NFL",
+   "event": "Dallas Cowboys @ Green Bay Packers",
+   "start": "2026-10-19T00:20:00+00:00",
+   "status": "SOURCE_UNAVAILABLE",
+   "hours_since_start": 23.9
+  },
+  {
+   "ledger": "unified_ledger",
+   "id": "e1891aa3c433de73",
+   "sport": "icehockey",
+   "competition": "NHL",
+   "event": "Anaheim Ducks @ New York Rangers",
+   "start": "2026-10-19T23:10:00+00:00",
+   "status": "SOURCE_UNAVAILABLE",
+   "hours_since_start": 1.1
+  },
+  {
+   "ledger": "unified_ledger",
+   "id": "d00a42fdefd07741",
+   "sport": "icehockey",
+   "competition": "NHL",
+   "event": "Colorado Avalanche @ Philadelphia Flyers",
+   "start": "2026-10-19T23:10:00+00:00",
+   "status": "SOURCE_UNAVAILABLE",
+   "hours_since_start": 1.1
+  },
+  {
+   "ledger": "unified_ledger",
+   "id": "10dd21cb809be928",
+   "sport": "icehockey",
+   "competition": "NHL",
+   "event": "San Jose Sharks @ Toronto Maple Leafs",
+   "start": "2026-10-19T23:40:00+00:00",
+   "status": "SOURCE_UNAVAILABLE",
+   "hours_since_start": 0.6
   },
   {
    "ledger": "bsv2_paper_selections",
@@ -7279,7 +7349,7 @@
    "event": "Mayar Sherif v Polina Kudermetova",
    "start": "2026-09-30T02:00:00+00:00",
    "status": "UNRESOLVED_AFTER_EXPECTED_LAG",
-   "hours_since_start": 453.0
+   "hours_since_start": 478.3
   }
  ],
  "healthy": false

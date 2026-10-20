@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18T22:59:33.786881+00:00",
+ "generated_at": "2026-10-20T00:14:42.059210+00:00",
  "mode": "SHADOW (no ledger writes)",
  "football_data_sources": {
   "B1": "https://www.football-data.co.uk/mmz4281/2627/B1.csv",
@@ -15,11 +15,11 @@
   "I2": "https://www.football-data.co.uk/mmz4281/2627/I2.csv",
   "N1": "https://www.football-data.co.uk/mmz4281/2627/N1.csv",
   "P1": "https://www.football-data.co.uk/mmz4281/2627/P1.csv",
-  "SC0": "https://www.football-data.co.uk/mmz4281/2627/SC0.csv",
+  "SC0": "FAILED https://www.football-data.co.uk/mmz4281/2627/SC0.csv (The read operation timed out)",
   "SP1": "https://www.football-data.co.uk/mmz4281/2627/SP1.csv",
   "SP2": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv"
  },
- "fd_results_loaded": 1189,
+ "fd_results_loaded": 1141,
  "fd_unresolved_names": [
   "AFC Wimbledon",
   "AZ Alkmaar",
@@ -491,7 +491,6 @@
    "Sp Braga",
    "Sp Lisbon"
   ],
-  "SC0": [],
   "SP1": [
    "Alaves",
    "Ath Bilbao",
@@ -540,9 +539,9 @@
   ]
  },
  "fd_internal_inconsistencies": 0,
- "fixture_comparisons_total": 67,
+ "fixture_comparisons_total": 68,
  "fixture_status_counts": {
-  "NOT_FOUND": 62,
+  "NOT_FOUND": 63,
   "MATCHED": 5
  },
  "disagreement_examples": [],
@@ -554,9 +553,31 @@
  },
  "ledger_pending_past_kickoff": [
   {
+   "bet_id": "Nottingham Forest v Arsenal::1x2::home",
+   "event": "Nottingham Forest v Arsenal",
+   "kickoff": "2026-10-18",
+   "market": "1x2",
+   "selection": "home",
+   "fd_status": "NOT_FOUND",
+   "fd_score": "",
+   "would_win": null,
+   "detail": ""
+  },
+  {
    "bet_id": "Manchester City v Ipswich Town::1x2::away",
    "event": "Manchester City v Ipswich Town",
    "kickoff": "2026-10-17",
+   "market": "1x2",
+   "selection": "away",
+   "fd_status": "NOT_FOUND",
+   "fd_score": "",
+   "would_win": null,
+   "detail": ""
+  },
+  {
+   "bet_id": "Brighton and Hove Albion v Crystal Palace::1x2::away",
+   "event": "Brighton and Hove Albion v Crystal Palace",
+   "kickoff": "2026-10-18",
    "market": "1x2",
    "selection": "away",
    "fd_status": "NOT_FOUND",
