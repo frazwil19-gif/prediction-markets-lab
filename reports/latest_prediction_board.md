@@ -2,9 +2,9 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 16 · Valid predictions: 22 · Sports: basketball, football, tennis
+Upcoming events: 17 · Valid predictions: 23 · Sports: basketball, football, tennis
 Counts: >=70: 6 · >=75: 5 · >=80: 2 · >=85: 1 · >=90: 0 · >=95: 0
-Settled yesterday: 2 · System: **HEALTHY** · API credits (last observed): 182
+Settled yesterday: 2 · System: **HEALTHY** · API credits (last observed): 181
 
 ## Top predictions (P ≥ 80%)
 
@@ -21,7 +21,7 @@ Settled yesterday: 2 · System: **HEALTHY** · API credits (last observed): 182
 | football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 72 | 42 | COLLECTING | 0 | — → — |
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
 | atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 158 | 146 | EARLY | 25 | 87.7% → 76.0% |
-| wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 181 | 144 | EARLY | 26 | 89.2% → 80.8% |
+| wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 182 | 144 | EARLY | 26 | 89.2% → 80.8% |
 | nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 8 | 0 | COLLECTING | 0 | — → — |
 | nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 85 | 63 | EARLY | 0 | — → — |
 | nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 28 | 15 | COLLECTING | 0 | — → — |
@@ -31,8 +31,8 @@ Settled yesterday: 2 · System: **HEALTHY** · API credits (last observed): 182
 
 - daily_scan: OK (last 2026-10-20T06:16:30.358400+00:00)
 - settlement: OK (last 2026-10-20T00:15:26.208907+00:00)
-- tennis_board: OK (last 2026-10-20T11:57:59.787680+00:00)
-- ci_tests: OK (last 2026-10-20T11:58:00.645243+00:00)
+- tennis_board: OK (last 2026-10-20T15:16:36.492430+00:00)
+- ci_tests: OK (last 2026-10-20T15:16:37.358267+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 

@@ -4,28 +4,29 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-20T11:58Z · events scanned 16 · valid predictions 22 · high-P (≥70%) 6 · priced 12 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 22 · new paper bets 0 · Money Card qualified 0
+Run 2026-10-20T15:16Z · events scanned 17 · valid predictions 23 · high-P (≥70%) 6 · priced 13 · PAPER_BET 0 · MULTI-research 1 · WATCH 0 · REJECT 22 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): NET_EV_NOT_POSITIVE 11 · ENGINE_STATUS_INELIGIBLE 7 · COMMISSION_UNKNOWN 7 · EXCHANGE_SPREAD_TOO_WIDE 6 · PRICE_STALE 5 · P_BELOW_FLOOR 3 · NO_EXECUTABLE_PRICE 3
+Reason codes (latest run): NET_EV_NOT_POSITIVE 12 · ENGINE_STATUS_INELIGIBLE 7 · COMMISSION_UNKNOWN 7 · PRICE_STALE 5 · EXCHANGE_SPREAD_TOO_WIDE 5 · P_BELOW_FLOOR 3 · NO_EXECUTABLE_PRICE 3
 
 ## Candidates (latest run, best price per prediction)
 
 | Event | Start | Sel | P | Fair | Odds (source) | Break-even | Net EV | Decision |
 |---|---|---|---|---|---|---|---|---|
-| Elena Rybakina v Polina Kudermetova | 2026-10-22T04:00 | Elena Rybakina | 88.7% | 1.13 | 1.10 (betfair_ex_uk) | 91.3% | -2.9% | REJECT |
+| Elena Rybakina v Polina Kudermetova | 2026-10-22T04:00 | Elena Rybakina | 87.8% | 1.14 | 1.13 (betfair_sb_uk) | 88.5% | -0.8% | MULTI_RESEARCH_ELIGIBLE |
 | Wolverhampton Wanderers v Portsmouth | 2026-10-20T18:45 | 1X | 82.9% | 1.21 | — | — | — | REJECT |
+| Marie Bouzkova v Anastasia Zakharova | 2026-10-21T05:00 | Marie Bouzkova | 78.1% | 1.28 | 1.26 (betfair_ex_uk) | 80.2% | -2.6% | REJECT |
 | Wolverhampton Wanderers v Portsmouth | 2026-10-20T18:45 | 12 | 77.1% | 1.30 | — | — | — | REJECT |
-| Marie Bouzkova v Anastasia Zakharova | 2026-10-21T05:00 | Marie Bouzkova | 76.6% | 1.31 | 1.22 (betfair_ex_uk) | 82.7% | -7.4% | REJECT |
 | Chicago Bulls @ Toronto Raptors | 2026-10-21T23:40 | Toronto Raptors | 75.6% | 1.32 | 1.29 (skybet) | 77.5% | -2.4% | REJECT |
 | Marie Bouzkova v Iga Swiatek | 2026-10-21T04:00 | Iga Swiatek | 71.4% | 1.40 | 1.35 (betfair_ex_uk) | 75.0% | -4.9% | REJECT |
-| Sorana Cirstea v Sara Bejlek | 2026-10-21T08:00 | Sorana Cirstea | 69.1% | 1.45 | 1.31 (betfair_ex_uk) | 77.2% | -10.6% | REJECT |
-| Iva Jović v Jasmine Paolini | 2026-10-22T04:00 | Iva Jović | 64.8% | 1.54 | 1.41 (betfair_ex_uk) | 72.0% | -10.0% | REJECT |
+| Sorana Cirstea v Sara Bejlek | 2026-10-21T08:00 | Sorana Cirstea | 67.5% | 1.48 | 1.41 (betfair_ex_uk) | 72.0% | -6.2% | REJECT |
+| Iva Jović v Jasmine Paolini | 2026-10-22T04:00 | Iva Jović | 64.7% | 1.55 | 1.50 (betfair_ex_uk) | 67.8% | -4.6% | REJECT |
+| Leylah Fernandez v Aliaksandra Sasnovich | 2026-10-21T06:30 | Leylah Fernandez | 63.9% | 1.56 | 1.53 (sport888) | 65.4% | -2.2% | REJECT |
 | Milwaukee Bucks @ Washington Wizards | 2026-10-21T23:00 | Washington Wizards | 63.4% | 1.58 | 1.55 (matchbook) | — | — | REJECT |
-| Leylah Fernandez v Aliaksandra Sasnovich | 2026-10-21T06:30 | Leylah Fernandez | 63.4% | 1.58 | 1.57 (betfair_ex_uk) | 64.9% | -2.3% | REJECT |
 | Philadelphia 76ers @ New York Knicks | 2026-10-20T23:00 | New York Knicks | 62.1% | 1.61 | 1.60 (matchbook) | — | — | REJECT |
+| Alexandra Eala v Diana Shnaider | 2026-10-22T04:00 | Diana Shnaider | 59.7% | 1.68 | 1.62 (boylesports) | 61.7% | -3.3% | REJECT |
 | Wolverhampton Wanderers v Portsmouth | 2026-10-20T18:45 | home | 59.3% | 1.69 | 1.64 (smarkets) | 61.5% | -3.5% | REJECT |
+| Ekaterina Alexandrova v Marta Kostyuk | 2026-10-21T11:00 | Marta Kostyuk | 57.3% | 1.74 | 1.60 (betfair_ex_uk) | 63.7% | -10.0% | REJECT |
 | Charlotte Hornets @ Brooklyn Nets | 2026-10-21T23:30 | Brooklyn Nets | 56.7% | 1.76 | 1.73 (skybet) | 57.8% | -1.9% | REJECT |
-| Alexandra Eala v Diana Shnaider | 2026-10-22T04:00 | Diana Shnaider | 56.1% | 1.78 | 1.66 (betfair_ex_uk) | 61.5% | -8.8% | REJECT |
 | Atlanta Hawks @ Orlando Magic | 2026-10-21T23:10 | Orlando Magic | 55.3% | 1.81 | 1.80 (matchbook) | — | — | REJECT |
 | Wolverhampton Wanderers v Portsmouth | 2026-10-20T18:45 | over | 54.0% | 1.85 | 1.86 (matchbook) | — | — | REJECT |
 | Boston Celtics @ Detroit Pistons | 2026-10-20T19:00 | Boston Celtics | 51.8% | 1.93 | 1.91 (matchbook) | — | — | REJECT |
