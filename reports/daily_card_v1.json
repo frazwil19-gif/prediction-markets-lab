@@ -1,6 +1,6 @@
 {
  "card_version": "card-v1.2",
- "generated_at": "2026-10-20T11:58:03.419796+00:00",
+ "generated_at": "2026-10-20T12:59:25.166528+00:00",
  "stage_a_generated_at": "2026-10-20T11:58:02.600388+00:00",
  "real_money_enabled": false,
  "mode": "PAPER \u2014 unattended prospective validation (real-money betting paused; nothing to place)",
@@ -11,7 +11,7 @@
   "total_stake_gbp": 0.0,
   "exposure_pct_of_bankroll": 0.0,
   "strong_price_too_low": 5,
-  "research_predictions": 0
+  "research_predictions": 8
  },
  "rejection_reasons": {
   "NET_EV_NOT_POSITIVE": 8,
@@ -637,7 +637,112 @@
    "min_bookmaker_odds": 1.43
   }
  ],
- "research": [],
+ "research": [
+  {
+   "sport": "football",
+   "competition": "SP1",
+   "event_name": "Levante v Ath Bilbao",
+   "event_start": "2026-10-21T19:00:00+00:00",
+   "market": "total_corners",
+   "selection": "under 11.5",
+   "probability": 0.7307,
+   "fair_odds": 1.37,
+   "model": "corners-A-1.0",
+   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
+   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
+  },
+  {
+   "sport": "football",
+   "competition": "E1",
+   "event_name": "Wolves v Portsmouth",
+   "event_start": "2026-10-20T19:45:00+00:00",
+   "market": "total_corners",
+   "selection": "over 8.5",
+   "probability": 0.6869,
+   "fair_odds": 1.46,
+   "model": "corners-A-1.0",
+   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
+   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
+  },
+  {
+   "sport": "football",
+   "competition": "E1",
+   "event_name": "Wolves v Portsmouth",
+   "event_start": "2026-10-20T19:45:00+00:00",
+   "market": "total_corners",
+   "selection": "under 11.5",
+   "probability": 0.6515,
+   "fair_odds": 1.53,
+   "model": "corners-A-1.0",
+   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
+   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
+  },
+  {
+   "sport": "football",
+   "competition": "SP1",
+   "event_name": "Levante v Ath Bilbao",
+   "event_start": "2026-10-21T19:00:00+00:00",
+   "market": "total_corners",
+   "selection": "under 10.5",
+   "probability": 0.631,
+   "fair_odds": 1.58,
+   "model": "corners-A-1.0",
+   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
+   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
+  },
+  {
+   "sport": "football",
+   "competition": "SP1",
+   "event_name": "Levante v Ath Bilbao",
+   "event_start": "2026-10-21T19:00:00+00:00",
+   "market": "total_corners",
+   "selection": "over 8.5",
+   "probability": 0.6103,
+   "fair_odds": 1.64,
+   "model": "corners-A-1.0",
+   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
+   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
+  },
+  {
+   "sport": "football",
+   "competition": "E1",
+   "event_name": "Wolves v Portsmouth",
+   "event_start": "2026-10-20T19:45:00+00:00",
+   "market": "total_corners",
+   "selection": "over 9.5",
+   "probability": 0.5733,
+   "fair_odds": 1.74,
+   "model": "corners-A-1.0",
+   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
+   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
+  },
+  {
+   "sport": "football",
+   "competition": "E1",
+   "event_name": "Wolves v Portsmouth",
+   "event_start": "2026-10-20T19:45:00+00:00",
+   "market": "total_corners",
+   "selection": "under 10.5",
+   "probability": 0.5424,
+   "fair_odds": 1.84,
+   "model": "corners-A-1.0",
+   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
+   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
+  },
+  {
+   "sport": "football",
+   "competition": "SP1",
+   "event_name": "Levante v Ath Bilbao",
+   "event_start": "2026-10-21T19:00:00+00:00",
+   "market": "total_corners",
+   "selection": "under 9.5",
+   "probability": 0.5112,
+   "fair_odds": 1.96,
+   "model": "corners-A-1.0",
+   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
+   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
+  }
+ ],
  "live_policy": {
   "real_money_enabled": false,
   "money_eligibility": "registry",

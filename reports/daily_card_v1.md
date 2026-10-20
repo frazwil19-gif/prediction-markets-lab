@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-10-20T11:58Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-10-20T12:59Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 19 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 5 · research predictions: 0
+Predictions in the next window: 19 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 5 · research predictions: 8
 
 ## 1. Best predictions today
 
@@ -55,4 +55,13 @@ NET_EV_NOT_POSITIVE 8 · ENGINE_STATUS_INELIGIBLE 7 · COMMISSION_UNKNOWN 7 · P
 
 _Model probabilities from research engines. Shown for information and to build a prospective record; they are NOT betting recommendations._
 
-None in the window (corners collector lists no covered-league fixtures yet).
+| Event | Start | Market | Selection | P | Model fair odds | Model | Status |
+|---|---|---|---|---|---|---|---|
+| Levante v Ath Bilbao (SP1) | 2026-10-21 | total_corners | under 11.5 | 73.1% | 1.37 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Wolves v Portsmouth (E1) | 2026-10-20 | total_corners | over 8.5 | 68.7% | 1.46 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Wolves v Portsmouth (E1) | 2026-10-20 | total_corners | under 11.5 | 65.1% | 1.53 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Levante v Ath Bilbao (SP1) | 2026-10-21 | total_corners | under 10.5 | 63.1% | 1.58 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Levante v Ath Bilbao (SP1) | 2026-10-21 | total_corners | over 8.5 | 61.0% | 1.64 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Wolves v Portsmouth (E1) | 2026-10-20 | total_corners | over 9.5 | 57.3% | 1.74 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Wolves v Portsmouth (E1) | 2026-10-20 | total_corners | under 10.5 | 54.2% | 1.84 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Levante v Ath Bilbao (SP1) | 2026-10-21 | total_corners | under 9.5 | 51.1% | 1.96 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
