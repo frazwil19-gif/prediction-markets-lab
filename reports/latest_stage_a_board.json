@@ -2,26 +2,26 @@
  "board_version": "stage-a-2",
  "product": "STAGE A PREDICTION BOARD (probability first; NOT a betting card)",
  "principle": "STRONG PREDICTION != VALID BET. Stage B (bet-selection) alone decides bets.",
- "generated_at": "2026-10-20T23:47:36.866567+00:00",
+ "generated_at": "2026-10-21T06:16:22.243686+00:00",
  "strong_prediction_min_probability": 0.7,
  "summary": {
-  "predictions": 14,
-  "strong_predictions": 4,
-  "strong_unique_events": 4,
+  "predictions": 11,
+  "strong_predictions": 2,
+  "strong_unique_events": 2,
   "strong_by_price_status": {
-   "PRICE_QUALITY_FAIL": 4
+   "PRICE_QUALITY_FAIL": 2
   },
   "all_by_price_status": {
-   "PRICE_QUALITY_FAIL": 14
+   "PRICE_QUALITY_FAIL": 11
   },
   "duplicate_prediction_rows_collapsed": 0,
   "strong_by_sport": {
    "basketball": 1,
-   "tennis": 3
+   "tennis": 1
   },
   "all_by_sport": {
-   "basketball": 6,
-   "tennis": 8
+   "basketball": 5,
+   "tennis": 6
   }
  },
  "predictions": [
@@ -72,52 +72,6 @@
    "rank": 1
   },
   {
-   "prediction_id": "38e8276fc15c953c",
-   "sport": "tennis",
-   "competition": "WTA Ningbo Open",
-   "event_key": "tennis|tennis_wta_ningbo_open|76669208f3d3fcdc0c8e043df5ab46ab",
-   "event_name": "Marie Bouzkova v Anastasia Zakharova",
-   "event_start": "2026-10-21T05:00:00+00:00",
-   "event_start_original": "2026-10-21T05:00:00+00:00",
-   "start_time_status": "UNCHANGED",
-   "market": "match_winner",
-   "selection": "Marie Bouzkova",
-   "probability": 0.781116,
-   "probability_basis": "P_CURRENT_SCAN",
-   "probability_observed_at": "2026-10-20T15:16:36.492430+00:00",
-   "p_first_snapshot": 0.765529,
-   "p_current_scan": 0.781116,
-   "ledger_probability": 0.765529,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "1022.0",
-   "sigma": 0.020562,
-   "sigma_method": "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)",
-   "sigma_calibration": 0.011556,
-   "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)",
-   "sigma_half_width": 0.017007,
-   "exchange_width": 0.034014,
-   "probability_band": "75-79.9%",
-   "engine_id": "wta_match_winner.betfair_market",
-   "engine_version": "1",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "prediction_timestamp": "2026-10-20T11:57:59.787680+00:00",
-   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
-   "strength": "STRONG_PREDICTION",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 14,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-20T15:16:36.492430+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 2
-  },
-  {
    "prediction_id": "3f7784122ba6d6be",
    "sport": "basketball",
    "competition": "NBA",
@@ -161,53 +115,7 @@
    "price_observed_at": "2026-10-20T11:58:01.026156+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 3
-  },
-  {
-   "prediction_id": "b1ac83ca3acf704f",
-   "sport": "tennis",
-   "competition": "WTA Ningbo Open",
-   "event_key": "tennis|tennis_wta_ningbo_open|411cad841b8b18dcf7a01bd7fc976575",
-   "event_name": "Marie Bouzkova v Iga Swiatek",
-   "event_start": "2026-10-21T04:00:00+00:00",
-   "event_start_original": "2026-10-21T04:00:00+00:00",
-   "start_time_status": "UNCHANGED",
-   "market": "match_winner",
-   "selection": "Iga Swiatek",
-   "probability": 0.713558,
-   "probability_basis": "P_CURRENT_SCAN",
-   "probability_observed_at": "2026-10-19T15:16:25.033365+00:00",
-   "p_first_snapshot": 0.713558,
-   "p_current_scan": 0.713558,
-   "ledger_probability": 0.713558,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "2203.6",
-   "sigma": 0.031088,
-   "sigma_method": "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)",
-   "sigma_calibration": 0.011556,
-   "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)",
-   "sigma_half_width": 0.02886,
-   "exchange_width": 0.05772,
-   "probability_band": "70-74.9%",
-   "engine_id": "wta_match_winner.betfair_market",
-   "engine_version": "1",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "prediction_timestamp": "2026-10-19T15:16:25.033365+00:00",
-   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
-   "strength": "STRONG_PREDICTION",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 10,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-19T15:16:25.033365+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 4
+   "rank": 2
   },
   {
    "prediction_id": "8bfaee77a18581ed",
@@ -253,7 +161,7 @@
    "price_observed_at": "2026-10-20T15:16:36.492430+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 5
+   "rank": 3
   },
   {
    "prediction_id": "e37a504af8cb4412",
@@ -299,7 +207,7 @@
    "price_observed_at": "2026-10-20T15:16:36.492430+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 6
+   "rank": 4
   },
   {
    "prediction_id": "6eb36d4144ae4a64",
@@ -345,7 +253,7 @@
    "price_observed_at": "2026-10-20T15:16:36.492430+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 7
+   "rank": 5
   },
   {
    "prediction_id": "bb1a15b55495c401",
@@ -391,7 +299,7 @@
    "price_observed_at": "2026-10-20T11:58:01.026156+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 8
+   "rank": 6
   },
   {
    "prediction_id": "45f767aa884437e0",
@@ -437,7 +345,7 @@
    "price_observed_at": "2026-10-20T15:16:36.492430+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 9
+   "rank": 7
   },
   {
    "prediction_id": "c394605028f9f831",
@@ -483,7 +391,7 @@
    "price_observed_at": "2026-10-20T15:16:36.492430+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 10
+   "rank": 8
   },
   {
    "prediction_id": "9157297acad5375f",
@@ -529,7 +437,7 @@
    "price_observed_at": "2026-10-20T11:58:01.026156+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 11
+   "rank": 9
   },
   {
    "prediction_id": "ffad6ff046f1aa7c",
@@ -575,53 +483,7 @@
    "price_observed_at": "2026-10-20T11:58:01.026156+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 12
-  },
-  {
-   "prediction_id": "d4171bc6ac99ce00",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_key": "nba|bccd283de56915e29af1788beb0abfc9",
-   "event_name": "Oklahoma City Thunder @ San Antonio Spurs",
-   "event_start": "2026-10-21T01:30:00+00:00",
-   "event_start_original": "2026-10-21T01:30:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "moneyline",
-   "selection": "San Antonio Spurs",
-   "probability": 0.517915,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-20T11:58:01.026156+00:00",
-   "p_first_snapshot": 0.517915,
-   "p_current_scan": null,
-   "ledger_probability": 0.517915309446254,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "812.0",
-   "sigma": 0.014997,
-   "sigma_method": "HIST_BAND_WILSON_SE (closing estimator; early-snapshot bias excluded)",
-   "sigma_calibration": 0.014997,
-   "calibration_status": "HOLDOUT_PASSED on closing estimator (live early-snapshot estimator not validated)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "50-54.9%",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "prediction_timestamp": "2026-10-20T11:58:01.026156+00:00",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "COMMISSION_UNKNOWN|PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-20T11:58:01.026156+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 13
+   "rank": 10
   },
   {
    "prediction_id": "137135b28e880b13",
@@ -667,7 +529,7 @@
    "price_observed_at": "2026-10-20T11:58:01.026156+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 14
+   "rank": 11
   }
  ]
 }
