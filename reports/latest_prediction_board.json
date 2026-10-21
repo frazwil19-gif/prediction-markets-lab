@@ -1,7 +1,7 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-21T12:12:11.139674+00:00",
+ "generated_at": "2026-10-21T15:16:34.005740+00:00",
  "date": "2026-10-21",
  "summary": {
   "upcoming_events": 17,
@@ -30,11 +30,11 @@
   },
   "settled_yesterday": 198,
   "system": "HEALTHY",
-  "api_credits_last_observed": 173
+  "api_credits_last_observed": 172
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-21T12:12:11.139674+00:00",
+  "generated_at": "2026-10-21T15:16:34.005740+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -42,31 +42,31 @@
     "last": "2026-10-21T06:16:21.697019+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 5.9
+    "age_hours": 9.0
    },
    "settlement": {
     "last": "2026-10-20T23:47:38.333303+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 12.4
+    "age_hours": 15.5
    },
    "tennis_board": {
-    "last": "2026-10-21T12:12:08.233357+00:00",
+    "last": "2026-10-21T15:16:31.814848+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    },
    "ci_tests": {
-    "last": "2026-10-21T12:12:09.209999+00:00",
+    "last": "2026-10-21T15:16:32.791839+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    }
   },
   "api_credits": {
-   "remaining": 173,
-   "observed_at": "2026-10-21T12:12:10.050776+00:00",
-   "source": "nba_credit_log.csv",
+   "remaining": 172,
+   "observed_at": "2026-10-21T15:16:31.955083+00:00",
+   "source": "credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
   "warnings": [],
@@ -125,7 +125,7 @@
    "status": "VALIDATED_HISTORICAL",
    "prospective_status": "COLLECTING",
    "money_eligible": true,
-   "predictions": 183,
+   "predictions": 184,
    "settled_rows": 144,
    "maturity": "EARLY",
    "ge80_settled": 26,
@@ -197,17 +197,17 @@
  "start_time_resolution": {
   "eligibility": {
    "ELIGIBLE": 17,
-   "EXCLUDED": 1824
+   "EXCLUDED": 1825
   },
   "exclusion_reason": {
-   "EVENT_STARTED": 1824
+   "EVENT_STARTED": 1825
   },
   "start_time_status": {
    "LEDGER_ONLY": 1438,
    "RESCHEDULED": 245,
-   "UNCHANGED": 158
+   "UNCHANGED": 159
   },
-  "eligible_rescheduled": 4,
+  "eligible_rescheduled": 3,
   "rule": "est-1"
  },
  "predictions": [
@@ -251,7 +251,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-22T06:30:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "740ad018405fc017",
@@ -590,48 +590,6 @@
    "start_time_source": "unified_ledger.event_start"
   },
   {
-   "prediction_id": "c394605028f9f831",
-   "engine_id": "wta_match_winner.betfair_market",
-   "engine_version": "1",
-   "sport": "tennis",
-   "competition": "WTA Ningbo Open",
-   "event_id": "b079d623b04803aa5e83ddef38689d87",
-   "event_key": "tennis|tennis_wta_ningbo_open|b079d623b04803aa5e83ddef38689d87",
-   "event_name": "Ekaterina Alexandrova v Marta Kostyuk",
-   "event_start": "2026-10-21T12:20:00+00:00",
-   "market": "match_winner",
-   "selection": "Marta Kostyuk",
-   "estimated_probability": "0.573156",
-   "fair_odds": "1.7447256942263538",
-   "probability_band": "55-59.9%",
-   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
-   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "",
-   "actual_workflow_start": "2026-10-20T15:16:36.492430+00:00",
-   "prediction_timestamp": "2026-10-20T15:16:36.492430+00:00",
-   "minutes_to_event": "1183.4",
-   "live_price": "1.6",
-   "live_price_source": "betfair_ex_uk back (odds_api)",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "True",
-   "single_ineligible_reason": "",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
-   "origin": "tennis_predictions/ledger_predictions.csv",
-   "origin_prediction_id": "c394605028f9f831",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-10-21T11:00:00+00:00",
-   "start_time_status": "RESCHEDULED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
-  },
-  {
    "prediction_id": "9157297acad5375f",
    "engine_id": "nba_moneyline.market",
    "engine_version": "1",
@@ -840,6 +798,48 @@
    "event_start_original": "2026-10-21T23:10:00+00:00",
    "start_time_status": "LEDGER_ONLY",
    "start_time_source": "unified_ledger.event_start"
+  },
+  {
+   "prediction_id": "c89a354af20fd033",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "sport": "tennis",
+   "competition": "WTA Ningbo Open",
+   "event_id": "f34a0b19a0651c9e3720cf57770d105d",
+   "event_key": "tennis|tennis_wta_ningbo_open|f34a0b19a0651c9e3720cf57770d105d",
+   "event_name": "Leylah Fernandez v Ekaterina Alexandrova",
+   "event_start": "2026-10-23T04:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Ekaterina Alexandrova",
+   "estimated_probability": "0.550369",
+   "fair_odds": "1.8169628013205685",
+   "probability_band": "55-59.9%",
+   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
+   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "data_quality": "OK",
+   "current_context_status": "NOT_MODELLED",
+   "configured_scan_time": "",
+   "actual_workflow_start": "2026-10-21T15:16:31.814848+00:00",
+   "prediction_timestamp": "2026-10-21T15:16:31.814848+00:00",
+   "minutes_to_event": "2203.5",
+   "live_price": "1.69",
+   "live_price_source": "betfair_ex_uk back (odds_api)",
+   "paper_status": "PAPER",
+   "prediction_valid": "True",
+   "single_eligible": "True",
+   "single_ineligible_reason": "",
+   "multi_research_eligible": "False",
+   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
+   "origin": "tennis_predictions/ledger_predictions.csv",
+   "origin_prediction_id": "c89a354af20fd033",
+   "settlement_status": "",
+   "result": "",
+   "correct": "",
+   "settlement_timestamp": "",
+   "event_start_original": "2026-10-23T04:00:00+00:00",
+   "start_time_status": "UNCHANGED",
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
   },
   {
    "prediction_id": "65ff5c98c655e0eb",
