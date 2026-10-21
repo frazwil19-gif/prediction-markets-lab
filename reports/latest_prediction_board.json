@@ -1,11 +1,11 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-21T15:16:34.005740+00:00",
+ "generated_at": "2026-10-21T19:32:04.959326+00:00",
  "date": "2026-10-21",
  "summary": {
-  "upcoming_events": 17,
-  "valid_predictions": 17,
+  "upcoming_events": 18,
+  "valid_predictions": 18,
   "sports_active": [
    "basketball",
    "tennis"
@@ -30,11 +30,11 @@
   },
   "settled_yesterday": 198,
   "system": "HEALTHY",
-  "api_credits_last_observed": 172
+  "api_credits_last_observed": 171
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-21T15:16:34.005740+00:00",
+  "generated_at": "2026-10-21T19:32:04.959326+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -42,30 +42,30 @@
     "last": "2026-10-21T06:16:21.697019+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 9.0
+    "age_hours": 13.3
    },
    "settlement": {
     "last": "2026-10-20T23:47:38.333303+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 15.5
+    "age_hours": 19.7
    },
    "tennis_board": {
-    "last": "2026-10-21T15:16:31.814848+00:00",
+    "last": "2026-10-21T19:32:02.669625+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    },
    "ci_tests": {
-    "last": "2026-10-21T15:16:32.791839+00:00",
+    "last": "2026-10-21T19:32:03.797958+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    }
   },
   "api_credits": {
-   "remaining": 172,
-   "observed_at": "2026-10-21T15:16:31.955083+00:00",
+   "remaining": 171,
+   "observed_at": "2026-10-21T19:32:03.225910+00:00",
    "source": "credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
@@ -125,7 +125,7 @@
    "status": "VALIDATED_HISTORICAL",
    "prospective_status": "COLLECTING",
    "money_eligible": true,
-   "predictions": 184,
+   "predictions": 185,
    "settled_rows": 144,
    "maturity": "EARLY",
    "ge80_settled": 26,
@@ -196,7 +196,7 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 17,
+   "ELIGIBLE": 18,
    "EXCLUDED": 1825
   },
   "exclusion_reason": {
@@ -205,7 +205,7 @@
   "start_time_status": {
    "LEDGER_ONLY": 1438,
    "RESCHEDULED": 245,
-   "UNCHANGED": 159
+   "UNCHANGED": 160
   },
   "eligible_rescheduled": 3,
   "rule": "est-1"
@@ -548,6 +548,48 @@
    "start_time_source": "unified_ledger.event_start"
   },
   {
+   "prediction_id": "d2e919bbe1b12ac3",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "sport": "tennis",
+   "competition": "WTA Ningbo Open",
+   "event_id": "f5c4465f64797dcb67aa1b42fd45292e",
+   "event_key": "tennis|tennis_wta_ningbo_open|f5c4465f64797dcb67aa1b42fd45292e",
+   "event_name": "Sara Bejlek v Marie Bouzkova",
+   "event_start": "2026-10-23T05:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Marie Bouzkova",
+   "estimated_probability": "0.615746",
+   "fair_odds": "1.6240462788227612",
+   "probability_band": "60-64.9%",
+   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
+   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "data_quality": "OK",
+   "current_context_status": "NOT_MODELLED",
+   "configured_scan_time": "30 15 * * *",
+   "actual_workflow_start": "2026-10-21T19:32:02.669625+00:00",
+   "prediction_timestamp": "2026-10-21T19:32:02.669625+00:00",
+   "minutes_to_event": "2008.0",
+   "live_price": "1.51",
+   "live_price_source": "betfair_ex_uk back (odds_api)",
+   "paper_status": "PAPER",
+   "prediction_valid": "True",
+   "single_eligible": "True",
+   "single_ineligible_reason": "",
+   "multi_research_eligible": "False",
+   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
+   "origin": "tennis_predictions/ledger_predictions.csv",
+   "origin_prediction_id": "d2e919bbe1b12ac3",
+   "settlement_status": "",
+   "result": "",
+   "correct": "",
+   "settlement_timestamp": "",
+   "event_start_original": "2026-10-23T05:00:00+00:00",
+   "start_time_status": "UNCHANGED",
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+  },
+  {
    "prediction_id": "b46d93b278afa54b",
    "engine_id": "nba_moneyline.market",
    "engine_version": "1",
@@ -839,7 +881,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-23T04:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "65ff5c98c655e0eb",
