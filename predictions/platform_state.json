@@ -3,7 +3,7 @@
  "americanfootball_nfl_last_scores_date": "2026-10-17",
  "icehockey_nhl_last_odds_date": "2026-10-19",
  "icehockey_nhl_last_scores_date": "2026-10-17",
- "last_ci_pass": "2026-10-21T06:16:22.207912+00:00",
+ "last_ci_pass": "2026-10-21T12:12:09.209999+00:00",
  "last_runs": {
   "americanfootball_nfl": {
    "added": 1,
@@ -24,10 +24,10 @@
    "candidates": 4
   },
   "nba": {
-   "added": 8,
+   "added": 7,
    "already_recorded": 0,
-   "at": "2026-10-20T11:58:01.739376+00:00",
-   "candidates": 8
+   "at": "2026-10-21T12:12:10.330226+00:00",
+   "candidates": 7
   },
   "settle": {
    "added": 197,
@@ -36,13 +36,13 @@
   },
   "tennis": {
    "added": 1,
-   "already_recorded": 415,
-   "at": "2026-10-20T15:16:37.432543+00:00",
-   "candidates": 416
+   "already_recorded": 416,
+   "at": "2026-10-21T12:12:09.287956+00:00",
+   "candidates": 417
   }
  },
- "last_tennis_ingest": "2026-10-20T15:16:37.432580+00:00",
- "nba_last_odds_date": "2026-10-20",
+ "last_tennis_ingest": "2026-10-21T12:12:09.288025+00:00",
+ "nba_last_odds_date": "2026-10-21",
  "pending_review": [
   {
    "detail": "unmapped: 1. FC Heidenheim, 1. FC Kaiserslautern",
@@ -4047,7 +4047,8 @@
   "football": {},
   "icehockey_nhl": {},
   "nba": {
-   "nba_moneyline.market: OUTSIDE_36H_WINDOW": 38
+   "nba_moneyline.market: ALREADY_PREDICTED_FIRST_SNAPSHOT_CANONICAL": 5,
+   "nba_moneyline.market: OUTSIDE_36H_WINDOW": 31
   },
   "tennis": {}
  }

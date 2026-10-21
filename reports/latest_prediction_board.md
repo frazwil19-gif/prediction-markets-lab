@@ -2,15 +2,16 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 11 · Valid predictions: 11 · Sports: basketball, tennis
-Counts: >=70: 2 · >=75: 2 · >=80: 1 · >=85: 1 · >=90: 0 · >=95: 0
-Settled yesterday: 198 · System: **HEALTHY** · API credits (last observed): 181
+Upcoming events: 17 · Valid predictions: 17 · Sports: basketball, tennis
+Counts: >=70: 4 · >=75: 4 · >=80: 2 · >=85: 2 · >=90: 0 · >=95: 0
+Settled yesterday: 198 · System: **HEALTHY** · API credits (last observed): 173
 
 ## Top predictions (P ≥ 80%)
 
 | Sport | Event | Start (UTC) | Market | Selection | P | Fair | Band | Engine | Evidence | Price (source) | Single | Multi-research |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| tennis | Elena Rybakina v Polina Kudermetova | 2026-10-22T04:00 | match_winner | Elena Rybakina | 88.7% | 1.13 | 85-89.9% | wta_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.10 (betfair_ex_uk back (odds_api)) | no | yes |
+| tennis | Katarzyna Kawa v Belinda Bencic | 2026-10-22T06:30 | match_winner | Belinda Bencic | 89.9% | 1.11 | 85-89.9% | wta_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.11 (betfair_ex_uk back (odds_api)) | no | yes |
+| tennis | Elena Rybakina v Polina Kudermetova | 2026-10-22T11:00 ⟳ | match_winner | Elena Rybakina | 88.7% | 1.13 | 85-89.9% | wta_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.10 (betfair_ex_uk back (odds_api)) | no | yes |
 
 ## Prospective evidence
 
@@ -20,8 +21,8 @@ Settled yesterday: 198 · System: **HEALTHY** · API credits (last observed): 18
 | football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 72 | 71 | EARLY | 0 | — → — |
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
 | atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 158 | 146 | EARLY | 25 | 87.7% → 76.0% |
-| wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 182 | 144 | EARLY | 26 | 89.2% → 80.8% |
-| nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 8 | 0 | COLLECTING | 0 | — → — |
+| wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 183 | 144 | EARLY | 26 | 89.2% → 80.8% |
+| nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 15 | 0 | COLLECTING | 0 | — → — |
 | nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 85 | 63 | EARLY | 0 | — → — |
 | nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 28 | 15 | COLLECTING | 0 | — → — |
 | football_double_chance.derived_1x2 | PROVISIONAL_PROSPECTIVE / COLLECTING | 612 | 9 | COLLECTING | 1 | 80.2% → 0.0% |
@@ -30,8 +31,8 @@ Settled yesterday: 198 · System: **HEALTHY** · API credits (last observed): 18
 
 - daily_scan: OK (last 2026-10-21T06:16:21.697019+00:00)
 - settlement: OK (last 2026-10-20T23:47:38.333303+00:00)
-- tennis_board: OK (last 2026-10-20T15:16:36.492430+00:00)
-- ci_tests: OK (last 2026-10-21T06:16:22.207912+00:00)
+- tennis_board: OK (last 2026-10-21T12:12:08.233357+00:00)
+- ci_tests: OK (last 2026-10-21T12:12:09.209999+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 

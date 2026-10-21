@@ -4,24 +4,30 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-21T06:16Z · events scanned 11 · valid predictions 11 · high-P (≥70%) 2 · priced 8 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 11 · new paper bets 0 · Money Card qualified 0
+Run 2026-10-21T12:12Z · events scanned 17 · valid predictions 17 · high-P (≥70%) 4 · priced 10 · PAPER_BET 0 · MULTI-research 2 · WATCH 0 · REJECT 15 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): PRICE_STALE 11 · NET_EV_NOT_POSITIVE 8 · EXCHANGE_SPREAD_TOO_WIDE 3 · COMMISSION_UNKNOWN 3
+Reason codes (latest run): NET_EV_NOT_POSITIVE 9 · COMMISSION_UNKNOWN 7 · PRICE_STALE 5 · NET_EV_BELOW_PAPER_GATE 1 · ODDS_BELOW_PAYOUT_FLOOR 1
 
 ## Candidates (latest run, best price per prediction)
 
 | Event | Start | Sel | P | Fair | Odds (source) | Break-even | Net EV | Decision |
 |---|---|---|---|---|---|---|---|---|
-| Elena Rybakina v Polina Kudermetova | 2026-10-22T04:00 | Elena Rybakina | 87.8% | 1.14 | 1.13 (betfair_ex_uk) | 89.0% | -1.4% | REJECT |
+| Katarzyna Kawa v Belinda Bencic | 2026-10-22T06:30 | Belinda Bencic | 89.9% | 1.11 | 1.11 (betfair_ex_uk) | 90.5% | -0.7% | MULTI_RESEARCH_ELIGIBLE |
+| Elena Rybakina v Polina Kudermetova | 2026-10-22T11:00 | Elena Rybakina | 88.1% | 1.13 | 1.14 (betfair_sb_uk) | 87.7% | 0.5% | MULTI_RESEARCH_ELIGIBLE |
 | Chicago Bulls @ Toronto Raptors | 2026-10-21T23:40 | Toronto Raptors | 75.6% | 1.32 | 1.29 (skybet) | 77.5% | -2.4% | REJECT |
-| Sorana Cirstea v Sara Bejlek | 2026-10-21T08:00 | Sorana Cirstea | 67.5% | 1.48 | 1.41 (betfair_ex_uk) | 72.0% | -6.2% | REJECT |
-| Iva Jović v Jasmine Paolini | 2026-10-22T04:00 | Iva Jović | 64.7% | 1.55 | 1.50 (betfair_ex_uk) | 67.8% | -4.6% | REJECT |
-| Leylah Fernandez v Aliaksandra Sasnovich | 2026-10-21T06:30 | Leylah Fernandez | 63.9% | 1.56 | 1.55 (betfair_ex_uk) | 65.7% | -2.7% | REJECT |
+| Dallas Mavericks @ Houston Rockets | 2026-10-22T00:40 | Houston Rockets | 75.1% | 1.33 | 1.30 (matchbook) | — | — | REJECT |
+| Golden State Warriors @ Los Angeles Lakers | 2026-10-22T02:00 | Los Angeles Lakers | 66.3% | 1.51 | 1.51 (matchbook) | — | — | REJECT |
+| Iva Jović v Jasmine Paolini | 2026-10-22T05:00 | Iva Jović | 65.3% | 1.53 | 1.50 (boylesports) | 66.7% | -2.0% | REJECT |
 | Milwaukee Bucks @ Washington Wizards | 2026-10-21T23:00 | Washington Wizards | 63.4% | 1.58 | 1.55 (matchbook) | — | — | REJECT |
-| Alexandra Eala v Diana Shnaider | 2026-10-22T04:00 | Diana Shnaider | 59.7% | 1.68 | 1.64 (betfair_ex_uk) | 62.2% | -4.0% | REJECT |
-| Ekaterina Alexandrova v Marta Kostyuk | 2026-10-21T11:00 | Marta Kostyuk | 57.3% | 1.74 | 1.60 (betfair_ex_uk) | 63.7% | -10.0% | REJECT |
+| Sacramento Kings @ Los Angeles Clippers | 2026-10-22T02:40 | Los Angeles Clippers | 62.9% | 1.59 | 1.54 (unibet_uk) | 64.9% | -3.1% | REJECT |
+| Alexandra Eala v Diana Shnaider | 2026-10-22T08:00 | Diana Shnaider | 58.9% | 1.70 | 1.67 (betfair_sb_uk) | 59.9% | -1.6% | REJECT |
+| Ekaterina Alexandrova v Marta Kostyuk | 2026-10-21T12:20 | Marta Kostyuk | 58.8% | 1.70 | 1.68 (casumo) | 59.5% | -1.2% | REJECT |
+| Indiana Pacers @ New Orleans Pelicans | 2026-10-22T00:10 | Indiana Pacers | 57.8% | 1.73 | 1.72 (matchbook) | — | — | REJECT |
 | Charlotte Hornets @ Brooklyn Nets | 2026-10-21T23:30 | Brooklyn Nets | 56.7% | 1.76 | 1.73 (skybet) | 57.8% | -1.9% | REJECT |
+| Phoenix Suns @ Portland Trail Blazers | 2026-10-22T02:10 | Portland Trail Blazers | 56.1% | 1.78 | 1.73 (unibet_uk) | 57.8% | -3.0% | REJECT |
+| Cleveland Cavaliers @ Philadelphia 76ers | 2026-10-22T23:10 | Philadelphia 76ers | 55.5% | 1.80 | 1.78 (smarkets) | 56.7% | -2.1% | REJECT |
 | Atlanta Hawks @ Orlando Magic | 2026-10-21T23:10 | Orlando Magic | 55.3% | 1.81 | 1.80 (matchbook) | — | — | REJECT |
+| Utah Jazz @ Memphis Grizzlies | 2026-10-22T00:10 | Memphis Grizzlies | 52.2% | 1.92 | 1.92 (matchbook) | — | — | REJECT |
 | Minnesota Timberwolves @ Miami Heat | 2026-10-21T23:40 | Miami Heat | 51.6% | 1.94 | 1.95 (matchbook) | — | — | REJECT |
 
 ## Paper results (all time)
