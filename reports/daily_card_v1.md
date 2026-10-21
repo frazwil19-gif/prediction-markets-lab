@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-10-21T12:12Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-10-21T13:15Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 17 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 4 · research predictions: 4
+Predictions in the next window: 16 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 4 · research predictions: 4
 
 ## 1. Best predictions today
 
@@ -19,14 +19,13 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | 7 | basketball | Milwaukee Bucks @ Washington Wizards | 2026-10-21T23:00 | moneyline | Washington Wizards | 63.4% | 60%+ | 1.5% | VALIDATED | 1.58 | price not usable (stale/wide/unknown commission) | no |
 | 8 | basketball | Sacramento Kings @ Los Angeles Clippers | 2026-10-22T02:40 | moneyline | Los Angeles Clippers | 62.9% | 60%+ | 1.5% | VALIDATED | 1.59 | 1.54 (unibet_uk) | no |
 | 9 | tennis | Alexandra Eala v Diana Shnaider | 2026-10-22T08:00 | match_winner | Diana Shnaider | 58.9% | 50%+ | 1.1% | VALIDATED | 1.70 | 1.67 (betfair_sb_uk) | no |
-| 10 | tennis | Ekaterina Alexandrova v Marta Kostyuk | 2026-10-21T12:20 | match_winner | Marta Kostyuk | 58.8% | 50%+ | 1.1% | VALIDATED | 1.70 | 1.68 (virginbet) | no |
-| 11 | basketball | Indiana Pacers @ New Orleans Pelicans | 2026-10-22T00:10 | moneyline | Indiana Pacers | 57.8% | 50%+ | 1.5% | VALIDATED | 1.73 | price not usable (stale/wide/unknown commission) | no |
-| 12 | basketball | Charlotte Hornets @ Brooklyn Nets | 2026-10-21T23:30 | moneyline | Brooklyn Nets | 56.7% | 50%+ | 1.5% | VALIDATED | 1.76 | price not usable (stale/wide/unknown commission) | no |
-| 13 | basketball | Phoenix Suns @ Portland Trail Blazers | 2026-10-22T02:10 | moneyline | Portland Trail Blazers | 56.1% | 50%+ | 1.5% | VALIDATED | 1.78 | 1.73 (unibet_uk) | no |
-| 14 | basketball | Cleveland Cavaliers @ Philadelphia 76ers | 2026-10-22T23:10 | moneyline | Philadelphia 76ers | 55.5% | 50%+ | 1.5% | VALIDATED | 1.80 | 1.78 (smarkets) | no |
-| 15 | basketball | Atlanta Hawks @ Orlando Magic | 2026-10-21T23:10 | moneyline | Orlando Magic | 55.3% | 50%+ | 1.5% | VALIDATED | 1.81 | price not usable (stale/wide/unknown commission) | no |
-| 16 | basketball | Utah Jazz @ Memphis Grizzlies | 2026-10-22T00:10 | moneyline | Memphis Grizzlies | 52.2% | 50%+ | 1.5% | VALIDATED | 1.92 | price not usable (stale/wide/unknown commission) | no |
-| 17 | basketball | Minnesota Timberwolves @ Miami Heat | 2026-10-21T23:40 | moneyline | Miami Heat | 51.6% | 50%+ | 1.5% | VALIDATED | 1.94 | price not usable (stale/wide/unknown commission) | no |
+| 10 | basketball | Indiana Pacers @ New Orleans Pelicans | 2026-10-22T00:10 | moneyline | Indiana Pacers | 57.8% | 50%+ | 1.5% | VALIDATED | 1.73 | price not usable (stale/wide/unknown commission) | no |
+| 11 | basketball | Charlotte Hornets @ Brooklyn Nets | 2026-10-21T23:30 | moneyline | Brooklyn Nets | 56.7% | 50%+ | 1.5% | VALIDATED | 1.76 | price not usable (stale/wide/unknown commission) | no |
+| 12 | basketball | Phoenix Suns @ Portland Trail Blazers | 2026-10-22T02:10 | moneyline | Portland Trail Blazers | 56.1% | 50%+ | 1.5% | VALIDATED | 1.78 | 1.73 (unibet_uk) | no |
+| 13 | basketball | Cleveland Cavaliers @ Philadelphia 76ers | 2026-10-22T23:10 | moneyline | Philadelphia 76ers | 55.5% | 50%+ | 1.5% | VALIDATED | 1.80 | 1.78 (smarkets) | no |
+| 14 | basketball | Atlanta Hawks @ Orlando Magic | 2026-10-21T23:10 | moneyline | Orlando Magic | 55.3% | 50%+ | 1.5% | VALIDATED | 1.81 | price not usable (stale/wide/unknown commission) | no |
+| 15 | basketball | Utah Jazz @ Memphis Grizzlies | 2026-10-22T00:10 | moneyline | Memphis Grizzlies | 52.2% | 50%+ | 1.5% | VALIDATED | 1.92 | price not usable (stale/wide/unknown commission) | no |
+| 16 | basketball | Minnesota Timberwolves @ Miami Heat | 2026-10-21T23:40 | moneyline | Miami Heat | 51.6% | 50%+ | 1.5% | VALIDATED | 1.94 | price not usable (stale/wide/unknown commission) | no |
 
 ## 2. Qualified paper bets (simulated stakes, recorded automatically)
 
@@ -49,7 +48,7 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 ### Why predictions in the window were not bets
 
-NET_EV_NOT_POSITIVE 9 · COMMISSION_UNKNOWN 7 · PRICE_STALE 5 · NET_EV_BELOW_PAPER_GATE 1 · ODDS_BELOW_PAYOUT_FLOOR 1
+NET_EV_NOT_POSITIVE 8 · COMMISSION_UNKNOWN 7 · PRICE_STALE 5 · NET_EV_BELOW_PAPER_GATE 1 · ODDS_BELOW_PAYOUT_FLOOR 1
 
 ## 4. Research predictions — not money eligible
 
