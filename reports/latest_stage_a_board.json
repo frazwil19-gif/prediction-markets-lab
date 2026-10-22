@@ -2,25 +2,24 @@
  "board_version": "stage-a-2",
  "product": "STAGE A PREDICTION BOARD (probability first; NOT a betting card)",
  "principle": "STRONG PREDICTION != VALID BET. Stage B (bet-selection) alone decides bets.",
- "generated_at": "2026-10-21T23:59:42.844491+00:00",
+ "generated_at": "2026-10-22T00:47:44.332005+00:00",
  "strong_prediction_min_probability": 0.7,
  "summary": {
-  "predictions": 13,
-  "strong_predictions": 3,
-  "strong_unique_events": 3,
+  "predictions": 10,
+  "strong_predictions": 2,
+  "strong_unique_events": 2,
   "strong_by_price_status": {
-   "PRICE_QUALITY_FAIL": 3
+   "PRICE_QUALITY_FAIL": 2
   },
   "all_by_price_status": {
-   "PRICE_QUALITY_FAIL": 13
+   "PRICE_QUALITY_FAIL": 10
   },
   "duplicate_prediction_rows_collapsed": 0,
   "strong_by_sport": {
-   "basketball": 1,
    "tennis": 2
   },
   "all_by_sport": {
-   "basketball": 7,
+   "basketball": 4,
    "tennis": 6
   }
  },
@@ -118,52 +117,6 @@
    "rank": 2
   },
   {
-   "prediction_id": "e0fa8c1fa394b973",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_key": "nba|af2f084075391e55ba2a596e7846bb40",
-   "event_name": "Dallas Mavericks @ Houston Rockets",
-   "event_start": "2026-10-22T00:40:00+00:00",
-   "event_start_original": "2026-10-22T00:40:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "moneyline",
-   "selection": "Houston Rockets",
-   "probability": 0.751016,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-21T12:12:09.705317+00:00",
-   "p_first_snapshot": 0.751016,
-   "p_current_scan": null,
-   "ledger_probability": 0.751015670342426,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "747.8",
-   "sigma": 0.014319,
-   "sigma_method": "HIST_BAND_WILSON_SE (closing estimator; early-snapshot bias excluded)",
-   "sigma_calibration": 0.014319,
-   "calibration_status": "HOLDOUT_PASSED on closing estimator (live early-snapshot estimator not validated)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "75-79.9%",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "prediction_timestamp": "2026-10-21T12:12:09.705317+00:00",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "strength": "STRONG_PREDICTION",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "COMMISSION_UNKNOWN|PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-21T12:12:09.705317+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 3
-  },
-  {
    "prediction_id": "64431b65600b5c41",
    "sport": "basketball",
    "competition": "NBA",
@@ -207,7 +160,7 @@
    "price_observed_at": "2026-10-21T12:12:09.705317+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 4
+   "rank": 3
   },
   {
    "prediction_id": "e37a504af8cb4412",
@@ -253,7 +206,7 @@
    "price_observed_at": "2026-10-21T19:32:02.669625+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 5
+   "rank": 4
   },
   {
    "prediction_id": "370779d83660a492",
@@ -299,7 +252,7 @@
    "price_observed_at": "2026-10-21T12:12:09.705317+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 6
+   "rank": 5
   },
   {
    "prediction_id": "d2e919bbe1b12ac3",
@@ -345,7 +298,7 @@
    "price_observed_at": "2026-10-21T19:32:02.669625+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 7
+   "rank": 6
   },
   {
    "prediction_id": "c89a354af20fd033",
@@ -391,53 +344,7 @@
    "price_observed_at": "2026-10-21T19:32:02.669625+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 8
-  },
-  {
-   "prediction_id": "b46d93b278afa54b",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_key": "nba|fd33c09c84ab4c2fe6955d59f8dc5dd2",
-   "event_name": "Indiana Pacers @ New Orleans Pelicans",
-   "event_start": "2026-10-22T00:10:00+00:00",
-   "event_start_original": "2026-10-22T00:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "moneyline",
-   "selection": "Indiana Pacers",
-   "probability": 0.577724,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-21T12:12:09.705317+00:00",
-   "p_first_snapshot": 0.577724,
-   "p_current_scan": null,
-   "ledger_probability": 0.5777241171143978,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "717.8",
-   "sigma": 0.014997,
-   "sigma_method": "HIST_BAND_WILSON_SE (closing estimator; early-snapshot bias excluded)",
-   "sigma_calibration": 0.014997,
-   "calibration_status": "HOLDOUT_PASSED on closing estimator (live early-snapshot estimator not validated)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "55-59.9%",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "prediction_timestamp": "2026-10-21T12:12:09.705317+00:00",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "COMMISSION_UNKNOWN|PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-21T12:12:09.705317+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 9
+   "rank": 7
   },
   {
    "prediction_id": "45f767aa884437e0",
@@ -483,7 +390,7 @@
    "price_observed_at": "2026-10-21T19:32:02.669625+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 10
+   "rank": 8
   },
   {
    "prediction_id": "45ec340f0eff6c61",
@@ -529,7 +436,7 @@
    "price_observed_at": "2026-10-21T12:12:09.705317+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 11
+   "rank": 9
   },
   {
    "prediction_id": "9766f0edb776183c",
@@ -575,53 +482,7 @@
    "price_observed_at": "2026-10-21T12:12:09.705317+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 12
-  },
-  {
-   "prediction_id": "65ff5c98c655e0eb",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_key": "nba|e6769c813dd625b622df94c14a562ce2",
-   "event_name": "Utah Jazz @ Memphis Grizzlies",
-   "event_start": "2026-10-22T00:10:00+00:00",
-   "event_start_original": "2026-10-22T00:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "moneyline",
-   "selection": "Memphis Grizzlies",
-   "probability": 0.521665,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-21T12:12:09.705317+00:00",
-   "p_first_snapshot": 0.521665,
-   "p_current_scan": null,
-   "ledger_probability": 0.5216651191581553,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "717.8",
-   "sigma": 0.014997,
-   "sigma_method": "HIST_BAND_WILSON_SE (closing estimator; early-snapshot bias excluded)",
-   "sigma_calibration": 0.014997,
-   "calibration_status": "HOLDOUT_PASSED on closing estimator (live early-snapshot estimator not validated)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "50-54.9%",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "prediction_timestamp": "2026-10-21T12:12:09.705317+00:00",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "COMMISSION_UNKNOWN|PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-21T12:12:09.705317+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 13
+   "rank": 10
   }
  ]
 }
