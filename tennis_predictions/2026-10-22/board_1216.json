@@ -1,0 +1,120 @@
+{
+ "board_date": "2026-10-22",
+ "layer": "PREDICTION (paper) -- not a bet recommendation",
+ "coverage": {
+  "active_keys": [
+   "tennis_wta_ningbo_open"
+  ],
+  "skipped_for_credit_guard": [],
+  "keys_over_cap": [],
+  "skipped_no_upcoming_event": [],
+  "events_returned": 3,
+  "scan_timestamp": "2026-10-22T12:16:07.325492+00:00",
+  "credits_remaining_after": 168,
+  "universe_note": "Odds-API-covered universe only (Slams, 1000s, 500s) -- not the full ATP/WTA calendar"
+ },
+ "counts": {
+  "events_scanned": 3,
+  "valid_predictions": 3,
+  "research_only_predictions": 0,
+  "ge_70": 0,
+  "ge_75": 0,
+  "ge_80": 0,
+  "ge_85": 0,
+  "ge_90": 0,
+  "ge_95": 0
+ },
+ "predictions": [
+  {
+   "prediction_id": "d2e919bbe1b12ac3",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "WTA",
+   "sport_key": "tennis_wta_ningbo_open",
+   "tournament": "WTA Ningbo Open",
+   "event_id": "f5c4465f64797dcb67aa1b42fd45292e",
+   "player_a": "Sara Bejlek",
+   "player_b": "Marie Bouzkova",
+   "commence_time": "2026-10-23T05:00:00+00:00",
+   "prediction_timestamp": "2026-10-22T12:16:07.325492+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=2.48/1.66;ex_lay=2.52/1.68",
+   "p_a": 0.40048,
+   "p_b": 0.59952,
+   "predicted_winner": "Marie Bouzkova",
+   "predicted_probability": 0.59952,
+   "probability_band": "55-59.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 718,
+   "historical_band_actual_rate": 0.5585,
+   "historical_band_wilson95": [
+    0.522,
+    0.5944
+   ],
+   "engine_holdout_n": 4339
+  },
+  {
+   "prediction_id": "c89a354af20fd033",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "WTA",
+   "sport_key": "tennis_wta_ningbo_open",
+   "tournament": "WTA Ningbo Open",
+   "event_id": "f34a0b19a0651c9e3720cf57770d105d",
+   "player_a": "Leylah Fernandez",
+   "player_b": "Ekaterina Alexandrova",
+   "commence_time": "2026-10-23T06:30:00+00:00",
+   "prediction_timestamp": "2026-10-22T12:16:07.325492+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=2.28/1.77;ex_lay=2.3/1.79",
+   "p_a": 0.437346,
+   "p_b": 0.562654,
+   "predicted_winner": "Ekaterina Alexandrova",
+   "predicted_probability": 0.562654,
+   "probability_band": "55-59.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 718,
+   "historical_band_actual_rate": 0.5585,
+   "historical_band_wilson95": [
+    0.522,
+    0.5944
+   ],
+   "engine_holdout_n": 4339
+  },
+  {
+   "prediction_id": "aa728b1a45fc4bcd",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "WTA",
+   "sport_key": "tennis_wta_ningbo_open",
+   "tournament": "WTA Ningbo Open",
+   "event_id": "70d2acd96d31199e701797e524beb6f4",
+   "player_a": "Iva Jovi\u0107",
+   "player_b": "Diana Shnaider",
+   "commence_time": "2026-10-23T08:00:00+00:00",
+   "prediction_timestamp": "2026-10-22T12:16:07.325492+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=2.0/1.92;ex_lay=2.08/1.99",
+   "p_a": 0.489362,
+   "p_b": 0.510638,
+   "predicted_winner": "Diana Shnaider",
+   "predicted_probability": 0.510638,
+   "probability_band": "50-54.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 654,
+   "historical_band_actual_rate": 0.5031,
+   "historical_band_wilson95": [
+    0.4648,
+    0.5412
+   ],
+   "engine_holdout_n": 4339
+  }
+ ],
+ "research_only": []
+}
