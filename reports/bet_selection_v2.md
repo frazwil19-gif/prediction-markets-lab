@@ -4,26 +4,27 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-22T12:16Z · events scanned 12 · valid predictions 12 · high-P (≥70%) 1 · priced 11 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 12 · new paper bets 0 · Money Card qualified 0
+Run 2026-10-22T15:16Z · events scanned 13 · valid predictions 13 · high-P (≥70%) 2 · priced 12 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 13 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): NET_EV_NOT_POSITIVE 11 · PRICE_STALE 1 · COMMISSION_UNKNOWN 1
+Reason codes (latest run): NET_EV_NOT_POSITIVE 12 · PRICE_STALE 1 · COMMISSION_UNKNOWN 1 · EXCHANGE_SPREAD_TOO_WIDE 1
 
 ## Candidates (latest run, best price per prediction)
 
 | Event | Start | Sel | P | Fair | Odds (source) | Break-even | Net EV | Decision |
 |---|---|---|---|---|---|---|---|---|
+| Elena Rybakina v Katarzyna Kawa | 2026-10-23T11:00 | Elena Rybakina | 92.8% | 1.08 | 1.06 (betfair_ex_uk) | 94.6% | -1.9% | REJECT |
 | Denver Nuggets @ Oklahoma City Thunder | 2026-10-23T01:40 | Oklahoma City Thunder | 74.0% | 1.35 | 1.34 (matchbook) | — | — | REJECT |
 | Dallas Mavericks @ Indiana Pacers | 2026-10-23T23:10 | Indiana Pacers | 65.3% | 1.53 | 1.50 (skybet) | 66.7% | -2.0% | REJECT |
-| Sara Bejlek v Marie Bouzkova | 2026-10-23T05:00 | Marie Bouzkova | 60.0% | 1.67 | 1.66 (betfair_ex_uk) | 61.5% | -2.5% | REJECT |
 | Toronto Raptors @ Washington Wizards | 2026-10-23T23:10 | Toronto Raptors | 59.8% | 1.67 | 1.62 (skybet) | 61.7% | -3.0% | REJECT |
+| Sara Bejlek v Marie Bouzkova | 2026-10-23T05:00 | Marie Bouzkova | 59.5% | 1.68 | 1.67 (betfair_ex_uk) | 61.1% | -2.6% | REJECT |
 | Atlanta Hawks @ Charlotte Hornets | 2026-10-23T23:10 | Atlanta Hawks | 56.8% | 1.76 | 1.73 (skybet) | 57.8% | -1.7% | REJECT |
-| Leylah Fernandez v Ekaterina Alexandrova | 2026-10-23T06:30 | Ekaterina Alexandrova | 56.3% | 1.78 | 1.77 (betfair_ex_uk) | 57.8% | -2.6% | REJECT |
+| Leylah Fernandez v Ekaterina Alexandrova | 2026-10-23T06:30 | Ekaterina Alexandrova | 56.2% | 1.78 | 1.77 (betfair_ex_uk) | 57.8% | -2.8% | REJECT |
 | Cleveland Cavaliers @ Philadelphia 76ers | 2026-10-22T23:10 | Philadelphia 76ers | 55.5% | 1.80 | 1.78 (smarkets) | 56.7% | -2.1% | REJECT |
 | New York Knicks @ Boston Celtics | 2026-10-23T23:10 | Boston Celtics | 54.7% | 1.83 | 1.80 (smarkets) | 56.1% | -2.3% | REJECT |
 | Detroit Pistons @ Miami Heat | 2026-10-24T00:10 | Miami Heat | 53.8% | 1.86 | 1.82 (smarkets) | 55.4% | -2.9% | REJECT |
 | Minnesota Timberwolves @ Orlando Magic | 2026-10-23T23:10 | Minnesota Timberwolves | 52.6% | 1.90 | 1.87 (smarkets) | 54.0% | -2.5% | REJECT |
 | Chicago Bulls @ Milwaukee Bucks | 2026-10-23T20:10 | Milwaukee Bucks | 51.1% | 1.96 | 1.93 (smarkets) | 52.3% | -2.3% | REJECT |
-| Iva Jović v Diana Shnaider | 2026-10-23T08:00 | Diana Shnaider | 51.1% | 1.96 | 1.95 (livescorebet) | 51.3% | -0.4% | REJECT |
+| Iva Jović v Diana Shnaider | 2026-10-23T08:00 | Diana Shnaider | 50.3% | 1.99 | 1.95 (livescorebet) | 51.3% | -1.9% | REJECT |
 
 ## Paper results (all time)
 
