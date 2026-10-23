@@ -4,15 +4,15 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-23T06:16Z · events scanned 44 · valid predictions 235 · high-P (≥70%) 58 · priced 121 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 235 · new paper bets 0 · Money Card qualified 0
+Run 2026-10-23T11:57Z · events scanned 48 · valid predictions 239 · high-P (≥70%) 60 · priced 122 · PAPER_BET 0 · MULTI-research 1 · WATCH 0 · REJECT 238 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 225 · NET_EV_NOT_POSITIVE 106 · P_BELOW_FLOOR 102 · NO_EXECUTABLE_PRICE 102 · COMMISSION_UNKNOWN 12 · PRICE_STALE 10 · EXCHANGE_SPREAD_TOO_WIDE 1
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 225 · PRICE_STALE 130 · NET_EV_NOT_POSITIVE 107 · P_BELOW_FLOOR 102 · NO_EXECUTABLE_PRICE 102 · COMMISSION_UNKNOWN 15 · EXCHANGE_SPREAD_TOO_WIDE 1
 
 ## Candidates (latest run, best price per prediction)
 
 | Event | Start | Sel | P | Fair | Odds (source) | Break-even | Net EV | Decision |
 |---|---|---|---|---|---|---|---|---|
-| Elena Rybakina v Katarzyna Kawa | 2026-10-23T11:00 | Elena Rybakina | 92.8% | 1.08 | 1.06 (betfair_ex_uk) | 94.6% | -1.9% | REJECT |
+| Elena Rybakina v Katarzyna Kawa | 2026-10-23T12:00 | Elena Rybakina | 91.6% | 1.09 | 1.09 (betfair_ex_uk) | 92.1% | -0.5% | MULTI_RESEARCH_ELIGIBLE |
 | Rangers v St Johnstone | 2026-10-24T14:00 | 1X | 91.6% | 1.09 | — | — | — | REJECT |
 | Wolverhampton Wanderers v Watford | 2026-10-24T14:00 | 1X | 88.1% | 1.13 | — | — | — | REJECT |
 | Arsenal v Everton | 2026-10-24T14:00 | 1X | 87.6% | 1.14 | — | — | — | REJECT |
@@ -42,6 +42,7 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 225 · NET_EV_NOT_POSITIVE 1
 | FSV Mainz 05 v Werder Bremen | 2026-10-24T13:30 | 12 | 76.6% | 1.31 | — | — | — | REJECT |
 | Rangers v St Johnstone | 2026-10-24T14:00 | home | 76.4% | 1.31 | 1.25 (ladbrokes) | 80.0% | -4.5% | REJECT |
 | Augsburg v Union Berlin | 2026-10-24T13:30 | 12 | 76.0% | 1.32 | — | — | — | REJECT |
+| Los Angeles Clippers @ Los Angeles Lakers | 2026-10-24T02:10 | Los Angeles Lakers | 75.9% | 1.32 | 1.29 (smarkets) | 77.9% | -2.5% | REJECT |
 | ADO Den Haag v Heerenveen | 2026-10-24T19:00 | 12 | 75.9% | 1.32 | — | — | — | REJECT |
 | Falkirk F.C. v Kilmarnock | 2026-10-24T14:00 | 1X | 75.4% | 1.33 | — | — | — | REJECT |
 | Augsburg v Union Berlin | 2026-10-24T13:30 | 1X | 75.2% | 1.33 | — | — | — | REJECT |
@@ -51,7 +52,6 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 225 · NET_EV_NOT_POSITIVE 1
 | 1. FC Köln v FC Schalke 04 | 2026-10-24T13:30 | 12 | 74.5% | 1.34 | — | — | — | REJECT |
 | Cardiff City v Birmingham City | 2026-10-24T14:00 | 12 | 74.3% | 1.35 | — | — | — | REJECT |
 | St Mirren v Dundee FC | 2026-10-24T14:00 | 12 | 74.2% | 1.35 | — | — | — | REJECT |
-| SC Paderborn v Hamburger SV | 2026-10-24T13:30 | 12 | 74.2% | 1.35 | — | — | — | REJECT |
 
 ## Paper results (all time)
 
