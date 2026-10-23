@@ -1,11 +1,11 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-22T15:16:34.745112+00:00",
- "date": "2026-10-22",
+ "generated_at": "2026-10-23T00:47:56.841137+00:00",
+ "date": "2026-10-23",
  "summary": {
-  "upcoming_events": 13,
-  "valid_predictions": 13,
+  "upcoming_events": 12,
+  "valid_predictions": 12,
   "sports_active": [
    "basketball",
    "tennis"
@@ -28,13 +28,13 @@
    ">=90": 1,
    ">=95": 0
   },
-  "settled_yesterday": 7,
+  "settled_yesterday": 5,
   "system": "DEGRADED",
   "api_credits_last_observed": 159
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-22T15:16:34.745112+00:00",
+  "generated_at": "2026-10-23T00:47:56.841137+00:00",
   "overall": "DEGRADED",
   "outage_flag": false,
   "components": {
@@ -42,22 +42,22 @@
     "last": "2026-10-21T06:16:21.697019+00:00",
     "status": "success",
     "flag": "STALE",
-    "age_hours": 33.0
+    "age_hours": 42.5
    },
    "settlement": {
     "last": "2026-10-21T23:59:44.538340+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 15.3
+    "age_hours": 24.8
    },
    "tennis_board": {
     "last": "2026-10-22T15:16:32.783527+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 0.0
+    "age_hours": 9.5
    },
    "ci_tests": {
-    "last": "2026-10-22T15:16:33.574619+00:00",
+    "last": "2026-10-23T00:47:44.512183+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -198,11 +198,11 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 13,
-   "EXCLUDED": 1840
+   "ELIGIBLE": 12,
+   "EXCLUDED": 1841
   },
   "exclusion_reason": {
-   "EVENT_STARTED": 1840
+   "EVENT_STARTED": 1841
   },
   "start_time_status": {
    "LEDGER_ONLY": 1446,
@@ -462,48 +462,6 @@
    "correct": "",
    "settlement_timestamp": "",
    "event_start_original": "2026-10-23T23:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
-  },
-  {
-   "prediction_id": "9766f0edb776183c",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_id": "110e33c79c5ec8c0377702aff685f83b",
-   "event_key": "nba|110e33c79c5ec8c0377702aff685f83b",
-   "event_name": "Cleveland Cavaliers @ Philadelphia 76ers",
-   "event_start": "2026-10-22T23:10:00+00:00",
-   "market": "moneyline",
-   "selection": "Philadelphia 76ers",
-   "estimated_probability": "0.5549153134276236",
-   "fair_odds": "1.802076777847703",
-   "probability_band": "55-59.9%",
-   "probability_source": "Odds API basketball_nba h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-10-21T06:30:00+00:00",
-   "actual_workflow_start": "2026-10-21T12:10:55Z",
-   "prediction_timestamp": "2026-10-21T12:12:09.705317+00:00",
-   "minutes_to_event": "2097.8",
-   "live_price": "1.78",
-   "live_price_source": "odds_api:smarkets",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "True",
-   "single_ineligible_reason": "",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:basketball_nba",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-10-22T23:10:00+00:00",
    "start_time_status": "LEDGER_ONLY",
    "start_time_source": "unified_ledger.event_start"
   },

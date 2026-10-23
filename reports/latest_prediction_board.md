@@ -1,12 +1,12 @@
-# DAILY PREDICTION BOARD — 2026-10-22
+# DAILY PREDICTION BOARD — 2026-10-23
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
 > **SYSTEM DEGRADED: daily_scan: STALE (last 2026-10-21T06:16:21.697019+00:00).** Predictions below may be incomplete or stale.
 
-Upcoming events: 13 · Valid predictions: 13 · Sports: basketball, tennis
+Upcoming events: 12 · Valid predictions: 12 · Sports: basketball, tennis
 Counts: >=70: 2 · >=75: 1 · >=80: 1 · >=85: 1 · >=90: 1 · >=95: 0
-Settled yesterday: 7 · System: **DEGRADED** · API credits (last observed): 159
+Settled yesterday: 5 · System: **DEGRADED** · API credits (last observed): 159
 
 ## Top predictions (P ≥ 80%)
 
@@ -33,7 +33,7 @@ Settled yesterday: 7 · System: **DEGRADED** · API credits (last observed): 159
 - daily_scan: STALE (last 2026-10-21T06:16:21.697019+00:00)
 - settlement: OK (last 2026-10-21T23:59:44.538340+00:00)
 - tennis_board: OK (last 2026-10-22T15:16:32.783527+00:00)
-- ci_tests: OK (last 2026-10-22T15:16:33.574619+00:00)
+- ci_tests: OK (last 2026-10-23T00:47:44.512183+00:00)
 - Warnings: daily_scan: STALE (last 2026-10-21T06:16:21.697019+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
