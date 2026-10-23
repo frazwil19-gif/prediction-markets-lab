@@ -4,33 +4,60 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-22T15:16Z · events scanned 13 · valid predictions 13 · high-P (≥70%) 2 · priced 12 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 13 · new paper bets 0 · Money Card qualified 0
+Run 2026-10-23T06:16Z · events scanned 44 · valid predictions 235 · high-P (≥70%) 58 · priced 121 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 235 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): NET_EV_NOT_POSITIVE 12 · PRICE_STALE 1 · COMMISSION_UNKNOWN 1 · EXCHANGE_SPREAD_TOO_WIDE 1
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 225 · NET_EV_NOT_POSITIVE 106 · P_BELOW_FLOOR 102 · NO_EXECUTABLE_PRICE 102 · COMMISSION_UNKNOWN 12 · PRICE_STALE 10 · EXCHANGE_SPREAD_TOO_WIDE 1
 
 ## Candidates (latest run, best price per prediction)
 
 | Event | Start | Sel | P | Fair | Odds (source) | Break-even | Net EV | Decision |
 |---|---|---|---|---|---|---|---|---|
 | Elena Rybakina v Katarzyna Kawa | 2026-10-23T11:00 | Elena Rybakina | 92.8% | 1.08 | 1.06 (betfair_ex_uk) | 94.6% | -1.9% | REJECT |
-| Denver Nuggets @ Oklahoma City Thunder | 2026-10-23T01:40 | Oklahoma City Thunder | 74.0% | 1.35 | 1.34 (matchbook) | — | — | REJECT |
-| Dallas Mavericks @ Indiana Pacers | 2026-10-23T23:10 | Indiana Pacers | 65.3% | 1.53 | 1.50 (skybet) | 66.7% | -2.0% | REJECT |
-| Toronto Raptors @ Washington Wizards | 2026-10-23T23:10 | Toronto Raptors | 59.8% | 1.67 | 1.62 (skybet) | 61.7% | -3.0% | REJECT |
-| Sara Bejlek v Marie Bouzkova | 2026-10-23T05:00 | Marie Bouzkova | 59.5% | 1.68 | 1.67 (betfair_ex_uk) | 61.1% | -2.6% | REJECT |
-| Atlanta Hawks @ Charlotte Hornets | 2026-10-23T23:10 | Atlanta Hawks | 56.8% | 1.76 | 1.73 (skybet) | 57.8% | -1.7% | REJECT |
-| Leylah Fernandez v Ekaterina Alexandrova | 2026-10-23T06:30 | Ekaterina Alexandrova | 56.2% | 1.78 | 1.77 (betfair_ex_uk) | 57.8% | -2.8% | REJECT |
-| Cleveland Cavaliers @ Philadelphia 76ers | 2026-10-22T23:10 | Philadelphia 76ers | 55.5% | 1.80 | 1.78 (smarkets) | 56.7% | -2.1% | REJECT |
-| New York Knicks @ Boston Celtics | 2026-10-23T23:10 | Boston Celtics | 54.7% | 1.83 | 1.80 (smarkets) | 56.1% | -2.3% | REJECT |
-| Detroit Pistons @ Miami Heat | 2026-10-24T00:10 | Miami Heat | 53.8% | 1.86 | 1.82 (smarkets) | 55.4% | -2.9% | REJECT |
-| Minnesota Timberwolves @ Orlando Magic | 2026-10-23T23:10 | Minnesota Timberwolves | 52.6% | 1.90 | 1.87 (smarkets) | 54.0% | -2.5% | REJECT |
-| Chicago Bulls @ Milwaukee Bucks | 2026-10-23T20:10 | Milwaukee Bucks | 51.1% | 1.96 | 1.93 (smarkets) | 52.3% | -2.3% | REJECT |
-| Iva Jović v Diana Shnaider | 2026-10-23T08:00 | Diana Shnaider | 50.3% | 1.99 | 1.95 (livescorebet) | 51.3% | -1.9% | REJECT |
+| Rangers v St Johnstone | 2026-10-24T14:00 | 1X | 91.6% | 1.09 | — | — | — | REJECT |
+| Wolverhampton Wanderers v Watford | 2026-10-24T14:00 | 1X | 88.1% | 1.13 | — | — | — | REJECT |
+| Arsenal v Everton | 2026-10-24T14:00 | 1X | 87.6% | 1.14 | — | — | — | REJECT |
+| VfB Stuttgart v Borussia Monchengladbach | 2026-10-23T18:30 | 1X | 86.6% | 1.15 | — | — | — | REJECT |
+| Rangers v St Johnstone | 2026-10-24T14:00 | 12 | 84.7% | 1.18 | — | — | — | REJECT |
+| RB Leipzig v Elversberg | 2026-10-24T13:30 | 1X | 84.3% | 1.19 | — | — | — | REJECT |
+| Borussia Dortmund v Eintracht Frankfurt | 2026-10-24T16:30 | 1X | 83.6% | 1.20 | — | — | — | REJECT |
+| VfB Stuttgart v Borussia Monchengladbach | 2026-10-23T18:30 | 12 | 83.0% | 1.20 | — | — | — | REJECT |
+| RB Leipzig v Elversberg | 2026-10-24T13:30 | 12 | 82.2% | 1.22 | — | — | — | REJECT |
+| Go Ahead Eagles v SC Telstar | 2026-10-23T18:00 | 1X | 81.7% | 1.22 | — | — | — | REJECT |
+| Bolton Wanderers v Middlesbrough | 2026-10-23T19:00 | X2 | 81.2% | 1.23 | — | — | — | REJECT |
+| Wolverhampton Wanderers v Watford | 2026-10-24T14:00 | 12 | 81.0% | 1.23 | — | — | — | REJECT |
+| Borussia Dortmund v Eintracht Frankfurt | 2026-10-24T16:30 | 12 | 81.0% | 1.24 | — | — | — | REJECT |
+| Aston Villa v Manchester City | 2026-10-24T11:30 | X2 | 80.0% | 1.25 | — | — | — | REJECT |
+| FC Utrecht v FC Zwolle | 2026-10-24T14:30 | 1X | 79.6% | 1.26 | — | — | — | REJECT |
+| Arsenal v Everton | 2026-10-24T14:00 | 12 | 78.9% | 1.27 | — | — | — | REJECT |
+| Go Ahead Eagles v SC Telstar | 2026-10-23T18:00 | 12 | 78.8% | 1.27 | — | — | — | REJECT |
+| Chelsea v Tottenham Hotspur | 2026-10-24T16:30 | 1X | 78.4% | 1.28 | — | — | — | REJECT |
+| Bolton Wanderers v Middlesbrough | 2026-10-23T19:00 | 12 | 78.4% | 1.28 | — | — | — | REJECT |
+| West Ham United v Southampton | 2026-10-24T14:00 | 1X | 78.3% | 1.28 | — | — | — | REJECT |
+| FC Utrecht v FC Zwolle | 2026-10-24T14:30 | 12 | 78.1% | 1.28 | — | — | — | REJECT |
+| Aston Villa v Manchester City | 2026-10-24T11:30 | 12 | 77.9% | 1.28 | — | — | — | REJECT |
+| Sheffield United v Derby County | 2026-10-24T11:30 | 1X | 77.8% | 1.29 | — | — | — | REJECT |
+| FSV Mainz 05 v Werder Bremen | 2026-10-24T13:30 | 1X | 77.7% | 1.29 | — | — | — | REJECT |
+| West Ham United v Southampton | 2026-10-24T14:00 | 12 | 77.5% | 1.29 | — | — | — | REJECT |
+| Chelsea v Tottenham Hotspur | 2026-10-24T16:30 | 12 | 77.2% | 1.29 | — | — | — | REJECT |
+| FSV Mainz 05 v Werder Bremen | 2026-10-24T13:30 | 12 | 76.6% | 1.31 | — | — | — | REJECT |
+| Rangers v St Johnstone | 2026-10-24T14:00 | home | 76.4% | 1.31 | 1.25 (ladbrokes) | 80.0% | -4.5% | REJECT |
+| Augsburg v Union Berlin | 2026-10-24T13:30 | 12 | 76.0% | 1.32 | — | — | — | REJECT |
+| ADO Den Haag v Heerenveen | 2026-10-24T19:00 | 12 | 75.9% | 1.32 | — | — | — | REJECT |
+| Falkirk F.C. v Kilmarnock | 2026-10-24T14:00 | 1X | 75.4% | 1.33 | — | — | — | REJECT |
+| Augsburg v Union Berlin | 2026-10-24T13:30 | 1X | 75.2% | 1.33 | — | — | — | REJECT |
+| Falkirk F.C. v Kilmarnock | 2026-10-24T14:00 | 12 | 74.9% | 1.34 | — | — | — | REJECT |
+| Sheffield United v Derby County | 2026-10-24T11:30 | 12 | 74.7% | 1.34 | — | — | — | REJECT |
+| Willem II v SC Cambuur | 2026-10-24T16:45 | 12 | 74.7% | 1.34 | — | — | — | REJECT |
+| 1. FC Köln v FC Schalke 04 | 2026-10-24T13:30 | 12 | 74.5% | 1.34 | — | — | — | REJECT |
+| Cardiff City v Birmingham City | 2026-10-24T14:00 | 12 | 74.3% | 1.35 | — | — | — | REJECT |
+| St Mirren v Dundee FC | 2026-10-24T14:00 | 12 | 74.2% | 1.35 | — | — | — | REJECT |
+| SC Paderborn v Hamburger SV | 2026-10-24T13:30 | 12 | 74.2% | 1.35 | — | — | — | REJECT |
 
 ## Paper results (all time)
 
 Selections 3 · settled 3 · pending 0 · win rate 33.3% · avg P 64.7% · avg odds 1.60 · expected net +0.09u · realised net -1.47u · yield -49.0% · max DD 2.00u · longest losing streak 2
 
-Days evaluated 24 · no-bet days 21 (2026-09-30, 2026-10-01, 2026-10-02, 2026-10-03, 2026-10-04, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-08, 2026-10-09, 2026-10-10, 2026-10-11, 2026-10-12, 2026-10-14, 2026-10-16, 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21, 2026-10-22)
+Days evaluated 25 · no-bet days 22 (2026-09-30, 2026-10-01, 2026-10-02, 2026-10-03, 2026-10-04, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-08, 2026-10-09, 2026-10-10, 2026-10-11, 2026-10-12, 2026-10-14, 2026-10-16, 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21, 2026-10-22, 2026-10-23)
 
 ## Bankroll simulations (descriptive; small samples prove nothing)
 
