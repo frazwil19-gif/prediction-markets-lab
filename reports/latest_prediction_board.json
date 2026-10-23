@@ -1,7 +1,7 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-23T11:57:12.096024+00:00",
+ "generated_at": "2026-10-23T15:16:36.250701+00:00",
  "date": "2026-10-23",
  "summary": {
   "upcoming_events": 48,
@@ -22,20 +22,20 @@
    "football_double_chance.derived_1x2"
   ],
   "threshold_counts": {
-   ">=70": 60,
-   ">=75": 34,
-   ">=80": 14,
-   ">=85": 5,
-   ">=90": 2,
+   ">=70": 59,
+   ">=75": 33,
+   ">=80": 13,
+   ">=85": 4,
+   ">=90": 1,
    ">=95": 0
   },
   "settled_yesterday": 5,
   "system": "DEGRADED",
-  "api_credits_last_observed": 146
+  "api_credits_last_observed": 145
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-23T11:57:12.096024+00:00",
+  "generated_at": "2026-10-23T15:16:36.250701+00:00",
   "overall": "DEGRADED",
   "outage_flag": false,
   "components": {
@@ -43,31 +43,31 @@
     "last": "2026-10-23T06:16:40.163800+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 5.7
+    "age_hours": 9.0
    },
    "settlement": {
     "last": "2026-10-21T23:59:44.538340+00:00",
     "status": "success",
     "flag": "STALE",
-    "age_hours": 36.0
+    "age_hours": 39.3
    },
    "tennis_board": {
-    "last": "2026-10-23T11:57:09.285829+00:00",
+    "last": "2026-10-23T15:16:33.630216+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    },
    "ci_tests": {
-    "last": "2026-10-23T11:57:10.081112+00:00",
+    "last": "2026-10-23T15:16:34.641953+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    }
   },
   "api_credits": {
-   "remaining": 146,
-   "observed_at": "2026-10-23T11:57:10.967584+00:00",
-   "source": "nba_credit_log.csv",
+   "remaining": 145,
+   "observed_at": "2026-10-23T15:16:33.956254+00:00",
+   "source": "credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
   "warnings": [
@@ -128,7 +128,7 @@
    "status": "VALIDATED_HISTORICAL",
    "prospective_status": "COLLECTING",
    "money_eligible": true,
-   "predictions": 188,
+   "predictions": 189,
    "settled_rows": 146,
    "maturity": "EARLY",
    "ge80_settled": 26,
@@ -202,62 +202,20 @@
  "start_time_resolution": {
   "eligibility": {
    "ELIGIBLE": 239,
-   "EXCLUDED": 1845
+   "EXCLUDED": 1846
   },
   "exclusion_reason": {
-   "EVENT_STARTED": 1845
+   "EVENT_STARTED": 1846
   },
   "start_time_status": {
    "LEDGER_ONLY": 1676,
    "RESCHEDULED": 247,
-   "UNCHANGED": 161
+   "UNCHANGED": 162
   },
-  "eligible_rescheduled": 1,
+  "eligible_rescheduled": 0,
   "rule": "est-1"
  },
  "predictions": [
-  {
-   "prediction_id": "d71dcf2aa56865c0",
-   "engine_id": "wta_match_winner.betfair_market",
-   "engine_version": "1",
-   "sport": "tennis",
-   "competition": "WTA Ningbo Open",
-   "event_id": "af18854b3c532d504418cd5e5b28ddf2",
-   "event_key": "tennis|tennis_wta_ningbo_open|af18854b3c532d504418cd5e5b28ddf2",
-   "event_name": "Elena Rybakina v Katarzyna Kawa",
-   "event_start": "2026-10-23T12:00:00+00:00",
-   "market": "match_winner",
-   "selection": "Elena Rybakina",
-   "estimated_probability": "0.928074",
-   "fair_odds": "1.0775002855375757",
-   "probability_band": "90-94.9%",
-   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
-   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "",
-   "actual_workflow_start": "2026-10-22T15:16:32.783527+00:00",
-   "prediction_timestamp": "2026-10-22T15:16:32.783527+00:00",
-   "minutes_to_event": "1183.5",
-   "live_price": "1.06",
-   "live_price_source": "betfair_ex_uk back (odds_api)",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "False",
-   "single_ineligible_reason": "fair odds 1.08 below payout floor 1.33",
-   "multi_research_eligible": "True",
-   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
-   "origin": "tennis_predictions/ledger_predictions.csv",
-   "origin_prediction_id": "d71dcf2aa56865c0",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-10-23T11:00:00+00:00",
-   "start_time_status": "RESCHEDULED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
-  },
   {
    "prediction_id": "6c5be47f8fb9704a",
    "engine_id": "football_double_chance.derived_1x2",
@@ -3787,6 +3745,48 @@
    "start_time_source": "unified_ledger.event_start"
   },
   {
+   "prediction_id": "a12ad275d6d92369",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "sport": "tennis",
+   "competition": "WTA Ningbo Open",
+   "event_id": "ae319b5b7c6cbef88dda71720672c0c6",
+   "event_key": "tennis|tennis_wta_ningbo_open|ae319b5b7c6cbef88dda71720672c0c6",
+   "event_name": "Elena Rybakina v Diana Shnaider",
+   "event_start": "2026-10-24T09:30:00+00:00",
+   "market": "match_winner",
+   "selection": "Elena Rybakina",
+   "estimated_probability": "0.620413",
+   "fair_odds": "1.611829539355236",
+   "probability_band": "60-64.9%",
+   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
+   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "data_quality": "OK",
+   "current_context_status": "NOT_MODELLED",
+   "configured_scan_time": "",
+   "actual_workflow_start": "2026-10-23T15:16:33.630216+00:00",
+   "prediction_timestamp": "2026-10-23T15:16:33.630216+00:00",
+   "minutes_to_event": "1093.4",
+   "live_price": "1.45",
+   "live_price_source": "betfair_ex_uk back (odds_api)",
+   "paper_status": "PAPER",
+   "prediction_valid": "True",
+   "single_eligible": "True",
+   "single_ineligible_reason": "",
+   "multi_research_eligible": "False",
+   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
+   "origin": "tennis_predictions/ledger_predictions.csv",
+   "origin_prediction_id": "a12ad275d6d92369",
+   "settlement_status": "",
+   "result": "",
+   "correct": "",
+   "settlement_timestamp": "",
+   "event_start_original": "2026-10-24T09:30:00+00:00",
+   "start_time_status": "UNCHANGED",
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+  },
+  {
    "prediction_id": "6421d1f39b7da304",
    "engine_id": "football_ou25.market",
    "engine_version": "1",
@@ -5380,7 +5380,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-10-24T07:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "1fe3a9dff11164e1",

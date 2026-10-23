@@ -4,7 +4,7 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-23T11:57Z · events scanned 48 · valid predictions 239 · high-P (≥70%) 60 · priced 122 · PAPER_BET 0 · MULTI-research 1 · WATCH 0 · REJECT 238 · new paper bets 0 · Money Card qualified 0
+Run 2026-10-23T15:16Z · events scanned 48 · valid predictions 239 · high-P (≥70%) 59 · priced 122 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 239 · new paper bets 0 · Money Card qualified 0
 
 Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 225 · PRICE_STALE 130 · NET_EV_NOT_POSITIVE 107 · P_BELOW_FLOOR 102 · NO_EXECUTABLE_PRICE 102 · COMMISSION_UNKNOWN 15 · EXCHANGE_SPREAD_TOO_WIDE 1
 
@@ -12,7 +12,6 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 225 · PRICE_STALE 130 · NE
 
 | Event | Start | Sel | P | Fair | Odds (source) | Break-even | Net EV | Decision |
 |---|---|---|---|---|---|---|---|---|
-| Elena Rybakina v Katarzyna Kawa | 2026-10-23T12:00 | Elena Rybakina | 91.6% | 1.09 | 1.09 (betfair_ex_uk) | 92.1% | -0.5% | MULTI_RESEARCH_ELIGIBLE |
 | Rangers v St Johnstone | 2026-10-24T14:00 | 1X | 91.6% | 1.09 | — | — | — | REJECT |
 | Wolverhampton Wanderers v Watford | 2026-10-24T14:00 | 1X | 88.1% | 1.13 | — | — | — | REJECT |
 | Arsenal v Everton | 2026-10-24T14:00 | 1X | 87.6% | 1.14 | — | — | — | REJECT |
@@ -52,6 +51,7 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 225 · PRICE_STALE 130 · NE
 | 1. FC Köln v FC Schalke 04 | 2026-10-24T13:30 | 12 | 74.5% | 1.34 | — | — | — | REJECT |
 | Cardiff City v Birmingham City | 2026-10-24T14:00 | 12 | 74.3% | 1.35 | — | — | — | REJECT |
 | St Mirren v Dundee FC | 2026-10-24T14:00 | 12 | 74.2% | 1.35 | — | — | — | REJECT |
+| SC Paderborn v Hamburger SV | 2026-10-24T13:30 | 12 | 74.2% | 1.35 | — | — | — | REJECT |
 
 ## Paper results (all time)
 

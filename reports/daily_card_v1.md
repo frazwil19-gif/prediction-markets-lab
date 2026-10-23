@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-10-23T12:52Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-10-23T15:16Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 238 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 59 · research predictions: 0
+Predictions in the next window: 239 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 59 · research predictions: 0
 
 ## 1. Best predictions today
 
@@ -127,7 +127,7 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 225 · PRICE_STALE 130 · NET_EV_NOT_POSITIVE 106 · NO_EXECUTABLE_PRICE 102 · P_BELOW_FLOOR 102 · COMMISSION_UNKNOWN 15 · EXCHANGE_SPREAD_TOO_WIDE 1
+ENGINE_STATUS_INELIGIBLE 225 · PRICE_STALE 130 · NET_EV_NOT_POSITIVE 107 · NO_EXECUTABLE_PRICE 102 · P_BELOW_FLOOR 102 · COMMISSION_UNKNOWN 15 · EXCHANGE_SPREAD_TOO_WIDE 1
 
 ## 4. Research predictions — not money eligible
 
