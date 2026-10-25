@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-10-25T00:27Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-10-25T07:16Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 131 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 33 · research predictions: 160
+Predictions in the next window: 128 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 31 · research predictions: 160
 
 ## 1. Best predictions today
 
@@ -18,38 +18,38 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | 6 | football | Toulouse v Troyes | 2026-10-25T16:15 | double_chance | 1X | 81.2% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.23 | no price | no |
 | 7 | football | Hibernian v Celtic | 2026-10-25T12:00 | double_chance | X2 | 80.2% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.25 | no price | no |
 | 8 | football | Hull City v Brentford | 2026-10-25T14:00 | double_chance | X2 | 80.1% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.25 | no price | no |
-| 9 | basketball | New Orleans Pelicans @ Denver Nuggets | 2026-10-25T01:10 | moneyline | Denver Nuggets | 79.1% | 70%+ | 1.4% | VALIDATED | 1.26 | price not usable (stale/wide/unknown commission) | no |
-| 10 | football | Marseille v Le Havre | 2026-10-25T16:15 | double_chance | 12 | 79.0% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.27 | no price | no |
-| 11 | football | Toulouse v Troyes | 2026-10-25T16:15 | double_chance | 12 | 77.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | no price | no |
-| 12 | football | Rennes v Strasbourg | 2026-10-25T16:15 | double_chance | 12 | 77.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | no price | no |
-| 13 | football | Hibernian v Celtic | 2026-10-25T12:00 | double_chance | 12 | 77.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | no price | no |
-| 14 | football | PSV Eindhoven v Feyenoord | 2026-10-25T13:30 | double_chance | 12 | 76.9% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.30 | no price | no |
-| 15 | football | Hull City v Brentford | 2026-10-25T14:00 | double_chance | 12 | 76.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
-| 16 | basketball | Golden State Warriors @ Phoenix Suns | 2026-10-25T02:10 | moneyline | Phoenix Suns | 76.1% | 70%+ | 1.4% | VALIDATED | 1.31 | price not usable (stale/wide/unknown commission) | no |
-| 17 | football | Rennes v Strasbourg | 2026-10-25T16:15 | double_chance | 1X | 75.9% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.32 | no price | no |
-| 18 | tennis | Elena Rybakina v Leylah Fernandez | 2026-10-25T09:00 | match_winner | Elena Rybakina | 75.9% | 70%+ | 2.1% | VALIDATED | 1.32 | price not usable (stale/wide/unknown commission) | no |
-| 19 | football | TSG Hoffenheim v Bayer Leverkusen | 2026-10-25T14:30 | double_chance | 12 | 75.6% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.32 | no price | no |
-| 20 | football | AZ Alkmaar v FC Twente Enschede | 2026-10-25T19:00 | double_chance | 12 | 75.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.33 | no price | no |
-| 21 | football | Liverpool v Brighton and Hove Albion | 2026-10-25T14:00 | double_chance | 12 | 75.0% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.33 | no price | no |
-| 22 | football | NEC Nijmegen v Groningen | 2026-10-25T13:30 | double_chance | 12 | 74.9% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.34 | no price | no |
-| 23 | football | Motherwell v Hearts | 2026-10-25T14:00 | double_chance | 12 | 74.0% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.35 | no price | no |
-| 24 | football | Fortuna Sittard v Excelsior | 2026-10-25T11:15 | double_chance | 12 | 73.9% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.35 | no price | no |
-| 25 | football | Manchester United v Bournemouth | 2026-10-25T14:00 | double_chance | 12 | 73.7% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.36 | no price | no |
-| 26 | football | Auxerre v Le Mans FC | 2026-10-25T16:15 | double_chance | 12 | 73.6% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.36 | no price | no |
-| 27 | football | Crystal Palace v Newcastle United | 2026-10-25T14:00 | double_chance | 12 | 73.6% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.36 | no price | no |
-| 28 | football | AS Monaco v Lille | 2026-10-25T14:00 | double_chance | 1X | 73.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.36 | no price | no |
-| 29 | football | AS Monaco v Lille | 2026-10-25T14:00 | double_chance | 12 | 72.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.38 | no price | no |
-| 30 | football | Auxerre v Le Mans FC | 2026-10-25T16:15 | double_chance | 1X | 71.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.40 | no price | no |
-| 31 | football | Angers v Lorient | 2026-10-25T16:15 | double_chance | 12 | 71.1% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.41 | no price | no |
-| 32 | football | Liverpool v Brighton and Hove Albion | 2026-10-25T14:00 | double_chance | 1X | 70.6% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.42 | no price | no |
-| 33 | football | Sunderland v Leeds United | 2026-10-25T16:30 | double_chance | 12 | 70.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.42 | no price | no |
-| 34 | football | Manchester United v Bournemouth | 2026-10-25T14:00 | double_chance | 1X | 69.8% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.43 | no price | no |
-| 35 | football | Motherwell v Hearts | 2026-10-25T14:00 | double_chance | X2 | 69.4% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.44 | no price | no |
-| 36 | football | PSV Eindhoven v Feyenoord | 2026-10-25T13:30 | double_chance | 1X | 69.1% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.45 | no price | no |
-| 37 | football | SC Freiburg v Bayern Munich | 2026-10-25T16:30 | 1x2 | away | 68.2% | 60%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.47 | price not usable (stale/wide/unknown commission) | no |
-| 38 | football | Angers v Lorient | 2026-10-25T16:15 | double_chance | X2 | 68.0% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.47 | no price | no |
-| 39 | football | Sunderland v Leeds United | 2026-10-25T16:30 | double_chance | X2 | 68.0% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.47 | no price | no |
-| 40 | football | AZ Alkmaar v FC Twente Enschede | 2026-10-25T19:00 | double_chance | 1X | 67.6% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.48 | no price | no |
+| 9 | football | Marseille v Le Havre | 2026-10-25T16:15 | double_chance | 12 | 79.0% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.27 | no price | no |
+| 10 | football | Toulouse v Troyes | 2026-10-25T16:15 | double_chance | 12 | 77.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | no price | no |
+| 11 | football | Rennes v Strasbourg | 2026-10-25T16:15 | double_chance | 12 | 77.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | no price | no |
+| 12 | football | Hibernian v Celtic | 2026-10-25T12:00 | double_chance | 12 | 77.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | no price | no |
+| 13 | football | PSV Eindhoven v Feyenoord | 2026-10-25T13:30 | double_chance | 12 | 76.9% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.30 | no price | no |
+| 14 | football | Hull City v Brentford | 2026-10-25T14:00 | double_chance | 12 | 76.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
+| 15 | football | Rennes v Strasbourg | 2026-10-25T16:15 | double_chance | 1X | 75.9% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.32 | no price | no |
+| 16 | tennis | Elena Rybakina v Leylah Fernandez | 2026-10-25T09:00 | match_winner | Elena Rybakina | 75.9% | 70%+ | 2.1% | VALIDATED | 1.32 | price not usable (stale/wide/unknown commission) | no |
+| 17 | football | TSG Hoffenheim v Bayer Leverkusen | 2026-10-25T14:30 | double_chance | 12 | 75.6% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.32 | no price | no |
+| 18 | football | AZ Alkmaar v FC Twente Enschede | 2026-10-25T19:00 | double_chance | 12 | 75.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.33 | no price | no |
+| 19 | football | Liverpool v Brighton and Hove Albion | 2026-10-25T14:00 | double_chance | 12 | 75.0% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.33 | no price | no |
+| 20 | football | NEC Nijmegen v Groningen | 2026-10-25T13:30 | double_chance | 12 | 74.9% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.34 | no price | no |
+| 21 | football | Motherwell v Hearts | 2026-10-25T14:00 | double_chance | 12 | 74.0% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.35 | no price | no |
+| 22 | football | Fortuna Sittard v Excelsior | 2026-10-25T11:15 | double_chance | 12 | 73.9% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.35 | no price | no |
+| 23 | football | Manchester United v Bournemouth | 2026-10-25T14:00 | double_chance | 12 | 73.7% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.36 | no price | no |
+| 24 | football | Auxerre v Le Mans FC | 2026-10-25T16:15 | double_chance | 12 | 73.6% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.36 | no price | no |
+| 25 | football | Crystal Palace v Newcastle United | 2026-10-25T14:00 | double_chance | 12 | 73.6% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.36 | no price | no |
+| 26 | football | AS Monaco v Lille | 2026-10-25T14:00 | double_chance | 1X | 73.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.36 | no price | no |
+| 27 | football | AS Monaco v Lille | 2026-10-25T14:00 | double_chance | 12 | 72.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.38 | no price | no |
+| 28 | football | Auxerre v Le Mans FC | 2026-10-25T16:15 | double_chance | 1X | 71.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.40 | no price | no |
+| 29 | football | Angers v Lorient | 2026-10-25T16:15 | double_chance | 12 | 71.1% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.41 | no price | no |
+| 30 | football | Liverpool v Brighton and Hove Albion | 2026-10-25T14:00 | double_chance | 1X | 70.6% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.42 | no price | no |
+| 31 | football | Sunderland v Leeds United | 2026-10-25T16:30 | double_chance | 12 | 70.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.42 | no price | no |
+| 32 | football | Manchester United v Bournemouth | 2026-10-25T14:00 | double_chance | 1X | 69.8% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.43 | no price | no |
+| 33 | football | Motherwell v Hearts | 2026-10-25T14:00 | double_chance | X2 | 69.4% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.44 | no price | no |
+| 34 | football | PSV Eindhoven v Feyenoord | 2026-10-25T13:30 | double_chance | 1X | 69.1% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.45 | no price | no |
+| 35 | football | SC Freiburg v Bayern Munich | 2026-10-25T16:30 | 1x2 | away | 68.2% | 60%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.47 | 1.46 (betfair) | no |
+| 36 | football | Angers v Lorient | 2026-10-25T16:15 | double_chance | X2 | 68.0% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.47 | no price | no |
+| 37 | football | Sunderland v Leeds United | 2026-10-25T16:30 | double_chance | X2 | 68.0% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.47 | no price | no |
+| 38 | football | AZ Alkmaar v FC Twente Enschede | 2026-10-25T19:00 | double_chance | 1X | 67.6% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.48 | no price | no |
+| 39 | football | Crystal Palace v Newcastle United | 2026-10-25T14:00 | double_chance | X2 | 67.2% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.49 | no price | no |
+| 40 | football | NEC Nijmegen v Groningen | 2026-10-25T13:30 | double_chance | 1X | 66.4% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.51 | no price | no |
 
 ## 2. Qualified paper bets (simulated stakes, recorded automatically)
 
@@ -73,16 +73,14 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 | Toulouse v Troyes (2026-10-25T16:15) | double_chance: 1X | 81.2% | 1.23 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Hibernian v Celtic (2026-10-25T12:00) | double_chance: X2 | 80.2% | 1.25 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Hull City v Brentford (2026-10-25T14:00) | double_chance: X2 | 80.1% | 1.25 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| New Orleans Pelicans @ Denver Nuggets (2026-10-25T01:10) | moneyline: Denver Nuggets | 79.1% | 1.26 | — | COMMISSION_UNKNOWN |
 | Marseille v Le Havre (2026-10-25T16:15) | double_chance: 12 | 79.0% | 1.27 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Toulouse v Troyes (2026-10-25T16:15) | double_chance: 12 | 77.5% | 1.29 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Rennes v Strasbourg (2026-10-25T16:15) | double_chance: 12 | 77.4% | 1.29 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Hibernian v Celtic (2026-10-25T12:00) | double_chance: 12 | 77.4% | 1.29 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | PSV Eindhoven v Feyenoord (2026-10-25T13:30) | double_chance: 12 | 76.9% | 1.30 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Hull City v Brentford (2026-10-25T14:00) | double_chance: 12 | 76.3% | 1.31 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Golden State Warriors @ Phoenix Suns (2026-10-25T02:10) | moneyline: Phoenix Suns | 76.1% | 1.31 | — | COMMISSION_UNKNOWN |
 | Rennes v Strasbourg (2026-10-25T16:15) | double_chance: 1X | 75.9% | 1.32 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Elena Rybakina v Leylah Fernandez (2026-10-25T09:00) | match_winner: Elena Rybakina | 75.9% | 1.32 | — | EXCHANGE_SPREAD_TOO_WIDE, NET_EV_NOT_POSITIVE |
+| Elena Rybakina v Leylah Fernandez (2026-10-25T09:00) | match_winner: Elena Rybakina | 75.9% | 1.32 | — | EXCHANGE_SPREAD_TOO_WIDE, PRICE_STALE, NET_EV_NOT_POSITIVE |
 | TSG Hoffenheim v Bayer Leverkusen (2026-10-25T14:30) | double_chance: 12 | 75.6% | 1.32 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | AZ Alkmaar v FC Twente Enschede (2026-10-25T19:00) | double_chance: 12 | 75.3% | 1.33 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Liverpool v Brighton and Hove Albion (2026-10-25T14:00) | double_chance: 12 | 75.0% | 1.33 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
@@ -101,7 +99,7 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 127 · PRICE_STALE 67 · NO_EXECUTABLE_PRICE 60 · P_BELOW_FLOOR 60 · NET_EV_NOT_POSITIVE 51 · COMMISSION_UNKNOWN 7 · EXCHANGE_SPREAD_TOO_WIDE 1
+ENGINE_STATUS_INELIGIBLE 127 · NO_EXECUTABLE_PRICE 60 · P_BELOW_FLOOR 60 · NET_EV_NOT_POSITIVE 56 · PRICE_STALE 6 · COMMISSION_UNKNOWN 2 · EXCHANGE_SPREAD_TOO_WIDE 1
 
 ## 4. Research predictions — not money eligible
 
