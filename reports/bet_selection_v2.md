@@ -4,14 +4,15 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-25T07:16Z · events scanned 22 · valid predictions 134 · high-P (≥70%) 33 · priced 69 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 134 · new paper bets 0 · Money Card qualified 0
+Run 2026-10-25T11:55Z · events scanned 27 · valid predictions 134 · high-P (≥70%) 33 · priced 69 · PAPER_BET 0 · MULTI-research 1 · WATCH 1 · REJECT 132 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 133 · P_BELOW_FLOOR 63 · NO_EXECUTABLE_PRICE 63 · NET_EV_NOT_POSITIVE 57 · PRICE_STALE 6 · COMMISSION_UNKNOWN 2 · EXCHANGE_SPREAD_TOO_WIDE 1
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 127 · PRICE_STALE 67 · P_BELOW_FLOOR 60 · NO_EXECUTABLE_PRICE 60 · NET_EV_NOT_POSITIVE 56 · COMMISSION_UNKNOWN 5 · NET_EV_BELOW_PAPER_GATE 1
 
 ## Candidates (latest run, best price per prediction)
 
 | Event | Start | Sel | P | Fair | Odds (source) | Break-even | Net EV | Decision |
 |---|---|---|---|---|---|---|---|---|
+| Los Angeles Clippers @ Oklahoma City Thunder | 2026-10-25T23:10 | Oklahoma City Thunder | 88.5% | 1.13 | 1.10 (skybet) | 90.9% | -2.6% | MULTI_RESEARCH_ELIGIBLE |
 | SC Freiburg v Bayern Munich | 2026-10-25T16:30 | X2 | 84.9% | 1.18 | — | — | — | REJECT |
 | Paris Saint Germain v Lyon | 2026-10-26T19:30 | 1X | 84.7% | 1.18 | — | — | — | REJECT |
 | Sparta Rotterdam v Ajax | 2026-10-25T15:45 | X2 | 83.9% | 1.19 | — | — | — | REJECT |
@@ -29,29 +30,28 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 133 · P_BELOW_FLOOR 63 · N
 | PSV Eindhoven v Feyenoord | 2026-10-25T13:30 | 12 | 76.9% | 1.30 | — | — | — | REJECT |
 | Hull City v Brentford | 2026-10-25T14:00 | 12 | 76.3% | 1.31 | — | — | — | REJECT |
 | Rennes v Strasbourg | 2026-10-25T16:15 | 1X | 75.9% | 1.32 | — | — | — | REJECT |
-| Elena Rybakina v Leylah Fernandez | 2026-10-25T09:00 | Elena Rybakina | 75.9% | 1.32 | 1.29 (betfair_ex_uk) | 78.4% | -3.2% | REJECT |
 | TSG Hoffenheim v Bayer Leverkusen | 2026-10-25T14:30 | 12 | 75.6% | 1.32 | — | — | — | REJECT |
 | AZ Alkmaar v FC Twente Enschede | 2026-10-25T19:00 | 12 | 75.3% | 1.33 | — | — | — | REJECT |
 | Liverpool v Brighton and Hove Albion | 2026-10-25T14:00 | 12 | 75.0% | 1.33 | — | — | — | REJECT |
 | NEC Nijmegen v Groningen | 2026-10-25T13:30 | 12 | 74.9% | 1.34 | — | — | — | REJECT |
 | Motherwell v Hearts | 2026-10-25T14:00 | 12 | 74.0% | 1.35 | — | — | — | REJECT |
-| Fortuna Sittard v Excelsior | 2026-10-25T11:15 | 12 | 73.9% | 1.35 | — | — | — | REJECT |
 | Manchester United v Bournemouth | 2026-10-25T14:00 | 12 | 73.7% | 1.36 | — | — | — | REJECT |
 | Auxerre v Le Mans FC | 2026-10-25T16:15 | 12 | 73.6% | 1.36 | — | — | — | REJECT |
 | Crystal Palace v Newcastle United | 2026-10-25T14:00 | 12 | 73.6% | 1.36 | — | — | — | REJECT |
 | AS Monaco v Lille | 2026-10-25T14:00 | 1X | 73.4% | 1.36 | — | — | — | REJECT |
 | AS Monaco v Lille | 2026-10-25T14:00 | 12 | 72.5% | 1.38 | — | — | — | REJECT |
 | Auxerre v Le Mans FC | 2026-10-25T16:15 | 1X | 71.5% | 1.40 | — | — | — | REJECT |
+| Orlando Magic @ New York Knicks | 2026-10-25T23:00 | New York Knicks | 71.4% | 1.40 | 1.38 (matchbook) | — | — | REJECT |
 | Angers v Lorient | 2026-10-25T16:15 | 12 | 71.1% | 1.41 | — | — | — | REJECT |
 | Liverpool v Brighton and Hove Albion | 2026-10-25T14:00 | 1X | 70.6% | 1.42 | — | — | — | REJECT |
 | Sunderland v Leeds United | 2026-10-25T16:30 | 12 | 70.3% | 1.42 | — | — | — | REJECT |
 | Manchester United v Bournemouth | 2026-10-25T14:00 | 1X | 69.8% | 1.43 | — | — | — | REJECT |
 | Motherwell v Hearts | 2026-10-25T14:00 | X2 | 69.4% | 1.44 | — | — | — | REJECT |
+| Indiana Pacers @ Brooklyn Nets | 2026-10-25T22:10 | Indiana Pacers | 69.4% | 1.44 | 1.40 (unibet_uk) | 71.4% | -2.9% | REJECT |
 | PSV Eindhoven v Feyenoord | 2026-10-25T13:30 | 1X | 69.1% | 1.45 | — | — | — | REJECT |
 | Angers v Lorient | 2026-10-25T16:15 | X2 | 68.0% | 1.47 | — | — | — | REJECT |
 | Sunderland v Leeds United | 2026-10-25T16:30 | X2 | 68.0% | 1.47 | — | — | — | REJECT |
 | AZ Alkmaar v FC Twente Enschede | 2026-10-25T19:00 | 1X | 67.6% | 1.48 | — | — | — | REJECT |
-| Crystal Palace v Newcastle United | 2026-10-25T14:00 | X2 | 67.2% | 1.49 | — | — | — | REJECT |
 
 ## Paper results (all time)
 
