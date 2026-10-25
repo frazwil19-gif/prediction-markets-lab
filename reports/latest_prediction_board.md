@@ -1,12 +1,10 @@
-# DAILY PREDICTION BOARD — 2026-10-24
+# DAILY PREDICTION BOARD — 2026-10-25
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-> **SYSTEM DEGRADED: settlement: OUTAGE (last 2026-10-21T23:59:44.538340+00:00).** Predictions below may be incomplete or stale.
-
-Upcoming events: 28 · Valid predictions: 135 · Sports: basketball, football, tennis
-Counts: >=70: 36 · >=75: 23 · >=80: 11 · >=85: 0 · >=90: 0 · >=95: 0
-Settled yesterday: 0 · System: **DEGRADED** · API credits (last observed): 126
+Upcoming events: 24 · Valid predictions: 131 · Sports: basketball, football, tennis
+Counts: >=70: 33 · >=75: 20 · >=80: 8 · >=85: 0 · >=90: 0 · >=95: 0
+Settled yesterday: 15 · System: **HEALTHY** · API credits (last observed): 126
 
 ## Top predictions (P ≥ 80%)
 
@@ -15,12 +13,9 @@ Settled yesterday: 0 · System: **DEGRADED** · API credits (last observed): 126
 | football | SC Freiburg v Bayern Munich | 2026-10-25T16:30 | double_chance | X2 | 84.9% | 1.18 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.15 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Sparta Rotterdam v Ajax | 2026-10-25T15:45 | double_chance | X2 | 83.9% | 1.19 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.17 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | SC Freiburg v Bayern Munich | 2026-10-25T16:30 | double_chance | 12 | 83.3% | 1.20 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.18 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| basketball | Milwaukee Bucks @ Philadelphia 76ers | 2026-10-24T23:40 | moneyline | Philadelphia 76ers | 82.8% | 1.21 | 80-84.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.19 (odds_api:matchbook) | no | yes |
-| basketball | San Antonio Spurs @ Dallas Mavericks | 2026-10-25T00:10 | moneyline | San Antonio Spurs | 81.8% | 1.22 | 80-84.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.19 (odds_api:unibet_uk) | no | yes |
 | football | Marseille v Le Havre | 2026-10-25T16:15 | double_chance | 1X | 81.5% | 1.23 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Sparta Rotterdam v Ajax | 2026-10-25T15:45 | double_chance | 12 | 81.3% | 1.23 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.22 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Toulouse v Troyes | 2026-10-25T16:15 | double_chance | 1X | 81.2% | 1.23 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.21 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| basketball | Brooklyn Nets @ Cleveland Cavaliers | 2026-10-24T23:40 | moneyline | Cleveland Cavaliers | 80.3% | 1.25 | 80-84.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.20 (odds_api:skybet) | no | yes |
 | football | Hibernian v Celtic | 2026-10-25T12:00 | double_chance | X2 | 80.2% | 1.25 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.23 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Hull City v Brentford | 2026-10-25T14:00 | double_chance | X2 | 80.1% | 1.25 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.23 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 
@@ -41,10 +36,9 @@ Settled yesterday: 0 · System: **DEGRADED** · API credits (last observed): 126
 ## System health
 
 - daily_scan: OK (last 2026-10-24T06:16:30.394502+00:00)
-- settlement: OUTAGE (last 2026-10-21T23:59:44.538340+00:00)
+- settlement: OK (last 2026-10-24T23:05:42.167074+00:00)
 - tennis_board: OK (last 2026-10-24T15:16:31.789542+00:00)
-- ci_tests: OK (last 2026-10-24T23:05:22.925716+00:00)
-- Warnings: settlement: OUTAGE (last 2026-10-21T23:59:44.538340+00:00)
+- ci_tests: OK (last 2026-10-25T00:26:45.509518+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
