@@ -2,8 +2,8 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 27 · Valid predictions: 134 · Sports: basketball, football
-Counts: >=70: 33 · >=75: 20 · >=80: 11 · >=85: 1 · >=90: 0 · >=95: 0
+Upcoming events: 11 · Valid predictions: 32 · Sports: basketball, football
+Counts: >=70: 8 · >=75: 6 · >=80: 5 · >=85: 1 · >=90: 0 · >=95: 0
 Settled yesterday: 15 · System: **HEALTHY** · API credits (last observed): 110
 
 ## Top predictions (P ≥ 80%)
@@ -13,14 +13,8 @@ Settled yesterday: 15 · System: **HEALTHY** · API credits (last observed): 110
 | basketball | Los Angeles Clippers @ Oklahoma City Thunder | 2026-10-25T23:10 | moneyline | Oklahoma City Thunder | 88.5% | 1.13 | 85-89.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.10 (odds_api:skybet) | no | yes |
 | football | SC Freiburg v Bayern Munich | 2026-10-25T16:30 | double_chance | X2 | 84.9% | 1.18 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.15 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Paris Saint Germain v Lyon | 2026-10-26T19:30 | double_chance | 1X | 84.7% | 1.18 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.15 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Sparta Rotterdam v Ajax | 2026-10-25T15:45 | double_chance | X2 | 83.9% | 1.19 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.17 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | SC Freiburg v Bayern Munich | 2026-10-25T16:30 | double_chance | 12 | 83.3% | 1.20 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.18 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Paris Saint Germain v Lyon | 2026-10-26T19:30 | double_chance | 12 | 81.5% | 1.23 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.20 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Marseille v Le Havre | 2026-10-25T16:15 | double_chance | 1X | 81.5% | 1.23 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Sparta Rotterdam v Ajax | 2026-10-25T15:45 | double_chance | 12 | 81.3% | 1.23 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.22 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Toulouse v Troyes | 2026-10-25T16:15 | double_chance | 1X | 81.2% | 1.23 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.21 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Hibernian v Celtic | 2026-10-25T12:00 | double_chance | X2 | 80.2% | 1.25 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.23 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Hull City v Brentford | 2026-10-25T14:00 | double_chance | X2 | 80.1% | 1.25 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.23 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 
 ## Prospective evidence
 
@@ -40,8 +34,8 @@ Settled yesterday: 15 · System: **HEALTHY** · API credits (last observed): 110
 
 - daily_scan: OK (last 2026-10-25T07:16:28.050324+00:00)
 - settlement: OK (last 2026-10-24T23:05:42.167074+00:00)
-- tennis_board: OK (last 2026-10-25T11:55:33.256029+00:00)
-- ci_tests: OK (last 2026-10-25T11:55:33.876797+00:00)
+- tennis_board: OK (last 2026-10-25T16:16:33.310135+00:00)
+- ci_tests: OK (last 2026-10-25T16:16:34.082470+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
