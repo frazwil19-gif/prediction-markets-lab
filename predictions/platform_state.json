@@ -3,7 +3,7 @@
  "americanfootball_nfl_last_scores_date": "2026-10-17",
  "icehockey_nhl_last_odds_date": "2026-10-19",
  "icehockey_nhl_last_scores_date": "2026-10-17",
- "last_ci_pass": "2026-10-25T16:16:34.082470+00:00",
+ "last_ci_pass": "2026-10-26T00:32:14.390786+00:00",
  "last_runs": {
   "americanfootball_nfl": {
    "added": 1,
@@ -30,20 +30,20 @@
    "candidates": 7
   },
   "settle": {
-   "added": 0,
-   "at": "2026-10-25T00:26:45.953744+00:00",
-   "pending_review": 1017
+   "added": 20,
+   "at": "2026-10-26T00:32:14.898477+00:00",
+   "pending_review": 1144
   },
   "tennis": {
    "added": 0,
    "already_recorded": 424,
-   "at": "2026-10-25T16:16:34.167998+00:00",
+   "at": "2026-10-26T00:32:14.475422+00:00",
    "candidates": 424
   }
  },
- "last_tennis_ingest": "2026-10-25T16:16:34.168046+00:00",
+ "last_tennis_ingest": "2026-10-26T00:32:14.475450+00:00",
  "nba_last_odds_date": "2026-10-25",
- "nba_last_scores_date": "2026-10-24",
+ "nba_last_scores_date": "2026-10-26",
  "pending_review": [
   {
    "detail": "unmapped: 1. FC Heidenheim, 1. FC Kaiserslautern",
@@ -5128,6 +5128,641 @@
   {
    "detail": "",
    "prediction_id": "64b80171346f6924",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "unmapped: SC Freiburg, Bayern Munich",
+   "prediction_id": "5edc8d2e922df06d",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: SC Freiburg, Bayern Munich",
+   "prediction_id": "c95a6c557d3ec7f2",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: SC Freiburg, Bayern Munich",
+   "prediction_id": "dce195b34aa514b5",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: SC Freiburg, Bayern Munich",
+   "prediction_id": "f6bdea481f0d8038",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: SC Freiburg, Bayern Munich",
+   "prediction_id": "ea15ec3559919d41",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: SC Freiburg, Bayern Munich",
+   "prediction_id": "6f894dd2d22d2309",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: TSG Hoffenheim, Bayer Leverkusen",
+   "prediction_id": "1085920c054f0f5f",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: TSG Hoffenheim, Bayer Leverkusen",
+   "prediction_id": "4c788c778e144718",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: TSG Hoffenheim, Bayer Leverkusen",
+   "prediction_id": "2d187dcd924d9963",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: TSG Hoffenheim, Bayer Leverkusen",
+   "prediction_id": "99d83ddc692f66b0",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: TSG Hoffenheim, Bayer Leverkusen",
+   "prediction_id": "a9532c9f4b9edc06",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: TSG Hoffenheim, Bayer Leverkusen",
+   "prediction_id": "2690893835457bd9",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: AZ Alkmaar, FC Twente Enschede",
+   "prediction_id": "fabe1dab4543f883",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: AZ Alkmaar, FC Twente Enschede",
+   "prediction_id": "f14cb467a759050f",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: AZ Alkmaar, FC Twente Enschede",
+   "prediction_id": "1ca107c1c7dbea70",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: AZ Alkmaar, FC Twente Enschede",
+   "prediction_id": "8fbd53cb40b3bf44",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: AZ Alkmaar, FC Twente Enschede",
+   "prediction_id": "2dfd32ea42eca6ea",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: AZ Alkmaar, FC Twente Enschede",
+   "prediction_id": "840715a1cedd5bf6",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Fortuna Sittard, Excelsior",
+   "prediction_id": "5e0e449f2dd12c23",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Fortuna Sittard, Excelsior",
+   "prediction_id": "d73115a4910784f7",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Fortuna Sittard, Excelsior",
+   "prediction_id": "99b994fb3e0d1b7c",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Fortuna Sittard, Excelsior",
+   "prediction_id": "16ba6ff71a4e6701",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Fortuna Sittard, Excelsior",
+   "prediction_id": "b1211b05769e5200",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Fortuna Sittard, Excelsior",
+   "prediction_id": "781624724a653b51",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: NEC Nijmegen, Groningen",
+   "prediction_id": "7ff9384f9658848f",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: NEC Nijmegen, Groningen",
+   "prediction_id": "2ba1487340b37ad0",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: NEC Nijmegen, Groningen",
+   "prediction_id": "41617ca96606efa5",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: NEC Nijmegen, Groningen",
+   "prediction_id": "2f3e7f2aab6311e2",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: NEC Nijmegen, Groningen",
+   "prediction_id": "40cfad795c53ad6b",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: NEC Nijmegen, Groningen",
+   "prediction_id": "ebc8d39e2b7bc339",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: PSV Eindhoven, Feyenoord",
+   "prediction_id": "9e94c805c7318719",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: PSV Eindhoven, Feyenoord",
+   "prediction_id": "3bf2a83f9171e828",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: PSV Eindhoven, Feyenoord",
+   "prediction_id": "28adb4ce4f81e189",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: PSV Eindhoven, Feyenoord",
+   "prediction_id": "9851886bc7bef49e",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: PSV Eindhoven, Feyenoord",
+   "prediction_id": "32a4905ea25422e7",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: PSV Eindhoven, Feyenoord",
+   "prediction_id": "cba0f626c1864a5b",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Sparta Rotterdam, Ajax",
+   "prediction_id": "2849f3fdc914d0ee",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Sparta Rotterdam, Ajax",
+   "prediction_id": "53f8ea6cd5e996ab",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Sparta Rotterdam, Ajax",
+   "prediction_id": "986401dfde46684e",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Sparta Rotterdam, Ajax",
+   "prediction_id": "5ed3e0aad433188e",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Sparta Rotterdam, Ajax",
+   "prediction_id": "f3e86d1152a74d61",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Sparta Rotterdam, Ajax",
+   "prediction_id": "ea253ddc1bac88ab",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: AS Monaco, Lille",
+   "prediction_id": "8b725526b9cf04be",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: AS Monaco, Lille",
+   "prediction_id": "3f66c647798270ab",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: AS Monaco, Lille",
+   "prediction_id": "f3246256596d2c9e",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: AS Monaco, Lille",
+   "prediction_id": "75cc43c7a805670f",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: AS Monaco, Lille",
+   "prediction_id": "2582f76ac38a5f53",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: AS Monaco, Lille",
+   "prediction_id": "b478cc34b92af36d",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Angers, Lorient",
+   "prediction_id": "3b4d77e7ed0d65c5",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Angers, Lorient",
+   "prediction_id": "319e990c1650f066",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Angers, Lorient",
+   "prediction_id": "41ec009eae28812e",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Angers, Lorient",
+   "prediction_id": "14eeb57d3cd77f88",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Angers, Lorient",
+   "prediction_id": "b8b9500e2d1c01a5",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Angers, Lorient",
+   "prediction_id": "435319f44dfcb3ed",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Auxerre, Le Mans FC",
+   "prediction_id": "547f581a26464935",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Auxerre, Le Mans FC",
+   "prediction_id": "787796d5c2fbeb55",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Auxerre, Le Mans FC",
+   "prediction_id": "c02d0d1178645f0b",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Auxerre, Le Mans FC",
+   "prediction_id": "7665c12de2b8ef9e",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Auxerre, Le Mans FC",
+   "prediction_id": "0f981e84aee88223",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Auxerre, Le Mans FC",
+   "prediction_id": "d4baf2dde363f8eb",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Marseille, Le Havre",
+   "prediction_id": "37c07de5224e4c4b",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Marseille, Le Havre",
+   "prediction_id": "f295400e1a681657",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Marseille, Le Havre",
+   "prediction_id": "3408dda05ea15bba",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Marseille, Le Havre",
+   "prediction_id": "e5ef1b8ebb43a98b",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Marseille, Le Havre",
+   "prediction_id": "5c92e0b9cbc61511",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Marseille, Le Havre",
+   "prediction_id": "20178dda52419af7",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Rennes, Strasbourg",
+   "prediction_id": "c2bb2001b5a3c970",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Rennes, Strasbourg",
+   "prediction_id": "42eaf2e4b56c2ee9",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Rennes, Strasbourg",
+   "prediction_id": "d0dc15890a0e0822",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Rennes, Strasbourg",
+   "prediction_id": "bfe20333201f5520",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Rennes, Strasbourg",
+   "prediction_id": "08e5f304cda2c112",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Rennes, Strasbourg",
+   "prediction_id": "86907946c631dc31",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Toulouse, Troyes",
+   "prediction_id": "d839093d049fe5b7",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Toulouse, Troyes",
+   "prediction_id": "314dd251c52e7ea5",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Toulouse, Troyes",
+   "prediction_id": "8154768999fdee45",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Toulouse, Troyes",
+   "prediction_id": "2dff25c70e2802ba",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Toulouse, Troyes",
+   "prediction_id": "c3eb20c8347741f1",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "unmapped: Toulouse, Troyes",
+   "prediction_id": "a92213f349f69050",
+   "status": "UNRESOLVED_NAME"
+  },
+  {
+   "detail": "",
+   "prediction_id": "b03f89b7ef324a05",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "5d8f03417266e0fa",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "6060a9948e154575",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "f84c30059d4b0845",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "7aa871c4e752ff83",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "8c82fcab4135c084",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "6aa91605f55f8a81",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "ef707a32a19ec450",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "bca86ac8249634ef",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "0e63e82a9c66cbbe",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "b6709557bada46a8",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "96532121b022148b",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "692c0d1390cdb2a7",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "bef0a4c3f34f8bc9",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "24c898984cf71bef",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "e4de7a53bb6f773b",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "eb83c7fb912d27c2",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "cfd55aff41a7a725",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "ec50bd9a5860f257",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "3d4f37e434dbb64e",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "b367dfb492be89a2",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "4b5dac32a4233823",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "8d5f29499d3cd8f1",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "a7ddf71cf5925ccd",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "99ae6ecfdd35e9f9",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "28d8572a6cd1ed3f",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "0e93c13a368fdd88",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "6c6c2c69c80e79e5",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "cdd11efd1e376d06",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "48f5d32b8ebe48f5",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "2a6f40202723a01a",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "e16fe83fcd384d7b",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "237b1fdd7e58176f",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "bf1b174fdb54b283",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "3fa5e6d9bfe1b0f2",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "54287afc126e7fd1",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "d9041e012d234cd9",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "c9d7f43ccb4f0edd",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "8cf0294f0f5b6540",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "6f5aab730897201a",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "47cad68420a2befe",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "efe718c77ca5a90e",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "ff441f89ec90a8ee",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "bfbf3d41af5acb7e",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "5c9e91f569f7526b",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "1bb9c9758ca50601",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "9eb6edc93fdc046e",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "d5e49cbfa8d73dc8",
+   "status": "NOT_FOUND"
+  },
+  {
+   "detail": "",
+   "prediction_id": "93164c282d59588b",
    "status": "NOT_FOUND"
   }
  ],
