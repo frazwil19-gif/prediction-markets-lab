@@ -33,8 +33,8 @@ Settled yesterday: 0 · System: **DEGRADED** · API credits (last observed): 100
 
 - daily_scan: OK (last 2026-10-26T07:16:36.073487+00:00)
 - settlement: STALE (last 2026-10-24T23:05:42.167074+00:00)
-- tennis_board: OK (last 2026-10-26T13:27:52.572215+00:00)
-- ci_tests: OK (last 2026-10-26T13:27:53.602466+00:00)
+- tennis_board: OK (last 2026-10-26T16:25:26.820726+00:00)
+- ci_tests: OK (last 2026-10-26T16:25:27.513908+00:00)
 - Warnings: settlement: STALE (last 2026-10-24T23:05:42.167074+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
