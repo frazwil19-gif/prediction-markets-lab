@@ -1,4 +1,4 @@
-# Daily Prediction Board & Bet Card — 2026-10-26T07:16Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-10-26T13:27Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
@@ -12,7 +12,7 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | football | Paris Saint Germain v Lyon | 2026-10-26T19:30 | double_chance | 1X | 84.7% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.18 | no price | no |
 | 2 | football | Paris Saint Germain v Lyon | 2026-10-26T19:30 | double_chance | 12 | 81.5% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.23 | no price | no |
-| 3 | football | Paris Saint Germain v Lyon | 2026-10-26T19:30 | 1x2 | home | 66.2% | 60%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.51 | 1.38 (betfair) | no |
+| 3 | football | Paris Saint Germain v Lyon | 2026-10-26T19:30 | 1x2 | home | 66.2% | 60%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.51 | price not usable (stale/wide/unknown commission) | no |
 
 ## 2. Qualified paper bets (simulated stakes, recorded automatically)
 
@@ -33,7 +33,7 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 6 · NO_EXECUTABLE_PRICE 3 · P_BELOW_FLOOR 3 · NET_EV_NOT_POSITIVE 1
+ENGINE_STATUS_INELIGIBLE 6 · NO_EXECUTABLE_PRICE 3 · PRICE_STALE 3 · P_BELOW_FLOOR 3 · NET_EV_NOT_POSITIVE 1
 
 ## 4. Research predictions — not money eligible
 
