@@ -1,13 +1,12 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-26T00:32:36.556704+00:00",
+ "generated_at": "2026-10-26T07:16:36.944293+00:00",
  "date": "2026-10-26",
  "summary": {
-  "upcoming_events": 2,
-  "valid_predictions": 7,
+  "upcoming_events": 1,
+  "valid_predictions": 6,
   "sports_active": [
-   "basketball",
    "football"
   ],
   "engines_active": [
@@ -29,35 +28,35 @@
    ">=95": 0
   },
   "settled_yesterday": 0,
-  "system": "HEALTHY",
+  "system": "DEGRADED",
   "api_credits_last_observed": 104
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-26T00:32:36.556704+00:00",
-  "overall": "HEALTHY",
+  "generated_at": "2026-10-26T07:16:36.944293+00:00",
+  "overall": "DEGRADED",
   "outage_flag": false,
   "components": {
    "daily_scan": {
-    "last": "2026-10-25T07:16:28.050324+00:00",
+    "last": "2026-10-26T07:16:36.073487+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 17.3
+    "age_hours": 0.0
    },
    "settlement": {
     "last": "2026-10-24T23:05:42.167074+00:00",
     "status": "success",
-    "flag": "OK",
-    "age_hours": 25.4
+    "flag": "STALE",
+    "age_hours": 32.2
    },
    "tennis_board": {
     "last": "2026-10-25T16:16:33.310135+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 8.3
+    "age_hours": 15.0
    },
    "ci_tests": {
-    "last": "2026-10-26T00:32:14.390786+00:00",
+    "last": "2026-10-26T07:16:36.883968+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -69,8 +68,10 @@
    "source": "nba_credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
-  "warnings": [],
-  "stale_data_warning": false
+  "warnings": [
+   "settlement: STALE (last 2026-10-24T23:05:42.167074+00:00)"
+  ],
+  "stale_data_warning": true
  },
  "prospective_evidence": {
   "football_1x2.market_consensus": {
@@ -187,7 +188,7 @@
    "nfl_moneyline.market: OUTSIDE_36H_WINDOW": 12
   },
   "football": {
-   "football: OUTSIDE_48H_WINDOW": 57
+   "football: OUTSIDE_48H_WINDOW": 18
   },
   "icehockey_nhl": {},
   "nba": {
@@ -197,11 +198,11 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 7,
-   "EXCLUDED": 2227
+   "ELIGIBLE": 6,
+   "EXCLUDED": 2228
   },
   "exclusion_reason": {
-   "EVENT_STARTED": 2227
+   "EVENT_STARTED": 2228
   },
   "start_time_status": {
    "LEDGER_ONLY": 1824,
@@ -335,48 +336,6 @@
    "correct": "",
    "settlement_timestamp": "",
    "event_start_original": "2026-10-26T19:30:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
-  },
-  {
-   "prediction_id": "dd630840b6f6a71b",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_id": "dcc4a1c7f0427d8e1b2ee7d3f1d48e8a",
-   "event_key": "nba|dcc4a1c7f0427d8e1b2ee7d3f1d48e8a",
-   "event_name": "Memphis Grizzlies @ Sacramento Kings",
-   "event_start": "2026-10-26T01:00:00+00:00",
-   "market": "moneyline",
-   "selection": "Memphis Grizzlies",
-   "estimated_probability": "0.6189430537256624",
-   "fair_odds": "1.6156575212866604",
-   "probability_band": "60-64.9%",
-   "probability_source": "Odds API basketball_nba h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-10-25T06:30:00+00:00",
-   "actual_workflow_start": "2026-10-25T11:54:26Z",
-   "prediction_timestamp": "2026-10-25T11:55:34.328730+00:00",
-   "minutes_to_event": "784.4",
-   "live_price": "1.58",
-   "live_price_source": "odds_api:unibet_uk",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "True",
-   "single_ineligible_reason": "",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:basketball_nba",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-10-26T01:00:00+00:00",
    "start_time_status": "LEDGER_ONLY",
    "start_time_source": "unified_ledger.event_start"
   },

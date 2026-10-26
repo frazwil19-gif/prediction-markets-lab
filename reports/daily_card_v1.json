@@ -1,12 +1,12 @@
 {
  "card_version": "card-v1.2",
- "generated_at": "2026-10-26T00:32:37.385404+00:00",
- "stage_a_generated_at": "2026-10-26T00:32:36.556704+00:00",
+ "generated_at": "2026-10-26T07:16:38.060263+00:00",
+ "stage_a_generated_at": "2026-10-26T07:16:36.944293+00:00",
  "real_money_enabled": false,
  "mode": "PAPER \u2014 unattended prospective validation (real-money betting paused; nothing to place)",
  "summary": {
-  "predictions_in_window": 7,
-  "best_predictions_shown": 4,
+  "predictions_in_window": 6,
+  "best_predictions_shown": 3,
   "bets": 0,
   "total_stake_gbp": 0.0,
   "exposure_pct_of_bankroll": 0.0,
@@ -15,10 +15,9 @@
  },
  "rejection_reasons": {
   "ENGINE_STATUS_INELIGIBLE": 6,
-  "PRICE_STALE": 4,
   "NO_EXECUTABLE_PRICE": 3,
   "P_BELOW_FLOOR": 3,
-  "NET_EV_NOT_POSITIVE": 2
+  "NET_EV_NOT_POSITIVE": 1
  },
  "best_predictions": [
   {
@@ -47,7 +46,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-25T16:16:36.111428+00:00",
+   "decision_evaluated_at": "2026-10-26T07:16:37.610181+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -76,7 +75,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-25T16:16:36.111428+00:00",
+   "decision_evaluated_at": "2026-10-26T07:16:37.610181+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -94,48 +93,19 @@
    "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
    "engine_id": "football_1x2.market_consensus",
    "fair_odds": 1.51,
-   "price_status": "PRICE_QUALITY_FAIL",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.38,
+   "best_source": "betfair",
+   "best_net_ev": -0.052664,
    "decision": "REJECT",
-   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "1.44",
-   "decision_source": "ladbrokes",
-   "decision_net_ev": "-0.04644553870711432",
-   "price_observed_at": "2026-10-25T07:16:21.892416+00:00",
+   "decision_reasons": "NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "1.38",
+   "decision_source": "betfair",
+   "decision_net_ev": "-0.0526637947898575",
+   "price_observed_at": "2026-10-26T07:16:30.092411+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-25T16:16:36.111428+00:00",
+   "decision_evaluated_at": "2026-10-26T07:16:37.610181+00:00",
    "min_bookmaker_odds": 1.55
-  },
-  {
-   "prediction_id": "dd630840b6f6a71b",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_key": "nba|dcc4a1c7f0427d8e1b2ee7d3f1d48e8a",
-   "event_name": "Memphis Grizzlies @ Sacramento Kings",
-   "event_start": "2026-10-26T01:00:00+00:00",
-   "market": "moneyline",
-   "selection": "Memphis Grizzlies",
-   "probability": 0.618943,
-   "band": "60%+",
-   "sigma": 0.014997,
-   "evidence": "VALIDATED",
-   "engine_id": "nba_moneyline.market",
-   "fair_odds": 1.62,
-   "price_status": "PRICE_QUALITY_FAIL",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
-   "decision_odds": "1.58",
-   "decision_source": "unibet_uk",
-   "decision_net_ev": "-0.022069975113453377",
-   "price_observed_at": "2026-10-25T11:55:34.328730+00:00",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-10-25T16:16:36.111428+00:00",
-   "min_bookmaker_odds": 1.65
   }
  ],
  "best_bets": [],
@@ -167,7 +137,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-25T16:16:36.111428+00:00",
+   "decision_evaluated_at": "2026-10-26T07:16:37.610181+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -196,7 +166,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-10-25T16:16:36.111428+00:00",
+   "decision_evaluated_at": "2026-10-26T07:16:37.610181+00:00",
    "min_bookmaker_odds": 1.33
   }
  ],
