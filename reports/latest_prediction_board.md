@@ -2,36 +2,37 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 0 · Valid predictions: 0 · Sports: —
-Counts: >=70: 0 · >=75: 0 · >=80: 0 · >=85: 0 · >=90: 0 · >=95: 0
+Upcoming events: 6 · Valid predictions: 42 · Sports: football
+Counts: >=70: 13 · >=75: 2 · >=80: 2 · >=85: 1 · >=90: 0 · >=95: 0
 Settled yesterday: 20 · System: **HEALTHY** · API credits (last observed): 100
 
 ## Top predictions (P ≥ 80%)
 
 | Sport | Event | Start (UTC) | Market | Selection | P | Fair | Band | Engine | Evidence | Price (source) | Single | Multi-research |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| — | no upcoming prediction at this level | | | | | | | | | | | |
+| football | Celtic v Dundee United | 2026-10-28T19:45 | double_chance | 1X | 89.7% | 1.11 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.09 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
+| football | Celtic v Dundee United | 2026-10-28T19:45 | double_chance | 12 | 84.4% | 1.19 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.16 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 
 ## Prospective evidence
 
 | Engine | Status | Predictions | Settled | Maturity | ≥80% settled | ≥80% pred → actual |
 |---|---|---|---|---|---|---|
-| football_1x2.market_consensus | VALIDATED_HISTORICAL / COLLECTING | 777 | 300 | EARLY | 1 | 82.3% → 100.0% |
-| football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 100 | 100 | EARLY | 0 | — → — |
+| football_1x2.market_consensus | VALIDATED_HISTORICAL / COLLECTING | 795 | 300 | EARLY | 1 | 82.3% → 100.0% |
+| football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 106 | 100 | EARLY | 0 | — → — |
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
 | atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 158 | 146 | EARLY | 25 | 87.7% → 76.0% |
 | wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 190 | 168 | EARLY | 31 | 89.3% → 80.6% |
 | nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 43 | 37 | COLLECTING | 3 | 81.6% → 100.0% |
 | nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 85 | 63 | EARLY | 0 | — → — |
 | nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 28 | 15 | COLLECTING | 0 | — → — |
-| football_double_chance.derived_1x2 | PROVISIONAL_PROSPECTIVE / COLLECTING | 777 | 9 | COLLECTING | 1 | 80.2% → 0.0% |
+| football_double_chance.derived_1x2 | PROVISIONAL_PROSPECTIVE / COLLECTING | 795 | 9 | COLLECTING | 1 | 80.2% → 0.0% |
 
 ## System health
 
-- daily_scan: OK (last 2026-10-26T07:16:36.073487+00:00)
+- daily_scan: OK (last 2026-10-27T07:16:33.076756+00:00)
 - settlement: OK (last 2026-10-27T00:22:12.077475+00:00)
 - tennis_board: OK (last 2026-10-26T16:25:26.820726+00:00)
-- ci_tests: OK (last 2026-10-27T01:34:52.721380+00:00)
+- ci_tests: OK (last 2026-10-27T07:16:33.546720+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
