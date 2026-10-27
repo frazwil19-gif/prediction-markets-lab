@@ -31,8 +31,8 @@ Settled yesterday: 20 · System: **HEALTHY** · API credits (last observed): 94
 
 - daily_scan: OK (last 2026-10-27T07:16:33.076756+00:00)
 - settlement: OK (last 2026-10-27T00:22:12.077475+00:00)
-- tennis_board: OK (last 2026-10-27T12:35:02.176209+00:00)
-- ci_tests: OK (last 2026-10-27T12:35:02.827806+00:00)
+- tennis_board: OK (last 2026-10-27T16:17:01.670148+00:00)
+- ci_tests: OK (last 2026-10-27T16:17:02.456558+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
