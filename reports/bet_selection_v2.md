@@ -4,9 +4,9 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-27T07:16Z · events scanned 6 · valid predictions 42 · high-P (≥70%) 13 · priced 19 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 42 · new paper bets 0 · Money Card qualified 0
+Run 2026-10-27T12:35Z · events scanned 6 · valid predictions 42 · high-P (≥70%) 13 · priced 19 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 42 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 42 · NET_EV_NOT_POSITIVE 18 · P_BELOW_FLOOR 18 · NO_EXECUTABLE_PRICE 18 · COMMISSION_UNKNOWN 5
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 42 · PRICE_STALE 24 · NET_EV_NOT_POSITIVE 18 · P_BELOW_FLOOR 18 · NO_EXECUTABLE_PRICE 18 · COMMISSION_UNKNOWN 5
 
 ## Candidates (latest run, best price per prediction)
 
