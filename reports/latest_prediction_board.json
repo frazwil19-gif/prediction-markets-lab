@@ -1,7 +1,7 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-27T00:22:10.280907+00:00",
+ "generated_at": "2026-10-27T01:35:11.059378+00:00",
  "date": "2026-10-27",
  "summary": {
   "upcoming_events": 0,
@@ -26,35 +26,35 @@
    ">=95": 0
   },
   "settled_yesterday": 20,
-  "system": "DEGRADED",
+  "system": "HEALTHY",
   "api_credits_last_observed": 100
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-27T00:22:10.280907+00:00",
-  "overall": "DEGRADED",
-  "outage_flag": true,
+  "generated_at": "2026-10-27T01:35:11.059378+00:00",
+  "overall": "HEALTHY",
+  "outage_flag": false,
   "components": {
    "daily_scan": {
     "last": "2026-10-26T07:16:36.073487+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 17.1
+    "age_hours": 18.3
    },
    "settlement": {
-    "last": "2026-10-24T23:05:42.167074+00:00",
+    "last": "2026-10-27T00:22:12.077475+00:00",
     "status": "success",
-    "flag": "OUTAGE",
-    "age_hours": 49.3
+    "flag": "OK",
+    "age_hours": 1.2
    },
    "tennis_board": {
     "last": "2026-10-26T16:25:26.820726+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 7.9
+    "age_hours": 9.2
    },
    "ci_tests": {
-    "last": "2026-10-27T00:21:52.766863+00:00",
+    "last": "2026-10-27T01:34:52.721380+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -66,10 +66,8 @@
    "source": "credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
-  "warnings": [
-   "settlement: OUTAGE (last 2026-10-24T23:05:42.167074+00:00)"
-  ],
-  "stale_data_warning": true
+  "warnings": [],
+  "stale_data_warning": false
  },
  "prospective_evidence": {
   "football_1x2.market_consensus": {
@@ -125,11 +123,11 @@
    "prospective_status": "COLLECTING",
    "money_eligible": true,
    "predictions": 190,
-   "settled_rows": 147,
+   "settled_rows": 168,
    "maturity": "EARLY",
-   "ge80_settled": 26,
-   "ge80_mean_pred": 0.8924536153846154,
-   "ge80_actual": 0.8076923076923077,
+   "ge80_settled": 31,
+   "ge80_mean_pred": 0.8930799677419355,
+   "ge80_actual": 0.8064516129032258,
    "alarm_review_required": false
   },
   "nba_moneyline.market": {
