@@ -1,7 +1,7 @@
 {
  "card_version": "card-v1.2",
- "generated_at": "2026-10-27T16:17:05.325901+00:00",
- "stage_a_generated_at": "2026-10-27T16:17:04.278318+00:00",
+ "generated_at": "2026-10-28T01:32:16.374477+00:00",
+ "stage_a_generated_at": "2026-10-28T01:32:15.534886+00:00",
  "real_money_enabled": false,
  "mode": "PAPER \u2014 unattended prospective validation (real-money betting paused; nothing to place)",
  "summary": {
@@ -11,7 +11,7 @@
   "total_stake_gbp": 0.0,
   "exposure_pct_of_bankroll": 0.0,
   "strong_price_too_low": 13,
-  "research_predictions": 64
+  "research_predictions": 52
  },
  "rejection_reasons": {
   "ENGINE_STATUS_INELIGIBLE": 42,
@@ -1156,19 +1156,6 @@
   {
    "sport": "football",
    "competition": "I1",
-   "event_name": "Torino v Como",
-   "event_start": "2026-10-27T19:45:00+00:00",
-   "market": "total_corners",
-   "selection": "under 11.5",
-   "probability": 0.7881,
-   "fair_odds": 1.27,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
-   "competition": "I1",
    "event_name": "Parma v Udinese",
    "event_start": "2026-10-28T17:30:00+00:00",
    "market": "total_corners",
@@ -1195,38 +1182,12 @@
   {
    "sport": "football",
    "competition": "I1",
-   "event_name": "Sassuolo v Lazio",
-   "event_start": "2026-10-27T17:30:00+00:00",
-   "market": "total_corners",
-   "selection": "under 11.5",
-   "probability": 0.7698,
-   "fair_odds": 1.3,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
-   "competition": "I1",
    "event_name": "Milan v Bologna",
    "event_start": "2026-10-28T17:30:00+00:00",
    "market": "total_corners",
    "selection": "under 10.5",
    "probability": 0.7525,
    "fair_odds": 1.33,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
-   "competition": "I1",
-   "event_name": "Roma v Cagliari",
-   "event_start": "2026-10-27T19:45:00+00:00",
-   "market": "total_corners",
-   "selection": "under 11.5",
-   "probability": 0.749,
-   "fair_odds": 1.34,
    "model": "corners-A-1.0",
    "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
    "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
@@ -1311,19 +1272,6 @@
   },
   {
    "sport": "football",
-   "competition": "I1",
-   "event_name": "Torino v Como",
-   "event_start": "2026-10-27T19:45:00+00:00",
-   "market": "total_corners",
-   "selection": "under 10.5",
-   "probability": 0.6951,
-   "fair_odds": 1.44,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
    "competition": "SC0",
    "event_name": "Aberdeen v Falkirk",
    "event_start": "2026-10-28T19:45:00+00:00",
@@ -1402,19 +1350,6 @@
   },
   {
    "sport": "football",
-   "competition": "I1",
-   "event_name": "Sassuolo v Lazio",
-   "event_start": "2026-10-27T17:30:00+00:00",
-   "market": "total_corners",
-   "selection": "under 10.5",
-   "probability": 0.6741,
-   "fair_odds": 1.48,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
    "competition": "SC0",
    "event_name": "Hearts v Rangers",
    "event_start": "2026-10-28T20:00:00+00:00",
@@ -1448,19 +1383,6 @@
    "selection": "over 8.5",
    "probability": 0.6569,
    "fair_odds": 1.52,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
-   "competition": "I1",
-   "event_name": "Roma v Cagliari",
-   "event_start": "2026-10-27T19:45:00+00:00",
-   "market": "total_corners",
-   "selection": "under 10.5",
-   "probability": 0.6497,
-   "fair_odds": 1.54,
    "model": "corners-A-1.0",
    "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
    "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
@@ -1597,32 +1519,6 @@
   },
   {
    "sport": "football",
-   "competition": "I1",
-   "event_name": "Roma v Cagliari",
-   "event_start": "2026-10-27T19:45:00+00:00",
-   "market": "total_corners",
-   "selection": "over 8.5",
-   "probability": 0.5895,
-   "fair_odds": 1.7,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
-   "competition": "I1",
-   "event_name": "Torino v Como",
-   "event_start": "2026-10-27T19:45:00+00:00",
-   "market": "total_corners",
-   "selection": "under 9.5",
-   "probability": 0.5867,
-   "fair_odds": 1.7,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
    "competition": "SC0",
    "event_name": "Aberdeen v Falkirk",
    "event_start": "2026-10-28T19:45:00+00:00",
@@ -1715,32 +1611,6 @@
   {
    "sport": "football",
    "competition": "I1",
-   "event_name": "Sassuolo v Lazio",
-   "event_start": "2026-10-27T17:30:00+00:00",
-   "market": "total_corners",
-   "selection": "over 8.5",
-   "probability": 0.5668,
-   "fair_odds": 1.76,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
-   "competition": "I1",
-   "event_name": "Sassuolo v Lazio",
-   "event_start": "2026-10-27T17:30:00+00:00",
-   "market": "total_corners",
-   "selection": "under 9.5",
-   "probability": 0.5592,
-   "fair_odds": 1.79,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
-   "competition": "I1",
    "event_name": "Genoa v Juventus",
    "event_start": "2026-10-28T19:45:00+00:00",
    "market": "total_corners",
@@ -1792,19 +1662,6 @@
   },
   {
    "sport": "football",
-   "competition": "I1",
-   "event_name": "Torino v Como",
-   "event_start": "2026-10-27T19:45:00+00:00",
-   "market": "total_corners",
-   "selection": "over 8.5",
-   "probability": 0.5407,
-   "fair_odds": 1.85,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
    "competition": "SC0",
    "event_name": "Dundee v Kilmarnock",
    "event_start": "2026-10-28T19:45:00+00:00",
@@ -1824,19 +1681,6 @@
    "market": "total_corners",
    "selection": "under 10.5",
    "probability": 0.5346,
-   "fair_odds": 1.87,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
-   "competition": "I1",
-   "event_name": "Roma v Cagliari",
-   "event_start": "2026-10-27T19:45:00+00:00",
-   "market": "total_corners",
-   "selection": "under 9.5",
-   "probability": 0.5339,
    "fair_odds": 1.87,
    "model": "corners-A-1.0",
    "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",

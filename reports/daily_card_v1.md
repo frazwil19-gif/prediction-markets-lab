@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-10-27T16:17Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-10-28T01:32Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 42 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 13 · research predictions: 64
+Predictions in the next window: 42 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 13 · research predictions: 52
 
 ## 1. Best predictions today
 
@@ -77,30 +77,24 @@ _Model probabilities from research engines. Shown for information and to build a
 | Fiorentina v Atalanta (I1) | 2026-10-29 | total_corners | under 11.5 | 79.9% | 1.25 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Venezia v Inter (I1) | 2026-10-28 | total_corners | under 11.5 | 79.8% | 1.25 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Monza v Napoli (I1) | 2026-10-28 | total_corners | under 11.5 | 79.6% | 1.26 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Torino v Como (I1) | 2026-10-27 | total_corners | under 11.5 | 78.8% | 1.27 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Parma v Udinese (I1) | 2026-10-28 | total_corners | under 11.5 | 78.3% | 1.28 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Genoa v Juventus (I1) | 2026-10-28 | total_corners | under 11.5 | 78.2% | 1.28 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Sassuolo v Lazio (I1) | 2026-10-27 | total_corners | under 11.5 | 77.0% | 1.30 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Milan v Bologna (I1) | 2026-10-28 | total_corners | under 10.5 | 75.2% | 1.33 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Roma v Cagliari (I1) | 2026-10-27 | total_corners | under 11.5 | 74.9% | 1.34 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Celtic v Dundee United (SC0) | 2026-10-28 | total_corners | over 8.5 | 74.4% | 1.34 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Fiorentina v Atalanta (I1) | 2026-10-29 | total_corners | under 10.5 | 70.8% | 1.41 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | St Mirren v Hibernian (SC0) | 2026-10-28 | total_corners | over 8.5 | 70.8% | 1.41 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Venezia v Inter (I1) | 2026-10-28 | total_corners | under 10.5 | 70.5% | 1.42 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Monza v Napoli (I1) | 2026-10-28 | total_corners | under 10.5 | 70.4% | 1.42 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Frosinone v Lecce (I1) | 2026-10-29 | total_corners | under 11.5 | 69.8% | 1.43 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Torino v Como (I1) | 2026-10-27 | total_corners | under 10.5 | 69.5% | 1.44 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Aberdeen v Falkirk (SC0) | 2026-10-28 | total_corners | over 8.5 | 69.5% | 1.44 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Parma v Udinese (I1) | 2026-10-28 | total_corners | under 10.5 | 68.9% | 1.45 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Genoa v Juventus (I1) | 2026-10-28 | total_corners | under 10.5 | 68.7% | 1.45 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Dundee v Kilmarnock (SC0) | 2026-10-28 | total_corners | under 11.5 | 68.5% | 1.46 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | St Johnstone v Motherwell (SC0) | 2026-10-28 | total_corners | under 11.5 | 67.7% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Hearts v Rangers (SC0) | 2026-10-28 | total_corners | under 11.5 | 67.5% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Sassuolo v Lazio (I1) | 2026-10-27 | total_corners | under 10.5 | 67.4% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Hearts v Rangers (SC0) | 2026-10-28 | total_corners | over 8.5 | 66.8% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | St Johnstone v Motherwell (SC0) | 2026-10-28 | total_corners | over 8.5 | 66.5% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Dundee v Kilmarnock (SC0) | 2026-10-28 | total_corners | over 8.5 | 65.7% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Roma v Cagliari (I1) | 2026-10-27 | total_corners | under 10.5 | 65.0% | 1.54 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Milan v Bologna (I1) | 2026-10-28 | total_corners | under 9.5 | 64.6% | 1.55 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Aberdeen v Falkirk (SC0) | 2026-10-28 | total_corners | under 11.5 | 64.3% | 1.56 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Celtic v Dundee United (SC0) | 2026-10-28 | total_corners | over 9.5 | 64.1% | 1.56 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -111,8 +105,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | St Mirren v Hibernian (SC0) | 2026-10-28 | total_corners | over 9.5 | 59.4% | 1.68 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Monza v Napoli (I1) | 2026-10-28 | total_corners | under 9.5 | 59.4% | 1.68 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Frosinone v Lecce (I1) | 2026-10-29 | total_corners | under 10.5 | 59.4% | 1.68 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Roma v Cagliari (I1) | 2026-10-27 | total_corners | over 8.5 | 59.0% | 1.70 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Torino v Como (I1) | 2026-10-27 | total_corners | under 9.5 | 58.7% | 1.70 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Aberdeen v Falkirk (SC0) | 2026-10-28 | total_corners | over 9.5 | 58.2% | 1.72 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Dundee v Kilmarnock (SC0) | 2026-10-28 | total_corners | under 10.5 | 58.1% | 1.72 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Genoa v Juventus (I1) | 2026-10-28 | total_corners | under 9.5 | 57.9% | 1.73 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -120,16 +112,12 @@ _Model probabilities from research engines. Shown for information and to build a
 | Parma v Udinese (I1) | 2026-10-28 | total_corners | under 9.5 | 57.6% | 1.73 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | St Johnstone v Motherwell (SC0) | 2026-10-28 | total_corners | under 10.5 | 57.2% | 1.75 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Hearts v Rangers (SC0) | 2026-10-28 | total_corners | under 10.5 | 56.9% | 1.76 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Sassuolo v Lazio (I1) | 2026-10-27 | total_corners | over 8.5 | 56.7% | 1.76 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Sassuolo v Lazio (I1) | 2026-10-27 | total_corners | under 9.5 | 55.9% | 1.79 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Genoa v Juventus (I1) | 2026-10-28 | total_corners | over 8.5 | 55.0% | 1.82 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Hearts v Rangers (SC0) | 2026-10-28 | total_corners | over 9.5 | 54.9% | 1.82 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Parma v Udinese (I1) | 2026-10-28 | total_corners | over 8.5 | 54.9% | 1.82 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | St Johnstone v Motherwell (SC0) | 2026-10-28 | total_corners | over 9.5 | 54.9% | 1.82 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Torino v Como (I1) | 2026-10-27 | total_corners | over 8.5 | 54.1% | 1.85 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Dundee v Kilmarnock (SC0) | 2026-10-28 | total_corners | over 9.5 | 53.9% | 1.86 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Aberdeen v Falkirk (SC0) | 2026-10-28 | total_corners | under 10.5 | 53.5% | 1.87 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Roma v Cagliari (I1) | 2026-10-27 | total_corners | under 9.5 | 53.4% | 1.87 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Monza v Napoli (I1) | 2026-10-28 | total_corners | over 8.5 | 53.2% | 1.88 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Celtic v Dundee United (SC0) | 2026-10-28 | total_corners | over 10.5 | 53.1% | 1.88 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Venezia v Inter (I1) | 2026-10-28 | total_corners | over 8.5 | 53.0% | 1.88 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
