@@ -1,7 +1,7 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-10-28T01:32:15.534886+00:00",
+ "generated_at": "2026-10-28T07:16:25.485463+00:00",
  "date": "2026-10-28",
  "summary": {
   "upcoming_events": 6,
@@ -33,30 +33,30 @@
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-10-28T01:32:15.534886+00:00",
+  "generated_at": "2026-10-28T07:16:25.485463+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
    "daily_scan": {
-    "last": "2026-10-27T07:16:33.076756+00:00",
+    "last": "2026-10-28T07:16:24.844876+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 18.3
+    "age_hours": 0.0
    },
    "settlement": {
     "last": "2026-10-28T00:25:32.139067+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 1.1
+    "age_hours": 6.8
    },
    "tennis_board": {
     "last": "2026-10-27T16:17:01.670148+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 9.3
+    "age_hours": 15.0
    },
    "ci_tests": {
-    "last": "2026-10-28T01:31:56.435834+00:00",
+    "last": "2026-10-28T07:16:25.439371+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -186,7 +186,7 @@
    "nfl_moneyline.market: OUTSIDE_36H_WINDOW": 12
   },
   "football": {
-   "football: OUTSIDE_48H_WINDOW": 4
+   "football: OUTSIDE_48H_WINDOW": 3
   },
   "icehockey_nhl": {},
   "nba": {

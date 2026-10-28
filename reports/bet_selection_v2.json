@@ -1,25 +1,25 @@
 {
- "generated_at": "2026-10-28T01:32:16.185708+00:00",
+ "generated_at": "2026-10-28T07:16:25.991568+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-4",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 86,
+  "runs": 87,
   "totals_over_runs": {
-   "events_scanned": 3374,
-   "valid_predictions": 11163,
-   "high_p_candidates": 3192,
-   "priced_candidates": 5882,
+   "events_scanned": 3380,
+   "valid_predictions": 11205,
+   "high_p_candidates": 3204,
+   "priced_candidates": 5902,
    "PAPER_BET": 22,
    "MULTI_RESEARCH_ELIGIBLE": 195,
    "WATCH": 67,
-   "REJECT": 11191,
+   "REJECT": 11233,
    "paper_bets_added": 12,
    "money_card_qualified": 9
   },
   "note": "per-run counts summed; a prediction re-evaluated in several runs is counted in each run",
-  "days_evaluated": 29,
+  "days_evaluated": 30,
   "no_bet_days": [
    "2026-09-30",
    "2026-10-01",
@@ -46,7 +46,8 @@
    "2026-10-24",
    "2026-10-25",
    "2026-10-26",
-   "2026-10-27"
+   "2026-10-27",
+   "2026-10-28"
   ],
   "bet_days": {
    "2026-09-29": 10,
@@ -55,21 +56,21 @@
   }
  },
  "latest_run": {
-  "run_at": "2026-10-27T16:17:04.875339+00:00",
+  "run_at": "2026-10-28T07:16:25.991568+00:00",
   "trigger": "workflow_dispatch",
   "rule_version": "bsv2-4",
   "events_scanned": "6",
   "valid_predictions": "42",
-  "high_p_candidates": "13",
-  "priced_candidates": "19",
+  "high_p_candidates": "12",
+  "priced_candidates": "20",
   "PAPER_BET": "0",
   "MULTI_RESEARCH_ELIGIBLE": "0",
   "WATCH": "0",
   "REJECT": "42",
   "paper_bets_added": "0",
-  "snapshots_added": "0",
+  "snapshots_added": "24",
   "money_card_qualified": "0",
-  "football_fixtures_on_card": "10"
+  "football_fixtures_on_card": "9"
  },
  "latest_decisions": {
   "decisions": {
@@ -77,11 +78,11 @@
   },
   "reason_counts": {
    "ENGINE_STATUS_INELIGIBLE": 42,
-   "PRICE_STALE": 24,
-   "NET_EV_NOT_POSITIVE": 18,
    "P_BELOW_FLOOR": 18,
    "NO_EXECUTABLE_PRICE": 18,
-   "COMMISSION_UNKNOWN": 5
+   "NET_EV_NOT_POSITIVE": 16,
+   "PRICE_STALE": 4,
+   "COMMISSION_UNKNOWN": 4
   },
   "by_sport": {
    "football": {
