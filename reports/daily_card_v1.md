@@ -1,4 +1,4 @@
-# Daily Prediction Board & Bet Card — 2026-10-28T07:16Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-10-28T13:22Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
@@ -15,12 +15,12 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | 3 | football | Dundee FC v Kilmarnock | 2026-10-28T19:45 | double_chance | 12 | 74.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.34 | no price | no |
 | 4 | football | Hearts v Rangers | 2026-10-28T20:00 | double_chance | 12 | 74.2% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.35 | no price | no |
 | 5 | football | St Mirren v Hibernian | 2026-10-28T19:45 | double_chance | 12 | 74.2% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.35 | no price | no |
-| 6 | football | Celtic v Dundee United | 2026-10-28T19:45 | 1x2 | home | 74.1% | 70%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.35 | 1.28 (betfair) | no |
+| 6 | football | Celtic v Dundee United | 2026-10-28T19:45 | 1x2 | home | 74.1% | 70%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.35 | price not usable (stale/wide/unknown commission) | no |
 | 7 | football | Dundee FC v Kilmarnock | 2026-10-28T19:45 | double_chance | 1X | 73.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.36 | no price | no |
 | 8 | football | Aberdeen v Falkirk F.C. | 2026-10-28T19:45 | double_chance | 12 | 73.1% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.37 | no price | no |
 | 9 | football | St Johnstone v Motherwell | 2026-10-28T19:45 | double_chance | 12 | 72.7% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.38 | no price | no |
 | 10 | football | Aberdeen v Falkirk F.C. | 2026-10-28T19:45 | double_chance | 1X | 72.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.38 | no price | no |
-| 11 | football | Celtic v Dundee United | 2026-10-28T19:45 | over_under_2_5 | over | 71.7% | 70%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.39 | 1.33 (william hill) | no |
+| 11 | football | Celtic v Dundee United | 2026-10-28T19:45 | over_under_2_5 | over | 71.7% | 70%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.39 | price not usable (stale/wide/unknown commission) | no |
 | 12 | football | St Mirren v Hibernian | 2026-10-28T19:45 | double_chance | X2 | 71.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.40 | no price | no |
 | 13 | football | Hearts v Rangers | 2026-10-28T20:00 | double_chance | X2 | 70.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.42 | no price | no |
 | 14 | football | St Johnstone v Motherwell | 2026-10-28T19:45 | double_chance | 1X | 65.0% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.54 | no price | no |
@@ -54,18 +54,18 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 | Dundee FC v Kilmarnock (2026-10-28T19:45) | double_chance: 12 | 74.8% | 1.34 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Hearts v Rangers (2026-10-28T20:00) | double_chance: 12 | 74.2% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | St Mirren v Hibernian (2026-10-28T19:45) | double_chance: 12 | 74.2% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Celtic v Dundee United (2026-10-28T19:45) | 1x2: home | 74.1% | 1.35 | 1.28 | NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
+| Celtic v Dundee United (2026-10-28T19:45) | 1x2: home | 74.1% | 1.35 | — | PRICE_STALE, NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
 | Dundee FC v Kilmarnock (2026-10-28T19:45) | double_chance: 1X | 73.5% | 1.36 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Aberdeen v Falkirk F.C. (2026-10-28T19:45) | double_chance: 12 | 73.1% | 1.37 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | St Johnstone v Motherwell (2026-10-28T19:45) | double_chance: 12 | 72.7% | 1.38 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Aberdeen v Falkirk F.C. (2026-10-28T19:45) | double_chance: 1X | 72.4% | 1.38 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Celtic v Dundee United (2026-10-28T19:45) | over_under_2_5: over | 71.7% | 1.39 | 1.33 | NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
+| Celtic v Dundee United (2026-10-28T19:45) | over_under_2_5: over | 71.7% | 1.39 | — | PRICE_STALE, NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
 | St Mirren v Hibernian (2026-10-28T19:45) | double_chance: X2 | 71.5% | 1.40 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Hearts v Rangers (2026-10-28T20:00) | double_chance: X2 | 70.4% | 1.42 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 42 · NO_EXECUTABLE_PRICE 18 · P_BELOW_FLOOR 18 · NET_EV_NOT_POSITIVE 16 · COMMISSION_UNKNOWN 4 · PRICE_STALE 4
+ENGINE_STATUS_INELIGIBLE 42 · PRICE_STALE 24 · NO_EXECUTABLE_PRICE 18 · P_BELOW_FLOOR 18 · NET_EV_NOT_POSITIVE 16 · COMMISSION_UNKNOWN 4
 
 ## 4. Research predictions — not money eligible
 
