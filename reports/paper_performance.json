@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T00:25:31.999586+00:00",
+ "generated_at": "2026-10-29T00:46:48.522890+00:00",
  "mode": "PAPER \u2014 unattended prospective validation; stakes SIMULATED",
  "windows": {
   "weekly": {
@@ -48,19 +48,17 @@
      }
     }
    },
-   "candidates_evaluated": 448,
+   "candidates_evaluated": 435,
    "qualified_in_shadow": 0,
    "qualification_rate": 0.0,
    "rejections": {
     "ENGINE_STATUS_INELIGIBLE": 400,
-    "NET_EV_NOT_POSITIVE": 199,
+    "NET_EV_NOT_POSITIVE": 189,
     "NO_EXECUTABLE_PRICE": 183,
     "P_BELOW_FLOOR": 183,
-    "COMMISSION_UNKNOWN": 32,
-    "PRICE_STALE": 4,
-    "EXCHANGE_SPREAD_TOO_WIDE": 2,
-    "NET_EV_BELOW_PAPER_GATE": 1,
-    "ODDS_BELOW_PAYOUT_FLOOR": 1
+    "COMMISSION_UNKNOWN": 27,
+    "PRICE_STALE": 3,
+    "EXCHANGE_SPREAD_TOO_WIDE": 2
    },
    "by": {
     "sport": {},
@@ -173,10 +171,10 @@
    "qualification_rate": 0.0009,
    "rejections": {
     "ENGINE_STATUS_INELIGIBLE": 1696,
-    "NET_EV_NOT_POSITIVE": 1006,
+    "NET_EV_NOT_POSITIVE": 1004,
     "P_BELOW_FLOOR": 800,
     "NO_EXECUTABLE_PRICE": 795,
-    "COMMISSION_UNKNOWN": 195,
+    "COMMISSION_UNKNOWN": 194,
     "PREDICTION_NOT_VALID": 45,
     "PRICE_STALE": 40,
     "EXCHANGE_SPREAD_TOO_WIDE": 25,
@@ -679,10 +677,10 @@
    "qualification_rate": 0.0009,
    "rejections": {
     "ENGINE_STATUS_INELIGIBLE": 1696,
-    "NET_EV_NOT_POSITIVE": 1006,
+    "NET_EV_NOT_POSITIVE": 1004,
     "P_BELOW_FLOOR": 800,
     "NO_EXECUTABLE_PRICE": 795,
-    "COMMISSION_UNKNOWN": 195,
+    "COMMISSION_UNKNOWN": 194,
     "PREDICTION_NOT_VALID": 45,
     "PRICE_STALE": 40,
     "EXCHANGE_SPREAD_TOO_WIDE": 25,

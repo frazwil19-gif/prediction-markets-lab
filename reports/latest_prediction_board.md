@@ -1,17 +1,16 @@
-# DAILY PREDICTION BOARD — 2026-10-28
+# DAILY PREDICTION BOARD — 2026-10-29
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 6 · Valid predictions: 42 · Sports: football
-Counts: >=70: 13 · >=75: 2 · >=80: 2 · >=85: 1 · >=90: 0 · >=95: 0
-Settled yesterday: 217 · System: **HEALTHY** · API credits (last observed): 92
+Upcoming events: 0 · Valid predictions: 0 · Sports: —
+Counts: >=70: 0 · >=75: 0 · >=80: 0 · >=85: 0 · >=90: 0 · >=95: 0
+Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 92
 
 ## Top predictions (P ≥ 80%)
 
 | Sport | Event | Start (UTC) | Market | Selection | P | Fair | Band | Engine | Evidence | Price (source) | Single | Multi-research |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| football | Celtic v Dundee United | 2026-10-28T19:45 | double_chance | 1X | 89.7% | 1.11 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.09 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Celtic v Dundee United | 2026-10-28T19:45 | double_chance | 12 | 84.4% | 1.19 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.16 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
+| — | no upcoming prediction at this level | | | | | | | | | | | |
 
 ## Prospective evidence
 
@@ -32,7 +31,7 @@ Settled yesterday: 217 · System: **HEALTHY** · API credits (last observed): 92
 - daily_scan: OK (last 2026-10-28T07:16:24.844876+00:00)
 - settlement: OK (last 2026-10-28T00:25:32.139067+00:00)
 - tennis_board: OK (last 2026-10-28T16:16:34.812516+00:00)
-- ci_tests: OK (last 2026-10-28T16:16:35.622123+00:00)
+- ci_tests: OK (last 2026-10-29T00:46:35.214906+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
