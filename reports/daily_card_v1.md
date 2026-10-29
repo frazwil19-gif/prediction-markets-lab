@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-10-29T01:54Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-10-29T07:16Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 0 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 0 · research predictions: 8
+Predictions in the next window: 12 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 4 · research predictions: 8
 
 ## 1. Best predictions today
 
@@ -10,7 +10,12 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 
 | # | Sport | Event | Start (UTC) | Market | Selection | P | Band | σ | Evidence | Fair odds | Best price | Bet? |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| — | | no predictions in the window | | | | | | | | | | |
+| 1 | football | Le Havre v Paris Saint Germain | 2026-10-30T18:00 | double_chance | X2 | 90.7% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.10 | no price | no |
+| 2 | football | Le Havre v Paris Saint Germain | 2026-10-30T18:00 | double_chance | 12 | 85.6% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.17 | no price | no |
+| 3 | football | Le Havre v Paris Saint Germain | 2026-10-30T18:00 | 1x2 | away | 76.2% | 70%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | 1.25 (betfair) | no |
+| 4 | football | Nice v Rennes | 2026-10-30T18:00 | double_chance | 12 | 74.6% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.34 | no price | no |
+| 5 | football | Nice v Rennes | 2026-10-30T18:00 | double_chance | X2 | 65.1% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.54 | no price | no |
+| 6 | football | Nice v Rennes | 2026-10-30T18:00 | double_chance | 1X | 60.3% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.66 | no price | no |
 
 ## 2. Qualified paper bets (simulated stakes, recorded automatically)
 
@@ -24,7 +29,16 @@ No Big Card today — it needs at least 3 qualifying legs on different events. N
 
 _Not qualified: the price is below fair after costs. Never rescued with other prices — that would bias the record._
 
-None in the window.
+| Event | Selection | P | Fair odds | Best clean price | Why no bet |
+|---|---|---|---|---|---|
+| Le Havre v Paris Saint Germain (2026-10-30T18:00) | double_chance: X2 | 90.7% | 1.10 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
+| Le Havre v Paris Saint Germain (2026-10-30T18:00) | double_chance: 12 | 85.6% | 1.17 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
+| Le Havre v Paris Saint Germain (2026-10-30T18:00) | 1x2: away | 76.2% | 1.31 | 1.25 | NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
+| Nice v Rennes (2026-10-30T18:00) | double_chance: 12 | 74.6% | 1.34 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
+
+### Why predictions in the window were not bets
+
+ENGINE_STATUS_INELIGIBLE 12 · NO_EXECUTABLE_PRICE 6 · P_BELOW_FLOOR 6 · NET_EV_NOT_POSITIVE 3
 
 ## 4. Research predictions — not money eligible
 
