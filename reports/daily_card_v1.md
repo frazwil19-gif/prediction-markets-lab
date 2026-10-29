@@ -1,4 +1,4 @@
-# Daily Prediction Board & Bet Card — 2026-10-29T13:32Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-10-29T14:40Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
@@ -60,10 +60,10 @@ _Model probabilities from research engines. Shown for information and to build a
 | Event | Start | Market | Selection | P | Model fair odds | Model | Status |
 |---|---|---|---|---|---|---|---|
 | Fiorentina v Atalanta (I1) | 2026-10-29 | total_corners | under 11.5 | 79.9% | 1.25 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Fiorentina v Atalanta (I1) | 2026-10-29 | total_corners | under 10.5 | 70.8% | 1.41 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Frosinone v Lecce (I1) | 2026-10-29 | total_corners | under 11.5 | 69.8% | 1.43 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Frosinone v Lecce (I1) | 2026-10-29 | total_corners | over 8.5 | 64.0% | 1.56 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Fiorentina v Atalanta (I1) | 2026-10-29 | total_corners | under 9.5 | 59.5% | 1.68 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Frosinone v Lecce (I1) | 2026-10-29 | total_corners | under 10.5 | 59.4% | 1.68 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Fiorentina v Atalanta (I1) | 2026-10-29 | total_corners | over 8.5 | 52.9% | 1.89 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Frosinone v Lecce (I1) | 2026-10-29 | total_corners | over 9.5 | 52.4% | 1.91 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Fiorentina v Atalanta (I1) | 2026-10-29 | total_corners | under 10.5 | 70.9% | 1.41 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Frosinone v Lecce (I1) | 2026-10-29 | total_corners | under 11.5 | 70.0% | 1.43 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Frosinone v Lecce (I1) | 2026-10-29 | total_corners | over 8.5 | 63.9% | 1.56 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Fiorentina v Atalanta (I1) | 2026-10-29 | total_corners | under 9.5 | 59.7% | 1.68 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Frosinone v Lecce (I1) | 2026-10-29 | total_corners | under 10.5 | 59.5% | 1.68 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Fiorentina v Atalanta (I1) | 2026-10-29 | total_corners | over 8.5 | 52.8% | 1.89 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Frosinone v Lecce (I1) | 2026-10-29 | total_corners | over 9.5 | 52.2% | 1.92 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
