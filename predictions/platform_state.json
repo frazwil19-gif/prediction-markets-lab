@@ -3,7 +3,7 @@
  "americanfootball_nfl_last_scores_date": "2026-10-17",
  "icehockey_nhl_last_odds_date": "2026-10-19",
  "icehockey_nhl_last_scores_date": "2026-10-17",
- "last_ci_pass": "2026-10-29T00:46:35.214906+00:00",
+ "last_ci_pass": "2026-10-29T01:54:34.424129+00:00",
  "last_runs": {
   "americanfootball_nfl": {
    "added": 1,
@@ -31,17 +31,17 @@
   },
   "settle": {
    "added": 0,
-   "at": "2026-10-29T00:46:35.214928+00:00",
-   "pending_review": 1001
+   "at": "2026-10-29T01:54:34.931746+00:00",
+   "pending_review": 1002
   },
   "tennis": {
    "added": 0,
    "already_recorded": 424,
-   "at": "2026-10-28T16:16:35.709406+00:00",
+   "at": "2026-10-29T01:54:34.510476+00:00",
    "candidates": 424
   }
  },
- "last_tennis_ingest": "2026-10-28T16:16:35.709452+00:00",
+ "last_tennis_ingest": "2026-10-29T01:54:34.510514+00:00",
  "nba_last_odds_date": "2026-10-25",
  "nba_last_scores_date": "2026-10-26",
  "pending_review": [
@@ -5058,6 +5058,13 @@
    "event": "Detroit Pistons @ Philadelphia 76ers",
    "event_start": "2026-10-25T23:40:00+00:00",
    "prediction_id": "f4446af8d750a46b",
+   "status": "REVIEW_REQUIRED"
+  },
+  {
+   "detail": "unsettled > 3 days after tip",
+   "event": "Memphis Grizzlies @ Sacramento Kings",
+   "event_start": "2026-10-26T01:00:00+00:00",
+   "prediction_id": "dd630840b6f6a71b",
    "status": "REVIEW_REQUIRED"
   }
  ],
