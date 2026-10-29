@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-10-29T07:16Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-10-29T13:32Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 12 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 4 · research predictions: 8
+Predictions in the next window: 31 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 7 · research predictions: 8
 
 ## 1. Best predictions today
 
@@ -12,10 +12,20 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | football | Le Havre v Paris Saint Germain | 2026-10-30T18:00 | double_chance | X2 | 90.7% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.10 | no price | no |
 | 2 | football | Le Havre v Paris Saint Germain | 2026-10-30T18:00 | double_chance | 12 | 85.6% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.17 | no price | no |
-| 3 | football | Le Havre v Paris Saint Germain | 2026-10-30T18:00 | 1x2 | away | 76.2% | 70%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | 1.25 (betfair) | no |
-| 4 | football | Nice v Rennes | 2026-10-30T18:00 | double_chance | 12 | 74.6% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.34 | no price | no |
-| 5 | football | Nice v Rennes | 2026-10-30T18:00 | double_chance | X2 | 65.1% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.54 | no price | no |
-| 6 | football | Nice v Rennes | 2026-10-30T18:00 | double_chance | 1X | 60.3% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.66 | no price | no |
+| 3 | football | Le Havre v Paris Saint Germain | 2026-10-30T18:00 | 1x2 | away | 76.2% | 70%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | price not usable (stale/wide/unknown commission) | no |
+| 4 | football | Elversberg v FSV Mainz 05 | 2026-10-30T19:30 | double_chance | 12 | 75.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.33 | no price | no |
+| 5 | football | Nice v Rennes | 2026-10-30T18:00 | double_chance | 12 | 74.6% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.34 | no price | no |
+| 6 | football | Lille v RC Lens | 2026-10-30T20:05 | double_chance | 12 | 73.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.36 | no price | no |
+| 7 | football | Sheffield United v Wrexham AFC | 2026-10-30T20:00 | double_chance | 12 | 72.0% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.39 | no price | no |
+| 8 | football | Elversberg v FSV Mainz 05 | 2026-10-30T19:30 | double_chance | X2 | 69.5% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.44 | no price | no |
+| 9 | football | Sheffield United v Wrexham AFC | 2026-10-30T20:00 | double_chance | 1X | 66.2% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.51 | no price | no |
+| 10 | football | Nice v Rennes | 2026-10-30T18:00 | double_chance | X2 | 65.1% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.54 | no price | no |
+| 11 | football | Lille v RC Lens | 2026-10-30T20:05 | double_chance | 1X | 64.7% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.54 | no price | no |
+| 12 | football | Lille v RC Lens | 2026-10-30T20:05 | double_chance | X2 | 62.0% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.61 | no price | no |
+| 13 | football | Sheffield United v Wrexham AFC | 2026-10-30T20:00 | double_chance | X2 | 61.9% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.62 | no price | no |
+| 14 | football | Nice v Rennes | 2026-10-30T18:00 | double_chance | 1X | 60.3% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.66 | no price | no |
+| 15 | football | Elversberg v FSV Mainz 05 | 2026-10-30T19:30 | double_chance | 1X | 55.2% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.81 | no price | no |
+| 16 | football | Sheffield United v Wrexham AFC | 2026-10-30T20:00 | over_under_2_5 | under | 50.3% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.99 | price not usable (stale/wide/unknown commission) | no |
 
 ## 2. Qualified paper bets (simulated stakes, recorded automatically)
 
@@ -33,12 +43,15 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 |---|---|---|---|---|---|
 | Le Havre v Paris Saint Germain (2026-10-30T18:00) | double_chance: X2 | 90.7% | 1.10 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Le Havre v Paris Saint Germain (2026-10-30T18:00) | double_chance: 12 | 85.6% | 1.17 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Le Havre v Paris Saint Germain (2026-10-30T18:00) | 1x2: away | 76.2% | 1.31 | 1.25 | NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
+| Le Havre v Paris Saint Germain (2026-10-30T18:00) | 1x2: away | 76.2% | 1.31 | — | PRICE_STALE, NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
+| Elversberg v FSV Mainz 05 (2026-10-30T19:30) | double_chance: 12 | 75.3% | 1.33 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Nice v Rennes (2026-10-30T18:00) | double_chance: 12 | 74.6% | 1.34 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
+| Lille v RC Lens (2026-10-30T20:05) | double_chance: 12 | 73.3% | 1.36 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
+| Sheffield United v Wrexham AFC (2026-10-30T20:00) | double_chance: 12 | 72.0% | 1.39 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 12 · NO_EXECUTABLE_PRICE 6 · P_BELOW_FLOOR 6 · NET_EV_NOT_POSITIVE 3
+ENGINE_STATUS_INELIGIBLE 31 · PRICE_STALE 16 · NO_EXECUTABLE_PRICE 15 · P_BELOW_FLOOR 15 · NET_EV_NOT_POSITIVE 10 · COMMISSION_UNKNOWN 3
 
 ## 4. Research predictions — not money eligible
 
