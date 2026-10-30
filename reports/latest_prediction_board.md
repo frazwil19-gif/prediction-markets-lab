@@ -2,37 +2,51 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 5 · Valid predictions: 31 · Sports: football
-Counts: >=70: 7 · >=75: 4 · >=80: 2 · >=85: 2 · >=90: 1 · >=95: 0
+Upcoming events: 38 · Valid predictions: 251 · Sports: football
+Counts: >=70: 68 · >=75: 44 · >=80: 16 · >=85: 9 · >=90: 5 · >=95: 1
 Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 86
 
 ## Top predictions (P ≥ 80%)
 
 | Sport | Event | Start (UTC) | Market | Selection | P | Fair | Band | Engine | Evidence | Price (source) | Single | Multi-research |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| football | PSV Eindhoven v Willem II | 2026-10-31T17:45 | double_chance | 1X | 95.5% | 1.05 | 95%+ | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.03 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
+| football | Feyenoord v Fortuna Sittard | 2026-10-31T15:30 | double_chance | 1X | 93.0% | 1.08 | 90-94.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.06 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
+| football | PSV Eindhoven v Willem II | 2026-10-31T17:45 | double_chance | 12 | 92.8% | 1.08 | 90-94.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.05 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Le Havre v Paris Saint Germain | 2026-10-30T18:00 | double_chance | X2 | 90.7% | 1.10 | 90-94.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.08 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
+| football | Middlesbrough v Charlton Athletic | 2026-10-31T15:00 | double_chance | 1X | 90.3% | 1.11 | 90-94.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.08 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
+| football | PSV Eindhoven v Willem II | 2026-10-31T17:45 | 1x2 | home | 88.2% | 1.13 | 85-89.9% | football_1x2.market_consensus@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.10 (odds_api:Smarkets) | no | yes |
+| football | Feyenoord v Fortuna Sittard | 2026-10-31T15:30 | double_chance | 12 | 88.2% | 1.13 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.12 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
+| football | Bayern Munich v Borussia Dortmund | 2026-10-31T17:30 | double_chance | 1X | 87.3% | 1.15 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.12 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Le Havre v Paris Saint Germain | 2026-10-30T18:00 | double_chance | 12 | 85.6% | 1.17 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.14 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
+| football | Middlesbrough v Charlton Athletic | 2026-10-31T15:00 | double_chance | 12 | 84.4% | 1.18 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.16 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
+| football | Bayern Munich v Borussia Dortmund | 2026-10-31T17:30 | double_chance | 12 | 83.8% | 1.19 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
+| football | Tottenham Hotspur v Crystal Palace | 2026-10-31T17:30 | double_chance | 1X | 83.0% | 1.21 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
+| football | Norwich City v Watford | 2026-10-31T12:30 | double_chance | 1X | 81.9% | 1.22 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
+| football | West Ham United v West Bromwich Albion | 2026-10-31T15:00 | double_chance | 1X | 81.1% | 1.23 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.21 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
+| football | Feyenoord v Fortuna Sittard | 2026-10-31T15:30 | 1x2 | home | 81.0% | 1.24 | 80-84.9% | football_1x2.market_consensus@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.20 (odds_api:Smarkets) | no | yes |
+| football | Millwall v Derby County | 2026-10-31T15:00 | double_chance | 1X | 80.4% | 1.24 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.22 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 
 ## Prospective evidence
 
 | Engine | Status | Predictions | Settled | Maturity | ≥80% settled | ≥80% pred → actual |
 |---|---|---|---|---|---|---|
-| football_1x2.market_consensus | VALIDATED_HISTORICAL / COLLECTING | 810 | 318 | EARLY | 1 | 82.3% → 100.0% |
-| football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 107 | 106 | EARLY | 0 | — → — |
+| football_1x2.market_consensus | VALIDATED_HISTORICAL / COLLECTING | 909 | 318 | EARLY | 1 | 82.3% → 100.0% |
+| football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 129 | 106 | EARLY | 0 | — → — |
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
 | atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 158 | 146 | EARLY | 25 | 87.7% → 76.0% |
 | wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 190 | 168 | EARLY | 31 | 89.3% → 80.6% |
 | nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 43 | 37 | COLLECTING | 3 | 81.6% → 100.0% |
 | nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 85 | 63 | EARLY | 0 | — → — |
 | nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 28 | 15 | COLLECTING | 0 | — → — |
-| football_double_chance.derived_1x2 | PROVISIONAL_PROSPECTIVE / COLLECTING | 810 | 9 | COLLECTING | 1 | 80.2% → 0.0% |
+| football_double_chance.derived_1x2 | PROVISIONAL_PROSPECTIVE / COLLECTING | 909 | 9 | COLLECTING | 1 | 80.2% → 0.0% |
 
 ## System health
 
-- daily_scan: OK (last 2026-10-29T07:16:35.667478+00:00)
+- daily_scan: OK (last 2026-10-30T07:16:38.189811+00:00)
 - settlement: OK (last 2026-10-30T00:47:41.309238+00:00)
 - tennis_board: OK (last 2026-10-29T16:16:25.668256+00:00)
-- ci_tests: OK (last 2026-10-30T02:04:52.161601+00:00)
+- ci_tests: OK (last 2026-10-30T07:16:38.830826+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
