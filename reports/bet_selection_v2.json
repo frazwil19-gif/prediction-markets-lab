@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-10-30T07:16:39.583076+00:00",
+ "generated_at": "2026-10-30T13:21:06.627801+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-4",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 93,
+  "runs": 94,
   "totals_over_runs": {
-   "events_scanned": 3445,
-   "valid_predictions": 11633,
-   "high_p_candidates": 3317,
-   "priced_candidates": 6093,
+   "events_scanned": 3483,
+   "valid_predictions": 11884,
+   "high_p_candidates": 3385,
+   "priced_candidates": 6205,
    "PAPER_BET": 22,
    "MULTI_RESEARCH_ELIGIBLE": 195,
    "WATCH": 67,
-   "REJECT": 11661,
+   "REJECT": 11912,
    "paper_bets_added": 12,
    "money_card_qualified": 9
   },
@@ -58,8 +58,8 @@
   }
  },
  "latest_run": {
-  "run_at": "2026-10-30T07:16:39.583076+00:00",
-  "trigger": "workflow_dispatch",
+  "run_at": "2026-10-30T13:21:06.627801+00:00",
+  "trigger": "schedule",
   "rule_version": "bsv2-4",
   "events_scanned": "38",
   "valid_predictions": "251",
@@ -70,7 +70,7 @@
   "WATCH": "0",
   "REJECT": "251",
   "paper_bets_added": "0",
-  "snapshots_added": "137",
+  "snapshots_added": "0",
   "money_card_qualified": "0",
   "football_fixtures_on_card": "104"
  },
@@ -80,6 +80,7 @@
   },
   "reason_counts": {
    "ENGINE_STATUS_INELIGIBLE": 251,
+   "PRICE_STALE": 137,
    "P_BELOW_FLOOR": 114,
    "NO_EXECUTABLE_PRICE": 114,
    "NET_EV_NOT_POSITIVE": 92,

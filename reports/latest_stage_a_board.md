@@ -1,8 +1,8 @@
-# STAGE A PREDICTION BOARD — 2026-10-30T07:16Z (stage-a-2)
+# STAGE A PREDICTION BOARD — 2026-10-30T13:21Z (stage-a-2)
 
 _Probability first. Ranked by estimated probability only. **A strong prediction is not a bet** — price status is descriptive; Stage B (bet-selection) alone decides bets._
 
-Predictions: 251 · strong (P ≥ 70%): 68 on 38 events · strong by price status: POOR_PAYOUT 5 · PRICE_UNAVAILABLE 63
+Predictions: 251 · strong (P ≥ 70%): 68 on 38 events · strong by price status: PRICE_QUALITY_FAIL 5 · PRICE_UNAVAILABLE 63
 
 | # | Sport | Event | Start (UTC) | Market | Selection | P | P first snapshot | P current scan | σ | Engine | Calibration status | Stage A status | Why not assessable | Best clean price | Net EV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -11,7 +11,7 @@ Predictions: 251 · strong (P ≥ 70%): 68 on 38 events · strong by price statu
 | 3 | football | PSV Eindhoven v Willem II | 2026-10-31T17:45 | double_chance | 12 | 92.8% | 92.8% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 4 | football | Le Havre v Paris Saint Germain | 2026-10-30T18:00 | double_chance | X2 | 90.7% | 90.7% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 5 | football | Middlesbrough v Charlton Athletic | 2026-10-31T15:00 | double_chance | 1X | 90.3% | 90.3% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 6 | football | PSV Eindhoven v Willem II | 2026-10-31T17:45 | 1x2 | home | 88.3% | 88.3% | — | 2.2% | football_1x2.market_consensus | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.10 (smarkets) | -3.1% |
+| 6 | football | PSV Eindhoven v Willem II | 2026-10-31T17:45 | 1x2 | home | 88.3% | 88.3% | — | 2.2% | football_1x2.market_consensus | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | PRICE_STALE | — | — |
 | 7 | football | Feyenoord v Fortuna Sittard | 2026-10-31T15:30 | double_chance | 12 | 88.2% | 88.2% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 8 | football | Bayern Munich v Borussia Dortmund | 2026-10-31T17:30 | double_chance | 1X | 87.3% | 87.3% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 9 | football | Le Havre v Paris Saint Germain | 2026-10-30T18:00 | double_chance | 12 | 85.6% | 85.6% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
@@ -19,7 +19,7 @@ Predictions: 251 · strong (P ≥ 70%): 68 on 38 events · strong by price statu
 | 11 | football | Bayern Munich v Borussia Dortmund | 2026-10-31T17:30 | double_chance | 12 | 83.8% | 83.8% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 12 | football | Tottenham Hotspur v Crystal Palace | 2026-10-31T17:30 | double_chance | 1X | 83.0% | 83.0% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 13 | football | Norwich City v Watford | 2026-10-31T12:30 | double_chance | 1X | 81.9% | 81.9% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 14 | football | Feyenoord v Fortuna Sittard | 2026-10-31T15:30 | 1x2 | home | 81.2% | 81.2% | — | 2.2% | football_1x2.market_consensus | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.20 (smarkets) | -3.2% |
+| 14 | football | Feyenoord v Fortuna Sittard | 2026-10-31T15:30 | 1x2 | home | 81.2% | 81.2% | — | 2.2% | football_1x2.market_consensus | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | PRICE_STALE | — | — |
 | 15 | football | West Ham United v West Bromwich Albion | 2026-10-31T15:00 | double_chance | 1X | 81.1% | 81.1% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 16 | football | Millwall v Derby County | 2026-10-31T15:00 | double_chance | 1X | 80.4% | 80.4% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 17 | football | Manchester City v Brighton and Hove Albion | 2026-10-31T15:00 | double_chance | 1X | 79.7% | 79.7% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
@@ -37,7 +37,7 @@ Predictions: 251 · strong (P ≥ 70%): 68 on 38 events · strong by price statu
 | 29 | football | Heerenveen v NEC Nijmegen | 2026-10-31T17:45 | double_chance | 12 | 76.5% | 76.5% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 30 | football | Motherwell v St Mirren | 2026-10-31T15:00 | double_chance | 1X | 76.4% | 76.4% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 31 | football | Chelsea v Manchester United | 2026-10-31T12:30 | double_chance | 1X | 76.3% | 76.3% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 32 | football | Le Havre v Paris Saint Germain | 2026-10-30T18:00 | 1x2 | away | 76.2% | 76.2% | — | 1.7% | football_1x2.market_consensus | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.33 (coral) | -2.5% |
+| 32 | football | Le Havre v Paris Saint Germain | 2026-10-30T18:00 | 1x2 | away | 76.2% | 76.2% | — | 1.7% | football_1x2.market_consensus | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | PRICE_STALE | — | — |
 | 33 | football | FC Schalke 04 v RB Leipzig | 2026-10-31T14:30 | double_chance | 12 | 76.1% | 76.1% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 34 | football | Southampton v Queens Park Rangers | 2026-10-31T15:00 | double_chance | 1X | 76.1% | 76.1% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 35 | football | Southampton v Queens Park Rangers | 2026-10-31T15:00 | double_chance | 12 | 75.9% | 75.9% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
@@ -51,7 +51,7 @@ Predictions: 251 · strong (P ≥ 70%): 68 on 38 events · strong by price statu
 | 43 | football | Augsburg v SC Freiburg | 2026-10-31T14:30 | double_chance | 12 | 75.3% | 75.3% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 44 | football | Millwall v Derby County | 2026-10-31T15:00 | double_chance | 12 | 75.2% | 75.2% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 45 | football | Bayer Leverkusen v VfB Stuttgart | 2026-10-31T14:30 | double_chance | 1X | 74.9% | 74.9% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 46 | football | Middlesbrough v Charlton Athletic | 2026-10-31T15:00 | 1x2 | home | 74.7% | 74.7% | — | 1.7% | football_1x2.market_consensus | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.28 (ladbrokes) | -4.5% |
+| 46 | football | Middlesbrough v Charlton Athletic | 2026-10-31T15:00 | 1x2 | home | 74.7% | 74.7% | — | 1.7% | football_1x2.market_consensus | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | PRICE_STALE | — | — |
 | 47 | football | Stoke City v Preston North End | 2026-10-31T12:30 | double_chance | 12 | 74.7% | 74.7% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 48 | football | Aston Villa v Fulham | 2026-10-31T20:00 | double_chance | 12 | 74.6% | 74.6% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 49 | football | Nice v Rennes | 2026-10-30T18:00 | double_chance | 12 | 74.6% | 74.6% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
@@ -73,7 +73,7 @@ Predictions: 251 · strong (P ≥ 70%): 68 on 38 events · strong by price statu
 | 65 | football | Hull City v Ipswich Town | 2026-10-31T15:00 | double_chance | 12 | 71.7% | 71.7% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 66 | football | Coventry City v Sunderland | 2026-10-31T15:00 | double_chance | 12 | 71.5% | 71.5% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 67 | football | Lincoln City v Birmingham City | 2026-10-31T12:30 | double_chance | X2 | 71.4% | 71.4% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 68 | football | Bayern Munich v Borussia Dortmund | 2026-10-31T17:30 | 1x2 | home | 71.1% | 71.1% | — | 1.7% | football_1x2.market_consensus | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.37 (smarkets) | -3.3% |
+| 68 | football | Bayern Munich v Borussia Dortmund | 2026-10-31T17:30 | 1x2 | home | 71.1% | 71.1% | — | 1.7% | football_1x2.market_consensus | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | PRICE_STALE | — | — |
 
 P = P current scan when one exists, else P first snapshot (football 1X2: normalised H/D/A triplet; raw kept in the ledger). Ranking uses P only.
 ⟳ = start time rescheduled since first observation (est-1: the current provider start is used).
