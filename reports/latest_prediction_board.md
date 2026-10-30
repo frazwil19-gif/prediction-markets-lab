@@ -1,4 +1,4 @@
-# DAILY PREDICTION BOARD — 2026-10-29
+# DAILY PREDICTION BOARD — 2026-10-30
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
@@ -17,8 +17,8 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 86
 
 | Engine | Status | Predictions | Settled | Maturity | ≥80% settled | ≥80% pred → actual |
 |---|---|---|---|---|---|---|
-| football_1x2.market_consensus | VALIDATED_HISTORICAL / COLLECTING | 810 | 300 | EARLY | 1 | 82.3% → 100.0% |
-| football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 107 | 100 | EARLY | 0 | — → — |
+| football_1x2.market_consensus | VALIDATED_HISTORICAL / COLLECTING | 810 | 318 | EARLY | 1 | 82.3% → 100.0% |
+| football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 107 | 106 | EARLY | 0 | — → — |
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
 | atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 158 | 146 | EARLY | 25 | 87.7% → 76.0% |
 | wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 190 | 168 | EARLY | 31 | 89.3% → 80.6% |
@@ -32,7 +32,7 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 86
 - daily_scan: OK (last 2026-10-29T07:16:35.667478+00:00)
 - settlement: OK (last 2026-10-29T00:46:48.769846+00:00)
 - tennis_board: OK (last 2026-10-29T16:16:25.668256+00:00)
-- ci_tests: OK (last 2026-10-29T16:16:26.353471+00:00)
+- ci_tests: OK (last 2026-10-30T00:47:22.493672+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
