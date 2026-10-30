@@ -1,7 +1,7 @@
 {
  "card_version": "card-v1.2",
- "generated_at": "2026-10-29T16:16:28.812464+00:00",
- "stage_a_generated_at": "2026-10-29T16:16:27.842771+00:00",
+ "generated_at": "2026-10-30T02:05:07.045538+00:00",
+ "stage_a_generated_at": "2026-10-30T02:05:06.353814+00:00",
  "real_money_enabled": false,
  "mode": "PAPER \u2014 unattended prospective validation (real-money betting paused; nothing to place)",
  "summary": {
@@ -11,7 +11,7 @@
   "total_stake_gbp": 0.0,
   "exposure_pct_of_bankroll": 0.0,
   "strong_price_too_low": 7,
-  "research_predictions": 8
+  "research_predictions": 0
  },
  "rejection_reasons": {
   "ENGINE_STATUS_INELIGIBLE": 31,
@@ -694,112 +694,7 @@
    "min_bookmaker_odds": 1.42
   }
  ],
- "research": [
-  {
-   "sport": "football",
-   "competition": "I1",
-   "event_name": "Fiorentina v Atalanta",
-   "event_start": "2026-10-29T19:45:00+00:00",
-   "market": "total_corners",
-   "selection": "under 11.5",
-   "probability": 0.7993,
-   "fair_odds": 1.25,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
-   "competition": "I1",
-   "event_name": "Fiorentina v Atalanta",
-   "event_start": "2026-10-29T19:45:00+00:00",
-   "market": "total_corners",
-   "selection": "under 10.5",
-   "probability": 0.7087,
-   "fair_odds": 1.41,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
-   "competition": "I1",
-   "event_name": "Frosinone v Lecce",
-   "event_start": "2026-10-29T17:30:00+00:00",
-   "market": "total_corners",
-   "selection": "under 11.5",
-   "probability": 0.7,
-   "fair_odds": 1.43,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
-   "competition": "I1",
-   "event_name": "Frosinone v Lecce",
-   "event_start": "2026-10-29T17:30:00+00:00",
-   "market": "total_corners",
-   "selection": "over 8.5",
-   "probability": 0.6394,
-   "fair_odds": 1.56,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
-   "competition": "I1",
-   "event_name": "Fiorentina v Atalanta",
-   "event_start": "2026-10-29T19:45:00+00:00",
-   "market": "total_corners",
-   "selection": "under 9.5",
-   "probability": 0.5968,
-   "fair_odds": 1.68,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
-   "competition": "I1",
-   "event_name": "Frosinone v Lecce",
-   "event_start": "2026-10-29T17:30:00+00:00",
-   "market": "total_corners",
-   "selection": "under 10.5",
-   "probability": 0.5954,
-   "fair_odds": 1.68,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
-   "competition": "I1",
-   "event_name": "Fiorentina v Atalanta",
-   "event_start": "2026-10-29T19:45:00+00:00",
-   "market": "total_corners",
-   "selection": "over 8.5",
-   "probability": 0.5282,
-   "fair_odds": 1.89,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
-   "competition": "I1",
-   "event_name": "Frosinone v Lecce",
-   "event_start": "2026-10-29T17:30:00+00:00",
-   "market": "total_corners",
-   "selection": "over 9.5",
-   "probability": 0.5221,
-   "fair_odds": 1.92,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  }
- ],
+ "research": [],
  "live_policy": {
   "real_money_enabled": false,
   "money_eligibility": "registry",
