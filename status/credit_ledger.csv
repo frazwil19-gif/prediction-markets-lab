@@ -582,3 +582,19 @@ timestamp_utc,consumer,call,outcome,credits_charged,credits_saved_estimate,x_req
 2026-10-30T16:16:31.895149+00:00,tennis_prediction_board,odds:tennis_atp_swiss_indoors,SKIPPED_CREDIT_FLOOR,0,1,,,budget cap/floor
 2026-10-30T16:16:31.895251+00:00,tennis_prediction_board,odds:tennis_atp_vienna_open,SKIPPED_CREDIT_FLOOR,0,1,,,budget cap/floor
 2026-10-30T16:16:31.895320+00:00,tennis_prediction_board,odds:tennis_wta_pan_pacific_open,SKIPPED_CREDIT_FLOOR,0,1,,,budget cap/floor
+2026-10-31T07:16:22.012419+00:00,football_daily_scan,odds:soccer_epl,PAID,2,0,425,75,
+2026-10-31T07:16:22.012506+00:00,football_daily_scan,odds:soccer_efl_champ,PAID,2,0,427,73,
+2026-10-31T07:16:22.012537+00:00,football_daily_scan,odds:soccer_spl,PAID,2,0,429,71,
+2026-10-31T07:16:22.012574+00:00,football_daily_scan,odds:soccer_netherlands_eredivisie,PAID,1,0,430,70,
+2026-10-31T07:16:22.012601+00:00,football_daily_scan,odds:soccer_germany_bundesliga,PAID,1,0,431,69,
+2026-10-31T07:16:22.012627+00:00,football_daily_scan,odds:soccer_france_ligue_one,PAID,1,0,432,68,
+2026-10-31T07:16:22.012653+00:00,football_shadow_scan,odds:soccer_spain_la_liga,SKIPPED_FIXTURE_GATE,0,1,432,68,tier throttle: remaining 68 < 111.0
+2026-10-31T07:16:22.012687+00:00,football_shadow_scan,odds:soccer_italy_serie_a,SKIPPED_FIXTURE_GATE,0,1,432,68,tier throttle: remaining 68 < 111.0
+2026-10-31T07:16:22.012715+00:00,football_shadow_scan,odds:soccer_portugal_primeira_liga,SKIPPED_FIXTURE_GATE,0,1,432,68,tier throttle: remaining 68 < 111.0
+2026-10-31T07:16:22.012742+00:00,football_shadow_scan,odds:soccer_belgium_first_div,SKIPPED_FIXTURE_GATE,0,1,432,68,tier throttle: remaining 68 < 111.0
+2026-10-31T07:16:22.012766+00:00,football_shadow_scan,odds:soccer_england_league1,SKIPPED_FIXTURE_GATE,0,1,432,68,tier throttle: remaining 68 < 113.7
+2026-10-31T07:16:22.012804+00:00,football_shadow_scan,odds:soccer_england_league2,SKIPPED_FIXTURE_GATE,0,1,432,68,tier throttle: remaining 68 < 113.7
+2026-10-31T07:16:22.012827+00:00,football_shadow_scan,odds:soccer_spain_segunda_division,SKIPPED_FIXTURE_GATE,0,1,432,68,tier throttle: remaining 68 < 113.7
+2026-10-31T07:16:22.012850+00:00,football_shadow_scan,odds:soccer_germany_bundesliga2,SKIPPED_FIXTURE_GATE,0,1,432,68,tier throttle: remaining 68 < 113.7
+2026-10-31T07:16:22.012872+00:00,football_shadow_scan,odds:soccer_italy_serie_b,SKIPPED_FIXTURE_GATE,0,1,432,68,tier throttle: remaining 68 < 113.7
+2026-10-31T07:16:22.012894+00:00,football_shadow_scan,odds:soccer_france_ligue_two,SKIPPED_FIXTURE_GATE,0,1,432,68,tier throttle: remaining 68 < 113.7
