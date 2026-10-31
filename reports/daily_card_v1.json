@@ -1,6 +1,6 @@
 {
  "card_version": "card-v1.2",
- "generated_at": "2026-10-31T12:57:20.014643+00:00",
+ "generated_at": "2026-10-31T13:53:56.215299+00:00",
  "stage_a_generated_at": "2026-10-31T12:57:18.963373+00:00",
  "real_money_enabled": false,
  "mode": "PAPER \u2014 unattended prospective validation (real-money betting paused; nothing to place)",
@@ -11,7 +11,7 @@
   "total_stake_gbp": 0.0,
   "exposure_pct_of_bankroll": 0.0,
   "strong_price_too_low": 72,
-  "research_predictions": 312
+  "research_predictions": 308
  },
  "rejection_reasons": {
   "ENGINE_STATUS_INELIGIBLE": 266,
@@ -3655,19 +3655,6 @@
   },
   {
    "sport": "football",
-   "competition": "SP1",
-   "event_name": "Levante v Ath Madrid",
-   "event_start": "2026-10-31T13:00:00+00:00",
-   "market": "total_corners",
-   "selection": "under 11.5",
-   "probability": 0.7326,
-   "fair_odds": 1.36,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
    "competition": "N1",
    "event_name": "Groningen v Sparta Rotterdam",
    "event_start": "2026-11-01T15:45:00+00:00",
@@ -5046,19 +5033,6 @@
   },
   {
    "sport": "football",
-   "competition": "SP1",
-   "event_name": "Levante v Ath Madrid",
-   "event_start": "2026-10-31T13:00:00+00:00",
-   "market": "total_corners",
-   "selection": "under 10.5",
-   "probability": 0.6323,
-   "fair_odds": 1.58,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
    "competition": "E0",
    "event_name": "Man City v Brighton",
    "event_start": "2026-10-31T15:00:00+00:00",
@@ -5481,19 +5455,6 @@
    "market": "total_corners",
    "selection": "under 10.5",
    "probability": 0.609,
-   "fair_odds": 1.64,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
-   "competition": "SP1",
-   "event_name": "Levante v Ath Madrid",
-   "event_start": "2026-10-31T13:00:00+00:00",
-   "market": "total_corners",
-   "selection": "over 8.5",
-   "probability": 0.6079,
    "fair_odds": 1.64,
    "model": "corners-A-1.0",
    "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
@@ -7067,19 +7028,6 @@
    "market": "total_corners",
    "selection": "under 10.5",
    "probability": 0.5141,
-   "fair_odds": 1.95,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
-   "competition": "SP1",
-   "event_name": "Levante v Ath Madrid",
-   "event_start": "2026-10-31T13:00:00+00:00",
-   "market": "total_corners",
-   "selection": "under 9.5",
-   "probability": 0.514,
    "fair_odds": 1.95,
    "model": "corners-A-1.0",
    "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",

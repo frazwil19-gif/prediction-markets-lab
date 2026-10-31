@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-10-31T12:57Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-10-31T13:53Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 266 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 72 · research predictions: 312
+Predictions in the next window: 266 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 72 · research predictions: 308
 
 ## 1. Best predictions today
 
@@ -177,7 +177,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | PSV Eindhoven v Willem II (N1) | 2026-10-31 | total_corners | over 8.5 | 73.7% | 1.36 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Coventry v Sunderland (E0) | 2026-10-31 | total_corners | under 11.5 | 73.6% | 1.36 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Vallecano v Celta (SP1) | 2026-10-31 | total_corners | under 11.5 | 73.4% | 1.36 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Levante v Ath Madrid (SP1) | 2026-10-31 | total_corners | under 11.5 | 73.3% | 1.36 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Groningen v Sparta Rotterdam (N1) | 2026-11-01 | total_corners | over 8.5 | 73.0% | 1.37 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Strasbourg v Auxerre (F1) | 2026-11-01 | total_corners | under 11.5 | 72.9% | 1.37 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Liverpool v Arsenal (E0) | 2026-11-01 | total_corners | under 11.5 | 72.6% | 1.38 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -284,7 +283,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | PSV Eindhoven v Willem II (N1) | 2026-10-31 | total_corners | over 9.5 | 63.4% | 1.58 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Betis v Malaga (SP1) | 2026-10-31 | total_corners | over 8.5 | 63.3% | 1.58 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | La Coruna v Osasuna (SP1) | 2026-11-02 | total_corners | over 8.5 | 63.2% | 1.58 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Levante v Ath Madrid (SP1) | 2026-10-31 | total_corners | under 10.5 | 63.2% | 1.58 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Man City v Brighton (E0) | 2026-10-31 | total_corners | under 11.5 | 63.1% | 1.59 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Wolves v Cardiff (E1) | 2026-10-31 | total_corners | under 11.5 | 63.1% | 1.59 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Vallecano v Celta (SP1) | 2026-10-31 | total_corners | under 10.5 | 63.1% | 1.59 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -318,7 +316,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | Bologna v Monza (I1) | 2026-10-31 | total_corners | under 9.5 | 61.0% | 1.64 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Aston Villa v Fulham (E0) | 2026-10-31 | total_corners | under 10.5 | 61.0% | 1.64 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | La Coruna v Osasuna (SP1) | 2026-11-02 | total_corners | under 10.5 | 60.9% | 1.64 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Levante v Ath Madrid (SP1) | 2026-10-31 | total_corners | over 8.5 | 60.8% | 1.64 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Vallecano v Celta (SP1) | 2026-10-31 | total_corners | over 8.5 | 60.7% | 1.65 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Betis v Malaga (SP1) | 2026-10-31 | total_corners | under 10.5 | 60.7% | 1.65 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Cercle Brugge v Antwerp (B1) | 2026-11-01 | total_corners | over 9.5 | 60.6% | 1.65 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -440,7 +437,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | Bologna v Monza (I1) | 2026-10-31 | total_corners | over 8.5 | 51.6% | 1.94 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Vallecano v Celta (SP1) | 2026-10-31 | total_corners | under 9.5 | 51.5% | 1.94 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Bolton v Bristol City (E1) | 2026-10-31 | total_corners | under 10.5 | 51.4% | 1.95 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Levante v Ath Madrid (SP1) | 2026-10-31 | total_corners | under 9.5 | 51.4% | 1.95 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Excelsior v Twente (N1) | 2026-11-01 | total_corners | over 9.5 | 51.3% | 1.95 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Strasbourg v Auxerre (F1) | 2026-11-01 | total_corners | under 9.5 | 51.3% | 1.95 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Middlesbrough v Charlton (E1) | 2026-10-31 | total_corners | under 11.5 | 51.2% | 1.95 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
