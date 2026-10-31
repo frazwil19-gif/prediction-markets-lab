@@ -4,9 +4,9 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-10-31T07:16Z · events scanned 45 · valid predictions 294 · high-P (≥70%) 80 · priced 143 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 294 · new paper bets 0 · Money Card qualified 1
+Run 2026-10-31T12:57Z · events scanned 41 · valid predictions 266 · high-P (≥70%) 72 · priced 128 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 266 · new paper bets 0 · Money Card qualified 1
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 294 · P_BELOW_FLOOR 138 · NO_EXECUTABLE_PRICE 135 · NET_EV_NOT_POSITIVE 114 · COMMISSION_UNKNOWN 16 · PRICE_STALE 6
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 266 · PRICE_STALE 143 · P_BELOW_FLOOR 125 · NO_EXECUTABLE_PRICE 123 · NET_EV_NOT_POSITIVE 101 · COMMISSION_UNKNOWN 15
 
 ## Candidates (latest run, best price per prediction)
 
@@ -24,7 +24,6 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 294 · P_BELOW_FLOOR 138 · 
 | Middlesbrough v Charlton Athletic | 2026-10-31T15:00 | 12 | 84.4% | 1.18 | — | — | — | REJECT |
 | Bayern Munich v Borussia Dortmund | 2026-10-31T17:30 | 12 | 83.8% | 1.19 | — | — | — | REJECT |
 | Tottenham Hotspur v Crystal Palace | 2026-10-31T17:30 | 1X | 83.0% | 1.21 | — | — | — | REJECT |
-| Norwich City v Watford | 2026-10-31T12:30 | 1X | 81.9% | 1.22 | — | — | — | REJECT |
 | Excelsior v FC Twente Enschede | 2026-11-01T13:30 | X2 | 81.2% | 1.23 | — | — | — | REJECT |
 | Feyenoord v Fortuna Sittard | 2026-10-31T15:30 | home | 81.2% | 1.23 | 1.20 (smarkets) | 83.6% | -2.9% | REJECT |
 | West Ham United v West Bromwich Albion | 2026-10-31T15:00 | 1X | 81.1% | 1.23 | — | — | — | REJECT |
@@ -34,14 +33,12 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 294 · P_BELOW_FLOOR 138 · 
 | Falkirk F.C. v Celtic | 2026-11-01T13:00 | 12 | 80.3% | 1.25 | — | — | — | REJECT |
 | Manchester City v Brighton and Hove Albion | 2026-10-31T15:00 | 1X | 79.7% | 1.25 | — | — | — | REJECT |
 | Eintracht Frankfurt v Hamburger SV | 2026-11-01T16:30 | 12 | 79.2% | 1.26 | — | — | — | REJECT |
-| Stoke City v Preston North End | 2026-10-31T12:30 | 1X | 79.0% | 1.27 | — | — | — | REJECT |
 | Wolverhampton Wanderers v Cardiff City | 2026-10-31T15:00 | 1X | 79.0% | 1.27 | — | — | — | REJECT |
 | Excelsior v FC Twente Enschede | 2026-11-01T13:30 | 12 | 78.8% | 1.27 | — | — | — | REJECT |
 | Ajax v AZ Alkmaar | 2026-10-31T20:00 | 12 | 78.6% | 1.27 | — | — | — | REJECT |
 | Manchester City v Brighton and Hove Albion | 2026-10-31T15:00 | 12 | 78.5% | 1.27 | — | — | — | REJECT |
 | Tottenham Hotspur v Crystal Palace | 2026-10-31T17:30 | 12 | 78.4% | 1.28 | — | — | — | REJECT |
 | Swansea City v Blackburn Rovers | 2026-10-31T15:00 | 1X | 78.4% | 1.28 | — | — | — | REJECT |
-| Norwich City v Watford | 2026-10-31T12:30 | 12 | 78.1% | 1.28 | — | — | — | REJECT |
 | Ajax v AZ Alkmaar | 2026-10-31T20:00 | 1X | 78.0% | 1.28 | — | — | — | REJECT |
 | Bayer Leverkusen v VfB Stuttgart | 2026-10-31T14:30 | 12 | 77.9% | 1.28 | — | — | — | REJECT |
 | Wolverhampton Wanderers v Cardiff City | 2026-10-31T15:00 | 12 | 77.5% | 1.29 | — | — | — | REJECT |
@@ -50,8 +47,11 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 294 · P_BELOW_FLOOR 138 · 
 | Heerenveen v NEC Nijmegen | 2026-10-31T17:45 | 12 | 76.5% | 1.31 | — | — | — | REJECT |
 | Motherwell v St Mirren | 2026-10-31T15:00 | 1X | 76.4% | 1.31 | — | — | — | REJECT |
 | Groningen v Sparta Rotterdam | 2026-11-01T15:45 | 1X | 76.3% | 1.31 | — | — | — | REJECT |
-| Chelsea v Manchester United | 2026-10-31T12:30 | 1X | 76.3% | 1.31 | — | — | — | REJECT |
 | FC Schalke 04 v RB Leipzig | 2026-10-31T14:30 | 12 | 76.1% | 1.31 | — | — | — | REJECT |
+| Southampton v Queens Park Rangers | 2026-10-31T15:00 | 1X | 76.1% | 1.31 | — | — | — | REJECT |
+| Southampton v Queens Park Rangers | 2026-10-31T15:00 | 12 | 75.9% | 1.32 | — | — | — | REJECT |
+| Middlesbrough v Charlton Athletic | 2026-10-31T15:00 | home | 75.9% | 1.32 | 1.27 (betfair) | 79.6% | -4.6% | REJECT |
+| Strasbourg v Auxerre | 2026-11-01T14:00 | 1X | 75.9% | 1.32 | — | — | — | REJECT |
 
 ## Paper results (all time)
 

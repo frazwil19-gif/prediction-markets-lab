@@ -2,9 +2,11 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 45 · Valid predictions: 294 · Sports: football
-Counts: >=70: 80 · >=75: 53 · >=80: 20 · >=85: 8 · >=90: 4 · >=95: 1
-Settled yesterday: 42 · System: **HEALTHY** · API credits (last observed): 77
+> **SYSTEM DEGRADED: API credits below reserve: 68.** Predictions below may be incomplete or stale.
+
+Upcoming events: 41 · Valid predictions: 266 · Sports: football
+Counts: >=70: 72 · >=75: 48 · >=80: 19 · >=85: 8 · >=90: 4 · >=95: 1
+Settled yesterday: 42 · System: **DEGRADED** · API credits (last observed): 68
 
 ## Top predictions (P ≥ 80%)
 
@@ -22,7 +24,6 @@ Settled yesterday: 42 · System: **HEALTHY** · API credits (last observed): 77
 | football | Middlesbrough v Charlton Athletic | 2026-10-31T15:00 | double_chance | 12 | 84.4% | 1.18 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.16 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Bayern Munich v Borussia Dortmund | 2026-10-31T17:30 | double_chance | 12 | 83.8% | 1.19 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Tottenham Hotspur v Crystal Palace | 2026-10-31T17:30 | double_chance | 1X | 83.0% | 1.21 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Norwich City v Watford | 2026-10-31T12:30 | double_chance | 1X | 81.9% | 1.22 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Excelsior v FC Twente Enschede | 2026-11-01T13:30 | double_chance | X2 | 81.2% | 1.23 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.20 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | West Ham United v West Bromwich Albion | 2026-10-31T15:00 | double_chance | 1X | 81.1% | 1.23 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.21 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Feyenoord v Fortuna Sittard | 2026-10-31T15:30 | 1x2 | home | 81.0% | 1.24 | 80-84.9% | football_1x2.market_consensus@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.20 (odds_api:Smarkets) | no | yes |
@@ -49,8 +50,9 @@ Settled yesterday: 42 · System: **HEALTHY** · API credits (last observed): 77
 
 - daily_scan: OK (last 2026-10-31T07:16:24.295820+00:00)
 - settlement: OK (last 2026-10-31T00:39:52.557936+00:00)
-- tennis_board: OK (last 2026-10-30T16:16:31.894322+00:00)
-- ci_tests: OK (last 2026-10-31T07:16:24.844470+00:00)
+- tennis_board: OK (last 2026-10-31T12:57:16.530278+00:00)
+- ci_tests: OK (last 2026-10-31T12:57:17.266491+00:00)
+- Warnings: API credits below reserve: 68
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
