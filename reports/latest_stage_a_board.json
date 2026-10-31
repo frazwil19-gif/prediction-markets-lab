@@ -2,26 +2,26 @@
  "board_version": "stage-a-2",
  "product": "STAGE A PREDICTION BOARD (probability first; NOT a betting card)",
  "principle": "STRONG PREDICTION != VALID BET. Stage B (bet-selection) alone decides bets.",
- "generated_at": "2026-10-30T16:16:34.390164+00:00",
+ "generated_at": "2026-10-31T00:39:50.534453+00:00",
  "strong_prediction_min_probability": 0.7,
  "summary": {
-  "predictions": 251,
-  "strong_predictions": 68,
-  "strong_unique_events": 38,
+  "predictions": 219,
+  "strong_predictions": 61,
+  "strong_unique_events": 33,
   "strong_by_price_status": {
-   "PRICE_QUALITY_FAIL": 5,
-   "PRICE_UNAVAILABLE": 63
+   "PRICE_QUALITY_FAIL": 4,
+   "PRICE_UNAVAILABLE": 57
   },
   "all_by_price_status": {
-   "PRICE_QUALITY_FAIL": 137,
-   "PRICE_UNAVAILABLE": 114
+   "PRICE_QUALITY_FAIL": 120,
+   "PRICE_UNAVAILABLE": 99
   },
   "duplicate_prediction_rows_collapsed": 0,
   "strong_by_sport": {
-   "football": 68
+   "football": 61
   },
   "all_by_sport": {
-   "football": 251
+   "football": 219
   }
  },
  "predictions": [
@@ -164,52 +164,6 @@
    "rank": 3
   },
   {
-   "prediction_id": "cbeb8e51adedeadf",
-   "sport": "football",
-   "competition": "Ligue 1",
-   "event_key": "football|Ligue 1|Le Havre v Paris Saint Germain|2026-10-30T18:00:00+00:00",
-   "event_name": "Le Havre v Paris Saint Germain",
-   "event_start": "2026-10-30T18:00:00+00:00",
-   "event_start_original": "2026-10-30T18:00:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "double_chance",
-   "selection": "X2",
-   "probability": 0.906598,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.906598,
-   "p_current_scan": null,
-   "ledger_probability": 0.9065983000775351,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "2083.5",
-   "sigma": 0.006363,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.006363,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "90-94.9%",
-   "engine_id": "football_double_chance.derived_1x2",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS",
-   "strength": "STRONG_PREDICTION",
-   "price_status": "PRICE_UNAVAILABLE",
-   "stage_a_label": "STRONG_PREDICTION_PRICE_UNAVAILABLE",
-   "financially_assessable": false,
-   "price_status_reasons": "NO_EXECUTABLE_PRICE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 0,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 4
-  },
-  {
    "prediction_id": "8cf1d21c8be7458e",
    "sport": "football",
    "competition": "Championship",
@@ -253,7 +207,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 5
+   "rank": 4
   },
   {
    "prediction_id": "e4067c1ca24e7c81",
@@ -299,7 +253,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 6
+   "rank": 5
   },
   {
    "prediction_id": "45f99bf5167b8c16",
@@ -345,7 +299,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 7
+   "rank": 6
   },
   {
    "prediction_id": "7d205eaabbac3135",
@@ -391,53 +345,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 8
-  },
-  {
-   "prediction_id": "0ba591a585086185",
-   "sport": "football",
-   "competition": "Ligue 1",
-   "event_key": "football|Ligue 1|Le Havre v Paris Saint Germain|2026-10-30T18:00:00+00:00",
-   "event_name": "Le Havre v Paris Saint Germain",
-   "event_start": "2026-10-30T18:00:00+00:00",
-   "event_start_original": "2026-10-30T18:00:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "double_chance",
-   "selection": "12",
-   "probability": 0.855576,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.855576,
-   "p_current_scan": null,
-   "ledger_probability": 0.8555756444092758,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "2083.5",
-   "sigma": 0.006363,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.006363,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "85-89.9%",
-   "engine_id": "football_double_chance.derived_1x2",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS",
-   "strength": "STRONG_PREDICTION",
-   "price_status": "PRICE_UNAVAILABLE",
-   "stage_a_label": "STRONG_PREDICTION_PRICE_UNAVAILABLE",
-   "financially_assessable": false,
-   "price_status_reasons": "NO_EXECUTABLE_PRICE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 0,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 9
+   "rank": 7
   },
   {
    "prediction_id": "06382532a354952f",
@@ -483,7 +391,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 10
+   "rank": 8
   },
   {
    "prediction_id": "3b53e53f14de15db",
@@ -529,7 +437,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 11
+   "rank": 9
   },
   {
    "prediction_id": "9a11279ae9b04aa6",
@@ -575,7 +483,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 12
+   "rank": 10
   },
   {
    "prediction_id": "1f10041d103dfb92",
@@ -621,7 +529,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 13
+   "rank": 11
   },
   {
    "prediction_id": "744c63d41355a529",
@@ -667,7 +575,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 14
+   "rank": 12
   },
   {
    "prediction_id": "fa0712e52d1207d7",
@@ -713,7 +621,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 15
+   "rank": 13
   },
   {
    "prediction_id": "bbb4e45d013fd16d",
@@ -759,7 +667,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 16
+   "rank": 14
   },
   {
    "prediction_id": "afb6154e4d6b0941",
@@ -805,7 +713,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 17
+   "rank": 15
   },
   {
    "prediction_id": "bac431b6e08d1090",
@@ -851,7 +759,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 18
+   "rank": 16
   },
   {
    "prediction_id": "a959e2894c6d0acb",
@@ -897,7 +805,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 19
+   "rank": 17
   },
   {
    "prediction_id": "f0882ae20902d494",
@@ -943,7 +851,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 20
+   "rank": 18
   },
   {
    "prediction_id": "7445de2183758628",
@@ -989,7 +897,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 21
+   "rank": 19
   },
   {
    "prediction_id": "072771c924c6631b",
@@ -1035,7 +943,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 22
+   "rank": 20
   },
   {
    "prediction_id": "88342f4e6769e630",
@@ -1081,7 +989,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 23
+   "rank": 21
   },
   {
    "prediction_id": "6b6537330b8ebf10",
@@ -1127,7 +1035,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 24
+   "rank": 22
   },
   {
    "prediction_id": "db5b7e997d508f4c",
@@ -1173,7 +1081,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 25
+   "rank": 23
   },
   {
    "prediction_id": "521c83ee411619a6",
@@ -1219,7 +1127,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 26
+   "rank": 24
   },
   {
    "prediction_id": "fffa89c2b4eafcfa",
@@ -1265,7 +1173,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 27
+   "rank": 25
   },
   {
    "prediction_id": "3b107d31b5e57adc",
@@ -1311,7 +1219,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 28
+   "rank": 26
   },
   {
    "prediction_id": "ea334cdce5554eb0",
@@ -1357,7 +1265,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 29
+   "rank": 27
   },
   {
    "prediction_id": "576fb4ac4bc217fe",
@@ -1403,7 +1311,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 30
+   "rank": 28
   },
   {
    "prediction_id": "d4b35ba761ae8f87",
@@ -1449,53 +1357,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 31
-  },
-  {
-   "prediction_id": "53f44822ef6fe4d0",
-   "sport": "football",
-   "competition": "Ligue 1",
-   "event_key": "football|Ligue 1|Le Havre v Paris Saint Germain|2026-10-30T18:00:00+00:00",
-   "event_name": "Le Havre v Paris Saint Germain",
-   "event_start": "2026-10-30T18:00:00+00:00",
-   "event_start_original": "2026-10-30T18:00:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "1x2",
-   "selection": "away",
-   "probability": 0.762174,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.762174,
-   "p_current_scan": null,
-   "ledger_probability": 0.760341267166343,
-   "normalisation": "TRIPLET_NORMALISED",
-   "minutes_to_event_at_prediction": "2083.5",
-   "sigma": 0.016716,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.016716,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "75-79.9%",
-   "engine_id": "football_1x2.market_consensus",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS",
-   "strength": "STRONG_PREDICTION",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 32
+   "rank": 29
   },
   {
    "prediction_id": "629b2585262e1245",
@@ -1541,7 +1403,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 33
+   "rank": 30
   },
   {
    "prediction_id": "214900ba95309b4e",
@@ -1587,7 +1449,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 34
+   "rank": 31
   },
   {
    "prediction_id": "4d1dd25f5d114571",
@@ -1633,7 +1495,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 35
+   "rank": 32
   },
   {
    "prediction_id": "f7f1d25eb04a7972",
@@ -1679,7 +1541,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 36
+   "rank": 33
   },
   {
    "prediction_id": "49f92d9578d6d2ef",
@@ -1725,7 +1587,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 37
+   "rank": 34
   },
   {
    "prediction_id": "8ba1fb30362b9711",
@@ -1771,7 +1633,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 38
+   "rank": 35
   },
   {
    "prediction_id": "4e3d119abfca5782",
@@ -1817,7 +1679,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 39
+   "rank": 36
   },
   {
    "prediction_id": "193a90e471220317",
@@ -1863,7 +1725,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 40
+   "rank": 37
   },
   {
    "prediction_id": "4ccb4561c12cf123",
@@ -1909,53 +1771,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 41
-  },
-  {
-   "prediction_id": "cea5979b4f99be4d",
-   "sport": "football",
-   "competition": "Bundesliga",
-   "event_key": "football|Bundesliga|Elversberg v FSV Mainz 05|2026-10-30T19:30:00+00:00",
-   "event_name": "Elversberg v FSV Mainz 05",
-   "event_start": "2026-10-30T19:30:00+00:00",
-   "event_start_original": "2026-10-30T19:30:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "double_chance",
-   "selection": "12",
-   "probability": 0.753047,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.753047,
-   "p_current_scan": null,
-   "ledger_probability": 0.7530471657620025,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "2173.5",
-   "sigma": 0.003828,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.003828,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS D1 (Tier 1; recorded as shadow until verified): V2-18 EXPAND NOW; V2-19 approved; paper after first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "75-79.9%",
-   "engine_id": "football_double_chance.derived_1x2",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS D1 (Tier 1; recorded as shadow until verified): V2-18 EXPAND NOW; V2-19 approved; paper after first-row PASS",
-   "strength": "STRONG_PREDICTION",
-   "price_status": "PRICE_UNAVAILABLE",
-   "stage_a_label": "STRONG_PREDICTION_PRICE_UNAVAILABLE",
-   "financially_assessable": false,
-   "price_status_reasons": "NO_EXECUTABLE_PRICE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 0,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 42
+   "rank": 38
   },
   {
    "prediction_id": "1b59bbcdcb9cce76",
@@ -2001,7 +1817,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 43
+   "rank": 39
   },
   {
    "prediction_id": "f8f8f85ed8c3e27f",
@@ -2047,7 +1863,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 44
+   "rank": 40
   },
   {
    "prediction_id": "d64df964e4aff4f5",
@@ -2093,7 +1909,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 45
+   "rank": 41
   },
   {
    "prediction_id": "86c2ddf71c01164b",
@@ -2139,7 +1955,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 46
+   "rank": 42
   },
   {
    "prediction_id": "34fd56788274ba72",
@@ -2185,7 +2001,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 47
+   "rank": 43
   },
   {
    "prediction_id": "bff3d5c935f9fe70",
@@ -2231,53 +2047,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 48
-  },
-  {
-   "prediction_id": "2c74859174c0a6b1",
-   "sport": "football",
-   "competition": "Ligue 1",
-   "event_key": "football|Ligue 1|Nice v Rennes|2026-10-30T18:00:00+00:00",
-   "event_name": "Nice v Rennes",
-   "event_start": "2026-10-30T18:00:00+00:00",
-   "event_start_original": "2026-10-30T18:00:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "double_chance",
-   "selection": "12",
-   "probability": 0.745852,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.745852,
-   "p_current_scan": null,
-   "ledger_probability": 0.7458522134907138,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "2083.5",
-   "sigma": 0.003828,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.003828,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "70-74.9%",
-   "engine_id": "football_double_chance.derived_1x2",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS",
-   "strength": "STRONG_PREDICTION",
-   "price_status": "PRICE_UNAVAILABLE",
-   "stage_a_label": "STRONG_PREDICTION_PRICE_UNAVAILABLE",
-   "financially_assessable": false,
-   "price_status_reasons": "NO_EXECUTABLE_PRICE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 0,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 49
+   "rank": 44
   },
   {
    "prediction_id": "75f1d3906b403939",
@@ -2323,7 +2093,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 50
+   "rank": 45
   },
   {
    "prediction_id": "881470f3fe12b843",
@@ -2369,7 +2139,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 51
+   "rank": 46
   },
   {
    "prediction_id": "7dc7d4159cb991bb",
@@ -2415,53 +2185,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 52
-  },
-  {
-   "prediction_id": "2bdc855f3924247e",
-   "sport": "football",
-   "competition": "Ligue 1",
-   "event_key": "football|Ligue 1|Lille v RC Lens|2026-10-30T20:05:00+00:00",
-   "event_name": "Lille v RC Lens",
-   "event_start": "2026-10-30T20:05:00+00:00",
-   "event_start_original": "2026-10-30T20:05:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "double_chance",
-   "selection": "12",
-   "probability": 0.733084,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.733084,
-   "p_current_scan": null,
-   "ledger_probability": 0.7330835587260481,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "2208.5",
-   "sigma": 0.003828,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.003828,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "70-74.9%",
-   "engine_id": "football_double_chance.derived_1x2",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS",
-   "strength": "STRONG_PREDICTION",
-   "price_status": "PRICE_UNAVAILABLE",
-   "stage_a_label": "STRONG_PREDICTION_PRICE_UNAVAILABLE",
-   "financially_assessable": false,
-   "price_status_reasons": "NO_EXECUTABLE_PRICE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 0,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 53
+   "rank": 47
   },
   {
    "prediction_id": "570b78222c93f4b1",
@@ -2507,7 +2231,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 54
+   "rank": 48
   },
   {
    "prediction_id": "80f39485409c1088",
@@ -2553,7 +2277,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 55
+   "rank": 49
   },
   {
    "prediction_id": "369cfcd46bc69388",
@@ -2599,7 +2323,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 56
+   "rank": 50
   },
   {
    "prediction_id": "91854283082e14f2",
@@ -2645,7 +2369,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 57
+   "rank": 51
   },
   {
    "prediction_id": "9c3afa0cf388cc88",
@@ -2691,7 +2415,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 58
+   "rank": 52
   },
   {
    "prediction_id": "8ea99c3ce00144ed",
@@ -2737,7 +2461,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 59
+   "rank": 53
   },
   {
    "prediction_id": "524f626efbef40df",
@@ -2783,7 +2507,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 60
+   "rank": 54
   },
   {
    "prediction_id": "98bacd134999183f",
@@ -2829,7 +2553,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 61
+   "rank": 55
   },
   {
    "prediction_id": "368965330316d6dc",
@@ -2875,53 +2599,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 62
-  },
-  {
-   "prediction_id": "5e7834ced0215281",
-   "sport": "football",
-   "competition": "Championship",
-   "event_key": "football|Championship|Sheffield United v Wrexham AFC|2026-10-30T20:00:00+00:00",
-   "event_name": "Sheffield United v Wrexham AFC",
-   "event_start": "2026-10-30T20:00:00+00:00",
-   "event_start_original": "2026-10-30T20:00:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "double_chance",
-   "selection": "12",
-   "probability": 0.719773,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.719773,
-   "p_current_scan": null,
-   "ledger_probability": 0.7197728176737939,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "2203.5",
-   "sigma": 0.003828,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.003828,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS E1 (Tier 1; recorded as shadow until verified): V2-18 reference)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "70-74.9%",
-   "engine_id": "football_double_chance.derived_1x2",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS E1 (Tier 1; recorded as shadow until verified): V2-18 reference",
-   "strength": "STRONG_PREDICTION",
-   "price_status": "PRICE_UNAVAILABLE",
-   "stage_a_label": "STRONG_PREDICTION_PRICE_UNAVAILABLE",
-   "financially_assessable": false,
-   "price_status_reasons": "NO_EXECUTABLE_PRICE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 0,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 63
+   "rank": 56
   },
   {
    "prediction_id": "192c43727d5bd0c5",
@@ -2967,7 +2645,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 64
+   "rank": 57
   },
   {
    "prediction_id": "f48b81350f1367df",
@@ -3013,7 +2691,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 65
+   "rank": 58
   },
   {
    "prediction_id": "aa1239461e5aa0c7",
@@ -3059,7 +2737,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 66
+   "rank": 59
   },
   {
    "prediction_id": "de85bbbf7932f96e",
@@ -3105,7 +2783,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 67
+   "rank": 60
   },
   {
    "prediction_id": "1d00cbd2bdaa261c",
@@ -3151,53 +2829,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 68
-  },
-  {
-   "prediction_id": "cfc61a8215d101c7",
-   "sport": "football",
-   "competition": "Bundesliga",
-   "event_key": "football|Bundesliga|Elversberg v FSV Mainz 05|2026-10-30T19:30:00+00:00",
-   "event_name": "Elversberg v FSV Mainz 05",
-   "event_start": "2026-10-30T19:30:00+00:00",
-   "event_start_original": "2026-10-30T19:30:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "double_chance",
-   "selection": "X2",
-   "probability": 0.695319,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.695319,
-   "p_current_scan": null,
-   "ledger_probability": 0.6953188296509365,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "2173.5",
-   "sigma": 0.003828,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.003828,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS D1 (Tier 1; recorded as shadow until verified): V2-18 EXPAND NOW; V2-19 approved; paper after first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "65-69.9%",
-   "engine_id": "football_double_chance.derived_1x2",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS D1 (Tier 1; recorded as shadow until verified): V2-18 EXPAND NOW; V2-19 approved; paper after first-row PASS",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_UNAVAILABLE",
-   "stage_a_label": "PRICE_UNAVAILABLE",
-   "financially_assessable": false,
-   "price_status_reasons": "NO_EXECUTABLE_PRICE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 0,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 69
+   "rank": 61
   },
   {
    "prediction_id": "66af31866d8ce68f",
@@ -3243,7 +2875,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 70
+   "rank": 62
   },
   {
    "prediction_id": "b0637be5a6634bc8",
@@ -3289,7 +2921,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 71
+   "rank": 63
   },
   {
    "prediction_id": "efc3a49a7e7d903f",
@@ -3335,7 +2967,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 72
+   "rank": 64
   },
   {
    "prediction_id": "2fcba73209cbb5a1",
@@ -3381,7 +3013,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 73
+   "rank": 65
   },
   {
    "prediction_id": "1f1be66096286c1d",
@@ -3427,7 +3059,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 74
+   "rank": 66
   },
   {
    "prediction_id": "8a7045de246d7a79",
@@ -3473,7 +3105,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 75
+   "rank": 67
   },
   {
    "prediction_id": "e4b1cbccbb3b5a10",
@@ -3519,7 +3151,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 76
+   "rank": 68
   },
   {
    "prediction_id": "349de3d07358e5c0",
@@ -3565,7 +3197,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 77
+   "rank": 69
   },
   {
    "prediction_id": "93cc0cb34600cc8a",
@@ -3611,7 +3243,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 78
+   "rank": 70
   },
   {
    "prediction_id": "2beef84f1ad6a430",
@@ -3657,145 +3289,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 79
-  },
-  {
-   "prediction_id": "a1f4d4ff32be2f96",
-   "sport": "football",
-   "competition": "Championship",
-   "event_key": "football|Championship|Sheffield United v Wrexham AFC|2026-10-30T20:00:00+00:00",
-   "event_name": "Sheffield United v Wrexham AFC",
-   "event_start": "2026-10-30T20:00:00+00:00",
-   "event_start_original": "2026-10-30T20:00:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "double_chance",
-   "selection": "1X",
-   "probability": 0.661544,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.661544,
-   "p_current_scan": null,
-   "ledger_probability": 0.6615437927748418,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "2203.5",
-   "sigma": 0.003828,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.003828,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS E1 (Tier 1; recorded as shadow until verified): V2-18 reference)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "65-69.9%",
-   "engine_id": "football_double_chance.derived_1x2",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS E1 (Tier 1; recorded as shadow until verified): V2-18 reference",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_UNAVAILABLE",
-   "stage_a_label": "PRICE_UNAVAILABLE",
-   "financially_assessable": false,
-   "price_status_reasons": "NO_EXECUTABLE_PRICE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 0,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 80
-  },
-  {
-   "prediction_id": "9c00578983ddd7b0",
-   "sport": "football",
-   "competition": "Ligue 1",
-   "event_key": "football|Ligue 1|Nice v Rennes|2026-10-30T18:00:00+00:00",
-   "event_name": "Nice v Rennes",
-   "event_start": "2026-10-30T18:00:00+00:00",
-   "event_start_original": "2026-10-30T18:00:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "double_chance",
-   "selection": "X2",
-   "probability": 0.650676,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.650676,
-   "p_current_scan": null,
-   "ledger_probability": 0.6506762980146035,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "2083.5",
-   "sigma": 0.003828,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.003828,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "65-69.9%",
-   "engine_id": "football_double_chance.derived_1x2",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_UNAVAILABLE",
-   "stage_a_label": "PRICE_UNAVAILABLE",
-   "financially_assessable": false,
-   "price_status_reasons": "NO_EXECUTABLE_PRICE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 0,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 81
-  },
-  {
-   "prediction_id": "3ff20a2e6e66d3d2",
-   "sport": "football",
-   "competition": "Ligue 1",
-   "event_key": "football|Ligue 1|Lille v RC Lens|2026-10-30T20:05:00+00:00",
-   "event_name": "Lille v RC Lens",
-   "event_start": "2026-10-30T20:05:00+00:00",
-   "event_start_original": "2026-10-30T20:05:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "double_chance",
-   "selection": "1X",
-   "probability": 0.64731,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.64731,
-   "p_current_scan": null,
-   "ledger_probability": 0.6473100057594487,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "2208.5",
-   "sigma": 0.008133,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.008133,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "60-64.9%",
-   "engine_id": "football_double_chance.derived_1x2",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_UNAVAILABLE",
-   "stage_a_label": "PRICE_UNAVAILABLE",
-   "financially_assessable": false,
-   "price_status_reasons": "NO_EXECUTABLE_PRICE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 0,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 82
+   "rank": 71
   },
   {
    "prediction_id": "316eb65ca57bdf6c",
@@ -3841,7 +3335,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 83
+   "rank": 72
   },
   {
    "prediction_id": "1b0c34bd162daf76",
@@ -3887,7 +3381,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 84
+   "rank": 73
   },
   {
    "prediction_id": "65ef0c9a126f4385",
@@ -3933,99 +3427,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 85
-  },
-  {
-   "prediction_id": "896ae00a785da6a5",
-   "sport": "football",
-   "competition": "Ligue 1",
-   "event_key": "football|Ligue 1|Lille v RC Lens|2026-10-30T20:05:00+00:00",
-   "event_name": "Lille v RC Lens",
-   "event_start": "2026-10-30T20:05:00+00:00",
-   "event_start_original": "2026-10-30T20:05:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "double_chance",
-   "selection": "X2",
-   "probability": 0.619606,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.619606,
-   "p_current_scan": null,
-   "ledger_probability": 0.6196064355145032,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "2208.5",
-   "sigma": 0.008133,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.008133,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "60-64.9%",
-   "engine_id": "football_double_chance.derived_1x2",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_UNAVAILABLE",
-   "stage_a_label": "PRICE_UNAVAILABLE",
-   "financially_assessable": false,
-   "price_status_reasons": "NO_EXECUTABLE_PRICE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 0,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 86
-  },
-  {
-   "prediction_id": "a82c496e1317aec8",
-   "sport": "football",
-   "competition": "Championship",
-   "event_key": "football|Championship|Sheffield United v Wrexham AFC|2026-10-30T20:00:00+00:00",
-   "event_name": "Sheffield United v Wrexham AFC",
-   "event_start": "2026-10-30T20:00:00+00:00",
-   "event_start_original": "2026-10-30T20:00:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "double_chance",
-   "selection": "X2",
-   "probability": 0.618683,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.618683,
-   "p_current_scan": null,
-   "ledger_probability": 0.6186833895513643,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "2203.5",
-   "sigma": 0.008133,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.008133,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS E1 (Tier 1; recorded as shadow until verified): V2-18 reference)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "60-64.9%",
-   "engine_id": "football_double_chance.derived_1x2",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS E1 (Tier 1; recorded as shadow until verified): V2-18 reference",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_UNAVAILABLE",
-   "stage_a_label": "PRICE_UNAVAILABLE",
-   "financially_assessable": false,
-   "price_status_reasons": "NO_EXECUTABLE_PRICE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 0,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 87
+   "rank": 74
   },
   {
    "prediction_id": "71c98a210fd8b172",
@@ -4071,7 +3473,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 88
+   "rank": 75
   },
   {
    "prediction_id": "004f7e806c414a68",
@@ -4117,7 +3519,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 89
+   "rank": 76
   },
   {
    "prediction_id": "43d2e52d749d5f51",
@@ -4163,7 +3565,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 90
+   "rank": 77
   },
   {
    "prediction_id": "6c47b31f4a0ebac8",
@@ -4209,53 +3611,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 91
-  },
-  {
-   "prediction_id": "2cb7fcb2e1154503",
-   "sport": "football",
-   "competition": "Ligue 1",
-   "event_key": "football|Ligue 1|Nice v Rennes|2026-10-30T18:00:00+00:00",
-   "event_name": "Nice v Rennes",
-   "event_start": "2026-10-30T18:00:00+00:00",
-   "event_start_original": "2026-10-30T18:00:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "double_chance",
-   "selection": "1X",
-   "probability": 0.603471,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.603471,
-   "p_current_scan": null,
-   "ledger_probability": 0.6034714884946826,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "2083.5",
-   "sigma": 0.008133,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.008133,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "60-64.9%",
-   "engine_id": "football_double_chance.derived_1x2",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_UNAVAILABLE",
-   "stage_a_label": "PRICE_UNAVAILABLE",
-   "financially_assessable": false,
-   "price_status_reasons": "NO_EXECUTABLE_PRICE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 0,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 92
+   "rank": 78
   },
   {
    "prediction_id": "410f254c79992ad6",
@@ -4301,7 +3657,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 93
+   "rank": 79
   },
   {
    "prediction_id": "b98393ccb6a6649c",
@@ -4347,7 +3703,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 94
+   "rank": 80
   },
   {
    "prediction_id": "6676c9f26f1208b2",
@@ -4393,7 +3749,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 95
+   "rank": 81
   },
   {
    "prediction_id": "cf4faaf39317016c",
@@ -4439,7 +3795,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 96
+   "rank": 82
   },
   {
    "prediction_id": "f5bd5515c7339007",
@@ -4485,7 +3841,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 97
+   "rank": 83
   },
   {
    "prediction_id": "058190d3d454d381",
@@ -4531,7 +3887,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 98
+   "rank": 84
   },
   {
    "prediction_id": "45a1fbe5d76aebca",
@@ -4577,7 +3933,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 99
+   "rank": 85
   },
   {
    "prediction_id": "bbd3c0af8cfdc981",
@@ -4623,7 +3979,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 100
+   "rank": 86
   },
   {
    "prediction_id": "895e6c25e3d0b41f",
@@ -4669,7 +4025,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 101
+   "rank": 87
   },
   {
    "prediction_id": "ee7c8164872372b3",
@@ -4715,7 +4071,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 102
+   "rank": 88
   },
   {
    "prediction_id": "99dd1a86314f57e3",
@@ -4761,7 +4117,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 103
+   "rank": 89
   },
   {
    "prediction_id": "46ab68acc22fa5bb",
@@ -4807,7 +4163,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 104
+   "rank": 90
   },
   {
    "prediction_id": "b39e8935579e8870",
@@ -4853,7 +4209,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 105
+   "rank": 91
   },
   {
    "prediction_id": "5fcbff8ce1486123",
@@ -4899,7 +4255,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 106
+   "rank": 92
   },
   {
    "prediction_id": "5d0b3014c05925c1",
@@ -4945,7 +4301,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 107
+   "rank": 93
   },
   {
    "prediction_id": "8365ff41db148314",
@@ -4991,7 +4347,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 108
+   "rank": 94
   },
   {
    "prediction_id": "3859d63616a44852",
@@ -5037,7 +4393,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 109
+   "rank": 95
   },
   {
    "prediction_id": "8b593a3a1d0629a7",
@@ -5083,7 +4439,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 110
+   "rank": 96
   },
   {
    "prediction_id": "1199aaff147bee37",
@@ -5129,7 +4485,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 111
+   "rank": 97
   },
   {
    "prediction_id": "62e3faaa99c5b6ca",
@@ -5175,7 +4531,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 112
+   "rank": 98
   },
   {
    "prediction_id": "b4485c7e433a227d",
@@ -5221,7 +4577,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 113
+   "rank": 99
   },
   {
    "prediction_id": "9b1392485a9db14e",
@@ -5267,53 +4623,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 114
-  },
-  {
-   "prediction_id": "1f4d82111106bec2",
-   "sport": "football",
-   "competition": "Bundesliga",
-   "event_key": "football|Bundesliga|Elversberg v FSV Mainz 05|2026-10-30T19:30:00+00:00",
-   "event_name": "Elversberg v FSV Mainz 05",
-   "event_start": "2026-10-30T19:30:00+00:00",
-   "event_start_original": "2026-10-30T19:30:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "double_chance",
-   "selection": "1X",
-   "probability": 0.551634,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.551634,
-   "p_current_scan": null,
-   "ledger_probability": 0.5516340045870611,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "2173.5",
-   "sigma": 0.008133,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.008133,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS D1 (Tier 1; recorded as shadow until verified): V2-18 EXPAND NOW; V2-19 approved; paper after first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "55-59.9%",
-   "engine_id": "football_double_chance.derived_1x2",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS D1 (Tier 1; recorded as shadow until verified): V2-18 EXPAND NOW; V2-19 approved; paper after first-row PASS",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_UNAVAILABLE",
-   "stage_a_label": "PRICE_UNAVAILABLE",
-   "financially_assessable": false,
-   "price_status_reasons": "NO_EXECUTABLE_PRICE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 0,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 115
+   "rank": 100
   },
   {
    "prediction_id": "d1d63c260e6070c3",
@@ -5359,7 +4669,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 116
+   "rank": 101
   },
   {
    "prediction_id": "b9a66067b34c6333",
@@ -5405,7 +4715,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 117
+   "rank": 102
   },
   {
    "prediction_id": "a13ce2df414c3612",
@@ -5451,7 +4761,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 118
+   "rank": 103
   },
   {
    "prediction_id": "17aa5a06eebde8e8",
@@ -5497,7 +4807,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 119
+   "rank": 104
   },
   {
    "prediction_id": "487cddfcaffa175f",
@@ -5543,7 +4853,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 120
+   "rank": 105
   },
   {
    "prediction_id": "5525ba7ee5cca332",
@@ -5589,7 +4899,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 121
+   "rank": 106
   },
   {
    "prediction_id": "bedb33c922928a6e",
@@ -5635,7 +4945,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 122
+   "rank": 107
   },
   {
    "prediction_id": "7ab95162c86f418c",
@@ -5681,7 +4991,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 123
+   "rank": 108
   },
   {
    "prediction_id": "a9f273baf870bc0d",
@@ -5727,7 +5037,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 124
+   "rank": 109
   },
   {
    "prediction_id": "6c6071f618475398",
@@ -5773,7 +5083,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 125
+   "rank": 110
   },
   {
    "prediction_id": "18b485c1f457e277",
@@ -5819,7 +5129,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 126
+   "rank": 111
   },
   {
    "prediction_id": "71c9686535819d46",
@@ -5865,7 +5175,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 127
+   "rank": 112
   },
   {
    "prediction_id": "9d86ff0716ac7b27",
@@ -5911,7 +5221,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 128
+   "rank": 113
   },
   {
    "prediction_id": "44e4332194a9fb0b",
@@ -5957,7 +5267,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 129
+   "rank": 114
   },
   {
    "prediction_id": "789b25c45d54d8c0",
@@ -6003,7 +5313,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 130
+   "rank": 115
   },
   {
    "prediction_id": "4489e47f123c80d2",
@@ -6049,7 +5359,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 131
+   "rank": 116
   },
   {
    "prediction_id": "a9716d29fd3ec2cf",
@@ -6095,7 +5405,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 132
+   "rank": 117
   },
   {
    "prediction_id": "0cbe437c40ffa15d",
@@ -6141,7 +5451,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 133
+   "rank": 118
   },
   {
    "prediction_id": "3cda819c338f5d5c",
@@ -6187,7 +5497,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 134
+   "rank": 119
   },
   {
    "prediction_id": "98becfc74c8584c6",
@@ -6233,99 +5543,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 135
-  },
-  {
-   "prediction_id": "a7df1eb1becd4814",
-   "sport": "football",
-   "competition": "Championship",
-   "event_key": "football|Championship|Sheffield United v Wrexham AFC|2026-10-30T20:00:00+00:00",
-   "event_name": "Sheffield United v Wrexham AFC",
-   "event_start": "2026-10-30T20:00:00+00:00",
-   "event_start_original": "2026-10-30T20:00:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "over_under_2_5",
-   "selection": "under",
-   "probability": 0.502688,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.502688,
-   "p_current_scan": null,
-   "ledger_probability": 0.5026881720430109,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "2203.5",
-   "sigma": null,
-   "sigma_method": "NOT_ESTIMATED",
-   "sigma_calibration": null,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=4640; holdout DONE; >=80% coverage 0.001; good | PENDING FIRST-ROW PASS E1 (Tier 1; recorded as shadow until verified): V2-18 reference)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "50-54.9%",
-   "engine_id": "football_ou25.market",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=4640; holdout DONE; >=80% coverage 0.001; good | PENDING FIRST-ROW PASS E1 (Tier 1; recorded as shadow until verified): V2-18 reference",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "COMMISSION_UNKNOWN|PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 136
-  },
-  {
-   "prediction_id": "6c6de8015f73d797",
-   "sport": "football",
-   "competition": "Championship",
-   "event_key": "football|Championship|Sheffield United v Wrexham AFC|2026-10-30T20:00:00+00:00",
-   "event_name": "Sheffield United v Wrexham AFC",
-   "event_start": "2026-10-30T20:00:00+00:00",
-   "event_start_original": "2026-10-30T20:00:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "over_under_2_5",
-   "selection": "over",
-   "probability": 0.5,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-30T07:16:34.251332+00:00",
-   "p_first_snapshot": 0.5,
-   "p_current_scan": null,
-   "ledger_probability": 0.5,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "763.4",
-   "sigma": null,
-   "sigma_method": "NOT_ESTIMATED",
-   "sigma_calibration": null,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=4640; holdout DONE; >=80% coverage 0.001; good | PENDING FIRST-ROW PASS E1 (Tier 1; recorded as shadow until verified): V2-18 reference)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "50-54.9%",
-   "engine_id": "football_ou25.market",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-30T07:16:34.251332+00:00",
-   "historical_support": "hist n=4640; holdout DONE; >=80% coverage 0.001; good | PENDING FIRST-ROW PASS E1 (Tier 1; recorded as shadow until verified): V2-18 reference",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "COMMISSION_UNKNOWN|PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 2,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 137
+   "rank": 120
   },
   {
    "prediction_id": "6b178a080ac47009",
@@ -6371,7 +5589,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 138
+   "rank": 121
   },
   {
    "prediction_id": "20dbef290ad34a0d",
@@ -6417,7 +5635,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 139
+   "rank": 122
   },
   {
    "prediction_id": "fe620275a76943fd",
@@ -6463,7 +5681,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 140
+   "rank": 123
   },
   {
    "prediction_id": "fa7f88c615dd6e68",
@@ -6509,7 +5727,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 141
+   "rank": 124
   },
   {
    "prediction_id": "13876b9df8eca106",
@@ -6555,7 +5773,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 142
+   "rank": 125
   },
   {
    "prediction_id": "d21a4c48f5ea1afe",
@@ -6601,7 +5819,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 143
+   "rank": 126
   },
   {
    "prediction_id": "32f4b9a51e4a492a",
@@ -6647,7 +5865,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 144
+   "rank": 127
   },
   {
    "prediction_id": "500ac2cead49f4b3",
@@ -6693,7 +5911,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 145
+   "rank": 128
   },
   {
    "prediction_id": "17d8d0369a4fa16c",
@@ -6739,7 +5957,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 146
+   "rank": 129
   },
   {
    "prediction_id": "d3ad6e6b2510e92a",
@@ -6785,7 +6003,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 147
+   "rank": 130
   },
   {
    "prediction_id": "7bded671cd401c50",
@@ -6831,53 +6049,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 148
-  },
-  {
-   "prediction_id": "f0c0ec24e772bc01",
-   "sport": "football",
-   "competition": "Bundesliga",
-   "event_key": "football|Bundesliga|Elversberg v FSV Mainz 05|2026-10-30T19:30:00+00:00",
-   "event_name": "Elversberg v FSV Mainz 05",
-   "event_start": "2026-10-30T19:30:00+00:00",
-   "event_start_original": "2026-10-30T19:30:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "1x2",
-   "selection": "away",
-   "probability": 0.448366,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.448366,
-   "p_current_scan": null,
-   "ledger_probability": 0.4498816101026046,
-   "normalisation": "TRIPLET_NORMALISED",
-   "minutes_to_event_at_prediction": "2173.5",
-   "sigma": 0.001813,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.001813,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS D1 (Tier 1; recorded as shadow until verified): V2-18 EXPAND NOW; V2-19 approved; paper after first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "<50%",
-   "engine_id": "football_1x2.market_consensus",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS D1 (Tier 1; recorded as shadow until verified): V2-18 EXPAND NOW; V2-19 approved; paper after first-row PASS",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 149
+   "rank": 131
   },
   {
    "prediction_id": "166c8c0c2b8d3484",
@@ -6923,7 +6095,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 150
+   "rank": 132
   },
   {
    "prediction_id": "62ef2fe2d58a1bf4",
@@ -6969,7 +6141,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 151
+   "rank": 133
   },
   {
    "prediction_id": "7e063cfdbd900610",
@@ -7015,7 +6187,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 152
+   "rank": 134
   },
   {
    "prediction_id": "aa3c609c68d152c1",
@@ -7061,7 +6233,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 153
+   "rank": 135
   },
   {
    "prediction_id": "65bbfea59f479197",
@@ -7107,7 +6279,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 154
+   "rank": 136
   },
   {
    "prediction_id": "5c3afcd2fc0c23ff",
@@ -7153,7 +6325,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 155
+   "rank": 137
   },
   {
    "prediction_id": "cf137b04fa59707a",
@@ -7199,7 +6371,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 156
+   "rank": 138
   },
   {
    "prediction_id": "bd0897fa73591f01",
@@ -7245,7 +6417,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 157
+   "rank": 139
   },
   {
    "prediction_id": "dc1a4721a0946c45",
@@ -7291,7 +6463,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 158
+   "rank": 140
   },
   {
    "prediction_id": "b966cb03609cb8f2",
@@ -7337,7 +6509,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 159
+   "rank": 141
   },
   {
    "prediction_id": "0597ef50909af47c",
@@ -7383,7 +6555,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 160
+   "rank": 142
   },
   {
    "prediction_id": "9f9bdec3bf54a699",
@@ -7429,7 +6601,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 161
+   "rank": 143
   },
   {
    "prediction_id": "c740c50a7aaf18a8",
@@ -7475,7 +6647,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 162
+   "rank": 144
   },
   {
    "prediction_id": "df7c75b7792f6f12",
@@ -7521,7 +6693,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 163
+   "rank": 145
   },
   {
    "prediction_id": "56c40fd64a45e81c",
@@ -7567,7 +6739,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 164
+   "rank": 146
   },
   {
    "prediction_id": "aa1a4af1aedc5c2b",
@@ -7613,53 +6785,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 165
-  },
-  {
-   "prediction_id": "6f2439060be5ade5",
-   "sport": "football",
-   "competition": "Ligue 1",
-   "event_key": "football|Ligue 1|Nice v Rennes|2026-10-30T18:00:00+00:00",
-   "event_name": "Nice v Rennes",
-   "event_start": "2026-10-30T18:00:00+00:00",
-   "event_start_original": "2026-10-30T18:00:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "1x2",
-   "selection": "away",
-   "probability": 0.396529,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.396529,
-   "p_current_scan": null,
-   "ledger_probability": 0.3973376021568793,
-   "normalisation": "TRIPLET_NORMALISED",
-   "minutes_to_event_at_prediction": "2083.5",
-   "sigma": 0.001813,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.001813,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "<50%",
-   "engine_id": "football_1x2.market_consensus",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 166
+   "rank": 147
   },
   {
    "prediction_id": "3f8e30a0cfe04eca",
@@ -7705,99 +6831,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 167
-  },
-  {
-   "prediction_id": "da94bf5afa51c62a",
-   "sport": "football",
-   "competition": "Championship",
-   "event_key": "football|Championship|Sheffield United v Wrexham AFC|2026-10-30T20:00:00+00:00",
-   "event_name": "Sheffield United v Wrexham AFC",
-   "event_start": "2026-10-30T20:00:00+00:00",
-   "event_start_original": "2026-10-30T20:00:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "1x2",
-   "selection": "home",
-   "probability": 0.381317,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.381317,
-   "p_current_scan": null,
-   "ledger_probability": 0.3829220845704924,
-   "normalisation": "TRIPLET_NORMALISED",
-   "minutes_to_event_at_prediction": "2203.5",
-   "sigma": 0.001813,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.001813,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS E1 (Tier 1; recorded as shadow until verified): V2-18 reference)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "<50%",
-   "engine_id": "football_1x2.market_consensus",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS E1 (Tier 1; recorded as shadow until verified): V2-18 reference",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 168
-  },
-  {
-   "prediction_id": "037a006bdc146646",
-   "sport": "football",
-   "competition": "Ligue 1",
-   "event_key": "football|Ligue 1|Lille v RC Lens|2026-10-30T20:05:00+00:00",
-   "event_name": "Lille v RC Lens",
-   "event_start": "2026-10-30T20:05:00+00:00",
-   "event_start_original": "2026-10-30T20:05:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "1x2",
-   "selection": "home",
-   "probability": 0.380394,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.380394,
-   "p_current_scan": null,
-   "ledger_probability": 0.3822393822393823,
-   "normalisation": "TRIPLET_NORMALISED",
-   "minutes_to_event_at_prediction": "2208.5",
-   "sigma": 0.001813,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.001813,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "<50%",
-   "engine_id": "football_1x2.market_consensus",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 169
+   "rank": 148
   },
   {
    "prediction_id": "f01d727ad4fa79a1",
@@ -7843,7 +6877,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 170
+   "rank": 149
   },
   {
    "prediction_id": "497c1e4ec2ae7530",
@@ -7889,145 +6923,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 171
-  },
-  {
-   "prediction_id": "17e63d6c32b74f4e",
-   "sport": "football",
-   "competition": "Ligue 1",
-   "event_key": "football|Ligue 1|Lille v RC Lens|2026-10-30T20:05:00+00:00",
-   "event_name": "Lille v RC Lens",
-   "event_start": "2026-10-30T20:05:00+00:00",
-   "event_start_original": "2026-10-30T20:05:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "1x2",
-   "selection": "away",
-   "probability": 0.35269,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.35269,
-   "p_current_scan": null,
-   "ledger_probability": 0.35440138347992367,
-   "normalisation": "TRIPLET_NORMALISED",
-   "minutes_to_event_at_prediction": "2208.5",
-   "sigma": 0.001813,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.001813,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "<50%",
-   "engine_id": "football_1x2.market_consensus",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 172
-  },
-  {
-   "prediction_id": "e3e9d90a9d66ad7c",
-   "sport": "football",
-   "competition": "Ligue 1",
-   "event_key": "football|Ligue 1|Nice v Rennes|2026-10-30T18:00:00+00:00",
-   "event_name": "Nice v Rennes",
-   "event_start": "2026-10-30T18:00:00+00:00",
-   "event_start_original": "2026-10-30T18:00:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "1x2",
-   "selection": "home",
-   "probability": 0.349324,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.349324,
-   "p_current_scan": null,
-   "ledger_probability": 0.35003647429166135,
-   "normalisation": "TRIPLET_NORMALISED",
-   "minutes_to_event_at_prediction": "2083.5",
-   "sigma": 0.001813,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.001813,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "<50%",
-   "engine_id": "football_1x2.market_consensus",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 173
-  },
-  {
-   "prediction_id": "9b0c5c2de6eda3d2",
-   "sport": "football",
-   "competition": "Championship",
-   "event_key": "football|Championship|Sheffield United v Wrexham AFC|2026-10-30T20:00:00+00:00",
-   "event_name": "Sheffield United v Wrexham AFC",
-   "event_start": "2026-10-30T20:00:00+00:00",
-   "event_start_original": "2026-10-30T20:00:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "1x2",
-   "selection": "away",
-   "probability": 0.338456,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.338456,
-   "p_current_scan": null,
-   "ledger_probability": 0.3398812243033349,
-   "normalisation": "TRIPLET_NORMALISED",
-   "minutes_to_event_at_prediction": "2203.5",
-   "sigma": 0.001813,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.001813,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS E1 (Tier 1; recorded as shadow until verified): V2-18 reference)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "<50%",
-   "engine_id": "football_1x2.market_consensus",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS E1 (Tier 1; recorded as shadow until verified): V2-18 reference",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 174
+   "rank": 150
   },
   {
    "prediction_id": "06576afe64bc3714",
@@ -8073,7 +6969,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 175
+   "rank": 151
   },
   {
    "prediction_id": "6fd6409421858638",
@@ -8119,7 +7015,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 176
+   "rank": 152
   },
   {
    "prediction_id": "f4a5593dcbd010c3",
@@ -8165,7 +7061,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 177
+   "rank": 153
   },
   {
    "prediction_id": "ea7252b0b09135ec",
@@ -8211,7 +7107,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 178
+   "rank": 154
   },
   {
    "prediction_id": "62638a374b73d0c4",
@@ -8257,7 +7153,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 179
+   "rank": 155
   },
   {
    "prediction_id": "9f063c15d35e6125",
@@ -8303,7 +7199,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 180
+   "rank": 156
   },
   {
    "prediction_id": "2213cadcf6a397bb",
@@ -8349,7 +7245,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 181
+   "rank": 157
   },
   {
    "prediction_id": "4ee8378f1f75f475",
@@ -8395,53 +7291,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 182
-  },
-  {
-   "prediction_id": "2116583d478fdb6d",
-   "sport": "football",
-   "competition": "Bundesliga",
-   "event_key": "football|Bundesliga|Elversberg v FSV Mainz 05|2026-10-30T19:30:00+00:00",
-   "event_name": "Elversberg v FSV Mainz 05",
-   "event_start": "2026-10-30T19:30:00+00:00",
-   "event_start_original": "2026-10-30T19:30:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "1x2",
-   "selection": "home",
-   "probability": 0.304681,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.304681,
-   "p_current_scan": null,
-   "ledger_probability": 0.3057110862262038,
-   "normalisation": "TRIPLET_NORMALISED",
-   "minutes_to_event_at_prediction": "2173.5",
-   "sigma": 0.001813,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.001813,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS D1 (Tier 1; recorded as shadow until verified): V2-18 EXPAND NOW; V2-19 approved; paper after first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "<50%",
-   "engine_id": "football_1x2.market_consensus",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS D1 (Tier 1; recorded as shadow until verified): V2-18 EXPAND NOW; V2-19 approved; paper after first-row PASS",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 183
+   "rank": 158
   },
   {
    "prediction_id": "53a52ffa51c53f61",
@@ -8487,7 +7337,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 184
+   "rank": 159
   },
   {
    "prediction_id": "4b7f609a054f9efe",
@@ -8533,7 +7383,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 185
+   "rank": 160
   },
   {
    "prediction_id": "4cca84522e5bbca8",
@@ -8579,7 +7429,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 186
+   "rank": 161
   },
   {
    "prediction_id": "d39c072e7e6ea8ef",
@@ -8625,7 +7475,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 187
+   "rank": 162
   },
   {
    "prediction_id": "f8d85b19b1050d09",
@@ -8671,53 +7521,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 188
-  },
-  {
-   "prediction_id": "c3df4bdcde3880d9",
-   "sport": "football",
-   "competition": "Championship",
-   "event_key": "football|Championship|Sheffield United v Wrexham AFC|2026-10-30T20:00:00+00:00",
-   "event_name": "Sheffield United v Wrexham AFC",
-   "event_start": "2026-10-30T20:00:00+00:00",
-   "event_start_original": "2026-10-30T20:00:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "1x2",
-   "selection": "draw",
-   "probability": 0.280227,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.280227,
-   "p_current_scan": null,
-   "ledger_probability": 0.2814070351758794,
-   "normalisation": "TRIPLET_NORMALISED",
-   "minutes_to_event_at_prediction": "2203.5",
-   "sigma": 0.001813,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.001813,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS E1 (Tier 1; recorded as shadow until verified): V2-18 reference)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "<50%",
-   "engine_id": "football_1x2.market_consensus",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS E1 (Tier 1; recorded as shadow until verified): V2-18 reference",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 189
+   "rank": 163
   },
   {
    "prediction_id": "2b2cad12b4f3779d",
@@ -8763,7 +7567,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 190
+   "rank": 164
   },
   {
    "prediction_id": "e857fb26d3bd3401",
@@ -8809,7 +7613,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 191
+   "rank": 165
   },
   {
    "prediction_id": "93447ccdc7df1547",
@@ -8855,7 +7659,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 192
+   "rank": 166
   },
   {
    "prediction_id": "d3f257c0760769b0",
@@ -8901,7 +7705,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 193
+   "rank": 167
   },
   {
    "prediction_id": "a403c90f87d508a7",
@@ -8947,7 +7751,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 194
+   "rank": 168
   },
   {
    "prediction_id": "95acc464d8013a6b",
@@ -8993,7 +7797,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 195
+   "rank": 169
   },
   {
    "prediction_id": "61c13582fa1d2dd3",
@@ -9039,7 +7843,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 196
+   "rank": 170
   },
   {
    "prediction_id": "1972863c3ad60690",
@@ -9085,7 +7889,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 197
+   "rank": 171
   },
   {
    "prediction_id": "5788c49f2f883b26",
@@ -9131,53 +7935,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 198
-  },
-  {
-   "prediction_id": "a91be8e3b22bccd7",
-   "sport": "football",
-   "competition": "Ligue 1",
-   "event_key": "football|Ligue 1|Lille v RC Lens|2026-10-30T20:05:00+00:00",
-   "event_name": "Lille v RC Lens",
-   "event_start": "2026-10-30T20:05:00+00:00",
-   "event_start_original": "2026-10-30T20:05:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "1x2",
-   "selection": "draw",
-   "probability": 0.266916,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.266916,
-   "p_current_scan": null,
-   "ledger_probability": 0.2682116238219895,
-   "normalisation": "TRIPLET_NORMALISED",
-   "minutes_to_event_at_prediction": "2208.5",
-   "sigma": 0.001813,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.001813,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "<50%",
-   "engine_id": "football_1x2.market_consensus",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 199
+   "rank": 172
   },
   {
    "prediction_id": "3359d632bc386b21",
@@ -9223,7 +7981,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 200
+   "rank": 173
   },
   {
    "prediction_id": "a3fdce20b94642bd",
@@ -9269,7 +8027,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 201
+   "rank": 174
   },
   {
    "prediction_id": "18f3ee549d832779",
@@ -9315,53 +8073,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 202
-  },
-  {
-   "prediction_id": "c493bb4fc6e4a062",
-   "sport": "football",
-   "competition": "Ligue 1",
-   "event_key": "football|Ligue 1|Nice v Rennes|2026-10-30T18:00:00+00:00",
-   "event_name": "Nice v Rennes",
-   "event_start": "2026-10-30T18:00:00+00:00",
-   "event_start_original": "2026-10-30T18:00:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "1x2",
-   "selection": "draw",
-   "probability": 0.254148,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.254148,
-   "p_current_scan": null,
-   "ledger_probability": 0.25466635854689124,
-   "normalisation": "TRIPLET_NORMALISED",
-   "minutes_to_event_at_prediction": "2083.5",
-   "sigma": 0.001813,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.001813,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "<50%",
-   "engine_id": "football_1x2.market_consensus",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 203
+   "rank": 175
   },
   {
    "prediction_id": "fac5f077ad29c035",
@@ -9407,7 +8119,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 204
+   "rank": 176
   },
   {
    "prediction_id": "ebd9b89428a221be",
@@ -9453,7 +8165,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 205
+   "rank": 177
   },
   {
    "prediction_id": "5c7e3a1b1b0dde6c",
@@ -9499,7 +8211,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 206
+   "rank": 178
   },
   {
    "prediction_id": "825e7f54eb15a16d",
@@ -9545,7 +8257,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 207
+   "rank": 179
   },
   {
    "prediction_id": "9963447af3acc690",
@@ -9591,7 +8303,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 208
+   "rank": 180
   },
   {
    "prediction_id": "65b4dae40decbbf2",
@@ -9637,53 +8349,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 209
-  },
-  {
-   "prediction_id": "bf11e76bbf2f379f",
-   "sport": "football",
-   "competition": "Bundesliga",
-   "event_key": "football|Bundesliga|Elversberg v FSV Mainz 05|2026-10-30T19:30:00+00:00",
-   "event_name": "Elversberg v FSV Mainz 05",
-   "event_start": "2026-10-30T19:30:00+00:00",
-   "event_start_original": "2026-10-30T19:30:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "1x2",
-   "selection": "draw",
-   "probability": 0.246953,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.246953,
-   "p_current_scan": null,
-   "ledger_probability": 0.24778761061946902,
-   "normalisation": "TRIPLET_NORMALISED",
-   "minutes_to_event_at_prediction": "2173.5",
-   "sigma": 0.001813,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.001813,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS D1 (Tier 1; recorded as shadow until verified): V2-18 EXPAND NOW; V2-19 approved; paper after first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "<50%",
-   "engine_id": "football_1x2.market_consensus",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS D1 (Tier 1; recorded as shadow until verified): V2-18 EXPAND NOW; V2-19 approved; paper after first-row PASS",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 210
+   "rank": 181
   },
   {
    "prediction_id": "bf3af91db089ad9e",
@@ -9729,7 +8395,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 211
+   "rank": 182
   },
   {
    "prediction_id": "723a24de5e2eb543",
@@ -9775,7 +8441,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 212
+   "rank": 183
   },
   {
    "prediction_id": "93958daef5e12173",
@@ -9821,7 +8487,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 213
+   "rank": 184
   },
   {
    "prediction_id": "16cf0cab3b017694",
@@ -9867,7 +8533,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 214
+   "rank": 185
   },
   {
    "prediction_id": "eeb94a1d6cc714a3",
@@ -9913,7 +8579,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 215
+   "rank": 186
   },
   {
    "prediction_id": "31af1f2d1378811d",
@@ -9959,7 +8625,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 216
+   "rank": 187
   },
   {
    "prediction_id": "f90738aff76aab4c",
@@ -10005,7 +8671,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 217
+   "rank": 188
   },
   {
    "prediction_id": "1a9e38766c90a7a4",
@@ -10051,7 +8717,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 218
+   "rank": 189
   },
   {
    "prediction_id": "29f8d699557f9175",
@@ -10097,53 +8763,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 219
-  },
-  {
-   "prediction_id": "9aef1c420d82155c",
-   "sport": "football",
-   "competition": "Ligue 1",
-   "event_key": "football|Ligue 1|Le Havre v Paris Saint Germain|2026-10-30T18:00:00+00:00",
-   "event_name": "Le Havre v Paris Saint Germain",
-   "event_start": "2026-10-30T18:00:00+00:00",
-   "event_start_original": "2026-10-30T18:00:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "double_chance",
-   "selection": "1X",
-   "probability": 0.237826,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.237826,
-   "p_current_scan": null,
-   "ledger_probability": 0.23782605551318897,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "2083.5",
-   "sigma": 0.010008,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.010008,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "<50%",
-   "engine_id": "football_double_chance.derived_1x2",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5897; holdout SEALED, NOT OPENED (2026/27 Aug-Dec; opens >= 2027-01-03); >=80% coverage 0.315; slope 1.09 val / 0.95 conf (CIs incl. 1); >=80% 86.3->87.1; >=90% 92.8->95.0 (under-confident at top, reported not corrected); live estimator football_double_chance.derived_1x2@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_UNAVAILABLE",
-   "stage_a_label": "PRICE_UNAVAILABLE",
-   "financially_assessable": false,
-   "price_status_reasons": "NO_EXECUTABLE_PRICE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 0,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 220
+   "rank": 190
   },
   {
    "prediction_id": "508144f600197c3b",
@@ -10189,7 +8809,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 221
+   "rank": 191
   },
   {
    "prediction_id": "83368b5dbb563b37",
@@ -10235,7 +8855,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 222
+   "rank": 192
   },
   {
    "prediction_id": "80f5ea25df6390ab",
@@ -10281,7 +8901,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 223
+   "rank": 193
   },
   {
    "prediction_id": "f34b856d58335da1",
@@ -10327,7 +8947,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 224
+   "rank": 194
   },
   {
    "prediction_id": "ae32f138769fcfe1",
@@ -10373,7 +8993,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 225
+   "rank": 195
   },
   {
    "prediction_id": "d83ae36914f94edd",
@@ -10419,7 +9039,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 226
+   "rank": 196
   },
   {
    "prediction_id": "eec58195e1262a95",
@@ -10465,7 +9085,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 227
+   "rank": 197
   },
   {
    "prediction_id": "32898a2ab5ca8efb",
@@ -10511,7 +9131,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 228
+   "rank": 198
   },
   {
    "prediction_id": "1bcd67bbc557f6a0",
@@ -10557,7 +9177,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 229
+   "rank": 199
   },
   {
    "prediction_id": "a959aa1b7e70d94c",
@@ -10603,7 +9223,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 230
+   "rank": 200
   },
   {
    "prediction_id": "571874c8fe5459bf",
@@ -10649,7 +9269,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 231
+   "rank": 201
   },
   {
    "prediction_id": "32e6aed57df08367",
@@ -10695,7 +9315,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 232
+   "rank": 202
   },
   {
    "prediction_id": "97add05e7f101177",
@@ -10741,7 +9361,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 233
+   "rank": 203
   },
   {
    "prediction_id": "e6b131758a9dc523",
@@ -10787,7 +9407,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 234
+   "rank": 204
   },
   {
    "prediction_id": "b760a91fdcca379c",
@@ -10833,7 +9453,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 235
+   "rank": 205
   },
   {
    "prediction_id": "b5305c75b19da4d4",
@@ -10879,7 +9499,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 236
+   "rank": 206
   },
   {
    "prediction_id": "1ed90824a9be2741",
@@ -10925,7 +9545,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 237
+   "rank": 207
   },
   {
    "prediction_id": "9462d4abcc7350cb",
@@ -10971,7 +9591,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 238
+   "rank": 208
   },
   {
    "prediction_id": "d2b025929886f5c2",
@@ -11017,7 +9637,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 239
+   "rank": 209
   },
   {
    "prediction_id": "cee2296873635d22",
@@ -11063,7 +9683,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 240
+   "rank": 210
   },
   {
    "prediction_id": "b2f62c15eec20be2",
@@ -11109,7 +9729,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 241
+   "rank": 211
   },
   {
    "prediction_id": "a8826927a9feb0f1",
@@ -11155,53 +9775,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 242
-  },
-  {
-   "prediction_id": "ce1d2af1f039dba0",
-   "sport": "football",
-   "competition": "Ligue 1",
-   "event_key": "football|Ligue 1|Le Havre v Paris Saint Germain|2026-10-30T18:00:00+00:00",
-   "event_name": "Le Havre v Paris Saint Germain",
-   "event_start": "2026-10-30T18:00:00+00:00",
-   "event_start_original": "2026-10-30T18:00:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "1x2",
-   "selection": "draw",
-   "probability": 0.144424,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.144424,
-   "p_current_scan": null,
-   "ledger_probability": 0.1440770815295614,
-   "normalisation": "TRIPLET_NORMALISED",
-   "minutes_to_event_at_prediction": "2083.5",
-   "sigma": 0.001813,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.001813,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "<50%",
-   "engine_id": "football_1x2.market_consensus",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 243
+   "rank": 212
   },
   {
    "prediction_id": "7698ddd8dda6e862",
@@ -11247,7 +9821,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 244
+   "rank": 213
   },
   {
    "prediction_id": "be65141ada06e6db",
@@ -11293,7 +9867,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 245
+   "rank": 214
   },
   {
    "prediction_id": "d09417c0546ff5af",
@@ -11339,7 +9913,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 246
+   "rank": 215
   },
   {
    "prediction_id": "13cb8e735c0ade2b",
@@ -11385,53 +9959,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 247
-  },
-  {
-   "prediction_id": "cc0abadb89d0908c",
-   "sport": "football",
-   "competition": "Ligue 1",
-   "event_key": "football|Ligue 1|Le Havre v Paris Saint Germain|2026-10-30T18:00:00+00:00",
-   "event_name": "Le Havre v Paris Saint Germain",
-   "event_start": "2026-10-30T18:00:00+00:00",
-   "event_start_original": "2026-10-30T18:00:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "1x2",
-   "selection": "home",
-   "probability": 0.093402,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-10-29T07:16:31.921454+00:00",
-   "p_first_snapshot": 0.093402,
-   "p_current_scan": null,
-   "ledger_probability": 0.09317711184991365,
-   "normalisation": "TRIPLET_NORMALISED",
-   "minutes_to_event_at_prediction": "2083.5",
-   "sigma": 0.001813,
-   "sigma_method": "HIST_BAND_CLUSTERED_SE (closing estimator; live-timing bias excluded)",
-   "sigma_calibration": 0.001813,
-   "calibration_status": "LEAGUE_SHADOW_NOT_TRANSFERRED (hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "<50%",
-   "engine_id": "football_1x2.market_consensus",
-   "engine_version": "1",
-   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
-   "prediction_timestamp": "2026-10-29T07:16:31.921454+00:00",
-   "historical_support": "hist n=5776; holdout DONE (2024/25); >=80% coverage 0.033; slope 1.06-1.09 (slightly flat); de-vig study verdict C; live estimator football_1x2.market_consensus@1-live (calibration transfer NOT_ASSUMED) | PENDING FIRST-ROW PASS F1 (Tier 1; recorded as shadow until verified): V2-18 grade A; was excluded only by the 425 planning cap. Paper APPROVED by Fraser 2026-10-01 (final football coverage approval) pending its own first-row PASS",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 248
+   "rank": 216
   },
   {
    "prediction_id": "35ab7ed931444a70",
@@ -11477,7 +10005,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 249
+   "rank": 217
   },
   {
    "prediction_id": "a4be5c31645e1320",
@@ -11523,7 +10051,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 250
+   "rank": 218
   },
   {
    "prediction_id": "4bedb1cfd74a210a",
@@ -11569,7 +10097,7 @@
    "price_observed_at": "2026-10-30T07:16:34.251332+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 251
+   "rank": 219
   }
  ]
 }
