@@ -1,22 +1,22 @@
 {
- "generated_at": "2026-10-31T12:57:19.579964+00:00",
+ "generated_at": "2026-10-31T16:16:39.768114+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-4",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 97,
+  "runs": 98,
   "totals_over_runs": {
-   "events_scanned": 3607,
-   "valid_predictions": 12695,
-   "high_p_candidates": 3605,
-   "priced_candidates": 6588,
+   "events_scanned": 3627,
+   "valid_predictions": 12819,
+   "high_p_candidates": 3639,
+   "priced_candidates": 6650,
    "PAPER_BET": 22,
    "MULTI_RESEARCH_ELIGIBLE": 195,
    "WATCH": 67,
-   "REJECT": 12723,
+   "REJECT": 12847,
    "paper_bets_added": 12,
-   "money_card_qualified": 11
+   "money_card_qualified": 12
   },
   "note": "per-run counts summed; a prediction re-evaluated in several runs is counted in each run",
   "days_evaluated": 33,
@@ -59,17 +59,17 @@
   }
  },
  "latest_run": {
-  "run_at": "2026-10-31T12:57:19.579964+00:00",
-  "trigger": "schedule",
+  "run_at": "2026-10-31T16:16:39.768114+00:00",
+  "trigger": "workflow_dispatch",
   "rule_version": "bsv2-4",
-  "events_scanned": "41",
-  "valid_predictions": "266",
-  "high_p_candidates": "72",
-  "priced_candidates": "128",
+  "events_scanned": "20",
+  "valid_predictions": "124",
+  "high_p_candidates": "34",
+  "priced_candidates": "62",
   "PAPER_BET": "0",
   "MULTI_RESEARCH_ELIGIBLE": "0",
   "WATCH": "0",
-  "REJECT": "266",
+  "REJECT": "124",
   "paper_bets_added": "0",
   "snapshots_added": "0",
   "money_card_qualified": "1",
@@ -77,30 +77,30 @@
  },
  "latest_decisions": {
   "decisions": {
-   "REJECT": 266
+   "REJECT": 124
   },
   "reason_counts": {
-   "ENGINE_STATUS_INELIGIBLE": 266,
-   "PRICE_STALE": 143,
-   "P_BELOW_FLOOR": 125,
-   "NO_EXECUTABLE_PRICE": 123,
-   "NET_EV_NOT_POSITIVE": 101,
-   "COMMISSION_UNKNOWN": 15
+   "ENGINE_STATUS_INELIGIBLE": 124,
+   "PRICE_STALE": 64,
+   "P_BELOW_FLOOR": 60,
+   "NO_EXECUTABLE_PRICE": 60,
+   "NET_EV_NOT_POSITIVE": 51,
+   "COMMISSION_UNKNOWN": 2
   },
   "by_sport": {
    "football": {
-    "REJECT": 266
+    "REJECT": 124
    }
   },
   "by_engine": {
    "football_1x2.market_consensus": {
-    "REJECT": 123
+    "REJECT": 60
    },
    "football_double_chance.derived_1x2": {
-    "REJECT": 123
+    "REJECT": 60
    },
    "football_ou25.market": {
-    "REJECT": 20
+    "REJECT": 4
    }
   }
  },
