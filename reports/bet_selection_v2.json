@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-11-01T07:16:27.692009+00:00",
+ "generated_at": "2026-11-01T13:42:38.451429+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-4",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 99,
+  "runs": 100,
   "totals_over_runs": {
-   "events_scanned": 3663,
-   "valid_predictions": 13038,
-   "high_p_candidates": 3699,
-   "priced_candidates": 6753,
+   "events_scanned": 3733,
+   "valid_predictions": 13237,
+   "high_p_candidates": 3754,
+   "priced_candidates": 6839,
    "PAPER_BET": 22,
    "MULTI_RESEARCH_ELIGIBLE": 195,
    "WATCH": 67,
-   "REJECT": 13066,
+   "REJECT": 13283,
    "paper_bets_added": 12,
    "money_card_qualified": 12
   },
@@ -60,47 +60,74 @@
   }
  },
  "latest_run": {
-  "run_at": "2026-11-01T07:16:27.692009+00:00",
-  "trigger": "workflow_dispatch",
+  "run_at": "2026-11-01T13:42:38.451429+00:00",
+  "trigger": "schedule",
   "rule_version": "bsv2-4",
-  "events_scanned": "36",
-  "valid_predictions": "219",
-  "high_p_candidates": "60",
-  "priced_candidates": "103",
+  "events_scanned": "70",
+  "valid_predictions": "199",
+  "high_p_candidates": "55",
+  "priced_candidates": "86",
   "PAPER_BET": "0",
   "MULTI_RESEARCH_ELIGIBLE": "0",
   "WATCH": "0",
-  "REJECT": "219",
+  "REJECT": "217",
   "paper_bets_added": "0",
-  "snapshots_added": "111",
+  "snapshots_added": "255",
   "money_card_qualified": "0",
   "football_fixtures_on_card": "100"
  },
  "latest_decisions": {
   "decisions": {
-   "REJECT": 219
+   "REJECT": 217
   },
   "reason_counts": {
-   "ENGINE_STATUS_INELIGIBLE": 219,
-   "P_BELOW_FLOOR": 108,
-   "NO_EXECUTABLE_PRICE": 108,
-   "NET_EV_NOT_POSITIVE": 74,
-   "COMMISSION_UNKNOWN": 8
+   "ENGINE_STATUS_INELIGIBLE": 176,
+   "PRICE_STALE": 89,
+   "P_BELOW_FLOOR": 87,
+   "NO_EXECUTABLE_PRICE": 87,
+   "NET_EV_NOT_POSITIVE": 81,
+   "COMMISSION_UNKNOWN": 26,
+   "PREDICTION_NOT_VALID": 18,
+   "PROBABILITY_NOT_SAME_SNAPSHOT": 18
   },
   "by_sport": {
+   "americanfootball": {
+    "REJECT": 13
+   },
+   "basketball": {
+    "REJECT": 4
+   },
    "football": {
-    "REJECT": 219
+    "REJECT": 176
+   },
+   "icehockey": {
+    "REJECT": 5
+   },
+   "tennis": {
+    "REJECT": 19
    }
   },
   "by_engine": {
+   "atp_match_winner.betfair_market": {
+    "REJECT": 19
+   },
    "football_1x2.market_consensus": {
-    "REJECT": 108
+    "REJECT": 87
    },
    "football_double_chance.derived_1x2": {
-    "REJECT": 108
+    "REJECT": 87
    },
    "football_ou25.market": {
-    "REJECT": 3
+    "REJECT": 2
+   },
+   "nba_moneyline.market": {
+    "REJECT": 4
+   },
+   "nfl_moneyline.market": {
+    "REJECT": 13
+   },
+   "nhl_moneyline.market": {
+    "REJECT": 5
    }
   }
  },

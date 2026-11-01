@@ -622,3 +622,6 @@ timestamp_utc,consumer,call,outcome,credits_charged,credits_saved_estimate,x_req
 2026-11-01T07:16:24.702654+00:00,football_shadow_scan,odds:soccer_germany_bundesliga2,SKIPPED_FIXTURE_GATE,0,1,17,483,tier throttle: remaining 483 < 511.0
 2026-11-01T07:16:24.702676+00:00,football_shadow_scan,odds:soccer_italy_serie_b,SKIPPED_FIXTURE_GATE,0,1,17,483,tier throttle: remaining 483 < 511.0
 2026-11-01T07:16:24.702698+00:00,football_shadow_scan,odds:soccer_france_ligue_two,SKIPPED_FIXTURE_GATE,0,1,17,483,tier throttle: remaining 483 < 511.0
+2026-11-01T13:42:33.184120+00:00,tennis_prediction_board,odds:tennis_atp_paris_masters,PAID,1,0,24,476,
+2026-11-01T13:42:33.667132+00:00,tennis_prediction_board,odds:tennis_atp_swiss_indoors,PAID,1,0,25,475,
+2026-11-01T13:42:33.903855+00:00,tennis_prediction_board,odds:tennis_atp_vienna_open,SKIPPED_FIXTURE_GATE,0,1,25,475,no not-yet-started event listed

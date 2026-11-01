@@ -4,9 +4,9 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-01T07:16Z · events scanned 36 · valid predictions 219 · high-P (≥70%) 60 · priced 103 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 219 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-01T13:42Z · events scanned 70 · valid predictions 199 · high-P (≥70%) 55 · priced 86 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 217 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 219 · P_BELOW_FLOOR 108 · NO_EXECUTABLE_PRICE 108 · NET_EV_NOT_POSITIVE 74 · COMMISSION_UNKNOWN 8
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 176 · PRICE_STALE 89 · P_BELOW_FLOOR 87 · NO_EXECUTABLE_PRICE 87 · NET_EV_NOT_POSITIVE 81 · COMMISSION_UNKNOWN 26 · PREDICTION_NOT_VALID 18 · PROBABILITY_NOT_SAME_SNAPSHOT 18
 
 ## Candidates (latest run, best price per prediction)
 
@@ -14,30 +14,27 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 219 · P_BELOW_FLOOR 108 · 
 |---|---|---|---|---|---|---|---|---|
 | Benfica v Alverca | 2026-11-02T20:15 | 1X | 93.1% | 1.07 | — | — | — | REJECT |
 | Real Racing Club de Santander v Real Madrid | 2026-11-01T15:15 | X2 | 91.5% | 1.09 | — | — | — | REJECT |
-| Como v Venezia | 2026-11-01T11:30 | 1X | 88.9% | 1.12 | — | — | — | REJECT |
 | Real Racing Club de Santander v Real Madrid | 2026-11-01T15:15 | 12 | 87.4% | 1.14 | — | — | — | REJECT |
 | Benfica v Alverca | 2026-11-02T20:15 | 12 | 87.4% | 1.14 | — | — | — | REJECT |
 | Lyon v Angers | 2026-11-01T16:15 | 1X | 86.7% | 1.15 | — | — | — | REJECT |
 | Lazio v Cagliari | 2026-11-01T14:00 | 1X | 86.3% | 1.16 | — | — | — | REJECT |
-| Falkirk F.C. v Celtic | 2026-11-01T13:00 | X2 | 84.6% | 1.18 | — | — | — | REJECT |
+| Tennessee Titans @ Cincinnati Bengals | 2026-11-01T18:00 | Cincinnati Bengals | 85.6% | 1.17 | 1.15 (matchbook) | — | — | REJECT |
 | Charleroi v RAAL La Louvière | 2026-11-01T18:15 | 1X | 84.6% | 1.18 | — | — | — | REJECT |
 | Atalanta BC v Parma | 2026-11-02T19:45 | 1X | 84.3% | 1.19 | — | — | — | REJECT |
-| Como v Venezia | 2026-11-01T11:30 | 12 | 83.7% | 1.20 | — | — | — | REJECT |
 | Braga v Famalicão | 2026-11-01T20:30 | 1X | 81.6% | 1.23 | — | — | — | REJECT |
-| Excelsior v FC Twente Enschede | 2026-11-01T13:30 | X2 | 81.2% | 1.23 | — | — | — | REJECT |
 | Lyon v Angers | 2026-11-01T16:15 | 12 | 80.9% | 1.24 | — | — | — | REJECT |
 | Eintracht Frankfurt v Hamburger SV | 2026-11-01T16:30 | 1X | 80.7% | 1.24 | — | — | — | REJECT |
 | Benfica v Alverca | 2026-11-02T20:15 | home | 80.4% | 1.24 | 1.19 (smarkets) | 84.3% | -4.6% | REJECT |
-| Falkirk F.C. v Celtic | 2026-11-01T13:00 | 12 | 80.3% | 1.25 | — | — | — | REJECT |
+| Indianapolis Colts @ Jacksonville Jaguars | 2026-11-01T18:00 | Jacksonville Jaguars | 80.3% | 1.24 | 1.23 (matchbook) | — | — | REJECT |
 | Sint Truiden v Leuven | 2026-11-01T15:00 | 1X | 80.3% | 1.25 | — | — | — | REJECT |
 | Lommel SK v Gent | 2026-11-01T17:30 | X2 | 80.0% | 1.25 | — | — | — | REJECT |
 | Eintracht Frankfurt v Hamburger SV | 2026-11-01T16:30 | 12 | 79.2% | 1.26 | — | — | — | REJECT |
 | Real Racing Club de Santander v Real Madrid | 2026-11-01T15:15 | away | 79.0% | 1.27 | 1.25 (coral) | 80.0% | -1.2% | REJECT |
 | Arouca v Nacional | 2026-11-01T15:30 | 1X | 78.9% | 1.27 | — | — | — | REJECT |
-| Excelsior v FC Twente Enschede | 2026-11-01T13:30 | 12 | 78.8% | 1.27 | — | — | — | REJECT |
 | Atalanta BC v Parma | 2026-11-02T19:45 | 12 | 78.8% | 1.27 | — | — | — | REJECT |
 | Lazio v Cagliari | 2026-11-01T14:00 | 12 | 78.5% | 1.27 | — | — | — | REJECT |
 | Charleroi v RAAL La Louvière | 2026-11-01T18:15 | 12 | 77.9% | 1.28 | — | — | — | REJECT |
+| Alejandro Tabilo v Rafael Jodar | 2026-11-02T10:00 | Rafael Jodar | 77.3% | 1.29 | 1.22 (betano_uk) | 82.0% | -5.7% | REJECT |
 | Académico de Viseu v Rio Ave FC | 2026-11-01T18:00 | 1X | 77.1% | 1.30 | — | — | — | REJECT |
 | Groningen v Sparta Rotterdam | 2026-11-01T15:45 | 12 | 77.0% | 1.30 | — | — | — | REJECT |
 | Sint Truiden v Leuven | 2026-11-01T15:00 | 12 | 76.7% | 1.30 | — | — | — | REJECT |
@@ -48,10 +45,13 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 219 · P_BELOW_FLOOR 108 · 
 | Marseille v Toulouse | 2026-11-01T19:45 | 12 | 75.5% | 1.32 | — | — | — | REJECT |
 | Lommel SK v Gent | 2026-11-01T17:30 | 12 | 75.5% | 1.32 | — | — | — | REJECT |
 | Arouca v Nacional | 2026-11-01T15:30 | 12 | 74.9% | 1.33 | — | — | — | REJECT |
-| SC Telstar v FC Utrecht | 2026-11-01T13:30 | 12 | 74.7% | 1.34 | — | — | — | REJECT |
-| Cercle Brugge KSV v Royal Antwerp | 2026-11-01T12:30 | 12 | 74.6% | 1.34 | — | — | — | REJECT |
-| FC Zwolle v ADO Den Haag | 2026-11-01T11:15 | 12 | 74.5% | 1.34 | — | — | — | REJECT |
 | Sassuolo v Fiorentina | 2026-11-02T17:30 | 12 | 74.1% | 1.35 | — | — | — | REJECT |
+| Braga v Famalicão | 2026-11-01T20:30 | 12 | 73.9% | 1.35 | — | — | — | REJECT |
+| New England Patriots @ Miami Dolphins | 2026-11-01T21:25 | New England Patriots | 73.9% | 1.35 | 1.32 (matchbook) | — | — | REJECT |
+| Athletic Bilbao v Real Sociedad | 2026-11-01T20:00 | 12 | 73.8% | 1.35 | — | — | — | REJECT |
+| Union Berlin v 1. FC Köln | 2026-11-01T14:30 | 12 | 73.6% | 1.36 | — | — | — | REJECT |
+| Marseille v Toulouse | 2026-11-01T19:45 | 1X | 73.5% | 1.36 | — | — | — | REJECT |
+| Arizona Cardinals @ Dallas Cowboys | 2026-11-01T18:00 | Dallas Cowboys | 73.1% | 1.37 | 1.34 (smarkets) | 75.0% | -2.6% | REJECT |
 
 ## Paper results (all time)
 
