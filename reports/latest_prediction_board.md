@@ -1,25 +1,17 @@
-# DAILY PREDICTION BOARD — 2026-10-31
+# DAILY PREDICTION BOARD — 2026-11-01
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-> **SYSTEM DEGRADED: API credits below reserve: 68.** Predictions below may be incomplete or stale.
-
-Upcoming events: 20 · Valid predictions: 124 · Sports: football
-Counts: >=70: 34 · >=75: 24 · >=80: 12 · >=85: 5 · >=90: 2 · >=95: 1
-Settled yesterday: 42 · System: **DEGRADED** · API credits (last observed): 68
+Upcoming events: 12 · Valid predictions: 74 · Sports: football
+Counts: >=70: 19 · >=75: 13 · >=80: 6 · >=85: 1 · >=90: 0 · >=95: 0
+Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 498
 
 ## Top predictions (P ≥ 80%)
 
 | Sport | Event | Start (UTC) | Market | Selection | P | Fair | Band | Engine | Evidence | Price (source) | Single | Multi-research |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| football | PSV Eindhoven v Willem II | 2026-10-31T17:45 | double_chance | 1X | 95.5% | 1.05 | 95%+ | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.03 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | PSV Eindhoven v Willem II | 2026-10-31T17:45 | double_chance | 12 | 92.8% | 1.08 | 90-94.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.05 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | PSV Eindhoven v Willem II | 2026-10-31T17:45 | 1x2 | home | 88.2% | 1.13 | 85-89.9% | football_1x2.market_consensus@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.10 (odds_api:Smarkets) | no | yes |
-| football | Bayern Munich v Borussia Dortmund | 2026-10-31T17:30 | double_chance | 1X | 87.3% | 1.15 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.12 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Lyon v Angers | 2026-11-01T16:15 | double_chance | 1X | 86.7% | 1.15 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.14 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Falkirk F.C. v Celtic | 2026-11-01T13:00 | double_chance | X2 | 84.6% | 1.18 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.16 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Bayern Munich v Borussia Dortmund | 2026-10-31T17:30 | double_chance | 12 | 83.8% | 1.19 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Tottenham Hotspur v Crystal Palace | 2026-10-31T17:30 | double_chance | 1X | 83.0% | 1.21 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Excelsior v FC Twente Enschede | 2026-11-01T13:30 | double_chance | X2 | 81.2% | 1.23 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.20 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Lyon v Angers | 2026-11-01T16:15 | double_chance | 12 | 80.9% | 1.24 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.22 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Eintracht Frankfurt v Hamburger SV | 2026-11-01T16:30 | double_chance | 1X | 80.7% | 1.24 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.21 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
@@ -44,8 +36,7 @@ Settled yesterday: 42 · System: **DEGRADED** · API credits (last observed): 68
 - daily_scan: OK (last 2026-10-31T07:16:24.295820+00:00)
 - settlement: OK (last 2026-10-31T00:39:52.557936+00:00)
 - tennis_board: OK (last 2026-10-31T16:16:36.269428+00:00)
-- ci_tests: OK (last 2026-10-31T16:16:37.071052+00:00)
-- Warnings: API credits below reserve: 68
+- ci_tests: OK (last 2026-11-01T01:20:37.400737+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
