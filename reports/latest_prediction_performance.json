@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02T07:16:38.416761+00:00",
+ "generated_at": "2026-11-02T16:16:40.084549+00:00",
  "protocol": "research/platform_v2/unified_board/PROSPECTIVE_PROTOCOL.md",
  "pending_review": [
   {
@@ -11057,7 +11057,7 @@
     "mean_pred": 0.8161243374921372,
     "actual": 1.0,
     "brier": 0.033914544837901836,
-    "log_loss": 0.20326703390148862,
+    "log_loss": 0.2032670339014886,
     "ece_bands": 0.1838756625078628,
     "bands": [
      {
@@ -11262,8 +11262,8 @@
  },
  "engines": {
   "atp_match_winner.betfair_market": {
-   "predictions": 183,
-   "prediction_events": 183,
+   "predictions": 185,
+   "prediction_events": 185,
    "settled_rows": 146,
    "settled_events": 146,
    "settled_ge80_events": 25,
@@ -11306,8 +11306,8 @@
    "settled_rows_masked_no_peek": 0
   },
   "nba_moneyline.market": {
-   "predictions": 47,
-   "prediction_events": 47,
+   "predictions": 62,
+   "prediction_events": 62,
    "settled_rows": 37,
    "settled_events": 37,
    "settled_ge80_events": 3,
@@ -11328,8 +11328,8 @@
    "settled_rows_masked_no_peek": 0
   },
   "nhl_moneyline.market": {
-   "predictions": 90,
-   "prediction_events": 90,
+   "predictions": 94,
+   "prediction_events": 94,
    "settled_rows": 63,
    "settled_events": 63,
    "settled_ge80_events": 0,
