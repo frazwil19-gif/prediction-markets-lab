@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-11-02T16:16Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-02T17:27Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 140 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 30 · research predictions: 28
+Predictions in the next window: 139 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 30 · research predictions: 28
 
 ## 1. Best predictions today
 
@@ -98,7 +98,7 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 106 · NET_EV_NOT_POSITIVE 68 · PRICE_STALE 59 · NO_EXECUTABLE_PRICE 48 · P_BELOW_FLOOR 48 · COMMISSION_UNKNOWN 18
+ENGINE_STATUS_INELIGIBLE 106 · NET_EV_NOT_POSITIVE 67 · PRICE_STALE 59 · NO_EXECUTABLE_PRICE 48 · P_BELOW_FLOOR 48 · COMMISSION_UNKNOWN 18
 
 ## 4. Research predictions — not money eligible
 
@@ -106,31 +106,31 @@ _Model probabilities from research engines. Shown for information and to build a
 
 | Event | Start | Market | Selection | P | Model fair odds | Model | Status |
 |---|---|---|---|---|---|---|---|
-| Sassuolo v Fiorentina (I1) | 2026-11-02 | total_corners | under 11.5 | 79.5% | 1.26 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sassuolo v Fiorentina (I1) | 2026-11-02 | total_corners | under 11.5 | 79.3% | 1.26 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Gil Vicente v Guimaraes (P1) | 2026-11-02 | total_corners | under 11.5 | 76.9% | 1.30 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Lorient v Brest (F1) | 2026-11-02 | total_corners | under 11.5 | 75.5% | 1.32 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Atalanta v Parma (I1) | 2026-11-02 | total_corners | under 11.5 | 75.4% | 1.33 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Newcastle v Everton (E0) | 2026-11-02 | total_corners | under 11.5 | 72.0% | 1.39 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Benfica v Alverca (P1) | 2026-11-02 | total_corners | under 11.5 | 72.0% | 1.39 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lorient v Brest (F1) | 2026-11-02 | total_corners | under 11.5 | 75.9% | 1.32 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Atalanta v Parma (I1) | 2026-11-02 | total_corners | under 11.5 | 75.1% | 1.33 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Benfica v Alverca (P1) | 2026-11-02 | total_corners | under 11.5 | 71.9% | 1.39 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Newcastle v Everton (E0) | 2026-11-02 | total_corners | under 11.5 | 71.8% | 1.39 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | La Coruna v Osasuna (SP1) | 2026-11-02 | total_corners | under 11.5 | 71.0% | 1.41 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Sassuolo v Fiorentina (I1) | 2026-11-02 | total_corners | under 10.5 | 70.1% | 1.43 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Gil Vicente v Guimaraes (P1) | 2026-11-02 | total_corners | under 10.5 | 67.3% | 1.49 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Lorient v Brest (F1) | 2026-11-02 | total_corners | under 10.5 | 65.6% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Atalanta v Parma (I1) | 2026-11-02 | total_corners | under 10.5 | 65.5% | 1.53 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sassuolo v Fiorentina (I1) | 2026-11-02 | total_corners | under 10.5 | 70.0% | 1.43 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Gil Vicente v Guimaraes (P1) | 2026-11-02 | total_corners | under 10.5 | 67.2% | 1.49 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lorient v Brest (F1) | 2026-11-02 | total_corners | under 10.5 | 65.9% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Atalanta v Parma (I1) | 2026-11-02 | total_corners | under 10.5 | 65.2% | 1.53 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | La Coruna v Osasuna (SP1) | 2026-11-02 | total_corners | over 8.5 | 63.2% | 1.58 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Newcastle v Everton (E0) | 2026-11-02 | total_corners | over 8.5 | 62.1% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Benfica v Alverca (P1) | 2026-11-02 | total_corners | over 8.5 | 62.0% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Newcastle v Everton (E0) | 2026-11-02 | total_corners | under 10.5 | 61.8% | 1.62 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Benfica v Alverca (P1) | 2026-11-02 | total_corners | under 10.5 | 61.5% | 1.63 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Newcastle v Everton (E0) | 2026-11-02 | total_corners | over 8.5 | 62.3% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Benfica v Alverca (P1) | 2026-11-02 | total_corners | over 8.5 | 62.1% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Newcastle v Everton (E0) | 2026-11-02 | total_corners | under 10.5 | 61.5% | 1.63 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Benfica v Alverca (P1) | 2026-11-02 | total_corners | under 10.5 | 61.4% | 1.63 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | La Coruna v Osasuna (SP1) | 2026-11-02 | total_corners | under 10.5 | 60.9% | 1.64 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Sassuolo v Fiorentina (I1) | 2026-11-02 | total_corners | under 9.5 | 59.1% | 1.69 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Atalanta v Parma (I1) | 2026-11-02 | total_corners | over 8.5 | 58.5% | 1.71 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Lorient v Brest (F1) | 2026-11-02 | total_corners | over 8.5 | 58.3% | 1.71 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sassuolo v Fiorentina (I1) | 2026-11-02 | total_corners | under 9.5 | 58.9% | 1.70 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Atalanta v Parma (I1) | 2026-11-02 | total_corners | over 8.5 | 58.8% | 1.70 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lorient v Brest (F1) | 2026-11-02 | total_corners | over 8.5 | 57.9% | 1.73 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Gil Vicente v Guimaraes (P1) | 2026-11-02 | total_corners | over 8.5 | 56.7% | 1.76 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Gil Vicente v Guimaraes (P1) | 2026-11-02 | total_corners | under 9.5 | 56.0% | 1.79 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Lorient v Brest (F1) | 2026-11-02 | total_corners | under 9.5 | 54.4% | 1.84 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Atalanta v Parma (I1) | 2026-11-02 | total_corners | under 9.5 | 53.9% | 1.86 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Sassuolo v Fiorentina (I1) | 2026-11-02 | total_corners | over 8.5 | 53.6% | 1.87 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Gil Vicente v Guimaraes (P1) | 2026-11-02 | total_corners | under 9.5 | 55.9% | 1.79 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lorient v Brest (F1) | 2026-11-02 | total_corners | under 9.5 | 54.7% | 1.83 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sassuolo v Fiorentina (I1) | 2026-11-02 | total_corners | over 8.5 | 53.8% | 1.86 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Atalanta v Parma (I1) | 2026-11-02 | total_corners | under 9.5 | 53.6% | 1.87 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | La Coruna v Osasuna (SP1) | 2026-11-02 | total_corners | over 9.5 | 51.2% | 1.95 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Newcastle v Everton (E0) | 2026-11-02 | total_corners | under 9.5 | 50.1% | 1.99 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Benfica v Alverca (P1) | 2026-11-02 | total_corners | over 9.5 | 50.0% | 2.00 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Benfica v Alverca (P1) | 2026-11-02 | total_corners | over 9.5 | 50.2% | 1.99 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Newcastle v Everton (E0) | 2026-11-02 | total_corners | over 9.5 | 50.1% | 2.00 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
