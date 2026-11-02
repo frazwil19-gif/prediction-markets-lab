@@ -1,11 +1,11 @@
-# DAILY PREDICTION BOARD — 2026-11-01
+# DAILY PREDICTION BOARD — 2026-11-02
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
 > **SYSTEM DEGRADED: settlement: STALE (last 2026-10-31T00:39:52.557936+00:00).** Predictions below may be incomplete or stale.
 
-Upcoming events: 46 · Valid predictions: 92 · Sports: americanfootball, basketball, football, icehockey, tennis
-Counts: >=70: 22 · >=75: 9 · >=80: 6 · >=85: 2 · >=90: 1 · >=95: 0
+Upcoming events: 36 · Valid predictions: 72 · Sports: americanfootball, basketball, football, icehockey, tennis
+Counts: >=70: 16 · >=75: 8 · >=80: 5 · >=85: 2 · >=90: 1 · >=95: 0
 Settled yesterday: 0 · System: **DEGRADED** · API credits (last observed): 471
 
 ## Top predictions (P ≥ 80%)
@@ -16,7 +16,6 @@ Settled yesterday: 0 · System: **DEGRADED** · API credits (last observed): 471
 | football | Benfica v Alverca | 2026-11-02T20:15 | double_chance | 12 | 87.4% | 1.14 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.11 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Atalanta BC v Parma | 2026-11-02T19:45 | double_chance | 1X | 84.3% | 1.19 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.17 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | tennis | Benjamin Bonzi v Taylor Fritz | 2026-11-03T10:00 | match_winner | Taylor Fritz | 81.7% | 1.22 | 80-84.9% | atp_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.15 (betfair_ex_uk back (odds_api)) | no | yes |
-| football | Braga v Famalicão | 2026-11-01T20:30 | double_chance | 1X | 81.6% | 1.23 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Benfica v Alverca | 2026-11-02T20:15 | 1x2 | home | 80.4% | 1.24 | 80-84.9% | football_1x2.market_consensus@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (odds_api:Smarkets) | no | yes |
 
 ## Prospective evidence
@@ -38,7 +37,7 @@ Settled yesterday: 0 · System: **DEGRADED** · API credits (last observed): 471
 - daily_scan: OK (last 2026-11-01T07:16:26.546387+00:00)
 - settlement: STALE (last 2026-10-31T00:39:52.557936+00:00)
 - tennis_board: OK (last 2026-11-01T19:54:10.810355+00:00)
-- ci_tests: OK (last 2026-11-01T19:54:11.549181+00:00)
+- ci_tests: OK (last 2026-11-02T00:31:54.766630+00:00)
 - Warnings: settlement: STALE (last 2026-10-31T00:39:52.557936+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).

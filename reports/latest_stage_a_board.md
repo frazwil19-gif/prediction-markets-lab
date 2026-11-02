@@ -1,8 +1,8 @@
-# STAGE A PREDICTION BOARD — 2026-11-01T19:54Z (stage-a-2)
+# STAGE A PREDICTION BOARD — 2026-11-02T00:32Z (stage-a-2)
 
 _Probability first. Ranked by estimated probability only. **A strong prediction is not a bet** — price status is descriptive; Stage B (bet-selection) alone decides bets._
 
-Predictions: 92 · strong (P ≥ 70%): 22 on 16 events · strong by price status: POOR_PAYOUT 3 · PRICE_QUALITY_FAIL 6 · PRICE_UNAVAILABLE 13
+Predictions: 72 · strong (P ≥ 70%): 16 on 12 events · strong by price status: PRICE_QUALITY_FAIL 7 · PRICE_UNAVAILABLE 9
 
 | # | Sport | Event | Start (UTC) | Market | Selection | P | P first snapshot | P current scan | σ | Engine | Calibration status | Stage A status | Why not assessable | Best clean price | Net EV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -10,24 +10,18 @@ Predictions: 92 · strong (P ≥ 70%): 22 on 16 events · strong by price status
 | 2 | football | Benfica v Alverca | 2026-11-02T20:15 | double_chance | 12 | 87.4% | 87.4% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 3 | football | Atalanta BC v Parma | 2026-11-02T19:45 | double_chance | 1X | 84.3% | 84.3% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 4 | tennis | Benjamin Bonzi v Taylor Fritz | 2026-11-03T10:00 | match_winner | Taylor Fritz | 81.7% | 81.7% | 81.7% | 7.8% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | EXCHANGE_SPREAD_TOO_WIDE | — | — |
-| 5 | football | Braga v Famalicão | 2026-11-01T20:30 | double_chance | 1X | 81.6% | 81.6% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 6 | football | Benfica v Alverca | 2026-11-02T20:15 | 1x2 | home | 80.5% | 80.5% | — | 2.2% | football_1x2.market_consensus | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | PRICE_STALE | — | — |
-| 7 | tennis | Alejandro Tabilo v Rafael Jodar | 2026-11-02T11:10 | match_winner | Rafael Jodar | 79.4% | 79.4% | 79.4% | 1.3% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.25 (williamhill) | -0.7% |
-| 8 | football | Atalanta BC v Parma | 2026-11-02T19:45 | double_chance | 12 | 78.8% | 78.8% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 9 | tennis | Casper Ruud v Juan Manuel Cerundolo | 2026-11-02T12:20 | match_winner | Casper Ruud | 75.1% | 75.1% | 75.1% | 8.6% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | EXCHANGE_SPREAD_TOO_WIDE | — | — |
-| 10 | football | Sassuolo v Fiorentina | 2026-11-02T17:30 | double_chance | 12 | 74.1% | 74.1% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 11 | football | Braga v Famalicão | 2026-11-01T20:30 | double_chance | 12 | 73.9% | 73.9% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 12 | americanfootball | New England Patriots @ Miami Dolphins | 2026-11-01T21:25 | moneyline | New England Patriots | 73.9% | 73.9% | — | — | nfl_moneyline.market | GATE_A | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
-| 13 | football | Athletic Bilbao v Real Sociedad | 2026-11-01T20:00 | double_chance | 12 | 73.8% | 73.8% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 14 | football | Newcastle United v Everton | 2026-11-02T20:00 | double_chance | 12 | 72.8% | 72.8% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 15 | football | Athletic Bilbao v Real Sociedad | 2026-11-01T20:00 | double_chance | 1X | 72.7% | 72.7% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 16 | football | Deportivo La Coruña v CA Osasuna | 2026-11-02T20:00 | double_chance | 1X | 72.5% | 72.5% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 17 | tennis | Alejandro Davidovich Fokina v Moise Kouame | 2026-11-02T10:00 | match_winner | Alejandro Davidovich Fokina | 72.2% | 72.2% | 72.2% | 1.2% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.37 (smarkets) | -1.6% |
-| 18 | tennis | Ignacio Buse v Zizou Bergs | 2026-11-02T10:00 | match_winner | Zizou Bergs | 71.5% | 71.5% | 71.5% | 1.7% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.37 (unibet_uk) | -2.0% |
-| 19 | football | Deportivo La Coruña v CA Osasuna | 2026-11-02T20:00 | double_chance | 12 | 71.0% | 71.0% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 20 | football | Lorient v Brest | 2026-11-02T19:45 | double_chance | 12 | 70.9% | 70.9% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 21 | americanfootball | Los Angeles Chargers @ Los Angeles Rams | 2026-11-01T21:05 | moneyline | Los Angeles Rams | 70.8% | 70.8% | — | — | nfl_moneyline.market | GATE_A | STRONG_PREDICTION_PRICE_QUALITY_FAIL | PRICE_STALE | — | — |
-| 22 | americanfootball | Philadelphia Eagles @ Washington Commanders | 2026-11-02T01:20 | moneyline | Washington Commanders | 70.2% | 70.2% | — | — | nfl_moneyline.market | GATE_A | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
+| 5 | football | Benfica v Alverca | 2026-11-02T20:15 | 1x2 | home | 80.5% | 80.5% | — | 2.2% | football_1x2.market_consensus | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | PRICE_STALE | — | — |
+| 6 | tennis | Alejandro Tabilo v Rafael Jodar | 2026-11-02T11:10 | match_winner | Rafael Jodar | 79.4% | 79.4% | 79.4% | 1.3% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
+| 7 | football | Atalanta BC v Parma | 2026-11-02T19:45 | double_chance | 12 | 78.8% | 78.8% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 8 | tennis | Casper Ruud v Juan Manuel Cerundolo | 2026-11-02T12:20 | match_winner | Casper Ruud | 75.1% | 75.1% | 75.1% | 8.6% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | EXCHANGE_SPREAD_TOO_WIDE | — | — |
+| 9 | football | Sassuolo v Fiorentina | 2026-11-02T17:30 | double_chance | 12 | 74.1% | 74.1% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 10 | football | Newcastle United v Everton | 2026-11-02T20:00 | double_chance | 12 | 72.8% | 72.8% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 11 | football | Deportivo La Coruña v CA Osasuna | 2026-11-02T20:00 | double_chance | 1X | 72.5% | 72.5% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 12 | tennis | Alejandro Davidovich Fokina v Moise Kouame | 2026-11-02T10:00 | match_winner | Alejandro Davidovich Fokina | 72.2% | 72.2% | 72.2% | 1.2% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
+| 13 | tennis | Ignacio Buse v Zizou Bergs | 2026-11-02T10:00 | match_winner | Zizou Bergs | 71.5% | 71.5% | 71.5% | 1.7% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
+| 14 | football | Deportivo La Coruña v CA Osasuna | 2026-11-02T20:00 | double_chance | 12 | 71.0% | 71.0% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 15 | football | Lorient v Brest | 2026-11-02T19:45 | double_chance | 12 | 70.9% | 70.9% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 16 | americanfootball | Philadelphia Eagles @ Washington Commanders | 2026-11-02T01:20 | moneyline | Washington Commanders | 70.2% | 70.2% | — | — | nfl_moneyline.market | GATE_A | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
 
 P = P current scan when one exists, else P first snapshot (football 1X2: normalised H/D/A triplet; raw kept in the ledger). Ranking uses P only.
 ⟳ = start time rescheduled since first observation (est-1: the current provider start is used).
