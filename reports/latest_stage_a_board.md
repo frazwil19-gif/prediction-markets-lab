@@ -1,8 +1,8 @@
-# STAGE A PREDICTION BOARD — 2026-11-02T00:32Z (stage-a-2)
+# STAGE A PREDICTION BOARD — 2026-11-02T01:41Z (stage-a-2)
 
 _Probability first. Ranked by estimated probability only. **A strong prediction is not a bet** — price status is descriptive; Stage B (bet-selection) alone decides bets._
 
-Predictions: 72 · strong (P ≥ 70%): 16 on 12 events · strong by price status: PRICE_QUALITY_FAIL 7 · PRICE_UNAVAILABLE 9
+Predictions: 69 · strong (P ≥ 70%): 15 on 11 events · strong by price status: PRICE_QUALITY_FAIL 6 · PRICE_UNAVAILABLE 9
 
 | # | Sport | Event | Start (UTC) | Market | Selection | P | P first snapshot | P current scan | σ | Engine | Calibration status | Stage A status | Why not assessable | Best clean price | Net EV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -21,7 +21,6 @@ Predictions: 72 · strong (P ≥ 70%): 16 on 12 events · strong by price status
 | 13 | tennis | Ignacio Buse v Zizou Bergs | 2026-11-02T10:00 | match_winner | Zizou Bergs | 71.5% | 71.5% | 71.5% | 1.7% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
 | 14 | football | Deportivo La Coruña v CA Osasuna | 2026-11-02T20:00 | double_chance | 12 | 71.0% | 71.0% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 15 | football | Lorient v Brest | 2026-11-02T19:45 | double_chance | 12 | 70.9% | 70.9% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 16 | americanfootball | Philadelphia Eagles @ Washington Commanders | 2026-11-02T01:20 | moneyline | Washington Commanders | 70.2% | 70.2% | — | — | nfl_moneyline.market | GATE_A | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
 
 P = P current scan when one exists, else P first snapshot (football 1X2: normalised H/D/A triplet; raw kept in the ledger). Ranking uses P only.
 ⟳ = start time rescheduled since first observation (est-1: the current provider start is used).

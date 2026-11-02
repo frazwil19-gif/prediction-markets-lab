@@ -2,11 +2,9 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-> **SYSTEM DEGRADED: settlement: STALE (last 2026-10-31T00:39:52.557936+00:00).** Predictions below may be incomplete or stale.
-
-Upcoming events: 36 · Valid predictions: 72 · Sports: americanfootball, basketball, football, icehockey, tennis
-Counts: >=70: 16 · >=75: 8 · >=80: 5 · >=85: 2 · >=90: 1 · >=95: 0
-Settled yesterday: 0 · System: **DEGRADED** · API credits (last observed): 471
+Upcoming events: 33 · Valid predictions: 69 · Sports: americanfootball, basketball, football, tennis
+Counts: >=70: 15 · >=75: 8 · >=80: 5 · >=85: 2 · >=90: 1 · >=95: 0
+Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 471
 
 ## Top predictions (P ≥ 80%)
 
@@ -35,10 +33,9 @@ Settled yesterday: 0 · System: **DEGRADED** · API credits (last observed): 471
 ## System health
 
 - daily_scan: OK (last 2026-11-01T07:16:26.546387+00:00)
-- settlement: STALE (last 2026-10-31T00:39:52.557936+00:00)
+- settlement: OK (last 2026-11-02T00:32:12.383294+00:00)
 - tennis_board: OK (last 2026-11-01T19:54:10.810355+00:00)
-- ci_tests: OK (last 2026-11-02T00:31:54.766630+00:00)
-- Warnings: settlement: STALE (last 2026-10-31T00:39:52.557936+00:00)
+- ci_tests: OK (last 2026-11-02T01:41:11.692618+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 

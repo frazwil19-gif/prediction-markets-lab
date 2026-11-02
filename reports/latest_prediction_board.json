@@ -1,16 +1,15 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-11-02T00:32:11.156973+00:00",
+ "generated_at": "2026-11-02T01:41:28.536607+00:00",
  "date": "2026-11-02",
  "summary": {
-  "upcoming_events": 36,
-  "valid_predictions": 72,
+  "upcoming_events": 33,
+  "valid_predictions": 69,
   "sports_active": [
    "americanfootball",
    "basketball",
    "football",
-   "icehockey",
    "tennis"
   ],
   "engines_active": [
@@ -24,7 +23,7 @@
    "football_double_chance.derived_1x2"
   ],
   "threshold_counts": {
-   ">=70": 16,
+   ">=70": 15,
    ">=75": 8,
    ">=80": 5,
    ">=85": 2,
@@ -32,35 +31,35 @@
    ">=95": 0
   },
   "settled_yesterday": 0,
-  "system": "DEGRADED",
+  "system": "HEALTHY",
   "api_credits_last_observed": 471
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-11-02T00:32:11.156973+00:00",
-  "overall": "DEGRADED",
+  "generated_at": "2026-11-02T01:41:28.536607+00:00",
+  "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
    "daily_scan": {
     "last": "2026-11-01T07:16:26.546387+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 17.3
+    "age_hours": 18.4
    },
    "settlement": {
-    "last": "2026-10-31T00:39:52.557936+00:00",
+    "last": "2026-11-02T00:32:12.383294+00:00",
     "status": "success",
-    "flag": "STALE",
-    "age_hours": 47.9
+    "flag": "OK",
+    "age_hours": 1.2
    },
    "tennis_board": {
     "last": "2026-11-01T19:54:10.810355+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 4.6
+    "age_hours": 5.8
    },
    "ci_tests": {
-    "last": "2026-11-02T00:31:54.766630+00:00",
+    "last": "2026-11-02T01:41:11.692618+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -72,10 +71,8 @@
    "source": "credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
-  "warnings": [
-   "settlement: STALE (last 2026-10-31T00:39:52.557936+00:00)"
-  ],
-  "stale_data_warning": true
+  "warnings": [],
+  "stale_data_warning": false
  },
  "prospective_evidence": {
   "football_1x2.market_consensus": {
@@ -202,11 +199,11 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 88,
-   "EXCLUDED": 2724
+   "ELIGIBLE": 85,
+   "EXCLUDED": 2727
   },
   "exclusion_reason": {
-   "EVENT_STARTED": 2724
+   "EVENT_STARTED": 2727
   },
   "start_time_status": {
    "LEDGER_ONLY": 2359,
@@ -844,48 +841,6 @@
    "correct": "",
    "settlement_timestamp": "",
    "event_start_original": "2026-11-02T19:45:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
-  },
-  {
-   "prediction_id": "d11e3e0fc0162733",
-   "engine_id": "nfl_moneyline.market",
-   "engine_version": "1",
-   "sport": "americanfootball",
-   "competition": "NFL",
-   "event_id": "b9c60db63b1a19ad319f24b33c0defe8",
-   "event_key": "nfl|b9c60db63b1a19ad319f24b33c0defe8",
-   "event_name": "Philadelphia Eagles @ Washington Commanders",
-   "event_start": "2026-11-02T01:20:00+00:00",
-   "market": "moneyline",
-   "selection": "Washington Commanders",
-   "estimated_probability": "0.7015418502202643",
-   "fair_odds": "1.4254317111459969",
-   "probability_band": "70-74.9%",
-   "probability_source": "Odds API americanfootball_nfl h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=2932; holdout DONE (2020-21, n=550; gate A); >=80% coverage None; holdout slope 1.0217 CI [0.8053, 1.2738]; live estimator nfl_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-11-01T06:30:00+00:00",
-   "actual_workflow_start": "2026-11-01T13:41:18Z",
-   "prediction_timestamp": "2026-11-01T13:42:36.572628+00:00",
-   "minutes_to_event": "697.4",
-   "live_price": "1.41",
-   "live_price_source": "odds_api:matchbook",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "True",
-   "single_ineligible_reason": "",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:americanfootball_nfl",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-02T01:20:00+00:00",
    "start_time_status": "LEDGER_ONLY",
    "start_time_source": "unified_ledger.event_start"
   },
@@ -2104,90 +2059,6 @@
    "correct": "",
    "settlement_timestamp": "",
    "event_start_original": "2026-11-02T20:00:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
-  },
-  {
-   "prediction_id": "e82c24a73cca47c5",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_id": "094b083ace229ca31ff360a80e35a1a8",
-   "event_key": "nba|094b083ace229ca31ff360a80e35a1a8",
-   "event_name": "Los Angeles Clippers @ Golden State Warriors",
-   "event_start": "2026-11-02T01:40:00+00:00",
-   "market": "moneyline",
-   "selection": "Golden State Warriors",
-   "estimated_probability": "0.5477983777520278",
-   "fair_odds": "1.8254891591750397",
-   "probability_band": "50-54.9%",
-   "probability_source": "Odds API basketball_nba h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-11-01T06:30:00+00:00",
-   "actual_workflow_start": "2026-11-01T13:41:18Z",
-   "prediction_timestamp": "2026-11-01T13:42:35.122147+00:00",
-   "minutes_to_event": "717.4",
-   "live_price": "1.82",
-   "live_price_source": "odds_api:matchbook",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "True",
-   "single_ineligible_reason": "",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:basketball_nba",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-02T01:40:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
-  },
-  {
-   "prediction_id": "72a7efcccf278f2b",
-   "engine_id": "nhl_moneyline.market",
-   "engine_version": "1",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event_id": "a5203c5f9248aa3653feba547eabd4b8",
-   "event_key": "nhl|a5203c5f9248aa3653feba547eabd4b8",
-   "event_name": "Ottawa Senators @ Anaheim Ducks",
-   "event_start": "2026-11-02T01:10:00+00:00",
-   "market": "moneyline",
-   "selection": "Ottawa Senators",
-   "estimated_probability": "0.5222354340071342",
-   "fair_odds": "1.9148451730418947",
-   "probability_band": "50-54.9%",
-   "probability_source": "Odds API icehockey_nhl h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=13666; holdout DONE (2020-21, n=2350; gate B); >=80% coverage None; holdout slope 1.2193 CI [1.0439, 1.4097]; live estimator nhl_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "PROVISIONAL_PROSPECTIVE",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-11-01T06:30:00+00:00",
-   "actual_workflow_start": "2026-11-01T13:41:18Z",
-   "prediction_timestamp": "2026-11-01T13:42:36.572628+00:00",
-   "minutes_to_event": "687.4",
-   "live_price": "1.91",
-   "live_price_source": "odds_api:matchbook",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "False",
-   "single_ineligible_reason": "engine not money-eligible",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:icehockey_nhl",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-02T01:10:00+00:00",
    "start_time_status": "LEDGER_ONLY",
    "start_time_source": "unified_ledger.event_start"
   },
