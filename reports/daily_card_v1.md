@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-11-02T01:41Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-02T07:16Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 69 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 15 · research predictions: 28
+Predictions in the next window: 68 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 15 · research predictions: 28
 
 ## 1. Best predictions today
 
@@ -14,7 +14,7 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | 2 | football | Benfica v Alverca | 2026-11-02T20:15 | double_chance | 12 | 87.4% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.14 | no price | no |
 | 3 | football | Atalanta BC v Parma | 2026-11-02T19:45 | double_chance | 1X | 84.3% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.19 | no price | no |
 | 4 | tennis | Benjamin Bonzi v Taylor Fritz | 2026-11-03T10:00 | match_winner | Taylor Fritz | 81.7% | 80%+ | 7.8% | VALIDATED | 1.22 | price not usable (stale/wide/unknown commission) | no |
-| 5 | football | Benfica v Alverca | 2026-11-02T20:15 | 1x2 | home | 80.5% | 80%+ | 2.2% | PROSPECTIVE_SHADOW_LEAGUE | 1.24 | price not usable (stale/wide/unknown commission) | no |
+| 5 | football | Benfica v Alverca | 2026-11-02T20:15 | 1x2 | home | 80.5% | 80%+ | 2.2% | PROSPECTIVE_SHADOW_LEAGUE | 1.24 | 1.17 (smarkets) | no |
 | 6 | tennis | Alejandro Tabilo v Rafael Jodar | 2026-11-02T11:10 | match_winner | Rafael Jodar | 79.4% | 70%+ | 1.3% | VALIDATED | 1.26 | price not usable (stale/wide/unknown commission) | no |
 | 7 | football | Atalanta BC v Parma | 2026-11-02T19:45 | double_chance | 12 | 78.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.27 | no price | no |
 | 8 | tennis | Casper Ruud v Juan Manuel Cerundolo | 2026-11-02T12:20 | match_winner | Casper Ruud | 75.1% | 70%+ | 8.6% | VALIDATED | 1.33 | price not usable (stale/wide/unknown commission) | no |
@@ -35,7 +35,7 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | 23 | football | Sassuolo v Fiorentina | 2026-11-02T17:30 | double_chance | X2 | 66.7% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.50 | no price | no |
 | 24 | tennis | Arthur Rinderknech v Francisco Cerundolo | 2026-11-03T10:00 | match_winner | Francisco Cerundolo | 65.9% | 60%+ | 1.2% | VALIDATED | 1.52 | price not usable (stale/wide/unknown commission) | no |
 | 25 | tennis | Tommy Paul v Holger Rune | 2026-11-03T10:00 | match_winner | Tommy Paul | 65.2% | 60%+ | 1.4% | VALIDATED | 1.53 | price not usable (stale/wide/unknown commission) | no |
-| 26 | football | Atalanta BC v Parma | 2026-11-02T19:45 | 1x2 | home | 63.1% | 60%+ | 1.3% | PROSPECTIVE_SHADOW_LEAGUE | 1.59 | price not usable (stale/wide/unknown commission) | no |
+| 26 | football | Atalanta BC v Parma | 2026-11-02T19:45 | 1x2 | home | 63.1% | 60%+ | 1.3% | PROSPECTIVE_SHADOW_LEAGUE | 1.59 | 1.56 (smarkets) | no |
 | 27 | football | Gil Vicente v Vitória SC | 2026-11-02T20:15 | double_chance | 1X | 62.8% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.59 | no price | no |
 | 28 | football | Lorient v Brest | 2026-11-02T19:45 | double_chance | X2 | 61.3% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.63 | no price | no |
 | 29 | americanfootball | Chicago Bears @ Seattle Seahawks | 2026-11-03T01:20 | moneyline | Seattle Seahawks | 61.0% | 60%+ | — | VALIDATED | 1.64 | price not usable (stale/wide/unknown commission) | no |
@@ -46,10 +46,10 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | 34 | tennis | Daniel Merida Aguilar v Alexander Blockx | 2026-11-02T12:20 | match_winner | Alexander Blockx | 59.3% | 50%+ | 1.2% | VALIDATED | 1.69 | price not usable (stale/wide/unknown commission) | no |
 | 35 | football | Sassuolo v Fiorentina | 2026-11-02T17:30 | double_chance | 1X | 59.2% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.69 | no price | no |
 | 36 | tennis | Ugo Humbert v Botic van de Zandschulp | 2026-11-02T19:30 | match_winner | Ugo Humbert | 59.2% | 50%+ | 1.1% | VALIDATED | 1.69 | price not usable (stale/wide/unknown commission) | no |
-| 37 | basketball | Toronto Raptors @ Los Angeles Lakers | 2026-11-02T02:10 | moneyline | Los Angeles Lakers | 59.1% | 50%+ | 1.5% | VALIDATED | 1.69 | price not usable (stale/wide/unknown commission) | no |
-| 38 | tennis | Quentin Halys v Arthur Fery | 2026-11-03T10:00 | match_winner | Quentin Halys | 58.9% | 50%+ | 1.1% | VALIDATED | 1.70 | price not usable (stale/wide/unknown commission) | no |
-| 39 | tennis | Mattia Bellucci v Lorenzo Sonego | 2026-11-02T13:30 | match_winner | Mattia Bellucci | 58.9% | 50%+ | 2.9% | VALIDATED | 1.70 | price not usable (stale/wide/unknown commission) | no |
-| 40 | tennis | Brandon Nakashima v Matteo Berrettini | 2026-11-03T10:00 | match_winner | Brandon Nakashima | 58.4% | 50%+ | 1.4% | VALIDATED | 1.71 | price not usable (stale/wide/unknown commission) | no |
+| 37 | tennis | Quentin Halys v Arthur Fery | 2026-11-03T10:00 | match_winner | Quentin Halys | 58.9% | 50%+ | 1.1% | VALIDATED | 1.70 | price not usable (stale/wide/unknown commission) | no |
+| 38 | tennis | Mattia Bellucci v Lorenzo Sonego | 2026-11-02T13:30 | match_winner | Mattia Bellucci | 58.9% | 50%+ | 2.9% | VALIDATED | 1.70 | price not usable (stale/wide/unknown commission) | no |
+| 39 | tennis | Brandon Nakashima v Matteo Berrettini | 2026-11-03T10:00 | match_winner | Brandon Nakashima | 58.4% | 50%+ | 1.4% | VALIDATED | 1.71 | price not usable (stale/wide/unknown commission) | no |
+| 40 | football | Deportivo La Coruña v CA Osasuna | 2026-11-02T20:00 | double_chance | X2 | 56.5% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.77 | no price | no |
 
 ## 2. Qualified paper bets (simulated stakes, recorded automatically)
 
@@ -68,22 +68,22 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 | Benfica v Alverca (2026-11-02T20:15) | double_chance: 1X | 93.1% | 1.07 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Benfica v Alverca (2026-11-02T20:15) | double_chance: 12 | 87.4% | 1.14 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Atalanta BC v Parma (2026-11-02T19:45) | double_chance: 1X | 84.3% | 1.19 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Benjamin Bonzi v Taylor Fritz (2026-11-03T10:00) | match_winner: Taylor Fritz | 81.7% | 1.22 | — | EXCHANGE_SPREAD_TOO_WIDE, NET_EV_NOT_POSITIVE |
-| Benfica v Alverca (2026-11-02T20:15) | 1x2: home | 80.5% | 1.24 | — | PRICE_STALE, NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
-| Alejandro Tabilo v Rafael Jodar (2026-11-02T11:10) | match_winner: Rafael Jodar | 79.4% | 1.26 | — | NET_EV_NOT_POSITIVE |
+| Benjamin Bonzi v Taylor Fritz (2026-11-03T10:00) | match_winner: Taylor Fritz | 81.7% | 1.22 | — | EXCHANGE_SPREAD_TOO_WIDE, PRICE_STALE, NET_EV_NOT_POSITIVE |
+| Benfica v Alverca (2026-11-02T20:15) | 1x2: home | 80.5% | 1.24 | 1.17 | NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
+| Alejandro Tabilo v Rafael Jodar (2026-11-02T11:10) | match_winner: Rafael Jodar | 79.4% | 1.26 | — | PRICE_STALE, NET_EV_NOT_POSITIVE |
 | Atalanta BC v Parma (2026-11-02T19:45) | double_chance: 12 | 78.8% | 1.27 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Casper Ruud v Juan Manuel Cerundolo (2026-11-02T12:20) | match_winner: Casper Ruud | 75.1% | 1.33 | — | EXCHANGE_SPREAD_TOO_WIDE, NET_EV_NOT_POSITIVE |
+| Casper Ruud v Juan Manuel Cerundolo (2026-11-02T12:20) | match_winner: Casper Ruud | 75.1% | 1.33 | — | EXCHANGE_SPREAD_TOO_WIDE, PRICE_STALE, NET_EV_NOT_POSITIVE |
 | Sassuolo v Fiorentina (2026-11-02T17:30) | double_chance: 12 | 74.1% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Newcastle United v Everton (2026-11-02T20:00) | double_chance: 12 | 72.8% | 1.37 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Deportivo La Coruña v CA Osasuna (2026-11-02T20:00) | double_chance: 1X | 72.5% | 1.38 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Alejandro Davidovich Fokina v Moise Kouame (2026-11-02T10:00) | match_winner: Alejandro Davidovich Fokina | 72.2% | 1.38 | — | NET_EV_NOT_POSITIVE |
-| Ignacio Buse v Zizou Bergs (2026-11-02T10:00) | match_winner: Zizou Bergs | 71.5% | 1.40 | — | NET_EV_NOT_POSITIVE |
+| Alejandro Davidovich Fokina v Moise Kouame (2026-11-02T10:00) | match_winner: Alejandro Davidovich Fokina | 72.2% | 1.38 | — | PRICE_STALE, NET_EV_NOT_POSITIVE |
+| Ignacio Buse v Zizou Bergs (2026-11-02T10:00) | match_winner: Zizou Bergs | 71.5% | 1.40 | — | PRICE_STALE, NET_EV_NOT_POSITIVE |
 | Deportivo La Coruña v CA Osasuna (2026-11-02T20:00) | double_chance: 12 | 71.0% | 1.41 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Lorient v Brest (2026-11-02T19:45) | double_chance: 12 | 70.9% | 1.41 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 43 · NET_EV_NOT_POSITIVE 38 · PRICE_STALE 24 · NO_EXECUTABLE_PRICE 21 · P_BELOW_FLOOR 21 · EXCHANGE_SPREAD_TOO_WIDE 7 · COMMISSION_UNKNOWN 5
+ENGINE_STATUS_INELIGIBLE 43 · NET_EV_NOT_POSITIVE 40 · PRICE_STALE 27 · NO_EXECUTABLE_PRICE 21 · P_BELOW_FLOOR 21 · EXCHANGE_SPREAD_TOO_WIDE 7 · COMMISSION_UNKNOWN 1
 
 ## 4. Research predictions — not money eligible
 
