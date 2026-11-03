@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-03T14:33:33.663932+00:00",
+ "generated_at": "2026-11-03T16:16:36.873669+00:00",
  "protocol": "research/platform_v2/unified_board/PROSPECTIVE_PROTOCOL.md",
  "pending_review": [
   {
@@ -10622,7 +10622,7 @@
     "mean_pred": 0.8283951553485978,
     "actual": 1.0,
     "brier": 0.029978155801828485,
-    "log_loss": 0.18864672306069694,
+    "log_loss": 0.1886467230606969,
     "ece_bands": 0.1716048446514023,
     "bands": [
      {
@@ -10941,8 +10941,8 @@
  },
  "engines": {
   "atp_match_winner.betfair_market": {
-   "predictions": 190,
-   "prediction_events": 190,
+   "predictions": 192,
+   "prediction_events": 192,
    "settled_rows": 148,
    "settled_events": 148,
    "settled_ge80_events": 25,

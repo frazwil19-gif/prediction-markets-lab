@@ -1,7 +1,7 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-11-03T14:33:33.663932+00:00",
+ "generated_at": "2026-11-03T16:16:36.873669+00:00",
  "date": "2026-11-03",
  "summary": {
   "upcoming_events": 39,
@@ -23,8 +23,8 @@
    "football_double_chance.derived_1x2"
   ],
   "threshold_counts": {
-   ">=70": 25,
-   ">=75": 5,
+   ">=70": 26,
+   ">=75": 6,
    ">=80": 2,
    ">=85": 1,
    ">=90": 0,
@@ -32,11 +32,11 @@
   },
   "settled_yesterday": 0,
   "system": "HEALTHY",
-  "api_credits_last_observed": 434
+  "api_credits_last_observed": 432
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-11-03T14:33:33.663932+00:00",
+  "generated_at": "2026-11-03T16:16:36.873669+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -44,31 +44,31 @@
     "last": "2026-11-03T07:16:36.177181+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 7.3
+    "age_hours": 9.0
    },
    "settlement": {
     "last": "2026-11-03T02:53:28.180502+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 11.7
+    "age_hours": 13.4
    },
    "tennis_board": {
-    "last": "2026-11-03T14:33:30.406497+00:00",
+    "last": "2026-11-03T16:16:33.742380+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    },
    "ci_tests": {
-    "last": "2026-11-03T14:33:31.413433+00:00",
+    "last": "2026-11-03T16:16:35.258894+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    }
   },
   "api_credits": {
-   "remaining": 434,
-   "observed_at": "2026-11-03T14:33:32.256707+00:00",
-   "source": "nba_credit_log.csv",
+   "remaining": 432,
+   "observed_at": "2026-11-03T16:16:34.235135+00:00",
+   "source": "credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
   "warnings": [],
@@ -115,7 +115,7 @@
    "status": "VALIDATED_HISTORICAL",
    "prospective_status": "COLLECTING",
    "money_eligible": true,
-   "predictions": 190,
+   "predictions": 192,
    "settled_rows": 148,
    "maturity": "EARLY",
    "ge80_settled": 25,
@@ -199,18 +199,18 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 117,
-   "EXCLUDED": 2826
+   "ELIGIBLE": 116,
+   "EXCLUDED": 2829
   },
   "exclusion_reason": {
-   "EVENT_STARTED": 2826
+   "EVENT_STARTED": 2829
   },
   "start_time_status": {
    "LEDGER_ONLY": 2483,
    "RESCHEDULED": 270,
-   "UNCHANGED": 190
+   "UNCHANGED": 192
   },
-  "eligible_rescheduled": 5,
+  "eligible_rescheduled": 2,
   "rule": "est-1"
  },
  "predictions": [
@@ -265,7 +265,7 @@
    "event_id": "dcf8effd6f985422ab07f5c909334937",
    "event_key": "tennis|tennis_atp_paris_masters|dcf8effd6f985422ab07f5c909334937",
    "event_name": "Benjamin Bonzi v Taylor Fritz",
-   "event_start": "2026-11-03T15:45:00+00:00",
+   "event_start": "2026-11-03T16:20:00+00:00",
    "market": "match_winner",
    "selection": "Taylor Fritz",
    "estimated_probability": "0.817135",
@@ -297,6 +297,48 @@
    "event_start_original": "2026-11-03T10:00:00+00:00",
    "start_time_status": "RESCHEDULED",
    "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
+  },
+  {
+   "prediction_id": "eb933ce7a184615c",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "sport": "tennis",
+   "competition": "ATP Paris Masters",
+   "event_id": "9f0cefd1f030d8ad5ba4085132aff58d",
+   "event_key": "tennis|tennis_atp_paris_masters|9f0cefd1f030d8ad5ba4085132aff58d",
+   "event_name": "Tomas Martin Etcheverry v Alex de Minaur",
+   "event_start": "2026-11-04T10:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Alex de Minaur",
+   "estimated_probability": "0.781648",
+   "fair_odds": "1.279348248828117",
+   "probability_band": "75-79.9%",
+   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
+   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "data_quality": "OK",
+   "current_context_status": "NOT_MODELLED",
+   "configured_scan_time": "",
+   "actual_workflow_start": "2026-11-03T16:16:33.742380+00:00",
+   "prediction_timestamp": "2026-11-03T16:16:33.742380+00:00",
+   "minutes_to_event": "1063.4",
+   "live_price": "1.25",
+   "live_price_source": "betfair_ex_uk back (odds_api)",
+   "paper_status": "PAPER",
+   "prediction_valid": "True",
+   "single_eligible": "False",
+   "single_ineligible_reason": "fair odds 1.28 below payout floor 1.33",
+   "multi_research_eligible": "False",
+   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
+   "origin": "tennis_predictions/ledger_predictions.csv",
+   "origin_prediction_id": "eb933ce7a184615c",
+   "settlement_status": "",
+   "result": "",
+   "correct": "",
+   "settlement_timestamp": "",
+   "event_start_original": "2026-11-04T10:00:00+00:00",
+   "start_time_status": "UNCHANGED",
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
   },
   {
    "prediction_id": "b8f5d49b99f5236d",
@@ -1136,7 +1178,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-11-03T18:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "1febb7709e78dd05",
@@ -1391,6 +1433,48 @@
    "start_time_source": "unified_ledger.event_start"
   },
   {
+   "prediction_id": "bdcb6f7a946fc630",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "sport": "tennis",
+   "competition": "ATP Paris Masters",
+   "event_id": "b92f417b119f280893500cc87bd8714e",
+   "event_key": "tennis|tennis_atp_paris_masters|b92f417b119f280893500cc87bd8714e",
+   "event_name": "Nuno Borges v Karen Khachanov",
+   "event_start": "2026-11-04T10:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Karen Khachanov",
+   "estimated_probability": "0.664829",
+   "fair_odds": "1.5041461789422543",
+   "probability_band": "65-69.9%",
+   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
+   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "data_quality": "OK",
+   "current_context_status": "NOT_MODELLED",
+   "configured_scan_time": "",
+   "actual_workflow_start": "2026-11-03T16:16:33.742380+00:00",
+   "prediction_timestamp": "2026-11-03T16:16:33.742380+00:00",
+   "minutes_to_event": "1063.4",
+   "live_price": "1.41",
+   "live_price_source": "betfair_ex_uk back (odds_api)",
+   "paper_status": "PAPER",
+   "prediction_valid": "True",
+   "single_eligible": "True",
+   "single_ineligible_reason": "",
+   "multi_research_eligible": "False",
+   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
+   "origin": "tennis_predictions/ledger_predictions.csv",
+   "origin_prediction_id": "bdcb6f7a946fc630",
+   "settlement_status": "",
+   "result": "",
+   "correct": "",
+   "settlement_timestamp": "",
+   "event_start_original": "2026-11-04T10:00:00+00:00",
+   "start_time_status": "UNCHANGED",
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+  },
+  {
    "prediction_id": "8673d96227cc047a",
    "engine_id": "football_double_chance.derived_1x2",
    "engine_version": "1",
@@ -1431,48 +1515,6 @@
    "event_start_original": "2026-11-03T19:45:00+00:00",
    "start_time_status": "LEDGER_ONLY",
    "start_time_source": "unified_ledger.event_start"
-  },
-  {
-   "prediction_id": "a7102f3d299a3825",
-   "engine_id": "atp_match_winner.betfair_market",
-   "engine_version": "1",
-   "sport": "tennis",
-   "competition": "ATP Paris Masters",
-   "event_id": "2fe52476d7d37d8230ca007cdf25c34c",
-   "event_key": "tennis|tennis_atp_paris_masters|2fe52476d7d37d8230ca007cdf25c34c",
-   "event_name": "Tommy Paul v Holger Rune",
-   "event_start": "2026-11-03T14:40:00+00:00",
-   "market": "match_winner",
-   "selection": "Tommy Paul",
-   "estimated_probability": "0.651532",
-   "fair_odds": "1.5348440291497578",
-   "probability_band": "65-69.9%",
-   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
-   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "30 15 * * *",
-   "actual_workflow_start": "2026-11-01T19:54:10.810355+00:00",
-   "prediction_timestamp": "2026-11-01T19:54:10.810355+00:00",
-   "minutes_to_event": "2285.8",
-   "live_price": "1.52",
-   "live_price_source": "betfair_ex_uk back (odds_api)",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "True",
-   "single_ineligible_reason": "",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
-   "origin": "tennis_predictions/ledger_predictions.csv",
-   "origin_prediction_id": "a7102f3d299a3825",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-03T10:00:00+00:00",
-   "start_time_status": "RESCHEDULED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "e8c6b646e8c29fb2",
@@ -1640,7 +1682,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-11-04T10:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "438d6d2f849225cc",
@@ -1934,7 +1976,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-11-03T19:30:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "e9f7ad11b84d50d1",
@@ -2312,7 +2354,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-11-04T10:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "2a7df4ed12c5a01a",
@@ -2396,7 +2438,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-11-04T10:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "2834d7c939005170",
@@ -2439,48 +2481,6 @@
    "event_start_original": "2026-11-05T01:10:00+00:00",
    "start_time_status": "LEDGER_ONLY",
    "start_time_source": "unified_ledger.event_start"
-  },
-  {
-   "prediction_id": "1856f0673b7e6e59",
-   "engine_id": "atp_match_winner.betfair_market",
-   "engine_version": "1",
-   "sport": "tennis",
-   "competition": "ATP Paris Masters",
-   "event_id": "766892f0324922ef7aab73a2713af3c2",
-   "event_key": "tennis|tennis_atp_paris_masters|766892f0324922ef7aab73a2713af3c2",
-   "event_name": "Alex Michelsen v Jiri Lehecka",
-   "event_start": "2026-11-03T14:50:00+00:00",
-   "market": "match_winner",
-   "selection": "Jiri Lehecka",
-   "estimated_probability": "0.562654",
-   "fair_odds": "1.777291194943962",
-   "probability_band": "55-59.9%",
-   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
-   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "30 15 * * *",
-   "actual_workflow_start": "2026-11-01T19:54:10.810355+00:00",
-   "prediction_timestamp": "2026-11-01T19:54:10.810355+00:00",
-   "minutes_to_event": "2285.8",
-   "live_price": "1.75",
-   "live_price_source": "betfair_ex_uk back (odds_api)",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "True",
-   "single_ineligible_reason": "",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
-   "origin": "tennis_predictions/ledger_predictions.csv",
-   "origin_prediction_id": "1856f0673b7e6e59",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-03T10:00:00+00:00",
-   "start_time_status": "RESCHEDULED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "d02aee6f4783aa0e",
@@ -3247,7 +3247,7 @@
    "event_id": "232e9e6ce004ffcdda5130a7f432eb15",
    "event_key": "tennis|tennis_atp_paris_masters|232e9e6ce004ffcdda5130a7f432eb15",
    "event_name": "Jan-Lennard Struff v Arthur Gea",
-   "event_start": "2026-11-03T16:55:00+00:00",
+   "event_start": "2026-11-03T17:30:00+00:00",
    "market": "match_winner",
    "selection": "Arthur Gea",
    "estimated_probability": "0.512376",
