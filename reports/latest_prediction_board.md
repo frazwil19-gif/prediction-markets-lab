@@ -1,30 +1,24 @@
-# DAILY PREDICTION BOARD — 2026-11-02
+# DAILY PREDICTION BOARD — 2026-11-03
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 52 · Valid predictions: 142 · Sports: americanfootball, basketball, football, icehockey, tennis
-Counts: >=70: 32 · >=75: 12 · >=80: 8 · >=85: 5 · >=90: 1 · >=95: 0
+Upcoming events: 25 · Valid predictions: 79 · Sports: basketball, football, tennis
+Counts: >=70: 17 · >=75: 2 · >=80: 2 · >=85: 1 · >=90: 0 · >=95: 0
 Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 451
 
 ## Top predictions (P ≥ 80%)
 
 | Sport | Event | Start (UTC) | Market | Selection | P | Fair | Band | Engine | Evidence | Price (source) | Single | Multi-research |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| football | Benfica v Alverca | 2026-11-02T20:15 | double_chance | 1X | 93.1% | 1.07 | 90-94.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.05 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | tennis | Ignacio Buse v Daniil Medvedev | 2026-11-04T10:00 | match_winner | Daniil Medvedev | 88.1% | 1.14 | 85-89.9% | atp_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.11 (betfair_ex_uk back (odds_api)) | no | yes |
-| basketball | Utah Jazz @ San Antonio Spurs | 2026-11-03T01:40 | moneyline | San Antonio Spurs | 87.7% | 1.14 | 85-89.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.11 (odds_api:skybet) | no | yes |
-| football | Benfica v Alverca | 2026-11-02T20:15 | double_chance | 12 | 87.4% | 1.14 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.11 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| basketball | Brooklyn Nets @ New York Knicks | 2026-11-03T00:40 | moneyline | New York Knicks | 86.5% | 1.16 | 85-89.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.12 (odds_api:unibet_uk) | no | yes |
-| football | Atalanta BC v Parma | 2026-11-02T19:45 | double_chance | 1X | 84.3% | 1.19 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.17 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | tennis | Benjamin Bonzi v Taylor Fritz | 2026-11-03T14:30 ⟳ | match_winner | Taylor Fritz | 81.7% | 1.22 | 80-84.9% | atp_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.15 (betfair_ex_uk back (odds_api)) | no | yes |
-| football | Benfica v Alverca | 2026-11-02T20:15 | 1x2 | home | 80.4% | 1.24 | 80-84.9% | football_1x2.market_consensus@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (odds_api:Smarkets) | no | yes |
 
 ## Prospective evidence
 
 | Engine | Status | Predictions | Settled | Maturity | ≥80% settled | ≥80% pred → actual |
 |---|---|---|---|---|---|---|
-| football_1x2.market_consensus | VALIDATED_HISTORICAL / COLLECTING | 1044 | 318 | EARLY | 1 | 82.3% → 100.0% |
-| football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 142 | 106 | EARLY | 0 | — → — |
+| football_1x2.market_consensus | VALIDATED_HISTORICAL / COLLECTING | 1044 | 390 | EARLY | 1 | 82.3% → 100.0% |
+| football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 142 | 132 | EARLY | 0 | — → — |
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
 | atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 185 | 146 | EARLY | 25 | 87.7% → 76.0% |
 | wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 190 | 168 | EARLY | 31 | 89.3% → 80.6% |
@@ -38,7 +32,7 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 451
 - daily_scan: OK (last 2026-11-02T07:16:37.758635+00:00)
 - settlement: OK (last 2026-11-02T00:32:12.383294+00:00)
 - tennis_board: OK (last 2026-11-02T16:16:36.187881+00:00)
-- ci_tests: OK (last 2026-11-02T16:16:37.495816+00:00)
+- ci_tests: OK (last 2026-11-03T02:53:07.383426+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
