@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-11-03T14:33Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-03T15:29Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 116 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 24 · research predictions: 0
+Predictions in the next window: 114 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 24 · research predictions: 52
 
 ## 1. Best predictions today
 
@@ -38,18 +38,18 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | 26 | tennis | Alexander Zverev v Lorenzo Musetti | 2026-11-04T10:00 | match_winner | Alexander Zverev | 69.1% | 60%+ | 1.4% | VALIDATED | 1.45 | 1.43 (betfair_ex_uk) | no |
 | 27 | football | Charlton Athletic v Bolton Wanderers | 2026-11-03T19:45 | double_chance | 1X | 69.0% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.45 | no price | no |
 | 28 | football | Cardiff City v West Ham United | 2026-11-04T19:45 | over_under_2_5 | over | 68.1% | 60%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.47 | price not usable (stale/wide/unknown commission) | no |
-| 29 | tennis | Tommy Paul v Holger Rune | 2026-11-03T14:40 | match_winner | Tommy Paul | 67.2% | 60%+ | 1.3% | VALIDATED | 1.49 | 1.50 (williamhill) | no |
-| 30 | football | Watford v Lincoln City | 2026-11-03T19:45 | double_chance | 1X | 66.4% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.51 | no price | no |
-| 31 | football | West Bromwich Albion v Southampton | 2026-11-03T20:00 | double_chance | 1X | 64.8% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.54 | no price | no |
-| 32 | football | Blackburn Rovers v Stoke City | 2026-11-03T19:45 | double_chance | 1X | 64.6% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.55 | no price | no |
-| 33 | football | Portsmouth v Swansea City | 2026-11-03T19:45 | double_chance | X2 | 64.3% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.55 | no price | no |
-| 34 | tennis | Arthur Fils v Tomas Machac | 2026-11-04T10:00 | match_winner | Arthur Fils | 64.1% | 60%+ | 1.4% | VALIDATED | 1.56 | 1.54 (betfair_ex_uk) | no |
-| 35 | football | Blackburn Rovers v Stoke City | 2026-11-03T19:45 | double_chance | X2 | 64.1% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.56 | no price | no |
-| 36 | football | Portsmouth v Swansea City | 2026-11-03T19:45 | double_chance | 1X | 64.1% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.56 | no price | no |
-| 37 | football | KV Kortrijk v KV Mechelen | 2026-11-04T19:30 | double_chance | X2 | 63.8% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.57 | no price | no |
-| 38 | icehockey | Carolina Hurricanes @ Nashville Predators | 2026-11-04T01:10 | moneyline | Carolina Hurricanes | 63.7% | 60%+ | — | PROVISIONAL | 1.57 | 1.53 (paddypower) | no |
-| 39 | football | KV Kortrijk v KV Mechelen | 2026-11-04T19:30 | double_chance | 1X | 63.7% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.57 | no price | no |
-| 40 | icehockey | Winnipeg Jets @ Montréal Canadiens | 2026-11-04T00:10 | moneyline | Montréal Canadiens | 63.2% | 60%+ | — | PROVISIONAL | 1.58 | price not usable (stale/wide/unknown commission) | no |
+| 29 | football | Watford v Lincoln City | 2026-11-03T19:45 | double_chance | 1X | 66.4% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.51 | no price | no |
+| 30 | football | West Bromwich Albion v Southampton | 2026-11-03T20:00 | double_chance | 1X | 64.8% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.54 | no price | no |
+| 31 | football | Blackburn Rovers v Stoke City | 2026-11-03T19:45 | double_chance | 1X | 64.6% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.55 | no price | no |
+| 32 | football | Portsmouth v Swansea City | 2026-11-03T19:45 | double_chance | X2 | 64.3% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.55 | no price | no |
+| 33 | tennis | Arthur Fils v Tomas Machac | 2026-11-04T10:00 | match_winner | Arthur Fils | 64.1% | 60%+ | 1.4% | VALIDATED | 1.56 | 1.54 (betfair_ex_uk) | no |
+| 34 | football | Blackburn Rovers v Stoke City | 2026-11-03T19:45 | double_chance | X2 | 64.1% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.56 | no price | no |
+| 35 | football | Portsmouth v Swansea City | 2026-11-03T19:45 | double_chance | 1X | 64.1% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.56 | no price | no |
+| 36 | football | KV Kortrijk v KV Mechelen | 2026-11-04T19:30 | double_chance | X2 | 63.8% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.57 | no price | no |
+| 37 | icehockey | Carolina Hurricanes @ Nashville Predators | 2026-11-04T01:10 | moneyline | Carolina Hurricanes | 63.7% | 60%+ | — | PROVISIONAL | 1.57 | 1.53 (paddypower) | no |
+| 38 | football | KV Kortrijk v KV Mechelen | 2026-11-04T19:30 | double_chance | 1X | 63.7% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.57 | no price | no |
+| 39 | icehockey | Winnipeg Jets @ Montréal Canadiens | 2026-11-04T00:10 | moneyline | Montréal Canadiens | 63.2% | 60%+ | — | PROVISIONAL | 1.58 | price not usable (stale/wide/unknown commission) | no |
+| 40 | tennis | Casper Ruud v Rafael Jodar | 2026-11-03T19:30 | match_winner | Rafael Jodar | 62.8% | 60%+ | 1.1% | VALIDATED | 1.59 | 1.59 (betfair_ex_uk) | no |
 
 ## 2. Qualified paper bets (simulated stakes, recorded automatically)
 
@@ -92,10 +92,63 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 90 · NET_EV_NOT_POSITIVE 61 · PRICE_STALE 51 · NO_EXECUTABLE_PRICE 39 · P_BELOW_FLOOR 39 · COMMISSION_UNKNOWN 13 · NET_EV_BELOW_PAPER_GATE 1
+ENGINE_STATUS_INELIGIBLE 90 · NET_EV_NOT_POSITIVE 60 · PRICE_STALE 51 · NO_EXECUTABLE_PRICE 39 · P_BELOW_FLOOR 39 · COMMISSION_UNKNOWN 13
 
 ## 4. Research predictions — not money eligible
 
 _Model probabilities from research engines. Shown for information and to build a prospective record; they are NOT betting recommendations._
 
-None in the window (corners collector lists no covered-league fixtures yet).
+| Event | Start | Market | Selection | P | Model fair odds | Model | Status |
+|---|---|---|---|---|---|---|---|
+| Birmingham v Millwall (E1) | 2026-11-03 | total_corners | over 8.5 | 73.3% | 1.36 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Cardiff v West Ham (E1) | 2026-11-04 | total_corners | over 8.5 | 72.7% | 1.38 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Charlton v Bolton (E1) | 2026-11-03 | total_corners | over 8.5 | 71.6% | 1.40 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| West Brom v Southampton (E1) | 2026-11-03 | total_corners | over 8.5 | 70.9% | 1.41 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Preston v Sheffield Utd (E1) | 2026-11-03 | total_corners | over 8.5 | 70.8% | 1.41 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Kortrijk v KV Mechelen (B1) | 2026-11-04 | total_corners | under 11.5 | 70.3% | 1.42 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Blackburn v Stoke (E1) | 2026-11-03 | total_corners | over 8.5 | 70.2% | 1.42 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Derby v Norwich (E1) | 2026-11-03 | total_corners | under 11.5 | 70.0% | 1.43 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bristol City v Wolves (E1) | 2026-11-04 | total_corners | over 8.5 | 70.0% | 1.43 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| QPR v Burnley (E1) | 2026-11-03 | total_corners | under 11.5 | 68.6% | 1.46 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Watford v Lincoln (E1) | 2026-11-03 | total_corners | over 8.5 | 68.2% | 1.47 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Wrexham v Middlesbrough (E1) | 2026-11-04 | total_corners | over 8.5 | 67.9% | 1.47 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Portsmouth v Swansea (E1) | 2026-11-03 | total_corners | over 8.5 | 67.1% | 1.49 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Portsmouth v Swansea (E1) | 2026-11-03 | total_corners | under 11.5 | 66.8% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Wrexham v Middlesbrough (E1) | 2026-11-04 | total_corners | under 11.5 | 66.5% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Watford v Lincoln (E1) | 2026-11-03 | total_corners | under 11.5 | 65.9% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| QPR v Burnley (E1) | 2026-11-03 | total_corners | over 8.5 | 65.3% | 1.53 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Derby v Norwich (E1) | 2026-11-03 | total_corners | over 8.5 | 64.3% | 1.56 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Kortrijk v KV Mechelen (B1) | 2026-11-04 | total_corners | over 8.5 | 64.2% | 1.56 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bristol City v Wolves (E1) | 2026-11-04 | total_corners | under 11.5 | 64.0% | 1.56 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Blackburn v Stoke (E1) | 2026-11-03 | total_corners | under 11.5 | 63.8% | 1.57 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Preston v Sheffield Utd (E1) | 2026-11-03 | total_corners | under 11.5 | 63.1% | 1.59 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| West Brom v Southampton (E1) | 2026-11-03 | total_corners | under 11.5 | 63.0% | 1.59 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Birmingham v Millwall (E1) | 2026-11-03 | total_corners | over 9.5 | 62.6% | 1.60 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Charlton v Bolton (E1) | 2026-11-03 | total_corners | under 11.5 | 62.2% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Cardiff v West Ham (E1) | 2026-11-04 | total_corners | over 9.5 | 61.8% | 1.62 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Cardiff v West Ham (E1) | 2026-11-04 | total_corners | under 11.5 | 60.6% | 1.65 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Charlton v Bolton (E1) | 2026-11-03 | total_corners | over 9.5 | 60.5% | 1.65 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Derby v Norwich (E1) | 2026-11-03 | total_corners | under 10.5 | 59.9% | 1.67 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Kortrijk v KV Mechelen (B1) | 2026-11-04 | total_corners | under 10.5 | 59.8% | 1.67 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Birmingham v Millwall (E1) | 2026-11-03 | total_corners | under 11.5 | 59.6% | 1.68 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| West Brom v Southampton (E1) | 2026-11-03 | total_corners | over 9.5 | 59.5% | 1.68 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Preston v Sheffield Utd (E1) | 2026-11-03 | total_corners | over 9.5 | 59.5% | 1.68 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Blackburn v Stoke (E1) | 2026-11-03 | total_corners | over 9.5 | 58.7% | 1.70 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bristol City v Wolves (E1) | 2026-11-04 | total_corners | over 9.5 | 58.6% | 1.71 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| QPR v Burnley (E1) | 2026-11-03 | total_corners | under 10.5 | 58.3% | 1.72 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Watford v Lincoln (E1) | 2026-11-03 | total_corners | over 9.5 | 56.6% | 1.77 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Portsmouth v Swansea (E1) | 2026-11-03 | total_corners | under 10.5 | 56.3% | 1.78 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Wrexham v Middlesbrough (E1) | 2026-11-04 | total_corners | over 9.5 | 56.1% | 1.78 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Wrexham v Middlesbrough (E1) | 2026-11-04 | total_corners | under 10.5 | 55.6% | 1.80 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Portsmouth v Swansea (E1) | 2026-11-03 | total_corners | over 9.5 | 55.5% | 1.80 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Watford v Lincoln (E1) | 2026-11-03 | total_corners | under 10.5 | 55.2% | 1.81 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| QPR v Burnley (E1) | 2026-11-03 | total_corners | over 9.5 | 53.9% | 1.85 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bristol City v Wolves (E1) | 2026-11-04 | total_corners | under 10.5 | 53.1% | 1.88 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Blackburn v Stoke (E1) | 2026-11-03 | total_corners | under 10.5 | 53.1% | 1.88 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| West Brom v Southampton (E1) | 2026-11-03 | total_corners | under 10.5 | 52.1% | 1.92 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Preston v Sheffield Utd (E1) | 2026-11-03 | total_corners | under 10.5 | 52.1% | 1.92 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Derby v Norwich (E1) | 2026-11-03 | total_corners | over 9.5 | 52.1% | 1.92 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Kortrijk v KV Mechelen (B1) | 2026-11-04 | total_corners | over 9.5 | 51.9% | 1.93 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Birmingham v Millwall (E1) | 2026-11-03 | total_corners | over 10.5 | 51.5% | 1.94 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Charlton v Bolton (E1) | 2026-11-03 | total_corners | under 10.5 | 51.2% | 1.95 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Cardiff v West Ham (E1) | 2026-11-04 | total_corners | over 10.5 | 50.4% | 1.99 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
