@@ -4,16 +4,21 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-04T07:16Z · events scanned 15 · valid predictions 38 · high-P (≥70%) 10 · priced 24 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 38 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-04T14:48Z · events scanned 31 · valid predictions 54 · high-P (≥70%) 16 · priced 30 · PAPER_BET 0 · MULTI-research 4 · WATCH 0 · REJECT 50 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 27 · NET_EV_NOT_POSITIVE 22 · P_BELOW_FLOOR 12 · NO_EXECUTABLE_PRICE 12 · PRICE_STALE 11 · COMMISSION_UNKNOWN 2 · EXCHANGE_SPREAD_TOO_WIDE 2
+Reason codes (latest run): NET_EV_NOT_POSITIVE 28 · ENGINE_STATUS_INELIGIBLE 27 · PRICE_STALE 19 · P_BELOW_FLOOR 12 · COMMISSION_UNKNOWN 12 · NO_EXECUTABLE_PRICE 12 · EXCHANGE_SPREAD_TOO_WIDE 2
 
 ## Candidates (latest run, best price per prediction)
 
 | Event | Start | Sel | P | Fair | Odds (source) | Break-even | Net EV | Decision |
 |---|---|---|---|---|---|---|---|---|
-| Ignacio Buse v Daniil Medvedev | 2026-11-04T10:00 | Daniil Medvedev | 85.1% | 1.18 | 1.17 (betfair_ex_uk) | 86.1% | -1.2% | REJECT |
-| Tomas Martin Etcheverry v Alex de Minaur | 2026-11-04T10:00 | Alex de Minaur | 78.2% | 1.28 | 1.25 (betfair_ex_uk) | 80.8% | -3.3% | REJECT |
+| Alex Michelsen v Carlos Alcaraz | 2026-11-04T18:00 | Carlos Alcaraz | 81.8% | 1.22 | 1.22 (betfair_ex_uk) | 82.7% | -1.1% | MULTI_RESEARCH_ELIGIBLE |
+| Chicago Bulls @ New York Knicks | 2026-11-05T00:40 | New York Knicks | 81.7% | 1.22 | 1.20 (matchbook) | — | — | REJECT |
+| Los Angeles Lakers @ Sacramento Kings | 2026-11-05T03:10 | Los Angeles Lakers | 81.2% | 1.23 | 1.20 (skybet) | 83.3% | -2.6% | MULTI_RESEARCH_ELIGIBLE |
+| Dallas Mavericks @ San Antonio Spurs | 2026-11-05T02:30 | San Antonio Spurs | 80.9% | 1.24 | 1.20 (skybet) | 83.3% | -2.9% | MULTI_RESEARCH_ELIGIBLE |
+| Jacksonville Jaguars @ Baltimore Ravens | 2026-11-06T01:15 | Jacksonville Jaguars | 80.8% | 1.24 | 1.21 (matchbook) | — | — | REJECT |
+| Milwaukee Bucks @ Boston Celtics | 2026-11-05T00:40 | Boston Celtics | 80.5% | 1.24 | 1.20 (smarkets) | 83.6% | -3.7% | MULTI_RESEARCH_ELIGIBLE |
+| Alex Molcan v Taylor Fritz | 2026-11-04T15:00 | Taylor Fritz | 79.0% | 1.27 | 1.25 (sport888) | 80.0% | -1.3% | REJECT |
 | Wrexham AFC v Middlesbrough | 2026-11-04T19:45 | X2 | 77.5% | 1.29 | — | — | — | REJECT |
 | Cardiff City v West Ham United | 2026-11-04T19:45 | 12 | 76.5% | 1.31 | — | — | — | REJECT |
 | Wrexham AFC v Middlesbrough | 2026-11-04T19:45 | 12 | 75.8% | 1.32 | — | — | — | REJECT |
@@ -21,35 +26,32 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 27 · NET_EV_NOT_POSITIVE 22
 | Bristol City v Wolverhampton Wanderers | 2026-11-04T20:00 | 12 | 72.8% | 1.37 | — | — | — | REJECT |
 | KV Kortrijk v KV Mechelen | 2026-11-04T19:30 | 12 | 72.5% | 1.38 | — | — | — | REJECT |
 | Bristol City v Wolverhampton Wanderers | 2026-11-04T20:00 | X2 | 72.5% | 1.38 | — | — | — | REJECT |
+| Ben Shelton v Arthur Rinderknech | 2026-11-05T10:00 | Ben Shelton | 72.1% | 1.39 | 1.34 (betfair_ex_uk) | 75.6% | -4.6% | REJECT |
 | Cardiff City v West Ham United | 2026-11-04T19:45 | X2 | 70.8% | 1.41 | — | — | — | REJECT |
-| Alexander Zverev v Lorenzo Musetti | 2026-11-04T10:00 | Alexander Zverev | 68.3% | 1.46 | 1.45 (betfair_ex_uk) | 70.1% | -2.5% | REJECT |
+| Tommy Paul v Quentin Halys | 2026-11-05T10:00 | Tommy Paul | 69.9% | 1.43 | 1.34 (betfair_ex_uk) | 75.6% | -7.5% | REJECT |
+| Chicago Blackhawks @ Florida Panthers | 2026-11-05T00:40 | Florida Panthers | 68.3% | 1.46 | 1.43 (matchbook) | — | — | REJECT |
 | Cardiff City v West Ham United | 2026-11-04T19:45 | over | 68.1% | 1.47 | 1.36 (william hill) | 73.5% | -7.4% | REJECT |
-| Nuno Borges v Karen Khachanov | 2026-11-04T10:00 | Karen Khachanov | 66.5% | 1.50 | 1.41 (betfair_ex_uk) | 72.0% | -7.6% | REJECT |
+| Indiana Pacers @ Memphis Grizzlies | 2026-11-05T01:10 | Memphis Grizzlies | 67.8% | 1.48 | 1.46 (matchbook) | — | — | REJECT |
+| Thiago Agustin Tirante v Jan-Lennard Struff | 2026-11-04T16:10 | Jan-Lennard Struff | 66.4% | 1.51 | 1.50 (betfair_ex_uk) | 67.8% | -2.1% | REJECT |
+| Utah Jazz @ New Orleans Pelicans | 2026-11-05T01:10 | New Orleans Pelicans | 66.0% | 1.51 | 1.47 (smarkets) | 68.5% | -3.6% | REJECT |
+| Nuno Borges v Karen Khachanov | 2026-11-04T15:00 | Karen Khachanov | 64.6% | 1.55 | 1.53 (sport888) | 65.4% | -1.1% | REJECT |
 | KV Kortrijk v KV Mechelen | 2026-11-04T19:30 | X2 | 63.8% | 1.57 | — | — | — | REJECT |
 | KV Kortrijk v KV Mechelen | 2026-11-04T19:30 | 1X | 63.7% | 1.57 | — | — | — | REJECT |
-| Arthur Fils v Tomas Machac | 2026-11-04T10:00 | Arthur Fils | 63.3% | 1.58 | 1.57 (betfair_ex_uk) | 64.9% | -2.5% | REJECT |
+| Miami Heat @ Los Angeles Clippers | 2026-11-05T03:40 | Miami Heat | 62.8% | 1.59 | 1.55 (matchbook) | — | — | REJECT |
+| Toronto Raptors @ Denver Nuggets | 2026-11-05T02:00 | Denver Nuggets | 62.4% | 1.60 | 1.57 (skybet) | 63.7% | -2.1% | REJECT |
+| Arthur Fils v Tomas Machac | 2026-11-04T19:30 | Arthur Fils | 61.5% | 1.62 | 1.62 (betfair_ex_uk) | 62.9% | -2.2% | REJECT |
+| San Jose Sharks @ Los Angeles Kings | 2026-11-05T03:10 | Los Angeles Kings | 59.1% | 1.69 | 1.66 (matchbook) | — | — | REJECT |
 | Wrexham AFC v Middlesbrough | 2026-11-04T19:45 | over | 58.4% | 1.71 | 1.62 (casumo) | 61.7% | -5.4% | REJECT |
-| Mattia Bellucci v Arthur Rinderknech | 2026-11-04T10:00 | Mattia Bellucci | 57.1% | 1.75 | 1.72 (betfair_ex_uk) | 59.4% | -3.8% | REJECT |
-| Quentin Halys v Frances Tiafoe | 2026-11-04T10:00 | Frances Tiafoe | 56.5% | 1.77 | 1.75 (betfair_ex_uk) | 58.4% | -3.2% | REJECT |
+| Atlanta Hawks @ Washington Wizards | 2026-11-05T00:10 | Atlanta Hawks | 57.3% | 1.75 | 1.73 (matchbook) | — | — | REJECT |
+| Portland Trail Blazers @ Phoenix Suns | 2026-11-05T02:00 | Portland Trail Blazers | 57.2% | 1.75 | 1.71 (matchbook) | — | — | REJECT |
 | Cleveland Cavaliers @ Oklahoma City Thunder | 2026-11-05T01:10 | Oklahoma City Thunder | 56.4% | 1.77 | 1.71 (betway) | 58.5% | -3.6% | REJECT |
 | Charlotte Hornets @ Brooklyn Nets | 2026-11-05T00:40 | Charlotte Hornets | 55.3% | 1.81 | 1.74 (betway) | 57.5% | -3.8% | REJECT |
+| Calgary Flames @ Seattle Kraken | 2026-11-05T03:10 | Seattle Kraken | 54.9% | 1.82 | 1.83 (matchbook) | — | — | REJECT |
 | Bristol City v Wolverhampton Wanderers | 2026-11-04T20:00 | 1X | 54.7% | 1.83 | — | — | — | REJECT |
 | Wrexham AFC v Middlesbrough | 2026-11-04T19:45 | away | 54.2% | 1.84 | 1.78 (smarkets) | 56.7% | -4.3% | REJECT |
+| Matteo Berrettini v Ugo Humbert | 2026-11-04T16:10 | Ugo Humbert | 54.0% | 1.85 | 1.83 (boylesports) | 54.6% | -1.1% | REJECT |
+| Ottawa Senators @ Buffalo Sabres | 2026-11-05T00:40 | Buffalo Sabres | 53.3% | 1.88 | 1.86 (matchbook) | — | — | REJECT |
 | Philadelphia 76ers @ Detroit Pistons | 2026-11-05T00:10 | Detroit Pistons | 52.7% | 1.90 | 1.83 (betway) | 54.6% | -3.5% | REJECT |
-| Cardiff City v West Ham United | 2026-11-04T19:45 | 1X | 52.7% | 1.90 | — | — | — | REJECT |
-| Bristol City v Wolverhampton Wanderers | 2026-11-04T20:00 | over | 50.0% | 2.00 | 2.00 (matchbook) | — | — | REJECT |
-| Cardiff City v West Ham United | 2026-11-04T19:45 | away | 47.5% | 2.10 | 2.05 (coral) | 48.8% | -2.6% | REJECT |
-| Wrexham AFC v Middlesbrough | 2026-11-04T19:45 | 1X | 46.7% | 2.14 | — | — | — | REJECT |
-| Bristol City v Wolverhampton Wanderers | 2026-11-04T20:00 | away | 44.4% | 2.25 | 2.24 (smarkets) | 45.1% | -1.7% | REJECT |
-| KV Kortrijk v KV Mechelen | 2026-11-04T19:30 | home | 38.0% | 2.63 | 2.55 (casumo) | 39.2% | -3.2% | REJECT |
-| KV Kortrijk v KV Mechelen | 2026-11-04T19:30 | away | 33.6% | 2.98 | 3.05 (betfair) | 33.9% | -1.1% | REJECT |
-| Cardiff City v West Ham United | 2026-11-04T19:45 | home | 28.8% | 3.47 | 3.55 (smarkets) | 28.6% | 0.8% | REJECT |
-| Bristol City v Wolverhampton Wanderers | 2026-11-04T20:00 | home | 28.5% | 3.51 | 3.55 (smarkets) | 28.6% | -0.4% | REJECT |
-| KV Kortrijk v KV Mechelen | 2026-11-04T19:30 | draw | 28.3% | 3.53 | 3.45 (matchbook) | — | — | REJECT |
-| Bristol City v Wolverhampton Wanderers | 2026-11-04T20:00 | draw | 27.4% | 3.65 | 3.60 (smarkets) | 28.2% | -2.8% | REJECT |
-| Cardiff City v West Ham United | 2026-11-04T19:45 | draw | 23.7% | 4.23 | 4.20 (smarkets) | 24.2% | -2.2% | REJECT |
-| Wrexham AFC v Middlesbrough | 2026-11-04T19:45 | draw | 23.4% | 4.27 | 4.30 (betfair) | 24.2% | -3.1% | REJECT |
-| Wrexham AFC v Middlesbrough | 2026-11-04T19:45 | home | 22.3% | 4.48 | 4.70 (betfair) | 22.1% | 0.8% | REJECT |
 
 ## Paper results (all time)
 

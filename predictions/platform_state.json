@@ -1,14 +1,14 @@
 {
- "americanfootball_nfl_last_odds_date": "2026-11-02",
+ "americanfootball_nfl_last_odds_date": "2026-11-04",
  "americanfootball_nfl_last_scores_date": "2026-11-03",
- "icehockey_nhl_last_odds_date": "2026-11-03",
+ "icehockey_nhl_last_odds_date": "2026-11-04",
  "icehockey_nhl_last_scores_date": "2026-11-03",
- "last_ci_pass": "2026-11-04T07:16:34.614611+00:00",
+ "last_ci_pass": "2026-11-04T14:48:18.473266+00:00",
  "last_runs": {
   "americanfootball_nfl": {
-   "added": 0,
-   "already_recorded": 1,
-   "at": "2026-11-02T16:16:40.079185+00:00",
+   "added": 1,
+   "already_recorded": 0,
+   "at": "2026-11-04T14:48:21.645040+00:00",
    "candidates": 1
   },
   "football": {
@@ -18,16 +18,16 @@
    "candidates": 27
   },
   "icehockey_nhl": {
-   "added": 11,
-   "already_recorded": 0,
-   "at": "2026-11-03T14:33:33.487575+00:00",
-   "candidates": 11
-  },
-  "nba": {
    "added": 4,
    "already_recorded": 0,
-   "at": "2026-11-03T14:33:32.457594+00:00",
+   "at": "2026-11-04T14:48:21.206130+00:00",
    "candidates": 4
+  },
+  "nba": {
+   "added": 10,
+   "already_recorded": 0,
+   "at": "2026-11-04T14:48:19.946491+00:00",
+   "candidates": 10
   },
   "settle": {
    "added": 1,
@@ -35,14 +35,14 @@
    "pending_review": 1317
   },
   "tennis": {
-   "added": 0,
+   "added": 6,
    "already_recorded": 476,
-   "at": "2026-11-04T02:31:25.846721+00:00",
-   "candidates": 476
+   "at": "2026-11-04T14:48:18.582268+00:00",
+   "candidates": 482
   }
  },
- "last_tennis_ingest": "2026-11-04T02:31:25.846760+00:00",
- "nba_last_odds_date": "2026-11-03",
+ "last_tennis_ingest": "2026-11-04T14:48:18.582308+00:00",
+ "nba_last_odds_date": "2026-11-04",
  "nba_last_scores_date": "2026-11-03",
  "pending_review": [
   {
@@ -6645,14 +6645,15 @@
  ],
  "skips": {
   "americanfootball_nfl": {
-   "nfl_moneyline.market: OUTSIDE_36H_WINDOW": 15
+   "nfl_moneyline.market: OUTSIDE_36H_WINDOW": 28
   },
   "football": {
    "football: OUTSIDE_48H_WINDOW": 21
   },
   "icehockey_nhl": {},
   "nba": {
-   "nba_moneyline.market: OUTSIDE_36H_WINDOW": 6
+   "nba_moneyline.market: ALREADY_PREDICTED_FIRST_SNAPSHOT_CANONICAL": 4,
+   "nba_moneyline.market: OUTSIDE_36H_WINDOW": 4
   },
   "tennis": {}
  }
