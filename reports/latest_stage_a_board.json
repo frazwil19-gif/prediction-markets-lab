@@ -2,35 +2,36 @@
  "board_version": "stage-a-2",
  "product": "STAGE A PREDICTION BOARD (probability first; NOT a betting card)",
  "principle": "STRONG PREDICTION != VALID BET. Stage B (bet-selection) alone decides bets.",
- "generated_at": "2026-11-04T14:48:21.650071+00:00",
+ "generated_at": "2026-11-04T16:16:25.306378+00:00",
  "strong_prediction_min_probability": 0.7,
  "summary": {
-  "predictions": 54,
-  "strong_predictions": 16,
-  "strong_unique_events": 13,
+  "predictions": 53,
+  "strong_predictions": 17,
+  "strong_unique_events": 14,
   "strong_by_price_status": {
-   "POOR_PAYOUT": 5,
-   "PRICE_QUALITY_FAIL": 4,
+   "POOR_PAYOUT": 4,
+   "PRICE_QUALITY_FAIL": 6,
    "PRICE_UNAVAILABLE": 7
   },
   "all_by_price_status": {
-   "POOR_PAYOUT": 11,
-   "PRICE_QUALITY_FAIL": 31,
-   "PRICE_UNAVAILABLE": 12
+   "POOR_PAYOUT": 8,
+   "PRICE_QUALITY_FAIL": 32,
+   "PRICE_UNAVAILABLE": 12,
+   "PRICE_VALID": 1
   },
   "duplicate_prediction_rows_collapsed": 0,
   "strong_by_sport": {
    "americanfootball": 1,
    "basketball": 5,
    "football": 7,
-   "tennis": 3
+   "tennis": 4
   },
   "all_by_sport": {
    "americanfootball": 1,
    "basketball": 14,
    "football": 27,
    "icehockey": 4,
-   "tennis": 8
+   "tennis": 7
   }
  },
  "predictions": [
@@ -45,20 +46,20 @@
    "start_time_status": "UNCHANGED",
    "market": "match_winner",
    "selection": "Carlos Alcaraz",
-   "probability": 0.817844,
+   "probability": 0.818452,
    "probability_basis": "P_CURRENT_SCAN",
-   "probability_observed_at": "2026-11-04T14:48:17.325287+00:00",
+   "probability_observed_at": "2026-11-04T16:16:23.295426+00:00",
    "p_first_snapshot": 0.817844,
-   "p_current_scan": 0.817844,
+   "p_current_scan": 0.818452,
    "ledger_probability": 0.817844,
    "normalisation": "",
    "minutes_to_event_at_prediction": "191.7",
-   "sigma": 0.012616,
+   "sigma": 0.0139,
    "sigma_method": "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)",
    "sigma_calibration": 0.012168,
    "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)",
-   "sigma_half_width": 0.003332,
-   "exchange_width": 0.006664,
+   "sigma_half_width": 0.006719,
+   "exchange_width": 0.013438,
    "probability_band": "80-84.9%",
    "engine_id": "atp_match_winner.betfair_market",
    "engine_version": "1",
@@ -71,11 +72,11 @@
    "financially_assessable": true,
    "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
    "best_clean_source": "betfair_ex_uk",
-   "best_clean_odds": 1.22,
-   "best_clean_net_ev": -0.011227,
-   "n_quotes_latest": 20,
-   "n_clean_quotes_latest": 19,
-   "price_observed_at": "2026-11-04T14:48:17.325287+00:00",
+   "best_clean_odds": 1.21,
+   "best_clean_net_ev": -0.018267,
+   "n_quotes_latest": 19,
+   "n_clean_quotes_latest": 18,
+   "price_observed_at": "2026-11-04T16:16:23.295426+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
    "rank": 1
@@ -311,52 +312,6 @@
    "rank": 6
   },
   {
-   "prediction_id": "3fba40140f871946",
-   "sport": "tennis",
-   "competition": "ATP Paris Masters",
-   "event_key": "tennis|tennis_atp_paris_masters|d9db521dae7522d7d24255286307307f",
-   "event_name": "Alex Molcan v Taylor Fritz",
-   "event_start": "2026-11-04T15:00:00+00:00",
-   "event_start_original": "2026-11-04T15:00:00+00:00",
-   "start_time_status": "UNCHANGED",
-   "market": "match_winner",
-   "selection": "Taylor Fritz",
-   "probability": 0.789692,
-   "probability_basis": "P_CURRENT_SCAN",
-   "probability_observed_at": "2026-11-04T14:48:17.325287+00:00",
-   "p_first_snapshot": 0.789692,
-   "p_current_scan": 0.789692,
-   "ledger_probability": 0.789692,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "11.7",
-   "sigma": 0.011971,
-   "sigma_method": "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)",
-   "sigma_calibration": 0.011556,
-   "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)",
-   "sigma_half_width": 0.003125,
-   "exchange_width": 0.006249,
-   "probability_band": "75-79.9%",
-   "engine_id": "atp_match_winner.betfair_market",
-   "engine_version": "1",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "prediction_timestamp": "2026-11-04T14:48:17.325287+00:00",
-   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
-   "strength": "STRONG_PREDICTION",
-   "price_status": "POOR_PAYOUT",
-   "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
-   "financially_assessable": true,
-   "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
-   "best_clean_source": "williamhill",
-   "best_clean_odds": 1.25,
-   "best_clean_net_ev": -0.012885,
-   "n_quotes_latest": 21,
-   "n_clean_quotes_latest": 20,
-   "price_observed_at": "2026-11-04T14:48:17.325287+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 7
-  },
-  {
    "prediction_id": "b8f5d49b99f5236d",
    "sport": "football",
    "competition": "Championship",
@@ -400,7 +355,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 8
+   "rank": 7
   },
   {
    "prediction_id": "0c0828f706b43f5b",
@@ -446,7 +401,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 9
+   "rank": 8
   },
   {
    "prediction_id": "a9ded21ac7995c30",
@@ -492,7 +447,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 10
+   "rank": 9
   },
   {
    "prediction_id": "29a89a94355c1a76",
@@ -536,6 +491,52 @@
    "n_quotes_latest": 1,
    "n_clean_quotes_latest": 0,
    "price_observed_at": "2026-11-03T14:33:31.804475+00:00",
+   "is_bet_recommendation": false,
+   "board_version": "stage-a-2",
+   "rank": 10
+  },
+  {
+   "prediction_id": "85edb3b9cd33dc6c",
+   "sport": "tennis",
+   "competition": "ATP Paris Masters",
+   "event_key": "tennis|tennis_atp_paris_masters|8962e5108426884c7237a80948c77cfb",
+   "event_name": "Lorenzo Musetti v Luca Van Assche",
+   "event_start": "2026-11-05T10:00:00+00:00",
+   "event_start_original": "2026-11-05T10:00:00+00:00",
+   "start_time_status": "UNCHANGED",
+   "market": "match_winner",
+   "selection": "Lorenzo Musetti",
+   "probability": 0.72825,
+   "probability_basis": "P_CURRENT_SCAN",
+   "probability_observed_at": "2026-11-04T16:16:23.295426+00:00",
+   "p_first_snapshot": 0.72825,
+   "p_current_scan": 0.72825,
+   "ledger_probability": 0.72825,
+   "normalisation": "",
+   "minutes_to_event_at_prediction": "1063.6",
+   "sigma": 0.051608,
+   "sigma_method": "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)",
+   "sigma_calibration": 0.011556,
+   "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)",
+   "sigma_half_width": 0.050298,
+   "exchange_width": 0.100596,
+   "probability_band": "70-74.9%",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "prediction_timestamp": "2026-11-04T16:16:23.295426+00:00",
+   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
+   "strength": "STRONG_PREDICTION",
+   "price_status": "PRICE_QUALITY_FAIL",
+   "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
+   "financially_assessable": false,
+   "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
+   "best_clean_source": "",
+   "best_clean_odds": null,
+   "best_clean_net_ev": null,
+   "n_quotes_latest": 17,
+   "n_clean_quotes_latest": 0,
+   "price_observed_at": "2026-11-04T16:16:23.295426+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
    "rank": 11
@@ -679,6 +680,52 @@
    "rank": 14
   },
   {
+   "prediction_id": "24434185e2d3354e",
+   "sport": "tennis",
+   "competition": "ATP Paris Masters",
+   "event_key": "tennis|tennis_atp_paris_masters|4111a4ac0ae11935311b655ebadd040b",
+   "event_name": "Tommy Paul v Quentin Halys",
+   "event_start": "2026-11-05T10:00:00+00:00",
+   "event_start_original": "2026-11-05T10:00:00+00:00",
+   "start_time_status": "UNCHANGED",
+   "market": "match_winner",
+   "selection": "Tommy Paul",
+   "probability": 0.72,
+   "probability_basis": "P_CURRENT_SCAN",
+   "probability_observed_at": "2026-11-04T16:16:23.295426+00:00",
+   "p_first_snapshot": 0.698858,
+   "p_current_scan": 0.72,
+   "ledger_probability": 0.698858,
+   "normalisation": "",
+   "minutes_to_event_at_prediction": "1151.7",
+   "sigma": 0.041001,
+   "sigma_method": "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)",
+   "sigma_calibration": 0.011556,
+   "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)",
+   "sigma_half_width": 0.039339,
+   "exchange_width": 0.078678,
+   "probability_band": "65-69.9%",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "prediction_timestamp": "2026-11-04T14:48:17.325287+00:00",
+   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
+   "strength": "STRONG_PREDICTION",
+   "price_status": "PRICE_QUALITY_FAIL",
+   "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
+   "financially_assessable": false,
+   "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
+   "best_clean_source": "",
+   "best_clean_odds": null,
+   "best_clean_net_ev": null,
+   "n_quotes_latest": 16,
+   "n_clean_quotes_latest": 0,
+   "price_observed_at": "2026-11-04T16:16:23.295426+00:00",
+   "is_bet_recommendation": false,
+   "board_version": "stage-a-2",
+   "rank": 15
+  },
+  {
    "prediction_id": "6c06d1817037ae82",
    "sport": "tennis",
    "competition": "ATP Paris Masters",
@@ -689,20 +736,20 @@
    "start_time_status": "UNCHANGED",
    "market": "match_winner",
    "selection": "Ben Shelton",
-   "probability": 0.721443,
+   "probability": 0.716463,
    "probability_basis": "P_CURRENT_SCAN",
-   "probability_observed_at": "2026-11-04T14:48:17.325287+00:00",
+   "probability_observed_at": "2026-11-04T16:16:23.295426+00:00",
    "p_first_snapshot": 0.721443,
-   "p_current_scan": 0.721443,
+   "p_current_scan": 0.716463,
    "ledger_probability": 0.721443,
    "normalisation": "",
    "minutes_to_event_at_prediction": "1151.7",
-   "sigma": 0.028372,
+   "sigma": 0.025872,
    "sigma_method": "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)",
    "sigma_calibration": 0.011556,
    "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)",
-   "sigma_half_width": 0.025912,
-   "exchange_width": 0.051824,
+   "sigma_half_width": 0.023148,
+   "exchange_width": 0.046296,
    "probability_band": "70-74.9%",
    "engine_id": "atp_match_winner.betfair_market",
    "engine_version": "1",
@@ -717,12 +764,12 @@
    "best_clean_source": "",
    "best_clean_odds": null,
    "best_clean_net_ev": null,
-   "n_quotes_latest": 14,
+   "n_quotes_latest": 16,
    "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-11-04T14:48:17.325287+00:00",
+   "price_observed_at": "2026-11-04T16:16:23.295426+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 15
+   "rank": 16
   },
   {
    "prediction_id": "1febb7709e78dd05",
@@ -766,52 +813,6 @@
    "n_quotes_latest": 0,
    "n_clean_quotes_latest": 0,
    "price_observed_at": "",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 16
-  },
-  {
-   "prediction_id": "24434185e2d3354e",
-   "sport": "tennis",
-   "competition": "ATP Paris Masters",
-   "event_key": "tennis|tennis_atp_paris_masters|4111a4ac0ae11935311b655ebadd040b",
-   "event_name": "Tommy Paul v Quentin Halys",
-   "event_start": "2026-11-05T10:00:00+00:00",
-   "event_start_original": "2026-11-05T10:00:00+00:00",
-   "start_time_status": "UNCHANGED",
-   "market": "match_winner",
-   "selection": "Tommy Paul",
-   "probability": 0.698858,
-   "probability_basis": "P_CURRENT_SCAN",
-   "probability_observed_at": "2026-11-04T14:48:17.325287+00:00",
-   "p_first_snapshot": 0.698858,
-   "p_current_scan": 0.698858,
-   "ledger_probability": 0.698858,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "1151.7",
-   "sigma": 0.054513,
-   "sigma_method": "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)",
-   "sigma_calibration": 0.011556,
-   "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)",
-   "sigma_half_width": 0.053274,
-   "exchange_width": 0.106548,
-   "probability_band": "65-69.9%",
-   "engine_id": "atp_match_winner.betfair_market",
-   "engine_version": "1",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "prediction_timestamp": "2026-11-04T14:48:17.325287+00:00",
-   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "EXCHANGE_SPREAD_TOO_WIDE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 12,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-11-04T14:48:17.325287+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
    "rank": 17
@@ -909,6 +910,52 @@
    "rank": 19
   },
   {
+   "prediction_id": "f1887c088c52de92",
+   "sport": "tennis",
+   "competition": "ATP Paris Masters",
+   "event_key": "tennis|tennis_atp_paris_masters|83e3278f7f08fc8e5f9d88ec513d0aeb",
+   "event_name": "Thiago Agustin Tirante v Jan-Lennard Struff",
+   "event_start": "2026-11-04T16:25:00+00:00",
+   "event_start_original": "2026-11-04T16:10:00+00:00",
+   "start_time_status": "RESCHEDULED",
+   "market": "match_winner",
+   "selection": "Jan-Lennard Struff",
+   "probability": 0.680087,
+   "probability_basis": "P_CURRENT_SCAN",
+   "probability_observed_at": "2026-11-04T16:16:23.295426+00:00",
+   "p_first_snapshot": 0.663697,
+   "p_current_scan": 0.680087,
+   "ledger_probability": 0.663697,
+   "normalisation": "",
+   "minutes_to_event_at_prediction": "81.7",
+   "sigma": 0.012448,
+   "sigma_method": "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)",
+   "sigma_calibration": 0.011556,
+   "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)",
+   "sigma_half_width": 0.004628,
+   "exchange_width": 0.009256,
+   "probability_band": "65-69.9%",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "prediction_timestamp": "2026-11-04T14:48:17.325287+00:00",
+   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
+   "strength": "BELOW_STRONG_THRESHOLD",
+   "price_status": "POOR_PAYOUT",
+   "stage_a_label": "POOR_PAYOUT",
+   "financially_assessable": true,
+   "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
+   "best_clean_source": "williamhill",
+   "best_clean_odds": 1.44,
+   "best_clean_net_ev": -0.020675,
+   "n_quotes_latest": 18,
+   "n_clean_quotes_latest": 17,
+   "price_observed_at": "2026-11-04T16:16:23.295426+00:00",
+   "is_bet_recommendation": false,
+   "board_version": "stage-a-2",
+   "rank": 20
+  },
+  {
    "prediction_id": "a8104353c8b345ee",
    "sport": "basketball",
    "competition": "NBA",
@@ -950,52 +997,6 @@
    "n_quotes_latest": 1,
    "n_clean_quotes_latest": 0,
    "price_observed_at": "2026-11-04T14:48:19.063903+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 20
-  },
-  {
-   "prediction_id": "f1887c088c52de92",
-   "sport": "tennis",
-   "competition": "ATP Paris Masters",
-   "event_key": "tennis|tennis_atp_paris_masters|83e3278f7f08fc8e5f9d88ec513d0aeb",
-   "event_name": "Thiago Agustin Tirante v Jan-Lennard Struff",
-   "event_start": "2026-11-04T16:10:00+00:00",
-   "event_start_original": "2026-11-04T16:10:00+00:00",
-   "start_time_status": "UNCHANGED",
-   "market": "match_winner",
-   "selection": "Jan-Lennard Struff",
-   "probability": 0.663697,
-   "probability_basis": "P_CURRENT_SCAN",
-   "probability_observed_at": "2026-11-04T14:48:17.325287+00:00",
-   "p_first_snapshot": 0.663697,
-   "p_current_scan": 0.663697,
-   "ledger_probability": 0.663697,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "81.7",
-   "sigma": 0.01236,
-   "sigma_method": "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)",
-   "sigma_calibration": 0.011556,
-   "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)",
-   "sigma_half_width": 0.004386,
-   "exchange_width": 0.008772,
-   "probability_band": "65-69.9%",
-   "engine_id": "atp_match_winner.betfair_market",
-   "engine_version": "1",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "prediction_timestamp": "2026-11-04T14:48:17.325287+00:00",
-   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "POOR_PAYOUT",
-   "stage_a_label": "POOR_PAYOUT",
-   "financially_assessable": true,
-   "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
-   "best_clean_source": "betfair_ex_uk",
-   "best_clean_odds": 1.5,
-   "best_clean_net_ev": -0.021047,
-   "n_quotes_latest": 20,
-   "n_clean_quotes_latest": 19,
-   "price_observed_at": "2026-11-04T14:48:17.325287+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
    "rank": 21
@@ -1047,52 +1048,6 @@
    "rank": 22
   },
   {
-   "prediction_id": "bdcb6f7a946fc630",
-   "sport": "tennis",
-   "competition": "ATP Paris Masters",
-   "event_key": "tennis|tennis_atp_paris_masters|b92f417b119f280893500cc87bd8714e",
-   "event_name": "Nuno Borges v Karen Khachanov",
-   "event_start": "2026-11-04T15:00:00+00:00",
-   "event_start_original": "2026-11-04T10:00:00+00:00",
-   "start_time_status": "RESCHEDULED",
-   "market": "match_winner",
-   "selection": "Karen Khachanov",
-   "probability": 0.646119,
-   "probability_basis": "P_CURRENT_SCAN",
-   "probability_observed_at": "2026-11-04T14:48:17.325287+00:00",
-   "p_first_snapshot": 0.664829,
-   "p_current_scan": 0.646119,
-   "ledger_probability": 0.664829,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "1063.4",
-   "sigma": 0.011685,
-   "sigma_method": "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)",
-   "sigma_calibration": 0.010918,
-   "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)",
-   "sigma_half_width": 0.004163,
-   "exchange_width": 0.008325,
-   "probability_band": "65-69.9%",
-   "engine_id": "atp_match_winner.betfair_market",
-   "engine_version": "1",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "prediction_timestamp": "2026-11-03T16:16:33.742380+00:00",
-   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "POOR_PAYOUT",
-   "stage_a_label": "POOR_PAYOUT",
-   "financially_assessable": true,
-   "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
-   "best_clean_source": "williamhill",
-   "best_clean_odds": 1.53,
-   "best_clean_net_ev": -0.011438,
-   "n_quotes_latest": 20,
-   "n_clean_quotes_latest": 19,
-   "price_observed_at": "2026-11-04T14:48:17.325287+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 23
-  },
-  {
    "prediction_id": "f4c2bccb7a63dca7",
    "sport": "football",
    "competition": "Belgian Pro League",
@@ -1136,7 +1091,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 24
+   "rank": 23
   },
   {
    "prediction_id": "b15689379b4767d2",
@@ -1182,7 +1137,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 25
+   "rank": 24
   },
   {
    "prediction_id": "022a2602eb25f25c",
@@ -1228,7 +1183,7 @@
    "price_observed_at": "2026-11-04T14:48:19.063903+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 26
+   "rank": 25
   },
   {
    "prediction_id": "388818be59fb4161",
@@ -1274,7 +1229,7 @@
    "price_observed_at": "2026-11-04T14:48:19.063903+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 27
+   "rank": 26
   },
   {
    "prediction_id": "c5aebfb36ef16bea",
@@ -1287,20 +1242,20 @@
    "start_time_status": "RESCHEDULED",
    "market": "match_winner",
    "selection": "Arthur Fils",
-   "probability": 0.615385,
+   "probability": 0.617021,
    "probability_basis": "P_CURRENT_SCAN",
-   "probability_observed_at": "2026-11-04T14:48:17.325287+00:00",
+   "probability_observed_at": "2026-11-04T16:16:23.295426+00:00",
    "p_first_snapshot": 0.641379,
-   "p_current_scan": 0.615385,
+   "p_current_scan": 0.617021,
    "ledger_probability": 0.641379,
    "normalisation": "",
    "minutes_to_event_at_prediction": "1166.5",
-   "sigma": 0.011312,
+   "sigma": 0.011564,
    "sigma_method": "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)",
    "sigma_calibration": 0.010918,
    "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)",
-   "sigma_half_width": 0.002959,
-   "exchange_width": 0.005918,
+   "sigma_half_width": 0.003811,
+   "exchange_width": 0.007621,
    "probability_band": "60-64.9%",
    "engine_id": "atp_match_winner.betfair_market",
    "engine_version": "1",
@@ -1313,14 +1268,14 @@
    "financially_assessable": true,
    "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
    "best_clean_source": "betfair_ex_uk",
-   "best_clean_odds": 1.62,
-   "best_clean_net_ev": -0.022153,
+   "best_clean_odds": 1.61,
+   "best_clean_net_ev": -0.025415,
    "n_quotes_latest": 19,
    "n_clean_quotes_latest": 18,
-   "price_observed_at": "2026-11-04T14:48:17.325287+00:00",
+   "price_observed_at": "2026-11-04T16:16:23.295426+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 28
+   "rank": 27
   },
   {
    "prediction_id": "0ca0de09db222e47",
@@ -1366,7 +1321,7 @@
    "price_observed_at": "2026-11-04T14:48:20.461124+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 29
+   "rank": 28
   },
   {
    "prediction_id": "667abade59cfbb42",
@@ -1412,7 +1367,7 @@
    "price_observed_at": "2026-11-04T07:16:29.061810+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 30
+   "rank": 29
   },
   {
    "prediction_id": "2fa4c7f9a69b3620",
@@ -1458,7 +1413,7 @@
    "price_observed_at": "2026-11-04T14:48:19.063903+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 31
+   "rank": 30
   },
   {
    "prediction_id": "70d80918909945b3",
@@ -1504,7 +1459,7 @@
    "price_observed_at": "2026-11-04T14:48:19.063903+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 32
+   "rank": 31
   },
   {
    "prediction_id": "2834d7c939005170",
@@ -1550,7 +1505,7 @@
    "price_observed_at": "2026-11-03T14:33:31.804475+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 33
+   "rank": 32
   },
   {
    "prediction_id": "e889ae0b786d30a5",
@@ -1594,6 +1549,52 @@
    "n_quotes_latest": 1,
    "n_clean_quotes_latest": 0,
    "price_observed_at": "2026-11-03T14:33:31.804475+00:00",
+   "is_bet_recommendation": false,
+   "board_version": "stage-a-2",
+   "rank": 33
+  },
+  {
+   "prediction_id": "6778b2b2fb9259cb",
+   "sport": "tennis",
+   "competition": "ATP Paris Masters",
+   "event_key": "tennis|tennis_atp_paris_masters|9c047eea4b968d8a8c3f35fd16ce9e6d",
+   "event_name": "Matteo Berrettini v Ugo Humbert",
+   "event_start": "2026-11-04T17:00:00+00:00",
+   "event_start_original": "2026-11-04T16:10:00+00:00",
+   "start_time_status": "RESCHEDULED",
+   "market": "match_winner",
+   "selection": "Ugo Humbert",
+   "probability": 0.55198,
+   "probability_basis": "P_CURRENT_SCAN",
+   "probability_observed_at": "2026-11-04T16:16:23.295426+00:00",
+   "p_first_snapshot": 0.540473,
+   "p_current_scan": 0.55198,
+   "ledger_probability": 0.540473,
+   "normalisation": "",
+   "minutes_to_event_at_prediction": "81.7",
+   "sigma": 0.011337,
+   "sigma_method": "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)",
+   "sigma_calibration": 0.010918,
+   "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)",
+   "sigma_half_width": 0.003053,
+   "exchange_width": 0.006105,
+   "probability_band": "50-54.9%",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "prediction_timestamp": "2026-11-04T14:48:17.325287+00:00",
+   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
+   "strength": "BELOW_STRONG_THRESHOLD",
+   "price_status": "PRICE_VALID",
+   "stage_a_label": "PRICE_VALID",
+   "financially_assessable": true,
+   "price_status_reasons": "",
+   "best_clean_source": "boylesports",
+   "best_clean_odds": 1.83,
+   "best_clean_net_ev": 0.010123,
+   "n_quotes_latest": 19,
+   "n_clean_quotes_latest": 18,
+   "price_observed_at": "2026-11-04T16:16:23.295426+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
    "rank": 34
@@ -1691,52 +1692,6 @@
    "rank": 36
   },
   {
-   "prediction_id": "6778b2b2fb9259cb",
-   "sport": "tennis",
-   "competition": "ATP Paris Masters",
-   "event_key": "tennis|tennis_atp_paris_masters|9c047eea4b968d8a8c3f35fd16ce9e6d",
-   "event_name": "Matteo Berrettini v Ugo Humbert",
-   "event_start": "2026-11-04T16:10:00+00:00",
-   "event_start_original": "2026-11-04T16:10:00+00:00",
-   "start_time_status": "UNCHANGED",
-   "market": "match_winner",
-   "selection": "Ugo Humbert",
-   "probability": 0.540473,
-   "probability_basis": "P_CURRENT_SCAN",
-   "probability_observed_at": "2026-11-04T14:48:17.325287+00:00",
-   "p_first_snapshot": 0.540473,
-   "p_current_scan": 0.540473,
-   "ledger_probability": 0.540473,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "81.7",
-   "sigma": 0.011123,
-   "sigma_method": "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)",
-   "sigma_calibration": 0.010918,
-   "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)",
-   "sigma_half_width": 0.002123,
-   "exchange_width": 0.004247,
-   "probability_band": "50-54.9%",
-   "engine_id": "atp_match_winner.betfair_market",
-   "engine_version": "1",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "prediction_timestamp": "2026-11-04T14:48:17.325287+00:00",
-   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "POOR_PAYOUT",
-   "stage_a_label": "POOR_PAYOUT",
-   "financially_assessable": true,
-   "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
-   "best_clean_source": "boylesports",
-   "best_clean_odds": 1.83,
-   "best_clean_net_ev": -0.010934,
-   "n_quotes_latest": 21,
-   "n_clean_quotes_latest": 20,
-   "price_observed_at": "2026-11-04T14:48:17.325287+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 37
-  },
-  {
    "prediction_id": "f540865676d744f3",
    "sport": "football",
    "competition": "Championship",
@@ -1780,7 +1735,7 @@
    "price_observed_at": "2026-11-04T07:16:29.061810+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 38
+   "rank": 37
   },
   {
    "prediction_id": "d633ad71fcc7e082",
@@ -1826,7 +1781,7 @@
    "price_observed_at": "2026-11-04T14:48:20.461124+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 39
+   "rank": 38
   },
   {
    "prediction_id": "c28338cbee6f5b1f",
@@ -1872,7 +1827,7 @@
    "price_observed_at": "2026-11-03T14:33:31.804475+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 40
+   "rank": 39
   },
   {
    "prediction_id": "462381d64a30e767",
@@ -1918,7 +1873,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 41
+   "rank": 40
   },
   {
    "prediction_id": "67f5c9fdbf654a18",
@@ -1964,7 +1919,7 @@
    "price_observed_at": "2026-11-04T07:16:29.061810+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 42
+   "rank": 41
   },
   {
    "prediction_id": "c9022630d035bea6",
@@ -2010,7 +1965,7 @@
    "price_observed_at": "2026-11-04T07:16:29.061810+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 43
+   "rank": 42
   },
   {
    "prediction_id": "a9611f436dc60497",
@@ -2056,7 +2011,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 44
+   "rank": 43
   },
   {
    "prediction_id": "70beeac340ac2add",
@@ -2102,7 +2057,7 @@
    "price_observed_at": "2026-11-04T07:16:29.061810+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 45
+   "rank": 44
   },
   {
    "prediction_id": "99bd98fd12a988e1",
@@ -2148,7 +2103,7 @@
    "price_observed_at": "2026-11-04T07:16:29.061810+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 46
+   "rank": 45
   },
   {
    "prediction_id": "890c62a03c319243",
@@ -2194,7 +2149,7 @@
    "price_observed_at": "2026-11-04T07:16:29.061810+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 47
+   "rank": 46
   },
   {
    "prediction_id": "873347c5d34849db",
@@ -2240,7 +2195,7 @@
    "price_observed_at": "2026-11-04T07:16:29.061810+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 48
+   "rank": 47
   },
   {
    "prediction_id": "fb982467d0ae2d02",
@@ -2286,7 +2241,7 @@
    "price_observed_at": "2026-11-04T07:16:29.061810+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 49
+   "rank": 48
   },
   {
    "prediction_id": "eb8d357280a2be8c",
@@ -2332,7 +2287,7 @@
    "price_observed_at": "2026-11-04T07:16:29.061810+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 50
+   "rank": 49
   },
   {
    "prediction_id": "e52717c8e839b25a",
@@ -2378,7 +2333,7 @@
    "price_observed_at": "2026-11-04T07:16:29.061810+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 51
+   "rank": 50
   },
   {
    "prediction_id": "adbdd47b936df1c6",
@@ -2424,7 +2379,7 @@
    "price_observed_at": "2026-11-04T07:16:29.061810+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 52
+   "rank": 51
   },
   {
    "prediction_id": "e392f7791bad6b28",
@@ -2470,7 +2425,7 @@
    "price_observed_at": "2026-11-04T07:16:29.061810+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 53
+   "rank": 52
   },
   {
    "prediction_id": "eee49cb35c99ede8",
@@ -2516,7 +2471,7 @@
    "price_observed_at": "2026-11-04T07:16:29.061810+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 54
+   "rank": 53
   }
  ]
 }
