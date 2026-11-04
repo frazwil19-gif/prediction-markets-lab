@@ -1,4 +1,4 @@
-# Daily Prediction Board & Bet Card — 2026-11-04T02:31Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-04T07:16Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
@@ -21,18 +21,18 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | 9 | football | Bristol City v Wolverhampton Wanderers | 2026-11-04T20:00 | double_chance | X2 | 72.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.38 | no price | no |
 | 10 | football | Cardiff City v West Ham United | 2026-11-04T19:45 | double_chance | X2 | 70.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.41 | no price | no |
 | 11 | tennis | Alexander Zverev v Lorenzo Musetti | 2026-11-04T10:00 | match_winner | Alexander Zverev | 68.3% | 60%+ | 1.3% | VALIDATED | 1.46 | price not usable (stale/wide/unknown commission) | no |
-| 12 | football | Cardiff City v West Ham United | 2026-11-04T19:45 | over_under_2_5 | over | 68.1% | 60%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.47 | price not usable (stale/wide/unknown commission) | no |
+| 12 | football | Cardiff City v West Ham United | 2026-11-04T19:45 | over_under_2_5 | over | 68.1% | 60%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.47 | 1.36 (william hill) | no |
 | 13 | tennis | Nuno Borges v Karen Khachanov | 2026-11-04T10:00 | match_winner | Karen Khachanov | 66.5% | 60%+ | 5.0% | VALIDATED | 1.50 | price not usable (stale/wide/unknown commission) | no |
 | 14 | football | KV Kortrijk v KV Mechelen | 2026-11-04T19:30 | double_chance | X2 | 63.8% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.57 | no price | no |
 | 15 | football | KV Kortrijk v KV Mechelen | 2026-11-04T19:30 | double_chance | 1X | 63.7% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.57 | no price | no |
 | 16 | tennis | Arthur Fils v Tomas Machac | 2026-11-04T10:00 | match_winner | Arthur Fils | 63.3% | 60%+ | 1.2% | VALIDATED | 1.58 | price not usable (stale/wide/unknown commission) | no |
-| 17 | football | Wrexham AFC v Middlesbrough | 2026-11-04T19:45 | over_under_2_5 | over | 57.7% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.73 | price not usable (stale/wide/unknown commission) | no |
+| 17 | football | Wrexham AFC v Middlesbrough | 2026-11-04T19:45 | over_under_2_5 | over | 57.7% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.73 | 1.62 (casumo) | no |
 | 18 | tennis | Mattia Bellucci v Arthur Rinderknech | 2026-11-04T10:00 | match_winner | Mattia Bellucci | 57.1% | 50%+ | 1.5% | VALIDATED | 1.75 | price not usable (stale/wide/unknown commission) | no |
 | 19 | tennis | Quentin Halys v Frances Tiafoe | 2026-11-04T10:00 | match_winner | Frances Tiafoe | 56.5% | 50%+ | 1.3% | VALIDATED | 1.77 | price not usable (stale/wide/unknown commission) | no |
 | 20 | basketball | Cleveland Cavaliers @ Oklahoma City Thunder | 2026-11-05T01:10 | moneyline | Oklahoma City Thunder | 56.4% | 50%+ | 1.5% | VALIDATED | 1.77 | price not usable (stale/wide/unknown commission) | no |
 | 21 | basketball | Charlotte Hornets @ Brooklyn Nets | 2026-11-05T00:40 | moneyline | Charlotte Hornets | 55.3% | 50%+ | 1.5% | VALIDATED | 1.81 | price not usable (stale/wide/unknown commission) | no |
 | 22 | football | Bristol City v Wolverhampton Wanderers | 2026-11-04T20:00 | double_chance | 1X | 54.7% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.83 | no price | no |
-| 23 | football | Wrexham AFC v Middlesbrough | 2026-11-04T19:45 | 1x2 | away | 53.3% | 50%+ | 1.3% | PROSPECTIVE_SHADOW_LEAGUE | 1.88 | price not usable (stale/wide/unknown commission) | no |
+| 23 | football | Wrexham AFC v Middlesbrough | 2026-11-04T19:45 | 1x2 | away | 53.3% | 50%+ | 1.3% | PROSPECTIVE_SHADOW_LEAGUE | 1.88 | 1.78 (smarkets) | no |
 | 24 | basketball | Philadelphia 76ers @ Detroit Pistons | 2026-11-05T00:10 | moneyline | Detroit Pistons | 52.7% | 50%+ | 1.5% | VALIDATED | 1.90 | price not usable (stale/wide/unknown commission) | no |
 | 25 | football | Cardiff City v West Ham United | 2026-11-04T19:45 | double_chance | 1X | 52.7% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.90 | no price | no |
 | 26 | football | Bristol City v Wolverhampton Wanderers | 2026-11-04T20:00 | over_under_2_5 | over | 50.5% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.98 | price not usable (stale/wide/unknown commission) | no |
@@ -51,12 +51,12 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 | Event | Selection | P | Fair odds | Best clean price | Why no bet |
 |---|---|---|---|---|---|
-| Ignacio Buse v Daniil Medvedev (2026-11-04T10:00) | match_winner: Daniil Medvedev | 85.1% | 1.18 | — | NET_EV_NOT_POSITIVE |
-| Tomas Martin Etcheverry v Alex de Minaur (2026-11-04T10:00) | match_winner: Alex de Minaur | 78.2% | 1.28 | — | EXCHANGE_SPREAD_TOO_WIDE, NET_EV_NOT_POSITIVE |
+| Ignacio Buse v Daniil Medvedev (2026-11-04T10:00) | match_winner: Daniil Medvedev | 85.1% | 1.18 | — | PRICE_STALE, NET_EV_NOT_POSITIVE |
+| Tomas Martin Etcheverry v Alex de Minaur (2026-11-04T10:00) | match_winner: Alex de Minaur | 78.2% | 1.28 | — | EXCHANGE_SPREAD_TOO_WIDE, PRICE_STALE, NET_EV_NOT_POSITIVE |
 | Wrexham AFC v Middlesbrough (2026-11-04T19:45) | double_chance: X2 | 77.5% | 1.29 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Cardiff City v West Ham United (2026-11-04T19:45) | double_chance: 12 | 76.5% | 1.31 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Wrexham AFC v Middlesbrough (2026-11-04T19:45) | double_chance: 12 | 75.8% | 1.32 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Minnesota Timberwolves @ Houston Rockets (2026-11-05T01:40) | moneyline: Houston Rockets | 74.2% | 1.35 | — | NET_EV_NOT_POSITIVE |
+| Minnesota Timberwolves @ Houston Rockets (2026-11-05T01:40) | moneyline: Houston Rockets | 74.2% | 1.35 | — | PRICE_STALE, NET_EV_NOT_POSITIVE |
 | Bristol City v Wolverhampton Wanderers (2026-11-04T20:00) | double_chance: 12 | 72.8% | 1.37 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | KV Kortrijk v KV Mechelen (2026-11-04T19:30) | double_chance: 12 | 72.5% | 1.38 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Bristol City v Wolverhampton Wanderers (2026-11-04T20:00) | double_chance: X2 | 72.5% | 1.38 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
@@ -64,7 +64,7 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 27 · NET_EV_NOT_POSITIVE 23 · PRICE_STALE 15 · NO_EXECUTABLE_PRICE 12 · P_BELOW_FLOOR 12 · COMMISSION_UNKNOWN 3 · EXCHANGE_SPREAD_TOO_WIDE 2
+ENGINE_STATUS_INELIGIBLE 27 · NET_EV_NOT_POSITIVE 22 · NO_EXECUTABLE_PRICE 12 · P_BELOW_FLOOR 12 · PRICE_STALE 11 · EXCHANGE_SPREAD_TOO_WIDE 2 · COMMISSION_UNKNOWN 2
 
 ## 4. Research predictions — not money eligible
 
