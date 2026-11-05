@@ -1,0 +1,120 @@
+{
+ "board_date": "2026-11-05",
+ "layer": "PREDICTION (paper) -- not a bet recommendation",
+ "coverage": {
+  "active_keys": [
+   "tennis_atp_paris_masters"
+  ],
+  "skipped_for_credit_guard": [],
+  "keys_over_cap": [],
+  "skipped_no_upcoming_event": [],
+  "events_returned": 3,
+  "scan_timestamp": "2026-11-05T21:33:38.933860+00:00",
+  "credits_remaining_after": 391,
+  "universe_note": "Odds-API-covered universe only (Slams, 1000s, 500s) -- not the full ATP/WTA calendar"
+ },
+ "counts": {
+  "events_scanned": 3,
+  "valid_predictions": 3,
+  "research_only_predictions": 0,
+  "ge_70": 1,
+  "ge_75": 0,
+  "ge_80": 0,
+  "ge_85": 0,
+  "ge_90": 0,
+  "ge_95": 0
+ },
+ "predictions": [
+  {
+   "prediction_id": "ea2f37487f17e0c3",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "ATP",
+   "sport_key": "tennis_atp_paris_masters",
+   "tournament": "ATP Paris Masters",
+   "event_id": "e4e0781ebc80c47d216dd73609a3c8e0",
+   "player_a": "Taylor Fritz",
+   "player_b": "Carlos Alcaraz",
+   "commence_time": "2026-11-06T18:00:00+00:00",
+   "prediction_timestamp": "2026-11-05T21:33:38.933860+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=3.7/1.35;ex_lay=3.95/1.37",
+   "p_a": 0.262295,
+   "p_b": 0.737705,
+   "predicted_winner": "Carlos Alcaraz",
+   "predicted_probability": 0.737705,
+   "probability_band": "70-74.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 574,
+   "historical_band_actual_rate": 0.7038,
+   "historical_band_wilson95": [
+    0.6652,
+    0.7397
+   ],
+   "engine_holdout_n": 5066
+  },
+  {
+   "prediction_id": "e4944362a6080e92",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "ATP",
+   "sport_key": "tennis_atp_paris_masters",
+   "tournament": "ATP Paris Masters",
+   "event_id": "f1676b13a42184d83dee9e84e1b17aa5",
+   "player_a": "Luca Van Assche",
+   "player_b": "Rinky Hijikata",
+   "commence_time": "2026-11-06T14:10:00+00:00",
+   "prediction_timestamp": "2026-11-05T21:33:38.933860+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=1.67/2.48;ex_lay=1.68/2.5",
+   "p_a": 0.597839,
+   "p_b": 0.402161,
+   "predicted_winner": "Luca Van Assche",
+   "predicted_probability": 0.597839,
+   "probability_band": "55-59.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 870,
+   "historical_band_actual_rate": 0.5678,
+   "historical_band_wilson95": [
+    0.5347,
+    0.6004
+   ],
+   "engine_holdout_n": 5066
+  },
+  {
+   "prediction_id": "52f15fef559a497c",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "ATP",
+   "sport_key": "tennis_atp_paris_masters",
+   "tournament": "ATP Paris Masters",
+   "event_id": "10a66a309af482f75813cc0d9ce0bdd1",
+   "player_a": "Ben Shelton",
+   "player_b": "Tommy Paul",
+   "commence_time": "2026-11-06T13:00:00+00:00",
+   "prediction_timestamp": "2026-11-05T21:33:38.933860+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=2.26/1.78;ex_lay=2.3/1.79",
+   "p_a": 0.439114,
+   "p_b": 0.560886,
+   "predicted_winner": "Tommy Paul",
+   "predicted_probability": 0.560886,
+   "probability_band": "55-59.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 870,
+   "historical_band_actual_rate": 0.5678,
+   "historical_band_wilson95": [
+    0.5347,
+    0.6004
+   ],
+   "engine_holdout_n": 5066
+  }
+ ],
+ "research_only": []
+}

@@ -4,9 +4,9 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-05T14:52Z · events scanned 26 · valid predictions 73 · high-P (≥70%) 17 · priced 29 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 73 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-05T21:33Z · events scanned 26 · valid predictions 73 · high-P (≥70%) 18 · priced 29 · PAPER_BET 0 · MULTI-research 0 · WATCH 1 · REJECT 72 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 56 · PRICE_STALE 30 · NET_EV_NOT_POSITIVE 27 · P_BELOW_FLOOR 27 · NO_EXECUTABLE_PRICE 27 · COMMISSION_UNKNOWN 17
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 56 · PRICE_STALE 43 · P_BELOW_FLOOR 27 · NO_EXECUTABLE_PRICE 27 · NET_EV_NOT_POSITIVE 26 · COMMISSION_UNKNOWN 17 · NET_EV_BELOW_PAPER_GATE 1
 
 ## Candidates (latest run, best price per prediction)
 
@@ -23,6 +23,7 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 56 · PRICE_STALE 30 · NET_
 | Willem II v FC Zwolle | 2026-11-06T19:00 | 12 | 74.6% | 1.34 | — | — | — | REJECT |
 | Hamburger SV v Borussia Monchengladbach | 2026-11-06T19:30 | 12 | 74.2% | 1.35 | — | — | — | REJECT |
 | Derby County v Bolton Wanderers | 2026-11-06T20:00 | 12 | 73.8% | 1.36 | — | — | — | REJECT |
+| Taylor Fritz v Carlos Alcaraz | 2026-11-06T18:00 | Carlos Alcaraz | 73.8% | 1.36 | 1.35 (casumo) | 74.1% | -0.4% | REJECT |
 | Venezia v Udinese | 2026-11-06T19:45 | 12 | 72.9% | 1.37 | — | — | — | REJECT |
 | Famalicão v Arouca | 2026-11-06T20:45 | 1X | 72.4% | 1.38 | — | — | — | REJECT |
 | Famalicão v Arouca | 2026-11-06T20:45 | 12 | 72.4% | 1.38 | — | — | — | REJECT |
@@ -30,7 +31,6 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 56 · PRICE_STALE 30 · NET_
 | Toulouse v Strasbourg | 2026-11-06T19:45 | 1X | 71.2% | 1.40 | — | — | — | REJECT |
 | Miami Heat @ Golden State Warriors | 2026-11-06T03:10 | Golden State Warriors | 70.8% | 1.41 | 1.40 (matchbook) | — | — | REJECT |
 | Venezia v Udinese | 2026-11-06T19:45 | 1X | 69.5% | 1.44 | — | — | — | REJECT |
-| Jan-Lennard Struff v Casper Ruud | 2026-11-05T19:30 | Casper Ruud | 66.5% | 1.50 | 1.50 (betfair_sb_uk) | 66.7% | -0.2% | REJECT |
 | Willem II v FC Zwolle | 2026-11-06T19:00 | X2 | 66.1% | 1.51 | — | — | — | REJECT |
 | Nashville Predators @ Colorado Avalanche | 2026-11-06T02:40 | Colorado Avalanche | 65.4% | 1.53 | 1.52 (matchbook) | — | — | REJECT |
 | Derby County v Bolton Wanderers | 2026-11-06T20:00 | 1X | 65.4% | 1.53 | — | — | — | REJECT |
@@ -39,17 +39,17 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 56 · PRICE_STALE 30 · NET_
 | St Louis Blues @ New Jersey Devils | 2026-11-06T00:10 | New Jersey Devils | 63.8% | 1.57 | 1.53 (matchbook) | — | — | REJECT |
 | Anaheim Ducks @ Edmonton Oilers | 2026-11-06T01:10 | Edmonton Oilers | 61.7% | 1.62 | 1.57 (williamhill) | 63.7% | -3.1% | REJECT |
 | Carolina Hurricanes @ New York Islanders | 2026-11-06T00:10 | Carolina Hurricanes | 61.1% | 1.64 | 1.60 (matchbook) | — | — | REJECT |
-| Nuno Borges v Ignacio Buse | 2026-11-05T15:10 | Nuno Borges | 61.0% | 1.64 | 1.62 (betfair_sb_uk) | 61.7% | -1.3% | REJECT |
 | Derby County v Bolton Wanderers | 2026-11-06T20:00 | X2 | 60.8% | 1.65 | — | — | — | REJECT |
 | Hamburger SV v Borussia Monchengladbach | 2026-11-06T19:30 | X2 | 60.5% | 1.65 | — | — | — | REJECT |
+| Luca Van Assche v Rinky Hijikata | 2026-11-06T14:10 | Luca Van Assche | 59.8% | 1.67 | 1.67 (betfair_ex_uk) | 61.1% | -2.2% | REJECT |
 | Willem II v FC Zwolle | 2026-11-06T19:00 | 1X | 59.3% | 1.69 | — | — | — | REJECT |
 | Venezia v Udinese | 2026-11-06T19:45 | X2 | 57.6% | 1.74 | — | — | — | REJECT |
 | Philadelphia Flyers @ New York Rangers | 2026-11-06T00:10 | New York Rangers | 57.0% | 1.75 | 1.73 (matchbook) | — | — | REJECT |
 | Vegas Golden Knights @ Detroit Red Wings | 2026-11-06T00:10 | Vegas Golden Knights | 56.8% | 1.76 | 1.73 (matchbook) | — | — | REJECT |
+| Ben Shelton v Tommy Paul | 2026-11-06T13:00 | Tommy Paul | 56.1% | 1.78 | 1.80 (boylesports) | 55.6% | 1.0% | WATCH |
 | Everton v Coventry City | 2026-11-06T20:00 | home | 55.7% | 1.79 | 1.77 (betfair) | 57.8% | -3.5% | REJECT |
 | Everton v Coventry City | 2026-11-06T20:00 | over | 55.5% | 1.80 | 1.79 (matchbook) | — | — | REJECT |
 | Famalicão v Arouca | 2026-11-06T20:45 | X2 | 55.3% | 1.81 | — | — | — | REJECT |
-| Arthur Fils v Taylor Fritz | 2026-11-05T18:00 | Arthur Fils | 54.8% | 1.82 | 1.80 (betway) | 55.6% | -1.3% | REJECT |
 | Derby County v Bolton Wanderers | 2026-11-06T20:00 | over | 54.7% | 1.83 | 1.70 (grosvenor) | 58.8% | -7.1% | REJECT |
 | Dallas Stars @ Columbus Blue Jackets | 2026-11-06T00:10 | Dallas Stars | 54.6% | 1.83 | 1.79 (matchbook) | — | — | REJECT |
 

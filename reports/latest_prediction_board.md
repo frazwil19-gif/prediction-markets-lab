@@ -3,8 +3,8 @@
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
 Upcoming events: 26 · Valid predictions: 73 · Sports: americanfootball, basketball, football, icehockey, tennis
-Counts: >=70: 17 · >=75: 7 · >=80: 1 · >=85: 0 · >=90: 0 · >=95: 0
-Settled yesterday: 8 · System: **HEALTHY** · API credits (last observed): 394
+Counts: >=70: 18 · >=75: 7 · >=80: 1 · >=85: 0 · >=90: 0 · >=95: 0
+Settled yesterday: 8 · System: **HEALTHY** · API credits (last observed): 391
 
 ## Top predictions (P ≥ 80%)
 
@@ -19,7 +19,7 @@ Settled yesterday: 8 · System: **HEALTHY** · API credits (last observed): 394
 | football_1x2.market_consensus | VALIDATED_HISTORICAL / COLLECTING | 1083 | 426 | EARLY | 1 | 82.3% → 100.0% |
 | football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 147 | 144 | EARLY | 0 | — → — |
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
-| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 202 | 149 | EARLY | 25 | 87.7% → 76.0% |
+| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 205 | 149 | EARLY | 25 | 87.7% → 76.0% |
 | wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 190 | 168 | EARLY | 31 | 89.3% → 80.6% |
 | nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 78 | 57 | EARLY | 5 | 83.8% → 100.0% |
 | nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 120 | 83 | EARLY | 0 | — → — |
@@ -30,8 +30,8 @@ Settled yesterday: 8 · System: **HEALTHY** · API credits (last observed): 394
 
 - daily_scan: OK (last 2026-11-05T07:16:41.893349+00:00)
 - settlement: OK (last 2026-11-05T01:26:30.339255+00:00)
-- tennis_board: OK (last 2026-11-05T14:52:49.864040+00:00)
-- ci_tests: OK (last 2026-11-05T14:52:50.897245+00:00)
+- tennis_board: OK (last 2026-11-05T21:33:38.933860+00:00)
+- ci_tests: OK (last 2026-11-05T21:33:39.796897+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 

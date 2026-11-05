@@ -1,25 +1,26 @@
 {
  "card_version": "card-v1.2",
- "generated_at": "2026-11-05T15:49:21.514575+00:00",
- "stage_a_generated_at": "2026-11-05T14:52:53.811638+00:00",
+ "generated_at": "2026-11-05T21:33:42.284666+00:00",
+ "stage_a_generated_at": "2026-11-05T21:33:41.133125+00:00",
  "real_money_enabled": false,
  "mode": "PAPER \u2014 unattended prospective validation (real-money betting paused; nothing to place)",
  "summary": {
-  "predictions_in_window": 72,
+  "predictions_in_window": 73,
   "best_predictions_shown": 40,
   "bets": 0,
   "total_stake_gbp": 0.0,
   "exposure_pct_of_bankroll": 0.0,
-  "strong_price_too_low": 17,
+  "strong_price_too_low": 18,
   "research_predictions": 0
  },
  "rejection_reasons": {
   "ENGINE_STATUS_INELIGIBLE": 56,
-  "PRICE_STALE": 30,
+  "PRICE_STALE": 43,
   "NO_EXECUTABLE_PRICE": 27,
   "P_BELOW_FLOOR": 27,
   "NET_EV_NOT_POSITIVE": 26,
-  "COMMISSION_UNKNOWN": 17
+  "COMMISSION_UNKNOWN": 17,
+  "NET_EV_BELOW_PAPER_GATE": 1
  },
  "best_predictions": [
   {
@@ -48,7 +49,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-11-04T14:48:20.461124+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -77,7 +78,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -100,13 +101,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "COMMISSION_UNKNOWN",
+   "decision_reasons": "PRICE_STALE|COMMISSION_UNKNOWN",
    "decision_odds": "1.26",
    "decision_source": "matchbook",
    "decision_net_ev": "",
    "price_observed_at": "2026-11-05T14:52:52.890064+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -135,7 +136,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -164,7 +165,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -193,7 +194,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.35
   },
   {
@@ -222,7 +223,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.35
   },
   {
@@ -251,7 +252,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.37
   },
   {
@@ -280,7 +281,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.37
   },
   {
@@ -309,7 +310,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.38
   },
   {
@@ -338,7 +339,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
+   "min_bookmaker_odds": 1.39
+  },
+  {
+   "prediction_id": "ea2f37487f17e0c3",
+   "sport": "tennis",
+   "competition": "ATP Paris Masters",
+   "event_key": "tennis|tennis_atp_paris_masters|e4e0781ebc80c47d216dd73609a3c8e0",
+   "event_name": "Taylor Fritz v Carlos Alcaraz",
+   "event_start": "2026-11-06T18:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Carlos Alcaraz",
+   "probability": 0.737705,
+   "band": "70%+",
+   "sigma": 0.014377,
+   "evidence": "VALIDATED",
+   "engine_id": "atp_match_winner.betfair_market",
+   "fair_odds": 1.36,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.35,
+   "best_source": "virginbet",
+   "best_net_ev": -0.004098,
+   "decision": "REJECT",
+   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.35",
+   "decision_source": "casumo",
+   "decision_net_ev": "-0.004098249999999859",
+   "price_observed_at": "2026-11-05T21:33:38.933860+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.39
   },
   {
@@ -367,7 +397,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -396,7 +426,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.41
   },
   {
@@ -425,7 +455,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.41
   },
   {
@@ -454,7 +484,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.42
   },
   {
@@ -483,7 +513,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.44
   },
   {
@@ -506,13 +536,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "COMMISSION_UNKNOWN",
+   "decision_reasons": "PRICE_STALE|COMMISSION_UNKNOWN",
    "decision_odds": "1.4",
    "decision_source": "matchbook",
    "decision_net_ev": "",
    "price_observed_at": "2026-11-05T14:52:51.546085+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.45
   },
   {
@@ -541,37 +571,8 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.47
-  },
-  {
-   "prediction_id": "6697340d7fb2a14d",
-   "sport": "tennis",
-   "competition": "ATP Paris Masters",
-   "event_key": "tennis|tennis_atp_paris_masters|47d9edba7490e876194504362c877fe3",
-   "event_name": "Jan-Lennard Struff v Casper Ruud",
-   "event_start": "2026-11-05T19:30:00+00:00",
-   "market": "match_winner",
-   "selection": "Casper Ruud",
-   "probability": 0.665184,
-   "band": "60%+",
-   "sigma": 0.011765,
-   "evidence": "VALIDATED",
-   "engine_id": "atp_match_winner.betfair_market",
-   "fair_odds": 1.5,
-   "price_status": "POOR_PAYOUT",
-   "best_odds": 1.5,
-   "best_source": "williamhill",
-   "best_net_ev": -0.002224,
-   "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
-   "decision_odds": "1.5",
-   "decision_source": "betfair_sb_uk",
-   "decision_net_ev": "-0.0022240000000000038",
-   "price_observed_at": "2026-11-05T14:52:49.864040+00:00",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
-   "min_bookmaker_odds": 1.54
   },
   {
    "prediction_id": "29c4d8070ad3fc6a",
@@ -599,7 +600,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.55
   },
   {
@@ -622,13 +623,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "COMMISSION_UNKNOWN",
+   "decision_reasons": "PRICE_STALE|COMMISSION_UNKNOWN",
    "decision_odds": "1.52",
    "decision_source": "matchbook",
    "decision_net_ev": "",
    "price_observed_at": "2026-11-05T14:52:52.890064+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.56
   },
   {
@@ -657,7 +658,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.56
   },
   {
@@ -686,7 +687,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.57
   },
   {
@@ -709,13 +710,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "COMMISSION_UNKNOWN",
+   "decision_reasons": "PRICE_STALE|COMMISSION_UNKNOWN",
    "decision_odds": "1.51",
    "decision_source": "matchbook",
    "decision_net_ev": "",
    "price_observed_at": "2026-11-05T14:52:52.890064+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.58
   },
   {
@@ -738,13 +739,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "COMMISSION_UNKNOWN",
+   "decision_reasons": "PRICE_STALE|COMMISSION_UNKNOWN",
    "decision_odds": "1.53",
    "decision_source": "matchbook",
    "decision_net_ev": "",
    "price_observed_at": "2026-11-05T14:52:52.890064+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.6
   },
   {
@@ -762,18 +763,18 @@
    "evidence": "PROVISIONAL",
    "engine_id": "nhl_moneyline.market",
    "fair_odds": 1.62,
-   "price_status": "POOR_PAYOUT",
-   "best_odds": 1.57,
-   "best_source": "williamhill",
-   "best_net_ev": -0.030955,
+   "price_status": "PRICE_QUALITY_FAIL",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
    "decision_odds": "1.57",
    "decision_source": "williamhill",
    "decision_net_ev": "-0.030954870665932832",
    "price_observed_at": "2026-11-05T14:52:52.890064+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.66
   },
   {
@@ -796,13 +797,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "COMMISSION_UNKNOWN",
+   "decision_reasons": "PRICE_STALE|COMMISSION_UNKNOWN",
    "decision_odds": "1.6",
    "decision_source": "matchbook",
    "decision_net_ev": "",
    "price_observed_at": "2026-11-05T14:52:52.890064+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.67
   },
   {
@@ -831,7 +832,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.68
   },
   {
@@ -860,8 +861,37 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.69
+  },
+  {
+   "prediction_id": "e4944362a6080e92",
+   "sport": "tennis",
+   "competition": "ATP Paris Masters",
+   "event_key": "tennis|tennis_atp_paris_masters|f1676b13a42184d83dee9e84e1b17aa5",
+   "event_name": "Luca Van Assche v Rinky Hijikata",
+   "event_start": "2026-11-06T14:10:00+00:00",
+   "market": "match_winner",
+   "selection": "Luca Van Assche",
+   "probability": 0.597839,
+   "band": "50%+",
+   "sigma": 0.011063,
+   "evidence": "VALIDATED",
+   "engine_id": "atp_match_winner.betfair_market",
+   "fair_odds": 1.67,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.67,
+   "best_source": "betfair_ex_uk",
+   "best_net_ev": -0.021636,
+   "decision": "REJECT",
+   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.67",
+   "decision_source": "betfair_ex_uk",
+   "decision_net_ev": "-0.021636476500000057",
+   "price_observed_at": "2026-11-05T21:33:38.933860+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
+   "min_bookmaker_odds": 1.71
   },
   {
    "prediction_id": "1c7197e05a5413f3",
@@ -889,7 +919,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.72
   },
   {
@@ -918,7 +948,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.78
   },
   {
@@ -941,13 +971,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "COMMISSION_UNKNOWN",
+   "decision_reasons": "PRICE_STALE|COMMISSION_UNKNOWN",
    "decision_odds": "1.73",
    "decision_source": "matchbook",
    "decision_net_ev": "",
    "price_observed_at": "2026-11-05T14:52:52.890064+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.8
   },
   {
@@ -970,14 +1000,43 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "COMMISSION_UNKNOWN",
+   "decision_reasons": "PRICE_STALE|COMMISSION_UNKNOWN",
    "decision_odds": "1.73",
    "decision_source": "matchbook",
    "decision_net_ev": "",
    "price_observed_at": "2026-11-05T14:52:52.890064+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.8
+  },
+  {
+   "prediction_id": "52f15fef559a497c",
+   "sport": "tennis",
+   "competition": "ATP Paris Masters",
+   "event_key": "tennis|tennis_atp_paris_masters|10a66a309af482f75813cc0d9ce0bdd1",
+   "event_name": "Ben Shelton v Tommy Paul",
+   "event_start": "2026-11-06T13:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Tommy Paul",
+   "probability": 0.560886,
+   "band": "50%+",
+   "sigma": 0.011576,
+   "evidence": "VALIDATED",
+   "engine_id": "atp_match_winner.betfair_market",
+   "fair_odds": 1.78,
+   "price_status": "PRICE_VALID",
+   "best_odds": 1.8,
+   "best_source": "boylesports",
+   "best_net_ev": 0.009595,
+   "decision": "WATCH",
+   "decision_reasons": "NET_EV_BELOW_PAPER_GATE",
+   "decision_odds": "1.8",
+   "decision_source": "boylesports",
+   "decision_net_ev": "0.009594800000000014",
+   "price_observed_at": "2026-11-05T21:33:38.933860+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
+   "min_bookmaker_odds": 1.82
   },
   {
    "prediction_id": "c58519d8a3a62f86",
@@ -1005,7 +1064,7 @@
    "decision_net_ev": "-0.03472652723442671",
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.84
   },
   {
@@ -1034,7 +1093,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.84
   },
   {
@@ -1063,37 +1122,8 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.85
-  },
-  {
-   "prediction_id": "bc3333b9e3293944",
-   "sport": "tennis",
-   "competition": "ATP Paris Masters",
-   "event_key": "tennis|tennis_atp_paris_masters|6a03e950601f142942705acfb764d107",
-   "event_name": "Arthur Fils v Taylor Fritz",
-   "event_start": "2026-11-05T18:00:00+00:00",
-   "market": "match_winner",
-   "selection": "Arthur Fils",
-   "probability": 0.548387,
-   "band": "50%+",
-   "sigma": 0.011328,
-   "evidence": "VALIDATED",
-   "engine_id": "atp_match_winner.betfair_market",
-   "fair_odds": 1.82,
-   "price_status": "POOR_PAYOUT",
-   "best_odds": 1.8,
-   "best_source": "boylesports",
-   "best_net_ev": -0.012903,
-   "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
-   "decision_odds": "1.8",
-   "decision_source": "betway",
-   "decision_net_ev": "-0.012903400000000065",
-   "price_observed_at": "2026-11-05T14:52:49.864040+00:00",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
-   "min_bookmaker_odds": 1.87
   },
   {
    "prediction_id": "ab5f86db79f33179",
@@ -1121,7 +1151,7 @@
    "decision_net_ev": "-0.07066666666666677",
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.87
   },
   {
@@ -1144,43 +1174,14 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "COMMISSION_UNKNOWN",
+   "decision_reasons": "PRICE_STALE|COMMISSION_UNKNOWN",
    "decision_odds": "1.79",
    "decision_source": "matchbook",
    "decision_net_ev": "",
    "price_observed_at": "2026-11-05T14:52:52.890064+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.87
-  },
-  {
-   "prediction_id": "a8c72c6b3368a859",
-   "sport": "football",
-   "competition": "Ligue 1",
-   "event_key": "football|Ligue 1|Toulouse v Strasbourg|2026-11-06T19:45:00+00:00",
-   "event_name": "Toulouse v Strasbourg",
-   "event_start": "2026-11-06T19:45:00+00:00",
-   "market": "double_chance",
-   "selection": "X2",
-   "probability": 0.541525,
-   "band": "50%+",
-   "sigma": 0.008133,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_double_chance.derived_1x2",
-   "fair_odds": 1.85,
-   "price_status": "PRICE_UNAVAILABLE",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "",
-   "decision_source": "",
-   "decision_net_ev": "",
-   "price_observed_at": "",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
-   "min_bookmaker_odds": 1.89
   }
  ],
  "best_bets": [],
@@ -1212,7 +1213,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-11-04T14:48:20.461124+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1241,7 +1242,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1264,13 +1265,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "COMMISSION_UNKNOWN",
+   "decision_reasons": "PRICE_STALE|COMMISSION_UNKNOWN",
    "decision_odds": "1.26",
    "decision_source": "matchbook",
    "decision_net_ev": "",
    "price_observed_at": "2026-11-05T14:52:52.890064+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1299,7 +1300,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1328,7 +1329,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -1357,7 +1358,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.35
   },
   {
@@ -1386,7 +1387,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.35
   },
   {
@@ -1415,7 +1416,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.37
   },
   {
@@ -1444,7 +1445,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.37
   },
   {
@@ -1473,7 +1474,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.38
   },
   {
@@ -1502,7 +1503,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
+   "min_bookmaker_odds": 1.39
+  },
+  {
+   "prediction_id": "ea2f37487f17e0c3",
+   "sport": "tennis",
+   "competition": "ATP Paris Masters",
+   "event_key": "tennis|tennis_atp_paris_masters|e4e0781ebc80c47d216dd73609a3c8e0",
+   "event_name": "Taylor Fritz v Carlos Alcaraz",
+   "event_start": "2026-11-06T18:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Carlos Alcaraz",
+   "probability": 0.737705,
+   "band": "70%+",
+   "sigma": 0.014377,
+   "evidence": "VALIDATED",
+   "engine_id": "atp_match_winner.betfair_market",
+   "fair_odds": 1.36,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.35,
+   "best_source": "virginbet",
+   "best_net_ev": -0.004098,
+   "decision": "REJECT",
+   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.35",
+   "decision_source": "casumo",
+   "decision_net_ev": "-0.004098249999999859",
+   "price_observed_at": "2026-11-05T21:33:38.933860+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.39
   },
   {
@@ -1531,7 +1561,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -1560,7 +1590,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.41
   },
   {
@@ -1589,7 +1619,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.41
   },
   {
@@ -1618,7 +1648,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.42
   },
   {
@@ -1647,7 +1677,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.44
   },
   {
@@ -1670,13 +1700,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "COMMISSION_UNKNOWN",
+   "decision_reasons": "PRICE_STALE|COMMISSION_UNKNOWN",
    "decision_odds": "1.4",
    "decision_source": "matchbook",
    "decision_net_ev": "",
    "price_observed_at": "2026-11-05T14:52:51.546085+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-05T14:52:54.535100+00:00",
+   "decision_evaluated_at": "2026-11-05T21:33:41.710841+00:00",
    "min_bookmaker_odds": 1.45
   }
  ],
