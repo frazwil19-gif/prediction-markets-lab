@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-11-05T02:39Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-05T07:16Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 8 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 5 · research predictions: 0
+Predictions in the next window: 10 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 5 · research predictions: 0
 
 ## 1. Best predictions today
 
@@ -10,14 +10,13 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 
 | # | Sport | Event | Start (UTC) | Market | Selection | P | Band | σ | Evidence | Fair odds | Best price | Bet? |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | basketball | Los Angeles Lakers @ Sacramento Kings | 2026-11-05T03:10 | moneyline | Los Angeles Lakers | 81.2% | 80%+ | 1.4% | VALIDATED | 1.23 | price not usable (stale/wide/unknown commission) | no |
-| 2 | americanfootball | Jacksonville Jaguars @ Baltimore Ravens | 2026-11-06T01:15 | moneyline | Jacksonville Jaguars | 80.8% | 80%+ | — | VALIDATED | 1.24 | price not usable (stale/wide/unknown commission) | no |
+| 1 | americanfootball | Jacksonville Jaguars @ Baltimore Ravens | 2026-11-06T01:15 | moneyline | Jacksonville Jaguars | 80.8% | 80%+ | — | VALIDATED | 1.24 | price not usable (stale/wide/unknown commission) | no |
+| 2 | football | Willem II v FC Zwolle | 2026-11-06T19:00 | double_chance | 12 | 74.6% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.34 | no price | no |
 | 3 | tennis | Lorenzo Musetti v Luca Van Assche | 2026-11-05T10:00 | match_winner | Lorenzo Musetti | 72.8% | 70%+ | 5.2% | VALIDATED | 1.37 | price not usable (stale/wide/unknown commission) | no |
 | 4 | tennis | Tommy Paul v Quentin Halys | 2026-11-05T10:00 | match_winner | Tommy Paul | 72.0% | 70%+ | 4.1% | VALIDATED | 1.39 | price not usable (stale/wide/unknown commission) | no |
 | 5 | tennis | Ben Shelton v Arthur Rinderknech | 2026-11-05T10:00 | match_winner | Ben Shelton | 71.6% | 70%+ | 2.6% | VALIDATED | 1.40 | price not usable (stale/wide/unknown commission) | no |
-| 6 | basketball | Miami Heat @ Los Angeles Clippers | 2026-11-05T03:40 | moneyline | Miami Heat | 62.8% | 60%+ | 1.5% | VALIDATED | 1.59 | price not usable (stale/wide/unknown commission) | no |
-| 7 | icehockey | San Jose Sharks @ Los Angeles Kings | 2026-11-05T03:10 | moneyline | Los Angeles Kings | 59.1% | 50%+ | — | PROVISIONAL | 1.69 | price not usable (stale/wide/unknown commission) | no |
-| 8 | icehockey | Calgary Flames @ Seattle Kraken | 2026-11-05T03:10 | moneyline | Seattle Kraken | 54.9% | 50%+ | — | PROVISIONAL | 1.82 | price not usable (stale/wide/unknown commission) | no |
+| 6 | football | Willem II v FC Zwolle | 2026-11-06T19:00 | double_chance | X2 | 66.1% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.51 | no price | no |
+| 7 | football | Willem II v FC Zwolle | 2026-11-06T19:00 | double_chance | 1X | 59.3% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.69 | no price | no |
 
 ## 2. Qualified paper bets (simulated stakes, recorded automatically)
 
@@ -33,15 +32,15 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 | Event | Selection | P | Fair odds | Best clean price | Why no bet |
 |---|---|---|---|---|---|
-| Los Angeles Lakers @ Sacramento Kings (2026-11-05T03:10) | moneyline: Los Angeles Lakers | 81.2% | 1.23 | — | NET_EV_NOT_POSITIVE |
-| Jacksonville Jaguars @ Baltimore Ravens (2026-11-06T01:15) | moneyline: Jacksonville Jaguars | 80.8% | 1.24 | — | COMMISSION_UNKNOWN |
-| Lorenzo Musetti v Luca Van Assche (2026-11-05T10:00) | match_winner: Lorenzo Musetti | 72.8% | 1.37 | — | EXCHANGE_SPREAD_TOO_WIDE, NET_EV_NOT_POSITIVE |
-| Tommy Paul v Quentin Halys (2026-11-05T10:00) | match_winner: Tommy Paul | 72.0% | 1.39 | — | EXCHANGE_SPREAD_TOO_WIDE, NET_EV_NOT_POSITIVE |
-| Ben Shelton v Arthur Rinderknech (2026-11-05T10:00) | match_winner: Ben Shelton | 71.6% | 1.40 | — | EXCHANGE_SPREAD_TOO_WIDE, NET_EV_NOT_POSITIVE |
+| Jacksonville Jaguars @ Baltimore Ravens (2026-11-06T01:15) | moneyline: Jacksonville Jaguars | 80.8% | 1.24 | — | PRICE_STALE, COMMISSION_UNKNOWN |
+| Willem II v FC Zwolle (2026-11-06T19:00) | double_chance: 12 | 74.6% | 1.34 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
+| Lorenzo Musetti v Luca Van Assche (2026-11-05T10:00) | match_winner: Lorenzo Musetti | 72.8% | 1.37 | — | EXCHANGE_SPREAD_TOO_WIDE, PRICE_STALE, NET_EV_NOT_POSITIVE |
+| Tommy Paul v Quentin Halys (2026-11-05T10:00) | match_winner: Tommy Paul | 72.0% | 1.39 | — | EXCHANGE_SPREAD_TOO_WIDE, PRICE_STALE, NET_EV_NOT_POSITIVE |
+| Ben Shelton v Arthur Rinderknech (2026-11-05T10:00) | match_winner: Ben Shelton | 71.6% | 1.40 | — | EXCHANGE_SPREAD_TOO_WIDE, PRICE_STALE, NET_EV_NOT_POSITIVE |
 
 ### Why predictions in the window were not bets
 
-NET_EV_NOT_POSITIVE 4 · COMMISSION_UNKNOWN 4 · EXCHANGE_SPREAD_TOO_WIDE 3
+ENGINE_STATUS_INELIGIBLE 6 · NET_EV_NOT_POSITIVE 5 · PRICE_STALE 4 · NO_EXECUTABLE_PRICE 3 · EXCHANGE_SPREAD_TOO_WIDE 3 · P_BELOW_FLOOR 3 · COMMISSION_UNKNOWN 1
 
 ## 4. Research predictions — not money eligible
 
