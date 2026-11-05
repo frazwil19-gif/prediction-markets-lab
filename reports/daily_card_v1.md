@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-11-05T14:52Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-05T15:49Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 73 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 17 · research predictions: 0
+Predictions in the next window: 72 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 17 · research predictions: 0
 
 ## 1. Best predictions today
 
@@ -37,19 +37,19 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | 25 | icehockey | St Louis Blues @ New Jersey Devils | 2026-11-06T00:10 | moneyline | New Jersey Devils | 63.8% | 60%+ | — | PROVISIONAL | 1.57 | price not usable (stale/wide/unknown commission) | no |
 | 26 | icehockey | Anaheim Ducks @ Edmonton Oilers | 2026-11-06T01:10 | moneyline | Edmonton Oilers | 61.7% | 60%+ | — | PROVISIONAL | 1.62 | 1.57 (williamhill) | no |
 | 27 | icehockey | Carolina Hurricanes @ New York Islanders | 2026-11-06T00:10 | moneyline | Carolina Hurricanes | 61.1% | 60%+ | — | PROVISIONAL | 1.64 | price not usable (stale/wide/unknown commission) | no |
-| 28 | tennis | Nuno Borges v Ignacio Buse | 2026-11-05T15:10 | match_winner | Nuno Borges | 61.0% | 60%+ | 1.2% | VALIDATED | 1.64 | 1.62 (boylesports) | no |
-| 29 | football | Derby County v Bolton Wanderers | 2026-11-06T20:00 | double_chance | X2 | 60.8% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.65 | no price | no |
-| 30 | football | Hamburger SV v Borussia Monchengladbach | 2026-11-06T19:30 | double_chance | X2 | 60.5% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.65 | no price | no |
-| 31 | football | Willem II v FC Zwolle | 2026-11-06T19:00 | double_chance | 1X | 59.3% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.69 | no price | no |
-| 32 | football | Venezia v Udinese | 2026-11-06T19:45 | double_chance | X2 | 57.6% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.74 | no price | no |
-| 33 | icehockey | Philadelphia Flyers @ New York Rangers | 2026-11-06T00:10 | moneyline | New York Rangers | 57.0% | 50%+ | — | PROVISIONAL | 1.75 | price not usable (stale/wide/unknown commission) | no |
-| 34 | icehockey | Vegas Golden Knights @ Detroit Red Wings | 2026-11-06T00:10 | moneyline | Vegas Golden Knights | 56.8% | 50%+ | — | PROVISIONAL | 1.76 | price not usable (stale/wide/unknown commission) | no |
-| 35 | football | Everton v Coventry City | 2026-11-06T20:00 | 1x2 | home | 55.7% | 50%+ | 1.3% | PROSPECTIVE_SHADOW_LEAGUE | 1.80 | price not usable (stale/wide/unknown commission) | no |
-| 36 | football | Everton v Coventry City | 2026-11-06T20:00 | over_under_2_5 | over | 55.5% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.80 | price not usable (stale/wide/unknown commission) | no |
-| 37 | football | Famalicão v Arouca | 2026-11-06T20:45 | double_chance | X2 | 55.3% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.81 | no price | no |
-| 38 | tennis | Arthur Fils v Taylor Fritz | 2026-11-05T18:00 | match_winner | Arthur Fils | 54.8% | 50%+ | 1.1% | VALIDATED | 1.82 | 1.80 (boylesports) | no |
-| 39 | football | Derby County v Bolton Wanderers | 2026-11-06T20:00 | over_under_2_5 | over | 54.7% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.83 | price not usable (stale/wide/unknown commission) | no |
-| 40 | icehockey | Dallas Stars @ Columbus Blue Jackets | 2026-11-06T00:10 | moneyline | Dallas Stars | 54.6% | 50%+ | — | PROVISIONAL | 1.83 | price not usable (stale/wide/unknown commission) | no |
+| 28 | football | Derby County v Bolton Wanderers | 2026-11-06T20:00 | double_chance | X2 | 60.8% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.65 | no price | no |
+| 29 | football | Hamburger SV v Borussia Monchengladbach | 2026-11-06T19:30 | double_chance | X2 | 60.5% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.65 | no price | no |
+| 30 | football | Willem II v FC Zwolle | 2026-11-06T19:00 | double_chance | 1X | 59.3% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.69 | no price | no |
+| 31 | football | Venezia v Udinese | 2026-11-06T19:45 | double_chance | X2 | 57.6% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.74 | no price | no |
+| 32 | icehockey | Philadelphia Flyers @ New York Rangers | 2026-11-06T00:10 | moneyline | New York Rangers | 57.0% | 50%+ | — | PROVISIONAL | 1.75 | price not usable (stale/wide/unknown commission) | no |
+| 33 | icehockey | Vegas Golden Knights @ Detroit Red Wings | 2026-11-06T00:10 | moneyline | Vegas Golden Knights | 56.8% | 50%+ | — | PROVISIONAL | 1.76 | price not usable (stale/wide/unknown commission) | no |
+| 34 | football | Everton v Coventry City | 2026-11-06T20:00 | 1x2 | home | 55.7% | 50%+ | 1.3% | PROSPECTIVE_SHADOW_LEAGUE | 1.80 | price not usable (stale/wide/unknown commission) | no |
+| 35 | football | Everton v Coventry City | 2026-11-06T20:00 | over_under_2_5 | over | 55.5% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.80 | price not usable (stale/wide/unknown commission) | no |
+| 36 | football | Famalicão v Arouca | 2026-11-06T20:45 | double_chance | X2 | 55.3% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.81 | no price | no |
+| 37 | tennis | Arthur Fils v Taylor Fritz | 2026-11-05T18:00 | match_winner | Arthur Fils | 54.8% | 50%+ | 1.1% | VALIDATED | 1.82 | 1.80 (boylesports) | no |
+| 38 | football | Derby County v Bolton Wanderers | 2026-11-06T20:00 | over_under_2_5 | over | 54.7% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.83 | price not usable (stale/wide/unknown commission) | no |
+| 39 | icehockey | Dallas Stars @ Columbus Blue Jackets | 2026-11-06T00:10 | moneyline | Dallas Stars | 54.6% | 50%+ | — | PROVISIONAL | 1.83 | price not usable (stale/wide/unknown commission) | no |
+| 40 | football | Toulouse v Strasbourg | 2026-11-06T19:45 | double_chance | X2 | 54.2% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.85 | no price | no |
 
 ## 2. Qualified paper bets (simulated stakes, recorded automatically)
 
@@ -85,7 +85,7 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 56 · PRICE_STALE 30 · NO_EXECUTABLE_PRICE 27 · NET_EV_NOT_POSITIVE 27 · P_BELOW_FLOOR 27 · COMMISSION_UNKNOWN 17
+ENGINE_STATUS_INELIGIBLE 56 · PRICE_STALE 30 · NO_EXECUTABLE_PRICE 27 · P_BELOW_FLOOR 27 · NET_EV_NOT_POSITIVE 26 · COMMISSION_UNKNOWN 17
 
 ## 4. Research predictions — not money eligible
 
