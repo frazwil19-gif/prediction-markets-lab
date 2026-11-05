@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T01:13:24.802684+00:00",
+ "generated_at": "2026-11-05T01:26:15.403371+00:00",
  "mode": "SHADOW (no ledger writes)",
  "football_data_sources": {
   "B1": "https://www.football-data.co.uk/mmz4281/2627/B1.csv",
@@ -19,7 +19,7 @@
   "SP1": "https://www.football-data.co.uk/mmz4281/2627/SP1.csv",
   "SP2": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv"
  },
- "fd_results_loaded": 1693,
+ "fd_results_loaded": 1710,
  "fd_unresolved_names": [
   "AFC Wimbledon",
   "AZ Alkmaar",
@@ -138,6 +138,7 @@
   "Inter",
   "Juve Stabia",
   "Juventus",
+  "KV Mechelen",
   "Kaiserslautern",
   "Karlsruhe",
   "Kortrijk",
@@ -190,6 +191,7 @@
   "Osnabruck",
   "Oud-Heverlee Leuven",
   "Oviedo",
+  "Oxford Utd",
   "PSV Eindhoven",
   "Paderborn",
   "Padova",
@@ -219,6 +221,7 @@
   "Sassuolo",
   "Schalke 04",
   "Sevilla",
+  "Sheffield Utd",
   "Shrewsbury",
   "Sochaux",
   "Sociedad",
@@ -275,6 +278,7 @@
    "Club Brugge",
    "Genk",
    "Gent",
+   "KV Mechelen",
    "Kortrijk",
    "Lommel SK",
    "Mechelen",
@@ -327,7 +331,9 @@
    "Wolfsburg"
   ],
   "E0": [],
-  "E1": [],
+  "E1": [
+   "Sheffield Utd"
+  ],
   "E2": [
    "AFC Wimbledon",
    "Bradford",
@@ -339,6 +345,7 @@
    "Mansfield",
    "Milton Keynes Dons",
    "Notts County",
+   "Oxford Utd",
    "Stevenage",
    "Stockport"
   ],
@@ -540,15 +547,15 @@
   ]
  },
  "fd_internal_inconsistencies": 0,
- "fixture_comparisons_total": 137,
+ "fixture_comparisons_total": 140,
  "fixture_status_counts": {
   "NOT_FOUND": 125,
-  "MATCHED": 12
+  "MATCHED": 15
  },
  "disagreement_examples": [],
  "migration_gate": {
   "min_comparisons": 100,
-  "matched_comparisons": 12,
+  "matched_comparisons": 15,
   "score_disagreements": 0,
   "passed": false
  },

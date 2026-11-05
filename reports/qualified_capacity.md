@@ -1,4 +1,4 @@
-# Qualified Turnover Capacity & expected vs realised (qtc-2, 2026-11-04T01:13Z)
+# Qualified Turnover Capacity & expected vs realised (qtc-2, 2026-11-05T01:26Z)
 
 ## Expected vs realised (paper qualifying bets, £1 each)
 
@@ -6,32 +6,32 @@ Settled 11 (open 1). Expected profit **£0.54** vs realised **£-2.19**. Expecte
 
 Small samples: |wins_z| < 2 is ordinary noise; do not react to it (first-weekend rule).
 
-Capacity below uses only rule **bsv2-4** (98 evaluation runs). Paper bets by rule version: {'bsv2-1': 9, 'bsv2-3': 1, 'bsv2-4': 2}.
+Capacity below uses only rule **bsv2-4** (101 evaluation runs). Paper bets by rule version: {'bsv2-1': 9, 'bsv2-3': 1, 'bsv2-4': 2}.
 
 ## Capacity
 
-2 qualifying bets over 35 days → 1.7/month (LOW_SAMPLE; bets on 2 of those days). Odds mean 1.53 / median 1.53; net EV mean 0.0278 / median 0.0278.
+2 qualifying bets over 36 days → 1.7/month (LOW_SAMPLE; bets on 2 of those days). Odds mean 1.53 / median 1.53; net EV mean 0.0278 / median 0.0278.
 
 | Group | Bets | /month | Odds mean | EV mean |
 |---|---|---|---|---|
-| engine=atp_match_winner.betfair_market | 1 | 0.9 | 1.53 | 0.0239 |
-| engine=wta_match_winner.betfair_market | 1 | 0.9 | 1.53 | 0.0317 |
+| engine=atp_match_winner.betfair_market | 1 | 0.8 | 1.53 | 0.0239 |
+| engine=wta_match_winner.betfair_market | 1 | 0.8 | 1.53 | 0.0317 |
 | market=tennis:match_winner | 2 | 1.7 | 1.53 | 0.0278 |
 | sport=tennis | 2 | 1.7 | 1.53 | 0.0278 |
 
 | Flat stake | Turnover/month | Expected profit/month |
 |---|---|---|
-| £1 | £1.71 | £0.05 |
-| £5 | £8.57 | £0.24 |
-| £10 | £17.14 | £0.48 |
+| £1 | £1.67 | £0.05 |
+| £5 | £8.33 | £0.23 |
+| £10 | £16.67 | £0.46 |
 
 | Bankroll | Stake | Daily cap | Max bets/day | Exp. profit/month (no cap) | after daily cap | Turnover/month |
 |---|---|---|---|---|---|---|
-| £50 | £1.0 | £5.0 | 5 | £0.05 | £0.05 | £1.71 |
-| £100 | £2.0 | £10.0 | 5 | £0.1 | £0.1 | £3.43 |
-| £250 | £5.0 | £25.0 | 5 | £0.24 | £0.24 | £8.57 |
-| £500 | £10.0 | £50.0 | 5 | £0.48 | £0.48 | £17.14 |
-| £1000 | £20.0 | £100.0 | 5 | £0.95 | £0.95 | £34.29 |
+| £50 | £1.0 | £5.0 | 5 | £0.05 | £0.05 | £1.67 |
+| £100 | £2.0 | £10.0 | 5 | £0.09 | £0.09 | £3.33 |
+| £250 | £5.0 | £25.0 | 5 | £0.23 | £0.23 | £8.33 |
+| £500 | £10.0 | £50.0 | 5 | £0.46 | £0.46 | £16.67 |
+| £1000 | £20.0 | £100.0 | 5 | £0.93 | £0.93 | £33.33 |
 
 Limits:
 - **theoretical**: all qualifying bets staked (no caps) — bankroll_scenarios.*.theoretical
@@ -44,17 +44,17 @@ Expected profit uses the model's own EV estimates; real edge is unproven until s
 
 ## Rejection categories (latest evaluation per prediction)
 
-2838 predictions evaluated.
+2860 predictions evaluated.
 
 - ENGINE_STATUS_INELIGIBLE: 2257
-- NET_EV_NOT_POSITIVE: 1287
+- NET_EV_NOT_POSITIVE: 1297
 - P_BELOW_FLOOR: 1065
 - NO_EXECUTABLE_PRICE: 1056
-- COMMISSION_UNKNOWN: 259
+- COMMISSION_UNKNOWN: 268
 - PREDICTION_NOT_VALID: 63
-- PRICE_STALE: 59
-- EXCHANGE_SPREAD_TOO_WIDE: 31
-- NET_EV_BELOW_PAPER_GATE: 8
+- PRICE_STALE: 63
+- EXCHANGE_SPREAD_TOO_WIDE: 33
+- NET_EV_BELOW_PAPER_GATE: 9
 - PROBABILITY_NOT_SAME_SNAPSHOT: 7
 - ODDS_BELOW_PAYOUT_FLOOR: 3
 

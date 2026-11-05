@@ -1,13 +1,13 @@
 {
  "report_version": "qtc-2",
- "generated_at": "2026-11-04T01:13:39.986732+00:00",
+ "generated_at": "2026-11-05T01:26:30.006196+00:00",
  "capacity_rule_version": "bsv2-4",
  "paper_bets_by_rule_version": {
   "bsv2-1": 9,
   "bsv2-3": 1,
   "bsv2-4": 2
  },
- "runs_under_current_rule": 98,
+ "runs_under_current_rule": 101,
  "expected_vs_realised": {
   "settled_bets": 11,
   "stake_per_bet_gbp": 1.0,
@@ -21,10 +21,10 @@
  },
  "capacity": {
   "qualifying_bets": 2,
-  "days_observed": 35,
+  "days_observed": 36,
   "observed_window": [
    "2026-10-01",
-   "2026-11-04"
+   "2026-11-05"
   ],
   "days_with_a_qualifying_bet": 2,
   "qualifying_per_day": 0.06,
@@ -43,7 +43,7 @@
   "by_group": {
    "engine=atp_match_winner.betfair_market": {
     "bets": 1,
-    "per_month": 0.9,
+    "per_month": 0.8,
     "odds": {
      "n": 1,
      "mean": 1.53,
@@ -57,7 +57,7 @@
    },
    "engine=wta_match_winner.betfair_market": {
     "bets": 1,
-    "per_month": 0.9,
+    "per_month": 0.8,
     "odds": {
      "n": 1,
      "mean": 1.53,
@@ -100,16 +100,16 @@
   },
   "flat_turnover": {
    "\u00a31": {
-    "monthly_turnover_gbp": 1.71,
+    "monthly_turnover_gbp": 1.67,
     "monthly_expected_profit_gbp": 0.05
    },
    "\u00a35": {
-    "monthly_turnover_gbp": 8.57,
-    "monthly_expected_profit_gbp": 0.24
+    "monthly_turnover_gbp": 8.33,
+    "monthly_expected_profit_gbp": 0.23
    },
    "\u00a310": {
-    "monthly_turnover_gbp": 17.14,
-    "monthly_expected_profit_gbp": 0.48
+    "monthly_turnover_gbp": 16.67,
+    "monthly_expected_profit_gbp": 0.46
    }
   },
   "bankroll_scenarios": {
@@ -119,39 +119,39 @@
     "max_bets_per_day": 5,
     "expected_profit_per_month_theoretical_gbp": 0.05,
     "expected_profit_per_month_after_daily_cap_gbp": 0.05,
-    "expected_turnover_per_month_gbp": 1.71
+    "expected_turnover_per_month_gbp": 1.67
    },
    "\u00a3100": {
     "stake_gbp": 2.0,
     "daily_cap_gbp": 10.0,
     "max_bets_per_day": 5,
-    "expected_profit_per_month_theoretical_gbp": 0.1,
-    "expected_profit_per_month_after_daily_cap_gbp": 0.1,
-    "expected_turnover_per_month_gbp": 3.43
+    "expected_profit_per_month_theoretical_gbp": 0.09,
+    "expected_profit_per_month_after_daily_cap_gbp": 0.09,
+    "expected_turnover_per_month_gbp": 3.33
    },
    "\u00a3250": {
     "stake_gbp": 5.0,
     "daily_cap_gbp": 25.0,
     "max_bets_per_day": 5,
-    "expected_profit_per_month_theoretical_gbp": 0.24,
-    "expected_profit_per_month_after_daily_cap_gbp": 0.24,
-    "expected_turnover_per_month_gbp": 8.57
+    "expected_profit_per_month_theoretical_gbp": 0.23,
+    "expected_profit_per_month_after_daily_cap_gbp": 0.23,
+    "expected_turnover_per_month_gbp": 8.33
    },
    "\u00a3500": {
     "stake_gbp": 10.0,
     "daily_cap_gbp": 50.0,
     "max_bets_per_day": 5,
-    "expected_profit_per_month_theoretical_gbp": 0.48,
-    "expected_profit_per_month_after_daily_cap_gbp": 0.48,
-    "expected_turnover_per_month_gbp": 17.14
+    "expected_profit_per_month_theoretical_gbp": 0.46,
+    "expected_profit_per_month_after_daily_cap_gbp": 0.46,
+    "expected_turnover_per_month_gbp": 16.67
    },
    "\u00a31000": {
     "stake_gbp": 20.0,
     "daily_cap_gbp": 100.0,
     "max_bets_per_day": 5,
-    "expected_profit_per_month_theoretical_gbp": 0.95,
-    "expected_profit_per_month_after_daily_cap_gbp": 0.95,
-    "expected_turnover_per_month_gbp": 34.29
+    "expected_profit_per_month_theoretical_gbp": 0.93,
+    "expected_profit_per_month_after_daily_cap_gbp": 0.93,
+    "expected_turnover_per_month_gbp": 33.33
    }
   },
   "limits": {
@@ -164,17 +164,17 @@
   "caveat": "Expected profit uses the model's own EV estimates; real edge is unproven until settled results and CLV accrue."
  },
  "rejections": {
-  "predictions_evaluated": 2838,
+  "predictions_evaluated": 2860,
   "rejections_by_reason": {
    "ENGINE_STATUS_INELIGIBLE": 2257,
-   "NET_EV_NOT_POSITIVE": 1287,
+   "NET_EV_NOT_POSITIVE": 1297,
    "P_BELOW_FLOOR": 1065,
    "NO_EXECUTABLE_PRICE": 1056,
-   "COMMISSION_UNKNOWN": 259,
+   "COMMISSION_UNKNOWN": 268,
    "PREDICTION_NOT_VALID": 63,
-   "PRICE_STALE": 59,
-   "EXCHANGE_SPREAD_TOO_WIDE": 31,
-   "NET_EV_BELOW_PAPER_GATE": 8,
+   "PRICE_STALE": 63,
+   "EXCHANGE_SPREAD_TOO_WIDE": 33,
+   "NET_EV_BELOW_PAPER_GATE": 9,
    "PROBABILITY_NOT_SAME_SNAPSHOT": 7,
    "ODDS_BELOW_PAYOUT_FLOOR": 3
   }
