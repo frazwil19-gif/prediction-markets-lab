@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-11-06T07:16:41.080753+00:00",
+ "generated_at": "2026-11-06T14:31:06.543298+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-4",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 113,
+  "runs": 114,
   "totals_over_runs": {
-   "events_scanned": 4173,
-   "valid_predictions": 14630,
-   "high_p_candidates": 4099,
-   "priced_candidates": 7554,
+   "events_scanned": 4241,
+   "valid_predictions": 14984,
+   "high_p_candidates": 4197,
+   "priced_candidates": 7722,
    "PAPER_BET": 22,
-   "MULTI_RESEARCH_ELIGIBLE": 207,
+   "MULTI_RESEARCH_ELIGIBLE": 208,
    "WATCH": 70,
-   "REJECT": 14712,
+   "REJECT": 15065,
    "paper_bets_added": 12,
    "money_card_qualified": 12
   },
@@ -65,37 +65,45 @@
   }
  },
  "latest_run": {
-  "run_at": "2026-11-06T07:16:41.080753+00:00",
-  "trigger": "workflow_dispatch",
+  "run_at": "2026-11-06T14:31:06.543298+00:00",
+  "trigger": "schedule",
   "rule_version": "bsv2-4",
-  "events_scanned": "56",
-  "valid_predictions": "342",
-  "high_p_candidates": "94",
-  "priced_candidates": "157",
+  "events_scanned": "68",
+  "valid_predictions": "354",
+  "high_p_candidates": "98",
+  "priced_candidates": "168",
   "PAPER_BET": "0",
-  "MULTI_RESEARCH_ELIGIBLE": "0",
+  "MULTI_RESEARCH_ELIGIBLE": "1",
   "WATCH": "0",
-  "REJECT": "342",
+  "REJECT": "353",
   "paper_bets_added": "0",
-  "snapshots_added": "180",
+  "snapshots_added": "70",
   "money_card_qualified": "0",
   "football_fixtures_on_card": "142"
  },
  "latest_decisions": {
   "decisions": {
-   "REJECT": 342
+   "REJECT": 353,
+   "MULTI_RESEARCH_ELIGIBLE": 1
   },
   "reason_counts": {
    "ENGINE_STATUS_INELIGIBLE": 339,
+   "PRICE_STALE": 180,
    "P_BELOW_FLOOR": 159,
    "NO_EXECUTABLE_PRICE": 159,
-   "NET_EV_NOT_POSITIVE": 130,
-   "COMMISSION_UNKNOWN": 26,
-   "PRICE_STALE": 3
+   "NET_EV_NOT_POSITIVE": 141,
+   "COMMISSION_UNKNOWN": 27
   },
   "by_sport": {
+   "basketball": {
+    "REJECT": 8,
+    "MULTI_RESEARCH_ELIGIBLE": 1
+   },
    "football": {
     "REJECT": 339
+   },
+   "icehockey": {
+    "REJECT": 3
    },
    "tennis": {
     "REJECT": 3
@@ -113,6 +121,13 @@
    },
    "football_ou25.market": {
     "REJECT": 21
+   },
+   "nba_moneyline.market": {
+    "REJECT": 8,
+    "MULTI_RESEARCH_ELIGIBLE": 1
+   },
+   "nhl_moneyline.market": {
+    "REJECT": 3
    }
   }
  },

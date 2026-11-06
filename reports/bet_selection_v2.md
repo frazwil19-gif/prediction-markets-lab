@@ -4,9 +4,9 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-06T07:16Z · events scanned 56 · valid predictions 342 · high-P (≥70%) 94 · priced 157 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 342 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-06T14:31Z · events scanned 68 · valid predictions 354 · high-P (≥70%) 98 · priced 168 · PAPER_BET 0 · MULTI-research 1 · WATCH 0 · REJECT 353 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 339 · P_BELOW_FLOOR 159 · NO_EXECUTABLE_PRICE 159 · NET_EV_NOT_POSITIVE 130 · COMMISSION_UNKNOWN 26 · PRICE_STALE 3
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 339 · PRICE_STALE 180 · P_BELOW_FLOOR 159 · NO_EXECUTABLE_PRICE 159 · NET_EV_NOT_POSITIVE 141 · COMMISSION_UNKNOWN 27
 
 ## Candidates (latest run, best price per prediction)
 
@@ -21,6 +21,7 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 339 · P_BELOW_FLOOR 159 · 
 | Borussia Dortmund v Elversberg | 2026-11-07T14:30 | 1X | 88.4% | 1.13 | — | — | — | REJECT |
 | Sporting Lisbon v Moreirense FC | 2026-11-07T20:30 | 12 | 88.1% | 1.14 | — | — | — | REJECT |
 | Arsenal v Hull City | 2026-11-07T15:00 | 12 | 87.2% | 1.15 | — | — | — | REJECT |
+| San Antonio Spurs @ Sacramento Kings | 2026-11-07T03:10 | San Antonio Spurs | 87.0% | 1.15 | 1.10 (unibet_uk) | 90.9% | -4.3% | MULTI_RESEARCH_ELIGIBLE |
 | FSV Mainz 05 v Bayern Munich | 2026-11-07T14:30 | X2 | 86.5% | 1.16 | — | — | — | REJECT |
 | St Mirren v Rangers | 2026-11-07T20:00 | X2 | 85.8% | 1.17 | — | — | — | REJECT |
 | Paris Saint Germain v Troyes | 2026-11-07T20:05 | home | 85.1% | 1.18 | 1.12 (coral) | 89.3% | -4.7% | REJECT |
@@ -51,7 +52,6 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 339 · P_BELOW_FLOOR 159 · 
 | Standard Liege v SK Beveren | 2026-11-06T19:45 | 1X | 76.8% | 1.30 | — | — | — | REJECT |
 | Blackburn Rovers v West Ham United | 2026-11-07T15:00 | 12 | 76.8% | 1.30 | — | — | — | REJECT |
 | Sevilla v Alavés | 2026-11-06T20:00 | 1X | 76.5% | 1.31 | — | — | — | REJECT |
-| Queens Park Rangers v Lincoln City | 2026-11-07T15:00 | 12 | 76.2% | 1.31 | — | — | — | REJECT |
 
 ## Paper results (all time)
 
