@@ -1,4 +1,4 @@
-# Daily Prediction Board & Bet Card — 2026-11-06T15:24Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-06T16:16Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
@@ -132,8 +132,8 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 | St Johnstone v Dundee FC (2026-11-07T15:00) | double_chance: 12 | 73.8% | 1.36 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | CA Osasuna v Athletic Bilbao (2026-11-07T17:30) | double_chance: X2 | 73.7% | 1.36 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | West Bromwich Albion v Millwall (2026-11-07T15:00) | double_chance: 12 | 73.5% | 1.36 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
+| Taylor Fritz v Carlos Alcaraz (2026-11-06T18:00) | match_winner: Carlos Alcaraz | 73.4% | 1.36 | 1.35 | NET_EV_NOT_POSITIVE |
 | Charlton Athletic v Sheffield United (2026-11-07T15:00) | double_chance: X2 | 73.2% | 1.37 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Taylor Fritz v Carlos Alcaraz (2026-11-06T18:00) | match_winner: Carlos Alcaraz | 73.2% | 1.37 | 1.36 | NET_EV_NOT_POSITIVE |
 | Boston Celtics @ Charlotte Hornets (2026-11-07T00:10) | moneyline: Boston Celtics | 73.0% | 1.37 | 1.33 | NET_EV_NOT_POSITIVE |
 | Málaga v Real Racing Club de Santander (2026-11-07T13:00) | double_chance: 12 | 73.0% | 1.37 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Leuven v KV Mechelen (2026-11-07T17:15) | double_chance: 12 | 73.0% | 1.37 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |

@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-11-06T14:31:06.543298+00:00",
+ "generated_at": "2026-11-06T16:16:39.248499+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-4",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 114,
+  "runs": 115,
   "totals_over_runs": {
-   "events_scanned": 4241,
-   "valid_predictions": 14984,
-   "high_p_candidates": 4197,
-   "priced_candidates": 7722,
+   "events_scanned": 4308,
+   "valid_predictions": 15337,
+   "high_p_candidates": 4295,
+   "priced_candidates": 7889,
    "PAPER_BET": 22,
-   "MULTI_RESEARCH_ELIGIBLE": 208,
+   "MULTI_RESEARCH_ELIGIBLE": 209,
    "WATCH": 70,
-   "REJECT": 15065,
+   "REJECT": 15417,
    "paper_bets_added": 12,
    "money_card_qualified": 12
   },
@@ -65,25 +65,25 @@
   }
  },
  "latest_run": {
-  "run_at": "2026-11-06T14:31:06.543298+00:00",
-  "trigger": "schedule",
+  "run_at": "2026-11-06T16:16:39.248499+00:00",
+  "trigger": "workflow_dispatch",
   "rule_version": "bsv2-4",
-  "events_scanned": "68",
-  "valid_predictions": "354",
+  "events_scanned": "67",
+  "valid_predictions": "353",
   "high_p_candidates": "98",
-  "priced_candidates": "168",
+  "priced_candidates": "167",
   "PAPER_BET": "0",
   "MULTI_RESEARCH_ELIGIBLE": "1",
   "WATCH": "0",
-  "REJECT": "353",
+  "REJECT": "352",
   "paper_bets_added": "0",
-  "snapshots_added": "70",
+  "snapshots_added": "40",
   "money_card_qualified": "0",
   "football_fixtures_on_card": "142"
  },
  "latest_decisions": {
   "decisions": {
-   "REJECT": 353,
+   "REJECT": 352,
    "MULTI_RESEARCH_ELIGIBLE": 1
   },
   "reason_counts": {
@@ -91,7 +91,7 @@
    "PRICE_STALE": 180,
    "P_BELOW_FLOOR": 159,
    "NO_EXECUTABLE_PRICE": 159,
-   "NET_EV_NOT_POSITIVE": 141,
+   "NET_EV_NOT_POSITIVE": 140,
    "COMMISSION_UNKNOWN": 27
   },
   "by_sport": {
@@ -106,12 +106,12 @@
     "REJECT": 3
    },
    "tennis": {
-    "REJECT": 3
+    "REJECT": 2
    }
   },
   "by_engine": {
    "atp_match_winner.betfair_market": {
-    "REJECT": 3
+    "REJECT": 2
    },
    "football_1x2.market_consensus": {
     "REJECT": 159

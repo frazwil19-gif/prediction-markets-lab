@@ -1,8 +1,8 @@
-# STAGE A PREDICTION BOARD — 2026-11-06T14:31Z (stage-a-2)
+# STAGE A PREDICTION BOARD — 2026-11-06T16:16Z (stage-a-2)
 
 _Probability first. Ranked by estimated probability only. **A strong prediction is not a bet** — price status is descriptive; Stage B (bet-selection) alone decides bets._
 
-Predictions: 354 · strong (P ≥ 70%): 98 on 58 events · strong by price status: POOR_PAYOUT 5 · PRICE_QUALITY_FAIL 7 · PRICE_UNAVAILABLE 86
+Predictions: 353 · strong (P ≥ 70%): 98 on 58 events · strong by price status: POOR_PAYOUT 5 · PRICE_QUALITY_FAIL 7 · PRICE_UNAVAILABLE 86
 
 | # | Sport | Event | Start (UTC) | Market | Selection | P | P first snapshot | P current scan | σ | Engine | Calibration status | Stage A status | Why not assessable | Best clean price | Net EV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -73,8 +73,8 @@ Predictions: 354 · strong (P ≥ 70%): 98 on 58 events · strong by price statu
 | 65 | football | St Johnstone v Dundee FC | 2026-11-07T15:00 | double_chance | 12 | 73.8% | 73.8% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 66 | football | CA Osasuna v Athletic Bilbao | 2026-11-07T17:30 | double_chance | X2 | 73.7% | 73.7% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 67 | football | West Bromwich Albion v Millwall | 2026-11-07T15:00 | double_chance | 12 | 73.5% | 73.5% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 68 | football | Charlton Athletic v Sheffield United | 2026-11-07T15:00 | double_chance | X2 | 73.2% | 73.2% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 69 | tennis | Taylor Fritz v Carlos Alcaraz | 2026-11-06T18:00 | match_winner | Carlos Alcaraz | 73.2% | 73.8% | 73.2% | 1.2% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.36 (betfair_ex_uk) | -1.8% |
+| 68 | tennis | Taylor Fritz v Carlos Alcaraz | 2026-11-06T18:00 | match_winner | Carlos Alcaraz | 73.4% | 73.8% | 73.4% | 1.2% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.35 (betway) | -0.9% |
+| 69 | football | Charlton Athletic v Sheffield United | 2026-11-07T15:00 | double_chance | X2 | 73.2% | 73.2% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 70 | basketball | Boston Celtics @ Charlotte Hornets | 2026-11-07T00:10 | moneyline | Boston Celtics | 73.0% | 73.0% | — | 1.4% | nba_moneyline.market | HOLDOUT_PASSED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.33 (smarkets) | -3.3% |
 | 71 | football | Málaga v Real Racing Club de Santander | 2026-11-07T13:00 | double_chance | 12 | 73.0% | 73.0% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 72 | football | Leuven v KV Mechelen | 2026-11-07T17:15 | double_chance | 12 | 73.0% | 73.0% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |

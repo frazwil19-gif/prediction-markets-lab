@@ -1,11 +1,11 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-11-06T14:31:05.447778+00:00",
+ "generated_at": "2026-11-06T16:16:38.356153+00:00",
  "date": "2026-11-06",
  "summary": {
-  "upcoming_events": 68,
-  "valid_predictions": 354,
+  "upcoming_events": 67,
+  "valid_predictions": 353,
   "sports_active": [
    "basketball",
    "football",
@@ -32,11 +32,11 @@
   },
   "settled_yesterday": 99,
   "system": "HEALTHY",
-  "api_credits_last_observed": 373
+  "api_credits_last_observed": 371
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-11-06T14:31:05.447778+00:00",
+  "generated_at": "2026-11-06T16:16:38.356153+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -44,31 +44,31 @@
     "last": "2026-11-06T07:16:39.553343+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 7.2
+    "age_hours": 9.0
    },
    "settlement": {
     "last": "2026-11-06T01:29:36.663618+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 13.0
+    "age_hours": 14.8
    },
    "tennis_board": {
-    "last": "2026-11-06T14:31:00.928005+00:00",
+    "last": "2026-11-06T16:16:35.093014+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    },
    "ci_tests": {
-    "last": "2026-11-06T14:31:02.103521+00:00",
+    "last": "2026-11-06T16:16:36.259141+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    }
   },
   "api_credits": {
-   "remaining": 373,
-   "observed_at": "2026-11-06T14:31:03.637743+00:00",
-   "source": "nba_credit_log.csv",
+   "remaining": 371,
+   "observed_at": "2026-11-06T16:16:35.475308+00:00",
+   "source": "credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
   "warnings": [],
@@ -199,18 +199,18 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 354,
-   "EXCLUDED": 2984
+   "ELIGIBLE": 353,
+   "EXCLUDED": 2985
   },
   "exclusion_reason": {
-   "EVENT_STARTED": 2984
+   "EVENT_STARTED": 2985
   },
   "start_time_status": {
    "LEDGER_ONLY": 2862,
    "RESCHEDULED": 275,
    "UNCHANGED": 201
   },
-  "eligible_rescheduled": 1,
+  "eligible_rescheduled": 0,
   "rule": "est-1"
  },
  "predictions": [
@@ -4748,7 +4748,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-11-06T19:30:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "566a7355f5168fa6",
@@ -6261,48 +6261,6 @@
    "event_start_original": "2026-11-07T20:00:00+00:00",
    "start_time_status": "LEDGER_ONLY",
    "start_time_source": "unified_ledger.event_start"
-  },
-  {
-   "prediction_id": "e4944362a6080e92",
-   "engine_id": "atp_match_winner.betfair_market",
-   "engine_version": "1",
-   "sport": "tennis",
-   "competition": "ATP Paris Masters",
-   "event_id": "f1676b13a42184d83dee9e84e1b17aa5",
-   "event_key": "tennis|tennis_atp_paris_masters|f1676b13a42184d83dee9e84e1b17aa5",
-   "event_name": "Luca Van Assche v Rinky Hijikata",
-   "event_start": "2026-11-06T14:40:00+00:00",
-   "market": "match_winner",
-   "selection": "Luca Van Assche",
-   "estimated_probability": "0.597839",
-   "fair_odds": "1.6726911425985926",
-   "probability_band": "55-59.9%",
-   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
-   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "30 15 * * *",
-   "actual_workflow_start": "2026-11-05T21:33:38.933860+00:00",
-   "prediction_timestamp": "2026-11-05T21:33:38.933860+00:00",
-   "minutes_to_event": "996.4",
-   "live_price": "1.67",
-   "live_price_source": "betfair_ex_uk back (odds_api)",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "True",
-   "single_ineligible_reason": "",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
-   "origin": "tennis_predictions/ledger_predictions.csv",
-   "origin_prediction_id": "e4944362a6080e92",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-06T14:10:00+00:00",
-   "start_time_status": "RESCHEDULED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "312afe6c7601b5c9",
