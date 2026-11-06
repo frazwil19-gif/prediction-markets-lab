@@ -2,86 +2,37 @@
  "board_version": "stage-a-2",
  "product": "STAGE A PREDICTION BOARD (probability first; NOT a betting card)",
  "principle": "STRONG PREDICTION != VALID BET. Stage B (bet-selection) alone decides bets.",
- "generated_at": "2026-11-05T21:33:41.133125+00:00",
+ "generated_at": "2026-11-06T01:29:35.247905+00:00",
  "strong_prediction_min_probability": 0.7,
  "summary": {
-  "predictions": 73,
-  "strong_predictions": 18,
-  "strong_unique_events": 13,
+  "predictions": 62,
+  "strong_predictions": 16,
+  "strong_unique_events": 11,
   "strong_by_price_status": {
    "POOR_PAYOUT": 1,
-   "PRICE_QUALITY_FAIL": 3,
+   "PRICE_QUALITY_FAIL": 1,
    "PRICE_UNAVAILABLE": 14
   },
   "all_by_price_status": {
    "POOR_PAYOUT": 2,
-   "PRICE_QUALITY_FAIL": 43,
+   "PRICE_QUALITY_FAIL": 32,
    "PRICE_UNAVAILABLE": 27,
    "PRICE_VALID": 1
   },
   "duplicate_prediction_rows_collapsed": 0,
   "strong_by_sport": {
-   "americanfootball": 1,
    "basketball": 1,
    "football": 14,
-   "icehockey": 1,
    "tennis": 1
   },
   "all_by_sport": {
-   "americanfootball": 1,
    "basketball": 2,
    "football": 56,
-   "icehockey": 11,
+   "icehockey": 1,
    "tennis": 3
   }
  },
  "predictions": [
-  {
-   "prediction_id": "9c73408968e1c299",
-   "sport": "americanfootball",
-   "competition": "NFL",
-   "event_key": "nfl|c75744790b7acf6260c78ba5e739c0e5",
-   "event_name": "Jacksonville Jaguars @ Baltimore Ravens",
-   "event_start": "2026-11-06T01:15:00+00:00",
-   "event_start_original": "2026-11-06T01:15:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "moneyline",
-   "selection": "Jacksonville Jaguars",
-   "probability": 0.808289,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-11-04T14:48:20.461124+00:00",
-   "p_first_snapshot": 0.808289,
-   "p_current_scan": null,
-   "ledger_probability": 0.8082890311381143,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "2066.7",
-   "sigma": null,
-   "sigma_method": "NOT_ESTIMATED",
-   "sigma_calibration": null,
-   "calibration_status": "GATE_A on SBR closing consensus (live early-snapshot estimator not validated)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "80-84.9%",
-   "engine_id": "nfl_moneyline.market",
-   "engine_version": "1",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "prediction_timestamp": "2026-11-04T14:48:20.461124+00:00",
-   "historical_support": "hist n=2932; holdout DONE (2020-21, n=550; gate A); >=80% coverage None; holdout slope 1.0217 CI [0.8053, 1.2738]; live estimator nfl_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "strength": "STRONG_PREDICTION",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "COMMISSION_UNKNOWN|PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-11-04T14:48:20.461124+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 1
-  },
   {
    "prediction_id": "d3c0a76cae478911",
    "sport": "football",
@@ -126,53 +77,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 2
-  },
-  {
-   "prediction_id": "9783daf091c6045d",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event_key": "nhl|fc2cccfb47dffb4677b85d247c768ae9",
-   "event_name": "Chicago Blackhawks @ Tampa Bay Lightning",
-   "event_start": "2026-11-06T00:10:00+00:00",
-   "event_start_original": "2026-11-06T00:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "moneyline",
-   "selection": "Tampa Bay Lightning",
-   "probability": 0.778443,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-11-05T14:52:52.890064+00:00",
-   "p_first_snapshot": 0.778443,
-   "p_current_scan": null,
-   "ledger_probability": 0.7784431137724551,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "557.1",
-   "sigma": null,
-   "sigma_method": "NOT_ESTIMATED",
-   "sigma_calibration": null,
-   "calibration_status": "GATE_B on SBR closing consensus (live early-snapshot estimator not validated)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "75-79.9%",
-   "engine_id": "nhl_moneyline.market",
-   "engine_version": "1",
-   "engine_status": "PROVISIONAL_PROSPECTIVE",
-   "prediction_timestamp": "2026-11-05T14:52:52.890064+00:00",
-   "historical_support": "hist n=13666; holdout DONE (2020-21, n=2350; gate B); >=80% coverage None; holdout slope 1.2193 CI [1.0439, 1.4097]; live estimator nhl_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "strength": "STRONG_PREDICTION",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "COMMISSION_UNKNOWN|PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-11-05T14:52:52.890064+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 3
+   "rank": 1
   },
   {
    "prediction_id": "e3b6f79aba69e0a6",
@@ -218,7 +123,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 4
+   "rank": 2
   },
   {
    "prediction_id": "7b5f65d0e44718d0",
@@ -264,7 +169,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 5
+   "rank": 3
   },
   {
    "prediction_id": "8fb0a9de02ba80da",
@@ -310,7 +215,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 6
+   "rank": 4
   },
   {
    "prediction_id": "e87419293ca732ad",
@@ -356,7 +261,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 7
+   "rank": 5
   },
   {
    "prediction_id": "872ee5cfc811df2d",
@@ -402,7 +307,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 8
+   "rank": 6
   },
   {
    "prediction_id": "25d0d81968493d02",
@@ -448,7 +353,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 9
+   "rank": 7
   },
   {
    "prediction_id": "1701518d34312cdf",
@@ -494,7 +399,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 10
+   "rank": 8
   },
   {
    "prediction_id": "b2e41f5aef65b5a1",
@@ -540,7 +445,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 11
+   "rank": 9
   },
   {
    "prediction_id": "ea2f37487f17e0c3",
@@ -586,7 +491,7 @@
    "price_observed_at": "2026-11-05T21:33:38.933860+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 12
+   "rank": 10
   },
   {
    "prediction_id": "afff451df376e19a",
@@ -632,7 +537,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 13
+   "rank": 11
   },
   {
    "prediction_id": "2dd74e85dbaff32f",
@@ -678,7 +583,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 14
+   "rank": 12
   },
   {
    "prediction_id": "5caafc24c78570d9",
@@ -724,7 +629,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 15
+   "rank": 13
   },
   {
    "prediction_id": "0f9d9ffa64569ede",
@@ -770,7 +675,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 16
+   "rank": 14
   },
   {
    "prediction_id": "a4dc1f5e4aba8b1b",
@@ -816,7 +721,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 17
+   "rank": 15
   },
   {
    "prediction_id": "83840c61345bba46",
@@ -862,7 +767,7 @@
    "price_observed_at": "2026-11-05T14:52:51.546085+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 18
+   "rank": 16
   },
   {
    "prediction_id": "64175c3ce2d8b6ab",
@@ -908,7 +813,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 19
+   "rank": 17
   },
   {
    "prediction_id": "29c4d8070ad3fc6a",
@@ -954,7 +859,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 20
+   "rank": 18
   },
   {
    "prediction_id": "2d83ddecf0f4c4d1",
@@ -1000,7 +905,7 @@
    "price_observed_at": "2026-11-05T14:52:52.890064+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 21
+   "rank": 19
   },
   {
    "prediction_id": "68132ac601cbdf8b",
@@ -1046,7 +951,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 22
+   "rank": 20
   },
   {
    "prediction_id": "e4ce6fcf8c656a04",
@@ -1092,191 +997,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 23
-  },
-  {
-   "prediction_id": "2a9a6dc0392c9d07",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event_key": "nhl|5d5b6a0f376a8d9bd4f5e46891e6c6d8",
-   "event_name": "Vancouver Canucks @ Winnipeg Jets",
-   "event_start": "2026-11-06T00:10:00+00:00",
-   "event_start_original": "2026-11-06T00:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "moneyline",
-   "selection": "Winnipeg Jets",
-   "probability": 0.649642,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-11-05T14:52:52.890064+00:00",
-   "p_first_snapshot": 0.649642,
-   "p_current_scan": null,
-   "ledger_probability": 0.6496420047732697,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "557.1",
-   "sigma": null,
-   "sigma_method": "NOT_ESTIMATED",
-   "sigma_calibration": null,
-   "calibration_status": "GATE_B on SBR closing consensus (live early-snapshot estimator not validated)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "60-64.9%",
-   "engine_id": "nhl_moneyline.market",
-   "engine_version": "1",
-   "engine_status": "PROVISIONAL_PROSPECTIVE",
-   "prediction_timestamp": "2026-11-05T14:52:52.890064+00:00",
-   "historical_support": "hist n=13666; holdout DONE (2020-21, n=2350; gate B); >=80% coverage None; holdout slope 1.2193 CI [1.0439, 1.4097]; live estimator nhl_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "COMMISSION_UNKNOWN|PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-11-05T14:52:52.890064+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 24
-  },
-  {
-   "prediction_id": "2ba3e0ae67969587",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event_key": "nhl|eefdb55d84dd6a95ef53b76d3935f3c9",
-   "event_name": "St Louis Blues @ New Jersey Devils",
-   "event_start": "2026-11-06T00:10:00+00:00",
-   "event_start_original": "2026-11-06T00:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "moneyline",
-   "selection": "New Jersey Devils",
-   "probability": 0.638277,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-11-05T14:52:52.890064+00:00",
-   "p_first_snapshot": 0.638277,
-   "p_current_scan": null,
-   "ledger_probability": 0.6382772804258409,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "557.1",
-   "sigma": null,
-   "sigma_method": "NOT_ESTIMATED",
-   "sigma_calibration": null,
-   "calibration_status": "GATE_B on SBR closing consensus (live early-snapshot estimator not validated)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "60-64.9%",
-   "engine_id": "nhl_moneyline.market",
-   "engine_version": "1",
-   "engine_status": "PROVISIONAL_PROSPECTIVE",
-   "prediction_timestamp": "2026-11-05T14:52:52.890064+00:00",
-   "historical_support": "hist n=13666; holdout DONE (2020-21, n=2350; gate B); >=80% coverage None; holdout slope 1.2193 CI [1.0439, 1.4097]; live estimator nhl_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "COMMISSION_UNKNOWN|PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-11-05T14:52:52.890064+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 25
-  },
-  {
-   "prediction_id": "85a0a176b316e9b6",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event_key": "nhl|c672f144ecbb937d3b15b483847129d2",
-   "event_name": "Anaheim Ducks @ Edmonton Oilers",
-   "event_start": "2026-11-06T01:10:00+00:00",
-   "event_start_original": "2026-11-06T01:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "moneyline",
-   "selection": "Edmonton Oilers",
-   "probability": 0.617226,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-11-05T14:52:52.890064+00:00",
-   "p_first_snapshot": 0.617226,
-   "p_current_scan": null,
-   "ledger_probability": 0.6172261970280682,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "617.1",
-   "sigma": null,
-   "sigma_method": "NOT_ESTIMATED",
-   "sigma_calibration": null,
-   "calibration_status": "GATE_B on SBR closing consensus (live early-snapshot estimator not validated)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "60-64.9%",
-   "engine_id": "nhl_moneyline.market",
-   "engine_version": "1",
-   "engine_status": "PROVISIONAL_PROSPECTIVE",
-   "prediction_timestamp": "2026-11-05T14:52:52.890064+00:00",
-   "historical_support": "hist n=13666; holdout DONE (2020-21, n=2350; gate B); >=80% coverage None; holdout slope 1.2193 CI [1.0439, 1.4097]; live estimator nhl_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-11-05T14:52:52.890064+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 26
-  },
-  {
-   "prediction_id": "574651f502aee1a1",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event_key": "nhl|18dd8ea86db020028f8d1c130b99d616",
-   "event_name": "Carolina Hurricanes @ New York Islanders",
-   "event_start": "2026-11-06T00:10:00+00:00",
-   "event_start_original": "2026-11-06T00:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "moneyline",
-   "selection": "Carolina Hurricanes",
-   "probability": 0.611056,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-11-05T14:52:52.890064+00:00",
-   "p_first_snapshot": 0.611056,
-   "p_current_scan": null,
-   "ledger_probability": 0.6110557768924303,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "557.1",
-   "sigma": null,
-   "sigma_method": "NOT_ESTIMATED",
-   "sigma_calibration": null,
-   "calibration_status": "GATE_B on SBR closing consensus (live early-snapshot estimator not validated)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "60-64.9%",
-   "engine_id": "nhl_moneyline.market",
-   "engine_version": "1",
-   "engine_status": "PROVISIONAL_PROSPECTIVE",
-   "prediction_timestamp": "2026-11-05T14:52:52.890064+00:00",
-   "historical_support": "hist n=13666; holdout DONE (2020-21, n=2350; gate B); >=80% coverage None; holdout slope 1.2193 CI [1.0439, 1.4097]; live estimator nhl_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "COMMISSION_UNKNOWN|PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-11-05T14:52:52.890064+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 27
+   "rank": 21
   },
   {
    "prediction_id": "615a979769753166",
@@ -1322,7 +1043,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 28
+   "rank": 22
   },
   {
    "prediction_id": "9c1b587782795794",
@@ -1368,7 +1089,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 29
+   "rank": 23
   },
   {
    "prediction_id": "e4944362a6080e92",
@@ -1414,7 +1135,7 @@
    "price_observed_at": "2026-11-05T21:33:38.933860+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 30
+   "rank": 24
   },
   {
    "prediction_id": "1c7197e05a5413f3",
@@ -1460,7 +1181,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 31
+   "rank": 25
   },
   {
    "prediction_id": "99a3d65810dbc098",
@@ -1506,99 +1227,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 32
-  },
-  {
-   "prediction_id": "d30822dbefdad8ac",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event_key": "nhl|b945b7133224c704b734e04becd109f0",
-   "event_name": "Philadelphia Flyers @ New York Rangers",
-   "event_start": "2026-11-06T00:10:00+00:00",
-   "event_start_original": "2026-11-06T00:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "moneyline",
-   "selection": "New York Rangers",
-   "probability": 0.569815,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-11-05T14:52:52.890064+00:00",
-   "p_first_snapshot": 0.569815,
-   "p_current_scan": null,
-   "ledger_probability": 0.5698151950718686,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "557.1",
-   "sigma": null,
-   "sigma_method": "NOT_ESTIMATED",
-   "sigma_calibration": null,
-   "calibration_status": "GATE_B on SBR closing consensus (live early-snapshot estimator not validated)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "55-59.9%",
-   "engine_id": "nhl_moneyline.market",
-   "engine_version": "1",
-   "engine_status": "PROVISIONAL_PROSPECTIVE",
-   "prediction_timestamp": "2026-11-05T14:52:52.890064+00:00",
-   "historical_support": "hist n=13666; holdout DONE (2020-21, n=2350; gate B); >=80% coverage None; holdout slope 1.2193 CI [1.0439, 1.4097]; live estimator nhl_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "COMMISSION_UNKNOWN|PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-11-05T14:52:52.890064+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 33
-  },
-  {
-   "prediction_id": "3e5c55d2ff78147c",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event_key": "nhl|6828fb175fa928f75d7978128372c817",
-   "event_name": "Vegas Golden Knights @ Detroit Red Wings",
-   "event_start": "2026-11-06T00:10:00+00:00",
-   "event_start_original": "2026-11-06T00:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "moneyline",
-   "selection": "Vegas Golden Knights",
-   "probability": 0.567977,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-11-05T14:52:52.890064+00:00",
-   "p_first_snapshot": 0.567977,
-   "p_current_scan": null,
-   "ledger_probability": 0.5679773837059882,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "557.1",
-   "sigma": null,
-   "sigma_method": "NOT_ESTIMATED",
-   "sigma_calibration": null,
-   "calibration_status": "GATE_B on SBR closing consensus (live early-snapshot estimator not validated)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "55-59.9%",
-   "engine_id": "nhl_moneyline.market",
-   "engine_version": "1",
-   "engine_status": "PROVISIONAL_PROSPECTIVE",
-   "prediction_timestamp": "2026-11-05T14:52:52.890064+00:00",
-   "historical_support": "hist n=13666; holdout DONE (2020-21, n=2350; gate B); >=80% coverage None; holdout slope 1.2193 CI [1.0439, 1.4097]; live estimator nhl_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "COMMISSION_UNKNOWN|PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-11-05T14:52:52.890064+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 34
+   "rank": 26
   },
   {
    "prediction_id": "52f15fef559a497c",
@@ -1644,7 +1273,7 @@
    "price_observed_at": "2026-11-05T21:33:38.933860+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 35
+   "rank": 27
   },
   {
    "prediction_id": "c58519d8a3a62f86",
@@ -1690,7 +1319,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 36
+   "rank": 28
   },
   {
    "prediction_id": "9afe97e03b0d58b5",
@@ -1736,7 +1365,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 37
+   "rank": 29
   },
   {
    "prediction_id": "4e7988aad36f1dd2",
@@ -1782,7 +1411,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 38
+   "rank": 30
   },
   {
    "prediction_id": "ab5f86db79f33179",
@@ -1828,53 +1457,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 39
-  },
-  {
-   "prediction_id": "1ed04f98886142ac",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event_key": "nhl|f05e184ffd9a6192d19ceee27d51a9de",
-   "event_name": "Dallas Stars @ Columbus Blue Jackets",
-   "event_start": "2026-11-06T00:10:00+00:00",
-   "event_start_original": "2026-11-06T00:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "moneyline",
-   "selection": "Dallas Stars",
-   "probability": 0.545643,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-11-05T14:52:52.890064+00:00",
-   "p_first_snapshot": 0.545643,
-   "p_current_scan": null,
-   "ledger_probability": 0.545643153526971,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "557.1",
-   "sigma": null,
-   "sigma_method": "NOT_ESTIMATED",
-   "sigma_calibration": null,
-   "calibration_status": "GATE_B on SBR closing consensus (live early-snapshot estimator not validated)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "50-54.9%",
-   "engine_id": "nhl_moneyline.market",
-   "engine_version": "1",
-   "engine_status": "PROVISIONAL_PROSPECTIVE",
-   "prediction_timestamp": "2026-11-05T14:52:52.890064+00:00",
-   "historical_support": "hist n=13666; holdout DONE (2020-21, n=2350; gate B); >=80% coverage None; holdout slope 1.2193 CI [1.0439, 1.4097]; live estimator nhl_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "COMMISSION_UNKNOWN|PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-11-05T14:52:52.890064+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 40
+   "rank": 31
   },
   {
    "prediction_id": "a8c72c6b3368a859",
@@ -1920,7 +1503,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 41
+   "rank": 32
   },
   {
    "prediction_id": "bc78dd7c9463a4dc",
@@ -1966,53 +1549,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 42
-  },
-  {
-   "prediction_id": "8ec6b34b16a33253",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event_key": "nhl|cb757b1c9cf684423578700bb6aef492",
-   "event_name": "Utah Mammoth @ Montr\u00e9al Canadiens",
-   "event_start": "2026-11-06T00:10:00+00:00",
-   "event_start_original": "2026-11-06T00:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "moneyline",
-   "selection": "Utah Mammoth",
-   "probability": 0.524607,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-11-05T14:52:52.890064+00:00",
-   "p_first_snapshot": 0.524607,
-   "p_current_scan": null,
-   "ledger_probability": 0.5246073298429319,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "557.1",
-   "sigma": null,
-   "sigma_method": "NOT_ESTIMATED",
-   "sigma_calibration": null,
-   "calibration_status": "GATE_B on SBR closing consensus (live early-snapshot estimator not validated)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "50-54.9%",
-   "engine_id": "nhl_moneyline.market",
-   "engine_version": "1",
-   "engine_status": "PROVISIONAL_PROSPECTIVE",
-   "prediction_timestamp": "2026-11-05T14:52:52.890064+00:00",
-   "historical_support": "hist n=13666; holdout DONE (2020-21, n=2350; gate B); >=80% coverage None; holdout slope 1.2193 CI [1.0439, 1.4097]; live estimator nhl_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "COMMISSION_UNKNOWN|PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-11-05T14:52:52.890064+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 43
+   "rank": 33
   },
   {
    "prediction_id": "920f29bf150ccc75",
@@ -2058,7 +1595,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 44
+   "rank": 34
   },
   {
    "prediction_id": "2dbadc5fdba8326b",
@@ -2104,53 +1641,7 @@
    "price_observed_at": "2026-11-05T14:52:51.546085+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 45
-  },
-  {
-   "prediction_id": "56af7d9c1b7860ce",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event_key": "nhl|9e57c39752bfbc587ce341650fcd5a19",
-   "event_name": "Boston Bruins @ Pittsburgh Penguins",
-   "event_start": "2026-11-06T00:10:00+00:00",
-   "event_start_original": "2026-11-06T00:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "moneyline",
-   "selection": "Boston Bruins",
-   "probability": 0.501832,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-11-05T14:52:52.890064+00:00",
-   "p_first_snapshot": 0.501832,
-   "p_current_scan": null,
-   "ledger_probability": 0.5018315018315018,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "557.1",
-   "sigma": null,
-   "sigma_method": "NOT_ESTIMATED",
-   "sigma_calibration": null,
-   "calibration_status": "GATE_B on SBR closing consensus (live early-snapshot estimator not validated)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "50-54.9%",
-   "engine_id": "nhl_moneyline.market",
-   "engine_version": "1",
-   "engine_status": "PROVISIONAL_PROSPECTIVE",
-   "prediction_timestamp": "2026-11-05T14:52:52.890064+00:00",
-   "historical_support": "hist n=13666; holdout DONE (2020-21, n=2350; gate B); >=80% coverage None; holdout slope 1.2193 CI [1.0439, 1.4097]; live estimator nhl_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "COMMISSION_UNKNOWN|PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-11-05T14:52:52.890064+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 46
+   "rank": 35
   },
   {
    "prediction_id": "597075d09a4cbd77",
@@ -2196,7 +1687,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 47
+   "rank": 36
   },
   {
    "prediction_id": "8edc9526cf68aee8",
@@ -2242,7 +1733,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 48
+   "rank": 37
   },
   {
    "prediction_id": "aee979e70cdad2b2",
@@ -2288,7 +1779,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 49
+   "rank": 38
   },
   {
    "prediction_id": "d3ec8ca2b897efc9",
@@ -2334,7 +1825,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 50
+   "rank": 39
   },
   {
    "prediction_id": "8b32cab73077b0cc",
@@ -2380,7 +1871,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 51
+   "rank": 40
   },
   {
    "prediction_id": "c41f221fc02e9cb4",
@@ -2426,7 +1917,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 52
+   "rank": 41
   },
   {
    "prediction_id": "e79ca8053cd47b45",
@@ -2472,7 +1963,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 53
+   "rank": 42
   },
   {
    "prediction_id": "7ebffd639961c0b5",
@@ -2518,7 +2009,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 54
+   "rank": 43
   },
   {
    "prediction_id": "c3307db3b2909db8",
@@ -2564,7 +2055,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 55
+   "rank": 44
   },
   {
    "prediction_id": "b1fff50dfbcf60cb",
@@ -2610,7 +2101,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 56
+   "rank": 45
   },
   {
    "prediction_id": "69cff317676c2a40",
@@ -2656,7 +2147,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 57
+   "rank": 46
   },
   {
    "prediction_id": "b56b1be83a75885a",
@@ -2702,7 +2193,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 58
+   "rank": 47
   },
   {
    "prediction_id": "c9e8101dcd447796",
@@ -2748,7 +2239,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 59
+   "rank": 48
   },
   {
    "prediction_id": "75033680e21a380a",
@@ -2794,7 +2285,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 60
+   "rank": 49
   },
   {
    "prediction_id": "49e899b6ba9ade22",
@@ -2840,7 +2331,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 61
+   "rank": 50
   },
   {
    "prediction_id": "12b5a23720932530",
@@ -2886,7 +2377,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 62
+   "rank": 51
   },
   {
    "prediction_id": "c407235119b8d4b5",
@@ -2932,7 +2423,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 63
+   "rank": 52
   },
   {
    "prediction_id": "dd026f1516c8abd7",
@@ -2978,7 +2469,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 64
+   "rank": 53
   },
   {
    "prediction_id": "c7e71c2cd7d6c69a",
@@ -3024,7 +2515,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 65
+   "rank": 54
   },
   {
    "prediction_id": "56067a4fc418de33",
@@ -3070,7 +2561,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 66
+   "rank": 55
   },
   {
    "prediction_id": "1131b593ad9a06ce",
@@ -3116,7 +2607,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 67
+   "rank": 56
   },
   {
    "prediction_id": "5f5daf301f3d2095",
@@ -3162,7 +2653,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 68
+   "rank": 57
   },
   {
    "prediction_id": "b911f81cbcc778fb",
@@ -3208,7 +2699,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 69
+   "rank": 58
   },
   {
    "prediction_id": "b7e3835284de8f96",
@@ -3254,7 +2745,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 70
+   "rank": 59
   },
   {
    "prediction_id": "0880422f10fb4c1a",
@@ -3300,7 +2791,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 71
+   "rank": 60
   },
   {
    "prediction_id": "997946e854840be0",
@@ -3346,7 +2837,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 72
+   "rank": 61
   },
   {
    "prediction_id": "9f20b0288adcf471",
@@ -3392,7 +2883,7 @@
    "price_observed_at": "2026-11-05T07:16:33.699322+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 73
+   "rank": 62
   }
  ]
 }
