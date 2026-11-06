@@ -1,15 +1,14 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-11-06T01:29:35.247905+00:00",
+ "generated_at": "2026-11-06T02:40:49.865631+00:00",
  "date": "2026-11-06",
  "summary": {
-  "upcoming_events": 15,
-  "valid_predictions": 62,
+  "upcoming_events": 13,
+  "valid_predictions": 60,
   "sports_active": [
    "basketball",
    "football",
-   "icehockey",
    "tennis"
   ],
   "engines_active": [
@@ -36,7 +35,7 @@
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-11-06T01:29:35.247905+00:00",
+  "generated_at": "2026-11-06T02:40:49.865631+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -44,22 +43,22 @@
     "last": "2026-11-05T07:16:41.893349+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 18.2
+    "age_hours": 19.4
    },
    "settlement": {
-    "last": "2026-11-05T01:26:30.339255+00:00",
+    "last": "2026-11-06T01:29:36.663618+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 24.1
+    "age_hours": 1.2
    },
    "tennis_board": {
     "last": "2026-11-05T21:33:38.933860+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 3.9
+    "age_hours": 5.1
    },
    "ci_tests": {
-    "last": "2026-11-06T01:29:19.190857+00:00",
+    "last": "2026-11-06T02:40:33.288083+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -116,7 +115,7 @@
    "prospective_status": "COLLECTING",
    "money_eligible": true,
    "predictions": 205,
-   "settled_rows": 149,
+   "settled_rows": 151,
    "maturity": "EARLY",
    "ge80_settled": 25,
    "ge80_mean_pred": 0.8766552,
@@ -199,11 +198,11 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 62,
-   "EXCLUDED": 2980
+   "ELIGIBLE": 60,
+   "EXCLUDED": 2982
   },
   "exclusion_reason": {
-   "EVENT_STARTED": 2980
+   "EVENT_STARTED": 2982
   },
   "start_time_status": {
    "LEDGER_ONLY": 2567,
@@ -971,48 +970,6 @@
    "start_time_source": "unified_ledger.event_start"
   },
   {
-   "prediction_id": "2d83ddecf0f4c4d1",
-   "engine_id": "nhl_moneyline.market",
-   "engine_version": "1",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event_id": "446de9651d2d2948326d970e9f858a33",
-   "event_key": "nhl|446de9651d2d2948326d970e9f858a33",
-   "event_name": "Nashville Predators @ Colorado Avalanche",
-   "event_start": "2026-11-06T02:40:00+00:00",
-   "market": "moneyline",
-   "selection": "Colorado Avalanche",
-   "estimated_probability": "0.6543633008172951",
-   "fair_odds": "1.5282030620467364",
-   "probability_band": "65-69.9%",
-   "probability_source": "Odds API icehockey_nhl h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=13666; holdout DONE (2020-21, n=2350; gate B); >=80% coverage None; holdout slope 1.2193 CI [1.0439, 1.4097]; live estimator nhl_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "PROVISIONAL_PROSPECTIVE",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-11-05T06:30:00+00:00",
-   "actual_workflow_start": "2026-11-05T14:51:31Z",
-   "prediction_timestamp": "2026-11-05T14:52:52.890064+00:00",
-   "minutes_to_event": "707.1",
-   "live_price": "1.52",
-   "live_price_source": "odds_api:matchbook",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "False",
-   "single_ineligible_reason": "engine not money-eligible",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:icehockey_nhl",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-06T02:40:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
-  },
-  {
    "prediction_id": "68132ac601cbdf8b",
    "engine_id": "football_double_chance.derived_1x2",
    "engine_version": "1",
@@ -1639,48 +1596,6 @@
    "correct": "",
    "settlement_timestamp": "",
    "event_start_original": "2026-11-06T20:00:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
-  },
-  {
-   "prediction_id": "2dbadc5fdba8326b",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_id": "2a76b31e02d1416de069a995589515fc",
-   "event_key": "nba|2a76b31e02d1416de069a995589515fc",
-   "event_name": "Orlando Magic @ Phoenix Suns",
-   "event_start": "2026-11-06T02:10:00+00:00",
-   "market": "moneyline",
-   "selection": "Phoenix Suns",
-   "estimated_probability": "0.5105987931301252",
-   "fair_odds": "1.958484848484849",
-   "probability_band": "50-54.9%",
-   "probability_source": "Odds API basketball_nba h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-11-05T06:30:00+00:00",
-   "actual_workflow_start": "2026-11-05T14:51:31Z",
-   "prediction_timestamp": "2026-11-05T14:52:51.546085+00:00",
-   "minutes_to_event": "677.1",
-   "live_price": "1.97",
-   "live_price_source": "odds_api:matchbook",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "True",
-   "single_ineligible_reason": "",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:basketball_nba",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-06T02:10:00+00:00",
    "start_time_status": "LEDGER_ONLY",
    "start_time_source": "unified_ledger.event_start"
   },

@@ -1,8 +1,8 @@
-# STAGE A PREDICTION BOARD — 2026-11-06T01:29Z (stage-a-2)
+# STAGE A PREDICTION BOARD — 2026-11-06T02:40Z (stage-a-2)
 
 _Probability first. Ranked by estimated probability only. **A strong prediction is not a bet** — price status is descriptive; Stage B (bet-selection) alone decides bets._
 
-Predictions: 62 · strong (P ≥ 70%): 16 on 11 events · strong by price status: POOR_PAYOUT 1 · PRICE_QUALITY_FAIL 1 · PRICE_UNAVAILABLE 14
+Predictions: 60 · strong (P ≥ 70%): 16 on 11 events · strong by price status: PRICE_QUALITY_FAIL 2 · PRICE_UNAVAILABLE 14
 
 | # | Sport | Event | Start (UTC) | Market | Selection | P | P first snapshot | P current scan | σ | Engine | Calibration status | Stage A status | Why not assessable | Best clean price | Net EV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -15,7 +15,7 @@ Predictions: 62 · strong (P ≥ 70%): 16 on 11 events · strong by price status
 | 7 | football | Willem II v FC Zwolle | 2026-11-06T19:00 | double_chance | 12 | 74.6% | 74.6% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 8 | football | Hamburger SV v Borussia Monchengladbach | 2026-11-06T19:30 | double_chance | 12 | 74.2% | 74.2% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 9 | football | Derby County v Bolton Wanderers | 2026-11-06T20:00 | double_chance | 12 | 73.8% | 73.8% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 10 | tennis | Taylor Fritz v Carlos Alcaraz | 2026-11-06T18:00 | match_winner | Carlos Alcaraz | 73.8% | 73.8% | 73.8% | 1.4% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.35 (virginbet) | -0.4% |
+| 10 | tennis | Taylor Fritz v Carlos Alcaraz | 2026-11-06T18:00 | match_winner | Carlos Alcaraz | 73.8% | 73.8% | 73.8% | 1.4% | atp_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
 | 11 | football | Venezia v Udinese | 2026-11-06T19:45 | double_chance | 12 | 72.9% | 72.9% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 12 | football | Famalicão v Arouca | 2026-11-06T20:45 | double_chance | 1X | 72.4% | 72.4% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 13 | football | Famalicão v Arouca | 2026-11-06T20:45 | double_chance | 12 | 72.4% | 72.4% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
