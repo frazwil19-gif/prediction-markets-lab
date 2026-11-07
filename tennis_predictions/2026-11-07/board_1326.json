@@ -1,0 +1,90 @@
+{
+ "board_date": "2026-11-07",
+ "layer": "PREDICTION (paper) -- not a bet recommendation",
+ "coverage": {
+  "active_keys": [
+   "tennis_atp_paris_masters"
+  ],
+  "skipped_for_credit_guard": [],
+  "keys_over_cap": [],
+  "skipped_no_upcoming_event": [],
+  "events_returned": 2,
+  "scan_timestamp": "2026-11-07T13:26:08.718605+00:00",
+  "credits_remaining_after": 349,
+  "universe_note": "Odds-API-covered universe only (Slams, 1000s, 500s) -- not the full ATP/WTA calendar"
+ },
+ "counts": {
+  "events_scanned": 2,
+  "valid_predictions": 2,
+  "research_only_predictions": 0,
+  "ge_70": 2,
+  "ge_75": 2,
+  "ge_80": 1,
+  "ge_85": 0,
+  "ge_90": 0,
+  "ge_95": 0
+ },
+ "predictions": [
+  {
+   "prediction_id": "043dfc253ff201b4",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "ATP",
+   "sport_key": "tennis_atp_paris_masters",
+   "tournament": "ATP Paris Masters",
+   "event_id": "d4b8a9b232417b21fd0dd2de1af179ee",
+   "player_a": "Casper Ruud",
+   "player_b": "Carlos Alcaraz",
+   "commence_time": "2026-11-07T16:00:00+00:00",
+   "prediction_timestamp": "2026-11-07T13:26:08.718605+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=5.3/1.22;ex_lay=5.4/1.23",
+   "p_a": 0.186312,
+   "p_b": 0.813688,
+   "predicted_winner": "Carlos Alcaraz",
+   "predicted_probability": 0.813688,
+   "probability_band": "80-84.9%",
+   "multi_research_eligible": true,
+   "status": "PREDICTED",
+   "historical_band_n": 411,
+   "historical_band_actual_rate": 0.8224,
+   "historical_band_wilson95": [
+    0.7825,
+    0.8563
+   ],
+   "engine_holdout_n": 5066
+  },
+  {
+   "prediction_id": "c6a559c3f6352388",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "ATP",
+   "sport_key": "tennis_atp_paris_masters",
+   "tournament": "ATP Paris Masters",
+   "event_id": "9ebb22b87460accfb899c0e613b47651",
+   "player_a": "Luca Van Assche",
+   "player_b": "Ben Shelton",
+   "commence_time": "2026-11-07T13:30:00+00:00",
+   "prediction_timestamp": "2026-11-07T13:26:08.718605+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=4.2/1.3;ex_lay=4.3/1.32",
+   "p_a": 0.235612,
+   "p_b": 0.764388,
+   "predicted_winner": "Ben Shelton",
+   "predicted_probability": 0.764388,
+   "probability_band": "75-79.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 446,
+   "historical_band_actual_rate": 0.7691,
+   "historical_band_wilson95": [
+    0.7277,
+    0.8058
+   ],
+   "engine_holdout_n": 5066
+  }
+ ],
+ "research_only": []
+}

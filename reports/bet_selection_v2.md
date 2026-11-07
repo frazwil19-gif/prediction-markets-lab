@@ -4,9 +4,9 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-07T07:16Z · events scanned 65 · valid predictions 417 · high-P (≥70%) 116 · priced 206 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 417 · new paper bets 0 · Money Card qualified 1
+Run 2026-11-07T13:26Z · events scanned 94 · valid predictions 416 · high-P (≥70%) 122 · priced 215 · PAPER_BET 0 · MULTI-research 1 · WATCH 0 · REJECT 415 · new paper bets 0 · Money Card qualified 1
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 417 · P_BELOW_FLOOR 195 · NO_EXECUTABLE_PRICE 195 · NET_EV_NOT_POSITIVE 162 · PRICE_STALE 53 · COMMISSION_UNKNOWN 16
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 382 · PRICE_STALE 202 · P_BELOW_FLOOR 180 · NO_EXECUTABLE_PRICE 180 · NET_EV_NOT_POSITIVE 173 · COMMISSION_UNKNOWN 21
 
 ## Candidates (latest run, best price per prediction)
 
@@ -39,6 +39,7 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 417 · P_BELOW_FLOOR 195 · 
 | SC Cambuur v PSV Eindhoven | 2026-11-08T15:45 | 12 | 82.5% | 1.21 | — | — | — | REJECT |
 | AZ Alkmaar v Groningen | 2026-11-08T15:45 | 1X | 82.1% | 1.22 | — | — | — | REJECT |
 | RB Leipzig v Augsburg | 2026-11-07T14:30 | 12 | 81.8% | 1.22 | — | — | — | REJECT |
+| Casper Ruud v Carlos Alcaraz | 2026-11-07T16:00 | Carlos Alcaraz | 81.4% | 1.23 | 1.22 (sport888) | 82.0% | -0.7% | MULTI_RESEARCH_ELIGIBLE |
 | Sporting Lisbon v Moreirense FC | 2026-11-07T20:30 | home | 81.0% | 1.24 | 1.18 (smarkets) | 85.0% | -4.8% | REJECT |
 | Celtic v Kilmarnock | 2026-11-08T16:00 | home | 80.8% | 1.24 | 1.20 (coral) | 83.3% | -3.0% | REJECT |
 | Hearts v Falkirk F.C. | 2026-11-08T15:00 | 1X | 80.6% | 1.24 | — | — | — | REJECT |
@@ -49,9 +50,8 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 417 · P_BELOW_FLOOR 195 · 
 | Queens Park Rangers v Lincoln City | 2026-11-07T15:00 | 1X | 80.0% | 1.25 | — | — | — | REJECT |
 | AZ Alkmaar v Groningen | 2026-11-08T15:45 | 12 | 79.7% | 1.25 | — | — | — | REJECT |
 | Alverca v Casa Pia | 2026-11-07T18:00 | 1X | 79.6% | 1.26 | — | — | — | REJECT |
-| VfB Stuttgart v Werder Bremen | 2026-11-07T17:30 | 12 | 79.1% | 1.26 | — | — | — | REJECT |
-| Nottingham Forest v Manchester City | 2026-11-07T17:30 | X2 | 79.1% | 1.26 | — | — | — | REJECT |
-| SC Freiburg v Union Berlin | 2026-11-08T16:30 | 12 | 79.1% | 1.26 | — | — | — | REJECT |
+| New York Jets @ Kansas City Chiefs | 2026-11-08T18:00 | Kansas City Chiefs | 79.4% | 1.26 | 1.22 (unibet_uk) | 82.0% | -3.1% | REJECT |
+| Washington Wizards @ Oklahoma City Thunder | 2026-11-08T01:10 | Oklahoma City Thunder | 79.2% | 1.26 | 1.22 (skybet) | 82.0% | -3.4% | REJECT |
 
 ## Paper results (all time)
 

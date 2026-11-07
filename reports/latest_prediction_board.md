@@ -2,9 +2,9 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 65 · Valid predictions: 417 · Sports: football
-Counts: >=70: 116 · >=75: 67 · >=80: 35 · >=85: 15 · >=90: 5 · >=95: 0
-Settled yesterday: 9 · System: **HEALTHY** · API credits (last observed): 367
+Upcoming events: 94 · Valid predictions: 416 · Sports: americanfootball, basketball, football, icehockey, tennis
+Counts: >=70: 122 · >=75: 75 · >=80: 36 · >=85: 15 · >=90: 5 · >=95: 0
+Settled yesterday: 9 · System: **HEALTHY** · API credits (last observed): 348
 
 ## Top predictions (P ≥ 80%)
 
@@ -36,6 +36,7 @@ Settled yesterday: 9 · System: **HEALTHY** · API credits (last observed): 367
 | football | SC Cambuur v PSV Eindhoven | 2026-11-08T15:45 | double_chance | 12 | 82.5% | 1.21 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.17 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | AZ Alkmaar v Groningen | 2026-11-08T15:45 | double_chance | 1X | 82.1% | 1.22 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.17 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | RB Leipzig v Augsburg | 2026-11-07T14:30 | double_chance | 12 | 81.8% | 1.22 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.20 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
+| tennis | Casper Ruud v Carlos Alcaraz | 2026-11-07T16:00 | match_winner | Carlos Alcaraz | 81.4% | 1.23 | 80-84.9% | atp_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.22 (betfair_ex_uk back (odds_api)) | no | yes |
 | football | Arsenal v Hull City | 2026-11-07T15:00 | 1x2 | home | 81.0% | 1.23 | 80-84.9% | football_1x2.market_consensus@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.18 (odds_api:Coral) | no | yes |
 | football | Sporting Lisbon v Moreirense FC | 2026-11-07T20:30 | 1x2 | home | 81.0% | 1.24 | 80-84.9% | football_1x2.market_consensus@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.18 (odds_api:Smarkets) | no | yes |
 | football | Celtic v Kilmarnock | 2026-11-08T16:00 | 1x2 | home | 80.8% | 1.24 | 80-84.9% | football_1x2.market_consensus@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.20 (odds_api:Coral) | no | yes |
@@ -53,19 +54,19 @@ Settled yesterday: 9 · System: **HEALTHY** · API credits (last observed): 367
 | football_1x2.market_consensus | VALIDATED_HISTORICAL / COLLECTING | 1278 | 429 | EARLY | 1 | 82.3% → 100.0% |
 | football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 174 | 145 | EARLY | 0 | — → — |
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
-| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 206 | 152 | EARLY | 25 | 87.7% → 76.0% |
+| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 208 | 152 | EARLY | 25 | 87.7% → 76.0% |
 | wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 190 | 168 | EARLY | 31 | 89.3% → 80.6% |
-| nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 87 | 72 | EARLY | 9 | 82.6% → 100.0% |
-| nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 123 | 98 | EARLY | 0 | — → — |
-| nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 42 | 29 | COLLECTING | 3 | 82.3% → 100.0% |
+| nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 94 | 72 | EARLY | 9 | 82.6% → 100.0% |
+| nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 135 | 98 | EARLY | 0 | — → — |
+| nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 55 | 29 | COLLECTING | 3 | 82.3% → 100.0% |
 | football_double_chance.derived_1x2 | PROVISIONAL_PROSPECTIVE / COLLECTING | 1278 | 9 | COLLECTING | 1 | 80.2% → 0.0% |
 
 ## System health
 
 - daily_scan: OK (last 2026-11-07T07:16:38.952647+00:00)
 - settlement: OK (last 2026-11-07T00:50:58.863651+00:00)
-- tennis_board: OK (last 2026-11-06T16:16:35.093014+00:00)
-- ci_tests: OK (last 2026-11-07T07:16:39.625472+00:00)
+- tennis_board: OK (last 2026-11-07T13:26:08.718605+00:00)
+- ci_tests: OK (last 2026-11-07T13:26:09.742240+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 

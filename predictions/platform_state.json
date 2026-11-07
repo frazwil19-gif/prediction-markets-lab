@@ -1,15 +1,15 @@
 {
- "americanfootball_nfl_last_odds_date": "2026-11-05",
+ "americanfootball_nfl_last_odds_date": "2026-11-07",
  "americanfootball_nfl_last_scores_date": "2026-11-07",
- "icehockey_nhl_last_odds_date": "2026-11-06",
+ "icehockey_nhl_last_odds_date": "2026-11-07",
  "icehockey_nhl_last_scores_date": "2026-11-07",
- "last_ci_pass": "2026-11-07T07:16:39.625472+00:00",
+ "last_ci_pass": "2026-11-07T13:26:09.742240+00:00",
  "last_runs": {
   "americanfootball_nfl": {
-   "added": 0,
-   "already_recorded": 1,
-   "at": "2026-11-05T14:52:53.805791+00:00",
-   "candidates": 1
+   "added": 13,
+   "already_recorded": 0,
+   "at": "2026-11-07T13:26:12.927919+00:00",
+   "candidates": 13
   },
   "football": {
    "added": 134,
@@ -18,16 +18,16 @@
    "candidates": 326
   },
   "icehockey_nhl": {
-   "added": 3,
+   "added": 12,
    "already_recorded": 0,
-   "at": "2026-11-06T14:31:05.319349+00:00",
-   "candidates": 3
+   "at": "2026-11-07T13:26:12.457070+00:00",
+   "candidates": 12
   },
   "nba": {
-   "added": 9,
+   "added": 7,
    "already_recorded": 0,
-   "at": "2026-11-06T14:31:04.002997+00:00",
-   "candidates": 9
+   "at": "2026-11-07T13:26:11.163138+00:00",
+   "candidates": 7
   },
   "settle": {
    "added": 32,
@@ -35,14 +35,14 @@
    "pending_review": 1316
   },
   "tennis": {
-   "added": 0,
+   "added": 2,
    "already_recorded": 490,
-   "at": "2026-11-07T02:08:58.725558+00:00",
-   "candidates": 490
+   "at": "2026-11-07T13:26:09.853145+00:00",
+   "candidates": 492
   }
  },
- "last_tennis_ingest": "2026-11-07T02:08:58.725605+00:00",
- "nba_last_odds_date": "2026-11-06",
+ "last_tennis_ingest": "2026-11-07T13:26:09.853177+00:00",
+ "nba_last_odds_date": "2026-11-07",
  "nba_last_scores_date": "2026-11-07",
  "pending_review": [
   {
@@ -6640,7 +6640,7 @@
  ],
  "skips": {
   "americanfootball_nfl": {
-   "nfl_moneyline.market: OUTSIDE_36H_WINDOW": 27
+   "nfl_moneyline.market: OUTSIDE_36H_WINDOW": 14
   },
   "football": {
    "football: OUTSIDE_48H_WINDOW": 29
