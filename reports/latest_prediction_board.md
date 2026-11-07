@@ -1,10 +1,10 @@
-# DAILY PREDICTION BOARD — 2026-11-06
+# DAILY PREDICTION BOARD — 2026-11-07
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 67 · Valid predictions: 353 · Sports: basketball, football, icehockey, tennis
-Counts: >=70: 98 · >=75: 47 · >=80: 26 · >=85: 13 · >=90: 4 · >=95: 0
-Settled yesterday: 99 · System: **HEALTHY** · API credits (last observed): 371
+Upcoming events: 52 · Valid predictions: 291 · Sports: basketball, football, icehockey
+Counts: >=70: 81 · >=75: 42 · >=80: 26 · >=85: 13 · >=90: 4 · >=95: 0
+Settled yesterday: 9 · System: **HEALTHY** · API credits (last observed): 371
 
 ## Top predictions (P ≥ 80%)
 
@@ -56,7 +56,7 @@ Settled yesterday: 99 · System: **HEALTHY** · API credits (last observed): 371
 - daily_scan: OK (last 2026-11-06T07:16:39.553343+00:00)
 - settlement: OK (last 2026-11-06T01:29:36.663618+00:00)
 - tennis_board: OK (last 2026-11-06T16:16:35.093014+00:00)
-- ci_tests: OK (last 2026-11-06T16:16:36.259141+00:00)
+- ci_tests: OK (last 2026-11-07T00:50:42.754755+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
