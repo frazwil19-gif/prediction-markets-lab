@@ -2,9 +2,9 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 52 · Valid predictions: 291 · Sports: basketball, football, icehockey
-Counts: >=70: 81 · >=75: 42 · >=80: 26 · >=85: 13 · >=90: 4 · >=95: 0
-Settled yesterday: 9 · System: **HEALTHY** · API credits (last observed): 371
+Upcoming events: 46 · Valid predictions: 285 · Sports: basketball, football
+Counts: >=70: 80 · >=75: 42 · >=80: 26 · >=85: 13 · >=90: 4 · >=95: 0
+Settled yesterday: 9 · System: **HEALTHY** · API credits (last observed): 367
 
 ## Top predictions (P ≥ 80%)
 
@@ -44,19 +44,19 @@ Settled yesterday: 9 · System: **HEALTHY** · API credits (last observed): 371
 | football_1x2.market_consensus | VALIDATED_HISTORICAL / COLLECTING | 1215 | 429 | EARLY | 1 | 82.3% → 100.0% |
 | football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 166 | 145 | EARLY | 0 | — → — |
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
-| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 206 | 151 | EARLY | 25 | 87.7% → 76.0% |
+| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 206 | 152 | EARLY | 25 | 87.7% → 76.0% |
 | wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 190 | 168 | EARLY | 31 | 89.3% → 80.6% |
-| nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 87 | 57 | EARLY | 5 | 83.8% → 100.0% |
-| nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 123 | 83 | EARLY | 0 | — → — |
-| nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 42 | 28 | COLLECTING | 2 | 83.0% → 100.0% |
+| nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 87 | 72 | EARLY | 9 | 82.6% → 100.0% |
+| nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 123 | 98 | EARLY | 0 | — → — |
+| nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 42 | 29 | COLLECTING | 3 | 82.3% → 100.0% |
 | football_double_chance.derived_1x2 | PROVISIONAL_PROSPECTIVE / COLLECTING | 1215 | 9 | COLLECTING | 1 | 80.2% → 0.0% |
 
 ## System health
 
 - daily_scan: OK (last 2026-11-06T07:16:39.553343+00:00)
-- settlement: OK (last 2026-11-06T01:29:36.663618+00:00)
+- settlement: OK (last 2026-11-07T00:50:58.863651+00:00)
 - tennis_board: OK (last 2026-11-06T16:16:35.093014+00:00)
-- ci_tests: OK (last 2026-11-07T00:50:42.754755+00:00)
+- ci_tests: OK (last 2026-11-07T02:08:58.625029+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 

@@ -1,8 +1,8 @@
-# STAGE A PREDICTION BOARD — 2026-11-07T00:50Z (stage-a-2)
+# STAGE A PREDICTION BOARD — 2026-11-07T02:09Z (stage-a-2)
 
 _Probability first. Ranked by estimated probability only. **A strong prediction is not a bet** — price status is descriptive; Stage B (bet-selection) alone decides bets._
 
-Predictions: 291 · strong (P ≥ 70%): 81 on 46 events · strong by price status: PRICE_QUALITY_FAIL 9 · PRICE_UNAVAILABLE 72
+Predictions: 285 · strong (P ≥ 70%): 80 on 45 events · strong by price status: PRICE_QUALITY_FAIL 8 · PRICE_UNAVAILABLE 72
 
 | # | Sport | Event | Start (UTC) | Market | Selection | P | P first snapshot | P current scan | σ | Engine | Calibration status | Stage A status | Why not assessable | Best clean price | Net EV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -86,7 +86,6 @@ Predictions: 291 · strong (P ≥ 70%): 81 on 46 events · strong by price statu
 | 78 | football | Dundee United v Motherwell | 2026-11-07T15:00 | double_chance | 1X | 70.9% | 70.9% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 79 | football | Portsmouth v Stoke City | 2026-11-07T12:30 | double_chance | 12 | 70.8% | 70.8% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 80 | football | Wrexham AFC v Wolverhampton Wanderers | 2026-11-07T12:30 | double_chance | X2 | 70.5% | 70.5% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 81 | basketball | Utah Jazz @ Dallas Mavericks | 2026-11-07T01:10 | moneyline | Dallas Mavericks | 70.1% | 70.1% | — | 1.4% | nba_moneyline.market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | PRICE_STALE | — | — |
 
 P = P current scan when one exists, else P first snapshot (football 1X2: normalised H/D/A triplet; raw kept in the ledger). Ranking uses P only.
 ⟳ = start time rescheduled since first observation (est-1: the current provider start is used).
