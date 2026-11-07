@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-11-07T13:26Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-07T14:21Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 416 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 122 · research predictions: 316
+Predictions in the next window: 403 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 118 · research predictions: 308
 
 ## 1. Best predictions today
 
@@ -113,7 +113,6 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 | Las Vegas Raiders @ San Francisco 49ers (2026-11-08T21:05) | moneyline: San Francisco 49ers | 78.7% | 1.27 | 1.23 | NET_EV_NOT_POSITIVE |
 | VfB Stuttgart v Werder Bremen (2026-11-07T17:30) | double_chance: 1X | 78.5% | 1.27 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Crystal Palace v Liverpool (2026-11-08T14:00) | double_chance: 12 | 78.5% | 1.27 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Torino v Lecce (2026-11-07T14:00) | double_chance: 1X | 78.4% | 1.28 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Parma v Bologna (2026-11-07T17:00) | double_chance: X2 | 78.3% | 1.28 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Heerenveen v Feyenoord (2026-11-08T11:15) | double_chance: 12 | 78.2% | 1.28 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Le Mans FC v AS Monaco (2026-11-08T16:15) | double_chance: X2 | 78.1% | 1.28 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
@@ -126,7 +125,6 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 | Preston North End v Southampton (2026-11-07T15:00) | double_chance: 12 | 77.0% | 1.30 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Blackburn Rovers v West Ham United (2026-11-07T15:00) | double_chance: 12 | 76.8% | 1.30 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Le Mans FC v AS Monaco (2026-11-08T16:15) | double_chance: 12 | 76.5% | 1.31 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Luca Van Assche v Ben Shelton (2026-11-07T13:30) | match_winner: Ben Shelton | 76.4% | 1.31 | 1.29 | NET_EV_NOT_POSITIVE |
 | 1. FC Köln v Bayer Leverkusen (2026-11-08T14:30) | double_chance: 12 | 76.4% | 1.31 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Queens Park Rangers v Lincoln City (2026-11-07T15:00) | double_chance: 12 | 76.2% | 1.31 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Nottingham Forest v Manchester City (2026-11-07T17:30) | double_chance: 12 | 76.2% | 1.31 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
@@ -152,14 +150,12 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 | Manchester United v Aston Villa (2026-11-08T16:30) | double_chance: 12 | 74.2% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Angers v Nice (2026-11-08T16:15) | double_chance: 12 | 74.2% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Sunderland v Chelsea (2026-11-08T14:00) | double_chance: X2 | 74.1% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Cagliari v Frosinone (2026-11-07T14:00) | double_chance: 12 | 74.1% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Valencia v Real Madrid (2026-11-07T20:00) | 1x2: away | 74.1% | 1.35 | — | PRICE_STALE, NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
 | Alverca v Casa Pia (2026-11-07T18:00) | double_chance: 12 | 74.0% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | ADO Den Haag v Sparta Rotterdam (2026-11-07T17:45) | double_chance: 12 | 74.0% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Fulham v Newcastle United (2026-11-07T15:00) | double_chance: 12 | 74.0% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Rennes v Lille (2026-11-08T14:00) | double_chance: 12 | 73.9% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Birmingham City v Swansea City (2026-11-07T15:00) | double_chance: 12 | 73.9% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Torino v Lecce (2026-11-07T14:00) | double_chance: 12 | 73.8% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | St Johnstone v Dundee FC (2026-11-07T15:00) | double_chance: 12 | 73.8% | 1.36 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Sunderland v Chelsea (2026-11-08T14:00) | double_chance: 12 | 73.7% | 1.36 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | CA Osasuna v Athletic Bilbao (2026-11-07T17:30) | double_chance: X2 | 73.7% | 1.36 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
@@ -190,7 +186,7 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 382 · PRICE_STALE 202 · NO_EXECUTABLE_PRICE 180 · P_BELOW_FLOOR 180 · NET_EV_NOT_POSITIVE 173 · COMMISSION_UNKNOWN 21
+ENGINE_STATUS_INELIGIBLE 370 · PRICE_STALE 196 · NO_EXECUTABLE_PRICE 174 · P_BELOW_FLOOR 174 · NET_EV_NOT_POSITIVE 168 · COMMISSION_UNKNOWN 19
 
 ## 4. Research predictions — not money eligible
 
@@ -200,7 +196,6 @@ _Model probabilities from research engines. Shown for information and to build a
 |---|---|---|---|---|---|---|---|
 | Genoa v Milan (I1) | 2026-11-08 | total_corners | under 11.5 | 83.4% | 1.20 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Celta v Levante (SP1) | 2026-11-08 | total_corners | under 11.5 | 81.2% | 1.23 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Torino v Lecce (I1) | 2026-11-07 | total_corners | under 11.5 | 80.8% | 1.24 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Paris SG v Troyes (F1) | 2026-11-07 | total_corners | under 11.5 | 79.5% | 1.26 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Monza v Atalanta (I1) | 2026-11-08 | total_corners | under 11.5 | 79.5% | 1.26 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Le Mans v Monaco (F1) | 2026-11-08 | total_corners | under 11.5 | 79.4% | 1.26 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -228,11 +223,9 @@ _Model probabilities from research engines. Shown for information and to build a
 | West Brom v Millwall (E1) | 2026-11-07 | total_corners | over 8.5 | 72.3% | 1.38 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Celta v Levante (SP1) | 2026-11-08 | total_corners | under 10.5 | 72.3% | 1.38 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Osasuna v Ath Bilbao (SP1) | 2026-11-07 | total_corners | under 11.5 | 72.2% | 1.38 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Torino v Lecce (I1) | 2026-11-07 | total_corners | under 10.5 | 71.9% | 1.39 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Hearts v Falkirk (SC0) | 2026-11-08 | total_corners | over 8.5 | 71.8% | 1.39 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Ath Madrid v Barcelona (SP1) | 2026-11-08 | total_corners | under 11.5 | 71.7% | 1.39 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Rennes v Lille (F1) | 2026-11-08 | total_corners | under 11.5 | 71.7% | 1.39 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Cagliari v Frosinone (I1) | 2026-11-07 | total_corners | under 11.5 | 71.7% | 1.40 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Auxerre v Paris FC (F1) | 2026-11-07 | total_corners | under 11.5 | 71.5% | 1.40 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Lens v Marseille (F1) | 2026-11-08 | total_corners | under 11.5 | 71.4% | 1.40 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Angers v Nice (F1) | 2026-11-08 | total_corners | under 11.5 | 71.4% | 1.40 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -347,7 +340,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | Angers v Nice (F1) | 2026-11-08 | total_corners | over 8.5 | 62.8% | 1.59 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Lens v Marseille (F1) | 2026-11-08 | total_corners | over 8.5 | 62.7% | 1.59 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Auxerre v Paris FC (F1) | 2026-11-07 | total_corners | over 8.5 | 62.7% | 1.59 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Cagliari v Frosinone (I1) | 2026-11-07 | total_corners | over 8.5 | 62.5% | 1.60 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Ath Madrid v Barcelona (SP1) | 2026-11-08 | total_corners | over 8.5 | 62.4% | 1.60 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Rennes v Lille (F1) | 2026-11-08 | total_corners | over 8.5 | 62.4% | 1.60 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Osasuna v Ath Bilbao (SP1) | 2026-11-07 | total_corners | under 10.5 | 62.3% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -359,7 +351,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | Ath Madrid v Barcelona (SP1) | 2026-11-08 | total_corners | under 10.5 | 61.7% | 1.62 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Celta v Levante (SP1) | 2026-11-08 | total_corners | under 9.5 | 61.6% | 1.62 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | QPR v Lincoln (E1) | 2026-11-07 | total_corners | under 11.5 | 61.6% | 1.62 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Cagliari v Frosinone (I1) | 2026-11-07 | total_corners | under 10.5 | 61.6% | 1.62 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Rennes v Lille (F1) | 2026-11-08 | total_corners | under 10.5 | 61.6% | 1.62 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | West Brom v Millwall (E1) | 2026-11-07 | total_corners | over 9.5 | 61.4% | 1.63 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Roma v Sassuolo (I1) | 2026-11-07 | total_corners | over 8.5 | 61.4% | 1.63 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -370,7 +361,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | Ipswich v Bournemouth (E0) | 2026-11-08 | total_corners | over 8.5 | 61.1% | 1.64 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Angers v Nice (F1) | 2026-11-08 | total_corners | under 10.5 | 61.1% | 1.64 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Alverca v Casa Pia (P1) | 2026-11-07 | total_corners | under 10.5 | 61.1% | 1.64 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Torino v Lecce (I1) | 2026-11-07 | total_corners | under 9.5 | 61.0% | 1.64 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Espanol v La Coruna (SP1) | 2026-11-07 | total_corners | over 8.5 | 61.0% | 1.64 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Hearts v Falkirk (SC0) | 2026-11-08 | total_corners | under 11.5 | 60.7% | 1.65 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Brest v Lyon (F1) | 2026-11-08 | total_corners | under 10.5 | 60.7% | 1.65 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -488,7 +478,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | Antwerp v Lommel SK (B1) | 2026-11-07 | total_corners | over 10.5 | 52.2% | 1.92 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Dortmund v Elversberg (D1) | 2026-11-07 | total_corners | over 9.5 | 52.1% | 1.92 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Elche v Betis (SP1) | 2026-11-08 | total_corners | under 9.5 | 52.0% | 1.92 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Torino v Lecce (I1) | 2026-11-07 | total_corners | over 8.5 | 51.9% | 1.93 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Nacional v Academico Viseu (P1) | 2026-11-07 | total_corners | under 9.5 | 51.9% | 1.93 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Gent v Kortrijk (B1) | 2026-11-08 | total_corners | over 9.5 | 51.8% | 1.93 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | St. Gilloise v Genk (B1) | 2026-11-08 | total_corners | over 9.5 | 51.7% | 1.93 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -508,7 +497,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | Lens v Marseille (F1) | 2026-11-08 | total_corners | over 9.5 | 50.6% | 1.98 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Roma v Sassuolo (I1) | 2026-11-07 | total_corners | under 9.5 | 50.6% | 1.98 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Osasuna v Ath Bilbao (SP1) | 2026-11-07 | total_corners | under 9.5 | 50.6% | 1.98 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Cagliari v Frosinone (I1) | 2026-11-07 | total_corners | over 9.5 | 50.5% | 1.98 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Auxerre v Paris FC (F1) | 2026-11-07 | total_corners | over 9.5 | 50.5% | 1.98 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Rennes v Lille (F1) | 2026-11-08 | total_corners | over 9.5 | 50.5% | 1.98 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | West Brom v Millwall (E1) | 2026-11-07 | total_corners | over 10.5 | 50.3% | 1.99 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
