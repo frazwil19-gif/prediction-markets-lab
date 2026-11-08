@@ -2,25 +2,17 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 47 · Valid predictions: 149 · Sports: americanfootball, basketball, football, icehockey, tennis
-Counts: >=70: 44 · >=75: 31 · >=80: 12 · >=85: 3 · >=90: 1 · >=95: 0
-Settled yesterday: 32 · System: **HEALTHY** · API credits (last observed): 327
+Upcoming events: 31 · Valid predictions: 57 · Sports: americanfootball, basketball, football, icehockey
+Counts: >=70: 16 · >=75: 12 · >=80: 4 · >=85: 0 · >=90: 0 · >=95: 0
+Settled yesterday: 32 · System: **HEALTHY** · API credits (last observed): 325
 
 ## Top predictions (P ≥ 80%)
 
 | Sport | Event | Start (UTC) | Market | Selection | P | Fair | Band | Engine | Evidence | Price (source) | Single | Multi-research |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| football | Celtic v Kilmarnock | 2026-11-08T16:00 | double_chance | 1X | 92.6% | 1.08 | 90-94.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.06 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Celtic v Kilmarnock | 2026-11-08T16:00 | double_chance | 12 | 88.1% | 1.14 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.11 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | SC Cambuur v PSV Eindhoven | 2026-11-08T15:45 | double_chance | X2 | 85.0% | 1.18 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.15 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | SC Freiburg v Union Berlin | 2026-11-08T16:30 | double_chance | 1X | 84.2% | 1.19 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.16 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | basketball | Boston Celtics @ Milwaukee Bucks | 2026-11-09T01:10 | moneyline | Boston Celtics | 83.9% | 1.19 | 80-84.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.16 (odds_api:smarkets) | no | yes |
-| football | Crystal Palace v Liverpool | 2026-11-08T14:00 | double_chance | X2 | 82.5% | 1.21 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | SC Cambuur v PSV Eindhoven | 2026-11-08T15:45 | double_chance | 12 | 82.5% | 1.21 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.17 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | AZ Alkmaar v Groningen | 2026-11-08T15:45 | double_chance | 1X | 82.1% | 1.22 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.17 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | basketball | Utah Jazz @ Minnesota Timberwolves | 2026-11-09T00:10 | moneyline | Minnesota Timberwolves | 81.2% | 1.23 | 80-84.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.20 (odds_api:skybet) | no | yes |
-| football | Celtic v Kilmarnock | 2026-11-08T16:00 | 1x2 | home | 80.8% | 1.24 | 80-84.9% | football_1x2.market_consensus@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.20 (odds_api:Coral) | no | yes |
-| football | Hearts v Falkirk F.C. | 2026-11-08T15:00 | double_chance | 1X | 80.6% | 1.24 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.22 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | TSG Hoffenheim v FC Schalke 04 | 2026-11-08T18:30 | double_chance | 1X | 80.3% | 1.25 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.23 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 
 ## Prospective evidence
@@ -41,8 +33,8 @@ Settled yesterday: 32 · System: **HEALTHY** · API credits (last observed): 327
 
 - daily_scan: OK (last 2026-11-08T07:16:27.178048+00:00)
 - settlement: OK (last 2026-11-08T00:24:16.136912+00:00)
-- tennis_board: OK (last 2026-11-08T13:45:59.019638+00:00)
-- ci_tests: OK (last 2026-11-08T13:46:00.390676+00:00)
+- tennis_board: OK (last 2026-11-08T16:16:29.414960+00:00)
+- ci_tests: OK (last 2026-11-08T16:16:30.245113+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
