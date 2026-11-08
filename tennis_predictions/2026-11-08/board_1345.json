@@ -1,0 +1,60 @@
+{
+ "board_date": "2026-11-08",
+ "layer": "PREDICTION (paper) -- not a bet recommendation",
+ "coverage": {
+  "active_keys": [
+   "tennis_atp_paris_masters"
+  ],
+  "skipped_for_credit_guard": [],
+  "keys_over_cap": [],
+  "skipped_no_upcoming_event": [],
+  "events_returned": 1,
+  "scan_timestamp": "2026-11-08T13:45:59.019638+00:00",
+  "credits_remaining_after": 328,
+  "universe_note": "Odds-API-covered universe only (Slams, 1000s, 500s) -- not the full ATP/WTA calendar"
+ },
+ "counts": {
+  "events_scanned": 1,
+  "valid_predictions": 1,
+  "research_only_predictions": 0,
+  "ge_70": 1,
+  "ge_75": 1,
+  "ge_80": 0,
+  "ge_85": 0,
+  "ge_90": 0,
+  "ge_95": 0
+ },
+ "predictions": [
+  {
+   "prediction_id": "f5a9bd79bbf0b6e3",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "ATP",
+   "sport_key": "tennis_atp_paris_masters",
+   "tournament": "ATP Paris Masters",
+   "event_id": "2c1005d01a3f63cd2249facf4ce5f5ed",
+   "player_a": "Ben Shelton",
+   "player_b": "Carlos Alcaraz",
+   "commence_time": "2026-11-08T14:00:00+00:00",
+   "prediction_timestamp": "2026-11-08T13:45:59.019638+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=4.2/1.31;ex_lay=4.3/1.32",
+   "p_a": 0.236298,
+   "p_b": 0.763702,
+   "predicted_winner": "Carlos Alcaraz",
+   "predicted_probability": 0.763702,
+   "probability_band": "75-79.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 446,
+   "historical_band_actual_rate": 0.7691,
+   "historical_band_wilson95": [
+    0.7277,
+    0.8058
+   ],
+   "engine_holdout_n": 5066
+  }
+ ],
+ "research_only": []
+}

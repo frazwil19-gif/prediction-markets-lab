@@ -1,14 +1,19 @@
-# Daily Paper Bet Card — 2026-11-08T07:16Z
+# Daily Paper Bet Card — 2026-11-08T13:46Z
 
 **PAPER ONLY. Not a real-money card. No bet here may be placed with real money without a MONEY_ELIGIBILITY_REVIEW and Fraser's explicit approval.**
 
 Rule `pcard-1` on top of bsv2-4. bsv2-4 decides; grades rank confidence in value; STRONG PREDICTION != VALID BET.
-Candidates evaluated at 2026-11-08T07:16:28.493971+00:00.
+Candidates evaluated at 2026-11-08T13:46:04.455582+00:00.
 
-Grades: A+ 0, A 0, B 0, C 0, REJECT 146
+Grades: A+ 0, A 0, B 0, C 2, REJECT 147
 
 **NO PAPER BETS TODAY.** No candidate passed every bsv2-4 gate. That is a valid outcome.
 
-Rejected candidates: 146 (see reports/bet_selection_v2.md for reasons).
+## Grade C (WATCH / multi research — information only, no stake)
+
+- basketball · Boston Celtics @ Milwaukee Bucks · Boston Celtics · P 0.839 · odds 1.16 · NET_EV_NOT_POSITIVE
+- basketball · Utah Jazz @ Minnesota Timberwolves · Minnesota Timberwolves · P 0.812 · odds 1.20 · NET_EV_NOT_POSITIVE
+
+Rejected candidates: 147 (see reports/bet_selection_v2.md for reasons).
 
 Stakes are hypothetical, at the nominal bankroll, singles only, ≤5% per bet and ≤10% per day; no martingale/chasing.
