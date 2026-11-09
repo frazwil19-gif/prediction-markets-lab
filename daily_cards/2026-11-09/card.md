@@ -1,5 +1,5 @@
 DAILY BET CARD
-Timestamp: 2026-11-09T07:16
+Timestamp: 2026-11-09T17:17
 Bankroll: £10.00
 Fixtures scanned: 0
 Markets scanned: 0
@@ -24,13 +24,13 @@ System warnings:
 - soccer_netherlands_eredivisie: odds call skipped (0 credits) -- no fixture within 48h
 - soccer_germany_bundesliga: odds call skipped (0 credits) -- no fixture within 48h
 - soccer_france_ligue_one: odds call skipped (0 credits) -- no fixture within 48h
-- soccer_spain_la_liga: odds call skipped (0 credits) -- tier throttle: remaining 315 < 342.0
-- soccer_italy_serie_a: odds call skipped (0 credits) -- tier throttle: remaining 315 < 342.0
-- soccer_portugal_primeira_liga: odds call skipped (0 credits) -- tier throttle: remaining 315 < 342.0
-- soccer_belgium_first_div: odds call skipped (0 credits) -- tier throttle: remaining 315 < 342.0
-- soccer_england_league1: odds call skipped (0 credits) -- tier throttle: remaining 315 < 401.4
-- soccer_england_league2: odds call skipped (0 credits) -- tier throttle: remaining 315 < 401.4
-- soccer_spain_segunda_division: odds call skipped (0 credits) -- tier throttle: remaining 315 < 401.4
-- soccer_germany_bundesliga2: odds call skipped (0 credits) -- tier throttle: remaining 315 < 401.4
-- soccer_italy_serie_b: odds call skipped (0 credits) -- tier throttle: remaining 315 < 401.4
-- soccer_france_ligue_two: odds call skipped (0 credits) -- tier throttle: remaining 315 < 401.4
+- soccer_spain_la_liga: odds call skipped (0 credits) -- tier throttle: remaining 309 < 342.0
+- soccer_italy_serie_a: odds call skipped (0 credits) -- tier throttle: remaining 309 < 342.0
+- soccer_portugal_primeira_liga: odds call skipped (0 credits) -- tier throttle: remaining 309 < 342.0
+- soccer_belgium_first_div: odds call skipped (0 credits) -- tier throttle: remaining 309 < 342.0
+- soccer_england_league1: odds call skipped (0 credits) -- tier throttle: remaining 309 < 401.4
+- soccer_england_league2: odds call skipped (0 credits) -- tier throttle: remaining 309 < 401.4
+- soccer_spain_segunda_division: odds call skipped (0 credits) -- tier throttle: remaining 309 < 401.4
+- soccer_germany_bundesliga2: odds call skipped (0 credits) -- tier throttle: remaining 309 < 401.4
+- soccer_italy_serie_b: odds call skipped (0 credits) -- tier throttle: remaining 309 < 401.4
+- soccer_france_ligue_two: odds call skipped (0 credits) -- tier throttle: remaining 309 < 401.4
