@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T00:24:15.942424+00:00",
+ "generated_at": "2026-11-09T00:43:44.992824+00:00",
  "mode": "PAPER \u2014 unattended prospective validation; stakes SIMULATED",
  "windows": {
   "weekly": {
@@ -48,19 +48,18 @@
      }
     }
    },
-   "candidates_evaluated": 942,
+   "candidates_evaluated": 762,
    "qualified_in_shadow": 0,
    "qualification_rate": 0.0,
    "rejections": {
-    "ENGINE_STATUS_INELIGIBLE": 746,
-    "NET_EV_NOT_POSITIVE": 427,
-    "P_BELOW_FLOOR": 364,
-    "NO_EXECUTABLE_PRICE": 333,
-    "COMMISSION_UNKNOWN": 98,
+    "ENGINE_STATUS_INELIGIBLE": 583,
+    "NET_EV_NOT_POSITIVE": 364,
+    "P_BELOW_FLOOR": 278,
+    "NO_EXECUTABLE_PRICE": 261,
+    "COMMISSION_UNKNOWN": 76,
     "PRICE_STALE": 24,
-    "PREDICTION_NOT_VALID": 18,
-    "EXCHANGE_SPREAD_TOO_WIDE": 8,
-    "PROBABILITY_NOT_SAME_SNAPSHOT": 2,
+    "PREDICTION_NOT_VALID": 14,
+    "EXCHANGE_SPREAD_TOO_WIDE": 4,
     "NET_EV_BELOW_PAPER_GATE": 2
    },
    "by": {
@@ -159,17 +158,17 @@
      }
     }
    },
-   "candidates_evaluated": 2872,
+   "candidates_evaluated": 2772,
    "qualified_in_shadow": 2,
    "qualification_rate": 0.0007,
    "rejections": {
-    "ENGINE_STATUS_INELIGIBLE": 2366,
-    "NET_EV_NOT_POSITIVE": 1277,
-    "P_BELOW_FLOOR": 1147,
-    "NO_EXECUTABLE_PRICE": 1044,
-    "COMMISSION_UNKNOWN": 279,
-    "PRICE_STALE": 64,
-    "PREDICTION_NOT_VALID": 43,
+    "ENGINE_STATUS_INELIGIBLE": 2276,
+    "NET_EV_NOT_POSITIVE": 1248,
+    "P_BELOW_FLOOR": 1108,
+    "NO_EXECUTABLE_PRICE": 981,
+    "COMMISSION_UNKNOWN": 277,
+    "PRICE_STALE": 56,
+    "PREDICTION_NOT_VALID": 42,
     "EXCHANGE_SPREAD_TOO_WIDE": 33,
     "NET_EV_BELOW_PAPER_GATE": 6,
     "PROBABILITY_NOT_SAME_SNAPSHOT": 6,
@@ -561,15 +560,15 @@
      }
     }
    },
-   "candidates_evaluated": 3399,
+   "candidates_evaluated": 3414,
    "qualified_in_shadow": 2,
    "qualification_rate": 0.0006,
    "rejections": {
     "ENGINE_STATUS_INELIGIBLE": 2730,
-    "NET_EV_NOT_POSITIVE": 1526,
+    "NET_EV_NOT_POSITIVE": 1538,
     "P_BELOW_FLOOR": 1287,
     "NO_EXECUTABLE_PRICE": 1278,
-    "COMMISSION_UNKNOWN": 309,
+    "COMMISSION_UNKNOWN": 311,
     "PRICE_STALE": 64,
     "PREDICTION_NOT_VALID": 63,
     "EXCHANGE_SPREAD_TOO_WIDE": 33,

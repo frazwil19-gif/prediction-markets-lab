@@ -1,13 +1,13 @@
 {
  "report_version": "qtc-2",
- "generated_at": "2026-11-08T00:24:15.841982+00:00",
+ "generated_at": "2026-11-09T00:43:44.851299+00:00",
  "capacity_rule_version": "bsv2-4",
  "paper_bets_by_rule_version": {
   "bsv2-1": 9,
   "bsv2-3": 1,
   "bsv2-4": 2
  },
- "runs_under_current_rule": 110,
+ "runs_under_current_rule": 113,
  "expected_vs_realised": {
   "settled_bets": 11,
   "stake_per_bet_gbp": 1.0,
@@ -21,10 +21,10 @@
  },
  "capacity": {
   "qualifying_bets": 2,
-  "days_observed": 39,
+  "days_observed": 40,
   "observed_window": [
    "2026-10-01",
-   "2026-11-08"
+   "2026-11-09"
   ],
   "days_with_a_qualifying_bet": 2,
   "qualifying_per_day": 0.05,
@@ -100,16 +100,16 @@
   },
   "flat_turnover": {
    "\u00a31": {
-    "monthly_turnover_gbp": 1.54,
+    "monthly_turnover_gbp": 1.5,
     "monthly_expected_profit_gbp": 0.04
    },
    "\u00a35": {
-    "monthly_turnover_gbp": 7.69,
+    "monthly_turnover_gbp": 7.5,
     "monthly_expected_profit_gbp": 0.21
    },
    "\u00a310": {
-    "monthly_turnover_gbp": 15.38,
-    "monthly_expected_profit_gbp": 0.43
+    "monthly_turnover_gbp": 15.0,
+    "monthly_expected_profit_gbp": 0.42
    }
   },
   "bankroll_scenarios": {
@@ -119,15 +119,15 @@
     "max_bets_per_day": 5,
     "expected_profit_per_month_theoretical_gbp": 0.04,
     "expected_profit_per_month_after_daily_cap_gbp": 0.04,
-    "expected_turnover_per_month_gbp": 1.54
+    "expected_turnover_per_month_gbp": 1.5
    },
    "\u00a3100": {
     "stake_gbp": 2.0,
     "daily_cap_gbp": 10.0,
     "max_bets_per_day": 5,
-    "expected_profit_per_month_theoretical_gbp": 0.09,
-    "expected_profit_per_month_after_daily_cap_gbp": 0.09,
-    "expected_turnover_per_month_gbp": 3.08
+    "expected_profit_per_month_theoretical_gbp": 0.08,
+    "expected_profit_per_month_after_daily_cap_gbp": 0.08,
+    "expected_turnover_per_month_gbp": 3.0
    },
    "\u00a3250": {
     "stake_gbp": 5.0,
@@ -135,23 +135,23 @@
     "max_bets_per_day": 5,
     "expected_profit_per_month_theoretical_gbp": 0.21,
     "expected_profit_per_month_after_daily_cap_gbp": 0.21,
-    "expected_turnover_per_month_gbp": 7.69
+    "expected_turnover_per_month_gbp": 7.5
    },
    "\u00a3500": {
     "stake_gbp": 10.0,
     "daily_cap_gbp": 50.0,
     "max_bets_per_day": 5,
-    "expected_profit_per_month_theoretical_gbp": 0.43,
-    "expected_profit_per_month_after_daily_cap_gbp": 0.43,
-    "expected_turnover_per_month_gbp": 15.38
+    "expected_profit_per_month_theoretical_gbp": 0.42,
+    "expected_profit_per_month_after_daily_cap_gbp": 0.42,
+    "expected_turnover_per_month_gbp": 15.0
    },
    "\u00a31000": {
     "stake_gbp": 20.0,
     "daily_cap_gbp": 100.0,
     "max_bets_per_day": 5,
-    "expected_profit_per_month_theoretical_gbp": 0.86,
-    "expected_profit_per_month_after_daily_cap_gbp": 0.86,
-    "expected_turnover_per_month_gbp": 30.77
+    "expected_profit_per_month_theoretical_gbp": 0.84,
+    "expected_profit_per_month_after_daily_cap_gbp": 0.84,
+    "expected_turnover_per_month_gbp": 30.0
    }
   },
   "limits": {
@@ -164,13 +164,13 @@
   "caveat": "Expected profit uses the model's own EV estimates; real edge is unproven until settled results and CLV accrue."
  },
  "rejections": {
-  "predictions_evaluated": 3399,
+  "predictions_evaluated": 3414,
   "rejections_by_reason": {
    "ENGINE_STATUS_INELIGIBLE": 2730,
-   "NET_EV_NOT_POSITIVE": 1526,
+   "NET_EV_NOT_POSITIVE": 1538,
    "P_BELOW_FLOOR": 1287,
    "NO_EXECUTABLE_PRICE": 1278,
-   "COMMISSION_UNKNOWN": 309,
+   "COMMISSION_UNKNOWN": 311,
    "PRICE_STALE": 64,
    "PREDICTION_NOT_VALID": 63,
    "EXCHANGE_SPREAD_TOO_WIDE": 33,

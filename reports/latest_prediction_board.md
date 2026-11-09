@@ -1,19 +1,16 @@
-# DAILY PREDICTION BOARD — 2026-11-08
+# DAILY PREDICTION BOARD — 2026-11-09
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 31 · Valid predictions: 57 · Sports: americanfootball, basketball, football, icehockey
-Counts: >=70: 16 · >=75: 12 · >=80: 4 · >=85: 0 · >=90: 0 · >=95: 0
-Settled yesterday: 32 · System: **HEALTHY** · API credits (last observed): 325
+Upcoming events: 6 · Valid predictions: 6 · Sports: americanfootball, basketball, icehockey
+Counts: >=70: 2 · >=75: 2 · >=80: 1 · >=85: 0 · >=90: 0 · >=95: 0
+Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 325
 
 ## Top predictions (P ≥ 80%)
 
 | Sport | Event | Start (UTC) | Market | Selection | P | Fair | Band | Engine | Evidence | Price (source) | Single | Multi-research |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| football | SC Freiburg v Union Berlin | 2026-11-08T16:30 | double_chance | 1X | 84.2% | 1.19 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.16 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | basketball | Boston Celtics @ Milwaukee Bucks | 2026-11-09T01:10 | moneyline | Boston Celtics | 83.9% | 1.19 | 80-84.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.16 (odds_api:smarkets) | no | yes |
-| basketball | Utah Jazz @ Minnesota Timberwolves | 2026-11-09T00:10 | moneyline | Minnesota Timberwolves | 81.2% | 1.23 | 80-84.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.20 (odds_api:skybet) | no | yes |
-| football | TSG Hoffenheim v FC Schalke 04 | 2026-11-08T18:30 | double_chance | 1X | 80.3% | 1.25 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.23 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 
 ## Prospective evidence
 
@@ -34,7 +31,7 @@ Settled yesterday: 32 · System: **HEALTHY** · API credits (last observed): 325
 - daily_scan: OK (last 2026-11-08T07:16:27.178048+00:00)
 - settlement: OK (last 2026-11-08T00:24:16.136912+00:00)
 - tennis_board: OK (last 2026-11-08T16:16:29.414960+00:00)
-- ci_tests: OK (last 2026-11-08T16:16:30.245113+00:00)
+- ci_tests: OK (last 2026-11-09T00:43:29.548892+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
