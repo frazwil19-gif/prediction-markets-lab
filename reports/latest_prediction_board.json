@@ -1,15 +1,14 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-11-09T00:43:43.562638+00:00",
+ "generated_at": "2026-11-09T01:49:40.512197+00:00",
  "date": "2026-11-09",
  "summary": {
-  "upcoming_events": 6,
-  "valid_predictions": 6,
+  "upcoming_events": 3,
+  "valid_predictions": 3,
   "sports_active": [
    "americanfootball",
-   "basketball",
-   "icehockey"
+   "basketball"
   ],
   "engines_active": [
    "football_1x2.market_consensus",
@@ -22,20 +21,20 @@
    "football_double_chance.derived_1x2"
   ],
   "threshold_counts": {
-   ">=70": 2,
-   ">=75": 2,
-   ">=80": 1,
+   ">=70": 1,
+   ">=75": 1,
+   ">=80": 0,
    ">=85": 0,
    ">=90": 0,
    ">=95": 0
   },
   "settled_yesterday": 0,
   "system": "HEALTHY",
-  "api_credits_last_observed": 325
+  "api_credits_last_observed": 319
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-11-09T00:43:43.562638+00:00",
+  "generated_at": "2026-11-09T01:49:40.512197+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -43,31 +42,31 @@
     "last": "2026-11-08T07:16:27.178048+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 17.5
+    "age_hours": 18.6
    },
    "settlement": {
-    "last": "2026-11-08T00:24:16.136912+00:00",
+    "last": "2026-11-09T00:43:45.257840+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 24.3
+    "age_hours": 1.1
    },
    "tennis_board": {
     "last": "2026-11-08T16:16:29.414960+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 8.5
+    "age_hours": 9.6
    },
    "ci_tests": {
-    "last": "2026-11-09T00:43:29.548892+00:00",
+    "last": "2026-11-09T01:49:22.124828+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    }
   },
   "api_credits": {
-   "remaining": 325,
-   "observed_at": "2026-11-08T16:16:29.414879+00:00",
-   "source": "credit_log.csv",
+   "remaining": 319,
+   "observed_at": "2026-11-09T01:49:39.880106+00:00",
+   "source": "nba_credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
   "warnings": [],
@@ -139,10 +138,10 @@
    "prospective_status": "AWAITING_SEASON",
    "money_eligible": true,
    "predictions": 101,
-   "settled_rows": 72,
+   "settled_rows": 90,
    "maturity": "EARLY",
-   "ge80_settled": 9,
-   "ge80_mean_pred": 0.8259364490998542,
+   "ge80_settled": 10,
+   "ge80_mean_pred": 0.830356277243761,
    "ge80_actual": 1.0,
    "alarm_review_required": false
   },
@@ -151,7 +150,7 @@
    "prospective_status": "COLLECTING",
    "money_eligible": false,
    "predictions": 141,
-   "settled_rows": 98,
+   "settled_rows": 116,
    "maturity": "EARLY",
    "ge80_settled": 0,
    "ge80_mean_pred": null,
@@ -163,7 +162,7 @@
    "prospective_status": "COLLECTING",
    "money_eligible": true,
    "predictions": 56,
-   "settled_rows": 29,
+   "settled_rows": 41,
    "maturity": "COLLECTING",
    "ge80_settled": 3,
    "ge80_mean_pred": 0.8225281766118426,
@@ -198,11 +197,11 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 6,
-   "EXCLUDED": 3515
+   "ELIGIBLE": 3,
+   "EXCLUDED": 3518
   },
   "exclusion_reason": {
-   "EVENT_STARTED": 3515
+   "EVENT_STARTED": 3518
   },
   "start_time_status": {
    "LEDGER_ONLY": 3042,
@@ -213,48 +212,6 @@
   "rule": "est-1"
  },
  "predictions": [
-  {
-   "prediction_id": "83ba0aeafc6f6d91",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_id": "98eae523edadc7d4d42ab37222eb2c88",
-   "event_key": "nba|98eae523edadc7d4d42ab37222eb2c88",
-   "event_name": "Boston Celtics @ Milwaukee Bucks",
-   "event_start": "2026-11-09T01:10:00+00:00",
-   "market": "moneyline",
-   "selection": "Boston Celtics",
-   "estimated_probability": "0.8385355154378269",
-   "fair_odds": "1.1925553319919517",
-   "probability_band": "80-84.9%",
-   "probability_source": "Odds API basketball_nba h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-11-08T06:30:00+00:00",
-   "actual_workflow_start": "2026-11-08T13:44:48Z",
-   "prediction_timestamp": "2026-11-08T13:46:00.944961+00:00",
-   "minutes_to_event": "684.0",
-   "live_price": "1.16",
-   "live_price_source": "odds_api:smarkets",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "False",
-   "single_ineligible_reason": "fair odds 1.19 below payout floor 1.33",
-   "multi_research_eligible": "True",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:basketball_nba",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-09T01:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
-  },
   {
    "prediction_id": "8b526eae4c2f9b9f",
    "engine_id": "nba_moneyline.market",
@@ -298,48 +255,6 @@
    "start_time_source": "unified_ledger.event_start"
   },
   {
-   "prediction_id": "b7424ebe6ae2fbfe",
-   "engine_id": "nfl_moneyline.market",
-   "engine_version": "1",
-   "sport": "americanfootball",
-   "competition": "NFL",
-   "event_id": "9760d8f19f84bfee300a74ceb656c95d",
-   "event_key": "nfl|9760d8f19f84bfee300a74ceb656c95d",
-   "event_name": "Tampa Bay Buccaneers @ Chicago Bears",
-   "event_start": "2026-11-09T01:20:00+00:00",
-   "market": "moneyline",
-   "selection": "Chicago Bears",
-   "estimated_probability": "0.6974603174603174",
-   "fair_odds": "1.4337733272644515",
-   "probability_band": "65-69.9%",
-   "probability_source": "Odds API americanfootball_nfl h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=2932; holdout DONE (2020-21, n=550; gate A); >=80% coverage None; holdout slope 1.0217 CI [0.8053, 1.2738]; live estimator nfl_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-11-07T06:30:00+00:00",
-   "actual_workflow_start": "2026-11-07T13:25:00Z",
-   "prediction_timestamp": "2026-11-07T13:26:11.787126+00:00",
-   "minutes_to_event": "2153.8",
-   "live_price": "1.4",
-   "live_price_source": "odds_api:smarkets",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "True",
-   "single_ineligible_reason": "",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:americanfootball_nfl",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-09T01:20:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
-  },
-  {
    "prediction_id": "c580de11f21e16b9",
    "engine_id": "nfl_moneyline.market",
    "engine_version": "1",
@@ -378,48 +293,6 @@
    "correct": "",
    "settlement_timestamp": "",
    "event_start_original": "2026-11-10T01:15:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
-  },
-  {
-   "prediction_id": "0ea85f2737cdd683",
-   "engine_id": "nhl_moneyline.market",
-   "engine_version": "1",
-   "sport": "icehockey",
-   "competition": "NHL",
-   "event_id": "41a3f4e9221afae1081031d9f6af0db4",
-   "event_key": "nhl|41a3f4e9221afae1081031d9f6af0db4",
-   "event_name": "Pittsburgh Penguins @ Anaheim Ducks",
-   "event_start": "2026-11-09T01:10:00+00:00",
-   "market": "moneyline",
-   "selection": "Anaheim Ducks",
-   "estimated_probability": "0.5237470480188926",
-   "fair_odds": "1.9093186372745494",
-   "probability_band": "50-54.9%",
-   "probability_source": "Odds API icehockey_nhl h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=13666; holdout DONE (2020-21, n=2350; gate B); >=80% coverage None; holdout slope 1.2193 CI [1.0439, 1.4097]; live estimator nhl_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "PROVISIONAL_PROSPECTIVE",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-11-08T06:30:00+00:00",
-   "actual_workflow_start": "2026-11-08T13:44:48Z",
-   "prediction_timestamp": "2026-11-08T13:46:02.485734+00:00",
-   "minutes_to_event": "684.0",
-   "live_price": "1.87",
-   "live_price_source": "odds_api:smarkets",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "False",
-   "single_ineligible_reason": "engine not money-eligible",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:icehockey_nhl",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-09T01:10:00+00:00",
    "start_time_status": "LEDGER_ONLY",
    "start_time_source": "unified_ledger.event_start"
   },
