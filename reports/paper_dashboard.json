@@ -1,15 +1,15 @@
 {
  "product": "PAPER PERFORMANCE DASHBOARD (paper only; descriptive, no projections)",
- "generated_at": "2026-11-10T15:09:21.531833+00:00",
+ "generated_at": "2026-11-10T16:16:38.338782+00:00",
  "card_rule_version": "pcard-1",
  "bsv2_rule_version": "bsv2-4",
  "real_money_enabled": false,
  "headline_set": "bsv2 bsv2-4 selections + earlier rows annotated VALID_SAME_SNAPSHOT",
  "financial": {
   "overall": {
-   "selections": 3,
+   "selections": 4,
    "settled": 3,
-   "pending": 0,
+   "pending": 1,
    "void": 0,
    "won": 1,
    "win_rate": 0.3333,
@@ -24,9 +24,9 @@
   "breakdowns": {
    "sport": {
     "tennis": {
-     "selections": 3,
+     "selections": 4,
      "settled": 3,
-     "pending": 0,
+     "pending": 1,
      "void": 0,
      "won": 1,
      "win_rate": 0.3333,
@@ -56,9 +56,9 @@
      "longest_losing_streak": 0
     },
     "wta_match_winner.betfair_market": {
-     "selections": 2,
+     "selections": 3,
      "settled": 2,
-     "pending": 0,
+     "pending": 1,
      "void": 0,
      "won": 0,
      "win_rate": 0.0,
@@ -88,9 +88,9 @@
      "longest_losing_streak": 1
     },
     "60-69.9%": {
-     "selections": 2,
+     "selections": 3,
      "settled": 2,
-     "pending": 0,
+     "pending": 1,
      "void": 0,
      "won": 1,
      "win_rate": 0.5,
@@ -105,9 +105,9 @@
    },
    "odds_band": {
     "1.50-1.99": {
-     "selections": 3,
+     "selections": 4,
      "settled": 3,
-     "pending": 0,
+     "pending": 1,
      "void": 0,
      "won": 1,
      "win_rate": 0.3333,
@@ -122,9 +122,9 @@
    },
    "decision": {
     "PAPER_BET": {
-     "selections": 3,
+     "selections": 4,
      "settled": 3,
-     "pending": 0,
+     "pending": 1,
      "void": 0,
      "won": 1,
      "win_rate": 0.3333,
@@ -139,9 +139,9 @@
    },
    "source_type": {
     "bookmaker": {
-     "selections": 3,
+     "selections": 4,
      "settled": 3,
-     "pending": 0,
+     "pending": 1,
      "void": 0,
      "won": 1,
      "win_rate": 0.3333,
@@ -441,9 +441,9 @@
  },
  "all_selections": {
   "financial": {
-   "selections": 12,
+   "selections": 13,
    "settled": 11,
-   "pending": 1,
+   "pending": 2,
    "void": 0,
    "won": 6,
    "win_rate": 0.5455,
@@ -470,9 +470,9 @@
   "sport": {
    "tennis": {
     "financial": {
-     "selections": 12,
+     "selections": 13,
      "settled": 11,
-     "pending": 1,
+     "pending": 2,
      "void": 0,
      "won": 6,
      "win_rate": 0.5455,
@@ -483,7 +483,7 @@
      "roi_yield": -0.1991,
      "max_drawdown_units": 2.72,
      "longest_losing_streak": 2,
-     "mean_net_ev_at_decision": 0.0468
+     "mean_net_ev_at_decision": 0.0449
     },
     "prediction": {
      "n": 11,
@@ -522,6 +522,27 @@
      "realised_wins": 1,
      "brier": 0.1094,
      "log_loss": 0.4016
+    }
+   },
+   "WTA Finals": {
+    "financial": {
+     "selections": 1,
+     "settled": 0,
+     "pending": 1,
+     "void": 0,
+     "won": 0,
+     "win_rate": null,
+     "avg_probability": null,
+     "avg_odds": null,
+     "expected_net_pnl_units": 0,
+     "realised_net_pnl_units": 0,
+     "roi_yield": null,
+     "max_drawdown_units": 0.0,
+     "longest_losing_streak": 0,
+     "mean_net_ev_at_decision": 0.0222
+    },
+    "prediction": {
+     "n": 0
     }
    },
    "WTA Wuhan Open": {
@@ -609,9 +630,9 @@
   "market": {
    "match_winner": {
     "financial": {
-     "selections": 12,
+     "selections": 13,
      "settled": 11,
-     "pending": 1,
+     "pending": 2,
      "void": 0,
      "won": 6,
      "win_rate": 0.5455,
@@ -622,7 +643,7 @@
      "roi_yield": -0.1991,
      "max_drawdown_units": 2.72,
      "longest_losing_streak": 2,
-     "mean_net_ev_at_decision": 0.0468
+     "mean_net_ev_at_decision": 0.0449
     },
     "prediction": {
      "n": 11,
@@ -665,9 +686,9 @@
    },
    "wta_match_winner.betfair_market": {
     "financial": {
-     "selections": 10,
+     "selections": 11,
      "settled": 9,
-     "pending": 1,
+     "pending": 2,
      "void": 0,
      "won": 5,
      "win_rate": 0.5556,
@@ -678,7 +699,7 @@
      "roi_yield": -0.1911,
      "max_drawdown_units": 2.0,
      "longest_losing_streak": 2,
-     "mean_net_ev_at_decision": 0.0508
+     "mean_net_ev_at_decision": 0.0482
     },
     "prediction": {
      "n": 9,
@@ -748,9 +769,9 @@
    },
    "bsv2-4": {
     "financial": {
-     "selections": 2,
+     "selections": 3,
      "settled": 2,
-     "pending": 0,
+     "pending": 1,
      "void": 0,
      "won": 1,
      "win_rate": 0.5,
@@ -761,7 +782,7 @@
      "roi_yield": -0.235,
      "max_drawdown_units": 1.0,
      "longest_losing_streak": 1,
-     "mean_net_ev_at_decision": 0.0278
+     "mean_net_ev_at_decision": 0.026
     },
     "prediction": {
      "n": 2,
@@ -777,9 +798,9 @@
   "grade": {
    "A": {
     "financial": {
-     "selections": 2,
+     "selections": 3,
      "settled": 2,
-     "pending": 0,
+     "pending": 1,
      "void": 0,
      "won": 1,
      "win_rate": 0.5,
@@ -790,7 +811,7 @@
      "roi_yield": -0.235,
      "max_drawdown_units": 1.0,
      "longest_losing_streak": 1,
-     "mean_net_ev_at_decision": 0.0278
+     "mean_net_ev_at_decision": 0.026
     },
     "prediction": {
      "n": 2,
@@ -860,9 +881,9 @@
    },
    "60-69.9%": {
     "financial": {
-     "selections": 3,
+     "selections": 4,
      "settled": 2,
-     "pending": 1,
+     "pending": 2,
      "void": 0,
      "won": 1,
      "win_rate": 0.5,
@@ -873,7 +894,7 @@
      "roi_yield": -0.235,
      "max_drawdown_units": 1.0,
      "longest_losing_streak": 1,
-     "mean_net_ev_at_decision": 0.0261
+     "mean_net_ev_at_decision": 0.0251
     },
     "prediction": {
      "n": 2,
@@ -943,9 +964,9 @@
    },
    "1.50-1.99": {
     "financial": {
-     "selections": 8,
+     "selections": 9,
      "settled": 7,
-     "pending": 1,
+     "pending": 2,
      "void": 0,
      "won": 4,
      "win_rate": 0.5714,
@@ -956,7 +977,7 @@
      "roi_yield": -0.1357,
      "max_drawdown_units": 1.48,
      "longest_losing_streak": 1,
-     "mean_net_ev_at_decision": 0.0516
+     "mean_net_ev_at_decision": 0.0483
     },
     "prediction": {
      "n": 7,
