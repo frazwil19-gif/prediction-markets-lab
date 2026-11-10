@@ -1,25 +1,25 @@
 {
- "generated_at": "2026-11-10T04:15:30.760278+00:00",
+ "generated_at": "2026-11-10T07:16:37.484073+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-4",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 124,
+  "runs": 125,
   "totals_over_runs": {
-   "events_scanned": 4690,
-   "valid_predictions": 16833,
+   "events_scanned": 4698,
+   "valid_predictions": 16841,
    "high_p_candidates": 4724,
-   "priced_candidates": 8676,
+   "priced_candidates": 8684,
    "PAPER_BET": 22,
    "MULTI_RESEARCH_ELIGIBLE": 214,
    "WATCH": 70,
-   "REJECT": 16908,
+   "REJECT": 16916,
    "paper_bets_added": 12,
    "money_card_qualified": 15
   },
   "note": "per-run counts summed; a prediction re-evaluated in several runs is counted in each run",
-  "days_evaluated": 42,
+  "days_evaluated": 43,
   "no_bet_days": [
    "2026-09-30",
    "2026-10-01",
@@ -59,7 +59,8 @@
    "2026-11-06",
    "2026-11-07",
    "2026-11-08",
-   "2026-11-09"
+   "2026-11-09",
+   "2026-11-10"
   ],
   "bet_days": {
    "2026-09-29": 10,
@@ -68,17 +69,17 @@
   }
  },
  "latest_run": {
-  "run_at": "2026-11-09T17:17:31.057596+00:00",
-  "trigger": "schedule",
+  "run_at": "2026-11-10T07:16:37.484073+00:00",
+  "trigger": "workflow_dispatch",
   "rule_version": "bsv2-4",
-  "events_scanned": "20",
-  "valid_predictions": "20",
-  "high_p_candidates": "5",
-  "priced_candidates": "14",
+  "events_scanned": "8",
+  "valid_predictions": "8",
+  "high_p_candidates": "0",
+  "priced_candidates": "8",
   "PAPER_BET": "0",
   "MULTI_RESEARCH_ELIGIBLE": "0",
   "WATCH": "0",
-  "REJECT": "20",
+  "REJECT": "8",
   "paper_bets_added": "0",
   "snapshots_added": "0",
   "money_card_qualified": "0",
@@ -86,33 +87,26 @@
  },
  "latest_decisions": {
   "decisions": {
-   "REJECT": 20
+   "REJECT": 8
   },
   "reason_counts": {
-   "NET_EV_NOT_POSITIVE": 14,
-   "COMMISSION_UNKNOWN": 6,
-   "PRICE_STALE": 1
+   "PRICE_STALE": 8,
+   "NET_EV_NOT_POSITIVE": 8
   },
   "by_sport": {
-   "americanfootball": {
+   "basketball": {
     "REJECT": 1
    },
-   "basketball": {
-    "REJECT": 9
-   },
    "icehockey": {
-    "REJECT": 10
+    "REJECT": 7
    }
   },
   "by_engine": {
    "nba_moneyline.market": {
-    "REJECT": 9
-   },
-   "nfl_moneyline.market": {
     "REJECT": 1
    },
    "nhl_moneyline.market": {
-    "REJECT": 10
+    "REJECT": 7
    }
   }
  },

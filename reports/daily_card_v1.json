@@ -1,7 +1,7 @@
 {
  "card_version": "card-v1.2",
- "generated_at": "2026-11-10T04:15:30.936168+00:00",
- "stage_a_generated_at": "2026-11-10T04:15:30.210478+00:00",
+ "generated_at": "2026-11-10T07:16:38.022517+00:00",
+ "stage_a_generated_at": "2026-11-10T07:16:36.821429+00:00",
  "real_money_enabled": false,
  "mode": "PAPER \u2014 unattended prospective validation (real-money betting paused; nothing to place)",
  "summary": {
@@ -14,6 +14,7 @@
   "research_predictions": 0
  },
  "rejection_reasons": {
+  "PRICE_STALE": 8,
   "NET_EV_NOT_POSITIVE": 8
  },
  "best_predictions": [
@@ -37,13 +38,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
    "decision_odds": "1.67",
    "decision_source": "williamhill",
    "decision_net_ev": "-0.0545831120552312",
    "price_observed_at": "2026-11-09T16:16:37.146787+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-09T17:17:31.057596+00:00",
+   "decision_evaluated_at": "2026-11-10T07:16:37.484073+00:00",
    "min_bookmaker_odds": 1.81
   },
   {
@@ -66,13 +67,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
    "decision_odds": "1.73",
    "decision_source": "williamhill",
    "decision_net_ev": "-0.04986818980667845",
    "price_observed_at": "2026-11-09T16:16:37.146787+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-09T17:17:31.057596+00:00",
+   "decision_evaluated_at": "2026-11-10T07:16:37.484073+00:00",
    "min_bookmaker_odds": 1.86
   },
   {
@@ -95,13 +96,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
    "decision_odds": "1.73",
    "decision_source": "williamhill",
    "decision_net_ev": "-0.050399201596806276",
    "price_observed_at": "2026-11-09T16:16:37.146787+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-09T17:17:31.057596+00:00",
+   "decision_evaluated_at": "2026-11-10T07:16:37.484073+00:00",
    "min_bookmaker_odds": 1.86
   },
   {
@@ -124,13 +125,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
    "decision_odds": "1.8",
    "decision_source": "williamhill",
    "decision_net_ev": "-0.04978540772532186",
    "price_observed_at": "2026-11-09T16:16:37.146787+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-09T17:17:31.057596+00:00",
+   "decision_evaluated_at": "2026-11-10T07:16:37.484073+00:00",
    "min_bookmaker_odds": 1.94
   },
   {
@@ -153,13 +154,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
    "decision_odds": "1.8",
    "decision_source": "williamhill",
    "decision_net_ev": "-0.053012048192771055",
    "price_observed_at": "2026-11-09T16:16:37.146787+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-09T17:17:31.057596+00:00",
+   "decision_evaluated_at": "2026-11-10T07:16:37.484073+00:00",
    "min_bookmaker_odds": 1.94
   },
   {
@@ -182,13 +183,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
    "decision_odds": "1.8",
    "decision_source": "williamhill",
    "decision_net_ev": "-0.05594405594405594",
    "price_observed_at": "2026-11-09T16:16:37.146787+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-09T17:17:31.057596+00:00",
+   "decision_evaluated_at": "2026-11-10T07:16:37.484073+00:00",
    "min_bookmaker_odds": 1.95
   },
   {
@@ -211,13 +212,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
    "decision_odds": "1.91",
    "decision_source": "williamhill",
    "decision_net_ev": "-0.02915997859818098",
    "price_observed_at": "2026-11-09T16:16:37.146787+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-09T17:17:31.057596+00:00",
+   "decision_evaluated_at": "2026-11-10T07:16:37.484073+00:00",
    "min_bookmaker_odds": 2.01
   },
   {
@@ -240,13 +241,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
    "decision_odds": "1.91",
    "decision_source": "williamhill",
    "decision_net_ev": "-0.03655713094245189",
    "price_observed_at": "2026-11-09T16:16:35.730213+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-09T17:17:31.057596+00:00",
+   "decision_evaluated_at": "2026-11-10T07:16:37.484073+00:00",
    "min_bookmaker_odds": 2.03
   }
  ],

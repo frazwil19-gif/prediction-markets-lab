@@ -1,7 +1,7 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-11-10T04:15:30.210478+00:00",
+ "generated_at": "2026-11-10T07:16:36.821429+00:00",
  "date": "2026-11-10",
  "summary": {
   "upcoming_events": 8,
@@ -29,35 +29,35 @@
    ">=95": 0
   },
   "settled_yesterday": 48,
-  "system": "HEALTHY",
+  "system": "DEGRADED",
   "api_credits_last_observed": 311
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-11-10T04:15:30.210478+00:00",
-  "overall": "HEALTHY",
+  "generated_at": "2026-11-10T07:16:36.821429+00:00",
+  "overall": "DEGRADED",
   "outage_flag": false,
   "components": {
    "daily_scan": {
-    "last": "2026-11-09T17:17:29.920340+00:00",
+    "last": "2026-11-10T07:16:36.131440+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 11.0
+    "age_hours": 0.0
    },
    "settlement": {
     "last": "2026-11-09T00:43:45.257840+00:00",
     "status": "success",
-    "flag": "OK",
-    "age_hours": 27.5
+    "flag": "STALE",
+    "age_hours": 30.5
    },
    "tennis_board": {
     "last": "2026-11-09T16:16:34.298347+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 12.0
+    "age_hours": 15.0
    },
    "ci_tests": {
-    "last": "2026-11-10T04:15:13.227657+00:00",
+    "last": "2026-11-10T07:16:36.739445+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -69,8 +69,10 @@
    "source": "nba_credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
-  "warnings": [],
-  "stale_data_warning": false
+  "warnings": [
+   "settlement: STALE (last 2026-11-09T00:43:45.257840+00:00)"
+  ],
+  "stale_data_warning": true
  },
  "prospective_evidence": {
   "football_1x2.market_consensus": {
