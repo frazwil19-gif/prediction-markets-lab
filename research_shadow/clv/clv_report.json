@@ -1,6 +1,6 @@
 {
  "version": "clv-1",
- "generated_at": "2026-11-10T16:09:48.242288+00:00",
+ "generated_at": "2026-11-10T16:24:44.267903+00:00",
  "credits": {
   "month": "2026-11",
   "spent_this_month": 0,
@@ -9,7 +9,7 @@
  },
  "missed": 19,
  "paper_bet_clv": {
-  "n_targets": 2,
+  "n_targets": 3,
   "n_captured": 0,
   "fair_clv": {
    "n": 0
@@ -26,7 +26,7 @@
   "by": {
    "sport": {
     "tennis": {
-     "n": 2,
+     "n": 3,
      "fair_clv": {
       "n": 0
      },
@@ -46,7 +46,7 @@
      }
     },
     "wta_match_winner.betfair_market": {
-     "n": 1,
+     "n": 2,
      "fair_clv": {
       "n": 0
      },
@@ -57,7 +57,7 @@
    },
    "market": {
     "tennis:match_winner": {
-     "n": 2,
+     "n": 3,
      "fair_clv": {
       "n": 0
      },
@@ -77,7 +77,7 @@
      }
     },
     "boylesports": {
-     "n": 1,
+     "n": 2,
      "fair_clv": {
       "n": 0
      },
@@ -88,7 +88,7 @@
    },
    "ev_band": {
     "2-4": {
-     "n": 2,
+     "n": 3,
      "fair_clv": {
       "n": 0
      },
@@ -109,20 +109,20 @@
   "looks_reached": [],
   "bands": {
    "<0": {
-    "n": 164,
+    "n": 165,
     "est_ev": {
-     "n": 164,
-     "mean": -0.01781,
-     "median": -0.0183,
+     "n": 165,
+     "mean": -0.01788,
+     "median": -0.01831,
      "positive_rate": 0.0,
      "ci95": [
       -0.01914,
-      -0.01648
+      -0.01656
      ]
     },
     "tier_a_eligible": 0,
     "tier_a_captured": 0,
-    "top_book_share": 0.384,
+    "top_book_share": 0.382,
     "price_age_median_min": 0.4,
     "fair_clv": {
      "n": 0
@@ -134,13 +134,13 @@
      "n": 0
     },
     "tier_b_proxy_fair_clv": {
-     "n": 82,
-     "mean": -0.01808,
-     "median": -0.01598,
-     "positive_rate": 0.073,
+     "n": 85,
+     "mean": -0.01831,
+     "median": -0.01695,
+     "positive_rate": 0.071,
      "ci95": [
-      -0.02179,
-      -0.01454
+      -0.02177,
+      -0.01485
      ]
     },
     "outcomes": {
