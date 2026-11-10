@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-11-10T07:16:37.484073+00:00",
+ "generated_at": "2026-11-10T15:09:21.184805+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-4",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 125,
+  "runs": 126,
   "totals_over_runs": {
-   "events_scanned": 4698,
-   "valid_predictions": 16841,
-   "high_p_candidates": 4724,
-   "priced_candidates": 8684,
+   "events_scanned": 4715,
+   "valid_predictions": 16859,
+   "high_p_candidates": 4726,
+   "priced_candidates": 8700,
    "PAPER_BET": 22,
    "MULTI_RESEARCH_ELIGIBLE": 214,
    "WATCH": 70,
-   "REJECT": 16916,
+   "REJECT": 16934,
    "paper_bets_added": 12,
    "money_card_qualified": 15
   },
@@ -69,44 +69,52 @@
   }
  },
  "latest_run": {
-  "run_at": "2026-11-10T07:16:37.484073+00:00",
-  "trigger": "workflow_dispatch",
+  "run_at": "2026-11-10T15:09:21.184805+00:00",
+  "trigger": "schedule",
   "rule_version": "bsv2-4",
-  "events_scanned": "8",
-  "valid_predictions": "8",
-  "high_p_candidates": "0",
-  "priced_candidates": "8",
+  "events_scanned": "17",
+  "valid_predictions": "18",
+  "high_p_candidates": "2",
+  "priced_candidates": "16",
   "PAPER_BET": "0",
   "MULTI_RESEARCH_ELIGIBLE": "0",
   "WATCH": "0",
-  "REJECT": "8",
+  "REJECT": "18",
   "paper_bets_added": "0",
-  "snapshots_added": "0",
+  "snapshots_added": "34",
   "money_card_qualified": "0",
   "football_fixtures_on_card": "0"
  },
  "latest_decisions": {
   "decisions": {
-   "REJECT": 8
+   "REJECT": 18
   },
   "reason_counts": {
+   "NET_EV_NOT_POSITIVE": 16,
    "PRICE_STALE": 8,
-   "NET_EV_NOT_POSITIVE": 8
+   "COMMISSION_UNKNOWN": 2,
+   "EXCHANGE_SPREAD_TOO_WIDE": 1
   },
   "by_sport": {
    "basketball": {
-    "REJECT": 1
+    "REJECT": 6
    },
    "icehockey": {
-    "REJECT": 7
+    "REJECT": 8
+   },
+   "tennis": {
+    "REJECT": 4
    }
   },
   "by_engine": {
    "nba_moneyline.market": {
-    "REJECT": 1
+    "REJECT": 6
    },
    "nhl_moneyline.market": {
-    "REJECT": 7
+    "REJECT": 8
+   },
+   "wta_match_winner.betfair_market": {
+    "REJECT": 4
    }
   }
  },
