@@ -1,7 +1,7 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-11-11T14:40:07.846175+00:00",
+ "generated_at": "2026-11-11T16:16:30.222787+00:00",
  "date": "2026-11-11",
  "summary": {
   "upcoming_events": 21,
@@ -31,11 +31,11 @@
   },
   "settled_yesterday": 251,
   "system": "DEGRADED",
-  "api_credits_last_observed": 294
+  "api_credits_last_observed": 292
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-11-11T14:40:07.846175+00:00",
+  "generated_at": "2026-11-11T16:16:30.222787+00:00",
   "overall": "DEGRADED",
   "outage_flag": true,
   "components": {
@@ -43,31 +43,31 @@
     "last": "2026-11-11T07:16:34.683256+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 7.4
+    "age_hours": 9.0
    },
    "settlement": {
     "last": "2026-11-09T00:43:45.257840+00:00",
     "status": "success",
     "flag": "OUTAGE",
-    "age_hours": 61.9
+    "age_hours": 63.5
    },
    "tennis_board": {
-    "last": "2026-11-11T14:40:03.890328+00:00",
+    "last": "2026-11-11T16:16:28.388372+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    },
    "ci_tests": {
-    "last": "2026-11-11T14:40:05.072289+00:00",
+    "last": "2026-11-11T16:16:29.125901+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    }
   },
   "api_credits": {
-   "remaining": 294,
-   "observed_at": "2026-11-11T14:40:06.224138+00:00",
-   "source": "nba_credit_log.csv",
+   "remaining": 292,
+   "observed_at": "2026-11-11T16:16:28.561411+00:00",
+   "source": "credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
   "warnings": [
@@ -337,7 +337,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-11-12T20:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "d6a7cabc1d9cf631",
@@ -925,7 +925,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-11-12T21:30:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "62b150f6a8384302",

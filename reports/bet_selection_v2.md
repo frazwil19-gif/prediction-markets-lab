@@ -4,9 +4,9 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-11T14:40Z · events scanned 21 · valid predictions 21 · high-P (≥70%) 3 · priced 16 · PAPER_BET 0 · MULTI-research 1 · WATCH 0 · REJECT 20 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-11T16:16Z · events scanned 21 · valid predictions 21 · high-P (≥70%) 3 · priced 16 · PAPER_BET 0 · MULTI-research 1 · WATCH 0 · REJECT 20 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): NET_EV_NOT_POSITIVE 16 · COMMISSION_UNKNOWN 5 · EXCHANGE_SPREAD_TOO_WIDE 1
+Reason codes (latest run): NET_EV_NOT_POSITIVE 16 · COMMISSION_UNKNOWN 5
 
 ## Candidates (latest run, best price per prediction)
 
@@ -14,7 +14,7 @@ Reason codes (latest run): NET_EV_NOT_POSITIVE 16 · COMMISSION_UNKNOWN 5 · EXC
 |---|---|---|---|---|---|---|---|---|
 | San Antonio Spurs @ Chicago Bulls | 2026-11-12T01:10 | San Antonio Spurs | 88.3% | 1.13 | 1.10 (matchbook) | — | — | REJECT |
 | Los Angeles Lakers @ Milwaukee Bucks | 2026-11-12T01:10 | Los Angeles Lakers | 84.6% | 1.18 | 1.14 (unibet_uk) | 87.7% | -3.5% | MULTI_RESEARCH_ELIGIBLE |
-| Marta Kostyuk v Coco Gauff | 2026-11-12T20:00 | Coco Gauff | 72.3% | 1.38 | 1.37 (betfair_ex_uk) | 74.0% | -2.3% | REJECT |
+| Marta Kostyuk v Coco Gauff | 2026-11-12T20:00 | Coco Gauff | 72.0% | 1.39 | 1.38 (betfair_ex_uk) | 73.5% | -2.0% | REJECT |
 | Carolina Hurricanes @ Seattle Kraken | 2026-11-12T17:00 | Carolina Hurricanes | 68.8% | 1.45 | 1.36 (williamhill) | 73.5% | -6.4% | REJECT |
 | Boston Celtics @ Toronto Raptors | 2026-11-12T00:10 | Boston Celtics | 68.2% | 1.47 | 1.43 (matchbook) | — | — | REJECT |
 | Golden State Warriors @ Houston Rockets | 2026-11-12T02:40 | Houston Rockets | 67.9% | 1.47 | 1.42 (smarkets) | 70.8% | -4.1% | REJECT |
@@ -28,11 +28,11 @@ Reason codes (latest run): NET_EV_NOT_POSITIVE 16 · COMMISSION_UNKNOWN 5 · EXC
 | New York Rangers @ Calgary Flames | 2026-11-12T00:40 | New York Rangers | 56.8% | 1.76 | 1.72 (smarkets) | 58.6% | -3.2% | REJECT |
 | Nashville Predators @ Anaheim Ducks | 2026-11-12T03:10 | Anaheim Ducks | 56.2% | 1.78 | 1.76 (smarkets) | 57.3% | -2.0% | REJECT |
 | Pittsburgh Penguins @ San Jose Sharks | 2026-11-12T03:10 | Pittsburgh Penguins | 55.1% | 1.82 | 1.78 (matchbook) | — | — | REJECT |
-| Jessica Pegula v Linda Noskova | 2026-11-12T21:30 | Linda Noskova | 54.3% | 1.84 | 1.75 (betfair_ex_uk) | 58.4% | -6.9% | REJECT |
 | Tampa Bay Lightning @ Buffalo Sabres | 2026-11-12T00:10 | Tampa Bay Lightning | 54.1% | 1.85 | 1.81 (matchbook) | — | — | REJECT |
+| Jessica Pegula v Linda Noskova | 2026-11-12T21:30 | Linda Noskova | 53.2% | 1.88 | 1.87 (grosvenor) | 53.5% | -0.5% | REJECT |
 | Utah Mammoth @ Vegas Golden Knights | 2026-11-12T02:40 | Vegas Golden Knights | 53.0% | 1.89 | 1.85 (matchbook) | — | — | REJECT |
 | Oklahoma City Thunder @ Portland Trail Blazers | 2026-11-12T03:10 | Oklahoma City Thunder | 52.2% | 1.92 | 1.88 (smarkets) | 53.7% | -2.8% | REJECT |
-| Aryna Sabalenka v Mirra Andreeva | 2026-11-11T21:10 | Aryna Sabalenka | 51.1% | 1.96 | 1.93 (smarkets) | 52.3% | -2.3% | REJECT |
+| Aryna Sabalenka v Mirra Andreeva | 2026-11-11T21:10 | Aryna Sabalenka | 50.2% | 1.99 | 1.95 (betway) | 51.3% | -2.0% | REJECT |
 
 ## Paper results (all time)
 
