@@ -4,16 +4,35 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-11T07:16Z · events scanned 2 · valid predictions 2 · high-P (≥70%) 0 · priced 2 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 2 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-11T14:40Z · events scanned 21 · valid predictions 21 · high-P (≥70%) 3 · priced 16 · PAPER_BET 0 · MULTI-research 1 · WATCH 0 · REJECT 20 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): PRICE_STALE 2 · NET_EV_NOT_POSITIVE 2
+Reason codes (latest run): NET_EV_NOT_POSITIVE 16 · COMMISSION_UNKNOWN 5 · EXCHANGE_SPREAD_TOO_WIDE 1
 
 ## Candidates (latest run, best price per prediction)
 
 | Event | Start | Sel | P | Fair | Odds (source) | Break-even | Net EV | Decision |
 |---|---|---|---|---|---|---|---|---|
-| Elina Svitolina v Karolina Muchova | 2026-11-11T20:00 | Karolina Muchova | 58.8% | 1.70 | 1.67 (betfair_ex_uk) | 61.1% | -3.7% | REJECT |
-| Aryna Sabalenka v Mirra Andreeva | 2026-11-11T21:10 | Aryna Sabalenka | 53.7% | 1.86 | 1.84 (betfair_ex_uk) | 55.6% | -3.4% | REJECT |
+| San Antonio Spurs @ Chicago Bulls | 2026-11-12T01:10 | San Antonio Spurs | 88.3% | 1.13 | 1.10 (matchbook) | — | — | REJECT |
+| Los Angeles Lakers @ Milwaukee Bucks | 2026-11-12T01:10 | Los Angeles Lakers | 84.6% | 1.18 | 1.14 (unibet_uk) | 87.7% | -3.5% | MULTI_RESEARCH_ELIGIBLE |
+| Marta Kostyuk v Coco Gauff | 2026-11-12T20:00 | Coco Gauff | 72.3% | 1.38 | 1.37 (betfair_ex_uk) | 74.0% | -2.3% | REJECT |
+| Carolina Hurricanes @ Seattle Kraken | 2026-11-12T17:00 | Carolina Hurricanes | 68.8% | 1.45 | 1.36 (williamhill) | 73.5% | -6.4% | REJECT |
+| Boston Celtics @ Toronto Raptors | 2026-11-12T00:10 | Boston Celtics | 68.2% | 1.47 | 1.43 (matchbook) | — | — | REJECT |
+| Golden State Warriors @ Houston Rockets | 2026-11-12T02:40 | Houston Rockets | 67.9% | 1.47 | 1.42 (smarkets) | 70.8% | -4.1% | REJECT |
+| Philadelphia Flyers @ Edmonton Oilers | 2026-11-12T02:10 | Edmonton Oilers | 64.9% | 1.54 | 1.50 (williamhill) | 66.7% | -2.7% | REJECT |
+| Brooklyn Nets @ New Orleans Pelicans | 2026-11-12T01:10 | New Orleans Pelicans | 62.5% | 1.60 | 1.56 (smarkets) | 64.6% | -3.2% | REJECT |
+| Cleveland Cavaliers @ New York Knicks | 2026-11-12T00:10 | New York Knicks | 62.0% | 1.61 | 1.58 (livescorebet) | 63.3% | -2.0% | REJECT |
+| Denver Nuggets @ Memphis Grizzlies | 2026-11-12T01:10 | Denver Nuggets | 60.7% | 1.65 | 1.64 (smarkets) | 61.5% | -1.2% | REJECT |
+| Orlando Magic @ Utah Jazz | 2026-11-12T02:10 | Orlando Magic | 59.9% | 1.67 | 1.64 (smarkets) | 61.5% | -2.6% | REJECT |
+| Elina Svitolina v Karolina Muchova | 2026-11-11T20:00 | Karolina Muchova | 57.5% | 1.74 | 1.73 (boylesports) | 57.8% | -0.6% | REJECT |
+| Washington Wizards @ Indiana Pacers | 2026-11-12T00:10 | Indiana Pacers | 57.0% | 1.76 | 1.72 (smarkets) | 58.6% | -2.9% | REJECT |
+| New York Rangers @ Calgary Flames | 2026-11-12T00:40 | New York Rangers | 56.8% | 1.76 | 1.72 (smarkets) | 58.6% | -3.2% | REJECT |
+| Nashville Predators @ Anaheim Ducks | 2026-11-12T03:10 | Anaheim Ducks | 56.2% | 1.78 | 1.76 (smarkets) | 57.3% | -2.0% | REJECT |
+| Pittsburgh Penguins @ San Jose Sharks | 2026-11-12T03:10 | Pittsburgh Penguins | 55.1% | 1.82 | 1.78 (matchbook) | — | — | REJECT |
+| Jessica Pegula v Linda Noskova | 2026-11-12T21:30 | Linda Noskova | 54.3% | 1.84 | 1.75 (betfair_ex_uk) | 58.4% | -6.9% | REJECT |
+| Tampa Bay Lightning @ Buffalo Sabres | 2026-11-12T00:10 | Tampa Bay Lightning | 54.1% | 1.85 | 1.81 (matchbook) | — | — | REJECT |
+| Utah Mammoth @ Vegas Golden Knights | 2026-11-12T02:40 | Vegas Golden Knights | 53.0% | 1.89 | 1.85 (matchbook) | — | — | REJECT |
+| Oklahoma City Thunder @ Portland Trail Blazers | 2026-11-12T03:10 | Oklahoma City Thunder | 52.2% | 1.92 | 1.88 (smarkets) | 53.7% | -2.8% | REJECT |
+| Aryna Sabalenka v Mirra Andreeva | 2026-11-11T21:10 | Aryna Sabalenka | 51.1% | 1.96 | 1.93 (smarkets) | 52.3% | -2.3% | REJECT |
 
 ## Paper results (all time)
 
