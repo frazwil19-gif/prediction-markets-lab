@@ -1,14 +1,18 @@
-# Daily Paper Bet Card — 2026-11-12T15:31Z
+# Daily Paper Bet Card — 2026-11-12T21:55Z
 
 **PAPER ONLY. Not a real-money card. No bet here may be placed with real money without a MONEY_ELIGIBILITY_REVIEW and Fraser's explicit approval.**
 
 Rule `pcard-1` on top of bsv2-4. bsv2-4 decides; grades rank confidence in value; STRONG PREDICTION != VALID BET.
-Candidates evaluated at 2026-11-12T15:31:30.216661+00:00.
+Candidates evaluated at 2026-11-12T21:55:14.210740+00:00.
 
-Grades: A+ 0, A 0, B 0, C 0, REJECT 9
+Grades: A+ 0, A 0, B 0, C 1, REJECT 5
 
 **NO PAPER BETS TODAY.** No candidate passed every bsv2-4 gate. That is a valid outcome.
 
-Rejected candidates: 9 (see reports/bet_selection_v2.md for reasons).
+## Grade C (WATCH / multi research — information only, no stake)
+
+- tennis · Mirra Andreeva v Karolina Muchova · Mirra Andreeva · P 0.716 · odds 1.40 · NET_EV_BELOW_PAPER_GATE
+
+Rejected candidates: 5 (see reports/bet_selection_v2.md for reasons).
 
 Stakes are hypothetical, at the nominal bankroll, singles only, ≤5% per bet and ≤10% per day; no martingale/chasing.

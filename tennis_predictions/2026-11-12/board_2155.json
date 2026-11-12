@@ -1,0 +1,90 @@
+{
+ "board_date": "2026-11-12",
+ "layer": "PREDICTION (paper) -- not a bet recommendation",
+ "coverage": {
+  "active_keys": [
+   "tennis_wta_finals"
+  ],
+  "skipped_for_credit_guard": [],
+  "keys_over_cap": [],
+  "skipped_no_upcoming_event": [],
+  "events_returned": 4,
+  "scan_timestamp": "2026-11-12T21:55:11.226165+00:00",
+  "credits_remaining_after": 286,
+  "universe_note": "Odds-API-covered universe only (Slams, 1000s, 500s) -- not the full ATP/WTA calendar"
+ },
+ "counts": {
+  "events_scanned": 4,
+  "valid_predictions": 2,
+  "research_only_predictions": 0,
+  "ge_70": 1,
+  "ge_75": 0,
+  "ge_80": 0,
+  "ge_85": 0,
+  "ge_90": 0,
+  "ge_95": 0
+ },
+ "predictions": [
+  {
+   "prediction_id": "b64937d873ebc229",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "WTA",
+   "sport_key": "tennis_wta_finals",
+   "tournament": "WTA Finals",
+   "event_id": "6b92a67eab021047017da9d42e1e1fae",
+   "player_a": "Mirra Andreeva",
+   "player_b": "Karolina Muchova",
+   "commence_time": "2026-11-13T20:00:00+00:00",
+   "prediction_timestamp": "2026-11-12T21:55:11.226165+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=1.39/3.5;ex_lay=1.4/3.55",
+   "p_a": 0.716463,
+   "p_b": 0.283537,
+   "predicted_winner": "Mirra Andreeva",
+   "predicted_probability": 0.716463,
+   "probability_band": "70-74.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 513,
+   "historical_band_actual_rate": 0.7271,
+   "historical_band_wilson95": [
+    0.687,
+    0.7638
+   ],
+   "engine_holdout_n": 4339
+  },
+  {
+   "prediction_id": "8391ad2a4a5b9b4f",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "WTA",
+   "sport_key": "tennis_wta_finals",
+   "tournament": "WTA Finals",
+   "event_id": "29a6e4e35a3b385e9666473ad68f2084",
+   "player_a": "Aryna Sabalenka",
+   "player_b": "Elina Svitolina",
+   "commence_time": "2026-11-13T21:30:00+00:00",
+   "prediction_timestamp": "2026-11-12T21:55:11.226165+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=1.57/2.68;ex_lay=1.59/2.74",
+   "p_a": 0.631702,
+   "p_b": 0.368298,
+   "predicted_winner": "Aryna Sabalenka",
+   "predicted_probability": 0.631702,
+   "probability_band": "60-64.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 704,
+   "historical_band_actual_rate": 0.5923,
+   "historical_band_wilson95": [
+    0.5556,
+    0.628
+   ],
+   "engine_holdout_n": 4339
+  }
+ ],
+ "research_only": []
+}

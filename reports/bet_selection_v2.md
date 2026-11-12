@@ -4,9 +4,9 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-12T15:31Z · events scanned 9 · valid predictions 9 · high-P (≥70%) 3 · priced 5 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 9 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-12T21:55Z · events scanned 6 · valid predictions 6 · high-P (≥70%) 3 · priced 2 · PAPER_BET 0 · MULTI-research 0 · WATCH 1 · REJECT 5 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): NET_EV_NOT_POSITIVE 5 · COMMISSION_UNKNOWN 4 · PRICE_STALE 1 · EXCHANGE_SPREAD_TOO_WIDE 1
+Reason codes (latest run): PRICE_STALE 4 · COMMISSION_UNKNOWN 4 · NET_EV_BELOW_PAPER_GATE 1 · NET_EV_NOT_POSITIVE 1
 
 ## Candidates (latest run, best price per prediction)
 
@@ -14,13 +14,10 @@ Reason codes (latest run): NET_EV_NOT_POSITIVE 5 · COMMISSION_UNKNOWN 4 · PRIC
 |---|---|---|---|---|---|---|---|---|
 | Detroit Pistons @ Washington Wizards | 2026-11-13T00:10 | Detroit Pistons | 78.1% | 1.28 | 1.25 (matchbook) | — | — | REJECT |
 | Toronto Raptors @ Philadelphia 76ers | 2026-11-13T00:10 | Philadelphia 76ers | 74.1% | 1.35 | 1.33 (matchbook) | — | — | REJECT |
-| Marta Kostyuk v Coco Gauff | 2026-11-12T20:00 | Coco Gauff | 72.9% | 1.37 | 1.37 (betfair_ex_uk) | 74.0% | -1.5% | REJECT |
-| Mirra Andreeva v Karolina Muchova | 2026-11-13T20:00 | Mirra Andreeva | 69.5% | 1.44 | 1.41 (betfair_ex_uk) | 72.0% | -3.5% | REJECT |
-| Carolina Hurricanes @ Seattle Kraken | 2026-11-12T17:00 | Carolina Hurricanes | 68.8% | 1.45 | 1.36 (williamhill) | 73.5% | -6.4% | REJECT |
+| Mirra Andreeva v Karolina Muchova | 2026-11-13T20:00 | Mirra Andreeva | 71.6% | 1.40 | 1.40 (betfair_sb_uk) | 71.4% | 0.3% | WATCH |
 | Charlotte Hornets @ Phoenix Suns | 2026-11-13T02:10 | Phoenix Suns | 67.6% | 1.48 | 1.50 (matchbook) | — | — | REJECT |
 | Dallas Mavericks @ Minnesota Timberwolves | 2026-11-13T01:10 | Minnesota Timberwolves | 65.9% | 1.52 | 1.48 (matchbook) | — | — | REJECT |
-| Aryna Sabalenka v Elina Svitolina | 2026-11-13T21:30 | Aryna Sabalenka | 62.4% | 1.60 | 1.59 (betfair_ex_uk) | 64.1% | -2.6% | REJECT |
-| Jessica Pegula v Linda Noskova | 2026-11-12T21:30 | Linda Noskova | 53.3% | 1.88 | 1.83 (paddypower) | 54.6% | -2.5% | REJECT |
+| Aryna Sabalenka v Elina Svitolina | 2026-11-13T21:30 | Aryna Sabalenka | 63.2% | 1.58 | 1.57 (betfair_ex_uk) | 64.9% | -2.6% | REJECT |
 
 ## Paper results (all time)
 
