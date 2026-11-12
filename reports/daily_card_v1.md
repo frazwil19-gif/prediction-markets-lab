@@ -1,4 +1,4 @@
-# Daily Prediction Board & Bet Card — 2026-11-12T03:13Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-12T07:16Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
@@ -28,11 +28,11 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 | Event | Selection | P | Fair odds | Best clean price | Why no bet |
 |---|---|---|---|---|---|
-| Marta Kostyuk v Coco Gauff (2026-11-12T20:00) | match_winner: Coco Gauff | 72.0% | 1.39 | — | NET_EV_NOT_POSITIVE |
+| Marta Kostyuk v Coco Gauff (2026-11-12T20:00) | match_winner: Coco Gauff | 72.0% | 1.39 | — | PRICE_STALE, NET_EV_NOT_POSITIVE |
 
 ### Why predictions in the window were not bets
 
-NET_EV_NOT_POSITIVE 3
+PRICE_STALE 3 · NET_EV_NOT_POSITIVE 3
 
 ## 4. Research predictions — not money eligible
 
