@@ -1,12 +1,12 @@
-# STAGE A PREDICTION BOARD — 2026-11-13T01:46Z (stage-a-2)
+# STAGE A PREDICTION BOARD — 2026-11-13T02:45Z (stage-a-2)
 
 _Probability first. Ranked by estimated probability only. **A strong prediction is not a bet** — price status is descriptive; Stage B (bet-selection) alone decides bets._
 
-Predictions: 3 · strong (P ≥ 70%): 1 on 1 events · strong by price status: PRICE_VALID 1
+Predictions: 2 · strong (P ≥ 70%): 1 on 1 events · strong by price status: PRICE_QUALITY_FAIL 1
 
 | # | Sport | Event | Start (UTC) | Market | Selection | P | P first snapshot | P current scan | σ | Engine | Calibration status | Stage A status | Why not assessable | Best clean price | Net EV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | tennis | Mirra Andreeva v Karolina Muchova | 2026-11-13T20:00 | match_winner | Mirra Andreeva | 71.6% | 69.5% | 71.6% | 1.2% | wta_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_VALID |  | 1.40 (skybet) | 0.3% |
+| 1 | tennis | Mirra Andreeva v Karolina Muchova | 2026-11-13T20:00 | match_winner | Mirra Andreeva | 71.6% | 69.5% | 71.6% | 1.2% | wta_match_winner.betfair_market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
 
 P = P current scan when one exists, else P first snapshot (football 1X2: normalised H/D/A triplet; raw kept in the ledger). Ranking uses P only.
 ⟳ = start time rescheduled since first observation (est-1: the current provider start is used).

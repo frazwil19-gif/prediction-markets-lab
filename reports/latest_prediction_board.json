@@ -1,13 +1,12 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-11-13T01:46:44.773934+00:00",
+ "generated_at": "2026-11-13T02:45:27.517584+00:00",
  "date": "2026-11-13",
  "summary": {
-  "upcoming_events": 3,
-  "valid_predictions": 3,
+  "upcoming_events": 2,
+  "valid_predictions": 2,
   "sports_active": [
-   "basketball",
    "tennis"
   ],
   "engines_active": [
@@ -30,11 +29,11 @@
   },
   "settled_yesterday": 0,
   "system": "HEALTHY",
-  "api_credits_last_observed": 286
+  "api_credits_last_observed": 284
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-11-13T01:46:44.773934+00:00",
+  "generated_at": "2026-11-13T02:45:27.517584+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -42,31 +41,31 @@
     "last": "2026-11-12T07:16:23.257301+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 18.5
+    "age_hours": 19.5
    },
    "settlement": {
-    "last": "2026-11-12T02:13:41.708714+00:00",
+    "last": "2026-11-13T01:46:46.420463+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 23.6
+    "age_hours": 1.0
    },
    "tennis_board": {
     "last": "2026-11-12T21:55:11.226165+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 3.9
+    "age_hours": 4.8
    },
    "ci_tests": {
-    "last": "2026-11-13T01:46:28.485945+00:00",
+    "last": "2026-11-13T02:45:15.129784+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    }
   },
   "api_credits": {
-   "remaining": 286,
-   "observed_at": "2026-11-12T21:55:11.439011+00:00",
-   "source": "credit_log.csv",
+   "remaining": 284,
+   "observed_at": "2026-11-13T02:45:27.272344+00:00",
+   "source": "nba_credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
   "warnings": [],
@@ -138,10 +137,10 @@
    "prospective_status": "AWAITING_SEASON",
    "money_eligible": true,
    "predictions": 129,
-   "settled_rows": 103,
+   "settled_rows": 120,
    "maturity": "EARLY",
-   "ge80_settled": 12,
-   "ge80_mean_pred": 0.8294766676786942,
+   "ge80_settled": 15,
+   "ge80_mean_pred": 0.8373678848250974,
    "ge80_actual": 1.0,
    "alarm_review_required": false
   },
@@ -195,11 +194,11 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 3,
-   "EXCLUDED": 3572
+   "ELIGIBLE": 2,
+   "EXCLUDED": 3573
   },
   "exclusion_reason": {
-   "EVENT_STARTED": 3572
+   "EVENT_STARTED": 3573
   },
   "start_time_status": {
    "LEDGER_ONLY": 3088,
@@ -251,48 +250,6 @@
    "event_start_original": "2026-11-13T20:00:00+00:00",
    "start_time_status": "UNCHANGED",
    "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
-  },
-  {
-   "prediction_id": "9606a44f17bbc24a",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_id": "f3f429e773bfb2340ba2bb90f2b9dd1e",
-   "event_key": "nba|f3f429e773bfb2340ba2bb90f2b9dd1e",
-   "event_name": "Charlotte Hornets @ Phoenix Suns",
-   "event_start": "2026-11-13T02:10:00+00:00",
-   "market": "moneyline",
-   "selection": "Phoenix Suns",
-   "estimated_probability": "0.6756057718486251",
-   "fair_odds": "1.480153133185573",
-   "probability_band": "65-69.9%",
-   "probability_source": "Odds API basketball_nba h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-11-12T06:30:00+00:00",
-   "actual_workflow_start": "2026-11-12T15:30:13Z",
-   "prediction_timestamp": "2026-11-12T15:31:27.514278+00:00",
-   "minutes_to_event": "638.5",
-   "live_price": "1.5",
-   "live_price_source": "odds_api:matchbook",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "True",
-   "single_ineligible_reason": "",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:basketball_nba",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-13T02:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
   },
   {
    "prediction_id": "8391ad2a4a5b9b4f",
