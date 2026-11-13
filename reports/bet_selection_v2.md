@@ -4,9 +4,9 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-13T14:50Z · events scanned 14 · valid predictions 11 · high-P (≥70%) 6 · priced 11 · PAPER_BET 0 · MULTI-research 2 · WATCH 0 · REJECT 12 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-13T16:16Z · events scanned 15 · valid predictions 12 · high-P (≥70%) 6 · priced 12 · PAPER_BET 0 · MULTI-research 2 · WATCH 0 · REJECT 13 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): NET_EV_NOT_POSITIVE 14 · PREDICTION_NOT_VALID 3 · PROBABILITY_NOT_SAME_SNAPSHOT 3
+Reason codes (latest run): NET_EV_NOT_POSITIVE 15 · PREDICTION_NOT_VALID 3 · PROBABILITY_NOT_SAME_SNAPSHOT 3 · EXCHANGE_SPREAD_TOO_WIDE 1
 
 ## Candidates (latest run, best price per prediction)
 
@@ -18,12 +18,13 @@ Reason codes (latest run): NET_EV_NOT_POSITIVE 14 · PREDICTION_NOT_VALID 3 · P
 | Portland Trail Blazers @ Sacramento Kings | 2026-11-14T03:10 | Portland Trail Blazers | 78.7% | 1.27 | 1.22 (smarkets) | 82.3% | -4.4% | REJECT |
 | Milwaukee Bucks @ Orlando Magic | 2026-11-14T00:10 | Orlando Magic | 74.8% | 1.34 | 1.29 (paddypower) | 77.5% | -3.5% | REJECT |
 | New York Knicks @ Indiana Pacers | 2026-11-14T00:10 | New York Knicks | 72.6% | 1.38 | 1.33 (smarkets) | 75.6% | -3.9% | REJECT |
-| Mirra Andreeva v Karolina Muchova | 2026-11-13T20:00 | Mirra Andreeva | 71.4% | 1.40 | 1.38 (betway) | 72.5% | -1.4% | REJECT |
+| Mirra Andreeva v Karolina Muchova | 2026-11-13T20:00 | Mirra Andreeva | 71.8% | 1.39 | 1.39 (betfair_ex_uk) | 73.0% | -1.6% | REJECT |
 | Oklahoma City Thunder @ Los Angeles Clippers | 2026-11-14T03:40 | Oklahoma City Thunder | 69.1% | 1.45 | 1.40 (unibet_uk) | 71.4% | -3.3% | REJECT |
 | Atlanta Hawks @ Chicago Bulls | 2026-11-14T01:10 | Atlanta Hawks | 68.4% | 1.46 | 1.42 (smarkets) | 70.8% | -3.4% | REJECT |
-| Aryna Sabalenka v Elina Svitolina | 2026-11-13T21:30 | Aryna Sabalenka | 66.0% | 1.52 | 1.50 (sport888) | 66.7% | -1.0% | REJECT |
+| Aryna Sabalenka v Elina Svitolina | 2026-11-13T21:30 | Aryna Sabalenka | 66.1% | 1.51 | 1.50 (sport888) | 66.7% | -0.8% | REJECT |
 | Alexander Zverev v Rafael Jodar | 2026-11-15T13:00 | Alexander Zverev | 65.7% | 1.52 | 1.40 (casumo) | 71.4% | -8.1% | REJECT |
-| Ben Shelton v Arthur Fils | 2026-11-15T19:30 | Ben Shelton | 56.7% | 1.76 | 1.62 (casumo) | 61.7% | -8.2% | REJECT |
+| Jessica Pegula v Mirra Andreeva | 2026-11-14T15:00 | Mirra Andreeva | 64.2% | 1.56 | 1.40 (betfair_ex_uk) | 72.5% | -11.4% | REJECT |
+| Ben Shelton v Arthur Fils | 2026-11-15T19:30 | Ben Shelton | 56.7% | 1.76 | 1.60 (casumo) | 62.5% | -9.3% | REJECT |
 | Memphis Grizzlies @ New Orleans Pelicans | 2026-11-14T01:10 | Memphis Grizzlies | 56.1% | 1.78 | 1.75 (smarkets) | 57.6% | -2.7% | REJECT |
 | Cleveland Cavaliers @ Miami Heat | 2026-11-14T01:10 | Miami Heat | 55.0% | 1.82 | 1.77 (smarkets) | 57.0% | -3.5% | REJECT |
 

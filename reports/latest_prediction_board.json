@@ -1,11 +1,11 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-11-13T14:50:09.586751+00:00",
+ "generated_at": "2026-11-13T16:16:41.754854+00:00",
  "date": "2026-11-13",
  "summary": {
-  "upcoming_events": 11,
-  "valid_predictions": 11,
+  "upcoming_events": 12,
+  "valid_predictions": 12,
   "sports_active": [
    "basketball",
    "tennis"
@@ -30,11 +30,11 @@
   },
   "settled_yesterday": 0,
   "system": "HEALTHY",
-  "api_credits_last_observed": 279
+  "api_credits_last_observed": 277
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-11-13T14:50:09.586751+00:00",
+  "generated_at": "2026-11-13T16:16:41.754854+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -42,31 +42,31 @@
     "last": "2026-11-13T07:16:36.202710+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 7.6
+    "age_hours": 9.0
    },
    "settlement": {
     "last": "2026-11-13T01:46:46.420463+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 13.1
+    "age_hours": 14.5
    },
    "tennis_board": {
-    "last": "2026-11-13T14:50:06.333100+00:00",
+    "last": "2026-11-13T16:16:38.394689+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    },
    "ci_tests": {
-    "last": "2026-11-13T14:50:07.528581+00:00",
+    "last": "2026-11-13T16:16:39.986330+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    }
   },
   "api_credits": {
-   "remaining": 279,
-   "observed_at": "2026-11-13T14:50:08.496411+00:00",
-   "source": "nba_credit_log.csv",
+   "remaining": 277,
+   "observed_at": "2026-11-13T16:16:39.258776+00:00",
+   "source": "credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
   "warnings": [],
@@ -125,7 +125,7 @@
    "status": "VALIDATED_HISTORICAL",
    "prospective_status": "COLLECTING",
    "money_eligible": true,
-   "predictions": 198,
+   "predictions": 199,
    "settled_rows": 168,
    "maturity": "EARLY",
    "ge80_settled": 31,
@@ -195,7 +195,7 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 14,
+   "ELIGIBLE": 15,
    "EXCLUDED": 3573
   },
   "exclusion_reason": {
@@ -204,7 +204,7 @@
   "start_time_status": {
    "LEDGER_ONLY": 3097,
    "RESCHEDULED": 275,
-   "UNCHANGED": 215
+   "UNCHANGED": 216
   },
   "eligible_rescheduled": 0,
   "rule": "est-1"
@@ -545,6 +545,48 @@
    "event_start_original": "2026-11-14T01:10:00+00:00",
    "start_time_status": "LEDGER_ONLY",
    "start_time_source": "unified_ledger.event_start"
+  },
+  {
+   "prediction_id": "d38e7f9ab114b254",
+   "engine_id": "wta_match_winner.betfair_market",
+   "engine_version": "1",
+   "sport": "tennis",
+   "competition": "WTA Finals",
+   "event_id": "53d87628f7d7ae2c16b9b10ab1be03ab",
+   "event_key": "tennis|tennis_wta_finals|53d87628f7d7ae2c16b9b10ab1be03ab",
+   "event_name": "Jessica Pegula v Mirra Andreeva",
+   "event_start": "2026-11-14T15:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Mirra Andreeva",
+   "estimated_probability": "0.642058",
+   "fair_odds": "1.5574916907818297",
+   "probability_band": "60-64.9%",
+   "probability_source": "Odds API betfair_ex_uk back/lay midpoint (frozen hierarchy)",
+   "historical_support": "hist n=10352; holdout DONE (2024-25, n=4339); >=80% coverage 0.177; slope 0.979; >=80% 86.9->87.0; watch 2025 + grass",
+   "engine_status": "VALIDATED_HISTORICAL",
+   "data_quality": "OK",
+   "current_context_status": "NOT_MODELLED",
+   "configured_scan_time": "",
+   "actual_workflow_start": "2026-11-13T16:16:38.394689+00:00",
+   "prediction_timestamp": "2026-11-13T16:16:38.394689+00:00",
+   "minutes_to_event": "1363.4",
+   "live_price": "1.4",
+   "live_price_source": "betfair_ex_uk back (odds_api)",
+   "paper_status": "PAPER",
+   "prediction_valid": "True",
+   "single_eligible": "True",
+   "single_ineligible_reason": "",
+   "multi_research_eligible": "False",
+   "snapshot_rule": "TENNIS_FIRST_VALID_SNAPSHOT",
+   "origin": "tennis_predictions/ledger_predictions.csv",
+   "origin_prediction_id": "d38e7f9ab114b254",
+   "settlement_status": "",
+   "result": "",
+   "correct": "",
+   "settlement_timestamp": "",
+   "event_start_original": "2026-11-14T15:00:00+00:00",
+   "start_time_status": "UNCHANGED",
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
   },
   {
    "prediction_id": "8391ad2a4a5b9b4f",

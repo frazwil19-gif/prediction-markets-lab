@@ -1,12 +1,12 @@
 {
  "card_version": "card-v1.2",
- "generated_at": "2026-11-13T15:42:19.432078+00:00",
- "stage_a_generated_at": "2026-11-13T14:50:09.586751+00:00",
+ "generated_at": "2026-11-13T16:16:42.937002+00:00",
+ "stage_a_generated_at": "2026-11-13T16:16:41.754854+00:00",
  "real_money_enabled": false,
  "mode": "PAPER \u2014 unattended prospective validation (real-money betting paused; nothing to place)",
  "summary": {
-  "predictions_in_window": 11,
-  "best_predictions_shown": 11,
+  "predictions_in_window": 12,
+  "best_predictions_shown": 12,
   "bets": 0,
   "total_stake_gbp": 0.0,
   "exposure_pct_of_bankroll": 0.0,
@@ -14,7 +14,8 @@
   "research_predictions": 0
  },
  "rejection_reasons": {
-  "NET_EV_NOT_POSITIVE": 11
+  "NET_EV_NOT_POSITIVE": 12,
+  "EXCHANGE_SPREAD_TOO_WIDE": 1
  },
  "best_predictions": [
   {
@@ -43,7 +44,7 @@
    "decision_net_ev": "-0.03786560887019688",
    "price_observed_at": "2026-11-13T14:50:08.049660+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-13T14:50:10.166685+00:00",
+   "decision_evaluated_at": "2026-11-13T16:16:42.361933+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -72,7 +73,7 @@
    "decision_net_ev": "-0.03538919992775877",
    "price_observed_at": "2026-11-13T14:50:08.049660+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-13T14:50:10.166685+00:00",
+   "decision_evaluated_at": "2026-11-13T16:16:42.361933+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -101,7 +102,7 @@
    "decision_net_ev": "-0.04353953488372089",
    "price_observed_at": "2026-11-13T14:50:08.049660+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-13T14:50:10.166685+00:00",
+   "decision_evaluated_at": "2026-11-13T16:16:42.361933+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -130,7 +131,7 @@
    "decision_net_ev": "-0.03534391534391523",
    "price_observed_at": "2026-11-13T14:50:08.049660+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-13T14:50:10.166685+00:00",
+   "decision_evaluated_at": "2026-11-13T16:16:42.361933+00:00",
    "min_bookmaker_odds": 1.37
   },
   {
@@ -159,7 +160,7 @@
    "decision_net_ev": "-0.03887150837988834",
    "price_observed_at": "2026-11-13T14:50:08.049660+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-13T14:50:10.166685+00:00",
+   "decision_evaluated_at": "2026-11-13T16:16:42.361933+00:00",
    "min_bookmaker_odds": 1.41
   },
   {
@@ -171,24 +172,24 @@
    "event_start": "2026-11-13T20:00:00+00:00",
    "market": "match_winner",
    "selection": "Mirra Andreeva",
-   "probability": 0.714286,
+   "probability": 0.717897,
    "band": "70%+",
-   "sigma": 0.012632,
+   "sigma": 0.012219,
    "evidence": "VALIDATED",
    "engine_id": "wta_match_winner.betfair_market",
-   "fair_odds": 1.4,
+   "fair_odds": 1.39,
    "price_status": "POOR_PAYOUT",
-   "best_odds": 1.38,
-   "best_source": "betway",
-   "best_net_ev": -0.014285,
+   "best_odds": 1.39,
+   "best_source": "betfair_ex_uk",
+   "best_net_ev": -0.016122,
    "decision": "REJECT",
    "decision_reasons": "NET_EV_NOT_POSITIVE",
-   "decision_odds": "1.38",
-   "decision_source": "betway",
-   "decision_net_ev": "-0.014285320000000101",
-   "price_observed_at": "2026-11-13T14:50:06.333100+00:00",
+   "decision_odds": "1.39",
+   "decision_source": "betfair_ex_uk",
+   "decision_net_ev": "-0.016122161500000065",
+   "price_observed_at": "2026-11-13T16:16:38.394689+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-13T14:50:10.166685+00:00",
+   "decision_evaluated_at": "2026-11-13T16:16:42.361933+00:00",
    "min_bookmaker_odds": 1.43
   },
   {
@@ -217,7 +218,7 @@
    "decision_net_ev": "-0.03282585470085486",
    "price_observed_at": "2026-11-13T14:50:08.049660+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-13T14:50:10.166685+00:00",
+   "decision_evaluated_at": "2026-11-13T16:16:42.361933+00:00",
    "min_bookmaker_odds": 1.48
   },
   {
@@ -246,7 +247,7 @@
    "decision_net_ev": "-0.03435843316731718",
    "price_observed_at": "2026-11-13T14:50:08.049660+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-13T14:50:10.166685+00:00",
+   "decision_evaluated_at": "2026-11-13T16:16:42.361933+00:00",
    "min_bookmaker_odds": 1.5
   },
   {
@@ -258,25 +259,54 @@
    "event_start": "2026-11-13T21:30:00+00:00",
    "market": "match_winner",
    "selection": "Aryna Sabalenka",
-   "probability": 0.659933,
+   "probability": 0.661453,
    "band": "60%+",
-   "sigma": 0.011786,
+   "sigma": 0.011779,
    "evidence": "VALIDATED",
    "engine_id": "wta_match_winner.betfair_market",
-   "fair_odds": 1.52,
+   "fair_odds": 1.51,
    "price_status": "POOR_PAYOUT",
    "best_odds": 1.5,
    "best_source": "williamhill",
-   "best_net_ev": -0.010101,
+   "best_net_ev": -0.007821,
    "decision": "REJECT",
    "decision_reasons": "NET_EV_NOT_POSITIVE",
    "decision_odds": "1.5",
    "decision_source": "sport888",
-   "decision_net_ev": "-0.010100500000000012",
-   "price_observed_at": "2026-11-13T14:50:06.333100+00:00",
+   "decision_net_ev": "-0.007820500000000064",
+   "price_observed_at": "2026-11-13T16:16:38.394689+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-13T14:50:10.166685+00:00",
+   "decision_evaluated_at": "2026-11-13T16:16:42.361933+00:00",
    "min_bookmaker_odds": 1.55
+  },
+  {
+   "prediction_id": "d38e7f9ab114b254",
+   "sport": "tennis",
+   "competition": "WTA Finals",
+   "event_key": "tennis|tennis_wta_finals|53d87628f7d7ae2c16b9b10ab1be03ab",
+   "event_name": "Jessica Pegula v Mirra Andreeva",
+   "event_start": "2026-11-14T15:00:00+00:00",
+   "market": "match_winner",
+   "selection": "Mirra Andreeva",
+   "probability": 0.642058,
+   "band": "60%+",
+   "sigma": 0.081095,
+   "evidence": "VALIDATED",
+   "engine_id": "wta_match_winner.betfair_market",
+   "fair_odds": 1.56,
+   "price_status": "PRICE_QUALITY_FAIL",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "EXCHANGE_SPREAD_TOO_WIDE|NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.4",
+   "decision_source": "betfair_ex_uk",
+   "decision_net_ev": "-0.11395996000000003",
+   "price_observed_at": "2026-11-13T16:16:38.394689+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-13T16:16:42.361933+00:00",
+   "min_bookmaker_odds": 1.59
   },
   {
    "prediction_id": "6059c3a35e1034eb",
@@ -304,7 +334,7 @@
    "decision_net_ev": "-0.02732427869858811",
    "price_observed_at": "2026-11-13T14:50:08.049660+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-13T14:50:10.166685+00:00",
+   "decision_evaluated_at": "2026-11-13T16:16:42.361933+00:00",
    "min_bookmaker_odds": 1.82
   },
   {
@@ -333,7 +363,7 @@
    "decision_net_ev": "-0.03471320289631796",
    "price_observed_at": "2026-11-13T14:50:08.049660+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-13T14:50:10.166685+00:00",
+   "decision_evaluated_at": "2026-11-13T16:16:42.361933+00:00",
    "min_bookmaker_odds": 1.86
   }
  ],
@@ -366,7 +396,7 @@
    "decision_net_ev": "-0.03786560887019688",
    "price_observed_at": "2026-11-13T14:50:08.049660+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-13T14:50:10.166685+00:00",
+   "decision_evaluated_at": "2026-11-13T16:16:42.361933+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -395,7 +425,7 @@
    "decision_net_ev": "-0.03538919992775877",
    "price_observed_at": "2026-11-13T14:50:08.049660+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-13T14:50:10.166685+00:00",
+   "decision_evaluated_at": "2026-11-13T16:16:42.361933+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -424,7 +454,7 @@
    "decision_net_ev": "-0.04353953488372089",
    "price_observed_at": "2026-11-13T14:50:08.049660+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-13T14:50:10.166685+00:00",
+   "decision_evaluated_at": "2026-11-13T16:16:42.361933+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -453,7 +483,7 @@
    "decision_net_ev": "-0.03534391534391523",
    "price_observed_at": "2026-11-13T14:50:08.049660+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-13T14:50:10.166685+00:00",
+   "decision_evaluated_at": "2026-11-13T16:16:42.361933+00:00",
    "min_bookmaker_odds": 1.37
   },
   {
@@ -482,7 +512,7 @@
    "decision_net_ev": "-0.03887150837988834",
    "price_observed_at": "2026-11-13T14:50:08.049660+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-13T14:50:10.166685+00:00",
+   "decision_evaluated_at": "2026-11-13T16:16:42.361933+00:00",
    "min_bookmaker_odds": 1.41
   },
   {
@@ -494,24 +524,24 @@
    "event_start": "2026-11-13T20:00:00+00:00",
    "market": "match_winner",
    "selection": "Mirra Andreeva",
-   "probability": 0.714286,
+   "probability": 0.717897,
    "band": "70%+",
-   "sigma": 0.012632,
+   "sigma": 0.012219,
    "evidence": "VALIDATED",
    "engine_id": "wta_match_winner.betfair_market",
-   "fair_odds": 1.4,
+   "fair_odds": 1.39,
    "price_status": "POOR_PAYOUT",
-   "best_odds": 1.38,
-   "best_source": "betway",
-   "best_net_ev": -0.014285,
+   "best_odds": 1.39,
+   "best_source": "betfair_ex_uk",
+   "best_net_ev": -0.016122,
    "decision": "REJECT",
    "decision_reasons": "NET_EV_NOT_POSITIVE",
-   "decision_odds": "1.38",
-   "decision_source": "betway",
-   "decision_net_ev": "-0.014285320000000101",
-   "price_observed_at": "2026-11-13T14:50:06.333100+00:00",
+   "decision_odds": "1.39",
+   "decision_source": "betfair_ex_uk",
+   "decision_net_ev": "-0.016122161500000065",
+   "price_observed_at": "2026-11-13T16:16:38.394689+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-13T14:50:10.166685+00:00",
+   "decision_evaluated_at": "2026-11-13T16:16:42.361933+00:00",
    "min_bookmaker_odds": 1.43
   }
  ],
