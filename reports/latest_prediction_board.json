@@ -1,7 +1,7 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-11-14T13:45:20.958335+00:00",
+ "generated_at": "2026-11-14T16:16:34.517438+00:00",
  "date": "2026-11-14",
  "summary": {
   "upcoming_events": 11,
@@ -30,11 +30,11 @@
   },
   "settled_yesterday": 17,
   "system": "HEALTHY",
-  "api_credits_last_observed": 271
+  "api_credits_last_observed": 269
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-11-14T13:45:20.958335+00:00",
+  "generated_at": "2026-11-14T16:16:34.517438+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -42,31 +42,31 @@
     "last": "2026-11-14T07:16:34.382799+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 6.5
+    "age_hours": 9.0
    },
    "settlement": {
     "last": "2026-11-14T01:24:43.469823+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 12.3
+    "age_hours": 14.9
    },
    "tennis_board": {
-    "last": "2026-11-14T13:45:17.935438+00:00",
+    "last": "2026-11-14T16:16:31.414802+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    },
    "ci_tests": {
-    "last": "2026-11-14T13:45:18.965522+00:00",
+    "last": "2026-11-14T16:16:32.852531+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    }
   },
   "api_credits": {
-   "remaining": 271,
-   "observed_at": "2026-11-14T13:45:19.834924+00:00",
-   "source": "nba_credit_log.csv",
+   "remaining": 269,
+   "observed_at": "2026-11-14T16:16:32.165162+00:00",
+   "source": "credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
   "warnings": [],
@@ -248,7 +248,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-11-16T13:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "d36441b85f344dc3",
@@ -374,7 +374,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-11-16T19:30:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "2c3eeadc646c8fd7",
@@ -416,7 +416,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-11-15T13:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "d38e7f9ab114b254",
@@ -542,7 +542,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-11-15T19:30:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "b047d89e19a7b665",
@@ -584,7 +584,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-11-14T21:30:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "36dd55f0da83b216",
