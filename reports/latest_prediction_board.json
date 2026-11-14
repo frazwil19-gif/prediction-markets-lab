@@ -1,13 +1,12 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-11-14T02:34:49.477224+00:00",
+ "generated_at": "2026-11-14T07:16:35.160105+00:00",
  "date": "2026-11-14",
  "summary": {
-  "upcoming_events": 4,
-  "valid_predictions": 4,
+  "upcoming_events": 1,
+  "valid_predictions": 1,
   "sports_active": [
-   "basketball",
    "tennis"
   ],
   "engines_active": [
@@ -21,9 +20,9 @@
    "football_double_chance.derived_1x2"
   ],
   "threshold_counts": {
-   ">=70": 2,
-   ">=75": 2,
-   ">=80": 1,
+   ">=70": 0,
+   ">=75": 0,
+   ">=80": 0,
    ">=85": 0,
    ">=90": 0,
    ">=95": 0
@@ -34,30 +33,30 @@
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-11-14T02:34:49.477224+00:00",
+  "generated_at": "2026-11-14T07:16:35.160105+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
    "daily_scan": {
-    "last": "2026-11-13T07:16:36.202710+00:00",
+    "last": "2026-11-14T07:16:34.382799+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 19.3
+    "age_hours": 0.0
    },
    "settlement": {
     "last": "2026-11-14T01:24:43.469823+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 1.2
+    "age_hours": 5.9
    },
    "tennis_board": {
     "last": "2026-11-13T16:16:38.394689+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 10.3
+    "age_hours": 15.0
    },
    "ci_tests": {
-    "last": "2026-11-14T02:34:36.502462+00:00",
+    "last": "2026-11-14T07:16:35.082480+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -195,11 +194,11 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 7,
-   "EXCLUDED": 3581
+   "ELIGIBLE": 4,
+   "EXCLUDED": 3584
   },
   "exclusion_reason": {
-   "EVENT_STARTED": 3581
+   "EVENT_STARTED": 3584
   },
   "start_time_status": {
    "LEDGER_ONLY": 3097,
@@ -210,132 +209,6 @@
   "rule": "est-1"
  },
  "predictions": [
-  {
-   "prediction_id": "69db1b3de52b147f",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_id": "1fae7f34ec6035dffa74feb148ee26c7",
-   "event_key": "nba|1fae7f34ec6035dffa74feb148ee26c7",
-   "event_name": "Golden State Warriors @ San Antonio Spurs",
-   "event_start": "2026-11-14T02:40:00+00:00",
-   "market": "moneyline",
-   "selection": "San Antonio Spurs",
-   "estimated_probability": "0.8244536752754199",
-   "fair_odds": "1.2129244249726177",
-   "probability_band": "80-84.9%",
-   "probability_source": "Odds API basketball_nba h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-11-13T06:30:00+00:00",
-   "actual_workflow_start": "2026-11-13T14:48:55Z",
-   "prediction_timestamp": "2026-11-13T14:50:08.049660+00:00",
-   "minutes_to_event": "709.9",
-   "live_price": "1.17",
-   "live_price_source": "odds_api:casumo",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "False",
-   "single_ineligible_reason": "fair odds 1.21 below payout floor 1.33",
-   "multi_research_eligible": "True",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:basketball_nba",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-14T02:40:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
-  },
-  {
-   "prediction_id": "2f0ef239163ed0ce",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_id": "a51c350318d7570c2b74af08eedb9fcd",
-   "event_key": "nba|a51c350318d7570c2b74af08eedb9fcd",
-   "event_name": "Portland Trail Blazers @ Sacramento Kings",
-   "event_start": "2026-11-14T03:10:00+00:00",
-   "market": "moneyline",
-   "selection": "Portland Trail Blazers",
-   "estimated_probability": "0.7868217054263567",
-   "fair_odds": "1.270935960591133",
-   "probability_band": "75-79.9%",
-   "probability_source": "Odds API basketball_nba h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-11-13T06:30:00+00:00",
-   "actual_workflow_start": "2026-11-13T14:48:55Z",
-   "prediction_timestamp": "2026-11-13T14:50:08.049660+00:00",
-   "minutes_to_event": "739.9",
-   "live_price": "1.22",
-   "live_price_source": "odds_api:smarkets",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "False",
-   "single_ineligible_reason": "fair odds 1.27 below payout floor 1.33",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:basketball_nba",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-14T03:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
-  },
-  {
-   "prediction_id": "b1fc0e1d1e427e29",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_id": "5344669fd560d317ffaee0a1d16be7c8",
-   "event_key": "nba|5344669fd560d317ffaee0a1d16be7c8",
-   "event_name": "Oklahoma City Thunder @ Los Angeles Clippers",
-   "event_start": "2026-11-14T03:40:00+00:00",
-   "market": "moneyline",
-   "selection": "Oklahoma City Thunder",
-   "estimated_probability": "0.6908386752136751",
-   "fair_odds": "1.4475159481925384",
-   "probability_band": "65-69.9%",
-   "probability_source": "Odds API basketball_nba h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-11-13T06:30:00+00:00",
-   "actual_workflow_start": "2026-11-13T14:48:55Z",
-   "prediction_timestamp": "2026-11-13T14:50:08.049660+00:00",
-   "minutes_to_event": "769.9",
-   "live_price": "1.4",
-   "live_price_source": "odds_api:unibet_uk",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "True",
-   "single_ineligible_reason": "",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:basketball_nba",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-14T03:40:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
-  },
   {
    "prediction_id": "d38e7f9ab114b254",
    "engine_id": "wta_match_winner.betfair_market",
