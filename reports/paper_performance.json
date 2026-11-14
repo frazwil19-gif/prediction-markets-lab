@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T01:46:46.210291+00:00",
+ "generated_at": "2026-11-14T01:24:43.290654+00:00",
  "mode": "PAPER \u2014 unattended prospective validation; stakes SIMULATED",
  "windows": {
   "weekly": {
@@ -54,17 +54,19 @@
      }
     }
    },
-   "candidates_evaluated": 565,
+   "candidates_evaluated": 348,
    "qualified_in_shadow": 1,
-   "qualification_rate": 0.0018,
+   "qualification_rate": 0.0029,
    "rejections": {
-    "ENGINE_STATUS_INELIGIBLE": 446,
-    "NET_EV_NOT_POSITIVE": 272,
-    "P_BELOW_FLOOR": 220,
-    "NO_EXECUTABLE_PRICE": 195,
-    "COMMISSION_UNKNOWN": 47,
-    "NET_EV_BELOW_PAPER_GATE": 2,
-    "PRICE_STALE": 1
+    "ENGINE_STATUS_INELIGIBLE": 232,
+    "NET_EV_NOT_POSITIVE": 211,
+    "P_BELOW_FLOOR": 130,
+    "NO_EXECUTABLE_PRICE": 63,
+    "COMMISSION_UNKNOWN": 37,
+    "PREDICTION_NOT_VALID": 3,
+    "PROBABILITY_NOT_SAME_SNAPSHOT": 3,
+    "NET_EV_BELOW_PAPER_GATE": 1,
+    "EXCHANGE_SPREAD_TOO_WIDE": 1
    },
    "by": {
     "sport": {
@@ -354,20 +356,20 @@
      }
     }
    },
-   "candidates_evaluated": 2226,
+   "candidates_evaluated": 2208,
    "qualified_in_shadow": 2,
    "qualification_rate": 0.0009,
    "rejections": {
-    "ENGINE_STATUS_INELIGIBLE": 1815,
-    "NET_EV_NOT_POSITIVE": 970,
-    "P_BELOW_FLOOR": 848,
+    "ENGINE_STATUS_INELIGIBLE": 1800,
+    "NET_EV_NOT_POSITIVE": 961,
+    "P_BELOW_FLOOR": 838,
     "NO_EXECUTABLE_PRICE": 834,
-    "COMMISSION_UNKNOWN": 230,
-    "PRICE_STALE": 39,
-    "EXCHANGE_SPREAD_TOO_WIDE": 21,
-    "PREDICTION_NOT_VALID": 18,
-    "NET_EV_BELOW_PAPER_GATE": 5,
-    "PROBABILITY_NOT_SAME_SNAPSHOT": 3,
+    "COMMISSION_UNKNOWN": 225,
+    "PRICE_STALE": 35,
+    "PREDICTION_NOT_VALID": 21,
+    "EXCHANGE_SPREAD_TOO_WIDE": 19,
+    "PROBABILITY_NOT_SAME_SNAPSHOT": 6,
+    "NET_EV_BELOW_PAPER_GATE": 4,
     "ODDS_BELOW_PAYOUT_FLOOR": 1
    },
    "by": {
@@ -738,20 +740,20 @@
      }
     }
    },
-   "candidates_evaluated": 3468,
+   "candidates_evaluated": 3481,
    "qualified_in_shadow": 3,
    "qualification_rate": 0.0009,
    "rejections": {
     "ENGINE_STATUS_INELIGIBLE": 2730,
-    "NET_EV_NOT_POSITIVE": 1573,
+    "NET_EV_NOT_POSITIVE": 1587,
     "P_BELOW_FLOOR": 1287,
     "NO_EXECUTABLE_PRICE": 1278,
     "COMMISSION_UNKNOWN": 327,
+    "PREDICTION_NOT_VALID": 66,
     "PRICE_STALE": 64,
-    "PREDICTION_NOT_VALID": 63,
-    "EXCHANGE_SPREAD_TOO_WIDE": 33,
-    "NET_EV_BELOW_PAPER_GATE": 11,
-    "PROBABILITY_NOT_SAME_SNAPSHOT": 7,
+    "EXCHANGE_SPREAD_TOO_WIDE": 34,
+    "NET_EV_BELOW_PAPER_GATE": 10,
+    "PROBABILITY_NOT_SAME_SNAPSHOT": 10,
     "ODDS_BELOW_PAYOUT_FLOOR": 3
    },
    "by": {

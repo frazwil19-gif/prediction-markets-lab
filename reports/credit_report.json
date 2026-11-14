@@ -1,26 +1,26 @@
 {
- "generated_at": "2026-11-13T01:46:45.981938+00:00",
+ "generated_at": "2026-11-14T01:24:43.108770+00:00",
  "month": "2026-11",
- "account_used_month_to_date_latest_counter": 214,
- "projected_month_end_at_current_rate": 494,
+ "account_used_month_to_date_latest_counter": 223,
+ "projected_month_end_at_current_rate": 478,
  "by_consumer": {
   "clv_capture": {
    "paid_calls": 0,
    "credits_charged": 0,
-   "skipped_calls": 3,
-   "credits_saved_estimate": 3
+   "skipped_calls": 4,
+   "credits_saved_estimate": 4
   },
   "football_daily_scan": {
    "paid_calls": 32,
    "credits_charged": 48,
-   "skipped_calls": 46,
-   "credits_saved_estimate": 69
+   "skipped_calls": 52,
+   "credits_saved_estimate": 78
   },
   "football_shadow_scan": {
    "paid_calls": 17,
    "credits_charged": 17,
-   "skipped_calls": 113,
-   "credits_saved_estimate": 113
+   "skipped_calls": 123,
+   "credits_saved_estimate": 123
   },
   "market_probe_c3": {
    "paid_calls": 0,
@@ -30,13 +30,13 @@
   },
   "nba_prediction_board": {
    "paid_calls": 0,
-   "credits_charged": 24,
+   "credits_charged": 27,
    "skipped_calls": 0,
    "credits_saved_estimate": 0
   },
   "tennis_prediction_board": {
-   "paid_calls": 20,
-   "credits_charged": 20,
+   "paid_calls": 24,
+   "credits_charged": 24,
    "skipped_calls": 3,
    "credits_saved_estimate": 3
   }
@@ -48,8 +48,8 @@
     100
    ],
    "plan_a_to_date_range": [
-    30.3,
-    43.3
+    32.7,
+    46.7
    ],
    "actual_to_date": 48
   },
@@ -60,7 +60,7 @@
    ],
    "plan_a_to_date_range": [
     0.0,
-    8.7
+    9.3
    ],
    "actual_to_date": 0
   },
@@ -70,10 +70,10 @@
     150
    ],
    "plan_a_to_date_range": [
-    43.3,
-    65.0
+    46.7,
+    70.0
    ],
-   "actual_to_date": 20
+   "actual_to_date": 24
   },
   "nba_prediction_board": {
    "plan_a_month_range": [
@@ -81,27 +81,27 @@
     60
    ],
    "plan_a_to_date_range": [
-    8.7,
-    26.0
+    9.3,
+    28.0
    ],
-   "actual_to_date": 24
+   "actual_to_date": 27
   }
  },
  "football_counterfactual": {
-  "scan_days_logged": 12,
-  "baseline_credits_if_ungated": 72,
+  "scan_days_logged": 13,
+  "baseline_credits_if_ungated": 78,
   "actual": 48
  },
  "utilisation": {
   "month": "2026-11",
-  "day_of_month": 13,
+  "day_of_month": 14,
   "consumers": {
    "football_daily_scan": {
     "allocation": 160,
     "consumed": 48,
     "unused": 112,
     "utilisation_pct": 30.0,
-    "projected_month_end": 110.8,
+    "projected_month_end": 102.9,
     "useful_outputs": {
      "predictions": 708,
      "qualifying_bets": 0,
@@ -124,42 +124,42 @@
    },
    "tennis_prediction_board": {
     "allocation": 150,
-    "consumed": 20,
-    "unused": 130,
-    "utilisation_pct": 13.3,
-    "projected_month_end": 46.2,
+    "consumed": 24,
+    "unused": 126,
+    "utilisation_pct": 16.0,
+    "projected_month_end": 51.4,
     "useful_outputs": {
-     "predictions": 77,
+     "predictions": 81,
      "qualifying_bets": 1,
-     "predictions_per_credit": 3.85
+     "predictions_per_credit": 3.38
     },
-    "recommendation": "under-used (projected 46.2 of 150); candidate to release ~103 credits \u2014 review, no auto change"
+    "recommendation": "under-used (projected 51.4 of 150); candidate to release ~98 credits \u2014 review, no auto change"
    },
    "nba_prediction_board": {
     "allocation": 55,
-    "consumed": 24,
-    "unused": 31,
-    "utilisation_pct": 43.6,
-    "projected_month_end": 55.4,
+    "consumed": 27,
+    "unused": 28,
+    "utilisation_pct": 49.1,
+    "projected_month_end": 57.9,
     "useful_outputs": {
-     "predictions": 86,
+     "predictions": 95,
      "qualifying_bets": 0,
-     "predictions_per_credit": 3.58
+     "predictions_per_credit": 3.52
     },
-    "recommendation": "on pace to exceed cap (55.4 > 55); budget guard will stop it \u2014 review"
+    "recommendation": "on pace to exceed cap (57.9 > 55); budget guard will stop it \u2014 review"
    },
    "us_sports_board": {
     "allocation": 40,
     "consumed": 40,
     "unused": 0,
     "utilisation_pct": 100.0,
-    "projected_month_end": 92.3,
+    "projected_month_end": 85.7,
     "useful_outputs": {
      "predictions": 102,
      "qualifying_bets": 0,
      "predictions_per_credit": 2.55
     },
-    "recommendation": "on pace to exceed cap (92.3 > 40); budget guard will stop it \u2014 review"
+    "recommendation": "on pace to exceed cap (85.7 > 40); budget guard will stop it \u2014 review"
    },
    "pre_close_capture": {
     "allocation": 25,
