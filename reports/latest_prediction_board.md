@@ -2,15 +2,14 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 5 · Valid predictions: 5 · Sports: basketball, tennis
-Counts: >=70: 3 · >=75: 3 · >=80: 2 · >=85: 1 · >=90: 0 · >=95: 0
+Upcoming events: 4 · Valid predictions: 4 · Sports: basketball, tennis
+Counts: >=70: 2 · >=75: 2 · >=80: 1 · >=85: 0 · >=90: 0 · >=95: 0
 Settled yesterday: 17 · System: **HEALTHY** · API credits (last observed): 277
 
 ## Top predictions (P ≥ 80%)
 
 | Sport | Event | Start (UTC) | Market | Selection | P | Fair | Band | Engine | Evidence | Price (source) | Single | Multi-research |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| basketball | Utah Jazz @ Houston Rockets | 2026-11-14T01:40 | moneyline | Houston Rockets | 88.4% | 1.13 | 85-89.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.09 (odds_api:smarkets) | no | yes |
 | basketball | Golden State Warriors @ San Antonio Spurs | 2026-11-14T02:40 | moneyline | San Antonio Spurs | 82.4% | 1.21 | 80-84.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.17 (odds_api:casumo) | no | yes |
 
 ## Prospective evidence
@@ -30,9 +29,9 @@ Settled yesterday: 17 · System: **HEALTHY** · API credits (last observed): 277
 ## System health
 
 - daily_scan: OK (last 2026-11-13T07:16:36.202710+00:00)
-- settlement: OK (last 2026-11-13T01:46:46.420463+00:00)
+- settlement: OK (last 2026-11-14T01:24:43.469823+00:00)
 - tennis_board: OK (last 2026-11-13T16:16:38.394689+00:00)
-- ci_tests: OK (last 2026-11-14T01:24:29.672664+00:00)
+- ci_tests: OK (last 2026-11-14T02:34:36.502462+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 

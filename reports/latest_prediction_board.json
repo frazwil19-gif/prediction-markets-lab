@@ -1,11 +1,11 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-11-14T01:24:42.246566+00:00",
+ "generated_at": "2026-11-14T02:34:49.477224+00:00",
  "date": "2026-11-14",
  "summary": {
-  "upcoming_events": 5,
-  "valid_predictions": 5,
+  "upcoming_events": 4,
+  "valid_predictions": 4,
   "sports_active": [
    "basketball",
    "tennis"
@@ -21,10 +21,10 @@
    "football_double_chance.derived_1x2"
   ],
   "threshold_counts": {
-   ">=70": 3,
-   ">=75": 3,
-   ">=80": 2,
-   ">=85": 1,
+   ">=70": 2,
+   ">=75": 2,
+   ">=80": 1,
+   ">=85": 0,
    ">=90": 0,
    ">=95": 0
   },
@@ -34,7 +34,7 @@
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-11-14T01:24:42.246566+00:00",
+  "generated_at": "2026-11-14T02:34:49.477224+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -42,22 +42,22 @@
     "last": "2026-11-13T07:16:36.202710+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 18.1
+    "age_hours": 19.3
    },
    "settlement": {
-    "last": "2026-11-13T01:46:46.420463+00:00",
+    "last": "2026-11-14T01:24:43.469823+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 23.6
+    "age_hours": 1.2
    },
    "tennis_board": {
     "last": "2026-11-13T16:16:38.394689+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 9.1
+    "age_hours": 10.3
    },
    "ci_tests": {
-    "last": "2026-11-14T01:24:29.672664+00:00",
+    "last": "2026-11-14T02:34:36.502462+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -195,11 +195,11 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 8,
-   "EXCLUDED": 3580
+   "ELIGIBLE": 7,
+   "EXCLUDED": 3581
   },
   "exclusion_reason": {
-   "EVENT_STARTED": 3580
+   "EVENT_STARTED": 3581
   },
   "start_time_status": {
    "LEDGER_ONLY": 3097,
@@ -210,48 +210,6 @@
   "rule": "est-1"
  },
  "predictions": [
-  {
-   "prediction_id": "a3ad4cfbb22bf8f9",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_id": "d04acca7f0f369fc53bf04cd3357cb0d",
-   "event_key": "nba|d04acca7f0f369fc53bf04cd3357cb0d",
-   "event_name": "Utah Jazz @ Houston Rockets",
-   "event_start": "2026-11-14T01:40:00+00:00",
-   "market": "moneyline",
-   "selection": "Houston Rockets",
-   "estimated_probability": "0.8841521697572166",
-   "fair_odds": "1.131027027027027",
-   "probability_band": "85-89.9%",
-   "probability_source": "Odds API basketball_nba h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-11-13T06:30:00+00:00",
-   "actual_workflow_start": "2026-11-13T14:48:55Z",
-   "prediction_timestamp": "2026-11-13T14:50:08.049660+00:00",
-   "minutes_to_event": "649.9",
-   "live_price": "1.09",
-   "live_price_source": "odds_api:smarkets",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "False",
-   "single_ineligible_reason": "fair odds 1.13 below payout floor 1.33",
-   "multi_research_eligible": "True",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:basketball_nba",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-14T01:40:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
-  },
   {
    "prediction_id": "69db1b3de52b147f",
    "engine_id": "nba_moneyline.market",
