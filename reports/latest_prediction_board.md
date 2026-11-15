@@ -1,10 +1,10 @@
-# DAILY PREDICTION BOARD — 2026-11-14
+# DAILY PREDICTION BOARD — 2026-11-15
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 11 · Valid predictions: 11 · Sports: basketball, tennis
-Counts: >=70: 4 · >=75: 4 · >=80: 3 · >=85: 2 · >=90: 0 · >=95: 0
-Settled yesterday: 17 · System: **HEALTHY** · API credits (last observed): 269
+Upcoming events: 7 · Valid predictions: 7 · Sports: basketball, tennis
+Counts: >=70: 3 · >=75: 3 · >=80: 2 · >=85: 2 · >=90: 0 · >=95: 0
+Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 269
 
 ## Top predictions (P ≥ 80%)
 
@@ -12,7 +12,6 @@ Settled yesterday: 17 · System: **HEALTHY** · API credits (last observed): 269
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | tennis | Carlos Alcaraz v Frances Tiafoe | 2026-11-16T13:00 | match_winner | Carlos Alcaraz | 87.3% | 1.14 | 85-89.9% | atp_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.14 (betfair_ex_uk back (odds_api)) | no | yes |
 | basketball | Chicago Bulls @ Minnesota Timberwolves | 2026-11-15T01:10 | moneyline | Minnesota Timberwolves | 85.9% | 1.16 | 85-89.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.13 (odds_api:matchbook) | no | yes |
-| basketball | Denver Nuggets @ New Orleans Pelicans | 2026-11-15T00:10 | moneyline | Denver Nuggets | 81.8% | 1.22 | 80-84.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.18 (odds_api:smarkets) | no | yes |
 
 ## Prospective evidence
 
@@ -33,7 +32,7 @@ Settled yesterday: 17 · System: **HEALTHY** · API credits (last observed): 269
 - daily_scan: OK (last 2026-11-14T07:16:34.382799+00:00)
 - settlement: OK (last 2026-11-14T01:24:43.469823+00:00)
 - tennis_board: OK (last 2026-11-14T16:16:31.414802+00:00)
-- ci_tests: OK (last 2026-11-14T16:16:32.852531+00:00)
+- ci_tests: OK (last 2026-11-15T00:57:58.404120+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
