@@ -2,16 +2,15 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 7 · Valid predictions: 7 · Sports: basketball, tennis
-Counts: >=70: 3 · >=75: 3 · >=80: 2 · >=85: 2 · >=90: 0 · >=95: 0
-Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 269
+Upcoming events: 4 · Valid predictions: 4 · Sports: tennis
+Counts: >=70: 2 · >=75: 2 · >=80: 1 · >=85: 1 · >=90: 0 · >=95: 0
+Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 267
 
 ## Top predictions (P ≥ 80%)
 
 | Sport | Event | Start (UTC) | Market | Selection | P | Fair | Band | Engine | Evidence | Price (source) | Single | Multi-research |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | tennis | Carlos Alcaraz v Frances Tiafoe | 2026-11-16T13:00 | match_winner | Carlos Alcaraz | 87.3% | 1.14 | 85-89.9% | atp_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.14 (betfair_ex_uk back (odds_api)) | no | yes |
-| basketball | Chicago Bulls @ Minnesota Timberwolves | 2026-11-15T01:10 | moneyline | Minnesota Timberwolves | 85.9% | 1.16 | 85-89.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.13 (odds_api:matchbook) | no | yes |
 
 ## Prospective evidence
 
@@ -22,7 +21,7 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 269
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
 | atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 213 | 194 | EARLY | 29 | 87.1% → 75.9% |
 | wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 200 | 168 | EARLY | 31 | 89.3% → 80.6% |
-| nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 143 | 120 | EARLY | 15 | 83.7% → 100.0% |
+| nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 143 | 132 | EARLY | 17 | 83.9% → 100.0% |
 | nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 159 | 122 | EARLY | 0 | — → — |
 | nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 56 | 41 | COLLECTING | 3 | 82.3% → 100.0% |
 | football_double_chance.derived_1x2 | PROVISIONAL_PROSPECTIVE / COLLECTING | 1278 | 9 | COLLECTING | 1 | 80.2% → 0.0% |
@@ -30,9 +29,9 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 269
 ## System health
 
 - daily_scan: OK (last 2026-11-14T07:16:34.382799+00:00)
-- settlement: OK (last 2026-11-14T01:24:43.469823+00:00)
+- settlement: OK (last 2026-11-15T00:58:16.490450+00:00)
 - tennis_board: OK (last 2026-11-14T16:16:31.414802+00:00)
-- ci_tests: OK (last 2026-11-15T00:57:58.404120+00:00)
+- ci_tests: OK (last 2026-11-15T02:02:55.694947+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 

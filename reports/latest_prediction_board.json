@@ -1,13 +1,12 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-11-15T00:58:14.973988+00:00",
+ "generated_at": "2026-11-15T02:03:08.898332+00:00",
  "date": "2026-11-15",
  "summary": {
-  "upcoming_events": 7,
-  "valid_predictions": 7,
+  "upcoming_events": 4,
+  "valid_predictions": 4,
   "sports_active": [
-   "basketball",
    "tennis"
   ],
   "engines_active": [
@@ -21,20 +20,20 @@
    "football_double_chance.derived_1x2"
   ],
   "threshold_counts": {
-   ">=70": 3,
-   ">=75": 3,
-   ">=80": 2,
-   ">=85": 2,
+   ">=70": 2,
+   ">=75": 2,
+   ">=80": 1,
+   ">=85": 1,
    ">=90": 0,
    ">=95": 0
   },
   "settled_yesterday": 0,
   "system": "HEALTHY",
-  "api_credits_last_observed": 269
+  "api_credits_last_observed": 267
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-11-15T00:58:14.973988+00:00",
+  "generated_at": "2026-11-15T02:03:08.898332+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -42,31 +41,31 @@
     "last": "2026-11-14T07:16:34.382799+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 17.7
+    "age_hours": 18.8
    },
    "settlement": {
-    "last": "2026-11-14T01:24:43.469823+00:00",
+    "last": "2026-11-15T00:58:16.490450+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 23.6
+    "age_hours": 1.1
    },
    "tennis_board": {
     "last": "2026-11-14T16:16:31.414802+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 8.7
+    "age_hours": 9.8
    },
    "ci_tests": {
-    "last": "2026-11-15T00:57:58.404120+00:00",
+    "last": "2026-11-15T02:02:55.694947+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    }
   },
   "api_credits": {
-   "remaining": 269,
-   "observed_at": "2026-11-14T16:16:32.165162+00:00",
-   "source": "credit_log.csv",
+   "remaining": 267,
+   "observed_at": "2026-11-15T02:03:08.689071+00:00",
+   "source": "nba_credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
   "warnings": [],
@@ -138,10 +137,10 @@
    "prospective_status": "AWAITING_SEASON",
    "money_eligible": true,
    "predictions": 143,
-   "settled_rows": 120,
+   "settled_rows": 132,
    "maturity": "EARLY",
-   "ge80_settled": 15,
-   "ge80_mean_pred": 0.8373678848250974,
+   "ge80_settled": 17,
+   "ge80_mean_pred": 0.8393602422005353,
    "ge80_actual": 1.0,
    "alarm_review_required": false
   },
@@ -193,11 +192,11 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 10,
-   "EXCLUDED": 3588
+   "ELIGIBLE": 7,
+   "EXCLUDED": 3591
   },
   "exclusion_reason": {
-   "EVENT_STARTED": 3588
+   "EVENT_STARTED": 3591
   },
   "start_time_status": {
    "LEDGER_ONLY": 3102,
@@ -249,48 +248,6 @@
    "event_start_original": "2026-11-16T13:00:00+00:00",
    "start_time_status": "UNCHANGED",
    "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
-  },
-  {
-   "prediction_id": "d36441b85f344dc3",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_id": "5773e80d52d3fba36b11be38ded62790",
-   "event_key": "nba|5773e80d52d3fba36b11be38ded62790",
-   "event_name": "Chicago Bulls @ Minnesota Timberwolves",
-   "event_start": "2026-11-15T01:10:00+00:00",
-   "market": "moneyline",
-   "selection": "Minnesota Timberwolves",
-   "estimated_probability": "0.858729706636286",
-   "fair_odds": "1.1645107794361524",
-   "probability_band": "85-89.9%",
-   "probability_source": "Odds API basketball_nba h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-11-14T06:30:00+00:00",
-   "actual_workflow_start": "2026-11-14T13:44:06Z",
-   "prediction_timestamp": "2026-11-14T13:45:19.601904+00:00",
-   "minutes_to_event": "684.7",
-   "live_price": "1.13",
-   "live_price_source": "odds_api:matchbook",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "False",
-   "single_ineligible_reason": "fair odds 1.16 below payout floor 1.33",
-   "multi_research_eligible": "True",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:basketball_nba",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-15T01:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
   },
   {
    "prediction_id": "d058ec7a1b83167d",
@@ -377,48 +334,6 @@
    "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
-   "prediction_id": "c48e9c3b086958d4",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_id": "cb06267ae037a883ae6f71078d6e2aaa",
-   "event_key": "nba|cb06267ae037a883ae6f71078d6e2aaa",
-   "event_name": "Detroit Pistons @ Miami Heat",
-   "event_start": "2026-11-15T01:10:00+00:00",
-   "market": "moneyline",
-   "selection": "Detroit Pistons",
-   "estimated_probability": "0.6299234135667398",
-   "fair_odds": "1.5874945722970035",
-   "probability_band": "60-64.9%",
-   "probability_source": "Odds API basketball_nba h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-11-14T06:30:00+00:00",
-   "actual_workflow_start": "2026-11-14T13:44:06Z",
-   "prediction_timestamp": "2026-11-14T13:45:19.601904+00:00",
-   "minutes_to_event": "684.7",
-   "live_price": "1.56",
-   "live_price_source": "odds_api:matchbook",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "True",
-   "single_ineligible_reason": "",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:basketball_nba",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-15T01:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
-  },
-  {
    "prediction_id": "714c203e75b974b9",
    "engine_id": "atp_match_winner.betfair_market",
    "engine_version": "1",
@@ -459,48 +374,6 @@
    "event_start_original": "2026-11-15T19:30:00+00:00",
    "start_time_status": "UNCHANGED",
    "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
-  },
-  {
-   "prediction_id": "36dd55f0da83b216",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_id": "a7cb6062530bd69eb6caee84a015abd0",
-   "event_key": "nba|a7cb6062530bd69eb6caee84a015abd0",
-   "event_name": "Brooklyn Nets @ Memphis Grizzlies",
-   "event_start": "2026-11-15T01:10:00+00:00",
-   "market": "moneyline",
-   "selection": "Memphis Grizzlies",
-   "estimated_probability": "0.6055508830950378",
-   "fair_odds": "1.651388888888889",
-   "probability_band": "60-64.9%",
-   "probability_source": "Odds API basketball_nba h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-11-14T06:30:00+00:00",
-   "actual_workflow_start": "2026-11-14T13:44:06Z",
-   "prediction_timestamp": "2026-11-14T13:45:19.601904+00:00",
-   "minutes_to_event": "684.7",
-   "live_price": "1.65",
-   "live_price_source": "odds_api:matchbook",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "True",
-   "single_ineligible_reason": "",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:basketball_nba",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-15T01:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
   }
  ]
 }
