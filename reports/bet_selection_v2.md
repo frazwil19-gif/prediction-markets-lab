@@ -4,34 +4,27 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-14T16:16Z · events scanned 11 · valid predictions 11 · high-P (≥70%) 5 · priced 7 · PAPER_BET 0 · MULTI-research 2 · WATCH 0 · REJECT 12 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-15T07:16Z · events scanned 4 · valid predictions 4 · high-P (≥70%) 2 · priced 4 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 7 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): NET_EV_NOT_POSITIVE 8 · COMMISSION_UNKNOWN 4 · PREDICTION_NOT_VALID 3 · NET_EV_BELOW_PAPER_GATE 1 · ODDS_BELOW_PAYOUT_FLOOR 1 · OUTSIDE_EVENT_HORIZON 1 · EXCHANGE_SPREAD_TOO_WIDE 1
+Reason codes (latest run): PRICE_STALE 7 · NET_EV_NOT_POSITIVE 7 · PREDICTION_NOT_VALID 3 · EXCHANGE_SPREAD_TOO_WIDE 1
 
 ## Candidates (latest run, best price per prediction)
 
 | Event | Start | Sel | P | Fair | Odds (source) | Break-even | Net EV | Decision |
 |---|---|---|---|---|---|---|---|---|
-| Carlos Alcaraz v Frances Tiafoe | 2026-11-16T13:00 | Carlos Alcaraz | 87.8% | 1.14 | 1.14 (grosvenor) | 87.7% | 0.1% | REJECT |
-| Carlos Alcaraz v Frances Tiafoe | 2026-11-16T13:00 | Carlos Alcaraz | 87.8% | 1.14 | 1.14 (grosvenor) | 87.7% | 0.1% | MULTI_RESEARCH_ELIGIBLE |
-| Chicago Bulls @ Minnesota Timberwolves | 2026-11-15T01:10 | Minnesota Timberwolves | 85.9% | 1.16 | 1.13 (matchbook) | — | — | REJECT |
-| Denver Nuggets @ New Orleans Pelicans | 2026-11-15T00:10 | Denver Nuggets | 81.8% | 1.22 | 1.18 (smarkets) | 85.0% | -3.8% | MULTI_RESEARCH_ELIGIBLE |
+| Carlos Alcaraz v Frances Tiafoe | 2026-11-16T13:00 | Carlos Alcaraz | 87.8% | 1.14 | 1.13 (betfair_ex_uk) | 89.0% | -1.4% | REJECT |
+| Carlos Alcaraz v Frances Tiafoe | 2026-11-16T13:00 | Carlos Alcaraz | 87.8% | 1.14 | 1.13 (betfair_ex_uk) | 89.0% | -1.4% | REJECT |
 | Daniil Medvedev v Flavio Cobolli | 2026-11-16T19:30 | Daniil Medvedev | 77.5% | 1.29 | 1.26 (betfair_ex_uk) | 80.2% | -3.3% | REJECT |
-| Jessica Pegula v Mirra Andreeva | 2026-11-14T20:00 | Mirra Andreeva | 70.0% | 1.43 | 1.40 (sport888) | 71.4% | -2.0% | REJECT |
-| Alexander Zverev v Rafael Jodar | 2026-11-15T13:00 | Alexander Zverev | 68.3% | 1.46 | 1.44 (betfair_sb_uk) | 69.4% | -1.6% | REJECT |
-| Alexander Zverev v Rafael Jodar | 2026-11-15T13:00 | Alexander Zverev | 68.3% | 1.46 | 1.44 (betfair_sb_uk) | 69.4% | -1.6% | REJECT |
-| Detroit Pistons @ Miami Heat | 2026-11-15T01:10 | Detroit Pistons | 63.0% | 1.59 | 1.56 (matchbook) | — | — | REJECT |
-| Ben Shelton v Arthur Fils | 2026-11-15T19:30 | Ben Shelton | 62.0% | 1.61 | 1.58 (livescorebet) | 63.3% | -2.0% | REJECT |
-| Ben Shelton v Arthur Fils | 2026-11-15T19:30 | Ben Shelton | 62.0% | 1.61 | 1.58 (livescorebet) | 63.3% | -2.0% | REJECT |
-| Brooklyn Nets @ Memphis Grizzlies | 2026-11-15T01:10 | Memphis Grizzlies | 60.6% | 1.65 | 1.65 (matchbook) | — | — | REJECT |
-| Linda Noskova v Elina Svitolina | 2026-11-14T21:30 | Linda Noskova | 60.4% | 1.66 | 1.63 (grosvenor) | 61.3% | -1.6% | REJECT |
-| Dallas Mavericks @ Cleveland Cavaliers | 2026-11-15T00:40 | Cleveland Cavaliers | 50.9% | 1.96 | 2.02 (matchbook) | — | — | REJECT |
+| Alexander Zverev v Rafael Jodar | 2026-11-15T13:00 | Alexander Zverev | 68.3% | 1.46 | 1.45 (betfair_ex_uk) | 70.1% | -2.5% | REJECT |
+| Alexander Zverev v Rafael Jodar | 2026-11-15T13:00 | Alexander Zverev | 68.3% | 1.46 | 1.45 (betfair_ex_uk) | 70.1% | -2.5% | REJECT |
+| Ben Shelton v Arthur Fils | 2026-11-15T19:30 | Ben Shelton | 62.0% | 1.61 | 1.60 (betfair_ex_uk) | 63.7% | -2.6% | REJECT |
+| Ben Shelton v Arthur Fils | 2026-11-15T19:30 | Ben Shelton | 62.0% | 1.61 | 1.60 (betfair_ex_uk) | 63.7% | -2.6% | REJECT |
 
 ## Paper results (all time)
 
 Selections 4 · settled 3 · pending 1 · win rate 33.3% · avg P 64.7% · avg odds 1.60 · expected net +0.09u · realised net -1.47u · yield -49.0% · max DD 2.00u · longest losing streak 2
 
-Days evaluated 47 · no-bet days 43 (2026-09-30, 2026-10-01, 2026-10-02, 2026-10-03, 2026-10-04, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-08, 2026-10-09, 2026-10-10, 2026-10-11, 2026-10-12, 2026-10-14, 2026-10-16, 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21, 2026-10-22, 2026-10-23, 2026-10-24, 2026-10-25, 2026-10-26, 2026-10-27, 2026-10-28, 2026-10-29, 2026-10-30, 2026-10-31, 2026-11-01, 2026-11-02, 2026-11-03, 2026-11-04, 2026-11-05, 2026-11-06, 2026-11-07, 2026-11-08, 2026-11-09, 2026-11-11, 2026-11-12, 2026-11-13, 2026-11-14)
+Days evaluated 48 · no-bet days 44 (2026-09-30, 2026-10-01, 2026-10-02, 2026-10-03, 2026-10-04, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-08, 2026-10-09, 2026-10-10, 2026-10-11, 2026-10-12, 2026-10-14, 2026-10-16, 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21, 2026-10-22, 2026-10-23, 2026-10-24, 2026-10-25, 2026-10-26, 2026-10-27, 2026-10-28, 2026-10-29, 2026-10-30, 2026-10-31, 2026-11-01, 2026-11-02, 2026-11-03, 2026-11-04, 2026-11-05, 2026-11-06, 2026-11-07, 2026-11-08, 2026-11-09, 2026-11-11, 2026-11-12, 2026-11-13, 2026-11-14, 2026-11-15)
 
 ## Bankroll simulations (descriptive; small samples prove nothing)
 

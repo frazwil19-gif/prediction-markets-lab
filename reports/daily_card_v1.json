@@ -1,7 +1,7 @@
 {
  "card_version": "card-v1.2",
- "generated_at": "2026-11-15T02:03:09.689470+00:00",
- "stage_a_generated_at": "2026-11-15T02:03:08.898332+00:00",
+ "generated_at": "2026-11-15T07:16:41.084802+00:00",
+ "stage_a_generated_at": "2026-11-15T07:16:39.992330+00:00",
  "real_money_enabled": false,
  "mode": "PAPER \u2014 unattended prospective validation (real-money betting paused; nothing to place)",
  "summary": {
@@ -14,10 +14,8 @@
   "research_predictions": 0
  },
  "rejection_reasons": {
-  "NET_EV_NOT_POSITIVE": 2,
-  "NET_EV_BELOW_PAPER_GATE": 1,
-  "ODDS_BELOW_PAYOUT_FLOOR": 1,
-  "OUTSIDE_EVENT_HORIZON": 1
+  "PRICE_STALE": 3,
+  "NET_EV_NOT_POSITIVE": 3
  },
  "best_predictions": [
   {
@@ -39,14 +37,14 @@
    "best_odds": null,
    "best_source": "",
    "best_net_ev": null,
-   "decision": "MULTI_RESEARCH_ELIGIBLE",
-   "decision_reasons": "NET_EV_BELOW_PAPER_GATE|ODDS_BELOW_PAYOUT_FLOOR|OUTSIDE_EVENT_HORIZON",
-   "decision_odds": "1.14",
-   "decision_source": "grosvenor",
-   "decision_net_ev": "0.0008561599999998559",
+   "decision": "REJECT",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.13",
+   "decision_source": "betfair_ex_uk",
+   "decision_net_ev": "-0.013629916000000158",
    "price_observed_at": "2026-11-14T16:16:31.414802+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-14T16:16:35.209146+00:00",
+   "decision_evaluated_at": "2026-11-15T07:16:40.612555+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -69,13 +67,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
-   "decision_odds": "1.44",
-   "decision_source": "betfair_sb_uk",
-   "decision_net_ev": "-0.016052319999999953",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.45",
+   "decision_source": "betfair_ex_uk",
+   "decision_net_ev": "-0.02459353249999996",
    "price_observed_at": "2026-11-14T16:16:31.414802+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-14T16:16:35.209146+00:00",
+   "decision_evaluated_at": "2026-11-15T07:16:40.612555+00:00",
    "min_bookmaker_odds": 1.5
   },
   {
@@ -98,13 +96,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
-   "decision_odds": "1.58",
-   "decision_source": "livescorebet",
-   "decision_net_ev": "-0.019693740000000015",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.6",
+   "decision_source": "betfair_ex_uk",
+   "decision_net_ev": "-0.025898209999999977",
    "price_observed_at": "2026-11-14T16:16:31.414802+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-14T16:16:35.209146+00:00",
+   "decision_evaluated_at": "2026-11-15T07:16:40.612555+00:00",
    "min_bookmaker_odds": 1.65
   }
  ],
@@ -130,14 +128,14 @@
    "best_odds": null,
    "best_source": "",
    "best_net_ev": null,
-   "decision": "MULTI_RESEARCH_ELIGIBLE",
-   "decision_reasons": "NET_EV_BELOW_PAPER_GATE|ODDS_BELOW_PAYOUT_FLOOR|OUTSIDE_EVENT_HORIZON",
-   "decision_odds": "1.14",
-   "decision_source": "grosvenor",
-   "decision_net_ev": "0.0008561599999998559",
+   "decision": "REJECT",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.13",
+   "decision_source": "betfair_ex_uk",
+   "decision_net_ev": "-0.013629916000000158",
    "price_observed_at": "2026-11-14T16:16:31.414802+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-14T16:16:35.209146+00:00",
+   "decision_evaluated_at": "2026-11-15T07:16:40.612555+00:00",
    "min_bookmaker_odds": 1.33
   }
  ],
