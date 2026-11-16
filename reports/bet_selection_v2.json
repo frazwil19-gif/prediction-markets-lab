@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-11-16T07:16:45.128079+00:00",
+ "generated_at": "2026-11-16T16:16:31.182707+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-4",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 143,
+  "runs": 144,
   "totals_over_runs": {
-   "events_scanned": 4883,
-   "valid_predictions": 17019,
-   "high_p_candidates": 4785,
-   "priced_candidates": 8816,
+   "events_scanned": 4894,
+   "valid_predictions": 17030,
+   "high_p_candidates": 4789,
+   "priced_candidates": 8822,
    "PAPER_BET": 23,
    "MULTI_RESEARCH_ELIGIBLE": 228,
    "WATCH": 76,
-   "REJECT": 17096,
+   "REJECT": 17107,
    "paper_bets_added": 13,
    "money_card_qualified": 15
   },
@@ -75,32 +75,34 @@
   }
  },
  "latest_run": {
-  "run_at": "2026-11-16T07:16:45.128079+00:00",
+  "run_at": "2026-11-16T16:16:31.182707+00:00",
   "trigger": "workflow_dispatch",
   "rule_version": "bsv2-4",
-  "events_scanned": "2",
-  "valid_predictions": "2",
-  "high_p_candidates": "2",
-  "priced_candidates": "2",
+  "events_scanned": "11",
+  "valid_predictions": "11",
+  "high_p_candidates": "4",
+  "priced_candidates": "6",
   "PAPER_BET": "0",
   "MULTI_RESEARCH_ELIGIBLE": "0",
   "WATCH": "0",
-  "REJECT": "3",
+  "REJECT": "11",
   "paper_bets_added": "0",
-  "snapshots_added": "0",
+  "snapshots_added": "58",
   "money_card_qualified": "0",
   "football_fixtures_on_card": "0"
  },
  "latest_decisions": {
   "decisions": {
-   "REJECT": 3
+   "REJECT": 11
   },
   "reason_counts": {
-   "PRICE_STALE": 3,
-   "NET_EV_NOT_POSITIVE": 3,
-   "PREDICTION_NOT_VALID": 1
+   "NET_EV_NOT_POSITIVE": 6,
+   "COMMISSION_UNKNOWN": 5
   },
   "by_sport": {
+   "basketball": {
+    "REJECT": 8
+   },
    "tennis": {
     "REJECT": 3
    }
@@ -108,6 +110,9 @@
   "by_engine": {
    "atp_match_winner.betfair_market": {
     "REJECT": 3
+   },
+   "nba_moneyline.market": {
+    "REJECT": 8
    }
   }
  },
