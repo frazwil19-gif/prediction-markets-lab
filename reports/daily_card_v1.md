@@ -1,4 +1,4 @@
-# Daily Prediction Board & Bet Card — 2026-11-16T02:19Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-16T07:16Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
@@ -27,12 +27,12 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 | Event | Selection | P | Fair odds | Best clean price | Why no bet |
 |---|---|---|---|---|---|
-| Carlos Alcaraz v Frances Tiafoe (2026-11-16T13:00) | match_winner: Carlos Alcaraz | 88.9% | 1.12 | — | NET_EV_BELOW_PAPER_GATE, ODDS_BELOW_PAYOUT_FLOOR |
-| Daniil Medvedev v Flavio Cobolli (2026-11-16T19:30) | match_winner: Daniil Medvedev | 76.7% | 1.30 | — | OUTSIDE_EVENT_HORIZON |
+| Carlos Alcaraz v Frances Tiafoe (2026-11-16T13:00) | match_winner: Carlos Alcaraz | 88.9% | 1.12 | — | PRICE_STALE, NET_EV_NOT_POSITIVE |
+| Daniil Medvedev v Flavio Cobolli (2026-11-16T19:30) | match_winner: Daniil Medvedev | 76.7% | 1.30 | — | PRICE_STALE, NET_EV_NOT_POSITIVE |
 
 ### Why predictions in the window were not bets
 
-NET_EV_BELOW_PAPER_GATE 1 · ODDS_BELOW_PAYOUT_FLOOR 1 · OUTSIDE_EVENT_HORIZON 1
+PRICE_STALE 2 · NET_EV_NOT_POSITIVE 2
 
 ## 4. Research predictions — not money eligible
 
