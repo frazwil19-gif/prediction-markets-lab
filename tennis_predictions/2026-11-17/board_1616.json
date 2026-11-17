@@ -1,0 +1,120 @@
+{
+ "board_date": "2026-11-17",
+ "layer": "PREDICTION (paper) -- not a bet recommendation",
+ "coverage": {
+  "active_keys": [
+   "tennis_atp_finals"
+  ],
+  "skipped_for_credit_guard": [],
+  "keys_over_cap": [],
+  "skipped_no_upcoming_event": [],
+  "events_returned": 3,
+  "scan_timestamp": "2026-11-17T16:16:22.405276+00:00",
+  "credits_remaining_after": 250,
+  "universe_note": "Odds-API-covered universe only (Slams, 1000s, 500s) -- not the full ATP/WTA calendar"
+ },
+ "counts": {
+  "events_scanned": 3,
+  "valid_predictions": 3,
+  "research_only_predictions": 0,
+  "ge_70": 1,
+  "ge_75": 1,
+  "ge_80": 0,
+  "ge_85": 0,
+  "ge_90": 0,
+  "ge_95": 0
+ },
+ "predictions": [
+  {
+   "prediction_id": "e70081db07de00b3",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "ATP",
+   "sport_key": "tennis_atp_finals",
+   "tournament": "ATP Finals",
+   "event_id": "a3e64105988f48f4c6447c9ca6de0030",
+   "player_a": "Carlos Alcaraz",
+   "player_b": "Daniil Medvedev",
+   "commence_time": "2026-11-18T13:00:00+00:00",
+   "prediction_timestamp": "2026-11-17T16:16:22.405276+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=1.28/4.4;ex_lay=1.29/4.5",
+   "p_a": 0.775937,
+   "p_b": 0.224063,
+   "predicted_winner": "Carlos Alcaraz",
+   "predicted_probability": 0.775937,
+   "probability_band": "75-79.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 446,
+   "historical_band_actual_rate": 0.7691,
+   "historical_band_wilson95": [
+    0.7277,
+    0.8058
+   ],
+   "engine_holdout_n": 5066
+  },
+  {
+   "prediction_id": "4e744a6235b63bfc",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "ATP",
+   "sport_key": "tennis_atp_finals",
+   "tournament": "ATP Finals",
+   "event_id": "f0a6612a0e894025a58459b04ecd02c9",
+   "player_a": "Alexander Zverev",
+   "player_b": "Ben Shelton",
+   "commence_time": "2026-11-17T19:30:00+00:00",
+   "prediction_timestamp": "2026-11-17T16:16:22.405276+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=1.5/2.94;ex_lay=1.52/2.98",
+   "p_a": 0.662192,
+   "p_b": 0.337808,
+   "predicted_winner": "Alexander Zverev",
+   "predicted_probability": 0.662192,
+   "probability_band": "65-69.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 646,
+   "historical_band_actual_rate": 0.7121,
+   "historical_band_wilson95": [
+    0.676,
+    0.7457
+   ],
+   "engine_holdout_n": 5066
+  },
+  {
+   "prediction_id": "896b04bee860a43a",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "ATP",
+   "sport_key": "tennis_atp_finals",
+   "tournament": "ATP Finals",
+   "event_id": "5f11f792535a031c557f8a33a8093f18",
+   "player_a": "Flavio Cobolli",
+   "player_b": "Frances Tiafoe",
+   "commence_time": "2026-11-18T19:30:00+00:00",
+   "prediction_timestamp": "2026-11-17T16:16:22.405276+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=2.16/1.79;ex_lay=2.26/1.85",
+   "p_a": 0.451613,
+   "p_b": 0.548387,
+   "predicted_winner": "Frances Tiafoe",
+   "predicted_probability": 0.548387,
+   "probability_band": "50-54.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 700,
+   "historical_band_actual_rate": 0.5457,
+   "historical_band_wilson95": [
+    0.5087,
+    0.5822
+   ],
+   "engine_holdout_n": 5066
+  }
+ ],
+ "research_only": []
+}

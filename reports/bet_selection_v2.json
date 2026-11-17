@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-11-17T07:16:38.621724+00:00",
+ "generated_at": "2026-11-17T16:16:25.588500+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-4",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 145,
+  "runs": 146,
   "totals_over_runs": {
-   "events_scanned": 4896,
-   "valid_predictions": 17032,
-   "high_p_candidates": 4789,
-   "priced_candidates": 8824,
+   "events_scanned": 4904,
+   "valid_predictions": 17040,
+   "high_p_candidates": 4792,
+   "priced_candidates": 8829,
    "PAPER_BET": 23,
    "MULTI_RESEARCH_ELIGIBLE": 228,
-   "WATCH": 76,
-   "REJECT": 17109,
+   "WATCH": 77,
+   "REJECT": 17116,
    "paper_bets_added": 13,
    "money_card_qualified": 15
   },
@@ -76,38 +76,48 @@
   }
  },
  "latest_run": {
-  "run_at": "2026-11-17T07:16:38.621724+00:00",
+  "run_at": "2026-11-17T16:16:25.588500+00:00",
   "trigger": "workflow_dispatch",
   "rule_version": "bsv2-4",
-  "events_scanned": "2",
-  "valid_predictions": "2",
-  "high_p_candidates": "0",
-  "priced_candidates": "2",
+  "events_scanned": "8",
+  "valid_predictions": "8",
+  "high_p_candidates": "3",
+  "priced_candidates": "5",
   "PAPER_BET": "0",
   "MULTI_RESEARCH_ELIGIBLE": "0",
-  "WATCH": "0",
-  "REJECT": "2",
+  "WATCH": "1",
+  "REJECT": "7",
   "paper_bets_added": "0",
-  "snapshots_added": "0",
+  "snapshots_added": "59",
   "money_card_qualified": "0",
   "football_fixtures_on_card": "0"
  },
  "latest_decisions": {
   "decisions": {
-   "REJECT": 2
+   "WATCH": 1,
+   "REJECT": 7
   },
   "reason_counts": {
-   "PRICE_STALE": 2,
-   "NET_EV_NOT_POSITIVE": 2
+   "NET_EV_NOT_POSITIVE": 4,
+   "COMMISSION_UNKNOWN": 3,
+   "NET_EV_BELOW_PAPER_GATE": 1
   },
   "by_sport": {
+   "basketball": {
+    "REJECT": 5
+   },
    "tennis": {
+    "WATCH": 1,
     "REJECT": 2
    }
   },
   "by_engine": {
    "atp_match_winner.betfair_market": {
+    "WATCH": 1,
     "REJECT": 2
+   },
+   "nba_moneyline.market": {
+    "REJECT": 5
    }
   }
  },
