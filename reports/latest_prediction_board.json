@@ -1,7 +1,7 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-11-17T03:41:05.238263+00:00",
+ "generated_at": "2026-11-17T04:41:52.535320+00:00",
  "date": "2026-11-17",
  "summary": {
   "upcoming_events": 2,
@@ -28,50 +28,48 @@
    ">=95": 0
   },
   "settled_yesterday": 0,
-  "system": "DEGRADED",
-  "api_credits_last_observed": 255
+  "system": "HEALTHY",
+  "api_credits_last_observed": 253
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-11-17T03:41:05.238263+00:00",
-  "overall": "DEGRADED",
-  "outage_flag": true,
+  "generated_at": "2026-11-17T04:41:52.535320+00:00",
+  "overall": "HEALTHY",
+  "outage_flag": false,
   "components": {
    "daily_scan": {
     "last": "2026-11-16T07:16:43.889291+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 20.4
+    "age_hours": 21.4
    },
    "settlement": {
-    "last": "2026-11-15T00:58:16.490450+00:00",
+    "last": "2026-11-17T03:41:06.834666+00:00",
     "status": "success",
-    "flag": "OUTAGE",
-    "age_hours": 50.7
+    "flag": "OK",
+    "age_hours": 1.0
    },
    "tennis_board": {
     "last": "2026-11-16T16:16:27.529708+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 11.4
+    "age_hours": 12.4
    },
    "ci_tests": {
-    "last": "2026-11-17T03:40:48.964437+00:00",
+    "last": "2026-11-17T04:41:37.421070+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    }
   },
   "api_credits": {
-   "remaining": 255,
-   "observed_at": "2026-11-16T16:16:29.463464+00:00",
+   "remaining": 253,
+   "observed_at": "2026-11-17T04:41:52.198798+00:00",
    "source": "nba_credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
-  "warnings": [
-   "settlement: OUTAGE (last 2026-11-15T00:58:16.490450+00:00)"
-  ],
-  "stale_data_warning": true
+  "warnings": [],
+  "stale_data_warning": false
  },
  "prospective_evidence": {
   "football_1x2.market_consensus": {
@@ -115,7 +113,7 @@
    "prospective_status": "COLLECTING",
    "money_eligible": true,
    "predictions": 215,
-   "settled_rows": 194,
+   "settled_rows": 196,
    "maturity": "EARLY",
    "ge80_settled": 29,
    "ge80_mean_pred": 0.8705418620689656,
@@ -127,7 +125,7 @@
    "prospective_status": "COLLECTING",
    "money_eligible": true,
    "predictions": 201,
-   "settled_rows": 168,
+   "settled_rows": 177,
    "maturity": "EARLY",
    "ge80_settled": 31,
    "ge80_mean_pred": 0.8930799677419355,
@@ -139,11 +137,11 @@
    "prospective_status": "AWAITING_SEASON",
    "money_eligible": true,
    "predictions": 160,
-   "settled_rows": 132,
+   "settled_rows": 154,
    "maturity": "EARLY",
-   "ge80_settled": 17,
-   "ge80_mean_pred": 0.8393602422005353,
-   "ge80_actual": 1.0,
+   "ge80_settled": 21,
+   "ge80_mean_pred": 0.8420689529751416,
+   "ge80_actual": 0.9523809523809523,
    "alarm_review_required": false
   },
   "nhl_moneyline.market": {
