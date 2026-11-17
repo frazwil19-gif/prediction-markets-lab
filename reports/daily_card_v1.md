@@ -1,4 +1,4 @@
-# Daily Prediction Board & Bet Card — 2026-11-17T04:41Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-17T07:16Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
@@ -29,7 +29,7 @@ None in the window.
 
 ### Why predictions in the window were not bets
 
-NET_EV_NOT_POSITIVE 2
+PRICE_STALE 2 · NET_EV_NOT_POSITIVE 2
 
 ## 4. Research predictions — not money eligible
 

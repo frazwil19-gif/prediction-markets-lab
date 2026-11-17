@@ -1,7 +1,7 @@
 {
  "card_version": "card-v1.2",
- "generated_at": "2026-11-17T04:41:53.172594+00:00",
- "stage_a_generated_at": "2026-11-17T04:41:52.535320+00:00",
+ "generated_at": "2026-11-17T07:16:39.175633+00:00",
+ "stage_a_generated_at": "2026-11-17T07:16:38.030132+00:00",
  "real_money_enabled": false,
  "mode": "PAPER \u2014 unattended prospective validation (real-money betting paused; nothing to place)",
  "summary": {
@@ -14,6 +14,7 @@
   "research_predictions": 0
  },
  "rejection_reasons": {
+  "PRICE_STALE": 2,
   "NET_EV_NOT_POSITIVE": 2
  },
  "best_predictions": [
@@ -37,13 +38,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
    "decision_odds": "1.53",
-   "decision_source": "coral",
-   "decision_net_ev": "-0.007944939999999956",
+   "decision_source": "betfair_ex_uk",
+   "decision_net_ev": "-0.025127592999999948",
    "price_observed_at": "2026-11-16T16:16:27.529708+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-16T16:16:31.182707+00:00",
+   "decision_evaluated_at": "2026-11-17T07:16:38.621724+00:00",
    "min_bookmaker_odds": 1.58
   },
   {
@@ -66,13 +67,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
-   "decision_odds": "1.91",
-   "decision_source": "skybet",
-   "decision_net_ev": "-0.02711667000000001",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.94",
+   "decision_source": "betfair_ex_uk",
+   "decision_net_ev": "-0.03577584100000003",
    "price_observed_at": "2026-11-16T16:16:27.529708+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-16T16:16:31.182707+00:00",
+   "decision_evaluated_at": "2026-11-17T07:16:38.621724+00:00",
    "min_bookmaker_odds": 2.01
   }
  ],
