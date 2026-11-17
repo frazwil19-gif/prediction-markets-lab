@@ -1,12 +1,12 @@
-# DAILY PREDICTION BOARD — 2026-11-16
+# DAILY PREDICTION BOARD — 2026-11-17
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-> **SYSTEM DEGRADED: settlement: STALE (last 2026-11-15T00:58:16.490450+00:00).** Predictions below may be incomplete or stale.
+> **SYSTEM DEGRADED: settlement: OUTAGE (last 2026-11-15T00:58:16.490450+00:00).** Predictions below may be incomplete or stale.
 
-Upcoming events: 11 · Valid predictions: 11 · Sports: basketball, tennis
-Counts: >=70: 4 · >=75: 2 · >=80: 0 · >=85: 0 · >=90: 0 · >=95: 0
-Settled yesterday: 12 · System: **DEGRADED** · API credits (last observed): 255
+Upcoming events: 2 · Valid predictions: 2 · Sports: tennis
+Counts: >=70: 0 · >=75: 0 · >=80: 0 · >=85: 0 · >=90: 0 · >=95: 0
+Settled yesterday: 0 · System: **DEGRADED** · API credits (last observed): 255
 
 ## Top predictions (P ≥ 80%)
 
@@ -31,10 +31,10 @@ Settled yesterday: 12 · System: **DEGRADED** · API credits (last observed): 25
 ## System health
 
 - daily_scan: OK (last 2026-11-16T07:16:43.889291+00:00)
-- settlement: STALE (last 2026-11-15T00:58:16.490450+00:00)
+- settlement: OUTAGE (last 2026-11-15T00:58:16.490450+00:00)
 - tennis_board: OK (last 2026-11-16T16:16:27.529708+00:00)
-- ci_tests: OK (last 2026-11-16T16:16:28.480565+00:00)
-- Warnings: settlement: STALE (last 2026-11-15T00:58:16.490450+00:00)
+- ci_tests: OK (last 2026-11-17T03:40:48.964437+00:00)
+- Warnings: settlement: OUTAGE (last 2026-11-15T00:58:16.490450+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
