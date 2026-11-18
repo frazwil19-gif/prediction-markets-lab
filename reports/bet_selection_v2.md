@@ -4,7 +4,7 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-18T15:54Z · events scanned 15 · valid predictions 15 · high-P (≥70%) 4 · priced 4 · PAPER_BET 0 · MULTI-research 1 · WATCH 0 · REJECT 14 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-18T16:16Z · events scanned 15 · valid predictions 15 · high-P (≥70%) 4 · priced 4 · PAPER_BET 0 · MULTI-research 1 · WATCH 0 · REJECT 14 · new paper bets 0 · Money Card qualified 0
 
 Reason codes (latest run): COMMISSION_UNKNOWN 11 · NET_EV_NOT_POSITIVE 4
 
@@ -15,15 +15,15 @@ Reason codes (latest run): COMMISSION_UNKNOWN 11 · NET_EV_NOT_POSITIVE 4
 | Milwaukee Bucks @ Miami Heat | 2026-11-19T00:10 | Miami Heat | 82.7% | 1.21 | 1.17 (skybet) | 85.5% | -3.3% | MULTI_RESEARCH_ELIGIBLE |
 | Utah Jazz @ Los Angeles Lakers | 2026-11-19T03:10 | Los Angeles Lakers | 77.8% | 1.28 | 1.27 (matchbook) | — | — | REJECT |
 | Houston Rockets @ Indiana Pacers | 2026-11-19T00:10 | Houston Rockets | 71.3% | 1.40 | 1.37 (matchbook) | — | — | REJECT |
-| Alexander Zverev v Arthur Fils | 2026-11-19T19:30 | Alexander Zverev | 70.2% | 1.43 | 1.41 (smarkets) | 71.3% | -1.7% | REJECT |
+| Alexander Zverev v Arthur Fils | 2026-11-19T19:30 | Alexander Zverev | 70.0% | 1.43 | 1.40 (betano_uk) | 71.4% | -2.0% | REJECT |
 | Detroit Pistons @ New Orleans Pelicans | 2026-11-19T01:10 | Detroit Pistons | 69.0% | 1.45 | 1.42 (matchbook) | — | — | REJECT |
 | Phoenix Suns @ Sacramento Kings | 2026-11-19T03:10 | Phoenix Suns | 68.5% | 1.46 | 1.42 (matchbook) | — | — | REJECT |
 | Washington Wizards @ Toronto Raptors | 2026-11-19T00:40 | Toronto Raptors | 68.0% | 1.47 | 1.44 (matchbook) | — | — | REJECT |
 | Atlanta Hawks @ Oklahoma City Thunder | 2026-11-19T01:10 | Oklahoma City Thunder | 67.7% | 1.48 | 1.43 (matchbook) | — | — | REJECT |
-| Ben Shelton v Rafael Jodar | 2026-11-19T13:00 | Ben Shelton | 65.0% | 1.54 | 1.53 (betfair_ex_uk) | 66.5% | -2.3% | REJECT |
+| Ben Shelton v Rafael Jodar | 2026-11-19T13:00 | Ben Shelton | 65.3% | 1.53 | 1.53 (betfair_ex_uk) | 66.5% | -1.8% | REJECT |
 | Memphis Grizzlies @ Cleveland Cavaliers | 2026-11-19T00:10 | Cleveland Cavaliers | 63.4% | 1.58 | 1.56 (matchbook) | — | — | REJECT |
 | Golden State Warriors @ Dallas Mavericks | 2026-11-19T02:40 | Dallas Mavericks | 62.7% | 1.59 | 1.56 (matchbook) | — | — | REJECT |
-| Flavio Cobolli v Frances Tiafoe | 2026-11-18T19:30 | Frances Tiafoe | 56.8% | 1.76 | 1.75 (unibet_uk) | 57.1% | -0.6% | REJECT |
+| Flavio Cobolli v Frances Tiafoe | 2026-11-18T19:30 | Frances Tiafoe | 57.0% | 1.75 | 1.75 (unibet_uk) | 57.1% | -0.2% | REJECT |
 | Boston Celtics @ Denver Nuggets | 2026-11-19T02:10 | Boston Celtics | 56.2% | 1.78 | 1.76 (matchbook) | — | — | REJECT |
 | Chicago Bulls @ Brooklyn Nets | 2026-11-19T00:40 | Brooklyn Nets | 56.1% | 1.78 | 1.76 (matchbook) | — | — | REJECT |
 | Philadelphia 76ers @ Orlando Magic | 2026-11-19T00:10 | Philadelphia 76ers | 52.7% | 1.90 | 1.93 (matchbook) | — | — | REJECT |

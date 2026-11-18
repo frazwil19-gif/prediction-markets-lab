@@ -1,7 +1,7 @@
 {
  "card_version": "card-v1.2",
- "generated_at": "2026-11-18T15:55:00.496292+00:00",
- "stage_a_generated_at": "2026-11-18T15:54:59.208658+00:00",
+ "generated_at": "2026-11-18T16:16:37.525323+00:00",
+ "stage_a_generated_at": "2026-11-18T16:16:36.319745+00:00",
  "real_money_enabled": false,
  "mode": "PAPER \u2014 unattended prospective validation (real-money betting paused; nothing to place)",
  "summary": {
@@ -44,7 +44,7 @@
    "decision_net_ev": "-0.03296018853631863",
    "price_observed_at": "2026-11-18T15:54:57.504656+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-18T15:54:59.905840+00:00",
+   "decision_evaluated_at": "2026-11-18T16:16:36.950260+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -73,7 +73,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-11-18T15:54:57.504656+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-18T15:54:59.905840+00:00",
+   "decision_evaluated_at": "2026-11-18T16:16:36.950260+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -102,7 +102,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-11-18T15:54:57.504656+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-18T15:54:59.905840+00:00",
+   "decision_evaluated_at": "2026-11-18T16:16:36.950260+00:00",
    "min_bookmaker_odds": 1.44
   },
   {
@@ -114,24 +114,24 @@
    "event_start": "2026-11-19T19:30:00+00:00",
    "market": "match_winner",
    "selection": "Alexander Zverev",
-   "probability": 0.701571,
+   "probability": 0.7,
    "band": "70%+",
-   "sigma": 0.012386,
+   "sigma": 0.011816,
    "evidence": "VALIDATED",
    "engine_id": "atp_match_winner.betfair_market",
    "fair_odds": 1.43,
    "price_status": "POOR_PAYOUT",
-   "best_odds": 1.41,
-   "best_source": "smarkets",
-   "best_net_ev": -0.016538,
+   "best_odds": 1.4,
+   "best_source": "williamhill",
+   "best_net_ev": -0.02,
    "decision": "REJECT",
    "decision_reasons": "NET_EV_NOT_POSITIVE",
-   "decision_odds": "1.41",
-   "decision_source": "smarkets",
-   "decision_net_ev": "-0.016537772200000134",
-   "price_observed_at": "2026-11-18T15:54:55.804253+00:00",
+   "decision_odds": "1.4",
+   "decision_source": "betano_uk",
+   "decision_net_ev": "-0.02000000000000013",
+   "price_observed_at": "2026-11-18T16:16:33.990860+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-18T15:54:59.905840+00:00",
+   "decision_evaluated_at": "2026-11-18T16:16:36.950260+00:00",
    "min_bookmaker_odds": 1.46
   },
   {
@@ -160,7 +160,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-11-18T15:54:57.504656+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-18T15:54:59.905840+00:00",
+   "decision_evaluated_at": "2026-11-18T16:16:36.950260+00:00",
    "min_bookmaker_odds": 1.48
   },
   {
@@ -189,7 +189,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-11-18T15:54:57.504656+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-18T15:54:59.905840+00:00",
+   "decision_evaluated_at": "2026-11-18T16:16:36.950260+00:00",
    "min_bookmaker_odds": 1.49
   },
   {
@@ -218,7 +218,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-11-18T15:54:57.504656+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-18T15:54:59.905840+00:00",
+   "decision_evaluated_at": "2026-11-18T16:16:36.950260+00:00",
    "min_bookmaker_odds": 1.51
   },
   {
@@ -247,7 +247,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-11-18T15:54:57.504656+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-18T15:54:59.905840+00:00",
+   "decision_evaluated_at": "2026-11-18T16:16:36.950260+00:00",
    "min_bookmaker_odds": 1.51
   },
   {
@@ -259,24 +259,24 @@
    "event_start": "2026-11-19T13:00:00+00:00",
    "market": "match_winner",
    "selection": "Ben Shelton",
-   "probability": 0.65,
+   "probability": 0.653107,
    "band": "60%+",
-   "sigma": 0.012301,
+   "sigma": 0.011749,
    "evidence": "VALIDATED",
    "engine_id": "atp_match_winner.betfair_market",
-   "fair_odds": 1.54,
+   "fair_odds": 1.53,
    "price_status": "POOR_PAYOUT",
    "best_odds": 1.53,
    "best_source": "betfair_ex_uk",
-   "best_net_ev": -0.022725,
+   "best_net_ev": -0.018054,
    "decision": "REJECT",
    "decision_reasons": "NET_EV_NOT_POSITIVE",
    "decision_odds": "1.53",
    "decision_source": "betfair_ex_uk",
-   "decision_net_ev": "-0.02272499999999994",
-   "price_observed_at": "2026-11-18T15:54:55.804253+00:00",
+   "decision_net_ev": "-0.018053625500000003",
+   "price_observed_at": "2026-11-18T16:16:33.990860+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-18T15:54:59.905840+00:00",
+   "decision_evaluated_at": "2026-11-18T16:16:36.950260+00:00",
    "min_bookmaker_odds": 1.57
   },
   {
@@ -305,7 +305,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-11-18T15:54:57.504656+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-18T15:54:59.905840+00:00",
+   "decision_evaluated_at": "2026-11-18T16:16:36.950260+00:00",
    "min_bookmaker_odds": 1.61
   },
   {
@@ -334,7 +334,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-11-18T15:54:57.504656+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-18T15:54:59.905840+00:00",
+   "decision_evaluated_at": "2026-11-18T16:16:36.950260+00:00",
    "min_bookmaker_odds": 1.63
   },
   {
@@ -346,25 +346,25 @@
    "event_start": "2026-11-18T19:30:00+00:00",
    "market": "match_winner",
    "selection": "Frances Tiafoe",
-   "probability": 0.568266,
+   "probability": 0.570025,
    "band": "50%+",
-   "sigma": 0.011078,
+   "sigma": 0.011533,
    "evidence": "VALIDATED",
    "engine_id": "atp_match_winner.betfair_market",
-   "fair_odds": 1.76,
+   "fair_odds": 1.75,
    "price_status": "POOR_PAYOUT",
    "best_odds": 1.75,
    "best_source": "unibet_uk",
-   "best_net_ev": -0.005534,
+   "best_net_ev": -0.002456,
    "decision": "REJECT",
    "decision_reasons": "NET_EV_NOT_POSITIVE",
    "decision_odds": "1.75",
    "decision_source": "unibet_uk",
-   "decision_net_ev": "-0.005534499999999887",
-   "price_observed_at": "2026-11-18T15:54:55.804253+00:00",
+   "decision_net_ev": "-0.002456249999999993",
+   "price_observed_at": "2026-11-18T16:16:33.990860+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-18T15:54:59.905840+00:00",
-   "min_bookmaker_odds": 1.8
+   "decision_evaluated_at": "2026-11-18T16:16:36.950260+00:00",
+   "min_bookmaker_odds": 1.79
   },
   {
    "prediction_id": "a0df449b270f1be5",
@@ -392,7 +392,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-11-18T15:54:57.504656+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-18T15:54:59.905840+00:00",
+   "decision_evaluated_at": "2026-11-18T16:16:36.950260+00:00",
    "min_bookmaker_odds": 1.82
   },
   {
@@ -421,7 +421,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-11-18T15:54:57.504656+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-18T15:54:59.905840+00:00",
+   "decision_evaluated_at": "2026-11-18T16:16:36.950260+00:00",
    "min_bookmaker_odds": 1.82
   },
   {
@@ -450,7 +450,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-11-18T15:54:57.504656+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-18T15:54:59.905840+00:00",
+   "decision_evaluated_at": "2026-11-18T16:16:36.950260+00:00",
    "min_bookmaker_odds": 1.94
   }
  ],
@@ -483,7 +483,7 @@
    "decision_net_ev": "-0.03296018853631863",
    "price_observed_at": "2026-11-18T15:54:57.504656+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-18T15:54:59.905840+00:00",
+   "decision_evaluated_at": "2026-11-18T16:16:36.950260+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -512,7 +512,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-11-18T15:54:57.504656+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-18T15:54:59.905840+00:00",
+   "decision_evaluated_at": "2026-11-18T16:16:36.950260+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -541,7 +541,7 @@
    "decision_net_ev": "",
    "price_observed_at": "2026-11-18T15:54:57.504656+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-18T15:54:59.905840+00:00",
+   "decision_evaluated_at": "2026-11-18T16:16:36.950260+00:00",
    "min_bookmaker_odds": 1.44
   },
   {
@@ -553,24 +553,24 @@
    "event_start": "2026-11-19T19:30:00+00:00",
    "market": "match_winner",
    "selection": "Alexander Zverev",
-   "probability": 0.701571,
+   "probability": 0.7,
    "band": "70%+",
-   "sigma": 0.012386,
+   "sigma": 0.011816,
    "evidence": "VALIDATED",
    "engine_id": "atp_match_winner.betfair_market",
    "fair_odds": 1.43,
    "price_status": "POOR_PAYOUT",
-   "best_odds": 1.41,
-   "best_source": "smarkets",
-   "best_net_ev": -0.016538,
+   "best_odds": 1.4,
+   "best_source": "williamhill",
+   "best_net_ev": -0.02,
    "decision": "REJECT",
    "decision_reasons": "NET_EV_NOT_POSITIVE",
-   "decision_odds": "1.41",
-   "decision_source": "smarkets",
-   "decision_net_ev": "-0.016537772200000134",
-   "price_observed_at": "2026-11-18T15:54:55.804253+00:00",
+   "decision_odds": "1.4",
+   "decision_source": "betano_uk",
+   "decision_net_ev": "-0.02000000000000013",
+   "price_observed_at": "2026-11-18T16:16:33.990860+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-18T15:54:59.905840+00:00",
+   "decision_evaluated_at": "2026-11-18T16:16:36.950260+00:00",
    "min_bookmaker_odds": 1.46
   }
  ],
