@@ -2,17 +2,17 @@
  "board_version": "stage-a-2",
  "product": "STAGE A PREDICTION BOARD (probability first; NOT a betting card)",
  "principle": "STRONG PREDICTION != VALID BET. Stage B (bet-selection) alone decides bets.",
- "generated_at": "2026-11-18T02:50:52.055345+00:00",
+ "generated_at": "2026-11-18T03:47:25.189263+00:00",
  "strong_prediction_min_probability": 0.7,
  "summary": {
-  "predictions": 4,
+  "predictions": 3,
   "strong_predictions": 2,
   "strong_unique_events": 2,
   "strong_by_price_status": {
    "PRICE_QUALITY_FAIL": 2
   },
   "all_by_price_status": {
-   "PRICE_QUALITY_FAIL": 4
+   "PRICE_QUALITY_FAIL": 3
   },
   "duplicate_prediction_rows_collapsed": 0,
   "strong_by_sport": {
@@ -20,7 +20,7 @@
    "tennis": 1
   },
   "all_by_sport": {
-   "basketball": 2,
+   "basketball": 1,
    "tennis": 2
   }
  },
@@ -118,52 +118,6 @@
    "rank": 2
   },
   {
-   "prediction_id": "18a1d0af68cdfbc4",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_key": "nba|e7343c795f16a5a2a6fd93dbc58499a6",
-   "event_name": "Utah Jazz @ Los Angeles Clippers",
-   "event_start": "2026-11-18T03:40:00+00:00",
-   "event_start_original": "2026-11-18T03:40:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "moneyline",
-   "selection": "Los Angeles Clippers",
-   "probability": 0.67138,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-11-17T16:16:23.650327+00:00",
-   "p_first_snapshot": 0.67138,
-   "p_current_scan": null,
-   "ledger_probability": 0.6713795470144132,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "683.6",
-   "sigma": 0.014319,
-   "sigma_method": "HIST_BAND_WILSON_SE (closing estimator; early-snapshot bias excluded)",
-   "sigma_calibration": 0.014319,
-   "calibration_status": "HOLDOUT_PASSED on closing estimator (live early-snapshot estimator not validated)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "65-69.9%",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "prediction_timestamp": "2026-11-17T16:16:23.650327+00:00",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "COMMISSION_UNKNOWN|PRICE_STALE",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-11-17T16:16:23.650327+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 3
-  },
-  {
    "prediction_id": "896b04bee860a43a",
    "sport": "tennis",
    "competition": "ATP Finals",
@@ -207,7 +161,7 @@
    "price_observed_at": "2026-11-17T16:16:22.405276+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 4
+   "rank": 3
   }
  ]
 }

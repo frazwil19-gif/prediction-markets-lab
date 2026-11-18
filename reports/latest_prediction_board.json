@@ -1,11 +1,11 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-11-18T02:50:52.055345+00:00",
+ "generated_at": "2026-11-18T03:47:25.189263+00:00",
  "date": "2026-11-18",
  "summary": {
-  "upcoming_events": 4,
-  "valid_predictions": 4,
+  "upcoming_events": 3,
+  "valid_predictions": 3,
   "sports_active": [
    "basketball",
    "tennis"
@@ -34,7 +34,7 @@
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-11-18T02:50:52.055345+00:00",
+  "generated_at": "2026-11-18T03:47:25.189263+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -42,22 +42,22 @@
     "last": "2026-11-17T07:16:37.471881+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 19.6
+    "age_hours": 20.5
    },
    "settlement": {
-    "last": "2026-11-17T03:41:06.834666+00:00",
+    "last": "2026-11-18T02:50:53.708571+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 23.2
+    "age_hours": 0.9
    },
    "tennis_board": {
     "last": "2026-11-17T16:16:22.405276+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 10.6
+    "age_hours": 11.5
    },
    "ci_tests": {
-    "last": "2026-11-18T02:50:37.229918+00:00",
+    "last": "2026-11-18T03:47:13.103139+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -193,11 +193,11 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 4,
-   "EXCLUDED": 3621
+   "ELIGIBLE": 3,
+   "EXCLUDED": 3622
   },
   "exclusion_reason": {
-   "EVENT_STARTED": 3621
+   "EVENT_STARTED": 3622
   },
   "start_time_status": {
    "LEDGER_ONLY": 3124,
@@ -289,48 +289,6 @@
    "correct": "",
    "settlement_timestamp": "",
    "event_start_original": "2026-11-18T04:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
-  },
-  {
-   "prediction_id": "18a1d0af68cdfbc4",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_id": "e7343c795f16a5a2a6fd93dbc58499a6",
-   "event_key": "nba|e7343c795f16a5a2a6fd93dbc58499a6",
-   "event_name": "Utah Jazz @ Los Angeles Clippers",
-   "event_start": "2026-11-18T03:40:00+00:00",
-   "market": "moneyline",
-   "selection": "Los Angeles Clippers",
-   "estimated_probability": "0.6713795470144132",
-   "fair_odds": "1.4894704559394807",
-   "probability_band": "65-69.9%",
-   "probability_source": "Odds API basketball_nba h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "MANUAL:workflow_dispatch",
-   "actual_workflow_start": "2026-11-17T16:15:23Z",
-   "prediction_timestamp": "2026-11-17T16:16:23.650327+00:00",
-   "minutes_to_event": "683.6",
-   "live_price": "1.47",
-   "live_price_source": "odds_api:matchbook",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "True",
-   "single_ineligible_reason": "",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:basketball_nba",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-18T03:40:00+00:00",
    "start_time_status": "LEDGER_ONLY",
    "start_time_source": "unified_ledger.event_start"
   },
