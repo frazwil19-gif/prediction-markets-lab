@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-11-18T03:47Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-18T07:16Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 3 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 2 · research predictions: 0
+Predictions in the next window: 2 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 1 · research predictions: 0
 
 ## 1. Best predictions today
 
@@ -11,8 +11,7 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | # | Sport | Event | Start (UTC) | Market | Selection | P | Band | σ | Evidence | Fair odds | Best price | Bet? |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | tennis | Carlos Alcaraz v Daniil Medvedev | 2026-11-18T13:00 | match_winner | Carlos Alcaraz | 77.6% | 70%+ | 1.2% | VALIDATED | 1.29 | price not usable (stale/wide/unknown commission) | no |
-| 2 | basketball | Charlotte Hornets @ Los Angeles Lakers | 2026-11-18T04:10 | moneyline | Los Angeles Lakers | 72.0% | 70%+ | 1.4% | VALIDATED | 1.39 | price not usable (stale/wide/unknown commission) | no |
-| 3 | tennis | Flavio Cobolli v Frances Tiafoe | 2026-11-18T19:30 | match_winner | Frances Tiafoe | 54.8% | 50%+ | 1.5% | VALIDATED | 1.82 | price not usable (stale/wide/unknown commission) | no |
+| 2 | tennis | Flavio Cobolli v Frances Tiafoe | 2026-11-18T19:30 | match_winner | Frances Tiafoe | 54.8% | 50%+ | 1.5% | VALIDATED | 1.82 | price not usable (stale/wide/unknown commission) | no |
 
 ## 2. Qualified paper bets (simulated stakes, recorded automatically)
 
@@ -28,12 +27,11 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 | Event | Selection | P | Fair odds | Best clean price | Why no bet |
 |---|---|---|---|---|---|
-| Carlos Alcaraz v Daniil Medvedev (2026-11-18T13:00) | match_winner: Carlos Alcaraz | 77.6% | 1.29 | — | NET_EV_NOT_POSITIVE |
-| Charlotte Hornets @ Los Angeles Lakers (2026-11-18T04:10) | moneyline: Los Angeles Lakers | 72.0% | 1.39 | — | NET_EV_NOT_POSITIVE |
+| Carlos Alcaraz v Daniil Medvedev (2026-11-18T13:00) | match_winner: Carlos Alcaraz | 77.6% | 1.29 | — | PRICE_STALE, NET_EV_NOT_POSITIVE |
 
 ### Why predictions in the window were not bets
 
-NET_EV_NOT_POSITIVE 3
+PRICE_STALE 2 · NET_EV_NOT_POSITIVE 2
 
 ## 4. Research predictions — not money eligible
 

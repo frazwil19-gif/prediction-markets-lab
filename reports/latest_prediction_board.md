@@ -2,8 +2,8 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 3 · Valid predictions: 3 · Sports: basketball, tennis
-Counts: >=70: 2 · >=75: 1 · >=80: 0 · >=85: 0 · >=90: 0 · >=95: 0
+Upcoming events: 2 · Valid predictions: 2 · Sports: tennis
+Counts: >=70: 1 · >=75: 1 · >=80: 0 · >=85: 0 · >=90: 0 · >=95: 0
 Settled yesterday: 35 · System: **HEALTHY** · API credits (last observed): 249
 
 ## Top predictions (P ≥ 80%)
@@ -28,10 +28,10 @@ Settled yesterday: 35 · System: **HEALTHY** · API credits (last observed): 249
 
 ## System health
 
-- daily_scan: OK (last 2026-11-17T07:16:37.471881+00:00)
+- daily_scan: OK (last 2026-11-18T07:16:22.022002+00:00)
 - settlement: OK (last 2026-11-18T02:50:53.708571+00:00)
 - tennis_board: OK (last 2026-11-17T16:16:22.405276+00:00)
-- ci_tests: OK (last 2026-11-18T03:47:13.103139+00:00)
+- ci_tests: OK (last 2026-11-18T07:16:22.459182+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
