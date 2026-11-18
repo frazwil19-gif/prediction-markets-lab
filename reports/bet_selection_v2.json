@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-11-18T07:16:22.942430+00:00",
+ "generated_at": "2026-11-18T15:54:59.905840+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-4",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 147,
+  "runs": 148,
   "totals_over_runs": {
-   "events_scanned": 4906,
-   "valid_predictions": 17042,
-   "high_p_candidates": 4793,
-   "priced_candidates": 8831,
+   "events_scanned": 4921,
+   "valid_predictions": 17057,
+   "high_p_candidates": 4797,
+   "priced_candidates": 8835,
    "PAPER_BET": 23,
-   "MULTI_RESEARCH_ELIGIBLE": 228,
+   "MULTI_RESEARCH_ELIGIBLE": 229,
    "WATCH": 77,
-   "REJECT": 17118,
+   "REJECT": 17132,
    "paper_bets_added": 13,
    "money_card_qualified": 15
   },
@@ -77,38 +77,47 @@
   }
  },
  "latest_run": {
-  "run_at": "2026-11-18T07:16:22.942430+00:00",
-  "trigger": "workflow_dispatch",
+  "run_at": "2026-11-18T15:54:59.905840+00:00",
+  "trigger": "schedule",
   "rule_version": "bsv2-4",
-  "events_scanned": "2",
-  "valid_predictions": "2",
-  "high_p_candidates": "1",
-  "priced_candidates": "2",
+  "events_scanned": "15",
+  "valid_predictions": "15",
+  "high_p_candidates": "4",
+  "priced_candidates": "4",
   "PAPER_BET": "0",
-  "MULTI_RESEARCH_ELIGIBLE": "0",
+  "MULTI_RESEARCH_ELIGIBLE": "1",
   "WATCH": "0",
-  "REJECT": "2",
+  "REJECT": "14",
   "paper_bets_added": "0",
-  "snapshots_added": "0",
+  "snapshots_added": "66",
   "money_card_qualified": "0",
   "football_fixtures_on_card": "0"
  },
  "latest_decisions": {
   "decisions": {
-   "REJECT": 2
+   "REJECT": 14,
+   "MULTI_RESEARCH_ELIGIBLE": 1
   },
   "reason_counts": {
-   "PRICE_STALE": 2,
-   "NET_EV_NOT_POSITIVE": 2
+   "COMMISSION_UNKNOWN": 11,
+   "NET_EV_NOT_POSITIVE": 4
   },
   "by_sport": {
+   "basketball": {
+    "REJECT": 11,
+    "MULTI_RESEARCH_ELIGIBLE": 1
+   },
    "tennis": {
-    "REJECT": 2
+    "REJECT": 3
    }
   },
   "by_engine": {
    "atp_match_winner.betfair_market": {
-    "REJECT": 2
+    "REJECT": 3
+   },
+   "nba_moneyline.market": {
+    "REJECT": 11,
+    "MULTI_RESEARCH_ELIGIBLE": 1
    }
   }
  },
