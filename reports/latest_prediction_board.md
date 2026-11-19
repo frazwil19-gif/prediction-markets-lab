@@ -1,16 +1,16 @@
-# DAILY PREDICTION BOARD — 2026-11-18
+# DAILY PREDICTION BOARD — 2026-11-19
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 15 · Valid predictions: 15 · Sports: basketball, tennis
-Counts: >=70: 4 · >=75: 2 · >=80: 1 · >=85: 0 · >=90: 0 · >=95: 0
-Settled yesterday: 35 · System: **HEALTHY** · API credits (last observed): 244
+Upcoming events: 5 · Valid predictions: 5 · Sports: basketball, tennis
+Counts: >=70: 2 · >=75: 1 · >=80: 0 · >=85: 0 · >=90: 0 · >=95: 0
+Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 244
 
 ## Top predictions (P ≥ 80%)
 
 | Sport | Event | Start (UTC) | Market | Selection | P | Fair | Band | Engine | Evidence | Price (source) | Single | Multi-research |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| basketball | Milwaukee Bucks @ Miami Heat | 2026-11-19T00:10 | moneyline | Miami Heat | 82.7% | 1.21 | 80-84.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.17 (odds_api:skybet) | no | yes |
+| — | no upcoming prediction at this level | | | | | | | | | | | |
 
 ## Prospective evidence
 
@@ -31,7 +31,7 @@ Settled yesterday: 35 · System: **HEALTHY** · API credits (last observed): 244
 - daily_scan: OK (last 2026-11-18T07:16:22.022002+00:00)
 - settlement: OK (last 2026-11-18T02:50:53.708571+00:00)
 - tennis_board: OK (last 2026-11-18T16:16:33.990860+00:00)
-- ci_tests: OK (last 2026-11-18T16:16:34.850476+00:00)
+- ci_tests: OK (last 2026-11-19T02:29:14.130936+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 

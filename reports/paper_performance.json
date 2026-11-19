@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T02:50:53.486765+00:00",
+ "generated_at": "2026-11-19T02:29:26.951532+00:00",
  "mode": "PAPER \u2014 unattended prospective validation; stakes SIMULATED",
  "windows": {
   "weekly": {
@@ -48,13 +48,13 @@
      }
     }
    },
-   "candidates_evaluated": 77,
+   "candidates_evaluated": 72,
    "qualified_in_shadow": 0,
    "qualification_rate": 0.0,
    "rejections": {
-    "NET_EV_NOT_POSITIVE": 46,
-    "COMMISSION_UNKNOWN": 29,
-    "PRICE_STALE": 5,
+    "NET_EV_NOT_POSITIVE": 35,
+    "COMMISSION_UNKNOWN": 35,
+    "PRICE_STALE": 6,
     "PREDICTION_NOT_VALID": 3,
     "NET_EV_BELOW_PAPER_GATE": 2
    },
@@ -151,20 +151,20 @@
      }
     }
    },
-   "candidates_evaluated": 1831,
+   "candidates_evaluated": 1828,
    "qualified_in_shadow": 1,
    "qualification_rate": 0.0005,
    "rejections": {
-    "ENGINE_STATUS_INELIGIBLE": 1445,
-    "NET_EV_NOT_POSITIVE": 813,
-    "P_BELOW_FLOOR": 675,
-    "NO_EXECUTABLE_PRICE": 669,
-    "COMMISSION_UNKNOWN": 196,
-    "PRICE_STALE": 36,
+    "ENGINE_STATUS_INELIGIBLE": 1438,
+    "NET_EV_NOT_POSITIVE": 807,
+    "P_BELOW_FLOOR": 672,
+    "NO_EXECUTABLE_PRICE": 666,
+    "COMMISSION_UNKNOWN": 202,
+    "PRICE_STALE": 37,
     "PREDICTION_NOT_VALID": 21,
-    "EXCHANGE_SPREAD_TOO_WIDE": 14,
+    "EXCHANGE_SPREAD_TOO_WIDE": 12,
     "NET_EV_BELOW_PAPER_GATE": 6,
-    "PROBABILITY_NOT_SAME_SNAPSHOT": 3,
+    "PROBABILITY_NOT_SAME_SNAPSHOT": 2,
     "ODDS_BELOW_PAYOUT_FLOOR": 1
    },
    "by": {
@@ -492,16 +492,16 @@
      }
     }
    },
-   "candidates_evaluated": 3518,
+   "candidates_evaluated": 3532,
    "qualified_in_shadow": 3,
-   "qualification_rate": 0.0009,
+   "qualification_rate": 0.0008,
    "rejections": {
     "ENGINE_STATUS_INELIGIBLE": 2730,
-    "NET_EV_NOT_POSITIVE": 1602,
+    "NET_EV_NOT_POSITIVE": 1605,
     "P_BELOW_FLOOR": 1287,
     "NO_EXECUTABLE_PRICE": 1278,
-    "COMMISSION_UNKNOWN": 347,
-    "PRICE_STALE": 69,
+    "COMMISSION_UNKNOWN": 358,
+    "PRICE_STALE": 70,
     "PREDICTION_NOT_VALID": 66,
     "EXCHANGE_SPREAD_TOO_WIDE": 33,
     "NET_EV_BELOW_PAPER_GATE": 12,
