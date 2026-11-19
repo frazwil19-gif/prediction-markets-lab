@@ -4,35 +4,46 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-18T16:16Z · events scanned 15 · valid predictions 15 · high-P (≥70%) 4 · priced 4 · PAPER_BET 0 · MULTI-research 1 · WATCH 0 · REJECT 14 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-19T07:16Z · events scanned 6 · valid predictions 26 · high-P (≥70%) 10 · priced 14 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 26 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): COMMISSION_UNKNOWN 11 · NET_EV_NOT_POSITIVE 4
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 24 · P_BELOW_FLOOR 12 · NO_EXECUTABLE_PRICE 12 · NET_EV_NOT_POSITIVE 11 · PRICE_STALE 2
 
 ## Candidates (latest run, best price per prediction)
 
 | Event | Start | Sel | P | Fair | Odds (source) | Break-even | Net EV | Decision |
 |---|---|---|---|---|---|---|---|---|
-| Milwaukee Bucks @ Miami Heat | 2026-11-19T00:10 | Miami Heat | 82.7% | 1.21 | 1.17 (skybet) | 85.5% | -3.3% | MULTI_RESEARCH_ELIGIBLE |
-| Utah Jazz @ Los Angeles Lakers | 2026-11-19T03:10 | Los Angeles Lakers | 77.8% | 1.28 | 1.27 (matchbook) | — | — | REJECT |
-| Houston Rockets @ Indiana Pacers | 2026-11-19T00:10 | Houston Rockets | 71.3% | 1.40 | 1.37 (matchbook) | — | — | REJECT |
-| Alexander Zverev v Arthur Fils | 2026-11-19T19:30 | Alexander Zverev | 70.0% | 1.43 | 1.40 (betano_uk) | 71.4% | -2.0% | REJECT |
-| Detroit Pistons @ New Orleans Pelicans | 2026-11-19T01:10 | Detroit Pistons | 69.0% | 1.45 | 1.42 (matchbook) | — | — | REJECT |
-| Phoenix Suns @ Sacramento Kings | 2026-11-19T03:10 | Phoenix Suns | 68.5% | 1.46 | 1.42 (matchbook) | — | — | REJECT |
-| Washington Wizards @ Toronto Raptors | 2026-11-19T00:40 | Toronto Raptors | 68.0% | 1.47 | 1.44 (matchbook) | — | — | REJECT |
-| Atlanta Hawks @ Oklahoma City Thunder | 2026-11-19T01:10 | Oklahoma City Thunder | 67.7% | 1.48 | 1.43 (matchbook) | — | — | REJECT |
+| Bayern Munich v 1. FC Köln | 2026-11-20T19:30 | 1X | 95.8% | 1.04 | — | — | — | REJECT |
+| Bayern Munich v 1. FC Köln | 2026-11-20T19:30 | 12 | 92.6% | 1.08 | — | — | — | REJECT |
+| Bayern Munich v 1. FC Köln | 2026-11-20T19:30 | home | 88.5% | 1.13 | 1.09 (betfair) | 92.1% | -4.0% | REJECT |
+| Athletic Bilbao v Espanyol | 2026-11-20T20:00 | 1X | 85.6% | 1.17 | — | — | — | REJECT |
+| Athletic Bilbao v Espanyol | 2026-11-20T20:00 | 12 | 78.5% | 1.27 | — | — | — | REJECT |
+| Cercle Brugge KSV v Westerlo | 2026-11-20T19:45 | 12 | 75.6% | 1.32 | — | — | — | REJECT |
+| Troyes v Le Havre | 2026-11-20T19:45 | 12 | 72.4% | 1.38 | — | — | — | REJECT |
+| Troyes v Le Havre | 2026-11-20T19:45 | 1X | 71.0% | 1.41 | — | — | — | REJECT |
+| Cercle Brugge KSV v Westerlo | 2026-11-20T19:45 | 1X | 70.5% | 1.42 | — | — | — | REJECT |
+| Alexander Zverev v Arthur Fils | 2026-11-19T19:30 | Alexander Zverev | 70.0% | 1.43 | 1.42 (betfair_ex_uk) | 71.5% | -2.1% | REJECT |
 | Ben Shelton v Rafael Jodar | 2026-11-19T13:00 | Ben Shelton | 65.3% | 1.53 | 1.53 (betfair_ex_uk) | 66.5% | -1.8% | REJECT |
-| Memphis Grizzlies @ Cleveland Cavaliers | 2026-11-19T00:10 | Cleveland Cavaliers | 63.4% | 1.58 | 1.56 (matchbook) | — | — | REJECT |
-| Golden State Warriors @ Dallas Mavericks | 2026-11-19T02:40 | Dallas Mavericks | 62.7% | 1.59 | 1.56 (matchbook) | — | — | REJECT |
-| Flavio Cobolli v Frances Tiafoe | 2026-11-18T19:30 | Frances Tiafoe | 57.0% | 1.75 | 1.75 (unibet_uk) | 57.1% | -0.2% | REJECT |
-| Boston Celtics @ Denver Nuggets | 2026-11-19T02:10 | Boston Celtics | 56.2% | 1.78 | 1.76 (matchbook) | — | — | REJECT |
-| Chicago Bulls @ Brooklyn Nets | 2026-11-19T00:40 | Brooklyn Nets | 56.1% | 1.78 | 1.76 (matchbook) | — | — | REJECT |
-| Philadelphia 76ers @ Orlando Magic | 2026-11-19T00:10 | Philadelphia 76ers | 52.7% | 1.90 | 1.93 (matchbook) | — | — | REJECT |
+| Athletic Bilbao v Espanyol | 2026-11-20T20:00 | home | 64.2% | 1.56 | 1.51 (smarkets) | 66.7% | -3.7% | REJECT |
+| Troyes v Le Havre | 2026-11-20T19:45 | X2 | 56.6% | 1.77 | — | — | — | REJECT |
+| Cercle Brugge KSV v Westerlo | 2026-11-20T19:45 | X2 | 53.9% | 1.86 | — | — | — | REJECT |
+| Cercle Brugge KSV v Westerlo | 2026-11-20T19:45 | home | 46.3% | 2.16 | 2.08 (betfair) | 49.4% | -6.2% | REJECT |
+| Troyes v Le Havre | 2026-11-20T19:45 | home | 43.6% | 2.30 | 2.28 (betfair) | 45.1% | -3.4% | REJECT |
+| Athletic Bilbao v Espanyol | 2026-11-20T20:00 | X2 | 35.8% | 2.79 | — | — | — | REJECT |
+| Cercle Brugge KSV v Westerlo | 2026-11-20T19:45 | away | 29.6% | 3.38 | 3.25 (grosvenor) | 30.8% | -3.8% | REJECT |
+| Troyes v Le Havre | 2026-11-20T19:45 | away | 29.2% | 3.43 | 3.50 (betfair) | 29.6% | -1.6% | REJECT |
+| Troyes v Le Havre | 2026-11-20T19:45 | draw | 27.7% | 3.61 | 3.55 (betfair) | 29.2% | -5.3% | REJECT |
+| Cercle Brugge KSV v Westerlo | 2026-11-20T19:45 | draw | 24.5% | 4.09 | 4.00 (smarkets) | 25.4% | -3.7% | REJECT |
+| Athletic Bilbao v Espanyol | 2026-11-20T20:00 | draw | 21.5% | 4.66 | 4.70 (smarkets) | 21.6% | -0.7% | REJECT |
+| Athletic Bilbao v Espanyol | 2026-11-20T20:00 | away | 14.4% | 6.96 | 7.80 (smarkets) | 13.0% | 10.1% | REJECT |
+| Bayern Munich v 1. FC Köln | 2026-11-20T19:30 | X2 | 11.5% | 8.69 | — | — | — | REJECT |
+| Bayern Munich v 1. FC Köln | 2026-11-20T19:30 | draw | 7.4% | 13.60 | 17.50 (betfair) | 6.0% | 22.6% | REJECT |
+| Bayern Munich v 1. FC Köln | 2026-11-20T19:30 | away | 4.2% | 24.07 | 32.00 (betfair) | 3.3% | 26.5% | REJECT |
 
 ## Paper results (all time)
 
 Selections 4 · settled 4 · pending 0 · win rate 50.0% · avg P 64.3% · avg odds 1.60 · expected net +0.11u · realised net -0.85u · yield -21.2% · max DD 2.00u · longest losing streak 2
 
-Days evaluated 51 · no-bet days 47 (2026-09-30, 2026-10-01, 2026-10-02, 2026-10-03, 2026-10-04, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-08, 2026-10-09, 2026-10-10, 2026-10-11, 2026-10-12, 2026-10-14, 2026-10-16, 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21, 2026-10-22, 2026-10-23, 2026-10-24, 2026-10-25, 2026-10-26, 2026-10-27, 2026-10-28, 2026-10-29, 2026-10-30, 2026-10-31, 2026-11-01, 2026-11-02, 2026-11-03, 2026-11-04, 2026-11-05, 2026-11-06, 2026-11-07, 2026-11-08, 2026-11-09, 2026-11-11, 2026-11-12, 2026-11-13, 2026-11-14, 2026-11-15, 2026-11-16, 2026-11-17, 2026-11-18)
+Days evaluated 52 · no-bet days 48 (2026-09-30, 2026-10-01, 2026-10-02, 2026-10-03, 2026-10-04, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-08, 2026-10-09, 2026-10-10, 2026-10-11, 2026-10-12, 2026-10-14, 2026-10-16, 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21, 2026-10-22, 2026-10-23, 2026-10-24, 2026-10-25, 2026-10-26, 2026-10-27, 2026-10-28, 2026-10-29, 2026-10-30, 2026-10-31, 2026-11-01, 2026-11-02, 2026-11-03, 2026-11-04, 2026-11-05, 2026-11-06, 2026-11-07, 2026-11-08, 2026-11-09, 2026-11-11, 2026-11-12, 2026-11-13, 2026-11-14, 2026-11-15, 2026-11-16, 2026-11-17, 2026-11-18, 2026-11-19)
 
 ## Bankroll simulations (descriptive; small samples prove nothing)
 

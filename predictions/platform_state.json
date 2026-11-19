@@ -3,7 +3,7 @@
  "americanfootball_nfl_last_scores_date": "2026-11-09",
  "icehockey_nhl_last_odds_date": "2026-11-11",
  "icehockey_nhl_last_scores_date": "2026-11-11",
- "last_ci_pass": "2026-11-19T03:44:59.353230+00:00",
+ "last_ci_pass": "2026-11-19T07:16:36.442958+00:00",
  "last_runs": {
   "americanfootball_nfl": {
    "added": 0,
@@ -12,10 +12,10 @@
    "candidates": 1
   },
   "football": {
-   "added": 0,
+   "added": 24,
    "already_recorded": 0,
-   "at": "2026-11-18T07:16:22.515723+00:00",
-   "candidates": 0
+   "at": "2026-11-19T07:16:36.511374+00:00",
+   "candidates": 24
   },
   "icehockey_nhl": {
    "added": 7,
@@ -7742,7 +7742,9 @@
   "americanfootball_nfl": {
    "nfl_moneyline.market: OUTSIDE_36H_WINDOW": 14
   },
-  "football": {},
+  "football": {
+   "football: OUTSIDE_48H_WINDOW": 61
+  },
   "icehockey_nhl": {},
   "nba": {},
   "tennis": {}

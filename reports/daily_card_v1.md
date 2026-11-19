@@ -1,4 +1,4 @@
-# Daily Prediction Board & Bet Card — 2026-11-19T03:45Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-19T07:16Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
@@ -27,11 +27,11 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 | Event | Selection | P | Fair odds | Best clean price | Why no bet |
 |---|---|---|---|---|---|
-| Alexander Zverev v Arthur Fils (2026-11-19T19:30) | match_winner: Alexander Zverev | 70.0% | 1.43 | — | NET_EV_NOT_POSITIVE |
+| Alexander Zverev v Arthur Fils (2026-11-19T19:30) | match_winner: Alexander Zverev | 70.0% | 1.43 | — | PRICE_STALE, NET_EV_NOT_POSITIVE |
 
 ### Why predictions in the window were not bets
 
-NET_EV_NOT_POSITIVE 2
+PRICE_STALE 2 · NET_EV_NOT_POSITIVE 2
 
 ## 4. Research predictions — not money eligible
 

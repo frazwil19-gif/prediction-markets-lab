@@ -1,7 +1,7 @@
 {
  "card_version": "card-v1.2",
- "generated_at": "2026-11-19T03:45:19.321471+00:00",
- "stage_a_generated_at": "2026-11-19T03:45:18.398452+00:00",
+ "generated_at": "2026-11-19T07:16:37.698986+00:00",
+ "stage_a_generated_at": "2026-11-19T07:16:36.517012+00:00",
  "real_money_enabled": false,
  "mode": "PAPER \u2014 unattended prospective validation (real-money betting paused; nothing to place)",
  "summary": {
@@ -14,6 +14,7 @@
   "research_predictions": 0
  },
  "rejection_reasons": {
+  "PRICE_STALE": 2,
   "NET_EV_NOT_POSITIVE": 2
  },
  "best_predictions": [
@@ -37,13 +38,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
-   "decision_odds": "1.4",
-   "decision_source": "betano_uk",
-   "decision_net_ev": "-0.02000000000000013",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.42",
+   "decision_source": "betfair_ex_uk",
+   "decision_net_ev": "-0.020700000000000107",
    "price_observed_at": "2026-11-18T16:16:33.990860+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-18T16:16:36.950260+00:00",
+   "decision_evaluated_at": "2026-11-19T07:16:37.214451+00:00",
    "min_bookmaker_odds": 1.46
   },
   {
@@ -66,13 +67,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
    "decision_odds": "1.53",
    "decision_source": "betfair_ex_uk",
    "decision_net_ev": "-0.018053625500000003",
    "price_observed_at": "2026-11-18T16:16:33.990860+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-18T16:16:36.950260+00:00",
+   "decision_evaluated_at": "2026-11-19T07:16:37.214451+00:00",
    "min_bookmaker_odds": 1.57
   }
  ],
@@ -99,13 +100,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
-   "decision_odds": "1.4",
-   "decision_source": "betano_uk",
-   "decision_net_ev": "-0.02000000000000013",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.42",
+   "decision_source": "betfair_ex_uk",
+   "decision_net_ev": "-0.020700000000000107",
    "price_observed_at": "2026-11-18T16:16:33.990860+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-18T16:16:36.950260+00:00",
+   "decision_evaluated_at": "2026-11-19T07:16:37.214451+00:00",
    "min_bookmaker_odds": 1.46
   }
  ],
