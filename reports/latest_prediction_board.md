@@ -2,9 +2,9 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 6 · Valid predictions: 26 · Sports: football, tennis
-Counts: >=70: 10 · >=75: 6 · >=80: 4 · >=85: 4 · >=90: 2 · >=95: 1
-Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 242
+Upcoming events: 11 · Valid predictions: 31 · Sports: basketball, football, tennis
+Counts: >=70: 13 · >=75: 9 · >=80: 6 · >=85: 5 · >=90: 2 · >=95: 1
+Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 234
 
 ## Top predictions (P ≥ 80%)
 
@@ -13,7 +13,9 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 242
 | football | Bayern Munich v 1. FC Köln | 2026-11-20T19:30 | double_chance | 1X | 95.8% | 1.04 | 95%+ | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.03 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Bayern Munich v 1. FC Köln | 2026-11-20T19:30 | double_chance | 12 | 92.6% | 1.08 | 90-94.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.05 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Bayern Munich v 1. FC Köln | 2026-11-20T19:30 | 1x2 | home | 88.5% | 1.13 | 85-89.9% | football_1x2.market_consensus@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.09 (odds_api:Betfair) | no | yes |
+| basketball | Los Angeles Clippers @ San Antonio Spurs | 2026-11-20T01:10 | moneyline | San Antonio Spurs | 87.2% | 1.15 | 85-89.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.13 (odds_api:matchbook) | no | yes |
 | football | Athletic Bilbao v Espanyol | 2026-11-20T20:00 | double_chance | 1X | 85.6% | 1.17 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.14 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
+| tennis | Carlos Alcaraz v Flavio Cobolli | 2026-11-20T13:00 | match_winner | Carlos Alcaraz | 81.5% | 1.23 | 80-84.9% | atp_match_winner.betfair_market@1 | VALIDATED_HISTORICAL | 1.22 (betfair_ex_uk back (odds_api)) | no | yes |
 
 ## Prospective evidence
 
@@ -22,9 +24,9 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 242
 | football_1x2.market_consensus | VALIDATED_HISTORICAL / COLLECTING | 1290 | 513 | EARLY | 3 | 81.4% → 100.0% |
 | football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 174 | 174 | EARLY | 0 | — → — |
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
-| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 219 | 197 | EARLY | 29 | 87.1% → 75.9% |
+| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 221 | 197 | EARLY | 29 | 87.1% → 75.9% |
 | wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 201 | 177 | EARLY | 31 | 89.3% → 80.6% |
-| nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 177 | 168 | EARLY | 22 | 84.1% → 95.5% |
+| nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 181 | 168 | EARLY | 22 | 84.1% → 95.5% |
 | nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 159 | 122 | EARLY | 0 | — → — |
 | nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 56 | 41 | COLLECTING | 3 | 82.3% → 100.0% |
 | football_double_chance.derived_1x2 | PROVISIONAL_PROSPECTIVE / COLLECTING | 1290 | 9 | COLLECTING | 1 | 80.2% → 0.0% |
@@ -33,8 +35,8 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 242
 
 - daily_scan: OK (last 2026-11-19T07:16:35.608850+00:00)
 - settlement: OK (last 2026-11-19T02:29:27.232781+00:00)
-- tennis_board: OK (last 2026-11-18T16:16:33.990860+00:00)
-- ci_tests: OK (last 2026-11-19T07:16:36.442958+00:00)
+- tennis_board: OK (last 2026-11-19T15:59:10.373322+00:00)
+- ci_tests: OK (last 2026-11-19T15:59:12.410475+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 

@@ -4,9 +4,9 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-19T07:16Z · events scanned 6 · valid predictions 26 · high-P (≥70%) 10 · priced 14 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 26 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-19T15:59Z · events scanned 11 · valid predictions 31 · high-P (≥70%) 13 · priced 16 · PAPER_BET 0 · MULTI-research 1 · WATCH 0 · REJECT 30 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 24 · P_BELOW_FLOOR 12 · NO_EXECUTABLE_PRICE 12 · NET_EV_NOT_POSITIVE 11 · PRICE_STALE 2
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 24 · NET_EV_NOT_POSITIVE 13 · PRICE_STALE 12 · P_BELOW_FLOOR 12 · NO_EXECUTABLE_PRICE 12 · COMMISSION_UNKNOWN 3
 
 ## Candidates (latest run, best price per prediction)
 
@@ -15,17 +15,22 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 24 · P_BELOW_FLOOR 12 · NO
 | Bayern Munich v 1. FC Köln | 2026-11-20T19:30 | 1X | 95.8% | 1.04 | — | — | — | REJECT |
 | Bayern Munich v 1. FC Köln | 2026-11-20T19:30 | 12 | 92.6% | 1.08 | — | — | — | REJECT |
 | Bayern Munich v 1. FC Köln | 2026-11-20T19:30 | home | 88.5% | 1.13 | 1.09 (betfair) | 92.1% | -4.0% | REJECT |
+| Los Angeles Clippers @ San Antonio Spurs | 2026-11-20T01:10 | San Antonio Spurs | 87.2% | 1.15 | 1.13 (matchbook) | — | — | REJECT |
 | Athletic Bilbao v Espanyol | 2026-11-20T20:00 | 1X | 85.6% | 1.17 | — | — | — | REJECT |
+| Carlos Alcaraz v Flavio Cobolli | 2026-11-20T13:00 | Carlos Alcaraz | 81.5% | 1.23 | 1.22 (betfair_ex_uk) | 82.7% | -1.5% | MULTI_RESEARCH_ELIGIBLE |
+| Portland Trail Blazers @ Milwaukee Bucks | 2026-11-20T01:10 | Portland Trail Blazers | 78.6% | 1.27 | 1.24 (smarkets) | 81.0% | -2.9% | REJECT |
 | Athletic Bilbao v Espanyol | 2026-11-20T20:00 | 12 | 78.5% | 1.27 | — | — | — | REJECT |
 | Cercle Brugge KSV v Westerlo | 2026-11-20T19:45 | 12 | 75.6% | 1.32 | — | — | — | REJECT |
 | Troyes v Le Havre | 2026-11-20T19:45 | 12 | 72.4% | 1.38 | — | — | — | REJECT |
+| Alexander Zverev v Arthur Fils | 2026-11-19T19:30 | Alexander Zverev | 72.4% | 1.38 | 1.38 (grosvenor) | 72.5% | -0.1% | REJECT |
 | Troyes v Le Havre | 2026-11-20T19:45 | 1X | 71.0% | 1.41 | — | — | — | REJECT |
 | Cercle Brugge KSV v Westerlo | 2026-11-20T19:45 | 1X | 70.5% | 1.42 | — | — | — | REJECT |
-| Alexander Zverev v Arthur Fils | 2026-11-19T19:30 | Alexander Zverev | 70.0% | 1.43 | 1.42 (betfair_ex_uk) | 71.5% | -2.1% | REJECT |
-| Ben Shelton v Rafael Jodar | 2026-11-19T13:00 | Ben Shelton | 65.3% | 1.53 | 1.53 (betfair_ex_uk) | 66.5% | -1.8% | REJECT |
+| Daniil Medvedev v Frances Tiafoe | 2026-11-20T19:30 | Daniil Medvedev | 68.8% | 1.45 | 1.44 (betano_uk) | 69.4% | -0.9% | REJECT |
+| Golden State Warriors @ Memphis Grizzlies | 2026-11-20T01:10 | Memphis Grizzlies | 67.9% | 1.47 | 1.46 (matchbook) | — | — | REJECT |
 | Athletic Bilbao v Espanyol | 2026-11-20T20:00 | home | 64.2% | 1.56 | 1.51 (smarkets) | 66.7% | -3.7% | REJECT |
 | Troyes v Le Havre | 2026-11-20T19:45 | X2 | 56.6% | 1.77 | — | — | — | REJECT |
 | Cercle Brugge KSV v Westerlo | 2026-11-20T19:45 | X2 | 53.9% | 1.86 | — | — | — | REJECT |
+| New York Knicks @ Minnesota Timberwolves | 2026-11-20T01:10 | New York Knicks | 51.4% | 1.95 | 1.95 (matchbook) | — | — | REJECT |
 | Cercle Brugge KSV v Westerlo | 2026-11-20T19:45 | home | 46.3% | 2.16 | 2.08 (betfair) | 49.4% | -6.2% | REJECT |
 | Troyes v Le Havre | 2026-11-20T19:45 | home | 43.6% | 2.30 | 2.28 (betfair) | 45.1% | -3.4% | REJECT |
 | Athletic Bilbao v Espanyol | 2026-11-20T20:00 | X2 | 35.8% | 2.79 | — | — | — | REJECT |
