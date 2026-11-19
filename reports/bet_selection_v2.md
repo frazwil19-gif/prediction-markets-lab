@@ -4,7 +4,7 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-19T15:59Z · events scanned 11 · valid predictions 31 · high-P (≥70%) 13 · priced 16 · PAPER_BET 0 · MULTI-research 1 · WATCH 0 · REJECT 30 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-19T16:16Z · events scanned 11 · valid predictions 31 · high-P (≥70%) 13 · priced 16 · PAPER_BET 0 · MULTI-research 1 · WATCH 0 · REJECT 30 · new paper bets 0 · Money Card qualified 0
 
 Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 24 · NET_EV_NOT_POSITIVE 13 · PRICE_STALE 12 · P_BELOW_FLOOR 12 · NO_EXECUTABLE_PRICE 12 · COMMISSION_UNKNOWN 3
 
@@ -25,7 +25,7 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 24 · NET_EV_NOT_POSITIVE 13
 | Alexander Zverev v Arthur Fils | 2026-11-19T19:30 | Alexander Zverev | 72.4% | 1.38 | 1.38 (grosvenor) | 72.5% | -0.1% | REJECT |
 | Troyes v Le Havre | 2026-11-20T19:45 | 1X | 71.0% | 1.41 | — | — | — | REJECT |
 | Cercle Brugge KSV v Westerlo | 2026-11-20T19:45 | 1X | 70.5% | 1.42 | — | — | — | REJECT |
-| Daniil Medvedev v Frances Tiafoe | 2026-11-20T19:30 | Daniil Medvedev | 68.8% | 1.45 | 1.44 (betano_uk) | 69.4% | -0.9% | REJECT |
+| Daniil Medvedev v Frances Tiafoe | 2026-11-20T19:30 | Daniil Medvedev | 68.5% | 1.46 | 1.44 (betano_uk) | 69.4% | -1.4% | REJECT |
 | Golden State Warriors @ Memphis Grizzlies | 2026-11-20T01:10 | Memphis Grizzlies | 67.9% | 1.47 | 1.46 (matchbook) | — | — | REJECT |
 | Athletic Bilbao v Espanyol | 2026-11-20T20:00 | home | 64.2% | 1.56 | 1.51 (smarkets) | 66.7% | -3.7% | REJECT |
 | Troyes v Le Havre | 2026-11-20T19:45 | X2 | 56.6% | 1.77 | — | — | — | REJECT |

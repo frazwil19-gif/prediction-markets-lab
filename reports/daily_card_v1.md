@@ -1,4 +1,4 @@
-# Daily Prediction Board & Bet Card — 2026-11-19T15:59Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-19T16:16Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
@@ -23,7 +23,7 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | 11 | tennis | Alexander Zverev v Arthur Fils | 2026-11-19T19:30 | match_winner | Alexander Zverev | 72.4% | 70%+ | 1.2% | VALIDATED | 1.38 | 1.38 (virginbet) | no |
 | 12 | football | Troyes v Le Havre | 2026-11-20T19:45 | double_chance | 1X | 71.0% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.41 | no price | no |
 | 13 | football | Cercle Brugge KSV v Westerlo | 2026-11-20T19:45 | double_chance | 1X | 70.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.42 | no price | no |
-| 14 | tennis | Daniil Medvedev v Frances Tiafoe | 2026-11-20T19:30 | match_winner | Daniil Medvedev | 68.8% | 60%+ | 1.3% | VALIDATED | 1.45 | 1.44 (williamhill) | no |
+| 14 | tennis | Daniil Medvedev v Frances Tiafoe | 2026-11-20T19:30 | match_winner | Daniil Medvedev | 68.5% | 60%+ | 1.2% | VALIDATED | 1.46 | 1.44 (williamhill) | no |
 | 15 | basketball | Golden State Warriors @ Memphis Grizzlies | 2026-11-20T01:10 | moneyline | Memphis Grizzlies | 67.9% | 60%+ | 1.4% | VALIDATED | 1.47 | price not usable (stale/wide/unknown commission) | no |
 | 16 | football | Athletic Bilbao v Espanyol | 2026-11-20T20:00 | 1x2 | home | 64.2% | 60%+ | 1.3% | PROSPECTIVE_SHADOW_LEAGUE | 1.56 | price not usable (stale/wide/unknown commission) | no |
 | 17 | football | Troyes v Le Havre | 2026-11-20T19:45 | double_chance | X2 | 56.6% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.77 | no price | no |
