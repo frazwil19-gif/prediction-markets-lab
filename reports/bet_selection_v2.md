@@ -4,9 +4,9 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-20T07:16Z · events scanned 58 · valid predictions 362 · high-P (≥70%) 111 · priced 175 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 362 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-20T15:42Z · events scanned 67 · valid predictions 371 · high-P (≥70%) 112 · priced 184 · PAPER_BET 0 · MULTI-research 2 · WATCH 1 · REJECT 368 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 360 · P_BELOW_FLOOR 168 · NO_EXECUTABLE_PRICE 168 · NET_EV_NOT_POSITIVE 140 · COMMISSION_UNKNOWN 19 · PRICE_STALE 2
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 360 · PRICE_STALE 192 · P_BELOW_FLOOR 168 · NO_EXECUTABLE_PRICE 168 · NET_EV_NOT_POSITIVE 148 · COMMISSION_UNKNOWN 19 · NET_EV_BELOW_PAPER_GATE 1 · EXCHANGE_SPREAD_TOO_WIDE 1
 
 ## Candidates (latest run, best price per prediction)
 
@@ -33,6 +33,7 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 360 · P_BELOW_FLOOR 168 · 
 | West Ham United v Preston North End | 2026-11-21T15:00 | 12 | 86.3% | 1.16 | — | — | — | REJECT |
 | AS Monaco v Auxerre | 2026-11-21T19:45 | 1X | 86.0% | 1.16 | — | — | — | REJECT |
 | KV Mechelen v Club Brugge | 2026-11-21T19:45 | X2 | 85.9% | 1.16 | — | — | — | REJECT |
+| Sacramento Kings @ Los Angeles Lakers | 2026-11-21T03:10 | Los Angeles Lakers | 85.9% | 1.16 | 1.12 (smarkets) | 89.5% | -4.0% | MULTI_RESEARCH_ELIGIBLE |
 | Athletic Bilbao v Espanyol | 2026-11-20T20:00 | 1X | 85.6% | 1.17 | — | — | — | REJECT |
 | Genk v RAAL La Louvière | 2026-11-21T17:15 | 1X | 85.0% | 1.18 | — | — | — | REJECT |
 | Bayer Leverkusen v SC Paderborn | 2026-11-21T14:30 | 12 | 84.7% | 1.18 | — | — | — | REJECT |
@@ -47,7 +48,6 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 360 · P_BELOW_FLOOR 168 · 
 | Manchester City v Fulham | 2026-11-21T12:30 | 12 | 82.0% | 1.22 | — | — | — | REJECT |
 | Sheffield United v Watford | 2026-11-21T15:00 | 1X | 81.9% | 1.22 | — | — | — | REJECT |
 | KV Mechelen v Club Brugge | 2026-11-21T19:45 | 12 | 81.6% | 1.23 | — | — | — | REJECT |
-| Carlos Alcaraz v Flavio Cobolli | 2026-11-20T13:00 | Carlos Alcaraz | 81.5% | 1.23 | 1.22 (betfair_ex_uk) | 82.7% | -1.5% | REJECT |
 | Motherwell v Rangers | 2026-11-21T20:00 | X2 | 81.4% | 1.23 | — | — | — | REJECT |
 | Borussia Monchengladbach v Borussia Dortmund | 2026-11-21T14:30 | X2 | 81.2% | 1.23 | — | — | — | REJECT |
 | Middlesbrough v Bristol City | 2026-11-21T15:00 | 12 | 81.2% | 1.23 | — | — | — | REJECT |
