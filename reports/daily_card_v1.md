@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-11-20T16:16Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-20T16:23Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 371 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 113 · research predictions: 0
+Predictions in the next window: 371 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 113 · research predictions: 324
 
 ## 1. Best predictions today
 
@@ -187,4 +187,329 @@ ENGINE_STATUS_INELIGIBLE 360 · PRICE_STALE 192 · NO_EXECUTABLE_PRICE 168 · P_
 
 _Model probabilities from research engines. Shown for information and to build a prospective record; they are NOT betting recommendations._
 
-None in the window (corners collector lists no covered-league fixtures yet).
+| Event | Start | Market | Selection | P | Model fair odds | Model | Status |
+|---|---|---|---|---|---|---|---|
+| Milan v Frosinone (I1) | 2026-11-22 | total_corners | under 11.5 | 80.3% | 1.25 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lazio v Lecce (I1) | 2026-11-21 | total_corners | under 11.5 | 79.6% | 1.26 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sassuolo v Genoa (I1) | 2026-11-22 | total_corners | under 11.5 | 79.1% | 1.26 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Atalanta v Inter (I1) | 2026-11-22 | total_corners | under 11.5 | 79.1% | 1.26 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bologna v Udinese (I1) | 2026-11-22 | total_corners | under 11.5 | 77.3% | 1.29 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sevilla v Betis (SP1) | 2026-11-21 | total_corners | under 11.5 | 77.2% | 1.30 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Strasbourg v Brest (F1) | 2026-11-21 | total_corners | under 11.5 | 76.3% | 1.31 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Marseille v Le Mans (F1) | 2026-11-22 | total_corners | under 11.5 | 76.2% | 1.31 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Troyes v Le Havre (F1) | 2026-11-20 | total_corners | under 11.5 | 75.9% | 1.32 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Celtic v St Mirren (SC0) | 2026-11-21 | total_corners | over 8.5 | 75.8% | 1.32 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Getafe v Ath Madrid (SP1) | 2026-11-22 | total_corners | under 11.5 | 75.6% | 1.32 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Nice v Paris SG (F1) | 2026-11-21 | total_corners | under 11.5 | 75.5% | 1.32 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Twente v Willem II (N1) | 2026-11-22 | total_corners | over 8.5 | 74.9% | 1.34 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Napoli v Torino (I1) | 2026-11-21 | total_corners | under 11.5 | 74.8% | 1.34 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| M'gladbach v Dortmund (D1) | 2026-11-21 | total_corners | under 11.5 | 74.7% | 1.34 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Newcastle v Arsenal (E0) | 2026-11-21 | total_corners | under 11.5 | 74.4% | 1.34 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Osasuna v Malaga (SP1) | 2026-11-22 | total_corners | under 11.5 | 74.0% | 1.35 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Paris FC v Angers (F1) | 2026-11-22 | total_corners | under 11.5 | 74.0% | 1.35 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lille v Lyon (F1) | 2026-11-21 | total_corners | under 11.5 | 73.7% | 1.36 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Middlesbrough v Bristol City (E1) | 2026-11-21 | total_corners | over 8.5 | 73.6% | 1.36 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Hibernian v Dundee United (SC0) | 2026-11-21 | total_corners | over 8.5 | 73.6% | 1.36 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| West Ham v Preston (E1) | 2026-11-21 | total_corners | over 8.5 | 73.4% | 1.36 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Elversberg v Freiburg (D1) | 2026-11-21 | total_corners | under 11.5 | 73.2% | 1.37 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Aston Villa v Sunderland (E0) | 2026-11-21 | total_corners | under 11.5 | 73.2% | 1.37 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Parma v Roma (I1) | 2026-11-21 | total_corners | under 11.5 | 72.7% | 1.38 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Anderlecht v Oud-Heverlee Leuven (B1) | 2026-11-22 | total_corners | over 8.5 | 72.7% | 1.38 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Kortrijk v St. Gilloise (B1) | 2026-11-22 | total_corners | under 11.5 | 72.6% | 1.38 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Wolves v Charlton (E1) | 2026-11-21 | total_corners | over 8.5 | 72.5% | 1.38 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Go Ahead Eagles v For Sittard (N1) | 2026-11-22 | total_corners | over 8.5 | 72.5% | 1.38 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Real Madrid v Celta (SP1) | 2026-11-21 | total_corners | under 11.5 | 72.4% | 1.38 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sparta Rotterdam v AZ Alkmaar (N1) | 2026-11-22 | total_corners | over 8.5 | 72.1% | 1.39 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lorient v Rennes (F1) | 2026-11-22 | total_corners | under 11.5 | 72.1% | 1.39 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lommel SK v Standard (B1) | 2026-11-22 | total_corners | over 8.5 | 71.8% | 1.39 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bournemouth v Nott'm Forest (E0) | 2026-11-21 | total_corners | under 11.5 | 71.8% | 1.39 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Southampton v Derby (E1) | 2026-11-21 | total_corners | over 8.5 | 71.6% | 1.40 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Union Berlin v RB Leipzig (D1) | 2026-11-21 | total_corners | under 11.5 | 71.6% | 1.40 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Alaves v La Coruna (SP1) | 2026-11-21 | total_corners | under 11.5 | 71.2% | 1.40 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Millwall v QPR (E1) | 2026-11-21 | total_corners | over 8.5 | 71.0% | 1.41 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Milan v Frosinone (I1) | 2026-11-22 | total_corners | under 10.5 | 71.0% | 1.41 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Monaco v Auxerre (F1) | 2026-11-21 | total_corners | under 11.5 | 70.9% | 1.41 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Cercle Brugge v Westerlo (B1) | 2026-11-20 | total_corners | over 8.5 | 70.7% | 1.41 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bayern Munich v FC Koln (D1) | 2026-11-20 | total_corners | over 8.5 | 70.4% | 1.42 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lazio v Lecce (I1) | 2026-11-21 | total_corners | under 10.5 | 70.3% | 1.42 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Man City v Fulham (E0) | 2026-11-21 | total_corners | over 8.5 | 70.2% | 1.42 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Mechelen v Club Brugge (B1) | 2026-11-21 | total_corners | under 11.5 | 70.2% | 1.43 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lens v Toulouse (F1) | 2026-11-21 | total_corners | under 11.5 | 70.1% | 1.43 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Coventry v Crystal Palace (E0) | 2026-11-21 | total_corners | under 11.5 | 70.1% | 1.43 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Beveren v Gent (B1) | 2026-11-22 | total_corners | under 11.5 | 70.0% | 1.43 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sassuolo v Genoa (I1) | 2026-11-22 | total_corners | under 10.5 | 69.7% | 1.43 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Atalanta v Inter (I1) | 2026-11-22 | total_corners | under 10.5 | 69.7% | 1.44 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sheffield United v Watford (E1) | 2026-11-21 | total_corners | over 8.5 | 69.6% | 1.44 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Liverpool v Man United (E0) | 2026-11-22 | total_corners | under 11.5 | 69.5% | 1.44 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Schalke 04 v Stuttgart (D1) | 2026-11-21 | total_corners | under 11.5 | 69.5% | 1.44 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Nijmegen v PSV Eindhoven (N1) | 2026-11-21 | total_corners | under 11.5 | 69.4% | 1.44 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Kilmarnock v Aberdeen (SC0) | 2026-11-21 | total_corners | over 8.5 | 69.3% | 1.44 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Stoke v Birmingham (E1) | 2026-11-21 | total_corners | under 11.5 | 69.2% | 1.45 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Como v Cagliari (I1) | 2026-11-21 | total_corners | under 11.5 | 69.1% | 1.45 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Falkirk v St Johnstone (SC0) | 2026-11-21 | total_corners | over 8.5 | 69.1% | 1.45 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Ath Bilbao v Espanol (SP1) | 2026-11-20 | total_corners | over 8.5 | 68.8% | 1.45 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Utrecht v Cambuur (N1) | 2026-11-21 | total_corners | under 11.5 | 68.8% | 1.45 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Telstar v Zwolle (N1) | 2026-11-21 | total_corners | over 8.5 | 68.7% | 1.46 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Werder Bremen v Hamburg (D1) | 2026-11-22 | total_corners | under 11.5 | 68.7% | 1.46 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bolton v Portsmouth (E1) | 2026-11-21 | total_corners | over 8.5 | 68.4% | 1.46 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Vallecano v Valencia (SP1) | 2026-11-21 | total_corners | under 11.5 | 68.2% | 1.47 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lincoln v Wrexham (E1) | 2026-11-21 | total_corners | under 11.5 | 68.2% | 1.47 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Chelsea v Leeds (E0) | 2026-11-21 | total_corners | over 8.5 | 68.2% | 1.47 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Hull v Brighton (E0) | 2026-11-22 | total_corners | under 11.5 | 68.1% | 1.47 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Motherwell v Rangers (SC0) | 2026-11-21 | total_corners | over 8.5 | 68.1% | 1.47 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Ein Frankfurt v Hoffenheim (D1) | 2026-11-21 | total_corners | under 11.5 | 68.1% | 1.47 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Tottenham v Ipswich (E0) | 2026-11-21 | total_corners | over 8.5 | 67.9% | 1.47 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Feyenoord v Excelsior (N1) | 2026-11-21 | total_corners | under 11.5 | 67.9% | 1.47 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Swansea v West Brom (E1) | 2026-11-21 | total_corners | over 8.5 | 67.9% | 1.47 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Leverkusen v Paderborn (D1) | 2026-11-21 | total_corners | under 11.5 | 67.8% | 1.47 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Charleroi v St Truiden (B1) | 2026-11-21 | total_corners | over 8.5 | 67.8% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Groningen v Heerenveen (N1) | 2026-11-21 | total_corners | over 8.5 | 67.7% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Dundee v Hearts (SC0) | 2026-11-21 | total_corners | under 11.5 | 67.7% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Norwich v Cardiff (E1) | 2026-11-21 | total_corners | under 11.5 | 67.7% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Santander v Sociedad (SP1) | 2026-11-22 | total_corners | under 11.5 | 67.7% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Juventus v Venezia (I1) | 2026-11-22 | total_corners | over 8.5 | 67.7% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Augsburg v Mainz (D1) | 2026-11-22 | total_corners | over 8.5 | 67.7% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bologna v Udinese (I1) | 2026-11-22 | total_corners | under 10.5 | 67.6% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Ajax v Den Haag (N1) | 2026-11-22 | total_corners | over 8.5 | 67.5% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Genk v RAAL La Louviere (B1) | 2026-11-21 | total_corners | under 11.5 | 67.5% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sevilla v Betis (SP1) | 2026-11-21 | total_corners | under 10.5 | 67.4% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Burnley v Blackburn (E1) | 2026-11-22 | total_corners | under 11.5 | 67.3% | 1.49 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Waregem v Antwerp (B1) | 2026-11-21 | total_corners | over 8.5 | 67.2% | 1.49 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Barcelona v Villarreal (SP1) | 2026-11-22 | total_corners | under 11.5 | 67.2% | 1.49 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Burnley v Blackburn (E1) | 2026-11-22 | total_corners | over 8.5 | 67.1% | 1.49 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Waregem v Antwerp (B1) | 2026-11-21 | total_corners | under 11.5 | 67.0% | 1.49 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Barcelona v Villarreal (SP1) | 2026-11-22 | total_corners | over 8.5 | 66.8% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Augsburg v Mainz (D1) | 2026-11-22 | total_corners | under 11.5 | 66.7% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Groningen v Heerenveen (N1) | 2026-11-21 | total_corners | under 11.5 | 66.5% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Marseille v Le Mans (F1) | 2026-11-22 | total_corners | under 10.5 | 66.5% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Dundee v Hearts (SC0) | 2026-11-21 | total_corners | over 8.5 | 66.5% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Charleroi v St Truiden (B1) | 2026-11-21 | total_corners | under 11.5 | 66.5% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Genk v RAAL La Louviere (B1) | 2026-11-21 | total_corners | over 8.5 | 66.5% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Strasbourg v Brest (F1) | 2026-11-21 | total_corners | under 10.5 | 66.5% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Santander v Sociedad (SP1) | 2026-11-22 | total_corners | over 8.5 | 66.5% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Hull v Brighton (E0) | 2026-11-22 | total_corners | over 8.5 | 66.4% | 1.51 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Swansea v West Brom (E1) | 2026-11-21 | total_corners | under 11.5 | 66.4% | 1.51 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Ein Frankfurt v Hoffenheim (D1) | 2026-11-21 | total_corners | over 8.5 | 66.3% | 1.51 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Norwich v Cardiff (E1) | 2026-11-21 | total_corners | over 8.5 | 66.3% | 1.51 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Ajax v Den Haag (N1) | 2026-11-22 | total_corners | under 11.5 | 66.2% | 1.51 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Motherwell v Rangers (SC0) | 2026-11-21 | total_corners | under 11.5 | 66.2% | 1.51 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Troyes v Le Havre (F1) | 2026-11-20 | total_corners | under 10.5 | 66.0% | 1.51 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lincoln v Wrexham (E1) | 2026-11-21 | total_corners | over 8.5 | 66.0% | 1.51 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Celtic v St Mirren (SC0) | 2026-11-21 | total_corners | over 9.5 | 66.0% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Getafe v Ath Madrid (SP1) | 2026-11-22 | total_corners | under 10.5 | 65.9% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Vallecano v Valencia (SP1) | 2026-11-21 | total_corners | over 8.5 | 65.9% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Nice v Paris SG (F1) | 2026-11-21 | total_corners | under 10.5 | 65.8% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Feyenoord v Excelsior (N1) | 2026-11-21 | total_corners | over 8.5 | 65.8% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Leverkusen v Paderborn (D1) | 2026-11-21 | total_corners | over 8.5 | 65.7% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Chelsea v Leeds (E0) | 2026-11-21 | total_corners | under 11.5 | 65.6% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Juventus v Venezia (I1) | 2026-11-22 | total_corners | under 11.5 | 65.6% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Tottenham v Ipswich (E0) | 2026-11-21 | total_corners | under 11.5 | 65.5% | 1.53 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Telstar v Zwolle (N1) | 2026-11-21 | total_corners | under 11.5 | 65.5% | 1.53 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bolton v Portsmouth (E1) | 2026-11-21 | total_corners | under 11.5 | 65.4% | 1.53 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Werder Bremen v Hamburg (D1) | 2026-11-22 | total_corners | over 8.5 | 65.4% | 1.53 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Utrecht v Cambuur (N1) | 2026-11-21 | total_corners | over 8.5 | 65.3% | 1.53 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Stoke v Birmingham (E1) | 2026-11-21 | total_corners | over 8.5 | 65.1% | 1.54 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Napoli v Torino (I1) | 2026-11-21 | total_corners | under 10.5 | 65.0% | 1.54 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Twente v Willem II (N1) | 2026-11-22 | total_corners | over 9.5 | 64.9% | 1.54 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Falkirk v St Johnstone (SC0) | 2026-11-21 | total_corners | under 11.5 | 64.8% | 1.54 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| M'gladbach v Dortmund (D1) | 2026-11-21 | total_corners | under 10.5 | 64.8% | 1.54 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Liverpool v Man United (E0) | 2026-11-22 | total_corners | over 8.5 | 64.7% | 1.55 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Kilmarnock v Aberdeen (SC0) | 2026-11-21 | total_corners | under 11.5 | 64.7% | 1.55 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Schalke 04 v Stuttgart (D1) | 2026-11-21 | total_corners | over 8.5 | 64.7% | 1.55 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Newcastle v Arsenal (E0) | 2026-11-21 | total_corners | under 10.5 | 64.6% | 1.55 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Nijmegen v PSV Eindhoven (N1) | 2026-11-21 | total_corners | over 8.5 | 64.6% | 1.55 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Como v Cagliari (I1) | 2026-11-21 | total_corners | over 8.5 | 64.5% | 1.55 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sheffield United v Watford (E1) | 2026-11-21 | total_corners | under 11.5 | 64.2% | 1.56 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Mechelen v Club Brugge (B1) | 2026-11-21 | total_corners | over 8.5 | 64.1% | 1.56 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Osasuna v Malaga (SP1) | 2026-11-22 | total_corners | under 10.5 | 64.1% | 1.56 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Ath Bilbao v Espanol (SP1) | 2026-11-20 | total_corners | under 11.5 | 64.0% | 1.56 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Paris FC v Angers (F1) | 2026-11-22 | total_corners | under 10.5 | 64.0% | 1.56 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Beveren v Gent (B1) | 2026-11-22 | total_corners | over 8.5 | 63.9% | 1.56 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lille v Lyon (F1) | 2026-11-21 | total_corners | under 10.5 | 63.8% | 1.57 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lens v Toulouse (F1) | 2026-11-21 | total_corners | over 8.5 | 63.7% | 1.57 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Coventry v Crystal Palace (E0) | 2026-11-21 | total_corners | over 8.5 | 63.4% | 1.58 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Elversberg v Freiburg (D1) | 2026-11-21 | total_corners | under 10.5 | 63.2% | 1.58 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Aston Villa v Sunderland (E0) | 2026-11-21 | total_corners | under 10.5 | 63.2% | 1.58 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Middlesbrough v Bristol City (E1) | 2026-11-21 | total_corners | over 9.5 | 63.2% | 1.58 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Monaco v Auxerre (F1) | 2026-11-21 | total_corners | over 8.5 | 63.1% | 1.58 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| West Ham v Preston (E1) | 2026-11-21 | total_corners | over 9.5 | 63.0% | 1.59 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Man City v Fulham (E0) | 2026-11-21 | total_corners | under 11.5 | 63.0% | 1.59 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Alaves v La Coruna (SP1) | 2026-11-21 | total_corners | over 8.5 | 63.0% | 1.59 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Cercle Brugge v Westerlo (B1) | 2026-11-20 | total_corners | under 11.5 | 62.9% | 1.59 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Millwall v QPR (E1) | 2026-11-21 | total_corners | under 11.5 | 62.8% | 1.59 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Hibernian v Dundee United (SC0) | 2026-11-21 | total_corners | over 9.5 | 62.8% | 1.59 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Kortrijk v St. Gilloise (B1) | 2026-11-22 | total_corners | under 10.5 | 62.8% | 1.59 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Union Berlin v RB Leipzig (D1) | 2026-11-21 | total_corners | over 8.5 | 62.7% | 1.59 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bayern Munich v FC Koln (D1) | 2026-11-20 | total_corners | under 11.5 | 62.7% | 1.59 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Parma v Roma (I1) | 2026-11-21 | total_corners | under 10.5 | 62.7% | 1.59 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Anderlecht v Oud-Heverlee Leuven (B1) | 2026-11-22 | total_corners | over 9.5 | 62.3% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Real Madrid v Celta (SP1) | 2026-11-21 | total_corners | under 10.5 | 62.3% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bournemouth v Nott'm Forest (E0) | 2026-11-21 | total_corners | over 8.5 | 62.3% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Southampton v Derby (E1) | 2026-11-21 | total_corners | under 11.5 | 62.1% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Go Ahead Eagles v For Sittard (N1) | 2026-11-22 | total_corners | over 9.5 | 62.0% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lommel SK v Standard (B1) | 2026-11-22 | total_corners | under 11.5 | 62.0% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lorient v Rennes (F1) | 2026-11-22 | total_corners | over 8.5 | 62.0% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Wolves v Charlton (E1) | 2026-11-21 | total_corners | over 9.5 | 62.0% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lorient v Rennes (F1) | 2026-11-22 | total_corners | under 10.5 | 61.9% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bournemouth v Nott'm Forest (E0) | 2026-11-21 | total_corners | under 10.5 | 61.8% | 1.62 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sparta Rotterdam v AZ Alkmaar (N1) | 2026-11-22 | total_corners | under 11.5 | 61.5% | 1.62 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Union Berlin v RB Leipzig (D1) | 2026-11-21 | total_corners | under 10.5 | 61.4% | 1.63 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Kortrijk v St. Gilloise (B1) | 2026-11-22 | total_corners | over 8.5 | 61.2% | 1.63 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sparta Rotterdam v AZ Alkmaar (N1) | 2026-11-22 | total_corners | over 9.5 | 61.1% | 1.64 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Real Madrid v Celta (SP1) | 2026-11-21 | total_corners | over 8.5 | 61.1% | 1.64 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Parma v Roma (I1) | 2026-11-21 | total_corners | over 8.5 | 61.0% | 1.64 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Alaves v La Coruna (SP1) | 2026-11-21 | total_corners | under 10.5 | 61.0% | 1.64 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Elversberg v Freiburg (D1) | 2026-11-21 | total_corners | over 8.5 | 60.9% | 1.64 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Aston Villa v Sunderland (E0) | 2026-11-21 | total_corners | over 8.5 | 60.9% | 1.64 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Monaco v Auxerre (F1) | 2026-11-21 | total_corners | under 10.5 | 60.9% | 1.64 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lommel SK v Standard (B1) | 2026-11-22 | total_corners | over 9.5 | 60.8% | 1.64 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Southampton v Derby (E1) | 2026-11-21 | total_corners | over 9.5 | 60.4% | 1.66 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lille v Lyon (F1) | 2026-11-21 | total_corners | over 8.5 | 60.3% | 1.66 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Milan v Frosinone (I1) | 2026-11-22 | total_corners | under 9.5 | 60.2% | 1.66 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Go Ahead Eagles v For Sittard (N1) | 2026-11-22 | total_corners | under 11.5 | 60.1% | 1.66 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Mechelen v Club Brugge (B1) | 2026-11-21 | total_corners | under 10.5 | 60.0% | 1.67 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Paris FC v Angers (F1) | 2026-11-22 | total_corners | over 8.5 | 60.0% | 1.67 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Beveren v Gent (B1) | 2026-11-22 | total_corners | under 10.5 | 60.0% | 1.67 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Osasuna v Malaga (SP1) | 2026-11-22 | total_corners | over 8.5 | 60.0% | 1.67 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Coventry v Crystal Palace (E0) | 2026-11-21 | total_corners | under 10.5 | 59.9% | 1.67 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Wolves v Charlton (E1) | 2026-11-21 | total_corners | under 11.5 | 59.8% | 1.67 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Millwall v QPR (E1) | 2026-11-21 | total_corners | over 9.5 | 59.8% | 1.67 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bayern Munich v FC Koln (D1) | 2026-11-20 | total_corners | over 9.5 | 59.8% | 1.67 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Hibernian v Dundee United (SC0) | 2026-11-21 | total_corners | under 11.5 | 59.7% | 1.67 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lens v Toulouse (F1) | 2026-11-21 | total_corners | under 10.5 | 59.7% | 1.68 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Cercle Brugge v Westerlo (B1) | 2026-11-20 | total_corners | over 9.5 | 59.6% | 1.68 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Newcastle v Arsenal (E0) | 2026-11-21 | total_corners | over 8.5 | 59.6% | 1.68 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Man City v Fulham (E0) | 2026-11-21 | total_corners | over 9.5 | 59.5% | 1.68 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| West Ham v Preston (E1) | 2026-11-21 | total_corners | under 11.5 | 59.4% | 1.68 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Anderlecht v Oud-Heverlee Leuven (B1) | 2026-11-22 | total_corners | under 11.5 | 59.3% | 1.69 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Schalke 04 v Stuttgart (D1) | 2026-11-21 | total_corners | under 10.5 | 59.3% | 1.69 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lazio v Lecce (I1) | 2026-11-21 | total_corners | under 9.5 | 59.3% | 1.69 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Nijmegen v PSV Eindhoven (N1) | 2026-11-21 | total_corners | under 10.5 | 59.2% | 1.69 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Liverpool v Man United (E0) | 2026-11-22 | total_corners | under 10.5 | 59.2% | 1.69 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| M'gladbach v Dortmund (D1) | 2026-11-21 | total_corners | over 8.5 | 59.1% | 1.69 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Napoli v Torino (I1) | 2026-11-21 | total_corners | over 8.5 | 59.0% | 1.69 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sassuolo v Genoa (I1) | 2026-11-22 | total_corners | under 9.5 | 58.8% | 1.70 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Atalanta v Inter (I1) | 2026-11-22 | total_corners | under 9.5 | 58.7% | 1.70 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Stoke v Birmingham (E1) | 2026-11-21 | total_corners | under 10.5 | 58.7% | 1.70 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Como v Cagliari (I1) | 2026-11-21 | total_corners | under 10.5 | 58.7% | 1.71 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Middlesbrough v Bristol City (E1) | 2026-11-21 | total_corners | under 11.5 | 58.6% | 1.71 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Utrecht v Cambuur (N1) | 2026-11-21 | total_corners | under 10.5 | 58.5% | 1.71 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sheffield United v Watford (E1) | 2026-11-21 | total_corners | over 9.5 | 58.3% | 1.71 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Nice v Paris SG (F1) | 2026-11-21 | total_corners | over 8.5 | 58.1% | 1.72 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Ath Bilbao v Espanol (SP1) | 2026-11-20 | total_corners | over 9.5 | 58.0% | 1.72 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Werder Bremen v Hamburg (D1) | 2026-11-22 | total_corners | under 10.5 | 58.0% | 1.72 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Troyes v Le Havre (F1) | 2026-11-20 | total_corners | over 8.5 | 58.0% | 1.73 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Getafe v Ath Madrid (SP1) | 2026-11-22 | total_corners | over 8.5 | 57.9% | 1.73 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Kilmarnock v Aberdeen (SC0) | 2026-11-21 | total_corners | over 9.5 | 57.9% | 1.73 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Vallecano v Valencia (SP1) | 2026-11-21 | total_corners | under 10.5 | 57.8% | 1.73 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Falkirk v St Johnstone (SC0) | 2026-11-21 | total_corners | over 9.5 | 57.8% | 1.73 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lincoln v Wrexham (E1) | 2026-11-21 | total_corners | under 10.5 | 57.8% | 1.73 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Strasbourg v Brest (F1) | 2026-11-21 | total_corners | over 8.5 | 57.5% | 1.74 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Ein Frankfurt v Hoffenheim (D1) | 2026-11-21 | total_corners | under 10.5 | 57.5% | 1.74 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Hull v Brighton (E0) | 2026-11-22 | total_corners | under 10.5 | 57.5% | 1.74 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Leverkusen v Paderborn (D1) | 2026-11-21 | total_corners | under 10.5 | 57.3% | 1.74 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Marseille v Le Mans (F1) | 2026-11-22 | total_corners | over 8.5 | 57.3% | 1.75 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Santander v Sociedad (SP1) | 2026-11-22 | total_corners | under 10.5 | 57.3% | 1.75 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Norwich v Cardiff (E1) | 2026-11-21 | total_corners | under 10.5 | 57.2% | 1.75 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Feyenoord v Excelsior (N1) | 2026-11-21 | total_corners | under 10.5 | 57.2% | 1.75 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Dundee v Hearts (SC0) | 2026-11-21 | total_corners | under 10.5 | 57.2% | 1.75 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bolton v Portsmouth (E1) | 2026-11-21 | total_corners | over 9.5 | 57.0% | 1.75 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Chelsea v Leeds (E0) | 2026-11-21 | total_corners | over 9.5 | 57.0% | 1.75 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Genk v RAAL La Louviere (B1) | 2026-11-21 | total_corners | under 10.5 | 57.0% | 1.75 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Telstar v Zwolle (N1) | 2026-11-21 | total_corners | over 9.5 | 57.0% | 1.75 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Tottenham v Ipswich (E0) | 2026-11-21 | total_corners | over 9.5 | 56.8% | 1.76 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Barcelona v Villarreal (SP1) | 2026-11-22 | total_corners | under 10.5 | 56.8% | 1.76 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Juventus v Venezia (I1) | 2026-11-22 | total_corners | over 9.5 | 56.6% | 1.77 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sevilla v Betis (SP1) | 2026-11-21 | total_corners | over 8.5 | 56.6% | 1.77 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Waregem v Antwerp (B1) | 2026-11-21 | total_corners | under 10.5 | 56.6% | 1.77 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Motherwell v Rangers (SC0) | 2026-11-21 | total_corners | over 9.5 | 56.5% | 1.77 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Burnley v Blackburn (E1) | 2026-11-22 | total_corners | under 10.5 | 56.5% | 1.77 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bologna v Udinese (I1) | 2026-11-22 | total_corners | under 9.5 | 56.5% | 1.77 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Twente v Willem II (N1) | 2026-11-22 | total_corners | under 11.5 | 56.4% | 1.77 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Ajax v Den Haag (N1) | 2026-11-22 | total_corners | over 9.5 | 56.4% | 1.77 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Swansea v West Brom (E1) | 2026-11-21 | total_corners | over 9.5 | 56.3% | 1.78 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sevilla v Betis (SP1) | 2026-11-21 | total_corners | under 9.5 | 56.2% | 1.78 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bologna v Udinese (I1) | 2026-11-22 | total_corners | over 8.5 | 56.2% | 1.78 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Charleroi v St Truiden (B1) | 2026-11-21 | total_corners | over 9.5 | 56.0% | 1.78 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Augsburg v Mainz (D1) | 2026-11-22 | total_corners | under 10.5 | 56.0% | 1.78 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Groningen v Heerenveen (N1) | 2026-11-21 | total_corners | over 9.5 | 56.0% | 1.79 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Groningen v Heerenveen (N1) | 2026-11-21 | total_corners | under 10.5 | 55.9% | 1.79 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Augsburg v Mainz (D1) | 2026-11-22 | total_corners | over 9.5 | 55.9% | 1.79 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Charleroi v St Truiden (B1) | 2026-11-21 | total_corners | under 10.5 | 55.6% | 1.80 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Waregem v Antwerp (B1) | 2026-11-21 | total_corners | over 9.5 | 55.5% | 1.80 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Celtic v St Mirren (SC0) | 2026-11-21 | total_corners | over 10.5 | 55.5% | 1.80 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Swansea v West Brom (E1) | 2026-11-21 | total_corners | under 10.5 | 55.4% | 1.81 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Ajax v Den Haag (N1) | 2026-11-22 | total_corners | under 10.5 | 55.4% | 1.81 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Motherwell v Rangers (SC0) | 2026-11-21 | total_corners | under 10.5 | 55.3% | 1.81 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Barcelona v Villarreal (SP1) | 2026-11-22 | total_corners | over 9.5 | 55.2% | 1.81 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Burnley v Blackburn (E1) | 2026-11-22 | total_corners | over 9.5 | 55.2% | 1.81 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Marseille v Le Mans (F1) | 2026-11-22 | total_corners | under 9.5 | 55.1% | 1.81 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Celtic v St Mirren (SC0) | 2026-11-21 | total_corners | under 11.5 | 55.1% | 1.81 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Strasbourg v Brest (F1) | 2026-11-21 | total_corners | under 9.5 | 54.9% | 1.82 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Telstar v Zwolle (N1) | 2026-11-21 | total_corners | under 10.5 | 54.9% | 1.82 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Genk v RAAL La Louviere (B1) | 2026-11-21 | total_corners | over 9.5 | 54.8% | 1.82 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Juventus v Venezia (I1) | 2026-11-22 | total_corners | under 10.5 | 54.8% | 1.82 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Chelsea v Leeds (E0) | 2026-11-21 | total_corners | under 10.5 | 54.8% | 1.83 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Santander v Sociedad (SP1) | 2026-11-22 | total_corners | over 9.5 | 54.7% | 1.83 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Getafe v Ath Madrid (SP1) | 2026-11-22 | total_corners | under 9.5 | 54.7% | 1.83 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Tottenham v Ipswich (E0) | 2026-11-21 | total_corners | under 10.5 | 54.7% | 1.83 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bolton v Portsmouth (E1) | 2026-11-21 | total_corners | under 10.5 | 54.7% | 1.83 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Norwich v Cardiff (E1) | 2026-11-21 | total_corners | over 9.5 | 54.6% | 1.83 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Dundee v Hearts (SC0) | 2026-11-21 | total_corners | over 9.5 | 54.6% | 1.83 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Nice v Paris SG (F1) | 2026-11-21 | total_corners | under 9.5 | 54.6% | 1.83 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Troyes v Le Havre (F1) | 2026-11-20 | total_corners | under 9.5 | 54.6% | 1.83 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Ein Frankfurt v Hoffenheim (D1) | 2026-11-21 | total_corners | over 9.5 | 54.4% | 1.84 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Feyenoord v Excelsior (N1) | 2026-11-21 | total_corners | over 9.5 | 54.4% | 1.84 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Leverkusen v Paderborn (D1) | 2026-11-21 | total_corners | over 9.5 | 54.4% | 1.84 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Hull v Brighton (E0) | 2026-11-22 | total_corners | over 9.5 | 54.4% | 1.84 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Twente v Willem II (N1) | 2026-11-22 | total_corners | over 10.5 | 54.3% | 1.84 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lincoln v Wrexham (E1) | 2026-11-21 | total_corners | over 9.5 | 54.2% | 1.85 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Falkirk v St Johnstone (SC0) | 2026-11-21 | total_corners | under 10.5 | 54.0% | 1.85 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Vallecano v Valencia (SP1) | 2026-11-21 | total_corners | over 9.5 | 54.0% | 1.85 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Atalanta v Inter (I1) | 2026-11-22 | total_corners | over 8.5 | 54.0% | 1.85 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sassuolo v Genoa (I1) | 2026-11-22 | total_corners | over 8.5 | 53.8% | 1.86 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Werder Bremen v Hamburg (D1) | 2026-11-22 | total_corners | over 9.5 | 53.7% | 1.86 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Kilmarnock v Aberdeen (SC0) | 2026-11-21 | total_corners | under 10.5 | 53.7% | 1.86 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Utrecht v Cambuur (N1) | 2026-11-21 | total_corners | over 9.5 | 53.5% | 1.87 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| M'gladbach v Dortmund (D1) | 2026-11-21 | total_corners | under 9.5 | 53.5% | 1.87 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lazio v Lecce (I1) | 2026-11-21 | total_corners | over 8.5 | 53.4% | 1.87 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Ath Bilbao v Espanol (SP1) | 2026-11-20 | total_corners | under 10.5 | 53.3% | 1.88 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Napoli v Torino (I1) | 2026-11-21 | total_corners | under 9.5 | 53.3% | 1.88 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sheffield United v Watford (E1) | 2026-11-21 | total_corners | under 10.5 | 53.3% | 1.88 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Stoke v Birmingham (E1) | 2026-11-21 | total_corners | over 9.5 | 53.1% | 1.88 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Como v Cagliari (I1) | 2026-11-21 | total_corners | over 9.5 | 53.0% | 1.89 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Newcastle v Arsenal (E0) | 2026-11-21 | total_corners | under 9.5 | 52.9% | 1.89 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Nijmegen v PSV Eindhoven (N1) | 2026-11-21 | total_corners | over 9.5 | 52.8% | 1.89 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Liverpool v Man United (E0) | 2026-11-22 | total_corners | over 9.5 | 52.7% | 1.90 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Schalke 04 v Stuttgart (D1) | 2026-11-21 | total_corners | over 9.5 | 52.6% | 1.90 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Paris FC v Angers (F1) | 2026-11-22 | total_corners | under 9.5 | 52.6% | 1.90 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Milan v Frosinone (I1) | 2026-11-22 | total_corners | over 8.5 | 52.3% | 1.91 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Osasuna v Malaga (SP1) | 2026-11-22 | total_corners | under 9.5 | 52.3% | 1.91 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Beveren v Gent (B1) | 2026-11-22 | total_corners | over 9.5 | 52.3% | 1.91 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lille v Lyon (F1) | 2026-11-21 | total_corners | under 9.5 | 52.2% | 1.91 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Man City v Fulham (E0) | 2026-11-21 | total_corners | under 10.5 | 52.1% | 1.92 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Middlesbrough v Bristol City (E1) | 2026-11-21 | total_corners | over 10.5 | 52.1% | 1.92 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lens v Toulouse (F1) | 2026-11-21 | total_corners | over 9.5 | 52.0% | 1.92 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Mechelen v Club Brugge (B1) | 2026-11-21 | total_corners | over 9.5 | 51.9% | 1.93 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Millwall v QPR (E1) | 2026-11-21 | total_corners | under 10.5 | 51.9% | 1.93 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Cercle Brugge v Westerlo (B1) | 2026-11-20 | total_corners | under 10.5 | 51.8% | 1.93 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| West Ham v Preston (E1) | 2026-11-21 | total_corners | over 10.5 | 51.8% | 1.93 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bayern Munich v FC Koln (D1) | 2026-11-20 | total_corners | under 10.5 | 51.7% | 1.93 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Hibernian v Dundee United (SC0) | 2026-11-21 | total_corners | over 10.5 | 51.7% | 1.93 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Aston Villa v Sunderland (E0) | 2026-11-21 | total_corners | under 9.5 | 51.6% | 1.94 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Coventry v Crystal Palace (E0) | 2026-11-21 | total_corners | over 9.5 | 51.6% | 1.94 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Elversberg v Freiburg (D1) | 2026-11-21 | total_corners | under 9.5 | 51.6% | 1.94 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Anderlecht v Oud-Heverlee Leuven (B1) | 2026-11-22 | total_corners | over 10.5 | 51.5% | 1.94 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Monaco v Auxerre (F1) | 2026-11-21 | total_corners | over 9.5 | 51.3% | 1.95 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Parma v Roma (I1) | 2026-11-21 | total_corners | under 9.5 | 51.1% | 1.96 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Southampton v Derby (E1) | 2026-11-21 | total_corners | under 10.5 | 51.1% | 1.96 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Wolves v Charlton (E1) | 2026-11-21 | total_corners | over 10.5 | 51.1% | 1.96 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lommel SK v Standard (B1) | 2026-11-22 | total_corners | under 10.5 | 51.0% | 1.96 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Alaves v La Coruna (SP1) | 2026-11-21 | total_corners | over 9.5 | 50.8% | 1.97 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Kortrijk v St. Gilloise (B1) | 2026-11-22 | total_corners | under 9.5 | 50.8% | 1.97 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Go Ahead Eagles v For Sittard (N1) | 2026-11-22 | total_corners | over 10.5 | 50.8% | 1.97 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Real Madrid v Celta (SP1) | 2026-11-21 | total_corners | under 9.5 | 50.7% | 1.97 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Lorient v Rennes (F1) | 2026-11-22 | total_corners | under 9.5 | 50.4% | 1.98 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sparta Rotterdam v AZ Alkmaar (N1) | 2026-11-22 | total_corners | under 10.5 | 50.4% | 1.99 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Union Berlin v RB Leipzig (D1) | 2026-11-21 | total_corners | over 9.5 | 50.4% | 1.99 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bournemouth v Nott'm Forest (E0) | 2026-11-21 | total_corners | over 9.5 | 50.1% | 2.00 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
