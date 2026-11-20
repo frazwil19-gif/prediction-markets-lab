@@ -1,0 +1,415 @@
+{
+ "generated_at": "2026-11-20T15:38:58.814857+00:00",
+ "credits_charged": 0,
+ "warnings": [],
+ "leagues": {
+  "E0": {
+   "fd_fixtures": 110,
+   "odds_events": 70,
+   "known": 20,
+   "proposed": {},
+   "method": {},
+   "evidence": {},
+   "unresolved": {},
+   "fd_fixtures_without_odds_slot": 50,
+   "rejected": "",
+   "odds_names_not_in_alias_table": []
+  },
+  "E1": {
+   "fd_fixtures": 192,
+   "odds_events": 105,
+   "known": 24,
+   "proposed": {},
+   "method": {},
+   "evidence": {},
+   "unresolved": {},
+   "fd_fixtures_without_odds_slot": 95,
+   "rejected": "verification failed for Cardiff v Birmingham 2026-10-24 14:00",
+   "odds_names_not_in_alias_table": []
+  },
+  "SC0": {
+   "fd_fixtures": 81,
+   "odds_events": 52,
+   "known": 12,
+   "proposed": {},
+   "method": {},
+   "evidence": {},
+   "unresolved": {},
+   "fd_fixtures_without_odds_slot": 42,
+   "rejected": "verification failed for St Johnstone v Dundee United 2026-10-17 14:00",
+   "odds_names_not_in_alias_table": []
+  },
+  "N1": {
+   "fd_fixtures": 117,
+   "odds_events": 9,
+   "known": 0,
+   "proposed": {
+    "AZ Alkmaar": "AZ Alkmaar",
+    "Ajax": "Ajax",
+    "Cambuur": "SC Cambuur",
+    "Den Haag": "ADO Den Haag",
+    "Excelsior": "Excelsior",
+    "Feyenoord": "Feyenoord",
+    "For Sittard": "Fortuna Sittard",
+    "Go Ahead Eagles": "Go Ahead Eagles",
+    "Groningen": "Groningen",
+    "Heerenveen": "Heerenveen",
+    "Nijmegen": "NEC Nijmegen",
+    "PSV Eindhoven": "PSV Eindhoven",
+    "Sparta Rotterdam": "Sparta Rotterdam",
+    "Telstar": "SC Telstar",
+    "Twente": "FC Twente Enschede",
+    "Utrecht": "FC Utrecht",
+    "Willem II": "Willem II",
+    "Zwolle": "FC Zwolle"
+   },
+   "method": {
+    "AZ Alkmaar": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Ajax": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Cambuur": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Den Haag": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Excelsior": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Feyenoord": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "For Sittard": "FIXTURE_IDENTITY",
+    "Go Ahead Eagles": "FIXTURE_IDENTITY",
+    "Groningen": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Heerenveen": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Nijmegen": "FIXTURE_IDENTITY",
+    "PSV Eindhoven": "FIXTURE_IDENTITY",
+    "Sparta Rotterdam": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Telstar": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Twente": "FIXTURE_IDENTITY",
+    "Utrecht": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Willem II": "FIXTURE_IDENTITY",
+    "Zwolle": "FIXTURE_IDENTITY+NAME_TOKEN"
+   },
+   "evidence": {
+    "AZ Alkmaar": [
+     "2026-11-22 13:30Z Sparta Rotterdam v AZ Alkmaar = Sparta Rotterdam v AZ Alkmaar"
+    ],
+    "Ajax": [
+     "2026-11-22 13:30Z Ajax v Den Haag = Ajax v ADO Den Haag"
+    ],
+    "Cambuur": [
+     "2026-11-21 17:45Z Utrecht v Cambuur = FC Utrecht v SC Cambuur"
+    ],
+    "Den Haag": [
+     "2026-11-22 13:30Z Ajax v Den Haag = Ajax v ADO Den Haag"
+    ],
+    "Excelsior": [
+     "2026-11-21 17:45Z Feyenoord v Excelsior = Feyenoord v Excelsior"
+    ],
+    "Feyenoord": [
+     "2026-11-21 17:45Z Feyenoord v Excelsior = Feyenoord v Excelsior"
+    ],
+    "For Sittard": [
+     "2026-11-22 15:45Z Go Ahead Eagles v For Sittard = Go Ahead Eagles v Fortuna Sittard"
+    ],
+    "Go Ahead Eagles": [
+     "2026-11-22 15:45Z Go Ahead Eagles v For Sittard = Go Ahead Eagles v Fortuna Sittard"
+    ],
+    "Groningen": [
+     "2026-11-21 20:00Z Groningen v Heerenveen = Groningen v Heerenveen"
+    ],
+    "Heerenveen": [
+     "2026-11-21 20:00Z Groningen v Heerenveen = Groningen v Heerenveen"
+    ],
+    "Nijmegen": [
+     "2026-11-21 15:30Z Nijmegen v PSV Eindhoven = NEC Nijmegen v PSV Eindhoven"
+    ],
+    "PSV Eindhoven": [
+     "2026-11-21 15:30Z Nijmegen v PSV Eindhoven = NEC Nijmegen v PSV Eindhoven"
+    ],
+    "Sparta Rotterdam": [
+     "2026-11-22 13:30Z Sparta Rotterdam v AZ Alkmaar = Sparta Rotterdam v AZ Alkmaar"
+    ],
+    "Telstar": [
+     "2026-11-21 20:00Z Telstar v Zwolle = SC Telstar v FC Zwolle"
+    ],
+    "Twente": [
+     "2026-11-22 11:15Z Twente v Willem II = FC Twente Enschede v Willem II"
+    ],
+    "Utrecht": [
+     "2026-11-21 17:45Z Utrecht v Cambuur = FC Utrecht v SC Cambuur"
+    ],
+    "Willem II": [
+     "2026-11-22 11:15Z Twente v Willem II = FC Twente Enschede v Willem II"
+    ],
+    "Zwolle": [
+     "2026-11-21 20:00Z Telstar v Zwolle = SC Telstar v FC Zwolle"
+    ]
+   },
+   "unresolved": {},
+   "fd_fixtures_without_odds_slot": 108,
+   "rejected": "",
+   "odds_names_not_in_alias_table": [
+    "ADO Den Haag",
+    "AZ Alkmaar",
+    "Ajax",
+    "Excelsior",
+    "FC Twente Enschede",
+    "FC Utrecht",
+    "FC Zwolle",
+    "Feyenoord",
+    "Fortuna Sittard",
+    "Go Ahead Eagles",
+    "Groningen",
+    "Heerenveen",
+    "NEC Nijmegen",
+    "PSV Eindhoven",
+    "SC Cambuur",
+    "SC Telstar",
+    "Sparta Rotterdam",
+    "Willem II"
+   ]
+  },
+  "D1": {
+   "fd_fixtures": 90,
+   "odds_events": 18,
+   "known": 0,
+   "proposed": {
+    "Augsburg": "Augsburg",
+    "Bayern Munich": "Bayern Munich",
+    "Dortmund": "Borussia Dortmund",
+    "Ein Frankfurt": "Eintracht Frankfurt",
+    "Elversberg": "Elversberg",
+    "FC Koln": "1. FC K\u00f6ln",
+    "Freiburg": "SC Freiburg",
+    "Hamburg": "Hamburger SV",
+    "Hoffenheim": "TSG Hoffenheim",
+    "Leverkusen": "Bayer Leverkusen",
+    "M'gladbach": "Borussia Monchengladbach",
+    "Mainz": "FSV Mainz 05",
+    "Paderborn": "SC Paderborn",
+    "RB Leipzig": "RB Leipzig",
+    "Schalke 04": "FC Schalke 04",
+    "Stuttgart": "VfB Stuttgart",
+    "Union Berlin": "Union Berlin",
+    "Werder Bremen": "Werder Bremen"
+   },
+   "method": {
+    "Augsburg": "FIXTURE_IDENTITY",
+    "Bayern Munich": "FIXTURE_IDENTITY",
+    "Dortmund": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Ein Frankfurt": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Elversberg": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "FC Koln": "FIXTURE_IDENTITY",
+    "Freiburg": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Hamburg": "FIXTURE_IDENTITY",
+    "Hoffenheim": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Leverkusen": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "M'gladbach": "FIXTURE_IDENTITY_BY_ELIMINATION",
+    "Mainz": "FIXTURE_IDENTITY",
+    "Paderborn": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "RB Leipzig": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Schalke 04": "FIXTURE_IDENTITY",
+    "Stuttgart": "FIXTURE_IDENTITY",
+    "Union Berlin": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Werder Bremen": "FIXTURE_IDENTITY"
+   },
+   "evidence": {
+    "Augsburg": [
+     "2026-11-22 14:30Z Augsburg v Mainz = Augsburg v FSV Mainz 05"
+    ],
+    "Bayern Munich": [
+     "2026-11-20 19:30Z Bayern Munich v FC Koln = Bayern Munich v 1. FC K\u00f6ln"
+    ],
+    "Dortmund": [
+     "2026-11-21 14:30Z M'gladbach v Dortmund = Borussia Monchengladbach v Borussia Dortmund"
+    ],
+    "Ein Frankfurt": [
+     "2026-11-21 14:30Z Ein Frankfurt v Hoffenheim = Eintracht Frankfurt v TSG Hoffenheim"
+    ],
+    "Elversberg": [
+     "2026-11-21 14:30Z Elversberg v Freiburg = Elversberg v SC Freiburg"
+    ],
+    "FC Koln": [
+     "2026-11-20 19:30Z Bayern Munich v FC Koln = Bayern Munich v 1. FC K\u00f6ln"
+    ],
+    "Freiburg": [
+     "2026-11-21 14:30Z Elversberg v Freiburg = Elversberg v SC Freiburg"
+    ],
+    "Hamburg": [
+     "2026-11-22 16:30Z Werder Bremen v Hamburg = Werder Bremen v Hamburger SV"
+    ],
+    "Hoffenheim": [
+     "2026-11-21 14:30Z Ein Frankfurt v Hoffenheim = Eintracht Frankfurt v TSG Hoffenheim"
+    ],
+    "Leverkusen": [
+     "2026-11-21 14:30Z Leverkusen v Paderborn = Bayer Leverkusen v SC Paderborn"
+    ],
+    "M'gladbach": [
+     "2026-11-21 14:30Z M'gladbach v Dortmund = Borussia Monchengladbach v Borussia Dortmund"
+    ],
+    "Mainz": [
+     "2026-11-22 14:30Z Augsburg v Mainz = Augsburg v FSV Mainz 05"
+    ],
+    "Paderborn": [
+     "2026-11-21 14:30Z Leverkusen v Paderborn = Bayer Leverkusen v SC Paderborn"
+    ],
+    "RB Leipzig": [
+     "2026-11-21 14:30Z Union Berlin v RB Leipzig = Union Berlin v RB Leipzig"
+    ],
+    "Schalke 04": [
+     "2026-11-21 17:30Z Schalke 04 v Stuttgart = FC Schalke 04 v VfB Stuttgart"
+    ],
+    "Stuttgart": [
+     "2026-11-21 17:30Z Schalke 04 v Stuttgart = FC Schalke 04 v VfB Stuttgart"
+    ],
+    "Union Berlin": [
+     "2026-11-21 14:30Z Union Berlin v RB Leipzig = Union Berlin v RB Leipzig"
+    ],
+    "Werder Bremen": [
+     "2026-11-22 16:30Z Werder Bremen v Hamburg = Werder Bremen v Hamburger SV"
+    ]
+   },
+   "unresolved": {},
+   "fd_fixtures_without_odds_slot": 81,
+   "rejected": "",
+   "odds_names_not_in_alias_table": [
+    "1. FC K\u00f6ln",
+    "Augsburg",
+    "Bayer Leverkusen",
+    "Bayern Munich",
+    "Borussia Dortmund",
+    "Borussia Monchengladbach",
+    "Eintracht Frankfurt",
+    "Elversberg",
+    "FC Schalke 04",
+    "FSV Mainz 05",
+    "Hamburger SV",
+    "RB Leipzig",
+    "SC Freiburg",
+    "SC Paderborn",
+    "TSG Hoffenheim",
+    "Union Berlin",
+    "VfB Stuttgart",
+    "Werder Bremen"
+   ]
+  },
+  "F1": {
+   "fd_fixtures": 99,
+   "odds_events": 18,
+   "known": 0,
+   "proposed": {
+    "Angers": "Angers",
+    "Auxerre": "Auxerre",
+    "Brest": "Brest",
+    "Le Havre": "Le Havre",
+    "Le Mans": "Le Mans FC",
+    "Lens": "RC Lens",
+    "Lille": "Lille",
+    "Lorient": "Lorient",
+    "Lyon": "Lyon",
+    "Marseille": "Marseille",
+    "Monaco": "AS Monaco",
+    "Nice": "Nice",
+    "Paris FC": "Paris FC",
+    "Paris SG": "Paris Saint Germain",
+    "Rennes": "Rennes",
+    "Strasbourg": "Strasbourg",
+    "Toulouse": "Toulouse",
+    "Troyes": "Troyes"
+   },
+   "method": {
+    "Angers": "FIXTURE_IDENTITY",
+    "Auxerre": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Brest": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Le Havre": "FIXTURE_IDENTITY",
+    "Le Mans": "FIXTURE_IDENTITY",
+    "Lens": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Lille": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Lorient": "FIXTURE_IDENTITY",
+    "Lyon": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Marseille": "FIXTURE_IDENTITY",
+    "Monaco": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Nice": "FIXTURE_IDENTITY",
+    "Paris FC": "FIXTURE_IDENTITY",
+    "Paris SG": "FIXTURE_IDENTITY",
+    "Rennes": "FIXTURE_IDENTITY",
+    "Strasbourg": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Toulouse": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Troyes": "FIXTURE_IDENTITY"
+   },
+   "evidence": {
+    "Angers": [
+     "2026-11-22 14:00Z Paris FC v Angers = Paris FC v Angers"
+    ],
+    "Auxerre": [
+     "2026-11-21 19:45Z Monaco v Auxerre = AS Monaco v Auxerre"
+    ],
+    "Brest": [
+     "2026-11-21 19:45Z Strasbourg v Brest = Strasbourg v Brest"
+    ],
+    "Le Havre": [
+     "2026-11-20 19:45Z Troyes v Le Havre = Troyes v Le Havre"
+    ],
+    "Le Mans": [
+     "2026-11-22 19:45Z Marseille v Le Mans = Marseille v Le Mans FC"
+    ],
+    "Lens": [
+     "2026-11-21 19:45Z Lens v Toulouse = RC Lens v Toulouse"
+    ],
+    "Lille": [
+     "2026-11-21 19:45Z Lille v Lyon = Lille v Lyon"
+    ],
+    "Lorient": [
+     "2026-11-22 16:15Z Lorient v Rennes = Lorient v Rennes"
+    ],
+    "Lyon": [
+     "2026-11-21 19:45Z Lille v Lyon = Lille v Lyon"
+    ],
+    "Marseille": [
+     "2026-11-22 19:45Z Marseille v Le Mans = Marseille v Le Mans FC"
+    ],
+    "Monaco": [
+     "2026-11-21 19:45Z Monaco v Auxerre = AS Monaco v Auxerre"
+    ],
+    "Nice": [
+     "2026-11-21 16:15Z Nice v Paris SG = Nice v Paris Saint Germain"
+    ],
+    "Paris FC": [
+     "2026-11-22 14:00Z Paris FC v Angers = Paris FC v Angers"
+    ],
+    "Paris SG": [
+     "2026-11-21 16:15Z Nice v Paris SG = Nice v Paris Saint Germain"
+    ],
+    "Rennes": [
+     "2026-11-22 16:15Z Lorient v Rennes = Lorient v Rennes"
+    ],
+    "Strasbourg": [
+     "2026-11-21 19:45Z Strasbourg v Brest = Strasbourg v Brest"
+    ],
+    "Toulouse": [
+     "2026-11-21 19:45Z Lens v Toulouse = RC Lens v Toulouse"
+    ],
+    "Troyes": [
+     "2026-11-20 19:45Z Troyes v Le Havre = Troyes v Le Havre"
+    ]
+   },
+   "unresolved": {},
+   "fd_fixtures_without_odds_slot": 90,
+   "rejected": "",
+   "odds_names_not_in_alias_table": [
+    "AS Monaco",
+    "Angers",
+    "Auxerre",
+    "Brest",
+    "Le Havre",
+    "Le Mans FC",
+    "Lille",
+    "Lorient",
+    "Lyon",
+    "Marseille",
+    "Nice",
+    "Paris FC",
+    "Paris Saint Germain",
+    "RC Lens",
+    "Rennes",
+    "Strasbourg",
+    "Toulouse",
+    "Troyes"
+   ]
+  }
+ }
+}
