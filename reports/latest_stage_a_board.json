@@ -2,32 +2,28 @@
  "board_version": "stage-a-2",
  "product": "STAGE A PREDICTION BOARD (probability first; NOT a betting card)",
  "principle": "STRONG PREDICTION != VALID BET. Stage B (bet-selection) alone decides bets.",
- "generated_at": "2026-11-19T16:16:38.016209+00:00",
+ "generated_at": "2026-11-20T02:13:41.392053+00:00",
  "strong_prediction_min_probability": 0.7,
  "summary": {
-  "predictions": 31,
-  "strong_predictions": 13,
-  "strong_unique_events": 8,
+  "predictions": 26,
+  "strong_predictions": 10,
+  "strong_unique_events": 5,
   "strong_by_price_status": {
-   "POOR_PAYOUT": 3,
    "PRICE_QUALITY_FAIL": 2,
    "PRICE_UNAVAILABLE": 8
   },
   "all_by_price_status": {
-   "POOR_PAYOUT": 4,
-   "PRICE_QUALITY_FAIL": 15,
+   "PRICE_QUALITY_FAIL": 14,
    "PRICE_UNAVAILABLE": 12
   },
   "duplicate_prediction_rows_collapsed": 0,
   "strong_by_sport": {
-   "basketball": 2,
    "football": 9,
-   "tennis": 2
+   "tennis": 1
   },
   "all_by_sport": {
-   "basketball": 4,
    "football": 24,
-   "tennis": 3
+   "tennis": 2
   }
  },
  "predictions": [
@@ -170,52 +166,6 @@
    "rank": 3
   },
   {
-   "prediction_id": "32fa42d6106d8a2d",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_key": "nba|20fa5e2d73cec494c113790161a89aec",
-   "event_name": "Los Angeles Clippers @ San Antonio Spurs",
-   "event_start": "2026-11-20T01:10:00+00:00",
-   "event_start_original": "2026-11-20T01:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "moneyline",
-   "selection": "San Antonio Spurs",
-   "probability": 0.871819,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-11-19T15:59:12.940668+00:00",
-   "p_first_snapshot": 0.871819,
-   "p_current_scan": null,
-   "ledger_probability": 0.8718187461204222,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "550.8",
-   "sigma": 0.014137,
-   "sigma_method": "HIST_BAND_WILSON_SE (closing estimator; early-snapshot bias excluded)",
-   "sigma_calibration": 0.014137,
-   "calibration_status": "HOLDOUT_PASSED on closing estimator (live early-snapshot estimator not validated)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "85-89.9%",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "prediction_timestamp": "2026-11-19T15:59:12.940668+00:00",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "strength": "STRONG_PREDICTION",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "COMMISSION_UNKNOWN",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-11-19T15:59:12.940668+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 4
-  },
-  {
    "prediction_id": "1345d77cbbbc92fe",
    "sport": "football",
    "competition": "La Liga",
@@ -259,7 +209,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 5
+   "rank": 4
   },
   {
    "prediction_id": "554b7fd8c2efae24",
@@ -293,65 +243,19 @@
    "prediction_timestamp": "2026-11-19T15:59:10.373322+00:00",
    "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
    "strength": "STRONG_PREDICTION",
-   "price_status": "POOR_PAYOUT",
-   "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
-   "financially_assessable": true,
-   "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
-   "best_clean_source": "betfair_ex_uk",
-   "best_clean_odds": 1.22,
-   "best_clean_net_ev": -0.014551,
+   "price_status": "PRICE_QUALITY_FAIL",
+   "stage_a_label": "STRONG_PREDICTION_PRICE_QUALITY_FAIL",
+   "financially_assessable": false,
+   "price_status_reasons": "PRICE_STALE",
+   "best_clean_source": "",
+   "best_clean_odds": null,
+   "best_clean_net_ev": null,
    "n_quotes_latest": 18,
-   "n_clean_quotes_latest": 18,
+   "n_clean_quotes_latest": 0,
    "price_observed_at": "2026-11-19T16:16:35.257580+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 6
-  },
-  {
-   "prediction_id": "691e8bbde1e4763b",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_key": "nba|006df00e5e48650d849d1bb4cd81565d",
-   "event_name": "Portland Trail Blazers @ Milwaukee Bucks",
-   "event_start": "2026-11-20T01:10:00+00:00",
-   "event_start_original": "2026-11-20T01:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "moneyline",
-   "selection": "Portland Trail Blazers",
-   "probability": 0.786455,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-11-19T15:59:12.940668+00:00",
-   "p_first_snapshot": 0.786455,
-   "p_current_scan": null,
-   "ledger_probability": 0.7864549276039234,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "550.8",
-   "sigma": 0.014319,
-   "sigma_method": "HIST_BAND_WILSON_SE (closing estimator; early-snapshot bias excluded)",
-   "sigma_calibration": 0.014319,
-   "calibration_status": "HOLDOUT_PASSED on closing estimator (live early-snapshot estimator not validated)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "75-79.9%",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "prediction_timestamp": "2026-11-19T15:59:12.940668+00:00",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "strength": "STRONG_PREDICTION",
-   "price_status": "POOR_PAYOUT",
-   "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
-   "financially_assessable": true,
-   "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
-   "best_clean_source": "smarkets",
-   "best_clean_odds": 1.24,
-   "best_clean_net_ev": -0.028571,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 1,
-   "price_observed_at": "2026-11-19T15:59:12.940668+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 7
+   "rank": 5
   },
   {
    "prediction_id": "aa629d75df34323b",
@@ -397,7 +301,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 8
+   "rank": 6
   },
   {
    "prediction_id": "fbdc884d6707d83e",
@@ -443,7 +347,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 9
+   "rank": 7
   },
   {
    "prediction_id": "772b0ebbdf03c101",
@@ -489,53 +393,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 10
-  },
-  {
-   "prediction_id": "0218db2c66cd7238",
-   "sport": "tennis",
-   "competition": "ATP Finals",
-   "event_key": "tennis|tennis_atp_finals|66cc3b98e9e67560a34198715ee78d75",
-   "event_name": "Alexander Zverev v Arthur Fils",
-   "event_start": "2026-11-19T19:30:00+00:00",
-   "event_start_original": "2026-11-19T19:30:00+00:00",
-   "start_time_status": "UNCHANGED",
-   "market": "match_winner",
-   "selection": "Alexander Zverev",
-   "probability": 0.723553,
-   "probability_basis": "P_CURRENT_SCAN",
-   "probability_observed_at": "2026-11-19T16:16:35.257580+00:00",
-   "p_first_snapshot": 0.701571,
-   "p_current_scan": 0.723553,
-   "ledger_probability": 0.701571,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "1655.1",
-   "sigma": 0.011846,
-   "sigma_method": "TENNIS_BAND_WILSON_SE (+) HALF_BOOK_WIDTH (V2-7)",
-   "sigma_calibration": 0.011556,
-   "calibration_status": "HOLDOUT_PASSED (sealed 2024-25, last-traded estimator; live exchange-mid quote is the declared analogue, prospectively tested)",
-   "sigma_half_width": 0.002606,
-   "exchange_width": 0.005213,
-   "probability_band": "70-74.9%",
-   "engine_id": "atp_match_winner.betfair_market",
-   "engine_version": "1",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "prediction_timestamp": "2026-11-18T15:54:55.804253+00:00",
-   "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
-   "strength": "STRONG_PREDICTION",
-   "price_status": "POOR_PAYOUT",
-   "stage_a_label": "STRONG_PREDICTION_POOR_PAYOUT",
-   "financially_assessable": true,
-   "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
-   "best_clean_source": "virginbet",
-   "best_clean_odds": 1.38,
-   "best_clean_net_ev": -0.001497,
-   "n_quotes_latest": 18,
-   "n_clean_quotes_latest": 18,
-   "price_observed_at": "2026-11-19T16:16:35.257580+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 11
+   "rank": 8
   },
   {
    "prediction_id": "0424fe55f0815749",
@@ -581,7 +439,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 12
+   "rank": 9
   },
   {
    "prediction_id": "6a1cd399189ea95e",
@@ -627,7 +485,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 13
+   "rank": 10
   },
   {
    "prediction_id": "50794137b48c05ce",
@@ -661,65 +519,19 @@
    "prediction_timestamp": "2026-11-19T15:59:10.373322+00:00",
    "historical_support": "hist n=12202; holdout DONE (2024-25, n=5066); >=80% coverage 0.198; slope 0.986; >=80% 87.6->87.4",
    "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "POOR_PAYOUT",
-   "stage_a_label": "POOR_PAYOUT",
-   "financially_assessable": true,
-   "price_status_reasons": "NO_CLEAN_QUOTE_ABOVE_FAIR",
-   "best_clean_source": "williamhill",
-   "best_clean_odds": 1.44,
-   "best_clean_net_ev": -0.013593,
-   "n_quotes_latest": 18,
-   "n_clean_quotes_latest": 18,
-   "price_observed_at": "2026-11-19T16:16:35.257580+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 14
-  },
-  {
-   "prediction_id": "0e08a679b6ed539c",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_key": "nba|3c082b72aa002131c276ff5e24bada1b",
-   "event_name": "Golden State Warriors @ Memphis Grizzlies",
-   "event_start": "2026-11-20T01:10:00+00:00",
-   "event_start_original": "2026-11-20T01:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "moneyline",
-   "selection": "Memphis Grizzlies",
-   "probability": 0.678788,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-11-19T15:59:12.940668+00:00",
-   "p_first_snapshot": 0.678788,
-   "p_current_scan": null,
-   "ledger_probability": 0.6787878787878789,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "550.8",
-   "sigma": 0.014319,
-   "sigma_method": "HIST_BAND_WILSON_SE (closing estimator; early-snapshot bias excluded)",
-   "sigma_calibration": 0.014319,
-   "calibration_status": "HOLDOUT_PASSED on closing estimator (live early-snapshot estimator not validated)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "65-69.9%",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "prediction_timestamp": "2026-11-19T15:59:12.940668+00:00",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "strength": "BELOW_STRONG_THRESHOLD",
    "price_status": "PRICE_QUALITY_FAIL",
    "stage_a_label": "PRICE_QUALITY_FAIL",
    "financially_assessable": false,
-   "price_status_reasons": "COMMISSION_UNKNOWN",
+   "price_status_reasons": "PRICE_STALE",
    "best_clean_source": "",
    "best_clean_odds": null,
    "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
+   "n_quotes_latest": 18,
    "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-11-19T15:59:12.940668+00:00",
+   "price_observed_at": "2026-11-19T16:16:35.257580+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 15
+   "rank": 11
   },
   {
    "prediction_id": "23df2aef7a0202fe",
@@ -765,7 +577,7 @@
    "price_observed_at": "2026-11-19T07:16:28.909795+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 16
+   "rank": 12
   },
   {
    "prediction_id": "4f6dad79e9932081",
@@ -811,7 +623,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 17
+   "rank": 13
   },
   {
    "prediction_id": "7879f837c0698a0e",
@@ -857,53 +669,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 18
-  },
-  {
-   "prediction_id": "c07fa06e79616f50",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_key": "nba|5ee4efd00c1daaebd8249ff44fd6ac9d",
-   "event_name": "New York Knicks @ Minnesota Timberwolves",
-   "event_start": "2026-11-20T01:10:00+00:00",
-   "event_start_original": "2026-11-20T01:10:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "market": "moneyline",
-   "selection": "New York Knicks",
-   "probability": 0.514084,
-   "probability_basis": "P_FIRST_SNAPSHOT",
-   "probability_observed_at": "2026-11-19T15:59:12.940668+00:00",
-   "p_first_snapshot": 0.514084,
-   "p_current_scan": null,
-   "ledger_probability": 0.5140835299014846,
-   "normalisation": "",
-   "minutes_to_event_at_prediction": "550.8",
-   "sigma": 0.014997,
-   "sigma_method": "HIST_BAND_WILSON_SE (closing estimator; early-snapshot bias excluded)",
-   "sigma_calibration": 0.014997,
-   "calibration_status": "HOLDOUT_PASSED on closing estimator (live early-snapshot estimator not validated)",
-   "sigma_half_width": null,
-   "exchange_width": null,
-   "probability_band": "50-54.9%",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "prediction_timestamp": "2026-11-19T15:59:12.940668+00:00",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "strength": "BELOW_STRONG_THRESHOLD",
-   "price_status": "PRICE_QUALITY_FAIL",
-   "stage_a_label": "PRICE_QUALITY_FAIL",
-   "financially_assessable": false,
-   "price_status_reasons": "COMMISSION_UNKNOWN",
-   "best_clean_source": "",
-   "best_clean_odds": null,
-   "best_clean_net_ev": null,
-   "n_quotes_latest": 1,
-   "n_clean_quotes_latest": 0,
-   "price_observed_at": "2026-11-19T15:59:12.940668+00:00",
-   "is_bet_recommendation": false,
-   "board_version": "stage-a-2",
-   "rank": 19
+   "rank": 14
   },
   {
    "prediction_id": "76fe24b3f8c2a623",
@@ -949,7 +715,7 @@
    "price_observed_at": "2026-11-19T07:16:28.909795+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 20
+   "rank": 15
   },
   {
    "prediction_id": "bba696c20cbb8d30",
@@ -995,7 +761,7 @@
    "price_observed_at": "2026-11-19T07:16:28.909795+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 21
+   "rank": 16
   },
   {
    "prediction_id": "a8ca24581592733e",
@@ -1041,7 +807,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 22
+   "rank": 17
   },
   {
    "prediction_id": "77b4378a39775052",
@@ -1087,7 +853,7 @@
    "price_observed_at": "2026-11-19T07:16:28.909795+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 23
+   "rank": 18
   },
   {
    "prediction_id": "f25e9d9b1350b2ce",
@@ -1133,7 +899,7 @@
    "price_observed_at": "2026-11-19T07:16:28.909795+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 24
+   "rank": 19
   },
   {
    "prediction_id": "e381d13c7b088ffc",
@@ -1179,7 +945,7 @@
    "price_observed_at": "2026-11-19T07:16:28.909795+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 25
+   "rank": 20
   },
   {
    "prediction_id": "0cfe7fe1bfe0fc4e",
@@ -1225,7 +991,7 @@
    "price_observed_at": "2026-11-19T07:16:28.909795+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 26
+   "rank": 21
   },
   {
    "prediction_id": "a5ce965320d20ebc",
@@ -1271,7 +1037,7 @@
    "price_observed_at": "2026-11-19T07:16:28.909795+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 27
+   "rank": 22
   },
   {
    "prediction_id": "1bfeabeb73f5aff8",
@@ -1317,7 +1083,7 @@
    "price_observed_at": "2026-11-19T07:16:28.909795+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 28
+   "rank": 23
   },
   {
    "prediction_id": "8cf2ac1d583f4bae",
@@ -1363,7 +1129,7 @@
    "price_observed_at": "",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 29
+   "rank": 24
   },
   {
    "prediction_id": "78e973ffef5aef81",
@@ -1409,7 +1175,7 @@
    "price_observed_at": "2026-11-19T07:16:28.909795+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 30
+   "rank": 25
   },
   {
    "prediction_id": "012ecfe469cec6a0",
@@ -1455,7 +1221,7 @@
    "price_observed_at": "2026-11-19T07:16:28.909795+00:00",
    "is_bet_recommendation": false,
    "board_version": "stage-a-2",
-   "rank": 31
+   "rank": 26
   }
  ]
 }
