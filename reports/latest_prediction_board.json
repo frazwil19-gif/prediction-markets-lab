@@ -1,7 +1,7 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-11-20T15:42:00.133840+00:00",
+ "generated_at": "2026-11-20T16:16:31.170868+00:00",
  "date": "2026-11-20",
  "summary": {
   "upcoming_events": 67,
@@ -31,11 +31,11 @@
   },
   "settled_yesterday": 15,
   "system": "HEALTHY",
-  "api_credits_last_observed": 218
+  "api_credits_last_observed": 217
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-11-20T15:42:00.133840+00:00",
+  "generated_at": "2026-11-20T16:16:31.170868+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -43,31 +43,31 @@
     "last": "2026-11-20T07:16:33.576417+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 8.4
+    "age_hours": 9.0
    },
    "settlement": {
     "last": "2026-11-20T02:13:42.873122+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 13.5
+    "age_hours": 14.0
    },
    "tennis_board": {
-    "last": "2026-11-20T15:41:56.117563+00:00",
+    "last": "2026-11-20T16:16:27.630205+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    },
    "ci_tests": {
-    "last": "2026-11-20T15:41:57.124254+00:00",
+    "last": "2026-11-20T16:16:29.091042+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    }
   },
   "api_credits": {
-   "remaining": 218,
-   "observed_at": "2026-11-20T15:41:58.699167+00:00",
-   "source": "nba_credit_log.csv",
+   "remaining": 217,
+   "observed_at": "2026-11-20T16:16:28.205220+00:00",
+   "source": "credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
   "warnings": [],
@@ -5039,7 +5039,7 @@
    "settlement_timestamp": "",
    "event_start_original": "2026-11-21T13:00:00+00:00",
    "start_time_status": "UNCHANGED",
-   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv|unified_ledger.event_start"
+   "start_time_source": "tennis_predictions/exchange_probability_snapshots.csv|tennis_predictions/probability_snapshots.csv"
   },
   {
    "prediction_id": "94594eb4e99eb4ba",

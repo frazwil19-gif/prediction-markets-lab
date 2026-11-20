@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-11-20T15:42Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-20T16:16Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 371 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 112 · research predictions: 0
+Predictions in the next window: 371 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 113 · research predictions: 0
 
 ## 1. Best predictions today
 
@@ -123,6 +123,7 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 | NEC Nijmegen v PSV Eindhoven (2026-11-21T15:30) | double_chance: 12 | 78.4% | 1.28 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | West Ham United v Preston North End (2026-11-21T15:00) | 1x2: home | 77.9% | 1.28 | — | PRICE_STALE, NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
 | Norwich City v Cardiff City (2026-11-21T12:30) | double_chance: 12 | 77.9% | 1.28 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
+| Carlos Alcaraz v Ben Shelton (2026-11-21T13:00) | match_winner: Carlos Alcaraz | 77.6% | 1.29 | — | EXCHANGE_SPREAD_TOO_WIDE, NET_EV_NOT_POSITIVE |
 | Sheffield United v Watford (2026-11-21T15:00) | double_chance: 12 | 77.3% | 1.29 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Newcastle United v Arsenal (2026-11-21T17:30) | double_chance: 12 | 77.3% | 1.29 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | FC Schalke 04 v VfB Stuttgart (2026-11-21T17:30) | double_chance: 12 | 76.5% | 1.31 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
@@ -180,7 +181,7 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 360 · PRICE_STALE 192 · NO_EXECUTABLE_PRICE 168 · P_BELOW_FLOOR 168 · NET_EV_NOT_POSITIVE 148 · COMMISSION_UNKNOWN 19 · EXCHANGE_SPREAD_TOO_WIDE 1 · NET_EV_BELOW_PAPER_GATE 1
+ENGINE_STATUS_INELIGIBLE 360 · PRICE_STALE 192 · NO_EXECUTABLE_PRICE 168 · P_BELOW_FLOOR 168 · NET_EV_NOT_POSITIVE 149 · COMMISSION_UNKNOWN 19 · EXCHANGE_SPREAD_TOO_WIDE 1
 
 ## 4. Research predictions — not money eligible
 

@@ -1,0 +1,90 @@
+{
+ "board_date": "2026-11-20",
+ "layer": "PREDICTION (paper) -- not a bet recommendation",
+ "coverage": {
+  "active_keys": [
+   "tennis_atp_finals"
+  ],
+  "skipped_for_credit_guard": [],
+  "keys_over_cap": [],
+  "skipped_no_upcoming_event": [],
+  "events_returned": 2,
+  "scan_timestamp": "2026-11-20T16:16:27.630205+00:00",
+  "credits_remaining_after": 217,
+  "universe_note": "Odds-API-covered universe only (Slams, 1000s, 500s) -- not the full ATP/WTA calendar"
+ },
+ "counts": {
+  "events_scanned": 2,
+  "valid_predictions": 2,
+  "research_only_predictions": 0,
+  "ge_70": 1,
+  "ge_75": 1,
+  "ge_80": 0,
+  "ge_85": 0,
+  "ge_90": 0,
+  "ge_95": 0
+ },
+ "predictions": [
+  {
+   "prediction_id": "702478c57a3232d4",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "ATP",
+   "sport_key": "tennis_atp_finals",
+   "tournament": "ATP Finals",
+   "event_id": "81c3faeaadd3d42734cd831b32b32597",
+   "player_a": "Carlos Alcaraz",
+   "player_b": "Ben Shelton",
+   "commence_time": "2026-11-21T13:00:00+00:00",
+   "prediction_timestamp": "2026-11-20T16:16:27.630205+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=1.22/3.5;ex_lay=1.4/5.6",
+   "p_a": 0.776451,
+   "p_b": 0.223549,
+   "predicted_winner": "Carlos Alcaraz",
+   "predicted_probability": 0.776451,
+   "probability_band": "75-79.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 446,
+   "historical_band_actual_rate": 0.7691,
+   "historical_band_wilson95": [
+    0.7277,
+    0.8058
+   ],
+   "engine_holdout_n": 5066
+  },
+  {
+   "prediction_id": "50794137b48c05ce",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "ATP",
+   "sport_key": "tennis_atp_finals",
+   "tournament": "ATP Finals",
+   "event_id": "1acdb2047defbe0439ef3b1961a60010",
+   "player_a": "Daniil Medvedev",
+   "player_b": "Frances Tiafoe",
+   "commence_time": "2026-11-20T19:30:00+00:00",
+   "prediction_timestamp": "2026-11-20T16:16:27.630205+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=1.43/3.25;ex_lay=1.44/3.35",
+   "p_a": 0.696938,
+   "p_b": 0.303062,
+   "predicted_winner": "Daniil Medvedev",
+   "predicted_probability": 0.696938,
+   "probability_band": "65-69.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 646,
+   "historical_band_actual_rate": 0.7121,
+   "historical_band_wilson95": [
+    0.676,
+    0.7457
+   ],
+   "engine_holdout_n": 5066
+  }
+ ],
+ "research_only": []
+}
