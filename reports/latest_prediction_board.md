@@ -2,9 +2,9 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 68 · Valid predictions: 397 · Sports: basketball, football, tennis
-Counts: >=70: 120 · >=75: 84 · >=80: 44 · >=85: 20 · >=90: 7 · >=95: 1
-Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 201
+Upcoming events: 38 · Valid predictions: 199 · Sports: basketball, football, tennis
+Counts: >=70: 65 · >=75: 50 · >=80: 29 · >=85: 14 · >=90: 5 · >=95: 1
+Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 200
 
 ## Top predictions (P ≥ 80%)
 
@@ -13,21 +13,15 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 201
 | football | FC Twente Enschede v Willem II | 2026-11-22T11:15 | double_chance | 1X | 95.5% | 1.05 | 95%+ | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.03 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Real Madrid v Celta Vigo | 2026-11-21T20:00 | double_chance | 1X | 93.0% | 1.08 | 90-94.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.05 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Ajax v ADO Den Haag | 2026-11-22T13:30 | double_chance | 1X | 92.4% | 1.08 | 90-94.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.06 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Celtic v St Mirren | 2026-11-21T15:00 | double_chance | 1X | 92.4% | 1.08 | 90-94.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.05 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | West Ham United v Preston North End | 2026-11-21T15:00 | double_chance | 1X | 91.6% | 1.09 | 90-94.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.07 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | FC Twente Enschede v Willem II | 2026-11-22T11:15 | double_chance | 12 | 91.5% | 1.09 | 90-94.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.07 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Feyenoord v Excelsior | 2026-11-21T17:45 | double_chance | 1X | 91.2% | 1.10 | 90-94.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.06 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Parma v AS Roma | 2026-11-21T17:00 | double_chance | X2 | 89.9% | 1.11 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.09 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | basketball | New Orleans Pelicans @ San Antonio Spurs | 2026-11-22T01:10 | moneyline | San Antonio Spurs | 89.8% | 1.11 | 85-89.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.09 (odds_api:matchbook) | no | yes |
-| football | Wolverhampton Wanderers v Charlton Athletic | 2026-11-21T15:00 | double_chance | 1X | 89.0% | 1.12 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.09 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Paris FC v Angers | 2026-11-22T14:00 | double_chance | 1X | 88.9% | 1.12 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.10 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Ajax v ADO Den Haag | 2026-11-22T13:30 | double_chance | 12 | 88.2% | 1.13 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.11 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Celtic v St Mirren | 2026-11-21T15:00 | double_chance | 12 | 88.0% | 1.14 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.11 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Real Madrid v Celta Vigo | 2026-11-21T20:00 | double_chance | 12 | 87.5% | 1.14 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.11 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Feyenoord v Excelsior | 2026-11-21T17:45 | double_chance | 12 | 87.4% | 1.14 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.12 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | FC Twente Enschede v Willem II | 2026-11-22T11:15 | 1x2 | home | 87.2% | 1.15 | 85-89.9% | football_1x2.market_consensus@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.11 (odds_api:Coral) | no | yes |
-| football | Middlesbrough v Bristol City | 2026-11-21T15:00 | double_chance | 1X | 86.5% | 1.16 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.13 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | West Ham United v Preston North End | 2026-11-21T15:00 | double_chance | 12 | 86.3% | 1.16 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.13 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | AS Monaco v Auxerre | 2026-11-21T19:45 | double_chance | 1X | 86.0% | 1.16 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.13 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | KV Mechelen v Club Brugge | 2026-11-21T19:45 | double_chance | X2 | 85.9% | 1.16 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.13 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Genk v RAAL La Louvière | 2026-11-21T17:15 | double_chance | 1X | 85.0% | 1.18 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.13 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
@@ -35,24 +29,15 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 201
 | football | Napoli v Torino | 2026-11-21T19:45 | double_chance | 1X | 84.6% | 1.18 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.15 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | basketball | Boston Celtics @ Sacramento Kings | 2026-11-22T03:10 | moneyline | Boston Celtics | 84.4% | 1.18 | 80-84.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.17 (odds_api:betfair_sb_uk) | no | yes |
 | football | Marseille v Le Mans FC | 2026-11-22T19:45 | double_chance | 1X | 84.2% | 1.19 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.15 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Nice v Paris Saint Germain | 2026-11-21T16:15 | double_chance | X2 | 84.0% | 1.19 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.17 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Parma v AS Roma | 2026-11-21T17:00 | double_chance | 12 | 83.3% | 1.20 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.18 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Tottenham Hotspur v Ipswich Town | 2026-11-21T15:00 | double_chance | 1X | 82.9% | 1.21 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.18 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Newcastle United v Arsenal | 2026-11-21T17:30 | double_chance | X2 | 82.8% | 1.21 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.17 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Wolverhampton Wanderers v Charlton Athletic | 2026-11-21T15:00 | double_chance | 12 | 82.2% | 1.22 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.20 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Sheffield United v Watford | 2026-11-21T15:00 | double_chance | 1X | 81.9% | 1.22 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.18 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Paris FC v Angers | 2026-11-22T14:00 | double_chance | 12 | 81.9% | 1.22 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | KV Mechelen v Club Brugge | 2026-11-21T19:45 | double_chance | 12 | 81.6% | 1.23 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.18 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Motherwell v Rangers | 2026-11-21T20:00 | double_chance | X2 | 81.4% | 1.23 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.18 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Middlesbrough v Bristol City | 2026-11-21T15:00 | double_chance | 12 | 81.2% | 1.23 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.21 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | basketball | Milwaukee Bucks @ Philadelphia 76ers | 2026-11-21T18:10 | moneyline | Philadelphia 76ers | 81.0% | 1.23 | 80-84.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.21 (odds_api:matchbook) | no | yes |
 | football | AS Monaco v Auxerre | 2026-11-21T19:45 | double_chance | 12 | 81.0% | 1.23 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.21 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Nice v Paris Saint Germain | 2026-11-21T16:15 | double_chance | 12 | 80.7% | 1.24 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.22 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Real Madrid v Celta Vigo | 2026-11-21T20:00 | 1x2 | home | 80.7% | 1.24 | 80-84.9% | football_1x2.market_consensus@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.18 (odds_api:Smarkets) | no | yes |
-| football | Burton Albion v Luton | 2026-11-21T15:00 | double_chance | X2 | 80.5% | 1.24 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.21 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Ajax v ADO Den Haag | 2026-11-22T13:30 | 1x2 | home | 80.4% | 1.24 | 80-84.9% | football_1x2.market_consensus@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.20 (odds_api:Coral) | no | yes |
-| football | Celtic v St Mirren | 2026-11-21T15:00 | 1x2 | home | 80.3% | 1.24 | 80-84.9% | football_1x2.market_consensus@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (odds_api:Smarkets) | no | yes |
-| football | Bradford City v Doncaster Rovers | 2026-11-21T15:00 | double_chance | 1X | 80.3% | 1.25 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.23 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Marseille v Le Mans FC | 2026-11-22T19:45 | double_chance | 12 | 80.1% | 1.25 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.22 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 
 ## Prospective evidence
@@ -73,8 +58,8 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 201
 
 - daily_scan: OK (last 2026-11-21T07:16:29.368506+00:00)
 - settlement: OK (last 2026-11-21T02:06:13.694404+00:00)
-- tennis_board: OK (last 2026-11-21T14:52:23.386024+00:00)
-- ci_tests: OK (last 2026-11-21T14:52:24.497837+00:00)
+- tennis_board: OK (last 2026-11-21T16:16:18.228781+00:00)
+- ci_tests: OK (last 2026-11-21T16:16:18.976528+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 

@@ -1,0 +1,60 @@
+{
+ "board_date": "2026-11-21",
+ "layer": "PREDICTION (paper) -- not a bet recommendation",
+ "coverage": {
+  "active_keys": [
+   "tennis_atp_finals"
+  ],
+  "skipped_for_credit_guard": [],
+  "keys_over_cap": [],
+  "skipped_no_upcoming_event": [],
+  "events_returned": 1,
+  "scan_timestamp": "2026-11-21T16:16:18.228781+00:00",
+  "credits_remaining_after": 200,
+  "universe_note": "Odds-API-covered universe only (Slams, 1000s, 500s) -- not the full ATP/WTA calendar"
+ },
+ "counts": {
+  "events_scanned": 1,
+  "valid_predictions": 1,
+  "research_only_predictions": 0,
+  "ge_70": 0,
+  "ge_75": 0,
+  "ge_80": 0,
+  "ge_85": 0,
+  "ge_90": 0,
+  "ge_95": 0
+ },
+ "predictions": [
+  {
+   "prediction_id": "3c14a2627677bf3d",
+   "engine_id": "atp_match_winner.betfair_market",
+   "engine_version": "1",
+   "tour": "ATP",
+   "sport_key": "tennis_atp_finals",
+   "tournament": "ATP Finals",
+   "event_id": "32e23a0b745bed6c0a23f60fab451adb",
+   "player_a": "Alexander Zverev",
+   "player_b": "Daniil Medvedev",
+   "commence_time": "2026-11-21T19:30:00+00:00",
+   "prediction_timestamp": "2026-11-21T16:16:18.228781+00:00",
+   "source": "EXCHANGE_MID",
+   "source_validated": true,
+   "raw_prices": "ex_back=1.66/2.5;ex_lay=1.67/2.52",
+   "p_a": 0.601198,
+   "p_b": 0.398802,
+   "predicted_winner": "Alexander Zverev",
+   "predicted_probability": 0.601198,
+   "probability_band": "60-64.9%",
+   "multi_research_eligible": false,
+   "status": "PREDICTED",
+   "historical_band_n": 829,
+   "historical_band_actual_rate": 0.6019,
+   "historical_band_wilson95": [
+    0.5682,
+    0.6347
+   ],
+   "engine_holdout_n": 5066
+  }
+ ],
+ "research_only": []
+}

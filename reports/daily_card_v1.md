@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-11-21T15:37Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-21T16:16Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 205 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 67 · research predictions: 192
+Predictions in the next window: 199 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 65 · research predictions: 188
 
 ## 1. Best predictions today
 
@@ -29,27 +29,27 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | 17 | football | Napoli v Torino | 2026-11-21T19:45 | double_chance | 1X | 84.6% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.18 | no price | no |
 | 18 | basketball | Boston Celtics @ Sacramento Kings | 2026-11-22T03:10 | moneyline | Boston Celtics | 84.4% | 80%+ | 1.4% | VALIDATED | 1.18 | 1.17 (betfair_sb_uk) | no |
 | 19 | football | Marseille v Le Mans FC | 2026-11-22T19:45 | double_chance | 1X | 84.2% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.19 | no price | no |
-| 20 | football | Nice v Paris Saint Germain | 2026-11-21T16:15 | double_chance | X2 | 84.0% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.19 | no price | no |
-| 21 | football | Parma v AS Roma | 2026-11-21T17:00 | double_chance | 12 | 83.3% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.20 | no price | no |
-| 22 | football | Newcastle United v Arsenal | 2026-11-21T17:30 | double_chance | X2 | 82.8% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.21 | no price | no |
-| 23 | football | Paris FC v Angers | 2026-11-22T14:00 | double_chance | 12 | 81.9% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.22 | no price | no |
-| 24 | football | KV Mechelen v Club Brugge | 2026-11-21T19:45 | double_chance | 12 | 81.6% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.23 | no price | no |
-| 25 | football | Motherwell v Rangers | 2026-11-21T20:00 | double_chance | X2 | 81.4% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.23 | no price | no |
-| 26 | basketball | Milwaukee Bucks @ Philadelphia 76ers | 2026-11-21T18:10 | moneyline | Philadelphia 76ers | 81.0% | 80%+ | 1.4% | VALIDATED | 1.23 | price not usable (stale/wide/unknown commission) | no |
-| 27 | football | AS Monaco v Auxerre | 2026-11-21T19:45 | double_chance | 12 | 81.0% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.23 | no price | no |
-| 28 | football | Nice v Paris Saint Germain | 2026-11-21T16:15 | double_chance | 12 | 80.7% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.24 | no price | no |
-| 29 | football | Ajax v ADO Den Haag | 2026-11-22T13:30 | 1x2 | home | 80.6% | 80%+ | 2.2% | PROSPECTIVE_SHADOW_LEAGUE | 1.24 | price not usable (stale/wide/unknown commission) | no |
-| 30 | football | Real Madrid v Celta Vigo | 2026-11-21T20:00 | 1x2 | home | 80.5% | 80%+ | 2.2% | PROSPECTIVE_SHADOW_LEAGUE | 1.24 | price not usable (stale/wide/unknown commission) | no |
-| 31 | football | Marseille v Le Mans FC | 2026-11-22T19:45 | double_chance | 12 | 80.1% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.25 | no price | no |
-| 32 | football | Genk v RAAL La Louvière | 2026-11-21T17:15 | double_chance | 12 | 79.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.25 | no price | no |
-| 33 | football | Go Ahead Eagles v Fortuna Sittard | 2026-11-22T15:45 | double_chance | 1X | 79.6% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.26 | no price | no |
-| 34 | football | Werder Bremen v Hamburger SV | 2026-11-22T16:30 | double_chance | 1X | 79.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.26 | no price | no |
-| 35 | football | Napoli v Torino | 2026-11-21T19:45 | double_chance | 12 | 79.0% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.27 | no price | no |
-| 36 | football | Motherwell v Rangers | 2026-11-21T20:00 | double_chance | 12 | 78.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.27 | no price | no |
-| 37 | football | Feyenoord v Excelsior | 2026-11-21T17:45 | 1x2 | home | 78.7% | 70%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.27 | price not usable (stale/wide/unknown commission) | no |
-| 38 | football | Hull City v Brighton and Hove Albion | 2026-11-22T14:00 | double_chance | 12 | 78.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.28 | no price | no |
-| 39 | football | Liverpool v Manchester United | 2026-11-22T16:30 | double_chance | 1X | 78.0% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.28 | no price | no |
-| 40 | football | Liverpool v Manchester United | 2026-11-22T16:30 | double_chance | 12 | 77.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | no price | no |
+| 20 | football | Parma v AS Roma | 2026-11-21T17:00 | double_chance | 12 | 83.3% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.20 | no price | no |
+| 21 | football | Newcastle United v Arsenal | 2026-11-21T17:30 | double_chance | X2 | 82.8% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.21 | no price | no |
+| 22 | football | Paris FC v Angers | 2026-11-22T14:00 | double_chance | 12 | 81.9% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.22 | no price | no |
+| 23 | football | KV Mechelen v Club Brugge | 2026-11-21T19:45 | double_chance | 12 | 81.6% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.23 | no price | no |
+| 24 | football | Motherwell v Rangers | 2026-11-21T20:00 | double_chance | X2 | 81.4% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.23 | no price | no |
+| 25 | basketball | Milwaukee Bucks @ Philadelphia 76ers | 2026-11-21T18:10 | moneyline | Philadelphia 76ers | 81.0% | 80%+ | 1.4% | VALIDATED | 1.23 | price not usable (stale/wide/unknown commission) | no |
+| 26 | football | AS Monaco v Auxerre | 2026-11-21T19:45 | double_chance | 12 | 81.0% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.23 | no price | no |
+| 27 | football | Ajax v ADO Den Haag | 2026-11-22T13:30 | 1x2 | home | 80.6% | 80%+ | 2.2% | PROSPECTIVE_SHADOW_LEAGUE | 1.24 | price not usable (stale/wide/unknown commission) | no |
+| 28 | football | Real Madrid v Celta Vigo | 2026-11-21T20:00 | 1x2 | home | 80.5% | 80%+ | 2.2% | PROSPECTIVE_SHADOW_LEAGUE | 1.24 | price not usable (stale/wide/unknown commission) | no |
+| 29 | football | Marseille v Le Mans FC | 2026-11-22T19:45 | double_chance | 12 | 80.1% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.25 | no price | no |
+| 30 | football | Genk v RAAL La Louvière | 2026-11-21T17:15 | double_chance | 12 | 79.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.25 | no price | no |
+| 31 | football | Go Ahead Eagles v Fortuna Sittard | 2026-11-22T15:45 | double_chance | 1X | 79.6% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.26 | no price | no |
+| 32 | football | Werder Bremen v Hamburger SV | 2026-11-22T16:30 | double_chance | 1X | 79.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.26 | no price | no |
+| 33 | football | Napoli v Torino | 2026-11-21T19:45 | double_chance | 12 | 79.0% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.27 | no price | no |
+| 34 | football | Motherwell v Rangers | 2026-11-21T20:00 | double_chance | 12 | 78.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.27 | no price | no |
+| 35 | football | Feyenoord v Excelsior | 2026-11-21T17:45 | 1x2 | home | 78.7% | 70%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.27 | price not usable (stale/wide/unknown commission) | no |
+| 36 | football | Hull City v Brighton and Hove Albion | 2026-11-22T14:00 | double_chance | 12 | 78.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.28 | no price | no |
+| 37 | football | Liverpool v Manchester United | 2026-11-22T16:30 | double_chance | 1X | 78.0% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.28 | no price | no |
+| 38 | football | Liverpool v Manchester United | 2026-11-22T16:30 | double_chance | 12 | 77.8% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | no price | no |
+| 39 | football | Werder Bremen v Hamburger SV | 2026-11-22T16:30 | double_chance | 12 | 77.6% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | no price | no |
+| 40 | football | Go Ahead Eagles v Fortuna Sittard | 2026-11-22T15:45 | double_chance | 12 | 77.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | no price | no |
 
 ## 2. Qualified paper bets (simulated stakes, recorded automatically)
 
@@ -84,7 +84,6 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 | Napoli v Torino (2026-11-21T19:45) | double_chance: 1X | 84.6% | 1.18 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Boston Celtics @ Sacramento Kings (2026-11-22T03:10) | moneyline: Boston Celtics | 84.4% | 1.18 | 1.17 | NET_EV_NOT_POSITIVE |
 | Marseille v Le Mans FC (2026-11-22T19:45) | double_chance: 1X | 84.2% | 1.19 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Nice v Paris Saint Germain (2026-11-21T16:15) | double_chance: X2 | 84.0% | 1.19 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Parma v AS Roma (2026-11-21T17:00) | double_chance: 12 | 83.3% | 1.20 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Newcastle United v Arsenal (2026-11-21T17:30) | double_chance: X2 | 82.8% | 1.21 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Paris FC v Angers (2026-11-22T14:00) | double_chance: 12 | 81.9% | 1.22 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
@@ -92,7 +91,6 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 | Motherwell v Rangers (2026-11-21T20:00) | double_chance: X2 | 81.4% | 1.23 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Milwaukee Bucks @ Philadelphia 76ers (2026-11-21T18:10) | moneyline: Philadelphia 76ers | 81.0% | 1.23 | — | COMMISSION_UNKNOWN |
 | AS Monaco v Auxerre (2026-11-21T19:45) | double_chance: 12 | 81.0% | 1.23 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Nice v Paris Saint Germain (2026-11-21T16:15) | double_chance: 12 | 80.7% | 1.24 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Ajax v ADO Den Haag (2026-11-22T13:30) | 1x2: home | 80.6% | 1.24 | — | PRICE_STALE, NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
 | Real Madrid v Celta Vigo (2026-11-21T20:00) | 1x2: home | 80.5% | 1.24 | — | PRICE_STALE, NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
 | Marseille v Le Mans FC (2026-11-22T19:45) | double_chance: 12 | 80.1% | 1.25 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
@@ -135,7 +133,7 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 198 · PRICE_STALE 102 · P_BELOW_FLOOR 97 · NO_EXECUTABLE_PRICE 96 · NET_EV_NOT_POSITIVE 76 · COMMISSION_UNKNOWN 10
+ENGINE_STATUS_INELIGIBLE 192 · PRICE_STALE 99 · P_BELOW_FLOOR 94 · NO_EXECUTABLE_PRICE 93 · NET_EV_NOT_POSITIVE 74 · COMMISSION_UNKNOWN 10
 
 ## 4. Research predictions — not money eligible
 
@@ -152,7 +150,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | Strasbourg v Brest (F1) | 2026-11-21 | total_corners | under 11.5 | 76.3% | 1.31 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Marseille v Le Mans (F1) | 2026-11-22 | total_corners | under 11.5 | 76.2% | 1.31 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Getafe v Ath Madrid (SP1) | 2026-11-22 | total_corners | under 11.5 | 75.6% | 1.32 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Nice v Paris SG (F1) | 2026-11-21 | total_corners | under 11.5 | 75.5% | 1.32 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Levante v Elche (SP1) | 2026-11-23 | total_corners | under 11.5 | 75.5% | 1.32 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Twente v Willem II (N1) | 2026-11-22 | total_corners | over 8.5 | 74.9% | 1.34 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Napoli v Torino (I1) | 2026-11-21 | total_corners | under 11.5 | 74.8% | 1.34 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -211,7 +208,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | Ajax v Den Haag (N1) | 2026-11-22 | total_corners | under 11.5 | 66.2% | 1.51 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Motherwell v Rangers (SC0) | 2026-11-21 | total_corners | under 11.5 | 66.2% | 1.51 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Getafe v Ath Madrid (SP1) | 2026-11-22 | total_corners | under 10.5 | 65.9% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Nice v Paris SG (F1) | 2026-11-21 | total_corners | under 10.5 | 65.8% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Feyenoord v Excelsior (N1) | 2026-11-21 | total_corners | over 8.5 | 65.8% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Juventus v Venezia (I1) | 2026-11-22 | total_corners | under 11.5 | 65.6% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Levante v Elche (SP1) | 2026-11-23 | total_corners | under 10.5 | 65.6% | 1.53 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -264,7 +260,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | Atalanta v Inter (I1) | 2026-11-22 | total_corners | under 9.5 | 58.7% | 1.70 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Utrecht v Cambuur (N1) | 2026-11-21 | total_corners | under 10.5 | 58.5% | 1.71 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Levante v Elche (SP1) | 2026-11-23 | total_corners | over 8.5 | 58.3% | 1.71 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Nice v Paris SG (F1) | 2026-11-21 | total_corners | over 8.5 | 58.1% | 1.72 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Werder Bremen v Hamburg (D1) | 2026-11-22 | total_corners | under 10.5 | 58.0% | 1.72 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Getafe v Ath Madrid (SP1) | 2026-11-22 | total_corners | over 8.5 | 57.9% | 1.73 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Strasbourg v Brest (F1) | 2026-11-21 | total_corners | over 8.5 | 57.5% | 1.74 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -305,7 +300,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | Santander v Sociedad (SP1) | 2026-11-22 | total_corners | over 9.5 | 54.7% | 1.83 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Getafe v Ath Madrid (SP1) | 2026-11-22 | total_corners | under 9.5 | 54.7% | 1.83 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Dundee v Hearts (SC0) | 2026-11-21 | total_corners | over 9.5 | 54.6% | 1.83 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Nice v Paris SG (F1) | 2026-11-21 | total_corners | under 9.5 | 54.6% | 1.83 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Feyenoord v Excelsior (N1) | 2026-11-21 | total_corners | over 9.5 | 54.4% | 1.84 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Levante v Elche (SP1) | 2026-11-23 | total_corners | under 9.5 | 54.4% | 1.84 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Hull v Brighton (E0) | 2026-11-22 | total_corners | over 9.5 | 54.4% | 1.84 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
