@@ -1,10 +1,10 @@
-# Paper performance report (2026-11-20T02:13Z)
+# Paper performance report (2026-11-21T02:06Z)
 
 **PAPER — unattended prospective validation; stakes SIMULATED**
 
 ## Weekly
 
-Candidates evaluated 96 · qualified 0 (rate 0.0) · paper orders 0 (settled 0, open 0) · unique events 0
+Candidates evaluated 431 · qualified 0 (rate 0.0) · paper orders 0 (settled 0, open 0) · unique events 0
 
 Expected wins 0 vs actual 0 · expected profit £0 vs realised £0 (£1 simulated) · ROI None · max drawdown £0.0 · Brier None · log loss None
 
@@ -15,12 +15,12 @@ Avg odds {'n': 0} · EV {'n': 0}
 Hypothetical (labelled, not live): £1: turnover £0, exp £0, realised £0 · £5: turnover £0, exp £0, realised £0 · £10: turnover £0, exp £0, realised £0
 
 
-Rejections: NET_EV_NOT_POSITIVE 45 · COMMISSION_UNKNOWN 34 · ENGINE_STATUS_INELIGIBLE 24 · NO_EXECUTABLE_PRICE 12 · P_BELOW_FLOOR 12 · PRICE_STALE 6 · PREDICTION_NOT_VALID 3 · NET_EV_BELOW_PAPER_GATE 2
+Rejections: ENGINE_STATUS_INELIGIBLE 360 · NET_EV_NOT_POSITIVE 173 · NO_EXECUTABLE_PRICE 168 · P_BELOW_FLOOR 168 · COMMISSION_UNKNOWN 53 · PRICE_STALE 7 · PREDICTION_NOT_VALID 3 · NET_EV_BELOW_PAPER_GATE 2
 Data/settlement flags: none
 
 ## Monthly
 
-Candidates evaluated 1841 · qualified 1 (rate 0.0005) · paper orders 1 (settled 1, open 0) · unique events 1
+Candidates evaluated 2174 · qualified 1 (rate 0.0005) · paper orders 1 (settled 1, open 0) · unique events 1
 
 Expected wins 0.63 vs actual 1 · expected profit £0.02 vs realised £0.62 (£1 simulated) · ROI 0.62 · max drawdown £0.0 · Brier 0.1362 · log loss 0.4605
 
@@ -35,12 +35,12 @@ Hypothetical (labelled, not live): £1: turnover £1.0, exp £0.02, realised £0
 **By engine_id:** wta_match_winner.betfair_market: n 1, settled 1, P/L £0.62, CLV None
 **By execution_class:** BOOKMAKER_ONLY: n 1, settled 1, P/L £0.62, CLV None
 
-Rejections: ENGINE_STATUS_INELIGIBLE 1458 · NET_EV_NOT_POSITIVE 810 · P_BELOW_FLOOR 682 · NO_EXECUTABLE_PRICE 678 · COMMISSION_UNKNOWN 198 · PRICE_STALE 34 · PREDICTION_NOT_VALID 21 · EXCHANGE_SPREAD_TOO_WIDE 10
+Rejections: ENGINE_STATUS_INELIGIBLE 1794 · NET_EV_NOT_POSITIVE 941 · P_BELOW_FLOOR 838 · NO_EXECUTABLE_PRICE 834 · COMMISSION_UNKNOWN 213 · PRICE_STALE 34 · PREDICTION_NOT_VALID 21 · EXCHANGE_SPREAD_TOO_WIDE 11
 Data/settlement flags: NO_CLOSE_CAPTURED 1
 
 ## All
 
-Candidates evaluated 3562 · qualified 3 (rate 0.0008) · paper orders 13 (settled 12, open 1) · unique events 13
+Candidates evaluated 3908 · qualified 3 (rate 0.0008) · paper orders 13 (settled 12, open 1) · unique events 13
 
 Expected wins 8.25 vs actual 7 · expected profit £0.56 vs realised £-1.57 (£1 simulated) · ROI -0.1308 · max drawdown £2.72 · Brier 0.2302 · log loss 0.6515
 
@@ -55,7 +55,7 @@ Hypothetical (labelled, not live): £1: turnover £12.0, exp £0.56, realised £
 **By engine_id:** atp_match_winner.betfair_market: n 2, settled 2, P/L £-0.47, CLV None · wta_match_winner.betfair_market: n 11, settled 10, P/L £-1.1, CLV 0.0027
 **By execution_class:** API_EXECUTABLE: n 2, settled 2, P/L £-2.0, CLV None · BOOKMAKER_ONLY: n 11, settled 10, P/L £0.43, CLV 0.0027
 
-Rejections: ENGINE_STATUS_INELIGIBLE 2754 · NET_EV_NOT_POSITIVE 1617 · P_BELOW_FLOOR 1299 · NO_EXECUTABLE_PRICE 1290 · COMMISSION_UNKNOWN 361 · PRICE_STALE 70 · PREDICTION_NOT_VALID 66 · EXCHANGE_SPREAD_TOO_WIDE 33
+Rejections: ENGINE_STATUS_INELIGIBLE 3090 · NET_EV_NOT_POSITIVE 1756 · P_BELOW_FLOOR 1455 · NO_EXECUTABLE_PRICE 1446 · COMMISSION_UNKNOWN 380 · PRICE_STALE 71 · PREDICTION_NOT_VALID 66 · EXCHANGE_SPREAD_TOO_WIDE 34
 Data/settlement flags: NO_CLOSE_CAPTURED 12, SETTLEMENT_OVERDUE 1
 
 Small samples: differences inside noise are not evidence (first-weekend rule).
