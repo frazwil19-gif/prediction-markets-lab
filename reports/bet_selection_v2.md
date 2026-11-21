@@ -4,9 +4,9 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-21T07:16Z · events scanned 76 · valid predictions 479 · high-P (≥70%) 144 · priced 237 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 479 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-21T14:52Z · events scanned 68 · valid predictions 397 · high-P (≥70%) 119 · priced 194 · PAPER_BET 0 · MULTI-research 1 · WATCH 0 · REJECT 396 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 478 · P_BELOW_FLOOR 227 · NO_EXECUTABLE_PRICE 225 · NET_EV_NOT_POSITIVE 178 · PRICE_STALE 46 · COMMISSION_UNKNOWN 17 · EXCHANGE_SPREAD_TOO_WIDE 1
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 390 · PRICE_STALE 207 · P_BELOW_FLOOR 185 · NO_EXECUTABLE_PRICE 183 · NET_EV_NOT_POSITIVE 148 · COMMISSION_UNKNOWN 20
 
 ## Candidates (latest run, best price per prediction)
 
@@ -20,38 +20,38 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 478 · P_BELOW_FLOOR 227 · 
 | FC Twente Enschede v Willem II | 2026-11-22T11:15 | 12 | 91.5% | 1.09 | — | — | — | REJECT |
 | Feyenoord v Excelsior | 2026-11-21T17:45 | 1X | 91.2% | 1.10 | — | — | — | REJECT |
 | Parma v AS Roma | 2026-11-21T17:00 | X2 | 89.9% | 1.11 | — | — | — | REJECT |
-| Como v Cagliari | 2026-11-21T14:00 | 1X | 89.6% | 1.12 | — | — | — | REJECT |
-| Bayer Leverkusen v SC Paderborn | 2026-11-21T14:30 | 1X | 89.2% | 1.12 | — | — | — | REJECT |
+| New Orleans Pelicans @ San Antonio Spurs | 2026-11-22T01:10 | San Antonio Spurs | 89.8% | 1.11 | 1.09 (matchbook) | — | — | REJECT |
 | Wolverhampton Wanderers v Charlton Athletic | 2026-11-21T15:00 | 1X | 89.0% | 1.12 | — | — | — | REJECT |
 | Paris FC v Angers | 2026-11-22T14:00 | 1X | 88.9% | 1.12 | — | — | — | REJECT |
 | Ajax v ADO Den Haag | 2026-11-22T13:30 | 12 | 88.2% | 1.13 | — | — | — | REJECT |
 | Celtic v St Mirren | 2026-11-21T15:00 | 12 | 88.0% | 1.14 | — | — | — | REJECT |
-| Lazio v Lecce | 2026-11-21T14:00 | 1X | 87.7% | 1.14 | — | — | — | REJECT |
 | Real Madrid v Celta Vigo | 2026-11-21T20:00 | 12 | 87.5% | 1.14 | — | — | — | REJECT |
 | Feyenoord v Excelsior | 2026-11-21T17:45 | 12 | 87.4% | 1.14 | — | — | — | REJECT |
 | FC Twente Enschede v Willem II | 2026-11-22T11:15 | home | 87.2% | 1.15 | 1.11 (coral) | 90.1% | -3.2% | REJECT |
-| Reading v Bromley FC | 2026-11-21T12:30 | 1X | 86.7% | 1.15 | — | — | — | REJECT |
 | Middlesbrough v Bristol City | 2026-11-21T15:00 | 1X | 86.5% | 1.16 | — | — | — | REJECT |
-| Manchester City v Fulham | 2026-11-21T12:30 | 1X | 86.5% | 1.16 | — | — | — | REJECT |
-| Southampton v Derby County | 2026-11-21T12:30 | 1X | 86.5% | 1.16 | — | — | — | REJECT |
 | West Ham United v Preston North End | 2026-11-21T15:00 | 12 | 86.3% | 1.16 | — | — | — | REJECT |
 | AS Monaco v Auxerre | 2026-11-21T19:45 | 1X | 86.0% | 1.16 | — | — | — | REJECT |
 | KV Mechelen v Club Brugge | 2026-11-21T19:45 | X2 | 85.9% | 1.16 | — | — | — | REJECT |
 | Genk v RAAL La Louvière | 2026-11-21T17:15 | 1X | 85.0% | 1.18 | — | — | — | REJECT |
 | Hull City v Brighton and Hove Albion | 2026-11-22T14:00 | X2 | 84.7% | 1.18 | — | — | — | REJECT |
-| Bayer Leverkusen v SC Paderborn | 2026-11-21T14:30 | 12 | 84.7% | 1.18 | — | — | — | REJECT |
 | Napoli v Torino | 2026-11-21T19:45 | 1X | 84.6% | 1.18 | — | — | — | REJECT |
+| Boston Celtics @ Sacramento Kings | 2026-11-22T03:10 | Boston Celtics | 84.4% | 1.18 | 1.17 (betfair_sb_uk) | 85.5% | -1.2% | MULTI_RESEARCH_ELIGIBLE |
 | Marseille v Le Mans FC | 2026-11-22T19:45 | 1X | 84.2% | 1.19 | — | — | — | REJECT |
 | Nice v Paris Saint Germain | 2026-11-21T16:15 | X2 | 84.0% | 1.19 | — | — | — | REJECT |
 | Parma v AS Roma | 2026-11-21T17:00 | 12 | 83.3% | 1.20 | — | — | — | REJECT |
 | Tottenham Hotspur v Ipswich Town | 2026-11-21T15:00 | 1X | 82.9% | 1.21 | — | — | — | REJECT |
-| Como v Cagliari | 2026-11-21T14:00 | 12 | 82.9% | 1.21 | — | — | — | REJECT |
 | Newcastle United v Arsenal | 2026-11-21T17:30 | X2 | 82.8% | 1.21 | — | — | — | REJECT |
-| Union Berlin v RB Leipzig | 2026-11-21T14:30 | X2 | 82.7% | 1.21 | — | — | — | REJECT |
 | Wolverhampton Wanderers v Charlton Athletic | 2026-11-21T15:00 | 12 | 82.2% | 1.22 | — | — | — | REJECT |
-| Manchester City v Fulham | 2026-11-21T12:30 | 12 | 82.0% | 1.22 | — | — | — | REJECT |
 | Sheffield United v Watford | 2026-11-21T15:00 | 1X | 81.9% | 1.22 | — | — | — | REJECT |
 | Paris FC v Angers | 2026-11-22T14:00 | 12 | 81.9% | 1.22 | — | — | — | REJECT |
+| KV Mechelen v Club Brugge | 2026-11-21T19:45 | 12 | 81.6% | 1.23 | — | — | — | REJECT |
+| Motherwell v Rangers | 2026-11-21T20:00 | X2 | 81.4% | 1.23 | — | — | — | REJECT |
+| Middlesbrough v Bristol City | 2026-11-21T15:00 | 12 | 81.2% | 1.23 | — | — | — | REJECT |
+| Milwaukee Bucks @ Philadelphia 76ers | 2026-11-21T18:10 | Philadelphia 76ers | 81.0% | 1.23 | 1.21 (matchbook) | — | — | REJECT |
+| AS Monaco v Auxerre | 2026-11-21T19:45 | 12 | 81.0% | 1.23 | — | — | — | REJECT |
+| Nice v Paris Saint Germain | 2026-11-21T16:15 | 12 | 80.7% | 1.24 | — | — | — | REJECT |
+| Real Madrid v Celta Vigo | 2026-11-21T20:00 | home | 80.7% | 1.24 | 1.18 (smarkets) | 85.0% | -5.1% | REJECT |
+| Burton Albion v Luton | 2026-11-21T15:00 | X2 | 80.5% | 1.24 | — | — | — | REJECT |
 
 ## Paper results (all time)
 
