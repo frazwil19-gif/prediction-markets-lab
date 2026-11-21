@@ -1,13 +1,12 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-11-21T02:06:12.094810+00:00",
+ "generated_at": "2026-11-21T03:21:03.267598+00:00",
  "date": "2026-11-21",
  "summary": {
-  "upcoming_events": 56,
-  "valid_predictions": 340,
+  "upcoming_events": 53,
+  "valid_predictions": 337,
   "sports_active": [
-   "basketball",
    "football",
    "tennis"
   ],
@@ -22,20 +21,20 @@
    "football_double_chance.derived_1x2"
   ],
   "threshold_counts": {
-   ">=70": 102,
-   ">=75": 69,
-   ">=80": 41,
-   ">=85": 19,
+   ">=70": 101,
+   ">=75": 68,
+   ">=80": 40,
+   ">=85": 18,
    ">=90": 4,
    ">=95": 0
   },
   "settled_yesterday": 0,
   "system": "HEALTHY",
-  "api_credits_last_observed": 217
+  "api_credits_last_observed": 215
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-11-21T02:06:12.094810+00:00",
+  "generated_at": "2026-11-21T03:21:03.267598+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -43,31 +42,31 @@
     "last": "2026-11-20T07:16:33.576417+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 18.8
+    "age_hours": 20.1
    },
    "settlement": {
-    "last": "2026-11-20T02:13:42.873122+00:00",
+    "last": "2026-11-21T02:06:13.694404+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 23.9
+    "age_hours": 1.2
    },
    "tennis_board": {
     "last": "2026-11-20T16:16:27.630205+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 9.8
+    "age_hours": 11.1
    },
    "ci_tests": {
-    "last": "2026-11-21T02:05:55.834323+00:00",
+    "last": "2026-11-21T03:20:48.230799+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    }
   },
   "api_credits": {
-   "remaining": 217,
-   "observed_at": "2026-11-20T16:16:28.205220+00:00",
-   "source": "credit_log.csv",
+   "remaining": 215,
+   "observed_at": "2026-11-21T03:21:03.141218+00:00",
+   "source": "nba_credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
   "warnings": [],
@@ -139,11 +138,11 @@
    "prospective_status": "AWAITING_SEASON",
    "money_eligible": true,
    "predictions": 190,
-   "settled_rows": 168,
+   "settled_rows": 179,
    "maturity": "EARLY",
-   "ge80_settled": 22,
-   "ge80_mean_pred": 0.8413626257211699,
-   "ge80_actual": 0.9545454545454546,
+   "ge80_settled": 23,
+   "ge80_mean_pred": 0.8426868048689634,
+   "ge80_actual": 0.9565217391304348,
    "alarm_review_required": false
   },
   "nhl_moneyline.market": {
@@ -196,11 +195,11 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 340,
-   "EXCLUDED": 3675
+   "ELIGIBLE": 337,
+   "EXCLUDED": 3678
   },
   "exclusion_reason": {
-   "EVENT_STARTED": 3675
+   "EVENT_STARTED": 3678
   },
   "start_time_status": {
    "LEDGER_ONLY": 3509,
@@ -964,48 +963,6 @@
    "correct": "",
    "settlement_timestamp": "",
    "event_start_original": "2026-11-21T19:45:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
-  },
-  {
-   "prediction_id": "09f0640d1ae1d7fe",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_id": "55c3096b11f501ffb6d8bccbb2cd319d",
-   "event_key": "nba|55c3096b11f501ffb6d8bccbb2cd319d",
-   "event_name": "Sacramento Kings @ Los Angeles Lakers",
-   "event_start": "2026-11-21T03:10:00+00:00",
-   "market": "moneyline",
-   "selection": "Los Angeles Lakers",
-   "estimated_probability": "0.8586711711711711",
-   "fair_odds": "1.1645901639344263",
-   "probability_band": "85-89.9%",
-   "probability_source": "Odds API basketball_nba h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-11-20T06:30:00+00:00",
-   "actual_workflow_start": "2026-11-20T15:40:49Z",
-   "prediction_timestamp": "2026-11-20T15:41:57.854766+00:00",
-   "minutes_to_event": "688.0",
-   "live_price": "1.12",
-   "live_price_source": "odds_api:smarkets",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "False",
-   "single_ineligible_reason": "fair odds 1.16 below payout floor 1.33",
-   "multi_research_eligible": "True",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:basketball_nba",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-21T03:10:00+00:00",
    "start_time_status": "LEDGER_ONLY",
    "start_time_source": "unified_ledger.event_start"
   },
@@ -5840,48 +5797,6 @@
    "start_time_source": "unified_ledger.event_start"
   },
   {
-   "prediction_id": "a8bbc61c45449b62",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_id": "ee204ae35d677450476eab6ad6a146a7",
-   "event_key": "nba|ee204ae35d677450476eab6ad6a146a7",
-   "event_name": "Phoenix Suns @ Utah Jazz",
-   "event_start": "2026-11-21T02:40:00+00:00",
-   "market": "moneyline",
-   "selection": "Phoenix Suns",
-   "estimated_probability": "0.6194344633650992",
-   "fair_odds": "1.61437578814628",
-   "probability_band": "60-64.9%",
-   "probability_source": "Odds API basketball_nba h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-11-20T06:30:00+00:00",
-   "actual_workflow_start": "2026-11-20T15:40:49Z",
-   "prediction_timestamp": "2026-11-20T15:41:57.854766+00:00",
-   "minutes_to_event": "658.0",
-   "live_price": "1.58",
-   "live_price_source": "odds_api:smarkets",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "True",
-   "single_ineligible_reason": "",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:basketball_nba",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-21T02:40:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
-  },
-  {
    "prediction_id": "49837d392bb1677a",
    "engine_id": "football_double_chance.derived_1x2",
    "engine_version": "1",
@@ -7432,48 +7347,6 @@
    "correct": "",
    "settlement_timestamp": "",
    "event_start_original": "2026-11-21T14:30:00+00:00",
-   "start_time_status": "LEDGER_ONLY",
-   "start_time_source": "unified_ledger.event_start"
-  },
-  {
-   "prediction_id": "2eb489731283760a",
-   "engine_id": "nba_moneyline.market",
-   "engine_version": "1",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_id": "086d2fe80483ffcc280994fe2e12d4f4",
-   "event_key": "nba|086d2fe80483ffcc280994fe2e12d4f4",
-   "event_name": "Houston Rockets @ Denver Nuggets",
-   "event_start": "2026-11-21T03:10:00+00:00",
-   "market": "moneyline",
-   "selection": "Denver Nuggets",
-   "estimated_probability": "0.5287793582533906",
-   "fair_odds": "1.8911479512042542",
-   "probability_band": "50-54.9%",
-   "probability_source": "Odds API basketball_nba h2h: mean decimal odds per side over >=3 books, proportional",
-   "historical_support": "hist n=12825; holdout DONE (2024-26, n=2629); >=80% coverage 0.209; slope 1.046; >=80% 85.5->87.5; >=90% small n, monitor; live estimator nba_moneyline.market@1-live (calibration transfer NOT_ASSUMED)",
-   "engine_status": "VALIDATED_HISTORICAL",
-   "data_quality": "OK",
-   "current_context_status": "NOT_MODELLED",
-   "configured_scan_time": "2026-11-20T06:30:00+00:00",
-   "actual_workflow_start": "2026-11-20T15:40:49Z",
-   "prediction_timestamp": "2026-11-20T15:41:57.854766+00:00",
-   "minutes_to_event": "688.0",
-   "live_price": "1.83",
-   "live_price_source": "odds_api:smarkets",
-   "paper_status": "PAPER",
-   "prediction_valid": "True",
-   "single_eligible": "True",
-   "single_ineligible_reason": "",
-   "multi_research_eligible": "False",
-   "snapshot_rule": "FIRST_SCAN_WITHIN_36H",
-   "origin": "odds_api:basketball_nba",
-   "origin_prediction_id": "",
-   "settlement_status": "",
-   "result": "",
-   "correct": "",
-   "settlement_timestamp": "",
-   "event_start_original": "2026-11-21T03:10:00+00:00",
    "start_time_status": "LEDGER_ONLY",
    "start_time_source": "unified_ledger.event_start"
   },

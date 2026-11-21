@@ -2,9 +2,9 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 56 · Valid predictions: 340 · Sports: basketball, football, tennis
-Counts: >=70: 102 · >=75: 69 · >=80: 41 · >=85: 19 · >=90: 4 · >=95: 0
-Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 217
+Upcoming events: 53 · Valid predictions: 337 · Sports: football, tennis
+Counts: >=70: 101 · >=75: 68 · >=80: 40 · >=85: 18 · >=90: 4 · >=95: 0
+Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 215
 
 ## Top predictions (P ≥ 80%)
 
@@ -28,7 +28,6 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 217
 | football | West Ham United v Preston North End | 2026-11-21T15:00 | double_chance | 12 | 86.3% | 1.16 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.13 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | AS Monaco v Auxerre | 2026-11-21T19:45 | double_chance | 1X | 86.0% | 1.16 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.13 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | KV Mechelen v Club Brugge | 2026-11-21T19:45 | double_chance | X2 | 85.9% | 1.16 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.13 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| basketball | Sacramento Kings @ Los Angeles Lakers | 2026-11-21T03:10 | moneyline | Los Angeles Lakers | 85.9% | 1.16 | 85-89.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.12 (odds_api:smarkets) | no | yes |
 | football | Genk v RAAL La Louvière | 2026-11-21T17:15 | double_chance | 1X | 85.0% | 1.18 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.13 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Bayer Leverkusen v SC Paderborn | 2026-11-21T14:30 | double_chance | 12 | 84.7% | 1.18 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.16 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Napoli v Torino | 2026-11-21T19:45 | double_chance | 1X | 84.6% | 1.18 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.15 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
@@ -61,7 +60,7 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 217
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
 | atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 222 | 197 | EARLY | 29 | 87.1% → 75.9% |
 | wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 201 | 177 | EARLY | 31 | 89.3% → 80.6% |
-| nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 190 | 168 | EARLY | 22 | 84.1% → 95.5% |
+| nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 190 | 179 | EARLY | 23 | 84.3% → 95.7% |
 | nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 159 | 122 | EARLY | 0 | — → — |
 | nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 56 | 41 | COLLECTING | 3 | 82.3% → 100.0% |
 | football_double_chance.derived_1x2 | PROVISIONAL_PROSPECTIVE / COLLECTING | 1446 | 9 | COLLECTING | 1 | 80.2% → 0.0% |
@@ -69,9 +68,9 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 217
 ## System health
 
 - daily_scan: OK (last 2026-11-20T07:16:33.576417+00:00)
-- settlement: OK (last 2026-11-20T02:13:42.873122+00:00)
+- settlement: OK (last 2026-11-21T02:06:13.694404+00:00)
 - tennis_board: OK (last 2026-11-20T16:16:27.630205+00:00)
-- ci_tests: OK (last 2026-11-21T02:05:55.834323+00:00)
+- ci_tests: OK (last 2026-11-21T03:20:48.230799+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
