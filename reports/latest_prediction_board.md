@@ -2,8 +2,8 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 16 · Valid predictions: 79 · Sports: basketball, football
-Counts: >=70: 27 · >=75: 23 · >=80: 13 · >=85: 7 · >=90: 3 · >=95: 1
+Upcoming events: 13 · Valid predictions: 76 · Sports: basketball, football
+Counts: >=70: 26 · >=75: 22 · >=80: 12 · >=85: 6 · >=90: 3 · >=95: 1
 Settled yesterday: 11 · System: **HEALTHY** · API credits (last observed): 200
 
 ## Top predictions (P ≥ 80%)
@@ -13,7 +13,6 @@ Settled yesterday: 11 · System: **HEALTHY** · API credits (last observed): 200
 | football | FC Twente Enschede v Willem II | 2026-11-22T11:15 | double_chance | 1X | 95.5% | 1.05 | 95%+ | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.03 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Ajax v ADO Den Haag | 2026-11-22T13:30 | double_chance | 1X | 92.4% | 1.08 | 90-94.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.06 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | FC Twente Enschede v Willem II | 2026-11-22T11:15 | double_chance | 12 | 91.5% | 1.09 | 90-94.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.07 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| basketball | New Orleans Pelicans @ San Antonio Spurs | 2026-11-22T01:10 | moneyline | San Antonio Spurs | 89.8% | 1.11 | 85-89.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.09 (odds_api:matchbook) | no | yes |
 | football | Paris FC v Angers | 2026-11-22T14:00 | double_chance | 1X | 88.9% | 1.12 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.10 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Ajax v ADO Den Haag | 2026-11-22T13:30 | double_chance | 12 | 88.2% | 1.13 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.11 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | FC Twente Enschede v Willem II | 2026-11-22T11:15 | 1x2 | home | 87.2% | 1.15 | 85-89.9% | football_1x2.market_consensus@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.11 (odds_api:Coral) | no | yes |
@@ -31,7 +30,7 @@ Settled yesterday: 11 · System: **HEALTHY** · API credits (last observed): 200
 | football_1x2.market_consensus | VALIDATED_HISTORICAL / COLLECTING | 1515 | 513 | EARLY | 3 | 81.4% → 100.0% |
 | football_ou25.market | VALIDATED_HISTORICAL / COLLECTING | 202 | 174 | EARLY | 0 | — → — |
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
-| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 223 | 197 | EARLY | 29 | 87.1% → 75.9% |
+| atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 223 | 198 | EARLY | 29 | 87.1% → 75.9% |
 | wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 201 | 177 | EARLY | 31 | 89.3% → 80.6% |
 | nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 196 | 179 | EARLY | 23 | 84.3% → 95.7% |
 | nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 159 | 122 | EARLY | 0 | — → — |
@@ -41,9 +40,9 @@ Settled yesterday: 11 · System: **HEALTHY** · API credits (last observed): 200
 ## System health
 
 - daily_scan: OK (last 2026-11-21T07:16:29.368506+00:00)
-- settlement: OK (last 2026-11-21T02:06:13.694404+00:00)
+- settlement: OK (last 2026-11-22T01:09:32.190444+00:00)
 - tennis_board: OK (last 2026-11-21T16:16:18.228781+00:00)
-- ci_tests: OK (last 2026-11-22T01:09:09.644314+00:00)
+- ci_tests: OK (last 2026-11-22T02:27:43.009918+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 
