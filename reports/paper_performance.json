@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-21T02:06:13.503215+00:00",
+ "generated_at": "2026-11-22T01:09:31.923075+00:00",
  "mode": "PAPER \u2014 unattended prospective validation; stakes SIMULATED",
  "windows": {
   "weekly": {
@@ -48,15 +48,15 @@
      }
     }
    },
-   "candidates_evaluated": 431,
+   "candidates_evaluated": 573,
    "qualified_in_shadow": 0,
    "qualification_rate": 0.0,
    "rejections": {
-    "ENGINE_STATUS_INELIGIBLE": 360,
-    "NET_EV_NOT_POSITIVE": 173,
-    "NO_EXECUTABLE_PRICE": 168,
-    "P_BELOW_FLOOR": 168,
-    "COMMISSION_UNKNOWN": 53,
+    "ENGINE_STATUS_INELIGIBLE": 502,
+    "P_BELOW_FLOOR": 239,
+    "NO_EXECUTABLE_PRICE": 237,
+    "NET_EV_NOT_POSITIVE": 220,
+    "COMMISSION_UNKNOWN": 52,
     "PRICE_STALE": 7,
     "PREDICTION_NOT_VALID": 3,
     "NET_EV_BELOW_PAPER_GATE": 2,
@@ -155,15 +155,15 @@
      }
     }
    },
-   "candidates_evaluated": 2174,
+   "candidates_evaluated": 2313,
    "qualified_in_shadow": 1,
-   "qualification_rate": 0.0005,
+   "qualification_rate": 0.0004,
    "rejections": {
-    "ENGINE_STATUS_INELIGIBLE": 1794,
-    "NET_EV_NOT_POSITIVE": 941,
-    "P_BELOW_FLOOR": 838,
-    "NO_EXECUTABLE_PRICE": 834,
-    "COMMISSION_UNKNOWN": 213,
+    "ENGINE_STATUS_INELIGIBLE": 1936,
+    "NET_EV_NOT_POSITIVE": 982,
+    "P_BELOW_FLOOR": 909,
+    "NO_EXECUTABLE_PRICE": 903,
+    "COMMISSION_UNKNOWN": 215,
     "PRICE_STALE": 34,
     "PREDICTION_NOT_VALID": 21,
     "EXCHANGE_SPREAD_TOO_WIDE": 11,
@@ -495,15 +495,15 @@
      }
     }
    },
-   "candidates_evaluated": 3908,
+   "candidates_evaluated": 4057,
    "qualified_in_shadow": 3,
-   "qualification_rate": 0.0008,
+   "qualification_rate": 0.0007,
    "rejections": {
-    "ENGINE_STATUS_INELIGIBLE": 3090,
-    "NET_EV_NOT_POSITIVE": 1756,
-    "P_BELOW_FLOOR": 1455,
-    "NO_EXECUTABLE_PRICE": 1446,
-    "COMMISSION_UNKNOWN": 380,
+    "ENGINE_STATUS_INELIGIBLE": 3232,
+    "NET_EV_NOT_POSITIVE": 1806,
+    "P_BELOW_FLOOR": 1526,
+    "NO_EXECUTABLE_PRICE": 1515,
+    "COMMISSION_UNKNOWN": 383,
     "PRICE_STALE": 71,
     "PREDICTION_NOT_VALID": 66,
     "EXCHANGE_SPREAD_TOO_WIDE": 34,
