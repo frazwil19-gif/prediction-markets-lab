@@ -4,54 +4,54 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-22T07:16Z · events scanned 13 · valid predictions 82 · high-P (≥70%) 26 · priced 41 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 82 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-22T14:48Z · events scanned 14 · valid predictions 46 · high-P (≥70%) 13 · priced 22 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 46 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 82 · P_BELOW_FLOOR 39 · NO_EXECUTABLE_PRICE 39 · NET_EV_NOT_POSITIVE 29 · COMMISSION_UNKNOWN 2 · PRICE_STALE 1
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 38 · PRICE_STALE 20 · NET_EV_NOT_POSITIVE 18 · P_BELOW_FLOOR 18 · NO_EXECUTABLE_PRICE 18 · COMMISSION_UNKNOWN 6
 
 ## Candidates (latest run, best price per prediction)
 
 | Event | Start | Sel | P | Fair | Odds (source) | Break-even | Net EV | Decision |
 |---|---|---|---|---|---|---|---|---|
-| FC Twente Enschede v Willem II | 2026-11-22T11:15 | 1X | 95.5% | 1.05 | — | — | — | REJECT |
-| Ajax v ADO Den Haag | 2026-11-22T13:30 | 1X | 92.4% | 1.08 | — | — | — | REJECT |
-| FC Twente Enschede v Willem II | 2026-11-22T11:15 | 12 | 91.5% | 1.09 | — | — | — | REJECT |
-| Paris FC v Angers | 2026-11-22T14:00 | 1X | 88.9% | 1.12 | — | — | — | REJECT |
-| Ajax v ADO Den Haag | 2026-11-22T13:30 | 12 | 88.2% | 1.13 | — | — | — | REJECT |
-| FC Twente Enschede v Willem II | 2026-11-22T11:15 | home | 87.3% | 1.15 | 1.11 (casumo) | 90.1% | -3.1% | REJECT |
-| Hull City v Brighton and Hove Albion | 2026-11-22T14:00 | X2 | 84.7% | 1.18 | — | — | — | REJECT |
 | Marseille v Le Mans FC | 2026-11-22T19:45 | 1X | 84.2% | 1.19 | — | — | — | REJECT |
-| Paris FC v Angers | 2026-11-22T14:00 | 12 | 81.9% | 1.22 | — | — | — | REJECT |
-| Ajax v ADO Den Haag | 2026-11-22T13:30 | home | 80.3% | 1.25 | 1.20 (smarkets) | 83.6% | -4.0% | REJECT |
 | Marseille v Le Mans FC | 2026-11-22T19:45 | 12 | 80.1% | 1.25 | — | — | — | REJECT |
 | Go Ahead Eagles v Fortuna Sittard | 2026-11-22T15:45 | 1X | 79.6% | 1.26 | — | — | — | REJECT |
 | Werder Bremen v Hamburger SV | 2026-11-22T16:30 | 1X | 79.3% | 1.26 | — | — | — | REJECT |
-| Hull City v Brighton and Hove Albion | 2026-11-22T14:00 | 12 | 78.4% | 1.28 | — | — | — | REJECT |
 | Liverpool v Manchester United | 2026-11-22T16:30 | 1X | 78.0% | 1.28 | — | — | — | REJECT |
 | Liverpool v Manchester United | 2026-11-22T16:30 | 12 | 77.8% | 1.29 | — | — | — | REJECT |
 | Werder Bremen v Hamburger SV | 2026-11-22T16:30 | 12 | 77.6% | 1.29 | — | — | — | REJECT |
 | Go Ahead Eagles v Fortuna Sittard | 2026-11-22T15:45 | 12 | 77.3% | 1.29 | — | — | — | REJECT |
-| Sparta Rotterdam v AZ Alkmaar | 2026-11-22T13:30 | 12 | 76.7% | 1.30 | — | — | — | REJECT |
-| Sparta Rotterdam v AZ Alkmaar | 2026-11-22T13:30 | X2 | 76.5% | 1.31 | — | — | — | REJECT |
-| Augsburg v FSV Mainz 05 | 2026-11-22T14:30 | 12 | 75.5% | 1.32 | — | — | — | REJECT |
-| Burnley v Blackburn Rovers | 2026-11-22T12:00 | 1X | 74.9% | 1.33 | — | — | — | REJECT |
-| Burnley v Blackburn Rovers | 2026-11-22T12:00 | 12 | 74.9% | 1.34 | — | — | — | REJECT |
+| Denver Nuggets @ Chicago Bulls | 2026-11-23T00:10 | Denver Nuggets | 75.5% | 1.32 | 1.29 (matchbook) | — | — | REJECT |
+| Boston Celtics @ Golden State Warriors | 2026-11-23T01:40 | Boston Celtics | 74.1% | 1.35 | 1.31 (smarkets) | 76.7% | -3.4% | REJECT |
+| Indiana Pacers @ New York Knicks | 2026-11-23T01:10 | New York Knicks | 73.5% | 1.36 | 1.33 (paddypower) | 75.2% | -2.3% | REJECT |
 | Brentford v Everton | 2026-11-23T20:00 | 12 | 72.9% | 1.37 | — | — | — | REJECT |
 | Lorient v Rennes | 2026-11-22T16:15 | 12 | 72.6% | 1.38 | — | — | — | REJECT |
-| Paris FC v Angers | 2026-11-22T14:00 | home | 71.1% | 1.41 | 1.34 (smarkets) | 75.0% | -5.1% | REJECT |
 | Brentford v Everton | 2026-11-23T20:00 | 1X | 68.9% | 1.45 | — | — | — | REJECT |
 | Lorient v Rennes | 2026-11-22T16:15 | X2 | 66.8% | 1.50 | — | — | — | REJECT |
-| Hull City v Brighton and Hove Albion | 2026-11-22T14:00 | away | 64.7% | 1.55 | 1.51 (smarkets) | 66.7% | -3.0% | REJECT |
+| Alexander Zverev v Carlos Alcaraz | 2026-11-22T17:00 | Carlos Alcaraz | 65.7% | 1.52 | 1.50 (betfair_sb_uk) | 66.7% | -1.5% | REJECT |
 | Marseille v Le Mans FC | 2026-11-22T19:45 | home | 64.6% | 1.55 | 1.49 (betfair) | 68.2% | -5.3% | REJECT |
-| Augsburg v FSV Mainz 05 | 2026-11-22T14:30 | X2 | 63.8% | 1.57 | — | — | — | REJECT |
+| Orlando Magic @ Washington Wizards | 2026-11-23T00:10 | Orlando Magic | 64.3% | 1.56 | 1.53 (matchbook) | — | — | REJECT |
 | Liverpool v Manchester United | 2026-11-22T16:30 | over | 63.5% | 1.58 | 1.44 (william hill) | 69.4% | -8.6% | REJECT |
-| Augsburg v FSV Mainz 05 | 2026-11-22T14:30 | 1X | 60.7% | 1.65 | — | — | — | REJECT |
 | Lorient v Rennes | 2026-11-22T16:15 | 1X | 60.7% | 1.65 | — | — | — | REJECT |
 | Werder Bremen v Hamburger SV | 2026-11-22T16:30 | home | 59.6% | 1.68 | 1.64 (betfair) | 62.2% | -4.1% | REJECT |
 | Brentford v Everton | 2026-11-23T20:00 | X2 | 58.2% | 1.72 | — | — | — | REJECT |
-| Hull City v Brighton and Hove Albion | 2026-11-22T14:00 | over | 56.2% | 1.78 | 1.77 (matchbook) | — | — | REJECT |
+| Oklahoma City Thunder @ Miami Heat | 2026-11-22T23:10 | Miami Heat | 58.0% | 1.73 | 1.68 (matchbook) | — | — | REJECT |
 | Liverpool v Manchester United | 2026-11-22T16:30 | home | 56.1% | 1.78 | 1.77 (betfair) | 57.8% | -2.9% | REJECT |
-| Burnley v Blackburn Rovers | 2026-11-22T12:00 | over | 53.6% | 1.86 | 1.80 (leovegas) | 55.6% | -3.5% | REJECT |
-| Sparta Rotterdam v AZ Alkmaar | 2026-11-22T13:30 | away | 53.3% | 1.88 | 1.80 (unibet (uk)) | 55.6% | -4.0% | REJECT |
+| Detroit Pistons @ Atlanta Hawks | 2026-11-22T20:40 | Detroit Pistons | 54.7% | 1.83 | 1.83 (matchbook) | — | — | REJECT |
+| Brentford v Everton | 2026-11-23T20:00 | over | 53.3% | 1.88 | 1.87 (matchbook) | — | — | REJECT |
+| Go Ahead Eagles v Fortuna Sittard | 2026-11-22T15:45 | home | 52.4% | 1.91 | 1.90 (smarkets) | 53.1% | -1.4% | REJECT |
+| Dallas Mavericks @ Utah Jazz | 2026-11-23T00:10 | Dallas Mavericks | 50.3% | 1.99 | 1.98 (matchbook) | — | — | REJECT |
+| Liverpool v Manchester United | 2026-11-22T16:30 | X2 | 44.2% | 2.26 | — | — | — | REJECT |
+| Go Ahead Eagles v Fortuna Sittard | 2026-11-22T15:45 | X2 | 43.2% | 2.32 | — | — | — | REJECT |
+| Werder Bremen v Hamburger SV | 2026-11-22T16:30 | X2 | 43.1% | 2.32 | — | — | — | REJECT |
+| Brentford v Everton | 2026-11-23T20:00 | home | 41.8% | 2.39 | 2.38 (smarkets) | 42.5% | -1.7% | REJECT |
+| Lorient v Rennes | 2026-11-22T16:15 | away | 39.4% | 2.54 | 2.52 (betfair) | 40.9% | -3.7% | REJECT |
+| Marseille v Le Mans FC | 2026-11-22T19:45 | X2 | 35.7% | 2.80 | — | — | — | REJECT |
+| Lorient v Rennes | 2026-11-22T16:15 | home | 32.4% | 3.09 | 3.10 (smarkets) | 32.7% | -0.9% | REJECT |
+| Brentford v Everton | 2026-11-23T20:00 | away | 31.1% | 3.22 | 3.25 (smarkets) | 31.2% | -0.3% | REJECT |
+| Lorient v Rennes | 2026-11-22T16:15 | draw | 28.2% | 3.54 | 3.50 (smarkets) | 29.0% | -2.7% | REJECT |
+| Brentford v Everton | 2026-11-23T20:00 | draw | 27.1% | 3.69 | 3.60 (smarkets) | 28.2% | -3.8% | REJECT |
+| Go Ahead Eagles v Fortuna Sittard | 2026-11-22T15:45 | draw | 24.2% | 4.14 | 4.10 (smarkets) | 24.8% | -2.4% | REJECT |
+| Go Ahead Eagles v Fortuna Sittard | 2026-11-22T15:45 | away | 23.4% | 4.27 | 4.40 (grosvenor) | 22.7% | 2.9% | REJECT |
 
 ## Paper results (all time)
 
