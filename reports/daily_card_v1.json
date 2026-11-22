@@ -1,6 +1,6 @@
 {
  "card_version": "card-v1.2",
- "generated_at": "2026-11-22T14:48:33.932333+00:00",
+ "generated_at": "2026-11-22T15:41:22.577531+00:00",
  "stage_a_generated_at": "2026-11-22T14:48:32.841774+00:00",
  "real_money_enabled": false,
  "mode": "PAPER \u2014 unattended prospective validation (real-money betting paused; nothing to place)",
@@ -11,7 +11,7 @@
   "total_stake_gbp": 0.0,
   "exposure_pct_of_bankroll": 0.0,
   "strong_price_too_low": 13,
-  "research_predictions": 64
+  "research_predictions": 56
  },
  "rejection_reasons": {
   "ENGINE_STATUS_INELIGIBLE": 38,
@@ -1323,19 +1323,6 @@
   },
   {
    "sport": "football",
-   "competition": "B1",
-   "event_name": "Kortrijk v St. Gilloise",
-   "event_start": "2026-11-22T15:00:00+00:00",
-   "market": "total_corners",
-   "selection": "under 11.5",
-   "probability": 0.7259,
-   "fair_odds": 1.38,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
    "competition": "N1",
    "event_name": "Go Ahead Eagles v For Sittard",
    "event_start": "2026-11-22T15:45:00+00:00",
@@ -1440,19 +1427,6 @@
   },
   {
    "sport": "football",
-   "competition": "SP1",
-   "event_name": "Santander v Sociedad",
-   "event_start": "2026-11-22T15:15:00+00:00",
-   "market": "total_corners",
-   "selection": "under 11.5",
-   "probability": 0.677,
-   "fair_odds": 1.48,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
    "competition": "I1",
    "event_name": "Monza v Fiorentina",
    "event_start": "2026-11-23T19:45:00+00:00",
@@ -1472,19 +1446,6 @@
    "market": "total_corners",
    "selection": "under 10.5",
    "probability": 0.6653,
-   "fair_odds": 1.5,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
-   "competition": "SP1",
-   "event_name": "Santander v Sociedad",
-   "event_start": "2026-11-22T15:15:00+00:00",
-   "market": "total_corners",
-   "selection": "over 8.5",
-   "probability": 0.6648,
    "fair_odds": 1.5,
    "model": "corners-A-1.0",
    "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
@@ -1551,19 +1512,6 @@
    "selection": "under 10.5",
    "probability": 0.6406,
    "fair_odds": 1.56,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
-   "competition": "B1",
-   "event_name": "Kortrijk v St. Gilloise",
-   "event_start": "2026-11-22T15:00:00+00:00",
-   "market": "total_corners",
-   "selection": "under 10.5",
-   "probability": 0.6277,
-   "fair_odds": 1.59,
    "model": "corners-A-1.0",
    "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
    "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
@@ -1655,19 +1603,6 @@
    "selection": "over 8.5",
    "probability": 0.6187,
    "fair_odds": 1.62,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
-   "competition": "B1",
-   "event_name": "Kortrijk v St. Gilloise",
-   "event_start": "2026-11-22T15:00:00+00:00",
-   "market": "total_corners",
-   "selection": "over 8.5",
-   "probability": 0.6118,
-   "fair_odds": 1.63,
    "model": "corners-A-1.0",
    "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
    "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
@@ -1817,19 +1752,6 @@
   },
   {
    "sport": "football",
-   "competition": "SP1",
-   "event_name": "Santander v Sociedad",
-   "event_start": "2026-11-22T15:15:00+00:00",
-   "market": "total_corners",
-   "selection": "under 10.5",
-   "probability": 0.5726,
-   "fair_odds": 1.75,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
    "competition": "I1",
    "event_name": "Monza v Fiorentina",
    "event_start": "2026-11-23T19:45:00+00:00",
@@ -1863,19 +1785,6 @@
    "selection": "under 9.5",
    "probability": 0.5514,
    "fair_odds": 1.81,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
-   "competition": "SP1",
-   "event_name": "Santander v Sociedad",
-   "event_start": "2026-11-22T15:15:00+00:00",
-   "market": "total_corners",
-   "selection": "over 9.5",
-   "probability": 0.5473,
-   "fair_odds": 1.83,
    "model": "corners-A-1.0",
    "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
    "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
@@ -1993,19 +1902,6 @@
    "selection": "under 10.5",
    "probability": 0.5096,
    "fair_odds": 1.96,
-   "model": "corners-A-1.0",
-   "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
-   "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"
-  },
-  {
-   "sport": "football",
-   "competition": "B1",
-   "event_name": "Kortrijk v St. Gilloise",
-   "event_start": "2026-11-22T15:00:00+00:00",
-   "market": "total_corners",
-   "selection": "under 9.5",
-   "probability": 0.508,
-   "fair_odds": 1.97,
    "model": "corners-A-1.0",
    "status": "RESEARCH \u2014 NOT MONEY ELIGIBLE",
    "evidence": "validated vs non-market baseline only (holdout \u0394 \u22120.0038); no market comparison yet"

@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-11-22T14:48Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-22T15:41Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 46 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 13 · research predictions: 64
+Predictions in the next window: 46 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 13 · research predictions: 56
 
 ## 1. Best predictions today
 
@@ -85,7 +85,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | Levante v Elche (SP1) | 2026-11-23 | total_corners | under 11.5 | 75.5% | 1.32 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Osasuna v Malaga (SP1) | 2026-11-22 | total_corners | under 11.5 | 74.0% | 1.35 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Anderlecht v Oud-Heverlee Leuven (B1) | 2026-11-22 | total_corners | over 8.5 | 72.7% | 1.38 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Kortrijk v St. Gilloise (B1) | 2026-11-22 | total_corners | under 11.5 | 72.6% | 1.38 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Go Ahead Eagles v For Sittard (N1) | 2026-11-22 | total_corners | over 8.5 | 72.5% | 1.38 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Brentford v Everton (E0) | 2026-11-23 | total_corners | under 11.5 | 72.3% | 1.38 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Lorient v Rennes (F1) | 2026-11-22 | total_corners | under 11.5 | 72.1% | 1.39 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -94,16 +93,13 @@ _Model probabilities from research engines. Shown for information and to build a
 | Atalanta v Inter (I1) | 2026-11-22 | total_corners | under 10.5 | 69.7% | 1.44 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Liverpool v Man United (E0) | 2026-11-22 | total_corners | under 11.5 | 69.5% | 1.44 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Werder Bremen v Hamburg (D1) | 2026-11-22 | total_corners | under 11.5 | 68.7% | 1.46 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Santander v Sociedad (SP1) | 2026-11-22 | total_corners | under 11.5 | 67.7% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Monza v Fiorentina (I1) | 2026-11-23 | total_corners | under 10.5 | 67.4% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Marseille v Le Mans (F1) | 2026-11-22 | total_corners | under 10.5 | 66.5% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Santander v Sociedad (SP1) | 2026-11-22 | total_corners | over 8.5 | 66.5% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Getafe v Ath Madrid (SP1) | 2026-11-22 | total_corners | under 10.5 | 65.9% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Levante v Elche (SP1) | 2026-11-23 | total_corners | under 10.5 | 65.6% | 1.53 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Werder Bremen v Hamburg (D1) | 2026-11-22 | total_corners | over 8.5 | 65.4% | 1.53 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Liverpool v Man United (E0) | 2026-11-22 | total_corners | over 8.5 | 64.7% | 1.55 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Osasuna v Malaga (SP1) | 2026-11-22 | total_corners | under 10.5 | 64.1% | 1.56 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Kortrijk v St. Gilloise (B1) | 2026-11-22 | total_corners | under 10.5 | 62.8% | 1.59 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Anderlecht v Oud-Heverlee Leuven (B1) | 2026-11-22 | total_corners | over 9.5 | 62.3% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Brentford v Everton (E0) | 2026-11-23 | total_corners | under 10.5 | 62.2% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Go Ahead Eagles v For Sittard (N1) | 2026-11-22 | total_corners | over 9.5 | 62.0% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -111,7 +107,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | Lorient v Rennes (F1) | 2026-11-22 | total_corners | over 8.5 | 62.0% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Lorient v Rennes (F1) | 2026-11-22 | total_corners | under 10.5 | 61.9% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Brentford v Everton (E0) | 2026-11-23 | total_corners | over 8.5 | 61.9% | 1.62 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Kortrijk v St. Gilloise (B1) | 2026-11-22 | total_corners | over 8.5 | 61.2% | 1.63 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Lommel SK v Standard (B1) | 2026-11-22 | total_corners | over 9.5 | 60.8% | 1.64 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Milan v Frosinone (I1) | 2026-11-22 | total_corners | under 9.5 | 60.2% | 1.66 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Go Ahead Eagles v For Sittard (N1) | 2026-11-22 | total_corners | under 11.5 | 60.1% | 1.66 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -123,11 +118,9 @@ _Model probabilities from research engines. Shown for information and to build a
 | Werder Bremen v Hamburg (D1) | 2026-11-22 | total_corners | under 10.5 | 58.0% | 1.72 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Getafe v Ath Madrid (SP1) | 2026-11-22 | total_corners | over 8.5 | 57.9% | 1.73 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Marseille v Le Mans (F1) | 2026-11-22 | total_corners | over 8.5 | 57.3% | 1.75 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Santander v Sociedad (SP1) | 2026-11-22 | total_corners | under 10.5 | 57.3% | 1.75 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Monza v Fiorentina (I1) | 2026-11-23 | total_corners | over 8.5 | 56.3% | 1.78 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Monza v Fiorentina (I1) | 2026-11-23 | total_corners | under 9.5 | 56.1% | 1.78 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Marseille v Le Mans (F1) | 2026-11-22 | total_corners | under 9.5 | 55.1% | 1.81 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Santander v Sociedad (SP1) | 2026-11-22 | total_corners | over 9.5 | 54.7% | 1.83 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Getafe v Ath Madrid (SP1) | 2026-11-22 | total_corners | under 9.5 | 54.7% | 1.83 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Levante v Elche (SP1) | 2026-11-23 | total_corners | under 9.5 | 54.4% | 1.84 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Atalanta v Inter (I1) | 2026-11-22 | total_corners | over 8.5 | 54.0% | 1.85 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
@@ -137,7 +130,6 @@ _Model probabilities from research engines. Shown for information and to build a
 | Osasuna v Malaga (SP1) | 2026-11-22 | total_corners | under 9.5 | 52.3% | 1.91 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Anderlecht v Oud-Heverlee Leuven (B1) | 2026-11-22 | total_corners | over 10.5 | 51.5% | 1.94 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Lommel SK v Standard (B1) | 2026-11-22 | total_corners | under 10.5 | 51.0% | 1.96 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Kortrijk v St. Gilloise (B1) | 2026-11-22 | total_corners | under 9.5 | 50.8% | 1.97 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Go Ahead Eagles v For Sittard (N1) | 2026-11-22 | total_corners | over 10.5 | 50.8% | 1.97 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Brentford v Everton (E0) | 2026-11-23 | total_corners | under 9.5 | 50.5% | 1.98 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Lorient v Rennes (F1) | 2026-11-22 | total_corners | under 9.5 | 50.4% | 1.98 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
