@@ -1,0 +1,225 @@
+{
+ "generated_at": "2026-11-22T14:45:19.091702+00:00",
+ "credits_charged": 0,
+ "warnings": [],
+ "leagues": {
+  "E0": {
+   "fd_fixtures": 110,
+   "odds_events": 79,
+   "known": 20,
+   "proposed": {},
+   "method": {},
+   "evidence": {},
+   "unresolved": {},
+   "fd_fixtures_without_odds_slot": 50,
+   "rejected": "",
+   "odds_names_not_in_alias_table": []
+  },
+  "E1": {
+   "fd_fixtures": 192,
+   "odds_events": 129,
+   "known": 24,
+   "proposed": {},
+   "method": {},
+   "evidence": {},
+   "unresolved": {},
+   "fd_fixtures_without_odds_slot": 95,
+   "rejected": "verification failed for Cardiff v Birmingham 2026-10-24 14:00",
+   "odds_names_not_in_alias_table": []
+  },
+  "SC0": {
+   "fd_fixtures": 81,
+   "odds_events": 60,
+   "known": 12,
+   "proposed": {},
+   "method": {},
+   "evidence": {},
+   "unresolved": {},
+   "fd_fixtures_without_odds_slot": 42,
+   "rejected": "verification failed for Kilmarnock v Aberdeen 2026-11-21 15:00",
+   "odds_names_not_in_alias_table": []
+  },
+  "N1": {
+   "fd_fixtures": 117,
+   "odds_events": 12,
+   "known": 0,
+   "proposed": {
+    "AZ Alkmaar": "AZ Alkmaar",
+    "Ajax": "Ajax",
+    "Den Haag": "ADO Den Haag",
+    "For Sittard": "Fortuna Sittard",
+    "Go Ahead Eagles": "Go Ahead Eagles",
+    "Sparta Rotterdam": "Sparta Rotterdam"
+   },
+   "method": {
+    "AZ Alkmaar": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Ajax": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "Den Haag": "FIXTURE_IDENTITY+NAME_TOKEN",
+    "For Sittard": "FIXTURE_IDENTITY",
+    "Go Ahead Eagles": "FIXTURE_IDENTITY",
+    "Sparta Rotterdam": "FIXTURE_IDENTITY+NAME_TOKEN"
+   },
+   "evidence": {
+    "AZ Alkmaar": [
+     "2026-11-22 13:30Z Sparta Rotterdam v AZ Alkmaar = Sparta Rotterdam v AZ Alkmaar"
+    ],
+    "Ajax": [
+     "2026-11-22 13:30Z Ajax v Den Haag = Ajax v ADO Den Haag"
+    ],
+    "Den Haag": [
+     "2026-11-22 13:30Z Ajax v Den Haag = Ajax v ADO Den Haag"
+    ],
+    "For Sittard": [
+     "2026-11-22 15:45Z Go Ahead Eagles v For Sittard = Go Ahead Eagles v Fortuna Sittard"
+    ],
+    "Go Ahead Eagles": [
+     "2026-11-22 15:45Z Go Ahead Eagles v For Sittard = Go Ahead Eagles v Fortuna Sittard"
+    ],
+    "Sparta Rotterdam": [
+     "2026-11-22 13:30Z Sparta Rotterdam v AZ Alkmaar = Sparta Rotterdam v AZ Alkmaar"
+    ]
+   },
+   "unresolved": {},
+   "fd_fixtures_without_odds_slot": 114,
+   "rejected": "",
+   "odds_names_not_in_alias_table": [
+    "ADO Den Haag",
+    "AZ Alkmaar",
+    "Ajax",
+    "Excelsior",
+    "FC Twente Enschede",
+    "FC Utrecht",
+    "FC Zwolle",
+    "Feyenoord",
+    "Fortuna Sittard",
+    "Go Ahead Eagles",
+    "Groningen",
+    "Heerenveen",
+    "NEC Nijmegen",
+    "PSV Eindhoven",
+    "SC Cambuur",
+    "SC Telstar",
+    "Sparta Rotterdam",
+    "Willem II"
+   ]
+  },
+  "D1": {
+   "fd_fixtures": 90,
+   "odds_events": 11,
+   "known": 0,
+   "proposed": {
+    "Augsburg": "Augsburg",
+    "Hamburg": "Hamburger SV",
+    "Mainz": "FSV Mainz 05",
+    "Werder Bremen": "Werder Bremen"
+   },
+   "method": {
+    "Augsburg": "FIXTURE_IDENTITY",
+    "Hamburg": "FIXTURE_IDENTITY",
+    "Mainz": "FIXTURE_IDENTITY",
+    "Werder Bremen": "FIXTURE_IDENTITY"
+   },
+   "evidence": {
+    "Augsburg": [
+     "2026-11-22 14:30Z Augsburg v Mainz = Augsburg v FSV Mainz 05"
+    ],
+    "Hamburg": [
+     "2026-11-22 16:30Z Werder Bremen v Hamburg = Werder Bremen v Hamburger SV"
+    ],
+    "Mainz": [
+     "2026-11-22 14:30Z Augsburg v Mainz = Augsburg v FSV Mainz 05"
+    ],
+    "Werder Bremen": [
+     "2026-11-22 16:30Z Werder Bremen v Hamburg = Werder Bremen v Hamburger SV"
+    ]
+   },
+   "unresolved": {},
+   "fd_fixtures_without_odds_slot": 88,
+   "rejected": "",
+   "odds_names_not_in_alias_table": [
+    "1. FC K\u00f6ln",
+    "Augsburg",
+    "Bayer Leverkusen",
+    "Bayern Munich",
+    "Borussia Dortmund",
+    "Borussia Monchengladbach",
+    "Eintracht Frankfurt",
+    "Elversberg",
+    "FC Schalke 04",
+    "FSV Mainz 05",
+    "Hamburger SV",
+    "RB Leipzig",
+    "SC Freiburg",
+    "SC Paderborn",
+    "TSG Hoffenheim",
+    "Union Berlin",
+    "VfB Stuttgart",
+    "Werder Bremen"
+   ]
+  },
+  "F1": {
+   "fd_fixtures": 99,
+   "odds_events": 12,
+   "known": 0,
+   "proposed": {
+    "Angers": "Angers",
+    "Le Mans": "Le Mans FC",
+    "Lorient": "Lorient",
+    "Marseille": "Marseille",
+    "Paris FC": "Paris FC",
+    "Rennes": "Rennes"
+   },
+   "method": {
+    "Angers": "FIXTURE_IDENTITY",
+    "Le Mans": "FIXTURE_IDENTITY",
+    "Lorient": "FIXTURE_IDENTITY",
+    "Marseille": "FIXTURE_IDENTITY",
+    "Paris FC": "FIXTURE_IDENTITY",
+    "Rennes": "FIXTURE_IDENTITY"
+   },
+   "evidence": {
+    "Angers": [
+     "2026-11-22 14:00Z Paris FC v Angers = Paris FC v Angers"
+    ],
+    "Le Mans": [
+     "2026-11-22 19:45Z Marseille v Le Mans = Marseille v Le Mans FC"
+    ],
+    "Lorient": [
+     "2026-11-22 16:15Z Lorient v Rennes = Lorient v Rennes"
+    ],
+    "Marseille": [
+     "2026-11-22 19:45Z Marseille v Le Mans = Marseille v Le Mans FC"
+    ],
+    "Paris FC": [
+     "2026-11-22 14:00Z Paris FC v Angers = Paris FC v Angers"
+    ],
+    "Rennes": [
+     "2026-11-22 16:15Z Lorient v Rennes = Lorient v Rennes"
+    ]
+   },
+   "unresolved": {},
+   "fd_fixtures_without_odds_slot": 96,
+   "rejected": "",
+   "odds_names_not_in_alias_table": [
+    "AS Monaco",
+    "Angers",
+    "Auxerre",
+    "Brest",
+    "Le Havre",
+    "Le Mans FC",
+    "Lille",
+    "Lorient",
+    "Lyon",
+    "Marseille",
+    "Nice",
+    "Paris FC",
+    "Paris Saint Germain",
+    "RC Lens",
+    "Rennes",
+    "Strasbourg",
+    "Toulouse",
+    "Troyes"
+   ]
+  }
+ }
+}
