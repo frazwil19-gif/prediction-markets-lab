@@ -1,4 +1,4 @@
-# Daily Prediction Board & Bet Card — 2026-11-23T19:04Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-23T19:29Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
@@ -103,14 +103,14 @@ _Model probabilities from research engines. Shown for information and to build a
 | Event | Start | Market | Selection | P | Model fair odds | Model | Status |
 |---|---|---|---|---|---|---|---|
 | Monza v Fiorentina (I1) | 2026-11-23 | total_corners | under 11.5 | 77.0% | 1.30 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Levante v Elche (SP1) | 2026-11-23 | total_corners | under 11.5 | 75.5% | 1.32 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Brentford v Everton (E0) | 2026-11-23 | total_corners | under 11.5 | 72.3% | 1.38 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Monza v Fiorentina (I1) | 2026-11-23 | total_corners | under 10.5 | 67.4% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Levante v Elche (SP1) | 2026-11-23 | total_corners | under 10.5 | 65.6% | 1.53 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Levante v Elche (SP1) | 2026-11-23 | total_corners | under 11.5 | 75.3% | 1.33 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Brentford v Everton (E0) | 2026-11-23 | total_corners | under 11.5 | 72.2% | 1.38 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Monza v Fiorentina (I1) | 2026-11-23 | total_corners | under 10.5 | 67.3% | 1.49 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Levante v Elche (SP1) | 2026-11-23 | total_corners | under 10.5 | 65.4% | 1.53 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Brentford v Everton (E0) | 2026-11-23 | total_corners | under 10.5 | 62.2% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
 | Brentford v Everton (E0) | 2026-11-23 | total_corners | over 8.5 | 61.9% | 1.62 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Levante v Elche (SP1) | 2026-11-23 | total_corners | over 8.5 | 58.3% | 1.71 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Monza v Fiorentina (I1) | 2026-11-23 | total_corners | over 8.5 | 56.3% | 1.78 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Monza v Fiorentina (I1) | 2026-11-23 | total_corners | under 9.5 | 56.1% | 1.78 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Levante v Elche (SP1) | 2026-11-23 | total_corners | under 9.5 | 54.4% | 1.84 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
-| Brentford v Everton (E0) | 2026-11-23 | total_corners | under 9.5 | 50.5% | 1.98 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Levante v Elche (SP1) | 2026-11-23 | total_corners | over 8.5 | 58.6% | 1.71 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Monza v Fiorentina (I1) | 2026-11-23 | total_corners | over 8.5 | 56.5% | 1.77 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Monza v Fiorentina (I1) | 2026-11-23 | total_corners | under 9.5 | 56.0% | 1.79 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Levante v Elche (SP1) | 2026-11-23 | total_corners | under 9.5 | 54.1% | 1.85 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Brentford v Everton (E0) | 2026-11-23 | total_corners | under 9.5 | 50.4% | 1.98 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
