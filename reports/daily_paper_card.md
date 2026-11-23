@@ -1,9 +1,9 @@
-# Daily Paper Bet Card — 2026-11-23T16:16Z
+# Daily Paper Bet Card — 2026-11-23T19:04Z
 
 **PAPER ONLY. Not a real-money card. No bet here may be placed with real money without a MONEY_ELIGIBILITY_REVIEW and Fraser's explicit approval.**
 
 Rule `pcard-1` on top of bsv2-4. bsv2-4 decides; grades rank confidence in value; STRONG PREDICTION != VALID BET.
-Candidates evaluated at 2026-11-23T16:16:35.463921+00:00.
+Candidates evaluated at 2026-11-23T19:04:47.220689+00:00.
 
 Grades: A+ 0, A 0, B 0, C 1, REJECT 86
 

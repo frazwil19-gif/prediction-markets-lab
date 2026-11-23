@@ -1,4 +1,4 @@
-# Daily Prediction Board & Bet Card — 2026-11-23T16:16Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-23T19:04Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
@@ -34,22 +34,22 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | 22 | football | Norwich City v Queens Park Rangers | 2026-11-24T19:45 | double_chance | 1X | 72.9% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.37 | no price | no |
 | 23 | football | Brentford v Everton | 2026-11-23T20:00 | double_chance | 12 | 72.9% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.37 | no price | no |
 | 24 | football | Bristol City v Wrexham AFC | 2026-11-24T19:45 | double_chance | 12 | 71.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.40 | no price | no |
-| 25 | football | Wolverhampton Wanderers v Derby County | 2026-11-24T20:00 | 1x2 | home | 71.3% | 70%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.40 | price not usable (stale/wide/unknown commission) | no |
+| 25 | football | Wolverhampton Wanderers v Derby County | 2026-11-24T20:00 | 1x2 | home | 71.3% | 70%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.40 | 1.33 (smarkets) | no |
 | 26 | football | Charlton Athletic v Lincoln City | 2026-11-24T19:45 | double_chance | 12 | 71.2% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.40 | no price | no |
 | 27 | football | Brentford v Everton | 2026-11-23T20:00 | double_chance | 1X | 68.9% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.45 | no price | no |
-| 28 | football | Cardiff City v Preston North End | 2026-11-24T19:45 | over_under_2_5 | over | 68.8% | 60%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.45 | price not usable (stale/wide/unknown commission) | no |
+| 28 | football | Cardiff City v Preston North End | 2026-11-24T19:45 | over_under_2_5 | over | 68.8% | 60%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.45 | 1.36 (william hill) | no |
 | 29 | football | Bristol City v Wrexham AFC | 2026-11-24T19:45 | double_chance | 1X | 66.7% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.50 | no price | no |
-| 30 | football | Rangers v Aberdeen | 2026-11-24T20:00 | over_under_2_5 | over | 66.3% | 60%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.51 | price not usable (stale/wide/unknown commission) | no |
-| 31 | football | Middlesbrough v Swansea City | 2026-11-24T19:45 | 1x2 | home | 64.9% | 60%+ | 1.3% | PROSPECTIVE_SHADOW_LEAGUE | 1.54 | price not usable (stale/wide/unknown commission) | no |
+| 30 | football | Rangers v Aberdeen | 2026-11-24T20:00 | over_under_2_5 | over | 66.3% | 60%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.51 | 1.40 (william hill) | no |
+| 31 | football | Middlesbrough v Swansea City | 2026-11-24T19:45 | 1x2 | home | 64.9% | 60%+ | 1.3% | PROSPECTIVE_SHADOW_LEAGUE | 1.54 | 1.49 (betfair) | no |
 | 32 | football | Charlton Athletic v Lincoln City | 2026-11-24T19:45 | double_chance | X2 | 64.8% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.54 | no price | no |
 | 33 | football | Sheffield United v Southampton | 2026-11-24T19:45 | double_chance | 1X | 64.0% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.56 | no price | no |
 | 34 | football | Charlton Athletic v Lincoln City | 2026-11-24T19:45 | double_chance | 1X | 64.0% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.56 | no price | no |
 | 35 | basketball | Oklahoma City Thunder @ Indiana Pacers | 2026-11-24T00:40 | moneyline | Oklahoma City Thunder | 63.0% | 60%+ | 1.5% | VALIDATED | 1.59 | price not usable (stale/wide/unknown commission) | no |
 | 36 | football | Cardiff City v Preston North End | 2026-11-24T19:45 | 1x2 | home | 62.5% | 60%+ | 1.3% | PROSPECTIVE_SHADOW_LEAGUE | 1.60 | price not usable (stale/wide/unknown commission) | no |
 | 37 | football | Sheffield United v Southampton | 2026-11-24T19:45 | double_chance | X2 | 62.2% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.61 | no price | no |
-| 38 | football | Middlesbrough v Swansea City | 2026-11-24T19:45 | over_under_2_5 | over | 61.9% | 60%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.61 | price not usable (stale/wide/unknown commission) | no |
+| 38 | football | Middlesbrough v Swansea City | 2026-11-24T19:45 | over_under_2_5 | over | 61.9% | 60%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.61 | 1.50 (william hill) | no |
 | 39 | football | Bristol City v Wrexham AFC | 2026-11-24T19:45 | double_chance | X2 | 61.8% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.62 | no price | no |
-| 40 | football | Wolverhampton Wanderers v Derby County | 2026-11-24T20:00 | over_under_2_5 | over | 61.5% | 60%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.63 | price not usable (stale/wide/unknown commission) | no |
+| 40 | football | Wolverhampton Wanderers v Derby County | 2026-11-24T20:00 | over_under_2_5 | over | 61.5% | 60%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.63 | 1.53 (grosvenor) | no |
 
 ## 2. Qualified paper bets (simulated stakes, recorded automatically)
 
@@ -89,12 +89,12 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 | Norwich City v Queens Park Rangers (2026-11-24T19:45) | double_chance: 1X | 72.9% | 1.37 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Brentford v Everton (2026-11-23T20:00) | double_chance: 12 | 72.9% | 1.37 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Bristol City v Wrexham AFC (2026-11-24T19:45) | double_chance: 12 | 71.4% | 1.40 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Wolverhampton Wanderers v Derby County (2026-11-24T20:00) | 1x2: home | 71.3% | 1.40 | — | PRICE_STALE, COMMISSION_UNKNOWN, ENGINE_STATUS_INELIGIBLE |
+| Wolverhampton Wanderers v Derby County (2026-11-24T20:00) | 1x2: home | 71.3% | 1.40 | 1.33 | NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
 | Charlton Athletic v Lincoln City (2026-11-24T19:45) | double_chance: 12 | 71.2% | 1.40 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 77 · PRICE_STALE 44 · NO_EXECUTABLE_PRICE 33 · P_BELOW_FLOOR 33 · COMMISSION_UNKNOWN 29 · NET_EV_NOT_POSITIVE 19
+ENGINE_STATUS_INELIGIBLE 77 · NO_EXECUTABLE_PRICE 33 · P_BELOW_FLOOR 33 · COMMISSION_UNKNOWN 26 · NET_EV_NOT_POSITIVE 21 · PRICE_STALE 5
 
 ## 4. Research predictions — not money eligible
 

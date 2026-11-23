@@ -1,8 +1,8 @@
-# STAGE A PREDICTION BOARD — 2026-11-23T16:16Z (stage-a-2)
+# STAGE A PREDICTION BOARD — 2026-11-23T19:04Z (stage-a-2)
 
 _Probability first. Ranked by estimated probability only. **A strong prediction is not a bet** — price status is descriptive; Stage B (bet-selection) alone decides bets._
 
-Predictions: 87 · strong (P ≥ 70%): 26 on 17 events · strong by price status: POOR_PAYOUT 1 · PRICE_QUALITY_FAIL 7 · PRICE_UNAVAILABLE 18
+Predictions: 87 · strong (P ≥ 70%): 26 on 17 events · strong by price status: POOR_PAYOUT 2 · PRICE_QUALITY_FAIL 6 · PRICE_UNAVAILABLE 18
 
 | # | Sport | Event | Start (UTC) | Market | Selection | P | P first snapshot | P current scan | σ | Engine | Calibration status | Stage A status | Why not assessable | Best clean price | Net EV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -22,7 +22,7 @@ Predictions: 87 · strong (P ≥ 70%): 26 on 17 events · strong by price status
 | 14 | basketball | Milwaukee Bucks @ Toronto Raptors | 2026-11-24T00:40 | moneyline | Toronto Raptors | 77.9% | 77.9% | — | 1.4% | nba_moneyline.market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN | — | — |
 | 15 | football | Hibernian v Dundee FC | 2026-11-24T19:45 | double_chance | 12 | 77.2% | 77.2% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 16 | football | Portsmouth v West Ham United | 2026-11-24T19:45 | double_chance | X2 | 75.8% | 75.8% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 17 | football | Rangers v Aberdeen | 2026-11-24T20:00 | 1x2 | home | 74.9% | 74.9% | — | 1.7% | football_1x2.market_consensus | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | PRICE_STALE | — | — |
+| 17 | football | Rangers v Aberdeen | 2026-11-24T20:00 | 1x2 | home | 74.9% | 74.9% | — | 1.7% | football_1x2.market_consensus | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN | — | — |
 | 18 | football | Portsmouth v West Ham United | 2026-11-24T19:45 | double_chance | 12 | 74.7% | 74.7% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 19 | football | Norwich City v Queens Park Rangers | 2026-11-24T19:45 | double_chance | 12 | 74.5% | 74.5% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 20 | football | Sheffield United v Southampton | 2026-11-24T19:45 | double_chance | 12 | 73.7% | 73.7% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
@@ -30,7 +30,7 @@ Predictions: 87 · strong (P ≥ 70%): 26 on 17 events · strong by price status
 | 22 | football | Norwich City v Queens Park Rangers | 2026-11-24T19:45 | double_chance | 1X | 72.9% | 72.9% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 23 | football | Brentford v Everton | 2026-11-23T20:00 | double_chance | 12 | 72.9% | 72.9% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 24 | football | Bristol City v Wrexham AFC | 2026-11-24T19:45 | double_chance | 12 | 71.4% | 71.4% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 25 | football | Wolverhampton Wanderers v Derby County | 2026-11-24T20:00 | 1x2 | home | 71.3% | 71.3% | — | 1.7% | football_1x2.market_consensus | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN|PRICE_STALE | — | — |
+| 25 | football | Wolverhampton Wanderers v Derby County | 2026-11-24T20:00 | 1x2 | home | 71.3% | 71.3% | — | 1.7% | football_1x2.market_consensus | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.33 (smarkets) | -6.3% |
 | 26 | football | Charlton Athletic v Lincoln City | 2026-11-24T19:45 | double_chance | 12 | 71.2% | 71.2% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 
 P = P current scan when one exists, else P first snapshot (football 1X2: normalised H/D/A triplet; raw kept in the ledger). Ranking uses P only.

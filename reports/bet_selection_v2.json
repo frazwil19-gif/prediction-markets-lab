@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-11-23T16:16:35.463921+00:00",
+ "generated_at": "2026-11-23T19:04:47.220689+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-4",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 163,
+  "runs": 164,
   "totals_over_runs": {
-   "events_scanned": 5409,
-   "valid_predictions": 19665,
-   "high_p_candidates": 5596,
-   "priced_candidates": 10082,
+   "events_scanned": 5430,
+   "valid_predictions": 19752,
+   "high_p_candidates": 5622,
+   "priced_candidates": 10110,
    "PAPER_BET": 23,
-   "MULTI_RESEARCH_ELIGIBLE": 239,
+   "MULTI_RESEARCH_ELIGIBLE": 240,
    "WATCH": 78,
-   "REJECT": 19729,
+   "REJECT": 19815,
    "paper_bets_added": 13,
    "money_card_qualified": 15
   },
@@ -82,19 +82,19 @@
   }
  },
  "latest_run": {
-  "run_at": "2026-11-23T16:16:35.463921+00:00",
-  "trigger": "workflow_dispatch",
+  "run_at": "2026-11-23T19:04:47.220689+00:00",
+  "trigger": "schedule",
   "rule_version": "bsv2-4",
   "events_scanned": "21",
   "valid_predictions": "87",
   "high_p_candidates": "26",
-  "priced_candidates": "25",
+  "priced_candidates": "28",
   "PAPER_BET": "0",
   "MULTI_RESEARCH_ELIGIBLE": "1",
   "WATCH": "0",
   "REJECT": "86",
   "paper_bets_added": "0",
-  "snapshots_added": "10",
+  "snapshots_added": "44",
   "money_card_qualified": "0",
   "football_fixtures_on_card": "53"
  },
@@ -105,11 +105,11 @@
   },
   "reason_counts": {
    "ENGINE_STATUS_INELIGIBLE": 77,
-   "PRICE_STALE": 44,
    "P_BELOW_FLOOR": 33,
    "NO_EXECUTABLE_PRICE": 33,
-   "COMMISSION_UNKNOWN": 29,
-   "NET_EV_NOT_POSITIVE": 19
+   "COMMISSION_UNKNOWN": 26,
+   "NET_EV_NOT_POSITIVE": 21,
+   "PRICE_STALE": 5
   },
   "by_sport": {
    "basketball": {

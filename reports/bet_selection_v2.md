@@ -4,9 +4,9 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-23T16:16Z · events scanned 21 · valid predictions 87 · high-P (≥70%) 26 · priced 25 · PAPER_BET 0 · MULTI-research 1 · WATCH 0 · REJECT 86 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-23T19:04Z · events scanned 21 · valid predictions 87 · high-P (≥70%) 26 · priced 28 · PAPER_BET 0 · MULTI-research 1 · WATCH 0 · REJECT 86 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 77 · PRICE_STALE 44 · P_BELOW_FLOOR 33 · NO_EXECUTABLE_PRICE 33 · COMMISSION_UNKNOWN 29 · NET_EV_NOT_POSITIVE 19
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 77 · P_BELOW_FLOOR 33 · NO_EXECUTABLE_PRICE 33 · COMMISSION_UNKNOWN 26 · NET_EV_NOT_POSITIVE 21 · PRICE_STALE 5
 
 ## Candidates (latest run, best price per prediction)
 
@@ -37,21 +37,21 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 77 · PRICE_STALE 44 · P_BE
 | Brentford v Everton | 2026-11-23T20:00 | 12 | 72.9% | 1.37 | — | — | — | REJECT |
 | Bristol City v Wrexham AFC | 2026-11-24T19:45 | 12 | 71.4% | 1.40 | — | — | — | REJECT |
 | Charlton Athletic v Lincoln City | 2026-11-24T19:45 | 12 | 71.2% | 1.40 | — | — | — | REJECT |
-| Wolverhampton Wanderers v Derby County | 2026-11-24T20:00 | home | 71.0% | 1.41 | 1.33 (matchbook) | — | — | REJECT |
+| Wolverhampton Wanderers v Derby County | 2026-11-24T20:00 | home | 70.8% | 1.41 | 1.33 (smarkets) | 75.6% | -6.3% | REJECT |
 | Brentford v Everton | 2026-11-23T20:00 | 1X | 68.9% | 1.45 | — | — | — | REJECT |
 | Cardiff City v Preston North End | 2026-11-24T19:45 | over | 68.8% | 1.45 | 1.36 (william hill) | 73.5% | -6.4% | REJECT |
 | Bristol City v Wrexham AFC | 2026-11-24T19:45 | 1X | 66.7% | 1.50 | — | — | — | REJECT |
 | Rangers v Aberdeen | 2026-11-24T20:00 | over | 66.3% | 1.51 | 1.40 (william hill) | 71.4% | -7.2% | REJECT |
 | Charlton Athletic v Lincoln City | 2026-11-24T19:45 | X2 | 64.8% | 1.54 | — | — | — | REJECT |
-| Middlesbrough v Swansea City | 2026-11-24T19:45 | home | 64.7% | 1.54 | 1.49 (smarkets) | 67.6% | -4.2% | REJECT |
+| Middlesbrough v Swansea City | 2026-11-24T19:45 | home | 64.5% | 1.55 | 1.49 (betfair) | 68.2% | -5.4% | REJECT |
 | Sheffield United v Southampton | 2026-11-24T19:45 | 1X | 64.0% | 1.56 | — | — | — | REJECT |
 | Charlton Athletic v Lincoln City | 2026-11-24T19:45 | 1X | 64.0% | 1.56 | — | — | — | REJECT |
 | Oklahoma City Thunder @ Indiana Pacers | 2026-11-24T00:40 | Oklahoma City Thunder | 63.0% | 1.59 | 1.56 (matchbook) | — | — | REJECT |
-| Cardiff City v Preston North End | 2026-11-24T19:45 | home | 62.5% | 1.60 | 1.57 (matchbook) | — | — | REJECT |
+| Middlesbrough v Swansea City | 2026-11-24T19:45 | over | 62.5% | 1.60 | 1.50 (william hill) | 66.7% | -6.2% | REJECT |
 | Sheffield United v Southampton | 2026-11-24T19:45 | X2 | 62.2% | 1.61 | — | — | — | REJECT |
-| Middlesbrough v Swansea City | 2026-11-24T19:45 | over | 61.9% | 1.61 | 1.51 (grosvenor) | 66.2% | -6.5% | REJECT |
 | Bristol City v Wrexham AFC | 2026-11-24T19:45 | X2 | 61.8% | 1.62 | — | — | — | REJECT |
-| Wolverhampton Wanderers v Derby County | 2026-11-24T20:00 | over | 61.5% | 1.63 | 1.54 (grosvenor) | 64.9% | -5.4% | REJECT |
+| Wolverhampton Wanderers v Derby County | 2026-11-24T20:00 | over | 61.5% | 1.63 | 1.53 (grosvenor) | 65.4% | -5.9% | REJECT |
+| Cardiff City v Preston North End | 2026-11-24T19:45 | home | 61.2% | 1.63 | 1.59 (matchbook) | — | — | REJECT |
 
 ## Paper results (all time)
 
