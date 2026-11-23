@@ -4,9 +4,9 @@ _Paper research board: what is most likely to happen. Not a betting card (see th
 
 > **SYSTEM DEGRADED: settlement: STALE (last 2026-11-22T01:09:32.190444+00:00).** Predictions below may be incomplete or stale.
 
-Upcoming events: 11 · Valid predictions: 77 · Sports: football
-Counts: >=70: 20 · >=75: 11 · >=80: 9 · >=85: 2 · >=90: 1 · >=95: 0
-Settled yesterday: 1 · System: **DEGRADED** · API credits (last observed): 176
+Upcoming events: 21 · Valid predictions: 87 · Sports: basketball, football
+Counts: >=70: 26 · >=75: 16 · >=80: 12 · >=85: 2 · >=90: 1 · >=95: 0
+Settled yesterday: 1 · System: **DEGRADED** · API credits (last observed): 168
 
 ## Top predictions (P ≥ 80%)
 
@@ -14,10 +14,13 @@ Settled yesterday: 1 · System: **DEGRADED** · API credits (last observed): 176
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | football | Rangers v Aberdeen | 2026-11-24T20:00 | double_chance | 1X | 90.5% | 1.10 | 90-94.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.08 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Wolverhampton Wanderers v Derby County | 2026-11-24T20:00 | double_chance | 1X | 89.0% | 1.12 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.09 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
+| basketball | Utah Jazz @ Los Angeles Lakers | 2026-11-24T03:10 | moneyline | Los Angeles Lakers | 84.9% | 1.18 | 80-84.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.15 (odds_api:matchbook) | no | yes |
 | football | Middlesbrough v Swansea City | 2026-11-24T19:45 | double_chance | 1X | 84.7% | 1.18 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.16 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Rangers v Aberdeen | 2026-11-24T20:00 | double_chance | 12 | 84.4% | 1.18 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.16 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
+| basketball | Los Angeles Clippers @ Houston Rockets | 2026-11-24T01:40 | moneyline | Houston Rockets | 82.7% | 1.21 | 80-84.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.17 (odds_api:skybet) | no | yes |
 | football | Cardiff City v Preston North End | 2026-11-24T19:45 | double_chance | 1X | 82.3% | 1.21 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Wolverhampton Wanderers v Derby County | 2026-11-24T20:00 | double_chance | 12 | 82.3% | 1.22 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
+| basketball | Brooklyn Nets @ Minnesota Timberwolves | 2026-11-24T00:40 | moneyline | Minnesota Timberwolves | 81.8% | 1.22 | 80-84.9% | nba_moneyline.market@1 | VALIDATED_HISTORICAL | 1.19 (odds_api:matchbook) | no | yes |
 | football | Cardiff City v Preston North End | 2026-11-24T19:45 | double_chance | 12 | 80.2% | 1.25 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.23 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Middlesbrough v Swansea City | 2026-11-24T19:45 | double_chance | 12 | 80.2% | 1.25 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.23 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
 | football | Hibernian v Dundee FC | 2026-11-24T19:45 | double_chance | 1X | 80.2% | 1.25 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.21 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
@@ -31,7 +34,7 @@ Settled yesterday: 1 · System: **DEGRADED** · API credits (last observed): 176
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
 | atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 224 | 198 | EARLY | 29 | 87.1% → 75.9% |
 | wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 201 | 177 | EARLY | 31 | 89.3% → 80.6% |
-| nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 203 | 195 | EARLY | 28 | 84.3% → 92.9% |
+| nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 213 | 195 | EARLY | 28 | 84.3% → 92.9% |
 | nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 159 | 122 | EARLY | 0 | — → — |
 | nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 56 | 41 | COLLECTING | 3 | 82.3% → 100.0% |
 | football_double_chance.derived_1x2 | PROVISIONAL_PROSPECTIVE / COLLECTING | 1548 | 9 | COLLECTING | 1 | 80.2% → 0.0% |
@@ -40,8 +43,8 @@ Settled yesterday: 1 · System: **DEGRADED** · API credits (last observed): 176
 
 - daily_scan: OK (last 2026-11-23T07:16:25.565693+00:00)
 - settlement: STALE (last 2026-11-22T01:09:32.190444+00:00)
-- tennis_board: OK (last 2026-11-22T16:16:27.954383+00:00)
-- ci_tests: OK (last 2026-11-23T07:16:26.171277+00:00)
+- tennis_board: OK (last 2026-11-23T16:16:31.005692+00:00)
+- ci_tests: OK (last 2026-11-23T16:16:31.684455+00:00)
 - Warnings: settlement: STALE (last 2026-11-22T01:09:32.190444+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
