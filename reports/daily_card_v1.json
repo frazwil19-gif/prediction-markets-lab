@@ -1,7 +1,7 @@
 {
  "card_version": "card-v1.2",
- "generated_at": "2026-11-23T02:57:51.172624+00:00",
- "stage_a_generated_at": "2026-11-23T02:57:50.449870+00:00",
+ "generated_at": "2026-11-23T07:16:27.227395+00:00",
+ "stage_a_generated_at": "2026-11-23T07:16:26.250896+00:00",
  "real_money_enabled": false,
  "mode": "PAPER \u2014 unattended prospective validation (real-money betting paused; nothing to place)",
  "summary": {
@@ -15,10 +15,9 @@
  },
  "rejection_reasons": {
   "ENGINE_STATUS_INELIGIBLE": 7,
-  "PRICE_STALE": 4,
   "NO_EXECUTABLE_PRICE": 3,
-  "NET_EV_NOT_POSITIVE": 3,
   "P_BELOW_FLOOR": 3,
+  "NET_EV_NOT_POSITIVE": 2,
   "COMMISSION_UNKNOWN": 1
  },
  "best_predictions": [
@@ -48,7 +47,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-22T16:16:31.050987+00:00",
+   "decision_evaluated_at": "2026-11-23T07:16:26.818668+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -77,7 +76,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-22T16:16:31.050987+00:00",
+   "decision_evaluated_at": "2026-11-23T07:16:26.818668+00:00",
    "min_bookmaker_odds": 1.49
   },
   {
@@ -106,7 +105,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-22T16:16:31.050987+00:00",
+   "decision_evaluated_at": "2026-11-23T07:16:26.818668+00:00",
    "min_bookmaker_odds": 1.76
   },
   {
@@ -129,13 +128,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "PRICE_STALE|COMMISSION_UNKNOWN|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "1.87",
+   "decision_reasons": "COMMISSION_UNKNOWN|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "1.89",
    "decision_source": "matchbook",
    "decision_net_ev": "",
-   "price_observed_at": "2026-11-22T07:16:35.237421+00:00",
+   "price_observed_at": "2026-11-23T07:16:21.104423+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-22T16:16:31.050987+00:00",
+   "decision_evaluated_at": "2026-11-23T07:16:26.818668+00:00",
    "min_bookmaker_odds": 1.92
   }
  ],
@@ -168,7 +167,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-22T16:16:31.050987+00:00",
+   "decision_evaluated_at": "2026-11-23T07:16:26.818668+00:00",
    "min_bookmaker_odds": 1.4
   }
  ],

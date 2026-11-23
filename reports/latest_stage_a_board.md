@@ -1,12 +1,31 @@
-# STAGE A PREDICTION BOARD — 2026-11-23T02:57Z (stage-a-2)
+# STAGE A PREDICTION BOARD — 2026-11-23T07:16Z (stage-a-2)
 
 _Probability first. Ranked by estimated probability only. **A strong prediction is not a bet** — price status is descriptive; Stage B (bet-selection) alone decides bets._
 
-Predictions: 7 · strong (P ≥ 70%): 1 on 1 events · strong by price status: PRICE_UNAVAILABLE 1
+Predictions: 77 · strong (P ≥ 70%): 20 on 11 events · strong by price status: POOR_PAYOUT 1 · PRICE_QUALITY_FAIL 1 · PRICE_UNAVAILABLE 18
 
 | # | Sport | Event | Start (UTC) | Market | Selection | P | P first snapshot | P current scan | σ | Engine | Calibration status | Stage A status | Why not assessable | Best clean price | Net EV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | football | Brentford v Everton | 2026-11-23T20:00 | double_chance | 12 | 72.9% | 72.9% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 1 | football | Rangers v Aberdeen | 2026-11-24T20:00 | double_chance | 1X | 90.5% | 90.5% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 2 | football | Wolverhampton Wanderers v Derby County | 2026-11-24T20:00 | double_chance | 1X | 89.0% | 89.0% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 3 | football | Middlesbrough v Swansea City | 2026-11-24T19:45 | double_chance | 1X | 84.7% | 84.7% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 4 | football | Rangers v Aberdeen | 2026-11-24T20:00 | double_chance | 12 | 84.4% | 84.4% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 5 | football | Cardiff City v Preston North End | 2026-11-24T19:45 | double_chance | 1X | 82.3% | 82.3% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 6 | football | Wolverhampton Wanderers v Derby County | 2026-11-24T20:00 | double_chance | 12 | 82.3% | 82.3% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 7 | football | Cardiff City v Preston North End | 2026-11-24T19:45 | double_chance | 12 | 80.2% | 80.2% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 8 | football | Middlesbrough v Swansea City | 2026-11-24T19:45 | double_chance | 12 | 80.2% | 80.2% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 9 | football | Hibernian v Dundee FC | 2026-11-24T19:45 | double_chance | 1X | 80.2% | 80.2% | — | 0.6% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 10 | football | Hibernian v Dundee FC | 2026-11-24T19:45 | double_chance | 12 | 77.2% | 77.2% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 11 | football | Portsmouth v West Ham United | 2026-11-24T19:45 | double_chance | X2 | 75.8% | 75.8% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 12 | football | Rangers v Aberdeen | 2026-11-24T20:00 | 1x2 | home | 74.9% | 74.9% | — | 1.7% | football_1x2.market_consensus | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.28 (ladbrokes) | -4.2% |
+| 13 | football | Portsmouth v West Ham United | 2026-11-24T19:45 | double_chance | 12 | 74.7% | 74.7% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 14 | football | Norwich City v Queens Park Rangers | 2026-11-24T19:45 | double_chance | 12 | 74.5% | 74.5% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 15 | football | Sheffield United v Southampton | 2026-11-24T19:45 | double_chance | 12 | 73.7% | 73.7% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 16 | football | Norwich City v Queens Park Rangers | 2026-11-24T19:45 | double_chance | 1X | 72.9% | 72.9% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 17 | football | Brentford v Everton | 2026-11-23T20:00 | double_chance | 12 | 72.9% | 72.9% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 18 | football | Bristol City v Wrexham AFC | 2026-11-24T19:45 | double_chance | 12 | 71.4% | 71.4% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
+| 19 | football | Wolverhampton Wanderers v Derby County | 2026-11-24T20:00 | 1x2 | home | 71.3% | 71.3% | — | 1.7% | football_1x2.market_consensus | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | COMMISSION_UNKNOWN | — | — |
+| 20 | football | Charlton Athletic v Lincoln City | 2026-11-24T19:45 | double_chance | 12 | 71.2% | 71.2% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 
 P = P current scan when one exists, else P first snapshot (football 1X2: normalised H/D/A triplet; raw kept in the ledger). Ranking uses P only.
 ⟳ = start time rescheduled since first observation (est-1: the current provider start is used).

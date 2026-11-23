@@ -1,4 +1,4 @@
-# Daily Prediction Board & Bet Card — 2026-11-23T02:57Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-23T07:16Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
@@ -33,7 +33,7 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 7 · PRICE_STALE 4 · NO_EXECUTABLE_PRICE 3 · NET_EV_NOT_POSITIVE 3 · P_BELOW_FLOOR 3 · COMMISSION_UNKNOWN 1
+ENGINE_STATUS_INELIGIBLE 7 · NO_EXECUTABLE_PRICE 3 · P_BELOW_FLOOR 3 · NET_EV_NOT_POSITIVE 2 · COMMISSION_UNKNOWN 1
 
 ## 4. Research predictions — not money eligible
 

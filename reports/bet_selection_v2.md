@@ -4,54 +4,60 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-22T16:16Z · events scanned 12 · valid predictions 34 · high-P (≥70%) 10 · priced 16 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 34 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-23T07:16Z · events scanned 11 · valid predictions 77 · high-P (≥70%) 20 · priced 23 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 77 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 26 · PRICE_STALE 14 · NET_EV_NOT_POSITIVE 13 · P_BELOW_FLOOR 12 · NO_EXECUTABLE_PRICE 12 · COMMISSION_UNKNOWN 6
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 77 · P_BELOW_FLOOR 33 · NO_EXECUTABLE_PRICE 33 · COMMISSION_UNKNOWN 21 · NET_EV_NOT_POSITIVE 17
 
 ## Candidates (latest run, best price per prediction)
 
 | Event | Start | Sel | P | Fair | Odds (source) | Break-even | Net EV | Decision |
 |---|---|---|---|---|---|---|---|---|
-| Marseille v Le Mans FC | 2026-11-22T19:45 | 1X | 84.2% | 1.19 | — | — | — | REJECT |
-| Marseille v Le Mans FC | 2026-11-22T19:45 | 12 | 80.1% | 1.25 | — | — | — | REJECT |
-| Werder Bremen v Hamburger SV | 2026-11-22T16:30 | 1X | 79.3% | 1.26 | — | — | — | REJECT |
-| Liverpool v Manchester United | 2026-11-22T16:30 | 1X | 78.0% | 1.28 | — | — | — | REJECT |
-| Liverpool v Manchester United | 2026-11-22T16:30 | 12 | 77.8% | 1.29 | — | — | — | REJECT |
-| Werder Bremen v Hamburger SV | 2026-11-22T16:30 | 12 | 77.6% | 1.29 | — | — | — | REJECT |
-| Denver Nuggets @ Chicago Bulls | 2026-11-23T00:10 | Denver Nuggets | 75.5% | 1.32 | 1.29 (matchbook) | — | — | REJECT |
-| Boston Celtics @ Golden State Warriors | 2026-11-23T01:40 | Boston Celtics | 74.1% | 1.35 | 1.31 (smarkets) | 76.7% | -3.4% | REJECT |
-| Indiana Pacers @ New York Knicks | 2026-11-23T01:10 | New York Knicks | 73.5% | 1.36 | 1.33 (paddypower) | 75.2% | -2.3% | REJECT |
+| Rangers v Aberdeen | 2026-11-24T20:00 | 1X | 90.5% | 1.10 | — | — | — | REJECT |
+| Wolverhampton Wanderers v Derby County | 2026-11-24T20:00 | 1X | 89.0% | 1.12 | — | — | — | REJECT |
+| Middlesbrough v Swansea City | 2026-11-24T19:45 | 1X | 84.7% | 1.18 | — | — | — | REJECT |
+| Rangers v Aberdeen | 2026-11-24T20:00 | 12 | 84.4% | 1.18 | — | — | — | REJECT |
+| Cardiff City v Preston North End | 2026-11-24T19:45 | 1X | 82.3% | 1.21 | — | — | — | REJECT |
+| Wolverhampton Wanderers v Derby County | 2026-11-24T20:00 | 12 | 82.3% | 1.22 | — | — | — | REJECT |
+| Cardiff City v Preston North End | 2026-11-24T19:45 | 12 | 80.2% | 1.25 | — | — | — | REJECT |
+| Middlesbrough v Swansea City | 2026-11-24T19:45 | 12 | 80.2% | 1.25 | — | — | — | REJECT |
+| Hibernian v Dundee FC | 2026-11-24T19:45 | 1X | 80.2% | 1.25 | — | — | — | REJECT |
+| Hibernian v Dundee FC | 2026-11-24T19:45 | 12 | 77.2% | 1.30 | — | — | — | REJECT |
+| Portsmouth v West Ham United | 2026-11-24T19:45 | X2 | 75.8% | 1.32 | — | — | — | REJECT |
+| Rangers v Aberdeen | 2026-11-24T20:00 | home | 74.8% | 1.34 | 1.28 (ladbrokes) | 78.1% | -4.2% | REJECT |
+| Portsmouth v West Ham United | 2026-11-24T19:45 | 12 | 74.7% | 1.34 | — | — | — | REJECT |
+| Norwich City v Queens Park Rangers | 2026-11-24T19:45 | 12 | 74.5% | 1.34 | — | — | — | REJECT |
+| Sheffield United v Southampton | 2026-11-24T19:45 | 12 | 73.7% | 1.36 | — | — | — | REJECT |
+| Norwich City v Queens Park Rangers | 2026-11-24T19:45 | 1X | 72.9% | 1.37 | — | — | — | REJECT |
 | Brentford v Everton | 2026-11-23T20:00 | 12 | 72.9% | 1.37 | — | — | — | REJECT |
+| Bristol City v Wrexham AFC | 2026-11-24T19:45 | 12 | 71.4% | 1.40 | — | — | — | REJECT |
+| Charlton Athletic v Lincoln City | 2026-11-24T19:45 | 12 | 71.2% | 1.40 | — | — | — | REJECT |
+| Wolverhampton Wanderers v Derby County | 2026-11-24T20:00 | home | 71.0% | 1.41 | 1.33 (matchbook) | — | — | REJECT |
 | Brentford v Everton | 2026-11-23T20:00 | 1X | 68.9% | 1.45 | — | — | — | REJECT |
-| Alexander Zverev v Carlos Alcaraz | 2026-11-22T17:00 | Carlos Alcaraz | 65.2% | 1.53 | 1.53 (betfair_ex_uk) | 66.5% | -1.9% | REJECT |
-| Marseille v Le Mans FC | 2026-11-22T19:45 | home | 64.6% | 1.55 | 1.49 (betfair) | 68.2% | -5.3% | REJECT |
-| Orlando Magic @ Washington Wizards | 2026-11-23T00:10 | Orlando Magic | 64.3% | 1.56 | 1.53 (matchbook) | — | — | REJECT |
-| Liverpool v Manchester United | 2026-11-22T16:30 | over | 63.5% | 1.58 | 1.44 (william hill) | 69.4% | -8.6% | REJECT |
-| Werder Bremen v Hamburger SV | 2026-11-22T16:30 | home | 59.6% | 1.68 | 1.64 (betfair) | 62.2% | -4.1% | REJECT |
+| Cardiff City v Preston North End | 2026-11-24T19:45 | over | 68.8% | 1.45 | 1.36 (william hill) | 73.5% | -6.4% | REJECT |
+| Bristol City v Wrexham AFC | 2026-11-24T19:45 | 1X | 66.7% | 1.50 | — | — | — | REJECT |
+| Rangers v Aberdeen | 2026-11-24T20:00 | over | 66.3% | 1.51 | 1.40 (william hill) | 71.4% | -7.2% | REJECT |
+| Charlton Athletic v Lincoln City | 2026-11-24T19:45 | X2 | 64.8% | 1.54 | — | — | — | REJECT |
+| Middlesbrough v Swansea City | 2026-11-24T19:45 | home | 64.7% | 1.54 | 1.49 (smarkets) | 67.6% | -4.2% | REJECT |
+| Sheffield United v Southampton | 2026-11-24T19:45 | 1X | 64.0% | 1.56 | — | — | — | REJECT |
+| Charlton Athletic v Lincoln City | 2026-11-24T19:45 | 1X | 64.0% | 1.56 | — | — | — | REJECT |
+| Cardiff City v Preston North End | 2026-11-24T19:45 | home | 62.5% | 1.60 | 1.57 (matchbook) | — | — | REJECT |
+| Sheffield United v Southampton | 2026-11-24T19:45 | X2 | 62.2% | 1.61 | — | — | — | REJECT |
+| Middlesbrough v Swansea City | 2026-11-24T19:45 | over | 61.9% | 1.61 | 1.51 (grosvenor) | 66.2% | -6.5% | REJECT |
+| Bristol City v Wrexham AFC | 2026-11-24T19:45 | X2 | 61.8% | 1.62 | — | — | — | REJECT |
+| Wolverhampton Wanderers v Derby County | 2026-11-24T20:00 | over | 61.5% | 1.63 | 1.54 (grosvenor) | 64.9% | -5.4% | REJECT |
 | Brentford v Everton | 2026-11-23T20:00 | X2 | 58.2% | 1.72 | — | — | — | REJECT |
-| Oklahoma City Thunder @ Miami Heat | 2026-11-22T23:10 | Miami Heat | 58.0% | 1.73 | 1.68 (matchbook) | — | — | REJECT |
-| Liverpool v Manchester United | 2026-11-22T16:30 | home | 56.1% | 1.78 | 1.77 (betfair) | 57.8% | -2.9% | REJECT |
-| Detroit Pistons @ Atlanta Hawks | 2026-11-22T20:40 | Detroit Pistons | 54.7% | 1.83 | 1.83 (matchbook) | — | — | REJECT |
-| Brentford v Everton | 2026-11-23T20:00 | over | 53.3% | 1.88 | 1.87 (matchbook) | — | — | REJECT |
-| Dallas Mavericks @ Utah Jazz | 2026-11-23T00:10 | Dallas Mavericks | 50.3% | 1.99 | 1.98 (matchbook) | — | — | REJECT |
-| Liverpool v Manchester United | 2026-11-22T16:30 | X2 | 44.2% | 2.26 | — | — | — | REJECT |
-| Werder Bremen v Hamburger SV | 2026-11-22T16:30 | X2 | 43.1% | 2.32 | — | — | — | REJECT |
-| Brentford v Everton | 2026-11-23T20:00 | home | 41.8% | 2.39 | 2.38 (smarkets) | 42.5% | -1.7% | REJECT |
-| Marseille v Le Mans FC | 2026-11-22T19:45 | X2 | 35.7% | 2.80 | — | — | — | REJECT |
-| Brentford v Everton | 2026-11-23T20:00 | away | 31.1% | 3.22 | 3.25 (smarkets) | 31.2% | -0.3% | REJECT |
-| Brentford v Everton | 2026-11-23T20:00 | draw | 27.1% | 3.69 | 3.60 (smarkets) | 28.2% | -3.8% | REJECT |
-| Liverpool v Manchester United | 2026-11-22T16:30 | draw | 22.6% | 4.42 | 4.40 (betfair) | 23.6% | -4.3% | REJECT |
-| Werder Bremen v Hamburger SV | 2026-11-22T16:30 | draw | 21.6% | 4.62 | 4.60 (smarkets) | 22.1% | -2.1% | REJECT |
-| Liverpool v Manchester United | 2026-11-22T16:30 | away | 21.5% | 4.66 | 4.80 (smarkets) | 21.2% | 1.4% | REJECT |
-| Marseille v Le Mans FC | 2026-11-22T19:45 | draw | 19.7% | 5.07 | 5.10 (smarkets) | 19.9% | -1.0% | REJECT |
-| Werder Bremen v Hamburger SV | 2026-11-22T16:30 | away | 18.8% | 5.32 | 5.70 (smarkets) | 17.8% | 5.5% | REJECT |
-| Marseille v Le Mans FC | 2026-11-22T19:45 | away | 15.5% | 6.45 | 7.20 (smarkets) | 14.1% | 9.7% | REJECT |
+| Hibernian v Dundee FC | 2026-11-24T19:45 | over | 57.7% | 1.73 | 1.68 (matchbook) | — | — | REJECT |
+| Norwich City v Queens Park Rangers | 2026-11-24T19:45 | over | 57.6% | 1.74 | 1.62 (grosvenor) | 61.7% | -6.7% | REJECT |
+| Hibernian v Dundee FC | 2026-11-24T19:45 | home | 57.1% | 1.75 | 1.67 (betfair) | 61.1% | -6.5% | REJECT |
+| Sheffield United v Southampton | 2026-11-24T19:45 | over | 56.8% | 1.76 | 1.73 (matchbook) | — | — | REJECT |
+| Portsmouth v West Ham United | 2026-11-24T19:45 | over | 54.2% | 1.85 | 1.84 (matchbook) | — | — | REJECT |
+| Bristol City v Wrexham AFC | 2026-11-24T19:45 | under | 53.1% | 1.88 | 1.83 (matchbook) | — | — | REJECT |
 
 ## Paper results (all time)
 
 Selections 4 · settled 4 · pending 0 · win rate 50.0% · avg P 64.3% · avg odds 1.60 · expected net +0.11u · realised net -0.85u · yield -21.2% · max DD 2.00u · longest losing streak 2
 
-Days evaluated 55 · no-bet days 51 (2026-09-30, 2026-10-01, 2026-10-02, 2026-10-03, 2026-10-04, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-08, 2026-10-09, 2026-10-10, 2026-10-11, 2026-10-12, 2026-10-14, 2026-10-16, 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21, 2026-10-22, 2026-10-23, 2026-10-24, 2026-10-25, 2026-10-26, 2026-10-27, 2026-10-28, 2026-10-29, 2026-10-30, 2026-10-31, 2026-11-01, 2026-11-02, 2026-11-03, 2026-11-04, 2026-11-05, 2026-11-06, 2026-11-07, 2026-11-08, 2026-11-09, 2026-11-11, 2026-11-12, 2026-11-13, 2026-11-14, 2026-11-15, 2026-11-16, 2026-11-17, 2026-11-18, 2026-11-19, 2026-11-20, 2026-11-21, 2026-11-22)
+Days evaluated 56 · no-bet days 52 (2026-09-30, 2026-10-01, 2026-10-02, 2026-10-03, 2026-10-04, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-08, 2026-10-09, 2026-10-10, 2026-10-11, 2026-10-12, 2026-10-14, 2026-10-16, 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21, 2026-10-22, 2026-10-23, 2026-10-24, 2026-10-25, 2026-10-26, 2026-10-27, 2026-10-28, 2026-10-29, 2026-10-30, 2026-10-31, 2026-11-01, 2026-11-02, 2026-11-03, 2026-11-04, 2026-11-05, 2026-11-06, 2026-11-07, 2026-11-08, 2026-11-09, 2026-11-11, 2026-11-12, 2026-11-13, 2026-11-14, 2026-11-15, 2026-11-16, 2026-11-17, 2026-11-18, 2026-11-19, 2026-11-20, 2026-11-21, 2026-11-22, 2026-11-23)
 
 ## Bankroll simulations (descriptive; small samples prove nothing)
 
