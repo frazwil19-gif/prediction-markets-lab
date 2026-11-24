@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T01:09:08.859473+00:00",
+ "generated_at": "2026-11-24T05:15:16.236013+00:00",
  "mode": "SHADOW (no ledger writes)",
  "football_data_sources": {
   "B1": "https://www.football-data.co.uk/mmz4281/2627/B1.csv",
@@ -19,7 +19,7 @@
   "SP1": "https://www.football-data.co.uk/mmz4281/2627/SP1.csv",
   "SP2": "https://www.football-data.co.uk/mmz4281/2627/SP2.csv"
  },
- "fd_results_loaded": 1865,
+ "fd_results_loaded": 2012,
  "fd_unresolved_names": [
   "AFC Wimbledon",
   "AZ Alkmaar",
@@ -540,15 +540,15 @@
   ]
  },
  "fd_internal_inconsistencies": 0,
- "fixture_comparisons_total": 192,
+ "fixture_comparisons_total": 196,
  "fixture_status_counts": {
   "NOT_FOUND": 177,
-  "MATCHED": 15
+  "MATCHED": 19
  },
  "disagreement_examples": [],
  "migration_gate": {
   "min_comparisons": 100,
-  "matched_comparisons": 15,
+  "matched_comparisons": 19,
   "score_disagreements": 0,
   "passed": false
  },
