@@ -1,7 +1,7 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-11-24T05:15:31.758701+00:00",
+ "generated_at": "2026-11-24T06:14:09.104356+00:00",
  "date": "2026-11-24",
  "summary": {
   "upcoming_events": 13,
@@ -29,35 +29,35 @@
    ">=95": 0
   },
   "settled_yesterday": 16,
-  "system": "DEGRADED",
+  "system": "HEALTHY",
   "api_credits_last_observed": 161
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-11-24T05:15:31.758701+00:00",
-  "overall": "DEGRADED",
-  "outage_flag": true,
+  "generated_at": "2026-11-24T06:14:09.104356+00:00",
+  "overall": "HEALTHY",
+  "outage_flag": false,
   "components": {
    "daily_scan": {
     "last": "2026-11-23T19:04:45.441634+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 10.2
+    "age_hours": 11.2
    },
    "settlement": {
-    "last": "2026-11-22T01:09:32.190444+00:00",
+    "last": "2026-11-24T05:15:32.998193+00:00",
     "status": "success",
-    "flag": "OUTAGE",
-    "age_hours": 52.1
+    "flag": "OK",
+    "age_hours": 1.0
    },
    "tennis_board": {
     "last": "2026-11-24T02:31:25.196377+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 2.7
+    "age_hours": 3.7
    },
    "ci_tests": {
-    "last": "2026-11-24T05:15:16.722257+00:00",
+    "last": "2026-11-24T06:13:55.202134+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -69,10 +69,8 @@
    "source": "nba_credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
-  "warnings": [
-   "settlement: OUTAGE (last 2026-11-22T01:09:32.190444+00:00)"
-  ],
-  "stale_data_warning": true
+  "warnings": [],
+  "stale_data_warning": false
  },
  "prospective_evidence": {
   "football_1x2.market_consensus": {
@@ -116,11 +114,11 @@
    "prospective_status": "COLLECTING",
    "money_eligible": true,
    "predictions": 224,
-   "settled_rows": 198,
+   "settled_rows": 209,
    "maturity": "EARLY",
-   "ge80_settled": 29,
-   "ge80_mean_pred": 0.8705418620689656,
-   "ge80_actual": 0.7586206896551724,
+   "ge80_settled": 31,
+   "ge80_mean_pred": 0.8688457741935484,
+   "ge80_actual": 0.7741935483870968,
    "alarm_review_required": false
   },
   "wta_match_winner.betfair_market": {
