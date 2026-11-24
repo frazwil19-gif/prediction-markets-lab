@@ -1,11 +1,11 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-11-24T16:16:37.833068+00:00",
+ "generated_at": "2026-11-24T18:44:48.992381+00:00",
  "date": "2026-11-24",
  "summary": {
   "upcoming_events": 17,
-  "valid_predictions": 101,
+  "valid_predictions": 102,
   "sports_active": [
    "basketball",
    "football"
@@ -34,30 +34,30 @@
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-11-24T16:16:37.833068+00:00",
+  "generated_at": "2026-11-24T18:44:48.992381+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
    "daily_scan": {
-    "last": "2026-11-24T07:16:40.541702+00:00",
+    "last": "2026-11-24T18:44:48.310018+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 9.0
+    "age_hours": 0.0
    },
    "settlement": {
     "last": "2026-11-24T05:15:32.998193+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 11.0
+    "age_hours": 13.5
    },
    "tennis_board": {
     "last": "2026-11-24T16:16:35.932146+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 0.0
+    "age_hours": 2.5
    },
    "ci_tests": {
-    "last": "2026-11-24T16:16:36.593821+00:00",
+    "last": "2026-11-24T18:44:48.890897+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
@@ -89,7 +89,7 @@
    "status": "VALIDATED_HISTORICAL",
    "prospective_status": "COLLECTING",
    "money_eligible": true,
-   "predictions": 217,
+   "predictions": 218,
    "settled_rows": 203,
    "maturity": "EARLY",
    "ge80_settled": 0,
@@ -198,14 +198,14 @@
  },
  "start_time_resolution": {
   "eligibility": {
-   "ELIGIBLE": 101,
+   "ELIGIBLE": 102,
    "EXCLUDED": 4189
   },
   "exclusion_reason": {
    "EVENT_STARTED": 4189
   },
   "start_time_status": {
-   "LEDGER_ONLY": 3782,
+   "LEDGER_ONLY": 3783,
    "RESCHEDULED": 276,
    "UNCHANGED": 232
   },
@@ -2688,6 +2688,48 @@
    "correct": "",
    "settlement_timestamp": "",
    "event_start_original": "2026-11-24T19:45:00+00:00",
+   "start_time_status": "LEDGER_ONLY",
+   "start_time_source": "unified_ledger.event_start"
+  },
+  {
+   "prediction_id": "b52b824847c6f32a",
+   "engine_id": "football_ou25.market",
+   "engine_version": "1",
+   "sport": "football",
+   "competition": "Championship",
+   "event_id": "",
+   "event_key": "football|Championship|Watford v Blackburn Rovers|2026-11-25T19:45:00+00:00",
+   "event_name": "Watford v Blackburn Rovers",
+   "event_start": "2026-11-25T19:45:00+00:00",
+   "market": "over_under_2_5",
+   "selection": "under",
+   "estimated_probability": "0.5027173913043478",
+   "fair_odds": "1.9891891891891893",
+   "probability_band": "50-54.9%",
+   "probability_source": "daily_scan totals 2.5 consensus",
+   "historical_support": "hist n=4640; holdout DONE; >=80% coverage 0.001; good | PENDING FIRST-ROW PASS E1 (Tier 1; recorded as shadow until verified): V2-18 reference",
+   "engine_status": "PROSPECTIVE_SHADOW_LEAGUE",
+   "data_quality": "OK",
+   "current_context_status": "NOT_MODELLED",
+   "configured_scan_time": "2026-11-24T07:00:00+00:00",
+   "actual_workflow_start": "2026-11-24T18:43:35Z",
+   "prediction_timestamp": "2026-11-24T18:44:43.521512+00:00",
+   "minutes_to_event": "1500.3",
+   "live_price": "1.91",
+   "live_price_source": "odds_api:William Hill",
+   "paper_status": "PAPER",
+   "prediction_valid": "True",
+   "single_eligible": "False",
+   "single_ineligible_reason": "prospective shadow league (not paper/money eligible)",
+   "multi_research_eligible": "False",
+   "snapshot_rule": "FIRST_SCAN_WITHIN_48H",
+   "origin": "daily_cards/2026-11-24/card.json",
+   "origin_prediction_id": "",
+   "settlement_status": "",
+   "result": "",
+   "correct": "",
+   "settlement_timestamp": "",
+   "event_start_original": "2026-11-25T19:45:00+00:00",
    "start_time_status": "LEDGER_ONLY",
    "start_time_source": "unified_ledger.event_start"
   },
