@@ -1,7 +1,7 @@
 {
  "board_schema_version": 2,
  "product": "PREDICTION_BOARD (paper; not a betting card)",
- "generated_at": "2026-11-24T07:16:41.453713+00:00",
+ "generated_at": "2026-11-24T16:16:37.833068+00:00",
  "date": "2026-11-24",
  "summary": {
   "upcoming_events": 17,
@@ -30,11 +30,11 @@
   },
   "settled_yesterday": 16,
   "system": "HEALTHY",
-  "api_credits_last_observed": 161
+  "api_credits_last_observed": 153
  },
  "default_view_min_probability": 0.8,
  "health": {
-  "generated_at": "2026-11-24T07:16:41.453713+00:00",
+  "generated_at": "2026-11-24T16:16:37.833068+00:00",
   "overall": "HEALTHY",
   "outage_flag": false,
   "components": {
@@ -42,31 +42,31 @@
     "last": "2026-11-24T07:16:40.541702+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 0.0
+    "age_hours": 9.0
    },
    "settlement": {
     "last": "2026-11-24T05:15:32.998193+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 2.0
+    "age_hours": 11.0
    },
    "tennis_board": {
-    "last": "2026-11-24T02:31:25.196377+00:00",
+    "last": "2026-11-24T16:16:35.932146+00:00",
     "status": "success",
     "flag": "OK",
-    "age_hours": 4.8
+    "age_hours": 0.0
    },
    "ci_tests": {
-    "last": "2026-11-24T07:16:41.351077+00:00",
+    "last": "2026-11-24T16:16:36.593821+00:00",
     "status": "success",
     "flag": "OK",
     "age_hours": 0.0
    }
   },
   "api_credits": {
-   "remaining": 161,
-   "observed_at": "2026-11-24T02:31:26.874204+00:00",
-   "source": "nba_credit_log.csv",
+   "remaining": 153,
+   "observed_at": "2026-11-24T16:16:35.932065+00:00",
+   "source": "credit_log.csv",
    "note": "last value seen by a logging consumer; daily_scan does not log credits"
   },
   "warnings": [],
