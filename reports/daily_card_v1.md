@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-11-24T18:44Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-24T19:06Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 102 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 27 · research predictions: 0
+Predictions in the next window: 102 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 27 · research predictions: 56
 
 ## 1. Best predictions today
 
@@ -101,4 +101,61 @@ ENGINE_STATUS_INELIGIBLE 99 · P_BELOW_FLOOR 43 · NO_EXECUTABLE_PRICE 42 · NET
 
 _Model probabilities from research engines. Shown for information and to build a prospective record; they are NOT betting recommendations._
 
-None in the window (corners collector lists no covered-league fixtures yet).
+| Event | Start | Market | Selection | P | Model fair odds | Model | Status |
+|---|---|---|---|---|---|---|---|
+| Cardiff v Preston (E1) | 2026-11-24 | total_corners | over 8.5 | 75.6% | 1.32 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Rangers v Aberdeen (SC0) | 2026-11-24 | total_corners | over 8.5 | 73.8% | 1.36 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Stoke v Millwall (E1) | 2026-11-25 | total_corners | over 8.5 | 73.1% | 1.37 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Burnley v Birmingham (E1) | 2026-11-25 | total_corners | under 11.5 | 72.6% | 1.38 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Norwich v QPR (E1) | 2026-11-24 | total_corners | under 11.5 | 72.2% | 1.39 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Wolves v Derby (E1) | 2026-11-24 | total_corners | over 8.5 | 71.5% | 1.40 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bolton v West Brom (E1) | 2026-11-25 | total_corners | over 8.5 | 71.2% | 1.40 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Hibernian v Dundee (SC0) | 2026-11-24 | total_corners | over 8.5 | 70.0% | 1.43 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Middlesbrough v Swansea (E1) | 2026-11-24 | total_corners | over 8.5 | 69.0% | 1.45 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Charlton v Lincoln (E1) | 2026-11-24 | total_corners | over 8.5 | 68.9% | 1.45 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bristol City v Wrexham (E1) | 2026-11-24 | total_corners | over 8.5 | 68.8% | 1.45 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Portsmouth v West Ham (E1) | 2026-11-24 | total_corners | over 8.5 | 68.6% | 1.46 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sheffield United v Southampton (E1) | 2026-11-24 | total_corners | over 8.5 | 67.6% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Watford v Blackburn (E1) | 2026-11-25 | total_corners | over 8.5 | 67.4% | 1.48 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Watford v Blackburn (E1) | 2026-11-25 | total_corners | under 11.5 | 66.9% | 1.49 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sheffield United v Southampton (E1) | 2026-11-24 | total_corners | under 11.5 | 66.8% | 1.50 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Portsmouth v West Ham (E1) | 2026-11-24 | total_corners | under 11.5 | 65.8% | 1.52 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bristol City v Wrexham (E1) | 2026-11-24 | total_corners | under 11.5 | 65.4% | 1.53 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Cardiff v Preston (E1) | 2026-11-24 | total_corners | over 9.5 | 65.3% | 1.53 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Charlton v Lincoln (E1) | 2026-11-24 | total_corners | under 11.5 | 65.0% | 1.54 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Middlesbrough v Swansea (E1) | 2026-11-24 | total_corners | under 11.5 | 64.6% | 1.55 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Hibernian v Dundee (SC0) | 2026-11-24 | total_corners | under 11.5 | 64.1% | 1.56 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Rangers v Aberdeen (SC0) | 2026-11-24 | total_corners | over 9.5 | 63.5% | 1.57 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bolton v West Brom (E1) | 2026-11-25 | total_corners | under 11.5 | 62.5% | 1.60 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Burnley v Birmingham (E1) | 2026-11-25 | total_corners | under 10.5 | 62.4% | 1.60 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Stoke v Millwall (E1) | 2026-11-25 | total_corners | over 9.5 | 62.4% | 1.60 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Norwich v QPR (E1) | 2026-11-24 | total_corners | over 8.5 | 62.1% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Wolves v Derby (E1) | 2026-11-24 | total_corners | under 11.5 | 62.0% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Norwich v QPR (E1) | 2026-11-24 | total_corners | under 10.5 | 61.9% | 1.61 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Burnley v Birmingham (E1) | 2026-11-25 | total_corners | over 8.5 | 61.6% | 1.62 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Wolves v Derby (E1) | 2026-11-24 | total_corners | over 9.5 | 60.5% | 1.65 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bolton v West Brom (E1) | 2026-11-25 | total_corners | over 9.5 | 60.1% | 1.66 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Stoke v Millwall (E1) | 2026-11-25 | total_corners | under 11.5 | 59.9% | 1.67 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Hibernian v Dundee (SC0) | 2026-11-24 | total_corners | over 9.5 | 58.7% | 1.70 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Rangers v Aberdeen (SC0) | 2026-11-24 | total_corners | under 11.5 | 58.1% | 1.72 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Middlesbrough v Swansea (E1) | 2026-11-24 | total_corners | over 9.5 | 57.7% | 1.73 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Charlton v Lincoln (E1) | 2026-11-24 | total_corners | over 9.5 | 57.5% | 1.74 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bristol City v Wrexham (E1) | 2026-11-24 | total_corners | over 9.5 | 57.0% | 1.75 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Portsmouth v West Ham (E1) | 2026-11-24 | total_corners | over 9.5 | 56.9% | 1.76 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Cardiff v Preston (E1) | 2026-11-24 | total_corners | under 11.5 | 56.8% | 1.76 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Watford v Blackburn (E1) | 2026-11-25 | total_corners | under 10.5 | 56.2% | 1.78 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sheffield United v Southampton (E1) | 2026-11-24 | total_corners | under 10.5 | 56.0% | 1.79 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Sheffield United v Southampton (E1) | 2026-11-24 | total_corners | over 9.5 | 55.7% | 1.79 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Watford v Blackburn (E1) | 2026-11-25 | total_corners | over 9.5 | 55.6% | 1.80 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Portsmouth v West Ham (E1) | 2026-11-24 | total_corners | under 10.5 | 55.1% | 1.82 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bristol City v Wrexham (E1) | 2026-11-24 | total_corners | under 10.5 | 54.7% | 1.83 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Charlton v Lincoln (E1) | 2026-11-24 | total_corners | under 10.5 | 54.3% | 1.84 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Cardiff v Preston (E1) | 2026-11-24 | total_corners | over 10.5 | 54.3% | 1.84 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Middlesbrough v Swansea (E1) | 2026-11-24 | total_corners | under 10.5 | 53.7% | 1.86 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Hibernian v Dundee (SC0) | 2026-11-24 | total_corners | under 10.5 | 52.9% | 1.89 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Rangers v Aberdeen (SC0) | 2026-11-24 | total_corners | over 10.5 | 52.8% | 1.89 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Bolton v West Brom (E1) | 2026-11-25 | total_corners | under 10.5 | 51.4% | 1.94 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Stoke v Millwall (E1) | 2026-11-25 | total_corners | over 10.5 | 51.1% | 1.96 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Wolves v Derby (E1) | 2026-11-24 | total_corners | under 10.5 | 50.8% | 1.97 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Burnley v Birmingham (E1) | 2026-11-25 | total_corners | under 9.5 | 50.4% | 1.99 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
+| Norwich v QPR (E1) | 2026-11-24 | total_corners | under 9.5 | 50.4% | 1.99 | corners-A-1.0 | RESEARCH — NOT MONEY ELIGIBLE |
