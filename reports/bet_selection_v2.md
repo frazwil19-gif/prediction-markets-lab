@@ -4,9 +4,9 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-25T16:16Z · events scanned 13 · valid predictions 38 · high-P (≥70%) 7 · priced 23 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 38 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-25T17:52Z · events scanned 13 · valid predictions 38 · high-P (≥70%) 7 · priced 24 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 38 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 29 · NET_EV_NOT_POSITIVE 22 · PRICE_STALE 17 · P_BELOW_FLOOR 13 · NO_EXECUTABLE_PRICE 12 · COMMISSION_UNKNOWN 3
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 29 · NET_EV_NOT_POSITIVE 22 · P_BELOW_FLOOR 13 · NO_EXECUTABLE_PRICE 12 · COMMISSION_UNKNOWN 2 · PRICE_STALE 1
 
 ## Candidates (latest run, best price per prediction)
 
@@ -29,27 +29,27 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 29 · NET_EV_NOT_POSITIVE 22
 | Chicago Bulls @ Charlotte Hornets | 2026-11-26T00:10 | Charlotte Hornets | 58.0% | 1.72 | 1.67 (williamhill) | 59.9% | -3.2% | REJECT |
 | Stoke City v Millwall | 2026-11-25T20:00 | X2 | 57.7% | 1.73 | — | — | — | REJECT |
 | San Antonio Spurs @ Portland Trail Blazers | 2026-11-26T03:10 | San Antonio Spurs | 56.5% | 1.77 | 1.71 (betway) | 58.5% | -3.3% | REJECT |
-| Bolton Wanderers v West Bromwich Albion | 2026-11-25T19:45 | over | 54.7% | 1.83 | 1.75 (grosvenor) | 57.1% | -4.3% | REJECT |
-| Burnley v Birmingham City | 2026-11-25T19:45 | over | 54.3% | 1.84 | 1.82 (matchbook) | — | — | REJECT |
+| Burnley v Birmingham City | 2026-11-25T19:45 | over | 54.1% | 1.85 | 1.81 (matchbook) | — | — | REJECT |
 | Minnesota Timberwolves @ Oklahoma City Thunder | 2026-11-26T00:40 | Oklahoma City Thunder | 53.4% | 1.87 | 1.82 (smarkets) | 55.4% | -3.8% | REJECT |
+| Bolton Wanderers v West Bromwich Albion | 2026-11-25T19:45 | over | 53.3% | 1.88 | 1.77 (leovegas) | 56.5% | -5.7% | REJECT |
+| Watford v Blackburn Rovers | 2026-11-25T19:45 | under | 53.0% | 1.89 | 1.88 (grosvenor) | 53.2% | -0.4% | REJECT |
 | Bolton Wanderers v West Bromwich Albion | 2026-11-25T19:45 | 1X | 52.7% | 1.90 | — | — | — | REJECT |
+| Stoke City v Millwall | 2026-11-25T20:00 | under | 52.6% | 1.90 | 1.83 (grosvenor) | 54.6% | -3.7% | REJECT |
 | Miami Heat @ Philadelphia 76ers | 2026-11-25T22:10 | Philadelphia 76ers | 52.5% | 1.91 | 1.89 (smarkets) | 53.4% | -1.8% | REJECT |
 | Brooklyn Nets @ Milwaukee Bucks | 2026-11-26T01:10 | Milwaukee Bucks | 52.1% | 1.92 | 1.90 (smarkets) | 53.1% | -1.9% | REJECT |
-| Stoke City v Millwall | 2026-11-25T20:00 | under | 52.0% | 1.92 | 1.91 (william hill) | 52.4% | -0.7% | REJECT |
-| Watford v Blackburn Rovers | 2026-11-25T19:45 | under | 50.3% | 1.99 | 1.91 (william hill) | 52.4% | -4.0% | REJECT |
-| Watford v Blackburn Rovers | 2026-11-25T19:45 | over | 49.7% | 2.01 | 1.98 (matchbook) | — | — | REJECT |
-| Bolton Wanderers v West Bromwich Albion | 2026-11-25T19:45 | away | 46.9% | 2.13 | 2.06 (smarkets) | 49.0% | -4.4% | REJECT |
-| Stoke City v Millwall | 2026-11-25T20:00 | home | 41.9% | 2.39 | 2.32 (smarkets) | 43.6% | -3.9% | REJECT |
-| Burnley v Birmingham City | 2026-11-25T19:45 | away | 38.4% | 2.61 | 2.56 (betfair) | 40.3% | -4.8% | REJECT |
-| Watford v Blackburn Rovers | 2026-11-25T19:45 | home | 37.8% | 2.64 | 2.60 (smarkets) | 38.9% | -2.9% | REJECT |
-| Burnley v Birmingham City | 2026-11-25T19:45 | home | 34.8% | 2.87 | 2.94 (betfair) | 35.2% | -1.1% | REJECT |
-| Watford v Blackburn Rovers | 2026-11-25T19:45 | away | 34.4% | 2.91 | 2.92 (smarkets) | 34.7% | -1.0% | REJECT |
-| Stoke City v Millwall | 2026-11-25T20:00 | away | 30.0% | 3.33 | 3.55 (matchbook) | — | — | REJECT |
-| Stoke City v Millwall | 2026-11-25T20:00 | draw | 28.2% | 3.54 | 3.45 (smarkets) | 29.4% | -4.0% | REJECT |
-| Watford v Blackburn Rovers | 2026-11-25T19:45 | draw | 27.9% | 3.58 | 3.55 (betfair) | 29.2% | -4.4% | REJECT |
-| Burnley v Birmingham City | 2026-11-25T19:45 | draw | 26.8% | 3.72 | 3.60 (betfair) | 28.8% | -6.8% | REJECT |
-| Bolton Wanderers v West Bromwich Albion | 2026-11-25T19:45 | home | 26.8% | 3.73 | 3.80 (smarkets) | 26.7% | 0.5% | REJECT |
-| Bolton Wanderers v West Bromwich Albion | 2026-11-25T19:45 | draw | 26.1% | 3.83 | 3.85 (smarkets) | 26.4% | -0.9% | REJECT |
+| Bolton Wanderers v West Bromwich Albion | 2026-11-25T19:45 | away | 49.4% | 2.03 | 2.00 (virgin bet) | 50.0% | -1.2% | REJECT |
+| Watford v Blackburn Rovers | 2026-11-25T19:45 | over | 47.0% | 2.13 | 2.12 (matchbook) | — | — | REJECT |
+| Stoke City v Millwall | 2026-11-25T20:00 | home | 45.1% | 2.22 | 2.18 (betfair) | 47.1% | -4.4% | REJECT |
+| Burnley v Birmingham City | 2026-11-25T19:45 | away | 40.8% | 2.45 | 2.42 (smarkets) | 41.8% | -2.4% | REJECT |
+| Watford v Blackburn Rovers | 2026-11-25T19:45 | home | 38.1% | 2.62 | 2.62 (betfair) | 39.4% | -3.2% | REJECT |
+| Watford v Blackburn Rovers | 2026-11-25T19:45 | away | 35.2% | 2.84 | 2.80 (betfair) | 36.9% | -4.6% | REJECT |
+| Burnley v Birmingham City | 2026-11-25T19:45 | home | 32.5% | 3.07 | 3.05 (smarkets) | 33.2% | -2.1% | REJECT |
+| Watford v Blackburn Rovers | 2026-11-25T19:45 | draw | 28.5% | 3.51 | 3.45 (betfair) | 30.1% | -5.3% | REJECT |
+| Stoke City v Millwall | 2026-11-25T20:00 | draw | 28.2% | 3.55 | 3.50 (smarkets) | 29.0% | -2.7% | REJECT |
+| Burnley v Birmingham City | 2026-11-25T19:45 | draw | 26.7% | 3.74 | 3.75 (betfair) | 27.7% | -3.4% | REJECT |
+| Stoke City v Millwall | 2026-11-25T20:00 | away | 26.6% | 3.76 | 3.85 (smarkets) | 26.4% | 1.0% | REJECT |
+| Bolton Wanderers v West Bromwich Albion | 2026-11-25T19:45 | draw | 26.1% | 3.83 | 3.80 (betfair) | 27.3% | -4.5% | REJECT |
+| Bolton Wanderers v West Bromwich Albion | 2026-11-25T19:45 | home | 24.5% | 4.08 | 4.20 (smarkets) | 24.2% | 1.5% | REJECT |
 
 ## Paper results (all time)
 

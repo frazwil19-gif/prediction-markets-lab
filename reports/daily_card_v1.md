@@ -1,4 +1,4 @@
-# Daily Prediction Board & Bet Card — 2026-11-25T16:16Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-25T17:52Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
@@ -27,15 +27,15 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | 15 | basketball | Chicago Bulls @ Charlotte Hornets | 2026-11-26T00:10 | moneyline | Charlotte Hornets | 58.0% | 50%+ | 1.5% | VALIDATED | 1.72 | 1.67 (williamhill) | no |
 | 16 | football | Stoke City v Millwall | 2026-11-25T20:00 | double_chance | X2 | 57.7% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.73 | no price | no |
 | 17 | basketball | San Antonio Spurs @ Portland Trail Blazers | 2026-11-26T03:10 | moneyline | San Antonio Spurs | 56.5% | 50%+ | 1.5% | VALIDATED | 1.77 | 1.71 (betway) | no |
-| 18 | football | Bolton Wanderers v West Bromwich Albion | 2026-11-25T19:45 | over_under_2_5 | over | 55.7% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.80 | price not usable (stale/wide/unknown commission) | no |
+| 18 | football | Bolton Wanderers v West Bromwich Albion | 2026-11-25T19:45 | over_under_2_5 | over | 55.7% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.80 | 1.77 (leovegas) | no |
 | 19 | football | Burnley v Birmingham City | 2026-11-25T19:45 | over_under_2_5 | over | 55.6% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.80 | price not usable (stale/wide/unknown commission) | no |
 | 20 | basketball | Minnesota Timberwolves @ Oklahoma City Thunder | 2026-11-26T00:40 | moneyline | Oklahoma City Thunder | 53.4% | 50%+ | 1.5% | VALIDATED | 1.87 | 1.82 (smarkets) | no |
 | 21 | football | Bolton Wanderers v West Bromwich Albion | 2026-11-25T19:45 | double_chance | 1X | 52.7% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.90 | no price | no |
 | 22 | basketball | Miami Heat @ Philadelphia 76ers | 2026-11-25T22:10 | moneyline | Philadelphia 76ers | 52.5% | 50%+ | 1.5% | VALIDATED | 1.91 | 1.89 (smarkets) | no |
 | 23 | basketball | Brooklyn Nets @ Milwaukee Bucks | 2026-11-26T01:10 | moneyline | Milwaukee Bucks | 52.1% | 50%+ | 1.5% | VALIDATED | 1.92 | 1.90 (smarkets) | no |
-| 24 | football | Stoke City v Millwall | 2026-11-25T20:00 | over_under_2_5 | under | 51.6% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.94 | price not usable (stale/wide/unknown commission) | no |
+| 24 | football | Stoke City v Millwall | 2026-11-25T20:00 | over_under_2_5 | under | 51.6% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.94 | 1.83 (grosvenor) | no |
 | 25 | football | Watford v Blackburn Rovers | 2026-11-25T19:45 | over_under_2_5 | over | 50.9% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.96 | price not usable (stale/wide/unknown commission) | no |
-| 26 | football | Watford v Blackburn Rovers | 2026-11-25T19:45 | over_under_2_5 | under | 50.3% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.99 | price not usable (stale/wide/unknown commission) | no |
+| 26 | football | Watford v Blackburn Rovers | 2026-11-25T19:45 | over_under_2_5 | under | 50.3% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.99 | 1.88 (grosvenor) | no |
 
 ## 2. Qualified paper bets (simulated stakes, recorded automatically)
 
@@ -61,7 +61,7 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 29 · NET_EV_NOT_POSITIVE 22 · PRICE_STALE 17 · P_BELOW_FLOOR 13 · NO_EXECUTABLE_PRICE 12 · COMMISSION_UNKNOWN 3
+ENGINE_STATUS_INELIGIBLE 29 · NET_EV_NOT_POSITIVE 22 · P_BELOW_FLOOR 13 · NO_EXECUTABLE_PRICE 12 · COMMISSION_UNKNOWN 2 · PRICE_STALE 1
 
 ## 4. Research predictions — not money eligible
 
