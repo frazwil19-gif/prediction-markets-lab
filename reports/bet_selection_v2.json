@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-11-25T07:16:36.756763+00:00",
+ "generated_at": "2026-11-25T16:16:29.619397+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-4",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 169,
+  "runs": 170,
   "totals_over_runs": {
-   "events_scanned": 5500,
-   "valid_predictions": 20160,
-   "high_p_candidates": 5733,
-   "priced_candidates": 10303,
+   "events_scanned": 5513,
+   "valid_predictions": 20198,
+   "high_p_candidates": 5740,
+   "priced_candidates": 10326,
    "PAPER_BET": 23,
    "MULTI_RESEARCH_ELIGIBLE": 240,
    "WATCH": 78,
-   "REJECT": 20223,
+   "REJECT": 20261,
    "paper_bets_added": 13,
    "money_card_qualified": 15
   },
@@ -84,35 +84,38 @@
   }
  },
  "latest_run": {
-  "run_at": "2026-11-25T07:16:36.756763+00:00",
+  "run_at": "2026-11-25T16:16:29.619397+00:00",
   "trigger": "workflow_dispatch",
   "rule_version": "bsv2-4",
-  "events_scanned": "4",
-  "valid_predictions": "29",
-  "high_p_candidates": "6",
-  "priced_candidates": "14",
+  "events_scanned": "13",
+  "valid_predictions": "38",
+  "high_p_candidates": "7",
+  "priced_candidates": "23",
   "PAPER_BET": "0",
   "MULTI_RESEARCH_ELIGIBLE": "0",
   "WATCH": "0",
-  "REJECT": "29",
+  "REJECT": "38",
   "paper_bets_added": "0",
-  "snapshots_added": "17",
+  "snapshots_added": "9",
   "money_card_qualified": "0",
   "football_fixtures_on_card": "16"
  },
  "latest_decisions": {
   "decisions": {
-   "REJECT": 29
+   "REJECT": 38
   },
   "reason_counts": {
    "ENGINE_STATUS_INELIGIBLE": 29,
+   "NET_EV_NOT_POSITIVE": 22,
+   "PRICE_STALE": 17,
    "P_BELOW_FLOOR": 13,
-   "NET_EV_NOT_POSITIVE": 13,
    "NO_EXECUTABLE_PRICE": 12,
-   "COMMISSION_UNKNOWN": 3,
-   "PRICE_STALE": 1
+   "COMMISSION_UNKNOWN": 3
   },
   "by_sport": {
+   "basketball": {
+    "REJECT": 9
+   },
    "football": {
     "REJECT": 29
    }
@@ -126,6 +129,9 @@
    },
    "football_ou25.market": {
     "REJECT": 5
+   },
+   "nba_moneyline.market": {
+    "REJECT": 9
    }
   }
  },
