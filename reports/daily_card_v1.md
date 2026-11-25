@@ -1,4 +1,4 @@
-# Daily Prediction Board & Bet Card — 2026-11-25T04:59Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-25T07:16Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
@@ -21,10 +21,10 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | 9 | football | Watford v Blackburn Rovers | 2026-11-25T19:45 | double_chance | X2 | 62.3% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.61 | no price | no |
 | 10 | football | Burnley v Birmingham City | 2026-11-25T19:45 | double_chance | 1X | 61.8% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.62 | no price | no |
 | 11 | football | Stoke City v Millwall | 2026-11-25T20:00 | double_chance | X2 | 57.7% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.73 | no price | no |
-| 12 | football | Bolton Wanderers v West Bromwich Albion | 2026-11-25T19:45 | over_under_2_5 | over | 55.7% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.80 | price not usable (stale/wide/unknown commission) | no |
+| 12 | football | Bolton Wanderers v West Bromwich Albion | 2026-11-25T19:45 | over_under_2_5 | over | 55.7% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.80 | 1.75 (grosvenor) | no |
 | 13 | football | Burnley v Birmingham City | 2026-11-25T19:45 | over_under_2_5 | over | 55.6% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.80 | price not usable (stale/wide/unknown commission) | no |
 | 14 | football | Bolton Wanderers v West Bromwich Albion | 2026-11-25T19:45 | double_chance | 1X | 52.7% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.90 | no price | no |
-| 15 | football | Stoke City v Millwall | 2026-11-25T20:00 | over_under_2_5 | under | 51.6% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.94 | price not usable (stale/wide/unknown commission) | no |
+| 15 | football | Stoke City v Millwall | 2026-11-25T20:00 | over_under_2_5 | under | 51.6% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.94 | 1.91 (william hill) | no |
 | 16 | football | Watford v Blackburn Rovers | 2026-11-25T19:45 | over_under_2_5 | over | 50.9% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.96 | price not usable (stale/wide/unknown commission) | no |
 | 17 | football | Watford v Blackburn Rovers | 2026-11-25T19:45 | over_under_2_5 | under | 50.3% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.99 | price not usable (stale/wide/unknown commission) | no |
 
@@ -51,7 +51,7 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 29 · NET_EV_NOT_POSITIVE 15 · P_BELOW_FLOOR 13 · NO_EXECUTABLE_PRICE 12 · COMMISSION_UNKNOWN 2 · PRICE_STALE 2
+ENGINE_STATUS_INELIGIBLE 29 · NET_EV_NOT_POSITIVE 13 · P_BELOW_FLOOR 13 · NO_EXECUTABLE_PRICE 12 · COMMISSION_UNKNOWN 3 · PRICE_STALE 1
 
 ## 4. Research predictions — not money eligible
 
