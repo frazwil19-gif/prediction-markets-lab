@@ -1,24 +1,16 @@
-# DAILY PREDICTION BOARD — 2026-11-24
+# DAILY PREDICTION BOARD — 2026-11-25
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 17 · Valid predictions: 102 · Sports: basketball, football
-Counts: >=70: 27 · >=75: 12 · >=80: 9 · >=85: 2 · >=90: 1 · >=95: 0
-Settled yesterday: 16 · System: **HEALTHY** · API credits (last observed): 153
+Upcoming events: 4 · Valid predictions: 29 · Sports: football
+Counts: >=70: 6 · >=75: 0 · >=80: 0 · >=85: 0 · >=90: 0 · >=95: 0
+Settled yesterday: 233 · System: **HEALTHY** · API credits (last observed): 153
 
 ## Top predictions (P ≥ 80%)
 
 | Sport | Event | Start (UTC) | Market | Selection | P | Fair | Band | Engine | Evidence | Price (source) | Single | Multi-research |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| football | Rangers v Aberdeen | 2026-11-24T20:00 | double_chance | 1X | 90.5% | 1.10 | 90-94.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.08 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Wolverhampton Wanderers v Derby County | 2026-11-24T20:00 | double_chance | 1X | 89.0% | 1.12 | 85-89.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.09 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Middlesbrough v Swansea City | 2026-11-24T19:45 | double_chance | 1X | 84.7% | 1.18 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.16 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Rangers v Aberdeen | 2026-11-24T20:00 | double_chance | 12 | 84.4% | 1.18 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.16 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Cardiff City v Preston North End | 2026-11-24T19:45 | double_chance | 1X | 82.3% | 1.21 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Wolverhampton Wanderers v Derby County | 2026-11-24T20:00 | double_chance | 12 | 82.3% | 1.22 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.19 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Cardiff City v Preston North End | 2026-11-24T19:45 | double_chance | 12 | 80.2% | 1.25 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.23 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Middlesbrough v Swansea City | 2026-11-24T19:45 | double_chance | 12 | 80.2% | 1.25 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.23 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
-| football | Hibernian v Dundee FC | 2026-11-24T19:45 | double_chance | 1X | 80.2% | 1.25 | 80-84.9% | football_double_chance.derived_1x2@1 | PROSPECTIVE_SHADOW_LEAGUE | 1.21 (SYNTHETIC_DUTCH_BEST_1X2) | no | yes |
+| — | no upcoming prediction at this level | | | | | | | | | | | |
 
 ## Prospective evidence
 
@@ -39,7 +31,7 @@ Settled yesterday: 16 · System: **HEALTHY** · API credits (last observed): 153
 - daily_scan: OK (last 2026-11-24T18:44:48.310018+00:00)
 - settlement: OK (last 2026-11-24T05:15:32.998193+00:00)
 - tennis_board: OK (last 2026-11-24T16:16:35.932146+00:00)
-- ci_tests: OK (last 2026-11-24T18:44:48.890897+00:00)
+- ci_tests: OK (last 2026-11-25T04:05:09.713131+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 

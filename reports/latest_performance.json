@@ -1,87 +1,103 @@
 {
   "starting_bankroll_gbp": 10.0,
   "current_paper_bankroll_gbp": 10.0,
-  "pending_bet_count": 24,
+  "pending_bet_count": 18,
   "paper_universe_note": "overall/by_grade/by_sport/by_competition/by_market/by_odds_band above cover the BROAD paper-research candidate universe -- every A+/A/B graded candidate recorded to the ledger, whether or not it passed real-money qualification. See money_strategy below for the narrower, selective real-money strategy's own forward performance; the two are never mixed together in any calculation here.",
   "overall": {
-    "bet_count": 214,
-    "decided_count": 214,
-    "win_rate": 0.22429906542056074,
-    "expected_win_rate": 0.2493041508823086,
-    "average_odds": 5.079018691588787,
-    "total_staked_gbp": 0.0,
-    "total_pnl_gbp": 0.0,
-    "roi_yield": null,
-    "brier_score": 0.16372110973113288,
-    "log_loss": 0.5048425945989085,
+    "bet_count": 226,
+    "decided_count": 226,
+    "win_rate": 0.22123893805309736,
+    "expected_win_rate": 0.2477901031467753,
+    "average_odds": 5.116637168141594,
+    "total_staked_gbp": 0.25,
+    "total_pnl_gbp": -0.25,
+    "roi_yield": -1.0,
+    "brier_score": 0.16327535545882307,
+    "log_loss": 0.503584436661585,
     "calibration_bins": [
       {
-        "n": 42,
-        "mean_predicted_probability": 0.12744283458216296,
-        "observed_frequency": 0.14285714285714285
+        "n": 45,
+        "mean_predicted_probability": 0.12717091678326958,
+        "observed_frequency": 0.13333333333333333
       },
       {
-        "n": 43,
-        "mean_predicted_probability": 0.19326265521730765,
-        "observed_frequency": 0.20930232558139536
+        "n": 45,
+        "mean_predicted_probability": 0.19125394961453668,
+        "observed_frequency": 0.2
       },
       {
-        "n": 43,
-        "mean_predicted_probability": 0.23556943461769106,
-        "observed_frequency": 0.11627906976744186
+        "n": 45,
+        "mean_predicted_probability": 0.23308060419166543,
+        "observed_frequency": 0.15555555555555556
       },
       {
-        "n": 43,
-        "mean_predicted_probability": 0.2792460081808763,
-        "observed_frequency": 0.32558139534883723
+        "n": 45,
+        "mean_predicted_probability": 0.2774162386943255,
+        "observed_frequency": 0.3111111111111111
       },
       {
-        "n": 43,
-        "mean_predicted_probability": 0.40816583771350107,
-        "observed_frequency": 0.32558139534883723
+        "n": 46,
+        "mean_predicted_probability": 0.40650187811739846,
+        "observed_frequency": 0.30434782608695654
       }
     ],
-    "max_drawdown_gbp": 0.0,
+    "max_drawdown_gbp": 0.25,
     "longest_losing_streak": 15,
     "clv_note": "not yet populated -- closing_odds_if_available is currently blank on live rows; see docs/HISTORICAL_PRICE_AND_CLV_LIMITATIONS.md"
   },
   "by_grade": {
+    "A": {
+      "bet_count": 1,
+      "decided_count": 1,
+      "win_rate": 0.0,
+      "expected_win_rate": 0.43217286914765907,
+      "average_odds": 2.5,
+      "total_staked_gbp": 0.25,
+      "total_pnl_gbp": -0.25,
+      "roi_yield": -1.0,
+      "brier_score": 0.18677338882731964,
+      "log_loss": 0.5659382536749097,
+      "calibration_bins": null,
+      "max_drawdown_gbp": 0.25,
+      "longest_losing_streak": 1,
+      "clv_note": "not yet populated -- closing_odds_if_available is currently blank on live rows; see docs/HISTORICAL_PRICE_AND_CLV_LIMITATIONS.md"
+    },
     "B": {
-      "bet_count": 214,
-      "decided_count": 214,
-      "win_rate": 0.22429906542056074,
-      "expected_win_rate": 0.2493041508823086,
-      "average_odds": 5.079018691588787,
+      "bet_count": 225,
+      "decided_count": 225,
+      "win_rate": 0.2222222222222222,
+      "expected_win_rate": 0.2469706241867714,
+      "average_odds": 5.128266666666668,
       "total_staked_gbp": 0.0,
       "total_pnl_gbp": 0.0,
       "roi_yield": null,
-      "brier_score": 0.16372110973113288,
-      "log_loss": 0.5048425945989085,
+      "brier_score": 0.1631709197549631,
+      "log_loss": 0.5033073085859703,
       "calibration_bins": [
         {
-          "n": 42,
-          "mean_predicted_probability": 0.12744283458216296,
-          "observed_frequency": 0.14285714285714285
+          "n": 45,
+          "mean_predicted_probability": 0.12717091678326958,
+          "observed_frequency": 0.13333333333333333
         },
         {
-          "n": 43,
-          "mean_predicted_probability": 0.19326265521730765,
-          "observed_frequency": 0.20930232558139536
+          "n": 45,
+          "mean_predicted_probability": 0.19125394961453668,
+          "observed_frequency": 0.2
         },
         {
-          "n": 43,
-          "mean_predicted_probability": 0.23556943461769106,
-          "observed_frequency": 0.11627906976744186
+          "n": 45,
+          "mean_predicted_probability": 0.23308060419166543,
+          "observed_frequency": 0.15555555555555556
         },
         {
-          "n": 43,
-          "mean_predicted_probability": 0.2792460081808763,
-          "observed_frequency": 0.32558139534883723
+          "n": 45,
+          "mean_predicted_probability": 0.2774162386943255,
+          "observed_frequency": 0.3111111111111111
         },
         {
-          "n": 43,
-          "mean_predicted_probability": 0.40816583771350107,
-          "observed_frequency": 0.32558139534883723
+          "n": 45,
+          "mean_predicted_probability": 0.40593141165005936,
+          "observed_frequency": 0.3111111111111111
         }
       ],
       "max_drawdown_gbp": 0.0,
@@ -91,88 +107,88 @@
   },
   "by_sport": {
     "football": {
-      "bet_count": 214,
-      "decided_count": 214,
-      "win_rate": 0.22429906542056074,
-      "expected_win_rate": 0.2493041508823086,
-      "average_odds": 5.079018691588787,
-      "total_staked_gbp": 0.0,
-      "total_pnl_gbp": 0.0,
-      "roi_yield": null,
-      "brier_score": 0.16372110973113288,
-      "log_loss": 0.5048425945989085,
+      "bet_count": 226,
+      "decided_count": 226,
+      "win_rate": 0.22123893805309736,
+      "expected_win_rate": 0.2477901031467753,
+      "average_odds": 5.116637168141594,
+      "total_staked_gbp": 0.25,
+      "total_pnl_gbp": -0.25,
+      "roi_yield": -1.0,
+      "brier_score": 0.16327535545882307,
+      "log_loss": 0.503584436661585,
       "calibration_bins": [
         {
-          "n": 42,
-          "mean_predicted_probability": 0.12744283458216296,
-          "observed_frequency": 0.14285714285714285
+          "n": 45,
+          "mean_predicted_probability": 0.12717091678326958,
+          "observed_frequency": 0.13333333333333333
         },
         {
-          "n": 43,
-          "mean_predicted_probability": 0.19326265521730765,
-          "observed_frequency": 0.20930232558139536
+          "n": 45,
+          "mean_predicted_probability": 0.19125394961453668,
+          "observed_frequency": 0.2
         },
         {
-          "n": 43,
-          "mean_predicted_probability": 0.23556943461769106,
-          "observed_frequency": 0.11627906976744186
+          "n": 45,
+          "mean_predicted_probability": 0.23308060419166543,
+          "observed_frequency": 0.15555555555555556
         },
         {
-          "n": 43,
-          "mean_predicted_probability": 0.2792460081808763,
-          "observed_frequency": 0.32558139534883723
+          "n": 45,
+          "mean_predicted_probability": 0.2774162386943255,
+          "observed_frequency": 0.3111111111111111
         },
         {
-          "n": 43,
-          "mean_predicted_probability": 0.40816583771350107,
-          "observed_frequency": 0.32558139534883723
+          "n": 46,
+          "mean_predicted_probability": 0.40650187811739846,
+          "observed_frequency": 0.30434782608695654
         }
       ],
-      "max_drawdown_gbp": 0.0,
+      "max_drawdown_gbp": 0.25,
       "longest_losing_streak": 15,
       "clv_note": "not yet populated -- closing_odds_if_available is currently blank on live rows; see docs/HISTORICAL_PRICE_AND_CLV_LIMITATIONS.md"
     }
   },
   "by_competition": {
     "Championship": {
-      "bet_count": 93,
-      "decided_count": 93,
-      "win_rate": 0.23655913978494625,
-      "expected_win_rate": 0.253763725241569,
-      "average_odds": 4.707956989247312,
-      "total_staked_gbp": 0.0,
-      "total_pnl_gbp": 0.0,
-      "roi_yield": null,
-      "brier_score": 0.17074816375500848,
-      "log_loss": 0.5250510517016727,
+      "bet_count": 101,
+      "decided_count": 101,
+      "win_rate": 0.2376237623762376,
+      "expected_win_rate": 0.2511042394148791,
+      "average_odds": 4.773663366336634,
+      "total_staked_gbp": 0.25,
+      "total_pnl_gbp": -0.25,
+      "roi_yield": -1.0,
+      "brier_score": 0.17322143013694552,
+      "log_loss": 0.5302248722924681,
       "calibration_bins": [
         {
-          "n": 18,
-          "mean_predicted_probability": 0.14821076942902495,
-          "observed_frequency": 0.16666666666666666
+          "n": 20,
+          "mean_predicted_probability": 0.14637457004396823,
+          "observed_frequency": 0.2
         },
         {
-          "n": 18,
-          "mean_predicted_probability": 0.1981337251154757,
-          "observed_frequency": 0.2777777777777778
+          "n": 20,
+          "mean_predicted_probability": 0.19559211495824033,
+          "observed_frequency": 0.25
         },
         {
-          "n": 19,
-          "mean_predicted_probability": 0.23803839037859204,
-          "observed_frequency": 0.05263157894736842
+          "n": 20,
+          "mean_predicted_probability": 0.23601677036653398,
+          "observed_frequency": 0.1
         },
         {
-          "n": 19,
-          "mean_predicted_probability": 0.2781391750329113,
-          "observed_frequency": 0.3157894736842105
+          "n": 20,
+          "mean_predicted_probability": 0.27548593146547184,
+          "observed_frequency": 0.25
         },
         {
-          "n": 19,
-          "mean_predicted_probability": 0.39781325278138646,
-          "observed_frequency": 0.3684210526315789
+          "n": 21,
+          "mean_predicted_probability": 0.3948638306770714,
+          "observed_frequency": 0.38095238095238093
         }
       ],
-      "max_drawdown_gbp": 0.0,
+      "max_drawdown_gbp": 0.25,
       "longest_losing_streak": 12,
       "clv_note": "not yet populated -- closing_odds_if_available is currently blank on live rows; see docs/HISTORICAL_PRICE_AND_CLV_LIMITATIONS.md"
     },
@@ -219,31 +235,31 @@
       "clv_note": "not yet populated -- closing_odds_if_available is currently blank on live rows; see docs/HISTORICAL_PRICE_AND_CLV_LIMITATIONS.md"
     },
     "Scottish Premiership": {
-      "bet_count": 42,
-      "decided_count": 42,
-      "win_rate": 0.21428571428571427,
-      "expected_win_rate": 0.21994569703579384,
-      "average_odds": 6.1697619047619074,
+      "bet_count": 46,
+      "decided_count": 46,
+      "win_rate": 0.1956521739130435,
+      "expected_win_rate": 0.22012375140051424,
+      "average_odds": 6.180000000000001,
       "total_staked_gbp": 0.0,
       "total_pnl_gbp": 0.0,
       "roi_yield": null,
-      "brier_score": 0.16321323383250538,
-      "log_loss": 0.4975938414195698,
+      "brier_score": 0.15441485777350203,
+      "log_loss": 0.4771683584280439,
       "calibration_bins": [
         {
-          "n": 8,
-          "mean_predicted_probability": 0.09602291158247764,
+          "n": 9,
+          "mean_predicted_probability": 0.09723757860093689,
           "observed_frequency": 0.0
         },
         {
-          "n": 8,
-          "mean_predicted_probability": 0.16234224295865343,
-          "observed_frequency": 0.25
+          "n": 9,
+          "mean_predicted_probability": 0.16363732229820382,
+          "observed_frequency": 0.2222222222222222
         },
         {
-          "n": 8,
-          "mean_predicted_probability": 0.20240361438110432,
-          "observed_frequency": 0.25
+          "n": 9,
+          "mean_predicted_probability": 0.20193770141209852,
+          "observed_frequency": 0.2222222222222222
         },
         {
           "n": 9,
@@ -251,85 +267,90 @@
           "observed_frequency": 0.3333333333333333
         },
         {
-          "n": 9,
-          "mean_predicted_probability": 0.3621406718531957,
-          "observed_frequency": 0.2222222222222222
+          "n": 10,
+          "mean_predicted_probability": 0.3668076066175804,
+          "observed_frequency": 0.2
         }
       ],
       "max_drawdown_gbp": 0.0,
-      "longest_losing_streak": 7,
+      "longest_losing_streak": 9,
       "clv_note": "not yet populated -- closing_odds_if_available is currently blank on live rows; see docs/HISTORICAL_PRICE_AND_CLV_LIMITATIONS.md"
     }
   },
   "by_market": {
     "1x2": {
-      "bet_count": 195,
-      "decided_count": 195,
-      "win_rate": 0.19487179487179487,
-      "expected_win_rate": 0.22769086918555445,
-      "average_odds": 5.359538461538462,
-      "total_staked_gbp": 0.0,
-      "total_pnl_gbp": 0.0,
-      "roi_yield": null,
-      "brier_score": 0.15559903496009517,
-      "log_loss": 0.4870654969940787,
+      "bet_count": 206,
+      "decided_count": 206,
+      "win_rate": 0.1941747572815534,
+      "expected_win_rate": 0.22640963346622942,
+      "average_odds": 5.398349514563107,
+      "total_staked_gbp": 0.25,
+      "total_pnl_gbp": -0.25,
+      "roi_yield": -1.0,
+      "brier_score": 0.15552717978839306,
+      "log_loss": 0.48653359950474256,
       "calibration_bins": [
         {
-          "n": 39,
-          "mean_predicted_probability": 0.1238667508094921,
-          "observed_frequency": 0.15384615384615385
+          "n": 41,
+          "mean_predicted_probability": 0.12274511244509968,
+          "observed_frequency": 0.12195121951219512
         },
         {
-          "n": 39,
-          "mean_predicted_probability": 0.1890187434487515,
-          "observed_frequency": 0.20512820512820512
+          "n": 41,
+          "mean_predicted_probability": 0.187012974972291,
+          "observed_frequency": 0.1951219512195122
         },
         {
-          "n": 39,
-          "mean_predicted_probability": 0.2258155129120452,
-          "observed_frequency": 0.1282051282051282
+          "n": 41,
+          "mean_predicted_probability": 0.22235456101323878,
+          "observed_frequency": 0.17073170731707318
         },
         {
-          "n": 39,
-          "mean_predicted_probability": 0.2647458842673643,
-          "observed_frequency": 0.28205128205128205
+          "n": 41,
+          "mean_predicted_probability": 0.26240169451662915,
+          "observed_frequency": 0.2682926829268293
         },
         {
-          "n": 39,
-          "mean_predicted_probability": 0.33500745449011926,
-          "observed_frequency": 0.20512820512820512
+          "n": 42,
+          "mean_predicted_probability": 0.33488801031442045,
+          "observed_frequency": 0.21428571428571427
         }
       ],
-      "max_drawdown_gbp": 0.0,
+      "max_drawdown_gbp": 0.25,
       "longest_losing_streak": 15,
       "clv_note": "not yet populated -- closing_odds_if_available is currently blank on live rows; see docs/HISTORICAL_PRICE_AND_CLV_LIMITATIONS.md"
     },
     "over_under_2_5": {
-      "bet_count": 19,
-      "decided_count": 19,
-      "win_rate": 0.5263157894736842,
-      "expected_win_rate": 0.47112467355952126,
-      "average_odds": 2.1999999999999993,
+      "bet_count": 20,
+      "decided_count": 20,
+      "win_rate": 0.5,
+      "expected_win_rate": 0.4680089408563973,
+      "average_odds": 2.2149999999999994,
       "total_staked_gbp": 0.0,
       "total_pnl_gbp": 0.0,
       "roi_yield": null,
-      "brier_score": 0.24707924553915298,
-      "log_loss": 0.6872917542274234,
+      "brier_score": 0.24308156486425392,
+      "log_loss": 0.6792080593770613,
       "calibration_bins": [
         {
-          "n": 6,
-          "mean_predicted_probability": 0.4207283651235727,
-          "observed_frequency": 0.5
+          "n": 5,
+          "mean_predicted_probability": 0.41235938181071574,
+          "observed_frequency": 0.4
         },
         {
-          "n": 6,
-          "mean_predicted_probability": 0.46995667447397743,
-          "observed_frequency": 0.3333333333333333
+          "n": 5,
+          "mean_predicted_probability": 0.443590333978336,
+          "observed_frequency": 0.4
         },
         {
-          "n": 7,
-          "mean_predicted_probability": 0.5153226514350862,
-          "observed_frequency": 0.7142857142857143
+          "n": 5,
+          "mean_predicted_probability": 0.4946343356274168,
+          "observed_frequency": 0.6
+        },
+        {
+          "n": 5,
+          "mean_predicted_probability": 0.5214517120091207,
+          "observed_frequency": 0.6
         }
       ],
       "max_drawdown_gbp": 0.0,
@@ -387,44 +408,44 @@
       "clv_note": "not yet populated -- closing_odds_if_available is currently blank on live rows; see docs/HISTORICAL_PRICE_AND_CLV_LIMITATIONS.md"
     },
     "2.50+": {
-      "bet_count": 195,
-      "decided_count": 195,
-      "win_rate": 0.18974358974358974,
-      "expected_win_rate": 0.22643706005839281,
-      "average_odds": 5.365692307692307,
-      "total_staked_gbp": 0.0,
-      "total_pnl_gbp": 0.0,
-      "roi_yield": null,
-      "brier_score": 0.15584555513653764,
-      "log_loss": 0.48755916566560425,
+      "bet_count": 207,
+      "decided_count": 207,
+      "win_rate": 0.18840579710144928,
+      "expected_win_rate": 0.22610967021132258,
+      "average_odds": 5.390144927536233,
+      "total_staked_gbp": 0.25,
+      "total_pnl_gbp": -0.25,
+      "roi_yield": -1.0,
+      "brier_score": 0.15581544011041748,
+      "log_loss": 0.48718746254176165,
       "calibration_bins": [
         {
-          "n": 39,
-          "mean_predicted_probability": 0.1238667508094921,
-          "observed_frequency": 0.15384615384615385
+          "n": 41,
+          "mean_predicted_probability": 0.12274511244509968,
+          "observed_frequency": 0.12195121951219512
         },
         {
-          "n": 39,
-          "mean_predicted_probability": 0.1890187434487515,
-          "observed_frequency": 0.20512820512820512
+          "n": 41,
+          "mean_predicted_probability": 0.187012974972291,
+          "observed_frequency": 0.1951219512195122
         },
         {
-          "n": 39,
-          "mean_predicted_probability": 0.2258155129120452,
-          "observed_frequency": 0.1282051282051282
+          "n": 41,
+          "mean_predicted_probability": 0.22235456101323878,
+          "observed_frequency": 0.17073170731707318
         },
         {
-          "n": 39,
-          "mean_predicted_probability": 0.2647458842673643,
-          "observed_frequency": 0.28205128205128205
+          "n": 42,
+          "mean_predicted_probability": 0.26287765480380637,
+          "observed_frequency": 0.2857142857142857
         },
         {
-          "n": 39,
-          "mean_predicted_probability": 0.3287384088543111,
-          "observed_frequency": 0.1794871794871795
+          "n": 42,
+          "mean_predicted_probability": 0.33207670586495514,
+          "observed_frequency": 0.16666666666666666
         }
       ],
-      "max_drawdown_gbp": 0.0,
+      "max_drawdown_gbp": 0.25,
       "longest_losing_streak": 22,
       "clv_note": "not yet populated -- closing_odds_if_available is currently blank on live rows; see docs/HISTORICAL_PRICE_AND_CLV_LIMITATIONS.md"
     }

@@ -1,4 +1,4 @@
-# Daily Paper Bet Card — 2026-11-24T18:44Z
+# Daily Paper Bet Card — 2026-11-25T04:05Z
 
 **PAPER ONLY. Not a real-money card. No bet here may be placed with real money without a MONEY_ELIGIBILITY_REVIEW and Fraser's explicit approval.**
 
