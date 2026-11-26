@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T04:05:28.567105+00:00",
+ "generated_at": "2026-11-26T03:30:11.453606+00:00",
  "mode": "PAPER \u2014 unattended prospective validation; stakes SIMULATED",
  "windows": {
   "weekly": {
@@ -48,16 +48,16 @@
      }
     }
    },
-   "candidates_evaluated": 668,
+   "candidates_evaluated": 662,
    "qualified_in_shadow": 0,
    "qualification_rate": 0.0,
    "rejections": {
     "ENGINE_STATUS_INELIGIBLE": 608,
     "P_BELOW_FLOOR": 285,
     "NO_EXECUTABLE_PRICE": 282,
-    "NET_EV_NOT_POSITIVE": 248,
-    "COMMISSION_UNKNOWN": 61,
-    "PRICE_STALE": 2,
+    "NET_EV_NOT_POSITIVE": 251,
+    "COMMISSION_UNKNOWN": 50,
+    "PRICE_STALE": 1,
     "EXCHANGE_SPREAD_TOO_WIDE": 1
    },
    "by": {
@@ -153,13 +153,13 @@
      }
     }
    },
-   "candidates_evaluated": 2060,
+   "candidates_evaluated": 2066,
    "qualified_in_shadow": 1,
    "qualification_rate": 0.0005,
    "rejections": {
-    "ENGINE_STATUS_INELIGIBLE": 1687,
-    "NET_EV_NOT_POSITIVE": 861,
-    "P_BELOW_FLOOR": 792,
+    "ENGINE_STATUS_INELIGIBLE": 1684,
+    "NET_EV_NOT_POSITIVE": 867,
+    "P_BELOW_FLOOR": 790,
     "NO_EXECUTABLE_PRICE": 783,
     "COMMISSION_UNKNOWN": 218,
     "PRICE_STALE": 31,
@@ -493,12 +493,12 @@
      }
     }
    },
-   "candidates_evaluated": 4184,
+   "candidates_evaluated": 4193,
    "qualified_in_shadow": 3,
    "qualification_rate": 0.0007,
    "rejections": {
     "ENGINE_STATUS_INELIGIBLE": 3338,
-    "NET_EV_NOT_POSITIVE": 1848,
+    "NET_EV_NOT_POSITIVE": 1855,
     "P_BELOW_FLOOR": 1572,
     "NO_EXECUTABLE_PRICE": 1560,
     "COMMISSION_UNKNOWN": 408,
