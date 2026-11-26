@@ -1,8 +1,8 @@
-# Daily Prediction Board & Bet Card — 2026-11-26T16:16Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-26T17:37Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
-Predictions in the next window: 37 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 10 · research predictions: 0
+Predictions in the next window: 49 · bets: 0 (£0, 0.0% of bankroll) · strong predictions with poor price: 13 · research predictions: 0
 
 ## 1. Best predictions today
 
@@ -14,24 +14,30 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | 2 | football | Groningen v Willem II | 2026-11-27T19:00 | double_chance | 12 | 80.6% | 80%+ | 0.6% | PROSPECTIVE_SHADOW_LEAGUE | 1.24 | no price | no |
 | 3 | football | Werder Bremen v Borussia Monchengladbach | 2026-11-27T19:30 | double_chance | 12 | 77.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | no price | no |
 | 4 | football | Werder Bremen v Borussia Monchengladbach | 2026-11-27T19:30 | double_chance | 1X | 77.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | no price | no |
-| 5 | football | Southampton v Middlesbrough | 2026-11-27T20:00 | double_chance | 12 | 75.1% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.33 | no price | no |
-| 6 | basketball | Atlanta Hawks @ Boston Celtics | 2026-11-28T01:10 | moneyline | Boston Celtics | 75.1% | 70%+ | 1.4% | VALIDATED | 1.33 | 1.29 (smarkets) | no |
-| 7 | basketball | Denver Nuggets @ Utah Jazz | 2026-11-28T02:40 | moneyline | Denver Nuggets | 75.0% | 70%+ | 1.4% | VALIDATED | 1.33 | 1.28 (unibet_uk) | no |
-| 8 | football | Nottingham Forest v Chelsea | 2026-11-27T20:00 | double_chance | 12 | 72.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.38 | no price | no |
-| 9 | football | Brest v Paris FC | 2026-11-27T19:45 | double_chance | 12 | 72.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.38 | no price | no |
-| 10 | football | Brest v Paris FC | 2026-11-27T19:45 | double_chance | X2 | 70.7% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.41 | no price | no |
-| 11 | football | Southampton v Middlesbrough | 2026-11-27T20:00 | double_chance | X2 | 66.9% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.49 | no price | no |
-| 12 | football | Groningen v Willem II | 2026-11-27T19:00 | 1x2 | home | 66.0% | 60%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.52 | price not usable (stale/wide/unknown commission) | no |
-| 13 | football | Nottingham Forest v Chelsea | 2026-11-27T20:00 | double_chance | 1X | 65.1% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.54 | no price | no |
-| 14 | basketball | Los Angeles Lakers @ San Antonio Spurs | 2026-11-28T02:40 | moneyline | San Antonio Spurs | 64.4% | 60%+ | 1.5% | VALIDATED | 1.55 | 1.53 (skybet) | no |
-| 15 | football | Southampton v Middlesbrough | 2026-11-27T20:00 | over_under_2_5 | over | 62.5% | 60%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.60 | price not usable (stale/wide/unknown commission) | no |
-| 16 | football | Nottingham Forest v Chelsea | 2026-11-27T20:00 | double_chance | X2 | 62.5% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.60 | no price | no |
-| 17 | basketball | Philadelphia 76ers @ Indiana Pacers | 2026-11-28T00:40 | moneyline | Philadelphia 76ers | 61.7% | 60%+ | 1.5% | VALIDATED | 1.62 | 1.57 (betway) | no |
-| 18 | basketball | Miami Heat @ New York Knicks | 2026-11-28T00:10 | moneyline | New York Knicks | 60.5% | 60%+ | 1.5% | VALIDATED | 1.65 | 1.62 (skybet) | no |
-| 19 | football | Southampton v Middlesbrough | 2026-11-27T20:00 | double_chance | 1X | 57.9% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.73 | no price | no |
-| 20 | football | Brest v Paris FC | 2026-11-27T19:45 | double_chance | 1X | 57.0% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.75 | no price | no |
-| 21 | football | Werder Bremen v Borussia Monchengladbach | 2026-11-27T19:30 | 1x2 | home | 54.8% | 50%+ | 1.3% | PROSPECTIVE_SHADOW_LEAGUE | 1.83 | price not usable (stale/wide/unknown commission) | no |
-| 22 | football | Nottingham Forest v Chelsea | 2026-11-27T20:00 | over_under_2_5 | over | 53.6% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.87 | price not usable (stale/wide/unknown commission) | no |
+| 5 | football | VfL Bochum v SV Darmstadt 98 | 2026-11-27T17:30 | double_chance | 1X | 76.2% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
+| 6 | football | VfL Bochum v SV Darmstadt 98 | 2026-11-27T17:30 | double_chance | 12 | 75.9% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.32 | no price | no |
+| 7 | football | 1. FC Heidenheim v 1. FC Nürnberg | 2026-11-27T17:30 | double_chance | 12 | 75.7% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.32 | no price | no |
+| 8 | football | Southampton v Middlesbrough | 2026-11-27T20:00 | double_chance | 12 | 75.1% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.33 | no price | no |
+| 9 | basketball | Atlanta Hawks @ Boston Celtics | 2026-11-28T01:10 | moneyline | Boston Celtics | 75.1% | 70%+ | 1.4% | VALIDATED | 1.33 | 1.29 (smarkets) | no |
+| 10 | basketball | Denver Nuggets @ Utah Jazz | 2026-11-28T02:40 | moneyline | Denver Nuggets | 75.0% | 70%+ | 1.4% | VALIDATED | 1.33 | 1.28 (unibet_uk) | no |
+| 11 | football | Nottingham Forest v Chelsea | 2026-11-27T20:00 | double_chance | 12 | 72.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.38 | no price | no |
+| 12 | football | Brest v Paris FC | 2026-11-27T19:45 | double_chance | 12 | 72.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.38 | no price | no |
+| 13 | football | Brest v Paris FC | 2026-11-27T19:45 | double_chance | X2 | 70.7% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.41 | no price | no |
+| 14 | football | 1. FC Heidenheim v 1. FC Nürnberg | 2026-11-27T17:30 | double_chance | 1X | 67.7% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.48 | no price | no |
+| 15 | football | Southampton v Middlesbrough | 2026-11-27T20:00 | double_chance | X2 | 66.9% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.49 | no price | no |
+| 16 | football | Groningen v Willem II | 2026-11-27T19:00 | 1x2 | home | 66.0% | 60%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.52 | 1.45 (unibet (uk)) | no |
+| 17 | football | Nottingham Forest v Chelsea | 2026-11-27T20:00 | double_chance | 1X | 65.1% | 60%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.54 | no price | no |
+| 18 | basketball | Los Angeles Lakers @ San Antonio Spurs | 2026-11-28T02:40 | moneyline | San Antonio Spurs | 64.4% | 60%+ | 1.5% | VALIDATED | 1.55 | 1.53 (skybet) | no |
+| 19 | football | Southampton v Middlesbrough | 2026-11-27T20:00 | over_under_2_5 | over | 62.5% | 60%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.60 | 1.58 (leovegas) | no |
+| 20 | football | Nottingham Forest v Chelsea | 2026-11-27T20:00 | double_chance | X2 | 62.5% | 60%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.60 | no price | no |
+| 21 | basketball | Philadelphia 76ers @ Indiana Pacers | 2026-11-28T00:40 | moneyline | Philadelphia 76ers | 61.7% | 60%+ | 1.5% | VALIDATED | 1.62 | 1.57 (betway) | no |
+| 22 | basketball | Miami Heat @ New York Knicks | 2026-11-28T00:10 | moneyline | New York Knicks | 60.5% | 60%+ | 1.5% | VALIDATED | 1.65 | 1.62 (skybet) | no |
+| 23 | football | Southampton v Middlesbrough | 2026-11-27T20:00 | double_chance | 1X | 57.9% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.73 | no price | no |
+| 24 | football | Brest v Paris FC | 2026-11-27T19:45 | double_chance | 1X | 57.0% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.75 | no price | no |
+| 25 | football | 1. FC Heidenheim v 1. FC Nürnberg | 2026-11-27T17:30 | double_chance | X2 | 56.6% | 50%+ | 0.8% | PROSPECTIVE_SHADOW_LEAGUE | 1.77 | no price | no |
+| 26 | football | Werder Bremen v Borussia Monchengladbach | 2026-11-27T19:30 | 1x2 | home | 54.8% | 50%+ | 1.3% | PROSPECTIVE_SHADOW_LEAGUE | 1.83 | 1.76 (betfair) | no |
+| 27 | football | Nottingham Forest v Chelsea | 2026-11-27T20:00 | over_under_2_5 | over | 53.6% | 50%+ | — | PROSPECTIVE_SHADOW_LEAGUE | 1.87 | price not usable (stale/wide/unknown commission) | no |
+| 28 | football | VfL Bochum v SV Darmstadt 98 | 2026-11-27T17:30 | 1x2 | home | 52.1% | 50%+ | 1.3% | PROSPECTIVE_SHADOW_LEAGUE | 1.92 | 1.89 (smarkets) | no |
 
 ## 2. Qualified paper bets (simulated stakes, recorded automatically)
 
@@ -51,6 +57,9 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 | Groningen v Willem II (2026-11-27T19:00) | double_chance: 12 | 80.6% | 1.24 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Werder Bremen v Borussia Monchengladbach (2026-11-27T19:30) | double_chance: 12 | 77.5% | 1.29 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Werder Bremen v Borussia Monchengladbach (2026-11-27T19:30) | double_chance: 1X | 77.3% | 1.29 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
+| VfL Bochum v SV Darmstadt 98 (2026-11-27T17:30) | double_chance: 1X | 76.2% | 1.31 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
+| VfL Bochum v SV Darmstadt 98 (2026-11-27T17:30) | double_chance: 12 | 75.9% | 1.32 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
+| 1. FC Heidenheim v 1. FC Nürnberg (2026-11-27T17:30) | double_chance: 12 | 75.7% | 1.32 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Southampton v Middlesbrough (2026-11-27T20:00) | double_chance: 12 | 75.1% | 1.33 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Atlanta Hawks @ Boston Celtics (2026-11-28T01:10) | moneyline: Boston Celtics | 75.1% | 1.33 | 1.29 | NET_EV_NOT_POSITIVE |
 | Denver Nuggets @ Utah Jazz (2026-11-28T02:40) | moneyline: Denver Nuggets | 75.0% | 1.33 | 1.28 | NET_EV_NOT_POSITIVE |
@@ -60,7 +69,7 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 32 · NET_EV_NOT_POSITIVE 20 · PRICE_STALE 17 · NO_EXECUTABLE_PRICE 15 · P_BELOW_FLOOR 15 · COMMISSION_UNKNOWN 1
+ENGINE_STATUS_INELIGIBLE 44 · NET_EV_NOT_POSITIVE 23 · NO_EXECUTABLE_PRICE 21 · P_BELOW_FLOOR 21 · COMMISSION_UNKNOWN 1
 
 ## 4. Research predictions — not money eligible
 
