@@ -4,9 +4,9 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-26T07:16Z · events scanned 5 · valid predictions 32 · high-P (≥70%) 8 · priced 16 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 32 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-26T16:16Z · events scanned 10 · valid predictions 37 · high-P (≥70%) 10 · priced 21 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 37 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 32 · NET_EV_NOT_POSITIVE 15 · P_BELOW_FLOOR 15 · NO_EXECUTABLE_PRICE 15 · COMMISSION_UNKNOWN 1
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 32 · NET_EV_NOT_POSITIVE 20 · PRICE_STALE 17 · P_BELOW_FLOOR 15 · NO_EXECUTABLE_PRICE 15 · COMMISSION_UNKNOWN 1
 
 ## Candidates (latest run, best price per prediction)
 
@@ -17,14 +17,19 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 32 · NET_EV_NOT_POSITIVE 15
 | Werder Bremen v Borussia Monchengladbach | 2026-11-27T19:30 | 12 | 77.5% | 1.29 | — | — | — | REJECT |
 | Werder Bremen v Borussia Monchengladbach | 2026-11-27T19:30 | 1X | 77.3% | 1.29 | — | — | — | REJECT |
 | Southampton v Middlesbrough | 2026-11-27T20:00 | 12 | 75.1% | 1.33 | — | — | — | REJECT |
+| Atlanta Hawks @ Boston Celtics | 2026-11-28T01:10 | Boston Celtics | 75.1% | 1.33 | 1.29 (smarkets) | 77.9% | -3.6% | REJECT |
+| Denver Nuggets @ Utah Jazz | 2026-11-28T02:40 | Denver Nuggets | 75.0% | 1.33 | 1.28 (unibet_uk) | 78.1% | -4.0% | REJECT |
 | Nottingham Forest v Chelsea | 2026-11-27T20:00 | 12 | 72.4% | 1.38 | — | — | — | REJECT |
 | Brest v Paris FC | 2026-11-27T19:45 | 12 | 72.3% | 1.38 | — | — | — | REJECT |
 | Brest v Paris FC | 2026-11-27T19:45 | X2 | 70.7% | 1.41 | — | — | — | REJECT |
 | Southampton v Middlesbrough | 2026-11-27T20:00 | X2 | 66.9% | 1.49 | — | — | — | REJECT |
 | Groningen v Willem II | 2026-11-27T19:00 | home | 65.7% | 1.52 | 1.43 (betway) | 69.9% | -6.1% | REJECT |
 | Nottingham Forest v Chelsea | 2026-11-27T20:00 | 1X | 65.1% | 1.54 | — | — | — | REJECT |
+| Los Angeles Lakers @ San Antonio Spurs | 2026-11-28T02:40 | San Antonio Spurs | 64.4% | 1.55 | 1.53 (skybet) | 65.4% | -1.5% | REJECT |
 | Southampton v Middlesbrough | 2026-11-27T20:00 | over | 62.5% | 1.60 | 1.50 (william hill) | 66.7% | -6.2% | REJECT |
 | Nottingham Forest v Chelsea | 2026-11-27T20:00 | X2 | 62.5% | 1.60 | — | — | — | REJECT |
+| Philadelphia 76ers @ Indiana Pacers | 2026-11-28T00:40 | Philadelphia 76ers | 61.7% | 1.62 | 1.57 (betway) | 63.7% | -3.1% | REJECT |
+| Miami Heat @ New York Knicks | 2026-11-28T00:10 | New York Knicks | 60.5% | 1.65 | 1.62 (skybet) | 61.7% | -1.9% | REJECT |
 | Southampton v Middlesbrough | 2026-11-27T20:00 | 1X | 57.9% | 1.73 | — | — | — | REJECT |
 | Brest v Paris FC | 2026-11-27T19:45 | 1X | 57.0% | 1.75 | — | — | — | REJECT |
 | Werder Bremen v Borussia Monchengladbach | 2026-11-27T19:30 | home | 54.6% | 1.83 | 1.76 (betfair) | 58.1% | -6.0% | REJECT |

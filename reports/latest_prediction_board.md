@@ -2,9 +2,9 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 5 · Valid predictions: 32 · Sports: football
-Counts: >=70: 8 · >=75: 5 · >=80: 2 · >=85: 1 · >=90: 0 · >=95: 0
-Settled yesterday: 14 · System: **HEALTHY** · API credits (last observed): 139
+Upcoming events: 10 · Valid predictions: 37 · Sports: basketball, football
+Counts: >=70: 10 · >=75: 6 · >=80: 2 · >=85: 1 · >=90: 0 · >=95: 0
+Settled yesterday: 14 · System: **HEALTHY** · API credits (last observed): 127
 
 ## Top predictions (P ≥ 80%)
 
@@ -22,7 +22,7 @@ Settled yesterday: 14 · System: **HEALTHY** · API credits (last observed): 139
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
 | atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 224 | 209 | EARLY | 31 | 86.9% → 77.4% |
 | wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 201 | 177 | EARLY | 31 | 89.3% → 80.6% |
-| nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 225 | 209 | EARLY | 31 | 84.2% → 93.5% |
+| nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 230 | 209 | EARLY | 31 | 84.2% → 93.5% |
 | nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 159 | 122 | EARLY | 0 | — → — |
 | nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 56 | 41 | COLLECTING | 3 | 82.3% → 100.0% |
 | football_double_chance.derived_1x2 | PROVISIONAL_PROSPECTIVE / COLLECTING | 1575 | 21 | COLLECTING | 1 | 80.2% → 0.0% |
@@ -31,8 +31,8 @@ Settled yesterday: 14 · System: **HEALTHY** · API credits (last observed): 139
 
 - daily_scan: OK (last 2026-11-26T07:16:39.238631+00:00)
 - settlement: OK (last 2026-11-26T03:30:11.729302+00:00)
-- tennis_board: OK (last 2026-11-25T16:16:25.764932+00:00)
-- ci_tests: OK (last 2026-11-26T07:16:39.681326+00:00)
+- tennis_board: OK (last 2026-11-26T16:16:34.586156+00:00)
+- ci_tests: OK (last 2026-11-26T16:16:35.347485+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 

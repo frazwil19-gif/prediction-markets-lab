@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-11-26T07:16:40.267480+00:00",
+ "generated_at": "2026-11-26T16:16:39.087411+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-4",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 172,
+  "runs": 173,
   "totals_over_runs": {
-   "events_scanned": 5531,
-   "valid_predictions": 20268,
-   "high_p_candidates": 5755,
-   "priced_candidates": 10366,
+   "events_scanned": 5541,
+   "valid_predictions": 20305,
+   "high_p_candidates": 5765,
+   "priced_candidates": 10387,
    "PAPER_BET": 23,
    "MULTI_RESEARCH_ELIGIBLE": 240,
    "WATCH": 78,
-   "REJECT": 20331,
+   "REJECT": 20368,
    "paper_bets_added": 13,
    "money_card_qualified": 15
   },
@@ -85,34 +85,38 @@
   }
  },
  "latest_run": {
-  "run_at": "2026-11-26T07:16:40.267480+00:00",
+  "run_at": "2026-11-26T16:16:39.087411+00:00",
   "trigger": "workflow_dispatch",
   "rule_version": "bsv2-4",
-  "events_scanned": "5",
-  "valid_predictions": "32",
-  "high_p_candidates": "8",
-  "priced_candidates": "16",
+  "events_scanned": "10",
+  "valid_predictions": "37",
+  "high_p_candidates": "10",
+  "priced_candidates": "21",
   "PAPER_BET": "0",
   "MULTI_RESEARCH_ELIGIBLE": "0",
   "WATCH": "0",
-  "REJECT": "32",
+  "REJECT": "37",
   "paper_bets_added": "0",
-  "snapshots_added": "17",
+  "snapshots_added": "5",
   "money_card_qualified": "0",
   "football_fixtures_on_card": "82"
  },
  "latest_decisions": {
   "decisions": {
-   "REJECT": 32
+   "REJECT": 37
   },
   "reason_counts": {
    "ENGINE_STATUS_INELIGIBLE": 32,
-   "NET_EV_NOT_POSITIVE": 15,
+   "NET_EV_NOT_POSITIVE": 20,
+   "PRICE_STALE": 17,
    "P_BELOW_FLOOR": 15,
    "NO_EXECUTABLE_PRICE": 15,
    "COMMISSION_UNKNOWN": 1
   },
   "by_sport": {
+   "basketball": {
+    "REJECT": 5
+   },
    "football": {
     "REJECT": 32
    }
@@ -126,6 +130,9 @@
    },
    "football_ou25.market": {
     "REJECT": 2
+   },
+   "nba_moneyline.market": {
+    "REJECT": 5
    }
   }
  },
