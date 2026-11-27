@@ -1,4 +1,4 @@
-# Daily Prediction Board & Bet Card — 2026-11-27T16:16Z (card-v1.2)
+# Daily Prediction Board & Bet Card — 2026-11-27T17:19Z (card-v1.2)
 
 **Mode: PAPER — unattended prospective validation (real-money betting paused; nothing to place)** · bankroll £50 · default stake £1 · daily cap £5
 
@@ -37,7 +37,7 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | 25 | football | Dundee United v St Johnstone | 2026-11-28T15:00 | double_chance | 1X | 78.6% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.27 | no price | no |
 | 26 | basketball | Milwaukee Bucks @ Detroit Pistons | 2026-11-28T00:40 | moneyline | Detroit Pistons | 78.4% | 70%+ | 1.4% | VALIDATED | 1.27 | 1.25 (smarkets) | no |
 | 27 | football | Birmingham City v Bolton Wanderers | 2026-11-28T15:00 | double_chance | 12 | 78.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.28 | no price | no |
-| 28 | football | Paris Saint Germain v Lorient | 2026-11-28T19:45 | 1x2 | home | 77.7% | 70%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | price not usable (stale/wide/unknown commission) | no |
+| 28 | football | Paris Saint Germain v Lorient | 2026-11-28T19:45 | 1x2 | home | 77.7% | 70%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | 1.22 (ladbrokes) | no |
 | 29 | football | Werder Bremen v Borussia Monchengladbach | 2026-11-27T19:30 | double_chance | 12 | 77.5% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | no price | no |
 | 30 | football | Dundee United v St Johnstone | 2026-11-28T15:00 | double_chance | 12 | 77.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | no price | no |
 | 31 | football | Werder Bremen v Borussia Monchengladbach | 2026-11-27T19:30 | double_chance | 1X | 77.3% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.29 | no price | no |
@@ -47,7 +47,7 @@ _Ranked by probability. A strong prediction is not automatically a bet._
 | 35 | football | Angers v RC Lens | 2026-11-28T16:15 | double_chance | 12 | 76.6% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
 | 36 | football | Nice v Troyes | 2026-11-28T19:45 | double_chance | 12 | 76.4% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
 | 37 | football | VfL Bochum v SV Darmstadt 98 | 2026-11-27T17:30 | double_chance | 1X | 76.2% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | no price | no |
-| 38 | football | PSV Eindhoven v Go Ahead Eagles | 2026-11-28T17:45 | 1x2 | home | 76.1% | 70%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | price not usable (stale/wide/unknown commission) | no |
+| 38 | football | PSV Eindhoven v Go Ahead Eagles | 2026-11-28T17:45 | 1x2 | home | 76.1% | 70%+ | 1.7% | PROSPECTIVE_SHADOW_LEAGUE | 1.31 | 1.25 (coral) | no |
 | 39 | basketball | Golden State Warriors @ Portland Trail Blazers | 2026-11-28T02:40 | moneyline | Portland Trail Blazers | 76.1% | 70%+ | 1.4% | VALIDATED | 1.31 | 1.29 (skybet) | no |
 | 40 | football | VfL Bochum v SV Darmstadt 98 | 2026-11-27T17:30 | double_chance | 12 | 75.9% | 70%+ | 0.4% | PROSPECTIVE_SHADOW_LEAGUE | 1.32 | no price | no |
 
@@ -92,7 +92,7 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 | Dundee United v St Johnstone (2026-11-28T15:00) | double_chance: 1X | 78.6% | 1.27 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Milwaukee Bucks @ Detroit Pistons (2026-11-28T00:40) | moneyline: Detroit Pistons | 78.4% | 1.27 | 1.25 | NET_EV_NOT_POSITIVE |
 | Birmingham City v Bolton Wanderers (2026-11-28T15:00) | double_chance: 12 | 78.4% | 1.28 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Paris Saint Germain v Lorient (2026-11-28T19:45) | 1x2: home | 77.7% | 1.29 | — | PRICE_STALE, NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
+| Paris Saint Germain v Lorient (2026-11-28T19:45) | 1x2: home | 77.7% | 1.29 | 1.22 | NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
 | Werder Bremen v Borussia Monchengladbach (2026-11-27T19:30) | double_chance: 12 | 77.5% | 1.29 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Dundee United v St Johnstone (2026-11-28T15:00) | double_chance: 12 | 77.4% | 1.29 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Werder Bremen v Borussia Monchengladbach (2026-11-27T19:30) | double_chance: 1X | 77.3% | 1.29 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
@@ -102,10 +102,10 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 | Angers v RC Lens (2026-11-28T16:15) | double_chance: 12 | 76.6% | 1.31 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Nice v Troyes (2026-11-28T19:45) | double_chance: 12 | 76.4% | 1.31 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | VfL Bochum v SV Darmstadt 98 (2026-11-27T17:30) | double_chance: 1X | 76.2% | 1.31 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| PSV Eindhoven v Go Ahead Eagles (2026-11-28T17:45) | 1x2: home | 76.1% | 1.31 | — | PRICE_STALE, NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
+| PSV Eindhoven v Go Ahead Eagles (2026-11-28T17:45) | 1x2: home | 76.1% | 1.31 | 1.25 | NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
 | Golden State Warriors @ Portland Trail Blazers (2026-11-28T02:40) | moneyline: Portland Trail Blazers | 76.1% | 1.31 | 1.29 | NET_EV_NOT_POSITIVE |
 | VfL Bochum v SV Darmstadt 98 (2026-11-27T17:30) | double_chance: 12 | 75.9% | 1.32 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Rangers v Falkirk F.C. (2026-11-28T15:00) | 1x2: home | 75.8% | 1.32 | — | PRICE_STALE, NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
+| Rangers v Falkirk F.C. (2026-11-28T15:00) | 1x2: home | 75.8% | 1.32 | 1.29 | NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
 | SC Cambuur v Sparta Rotterdam (2026-11-28T20:00) | double_chance: 12 | 75.7% | 1.32 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | 1. FC Heidenheim v 1. FC Nürnberg (2026-11-27T17:30) | double_chance: 12 | 75.7% | 1.32 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Brooklyn Nets @ Toronto Raptors (2026-11-28T00:40) | moneyline: Toronto Raptors | 75.7% | 1.32 | 1.27 | NET_EV_NOT_POSITIVE |
@@ -117,7 +117,7 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 | Atlanta Hawks @ Boston Celtics (2026-11-28T01:10) | moneyline: Boston Celtics | 75.1% | 1.33 | — | PRICE_STALE, NET_EV_NOT_POSITIVE |
 | West Bromwich Albion v Bristol City (2026-11-28T15:00) | double_chance: 12 | 75.0% | 1.33 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Denver Nuggets @ Utah Jazz (2026-11-28T02:40) | moneyline: Denver Nuggets | 75.0% | 1.33 | — | PRICE_STALE, NET_EV_NOT_POSITIVE |
-| Hamburger SV v Bayern Munich (2026-11-28T14:30) | 1x2: away | 74.9% | 1.33 | — | PRICE_STALE, NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
+| Hamburger SV v Bayern Munich (2026-11-28T14:30) | 1x2: away | 74.9% | 1.33 | 1.31 | NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
 | Aberdeen v Dundee FC (2026-11-28T15:00) | double_chance: 1X | 74.8% | 1.34 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Manchester United v Brentford (2026-11-28T15:00) | double_chance: 12 | 74.7% | 1.34 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Le Mans FC v Lille (2026-11-28T19:45) | double_chance: X2 | 74.3% | 1.35 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
@@ -143,14 +143,14 @@ _Not qualified: the price is below fair after costs. Never rescued with other pr
 | Derby County v Watford (2026-11-28T15:00) | double_chance: 12 | 72.0% | 1.39 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Wrexham AFC v Portsmouth (2026-11-28T15:00) | double_chance: 12 | 71.2% | 1.40 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Millwall v Burnley (2026-11-28T15:00) | double_chance: 1X | 71.0% | 1.41 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
-| Rangers v Falkirk F.C. (2026-11-28T15:00) | over_under_2_5: over | 71.0% | 1.41 | — | PRICE_STALE, NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
+| Rangers v Falkirk F.C. (2026-11-28T15:00) | over_under_2_5: over | 71.0% | 1.41 | 1.33 | NET_EV_NOT_POSITIVE, ENGINE_STATUS_INELIGIBLE |
 | Brest v Paris FC (2026-11-27T19:45) | double_chance: X2 | 70.7% | 1.41 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Derby County v Watford (2026-11-28T15:00) | double_chance: 1X | 70.5% | 1.42 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 | Manchester United v Brentford (2026-11-28T15:00) | double_chance: 1X | 70.4% | 1.42 | — | NO_EXECUTABLE_PRICE, ENGINE_STATUS_INELIGIBLE |
 
 ### Why predictions in the window were not bets
 
-ENGINE_STATUS_INELIGIBLE 266 · PRICE_STALE 148 · NO_EXECUTABLE_PRICE 123 · P_BELOW_FLOOR 123 · NET_EV_NOT_POSITIVE 121 · COMMISSION_UNKNOWN 9 · NET_EV_BELOW_PAPER_GATE 1
+ENGINE_STATUS_INELIGIBLE 266 · P_BELOW_FLOOR 124 · NO_EXECUTABLE_PRICE 123 · NET_EV_NOT_POSITIVE 111 · PRICE_STALE 25 · COMMISSION_UNKNOWN 8 · NET_EV_BELOW_PAPER_GATE 1
 
 ## 4. Research predictions — not money eligible
 

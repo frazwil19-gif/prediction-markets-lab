@@ -4,9 +4,9 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-27T16:16Z · events scanned 52 · valid predictions 277 · high-P (≥70%) 82 · priced 145 · PAPER_BET 0 · MULTI-research 0 · WATCH 1 · REJECT 276 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-27T17:19Z · events scanned 68 · valid predictions 381 · high-P (≥70%) 109 · priced 201 · PAPER_BET 0 · MULTI-research 0 · WATCH 1 · REJECT 380 · new paper bets 0 · Money Card qualified 1
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 266 · PRICE_STALE 148 · P_BELOW_FLOOR 123 · NO_EXECUTABLE_PRICE 123 · NET_EV_NOT_POSITIVE 121 · COMMISSION_UNKNOWN 9 · NET_EV_BELOW_PAPER_GATE 1
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 370 · P_BELOW_FLOOR 172 · NO_EXECUTABLE_PRICE 171 · NET_EV_NOT_POSITIVE 159 · PRICE_STALE 25 · COMMISSION_UNKNOWN 9 · NET_EV_BELOW_PAPER_GATE 1
 
 ## Candidates (latest run, best price per prediction)
 
@@ -26,7 +26,9 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 266 · PRICE_STALE 148 · P_
 | FSV Mainz 05 v Union Berlin | 2026-11-28T14:30 | 1X | 83.5% | 1.20 | — | — | — | REJECT |
 | Birmingham City v Bolton Wanderers | 2026-11-28T15:00 | 1X | 83.0% | 1.20 | — | — | — | REJECT |
 | Lincoln City v Wolverhampton Wanderers | 2026-11-28T12:30 | X2 | 82.0% | 1.22 | — | — | — | REJECT |
+| Brighton and Hove Albion v Newcastle United | 2026-11-29T14:05 | 1X | 81.4% | 1.23 | — | — | — | REJECT |
 | Hertha Berlin v Karlsruher SC | 2026-11-28T12:00 | 12 | 81.4% | 1.23 | — | — | — | REJECT |
+| FC Zwolle v AZ Alkmaar | 2026-11-29T15:45 | X2 | 81.2% | 1.23 | — | — | — | REJECT |
 | Groningen v Willem II | 2026-11-27T19:00 | 12 | 80.6% | 1.24 | — | — | — | REJECT |
 | West Bromwich Albion v Bristol City | 2026-11-28T15:00 | 1X | 80.3% | 1.24 | — | — | — | REJECT |
 | Nice v Troyes | 2026-11-28T19:45 | 1X | 80.1% | 1.25 | — | — | — | REJECT |
@@ -34,24 +36,22 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 266 · PRICE_STALE 148 · P_
 | Angers v RC Lens | 2026-11-28T16:15 | X2 | 79.6% | 1.26 | — | — | — | REJECT |
 | Leeds United v Coventry City | 2026-11-28T15:00 | 12 | 79.3% | 1.26 | — | — | — | REJECT |
 | FSV Mainz 05 v Union Berlin | 2026-11-28T14:30 | 12 | 79.2% | 1.26 | — | — | — | REJECT |
+| FC Zwolle v AZ Alkmaar | 2026-11-29T15:45 | 12 | 79.0% | 1.27 | — | — | — | REJECT |
 | VfB Stuttgart v Eintracht Frankfurt | 2026-11-28T17:30 | 12 | 79.0% | 1.27 | — | — | — | REJECT |
 | Preston North End v Norwich City | 2026-11-28T12:30 | X2 | 78.9% | 1.27 | — | — | — | REJECT |
+| TSG Hoffenheim v Augsburg | 2026-11-29T16:30 | 12 | 78.9% | 1.27 | — | — | — | REJECT |
+| Brighton and Hove Albion v Newcastle United | 2026-11-29T14:05 | 12 | 78.9% | 1.27 | — | — | — | REJECT |
+| Everton v Liverpool | 2026-11-29T12:00 | X2 | 78.7% | 1.27 | — | — | — | REJECT |
 | Dundee United v St Johnstone | 2026-11-28T15:00 | 1X | 78.6% | 1.27 | — | — | — | REJECT |
 | Milwaukee Bucks @ Detroit Pistons | 2026-11-28T00:40 | Detroit Pistons | 78.4% | 1.27 | 1.25 (smarkets) | 80.3% | -2.3% | REJECT |
 | Birmingham City v Bolton Wanderers | 2026-11-28T15:00 | 12 | 78.4% | 1.28 | — | — | — | REJECT |
-| Paris Saint Germain v Lorient | 2026-11-28T19:45 | home | 77.6% | 1.29 | 1.22 (smarkets) | 82.3% | -5.7% | REJECT |
+| Paris Saint Germain v Lorient | 2026-11-28T19:45 | home | 78.2% | 1.28 | 1.22 (ladbrokes) | 82.0% | -4.6% | REJECT |
 | Werder Bremen v Borussia Monchengladbach | 2026-11-27T19:30 | 12 | 77.5% | 1.29 | — | — | — | REJECT |
 | Dundee United v St Johnstone | 2026-11-28T15:00 | 12 | 77.4% | 1.29 | — | — | — | REJECT |
 | Werder Bremen v Borussia Monchengladbach | 2026-11-27T19:30 | 1X | 77.3% | 1.29 | — | — | — | REJECT |
 | Lincoln City v Wolverhampton Wanderers | 2026-11-28T12:30 | 12 | 77.1% | 1.30 | — | — | — | REJECT |
 | West Ham United v Stoke City | 2026-11-28T15:00 | 12 | 77.1% | 1.30 | — | — | — | REJECT |
 | Preston North End v Norwich City | 2026-11-28T12:30 | 12 | 76.6% | 1.31 | — | — | — | REJECT |
-| Angers v RC Lens | 2026-11-28T16:15 | 12 | 76.6% | 1.31 | — | — | — | REJECT |
-| Nice v Troyes | 2026-11-28T19:45 | 12 | 76.4% | 1.31 | — | — | — | REJECT |
-| PSV Eindhoven v Go Ahead Eagles | 2026-11-28T17:45 | home | 76.2% | 1.31 | 1.25 (coral) | 80.0% | -4.8% | REJECT |
-| VfL Bochum v SV Darmstadt 98 | 2026-11-27T17:30 | 1X | 76.2% | 1.31 | — | — | — | REJECT |
-| Golden State Warriors @ Portland Trail Blazers | 2026-11-28T02:40 | Portland Trail Blazers | 76.1% | 1.31 | 1.29 (skybet) | 77.5% | -1.9% | REJECT |
-| VfL Bochum v SV Darmstadt 98 | 2026-11-27T17:30 | 12 | 75.9% | 1.32 | — | — | — | REJECT |
 
 ## Paper results (all time)
 
