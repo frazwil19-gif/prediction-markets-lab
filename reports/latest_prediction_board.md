@@ -2,9 +2,9 @@
 
 _Paper research board: what is most likely to happen. Not a betting card (see the Money Card)._
 
-Upcoming events: 46 · Valid predictions: 271 · Sports: basketball, football
-Counts: >=70: 79 · >=75: 48 · >=80: 18 · >=85: 9 · >=90: 2 · >=95: 0
-Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 115
+Upcoming events: 52 · Valid predictions: 277 · Sports: basketball, football
+Counts: >=70: 82 · >=75: 51 · >=80: 18 · >=85: 9 · >=90: 2 · >=95: 0
+Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 104
 
 ## Top predictions (P ≥ 80%)
 
@@ -38,7 +38,7 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 115
 | football_btts.market_implied_poisson | RESEARCH_VALIDATED / NOT_WIRED | 0 | 0 | COLLECTING | 0 | — → — |
 | atp_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 224 | 209 | EARLY | 31 | 86.9% → 77.4% |
 | wta_match_winner.betfair_market | VALIDATED_HISTORICAL / COLLECTING | 201 | 177 | EARLY | 31 | 89.3% → 80.6% |
-| nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 230 | 219 | EARLY | 31 | 84.2% → 93.5% |
+| nba_moneyline.market | VALIDATED_HISTORICAL / AWAITING_SEASON | 236 | 219 | EARLY | 31 | 84.2% → 93.5% |
 | nhl_moneyline.market | PROVISIONAL_PROSPECTIVE / COLLECTING | 159 | 122 | EARLY | 0 | — → — |
 | nfl_moneyline.market | VALIDATED_HISTORICAL / COLLECTING | 56 | 41 | COLLECTING | 3 | 82.3% → 100.0% |
 | football_double_chance.derived_1x2 | PROVISIONAL_PROSPECTIVE / COLLECTING | 1683 | 21 | COLLECTING | 1 | 80.2% → 0.0% |
@@ -47,8 +47,8 @@ Settled yesterday: 0 · System: **HEALTHY** · API credits (last observed): 115
 
 - daily_scan: OK (last 2026-11-27T07:16:32.061231+00:00)
 - settlement: OK (last 2026-11-27T03:36:38.652671+00:00)
-- tennis_board: OK (last 2026-11-26T16:16:34.586156+00:00)
-- ci_tests: OK (last 2026-11-27T07:16:32.612601+00:00)
+- tennis_board: OK (last 2026-11-27T16:16:34.207739+00:00)
+- ci_tests: OK (last 2026-11-27T16:16:35.029225+00:00)
 
 ⟳ = start rescheduled since first observation; the current provider start is shown (rule est-1).
 

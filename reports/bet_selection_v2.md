@@ -4,9 +4,9 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-27T07:16Z · events scanned 46 · valid predictions 271 · high-P (≥70%) 79 · priced 139 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 271 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-27T16:16Z · events scanned 52 · valid predictions 277 · high-P (≥70%) 82 · priced 145 · PAPER_BET 0 · MULTI-research 0 · WATCH 1 · REJECT 276 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 266 · P_BELOW_FLOOR 123 · NO_EXECUTABLE_PRICE 123 · NET_EV_NOT_POSITIVE 116 · PRICE_STALE 27 · COMMISSION_UNKNOWN 9
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 266 · PRICE_STALE 148 · P_BELOW_FLOOR 123 · NO_EXECUTABLE_PRICE 123 · NET_EV_NOT_POSITIVE 121 · COMMISSION_UNKNOWN 9 · NET_EV_BELOW_PAPER_GATE 1
 
 ## Candidates (latest run, best price per prediction)
 
@@ -37,6 +37,7 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 266 · P_BELOW_FLOOR 123 · 
 | VfB Stuttgart v Eintracht Frankfurt | 2026-11-28T17:30 | 12 | 79.0% | 1.27 | — | — | — | REJECT |
 | Preston North End v Norwich City | 2026-11-28T12:30 | X2 | 78.9% | 1.27 | — | — | — | REJECT |
 | Dundee United v St Johnstone | 2026-11-28T15:00 | 1X | 78.6% | 1.27 | — | — | — | REJECT |
+| Milwaukee Bucks @ Detroit Pistons | 2026-11-28T00:40 | Detroit Pistons | 78.4% | 1.27 | 1.25 (smarkets) | 80.3% | -2.3% | REJECT |
 | Birmingham City v Bolton Wanderers | 2026-11-28T15:00 | 12 | 78.4% | 1.28 | — | — | — | REJECT |
 | Paris Saint Germain v Lorient | 2026-11-28T19:45 | home | 77.6% | 1.29 | 1.22 (smarkets) | 82.3% | -5.7% | REJECT |
 | Werder Bremen v Borussia Monchengladbach | 2026-11-27T19:30 | 12 | 77.5% | 1.29 | — | — | — | REJECT |
@@ -49,9 +50,8 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 266 · P_BELOW_FLOOR 123 · 
 | Nice v Troyes | 2026-11-28T19:45 | 12 | 76.4% | 1.31 | — | — | — | REJECT |
 | PSV Eindhoven v Go Ahead Eagles | 2026-11-28T17:45 | home | 76.2% | 1.31 | 1.25 (coral) | 80.0% | -4.8% | REJECT |
 | VfL Bochum v SV Darmstadt 98 | 2026-11-27T17:30 | 1X | 76.2% | 1.31 | — | — | — | REJECT |
+| Golden State Warriors @ Portland Trail Blazers | 2026-11-28T02:40 | Portland Trail Blazers | 76.1% | 1.31 | 1.29 (skybet) | 77.5% | -1.9% | REJECT |
 | VfL Bochum v SV Darmstadt 98 | 2026-11-27T17:30 | 12 | 75.9% | 1.32 | — | — | — | REJECT |
-| SC Cambuur v Sparta Rotterdam | 2026-11-28T20:00 | 12 | 75.7% | 1.32 | — | — | — | REJECT |
-| 1. FC Heidenheim v 1. FC Nürnberg | 2026-11-27T17:30 | 12 | 75.7% | 1.32 | — | — | — | REJECT |
 
 ## Paper results (all time)
 

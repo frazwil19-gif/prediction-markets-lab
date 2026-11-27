@@ -1,27 +1,57 @@
 {
  "card_version": "card-v1.2",
- "generated_at": "2026-11-27T07:16:34.220033+00:00",
- "stage_a_generated_at": "2026-11-27T07:16:32.734109+00:00",
+ "generated_at": "2026-11-27T16:16:39.907445+00:00",
+ "stage_a_generated_at": "2026-11-27T16:16:38.334663+00:00",
  "real_money_enabled": false,
  "mode": "PAPER \u2014 unattended prospective validation (real-money betting paused; nothing to place)",
  "summary": {
-  "predictions_in_window": 241,
+  "predictions_in_window": 277,
   "best_predictions_shown": 40,
   "bets": 0,
   "total_stake_gbp": 0.0,
   "exposure_pct_of_bankroll": 0.0,
-  "strong_price_too_low": 70,
+  "strong_price_too_low": 82,
   "research_predictions": 0
  },
  "rejection_reasons": {
-  "ENGINE_STATUS_INELIGIBLE": 236,
-  "NO_EXECUTABLE_PRICE": 108,
-  "P_BELOW_FLOOR": 108,
-  "NET_EV_NOT_POSITIVE": 103,
-  "PRICE_STALE": 27,
-  "COMMISSION_UNKNOWN": 9
+  "ENGINE_STATUS_INELIGIBLE": 266,
+  "PRICE_STALE": 148,
+  "NO_EXECUTABLE_PRICE": 123,
+  "P_BELOW_FLOOR": 123,
+  "NET_EV_NOT_POSITIVE": 121,
+  "COMMISSION_UNKNOWN": 9,
+  "NET_EV_BELOW_PAPER_GATE": 1
  },
  "best_predictions": [
+  {
+   "prediction_id": "242d66504a737392",
+   "sport": "football",
+   "competition": "Ligue 1",
+   "event_key": "football|Ligue 1|Paris Saint Germain v Lorient|2026-11-28T19:45:00+00:00",
+   "event_name": "Paris Saint Germain v Lorient",
+   "event_start": "2026-11-28T19:45:00+00:00",
+   "market": "double_chance",
+   "selection": "1X",
+   "probability": 0.918551,
+   "band": "80%+",
+   "sigma": 0.006363,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.09,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
+   "min_bookmaker_odds": 1.33
+  },
   {
    "prediction_id": "133e697614f1cfda",
    "sport": "football",
@@ -48,7 +78,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -77,7 +107,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -106,7 +136,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -135,7 +165,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "4e7c97ff0a867359",
+   "sport": "football",
+   "competition": "Ligue 1",
+   "event_key": "football|Ligue 1|Paris Saint Germain v Lorient|2026-11-28T19:45:00+00:00",
+   "event_name": "Paris Saint Germain v Lorient",
+   "event_start": "2026-11-28T19:45:00+00:00",
+   "market": "double_chance",
+   "selection": "12",
+   "probability": 0.858567,
+   "band": "80%+",
+   "sigma": 0.006363,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.16,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -164,7 +223,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -193,7 +252,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -222,7 +281,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -251,7 +310,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -280,7 +339,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -309,7 +368,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -338,7 +397,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -367,7 +426,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -396,7 +455,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -425,7 +484,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -454,7 +513,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "9b62a6775688b400",
+   "sport": "football",
+   "competition": "Ligue 1",
+   "event_key": "football|Ligue 1|Nice v Troyes|2026-11-28T19:45:00+00:00",
+   "event_name": "Nice v Troyes",
+   "event_start": "2026-11-28T19:45:00+00:00",
+   "market": "double_chance",
+   "selection": "1X",
+   "probability": 0.800777,
+   "band": "80%+",
+   "sigma": 0.006363,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.25,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -483,7 +571,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -512,7 +600,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -541,7 +629,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -570,7 +658,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -599,7 +687,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -628,7 +716,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -657,7 +745,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "6a084254774b4fdf",
+   "sport": "basketball",
+   "competition": "NBA",
+   "event_key": "nba|326e8215b0369df0d4d65e5c0afe9ff5",
+   "event_name": "Milwaukee Bucks @ Detroit Pistons",
+   "event_start": "2026-11-28T00:40:00+00:00",
+   "market": "moneyline",
+   "selection": "Detroit Pistons",
+   "probability": 0.784499,
+   "band": "70%+",
+   "sigma": 0.014319,
+   "evidence": "VALIDATED",
+   "engine_id": "nba_moneyline.market",
+   "fair_odds": 1.27,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.25,
+   "best_source": "smarkets",
+   "best_net_ev": -0.023299,
+   "decision": "REJECT",
+   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.25",
+   "decision_source": "smarkets",
+   "decision_net_ev": "-0.02329867674858216",
+   "price_observed_at": "2026-11-27T16:16:35.895708+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -686,7 +803,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "91c277ea7e4fb9c4",
+   "sport": "football",
+   "competition": "Ligue 1",
+   "event_key": "football|Ligue 1|Paris Saint Germain v Lorient|2026-11-28T19:45:00+00:00",
+   "event_name": "Paris Saint Germain v Lorient",
+   "event_start": "2026-11-28T19:45:00+00:00",
+   "market": "1x2",
+   "selection": "home",
+   "probability": 0.777118,
+   "band": "70%+",
+   "sigma": 0.016716,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_1x2.market_consensus",
+   "fair_odds": 1.29,
+   "price_status": "PRICE_QUALITY_FAIL",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "1.22",
+   "decision_source": "smarkets",
+   "decision_net_ev": "-0.057005567559538894",
+   "price_observed_at": "2026-11-27T07:16:28.649404+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -715,7 +861,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -744,7 +890,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -773,7 +919,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -802,7 +948,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -831,7 +977,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -860,7 +1006,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -889,7 +1035,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
+   "min_bookmaker_odds": 1.34
+  },
+  {
+   "prediction_id": "8393e0eff6b30d4a",
+   "sport": "football",
+   "competition": "Ligue 1",
+   "event_key": "football|Ligue 1|Nice v Troyes|2026-11-28T19:45:00+00:00",
+   "event_name": "Nice v Troyes",
+   "event_start": "2026-11-28T19:45:00+00:00",
+   "market": "double_chance",
+   "selection": "12",
+   "probability": 0.763549,
+   "band": "70%+",
+   "sigma": 0.003828,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.31,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -918,7 +1093,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -936,19 +1111,48 @@
    "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
    "engine_id": "football_1x2.market_consensus",
    "fair_odds": 1.31,
-   "price_status": "POOR_PAYOUT",
-   "best_odds": 1.25,
-   "best_source": "coral",
-   "best_net_ev": -0.047695,
+   "price_status": "PRICE_QUALITY_FAIL",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
    "decision_odds": "1.25",
    "decision_source": "coral",
    "decision_net_ev": "-0.047695262483995",
    "price_observed_at": "2026-11-27T07:16:28.649404+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.34
+  },
+  {
+   "prediction_id": "d8e8b41d98e3d222",
+   "sport": "basketball",
+   "competition": "NBA",
+   "event_key": "nba|592a440c590415d43f5ffbfd922cd41e",
+   "event_name": "Golden State Warriors @ Portland Trail Blazers",
+   "event_start": "2026-11-28T02:40:00+00:00",
+   "market": "moneyline",
+   "selection": "Portland Trail Blazers",
+   "probability": 0.760783,
+   "band": "70%+",
+   "sigma": 0.014319,
+   "evidence": "VALIDATED",
+   "engine_id": "nba_moneyline.market",
+   "fair_odds": 1.31,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.29,
+   "best_source": "skybet",
+   "best_net_ev": -0.018589,
+   "decision": "REJECT",
+   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.29",
+   "decision_source": "skybet",
+   "decision_net_ev": "-0.01858938073134836",
+   "price_observed_at": "2026-11-27T16:16:35.895708+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
+   "min_bookmaker_odds": 1.35
   },
   {
    "prediction_id": "7f68e076774fdab3",
@@ -976,217 +1180,43 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.35
-  },
-  {
-   "prediction_id": "eebfffe47ea1a897",
-   "sport": "football",
-   "competition": "Scottish Premiership",
-   "event_key": "football|Scottish Premiership|Rangers v Falkirk F.C.|2026-11-28T15:00:00+00:00",
-   "event_name": "Rangers v Falkirk F.C.",
-   "event_start": "2026-11-28T15:00:00+00:00",
-   "market": "1x2",
-   "selection": "home",
-   "probability": 0.757921,
-   "band": "70%+",
-   "sigma": 0.016716,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_1x2.market_consensus",
-   "fair_odds": 1.32,
-   "price_status": "POOR_PAYOUT",
-   "best_odds": 1.29,
-   "best_source": "betfair",
-   "best_net_ev": -0.041681,
-   "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "1.29",
-   "decision_source": "betfair",
-   "decision_net_ev": "-0.041680714389178086",
-   "price_observed_at": "2026-11-27T07:16:28.649404+00:00",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
-   "min_bookmaker_odds": 1.35
-  },
-  {
-   "prediction_id": "87d9ec3a63a0df23",
-   "sport": "football",
-   "competition": "2. Bundesliga",
-   "event_key": "football|2. Bundesliga|1. FC Heidenheim v 1. FC N\u00fcrnberg|2026-11-27T17:30:00+00:00",
-   "event_name": "1. FC Heidenheim v 1. FC N\u00fcrnberg",
-   "event_start": "2026-11-27T17:30:00+00:00",
-   "market": "double_chance",
-   "selection": "12",
-   "probability": 0.757122,
-   "band": "70%+",
-   "sigma": 0.003828,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_double_chance.derived_1x2",
-   "fair_odds": 1.32,
-   "price_status": "PRICE_UNAVAILABLE",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "",
-   "decision_source": "",
-   "decision_net_ev": "",
-   "price_observed_at": "",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
-   "min_bookmaker_odds": 1.35
-  },
-  {
-   "prediction_id": "45da6d00a5046831",
-   "sport": "football",
-   "competition": "Premier League",
-   "event_key": "football|Premier League|Ipswich Town v Aston Villa|2026-11-28T17:30:00+00:00",
-   "event_name": "Ipswich Town v Aston Villa",
-   "event_start": "2026-11-28T17:30:00+00:00",
-   "market": "double_chance",
-   "selection": "12",
-   "probability": 0.754521,
-   "band": "70%+",
-   "sigma": 0.003828,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_double_chance.derived_1x2",
-   "fair_odds": 1.33,
-   "price_status": "PRICE_UNAVAILABLE",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "",
-   "decision_source": "",
-   "decision_net_ev": "",
-   "price_observed_at": "",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
-   "min_bookmaker_odds": 1.36
-  },
-  {
-   "prediction_id": "fae1a46111f1d709",
-   "sport": "football",
-   "competition": "Scottish Premiership",
-   "event_key": "football|Scottish Premiership|Aberdeen v Dundee FC|2026-11-28T15:00:00+00:00",
-   "event_name": "Aberdeen v Dundee FC",
-   "event_start": "2026-11-28T15:00:00+00:00",
-   "market": "double_chance",
-   "selection": "12",
-   "probability": 0.753146,
-   "band": "70%+",
-   "sigma": 0.003828,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_double_chance.derived_1x2",
-   "fair_odds": 1.33,
-   "price_status": "PRICE_UNAVAILABLE",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "",
-   "decision_source": "",
-   "decision_net_ev": "",
-   "price_observed_at": "",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
-   "min_bookmaker_odds": 1.36
-  },
-  {
-   "prediction_id": "43d1843254de67b2",
-   "sport": "football",
-   "competition": "Bundesliga",
-   "event_key": "football|Bundesliga|VfB Stuttgart v Eintracht Frankfurt|2026-11-28T17:30:00+00:00",
-   "event_name": "VfB Stuttgart v Eintracht Frankfurt",
-   "event_start": "2026-11-28T17:30:00+00:00",
-   "market": "double_chance",
-   "selection": "1X",
-   "probability": 0.752971,
-   "band": "70%+",
-   "sigma": 0.003828,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_double_chance.derived_1x2",
-   "fair_odds": 1.33,
-   "price_status": "PRICE_UNAVAILABLE",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "",
-   "decision_source": "",
-   "decision_net_ev": "",
-   "price_observed_at": "",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
-   "min_bookmaker_odds": 1.36
-  },
-  {
-   "prediction_id": "1b4685bdfe0b7a33",
-   "sport": "football",
-   "competition": "Bundesliga",
-   "event_key": "football|Bundesliga|1. FC K\u00f6ln v Elversberg|2026-11-28T14:30:00+00:00",
-   "event_name": "1. FC K\u00f6ln v Elversberg",
-   "event_start": "2026-11-28T14:30:00+00:00",
-   "market": "double_chance",
-   "selection": "12",
-   "probability": 0.752148,
-   "band": "70%+",
-   "sigma": 0.003828,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_double_chance.derived_1x2",
-   "fair_odds": 1.33,
-   "price_status": "PRICE_UNAVAILABLE",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "",
-   "decision_source": "",
-   "decision_net_ev": "",
-   "price_observed_at": "",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
-   "min_bookmaker_odds": 1.36
-  },
-  {
-   "prediction_id": "138209ede2b95df3",
-   "sport": "football",
-   "competition": "Championship",
-   "event_key": "football|Championship|Southampton v Middlesbrough|2026-11-27T20:00:00+00:00",
-   "event_name": "Southampton v Middlesbrough",
-   "event_start": "2026-11-27T20:00:00+00:00",
-   "market": "double_chance",
-   "selection": "12",
-   "probability": 0.751198,
-   "band": "70%+",
-   "sigma": 0.003828,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_double_chance.derived_1x2",
-   "fair_odds": 1.33,
-   "price_status": "PRICE_UNAVAILABLE",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "",
-   "decision_source": "",
-   "decision_net_ev": "",
-   "price_observed_at": "",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
-   "min_bookmaker_odds": 1.36
   }
  ],
  "best_bets": [],
  "big_card": null,
  "strong_price_too_low": [
   {
+   "prediction_id": "242d66504a737392",
+   "sport": "football",
+   "competition": "Ligue 1",
+   "event_key": "football|Ligue 1|Paris Saint Germain v Lorient|2026-11-28T19:45:00+00:00",
+   "event_name": "Paris Saint Germain v Lorient",
+   "event_start": "2026-11-28T19:45:00+00:00",
+   "market": "double_chance",
+   "selection": "1X",
+   "probability": 0.918551,
+   "band": "80%+",
+   "sigma": 0.006363,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.09,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
    "prediction_id": "133e697614f1cfda",
    "sport": "football",
    "competition": "Scottish Premiership",
@@ -1212,7 +1242,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1241,7 +1271,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1270,7 +1300,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1299,7 +1329,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "4e7c97ff0a867359",
+   "sport": "football",
+   "competition": "Ligue 1",
+   "event_key": "football|Ligue 1|Paris Saint Germain v Lorient|2026-11-28T19:45:00+00:00",
+   "event_name": "Paris Saint Germain v Lorient",
+   "event_start": "2026-11-28T19:45:00+00:00",
+   "market": "double_chance",
+   "selection": "12",
+   "probability": 0.858567,
+   "band": "80%+",
+   "sigma": 0.006363,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.16,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1328,7 +1387,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1357,7 +1416,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1386,7 +1445,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1415,7 +1474,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1444,7 +1503,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1473,7 +1532,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1502,7 +1561,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1531,7 +1590,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1560,7 +1619,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1589,7 +1648,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1618,7 +1677,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "9b62a6775688b400",
+   "sport": "football",
+   "competition": "Ligue 1",
+   "event_key": "football|Ligue 1|Nice v Troyes|2026-11-28T19:45:00+00:00",
+   "event_name": "Nice v Troyes",
+   "event_start": "2026-11-28T19:45:00+00:00",
+   "market": "double_chance",
+   "selection": "1X",
+   "probability": 0.800777,
+   "band": "80%+",
+   "sigma": 0.006363,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.25,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1647,7 +1735,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1676,7 +1764,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1705,7 +1793,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1734,7 +1822,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1763,7 +1851,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1792,7 +1880,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1821,7 +1909,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "6a084254774b4fdf",
+   "sport": "basketball",
+   "competition": "NBA",
+   "event_key": "nba|326e8215b0369df0d4d65e5c0afe9ff5",
+   "event_name": "Milwaukee Bucks @ Detroit Pistons",
+   "event_start": "2026-11-28T00:40:00+00:00",
+   "market": "moneyline",
+   "selection": "Detroit Pistons",
+   "probability": 0.784499,
+   "band": "70%+",
+   "sigma": 0.014319,
+   "evidence": "VALIDATED",
+   "engine_id": "nba_moneyline.market",
+   "fair_odds": 1.27,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.25,
+   "best_source": "smarkets",
+   "best_net_ev": -0.023299,
+   "decision": "REJECT",
+   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.25",
+   "decision_source": "smarkets",
+   "decision_net_ev": "-0.02329867674858216",
+   "price_observed_at": "2026-11-27T16:16:35.895708+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1850,7 +1967,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "91c277ea7e4fb9c4",
+   "sport": "football",
+   "competition": "Ligue 1",
+   "event_key": "football|Ligue 1|Paris Saint Germain v Lorient|2026-11-28T19:45:00+00:00",
+   "event_name": "Paris Saint Germain v Lorient",
+   "event_start": "2026-11-28T19:45:00+00:00",
+   "market": "1x2",
+   "selection": "home",
+   "probability": 0.777118,
+   "band": "70%+",
+   "sigma": 0.016716,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_1x2.market_consensus",
+   "fair_odds": 1.29,
+   "price_status": "PRICE_QUALITY_FAIL",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "1.22",
+   "decision_source": "smarkets",
+   "decision_net_ev": "-0.057005567559538894",
+   "price_observed_at": "2026-11-27T07:16:28.649404+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1879,7 +2025,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1908,7 +2054,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1937,7 +2083,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1966,7 +2112,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1995,7 +2141,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -2024,7 +2170,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -2053,7 +2199,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
+   "min_bookmaker_odds": 1.34
+  },
+  {
+   "prediction_id": "8393e0eff6b30d4a",
+   "sport": "football",
+   "competition": "Ligue 1",
+   "event_key": "football|Ligue 1|Nice v Troyes|2026-11-28T19:45:00+00:00",
+   "event_name": "Nice v Troyes",
+   "event_start": "2026-11-28T19:45:00+00:00",
+   "market": "double_chance",
+   "selection": "12",
+   "probability": 0.763549,
+   "band": "70%+",
+   "sigma": 0.003828,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.31,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -2082,7 +2257,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -2100,19 +2275,48 @@
    "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
    "engine_id": "football_1x2.market_consensus",
    "fair_odds": 1.31,
-   "price_status": "POOR_PAYOUT",
-   "best_odds": 1.25,
-   "best_source": "coral",
-   "best_net_ev": -0.047695,
+   "price_status": "PRICE_QUALITY_FAIL",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
    "decision_odds": "1.25",
    "decision_source": "coral",
    "decision_net_ev": "-0.047695262483995",
    "price_observed_at": "2026-11-27T07:16:28.649404+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.34
+  },
+  {
+   "prediction_id": "d8e8b41d98e3d222",
+   "sport": "basketball",
+   "competition": "NBA",
+   "event_key": "nba|592a440c590415d43f5ffbfd922cd41e",
+   "event_name": "Golden State Warriors @ Portland Trail Blazers",
+   "event_start": "2026-11-28T02:40:00+00:00",
+   "market": "moneyline",
+   "selection": "Portland Trail Blazers",
+   "probability": 0.760783,
+   "band": "70%+",
+   "sigma": 0.014319,
+   "evidence": "VALIDATED",
+   "engine_id": "nba_moneyline.market",
+   "fair_odds": 1.31,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.29,
+   "best_source": "skybet",
+   "best_net_ev": -0.018589,
+   "decision": "REJECT",
+   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.29",
+   "decision_source": "skybet",
+   "decision_net_ev": "-0.01858938073134836",
+   "price_observed_at": "2026-11-27T16:16:35.895708+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
+   "min_bookmaker_odds": 1.35
   },
   {
    "prediction_id": "7f68e076774fdab3",
@@ -2140,7 +2344,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.35
   },
   {
@@ -2158,18 +2362,47 @@
    "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
    "engine_id": "football_1x2.market_consensus",
    "fair_odds": 1.32,
-   "price_status": "POOR_PAYOUT",
-   "best_odds": 1.29,
-   "best_source": "betfair",
-   "best_net_ev": -0.041681,
+   "price_status": "PRICE_QUALITY_FAIL",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
    "decision_odds": "1.29",
    "decision_source": "betfair",
    "decision_net_ev": "-0.041680714389178086",
    "price_observed_at": "2026-11-27T07:16:28.649404+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
+   "min_bookmaker_odds": 1.35
+  },
+  {
+   "prediction_id": "77f97295dd7009df",
+   "sport": "football",
+   "competition": "Eredivisie",
+   "event_key": "football|Eredivisie|SC Cambuur v Sparta Rotterdam|2026-11-28T20:00:00+00:00",
+   "event_name": "SC Cambuur v Sparta Rotterdam",
+   "event_start": "2026-11-28T20:00:00+00:00",
+   "market": "double_chance",
+   "selection": "12",
+   "probability": 0.75716,
+   "band": "70%+",
+   "sigma": 0.003828,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.32,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.35
   },
   {
@@ -2198,7 +2431,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
+   "min_bookmaker_odds": 1.35
+  },
+  {
+   "prediction_id": "dd01b2ee26d7a195",
+   "sport": "basketball",
+   "competition": "NBA",
+   "event_key": "nba|709de4f76f95aebf383d180ac3c6f679",
+   "event_name": "Brooklyn Nets @ Toronto Raptors",
+   "event_start": "2026-11-28T00:40:00+00:00",
+   "market": "moneyline",
+   "selection": "Toronto Raptors",
+   "probability": 0.75664,
+   "band": "70%+",
+   "sigma": 0.014319,
+   "evidence": "VALIDATED",
+   "engine_id": "nba_moneyline.market",
+   "fair_odds": 1.32,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.27,
+   "best_source": "unibet_uk",
+   "best_net_ev": -0.039068,
+   "decision": "REJECT",
+   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_odds": "1.27",
+   "decision_source": "unibet_uk",
+   "decision_net_ev": "-0.03906775067750659",
+   "price_observed_at": "2026-11-27T16:16:35.895708+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.35
   },
   {
@@ -2227,7 +2489,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.36
   },
   {
@@ -2256,7 +2518,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.36
   },
   {
@@ -2285,7 +2547,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.36
   },
   {
@@ -2314,7 +2576,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.36
   },
   {
@@ -2343,7 +2605,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.36
   },
   {
@@ -2372,7 +2634,7 @@
    "decision_net_ev": "-0.03603126732453707",
    "price_observed_at": "2026-11-26T16:16:35.951372+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.36
   },
   {
@@ -2401,7 +2663,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.36
   },
   {
@@ -2430,7 +2692,7 @@
    "decision_net_ev": "-0.040462684907129454",
    "price_observed_at": "2026-11-26T16:16:35.951372+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.37
   },
   {
@@ -2448,18 +2710,18 @@
    "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
    "engine_id": "football_1x2.market_consensus",
    "fair_odds": 1.33,
-   "price_status": "POOR_PAYOUT",
-   "best_odds": 1.28,
-   "best_source": "smarkets",
-   "best_net_ev": -0.048257,
+   "price_status": "PRICE_QUALITY_FAIL",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
    "decision_odds": "1.28",
    "decision_source": "smarkets",
    "decision_net_ev": "-0.04825710039332731",
    "price_observed_at": "2026-11-27T07:16:28.649404+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.37
   },
   {
@@ -2488,7 +2750,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.37
   },
   {
@@ -2517,8 +2779,37 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.37
+  },
+  {
+   "prediction_id": "e64f8a8b7f185282",
+   "sport": "football",
+   "competition": "Ligue 1",
+   "event_key": "football|Ligue 1|Le Mans FC v Lille|2026-11-28T19:45:00+00:00",
+   "event_name": "Le Mans FC v Lille",
+   "event_start": "2026-11-28T19:45:00+00:00",
+   "market": "double_chance",
+   "selection": "X2",
+   "probability": 0.743339,
+   "band": "70%+",
+   "sigma": 0.003828,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.35,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
+   "min_bookmaker_odds": 1.38
   },
   {
    "prediction_id": "0b74834aead4420c",
@@ -2546,7 +2837,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.38
   },
   {
@@ -2575,7 +2866,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.38
   },
   {
@@ -2604,7 +2895,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.39
   },
   {
@@ -2633,7 +2924,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.39
   },
   {
@@ -2662,7 +2953,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
+   "min_bookmaker_odds": 1.39
+  },
+  {
+   "prediction_id": "4e7c56045bdfabba",
+   "sport": "football",
+   "competition": "Ligue 1",
+   "event_key": "football|Ligue 1|Le Havre v Strasbourg|2026-11-28T19:45:00+00:00",
+   "event_name": "Le Havre v Strasbourg",
+   "event_start": "2026-11-28T19:45:00+00:00",
+   "market": "double_chance",
+   "selection": "12",
+   "probability": 0.734082,
+   "band": "70%+",
+   "sigma": 0.003828,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.36,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.39
   },
   {
@@ -2691,7 +3011,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -2720,7 +3040,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -2749,7 +3069,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -2778,7 +3098,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -2807,7 +3127,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -2836,7 +3156,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -2865,7 +3185,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -2894,7 +3214,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -2923,7 +3243,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.41
   },
   {
@@ -2952,7 +3272,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.41
   },
   {
@@ -2981,7 +3301,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.41
   },
   {
@@ -3010,7 +3330,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
+   "min_bookmaker_odds": 1.42
+  },
+  {
+   "prediction_id": "8bb6cf43dc0e5d49",
+   "sport": "football",
+   "competition": "Ligue 1",
+   "event_key": "football|Ligue 1|Le Mans FC v Lille|2026-11-28T19:45:00+00:00",
+   "event_name": "Le Mans FC v Lille",
+   "event_start": "2026-11-28T19:45:00+00:00",
+   "market": "double_chance",
+   "selection": "12",
+   "probability": 0.721884,
+   "band": "70%+",
+   "sigma": 0.003828,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.39,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.42
   },
   {
@@ -3039,7 +3388,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.42
   },
   {
@@ -3068,7 +3417,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.44
   },
   {
@@ -3097,7 +3446,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.44
   },
   {
@@ -3115,18 +3464,18 @@
    "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
    "engine_id": "football_ou25.market",
    "fair_odds": 1.41,
-   "price_status": "POOR_PAYOUT",
-   "best_odds": 1.33,
-   "best_source": "william hill",
-   "best_net_ev": -0.056223,
+   "price_status": "PRICE_QUALITY_FAIL",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
    "decision_odds": "1.33",
    "decision_source": "william hill",
    "decision_net_ev": "-0.05622270742358082",
    "price_observed_at": "2026-11-27T07:16:28.649404+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.44
   },
   {
@@ -3155,7 +3504,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.45
   },
   {
@@ -3184,7 +3533,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.45
   },
   {
@@ -3213,7 +3562,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "decision_evaluated_at": "2026-11-27T16:16:39.151716+00:00",
    "min_bookmaker_odds": 1.45
   }
  ],
