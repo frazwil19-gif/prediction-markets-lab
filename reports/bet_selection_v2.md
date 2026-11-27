@@ -4,16 +4,20 @@ _Paper only. Real money disabled. Not a betting card; the Money Card is separate
 
 ## Latest run funnel
 
-Run 2026-11-26T17:37Z · events scanned 39 · valid predictions 228 · high-P (≥70%) 66 · priced 115 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 228 · new paper bets 0 · Money Card qualified 0
+Run 2026-11-27T07:16Z · events scanned 46 · valid predictions 271 · high-P (≥70%) 79 · priced 139 · PAPER_BET 0 · MULTI-research 0 · WATCH 0 · REJECT 271 · new paper bets 0 · Money Card qualified 0
 
-Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 223 · P_BELOW_FLOOR 102 · NO_EXECUTABLE_PRICE 102 · NET_EV_NOT_POSITIVE 99 · COMMISSION_UNKNOWN 11
+Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 266 · P_BELOW_FLOOR 123 · NO_EXECUTABLE_PRICE 123 · NET_EV_NOT_POSITIVE 116 · PRICE_STALE 27 · COMMISSION_UNKNOWN 9
 
 ## Candidates (latest run, best price per prediction)
 
 | Event | Start | Sel | P | Fair | Odds (source) | Break-even | Net EV | Decision |
 |---|---|---|---|---|---|---|---|---|
+| Paris Saint Germain v Lorient | 2026-11-28T19:45 | 1X | 91.9% | 1.09 | — | — | — | REJECT |
 | Rangers v Falkirk F.C. | 2026-11-28T15:00 | 1X | 90.6% | 1.10 | — | — | — | REJECT |
+| PSV Eindhoven v Go Ahead Eagles | 2026-11-28T17:45 | 1X | 89.7% | 1.11 | — | — | — | REJECT |
 | Hamburger SV v Bayern Munich | 2026-11-28T14:30 | X2 | 89.7% | 1.12 | — | — | — | REJECT |
+| PSV Eindhoven v Go Ahead Eagles | 2026-11-28T17:45 | 12 | 86.5% | 1.16 | — | — | — | REJECT |
+| Paris Saint Germain v Lorient | 2026-11-28T19:45 | 12 | 85.9% | 1.16 | — | — | — | REJECT |
 | Groningen v Willem II | 2026-11-27T19:00 | 1X | 85.4% | 1.17 | — | — | — | REJECT |
 | Hamburger SV v Bayern Munich | 2026-11-28T14:30 | 12 | 85.3% | 1.17 | — | — | — | REJECT |
 | Rangers v Falkirk F.C. | 2026-11-28T15:00 | 12 | 85.2% | 1.17 | — | — | — | REJECT |
@@ -25,6 +29,7 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 223 · P_BELOW_FLOOR 102 · 
 | Hertha Berlin v Karlsruher SC | 2026-11-28T12:00 | 12 | 81.4% | 1.23 | — | — | — | REJECT |
 | Groningen v Willem II | 2026-11-27T19:00 | 12 | 80.6% | 1.24 | — | — | — | REJECT |
 | West Bromwich Albion v Bristol City | 2026-11-28T15:00 | 1X | 80.3% | 1.24 | — | — | — | REJECT |
+| Nice v Troyes | 2026-11-28T19:45 | 1X | 80.1% | 1.25 | — | — | — | REJECT |
 | West Ham United v Stoke City | 2026-11-28T15:00 | 1X | 79.9% | 1.25 | — | — | — | REJECT |
 | Angers v RC Lens | 2026-11-28T16:15 | X2 | 79.6% | 1.26 | — | — | — | REJECT |
 | Leeds United v Coventry City | 2026-11-28T15:00 | 12 | 79.3% | 1.26 | — | — | — | REJECT |
@@ -33,6 +38,7 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 223 · P_BELOW_FLOOR 102 · 
 | Preston North End v Norwich City | 2026-11-28T12:30 | X2 | 78.9% | 1.27 | — | — | — | REJECT |
 | Dundee United v St Johnstone | 2026-11-28T15:00 | 1X | 78.6% | 1.27 | — | — | — | REJECT |
 | Birmingham City v Bolton Wanderers | 2026-11-28T15:00 | 12 | 78.4% | 1.28 | — | — | — | REJECT |
+| Paris Saint Germain v Lorient | 2026-11-28T19:45 | home | 77.6% | 1.29 | 1.22 (smarkets) | 82.3% | -5.7% | REJECT |
 | Werder Bremen v Borussia Monchengladbach | 2026-11-27T19:30 | 12 | 77.5% | 1.29 | — | — | — | REJECT |
 | Dundee United v St Johnstone | 2026-11-28T15:00 | 12 | 77.4% | 1.29 | — | — | — | REJECT |
 | Werder Bremen v Borussia Monchengladbach | 2026-11-27T19:30 | 1X | 77.3% | 1.29 | — | — | — | REJECT |
@@ -40,24 +46,18 @@ Reason codes (latest run): ENGINE_STATUS_INELIGIBLE 223 · P_BELOW_FLOOR 102 · 
 | West Ham United v Stoke City | 2026-11-28T15:00 | 12 | 77.1% | 1.30 | — | — | — | REJECT |
 | Preston North End v Norwich City | 2026-11-28T12:30 | 12 | 76.6% | 1.31 | — | — | — | REJECT |
 | Angers v RC Lens | 2026-11-28T16:15 | 12 | 76.6% | 1.31 | — | — | — | REJECT |
+| Nice v Troyes | 2026-11-28T19:45 | 12 | 76.4% | 1.31 | — | — | — | REJECT |
+| PSV Eindhoven v Go Ahead Eagles | 2026-11-28T17:45 | home | 76.2% | 1.31 | 1.25 (coral) | 80.0% | -4.8% | REJECT |
 | VfL Bochum v SV Darmstadt 98 | 2026-11-27T17:30 | 1X | 76.2% | 1.31 | — | — | — | REJECT |
 | VfL Bochum v SV Darmstadt 98 | 2026-11-27T17:30 | 12 | 75.9% | 1.32 | — | — | — | REJECT |
+| SC Cambuur v Sparta Rotterdam | 2026-11-28T20:00 | 12 | 75.7% | 1.32 | — | — | — | REJECT |
 | 1. FC Heidenheim v 1. FC Nürnberg | 2026-11-27T17:30 | 12 | 75.7% | 1.32 | — | — | — | REJECT |
-| Rangers v Falkirk F.C. | 2026-11-28T15:00 | home | 75.5% | 1.33 | 1.28 (betfair) | 79.0% | -4.5% | REJECT |
-| Ipswich Town v Aston Villa | 2026-11-28T17:30 | 12 | 75.5% | 1.33 | — | — | — | REJECT |
-| Aberdeen v Dundee FC | 2026-11-28T15:00 | 12 | 75.3% | 1.33 | — | — | — | REJECT |
-| VfB Stuttgart v Eintracht Frankfurt | 2026-11-28T17:30 | 1X | 75.3% | 1.33 | — | — | — | REJECT |
-| 1. FC Köln v Elversberg | 2026-11-28T14:30 | 12 | 75.2% | 1.33 | — | — | — | REJECT |
-| Southampton v Middlesbrough | 2026-11-27T20:00 | 12 | 75.1% | 1.33 | — | — | — | REJECT |
-| Atlanta Hawks @ Boston Celtics | 2026-11-28T01:10 | Boston Celtics | 75.1% | 1.33 | 1.29 (smarkets) | 77.9% | -3.6% | REJECT |
-| West Bromwich Albion v Bristol City | 2026-11-28T15:00 | 12 | 75.0% | 1.33 | — | — | — | REJECT |
-| Denver Nuggets @ Utah Jazz | 2026-11-28T02:40 | Denver Nuggets | 75.0% | 1.33 | 1.28 (unibet_uk) | 78.1% | -4.0% | REJECT |
 
 ## Paper results (all time)
 
 Selections 4 · settled 4 · pending 0 · win rate 50.0% · avg P 64.3% · avg odds 1.60 · expected net +0.11u · realised net -0.85u · yield -21.2% · max DD 2.00u · longest losing streak 2
 
-Days evaluated 59 · no-bet days 55 (2026-09-30, 2026-10-01, 2026-10-02, 2026-10-03, 2026-10-04, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-08, 2026-10-09, 2026-10-10, 2026-10-11, 2026-10-12, 2026-10-14, 2026-10-16, 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21, 2026-10-22, 2026-10-23, 2026-10-24, 2026-10-25, 2026-10-26, 2026-10-27, 2026-10-28, 2026-10-29, 2026-10-30, 2026-10-31, 2026-11-01, 2026-11-02, 2026-11-03, 2026-11-04, 2026-11-05, 2026-11-06, 2026-11-07, 2026-11-08, 2026-11-09, 2026-11-11, 2026-11-12, 2026-11-13, 2026-11-14, 2026-11-15, 2026-11-16, 2026-11-17, 2026-11-18, 2026-11-19, 2026-11-20, 2026-11-21, 2026-11-22, 2026-11-23, 2026-11-24, 2026-11-25, 2026-11-26)
+Days evaluated 60 · no-bet days 56 (2026-09-30, 2026-10-01, 2026-10-02, 2026-10-03, 2026-10-04, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-08, 2026-10-09, 2026-10-10, 2026-10-11, 2026-10-12, 2026-10-14, 2026-10-16, 2026-10-17, 2026-10-18, 2026-10-19, 2026-10-20, 2026-10-21, 2026-10-22, 2026-10-23, 2026-10-24, 2026-10-25, 2026-10-26, 2026-10-27, 2026-10-28, 2026-10-29, 2026-10-30, 2026-10-31, 2026-11-01, 2026-11-02, 2026-11-03, 2026-11-04, 2026-11-05, 2026-11-06, 2026-11-07, 2026-11-08, 2026-11-09, 2026-11-11, 2026-11-12, 2026-11-13, 2026-11-14, 2026-11-15, 2026-11-16, 2026-11-17, 2026-11-18, 2026-11-19, 2026-11-20, 2026-11-21, 2026-11-22, 2026-11-23, 2026-11-24, 2026-11-25, 2026-11-26, 2026-11-27)
 
 ## Bankroll simulations (descriptive; small samples prove nothing)
 

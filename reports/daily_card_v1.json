@@ -1,24 +1,25 @@
 {
  "card_version": "card-v1.2",
- "generated_at": "2026-11-27T04:24:18.370732+00:00",
- "stage_a_generated_at": "2026-11-27T04:24:17.661066+00:00",
+ "generated_at": "2026-11-27T07:16:34.220033+00:00",
+ "stage_a_generated_at": "2026-11-27T07:16:32.734109+00:00",
  "real_money_enabled": false,
  "mode": "PAPER \u2014 unattended prospective validation (real-money betting paused; nothing to place)",
  "summary": {
-  "predictions_in_window": 215,
+  "predictions_in_window": 241,
   "best_predictions_shown": 40,
   "bets": 0,
   "total_stake_gbp": 0.0,
   "exposure_pct_of_bankroll": 0.0,
-  "strong_price_too_low": 62,
+  "strong_price_too_low": 70,
   "research_predictions": 0
  },
  "rejection_reasons": {
-  "ENGINE_STATUS_INELIGIBLE": 210,
-  "NO_EXECUTABLE_PRICE": 96,
-  "P_BELOW_FLOOR": 96,
-  "NET_EV_NOT_POSITIVE": 93,
-  "COMMISSION_UNKNOWN": 11
+  "ENGINE_STATUS_INELIGIBLE": 236,
+  "NO_EXECUTABLE_PRICE": 108,
+  "P_BELOW_FLOOR": 108,
+  "NET_EV_NOT_POSITIVE": 103,
+  "PRICE_STALE": 27,
+  "COMMISSION_UNKNOWN": 9
  },
  "best_predictions": [
   {
@@ -47,7 +48,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "7d5d765f474e475d",
+   "sport": "football",
+   "competition": "Eredivisie",
+   "event_key": "football|Eredivisie|PSV Eindhoven v Go Ahead Eagles|2026-11-28T17:45:00+00:00",
+   "event_name": "PSV Eindhoven v Go Ahead Eagles",
+   "event_start": "2026-11-28T17:45:00+00:00",
+   "market": "double_chance",
+   "selection": "1X",
+   "probability": 0.896957,
+   "band": "80%+",
+   "sigma": 0.006363,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.11,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -76,7 +106,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "36d1c7e443295fa8",
+   "sport": "football",
+   "competition": "Eredivisie",
+   "event_key": "football|Eredivisie|PSV Eindhoven v Go Ahead Eagles|2026-11-28T17:45:00+00:00",
+   "event_name": "PSV Eindhoven v Go Ahead Eagles",
+   "event_start": "2026-11-28T17:45:00+00:00",
+   "market": "double_chance",
+   "selection": "12",
+   "probability": 0.864523,
+   "band": "80%+",
+   "sigma": 0.006363,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.16,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -105,7 +164,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -134,7 +193,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -163,7 +222,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -192,7 +251,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -221,7 +280,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -250,7 +309,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -279,7 +338,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -308,7 +367,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -337,7 +396,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -366,7 +425,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -395,7 +454,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -424,7 +483,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -453,7 +512,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -482,7 +541,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -511,7 +570,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "e0a9b42435329d03",
+   "sport": "football",
+   "competition": "Bundesliga",
+   "event_key": "football|Bundesliga|VfB Stuttgart v Eintracht Frankfurt|2026-11-28T17:30:00+00:00",
+   "event_name": "VfB Stuttgart v Eintracht Frankfurt",
+   "event_start": "2026-11-28T17:30:00+00:00",
+   "market": "double_chance",
+   "selection": "12",
+   "probability": 0.789946,
+   "band": "70%+",
+   "sigma": 0.003828,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.27,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -540,7 +628,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -569,7 +657,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -598,7 +686,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -627,7 +715,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -656,7 +744,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -685,7 +773,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -714,7 +802,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -743,7 +831,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -772,7 +860,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -801,7 +889,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -830,7 +918,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "min_bookmaker_odds": 1.34
+  },
+  {
+   "prediction_id": "d9c2fddce000bcce",
+   "sport": "football",
+   "competition": "Eredivisie",
+   "event_key": "football|Eredivisie|PSV Eindhoven v Go Ahead Eagles|2026-11-28T17:45:00+00:00",
+   "event_name": "PSV Eindhoven v Go Ahead Eagles",
+   "event_start": "2026-11-28T17:45:00+00:00",
+   "market": "1x2",
+   "selection": "home",
+   "probability": 0.761479,
+   "band": "70%+",
+   "sigma": 0.016716,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_1x2.market_consensus",
+   "fair_odds": 1.31,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.25,
+   "best_source": "coral",
+   "best_net_ev": -0.047695,
+   "decision": "REJECT",
+   "decision_reasons": "NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "1.25",
+   "decision_source": "coral",
+   "decision_net_ev": "-0.047695262483995",
+   "price_observed_at": "2026-11-27T07:16:28.649404+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -859,7 +976,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.35
   },
   {
@@ -877,18 +994,18 @@
    "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
    "engine_id": "football_1x2.market_consensus",
    "fair_odds": 1.32,
-   "price_status": "PRICE_QUALITY_FAIL",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.29,
+   "best_source": "betfair",
+   "best_net_ev": -0.041681,
    "decision": "REJECT",
    "decision_reasons": "NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "1.28",
+   "decision_odds": "1.29",
    "decision_source": "betfair",
-   "decision_net_ev": "-0.04476861167002005",
-   "price_observed_at": "2026-11-26T17:37:10.515259+00:00",
+   "decision_net_ev": "-0.041680714389178086",
+   "price_observed_at": "2026-11-27T07:16:28.649404+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.35
   },
   {
@@ -917,8 +1034,37 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.35
+  },
+  {
+   "prediction_id": "45da6d00a5046831",
+   "sport": "football",
+   "competition": "Premier League",
+   "event_key": "football|Premier League|Ipswich Town v Aston Villa|2026-11-28T17:30:00+00:00",
+   "event_name": "Ipswich Town v Aston Villa",
+   "event_start": "2026-11-28T17:30:00+00:00",
+   "market": "double_chance",
+   "selection": "12",
+   "probability": 0.754521,
+   "band": "70%+",
+   "sigma": 0.003828,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.33,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "min_bookmaker_odds": 1.36
   },
   {
    "prediction_id": "fae1a46111f1d709",
@@ -946,7 +1092,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "min_bookmaker_odds": 1.36
+  },
+  {
+   "prediction_id": "43d1843254de67b2",
+   "sport": "football",
+   "competition": "Bundesliga",
+   "event_key": "football|Bundesliga|VfB Stuttgart v Eintracht Frankfurt|2026-11-28T17:30:00+00:00",
+   "event_name": "VfB Stuttgart v Eintracht Frankfurt",
+   "event_start": "2026-11-28T17:30:00+00:00",
+   "market": "double_chance",
+   "selection": "1X",
+   "probability": 0.752971,
+   "band": "70%+",
+   "sigma": 0.003828,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.33,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.36
   },
   {
@@ -975,7 +1150,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.36
   },
   {
@@ -1004,182 +1179,8 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.36
-  },
-  {
-   "prediction_id": "25f422168c6dfb03",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_key": "nba|c5dc35b4116988de2c1425df17456478",
-   "event_name": "Atlanta Hawks @ Boston Celtics",
-   "event_start": "2026-11-28T01:10:00+00:00",
-   "market": "moneyline",
-   "selection": "Boston Celtics",
-   "probability": 0.750638,
-   "band": "70%+",
-   "sigma": 0.014319,
-   "evidence": "VALIDATED",
-   "engine_id": "nba_moneyline.market",
-   "fair_odds": 1.33,
-   "price_status": "PRICE_QUALITY_FAIL",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
-   "decision_odds": "1.29",
-   "decision_source": "smarkets",
-   "decision_net_ev": "-0.03603126732453707",
-   "price_observed_at": "2026-11-26T16:16:35.951372+00:00",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
-   "min_bookmaker_odds": 1.36
-  },
-  {
-   "prediction_id": "226f71a1e5c067a1",
-   "sport": "football",
-   "competition": "Championship",
-   "event_key": "football|Championship|West Bromwich Albion v Bristol City|2026-11-28T15:00:00+00:00",
-   "event_name": "West Bromwich Albion v Bristol City",
-   "event_start": "2026-11-28T15:00:00+00:00",
-   "market": "double_chance",
-   "selection": "12",
-   "probability": 0.750074,
-   "band": "70%+",
-   "sigma": 0.003828,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_double_chance.derived_1x2",
-   "fair_odds": 1.33,
-   "price_status": "PRICE_UNAVAILABLE",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "",
-   "decision_source": "",
-   "decision_net_ev": "",
-   "price_observed_at": "",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
-   "min_bookmaker_odds": 1.36
-  },
-  {
-   "prediction_id": "b5cb22253e389198",
-   "sport": "basketball",
-   "competition": "NBA",
-   "event_key": "nba|428050645d1dc8b16d84287e21de55fa",
-   "event_name": "Denver Nuggets @ Utah Jazz",
-   "event_start": "2026-11-28T02:40:00+00:00",
-   "market": "moneyline",
-   "selection": "Denver Nuggets",
-   "probability": 0.749639,
-   "band": "70%+",
-   "sigma": 0.014319,
-   "evidence": "VALIDATED",
-   "engine_id": "nba_moneyline.market",
-   "fair_odds": 1.33,
-   "price_status": "PRICE_QUALITY_FAIL",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
-   "decision_odds": "1.28",
-   "decision_source": "unibet_uk",
-   "decision_net_ev": "-0.040462684907129454",
-   "price_observed_at": "2026-11-26T16:16:35.951372+00:00",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
-   "min_bookmaker_odds": 1.37
-  },
-  {
-   "prediction_id": "52ea1d25e792a211",
-   "sport": "football",
-   "competition": "Bundesliga",
-   "event_key": "football|Bundesliga|Hamburger SV v Bayern Munich|2026-11-28T14:30:00+00:00",
-   "event_name": "Hamburger SV v Bayern Munich",
-   "event_start": "2026-11-28T14:30:00+00:00",
-   "market": "1x2",
-   "selection": "away",
-   "probability": 0.749111,
-   "band": "70%+",
-   "sigma": 0.016716,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_1x2.market_consensus",
-   "fair_odds": 1.33,
-   "price_status": "PRICE_QUALITY_FAIL",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "1.28",
-   "decision_source": "smarkets",
-   "decision_net_ev": "-0.04816597510373427",
-   "price_observed_at": "2026-11-26T17:37:10.515259+00:00",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
-   "min_bookmaker_odds": 1.37
-  },
-  {
-   "prediction_id": "162d897cc16b8cf4",
-   "sport": "football",
-   "competition": "Scottish Premiership",
-   "event_key": "football|Scottish Premiership|Aberdeen v Dundee FC|2026-11-28T15:00:00+00:00",
-   "event_name": "Aberdeen v Dundee FC",
-   "event_start": "2026-11-28T15:00:00+00:00",
-   "market": "double_chance",
-   "selection": "1X",
-   "probability": 0.748153,
-   "band": "70%+",
-   "sigma": 0.003828,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_double_chance.derived_1x2",
-   "fair_odds": 1.34,
-   "price_status": "PRICE_UNAVAILABLE",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "",
-   "decision_source": "",
-   "decision_net_ev": "",
-   "price_observed_at": "",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
-   "min_bookmaker_odds": 1.37
-  },
-  {
-   "prediction_id": "732ee03cac2bca7d",
-   "sport": "football",
-   "competition": "Premier League",
-   "event_key": "football|Premier League|Manchester United v Brentford|2026-11-28T15:00:00+00:00",
-   "event_name": "Manchester United v Brentford",
-   "event_start": "2026-11-28T15:00:00+00:00",
-   "market": "double_chance",
-   "selection": "12",
-   "probability": 0.747083,
-   "band": "70%+",
-   "sigma": 0.003828,
-   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
-   "engine_id": "football_double_chance.derived_1x2",
-   "fair_odds": 1.34,
-   "price_status": "PRICE_UNAVAILABLE",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
-   "decision": "REJECT",
-   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "",
-   "decision_source": "",
-   "decision_net_ev": "",
-   "price_observed_at": "",
-   "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
-   "min_bookmaker_odds": 1.37
   }
  ],
  "best_bets": [],
@@ -1211,7 +1212,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "7d5d765f474e475d",
+   "sport": "football",
+   "competition": "Eredivisie",
+   "event_key": "football|Eredivisie|PSV Eindhoven v Go Ahead Eagles|2026-11-28T17:45:00+00:00",
+   "event_name": "PSV Eindhoven v Go Ahead Eagles",
+   "event_start": "2026-11-28T17:45:00+00:00",
+   "market": "double_chance",
+   "selection": "1X",
+   "probability": 0.896957,
+   "band": "80%+",
+   "sigma": 0.006363,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.11,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1240,7 +1270,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "36d1c7e443295fa8",
+   "sport": "football",
+   "competition": "Eredivisie",
+   "event_key": "football|Eredivisie|PSV Eindhoven v Go Ahead Eagles|2026-11-28T17:45:00+00:00",
+   "event_name": "PSV Eindhoven v Go Ahead Eagles",
+   "event_start": "2026-11-28T17:45:00+00:00",
+   "market": "double_chance",
+   "selection": "12",
+   "probability": 0.864523,
+   "band": "80%+",
+   "sigma": 0.006363,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.16,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1269,7 +1328,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1298,7 +1357,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1327,7 +1386,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1356,7 +1415,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1385,7 +1444,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1414,7 +1473,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1443,7 +1502,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1472,7 +1531,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1501,7 +1560,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1530,7 +1589,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1559,7 +1618,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1588,7 +1647,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1617,7 +1676,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1646,7 +1705,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1675,7 +1734,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "min_bookmaker_odds": 1.33
+  },
+  {
+   "prediction_id": "e0a9b42435329d03",
+   "sport": "football",
+   "competition": "Bundesliga",
+   "event_key": "football|Bundesliga|VfB Stuttgart v Eintracht Frankfurt|2026-11-28T17:30:00+00:00",
+   "event_name": "VfB Stuttgart v Eintracht Frankfurt",
+   "event_start": "2026-11-28T17:30:00+00:00",
+   "market": "double_chance",
+   "selection": "12",
+   "probability": 0.789946,
+   "band": "70%+",
+   "sigma": 0.003828,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.27,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1704,7 +1792,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1733,7 +1821,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1762,7 +1850,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1791,7 +1879,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1820,7 +1908,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1849,7 +1937,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1878,7 +1966,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1907,7 +1995,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.33
   },
   {
@@ -1936,7 +2024,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -1965,7 +2053,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -1994,7 +2082,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "min_bookmaker_odds": 1.34
+  },
+  {
+   "prediction_id": "d9c2fddce000bcce",
+   "sport": "football",
+   "competition": "Eredivisie",
+   "event_key": "football|Eredivisie|PSV Eindhoven v Go Ahead Eagles|2026-11-28T17:45:00+00:00",
+   "event_name": "PSV Eindhoven v Go Ahead Eagles",
+   "event_start": "2026-11-28T17:45:00+00:00",
+   "market": "1x2",
+   "selection": "home",
+   "probability": 0.761479,
+   "band": "70%+",
+   "sigma": 0.016716,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_1x2.market_consensus",
+   "fair_odds": 1.31,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.25,
+   "best_source": "coral",
+   "best_net_ev": -0.047695,
+   "decision": "REJECT",
+   "decision_reasons": "NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "1.25",
+   "decision_source": "coral",
+   "decision_net_ev": "-0.047695262483995",
+   "price_observed_at": "2026-11-27T07:16:28.649404+00:00",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.34
   },
   {
@@ -2023,7 +2140,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.35
   },
   {
@@ -2041,18 +2158,18 @@
    "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
    "engine_id": "football_1x2.market_consensus",
    "fair_odds": 1.32,
-   "price_status": "PRICE_QUALITY_FAIL",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.29,
+   "best_source": "betfair",
+   "best_net_ev": -0.041681,
    "decision": "REJECT",
    "decision_reasons": "NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
-   "decision_odds": "1.28",
+   "decision_odds": "1.29",
    "decision_source": "betfair",
-   "decision_net_ev": "-0.04476861167002005",
-   "price_observed_at": "2026-11-26T17:37:10.515259+00:00",
+   "decision_net_ev": "-0.041680714389178086",
+   "price_observed_at": "2026-11-27T07:16:28.649404+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.35
   },
   {
@@ -2081,8 +2198,37 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.35
+  },
+  {
+   "prediction_id": "45da6d00a5046831",
+   "sport": "football",
+   "competition": "Premier League",
+   "event_key": "football|Premier League|Ipswich Town v Aston Villa|2026-11-28T17:30:00+00:00",
+   "event_name": "Ipswich Town v Aston Villa",
+   "event_start": "2026-11-28T17:30:00+00:00",
+   "market": "double_chance",
+   "selection": "12",
+   "probability": 0.754521,
+   "band": "70%+",
+   "sigma": 0.003828,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.33,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "min_bookmaker_odds": 1.36
   },
   {
    "prediction_id": "fae1a46111f1d709",
@@ -2110,7 +2256,36 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "min_bookmaker_odds": 1.36
+  },
+  {
+   "prediction_id": "43d1843254de67b2",
+   "sport": "football",
+   "competition": "Bundesliga",
+   "event_key": "football|Bundesliga|VfB Stuttgart v Eintracht Frankfurt|2026-11-28T17:30:00+00:00",
+   "event_name": "VfB Stuttgart v Eintracht Frankfurt",
+   "event_start": "2026-11-28T17:30:00+00:00",
+   "market": "double_chance",
+   "selection": "1X",
+   "probability": 0.752971,
+   "band": "70%+",
+   "sigma": 0.003828,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.33,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.36
   },
   {
@@ -2139,7 +2314,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.36
   },
   {
@@ -2168,7 +2343,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.36
   },
   {
@@ -2191,13 +2366,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
    "decision_odds": "1.29",
    "decision_source": "smarkets",
    "decision_net_ev": "-0.03603126732453707",
    "price_observed_at": "2026-11-26T16:16:35.951372+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.36
   },
   {
@@ -2226,7 +2401,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.36
   },
   {
@@ -2249,13 +2424,13 @@
    "best_source": "",
    "best_net_ev": null,
    "decision": "REJECT",
-   "decision_reasons": "NET_EV_NOT_POSITIVE",
+   "decision_reasons": "PRICE_STALE|NET_EV_NOT_POSITIVE",
    "decision_odds": "1.28",
    "decision_source": "unibet_uk",
    "decision_net_ev": "-0.040462684907129454",
    "price_observed_at": "2026-11-26T16:16:35.951372+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.37
   },
   {
@@ -2273,18 +2448,18 @@
    "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
    "engine_id": "football_1x2.market_consensus",
    "fair_odds": 1.33,
-   "price_status": "PRICE_QUALITY_FAIL",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.28,
+   "best_source": "smarkets",
+   "best_net_ev": -0.048257,
    "decision": "REJECT",
    "decision_reasons": "NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
    "decision_odds": "1.28",
    "decision_source": "smarkets",
-   "decision_net_ev": "-0.04816597510373427",
-   "price_observed_at": "2026-11-26T17:37:10.515259+00:00",
+   "decision_net_ev": "-0.04825710039332731",
+   "price_observed_at": "2026-11-27T07:16:28.649404+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.37
   },
   {
@@ -2313,7 +2488,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.37
   },
   {
@@ -2342,7 +2517,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.37
   },
   {
@@ -2371,7 +2546,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.38
   },
   {
@@ -2400,7 +2575,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.38
   },
   {
@@ -2429,7 +2604,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.39
   },
   {
@@ -2458,7 +2633,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.39
   },
   {
@@ -2487,7 +2662,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.39
   },
   {
@@ -2516,7 +2691,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -2545,7 +2720,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -2574,7 +2749,65 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "min_bookmaker_odds": 1.4
+  },
+  {
+   "prediction_id": "140eb53252e45f08",
+   "sport": "football",
+   "competition": "Scottish Premiership",
+   "event_key": "football|Scottish Premiership|Motherwell v Hibernian|2026-11-28T17:45:00+00:00",
+   "event_name": "Motherwell v Hibernian",
+   "event_start": "2026-11-28T17:45:00+00:00",
+   "market": "double_chance",
+   "selection": "12",
+   "probability": 0.733115,
+   "band": "70%+",
+   "sigma": 0.003828,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.36,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
+   "min_bookmaker_odds": 1.4
+  },
+  {
+   "prediction_id": "bb3d215ac467360b",
+   "sport": "football",
+   "competition": "Premier League",
+   "event_key": "football|Premier League|Ipswich Town v Aston Villa|2026-11-28T17:30:00+00:00",
+   "event_name": "Ipswich Town v Aston Villa",
+   "event_start": "2026-11-28T17:30:00+00:00",
+   "market": "double_chance",
+   "selection": "X2",
+   "probability": 0.732444,
+   "band": "70%+",
+   "sigma": 0.003828,
+   "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
+   "engine_id": "football_double_chance.derived_1x2",
+   "fair_odds": 1.37,
+   "price_status": "PRICE_UNAVAILABLE",
+   "best_odds": null,
+   "best_source": "",
+   "best_net_ev": null,
+   "decision": "REJECT",
+   "decision_reasons": "NO_EXECUTABLE_PRICE|ENGINE_STATUS_INELIGIBLE",
+   "decision_odds": "",
+   "decision_source": "",
+   "decision_net_ev": "",
+   "price_observed_at": "",
+   "engine_version": "1",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -2603,7 +2836,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -2632,7 +2865,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -2661,7 +2894,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.4
   },
   {
@@ -2690,7 +2923,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.41
   },
   {
@@ -2719,7 +2952,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.41
   },
   {
@@ -2748,7 +2981,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.41
   },
   {
@@ -2777,7 +3010,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.42
   },
   {
@@ -2806,7 +3039,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.42
   },
   {
@@ -2835,7 +3068,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.44
   },
   {
@@ -2864,7 +3097,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.44
   },
   {
@@ -2882,18 +3115,18 @@
    "evidence": "PROSPECTIVE_SHADOW_LEAGUE",
    "engine_id": "football_ou25.market",
    "fair_odds": 1.41,
-   "price_status": "PRICE_QUALITY_FAIL",
-   "best_odds": null,
-   "best_source": "",
-   "best_net_ev": null,
+   "price_status": "POOR_PAYOUT",
+   "best_odds": 1.33,
+   "best_source": "william hill",
+   "best_net_ev": -0.056223,
    "decision": "REJECT",
    "decision_reasons": "NET_EV_NOT_POSITIVE|ENGINE_STATUS_INELIGIBLE",
    "decision_odds": "1.33",
    "decision_source": "william hill",
    "decision_net_ev": "-0.05622270742358082",
-   "price_observed_at": "2026-11-26T17:37:10.515259+00:00",
+   "price_observed_at": "2026-11-27T07:16:28.649404+00:00",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.44
   },
   {
@@ -2922,7 +3155,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.45
   },
   {
@@ -2951,7 +3184,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.45
   },
   {
@@ -2980,7 +3213,7 @@
    "decision_net_ev": "",
    "price_observed_at": "",
    "engine_version": "1",
-   "decision_evaluated_at": "2026-11-26T17:37:15.421067+00:00",
+   "decision_evaluated_at": "2026-11-27T07:16:33.479245+00:00",
    "min_bookmaker_odds": 1.45
   }
  ],
