@@ -1,8 +1,8 @@
-# STAGE A PREDICTION BOARD — 2026-11-26T17:37Z (stage-a-2)
+# STAGE A PREDICTION BOARD — 2026-11-27T03:36Z (stage-a-2)
 
 _Probability first. Ranked by estimated probability only. **A strong prediction is not a bet** — price status is descriptive; Stage B (bet-selection) alone decides bets._
 
-Predictions: 228 · strong (P ≥ 70%): 66 on 36 events · strong by price status: POOR_PAYOUT 5 · PRICE_UNAVAILABLE 61
+Predictions: 228 · strong (P ≥ 70%): 66 on 36 events · strong by price status: PRICE_QUALITY_FAIL 5 · PRICE_UNAVAILABLE 61
 
 | # | Sport | Event | Start (UTC) | Market | Selection | P | P first snapshot | P current scan | σ | Engine | Calibration status | Stage A status | Why not assessable | Best clean price | Net EV |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -36,17 +36,17 @@ Predictions: 228 · strong (P ≥ 70%): 66 on 36 events · strong by price statu
 | 28 | football | Angers v RC Lens | 2026-11-28T16:15 | double_chance | 12 | 76.6% | 76.6% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 29 | football | VfL Bochum v SV Darmstadt 98 | 2026-11-27T17:30 | double_chance | 1X | 76.2% | 76.2% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 30 | football | VfL Bochum v SV Darmstadt 98 | 2026-11-27T17:30 | double_chance | 12 | 75.9% | 75.9% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 31 | football | Rangers v Falkirk F.C. | 2026-11-28T15:00 | 1x2 | home | 75.8% | 75.8% | — | 1.7% | football_1x2.market_consensus | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.28 (betfair) | -4.5% |
+| 31 | football | Rangers v Falkirk F.C. | 2026-11-28T15:00 | 1x2 | home | 75.8% | 75.8% | — | 1.7% | football_1x2.market_consensus | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | PRICE_STALE | — | — |
 | 32 | football | 1. FC Heidenheim v 1. FC Nürnberg | 2026-11-27T17:30 | double_chance | 12 | 75.7% | 75.7% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 33 | football | Ipswich Town v Aston Villa | 2026-11-28T17:30 | double_chance | 12 | 75.5% | 75.5% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 34 | football | Aberdeen v Dundee FC | 2026-11-28T15:00 | double_chance | 12 | 75.3% | 75.3% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 35 | football | VfB Stuttgart v Eintracht Frankfurt | 2026-11-28T17:30 | double_chance | 1X | 75.3% | 75.3% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 36 | football | 1. FC Köln v Elversberg | 2026-11-28T14:30 | double_chance | 12 | 75.2% | 75.2% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 37 | football | Southampton v Middlesbrough | 2026-11-27T20:00 | double_chance | 12 | 75.1% | 75.1% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 38 | basketball | Atlanta Hawks @ Boston Celtics | 2026-11-28T01:10 | moneyline | Boston Celtics | 75.1% | 75.1% | — | 1.4% | nba_moneyline.market | HOLDOUT_PASSED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.29 (smarkets) | -3.6% |
+| 38 | basketball | Atlanta Hawks @ Boston Celtics | 2026-11-28T01:10 | moneyline | Boston Celtics | 75.1% | 75.1% | — | 1.4% | nba_moneyline.market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | PRICE_STALE | — | — |
 | 39 | football | West Bromwich Albion v Bristol City | 2026-11-28T15:00 | double_chance | 12 | 75.0% | 75.0% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 40 | basketball | Denver Nuggets @ Utah Jazz | 2026-11-28T02:40 | moneyline | Denver Nuggets | 75.0% | 75.0% | — | 1.4% | nba_moneyline.market | HOLDOUT_PASSED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.28 (unibet_uk) | -4.0% |
-| 41 | football | Hamburger SV v Bayern Munich | 2026-11-28T14:30 | 1x2 | away | 74.9% | 74.9% | — | 1.7% | football_1x2.market_consensus | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.28 (smarkets) | -4.8% |
+| 40 | basketball | Denver Nuggets @ Utah Jazz | 2026-11-28T02:40 | moneyline | Denver Nuggets | 75.0% | 75.0% | — | 1.4% | nba_moneyline.market | HOLDOUT_PASSED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | PRICE_STALE | — | — |
+| 41 | football | Hamburger SV v Bayern Munich | 2026-11-28T14:30 | 1x2 | away | 74.9% | 74.9% | — | 1.7% | football_1x2.market_consensus | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | PRICE_STALE | — | — |
 | 42 | football | Aberdeen v Dundee FC | 2026-11-28T15:00 | double_chance | 1X | 74.8% | 74.8% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 43 | football | Manchester United v Brentford | 2026-11-28T15:00 | double_chance | 12 | 74.7% | 74.7% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 44 | football | Excelsior v SC Telstar | 2026-11-28T15:30 | double_chance | 12 | 74.2% | 74.2% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
@@ -68,7 +68,7 @@ Predictions: 228 · strong (P ≥ 70%): 66 on 36 events · strong by price statu
 | 60 | football | Derby County v Watford | 2026-11-28T15:00 | double_chance | 12 | 72.0% | 72.0% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 61 | football | Wrexham AFC v Portsmouth | 2026-11-28T15:00 | double_chance | 12 | 71.2% | 71.2% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 62 | football | Millwall v Burnley | 2026-11-28T15:00 | double_chance | 1X | 71.0% | 71.0% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
-| 63 | football | Rangers v Falkirk F.C. | 2026-11-28T15:00 | over_under_2_5 | over | 71.0% | 71.0% | — | — | football_ou25.market | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_POOR_PAYOUT |  | 1.33 (william hill) | -5.6% |
+| 63 | football | Rangers v Falkirk F.C. | 2026-11-28T15:00 | over_under_2_5 | over | 71.0% | 71.0% | — | — | football_ou25.market | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_QUALITY_FAIL | PRICE_STALE | — | — |
 | 64 | football | Brest v Paris FC | 2026-11-27T19:45 | double_chance | X2 | 70.7% | 70.7% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 65 | football | Derby County v Watford | 2026-11-28T15:00 | double_chance | 1X | 70.5% | 70.5% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
 | 66 | football | Manchester United v Brentford | 2026-11-28T15:00 | double_chance | 1X | 70.4% | 70.4% | — | 0.4% | football_double_chance.derived_1x2 | LEAGUE_SHADOW_NOT_TRANSFERRED | STRONG_PREDICTION_PRICE_UNAVAILABLE | NO_EXECUTABLE_PRICE | — | — |
