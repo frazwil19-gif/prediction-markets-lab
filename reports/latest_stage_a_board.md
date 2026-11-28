@@ -1,4 +1,4 @@
-# STAGE A PREDICTION BOARD — 2026-11-28T04:04Z (stage-a-2)
+# STAGE A PREDICTION BOARD — 2026-11-28T07:18Z (stage-a-2)
 
 _Probability first. Ranked by estimated probability only. **A strong prediction is not a bet** — price status is descriptive; Stage B (bet-selection) alone decides bets._
 

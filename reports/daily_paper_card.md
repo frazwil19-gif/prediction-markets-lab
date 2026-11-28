@@ -1,18 +1,14 @@
-# Daily Paper Bet Card — 2026-11-28T04:04Z
+# Daily Paper Bet Card — 2026-11-28T07:18Z
 
 **PAPER ONLY. Not a real-money card. No bet here may be placed with real money without a MONEY_ELIGIBILITY_REVIEW and Fraser's explicit approval.**
 
 Rule `pcard-1` on top of bsv2-4. bsv2-4 decides; grades rank confidence in value; STRONG PREDICTION != VALID BET.
-Candidates evaluated at 2026-11-27T17:19:10.314484+00:00.
+Candidates evaluated at 2026-11-28T07:18:18.093221+00:00.
 
-Grades: A+ 0, A 0, B 0, C 1, REJECT 380
+Grades: A+ 0, A 0, B 0, C 0, REJECT 326
 
 **NO PAPER BETS TODAY.** No candidate passed every bsv2-4 gate. That is a valid outcome.
 
-## Grade C (WATCH / multi research — information only, no stake)
-
-- basketball · New Orleans Pelicans @ Los Angeles Clippers · Los Angeles Clippers · P 0.561 · odds 1.80 · NET_EV_BELOW_PAPER_GATE
-
-Rejected candidates: 380 (see reports/bet_selection_v2.md for reasons).
+Rejected candidates: 326 (see reports/bet_selection_v2.md for reasons).
 
 Stakes are hypothetical, at the nominal bankroll, singles only, ≤5% per bet and ≤10% per day; no martingale/chasing.

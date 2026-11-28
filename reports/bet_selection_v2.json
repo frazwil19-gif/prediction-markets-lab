@@ -1,25 +1,25 @@
 {
- "generated_at": "2026-11-28T04:04:46.672894+00:00",
+ "generated_at": "2026-11-28T07:18:18.093221+00:00",
  "product": "BET-SELECTION V2 (PAPER research; not a betting card)",
  "rule_version": "bsv2-4",
  "real_money_enabled": false,
  "multis_enabled": false,
  "funnel": {
-  "runs": 177,
+  "runs": 178,
   "totals_over_runs": {
-   "events_scanned": 5746,
-   "valid_predictions": 21462,
-   "high_p_candidates": 6101,
-   "priced_candidates": 10987,
+   "events_scanned": 5796,
+   "valid_predictions": 21788,
+   "high_p_candidates": 6193,
+   "priced_candidates": 11155,
    "PAPER_BET": 23,
    "MULTI_RESEARCH_ELIGIBLE": 240,
    "WATCH": 80,
-   "REJECT": 21523,
+   "REJECT": 21849,
    "paper_bets_added": 13,
-   "money_card_qualified": 16
+   "money_card_qualified": 17
   },
   "note": "per-run counts summed; a prediction re-evaluated in several runs is counted in each run",
-  "days_evaluated": 60,
+  "days_evaluated": 61,
   "no_bet_days": [
    "2026-09-30",
    "2026-10-01",
@@ -76,7 +76,8 @@
    "2026-11-24",
    "2026-11-25",
    "2026-11-26",
-   "2026-11-27"
+   "2026-11-27",
+   "2026-11-28"
   ],
   "bet_days": {
    "2026-09-29": 10,
@@ -86,58 +87,48 @@
   }
  },
  "latest_run": {
-  "run_at": "2026-11-27T17:19:10.314484+00:00",
-  "trigger": "schedule",
+  "run_at": "2026-11-28T07:18:18.093221+00:00",
+  "trigger": "workflow_dispatch",
   "rule_version": "bsv2-4",
-  "events_scanned": "68",
-  "valid_predictions": "381",
-  "high_p_candidates": "109",
-  "priced_candidates": "201",
+  "events_scanned": "50",
+  "valid_predictions": "326",
+  "high_p_candidates": "92",
+  "priced_candidates": "168",
   "PAPER_BET": "0",
   "MULTI_RESEARCH_ELIGIBLE": "0",
-  "WATCH": "1",
-  "REJECT": "380",
+  "WATCH": "0",
+  "REJECT": "326",
   "paper_bets_added": "0",
-  "snapshots_added": "184",
+  "snapshots_added": "0",
   "money_card_qualified": "1",
   "football_fixtures_on_card": "98"
  },
  "latest_decisions": {
   "decisions": {
-   "REJECT": 380,
-   "WATCH": 1
+   "REJECT": 326
   },
   "reason_counts": {
-   "ENGINE_STATUS_INELIGIBLE": 370,
-   "P_BELOW_FLOOR": 172,
-   "NO_EXECUTABLE_PRICE": 171,
-   "NET_EV_NOT_POSITIVE": 159,
-   "PRICE_STALE": 25,
-   "COMMISSION_UNKNOWN": 9,
-   "NET_EV_BELOW_PAPER_GATE": 1
+   "ENGINE_STATUS_INELIGIBLE": 326,
+   "PRICE_STALE": 176,
+   "P_BELOW_FLOOR": 151,
+   "NO_EXECUTABLE_PRICE": 150,
+   "NET_EV_NOT_POSITIVE": 132,
+   "COMMISSION_UNKNOWN": 8
   },
   "by_sport": {
-   "basketball": {
-    "REJECT": 10,
-    "WATCH": 1
-   },
    "football": {
-    "REJECT": 370
+    "REJECT": 326
    }
   },
   "by_engine": {
    "football_1x2.market_consensus": {
-    "REJECT": 171
+    "REJECT": 150
    },
    "football_double_chance.derived_1x2": {
-    "REJECT": 171
+    "REJECT": 150
    },
    "football_ou25.market": {
-    "REJECT": 28
-   },
-   "nba_moneyline.market": {
-    "REJECT": 10,
-    "WATCH": 1
+    "REJECT": 26
    }
   }
  },
